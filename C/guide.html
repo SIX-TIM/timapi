@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+
+  <link rel="stylesheet" href="../assets/css/vendors.css" />
+  <link rel="stylesheet" href="../assets/css/helppage.css">
+
+  <title>TIM API documentation | SDK 18-05</title>
+
+  <script src="../assets/js/vendors.js"></script>
+  <script src="../assets/js/helppage.js"></script>
+  <script src="../assets/js/guide.js"></script>
+
+</head>
+
+<body data-spy="scroll" data-target="#navScrollspy">
+
+  <div id="content" class="container-fluid">
+    <div>
+      <nav id="navScrollspy">
+        <div data-spy="affix" class="affix">
+          <h3>
+            <span style="font-size: x-large; font-weight: bold">TIM SDK</span>
+            <span class="text-primary">18-05</span>
+          </h3>
+          <h2 style="margin-top: -10px;">
+            <span style="font-weight: bold; color: rgb(104, 104, 104);">TIM API C</span>
+            <span class="text-primary" style="font-size: 15px">v3.5</span>
+          </h2>
+          <div id="seperator" style="margin-top: 0px;">&nbsp</div>
+          <div id="vSep">&nbsp</div>
+          <div id="langSel">
+            <ul class="langList">
+              <li>
+                <a href="../Java/guide.html"> Java </a>
+              </li>
+              <li>
+                <a href="#intro" style="font-weight: bolder">C</a>
+              </li>
+            </ul>
+          </div>
+          <ul class="nav">
+            <li class="active">
+              <a href="#intro">Introduction</a>
+            </li>
+            <li>
+              <a href="#setup">Setup Configuration</a>
+              <ul class="nav">
+                <li>
+                  <a href="#network">Network Configuration</a>
+                </li>
+                <li>
+                  <a href="#guides">Guides Configuration</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#operation">Operation Overview</a>
+            </li>
+            <li>
+              <a href="#automatisms">Automatisms</a>
+            </li>
+            <li>
+              <a href="#functions">Terminal function overview</a>
+              <ul class="nav">
+                <li>
+                  <a href="#main_func">Main / guide retail terminal functions</a>
+                </li>
+                <li class="filterGuides guideDialog">
+                  <a href="#dialog_func">Guide dialog terminal functions</a>
+                </li>
+                <li>
+                  <a href="#add_func">Additional callback functions</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#clang">C Language Specifics</a>
+              <ul class="nav">
+                <li>
+                  <a href="#objects">Objects in TIM API C</a>
+                </li>
+                <li>
+                  <a href="#memory">Memory Management in TIM API C</a>
+                </li>
+                <li>
+                  <a href="#datatypes">Data Types in TIM API C</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <div id="seperator">&nbsp</div>
+          <div id="apiLink">
+            <a href="Doc/files.html">API Documentation</a>
+          </div>
+          <div id="guideDiv">
+            <div id="guideTitle">
+              <b>Guides</b>
+            </div>
+            <div id="guideSel">
+              <button class="btnGuide" id="guideDialog" onclick="toggleGuide(this);">Dialog</button>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <span class="print-page-break"></span>
+      <main>
+        <section id="intro">
+          <h1>
+            <a name="intro"></a>Introduction</h1>
+          <div class="row">
+            <div class="col-md-6">
+              <p>The TIM API is the standard application interface for ECR integration using SIX Payment Services terminals.</p>
+              <p>TIM API provides a comprehensive feature set to support the requirements of several different markets. This
+                guideline is intended to be used by ECR integrators that need to implement the TIM API functionality in their
+                products.</p>
+              <p>The following document contains an overview structure, description of the TIM API modes synchronous/asynchronous
+                and describes the corresponding functions, notifiers and data elements that can be used with the TIM API.</p>
+              <hr>
+            </div>
+          </div>
+        </section>
+        <section id="setup">
+          <h1>
+            <a name="setup"></a>Setup Configuration</h1>
+          <div class="row">
+            <div class="col-md-6">
+              <p>The configuration of the
+                <code>terminal</code> can be done by creating and configuring a
+                <code>terminal settings</code>-instance. The
+                <code>terminal settings</code>-instance must then be passed to the
+                <code>terminal_create</code>function.</p>
+              <p>Once a
+                <code>terminal</code>-instance has been created with a
+                <code>terminal settings</code>-instance, the settings can not be changed anymore. Changes to the
+                <code>terminal settings</code>-instance will be ignored.</p>
+              <p>The network and guides configuration are explained in the following two chapters. For further information refer
+                to
+                <code>terminal settings</code>.</p>
+            </div>
+          </div>
+        </section>
+        <section id="network">
+          <h2>
+            <a name="network"></a>Network Configuration</h2>
+          <div class="row">
+            <div class="col-md-6">
+              <p>The TIM API module can communicate with the Terminal over different communication channels. The default communication
+                is over TCP/IP connection.</p>
+              <p>For TCP/IP connection there are two possible ways to connect to the terminal:</p>
+              <ul>
+                <li>
+                  <strong>Broadcast-Mode:</strong>
+                  <ul>
+                    <li>Terminal ID (TID) is known.</li>
+                    <li>The TIM API starts broadcasting on the default interface and connects to the connection information sent
+                      by the matching terminal.</li>
+                  </ul>
+                </li>
+                <li>
+                  <strong>Direct Connect:</strong>
+                  <ul>
+                    <li>IP address of the terminal is known.</li>
+                    <li>Connection is established directly via IP.</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section id="guides">
+          <h2>
+            <a name="guides"></a>Guides Configuration</h2>
+          <div class="row">
+            <div class="col-md-6">
+              <p>There are various
+                <code>guides</code> covering different use case scenarios. The guide retail (
+                <code>ta_c_guide_retail</code>) is the basic guide and is activated as default. With
+                <code>ta_terminal_settings_set_guides</code> the guides can be configured. Important: the configuration needs to include all desired guides (including
+                the retail guide).</p>
+            </div>
+            <div class="col-md-6">
+              <p>Code-example for creating a terminal including settings with activated guides retail and dialog:</p>
+              <pre>
+                <code class="language-{.c}">ta_object_t terminal = ta_object_invalid;
+ta_object_t settings = ta_object_invalid;
+
+// create terminal settings instance
+ta_terminal_settings_create(&amp;settings);
+
+// add wanted guides (with bitwise or)
+ta_terminal_settings_set_guides(settings, ta_c_guide_retail | ta_c_guide_dialog);
+
+// create terminal
+ta_terminal_create(&amp;terminal, settings);
+
+// release terminal settings
+ta_object_release(settings);
+
+//...
+
+// in the end release terminal as well
+ta_oject_release(terminal);
+                </code>
+              </pre>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <hr>
+            </div>
+          </div>
+        </section>
+        <section id="operation">
+          <h1>
+            <a name="operation"></a>Operation Overview</h1>
+          <div class="row">
+            <div class="col-md-6">
+              <p>Follow these basic steps for using the TIM API:</p>
+              <ol>
+                <li>Create
+                  <code>terminal_settings</code> and initialize connection parameters (see <a href="#setup">Setup Configuration</a>)
+                </li>
+                <li>Create
+                  <code>terminal</code> instance using the created
+                  <code>terminal_settings</code>
+                </li>
+                <li>Set some properties if needed:
+                  <ul>
+                    <li>set
+                      <code>pos_id</code>
+                    </li>
+                    <li>create
+                      <code>ecr_info</code> and add with
+                      <code>ta_terminal_add_ecr_data</code>
+                    </li>
+                    <li>add listeners (
+                      <code>ta_terminal_add_listener</code>)</li>
+                  </ul>
+                </li>
+                <li>
+                  <code>Connect</code> and
+                  <code>login</code> This can be done automatically, when the first terminal operation is called or manually using the login
+                  method.</li>
+                <li>Use terminal operation functions.</li>
+                </ol>
+              <p>A basic flow to show a dialog is:</p>
+              <img src="Resources/operations_overview.png" alt="Operations overview image">
+
+
+
+              <hr>
+            </div>
+          </div>
+        </section>
+        <section id="automatisms">
+          <h1>
+            <a name="automatisms"></a>Automatisms</h1>
+          <div class="row">
+            <div class="col-md-6">
+              <p>The TIM API uses two different types of automatisms:</p>
+              <ul>
+                <li>
+                  <p>
+                    <strong>Pre-Automatisms:</strong> This means that all actions that need to be done before a function can be called.
+                    E.g. a transaction can be called in disconnected state without having called connect, login and activate
+                    in advance. These are called automatically by the TIM API before the transaction is performed. The Pre-Automatisms
+                    are enabled by default.</p>
+                </li>
+                <li>
+                  <p>
+                    <strong>Post-Automatisms:</strong> These automatisms can be enabled or disabled using the fields auto_commit
+                    and fetch_brands. A Post-Automatism is triggered after an action has been performed. E.g. if a connect
+                    has been called and fetch_brands is activated, an application_information request is called automatically
+                    after the connect. Or if auto_commit is activated a commit is performed automatically after a transaction
+                    has been made. auto_commit and fetch_brands are enabled by default.</p>
+                </li>
+              </ul>
+              <p>The following diagrams show the principle of the Pre-Automatisms and Post-Automatisms. Pre-Automatisms are
+                enabled by default and cannot be disabled. If an error occurs the started request from the ECR is returned
+                with an error.</p>
+              <p>
+                <strong>Synchronous flow</strong>
+              </p>
+              <img src="Resources/sync_flow.png" alt="Synchronous flow image">
+              <p>
+                <strong>Asynchronous flow</strong>
+              </p>
+              <img src="Resources/async_flow.png" alt="Asynchronous flow image">
+
+              <hr>
+            </div>
+          </div>
+        </section>
+        <section id="functions">
+          <h1>
+            <a name="functions"></a>Terminal function overview</h1>
+          <div class="row">
+            <div class="col-md-6">
+              <p>The basic operation mode of the terminal function calls are:</p>
+              <ol>
+                <li>
+                  <p>
+                    <strong>Synchronous</strong>
+                    <br> Function calls are blocking and return after the operation has finished. Error code is provided and
+                    indicates if request was successful or not.</p>
+                </li>
+                <li>
+                  <p>
+                    <strong>Asynchronous</strong>
+                    <br> Function call returns immediately after the operation has started successfully. A user-implemented callback
+                    function will then be called, after operation has finished. All callback functions receive an
+                    <code>event</code> The
+                    <code>event</code> contains a
+                    <code>result_code</code> indicating if there were errors or not. The user-implemented callback function has to be registered
+                    with
+                    <code>ta_terminal_add_listener</code>.</p>
+                </li>
+              </ol>
+              <p>Function calls on the terminal perform synchronous by default. The asynchronous function has the same name
+                with &quot;_async&quot; appended to its name.</p>
+            </div>
+            <div class="col-md-6">
+              <p>Code example for adding a terminal status listener:</p>
+              <pre><code class="language-{.c}">/* 
+ * Example for adding a terminal status listener
+ *
+ * \param[in] terminal Terminal instance
+ */
+void add_status_listener(ta_object_t terminal) {
+    ta_object_t listener = ta_object_invalid;
+    ta_s_terminal_listener_t listener_config;
+    
+    // clear listener-config
+    memset(&amp;listener_config, 0, sizeof(listener_config));
+    
+    // add user-implemented callback to listener-config
+    listener_config.terminal_status_changed = mylistener_terminal_status_changed;
+    
+    // optional: add user content to listener,
+    // pointer will be handed over to all callbacks: 
+    //listener_config.user_pointer = &amp;custom_struct;
+    
+    // create listener-object
+    ta_terminal_listener_create(&amp;listener, &amp;listener_config);
+    
+    // add listener-object to terminal
+    ta_terminal_add_listener(terminal, listener);
+    
+    // release listener-object
+    ta_object_release(listener);
+}
+
+/*
+ * Callback for terminal status changes
+ *
+ * Will be called when status of terminal changes.
+ * \param[in] terminal Terminal instance
+ * \param[in] user_pointe User-pointer which can be set in the terminal listener 
+ */
+void mylistener_terminal_status_changed(ta_object_t terminal,	void *user_pointer) {
+
+	// implement your code to process status change here...
+	//printf(&quot; &gt; listener_terminal_status_changed\n&quot;);
+}
+</code></pre>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6"></div>
+          </div>
+        </section>
+        <section id="main_func">
+          <h2>
+            <a name="main_func"></a>Main / guide retail terminal functions</h2>
+          <div class="row">
+            <div class="col-md-6">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>Sync / Async function</th>
+                    <th>Callback-Function</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <strong>ta_terminal_activate</strong>
+                      <br>ta_terminal_activate_async</td>
+                    <td>activate_completed</td>
+                    <td>Open a user shift.</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <strong>ta_terminal_application_information</strong>
+                      <br>ta_terminal_application_information_async</td>
+                    <td>pplication_information_completed</td>
+                    <td>Request the list of brands available on the terminal.</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <strong>ta_terminal_balance</strong>
+                      <br>ta_terminal_balance_async</td>
+                    <td>balance_completed</td>
+                    <td>Force the EFT Terminal to transmit all transactions to the host system as well to do the daily closing.</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <strong>ta_terminal_change_settings</strong>
+                      <br>ta_terminal_change_settings_async</td>
+                    <td>change_settings_completed</td>
+                    <td>Change configuration parameters of the EFT Terminal.</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <strong>ta_terminal_commit</strong>
+                      <br>ta_terminal_commit_async</td>
+                    <td>commit_completed</td>
+                    <td>Perform Commit-operation after a successful Transaction call.</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <strong>ta_terminal_counter_request</strong>
+                      <br>ta_terminal_counter_request_async</td>
+                    <td>counter_request_completed</td>
+                    <td>Get counter information`s from the EFT Terminal.</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <strong>ta_terminal_connect</strong>
+                      <br>ta_terminal_connect_async</td>
+                    <td>connect_completed</td>
+                    <td>Initiates a connection to the EFT Terminal.</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <strong>ta_terminal_dcc_rates</strong>
+                      <br>ta_terminal_dcc_rates_async</td>
+                    <td>dcc_rates_completed</td>
+                    <td>Request DCC rates from the EFT Terminal.</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <strong>ta_terminal_deactivate</strong>
+                      <br>ta_terminal_deactivate_async</td>
+                    <td>deactivate_completed</td>
+                    <td>Close a user shift.</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <strong>ta_terminal_disconnect</strong>
+                      <br>ta_terminal_disconnect_async</td>
+                    <td>disconnect_completed</td>
+                    <td>Interrupts the connection to the EFT Terminal.</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <strong>ta_terminal_hardware_information</strong>
+                      <br>ta_terminal_hardware_information_async</td>
+                    <td>hardware_information_completed</td>
+                    <td>Get hardware information from the EFT Terminal.</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <strong>ta_terminal_login</strong>
+                      <br>ta_terminal_login_async</td>
+                    <td>login_completed</td>
+                    <td>Activate a communication session between the ECR and the terminal.</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <strong>ta_terminal_logout</strong>
+                      <br>ta_terminal_logout_async</td>
+                    <td>logout_completed</td>
+                    <td>Terminate an active communication session between the ECR and the terminal.</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <strong>ta_terminal_reboot</strong>
+                      <br>ta_terminal_reboot_async</td>
+                    <td>reboot_completed</td>
+                    <td>Force the EFT Terminal to reboot.</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <strong>ta_terminal_receipt_request</strong>
+                      <br>ta_terminal_receipt_request_async</td>
+                    <td>receipt_request_completed</td>
+                    <td>Receive the latest receipt or a list of silent receipts.</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <strong>ta_terminal_reconciliation</strong>
+                      <br>ta_terminal_reconciliation_async</td>
+                    <td>reconciliation_completed</td>
+                    <td>Force the EFT Terminal to transmit all financial transactions to the host system.</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <strong>ta_terminal_reconfig</strong>
+                      <br>ta_terminal_reconfig_async</td>
+                    <td>reconfig_completed</td>
+                    <td>Force the EFT Terminal to get the configuration from the service center.</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <strong>ta_terminal_rollback</strong>
+                      <br>ta_terminal_rollback_async</td>
+                    <td>rollback_completed</td>
+                    <td>Prevent a transaction from being committed to the transaction log and generates a technical reversal
+                      of the authorization.</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <strong>ta_terminal_software_update</strong>
+                      <br>ta_terminal_software_update_async</td>
+                    <td>software_update_completed</td>
+                    <td>Force the EFT Terminal to start a Software Update.</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <strong>ta_terminal_system_information</strong>
+                      <br>ta_terminal_system_information_async</td>
+                    <td>system_information_completed</td>
+                    <td>Request system information from the EFT Terminal.</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <strong>ta_terminal_transaction</strong>
+                      <br>ta_terminal_transaction_async</td>
+                    <td>transaction_completed` </td>
+                    <td>Starts an EFT Terminal Transaction.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+        <section class="filterGuides guideDialog" id="dialog_func">
+          <h2>
+            <a name="dialog_func"></a>Guide dialog terminal functions</h2>
+          <div class="row">
+            <div class="col-md-6">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>Sync / Async function</th>
+                    <th>Callback-Function</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <strong>ta_terminal_close_dialog_mode</strong>
+                      <br>ta_terminal_close_dialog_mode_async</td>
+                    <td>close_dialog_mode_completed</td>
+                    <td>Close dialog mode on the terminal.</td>
+                  </tr>
+
+                  <tr>
+                    <td>
+                      <strong>ta_terminal_open_dialog_mode</strong>
+                      <br>ta_terminal_open_dialog_mode_async</td>
+                    <td>open_dialog_mode_completed</td>
+                    <td>Open dialog mode on the terminal.</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <strong>ta_terminal_show_dialog</strong>
+                      <br>ta_terminal_show_dialog_async</td>
+                    <td>show_dialog_completed</td>
+                    <td>Show dialog on the terminal</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <strong>ta_terminal_show_signature_capture</strong>
+                      <br>ta_terminal_show_signature_capture_async</td>
+                    <td>show_signature_capture_completed</td>
+                    <td>Show signature capture on the terminal</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+        <section id="add_func">
+          <h2>
+            <a name="add_func"></a>Additional callback functions</h2>
+          <div class="row">
+            <div class="col-md-6">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>Callback-Function</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <strong>request_completed</strong>
+                    </td>
+                    <td>Operation started by an asynchronous function has finished. Applications can use both operation specific
+                      completion callback in combination with this generic completion callback.</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <strong>terminal_status_changed</strong>
+                    </td>
+                    <td>The terminal status has changed. The new status can be retrieved from the TerminalStatus property.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+        <section id="clang">
+          <h1>
+            <a name="clang"></a>C Language Specifics</h1>
+          <div class="row">
+            <div class="col-md-6"></div>
+          </div>
+        </section>
+        <section id="objects">
+          <h2>
+            <a name="objects"></a>Objects in TIM API C</h2>
+          <div class="row">
+            <div class="col-md-6">
+              <p>The TIM API C is based on an object-type concept. Most TIM API functions will either take or return parameters
+                in shape of the &quot;opaque type&quot;
+                <code>ta_object_t</code>. For example:
+                <code>ta_terminal_create</code> will create a new terminal-instance, which returns a
+                <code>ta_object_t</code>. On the other hand terminal-function calls like
+                <code>ta_terminal_get_terminal_id</code> require the terminal-instance as parameter of type
+                <code>ta_object_t</code>.</p>
+              <p>Note: This concept introduces a behaviour similar to certain aspects of object-oriented programming to the
+                environment of C. Similarities are as follows:</p>
+              <ul>
+                <li>For each object-type there are functions similar to getters and setters, in order to access the object-properties.
+                  <ul>
+                    <li>The naming of getters and setters is as folllows: ta_DATATYPE_get/set_PROPERTY</li>
+                    <li>e.g.:
+                      <code>ta_terminal_settings_get_terminal_id()</code>
+                    </li>
+                  </ul>
+                </li>
+                <li>For each object-type there are functions similar to methods, performing object-specific tasks.
+                  <ul>
+                    <li>e.g.:
+                      <code>ta_terminal_login()</code>
+                    </li>
+                  </ul>
+                </li>
+                <li>For certain object-types create-functions exist, which are similar to constructors.
+                  <ul>
+                    <li>e.g.:
+                      <code>ta_string_create()</code>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section id="memory">
+          <h2>
+            <a name="memory"></a>Memory Management in TIM API C</h2>
+          <div class="row">
+            <div class="col-md-6">
+              <p>The memory needed for each object will be allocated and freed by the TIM API itself. However, the user is responsible
+                to release retained objects, when no longer needed. Retained objects are:</p>
+              <ul>
+                <li>Objects returned by the TIM API as retained objects (e.g.
+                  <code>terminal</code>-instance created with
+                  <code>ta_terminal_create</code>, or a
+                  <code>hardware_information_response</code>-instance returned by
+                  <code>ta_terminal_hardware_information</code>).</li>
+                <li>Objects that the user explicitly retained by calling
+                  <code>ta_object_retain</code>. Basically each
+                  <code>ta_object_retain</code> must be paired with a
+                  <code>ta_object_release</code>. The TIM API tells you if returned objects are already retained or not. An object that hasn't been retained,
+                  must not be released (would lead to errors)! Objects that are returned as not-retained are to read immediately
+                  or to explictely retain with
+                  <code>ta_object_retain</code>.</li>
+              </ul>
+              <p>(see header-documentation or this doxygen-dok to determine, if objects are retained / not retained. Most IDE
+                support doxygen of header-documentation and will show these information while coding).</p>
+            </div>
+            <div class="col-md-6">
+              <p>Following an example of memory management. Shown by using a list:</p>
+              <pre><code class="language-{.c}">/* --- Create list -------------------------------------------------- */
+ta_object_t myList = ta_object_invalid;
+ta_list_create(&amp;myList);
+
+/* --- Add an integer ----------------------------------------------- */
+// Create an object of type integer, since list can only contain 
+// ta_object_t-instances
+ta_object_t myInteger = ta_object_invalid;
+ta_integer_create(&amp;myInteger, 1234);
+ta_list_add(myList, myInteger);
+
+// Important: User must release the integer-object. Either now or later.
+ta_object_release(myInteger); 
+
+/* --- Get size of list --------------------------------------------- */
+size_t myListSize;
+ta_list_get_count(myList, &amp;myListSize);
+
+/* --- Receive first element of list -------------------------------- */
+ta_object_t myListElement = ta_object_invalid;
+ta_list_get_at(myList, 0, &amp;myListElement);
+
+// do something with element...
+// - user is responsible to know how to read / 
+//   process retreived objects from list
+// - in our case here it`s an integer-object
+int64_t myIntValue = 0;
+ta_integer_get_value(myListElement, &amp;myIntValue);
+printf(&quot;MyIntValue: %Id\n&quot;, myIntValue);
+
+// Important: 
+// - The list returns list elements as not retained!
+// - List element must not be released!   
+
+/* --- Release list ------------------------------------------------- */
+ta_object_release(myList);
+
+// - At this point, myListElement is no longer (reliably) accessible. 
+//   Since list has been released, all its elements have been released 
+//   as well, if no one else is retaining the list elements.
+
+// - If user still wants to use myListElement, he needs to call 
+//   ta_object_retain(myListElement) right after receiving it from 
+//   the list. In this case, he later needs to release the list 
+//   element with ta_object_release(myListElement).
+</code></pre>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6"></div>
+          </div>
+        </section>
+        <section id="datatypes">
+          <h2>
+            <a name="datatypes"></a>Data Types in TIM API C</h2>
+          <div class="row">
+            <div class="col-md-6">
+              <p>C doesn't provide data types / collections like string, boolean, list, timedate etc. Therefore the TIM API
+                uses and provides a set of basic data types. In various places the TIM API requires or returns these data
+                types.</p>
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>Data Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <strong>boolean</strong>
+                    </td>
+                    <td>A Boolean type (true/false)</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <strong>integer</strong>
+                    </td>
+                    <td>An Integer type (64-bit)</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <strong>list</strong>
+                    </td>
+                    <td>A list collection. Supports create, add, get, index of, remove and more.</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <strong>map</strong>
+                    </td>
+                    <td>A map collection. Supports create, set, get, has, remove and more.</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <strong>object</strong>
+                    </td>
+                    <td>The base object (see [Objects in TIM API`C`.</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <strong>string</strong>
+                    </td>
+                    <td>A String type. Null-terminated character sequence.</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <strong>timedate</strong>
+                    </td>
+                    <td>Time-Date type.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+
+      </main>
+
+    </div>
+  </div>
+</body>
+
+</html>
