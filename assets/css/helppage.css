@@ -87,7 +87,7 @@ main {
 
 #langSel {
     width: 125px;
-    height: 75px;   
+    height: 125px;   
     margin-left: 110px;
     background-color: rgb(238, 238, 238);
     text-align: right;
@@ -97,6 +97,7 @@ main {
 
 .langList {
     list-style-type: none;
+    padding-left: 10px;
     font-size: 110%;
 }
 
