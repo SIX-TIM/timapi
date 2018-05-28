@@ -11,7 +11,7 @@
         tmpTargetPage = tmpTargetPage.substring(1);
     if (tmpTargetPage.indexOf(":") != -1 || (tmpTargetPage != "" && !validURL(tmpTargetPage)))
         tmpTargetPage = "undefined";
-    targetPage = tmpTargetPage;
+    targetPage = tmpTargetPage + window.location.hash;
     function validURL(url) {
         try {
             url = decodeURIComponent(url);
