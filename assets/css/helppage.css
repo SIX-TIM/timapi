@@ -222,6 +222,19 @@ code {
     left: 0;
 }
 
+.syncMethod {
+    font-weight: bold;
+}
+
+.asyncMethod {
+    font-weight: 100;
+}
+
+.completedMethod {
+    font-style: italic;
+    font-weight: 100;
+}
+
 @media (min-width: 768px) {
     #menu-collapse {
         -moz-columns: 3 auto; 
