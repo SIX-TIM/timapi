@@ -475,14 +475,14 @@ SecuredConnection = On
                 <li>
                   <p>
                     <strong>Synchronous</strong>
-                    <br> Method calls are blocking and return after operation is finished successfully or throw a TimException
+                    <br /> Method calls are blocking and return after operation is finished successfully or throw a TimException
                     otherwise.
                   </p>
                 </li>
                 <li>
                   <p>
                     <strong>Asynchronous</strong>
-                    <br>Method returns immediately after the operation has started or throws a
+                    <br />Method returns immediately after the operation has started or throws a
                     <code><a href="Doc/index.html?com/six/timapi/TimException.html">TimException</a></code> otherwise. A listener-event-method will be called after operation is finished successfully. All listener-event-methods
                     contain a
                     <code><a href="Doc/index.html?com/six/timapi/TimEvent.html">TimEvent</a></code>. In case of failure a
@@ -565,9 +565,9 @@ terminal.transactionAsync(com.six.constants.TransactionType.PURCHASE,
                 <thead>
                   <tr>
                     <th>
-                      <strong>Sync method</strong>
-                      <br><span class="asyncMethod">Async method</span>
-                      <br><span class="completedMethod">Completed event</span></th>
+                      <strong>Sync method</strong><br />
+                      <span class="asyncMethod">Async method</span><br />
+                      <span class="completedMethod">Completed event</span></th>
                     </th>
                     <th>Description</th>
                   </tr>
@@ -575,170 +575,170 @@ terminal.transactionAsync(com.six.constants.TransactionType.PURCHASE,
                 <tbody>
                   <tr>
                     <td>
-                      <a href="Doc/index.html?com/six/timapi/Terminal.html#activate--" class="syncMethod">activate</a>
-                      <br><a href="Doc/index.html?com/six/timapi/Terminal.html#activateAsync--" class="asyncMethod">activateAsync</a>
-                      <br><a href="Doc/index.html?com/six/timapi/TerminalListener.html#activateCompleted-com.six.timapi.TimEvent-com.six.timapi.ActivateResponse-" class="completedMethod">activateCompleted</a>
+                      <a href="Doc/index.html?com/six/timapi/Terminal.html#activate--" class="syncMethod">activate</a><br />
+                      <a href="Doc/index.html?com/six/timapi/Terminal.html#activateAsync--" class="asyncMethod">activateAsync</a><br />
+                      <a href="Doc/index.html?com/six/timapi/TerminalListener.html#activateCompleted-com.six.timapi.TimEvent-com.six.timapi.ActivateResponse-" class="completedMethod">activateCompleted</a>
                     </td>
                     <td>Open a user shift.</td>
                   </tr>
                   <tr>
                     <td>
-                      <a href="Doc/index.html?com/six/timapi/Terminal.html#applicationInformation--" class="syncMethod">applicationInformation</a>
-                      <br><a href="Doc/index.html?com/six/timapi/Terminal.html#applicationInformationAsync--" class="asyncMethod">applicationInformationAsync</a>
-                      <br><a href="Doc/index.html?com/six/timapi/TerminalListener.html#applicationInformationCompleted-com.six.timapi.TimEvent-" class="completedMethod">applicationInformationCompleted</a>
+                      <a href="Doc/index.html?com/six/timapi/Terminal.html#applicationInformation--" class="syncMethod">applicationInformation</a><br />
+                      <a href="Doc/index.html?com/six/timapi/Terminal.html#applicationInformationAsync--" class="asyncMethod">applicationInformationAsync</a><br />
+                      <a href="Doc/index.html?com/six/timapi/TerminalListener.html#applicationInformationCompleted-com.six.timapi.TimEvent-" class="completedMethod">applicationInformationCompleted</a>
                     </td>
                     <td>Request the list of brands available on the terminal.</td>
                   </tr>
                   <tr>
                     <td>
-                      <a href="Doc/index.html?com/six/timapi/Terminal.html#balance--" class="syncMethod">balance</a>
-                      <br><a href="Doc/index.html?com/six/timapi/Terminal.html#balanceAsync--" class="asyncMethod">balanceAsync</a>
-                      <br><a href="Doc/index.html?com/six/timapi/TerminalListener.html#balanceCompleted-com.six.timapi.TimEvent-com.six.timapi.BalanceResponse-" class="completedMethod">balanceCompleted</a>
+                      <a href="Doc/index.html?com/six/timapi/Terminal.html#balance--" class="syncMethod">balance</a><br />
+                      <a href="Doc/index.html?com/six/timapi/Terminal.html#balanceAsync--" class="asyncMethod">balanceAsync</a><br />
+                      <a href="Doc/index.html?com/six/timapi/TerminalListener.html#balanceCompleted-com.six.timapi.TimEvent-com.six.timapi.BalanceResponse-" class="completedMethod">balanceCompleted</a>
                     </td>
-                    <td>Force the EFT Terminal to transmit all transactions to the<br> host system as well to do the daily closing.</td>
+                    <td>Force the EFT Terminal to transmit all transactions to the<br /> host system as well to do the daily closing.</td>
                   </tr>
                   <tr>
                     <td>
-                      <a href="Doc/index.html?com/six/timapi/Terminal.html#changeSettings-java.util.Map-" class="syncMethod">changeSettings</a>
-                      <br><a href="Doc/index.html?com/six/timapi/Terminal.html#changeSettingsAsync-java.util.Map-" class="asyncMethod">changeSettingsAsync</a>
-                      <br><a href="Doc/index.html?com/six/timapi/TerminalListener.html#changeSettingsCompleted-com.six.timapi.TimEvent-" class="completedMethod">changeSettingsCompleted</a>
+                      <a href="Doc/index.html?com/six/timapi/Terminal.html#changeSettings-java.util.Map-" class="syncMethod">changeSettings</a><br />
+                      <a href="Doc/index.html?com/six/timapi/Terminal.html#changeSettingsAsync-java.util.Map-" class="asyncMethod">changeSettingsAsync</a><br />
+                      <a href="Doc/index.html?com/six/timapi/TerminalListener.html#changeSettingsCompleted-com.six.timapi.TimEvent-" class="completedMethod">changeSettingsCompleted</a>
                     </td>
                     <td>Change configuration parameters of the EFT Terminal.</td>
                   </tr>
                   <tr>
                     <td>
-                      <a href="Doc/index.html?com/six/timapi/Terminal.html#commit--" class="syncMethod">commit</a>
-                      <br><a href="Doc/index.html?com/six/timapi/Terminal.html#commitAsync--" class="asyncMethod">commitAsync</a>
-                      <br><a href="Doc/index.html?com/six/timapi/TerminalListener.html#commitCompleted-com.six.timapi.TimEvent-com.six.timapi.PrintData-" class="completedMethod">commitCompleted</a>
+                      <a href="Doc/index.html?com/six/timapi/Terminal.html#commit--" class="syncMethod">commit</a><br />
+                      <a href="Doc/index.html?com/six/timapi/Terminal.html#commitAsync--" class="asyncMethod">commitAsync</a><br />
+                      <a href="Doc/index.html?com/six/timapi/TerminalListener.html#commitCompleted-com.six.timapi.TimEvent-com.six.timapi.PrintData-" class="completedMethod">commitCompleted</a>
                     </td>
                     <td>Perform Commit-operation after a successful Transaction call.</td>
                   </tr>
                   <tr>
                     <td>
-                      <a href="Doc/index.html?com/six/timapi/Terminal.html#connect--" class="syncMethod">connect</a>
-                      <br><a href="Doc/index.html?com/six/timapi/Terminal.html#connectAsync--" class="asyncMethod">connectAsync</a>
-                      <br><a href="Doc/index.html?com/six/timapi/TerminalListener.html#connectCompleted-com.six.timapi.TimEvent-" class="completedMethod">connectCompleted</a>
+                      <a href="Doc/index.html?com/six/timapi/Terminal.html#connect--" class="syncMethod">connect</a><br />
+                      <a href="Doc/index.html?com/six/timapi/Terminal.html#connectAsync--" class="asyncMethod">connectAsync</a><br />
+                      <a href="Doc/index.html?com/six/timapi/TerminalListener.html#connectCompleted-com.six.timapi.TimEvent-" class="completedMethod">connectCompleted</a>
                     </td>
                     <td>Initiates a connection to the EFT Terminal.</td>
                   </tr>
                   <tr>
                     <td>
-                      <a href="Doc/index.html?com/six/timapi/Terminal.html#counterRequest-com.six.timapi.constants.CounterType-" class="syncMethod">counterRequest</a>
-                      <br><a href="Doc/index.html?com/six/timapi/Terminal.html#counterRequestAsync-com.six.timapi.constants.CounterType-" class="asyncMethod">counterRequestAsync</a>
-                      <br><a href="Doc/index.html?com/six/timapi/TerminalListener.html#counterRequestCompleted-com.six.timapi.TimEvent-com.six.timapi.Counters-" class="completedMethod">counterRequestCompleted</a>
+                      <a href="Doc/index.html?com/six/timapi/Terminal.html#counterRequest-com.six.timapi.constants.CounterType-" class="syncMethod">counterRequest</a><br />
+                      <a href="Doc/index.html?com/six/timapi/Terminal.html#counterRequestAsync-com.six.timapi.constants.CounterType-" class="asyncMethod">counterRequestAsync</a><br />
+                      <a href="Doc/index.html?com/six/timapi/TerminalListener.html#counterRequestCompleted-com.six.timapi.TimEvent-com.six.timapi.Counters-" class="completedMethod">counterRequestCompleted</a>
                     </td>
                     <td>Get counter information`s from the EFT Terminal.</td>
                   </tr>
                   <tr>
                     <td>
-                      <a href="Doc/index.html?com/six/timapi/Terminal.html#dccRates--" class="syncMethod">dccRates</a>
-                      <br><a href="Doc/index.html?com/six/timapi/Terminal.html#dccRatesAsync--" class="asyncMethod">dccRatesAsync</a>
-                      <br><a href="Doc/index.html?com/six/timapi/TerminalListener.html#dccRatesCompleted-com.six.timapi.TimEvent-com.six.timapi.PrintData-" class="completedMethod">dccRatesCompleted</a>
+                      <a href="Doc/index.html?com/six/timapi/Terminal.html#dccRates--" class="syncMethod">dccRates</a><br />
+                      <a href="Doc/index.html?com/six/timapi/Terminal.html#dccRatesAsync--" class="asyncMethod">dccRatesAsync</a><br />
+                      <a href="Doc/index.html?com/six/timapi/TerminalListener.html#dccRatesCompleted-com.six.timapi.TimEvent-com.six.timapi.PrintData-" class="completedMethod">dccRatesCompleted</a>
                     </td>
                     <td>Request DCC rates from the EFT Terminal.</td>
                   </tr>
                   <tr>
                     <td>
-                      <a href="Doc/index.html?com/six/timapi/Terminal.html#deactivate--" class="syncMethod">deactivate</a>
-                      <br><a href="Doc/index.html?com/six/timapi/Terminal.html#deactivateAsync--" class="asyncMethod">deactivateAsync</a>
-                      <br><a href="Doc/index.html?com/six/timapi/TerminalListener.html#deactivateCompleted-com.six.timapi.TimEvent-com.six.timapi.DeactivateResponse-" class="completedMethod">deactivateCompleted</a>
+                      <a href="Doc/index.html?com/six/timapi/Terminal.html#deactivate--" class="syncMethod">deactivate</a><br />
+                      <a href="Doc/index.html?com/six/timapi/Terminal.html#deactivateAsync--" class="asyncMethod">deactivateAsync</a><br />
+                      <a href="Doc/index.html?com/six/timapi/TerminalListener.html#deactivateCompleted-com.six.timapi.TimEvent-com.six.timapi.DeactivateResponse-" class="completedMethod">deactivateCompleted</a>
                     </td>
                     <td>Close a user shift.</td>
                   </tr>
                   <tr>
                     <td>
-                      <a href="Doc/index.html?com/six/timapi/Terminal.html#disconnect--" class="syncMethod">disconnect</a>
-                      <br><a href="Doc/index.html?com/six/timapi/Terminal.html#disconnectAsync--" class="asyncMethod">disconnectAsync</a>
-                      <br><a href="Doc/index.html?com/six/timapi/TerminalListener.html#disconnected-com.six.timapi.Terminal-com.six.timapi.TimException-" class="completedMethod">disconnected</a>
+                      <a href="Doc/index.html?com/six/timapi/Terminal.html#disconnect--" class="syncMethod">disconnect</a><br />
+                      <a href="Doc/index.html?com/six/timapi/Terminal.html#disconnectAsync--" class="asyncMethod">disconnectAsync</a><br />
+                      <a href="Doc/index.html?com/six/timapi/TerminalListener.html#disconnected-com.six.timapi.Terminal-com.six.timapi.TimException-" class="completedMethod">disconnected</a>
                     </td>
                     <td>Interrupts the connection to the EFT Terminal.</td>
                   </tr>
                   <tr>
                     <td>
-                      <a href="Doc/index.html?com/six/timapi/Terminal.html#hardwareInformation--" class="syncMethod">hardwareInformation</a>
-                      <br><a href="Doc/index.html?com/six/timapi/Terminal.html#hardwareInformationAsync--" class="asyncMethod">hardwareInformationAsync</a>
-                      <br><a href="Doc/index.html?com/six/timapi/TerminalListener.html#hardwareInformationCompleted-com.six.timapi.TimEvent-com.six.timapi.HardwareInformationResponse-" class="completedMethod">hardwareInformationCompleted</a>
+                      <a href="Doc/index.html?com/six/timapi/Terminal.html#hardwareInformation--" class="syncMethod">hardwareInformation</a><br />
+                      <a href="Doc/index.html?com/six/timapi/Terminal.html#hardwareInformationAsync--" class="asyncMethod">hardwareInformationAsync</a><br />
+                      <a href="Doc/index.html?com/six/timapi/TerminalListener.html#hardwareInformationCompleted-com.six.timapi.TimEvent-com.six.timapi.HardwareInformationResponse-" class="completedMethod">hardwareInformationCompleted</a>
                     </td>
                     <td>Get hardware information from the EFT Terminal.</td>
                   </tr>
                   <tr>
                     <td>
-                      <a href="Doc/index.html?com/six/timapi/Terminal.html#login--" class="syncMethod">login</a>
-                      <br><a href="Doc/index.html?com/six/timapi/Terminal.html#loginAsync--" class="asyncMethod">loginAsync</a>
-                      <br><a href="Doc/index.html?com/six/timapi/TerminalListener.html#loginCompleted-com.six.timapi.TimEvent-" class="completedMethod">loginCompleted</a>
+                      <a href="Doc/index.html?com/six/timapi/Terminal.html#login--" class="syncMethod">login</a><br />
+                      <a href="Doc/index.html?com/six/timapi/Terminal.html#loginAsync--" class="asyncMethod">loginAsync</a><br />
+                      <a href="Doc/index.html?com/six/timapi/TerminalListener.html#loginCompleted-com.six.timapi.TimEvent-" class="completedMethod">loginCompleted</a>
                     </td>
-                    <td>Activate a communication session between the ECR and<br> the terminal.</td>
+                    <td>Activate a communication session between the ECR and<br /> the terminal.</td>
                   </tr>
                   <tr>
                     <td>
-                      <a href="Doc/index.html?com/six/timapi/Terminal.html#logout--" class="syncMethod">logout</a>
-                      <br><a href="Doc/index.html?com/six/timapi/Terminal.html#logoutAsync--" class="asyncMethod">logoutAsync</a>
-                      <br><a href="Doc/index.html?com/six/timapi/TerminalListener.html#logoutCompleted-com.six.timapi.TimEvent-" class="completedMethod">logoutCompleted</a>
+                      <a href="Doc/index.html?com/six/timapi/Terminal.html#logout--" class="syncMethod">logout</a><br />
+                      <a href="Doc/index.html?com/six/timapi/Terminal.html#logoutAsync--" class="asyncMethod">logoutAsync</a><br />
+                      <a href="Doc/index.html?com/six/timapi/TerminalListener.html#logoutCompleted-com.six.timapi.TimEvent-" class="completedMethod">logoutCompleted</a>
                     </td>
-                    <td>Terminate an active communication session between the ECR<br>and the terminal.</td>
+                    <td>Terminate an active communication session between the ECR<br />and the terminal.</td>
                   </tr>
                   <tr>
                     <td>
-                      <a href="Doc/index.html?com/six/timapi/Terminal.html#reboot--" class="syncMethod">reboot</a>
-                      <br><a href="Doc/index.html?com/six/timapi/Terminal.html#rebootAsync--" class="asyncMethod">rebootAsync</a>
-                      <br><a href="Doc/index.html?com/six/timapi/TerminalListener.html#rebootCompleted-com.six.timapi.TimEvent-" class="completedMethod">rebootCompleted</a>
+                      <a href="Doc/index.html?com/six/timapi/Terminal.html#reboot--" class="syncMethod">reboot</a><br />
+                      <a href="Doc/index.html?com/six/timapi/Terminal.html#rebootAsync--" class="asyncMethod">rebootAsync</a><br />
+                      <a href="Doc/index.html?com/six/timapi/TerminalListener.html#rebootCompleted-com.six.timapi.TimEvent-" class="completedMethod">rebootCompleted</a>
                     </td>
                     <td>Force the EFT Terminal to reboot.</td>
                   </tr>
                   <tr>
                     <td>
-                      <a href="Doc/index.html?com/six/timapi/Terminal.html#receiptRequest-com.six.timapi.constants.ReceiptRequestType-" class="syncMethod">receiptRequest</a>
-                      <br><a href="Doc/index.html?com/six/timapi/Terminal.html#receiptRequestAsync-com.six.timapi.constants.ReceiptRequestType-" class="asyncMethod">receiptRequestAsync</a>
-                      <br><a href="Doc/index.html?com/six/timapi/TerminalListener.html#receiptRequestCompleted-com.six.timapi.TimEvent-com.six.timapi.ReceiptRequestResponse-" class="completedMethod">receiptRequestCompleted</a>
+                      <a href="Doc/index.html?com/six/timapi/Terminal.html#receiptRequest-com.six.timapi.constants.ReceiptRequestType-" class="syncMethod">receiptRequest</a><br />
+                      <a href="Doc/index.html?com/six/timapi/Terminal.html#receiptRequestAsync-com.six.timapi.constants.ReceiptRequestType-" class="asyncMethod">receiptRequestAsync</a><br />
+                      <a href="Doc/index.html?com/six/timapi/TerminalListener.html#receiptRequestCompleted-com.six.timapi.TimEvent-com.six.timapi.ReceiptRequestResponse-" class="completedMethod">receiptRequestCompleted</a>
                     </td>
                     <td>Receive the latest receipt or a list of silent receipts.</td>
                   </tr>
                   <tr>
                     <td>
-                      <a href="Doc/index.html?com/six/timapi/Terminal.html#reconciliation--" class="syncMethod">reconciliation</a>
-                      <br><a href="Doc/index.html?com/six/timapi/Terminal.html#reconciliationAsync--" class="asyncMethod">reconciliationAsync</a>
-                      <br><a href="Doc/index.html?com/six/timapi/TerminalListener.html#reconciliationCompleted-com.six.timapi.TimEvent-com.six.timapi.ReconciliationResponse-" class="completedMethod">reconciliationCompleted</a>
+                      <a href="Doc/index.html?com/six/timapi/Terminal.html#reconciliation--" class="syncMethod">reconciliation</a><br />
+                      <a href="Doc/index.html?com/six/timapi/Terminal.html#reconciliationAsync--" class="asyncMethod">reconciliationAsync</a><br />
+                      <a href="Doc/index.html?com/six/timapi/TerminalListener.html#reconciliationCompleted-com.six.timapi.TimEvent-com.six.timapi.ReconciliationResponse-" class="completedMethod">reconciliationCompleted</a>
                     </td>
-                    <td>Force the EFT Terminal to transmit all financial transactions<br> to the host system.</td>
+                    <td>Force the EFT Terminal to transmit all financial transactions<br /> to the host system.</td>
                   </tr>
                   <tr>
                     <td>
-                      <a href="Doc/index.html?com/six/timapi/Terminal.html#reconfig--" class="syncMethod">reconfig</a>
-                      <br><a href="Doc/index.html?com/six/timapi/Terminal.html#reconfigAsync--" class="asyncMethod">reconfigAsync</a>
-                      <br><a href="Doc/index.html?com/six/timapi/TerminalListener.html#reconfigCompleted-com.six.timapi.TimEvent-com.six.timapi.PrintData-" class="completedMethod">reconfigCompleted</a>
+                      <a href="Doc/index.html?com/six/timapi/Terminal.html#reconfig--" class="syncMethod">reconfig</a><br />
+                      <a href="Doc/index.html?com/six/timapi/Terminal.html#reconfigAsync--" class="asyncMethod">reconfigAsync</a><br />
+                      <a href="Doc/index.html?com/six/timapi/TerminalListener.html#reconfigCompleted-com.six.timapi.TimEvent-com.six.timapi.PrintData-" class="completedMethod">reconfigCompleted</a>
                     </td>
                     <td>Force the EFT Terminal to get the configuration from the service center.</td>
                   </tr>
                   <tr>
                     <td>
-                      <a href="Doc/index.html?com/six/timapi/Terminal.html#rollback--" class="syncMethod">rollback</a>
-                      <br><a href="Doc/index.html?com/six/timapi/Terminal.html#rollbackAsync--" class="asyncMethod">rollbackAsync</a>
-                      <br><a href="Doc/index.html?com/six/timapi/TerminalListener.html#rollbackCompleted-com.six.timapi.TimEvent-com.six.timapi.PrintData-" class="completedMethod">rollbackCompleted</a>
+                      <a href="Doc/index.html?com/six/timapi/Terminal.html#rollback--" class="syncMethod">rollback</a><br />
+                      <a href="Doc/index.html?com/six/timapi/Terminal.html#rollbackAsync--" class="asyncMethod">rollbackAsync</a><br />
+                      <a href="Doc/index.html?com/six/timapi/TerminalListener.html#rollbackCompleted-com.six.timapi.TimEvent-com.six.timapi.PrintData-" class="completedMethod">rollbackCompleted</a>
                     </td>
-                    <td>Prevent a transaction from being committed to the transaction<br>
+                    <td>Prevent a transaction from being committed to the transaction<br />
                        log and generates a technical reversal of the authorization.</td>
                   </tr>
                   <tr>
                     <td>
-                      <a href="Doc/index.html?com/six/timapi/Terminal.html#softwareUpdate--" class="syncMethod">softwareUpdate</a>
-                      <br><a href="Doc/index.html?com/six/timapi/Terminal.html#softwareUpdateAsync--" class="asyncMethod">softwareUpdateAsync</a>
-                      <br><a href="Doc/index.html?com/six/timapi/TerminalListener.html#softwareUpdateCompleted-com.six.timapi.TimEvent-com.six.timapi.constants.UpdateStatus-" class="completedMethod">softwareUpdateCompleted</a>
+                      <a href="Doc/index.html?com/six/timapi/Terminal.html#softwareUpdate--" class="syncMethod">softwareUpdate</a><br />
+                      <a href="Doc/index.html?com/six/timapi/Terminal.html#softwareUpdateAsync--" class="asyncMethod">softwareUpdateAsync</a><br />
+                      <a href="Doc/index.html?com/six/timapi/TerminalListener.html#softwareUpdateCompleted-com.six.timapi.TimEvent-com.six.timapi.constants.UpdateStatus-" class="completedMethod">softwareUpdateCompleted</a>
                     </td>
                     <td>Force the EFT Terminal to start a Software Update.</td>
                   </tr>
                   <tr>
                     <td>
-                      <a href="Doc/index.html?com/six/timapi/Terminal.html#systemInformation--" class="syncMethod">systemInformation</a>
-                      <br><a href="Doc/index.html?com/six/timapi/Terminal.html#systemInformationAsync--" class="asyncMethod">systemInformationAsync</a>
-                      <br><a href="Doc/index.html?com/six/timapi/TerminalListener.html#systemInformationCompleted-com.six.timapi.TimEvent-com.six.timapi.SystemInformationResponse-" class="completedMethod">systemInformationCompleted</a>
+                      <a href="Doc/index.html?com/six/timapi/Terminal.html#systemInformation--" class="syncMethod">systemInformation</a><br />
+                      <a href="Doc/index.html?com/six/timapi/Terminal.html#systemInformationAsync--" class="asyncMethod">systemInformationAsync</a><br />
+                      <a href="Doc/index.html?com/six/timapi/TerminalListener.html#systemInformationCompleted-com.six.timapi.TimEvent-com.six.timapi.SystemInformationResponse-" class="completedMethod">systemInformationCompleted</a>
                     </td>
                     <td>Request system information from the EFT Terminal.</td>
                   </tr>
                   <tr>
                     <td>
-                      <a href="Doc/index.html?com/six/timapi/Terminal.html#transaction-com.six.timapi.constants.TransactionType-com.six.timapi.Amount-" class="syncMethod">transaction</a>
-                      <br><a href="Doc/index.html?com/six/timapi/Terminal.html#transactionAsync-com.six.timapi.constants.TransactionType-com.six.timapi.Amount-" class="asyncMethod">transactionAsync</a>
-                      <br><a href="Doc/index.html?com/six/timapi/TerminalListener.html#transactionCompleted-com.six.timapi.TimEvent-com.six.timapi.TransactionResponse-" class="completedMethod">transactionCompleted</a>
+                      <a href="Doc/index.html?com/six/timapi/Terminal.html#transaction-com.six.timapi.constants.TransactionType-com.six.timapi.Amount-" class="syncMethod">transaction</a><br />
+                      <a href="Doc/index.html?com/six/timapi/Terminal.html#transactionAsync-com.six.timapi.constants.TransactionType-com.six.timapi.Amount-" class="asyncMethod">transactionAsync</a><br />
+                      <a href="Doc/index.html?com/six/timapi/TerminalListener.html#transactionCompleted-com.six.timapi.TimEvent-com.six.timapi.TransactionResponse-" class="completedMethod">transactionCompleted</a>
                     </td>
                     <td>Starts an EFT Terminal Transaction.</td>
                   </tr>
@@ -755,24 +755,24 @@ terminal.transactionAsync(com.six.constants.TransactionType.PURCHASE,
               <table class="table">
                 <thead>
                   <tr>
-                    <th>Callback-Function</th>
+                    <th>Listener-event</th>
                     <th>Description</th>
                   </tr>
-                </thead>¨
+                </thead>
                 <tbody>
                     <tr>
                       <td>
                         <a href="Doc/index.html?com/six/timapi/DefaultTerminalListener.html#requestCompleted-com.six.timapi.TimEvent-java.lang.Object-" class="completedMethod">requestCompleted</a>
                       </td>
-                      <td>Operation started by an asynchronous function has finished.<br>
-                          Applications can use both operation specific completion callback<br>
+                      <td>Operation started by an asynchronous function has finished.<br />
+                          Applications can use both operation specific completion callback<br />
                           in combination with this generic completion callback.</td>
                     </tr>
                     <tr>
                       <td>
                         <a href="Doc/index.html?com/six/timapi/TerminalListener.html#terminalStatusChanged-com.six.timapi.Terminal-" class="completedMethod">terminalStatusChanged</a>
                       </td>
-                      <td>The terminal status has changed. The new status can be<br> 
+                      <td>The terminal status has changed. The new status can be<br /> 
                           retrieved from the TerminalStatus property.</td>
                     </tr>
                   </tbody>

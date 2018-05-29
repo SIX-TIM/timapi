@@ -137,17 +137,17 @@
           <div class="row">
             <div class="col-md-6">
               <p>The configuration of the
-                <code>terminal</code> can be done by creating and configuring a
-                <code>terminal settings</code>-instance. The
-                <code>terminal settings</code>-instance must then be passed to the
-                <code>terminal_create</code>function.</p>
+                <code><a href="Doc/terminal_8h.html">terminal</a></code> can be done by creating and configuring a
+                <code><a href="Doc/terminal__settings_8h.html">terminal_settings</a></code>-instance. The
+                <code><a href="Doc/terminal__settings_8h.html">terminal_settings</a></code>-instance must then be passed to the
+                <code><a href="Doc/terminal_8h.html#ab71047155839a18148d9a41406db42b4">terminal_create</a></code>function.</p>
               <p>Once a
-                <code>terminal</code>-instance has been created with a
-                <code>terminal settings</code>-instance, the settings can not be changed anymore. Changes to the
-                <code>terminal settings</code>-instance will be ignored.</p>
+                <code><a href="Doc/terminal_8h.html">terminal</a></code>-instance has been created with a
+                <code><a href="Doc/terminal__settings_8h.html">terminal_settings</a></code>-instance, the settings can not be changed anymore. Changes to the
+                <code><a href="Doc/terminal__settings_8h.html">terminal_settings</a></code>-instance will be ignored.</p>
               <p>The network and guides configuration are explained in the following two chapters. For further information refer
                 to
-                <code>terminal settings</code>.</p>
+                <code><a href="Doc/terminal__settings_8h.html">terminal_settings</a></code>.</p>
             </div>
           </div>
         </section>
@@ -185,9 +185,9 @@
           <div class="row">
             <div class="col-md-6">
               <p>There are various
-                <code>guides</code> covering different use case scenarios. The guide retail (
-                <code>ta_c_guide_retail</code>) is the basic guide and is activated as default. With
-                <code>ta_terminal_settings_set_guides</code> the guides can be configured. Important: the configuration needs to include all desired guides (including
+                <code><a href="Doc/guides_8h.html">guides</a></code> covering different use case scenarios. The guide retail (
+                <code><a href="Doc/guides_8h.html#a3094ffa1812abd0acaa42bde196bf996">ta_c_guide_retail</a></code>) is the basic guide and is activated as default. With
+                <code><a href="Doc/terminal__settings_8h.html#a5051c4f772fb6434d82a27850db421de">ta_terminal_settings_set_guides</a></code> the guides can be configured. Important: the configuration needs to include all desired guides (including
                 the retail guide).</p>
             </div>
             <div class="col-md-6">
@@ -212,7 +212,7 @@ ta_object_release(settings);
 
 // in the end release terminal as well
 ta_oject_release(terminal);
-                </code>
+                </a></code>
               </pre>
             </div>
           </div>
@@ -230,28 +230,28 @@ ta_oject_release(terminal);
               <p>Follow these basic steps for using the TIM API:</p>
               <ol>
                 <li>Create
-                  <code>terminal_settings</code> and initialize connection parameters (see <a href="#setup">Setup Configuration</a>)
+                  <code><a href="Doc/terminal__settings_8h.html">terminal_settings</a></code> and initialize connection parameters (see <a href="#setup">Setup Configuration</a>)
                 </li>
                 <li>Create
-                  <code>terminal</code> instance using the created
-                  <code>terminal_settings</code>
+                  <code><a href="Doc/terminal_8h.html">terminal</a></code> instance using the created
+                  <code><a href="Doc/terminal__settings_8h.html">terminal_settings</a></code>
                 </li>
                 <li>Set some properties if needed:
                   <ul>
                     <li>set
-                      <code>pos_id</code>
+                      <code><a href="Doc/terminal_8h.html#ae4a64a53823f3de88c66c9780d96475d">pos_id</a></code>
                     </li>
                     <li>create
-                      <code>ecr_info</code> and add with
-                      <code>ta_terminal_add_ecr_data</code>
+                      <code><a href="Doc/ecr__info_8h.html">ecr_info</a></code> and add with
+                      <code><a href="Doc/terminal_8h.html#ac6e2071bf93b33885f8d678cfe12ab9b">ta_terminal_add_ecr_data</a></code>
                     </li>
                     <li>add listeners (
-                      <code>ta_terminal_add_listener</code>)</li>
+                      <code><a href="Doc/terminal_8h.html#a818466e97be59b5d4ecf9799d74b8074">ta_terminal_add_listener</a></code>)</li>
                   </ul>
                 </li>
                 <li>
-                  <code>Connect</code> and
-                  <code>login</code> This can be done automatically, when the first terminal operation is called or manually using the login
+                  <code><a href="Doc/terminal_8h.html#a73af37fdbac5972361a434cdabb83a36">Connect</a></code> and
+                  <code><a href="Doc/terminal_8h.html#a227343e36d8f4956c9342945109b3b26">login</a></code> This can be done automatically, when the first terminal operation is called or manually using the login
                   method.</li>
                 <li>Use terminal operation functions.</li>
                 </ol>
@@ -321,11 +321,11 @@ ta_oject_release(terminal);
                     <strong>Asynchronous</strong>
                     <br> Function call returns immediately after the operation has started successfully. A user-implemented callback
                     function will then be called, after operation has finished. All callback functions receive an
-                    <code>event</code> The
-                    <code>event</code> contains a
-                    <code>result_code</code> indicating if there were errors or not. The user-implemented callback function has to be registered
+                    <code><a href="Doc/structta__s__event.html">event</a></code> The
+                    <code><a href="Doc/structta__s__event.html">event</a></code> contains a
+                    <code><a href="Doc/result__code_8h.html#aebaf00d1ceef4b827866ca9de0bd3320">result_code</a></code> indicating if there were errors or not. The user-implemented callback function has to be registered
                     with
-                    <code>ta_terminal_add_listener</code>.</p>
+                    <code><a href="Doc/terminal_8h.html#a818466e97be59b5d4ecf9799d74b8074">ta_terminal_add_listener</a></code>.</p>
                 </li>
               </ol>
               <p>Function calls on the terminal perform synchronous by default. The asynchronous function has the same name
@@ -374,7 +374,7 @@ void mylistener_terminal_status_changed(ta_object_t terminal,	void *user_pointer
 	// implement your code to process status change here...
 	//printf(&quot; &gt; listener_terminal_status_changed\n&quot;);
 }
-</code></pre>
+</a></code></pre>
             </div>
           </div>
           <div class="row">
@@ -387,162 +387,257 @@ void mylistener_terminal_status_changed(ta_object_t terminal,	void *user_pointer
           <div class="row">
             <div class="col-md-6">
               <table class="table">
-                <thead>
-                  <tr>
-                    <th>Sync / Async function</th>
-                    <th>Callback-Function</th>
-                    <th>Description</th>
-                  </tr>
-                </thead>
+                  <thead>
+                      <tr>
+                        <th>
+                          <span class="syncMethod">Sync method</span><br />
+                          <span class="asyncMethod">Async method</span><br />
+                          <span class="completedMethod">Completed event</span></th>
+                        </th>
+                        <th>Description</th>
+                      </tr>
+                    </thead>
                 <tbody>
-                  <tr>
-                    <td>
-                      <strong>ta_terminal_activate</strong>
-                      <br>ta_terminal_activate_async</td>
-                    <td>activate_completed</td>
-                    <td>Open a user shift.</td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <strong>ta_terminal_application_information</strong>
-                      <br>ta_terminal_application_information_async</td>
-                    <td>pplication_information_completed</td>
-                    <td>Request the list of brands available on the terminal.</td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <strong>ta_terminal_balance</strong>
-                      <br>ta_terminal_balance_async</td>
-                    <td>balance_completed</td>
-                    <td>Force the EFT Terminal to transmit all transactions to the host system as well to do the daily closing.</td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <strong>ta_terminal_change_settings</strong>
-                      <br>ta_terminal_change_settings_async</td>
-                    <td>change_settings_completed</td>
-                    <td>Change configuration parameters of the EFT Terminal.</td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <strong>ta_terminal_commit</strong>
-                      <br>ta_terminal_commit_async</td>
-                    <td>commit_completed</td>
-                    <td>Perform Commit-operation after a successful Transaction call.</td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <strong>ta_terminal_counter_request</strong>
-                      <br>ta_terminal_counter_request_async</td>
-                    <td>counter_request_completed</td>
-                    <td>Get counter information`s from the EFT Terminal.</td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <strong>ta_terminal_connect</strong>
-                      <br>ta_terminal_connect_async</td>
-                    <td>connect_completed</td>
-                    <td>Initiates a connection to the EFT Terminal.</td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <strong>ta_terminal_dcc_rates</strong>
-                      <br>ta_terminal_dcc_rates_async</td>
-                    <td>dcc_rates_completed</td>
-                    <td>Request DCC rates from the EFT Terminal.</td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <strong>ta_terminal_deactivate</strong>
-                      <br>ta_terminal_deactivate_async</td>
-                    <td>deactivate_completed</td>
-                    <td>Close a user shift.</td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <strong>ta_terminal_disconnect</strong>
-                      <br>ta_terminal_disconnect_async</td>
-                    <td>disconnect_completed</td>
-                    <td>Interrupts the connection to the EFT Terminal.</td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <strong>ta_terminal_hardware_information</strong>
-                      <br>ta_terminal_hardware_information_async</td>
-                    <td>hardware_information_completed</td>
-                    <td>Get hardware information from the EFT Terminal.</td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <strong>ta_terminal_login</strong>
-                      <br>ta_terminal_login_async</td>
-                    <td>login_completed</td>
-                    <td>Activate a communication session between the ECR and the terminal.</td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <strong>ta_terminal_logout</strong>
-                      <br>ta_terminal_logout_async</td>
-                    <td>logout_completed</td>
-                    <td>Terminate an active communication session between the ECR and the terminal.</td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <strong>ta_terminal_reboot</strong>
-                      <br>ta_terminal_reboot_async</td>
-                    <td>reboot_completed</td>
-                    <td>Force the EFT Terminal to reboot.</td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <strong>ta_terminal_receipt_request</strong>
-                      <br>ta_terminal_receipt_request_async</td>
-                    <td>receipt_request_completed</td>
-                    <td>Receive the latest receipt or a list of silent receipts.</td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <strong>ta_terminal_reconciliation</strong>
-                      <br>ta_terminal_reconciliation_async</td>
-                    <td>reconciliation_completed</td>
-                    <td>Force the EFT Terminal to transmit all financial transactions to the host system.</td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <strong>ta_terminal_reconfig</strong>
-                      <br>ta_terminal_reconfig_async</td>
-                    <td>reconfig_completed</td>
-                    <td>Force the EFT Terminal to get the configuration from the service center.</td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <strong>ta_terminal_rollback</strong>
-                      <br>ta_terminal_rollback_async</td>
-                    <td>rollback_completed</td>
-                    <td>Prevent a transaction from being committed to the transaction log and generates a technical reversal
-                      of the authorization.</td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <strong>ta_terminal_software_update</strong>
-                      <br>ta_terminal_software_update_async</td>
-                    <td>software_update_completed</td>
-                    <td>Force the EFT Terminal to start a Software Update.</td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <strong>ta_terminal_system_information</strong>
-                      <br>ta_terminal_system_information_async</td>
-                    <td>system_information_completed</td>
-                    <td>Request system information from the EFT Terminal.</td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <strong>ta_terminal_transaction</strong>
-                      <br>ta_terminal_transaction_async</td>
-                    <td>transaction_completed` </td>
-                    <td>Starts an EFT Terminal Transaction.</td>
-                  </tr>
+                    <tr>
+                        <td>
+                            <a class="syncMethod" href="Doc/terminal_8h.html#a2bc6f9272859177eae06242f6838a753">ta_terminal_activate</a><br />
+                            <a class="asyncMethod" href="Doc/terminal_8h.html#ac2fa510e1fee32130e71db43dc175744">ta_terminal_activate_async</a>.<br />
+                            <a class="completedMethod" href="Doc/terminal__listener_8h.html#acbfefabfc85c91779a0f6293988ec9a8">activate_completed</a>
+                        </td>
+                        <td>
+                            Open a user shift.
+                        </td>
+                    </tr>
+                    <tr>
+                        </td>
+                        <td>
+                            <a class="syncMethod" href="Doc/terminal_8h.html#a28f11c630b476feeb2693d887edcdf10">ta_terminal_application_information</a><br />
+                            <a class="asyncMethod" href="Doc/terminal_8h.html#a736b061ade076923823e6da9a1cbd2f1">ta_terminal_application_information_async</a><br />
+                            <a class="completedMethod" href="Doc/terminal__listener_8h.html#ad53d815aff9026f1a6a2ce315214908c">application_information_completed</a>
+                        </td>
+                        <td>
+                            Request the list of brands available on the terminal.
+                        </td>
+                    </tr>
+                    <tr>
+                        </td>
+                        <td>
+                            <a class="syncMethod" href="Doc/terminal_8h.html#ac93126e2d5a90a6fd1d4c081c0466636">ta_terminal_balance</a><br />
+                            <a class="asyncMethod" href="Doc/terminal_8h.html#aa52006b12a61c14bb56254a0d3fd0c47">ta_terminal_balance_async</a><br />
+                            <a class="completedMethod" href="Doc/terminal__listener_8h.html#a1834394fe87abd900fd82c659d213159">balance_completed</a>
+                        </td>
+                        <td>
+                            Force the EFT Terminal to transmit all transactions<br /> 
+                            to the host system as well to do the daily closing.
+                        </td>
+                    </tr>
+                    <tr>
+                        </td>
+                        <td>
+                            <a class="syncMethod" href="Doc/terminal_8h.html#a0c0df37288b7864648dc2f4dda63fa5e">ta_terminal_change_settings</a><br />
+                            <a class="asyncMethod" href="Doc/terminal_8h.html#aba983a6d09878c6a8363d5f2d0371b69">ta_terminal_change_settings_async</a>.<br />
+                            <a class="completedMethod" href="Doc/terminal__listener_8h.html#a6c4a142eadf34bd6cb78592f93e976c0">change_settings_completed</a>
+                        </td>
+                        <td>
+                            Change configuration parameters of the EFT Terminal.
+                        </td>
+                    </tr>
+                    <tr>
+                        </td>
+                        <td>
+                            <a class="syncMethod" href="Doc/terminal_8h.html#a1a8cb225510ae56543926bc6ee871a63">ta_terminal_commit</a><br />
+                            <a class="asyncMethod" href="Doc/terminal_8h.html#ac28f0dfe2dd8d093536c8a9e57f8423f">ta_terminal_commit_async</a>.<br />
+                            <a class="completedMethod" href="Doc/terminal__listener_8h.html#a89b6799427e9efb30136d13bc6eb84e5">commit_completed</a>
+                        </td>
+                        <td>
+                            Perform Commit-operation after a successful<br /> 
+                            Transaction call.
+                        </td>
+                    </tr>
+                    <tr>
+                        </td>
+                        <td>
+                            <a class="syncMethod" href="Doc/terminal_8h.html#aa22d4a5410941aa1f84b079c41c1f55b">ta_terminal_counter_request</a><br />
+                            <a class="asyncMethod" href="Doc/terminal_8h.html#af41be7b077cedb58a088631663dbf562">ta_terminal_counter_request_async</a>.<br />
+                            <a class="completedMethod" href="Doc/terminal__listener_8h.html#a09e20367ed36fc49bdca81de067feb65">counter_request_completed</a>
+                        </td>
+                        <td>
+                            Get counter information's from the EFT Terminal.
+                        </td>
+                    </tr>
+                    <tr>
+                        </td>
+                        <td>
+                            <a class="syncMethod" href="Doc/terminal_8h.html#a73af37fdbac5972361a434cdabb83a36">ta_terminal_connect</a><br />
+                            <a class="asyncMethod" href="Doc/terminal_8h.html#a005d07c182cbb40410653a66c953b996">ta_terminal_connect_async</a><br />
+                            <a class="completedMethod" href="Doc/terminal__listener_8h.html#a9c366e642820ccbc75a0441a5a3ca021">connect_completed</a>
+                        </td>
+                        <td>
+                            Initiates a connection to the EFT Terminal.
+                        </td>
+                    </tr>
+                    <tr>
+                        </td>
+                        <td>
+                            <a class="syncMethod" href="Doc/terminal_8h.html#af78995ee3837fc8cc3d7d928ef0b3804">ta_terminal_dcc_rates</a><br />
+                            <a class="asyncMethod" href="Doc/terminal_8h.html#ad0430c3351e41f715f188a95ba418ac2">ta_terminal_dcc_rates_async</a>.<br />
+                            <a class="completedMethod" href="Doc/terminal__listener_8h.html#ae65f5d849b59b0bbd18e28050a427006">dcc_rates_completed</a>
+                        </td>
+                        <td>
+                            Request DCC rates from the EFT Terminal.
+                        </td>
+                    </tr>
+                    <tr>
+                        </td>
+                        <td>
+                            <a class="syncMethod" href="Doc/terminal_8h.html#aa1acaa7b5a171a50bc9545ee0298f10a">ta_terminal_deactivate</a><br />
+                            <a class="asyncMethod" href="Doc/terminal_8h.html#ac4eb1659867f8fee2f20eb55cbeed13d">ta_terminal_deactivate_async</a>.<br />
+                            <a class="completedMethod" href="Doc/terminal__listener_8h.html#ac15317299579c6557650d267b25facbd">deactivate_completed</a>
+                        </td>
+                        <td>
+                            Close a user shift.
+                        </td>
+                    </tr>
+                    <tr>
+                        </td>
+                        <td>
+                            <a class="syncMethod" href="Doc/terminal_8h.html#a856546d592c7e3a7d51f834520a286e0">ta_terminal_disconnect</a><br />
+                            <a class="asyncMethod" href="Doc/terminal_8h.html#a4eccddfb01b9acb6024668cc159c8b26">ta_terminal_disconnect_async</a><br />
+                            <a class="completedMethod" href="Doc/terminal__listener_8h.html#ac65708ebc5bcae749739890d941c4f9c">disconnect_completed</a>
+                        </td>
+                        <td>
+                            Interrupts the connection to the EFT Terminal.
+                        </td>
+                    </tr>
+                    <tr>
+                        </td>
+                        <td>
+                            <a class="syncMethod" href="Doc/terminal_8h.html#a76fe78ef3297a1c301d03402a183afe2">ta_terminal_hardware_information</a><br />
+                            <a class="asyncMethod" href="Doc/terminal_8h.html#a739132575842d8742f7760ce1413f9e7">ta_terminal_hardware_information_async</a>.<br />
+                            <a class="completedMethod" href="Doc/terminal__listener_8h.html#a24085b1a97376c5f5b81220495ef65b4">hardware_information_completed</a>
+                        </td>
+                        <td>
+                            Get hardware information from the EFT Terminal.
+                        </td>
+                    </tr>
+                    <tr>
+                        </td>
+                        <td>
+                            <a class="syncMethod" href="Doc/terminal_8h.html#a227343e36d8f4956c9342945109b3b26">ta_terminal_login</a><br />
+                            <a class="asyncMethod" href="Doc/terminal_8h.html#aae9210abb8b3ed7f13f35e77e5d8c502">ta_terminal_login_async</a>.<br />
+                            <a class="completedMethod" href="Doc/terminal__listener_8h.html#a466f9d64fe6dc475e92d7cce5da9e360">login_completed</a>
+                        </td>
+                        <td>
+                            Activate a communication session between the ECR and<br /> 
+                            the terminal.
+                        </td>
+                    </tr>
+                    <tr>
+                        </td>
+                        <td>
+                            <a class="syncMethod" href="Doc/terminal_8h.html#a1957cf8f3ef9f996d9aa023a66e89ffa">ta_terminal_logout</a><br />
+                            <a class="asyncMethod" href="Doc/terminal_8h.html#a696ded13c1a732bb781903f0ae0a9721">ta_terminal_logout_async</a>.<br />
+                            <a class="completedMethod" href="Doc/terminal__listener_8h.html#ac92b3442702ad01db62a5aa4ba629b77">logout_completed</a>
+                        </td>
+                        <td>
+                            Terminate an active communication session between the<br /> 
+                            ECR and the terminal.
+                        </td>
+                    </tr>
+                    <tr>
+                        </td>
+                        <td>
+                            <a class="syncMethod" href="Doc/terminal_8h.html#a0d4de25baac4b191068991c5859ffc36">ta_terminal_reboot</a><br />
+                            <a class="asyncMethod" href="Doc/terminal_8h.html#adef755038ce38dd80aa562c8ec60a3f9">ta_terminal_reboot_async</a>.<br />
+                            <a class="completedMethod" href="Doc/terminal__listener_8h.html#a364e6b36d27c1dc56376db79bd312fc0">reboot_completed</a>
+                        </td>
+                        <td>
+                            Force the EFT Terminal to reboot.
+                        </td>
+                    </tr>
+                    <tr>
+                        </td>
+                        <td>
+                            <a class="syncMethod" href="Doc/terminal_8h.html#ae713ccbe684b97d1e58be74b4d5429e7">ta_terminal_receipt_request</a><br />
+                            <a class="asyncMethod" href="Doc/terminal_8h.html#a51f491a0190c43e9f0e02cd17c749943">ta_terminal_receipt_request_async</a>.<br />
+                            <a class="completedMethod" href="Doc/terminal__listener_8h.html#a2a444f5d6eb1a3ea1816577d9dbc25e1">receipt_request_completed</a>
+                        </td>
+                        <td>
+                            Receive the latest receipt or a list of silent<br /> 
+                            receipts.
+                        </td>
+                    </tr>
+                    <tr>
+                        </td>
+                        <td>
+                            <a class="syncMethod" href="Doc/terminal_8h.html#a59d856ac7dbae4bbfa783943a1f62ed9">ta_terminal_reconciliation</a><br />
+                            <a class="asyncMethod" href="Doc/terminal_8h.html#a027527f1631d2e0f383e1d4103f4679f">ta_terminal_reconciliation_async</a>.<br />
+                            <a class="completedMethod" href="Doc/terminal__listener_8h.html#a97cd8e4eaae1c97d985f18475bb2d1cb">reconciliation_completed</a>
+                        </td>
+                        <td>
+                            Force the EFT Terminal to transmit all financial<br /> 
+                            transactions to the host system.
+                        </td>
+                    </tr>
+                    <tr>
+                        </td>
+                        <td>
+                            <a class="syncMethod" href="Doc/terminal_8h.html#abff257f57485515a6a2e1b3067e5f9bb">ta_terminal_reconfig</a><br />
+                            <a class="asyncMethod" href="Doc/terminal_8h.html#aaea67fb8914fe33312faf976ff6beae0">ta_terminal_reconfig_async</a>.<br />
+                            <a class="completedMethod" href="Doc/terminal__listener_8h.html#ae846a34290248b365f0c305f3b3fdf3b">reconfig_completed</a>
+                        </td>
+                        <td>
+                            Force the EFT Terminal to get the configuration from<br /> 
+                            the service center.
+                        </td>
+                    </tr>
+                    <tr>
+                        </td>
+                        <td>
+                            <a class="syncMethod" href="Doc/terminal_8h.html#a679196e6de81d65f9b7bf87811448c6e">ta_terminal_rollback</a><br />
+                            <a class="asyncMethod" href="Doc/terminal_8h.html#a0cf6d53a5151bb2ea16e3488bdf3b89a">ta_terminal_rollback_async</a>.<br />
+                            <a class="completedMethod" href="Doc/terminal__listener_8h.html#aa7f2f65acecb35e2167a93c019b8f537">rollback_completed</a>
+                        </td>
+                        <td>
+                            Prevent a transaction from being committed to the<br /> 
+                            transaction log and generates a technical reversal<br /> 
+                            of the authorization.
+                        </td>
+                    </tr>
+                    <tr>
+                        </td>
+                        <td>
+                            <a class="syncMethod" href="Doc/terminal_8h.html#ab98819b23fd2c8053cb324c2c551a5e7">ta_terminal_software_update</a><br />
+                            <a class="asyncMethod" href="Doc/terminal_8h.html#abc79783444e0f261ce1add580340867b">ta_terminal_software_update_async</a>.<br />
+                            <a class="completedMethod" href="Doc/terminal__listener_8h.html#a96e63f65b4d6c2c67cfe801fa99089da">software_update_completed</a>
+                        </td>
+                        <td>
+                            Force the EFT Terminal to start a Software Update.
+                        </td>
+                    </tr>
+                    <tr>
+                        </td>
+                        <td>
+                            <a class="syncMethod" href="Doc/terminal_8h.html#ab9da80e9b76ae7be14cd9f8900a26b6a">ta_terminal_system_information</a><br />
+                            <a class="asyncMethod" href="Doc/terminal_8h.html#a1fc1f7fe4774398d5f5b1f30c322ce4d">ta_terminal_system_information_async</a>.<br />
+                            <a class="completedMethod" href="Doc/terminal__listener_8h.html#a525bbb9e456e4db89fca49e7454f8389">system_information_completed</a>
+                        </td>
+                        <td>
+                            Request system information from the EFT Terminal.
+                        </td>
+                    </tr>
+                    <tr>
+                        </td>
+                        <td>
+                            <a class="syncMethod" href="Doc/terminal_8h.html#a5496a9848ca4ceebba16eab8f82a4ebe">ta_terminal_transaction</a><br />
+                            <a class="asyncMethod" href="Doc/terminal_8h.html#a1989dbd83629a0d617e76d3e79b42735">ta_terminal_transaction_async</a>.<br />
+                            <a class="completedMethod" href="Doc/terminal__listener_8h.html#acb4d8efc06602d461d8c634e92cca491">transaction_completed</a>
+                        </td>
+                        <td>
+                            Starts an EFT Terminal Transaction.
+                        </td>
+                    </tr>
+                    <tr>
                 </tbody>
               </table>
             </div>
@@ -555,41 +650,55 @@ void mylistener_terminal_status_changed(ta_object_t terminal,	void *user_pointer
             <div class="col-md-6">
               <table class="table">
                 <thead>
-                  <tr>
-                    <th>Sync / Async function</th>
-                    <th>Callback-Function</th>
-                    <th>Description</th>
-                  </tr>
-                </thead>
+                    <tr>
+                      <th>
+                        <span class="syncMethod">Sync method</span><br />
+                        <span class="asyncMethod">Async method</span><br />
+                        <span class="completedMethod">Completed event</span></th>
+                      </th>
+                      <th>Description</th>
+                    </tr>
+                  </thead>
                 <tbody>
                   <tr>
-                    <td>
-                      <strong>ta_terminal_close_dialog_mode</strong>
-                      <br>ta_terminal_close_dialog_mode_async</td>
-                    <td>close_dialog_mode_completed</td>
-                    <td>Close dialog mode on the terminal.</td>
-                  </tr>
-
-                  <tr>
-                    <td>
-                      <strong>ta_terminal_open_dialog_mode</strong>
-                      <br>ta_terminal_open_dialog_mode_async</td>
-                    <td>open_dialog_mode_completed</td>
-                    <td>Open dialog mode on the terminal.</td>
+                      <td>
+                          <a class="syncMethod" href="Doc/terminal_8h.html#a194665eed457d7dbd2e668e79a54d59c">ta_terminal_close_dialog_mode</a><br />
+                          <a class="asyncMethod" href="Doc/terminal_8h.html#a9fc4ac1a1ec4f4e11672bbbf1e8f6e39">ta_terminal_close_dialog_mode_async</a>.<br />
+                          <a class="completedMethod" href="Doc/terminal__listener_8h.html#a93540e1f08eacde636cab8ca4d10e64c">close_dialog_mode_completed</a>
+                      </td>
+                      <td>
+                          Close dialog mode on the terminal.
+                      </td>
                   </tr>
                   <tr>
                     <td>
-                      <strong>ta_terminal_show_dialog</strong>
-                      <br>ta_terminal_show_dialog_async</td>
-                    <td>show_dialog_completed</td>
-                    <td>Show dialog on the terminal</td>
+                        <a class="syncMethod" href="Doc/terminal_8h.html#ae7f183c210fb52783d5704bdc27b430a">ta_terminal_open_dialog_mode</a><br />
+                        <a class="asyncMethod" href="Doc/terminal_8h.html#a86d925c56975239c0733f6426129a981">ta_terminal_open_dialog_mode_async</a>.<br />
+                        <a class="completedMethod" href="Doc/terminal__listener_8h.html#a54782f0100eb05fb5233ddd161550d2d">open_dialog_mode_completed</a>
+                    </td>
+                    <td>
+                        Open dialog mode on the terminal.
+                    </td>
                   </tr>
                   <tr>
                     <td>
-                      <strong>ta_terminal_show_signature_capture</strong>
-                      <br>ta_terminal_show_signature_capture_async</td>
-                    <td>show_signature_capture_completed</td>
-                    <td>Show signature capture on the terminal</td>
+                        <a class="syncMethod" href="Doc/terminal_8h.html#a6a753bd2963ca6e1fcbde376084fa1c7">ta_terminal_show_dialog</a><br />
+                        <a class="asyncMethod" href="Doc/terminal_8h.html#aac5569a46d42720a00b68050c2f02e73">ta_terminal_show_dialog_async</a>.<br />
+                        <a class="completedMethod" href="Doc/terminal__listener_8h.html#ab7a59e574c4b604844b86c7ec5ae9f3f">show_dialog_completed</a>
+                    </td>
+                    <td>
+                        Show dialog on the terminal.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                        <a class="syncMethod" href="Doc/terminal_8h.html#a44fd9da3cd93e68b17e22b3d2df55876">ta_terminal_show_signature_capture</a><br />
+                        <a class="asyncMethod" href="Doc/terminal_8h.html#ad303432500df3ab1056f5ceca95e6efd">ta_terminal_show_signature_capture_async</a>.<br />
+                        <a class="completedMethod" href="Doc/terminal__listener_8h.html#a5b948a7e4b34f7905b1ee11c9dd20e86">show_signature_capture_completed</a>
+                    </td>
+                    <td>
+                        Show signature capture on the terminal.
+                    </td>
                   </tr>
                 </tbody>
               </table>
@@ -611,16 +720,18 @@ void mylistener_terminal_status_changed(ta_object_t terminal,	void *user_pointer
                 <tbody>
                   <tr>
                     <td>
-                      <strong>request_completed</strong>
+                      <a class="completedMethod" href="Doc/terminal__listener_8h.html#a6547832ef93cedf0884755827f6f1e10">request_completed</a>
                     </td>
-                    <td>Operation started by an asynchronous function has finished. Applications can use both operation specific
-                      completion callback in combination with this generic completion callback.</td>
+                    <td>Operation started by an asynchronous function has finished. <br />
+                      Applications can use both operation specific completion<br />
+                      callback in combination with this generic completion callback.</td>
                   </tr>
                   <tr>
                     <td>
-                      <strong>terminal_status_changed</strong>
+                      <a class="completedMethod" href="Doc/terminal__listener_8h.html#a8383e2be0f809fc382f307c0180bd783">terminal_status_changed</a>
                     </td>
-                    <td>The terminal status has changed. The new status can be retrieved from the TerminalStatus property.</td>
+                    <td>The terminal status has changed. The new status can be<br />
+                       retrieved from the TerminalStatus property.</td>
                   </tr>
                 </tbody>
               </table>
@@ -641,11 +752,11 @@ void mylistener_terminal_status_changed(ta_object_t terminal,	void *user_pointer
             <div class="col-md-6">
               <p>The TIM API C is based on an object-type concept. Most TIM API functions will either take or return parameters
                 in shape of the &quot;opaque type&quot;
-                <code>ta_object_t</code>. For example:
-                <code>ta_terminal_create</code> will create a new terminal-instance, which returns a
-                <code>ta_object_t</code>. On the other hand terminal-function calls like
-                <code>ta_terminal_get_terminal_id</code> require the terminal-instance as parameter of type
-                <code>ta_object_t</code>.</p>
+                <code><a href="Doc/object_8h.html">ta_object_t</a></code>. For example:
+                <code><a href="Doc/terminal_8h.html#ab71047155839a18148d9a41406db42b4">ta_terminal_create</a></code> will create a new terminal-instance, which returns a
+                <code><a href="Doc/object_8h.html">ta_object_t</a></code>. On the other hand terminal-function calls like
+                <code><a href="Doc/terminal_8h.html#a69cd9a5fb957251c966827f7a897098e">ta_terminal_get_terminal_id</a></code> require the terminal-instance as parameter of type
+                <code><a href="Doc/object_8h.html">ta_object_t</a></code>.</p>
               <p>Note: This concept introduces a behaviour similar to certain aspects of object-oriented programming to the
                 environment of C. Similarities are as follows:</p>
               <ul>
@@ -653,21 +764,21 @@ void mylistener_terminal_status_changed(ta_object_t terminal,	void *user_pointer
                   <ul>
                     <li>The naming of getters and setters is as folllows: ta_DATATYPE_get/set_PROPERTY</li>
                     <li>e.g.:
-                      <code>ta_terminal_settings_get_terminal_id()</code>
+                      <code><a href="Doc/terminal__settings_8h.html#a73f2947a07fc9f8cefbfa7a3b0f17dfc">ta_terminal_settings_get_terminal_id()</a></code>
                     </li>
                   </ul>
                 </li>
                 <li>For each object-type there are functions similar to methods, performing object-specific tasks.
                   <ul>
                     <li>e.g.:
-                      <code>ta_terminal_login()</code>
+                      <code><a href="Doc/terminal_8h.html#a227343e36d8f4956c9342945109b3b26">ta_terminal_login()</a></code>
                     </li>
                   </ul>
                 </li>
                 <li>For certain object-types create-functions exist, which are similar to constructors.
                   <ul>
                     <li>e.g.:
-                      <code>ta_string_create()</code>
+                      <code><a href="Doc/string_8h.html#a36aa84b85923fa00ff19b9932307b831">ta_string_create()</a></code>
                     </li>
                   </ul>
                 </li>
@@ -684,17 +795,17 @@ void mylistener_terminal_status_changed(ta_object_t terminal,	void *user_pointer
                 to release retained objects, when no longer needed. Retained objects are:</p>
               <ul>
                 <li>Objects returned by the TIM API as retained objects (e.g.
-                  <code>terminal</code>-instance created with
-                  <code>ta_terminal_create</code>, or a
-                  <code>hardware_information_response</code>-instance returned by
-                  <code>ta_terminal_hardware_information</code>).</li>
+                  <code><a href="Doc/terminal_8h.html">terminal</a></code>-instance created with
+                  <code><a href="Doc/terminal_8h.html#ab71047155839a18148d9a41406db42b4">ta_terminal_create</a></code>, or a
+                  <code><a href="Doc/hardware__information__response_8h.html">hardware_information_response</a></code>-instance returned by
+                  <code><a href="Doc/terminal_8h.html#a76fe78ef3297a1c301d03402a183afe2">ta_terminal_hardware_information</a></code>).</li>
                 <li>Objects that the user explicitly retained by calling
-                  <code>ta_object_retain</code>. Basically each
-                  <code>ta_object_retain</code> must be paired with a
-                  <code>ta_object_release</code>. The TIM API tells you if returned objects are already retained or not. An object that hasn't been retained,
+                  <code><a href="Doc/object_8h.html#a9a8917ee724f85a764111fa1c2553f40">ta_object_retain</a></code>. Basically each
+                  <code><a href="Doc/object_8h.html#a9a8917ee724f85a764111fa1c2553f40">ta_object_retain</a></code> must be paired with a
+                  <code><a href="Doc/object_8h.html#aa9e6e27c12a3c1e61e90080f6d0048c6">ta_object_release</a></code>. The TIM API tells you if returned objects are already retained or not. An object that hasn't been retained,
                   must not be released (would lead to errors)! Objects that are returned as not-retained are to read immediately
                   or to explictely retain with
-                  <code>ta_object_retain</code>.</li>
+                  <code><a href="Doc/object_8h.html#a9a8917ee724f85a764111fa1c2553f40">ta_object_retain</a></code>.</li>
               </ul>
               <p>(see header-documentation or this doxygen-dok to determine, if objects are retained / not retained. Most IDE
                 support doxygen of header-documentation and will show these information while coding).</p>
@@ -746,7 +857,7 @@ ta_object_release(myList);
 //   ta_object_retain(myListElement) right after receiving it from 
 //   the list. In this case, he later needs to release the list 
 //   element with ta_object_release(myListElement).
-</code></pre>
+</a></code></pre>
             </div>
           </div>
           <div class="row">
@@ -771,43 +882,43 @@ ta_object_release(myList);
                 <tbody>
                   <tr>
                     <td>
-                      <strong>boolean</strong>
+                        <code><a href="Doc/boolean_8h.html">boolean</a></code>
                     </td>
                     <td>A Boolean type (true/false)</td>
                   </tr>
                   <tr>
                     <td>
-                      <strong>integer</strong>
+                      <code><a href="Doc/integer_8h.html">integer</a></code>
                     </td>
                     <td>An Integer type (64-bit)</td>
                   </tr>
                   <tr>
                     <td>
-                      <strong>list</strong>
+                      <code><a href="Doc/list_8h.html">list</a></code>
                     </td>
                     <td>A list collection. Supports create, add, get, index of, remove and more.</td>
                   </tr>
                   <tr>
                     <td>
-                      <strong>map</strong>
+                      <code><a href="Doc/map_8h.html">map</a></code>
                     </td>
                     <td>A map collection. Supports create, set, get, has, remove and more.</td>
                   </tr>
                   <tr>
                     <td>
-                      <strong>object</strong>
+                      <code><a href="Doc/object_8h.html">object</a></code>
                     </td>
                     <td>The base object (see [Objects in TIM API`C`.</td>
                   </tr>
                   <tr>
                     <td>
-                      <strong>string</strong>
+                      <code><a href="Doc/string_8h.html">string</a></code>
                     </td>
                     <td>A String type. Null-terminated character sequence.</td>
                   </tr>
                   <tr>
                     <td>
-                      <strong>timedate</strong>
+                      <code><a href="Doc/timedate_8h.html">timedate</a></code>
                     </td>
                     <td>Time-Date type.</td>
                   </tr>
