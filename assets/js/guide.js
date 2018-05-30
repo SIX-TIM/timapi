@@ -47,6 +47,9 @@ function toggleGuide(btnGuide) {
     updateGUI();
 }
 
+/** 
+ * Adds stylesheet for guide-ribbon, based on amount of found active guides
+ */
 function addGuidesStylesheet() {
     // get amount of active guides (find all buttons)
     var guideCtr = 0;
@@ -66,7 +69,7 @@ function addGuidesStylesheet() {
 }
 
 window.onload = function(evt) { 
-    var guideDiv = document.getElementById("guideDiv"); 
+    timVersionInject();
     addGuidesStylesheet();
     updateGUI();
 }

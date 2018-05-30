@@ -1190,9 +1190,9 @@ dl.section dd {
 
 #projectname
 {
-	font: Robota,sans-serif;
-	margin-top: 15px;
-	margin-left:7px;
+	font-family: Roboto,sans-serif;
+	margin-top: 17px;
+	margin-left:15px;
 	margin-bottom: -1px;
 	color: rgb(70, 70, 70);
 	font-weight: bold;
@@ -1201,17 +1201,17 @@ dl.section dd {
 
 #sdknum
 {
-	font: Robota, Arial,sans-serif;
+	font-family: Roboto, Arial,sans-serif;
 	color: #de3919;
 	font-weight: 100;
 	font-size: 16px;
-	margin-left: 4px;
+	margin-left: -2px;
 }
 
 #projectbrief
 {
-	font: Robota, Arial,sans-serif;
-	margin-left:7px;
+	font-family: Roboto, Arial,sans-serif;
+	margin-left:15px;
 	margin-bottom: 20px;
 	color: rgb(104, 104, 104);
 	font-weight: bold;
@@ -1220,7 +1220,7 @@ dl.section dd {
     
 #timnum
 {
-	font: Robota, Arial,sans-serif;
+	font-family: Roboto, Arial,sans-serif;
 	color: #de3919;
 	font-weight: 100;
 	font-size: 15px;
@@ -1229,7 +1229,7 @@ dl.section dd {
 
 #projectnumber
 {
-	font: 50% Robota, Arial,sans-serif;
+	font-family: 50% Roboto, Arial,sans-serif;
 	margin: 0px;
 	padding: 0px;
 }

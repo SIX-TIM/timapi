@@ -29,7 +29,7 @@ function updateTabs(type)
     }
 }
 
-function inject_guidelink() {
+function injectGuidelink() {
 
     var navLists = document.getElementsByClassName("navList");
 
@@ -47,5 +47,11 @@ function inject_guidelink() {
     }
 }
 
+window.onload = function(evt) { 
 
-window.onload = inject_guidelink;
+    if((this.timDoc != undefined) && (this.timDoc.injecter != undefined)) {
+        this.timDoc.injecter();    
+    }
+    injectGuidelink();
+}
+
