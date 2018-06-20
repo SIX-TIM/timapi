@@ -340,7 +340,7 @@ ta_oject_release(terminal);
             </div>
             <div class="col-md-6">
               <p>Code example for adding a terminal status listener:</p>
-              <pre><code class="language-{.c}">/* 
+              <pre><code class="language-{.c}">/*
  * Example for adding a terminal status listener
  *
  * \param[in] terminal Terminal instance
@@ -348,23 +348,23 @@ ta_oject_release(terminal);
 void add_status_listener(ta_object_t terminal) {
     ta_object_t listener = ta_object_invalid;
     ta_s_terminal_listener_t listener_config;
-    
+
     // clear listener-config
     memset(&amp;listener_config, 0, sizeof(listener_config));
-    
+
     // add user-implemented callback to listener-config
     listener_config.terminal_status_changed = mylistener_terminal_status_changed;
-    
+
     // optional: add user content to listener,
-    // pointer will be handed over to all callbacks: 
+    // pointer will be handed over to all callbacks:
     //listener_config.user_pointer = &amp;custom_struct;
-    
+
     // create listener-object
     ta_terminal_listener_create(&amp;listener, &amp;listener_config);
-    
+
     // add listener-object to terminal
     ta_terminal_add_listener(terminal, listener);
-    
+
     // release listener-object
     ta_object_release(listener);
 }
@@ -374,7 +374,7 @@ void add_status_listener(ta_object_t terminal) {
  *
  * Will be called when status of terminal changes.
  * \param[in] terminal Terminal instance
- * \param[in] user_pointe User-pointer which can be set in the terminal listener 
+ * \param[in] user_pointe User-pointer which can be set in the terminal listener
  */
 void mylistener_terminal_status_changed(ta_object_t terminal,	void *user_pointer) {
 
@@ -434,7 +434,7 @@ void mylistener_terminal_status_changed(ta_object_t terminal,	void *user_pointer
                             <a class="completedMethod" href="Doc/terminal__listener_8h.html#a1834394fe87abd900fd82c659d213159">balance_completed</a>
                         </td>
                         <td>
-                            Force the EFT Terminal to transmit all transactions<br /> 
+                            Force the EFT Terminal to transmit all transactions<br />
                             to the host system as well to do the daily closing.
                         </td>
                     </tr>
@@ -457,7 +457,7 @@ void mylistener_terminal_status_changed(ta_object_t terminal,	void *user_pointer
                             <a class="completedMethod" href="Doc/terminal__listener_8h.html#a89b6799427e9efb30136d13bc6eb84e5">commit_completed</a>
                         </td>
                         <td>
-                            Perform Commit-operation after a successful<br /> 
+                            Perform Commit-operation after a successful<br />
                             Transaction call.
                         </td>
                     </tr>
@@ -535,7 +535,7 @@ void mylistener_terminal_status_changed(ta_object_t terminal,	void *user_pointer
                             <a class="completedMethod" href="Doc/terminal__listener_8h.html#a466f9d64fe6dc475e92d7cce5da9e360">login_completed</a>
                         </td>
                         <td>
-                            Activate a communication session between the ECR and<br /> 
+                            Activate a communication session between the ECR and<br />
                             the terminal.
                         </td>
                     </tr>
@@ -547,7 +547,7 @@ void mylistener_terminal_status_changed(ta_object_t terminal,	void *user_pointer
                             <a class="completedMethod" href="Doc/terminal__listener_8h.html#ac92b3442702ad01db62a5aa4ba629b77">logout_completed</a>
                         </td>
                         <td>
-                            Terminate an active communication session between the<br /> 
+                            Terminate an active communication session between the<br />
                             ECR and the terminal.
                         </td>
                     </tr>
@@ -570,7 +570,7 @@ void mylistener_terminal_status_changed(ta_object_t terminal,	void *user_pointer
                             <a class="completedMethod" href="Doc/terminal__listener_8h.html#a2a444f5d6eb1a3ea1816577d9dbc25e1">receipt_request_completed</a>
                         </td>
                         <td>
-                            Receive the latest receipt or a list of silent<br /> 
+                            Receive the latest receipt or a list of silent<br />
                             receipts.
                         </td>
                     </tr>
@@ -582,7 +582,7 @@ void mylistener_terminal_status_changed(ta_object_t terminal,	void *user_pointer
                             <a class="completedMethod" href="Doc/terminal__listener_8h.html#a97cd8e4eaae1c97d985f18475bb2d1cb">reconciliation_completed</a>
                         </td>
                         <td>
-                            Force the EFT Terminal to transmit all financial<br /> 
+                            Force the EFT Terminal to transmit all financial<br />
                             transactions to the host system.
                         </td>
                     </tr>
@@ -594,7 +594,7 @@ void mylistener_terminal_status_changed(ta_object_t terminal,	void *user_pointer
                             <a class="completedMethod" href="Doc/terminal__listener_8h.html#ae846a34290248b365f0c305f3b3fdf3b">reconfig_completed</a>
                         </td>
                         <td>
-                            Force the EFT Terminal to get the configuration from<br /> 
+                            Force the EFT Terminal to get the configuration from<br />
                             the service center.
                         </td>
                     </tr>
@@ -606,8 +606,8 @@ void mylistener_terminal_status_changed(ta_object_t terminal,	void *user_pointer
                             <a class="completedMethod" href="Doc/terminal__listener_8h.html#aa7f2f65acecb35e2167a93c019b8f537">rollback_completed</a>
                         </td>
                         <td>
-                            Prevent a transaction from being committed to the<br /> 
-                            transaction log and generates a technical reversal<br /> 
+                            Prevent a transaction from being committed to the<br />
+                            transaction log and generates a technical reversal<br />
                             of the authorization.
                         </td>
                     </tr>
@@ -769,7 +769,7 @@ void mylistener_terminal_status_changed(ta_object_t terminal,	void *user_pointer
               <ul>
                 <li>For each object-type there are functions similar to getters and setters, in order to access the object-properties.
                   <ul>
-                    <li>The naming of getters and setters is as folllows: ta_DATATYPE_get/set_PROPERTY</li>
+                    <li>The naming of getters and setters is as follows: ta_DATATYPE_get/set_PROPERTY</li>
                     <li>e.g.:
                       <code><a href="Doc/terminal__settings_8h.html#a73f2947a07fc9f8cefbfa7a3b0f17dfc">ta_terminal_settings_get_terminal_id()</a></code>
                     </li>
@@ -824,14 +824,14 @@ ta_object_t myList = ta_object_invalid;
 ta_list_create(&amp;myList);
 
 /* --- Add an integer ----------------------------------------------- */
-// Create an object of type integer, since list can only contain 
+// Create an object of type integer, since list can only contain
 // ta_object_t-instances
 ta_object_t myInteger = ta_object_invalid;
 ta_integer_create(&amp;myInteger, 1234);
 ta_list_add(myList, myInteger);
 
 // Important: User must release the integer-object. Either now or later.
-ta_object_release(myInteger); 
+ta_object_release(myInteger);
 
 /* --- Get size of list --------------------------------------------- */
 size_t myListSize;
@@ -842,27 +842,27 @@ ta_object_t myListElement = ta_object_invalid;
 ta_list_get_at(myList, 0, &amp;myListElement);
 
 // do something with element...
-// - user is responsible to know how to read / 
+// - user is responsible to know how to read /
 //   process retreived objects from list
 // - in our case here it`s an integer-object
 int64_t myIntValue = 0;
 ta_integer_get_value(myListElement, &amp;myIntValue);
 printf(&quot;MyIntValue: %Id\n&quot;, myIntValue);
 
-// Important: 
+// Important:
 // - The list returns list elements as not retained!
-// - List element must not be released!   
+// - List element must not be released!
 
 /* --- Release list ------------------------------------------------- */
 ta_object_release(myList);
 
-// - At this point, myListElement is no longer (reliably) accessible. 
-//   Since list has been released, all its elements have been released 
+// - At this point, myListElement is no longer (reliably) accessible.
+//   Since list has been released, all its elements have been released
 //   as well, if no one else is retaining the list elements.
 
-// - If user still wants to use myListElement, he needs to call 
-//   ta_object_retain(myListElement) right after receiving it from 
-//   the list. In this case, he later needs to release the list 
+// - If user still wants to use myListElement, he needs to call
+//   ta_object_retain(myListElement) right after receiving it from
+//   the list. In this case, he later needs to release the list
 //   element with ta_object_release(myListElement).
 </a></code></pre>
             </div>
