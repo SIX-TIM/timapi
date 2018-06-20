@@ -126,7 +126,7 @@
                 Furthermore implementation examples are provided. Nevertheless always the corresponding description of a
                 function or data element is authoritative, not the examples.</p>
               <p>For further information about the architecture of the TIM API can be found in
-                <a href="#reference">[B9]</a>, this document is meant to cover only implementation purposes.</p>
+                <a href="#reference">[B1]</a>, this document is meant to cover only implementation purposes.</p>
               <hr>
             </div>
           </div>
@@ -197,14 +197,14 @@
             </div>
             <div class="col-md-6">
               <p>Code-example for creating a terminal including settings with activated guides retail and hospitality:</p>
-              <pre><code class="language-{.java}">// Create settings with Terminal-ID of terminal to connect to 
+              <pre><code class="language-{.java}">// Create settings with Terminal-ID of terminal to connect to
 com.six.TerminalSettings settings = new com.six.TerminalSettings();
 settings.setTerminalId("12345678");
 
 // add wanted guides (with bitwise or)
 settings.setGuides(EnumSet.of(Guides.RETAIL, Guides.HOSPITALITY));
 
-// Create terminal 
+// Create terminal
 com.six.Terminal terminal = new com.six.Terminal(settings);
 
 //...
@@ -250,13 +250,13 @@ terminal.dispose();</code>
                 <tbody>
                   <tr>
                     <td>
-                      <a href="Doc/index.html?com/six/timapi/Terminal.html#LogDir--" class="syncMethod">LogDir</a>
+                      <strong>LogDir</strong>
                     </td>
                     <td>Directory where log files are generated</td>
                   </tr>
                   <tr>
                     <td>
-                      <a href="Doc/index.html?com/six/timapi/Terminal.html#LogLevel--" class="syncMethod">LogLevel</a>
+                      <strong>LogLevel</strong>
                     </td>
                     <td>Logging level, defines how much information will be logged. For detailed values see
                       <a href="#logging">Logging / LogLevel</a>
@@ -264,12 +264,12 @@ terminal.dispose();</code>
                   </tr>
                   <tr>
                     <td>
-                      <a href="Doc/index.html?com/six/timapi/Terminal.html#TerminalId--" class="syncMethod">TerminalId</a>
+                      <strong>TerminalId</strong>
                     </td>
                     <td>Terminal ID to be broadcasted in case of ConnectionMode Broadcast</td>
                   </tr>
                   <tr>
-                    <td nowrap>
+                    <td>
                       <strong>ConnectionMode</strong>
                     </td>
                     <td>Connection mode used between ECR and EFT. For more information see
@@ -278,64 +278,64 @@ terminal.dispose();</code>
                   </tr>
                   <tr>
                     <td>
-                      <a href="Doc/index.html?com/six/timapi/Terminal.html#ConnectionIPString--" class="syncMethod">ConnectionIPString</a>
+                      <strong>ConnectionIPString</strong>
                     </td>
                     <td>IP address of the EFT terminal in case of ConnectionMode OnFixIP and Websockets.</td>
                   </tr>
                   <tr>
                     <td>
-                      <a href="Doc/index.html?com/six/timapi/Terminal.html#ConnectionIPPort--" class="syncMethod">ConnectionIPPort</a>
+                      <strong>ConnectionIPPort</strong>
                     </td>
                     <td>Listening Port of the EFT terminal in case of ConnectionMode OnFixIP and Websockets.</td>
                   </tr>
                   <tr>
                     <td>
-                      <a href="Doc/index.html?com/six/timapi/Terminal.html#SerialPort--" class="syncMethod">SerialPort</a>
+                      <strong>SerialPort</strong>
                     </td>
                     <td>Serial port to be used for serial connection in case of ConnectionMode Serial.</td>
                   </tr>
                   <tr>
                     <td>
-                      <a href="Doc/index.html?com/six/timapi/Terminal.html#SerialBaudrate--" class="syncMethod">SerialBaudrate</a>
+                      <strong>SerialBaudrate</strong>
                     </td>
                     <td>Baudrate used in case of ConnectionMode Serial.</td>
                   </tr>
                   <tr>
                     <td>
-                      <a href="Doc/index.html?com/six/timapi/Terminal.html#ProtocolType--" class="syncMethod">ProtocolType</a>
+                      <strong>ProtocolType</strong>
                     </td>
                     <td>Protocol type. For detailed values see
                       <code><a href="Doc/index.html?com/six/timapi/constants/ProtocolType.html">ProtocolType</a></code>.</td>
                   </tr>
                   <tr>
                     <td>
-                      <a href="Doc/index.html?com/six/timapi/Terminal.html#FetchBrands--" class="syncMethod">FetchBrands</a>
+                      <strong>FetchBrands</strong>
                     </td>
                     <td>Automatically retrieves application information during logging in. Default is on (value “On” or “Off”)</td>
                   </tr>
                   <tr>
                     <td>
-                      <a href="Doc/index.html?com/six/timapi/Terminal.html#AutoCommit--" class="syncMethod">AutoCommit</a>
+                      <strong>AutoCommit</strong>
                     </td>
                     <td>After executing the Transaction- function the API commits the transaction automatically. Default is on
                       (value “On” or “Off”)</td>
                   </tr>
                   <tr>
                     <td>
-                      <a href="Doc/index.html?com/six/timapi/Terminal.html#RequestRepetition--" class="syncMethod">RequestRepetition</a>
+                      <strong>RequestRepetition</strong>
                     </td>
                     <td>Defines how many times a Commit or Rollback request is sent repeatedly, if the original request has been
                       lost. (Default = 0, means disabled = no repetition)</td>
                   </tr>
                   <tr>
                     <td>
-                      <a href="Doc/index.html?com/six/timapi/Terminal.html#EnableKeepAlive--" class="syncMethod">EnableKeepAlive</a>
+                      <strong>EnableKeepAlive</strong>
                     </td>
                     <td>Defines if KeepAlive functionality shall be enabled or not. Default is on (value “On” or “Off”).</td>
                   </tr>
                   <tr>
                     <td>
-                      <a href="Doc/index.html?com/six/timapi/Terminal.html#SecuredConnection--" class="syncMethod">SecuredConnection</a>
+                      <strong>SecuredConnection</strong>
                     </td>
                     <td>Defines if the TCP/IP or Websocket connection shall be secured using TLS. Default is off (value “On”
                       or “Off”).</td>
@@ -506,7 +506,7 @@ SecuredConnection = On
               <pre>
                 <code class="language-{.java}">/** Asynchronous listener handling terminal events. */
 class TerminalHandler extends com.six.DefaultTerminalListener {
-  
+
   /** Terminal status change which can be the display content or an operational state. */
   @Override
   public void terminalStatusChanged(final Terminal terminal) {
@@ -538,11 +538,11 @@ class TerminalHandler extends com.six.DefaultTerminalListener {
   }
 }
 
-// Create settings with Terminal-ID of terminal to connect to 
+// Create settings with Terminal-ID of terminal to connect to
 com.six.TerminalSettings settings = new com.six.TerminalSettings();
 settings.setTerminalId("12345678");
 
-// Create terminal 
+// Create terminal
 com.six.Terminal terminal = new com.six.Terminal(settings);
 
 // Add listener to handle events
@@ -778,7 +778,7 @@ terminal.transactionAsync(com.six.constants.TransactionType.PURCHASE,
                       <td>
                         <a href="Doc/index.html?com/six/timapi/TerminalListener.html#terminalStatusChanged-com.six.timapi.Terminal-" class="completedMethod">terminalStatusChanged</a>
                       </td>
-                      <td>The terminal status has changed. The new status can be<br /> 
+                      <td>The terminal status has changed. The new status can be<br />
                           retrieved from the TerminalStatus property.</td>
                     </tr>
                   </tbody>
@@ -836,7 +836,7 @@ Logger.getLogger(Terminal.LOGGER_NAME).addHandler(myHandler);
             <div class="col-md-6">
               <p>A simple implementation using synchronous calls looks like this:</p>
               <pre><code class="language-{.java}">package simpletransaction;
- 
+
 import com.six.timapi.Terminal;
 import com.six.timapi.TerminalSettings;
 import com.six.timapi.TimException;
@@ -845,13 +845,13 @@ import com.six.timapi.Amount;
 import com.six.timapi.Receipt;
 import com.six.timapi.constants.Currency;
 import com.six.timapi.TransactionResponse;
-  
+
 import java.util.logging.Handler;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-  
+
 public class SimpleTransaction {
-  
+
   public static void main(String[] args) {
 
     // Create initial terminal settings
@@ -878,7 +878,7 @@ public class SimpleTransaction {
     }
 
     try{
-      // Start transaction. Automatically connects to and activates the terminal 
+      // Start transaction. Automatically connects to and activates the terminal
       TransactionResponse trxResponse = terminal.transaction(TransactionType.PURCHASE, new Amount( 14.00, Currency.CHF));
 
       // If successful
@@ -896,7 +896,7 @@ public class SimpleTransaction {
 
     catch (Exception se) {
       System.out.println("Systemexception: " + se.getMessage());
-    } 
+    }
   }
 }
     </code>
@@ -912,7 +912,7 @@ import javax.swing.*;
 
 class ECRSample {
   public static void main(String [] args) {
-    // Create terminal settings as described in the example above!      
+    // Create terminal settings as described in the example above!
     TerminalSettings trmSettings = new TerminalSettings();
 
     // Create terminal instance using the communication settings. These settings can
@@ -925,10 +925,10 @@ class ECRSample {
     terminal.setPosId("POS1234");
     terminal.setUserId(12345678);
 
-    // Add the notifiers you wish to handle. 
+    // Add the notifiers you wish to handle.
     // It can be done by adding a subclass of six.timap.TerminalNotifier as follows:
 
-    // Add activateCompleted, transactionCompleted, commitCompleted, deactivateCompleted 
+    // Add activateCompleted, transactionCompleted, commitCompleted, deactivateCompleted
     // and balanceCompleted notifier if required.
     terminal.addListener(new TerminalListener() {
       @Override
@@ -984,16 +984,16 @@ class ECRSample {
 
     // Start a transaction process
     // If the terminal is not yet logged in or activated this two actions are performed
-    // automatically before performing the transaction. 
+    // automatically before performing the transaction.
     terminal.transactionAsync(TransactionType.PURCHASE, new Amount(12.50, Currency.CHF));
 
     // If the option AutoCommit is enabled the commitAsync() method is called automatically
-    // after the transaction has finished. 
+    // after the transaction has finished.
     // If not enabled, the commitAsync() method shall be called after receiving the
     // transactionCompleted event.
 
     // If the commit request is completed correctly the deactivate can be started
-    // (see commitCompleted method). If the AutoDeactivate option is enabled a deactivateAsync() 
+    // (see commitCompleted method). If the AutoDeactivate option is enabled a deactivateAsync()
     // is not required to be called. Another request that need a Deactivated state will then
     // perform a deactivateAsync() automatically. Otherwise the deactivateAsync() method can
     // be called after a successful commitCompleted event.
@@ -1029,72 +1029,8 @@ class ECRSample {
                 <tbody>
                   <tr>
                     <td>[B1]</td>
-                    <td>EP2 Specification</td>
-                    <td>6.3.0</td>
-                  </tr>
-                  <tr>
-                    <td>[B4]</td>
-                    <td>ISO 639-1 Language codes</td>
-                    <td>2002</td>
-                  </tr>
-                  <tr>
-                    <td>[B5]</td>
-                    <td>ISO 3166-1 alpha-2 Country codes</td>
-                    <td>2003</td>
-                  </tr>
-                  <tr>
-                    <td>[B6]</td>
-                    <td>RFC 5646 Language codes</td>
-                    <td>2009</td>
-                  </tr>
-                  <tr>
-                    <td>[B7]</td>
-                    <td>ISO 4217 Currency codes</td>
-                    <td>2015</td>
-                  </tr>
-                  <tr>
-                    <td>[B8]</td>
-                    <td>ISO 10646 UTF-8</td>
-                    <td>2012</td>
-                  </tr>
-                  <tr>
-                    <td>[B9]</td>
                     <td>TIM & SIXml Architecture: The SIX ECR Integration System</td>
                     <td>0.10</td>
-                  </tr>
-                  <tr>
-                    <td>[B10]</td>
-                    <td>TIM API Implementation Guide Retail</td>
-                    <td>1.5</td>
-                  </tr>
-                  <tr>
-                    <td>[B11]</td>
-                    <td>Saferpay JSON API:
-                      <a href="http://saferpay.github.io/jsonapi/index.html">http://saferpay.github.io/jsonapi/index.html</a>
-                    </td>
-                    <td>1.7</td>
-                  </tr>
-                  <tr>
-                    <td>[B12]</td>
-                    <td>SIXml Book C: Appendix</td>
-                    <td>2.7.0</td>
-                  </tr>
-                  <tr>
-                    <td>[B13]</td>
-                    <td>asdasdSPECTRE: SIX POS and ECR Communication and Transmission Reliability Encoding</td>
-                    <td>2.9</td>
-                  </tr>
-                  <tr>
-                    <td>[B14]</td>
-                    <td>
-                      <a href="https://developer.android.com/develop/index.html">https://developer.android.com/develop/index.htmll</a>
-                    </td>
-                    <td>1.0</td>
-                  </tr>
-                  <tr>
-                    <td>[B15]</td>
-                    <td>TIM API Implementation Addon Guide Advanced Retail</td>
-                    <td>0.1</td>
                   </tr>
                 </tbody>
               </table>
