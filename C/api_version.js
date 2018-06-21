@@ -1,1 +1,1 @@
-window.api_version = "v3.7"
+window.api_version = "v3.8"
