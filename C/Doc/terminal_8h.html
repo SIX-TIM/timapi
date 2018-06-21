@@ -2630,7 +2630,7 @@ const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 </div><div class="memdoc">
 
 <p>Terminal identifier of connected terminal. </p>
-<p>Returns empty string if the terminal identifier is not known. The terminal identifier is available after logging in to the terminal. The terminal identifier obtained from the terminal is potentially different from the terminal identifier set in the terminal_settings. This is especially true if ta_c_cm_on_fix_ip is used.</p>
+<p>Returns ta_object_invalid if the terminal identifier is not known. The terminal identifier is available after logging in to the terminal. The terminal identifier obtained from the terminal is potentially different from the terminal identifier set in the terminal_settings. This is especially true if ta_c_cm_on_fix_ip is used.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">terminal</td><td>Object instance of type <a class="el" href="terminal_8h.html">terminal</a>. </td></tr>
