@@ -12,6 +12,8 @@ var transaction__type_8h =
       [ "ta_c_tt_purchase_forced_acceptance", "transaction__type_8h.html#a08f07046806962db06121bebefd306d1abfa34cd2ac3fea6d45fc80dbdefc25b0", null ],
       [ "ta_c_tt_purchase_with_cashback", "transaction__type_8h.html#a08f07046806962db06121bebefd306d1a47d835e8c0cb8f0e26fa7fef06c64a9a", null ],
       [ "ta_c_tt_purchase_phone_authorized", "transaction__type_8h.html#a08f07046806962db06121bebefd306d1aade97ade4dae0fbc81799e20c93ab5da", null ],
+      [ "ta_c_tt_purchase_phone_ordered", "transaction__type_8h.html#a08f07046806962db06121bebefd306d1a437aea786d8c9f051cbae123fd1fe8cb", null ],
+      [ "ta_c_tt_purchase_mail_ordered", "transaction__type_8h.html#a08f07046806962db06121bebefd306d1ab1d5cc4bc4690f73b44f961890ba4794", null ],
       [ "ta_c_tt_giro", "transaction__type_8h.html#a08f07046806962db06121bebefd306d1a231e45d799c08eec3f00bf4d1eab7c82", null ],
       [ "ta_c_tt_combined", "transaction__type_8h.html#a08f07046806962db06121bebefd306d1a3fb1a9c715388c02105ae391af402484", null ],
       [ "ta_c_tt_authorize_credit", "transaction__type_8h.html#a08f07046806962db06121bebefd306d1af518598d8f9d3066a53d5c896b2831f2", null ],

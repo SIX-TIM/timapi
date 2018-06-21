@@ -3,6 +3,7 @@ var brand__bar__brand_8h =
     [ "ta_e_brand_bar_brand_t", "brand__bar__brand_8h.html#a2d1818b4eeb8ab10f224cbf9ce20c0d7", null ],
     [ "ta_e_brand_bar_brand", "brand__bar__brand_8h.html#a065fb75dccd6ee5e82f29d4cce775549", [
       [ "ta_c_bbb_undefined", "brand__bar__brand_8h.html#a065fb75dccd6ee5e82f29d4cce775549afdf1280db07de41817a6b7523e5492af", null ],
+      [ "ta_c_bbb_alipay", "brand__bar__brand_8h.html#a065fb75dccd6ee5e82f29d4cce775549abc7800c18ca904238aee40fe8fffcbba", null ],
       [ "ta_c_bbb_amex", "brand__bar__brand_8h.html#a065fb75dccd6ee5e82f29d4cce775549a337106c2042122f5cda05bc6456c99ab", null ],
       [ "ta_c_bbb_bonuscard", "brand__bar__brand_8h.html#a065fb75dccd6ee5e82f29d4cce775549ae2aea3853f3ed8ef96c8fc8937ac6c9a", null ],
       [ "ta_c_bbb_cash", "brand__bar__brand_8h.html#a065fb75dccd6ee5e82f29d4cce775549a3e49b02b2dcab85ec75d597e48714c55", null ],

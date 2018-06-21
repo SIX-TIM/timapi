@@ -441,7 +441,7 @@ function showSyncOff(n,relpath)
 
 function showSyncOn(n,relpath)
 {
-
+    n.html('<img src="'+relpath+'sync_on.png" title="'+SYNCONMSG+'"/>');
 }
 
 function toggleSyncButton(relpath)

@@ -22,6 +22,9 @@ var financial__transactions_8h =
       [ "ta_c_ft_load_voucher", "financial__transactions_8h.html#acb14a85df061e531e84d9409a28ead04ab99a42e2e7835654772d3c8dc4962bc0", null ],
       [ "ta_c_ft_collect_points", "financial__transactions_8h.html#acb14a85df061e531e84d9409a28ead04afba9c6a192f219f0d86b44c78ac246f3", null ],
       [ "ta_c_ft_purchase_reservation", "financial__transactions_8h.html#acb14a85df061e531e84d9409a28ead04a6f372c59fd650b243cfbc983cf40498d", null ],
-      [ "ta_c_ft_purchase_reservation_phone_authorized", "financial__transactions_8h.html#acb14a85df061e531e84d9409a28ead04a833874e1736356f24faea1a4a3af9685", null ]
+      [ "ta_c_ft_purchase_reservation_phone_authorized", "financial__transactions_8h.html#acb14a85df061e531e84d9409a28ead04a833874e1736356f24faea1a4a3af9685", null ],
+      [ "ta_c_ft_amt_adjustment", "financial__transactions_8h.html#acb14a85df061e531e84d9409a28ead04a0c5187119534bf5b27683d7b16cb641e", null ],
+      [ "ta_c_ft_purchase_phone_ordered", "financial__transactions_8h.html#acb14a85df061e531e84d9409a28ead04a1b307881f5a814b195ab5801ae1ce6ad", null ],
+      [ "ta_c_ft_purchase_mail_ordered", "financial__transactions_8h.html#acb14a85df061e531e84d9409a28ead04a10053136de6f959973f59623e5b8efb5", null ]
     ] ]
 ];

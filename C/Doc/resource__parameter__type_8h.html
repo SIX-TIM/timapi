@@ -6,17 +6,17 @@
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>TIM API C: src/constants/resource_parameter_type.h File Reference</title>
-<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../../assets/css/tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<link href="../../assets/css/navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="resize.js"></script>
 <script type="text/javascript" src="navtreedata.js"></script>
 <script type="text/javascript" src="navtree.js"></script><script type="text/javascript" src="../../assets/js/tim_inject.js"></script><script type="text/javascript" src="../../assets/js/sdk_version.js"></script><script type="text/javascript" src="../api_version.js"></script>
 <script type="text/javascript">
   $(document).ready(initResizable);
 </script>
-<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<link href="../../assets/css/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/search.js"></script>
 <script type="text/javascript">
   $(document).ready(function() {
@@ -24,7 +24,7 @@
   });
 </script>
 <link rel="search" href="search_opensearch.php?v=opensearch.xml" type="application/opensearchdescription+xml" title="TIM API C"/>
-<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../assets/css/doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -33,14 +33,14 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">TIM SDK
+   <div id="projectname">TIM  SDK
    </div>
    <div id="projectbrief">TIM API C</div>
   </td>
    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
           <div class="left">
-            <form id="FSearchBox" action="search.html" method="get">
-               
+            <form id="FSearchBox" action="search.html" method="get"><img id="MSearchSelect" src="search/mag.png" alt=""/>
+              
               <input type="text" id="MSearchField" name="query" value="Search" size="20" accesskey="S" 
                      onfocus="searchBox.OnSearchFieldFocus(true)" 
                      onblur="searchBox.OnSearchFieldFocus(false)"/>
@@ -95,12 +95,14 @@ Enumerations</h2></td></tr>
 &#160;&#160;<a class="el" href="resource__parameter__type_8h.html#a24c84814e0ce6a320ff3bd3826a297fba3fe4cf6f89fde28ced047494f229829a">ta_c_rpt_undefined</a>, 
 <a class="el" href="resource__parameter__type_8h.html#a24c84814e0ce6a320ff3bd3826a297fba55b588e95ee792144c265d2109f05e49">ta_c_rpt_code_check_type</a>, 
 <a class="el" href="resource__parameter__type_8h.html#a24c84814e0ce6a320ff3bd3826a297fba3b7a5d33b2f2980caffb84a5c52ffd03">ta_c_rpt_code_check_key_id</a>, 
-<a class="el" href="resource__parameter__type_8h.html#a24c84814e0ce6a320ff3bd3826a297fbaa413530ab9111c95f3745e85b3df2ef1">ta_c_rpt_regular_data_query_type</a>, 
+<a class="el" href="resource__parameter__type_8h.html#a24c84814e0ce6a320ff3bd3826a297fba944a95dccce98df5b1a87c4ed95abe1e">ta_c_rpt_code_check_data</a>, 
 <br />
-&#160;&#160;<a class="el" href="resource__parameter__type_8h.html#a24c84814e0ce6a320ff3bd3826a297fba14f5935cae2f3ea5e9849ba084df986d">ta_c_rpt_regular_data</a>, 
+&#160;&#160;<a class="el" href="resource__parameter__type_8h.html#a24c84814e0ce6a320ff3bd3826a297fbaa413530ab9111c95f3745e85b3df2ef1">ta_c_rpt_regular_data_query_type</a>, 
+<a class="el" href="resource__parameter__type_8h.html#a24c84814e0ce6a320ff3bd3826a297fba14f5935cae2f3ea5e9849ba084df986d">ta_c_rpt_regular_data</a>, 
 <a class="el" href="resource__parameter__type_8h.html#a24c84814e0ce6a320ff3bd3826a297fbaa7e56aed5c3a8b464b3485a6fd8cc05e">ta_c_rpt_petrol_card_data1</a>, 
 <a class="el" href="resource__parameter__type_8h.html#a24c84814e0ce6a320ff3bd3826a297fbafb7b8c6713d6a3cea383a849f3988b47">ta_c_rpt_petrol_card_data2</a>, 
-<a class="el" href="resource__parameter__type_8h.html#a24c84814e0ce6a320ff3bd3826a297fbacf33b6be20714c5e787ba88d5c3bef55">ta_c_rpt_petrol_card_data3</a>
+<br />
+&#160;&#160;<a class="el" href="resource__parameter__type_8h.html#a24c84814e0ce6a320ff3bd3826a297fbacf33b6be20714c5e787ba88d5c3bef55">ta_c_rpt_petrol_card_data3</a>
 <br />
  }</td></tr>
 <tr class="separator:a24c84814e0ce6a320ff3bd3826a297fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -148,10 +150,46 @@ Enumerations</h2></td></tr>
 2: Avia - Use Aviacard algorithm. </li>
 <li>
 3: SB - Use Scheit &amp; Bachmann algorithm. </li>
+<li>
+4: Tokheim - Use Tokheim algorithm </li>
+<li>
+5: Agrola - Use Agrola algorithm </li>
+<li>
+6: Bica - Use Bica algorithm </li>
+<li>
+7: CTAC - Use CTAC algorithm </li>
+<li>
+8: DASAG - Use DASAG algorithm </li>
+<li>
+9: DKV - Use DKV algorithm </li>
+<li>
+10: Esso - Use Esso algorithm </li>
+<li>
+11: Migrol - Use Migrol algorithm </li>
+<li>
+12: Oelpool - Use Oelpool algorithm </li>
+<li>
+13: Pronto - Use Pronto algorithm </li>
+<li>
+14: Shell - Use Shell algorithm </li>
+<li>
+15: WLDC - Use WLDC algorithm </li>
+<li>
+16: Hectronic - Use HecPAC algorithm </li>
 </ul>
+<p>This value is to be encoded as a ascii number i.e. using characters in the range 30h to 39h.</p>
 <p>Specification: dialog.</p>
 </td></tr>
-<tr><td class="fieldname"><a id="a24c84814e0ce6a320ff3bd3826a297fba3b7a5d33b2f2980caffb84a5c52ffd03"></a>ta_c_rpt_code_check_key_id&#160;</td><td class="fielddoc"><p>GKLP key id of the key to use for the selected <em>CodeCheckType</em> .</p>
+<tr><td class="fieldname"><a id="a24c84814e0ce6a320ff3bd3826a297fba3b7a5d33b2f2980caffb84a5c52ffd03"></a>ta_c_rpt_code_check_key_id&#160;</td><td class="fielddoc"><p>GKLP key id of the key to use for the selected <em>CodeCheckType</em> . </p><ul>
+<li>
+0: Tokheim key id. </li>
+<li>
+1: HecPAC key id. </li>
+</ul>
+<p>This value is to be encoded as a ascii number i.e. using characters in the range 30h to 39h.</p>
+<p>Specification: dialog.</p>
+</td></tr>
+<tr><td class="fieldname"><a id="a24c84814e0ce6a320ff3bd3826a297fba944a95dccce98df5b1a87c4ed95abe1e"></a>ta_c_rpt_code_check_data&#160;</td><td class="fielddoc"><p>Data used in the calculation of some <em>CodeCheckType</em> s. This value is to be encoded as hex string.</p>
 <p>Specification: dialog.</p>
 </td></tr>
 <tr><td class="fieldname"><a id="a24c84814e0ce6a320ff3bd3826a297fbaa413530ab9111c95f3745e85b3df2ef1"></a>ta_c_rpt_regular_data_query_type&#160;</td><td class="fielddoc"><p>Type of query to receive data about regulars. </p><ul>
@@ -160,18 +198,19 @@ StfkV1: Version 1 regular data query type in Austria. </li>
 <li>
 StfkV4: Version 4 regular data query type in Austria. </li>
 </ul>
+<p>This value is to be encoded as a ascii string.</p>
 <p>Specification: dialog.</p>
 </td></tr>
 <tr><td class="fieldname"><a id="a24c84814e0ce6a320ff3bd3826a297fba14f5935cae2f3ea5e9849ba084df986d"></a>ta_c_rpt_regular_data&#160;</td><td class="fielddoc"><p>Customer data of the regular.</p>
 <p>Specification: dialog.</p>
 </td></tr>
-<tr><td class="fieldname"><a id="a24c84814e0ce6a320ff3bd3826a297fbaa7e56aed5c3a8b464b3485a6fd8cc05e"></a>ta_c_rpt_petrol_card_data1&#160;</td><td class="fielddoc"><p>Track 1 of a petrol card.</p>
+<tr><td class="fieldname"><a id="a24c84814e0ce6a320ff3bd3826a297fbaa7e56aed5c3a8b464b3485a6fd8cc05e"></a>ta_c_rpt_petrol_card_data1&#160;</td><td class="fielddoc"><p>Track 1 of a petrol card. This value is to be encoded as a ascii string.</p>
 <p>Specification: dialog.</p>
 </td></tr>
-<tr><td class="fieldname"><a id="a24c84814e0ce6a320ff3bd3826a297fbafb7b8c6713d6a3cea383a849f3988b47"></a>ta_c_rpt_petrol_card_data2&#160;</td><td class="fielddoc"><p>Track 2 of a petrol card.</p>
+<tr><td class="fieldname"><a id="a24c84814e0ce6a320ff3bd3826a297fbafb7b8c6713d6a3cea383a849f3988b47"></a>ta_c_rpt_petrol_card_data2&#160;</td><td class="fielddoc"><p>Track 2 of a petrol card. This value is to be encoded as a ascii string.</p>
 <p>Specification: dialog.</p>
 </td></tr>
-<tr><td class="fieldname"><a id="a24c84814e0ce6a320ff3bd3826a297fbacf33b6be20714c5e787ba88d5c3bef55"></a>ta_c_rpt_petrol_card_data3&#160;</td><td class="fielddoc"><p>Track 3 of a petrol card.</p>
+<tr><td class="fieldname"><a id="a24c84814e0ce6a320ff3bd3826a297fbacf33b6be20714c5e787ba88d5c3bef55"></a>ta_c_rpt_petrol_card_data3&#160;</td><td class="fielddoc"><p>Track 3 of a petrol card. This value is to be encoded as a ascii string.</p>
 <p>Specification: dialog.</p>
 </td></tr>
 </table>
@@ -184,9 +223,9 @@ StfkV4: Version 4 regular data query type in Austria. </li>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_55ef98a57036556dcc9a226e6204f780.html">constants</a></li><li class="navelem"><a class="el" href="resource__parameter__type_8h.html">resource_parameter_type.h</a></li>
-     
-     
-     
+    <li class="footer">Generated by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>
 </div>
 </body>
