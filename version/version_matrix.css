@@ -1,0 +1,12 @@
+
+
+table, th, td {
+    border: 1px solid black;
+
+}
+
+.vertical_header {
+    transform: rotate(-90deg);
+    transform-origin: center center 0;
+    font-weight: bold;
+}
