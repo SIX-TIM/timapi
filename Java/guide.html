@@ -1010,42 +1010,58 @@ class ECRSample {
                   code in the event handling thread use something like java.awt.EventQueue.invokeLater or javax.swing.SwingUtilities.invokeLater
                 </i>
               </p>
-            </div>
-            <div class="col-md-6">
               <p>The receipt formatting in Java can be adjusted programatically as follows:</p>
               <pre><code class="language-{.java}">
 
-// Set the PrintFormat to "FieldsOnly" in the Terminal class after creating a terminal instance
-TerminalSettings setting = new TerminalSettings();
-Terminal terminal = new Terminal(settings);
+public static void main(String [] args) {
 
-List< PrintOption > listPrOpt = new ArrayList< >();
-listPrOpt.add(new PrintOption(Recipient.CARDHOLDER, PrintFormat.FIELDS_ONLY, 32, EnumSet.noneOf(PrintFlag.class)));
-listPrOpt.add(new PrintOption(Recipient.MERCHANT, PrintFormat.FIELDS_ONLY, 32, EnumSet.noneOf(PrintFlag.class)));
+  // Set the PrintFormat to "FieldsOnly" in the Terminal class
+  // after creating a terminal instance
+  TerminalSettings setting = new TerminalSettings();
+  Terminal terminal = new Terminal(settings);
 
-terminal.setPrintOptions(listPrOpt);
+  List<PrintOption> listPrOpt = new ArrayList<>();
+  listPrOpt.add(new PrintOption(
+                Recipient.CARDHOLDER,
+                PrintFormat.FIELDS_ONLY,
+                32,
+                EnumSet.noneOf(PrintFlag.class)));
+  listPrOpt.add(new PrintOption(
+                Recipient.MERCHANT,
+                PrintFormat.FIELDS_ONLY,
+                32,
+                EnumSet.noneOf(PrintFlag.class)));
 
-// Additionally the ReceiptFormatter has to be set in the terminal instance.
-// The following values are valid:
-// NormalReceiptFormatter
-// CompactReceiptFormatter
-// CustomReceiptFormatter - for own receipt implementation
-// SuperCompactReceiptFormatter
-// UltraCompactReceiptFormatter
+  terminal.setPrintOptions(listPrOpt);
 
-terminal.setReceiptFormattter(new UltraCompactReceiptFormatter());
+  // Additionally the ReceiptFormatter has to be set in the terminal instance.
+    // The following values are valid:
+    // NormalReceiptFormatter
+    // CompactReceiptFormatter
+    // CustomReceiptFormatter - for own receipt implementation
+    // SuperCompactReceiptFormatter
+    // UltraCompactReceiptFormatter
 
-// If configured as defined above the PrintData that is received in a TransactionResponse
-// is formatted depending on the ReceiptFormatter that has been set
+  terminal.setReceiptFormatter(new UltraCompactReceiptFormatter());
 
-// The PrintData can be accessed as follows in case of synchronous call
+  // If configured as defined above the PrintData
+  // that is received in a TransactionResponse
+  // is formatted depending on the ReceiptFormatter that has been set.
 
-TransactionResponse trxResp = terminal.transaction(TransactionType.PURCHASE, new Amount(500, Currency.EUR));
+  // The PrintData can be accessed as follows in case of synchronous call
 
-for(Receipt receipt : trxResp.getPrintData().getReceipts()){
-  System.out.println(receipt.toString());
+  TransactionResponse trxResp = terminal.transaction(
+                                          TransactionType.PURCHASE,
+                                          new Amount(500, Currency.EUR));
+
+  for(Receipt receipt : trxResp.getPrintData().getReceipts()){
+    System.out.println(receipt.toString());
+  }
+
+  // In case of an asynchronous call the TransactionResponse
+  // and therefore PrintData is available in the corresponding
+  // transactionCompleted event and can be accessed as described above.
 }
-
   </code>
   </pre>
             </div>
