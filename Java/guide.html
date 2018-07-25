@@ -1011,6 +1011,44 @@ class ECRSample {
                 </i>
               </p>
             </div>
+            <div class="col-md-6">
+              <p>The receipt formatting in Java can be adjusted programatically as follows:</p>
+              <pre><code class="language-{.java}">
+
+// Set the PrintFormat to "FieldsOnly" in the Terminal class after creating a terminal instance
+TerminalSettings setting = new TerminalSettings();
+Terminal terminal = new Terminal(settings);
+
+List< PrintOption > listPrOpt = new ArrayList< >();
+listPrOpt.add(new PrintOption(Recipient.CARDHOLDER, PrintFormat.FIELDS_ONLY, 32, EnumSet.noneOf(PrintFlag.class)));
+listPrOpt.add(new PrintOption(Recipient.MERCHANT, PrintFormat.FIELDS_ONLY, 32, EnumSet.noneOf(PrintFlag.class)));
+
+terminal.setPrintOptions(listPrOpt);
+
+// Additionally the ReceiptFormatter has to be set in the terminal instance.
+// The following values are valid:
+// NormalReceiptFormatter
+// CompactReceiptFormatter
+// CustomReceiptFormatter - for own receipt implementation
+// SuperCompactReceiptFormatter
+// UltraCompactReceiptFormatter
+
+terminal.setReceiptFormattter(new UltraCompactReceiptFormatter());
+
+// If configured as defined above the PrintData that is received in a TransactionResponse
+// is formatted depending on the ReceiptFormatter that has been set
+
+// The PrintData can be accessed as follows in case of synchronous call
+
+TransactionResponse trxResp = terminal.transaction(TransactionType.PURCHASE, new Amount(500, Currency.EUR));
+
+for(Receipt receipt : trxResp.getPrintData().getReceipts()){
+  System.out.println(receipt.toString());
+}
+
+  </code>
+  </pre>
+            </div>
           </div>
         </section>
         <section id="reference">
