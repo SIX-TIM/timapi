@@ -813,7 +813,7 @@ terminal.transactionAsync(com.six.constants.TransactionType.PURCHASE,
 Logger.getLogger(terminal.getLoggerName()).setLevel(Level.ALL);
 
 // Set the logging level of the different handlers that have been added to the logger
-[Handler] handlers = Logger.getLogger(terminal.getLoggerName()).getHandlers();
+Handler[] handlers = Logger.getLogger(terminal.getLoggerName()).getHandlers();
 
 for (handler : handlers){
   handler.setLevel(Level.FINEST);
