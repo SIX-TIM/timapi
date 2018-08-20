@@ -18,7 +18,9 @@ function timVersionInject() {
     // TIM API version
     var projectbrief = document.getElementById("projectbrief");
     if (projectbrief != undefined) {
-        //projectbrief.innerHTML = "TIM API C";
+        if(window.api_lang != undefined) {
+            projectbrief.innerHTML = "TIM API " + window.api_lang;
+        }
 
         if(window.api_version != undefined) {
             var timnum = document.createElement("span");

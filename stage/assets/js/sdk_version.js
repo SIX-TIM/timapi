@@ -1,1 +1,1 @@
-window.sdk_version = "18-07-2"
+window.sdk_version = "18-07-3"

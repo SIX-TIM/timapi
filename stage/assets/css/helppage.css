@@ -136,6 +136,7 @@ main {
     padding: 0px; 
     position:fixed;
     animation: swing;
+    display: none;
 }
 
 #guideDiv:hover {
@@ -399,7 +400,7 @@ a[target='_blank'] {
 	padding: 0px;
 }
 
-#stage 
+#stage
 {
     font-family: Roboto, Arial,sans-serif;
     font-size: 200%;
@@ -420,4 +421,54 @@ a[target='_blank'] {
     -webkit-transform: rotate(33deg); /* Safari */
     transform: rotate(33deg);
     display: none;
+}
+
+figcaption {
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
+    padding: 10px;
+    font-style: italic;
+
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+@keyframes fadeIn {
+from {
+    opacity: 0;
+    display: block;
+ }
+  to {
+    opacity: 1;
+    display: block;
+  }
+}
+
+@keyframes fadeOut {
+ from {
+    opacity: 1;
+    display: block;
+ }
+
+  to {
+    opacity: 0;
+    display: none;
+  }
+}
+
+.fade-in {
+    display: block;
+    opacity: 0;
+    animation: fadeIn 0.75s ease-in 1 forwards;
+}
+
+.fade-out {
+    opacity: 1;
+    animation: fadeOut 0.75s ease-out 1 forwards;
 }
