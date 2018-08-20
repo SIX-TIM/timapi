@@ -18,7 +18,9 @@ function timVersionInject() {
     // TIM API version
     var projectbrief = document.getElementById("projectbrief");
     if (projectbrief != undefined) {
-        //projectbrief.innerHTML = "TIM API C";
+        if(window.api_lang != undefined) {
+            projectbrief.innerHTML = "TIM API " + window.api_lang;
+        }
 
         if(window.api_version != undefined) {
             var timnum = document.createElement("span");
@@ -36,6 +38,13 @@ function timVersionInject() {
         guidelink.innerHTML = "Back to Implementation Guide";
         guidelink.id = "guidelink";
         projectalign.appendChild(guidelink);
+    }
+
+    // Stage-banner
+    if((window.stage != undefined) && (window.stage == true)) {
+        var stageElement = document.getElementById("stage");
+        // make banner visible
+        stageElement.style.display = 'block';
     }
 }
 
