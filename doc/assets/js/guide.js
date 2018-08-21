@@ -6,7 +6,7 @@ var offCol = "rgb(220, 220, 220)";
 /**
  * Updates document elements and buttons according to guide-selection
  */
-function updateGUI(animated = true) {
+function updateGUI(animated) {
 
     // Change visibility of all elements with class "filterGuides" according to the guide's visibility
     [].forEach.call(document.querySelectorAll('.filterGuides'), function (el) {
@@ -69,7 +69,7 @@ function toggleGuide(btnGuide) {
         // toggle state
         window.localStorage.setItem(guideName, String(!currentState));
     }
-    updateGUI();
+    updateGUI(true);
 }
 
 /** 
