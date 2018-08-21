@@ -40,11 +40,18 @@ function timVersionInject() {
         projectalign.appendChild(guidelink);
     }
 
-    // Stage-banner
-    if((window.stage != undefined) && (window.stage == true)) {
-        var stageElement = document.getElementById("stage");
-        // make banner visible
-        stageElement.style.display = 'block';
+    // Type banner
+    if(window.type != undefined) {
+        if(window.type === "stage") {
+            var bannerElement = document.getElementById("stageBanner");
+            // make banner visible
+            bannerElement.style.display = 'block';
+        }
+        else if(window.type === "archived") {
+            var bannerElement = document.getElementById("archiveBanner");
+            // make banner visible
+            bannerElement.style.display = 'block';
+        }
     }
 }
 
