@@ -400,7 +400,7 @@ a[target='_blank'] {
 	padding: 0px;
 }
 
-#stage
+#stageBanner
 {
     font-family: Roboto, Arial,sans-serif;
     font-size: 200%;
@@ -421,6 +421,37 @@ a[target='_blank'] {
     -webkit-transform: rotate(33deg); /* Safari */
     transform: rotate(33deg);
     display: none;
+}
+
+#archiveBanner
+{
+    font-family: Roboto, Arial,sans-serif;
+    font-size: 150%;
+    color: #fff;
+    font-weight: bold;
+    padding: 20px;
+    line-height: 100%;
+    position: fixed;
+    z-index: 1000;
+    text-align: center;
+    vertical-align: middle;
+    top: 35px;
+    right: -350px;
+    width: 1000px;
+    height: 75px;
+    background-color: #337ab7;
+    opacity: 0.75;
+    -ms-transform: rotate(33deg); /* IE 9 */
+    -webkit-transform: rotate(33deg); /* Safari */
+    transform: rotate(33deg);
+    display: none;
+}
+
+#currentLink
+{
+    font-family: Roboto, Arial,sans-serif;
+    font-size: 85%;
+    color: #fff;
 }
 
 figcaption {
