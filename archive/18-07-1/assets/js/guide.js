@@ -1,4 +1,5 @@
 var allGuides = []
+var currentGuides = {}
 
 var onCol = "rgb(188, 221, 188)";
 var offCol = "rgb(220, 220, 220)";
@@ -15,7 +16,18 @@ function updateGUI(animated) {
         var visible = false;
         classList.forEach(function(guideName) {
             if(allGuides.includes(guideName)) {
-                visible = (localStorage.getItem(guideName) == "true")
+                try {
+                    visible = (localStorage.getItem(guideName) == "true")
+                }
+                catch(err) {
+                    if(guideName in currentGuides) {
+                        visible = currentGuides[guideName];
+                    }
+                    else {
+                        currentGuides[guideName] = true;
+                        visible = true;
+                    }
+                }
             }
         });
 
@@ -51,7 +63,21 @@ function updateGUI(animated) {
     allGuides.forEach(function(guideName) {
         let btnGuide = document.getElementById(guideName);
         if(btnGuide != undefined) {
-            btnGuide.style.background = (localStorage.getItem(guideName) == "true") ? onCol : offCol;
+            var visible = true;
+            try {
+                visible = (localStorage.getItem(guideName) == "true")
+            }
+            catch(err) {
+                if(guideName in currentGuides) {
+                    visible = currentGuides[guideName];
+                }
+                else {
+                    currentGuides[guideName] = true;
+                    visible = true;
+                }
+            }
+
+            btnGuide.style.background = (visible ? onCol : offCol);
         }
     });
 }
@@ -64,10 +90,21 @@ function updateGUI(animated) {
 function toggleGuide(btnGuide) {
     var guideName = btnGuide.id;
     if(allGuides.includes(guideName)) {
-        // get current state from localStorage
-        let currentState = (localStorage.getItem(guideName) == "true")
-        // toggle state
-        window.localStorage.setItem(guideName, String(!currentState));
+        // try to get current state from localStorage
+        try {
+            let visible = (localStorage.getItem(guideName) == "true")
+            // toggle state
+            window.localStorage.setItem(guideName, String(!visible));
+        }
+        catch(err) {
+            if(guideName in currentGuides) {
+                currentGuides[guideName] = !currentGuides[guideName];
+            }
+            else {
+                currentGuides[guideName] = true;
+            }
+        }
+        
     }
     updateGUI(true);
 }
