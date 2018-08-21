@@ -48,12 +48,12 @@ function updateGUI(animated) {
     });
 
     // Update guide-buttons:
-    for(let guideName of allGuides) {
+    allGuides.forEach(function(guideName) {
         let btnGuide = document.getElementById(guideName);
         if(btnGuide != undefined) {
             btnGuide.style.background = (localStorage.getItem(guideName) == "true") ? onCol : offCol;
         }
-    }
+    });
 }
 
 

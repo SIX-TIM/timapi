@@ -53,7 +53,7 @@ function updateGUI(animated) {
         if(btnGuide != undefined) {
             btnGuide.style.background = (localStorage.getItem(guideName) == "true") ? onCol : offCol;
         }
-    }
+    });
 }
 
 
