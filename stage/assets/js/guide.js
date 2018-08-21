@@ -15,7 +15,7 @@ function updateGUI(animated) {
         var classList = el.className.split(' ');
         var visible = false;
         classList.forEach(function(guideName) {
-            if(allGuides.includes(guideName)) {
+            if(allGuides.indexOf(guideName) >= 0) {
                 try {
                     visible = (localStorage.getItem(guideName) == "true")
                 }
@@ -89,7 +89,7 @@ function updateGUI(animated) {
  */
 function toggleGuide(btnGuide) {
     var guideName = btnGuide.id;
-    if(allGuides.includes(guideName)) {
+    if(allGuides.indexOf(guideName) >= 0) {
         // try to get current state from localStorage
         try {
             let visible = (localStorage.getItem(guideName) == "true")
@@ -118,7 +118,7 @@ function addGuidesStylesheet() {
     [].forEach.call(document.querySelectorAll('.filterGuides'), function (el) {
         var classList = el.className.split(' ');
         classList.forEach(function(guideName) {
-            if((allGuides.indexOf(guideName) < 0) && (guideName !== 'filterGuides')) {
+            if((allGuides.indexOf(guideName) < 0) && (guideName !== 'filterGuides') && (guideName.indexOf('guide') >= 0)) {
                 allGuides.push(guideName);
             }
         });
