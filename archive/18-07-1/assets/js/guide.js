@@ -133,7 +133,7 @@ function addGuidesStylesheet() {
 
         // add text
         var text = guide.replace('guide', '');
-        btn.append(document.createTextNode(text));
+        btn.appendChild(document.createTextNode(text));
 
         // add class
         btn.classList.add('btnGuide');
