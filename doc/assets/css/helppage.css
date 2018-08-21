@@ -114,16 +114,20 @@ main {
     background-color: rgb(220, 220, 220);
 }
 
-#seperator {
-    margin-top: -60px;
+.seperator {
+    margin-top: 60px;
     height: 15px;
     width: 125px;
     margin-left: 110px;
     background-color: rgb(220, 220, 220);
 }
 
-#apiLink {
-    margin-top: 10px;
+.linkDiv a {
+    color: #de3919;
+}
+
+.linkDiv {
+    margin-top: 20px;
     margin-left: 5px;
     color: #de3919;
 }
@@ -502,4 +506,10 @@ from {
 .fade-out {
     opacity: 1;
     animation: fadeOut 0.75s ease-out 1 forwards;
+}
+
+.vertical_header {
+    transform: rotate(-90deg);
+    transform-origin: center center 0;
+    font-weight: bold;
 }
