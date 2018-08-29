@@ -36,7 +36,7 @@
                 <span style="color: gray">.NET</span>
               </li>
               <li>
-                <span style="color: gray">Swift</span>
+                <a class="lang_swift" href="../swift/guide.html">Swift</a>
               </li>
               <li>
                 <span style="color: gray">JavaScript</span>
@@ -69,34 +69,47 @@
 
       <main>
       <section id="intro"><h1><a name="intro"></a>Introduction</h1><div class="row"><div class="col-md-6"><p>The TIM API is the standard application interface for ECR integration using SIX Payment Services terminals.
-        </p><p>TIM API provides a comprehensive feature set to support the requirements of several different markets. This
+        </p>
+        <p>TIM API provides a comprehensive feature set to support the requirements of several different markets. This
             guideline is intended to be used by ECR integrators that need to implement the TIM API functionality in
             their
             products.
-        </p><p>The following document contains an overview structure, description of the TIM API modes
+        </p>
+        <p>The following document contains an overview structure, description of the TIM API modes
             synchronous/asynchronous
             and describes the corresponding functions, notifiers and data elements that can be used with the TIM API.
             Furthermore implementation examples are provided. Nevertheless always the corresponding description of a
             function or data element is authoritative, not the examples.
-        </p><p>For further information about the architecture of the TIM API can be found in
+        </p>
+        <p>For further information about the architecture of the TIM API can be found in
             <a href="#reference">[B1]</a>, this document is meant to cover only implementation
             purposes.
-        </p><hr></div></div></section><section id="setup"><h1><a name="setup"></a>Setup Configuration</h1><div class="row"><div class="col-md-6"><p>The configuration of the <code><a href="doc/terminal_8h.html">terminal</a></code> can be done by creating and configuring a
+        </p>
+        <hr>
+    </div></div></section>
+    <section id="setup"><h1><a name="setup"></a>Setup Configuration</h1><div class="row"><div class="col-md-6"><p lang="c">The configuration of the <code><a href="doc/terminal_8h.html">terminal</a></code> can be done by creating and configuring a
                 <code><a href="doc/terminal__settings_8h.html">terminal_settings</a></code>-instance. The
                 <code><a href="doc/terminal__settings_8h.html">terminal_settings</a></code>-instance must then be passed to the
                 <code><a href="doc/terminal_8h.html#ab71047155839a18148d9a41406db42b4">terminal_create</a></code>function.
-        </p><p>Once a
+        </p>
+        <p>Once a
             <code><a href="doc/terminal_8h.html">terminal</a></code>-instance has been created with a
             <code><a href="doc/terminal__settings_8h.html">terminal_settings</a></code>-instance, the settings can not be changed anymore.
             Changes to the
             <code><a href="doc/terminal__settings_8h.html">terminal_settings</a></code>-instance will be ignored.
-        </p><p>The network and guides configuration are explained in the following
+        </p>
+        <p>The network and guides configuration are explained in the following
             chapters.
             For further information refer to<code><a href="doc/terminal__settings_8h.html">terminal_settings</a></code>.
-        </p></div></div><section id="network"><h2><a name="network"></a>Network Configuration</h2><div class="row"><div class="col-md-6"><p>The TIM API module can communicate with the Terminal over different communication channels. The default
+        </p>
+
+
+        </div></div><section id="network"><h2><a name="network"></a>Network Configuration</h2><div class="row"><div class="col-md-6"><p>The TIM API module can communicate with the Terminal over different communication channels. The default
                 communication
                 is over TCP/IP connection.
-            </p><p>For TCP/IP connection there are two possible ways to connect to the terminal:</p><ul>
+            </p>
+            <p>For TCP/IP connection there are two possible ways to connect to the terminal:</p>
+            <ul>
                 <li>
                     <strong>Broadcast-Mode:</strong>
                     <ul>
@@ -114,7 +127,11 @@
                         <li>Connection is established directly via IP.</li>
                     </ul>
                 </li>
-            </ul></div></div></section><div class="row"><div class="col-md-6"></div></div><section id="guides"><h2><a name="guides"></a>Guides Configuration</h2><div class="row"><div class="col-md-6"><p>There are various
+            </ul>
+
+        </div></div></section>
+        <div class="row"><div class="col-md-6"></div></div><section id="guides"><h2><a name="guides"></a>Guides Configuration</h2><div class="row"><div class="col-md-6">
+                    <p>There are various
                         <code><a href="doc/guides_8h.html">guides</a></code>
                         covering different use case scenarios. The guide retail is the basic guide and is activated as
                         default. With
@@ -122,12 +139,13 @@
                         the guides can be configured. Important: the configuration needs to include all desired guides
                         (including
                         the retail guide).
-                    </p><p>
+                    </p>
 
-                </p></div><div class="col-md-6"><p>Code-example for creating a terminal including settings with activated guides retail and
+                </div><div class="col-md-6">
+                    <p>Code-example for creating a terminal including settings with activated guides retail and
                         hospitality:
-                    </p><p>
-                    </p><pre><code class="language-{.c}">ta_object_t terminal = ta_object_invalid;
+                    </p>
+                    <pre><code class="language-{.c}">ta_object_t terminal = ta_object_invalid;
 ta_object_t settings = ta_object_invalid;
 
 // create terminal settings instance
@@ -145,9 +163,16 @@ ta_object_release(settings);
 //...
 
 // in the end release terminal as well
-ta_oject_release(terminal);</code></pre><p>
-                </p></div></div><div class="row"><div class="col-md-6"><hr></div></div></section><div class="row"><div class="col-md-6"></div></div></section><section id="operation"><h1><a name="operation"></a>Operation Overview</h1><div class="row"><div class="col-md-6"><p>Follow these basic steps for using the TIM API:</p><p>
-                </p><ol>
+ta_oject_release(terminal);</code></pre>
+                </div></div>
+
+            <div class="row"><div class="col-md-6"><hr>
+        </div></div></section>
+        <div class="row"><div class="col-md-6"></div></div></section>
+    <section id="operation"><h1><a name="operation"></a>Operation Overview</h1><div class="row"><div class="col-md-6">
+
+                <p>Follow these basic steps for using the TIM API:</p>
+                <ol>
                     <li>Create
                         <code><a href="doc/terminal__settings_8h.html">terminal_settings</a></code>
                         and initialize connection parameters (see
@@ -181,10 +206,16 @@ ta_oject_release(terminal);</code></pre><p>
                         method.
                     </li>
                     <li>Use terminal operation functions.</li>
-                </ol><p>
-            </p></div><div class="col-md-6"><p>A basic flow to show a dialog is:</p><p>
-                </p><figure><img src="res/img/operations_overview.png"><figcaption>Operations overview</figcaption></figure><p>
-            </p></div></div><div class="row"><div class="col-md-6"><hr></div></div></section><section id="automatisms"><h1><a name="automatisms"></a>Automatisms</h1><div class="row"><div class="col-md-6"><p>The TIM API uses two different types of automatisms:</p><ul>
+                </ol>
+            </div><div class="col-md-6">
+                <p lang="c">A basic flow to show a dialog is:</p>
+                <figure><img src="res/img/operations_overview.png"><figcaption>Operations overview</figcaption></figure>
+            </div></div>
+        <div class="row"><div class="col-md-6"><hr>
+
+    </div></div></section>
+    <section id="automatisms"><h1><a name="automatisms"></a>Automatisms</h1><div class="row"><div class="col-md-6"><p>The TIM API uses two different types of automatisms:</p>
+        <ul>
             <li>
                 <p>
                     <strong>Pre-Automatisms:</strong>
@@ -209,29 +240,40 @@ ta_oject_release(terminal);</code></pre><p>
                     been made.  <code><a href="doc/terminal__settings_8h.html#a2be8b19ae60811461776046761f7e4c5">auto_commit</a></code> and <code><a href="doc/terminal__settings_8h.html#a37a5cb308ad77a3b7e7cea77c73b71c1">fetch_brands</a></code> are enabled by default.
                 </p>
             </li>
-        </ul><p>The following diagrams show the principle of the Pre-Automatisms and Post-Automatisms. Pre-Automatisms are
+        </ul>
+        <p>The following diagrams show the principle of the Pre-Automatisms and Post-Automatisms. Pre-Automatisms are
             enabled by default and cannot be disabled. If an error occurs the started request from the ECR is returned
             with an error.
-        </p></div></div><div class="row"><div class="col-md-6"><p>
+        </p>
+
+        </div></div><div class="row"><div class="col-md-6">
+
+                <p>
                     <strong>Synchronous flow</strong>
-                </p><p>
-                </p><figure><img src="res/img/sync_flow.png"><figcaption>Synchronous flow</figcaption></figure><p>
-            </p></div><div class="col-md-6"><p>
+                </p>
+                <figure><img src="res/img/sync_flow.png"><figcaption>Synchronous flow</figcaption></figure>
+            </div><div class="col-md-6">
+                <p>
                     <strong>Asynchronous flow</strong>
-                </p><p>
-                </p><figure><img src="res/img/async_flow.png"><figcaption>Asynchronous flow</figcaption></figure><p>
-            </p></div></div><div class="row"><div class="col-md-6"><hr></div></div></section><section id="methods"><h1><a name="methods"></a>Terminal methods overview</h1><div class="row"><div class="col-md-6"><p>The basic operation modes of terminal <span>function</span> calls are:</p><p>
-                </p><ol>
+                </p>
+                <figure><img src="res/img/async_flow.png"><figcaption>Asynchronous flow</figcaption></figure>
+            </div></div>
+        <div class="row"><div class="col-md-6"><hr>
+
+    </div></div></section>
+    <section id="methods"><h1><a name="methods"></a>Terminal methods overview</h1><div class="row"><div class="col-md-6">
+                <p>The basic operation modes of terminal <span lang="c">function</span> calls are:</p>
+                <ol>
                     <li>
                         <p>
                             <strong>Synchronous</strong>
-                            <br><span>Function calls are blocking and return after the operation has finished. Error code is provided and indicates if request was successful or not.</span>
+                            <br><span lang="c">Function calls are blocking and return after the operation has finished. Error code is provided and indicates if request was successful or not.</span>
                         </p>
                     </li>
                     <li>
                         <p>
                             <strong>Asynchronous</strong>
-                            <br> <span>
+                            <br> <span lang="c">
                                 Function call returns immediately after the operation has started successfully. A user-implemented callback
                     function will then be called, after operation has finished. All callback functions receive an
                     <code><a href="doc/structta__s__event.html">event</a></code>. The
@@ -241,12 +283,13 @@ ta_oject_release(terminal);</code></pre><p>
                             </span>
                         </p>
                     </li>
-                </ol><p>
-                </p><p>Functions called on terminal perform synchronous by default. The asynchronous method has the same name
-                    with <i>_aync</i> appended to its name.
-                </p><p>
-            </p></div><div class="col-md-6"><p>Code example for adding a terminal listener:</p><p>
-                </p><pre><code class="language-{.c}">/*
+                </ol>
+                <p>Functions called on terminal perform synchronous by default. The asynchronous method has the same name
+                    with <i lang="c">_aync</i> appended to its name.
+                </p>
+            </div><div class="col-md-6">
+                <p>Code example for adding a terminal listener:</p>
+                <pre><code class="language-{.c}">/*
  * Example for adding a terminal status listener
  *
  * \param[in] terminal Terminal instance
@@ -286,8 +329,10 @@ void mylistener_terminal_status_changed(ta_object_t terminal,	void *user_pointer
 
 	// implement your code to process status change here...
 	//printf(&amp;quot; &amp;gt; listener_terminal_status_changed\n&amp;quot;);
-}</code></pre><p>
-            </p></div></div><div class="row"><div class="col-md-6"></div></div><section id="mainFunc"><h2><a name="mainFunc"></a>Main / guide retail terminal functions</h2><div class="row"><div class="col-md-6"><table class="table"><thead>
+}</code></pre>
+            </div></div>
+        <div class="row"><div class="col-md-6"></div></div><section id="mainFunc"><h2><a name="mainFunc"></a>Main / guide retail terminal functions</h2><div class="row"><div class="col-md-6"><table class="table">
+                <thead>
                     <tr>
                         <th>
                             <strong>Sync method</strong>
@@ -298,7 +343,8 @@ void mylistener_terminal_status_changed(ta_object_t terminal,	void *user_pointer
                         </th>
                         <th>Description</th>
                     </tr>
-                </thead><tbody>
+                </thead>
+                <tbody>
                     <tr>
                         <td>
                             <code class="syncMethod"><a class="syncMethod" href="doc/terminal_8h.html#a2bc6f9272859177eae06242f6838a753">ta_terminal_activate</a></code>
@@ -536,7 +582,13 @@ void mylistener_terminal_status_changed(ta_object_t terminal,	void *user_pointer
                         </td>
                         <td>Starts an EFT Terminal Transaction.</td>
                     </tr>
-                </tbody></table></div></div></section><div class="row"><div class="col-md-6"></div></div><section class="filterGuides guideDialog" id="dialogFunc"><h2><a name="dialogFunc"></a>Guide dialog terminal functions</h2><div class="row"><div class="col-md-6"><table class="table"><thead>
+                </tbody>
+            </table>
+
+        </div></div></section>
+
+        <div class="row"><div class="col-md-6"></div></div><section class="filterGuides guideDialog" id="dialogFunc"><h2><a name="dialogFunc"></a>Guide dialog terminal functions</h2><div class="row"><div class="col-md-6"><table class="table">
+              <thead>
                   <tr>
                       <th>
                           <strong>Sync method</strong>
@@ -547,7 +599,8 @@ void mylistener_terminal_status_changed(ta_object_t terminal,	void *user_pointer
                       </th>
                       <th>Description</th>
                   </tr>
-              </thead><tbody>
+              </thead>
+              <tbody>
                   <tr>
                       <td>
                           <code class="syncMethod"><a class="syncMethod" href="doc/terminal_8h.html#ae7f183c210fb52783d5704bdc27b430a">ta_terminal_open_dialog_mode</a></code>
@@ -588,12 +641,18 @@ void mylistener_terminal_status_changed(ta_object_t terminal,	void *user_pointer
                       </td>
                       <td>Show signature capture on the terminal.</td>
                   </tr>
-            </tbody></table></div></div></section><div class="row"><div class="col-md-6"></div></div><section id="addMethods"><h2><a name="addMethods"></a>Additional terminal listener-events</h2><div class="row"><div class="col-md-6"><table class="table"><thead>
+            </tbody>
+          </table>
+        </div></div></section>
+
+        <div class="row"><div class="col-md-6"></div></div><section id="addMethods"><h2><a name="addMethods"></a>Additional terminal listener-events</h2><div class="row"><div class="col-md-6"><table class="table">
+                <thead>
                     <tr>
                         <th>Listener-event</th>
                         <th>Description</th>
                     </tr>
-                </thead><tbody>
+                </thead>
+                <tbody>
                     <tr>
                         <td>
                             <code class="completedMethod"><a class="completedMethod" href="doc/terminal__listener_8h.html#a6547832ef93cedf0884755827f6f1e10">request_completed</a></code>
@@ -615,14 +674,22 @@ void mylistener_terminal_status_changed(ta_object_t terminal,	void *user_pointer
                             retrieved from the TerminalStatus property.
                         </td>
                     </tr>
-                </tbody></table></div></div></section><div class="row"><div class="col-md-6"></div></div></section><section id="clang"><h1><a name="clang"></a>C Language Specifics</h1><section id="objects"><h2><a name="objects"></a>Objects in TIM API C</h2><div class="row"><div class="col-md-6"><p>The TIM API C is based on an object-type concept. Most TIM API functions will either take or return parameters
+                </tbody>
+            </table>
+
+        </div></div></section>
+
+    <div class="row"><div class="col-md-6"></div></div></section>
+    <section id="clang"><h1><a name="clang"></a>C Language Specifics</h1><section id="objects"><h2><a name="objects"></a>Objects in TIM API C</h2><div class="row"><div class="col-md-6"><p>The TIM API C is based on an object-type concept. Most TIM API functions will either take or return parameters
                 in shape of the "opaque type"
                 <code><a href="doc/object_8h.html">ta_object_t</a></code>. For example:
                 <code><a href="doc/terminal_8h.html#ab71047155839a18148d9a41406db42b4">ta_terminal_create</a></code> will create a new terminal-instance, which returns a
                 <code><a href="doc/object_8h.html">ta_object_t</a></code>. On the other hand terminal-function calls like
                 <code><a href="doc/terminal_8h.html#a69cd9a5fb957251c966827f7a897098e">ta_terminal_get_terminal_id</a></code> require the terminal-instance as parameter of type
-                <code><a href="doc/object_8h.html">ta_object_t</a></code>.</p><p>Note: This concept introduces a behaviour similar to certain aspects of object-oriented programming to the
-                environment of C. Similarities are as follows:</p><ul>
+                <code><a href="doc/object_8h.html">ta_object_t</a></code>.</p>
+              <p>Note: This concept introduces a behaviour similar to certain aspects of object-oriented programming to the
+                environment of C. Similarities are as follows:</p>
+              <ul>
                 <li>For each object-type there are functions similar to getters and setters, in order to access the object-properties.
                   <ul>
                     <li>The naming of getters and setters is as follows: ta_DATATYPE_get/set_PROPERTY</li>
@@ -645,9 +712,12 @@ void mylistener_terminal_status_changed(ta_object_t terminal,	void *user_pointer
                     </li>
                   </ul>
                 </li>
-              </ul></div></div></section><div class="row"><div class="col-md-6"></div></div><section id="memory"><h2><a name="memory"></a>Memory Management in TIM API C</h2><div class="row"><div class="col-md-6"><p>The memory needed for each object will be allocated and freed by the TIM API itself. However, the user is responsible
-                to release retained objects, when no longer needed. Retained objects are:</p><p>
-              </p><ul>
+              </ul>
+        </div></div></section>
+        <div class="row"><div class="col-md-6"></div></div><section id="memory"><h2><a name="memory"></a>Memory Management in TIM API C</h2><div class="row"><div class="col-md-6">
+            <p>The memory needed for each object will be allocated and freed by the TIM API itself. However, the user is responsible
+                to release retained objects, when no longer needed. Retained objects are:</p>
+              <ul>
                 <li>Objects returned by the TIM API as retained objects (e.g.
                   <code><a href="doc/terminal_8h.html">terminal</a></code>-instance created with
                   <code><a href="doc/terminal_8h.html#ab71047155839a18148d9a41406db42b4">ta_terminal_create</a></code>, or a
@@ -660,10 +730,12 @@ void mylistener_terminal_status_changed(ta_object_t terminal,	void *user_pointer
                   must not be released (would lead to errors)! Objects that are returned as not-retained are to read immediately
                   or to explictely retain with
                   <code><a href="doc/object_8h.html#a9a8917ee724f85a764111fa1c2553f40">ta_object_retain</a></code>.</li>
-              </ul><p>
-              </p><p>(see header-documentation or this doxygen-dok to determine, if objects are retained / not retained. Most IDE
-                support doxygen of header-documentation and will show these information while coding).</p><p>
-                </p></div><div class="col-md-6"><p>Following an example of memory management. Shown by using a list:</p><pre><code class="language-{.c}">/* --- Create list -------------------------------------------------- */
+              </ul>
+              <p>(see header-documentation or this doxygen-dok to determine, if objects are retained / not retained. Most IDE
+                support doxygen of header-documentation and will show these information while coding).</p>
+                </div><div class="col-md-6">
+                    Following an example of memory management. Shown by using a list:
+                    <pre><code class="language-{.c}">/* --- Create list -------------------------------------------------- */
 ta_object_t myList = ta_object_invalid;
 ta_list_create(&amp;amp;myList);
 
@@ -707,15 +779,20 @@ ta_object_release(myList);
 // - If user still wants to use myListElement, he needs to call
 //   ta_object_retain(myListElement) right after receiving it from
 //   the list. In this case, he later needs to release the list
-//   element with ta_object_release(myListElement).</code></pre><p>
-                </p></div></div><div class="row"><div class="col-md-6"></div></div></section><div class="row"><div class="col-md-6"></div></div><section id="datatype"><h2><a name="datatype"></a>Data Types in TIM API C</h2><div class="row"><div class="col-md-6"><p>C doesn't provide data types / collections like string, boolean, list, timedate etc. Therefore the TIM API
+//   element with ta_object_release(myListElement).</code></pre>
+                </div></div>
+        <div class="row"><div class="col-md-6"></div></div></section>
+        <div class="row"><div class="col-md-6"></div></div><section id="datatype"><h2><a name="datatype"></a>Data Types in TIM API C</h2><div class="row"><div class="col-md-6"><p>C doesn't provide data types / collections like string, boolean, list, timedate etc. Therefore the TIM API
                 uses and provides a set of basic data types. In various places the TIM API requires or returns these data
-                types.</p><table class="table"><thead>
+                types.</p>
+              <table class="table">
+                <thead>
                   <tr>
                     <th>Data Type</th>
                     <th>Description</th>
                   </tr>
-                </thead><tbody>
+                </thead>
+                <tbody>
                   <tr>
                     <td>
                         <code><a href="doc/boolean_8h.html">boolean</a></code>
@@ -758,19 +835,29 @@ ta_object_release(myList);
                     </td>
                     <td>Time-Date type.</td>
                   </tr>
-                </tbody></table></div></div></section><div class="row"><div class="col-md-6"></div></div></section><section id="reference"><h1><a name="reference"></a>Reference</h1><div class="row"><div class="col-md-6"><table class="table"><thead>
+                </tbody>
+              </table>
+        </div></div></section>
+    <div class="row"><div class="col-md-6"></div></div></section>
+    <section id="reference"><h1><a name="reference"></a>Reference</h1><div class="row"><div class="col-md-6"><table class="table">
+            <thead>
                 <tr>
                     <th>Ref.</th>
                     <th>Document</th>
                     <th>Version</th>
                 </tr>
-            </thead><tbody>
+            </thead>
+            <tbody>
                 <tr>
                     <td>[B1]</td>
                     <td>TIM &amp; SIXml Architecture: The SIX ECR Integration System</td>
                     <td>0.10</td>
                 </tr>
-            </tbody></table></div></div></section></main>
+            </tbody>
+        </table>
+
+    </div></div></section>
+</main>
     </div>
   </div>
 </body>

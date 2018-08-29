@@ -36,7 +36,7 @@
                 <span style="color: gray">.NET</span>
               </li>
               <li>
-                <span style="color: gray">Swift</span>
+                <a class="lang_swift" href="../swift/guide.html">Swift</a>
               </li>
               <li>
                 <span style="color: gray">JavaScript</span>
@@ -69,19 +69,25 @@
 
       <main>
       <section id="intro"><h1><a name="intro"></a>Introduction</h1><div class="row"><div class="col-md-6"><p>The TIM API is the standard application interface for ECR integration using SIX Payment Services terminals.
-        </p><p>TIM API provides a comprehensive feature set to support the requirements of several different markets. This
+        </p>
+        <p>TIM API provides a comprehensive feature set to support the requirements of several different markets. This
             guideline is intended to be used by ECR integrators that need to implement the TIM API functionality in
             their
             products.
-        </p><p>The following document contains an overview structure, description of the TIM API modes
+        </p>
+        <p>The following document contains an overview structure, description of the TIM API modes
             synchronous/asynchronous
             and describes the corresponding functions, notifiers and data elements that can be used with the TIM API.
             Furthermore implementation examples are provided. Nevertheless always the corresponding description of a
             function or data element is authoritative, not the examples.
-        </p><p>For further information about the architecture of the TIM API can be found in
+        </p>
+        <p>For further information about the architecture of the TIM API can be found in
             <a href="#reference">[B1]</a>, this document is meant to cover only implementation
             purposes.
-        </p><hr></div></div></section><section id="setup"><h1><a name="setup"></a>Setup Configuration</h1><div class="row"><div class="col-md-6"><p>The configuration of the <code><a href="doc/index.html?com/six/timapi/Terminal.html">Terminal</a></code> can be done in two ways:
+        </p>
+        <hr>
+    </div></div></section>
+    <section id="setup"><h1><a name="setup"></a>Setup Configuration</h1><div class="row"><div class="col-md-6"><p lang="java">The configuration of the <code><a href="doc/index.html?com/six/timapi/Terminal.html">Terminal</a></code> can be done in two ways:
             <ol>
                 <li>In a configuration file &#8220;TimApi.cfg&#8221;.</li>
                 <li>Using / configuring the
@@ -90,19 +96,26 @@
                 </li>
             </ol>
             The settings defined in the .cfg file will be overwritten by the changes done using the API code directly.
-        </p><p>Once a
+        </p>
+        <p>Once a
             <code><a href="doc/index.html?com/six/timapi/Terminal.html">Terminal</a></code>-instance has been created with a
             <code><a href="doc/index.html?com/six/timapi/TerminalSettings.html">TerminalSettings</a></code>-instance, the settings can not be changed anymore.
             Changes to the
             <code><a href="doc/index.html?com/six/timapi/TerminalSettings.html">TerminalSettings</a></code>-instance will be ignored.
-        </p><p>The network and guides configuration <span>as well as the configuration file</span> are explained in the following
+        </p>
+        <p>The network and guides configuration <span lang="java">as well as the configuration file</span> are explained in the following
             chapters.
             For further information refer to
             <code><a href="doc/index.html?com/six/timapi/TerminalSettings.html">TerminalSettings</a></code>.
-        </p></div></div><section id="network"><h2><a name="network"></a>Network Configuration</h2><div class="row"><div class="col-md-6"><p>The TIM API module can communicate with the Terminal over different communication channels. The default
+        </p>
+
+
+        </div></div><section id="network"><h2><a name="network"></a>Network Configuration</h2><div class="row"><div class="col-md-6"><p>The TIM API module can communicate with the Terminal over different communication channels. The default
                 communication
                 is over TCP/IP connection.
-            </p><p>For TCP/IP connection there are two possible ways to connect to the terminal:</p><ul>
+            </p>
+            <p>For TCP/IP connection there are two possible ways to connect to the terminal:</p>
+            <ul>
                 <li>
                     <strong>Broadcast-Mode:</strong>
                     <ul>
@@ -120,7 +133,11 @@
                         <li>Connection is established directly via IP.</li>
                     </ul>
                 </li>
-            </ul></div></div></section><div class="row"><div class="col-md-6"></div></div><section id="guides"><h2><a name="guides"></a>Guides Configuration</h2><div class="row"><div class="col-md-6"><p>There are various
+            </ul>
+
+        </div></div></section>
+        <div class="row"><div class="col-md-6"></div></div><section id="guides"><h2><a name="guides"></a>Guides Configuration</h2><div class="row"><div class="col-md-6">
+                    <p>There are various
                         <code><a href="doc/index.html?com/six/timapi/constants/Guides.html">Guides</a></code>
                         covering different use case scenarios. The guide retail is the basic guide and is activated as
                         default. With
@@ -128,12 +145,13 @@
                         the guides can be configured. Important: the configuration needs to include all desired guides
                         (including
                         the retail guide).
-                    </p><p>
+                    </p>
 
-                </p></div><div class="col-md-6"><p>Code-example for creating a terminal including settings with activated guides retail and
+                </div><div class="col-md-6">
+                    <p>Code-example for creating a terminal including settings with activated guides retail and
                         hospitality:
-                    </p><p>
-                    </p><pre><code class="language-{.java}">// Create settings with Terminal-ID of terminal to connect to
+                    </p>
+                    <pre><code class="language-{.java}">// Create settings with Terminal-ID of terminal to connect to
 com.six.TerminalSettings settings = new com.six.TerminalSettings();
 settings.setTerminalId("12345678");
 
@@ -146,8 +164,13 @@ com.six.Terminal terminal = new com.six.Terminal(settings);
 //...
 
 // Disconnect from terminal and clean up properly
-terminal.dispose();</code></pre><p>
-                </p></div></div><div class="row"><div class="col-md-6"><hr></div></div></section><div class="row"><div class="col-md-6"></div></div><section id="configfile"><h2><a name="configfile"></a>Configuration File</h2><div class="row"><div class="col-md-6"><p>With the use of the configuration file &#8220;TimApi.cfg&#8221;
+terminal.dispose();</code></pre>
+                </div></div>
+
+            <div class="row"><div class="col-md-6"><hr>
+        </div></div></section>
+        <div class="row"><div class="col-md-6"></div></div><section id="configfile"><h2><a name="configfile"></a>Configuration File</h2><div class="row"><div class="col-md-6">
+                    <p>With the use of the configuration file &#8220;TimApi.cfg&#8221;
                         <code><a href="doc/index.html?com/six/timapi/TerminalSettings.html">TerminalSettings</a></code>
                         can be set from outside of the application. If the user wishes to use multiple instances of the
                         Terminal
@@ -156,9 +179,9 @@ terminal.dispose();</code></pre><p>
                         DeviceId. The same DeviceId has to be used in the constructor of the TerminalSettings class if
                         the specified
                         configuration is wished to use. If no DeviceId is specified the global ini-section is used.
-                    </p><p>
-                    </p><p>The precedence of the configuration is as follows:</p><p>
-                    </p><ol>
+                    </p>
+                    <p>The precedence of the configuration is as follows:</p>
+                    <ol>
                         <li>TimApi.cfg will be read first by creating a
                             <code><a href="doc/index.html?com/six/timapi/TerminalSettings.html">TerminalSettings</a></code>
                             object
@@ -169,14 +192,16 @@ terminal.dispose();</code></pre><p>
                             <code><a href="doc/index.html?com/six/timapi/TerminalSettings.html">TerminalSettings</a></code>
                             class.
                         </li>
-                    </ol><p>
-                    </p><p>Table with Configuration File Parameters:</p><p>
-                    </p><table class="table"><thead>
+                    </ol>
+                    <p>Table with Configuration File Parameters:</p>
+                    <table class="table">
+                        <thead>
                             <tr>
                                 <th>Parameter</th>
                                 <th>Description</th>
                             </tr>
-                        </thead><tbody>
+                        </thead>
+                        <tbody>
                             <tr>
                                 <td>
                                     <strong>LogDir</strong>
@@ -283,12 +308,14 @@ terminal.dispose();</code></pre><p>
                                     or &#8220;Off&#8221;).
                                 </td>
                             </tr>
-                        </tbody></table><p>
-                </p></div><div class="col-md-6"><p>Example &#8220;TimApi.cfg&#8221;: This example describes the TimApi.cfg file with a global ini-section and
+                        </tbody>
+                    </table>
+                </div><div class="col-md-6">
+                    <p>Example &#8220;TimApi.cfg&#8221;: This example describes the TimApi.cfg file with a global ini-section and
                         two different
                         ini-sections for specific DeviceIds:
-                    </p><p>
-                    </p><pre><code class="language-{.cfg}">[global]
+                    </p>
+                    <pre><code class="language-{.cfg}">[global]
 ProtocolType = SIXml
 TerminalId = 21001234
 LogDir = var/log
@@ -321,9 +348,18 @@ LogDir = var/yetAnotherLog
 ConnectionMode = Websockets
 ConnectionIPString = 192.168.1.13
 ConnectionIPPort = 80
-SecuredConnection = On</code></pre><p>
-                </p></div></div><div class="row"><div class="col-md-6"><hr></div></div></section><div class="row"><div class="col-md-6"></div></div></section><section id="operation"><h1><a name="operation"></a>Operation Overview</h1><div class="row"><div class="col-md-6"><p>Follow these basic steps for using the TIM API:</p><p>
-                </p><ol>
+SecuredConnection = On</code></pre>
+                </div></div>
+
+
+            <div class="row"><div class="col-md-6"><hr>
+
+        </div></div></section>
+    <div class="row"><div class="col-md-6"></div></div></section>
+    <section id="operation"><h1><a name="operation"></a>Operation Overview</h1><div class="row"><div class="col-md-6">
+
+                <p>Follow these basic steps for using the TIM API:</p>
+                <ol>
                     <li>Create
                         <code><a href="doc/index.html?com/six/timapi/TerminalSettings.html">TerminalSettings</a></code>
                         and initialize connection parameters (see
@@ -357,10 +393,15 @@ SecuredConnection = On</code></pre><p>
                         method.
                     </li>
                     <li>Use terminal operation functions.</li>
-                </ol><p>
-            </p></div><div class="col-md-6"><p>A basic flow to perform a transaction is:</p><p>
-                </p><figure><img src="res/img/operations_overview.png"><figcaption>Operations overview</figcaption></figure><p>
-            </p></div></div><div class="row"><div class="col-md-6"><hr></div></div></section><section id="automatisms"><h1><a name="automatisms"></a>Automatisms</h1><div class="row"><div class="col-md-6"><p>The TIM API uses two different types of automatisms:</p><ul>
+                </ol>
+            </div><div class="col-md-6">
+                <p lang="java">A basic flow to perform a transaction is:</p><figure><img src="res/img/operations_overview.png"><figcaption>Operations overview</figcaption></figure>
+            </div></div>
+        <div class="row"><div class="col-md-6"><hr>
+
+    </div></div></section>
+    <section id="automatisms"><h1><a name="automatisms"></a>Automatisms</h1><div class="row"><div class="col-md-6"><p>The TIM API uses two different types of automatisms:</p>
+        <ul>
             <li>
                 <p>
                     <strong>Pre-Automatisms:</strong>
@@ -385,23 +426,34 @@ SecuredConnection = On</code></pre><p>
                     been made.  <code><a href="doc/index.html?com/six/timapi/TerminalSettings.html#setAutoCommit-boolean-">autoCommit</a></code> and <code><a href="doc/index.html?com/six/timapi/TerminalSettings.html#setFetchBrands-boolean-">fetchBrands</a></code> are enabled by default.
                 </p>
             </li>
-        </ul><p>The following diagrams show the principle of the Pre-Automatisms and Post-Automatisms. Pre-Automatisms are
+        </ul>
+        <p>The following diagrams show the principle of the Pre-Automatisms and Post-Automatisms. Pre-Automatisms are
             enabled by default and cannot be disabled. If an error occurs the started request from the ECR is returned
             with an error.
-        </p></div></div><div class="row"><div class="col-md-6"><p>
+        </p>
+
+        </div></div><div class="row"><div class="col-md-6">
+
+                <p>
                     <strong>Synchronous flow</strong>
-                </p><p>
-                </p><figure><img src="res/img/sync_flow.png"><figcaption>Synchronous flow</figcaption></figure><p>
-            </p></div><div class="col-md-6"><p>
+                </p>
+                <figure><img src="res/img/sync_flow.png"><figcaption>Synchronous flow</figcaption></figure>
+            </div><div class="col-md-6">
+                <p>
                     <strong>Asynchronous flow</strong>
-                </p><p>
-                </p><figure><img src="res/img/async_flow.png"><figcaption>Asynchronous flow</figcaption></figure><p>
-            </p></div></div><div class="row"><div class="col-md-6"><hr></div></div></section><section id="methods"><h1><a name="methods"></a>Terminal methods overview</h1><div class="row"><div class="col-md-6"><p>The basic operation modes of terminal <span>method</span> calls are:</p><p>
-                </p><ol>
+                </p>
+                <figure><img src="res/img/async_flow.png"><figcaption>Asynchronous flow</figcaption></figure>
+            </div></div>
+        <div class="row"><div class="col-md-6"><hr>
+
+    </div></div></section>
+    <section id="methods"><h1><a name="methods"></a>Terminal methods overview</h1><div class="row"><div class="col-md-6">
+                <p>The basic operation modes of terminal <span lang="java">method</span> calls are:</p>
+                <ol>
                     <li>
                         <p>
                             <strong>Synchronous</strong>
-                            <br><span> Method calls are blocking and return after operation is finished successfully or throw a
+                            <br><span lang="java"> Method calls are blocking and return after operation is finished successfully or throw a
                             TimException
                             otherwise.
                             </span> </p>
@@ -410,7 +462,7 @@ SecuredConnection = On</code></pre><p>
                         <p>
                             <strong>Asynchronous</strong>
                             <br>
-                            <span>
+                            <span lang="java">
                                 Method returns immediately after the operation has started or throws a
                                 <code><a href="doc/index.html?com/six/timapi/TimException.html">TimException</a></code>
                                 otherwise. A listener-event-method will be called after operation is finished successfully.
@@ -423,11 +475,12 @@ SecuredConnection = On</code></pre><p>
                                 <code><a href="doc/index.html?com/six/timapi/Terminal.html#addListener-com.six.timapi.TerminalListener-">addListener</a></code>.
                             </span> </p>
                     </li>
-                </ol><p>
-                </p><p>Functions called on terminal perform synchronous by default. The asynchronous method has the same name
-                    with <i>Async</i> appended to its name.</p><p>
-            </p></div><div class="col-md-6"><p>Code example for adding a terminal listener:</p><p>
-                </p><pre><code class="language-{.java}">/** Asynchronous listener handling terminal events. */
+                </ol>
+                <p>Functions called on terminal perform synchronous by default. The asynchronous method has the same name
+                    with <i lang="java">Async</i> appended to its name.</p>
+            </div><div class="col-md-6">
+                <p>Code example for adding a terminal listener:</p>
+                <pre><code class="language-{.java}">/** Asynchronous listener handling terminal events. */
 class TerminalHandler extends com.six.DefaultTerminalListener {
 
     /** Terminal status change which can be the display content or an operational state. */
@@ -476,8 +529,10 @@ terminal.transactionAsync(com.six.constants.TransactionType.PURCHASE,
     new com.six.Amount(8.5, com.six.constants.Currency.CHF));
 
 // Once the transaction completes TerminalHandler.transactionCompleted will be called
-// TerminalHandler.terminalStatusChanged will be called after every status change</code></pre><p>
-            </p></div></div><div class="row"><div class="col-md-6"></div></div><section id="mainFunc"><h2><a name="mainFunc"></a>Main / guide retail terminal functions</h2><div class="row"><div class="col-md-6"><table class="table"><thead>
+// TerminalHandler.terminalStatusChanged will be called after every status change</code></pre>
+            </div></div>
+        <div class="row"><div class="col-md-6"></div></div><section id="mainFunc"><h2><a name="mainFunc"></a>Main / guide retail terminal functions</h2><div class="row"><div class="col-md-6"><table class="table">
+                <thead>
                     <tr>
                         <th>
                             <strong>Sync method</strong>
@@ -488,7 +543,8 @@ terminal.transactionAsync(com.six.constants.TransactionType.PURCHASE,
                         </th>
                         <th>Description</th>
                     </tr>
-                </thead><tbody>
+                </thead>
+                <tbody>
                     <tr>
                         <td>
                             <code class="syncMethod"><a class="syncMethod" href="doc/index.html?com/six/timapi/Terminal.html#activate--">activate</a></code>
@@ -726,7 +782,13 @@ terminal.transactionAsync(com.six.constants.TransactionType.PURCHASE,
                         </td>
                         <td>Starts an EFT Terminal Transaction.</td>
                     </tr>
-                </tbody></table></div></div></section><div class="row"><div class="col-md-6"></div></div><section class="filterGuides guideDialog" id="dialogFunc"><h2><a name="dialogFunc"></a>Guide dialog terminal functions</h2><div class="row"><div class="col-md-6"><table class="table"><thead>
+                </tbody>
+            </table>
+
+        </div></div></section>
+
+        <div class="row"><div class="col-md-6"></div></div><section class="filterGuides guideDialog" id="dialogFunc"><h2><a name="dialogFunc"></a>Guide dialog terminal functions</h2><div class="row"><div class="col-md-6"><table class="table">
+              <thead>
                   <tr>
                       <th>
                           <strong>Sync method</strong>
@@ -737,7 +799,8 @@ terminal.transactionAsync(com.six.constants.TransactionType.PURCHASE,
                       </th>
                       <th>Description</th>
                   </tr>
-              </thead><tbody>
+              </thead>
+              <tbody>
                   <tr>
                       <td>
                           <code class="syncMethod"><a class="syncMethod" href="doc/index.html?com/six/timapi/Terminal.html#openDialogMode--">openDialogMode</a></code>
@@ -778,12 +841,18 @@ terminal.transactionAsync(com.six.constants.TransactionType.PURCHASE,
                       </td>
                       <td>Show signature capture on the terminal.</td>
                   </tr>
-            </tbody></table></div></div></section><div class="row"><div class="col-md-6"></div></div><section id="addMethods"><h2><a name="addMethods"></a>Additional terminal listener-events</h2><div class="row"><div class="col-md-6"><table class="table"><thead>
+            </tbody>
+          </table>
+        </div></div></section>
+
+        <div class="row"><div class="col-md-6"></div></div><section id="addMethods"><h2><a name="addMethods"></a>Additional terminal listener-events</h2><div class="row"><div class="col-md-6"><table class="table">
+                <thead>
                     <tr>
                         <th>Listener-event</th>
                         <th>Description</th>
                     </tr>
-                </thead><tbody>
+                </thead>
+                <tbody>
                     <tr>
                         <td>
                             <code class="completedMethod"><a class="completedMethod" href="doc/index.html?com/six/timapi/DefaultTerminalListener.html#requestCompleted-com.six.timapi.TimEvent-java.lang.Object-">requestCompleted</a></code>
@@ -805,14 +874,22 @@ terminal.transactionAsync(com.six.constants.TransactionType.PURCHASE,
                             retrieved from the TerminalStatus property.
                         </td>
                     </tr>
-                </tbody></table></div></div></section><div class="row"><div class="col-md-6"></div></div></section><section id="logging"><h1><a name="logging"></a>Logging</h1><div class="row"><div class="col-md-6"><p>By default the TIM API has a Logger that defines how much logging is generated inside the TIM API. To
+                </tbody>
+            </table>
+
+        </div></div></section>
+
+    <div class="row"><div class="col-md-6"></div></div></section>
+    <section id="logging"><h1><a name="logging"></a>Logging</h1><div class="row"><div class="col-md-6">
+
+                <p>By default the TIM API has a Logger that defines how much logging is generated inside the TIM API. To
                     this
                     Logger different handlers can be added, e.g. ConsoleHandler for logging into the debug console or
                     FileHandler
                     to log into a file. By default a FileHandler is added to the TIM API logger.
-                </p><p>
-                </p><p>The standard Java LogLevels are valid:</p><p>
-                </p><ul>
+                </p>
+                <p>The standard Java LogLevels are valid:</p>
+                <ul>
                     <li>ALL</li>
                     <li>FINEST</li>
                     <li>FINER</li>
@@ -822,12 +899,13 @@ terminal.transactionAsync(com.six.constants.TransactionType.PURCHASE,
                     <li>WARNING</li>
                     <li>SEVERE</li>
                     <li>OFF</li>
-                </ul><p>
+                </ul>
 
-            </p></div><div class="col-md-6"><p>The logging level in Java can be adjusted programatically as follows after a terminal object has been
+            </div><div class="col-md-6">
+                <p>The logging level in Java can be adjusted programatically as follows after a terminal object has been
                     created:
-                </p><p>
-                </p><pre><code class="language-{.java}">// Set the TIM API internal logging level
+                </p>
+                <pre><code class="language-{.java}">// Set the TIM API internal logging level
 Logger.getLogger(terminal.getLoggerName()).setLevel(Level.ALL);
 
 // Set the logging level of the different handlers that have been added to the logger
@@ -839,9 +917,13 @@ for (Handler handler : handlers){
 
 // To add a special handler to the TIM API logger
 Logger.getLogger(terminal.getLoggerName()).addHandler(myHandler);
-</code></pre><p>
-            </p></div></div><div class="row"><div class="col-md-6"></div></div></section><section id="examples"><h1><a name="examples"></a>Code Examples</h1><div class="row"><div class="col-md-6"><p>This chapter contains example implementations for TIM API.</p></div></div><div class="row"><div class="col-md-6"><p>A simple implementation using synchronous calls looks like this:</p><p>
-                </p><pre><code class="language-{.java}">package simpletransaction;
+</code></pre>
+            </div></div>
+    <div class="row"><div class="col-md-6"></div></div></section>
+    <section id="examples"><h1><a name="examples"></a>Code Examples</h1><div class="row"><div class="col-md-6"><p>This chapter contains example implementations for TIM API.</p>
+        </div></div><div class="row"><div class="col-md-6">
+                <p>A simple implementation using synchronous calls looks like this:</p>
+                <pre><code class="language-{.java}">package simpletransaction;
 
 import com.six.timapi.Terminal;
 import com.six.timapi.TerminalSettings;
@@ -906,9 +988,10 @@ public class SimpleTransaction {
         }
     }
 }
-</code></pre><p>
-            </p></div><div class="col-md-6"><p>The same example as above but using asynchonous calls can look as follows:</p><p>
-                </p><pre><code class="language-{.java}">import com.six.timapi.Terminal;
+</code></pre>
+            </div><div class="col-md-6">
+                <p>The same example as above but using asynchonous calls can look as follows:</p>
+                <pre><code class="language-{.java}">import com.six.timapi.Terminal;
 import com.six.timapi.TerminalSettings;
 import com.six.timapi.Amount;
 import com.six.timapi.constants.TransactionType;
@@ -1007,29 +1090,38 @@ class ECRSample {
         // So if AutoDeactivate is enabled, a balanceAsync() can be called directly.
         // This can be done e.g. in the commitCompleted event (see commitCompleted event).
     }
-}</code></pre><p>
-                </p><p>
+}</code></pre>
+                <p>
                     <i>
                         <b>Attention:</b>
                         Events are send from inside a thread different than the main thread. If you need to access
                         code in the event handling thread use something like java.awt.EventQueue.invokeLater or
                         javax.swing.SwingUtilities.invokeLater
                     </i>
-                </p><p>
+                </p>
 
-            </p></div></div><div class="row"><div class="col-md-6"></div></div></section><section id="reference"><h1><a name="reference"></a>Reference</h1><div class="row"><div class="col-md-6"><table class="table"><thead>
+            </div></div>
+    <div class="row"><div class="col-md-6"></div></div></section>
+
+    <section id="reference"><h1><a name="reference"></a>Reference</h1><div class="row"><div class="col-md-6"><table class="table">
+            <thead>
                 <tr>
                     <th>Ref.</th>
                     <th>Document</th>
                     <th>Version</th>
                 </tr>
-            </thead><tbody>
+            </thead>
+            <tbody>
                 <tr>
                     <td>[B1]</td>
                     <td>TIM &amp; SIXml Architecture: The SIX ECR Integration System</td>
                     <td>0.10</td>
                 </tr>
-            </tbody></table></div></div></section></main>
+            </tbody>
+        </table>
+
+    </div></div></section>
+</main>
     </div>
   </div>
 </body>

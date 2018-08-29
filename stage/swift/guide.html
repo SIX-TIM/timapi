@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+
+  <link href="../assets/css/vendors.css" rel="stylesheet">
+  <link href="../assets/css/helppage.css" rel="stylesheet">
+  <link href="res/css/lang_specific.css" rel="stylesheet">
+
+  <title>TIM API documentation</title>
+  <script src="../assets/js/vendors.js"></script>
+  <script src="../assets/js/helppage.js"></script>
+  <script src="../assets/js/guide.js"></script>
+  <script src="../assets/js/tim_inject.js"></script>
+  <script src="../assets/js/sdk_version.js"></script>
+  <script src="../assets/js/config.js"></script>
+  <script src="api_version.js"></script>
+</head>
+<body data-spy="scroll" data-target="#navScrollspy">
+  <div class="container-fluid" id="content">
+    <div>
+      <nav id="navScrollspy">
+        <div id="stageBanner">STAGING VERSION!</div>
+        <div id="archiveBanner">ARCHIVED VERSION!<br><a href="../../../doc/index.html" id="currentLink">-&gt; link to current version</a></div>
+        <div class="affix" data-spy="affix">
+          <div id="projectname">TIM SDK</div>
+          <div id="projectbrief">TIM API</div>
+          <div class="seperator" style="margin-top: 0px;">&#160;</div>
+          <div id="vSep">&#160;</div>
+          <div id="langSel">
+            <ul class="langList">
+              <li>
+                <a class="lang_java" href="../java/guide.html">Java</a>
+              </li>
+              <li>
+                <span style="color: gray">.NET</span>
+              </li>
+              <li>
+                <a class="lang_swift" href="../swift/guide.html">Swift</a>
+              </li>
+              <li>
+                <span style="color: gray">JavaScript</span>
+              </li>
+              <li>
+                <a class="lang_c" href="../c/guide.html">C</a>
+              </li>
+            </ul>
+          </div>
+          <ul class="nav">
+          <li><a href="#intro">Introduction</a></li><li><a href="#setup">Setup Configuration</a><ul class="nav"><li><a href="#network">Network Configuration</a></li><li><a href="#guides">Guides Configuration</a></li></ul></li><li><a href="#operation">Operation Overview</a></li><li><a href="#automatisms">Automatisms</a></li><li><a href="#methods">Terminal methods overview</a><ul class="nav"><li><a href="#mainFunc">Main / guide retail terminal functions</a></li><li class="filterGuides guideDialog"><a href="#dialogFunc">Guide dialog terminal functions</a></li><li><a href="#addMethods">Additional terminal listener-events</a></li></ul></li><li><a href="#reference">Reference</a></li></ul>
+          <div class="seperator">&#160;</div>
+          <div class="linkDiv">
+            <a href="doc/index.html">API Documentation</a>
+          </div>
+          <div class="linkDiv">
+            <a href="../../version/version-history.html">Version History</a>
+          </div>
+          <div id="guideDiv">
+            <div id="guideTitle">
+              <b>Guides</b>
+            </div>
+            <div id="guideSel">
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <span class="print-page-break"></span>
+
+      <main>
+      <section id="intro"><h1><a name="intro"></a>Introduction</h1><div class="row"><div class="col-md-6"><p>The TIM API is the standard application interface for ECR integration using SIX Payment Services terminals.
+        </p>
+        <p>TIM API provides a comprehensive feature set to support the requirements of several different markets. This
+            guideline is intended to be used by ECR integrators that need to implement the TIM API functionality in
+            their
+            products.
+        </p>
+        <p>The following document contains an overview structure, description of the TIM API modes
+            synchronous/asynchronous
+            and describes the corresponding functions, notifiers and data elements that can be used with the TIM API.
+            Furthermore implementation examples are provided. Nevertheless always the corresponding description of a
+            function or data element is authoritative, not the examples.
+        </p>
+        <p>For further information about the architecture of the TIM API can be found in
+            <a href="#reference">[B1]</a>, this document is meant to cover only implementation
+            purposes.
+        </p>
+        <hr>
+    </div></div></section>
+    <section id="setup"><h1><a name="setup"></a>Setup Configuration</h1><div class="row"><div class="col-md-6"><p>Once a
+            <code><a href="doc/Classes/Terminal.html">Terminal</a></code>-instance has been created with a
+            <code><a href="doc/Classes/TerminalSettings.html">TerminalSettings</a></code>-instance, the settings can not be changed anymore.
+            Changes to the
+            <code><a href="doc/Classes/TerminalSettings.html">TerminalSettings</a></code>-instance will be ignored.
+        </p>
+        <p>The network and guides configuration are explained in the following
+            chapters.
+            For further information refer to<code><a href="doc/Classes/TerminalSettings.html">TerminalSettings</a></code>.
+        </p>
+
+
+        </div></div><section id="network"><h2><a name="network"></a>Network Configuration</h2><div class="row"><div class="col-md-6"><p>The TIM API module can communicate with the Terminal over different communication channels. The default
+                communication
+                is over TCP/IP connection.
+            </p>
+            <p>For TCP/IP connection there are two possible ways to connect to the terminal:</p>
+            <ul>
+                <li>
+                    <strong>Broadcast-Mode:</strong>
+                    <ul>
+                        <li>Terminal ID (TID) is known.</li>
+                        <li>The TIM API starts broadcasting on the default interface and connects to the connection
+                            information sent
+                            by the matching terminal.
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Direct Connect:</strong>
+                    <ul>
+                        <li>IP address of the terminal is known.</li>
+                        <li>Connection is established directly via IP.</li>
+                    </ul>
+                </li>
+            </ul>
+
+        </div></div></section>
+        <div class="row"><div class="col-md-6"></div></div><section id="guides"><h2><a name="guides"></a>Guides Configuration</h2><div class="row"><div class="col-md-6">
+                    <p>There are various
+                        <code><a>Guides</a></code>
+                        covering different use case scenarios. The guide retail is the basic guide and is activated as
+                        default. With
+                        <code><a>.guides</a></code>
+                        the guides can be configured. Important: the configuration needs to include all desired guides
+                        (including
+                        the retail guide).
+                    </p>
+
+                </div><div class="col-md-6">
+                    <p>Code-example for creating a terminal including settings with activated guides retail and
+                        hospitality:
+                    </p>
+                    <pre><code class="language-{.swift}">// Create settings with Terminal-ID of terminal to connect to
+let terminalSettings = try TerminalSettings()
+terminalSettings.terminalId = "12345678"
+
+// add wanted guides (with insert)
+terminalSettings.guides.insert(CGuides.retail)
+terminalSettings.guides.insert(CGuides.hospitality)
+
+// Create terminal
+var terminal = try Terminal(settings: terminalSettings)
+
+//...
+
+// Disconnect from terminal and clean up properly
+terminal.dispose()</code></pre>
+                </div></div>
+
+            <div class="row"><div class="col-md-6"><hr>
+        </div></div></section>
+        <div class="row"><div class="col-md-6"></div></div></section>
+    <section id="operation"><h1><a name="operation"></a>Operation Overview</h1><div class="row"><div class="col-md-6">
+
+                <p>Follow these basic steps for using the TIM API:</p>
+                <ol>
+                    <li>Create
+                        <code><a href="doc/Classes/TerminalSettings.html">TerminalSettings</a></code>
+                        and initialize connection parameters (see
+                        <a href="#setup">Setup Configuration</a>)
+                    </li>
+                    <li>Create
+                        <code><a href="doc/Classes/Terminal.html">Terminal</a></code>
+                        instance using the created
+                        <code><a href="doc/Classes/TerminalSettings.html">TerminalSettings</a></code>
+                    </li>
+                    <li>Set some properties if needed:
+                        <ul>
+                            <li>set
+                                <code><a>PosId</a></code>
+                            </li>
+                            <li>
+                                create <strong>mandatory</strong>
+                                list of <code><a>EcrInfo</a></code> and add with <code><a>addEcrData</a></code>
+                            </li>
+                            <li>create list of <code><a>PrintOptions</a></code> and set with <code><a>.printOptions</a></code>
+                            </li>
+                            <li>add listeners (<code><a>addListeners</a></code>)
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <code><a>Connect</a></code>
+                        and
+                        <code><a>Login</a></code>. This can be done automatically, when the first terminal operation is called or manually using
+                        the login
+                        method.
+                    </li>
+                    <li>Use terminal operation functions.</li>
+                </ol>
+            </div><div class="col-md-6">
+                <figure><img src="res/img/operations_overview.png"><figcaption>Operations overview</figcaption></figure>
+            </div></div>
+        <div class="row"><div class="col-md-6"><hr>
+
+    </div></div></section>
+    <section id="automatisms"><h1><a name="automatisms"></a>Automatisms</h1><div class="row"><div class="col-md-6"><p>The TIM API uses two different types of automatisms:</p>
+        <ul>
+            <li>
+                <p>
+                    <strong>Pre-Automatisms:</strong>
+                    This means that all actions that need to be done before a function can be called.
+                    E.g. a transaction can be called in disconnected state without having called connect, login and
+                    activate
+                    in advance. These are called automatically by the TIM API before the transaction is performed. The
+                    Pre-Automatisms
+                    are enabled by default.
+                </p>
+            </li>
+            <li>
+                <p>
+                    <strong>Post-Automatisms:</strong>
+                    These automatisms can be enabled or disabled using the members <code><a>autoCommit</a></code> and
+                    <code><a>fetchBrands</a></code>. A Post-Automatism is triggered after an action has been performed. E.g. if a connect
+                    has
+                    been called and <code><a>fetchBrands</a></code> is activated, an <code><a>applicationInformation</a></code> request is called automatically
+                    after
+                    the connect. Or if  <code><a>autoCommit</a></code> is activated a <code><a>commit</a></code> is performed automatically after a transaction
+                    has
+                    been made.  <code><a>autoCommit</a></code> and <code><a>fetchBrands</a></code> are enabled by default.
+                </p>
+            </li>
+        </ul>
+        <p>The following diagrams show the principle of the Pre-Automatisms and Post-Automatisms. Pre-Automatisms are
+            enabled by default and cannot be disabled. If an error occurs the started request from the ECR is returned
+            with an error.
+        </p>
+
+        </div></div><div class="row"><div class="col-md-6">
+
+                <p>
+                    <strong>Synchronous flow</strong>
+                </p>
+                <figure><img src="res/img/sync_flow.png"><figcaption>Synchronous flow</figcaption></figure>
+            </div><div class="col-md-6">
+                <p>
+                    <strong>Asynchronous flow</strong>
+                </p>
+                <figure><img src="res/img/async_flow.png"><figcaption>Asynchronous flow</figcaption></figure>
+            </div></div>
+        <div class="row"><div class="col-md-6"><hr>
+
+    </div></div></section>
+    <section id="methods"><h1><a name="methods"></a>Terminal methods overview</h1><div class="row"><div class="col-md-6">
+                <p>The basic operation modes of terminal calls are:</p>
+                <ol>
+                    <li>
+                        <p>
+                            <strong>Synchronous</strong>
+                            <br> </p>
+                    </li>
+                    <li>
+                        <p>
+                            <strong>Asynchronous</strong>
+                            <br> </p>
+                    </li>
+                </ol>
+                <p>Functions called on terminal perform synchronous by default. The asynchronous method has the same name
+                    with appended to its name.</p>
+            </div><div class="col-md-6">
+                <p>Code example for adding a terminal listener:</p>
+                <pre><code class="language-{.swift}">//
+// Handle asynchronous terminal events.
+//
+class TerminalHandler: DefaultTerminalListener {
+
+    //
+    // The status of the terminal changed. This includes processing status and display content
+    //
+    override func terminalStatusChanged(terminal: Terminal) {
+        // Events usually originate from a different thread than the main thread.
+        // Always use DispatchQueue.main.async to be safe
+        DispatchQueue.main.async {
+            // handle terminal status change
+        }
+    }
+
+    //
+    // A call to Terminal.transactionAsync finished.
+    //
+    override func transactionCompleted(event: TimEvent, data: TransactionResponse?) {
+        // Events usually originate from a different thread than the main thread.
+        // Always use DispatchQueue.main.async to be safe
+        DispatchQueue.main.async {
+            // handle transaction finished using data
+        }
+    }
+}</code></pre>
+            </div></div>
+        <div class="row"><div class="col-md-6"></div></div><section id="mainFunc"><h2><a name="mainFunc"></a>Main / guide retail terminal functions</h2><div class="row"><div class="col-md-6"><table class="table">
+                <thead>
+                    <tr>
+                        <th>
+                            <strong>Sync method</strong>
+                            <br>
+                            <span class="asyncMethod">Async method</span>
+                            <br>
+                            <span class="completedMethod">Completed event</span>
+                        </th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <code class="syncMethod"><a class="syncMethod">activate</a></code>
+                            <br>
+                            <code class="asyncMethod"><a class="asyncMethod">activateAsync</a></code>
+                            <br>
+                            <code class="completedMethod"><a class="completedMethod">activateCompleted</a></code>
+                        </td>
+                        <td>Open a user shift.</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code class="syncMethod"><a class="syncMethod">applicationInformation</a></code>
+                            <br>
+                            <code class="asyncMethod"><a class="asyncMethod">
+                                applicationInformationAsync
+                            </a></code>
+                            <br>
+                            <code class="completedMethod"><a class="completedMethod">
+                                applicationInformationCompleted
+                            </a></code>
+                        </td>
+                        <td>Request the list of brands available on the terminal.</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code class="syncMethod"><a class="syncMethod">balance</a></code>
+                            <br>
+                            <code class="asyncMethod"><a class="asyncMethod">balanceAsync</a></code>
+                            <br>
+                            <code class="completedMethod"><a class="completedMethod">balanceCompleted</a></code>
+                        </td>
+                        <td>Force the EFT Terminal to transmit all transactions to the
+                            <br>
+                            host system as well to do the daily closing.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code class="syncMethod"><a class="syncMethod">changeSettings</a></code>
+                            <br>
+                            <code class="asyncMethod"><a class="asyncMethod">changeSettingsAsync</a></code>
+                            <br>
+                            <code class="completedMethod"><a class="completedMethod">changeSettingsCompleted
+                            </a></code>
+                        </td>
+                        <td>Change configuration parameters of the EFT Terminal.</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code class="syncMethod"><a class="syncMethod">commit</a></code>
+                            <br>
+                            <code class="asyncMethod"><a class="asyncMethod">commitAsync</a></code>
+                            <br>
+                            <code class="completedMethod"><a class="completedMethod">commitCompleted</a></code>
+                        </td>
+                        <td>Perform Commit-operation after a successful Transaction call.</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code class="syncMethod"><a class="syncMethod">connect</a></code>
+                            <br>
+                            <code class="asyncMethod"><a class="asyncMethod">connectAsync</a></code>
+                            <br>
+                            <code class="completedMethod"><a class="completedMethod">connectCompleted</a></code>
+                        </td>
+                        <td>Initiates a connection to the EFT Terminal.</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code class="syncMethod"><a class="syncMethod">counterRequest</a></code>
+                            <br>
+                            <code class="asyncMethod"><a class="asyncMethod">counterRequestAsync</a></code>
+                            <br>
+                            <code class="completedMethod"><a class="completedMethod">counterRequestCompleted
+                            </a></code>
+                        </td>
+                        <td>Get counter information`s from the EFT Terminal.</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code class="syncMethod"><a class="syncMethod">dccRates</a></code>
+                            <br>
+                            <code class="asyncMethod"><a class="asyncMethod">dccRatesAsync</a></code>
+                            <br>
+                            <code class="completedMethod"><a class="completedMethod">dccRatesCompleted</a></code>
+                        </td>
+                        <td>Request DCC rates from the EFT Terminal.</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code class="syncMethod"><a class="syncMethod">deactivate</a></code>
+                            <br>
+                            <code class="asyncMethod"><a class="asyncMethod">deactivateAsync</a></code>
+                            <br>
+                            <code class="completedMethod"><a class="completedMethod">deactivateCompleted</a></code>
+                        </td>
+                        <td>Close a user shift.</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code class="syncMethod"><a class="syncMethod">disconnect</a></code>
+                            <br>
+                            <code class="asyncMethod"><a class="asyncMethod">disconnectAsync</a></code>
+                            <br>
+                            <code class="completedMethod"><a class="completedMethod">disconnected</a></code>
+                        </td>
+                        <td>Interrupts the connection to the EFT Terminal.</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code class="syncMethod"><a class="syncMethod">hardwareInformation</a></code>
+                            <br>
+                            <code class="asyncMethod"><a class="asyncMethod">hardwareInformationAsync
+                            </a></code>
+                            <br>
+                            <code class="completedMethod"><a class="completedMethod">
+                                hardwareInformationCompleted
+                            </a></code>
+                        </td>
+                        <td>Get hardware information from the EFT Terminal.</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code class="syncMethod"><a class="syncMethod">login</a></code>
+                            <br>
+                            <code class="asyncMethod"><a class="asyncMethod">loginAsync</a></code>
+                            <br>
+                            <code class="completedMethod"><a class="completedMethod">loginCompleted</a></code>
+                        </td>
+                        <td>Activate a communication session between the ECR and
+                            <br>
+                            the terminal.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code class="syncMethod"><a class="syncMethod">logout</a></code>
+                            <br>
+                            <code class="asyncMethod"><a class="asyncMethod">logoutAsync</a></code>
+                            <br>
+                            <code class="completedMethod"><a class="completedMethod">logoutCompleted</a></code>
+                        </td>
+                        <td>Terminate an active communication session between the ECR<br>and the terminal.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code class="syncMethod"><a class="syncMethod">reboot</a></code>
+                            <br>
+                            <code class="asyncMethod"><a class="asyncMethod">rebootAsync</a></code>
+                            <br>
+                            <code class="completedMethod"><a class="completedMethod">rebootCompleted</a></code>
+                        </td>
+                        <td>Force the EFT Terminal to reboot.</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code class="syncMethod"><a class="syncMethod">receiptRequest</a></code>
+                            <br>
+                            <code class="asyncMethod"><a class="asyncMethod">receiptRequestAsync</a></code>
+                            <br>
+                            <code class="completedMethod"><a class="completedMethod">receiptRequestCompleted
+                            </a></code>
+                        </td>
+                        <td>Receive the latest receipt or a list of silent receipts.</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code class="syncMethod"><a class="syncMethod">reconciliation</a></code>
+                            <br>
+                            <code class="asyncMethod"><a class="asyncMethod">reconciliationAsync</a></code>
+                            <br>
+                            <code class="completedMethod"><a class="completedMethod">reconciliationCompleted
+                            </a></code>
+                        </td>
+                        <td>Force the EFT Terminal to transmit all financial transactions
+                            <br>
+                            to the host system.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code class="syncMethod"><a class="syncMethod">reconfig</a></code>
+                            <br>
+                            <code class="asyncMethod"><a class="asyncMethod">reconfigAsync</a></code>
+                            <br>
+                            <code class="completedMethod"><a class="completedMethod">reconfigCompleted</a></code>
+                        </td>
+                        <td>Force the EFT Terminal to get the configuration from the service center.</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code class="syncMethod"><a class="syncMethod">rollback</a></code>
+                            <br>
+                            <code class="asyncMethod"><a class="asyncMethod">rollbackAsync</a></code>
+                            <br>
+                            <code class="completedMethod"><a class="completedMethod">rollbackCompleted</a></code>
+                        </td>
+                        <td>Prevent a transaction from being committed to the transaction
+                            <br>
+                            log and generates a technical reversal of the authorization.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code class="syncMethod"><a class="syncMethod">softwareUpdate</a></code>
+                            <br>
+                            <code class="asyncMethod"><a class="asyncMethod">softwareUpdateAsync</a></code>
+                            <br>
+                            <code class="completedMethod"><a class="completedMethod">softwareUpdateCompleted
+                            </a></code>
+                        </td>
+                        <td>Force the EFT Terminal to start a Software Update.</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code class="syncMethod"><a class="syncMethod">systemInformation</a></code>
+                            <br>
+                            <code class="asyncMethod"><a class="asyncMethod">systemInformationAsync</a></code>
+                            <br>
+                            <code class="completedMethod"><a class="completedMethod">
+                                systemInformationCompleted
+                            </a></code>
+                        </td>
+                        <td>Request system information from the EFT Terminal.</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code class="syncMethod"><a class="syncMethod">transaction</a></code>
+                            <br>
+                            <code class="asyncMethod"><a class="asyncMethod">transactionAsync</a></code>
+                            <br>
+                            <code class="completedMethod"><a class="completedMethod">transactionCompleted</a></code>
+                        </td>
+                        <td>Starts an EFT Terminal Transaction.</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div></div></section>
+
+        <div class="row"><div class="col-md-6"></div></div><section class="filterGuides guideDialog" id="dialogFunc"><h2><a name="dialogFunc"></a>Guide dialog terminal functions</h2><div class="row"><div class="col-md-6"><table class="table">
+              <thead>
+                  <tr>
+                      <th>
+                          <strong>Sync method</strong>
+                          <br>
+                          <span class="asyncMethod">Async method</span>
+                          <br>
+                          <span class="completedMethod">Completed event</span>
+                      </th>
+                      <th>Description</th>
+                  </tr>
+              </thead>
+              <tbody>
+                  <tr>
+                      <td>
+                          <code class="syncMethod"><a class="syncMethod">openDialogMode</a></code>
+                          <br>
+                          <code class="asyncMethod"><a class="asyncMethod">openDialogModeAsync</a></code>
+                          <br>
+                          <code class="completedMethod"><a class="completedMethod">openDialogModeCompleted</a></code>
+                      </td>
+                      <td>Open dialog mode on the terminal.</td>
+                  </tr>
+                  <tr>
+                      <td>
+                          <code class="syncMethod"><a class="syncMethod">closeDialogMode</a></code>
+                          <br>
+                          <code class="asyncMethod"><a class="asyncMethod">closeDialogModeAsync</a></code>
+                          <br>
+                          <code class="completedMethod"><a class="completedMethod">closeDialogModeCompleted</a></code>
+                      </td>
+                      <td>Close dialog mode on the terminal.</td>
+                  </tr>
+                  <tr>
+                      <td>
+                          <code class="syncMethod"><a class="syncMethod">showDialog</a></code>
+                          <br>
+                          <code class="asyncMethod"><a class="asyncMethod">showDialogAsync</a></code>
+                          <br>
+                          <code class="completedMethod"><a class="completedMethod">showDialogCompleted</a></code>
+                      </td>
+                      <td>Show dialog on the terminal.</td>
+                  </tr>
+                  <tr>
+                      <td>
+                          <code class="syncMethod"><a class="syncMethod">showSignatureCapture</a></code>
+                          <br>
+                          <code class="asyncMethod"><a class="asyncMethod">showSignatureCaptureAsync</a></code>
+                          <br>
+                          <code class="completedMethod"><a class="completedMethod">showSignatureCaptureCompleted</a></code>
+                      </td>
+                      <td>Show signature capture on the terminal.</td>
+                  </tr>
+            </tbody>
+          </table>
+        </div></div></section>
+
+        <div class="row"><div class="col-md-6"></div></div><section id="addMethods"><h2><a name="addMethods"></a>Additional terminal listener-events</h2><div class="row"><div class="col-md-6"><table class="table">
+                <thead>
+                    <tr>
+                        <th>Listener-event</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <code class="completedMethod"><a class="completedMethod">requestCompleted</a></code>
+                        </td>
+                        <td>Operation started by an asynchronous function has finished.
+                            <br>
+                            Applications can use both operation specific completion callback
+                            <br>
+                            in combination with this generic completion callback.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code class="completedMethod"><a class="completedMethod">terminalStatusChanged
+                            </a></code>
+                        </td>
+                        <td>The terminal status has changed. The new status can be
+                            <br>
+                            retrieved from the TerminalStatus property.
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div></div></section>
+
+    <div class="row"><div class="col-md-6"></div></div></section>
+    <section id="reference"><h1><a name="reference"></a>Reference</h1><div class="row"><div class="col-md-6"><table class="table">
+            <thead>
+                <tr>
+                    <th>Ref.</th>
+                    <th>Document</th>
+                    <th>Version</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>[B1]</td>
+                    <td>TIM &amp; SIXml Architecture: The SIX ECR Integration System</td>
+                    <td>0.10</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div></div></section>
+</main>
+    </div>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,1376 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Logger Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Class/Logger" class="dashAnchor"></a>
+    <a title="Logger Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html"> Docs</a> (98% documented)</p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../../guide.html"> Implementation Guide</a>         <img id="carat" src="../img/carat.png" />         <a href="../index.html"> Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        Logger Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/ActivateResponse.html">ActivateResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Amount.html">Amount</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/AmountDcc.html">AmountDcc</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/AmountDiscount.html">AmountDiscount</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/AmountFinal.html">AmountFinal</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Application.html">Application</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BalanceInquiryResponse.html">BalanceInquiryResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BalanceResponse.html">BalanceResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Basket.html">Basket</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BasketItem.html">BasketItem</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Brands.html">Brands</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CardData.html">CardData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CardTrackData.html">CardTrackData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CommandRequest.html">CommandRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CommandResponse.html">CommandResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CompactReceiptFormatter.html">CompactReceiptFormatter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ConfigData.html">ConfigData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/s:6TimApi11ConvenienceC">Convenience</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ConversionHelper.html">ConversionHelper</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Counter.html">Counter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Counters.html">Counters</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CurrencyItem.html">CurrencyItem</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CustomReceiptFormatter.html">CustomReceiptFormatter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CustomReceiptFormatter/TextType.html">– TextType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CustomReceiptFormatter/TextAlignment.html">– TextAlignment</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CustomReceiptFormatter/Condition.html">– Condition</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CustomReceiptFormatter/TextElement.html">– TextElement</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CustomReceiptFormatter/LineFormat.html">– LineFormat</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DeactivateResponse.html">DeactivateResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DefaultTerminalListener.html">DefaultTerminalListener</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EcrInfo.html">EcrInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ErrorMessages.html">ErrorMessages</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Features.html">Features</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/FeaturesHardware.html">FeaturesHardware</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/FeaturesPayment.html">FeaturesPayment</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/FeaturesSixml.html">FeaturesSixml</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/FeaturesSixml/Support.html">– Support</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/GlobalSettings.html">GlobalSettings</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Hardware.html">Hardware</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/HardwareInformationResponse.html">HardwareInformationResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ItemQuantity.html">ItemQuantity</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/LogHandlerConsole.html">LogHandlerConsole</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/LogHandlerFile.html">LogHandlerFile</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Logger.html">Logger</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Logger/Level.html">– Level</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Logger.html#/s:6TimApi6LoggerC9LogRecordV">– LogRecord</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/NativeError.html">NativeError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/NetworkInformation.html">NetworkInformation</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/NormalReceiptFormatter.html">NormalReceiptFormatter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/PpInfo.html">PpInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/PrintData.html">PrintData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/PrintOption.html">PrintOption</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Receipt.html">Receipt</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ReceiptItem.html">ReceiptItem</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ReceiptItems.html">ReceiptItems</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ReceiptRequestResponse.html">ReceiptRequestResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ReconciliationResponse.html">ReconciliationResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ShowDialogRequest.html">ShowDialogRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ShowDialogResponse.html">ShowDialogResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ShowSignatureCaptureRequest.html">ShowSignatureCaptureRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ShowSignatureCaptureResponse.html">ShowSignatureCaptureResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SignatureInformation.html">SignatureInformation</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SuperCompactReceiptFormatter.html">SuperCompactReceiptFormatter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SynchronousTerminalListener.html">SynchronousTerminalListener</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SystemInformationResponse.html">SystemInformationResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Terminal.html">Terminal</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TerminalSettings.html">TerminalSettings</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TerminalSettingsImmutable.html">TerminalSettingsImmutable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TerminalStatus.html">TerminalStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TimEvent.html">TimEvent</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TimException.html">TimException</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Total.html">Total</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TransactionData.html">TransactionData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TransactionInformation.html">TransactionInformation</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TransactionRequest.html">TransactionRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TransactionResponse.html">TransactionResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TransactionResponse/Action.html">– Action</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TrxDetail.html">TrxDetail</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/UltraCompactReceiptFormatter.html">UltraCompactReceiptFormatter</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/CAdjustmentResult.html">CAdjustmentResult</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CAdminFunctions.html">CAdminFunctions</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CBrandBarBrand.html">CBrandBarBrand</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CBrandMode.html">CBrandMode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CCardReader.html">CCardReader</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CCardReaderStatus.html">CCardReaderStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CConnectionMode.html">CConnectionMode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CConnectionStatus.html">CConnectionStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CCounterType.html">CCounterType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CCouponRejectionReason.html">CCouponRejectionReason</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CCurrency.html">CCurrency</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CCurrencyType.html">CCurrencyType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CCvm.html">CCvm</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CDialogFunctions.html">CDialogFunctions</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CEcrInfoType.html">CEcrInfoType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CFinancialTransactions.html">CFinancialTransactions</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CGuides.html">CGuides</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CHardwareType.html">CHardwareType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CImageFileFormat.html">CImageFileFormat</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CKernelType.html">CKernelType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CManagementStatus.html">CManagementStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CMerchantAction.html">CMerchantAction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CMerchantOptionType.html">CMerchantOptionType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CNgvMode.html">CNgvMode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CNonFinancialTransactions.html">CNonFinancialTransactions</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CPaymentProtocol.html">CPaymentProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CPosEntryMode.html">CPosEntryMode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CPrintFlag.html">CPrintFlag</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CPrintFormat.html">CPrintFormat</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CProcessingDisposition.html">CProcessingDisposition</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CProtocolLevel.html">CProtocolLevel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CProtocolType.html">CProtocolType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CReason.html">CReason</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CReceiptItemType.html">CReceiptItemType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CReceiptRequestType.html">CReceiptRequestType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CReceiptType.html">CReceiptType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CRecipient.html">CRecipient</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CRequestType.html">CRequestType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CResourceId.html">CResourceId</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CResourceParameterType.html">CResourceParameterType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CResponseType.html">CResponseType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CResultCode.html">CResultCode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CSecurityStatus.html">CSecurityStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CSettingType.html">CSettingType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CSleepModeStatus.html">CSleepModeStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CStatusFunctions.html">CStatusFunctions</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CTheme.html">CTheme</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CTransactionStatus.html">CTransactionStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CTransactionType.html">CTransactionType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CUpdateStatus.html">CUpdateStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Errors.html">Errors</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Functions.html">Functions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:6TimApi6unwrapxxSgKlF">unwrap(_:)</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/CommEndpoint.html">CommEndpoint</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/CommListener.html">CommListener</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/LogHandler.html">LogHandler</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/ReceiptFormatter.html">ReceiptFormatter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/TerminalListener.html">TerminalListener</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/TimeDate.html">TimeDate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/TimeDate/Errors.html">– Errors</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>Logger</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">Logger</span></code></pre>
+
+                </div>
+              </div>
+            <p>Java like logger.</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6TimApi6LoggerC5LevelO"></a>
+                    <a name="//apple_ref/swift/Enum/Level" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TimApi6LoggerC5LevelO">Level</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Log levels.</p>
+
+                        <a href="../Classes/Logger/Level.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">Level</span> <span class="p">:</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6TimApi6LoggerC9LogRecordV"></a>
+                    <a name="//apple_ref/swift/Struct/LogRecord" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TimApi6LoggerC9LogRecordV">LogRecord</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Log record.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">LogRecord</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6TimApi6LoggerC03getC0ACSS4name_tFZ"></a>
+                    <a name="//apple_ref/swift/Method/getLogger(name:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TimApi6LoggerC03getC0ACSS4name_tFZ">getLogger(name:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Get logger for name. Using the same name retrieves the same logger.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">getLogger</span><span class="p">(</span><span class="nv">name</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Logger</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6TimApi6LoggerC8logLevelAC0E0OvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/logLevel" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TimApi6LoggerC8logLevelAC0E0OvpZ">logLevel</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Global logging level.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">logLevel</span><span class="p">:</span> <span class="kt">Logger</span><span class="o">.</span><span class="kt"><a href="../Classes/Logger/Level.html">Level</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6TimApi6LoggerC3logyAC5LevelO5level_SS9classnameSS6methodSS7messagetF"></a>
+                    <a name="//apple_ref/swift/Method/log(level:classname:method:message:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TimApi6LoggerC3logyAC5LevelO5level_SS9classnameSS6methodSS7messagetF">log(level:classname:method:message:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Log message.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">log</span><span class="p">(</span><span class="nv">level</span><span class="p">:</span> <span class="kt"><a href="../Classes/Logger/Level.html">Level</a></span><span class="p">,</span> <span class="nv">classname</span><span class="p">:</span> <span class="kt">String</span> <span class="o">=</span> <span class="kd">#file</span><span class="p">,</span> <span class="nv">method</span><span class="p">:</span> <span class="kt">String</span> <span class="o">=</span> <span class="kd">#function</span><span class="p">,</span> <span class="nv">message</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6TimApi6LoggerC3logyAC5LevelO5level_SS9classnameSS6methodSS7messageypSg9parametertF"></a>
+                    <a name="//apple_ref/swift/Method/log(level:classname:method:message:parameter:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TimApi6LoggerC3logyAC5LevelO5level_SS9classnameSS6methodSS7messageypSg9parametertF">log(level:classname:method:message:parameter:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Log message.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">log</span><span class="p">(</span><span class="nv">level</span><span class="p">:</span> <span class="kt"><a href="../Classes/Logger/Level.html">Level</a></span><span class="p">,</span> <span class="nv">classname</span><span class="p">:</span> <span class="kt">String</span> <span class="o">=</span> <span class="kd">#file</span><span class="p">,</span> <span class="nv">method</span><span class="p">:</span> <span class="kt">String</span> <span class="o">=</span> <span class="kd">#function</span><span class="p">,</span> <span class="nv">message</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">parameter</span><span class="p">:</span> <span class="kt">Any</span><span class="p">?)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6TimApi6LoggerC3logyAC5LevelO5level_SS9classnameSS6methodSS7messageSayypSgG10parameterstF"></a>
+                    <a name="//apple_ref/swift/Method/log(level:classname:method:message:parameters:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TimApi6LoggerC3logyAC5LevelO5level_SS9classnameSS6methodSS7messageSayypSgG10parameterstF">log(level:classname:method:message:parameters:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Log message.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">log</span><span class="p">(</span><span class="nv">level</span><span class="p">:</span> <span class="kt"><a href="../Classes/Logger/Level.html">Level</a></span><span class="p">,</span> <span class="nv">classname</span><span class="p">:</span> <span class="kt">String</span> <span class="o">=</span> <span class="kd">#file</span><span class="p">,</span> <span class="nv">method</span><span class="p">:</span> <span class="kt">String</span> <span class="o">=</span> <span class="kd">#function</span><span class="p">,</span> <span class="nv">message</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">parameters</span><span class="p">:</span> <span class="p">[</span><span class="kt">Any</span><span class="p">?])</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6TimApi6LoggerC6severeySS9classname_SS6methodSS7messagetF"></a>
+                    <a name="//apple_ref/swift/Method/severe(classname:method:message:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TimApi6LoggerC6severeySS9classname_SS6methodSS7messagetF">severe(classname:method:message:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Log severe message.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">severe</span><span class="p">(</span><span class="nv">classname</span><span class="p">:</span> <span class="kt">String</span> <span class="o">=</span> <span class="kd">#file</span><span class="p">,</span> <span class="nv">method</span><span class="p">:</span> <span class="kt">String</span> <span class="o">=</span> <span class="kd">#function</span><span class="p">,</span> <span class="nv">message</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6TimApi6LoggerC4infoySS9classname_SS6methodSS7messagetF"></a>
+                    <a name="//apple_ref/swift/Method/info(classname:method:message:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TimApi6LoggerC4infoySS9classname_SS6methodSS7messagetF">info(classname:method:message:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Log information message.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">info</span><span class="p">(</span><span class="nv">classname</span><span class="p">:</span> <span class="kt">String</span> <span class="o">=</span> <span class="kd">#file</span><span class="p">,</span> <span class="nv">method</span><span class="p">:</span> <span class="kt">String</span> <span class="o">=</span> <span class="kd">#function</span><span class="p">,</span> <span class="nv">message</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6TimApi6LoggerC4fineySS9classname_SS6methodSS7messagetF"></a>
+                    <a name="//apple_ref/swift/Method/fine(classname:method:message:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TimApi6LoggerC4fineySS9classname_SS6methodSS7messagetF">fine(classname:method:message:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Log fine message.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">fine</span><span class="p">(</span><span class="nv">classname</span><span class="p">:</span> <span class="kt">String</span> <span class="o">=</span> <span class="kd">#file</span><span class="p">,</span> <span class="nv">method</span><span class="p">:</span> <span class="kt">String</span> <span class="o">=</span> <span class="kd">#function</span><span class="p">,</span> <span class="nv">message</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6TimApi6LoggerC6finestySS9classname_SS6methodSS7messagetF"></a>
+                    <a name="//apple_ref/swift/Method/finest(classname:method:message:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TimApi6LoggerC6finestySS9classname_SS6methodSS7messagetF">finest(classname:method:message:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Log finest message.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">finest</span><span class="p">(</span><span class="nv">classname</span><span class="p">:</span> <span class="kt">String</span> <span class="o">=</span> <span class="kd">#file</span><span class="p">,</span> <span class="nv">method</span><span class="p">:</span> <span class="kt">String</span> <span class="o">=</span> <span class="kd">#function</span><span class="p">,</span> <span class="nv">message</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6TimApi6LoggerC8enteringySS9classname_SS6methodtF"></a>
+                    <a name="//apple_ref/swift/Method/entering(classname:method:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TimApi6LoggerC8enteringySS9classname_SS6methodtF">entering(classname:method:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Log entering method message. Uses finest level.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">entering</span><span class="p">(</span><span class="nv">classname</span><span class="p">:</span> <span class="kt">String</span> <span class="o">=</span> <span class="kd">#file</span><span class="p">,</span> <span class="nv">method</span><span class="p">:</span> <span class="kt">String</span> <span class="o">=</span> <span class="kd">#function</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6TimApi6LoggerC8enteringySS9classname_SS6methodypSg9parametertF"></a>
+                    <a name="//apple_ref/swift/Method/entering(classname:method:parameter:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TimApi6LoggerC8enteringySS9classname_SS6methodypSg9parametertF">entering(classname:method:parameter:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Log entering method message. Uses fine level.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">entering</span><span class="p">(</span><span class="nv">classname</span><span class="p">:</span> <span class="kt">String</span> <span class="o">=</span> <span class="kd">#file</span><span class="p">,</span> <span class="nv">method</span><span class="p">:</span> <span class="kt">String</span> <span class="o">=</span> <span class="kd">#function</span><span class="p">,</span> <span class="nv">parameter</span><span class="p">:</span> <span class="kt">Any</span><span class="p">?)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6TimApi6LoggerC8enteringySS9classname_SS6methodSayypSgG10parameterstF"></a>
+                    <a name="//apple_ref/swift/Method/entering(classname:method:parameters:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TimApi6LoggerC8enteringySS9classname_SS6methodSayypSgG10parameterstF">entering(classname:method:parameters:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Log entering method message. Uses fine level.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">entering</span><span class="p">(</span><span class="nv">classname</span><span class="p">:</span> <span class="kt">String</span> <span class="o">=</span> <span class="kd">#file</span><span class="p">,</span> <span class="nv">method</span><span class="p">:</span> <span class="kt">String</span> <span class="o">=</span> <span class="kd">#function</span><span class="p">,</span> <span class="nv">parameters</span><span class="p">:</span> <span class="p">[</span><span class="kt">Any</span><span class="p">?])</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6TimApi6LoggerC7exitingySS9classname_SS6methodtF"></a>
+                    <a name="//apple_ref/swift/Method/exiting(classname:method:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TimApi6LoggerC7exitingySS9classname_SS6methodtF">exiting(classname:method:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Log exiting method message. Uses fine level.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">exiting</span><span class="p">(</span><span class="nv">classname</span><span class="p">:</span> <span class="kt">String</span> <span class="o">=</span> <span class="kd">#file</span><span class="p">,</span> <span class="nv">method</span><span class="p">:</span> <span class="kt">String</span> <span class="o">=</span> <span class="kd">#function</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6TimApi6LoggerC7exitingySS9classname_SS6methodypSg9parametertF"></a>
+                    <a name="//apple_ref/swift/Method/exiting(classname:method:parameter:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TimApi6LoggerC7exitingySS9classname_SS6methodypSg9parametertF">exiting(classname:method:parameter:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Log entering method message. Uses fine level.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">exiting</span><span class="p">(</span><span class="nv">classname</span><span class="p">:</span> <span class="kt">String</span> <span class="o">=</span> <span class="kd">#file</span><span class="p">,</span> <span class="nv">method</span><span class="p">:</span> <span class="kt">String</span> <span class="o">=</span> <span class="kd">#function</span><span class="p">,</span> <span class="nv">parameter</span><span class="p">:</span> <span class="kt">Any</span><span class="p">?)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6TimApi6LoggerC7exitingySS9classname_SS6methodSayypSgG10parameterstF"></a>
+                    <a name="//apple_ref/swift/Method/exiting(classname:method:parameters:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TimApi6LoggerC7exitingySS9classname_SS6methodSayypSgG10parameterstF">exiting(classname:method:parameters:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Log entering method message. Uses fine level.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">exiting</span><span class="p">(</span><span class="nv">classname</span><span class="p">:</span> <span class="kt">String</span> <span class="o">=</span> <span class="kd">#file</span><span class="p">,</span> <span class="nv">method</span><span class="p">:</span> <span class="kt">String</span> <span class="o">=</span> <span class="kd">#function</span><span class="p">,</span> <span class="nv">parameters</span><span class="p">:</span> <span class="p">[</span><span class="kt">Any</span><span class="p">?])</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6TimApi6LoggerC9logMethodySS9classname_SS6methodyyc4codetF"></a>
+                    <a name="//apple_ref/swift/Method/logMethod(classname:method:code:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TimApi6LoggerC9logMethodySS9classname_SS6methodyyc4codetF">logMethod(classname:method:code:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Log function call. Convenience method wrapping function call contained in a
+code block with enter/exit logging.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">logMethod</span><span class="p">(</span><span class="nv">classname</span><span class="p">:</span> <span class="kt">String</span> <span class="o">=</span> <span class="kd">#file</span><span class="p">,</span> <span class="nv">method</span><span class="p">:</span> <span class="kt">String</span> <span class="o">=</span> <span class="kd">#function</span><span class="p">,</span> <span class="nv">code</span><span class="p">:</span> <span class="p">(()</span> <span class="o">-&gt;</span> <span class="p">()))</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6TimApi6LoggerC9logMethodySS9classname_SS6methodypSg9parameteryyc4codetF"></a>
+                    <a name="//apple_ref/swift/Method/logMethod(classname:method:parameter:code:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TimApi6LoggerC9logMethodySS9classname_SS6methodypSg9parameteryyc4codetF">logMethod(classname:method:parameter:code:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Log function call. Convenience method wrapping function call contained in a
+code block with enter/exit logging.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">logMethod</span><span class="p">(</span><span class="nv">classname</span><span class="p">:</span> <span class="kt">String</span> <span class="o">=</span> <span class="kd">#file</span><span class="p">,</span> <span class="nv">method</span><span class="p">:</span> <span class="kt">String</span> <span class="o">=</span> <span class="kd">#function</span><span class="p">,</span> <span class="nv">parameter</span><span class="p">:</span> <span class="kt">Any</span><span class="p">?,</span> <span class="nv">code</span><span class="p">:</span> <span class="p">(()</span> <span class="o">-&gt;</span> <span class="p">()))</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6TimApi6LoggerC9logMethodySS9classname_SS6methodSayypSgG10parametersyyc4codetF"></a>
+                    <a name="//apple_ref/swift/Method/logMethod(classname:method:parameters:code:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TimApi6LoggerC9logMethodySS9classname_SS6methodSayypSgG10parametersyyc4codetF">logMethod(classname:method:parameters:code:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Log function call. Convenience method wrapping function call contained in a
+code block with enter/exit logging.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">logMethod</span><span class="p">(</span><span class="nv">classname</span><span class="p">:</span> <span class="kt">String</span> <span class="o">=</span> <span class="kd">#file</span><span class="p">,</span> <span class="nv">method</span><span class="p">:</span> <span class="kt">String</span> <span class="o">=</span> <span class="kd">#function</span><span class="p">,</span> <span class="nv">parameters</span><span class="p">:</span> <span class="p">[</span><span class="kt">Any</span><span class="p">?],</span> <span class="nv">code</span><span class="p">:</span> <span class="p">(()</span> <span class="o">-&gt;</span> <span class="p">()))</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6TimApi6LoggerC9logMethodxSS9classname_SS6methodxyc4codetlF"></a>
+                    <a name="//apple_ref/swift/Method/logMethod(classname:method:code:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TimApi6LoggerC9logMethodxSS9classname_SS6methodxyc4codetlF">logMethod(classname:method:code:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Log function call. Convenience method wrapping function call contained in a
+code block with enter/exit logging while potentially throwing errors.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="n">logMethod</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span><span class="p">(</span><span class="nv">classname</span><span class="p">:</span> <span class="kt">String</span> <span class="o">=</span> <span class="kd">#file</span><span class="p">,</span> <span class="nv">method</span><span class="p">:</span> <span class="kt">String</span> <span class="o">=</span> <span class="kd">#function</span><span class="p">,</span> <span class="nv">code</span><span class="p">:</span> <span class="p">(()</span> <span class="o">-&gt;</span> <span class="kt">T</span><span class="p">))</span> <span class="o">-&gt;</span> <span class="kt">T</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6TimApi6LoggerC9logMethodxSS9classname_SS6methodypSg9parameterxyc4codetlF"></a>
+                    <a name="//apple_ref/swift/Method/logMethod(classname:method:parameter:code:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TimApi6LoggerC9logMethodxSS9classname_SS6methodypSg9parameterxyc4codetlF">logMethod(classname:method:parameter:code:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Log function call. Convenience method wrapping function call contained in a
+code block with enter/exit logging while potentially throwing errors.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="n">logMethod</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span><span class="p">(</span><span class="nv">classname</span><span class="p">:</span> <span class="kt">String</span> <span class="o">=</span> <span class="kd">#file</span><span class="p">,</span> <span class="nv">method</span><span class="p">:</span> <span class="kt">String</span> <span class="o">=</span> <span class="kd">#function</span><span class="p">,</span> <span class="nv">parameter</span><span class="p">:</span> <span class="kt">Any</span><span class="p">?,</span> <span class="nv">code</span><span class="p">:</span> <span class="p">(()</span> <span class="o">-&gt;</span> <span class="kt">T</span><span class="p">))</span> <span class="o">-&gt;</span> <span class="kt">T</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6TimApi6LoggerC9logMethodxSS9classname_SS6methodSayypSgG10parametersxyc4codetlF"></a>
+                    <a name="//apple_ref/swift/Method/logMethod(classname:method:parameters:code:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TimApi6LoggerC9logMethodxSS9classname_SS6methodSayypSgG10parametersxyc4codetlF">logMethod(classname:method:parameters:code:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Log function call. Convenience method wrapping function call contained in a
+code block with enter/exit logging while potentially throwing errors.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="n">logMethod</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span><span class="p">(</span><span class="nv">classname</span><span class="p">:</span> <span class="kt">String</span> <span class="o">=</span> <span class="kd">#file</span><span class="p">,</span> <span class="nv">method</span><span class="p">:</span> <span class="kt">String</span> <span class="o">=</span> <span class="kd">#function</span><span class="p">,</span> <span class="nv">parameters</span><span class="p">:</span> <span class="p">[</span><span class="kt">Any</span><span class="p">?],</span> <span class="nv">code</span><span class="p">:</span> <span class="p">(()</span> <span class="o">-&gt;</span> <span class="kt">T</span><span class="p">))</span> <span class="o">-&gt;</span> <span class="kt">T</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6TimApi6LoggerC9logMethodySS9classname_SS6methodyyKc4codetKF"></a>
+                    <a name="//apple_ref/swift/Method/logMethod(classname:method:code:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TimApi6LoggerC9logMethodySS9classname_SS6methodyyKc4codetKF">logMethod(classname:method:code:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Log function call. Convenience method wrapping function call contained in a
+code block with enter/exit logging while potentially throwing errors.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">logMethod</span><span class="p">(</span><span class="nv">classname</span><span class="p">:</span> <span class="kt">String</span> <span class="o">=</span> <span class="kd">#file</span><span class="p">,</span> <span class="nv">method</span><span class="p">:</span> <span class="kt">String</span> <span class="o">=</span> <span class="kd">#function</span><span class="p">,</span> <span class="nv">code</span><span class="p">:</span> <span class="p">(()</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="p">()))</span> <span class="k">throws</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6TimApi6LoggerC9logMethodySS9classname_SS6methodypSg9parameteryyKc4codetKF"></a>
+                    <a name="//apple_ref/swift/Method/logMethod(classname:method:parameter:code:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TimApi6LoggerC9logMethodySS9classname_SS6methodypSg9parameteryyKc4codetKF">logMethod(classname:method:parameter:code:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Log function call. Convenience method wrapping function call contained in a
+code block with enter/exit logging while potentially throwing errors.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">logMethod</span><span class="p">(</span><span class="nv">classname</span><span class="p">:</span> <span class="kt">String</span> <span class="o">=</span> <span class="kd">#file</span><span class="p">,</span> <span class="nv">method</span><span class="p">:</span> <span class="kt">String</span> <span class="o">=</span> <span class="kd">#function</span><span class="p">,</span> <span class="nv">parameter</span><span class="p">:</span> <span class="kt">Any</span><span class="p">?,</span> <span class="nv">code</span><span class="p">:</span> <span class="p">(()</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="p">()))</span> <span class="k">throws</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6TimApi6LoggerC9logMethodySS9classname_SS6methodSayypSgG10parametersyyKc4codetKF"></a>
+                    <a name="//apple_ref/swift/Method/logMethod(classname:method:parameters:code:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TimApi6LoggerC9logMethodySS9classname_SS6methodSayypSgG10parametersyyKc4codetKF">logMethod(classname:method:parameters:code:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Log function call. Convenience method wrapping function call contained in a
+code block with enter/exit logging while potentially throwing errors.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">logMethod</span><span class="p">(</span><span class="nv">classname</span><span class="p">:</span> <span class="kt">String</span> <span class="o">=</span> <span class="kd">#file</span><span class="p">,</span> <span class="nv">method</span><span class="p">:</span> <span class="kt">String</span> <span class="o">=</span> <span class="kd">#function</span><span class="p">,</span> <span class="nv">parameters</span><span class="p">:</span> <span class="p">[</span><span class="kt">Any</span><span class="p">?],</span> <span class="nv">code</span><span class="p">:</span> <span class="p">(()</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="p">()))</span> <span class="k">throws</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6TimApi6LoggerC9logMethodxSS9classname_SS6methodxyKc4codetKlF"></a>
+                    <a name="//apple_ref/swift/Method/logMethod(classname:method:code:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TimApi6LoggerC9logMethodxSS9classname_SS6methodxyKc4codetKlF">logMethod(classname:method:code:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Log function call. Convenience method wrapping function call contained in a
+code block with enter/exit logging while potentially throwing errors.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="n">logMethod</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span><span class="p">(</span><span class="nv">classname</span><span class="p">:</span> <span class="kt">String</span> <span class="o">=</span> <span class="kd">#file</span><span class="p">,</span> <span class="nv">method</span><span class="p">:</span> <span class="kt">String</span> <span class="o">=</span> <span class="kd">#function</span><span class="p">,</span> <span class="nv">code</span><span class="p">:</span> <span class="p">(()</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">T</span><span class="p">))</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">T</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6TimApi6LoggerC9logMethodxSS9classname_SS6methodypSg9parameterxyKc4codetKlF"></a>
+                    <a name="//apple_ref/swift/Method/logMethod(classname:method:parameter:code:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TimApi6LoggerC9logMethodxSS9classname_SS6methodypSg9parameterxyKc4codetKlF">logMethod(classname:method:parameter:code:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Log function call. Convenience method wrapping function call contained in a
+code block with enter/exit logging while potentially throwing errors.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="n">logMethod</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span><span class="p">(</span><span class="nv">classname</span><span class="p">:</span> <span class="kt">String</span> <span class="o">=</span> <span class="kd">#file</span><span class="p">,</span> <span class="nv">method</span><span class="p">:</span> <span class="kt">String</span> <span class="o">=</span> <span class="kd">#function</span><span class="p">,</span> <span class="nv">parameter</span><span class="p">:</span> <span class="kt">Any</span><span class="p">?,</span> <span class="nv">code</span><span class="p">:</span> <span class="p">(()</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">T</span><span class="p">))</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">T</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6TimApi6LoggerC9logMethodxSS9classname_SS6methodSayypSgG10parametersxyKc4codetKlF"></a>
+                    <a name="//apple_ref/swift/Method/logMethod(classname:method:parameters:code:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TimApi6LoggerC9logMethodxSS9classname_SS6methodSayypSgG10parametersxyKc4codetKlF">logMethod(classname:method:parameters:code:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Log function call. Convenience method wrapping function call contained in a
+code block with enter/exit logging while potentially throwing errors.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="n">logMethod</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span><span class="p">(</span><span class="nv">classname</span><span class="p">:</span> <span class="kt">String</span> <span class="o">=</span> <span class="kd">#file</span><span class="p">,</span> <span class="nv">method</span><span class="p">:</span> <span class="kt">String</span> <span class="o">=</span> <span class="kd">#function</span><span class="p">,</span> <span class="nv">parameters</span><span class="p">:</span> <span class="p">[</span><span class="kt">Any</span><span class="p">?],</span> <span class="nv">code</span><span class="p">:</span> <span class="p">(()</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">T</span><span class="p">))</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">T</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6TimApi6LoggerC4nameSSvp"></a>
+                    <a name="//apple_ref/swift/Property/name" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TimApi6LoggerC4nameSSvp">name</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Logger name.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">name</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6TimApi6LoggerC8logLevelAC0E0OSgvp"></a>
+                    <a name="//apple_ref/swift/Property/logLevel" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TimApi6LoggerC8logLevelAC0E0OSgvp">logLevel</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Log level to enable or nil to use global.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">logLevel</span><span class="p">:</span> <span class="kt">Logger</span><span class="o">.</span><span class="kt"><a href="../Classes/Logger/Level.html">Level</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6TimApi6LoggerC8handlersSayAA10LogHandler_pGvp"></a>
+                    <a name="//apple_ref/swift/Property/handlers" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TimApi6LoggerC8handlersSayAA10LogHandler_pGvp">handlers</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Handlers.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">handlers</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Protocols/LogHandler.html">LogHandler</a></span><span class="p">]</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2018 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2018-08-29)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>
