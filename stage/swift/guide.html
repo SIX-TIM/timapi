@@ -47,7 +47,7 @@
             </ul>
           </div>
           <ul class="nav">
-          <li><a href="#intro">Introduction</a></li><li><a href="#setup">Setup Configuration</a><ul class="nav"><li><a href="#network">Network Configuration</a></li><li><a href="#guides">Guides Configuration</a></li></ul></li><li><a href="#operation">Operation Overview</a></li><li><a href="#automatisms">Automatisms</a></li><li><a href="#methods">Terminal methods overview</a><ul class="nav"><li><a href="#mainFunc">Main / guide retail terminal functions</a></li><li class="filterGuides guideDialog"><a href="#dialogFunc">Guide dialog terminal functions</a></li><li><a href="#addMethods">Additional terminal listener-events</a></li></ul></li><li><a href="#functionStateMatrix">Function-State-Matrix</a></li><li><a href="#reference">Reference</a></li></ul>
+          <li><a href="#intro">Introduction</a></li><li><a href="#sysreq">System Requirements</a></li><li><a href="#setup">Setup Configuration</a><ul class="nav"><li><a href="#network">Network Configuration</a></li><li><a href="#guides">Guides Configuration</a></li></ul></li><li><a href="#operation">Operation Overview</a></li><li><a href="#automatisms">Automatisms</a></li><li><a href="#methods">Terminal methods overview</a><ul class="nav"><li><a href="#mainFunc">Main / guide retail terminal functions</a></li><li class="filterGuides guideDialog"><a href="#dialogFunc">Guide dialog terminal functions</a></li><li><a href="#addMethods">Additional terminal listener-events</a></li></ul></li><li><a href="#swiftspec">Swift Specifics</a></li><li><a href="#functionStateMatrix">Function-State-Matrix</a></li><li><a href="#reference">Reference</a></li></ul>
           <div class="seperator">&#160;</div>
           <div class="linkDiv">
             <a href="doc/index.html">API Documentation</a>
@@ -85,6 +85,12 @@
             <a href="#reference">[B1]</a>, this document is meant to cover only implementation
             purposes.
         </p>
+        <hr>
+    </div></div></section>
+    <section id="sysreq"><h1><a name="sysreq"></a>System Requirements</h1><div class="row"><div class="col-md-6"><p>The TIM API is available for multiple platforms. Due to such diversity the support for the TIM API is limited to certain standards. Those are the minimal system requirements: <ul lang="swift">
+              <li>iOS 10</li>
+              <li>Swift 4.1</li>
+          </ul> </p>
         <hr>
     </div></div></section>
     <section id="setup"><h1><a name="setup"></a>Setup Configuration</h1><div class="row"><div class="col-md-6"><p>Once a
@@ -646,6 +652,46 @@ class TerminalHandler: DefaultTerminalListener {
         </div></div></section>
 
     <div class="row"><div class="col-md-6"></div></div></section>
+    <section id="swiftspec"><h1><a name="swiftspec"></a>Swift Specifics</h1><div class="row"><div class="col-md-6"><p>For Swift, the TIM API is delivered as a "Universal Framework". This means that the framework is build for multiple architectures,
+        for the physical iPhone (ARM) and for the iOS simulator (x86) for development purposes.
+      </p>
+      <p>To be able to upload your application to the Apple AppStore you must stripe the unused architecture from the framework as Apple does not allow
+        "Universal Frameworks" to be part of an App in the AppStore.
+        This can be done by adding a "Run Script" step to your build steps. Put is after your step to embed frameworks, set it to use "/bin/sh" and enter the following script:
+        <pre><code class="language-{.sh}">APP_PATH="${TARGET_BUILD_DIR}/${WRAPPER_NAME}"
+
+# This script loops through all the frameworks that you have embedded
+# in the application and removes all unused architectures.
+# This procedure is required to be able to upload your application to the AppStore, that
+# uses the TIM API.
+find "$APP_PATH" -name '*.framework' -type d | while read -r FRAMEWORK
+do
+    FRAMEWORK_EXECUTABLE_NAME=$(defaults read "$FRAMEWORK/Info.plist" CFBundleExecutable)
+    FRAMEWORK_EXECUTABLE_PATH="$FRAMEWORK/$FRAMEWORK_EXECUTABLE_NAME"
+    echo "Executable is $FRAMEWORK_EXECUTABLE_PATH"
+
+    EXTRACTED_ARCHS=()
+
+    for ARCH in $ARCHS
+    do
+        echo "Extracting $ARCH from $FRAMEWORK_EXECUTABLE_NAME"
+        lipo -extract "$ARCH" "$FRAMEWORK_EXECUTABLE_PATH" -o "$FRAMEWORK_EXECUTABLE_PATH-$ARCH"
+        EXTRACTED_ARCHS+=("$FRAMEWORK_EXECUTABLE_PATH-$ARCH")
+    done
+
+    echo "Merging extracted architectures: ${ARCHS}"
+    lipo -o "$FRAMEWORK_EXECUTABLE_PATH-merged" -create "${EXTRACTED_ARCHS[@]}"
+    rm "${EXTRACTED_ARCHS[@]}"
+
+    echo "Replacing original executable with thinned version"
+    rm "$FRAMEWORK_EXECUTABLE_PATH"
+    mv "$FRAMEWORK_EXECUTABLE_PATH-merged" "$FRAMEWORK_EXECUTABLE_PATH"
+
+done
+</code></pre>
+      </p>
+      <p>The script will look through your built applications "Frameworks" folder and make sure only the architectures you&#8217;re building for are present in each Framework.</p>
+    </div></div></section>
     <section id="functionStateMatrix"><h1><a name="functionStateMatrix"></a>Function-State-Matrix</h1><div class="row"><div class="col-md-6"><table class="table">
             <tr>
                 <th rowspan="4">Function</th>
@@ -672,7 +718,7 @@ class TerminalHandler: DefaultTerminalListener {
                 <td>o</td>
                 <td>o</td>
                 <td>-</td>
-                <td>B1</td>
+                <td>B1 - Retail</td>
             </tr>
             <tr>
                 <th>ActivateServiceMenu</th>
@@ -681,7 +727,7 @@ class TerminalHandler: DefaultTerminalListener {
                 <td>o</td>
                 <td>-</td>
                 <td>-</td>
-                <td>B3</td>
+                <td>B3 - Unattended</td>
             </tr>
             <tr>
                 <th>AdjustReservation</th>
@@ -690,7 +736,7 @@ class TerminalHandler: DefaultTerminalListener {
                 <td>-</td>
                 <td>o</td>
                 <td>-</td>
-                <td>B9</td>
+                <td>B9 - Hospitality</td>
             </tr>
             <tr>
                 <th>AmtAdjustment</th>
@@ -699,7 +745,7 @@ class TerminalHandler: DefaultTerminalListener {
                 <td>-</td>
                 <td>o</td>
                 <td>-</td>
-                <td>B3</td>
+                <td>B3 - Unattended</td>
             </tr>
             <tr>
                 <th>ApplicationInformation</th>
@@ -708,7 +754,7 @@ class TerminalHandler: DefaultTerminalListener {
                 <td>o</td>
                 <td>-</td>
                 <td>-</td>
-                <td>B1</td>
+                <td>B1 - Retail</td>
             </tr>
             <tr>
                 <th>AuthorizeCredit</th>
@@ -717,7 +763,7 @@ class TerminalHandler: DefaultTerminalListener {
                 <td>-</td>
                 <td>o</td>
                 <td>-</td>
-                <td>B5</td>
+                <td>B5 - Banking</td>
             </tr>
             <tr>
                 <th>AuthorizeDeposit</th>
@@ -726,7 +772,7 @@ class TerminalHandler: DefaultTerminalListener {
                 <td>-</td>
                 <td>o</td>
                 <td>-</td>
-                <td>B5</td>
+                <td>B5 - Banking</td>
             </tr>
 
             <tr>
@@ -736,7 +782,7 @@ class TerminalHandler: DefaultTerminalListener {
                 <td>o</td>
                 <td>-</td>
                 <td>-</td>
-                <td>B1</td>
+                <td>B1 - Retail</td>
             </tr>
             <tr>
                 <th>BalanceInquiry</th>
@@ -745,7 +791,7 @@ class TerminalHandler: DefaultTerminalListener {
                 <td>-</td>
                 <td>o</td>
                 <td>-</td>
-                <td>B4, B5</td>
+                <td>B4, B5 - Banking</td>
             </tr>
             <tr>
                 <th>Cancel</th>
@@ -754,7 +800,7 @@ class TerminalHandler: DefaultTerminalListener {
                 <td>o</td>
                 <td>o</td>
                 <td>o</td>
-                <td>B1</td>
+                <td>B1 - Retail</td>
             </tr>
             <tr>
                 <th>CancelReservation</th>
@@ -763,7 +809,7 @@ class TerminalHandler: DefaultTerminalListener {
                 <td>-</td>
                 <td>o</td>
                 <td>-</td>
-                <td>B9</td>
+                <td>B9 - Hospitality</td>
             </tr>
             <tr>
                 <th>CashAdvance</th>
@@ -772,7 +818,7 @@ class TerminalHandler: DefaultTerminalListener {
                 <td>-</td>
                 <td>o</td>
                 <td>-</td>
-                <td>B4</td>
+                <td>B4 - Adv. Retail</td>
             </tr>
             <tr>
                 <th>ChangeSettings</th>
@@ -781,7 +827,7 @@ class TerminalHandler: DefaultTerminalListener {
                 <td>o</td>
                 <td>-</td>
                 <td>-</td>
-                <td>B1</td>
+                <td>B1 - Retail</td>
             </tr>
             <tr>
                 <th>CloseDialogMode</th>
@@ -790,7 +836,7 @@ class TerminalHandler: DefaultTerminalListener {
                 <td>-</td>
                 <td>-</td>
                 <td>o</td>
-                <td>B6</td>
+                <td>B6 - Dialog</td>
             </tr>
             <tr>
                 <th>CloseMaintenanceWindow</th>
@@ -799,7 +845,7 @@ class TerminalHandler: DefaultTerminalListener {
                 <td>o</td>
                 <td>-</td>
                 <td>-</td>
-                <td>B3</td>
+                <td>B3 - Unattended</td>
             </tr>
             <tr>
                 <th>CloseReader</th>
@@ -808,7 +854,7 @@ class TerminalHandler: DefaultTerminalListener {
                 <td>-</td>
                 <td>o</td>
                 <td>-</td>
-                <td>B3</td>
+                <td>B3 - Unattended</td>
             </tr>
             <tr>
                 <th>CollectPoints</th>
@@ -817,7 +863,7 @@ class TerminalHandler: DefaultTerminalListener {
                 <td>-</td>
                 <td>o</td>
                 <td>-</td>
-                <td>B10</td>
+                <td>B10 - VAS</td>
             </tr>
             <tr>
                 <th>Combined</th>
@@ -826,7 +872,7 @@ class TerminalHandler: DefaultTerminalListener {
                 <td>-</td>
                 <td>o</td>
                 <td>-</td>
-                <td>B5</td>
+                <td>B5 - Banking</td>
             </tr>
             <tr>
                 <th>Commit</th>
@@ -835,7 +881,7 @@ class TerminalHandler: DefaultTerminalListener {
                 <td>-</td>
                 <td>o</td>
                 <td>-</td>
-                <td>B1</td>
+                <td>B1 - Retail</td>
             </tr>
             <tr>
                 <th>CounterRequest</th>
@@ -844,7 +890,7 @@ class TerminalHandler: DefaultTerminalListener {
                 <td>o</td>
                 <td>o</td>
                 <td>-</td>
-                <td>B1</td>
+                <td>B1 - Retail</td>
             </tr>
             <tr>
                 <th>Credit</th>
@@ -853,7 +899,7 @@ class TerminalHandler: DefaultTerminalListener {
                 <td>-</td>
                 <td>o</td>
                 <td>-</td>
-                <td>B1</td>
+                <td>B1 - Retail</td>
             </tr>
             <tr>
                 <th>DccRates</th>
@@ -862,7 +908,7 @@ class TerminalHandler: DefaultTerminalListener {
                 <td>o</td>
                 <td>-</td>
                 <td>-</td>
-                <td>B1</td>
+                <td>B1 - Retail</td>
             </tr>
             <tr>
                 <th>Deactivate</th>
@@ -871,7 +917,7 @@ class TerminalHandler: DefaultTerminalListener {
                 <td>o</td>
                 <td>o</td>
                 <td>-</td>
-                <td>B1</td>
+                <td>B1 - Retail</td>
             </tr>
             <tr>
                 <th>EjectCard</th>
@@ -880,7 +926,7 @@ class TerminalHandler: DefaultTerminalListener {
                 <td>-</td>
                 <td>o</td>
                 <td>-</td>
-                <td>B3</td>
+                <td>B3 - Unattended</td>
             </tr>
             <tr>
                 <th>FeatureRequest</th>
@@ -889,7 +935,7 @@ class TerminalHandler: DefaultTerminalListener {
                 <td>o</td>
                 <td>-</td>
                 <td>-</td>
-                <td>B1</td>
+                <td>B1 - Retail</td>
             </tr>
             <tr>
                 <th>FinalizePurchase</th>
@@ -898,7 +944,7 @@ class TerminalHandler: DefaultTerminalListener {
                 <td>-</td>
                 <td>o</td>
                 <td>-</td>
-                <td>B2</td>
+                <td>B2 - Petrol</td>
             </tr>
             <tr>
                 <th>FinishCeckout</th>
@@ -907,7 +953,7 @@ class TerminalHandler: DefaultTerminalListener {
                 <td>-</td>
                 <td>o</td>
                 <td>-</td>
-                <td>B10</td>
+                <td>B10 - VAS</td>
             </tr>
             <tr>
                 <th>Giro</th>
@@ -916,7 +962,7 @@ class TerminalHandler: DefaultTerminalListener {
                 <td>-</td>
                 <td>o</td>
                 <td>-</td>
-                <td>B5</td>
+                <td>B5 - Banking</td>
             </tr>
             <tr>
                 <th>HardwareInformation</th>
@@ -925,7 +971,7 @@ class TerminalHandler: DefaultTerminalListener {
                 <td>o</td>
                 <td>-</td>
                 <td>-</td>
-                <td>B1</td>
+                <td>B1 - Retail</td>
             </tr>
             <tr>
                 <th>HoldCommit</th>
@@ -934,7 +980,7 @@ class TerminalHandler: DefaultTerminalListener {
                 <td>-</td>
                 <td>o</td>
                 <td>-</td>
-                <td>B3</td>
+                <td>B3 - Unattended</td>
             </tr>
             <tr>
                 <th>InitTransaction</th>
@@ -943,7 +989,7 @@ class TerminalHandler: DefaultTerminalListener {
                 <td>-</td>
                 <td>o</td>
                 <td>-</td>
-                <td>B2</td>
+                <td>B2 - Petrol</td>
             </tr>
             <tr>
                 <th>KeepAlive</th>
@@ -952,7 +998,7 @@ class TerminalHandler: DefaultTerminalListener {
                 <td>o</td>
                 <td>o</td>
                 <td>o</td>
-                <td>B1</td>
+                <td>B1 - Retail</td>
             </tr>
             <tr>
                 <th>LicenseChanged</th>
@@ -961,7 +1007,7 @@ class TerminalHandler: DefaultTerminalListener {
                 <td>o</td>
                 <td>-</td>
                 <td>-</td>
-                <td>B1</td>
+                <td>B1 - Retail</td>
             </tr>
             <tr>
                 <th>LoadVoucher</th>
@@ -970,7 +1016,7 @@ class TerminalHandler: DefaultTerminalListener {
                 <td>-</td>
                 <td>o</td>
                 <td>-</td>
-                <td>B10</td>
+                <td>B10 - VAS</td>
             </tr>
             <tr>
                 <th>Login</th>
@@ -979,7 +1025,7 @@ class TerminalHandler: DefaultTerminalListener {
                 <td>o</td>
                 <td>-</td>
                 <td>-</td>
-                <td>B1</td>
+                <td>B1 - Retail</td>
             </tr>
             <tr>
                 <th>Logout</th>
@@ -988,7 +1034,7 @@ class TerminalHandler: DefaultTerminalListener {
                 <td>o</td>
                 <td>-</td>
                 <td>-</td>
-                <td>B1</td>
+                <td>B1 - Retail</td>
             </tr>
             <tr>
                 <th>LoyaltyData</th>
@@ -997,7 +1043,7 @@ class TerminalHandler: DefaultTerminalListener {
                 <td>-</td>
                 <td>o</td>
                 <td>-</td>
-                <td>B10</td>
+                <td>B10 - VAS</td>
             </tr>
             <tr>
                 <th>OpenDialogMode</th>
@@ -1006,7 +1052,7 @@ class TerminalHandler: DefaultTerminalListener {
                 <td>-</td>
                 <td>o</td>
                 <td>-</td>
-                <td>B6</td>
+                <td>B6 - Dialog</td>
             </tr>
             <tr>
                 <th>OpenMaintenanceWindow</th>
@@ -1015,7 +1061,7 @@ class TerminalHandler: DefaultTerminalListener {
                 <td>o</td>
                 <td>-</td>
                 <td>-</td>
-                <td>B3</td>
+                <td>B3 - Unattended</td>
             </tr>
             <tr>
                 <th>OpenReader</th>
@@ -1024,7 +1070,7 @@ class TerminalHandler: DefaultTerminalListener {
                 <td>-</td>
                 <td>o</td>
                 <td>-</td>
-                <td>B3</td>
+                <td>B3 - Unattended</td>
             </tr>
             <tr>
                 <th>PreAuthorization</th>
@@ -1033,7 +1079,7 @@ class TerminalHandler: DefaultTerminalListener {
                 <td>-</td>
                 <td>o</td>
                 <td>-</td>
-                <td>B2</td>
+                <td>B2 - Petrol</td>
             </tr>
             <tr>
                 <th>ProvideLoyaltyBasket</th>
@@ -1042,7 +1088,7 @@ class TerminalHandler: DefaultTerminalListener {
                 <td>-</td>
                 <td>o</td>
                 <td>-</td>
-                <td>B10</td>
+                <td>B10 - VAS</td>
             </tr>
             <tr>
                 <th>Purchase</th>
@@ -1051,7 +1097,7 @@ class TerminalHandler: DefaultTerminalListener {
                 <td>-</td>
                 <td>o</td>
                 <td>-</td>
-                <td>B1</td>
+                <td>B1 - Retail</td>
             </tr>
             <tr>
                 <th>PurchaseForcedAcceptance</th>
@@ -1060,7 +1106,7 @@ class TerminalHandler: DefaultTerminalListener {
                 <td>-</td>
                 <td>o</td>
                 <td>-</td>
-                <td>B4</td>
+                <td>B4 - Adv. Retail</td>
             </tr>
             <tr>
                 <th>PurchaseMailOrdered</th>
@@ -1069,7 +1115,7 @@ class TerminalHandler: DefaultTerminalListener {
                 <td>-</td>
                 <td>o</td>
                 <td>-</td>
-                <td>B4</td>
+                <td>B4 - Adv. Retail</td>
             </tr>
             <tr>
                 <th>PurchasePhoneAuthorized</th>
@@ -1078,7 +1124,7 @@ class TerminalHandler: DefaultTerminalListener {
                 <td>-</td>
                 <td>o</td>
                 <td>-</td>
-                <td>B4</td>
+                <td>B4 - Adv. Retail</td>
             </tr>
             <tr>
                 <th>PurchasePhoneOrdered</th>
@@ -1087,7 +1133,7 @@ class TerminalHandler: DefaultTerminalListener {
                 <td>-</td>
                 <td>o</td>
                 <td>-</td>
-                <td>B4</td>
+                <td>B4 - Adv. Retail</td>
             </tr>
             <tr>
                 <th>PurchaseReservation</th>
@@ -1096,7 +1142,7 @@ class TerminalHandler: DefaultTerminalListener {
                 <td>-</td>
                 <td>o</td>
                 <td>-</td>
-                <td>B9</td>
+                <td>B9 - Hospitality</td>
             </tr>
             <tr>
                 <th>PurchaseReservationPhoneAuthorized</th>
@@ -1105,7 +1151,7 @@ class TerminalHandler: DefaultTerminalListener {
                 <td>-</td>
                 <td>o</td>
                 <td>-</td>
-                <td>B9</td>
+                <td>B9 - Hospitality</td>
             </tr>
             <tr>
                 <th>PurchaseWithCashback</th>
@@ -1114,7 +1160,7 @@ class TerminalHandler: DefaultTerminalListener {
                 <td>-</td>
                 <td>o</td>
                 <td>-</td>
-                <td>B4</td>
+                <td>B4 - Adv. Retail</td>
             </tr>
             <tr>
                 <th>Reboot</th>
@@ -1123,7 +1169,7 @@ class TerminalHandler: DefaultTerminalListener {
                 <td>o</td>
                 <td>-</td>
                 <td>-</td>
-                <td>B1</td>
+                <td>B1 - Retail</td>
             </tr>
             <tr>
                 <th>ReceiptRequest</th>
@@ -1132,7 +1178,7 @@ class TerminalHandler: DefaultTerminalListener {
                 <td>o</td>
                 <td>o</td>
                 <td>-</td>
-                <td>B1</td>
+                <td>B1 - Retail</td>
             </tr>
             <tr>
                 <th>Reconciliation</th>
@@ -1141,7 +1187,7 @@ class TerminalHandler: DefaultTerminalListener {
                 <td>o</td>
                 <td>o</td>
                 <td>-</td>
-                <td>B1</td>
+                <td>B1 - Retail</td>
             </tr>
             <tr>
                 <th>Reconfig</th>
@@ -1150,7 +1196,7 @@ class TerminalHandler: DefaultTerminalListener {
                 <td>o</td>
                 <td>-</td>
                 <td>-</td>
-                <td>B1</td>
+                <td>B1 - Retail</td>
             </tr>
             <tr>
                 <th>Reservation</th>
@@ -1159,7 +1205,7 @@ class TerminalHandler: DefaultTerminalListener {
                 <td>-</td>
                 <td>o</td>
                 <td>-</td>
-                <td>B9</td>
+                <td>B9 - Hospitality</td>
             </tr>
             <tr>
                 <th>Reversal</th>
@@ -1168,7 +1214,7 @@ class TerminalHandler: DefaultTerminalListener {
                 <td>-</td>
                 <td>o</td>
                 <td>-</td>
-                <td>B1</td>
+                <td>B1 - Retail</td>
             </tr>
             <tr>
                 <th>Rollback</th>
@@ -1177,7 +1223,7 @@ class TerminalHandler: DefaultTerminalListener {
                 <td>-</td>
                 <td>o</td>
                 <td>-</td>
-                <td>B1</td>
+                <td>B1 - Retail</td>
             </tr>
             <tr>
                 <th>SendCardCommand</th>
@@ -1186,7 +1232,7 @@ class TerminalHandler: DefaultTerminalListener {
                 <td>-</td>
                 <td>-</td>
                 <td>o</td>
-                <td>B6</td>
+                <td>B6 - Dialog</td>
             </tr>
             <tr>
                 <th>ShowDialog</th>
@@ -1195,7 +1241,7 @@ class TerminalHandler: DefaultTerminalListener {
                 <td>-</td>
                 <td>-</td>
                 <td>o</td>
-                <td>B6</td>
+                <td>B6 - Dialog</td>
             </tr>
             <tr>
                 <th>ShowSignatureCapture</th>
@@ -1204,7 +1250,7 @@ class TerminalHandler: DefaultTerminalListener {
                 <td>-</td>
                 <td>-</td>
                 <td>o</td>
-                <td>B6</td>
+                <td>B6 - Dialog</td>
             </tr>
             <tr>
                 <th>SoftwareUpdate</th>
@@ -1213,7 +1259,7 @@ class TerminalHandler: DefaultTerminalListener {
                 <td>o</td>
                 <td>-</td>
                 <td>-</td>
-                <td>B1</td>
+                <td>B1 - Retail</td>
             </tr>
             <tr>
                 <th>StartCheckout</th>
@@ -1222,7 +1268,7 @@ class TerminalHandler: DefaultTerminalListener {
                 <td>-</td>
                 <td>o</td>
                 <td>-</td>
-                <td>B10</td>
+                <td>B10 - VAS</td>
             </tr>
             <tr>
                 <th>SystemInformation</th>
@@ -1231,7 +1277,7 @@ class TerminalHandler: DefaultTerminalListener {
                 <td>o</td>
                 <td>-</td>
                 <td>-</td>
-                <td>B1</td>
+                <td>B1 - Retail</td>
             </tr>
             <tr>
                 <th>TerminalStatus</th>
@@ -1240,7 +1286,7 @@ class TerminalHandler: DefaultTerminalListener {
                 <td>o</td>
                 <td>o</td>
                 <td>o</td>
-                <td>B1</td>
+                <td>B1 - Retail</td>
             </tr>
             <tr>
                 <th>VasInfo</th>
@@ -1249,7 +1295,7 @@ class TerminalHandler: DefaultTerminalListener {
                 <td>-</td>
                 <td>o</td>
                 <td>-</td>
-                <td>B10</td>
+                <td>B10 - VAS</td>
             </tr>
         </table>
       </div></div></section>
