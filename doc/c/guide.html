@@ -25,7 +25,6 @@
         <div class="affix" data-spy="affix">
           <div id="projectname">TIM SDK</div>
           <div id="projectbrief">TIM API</div>
-
           <div class="seperator" style="margin-top: 0px;">&#160;</div>
           <div id="vSep">&#160;</div>
           <div id="langSel">
@@ -37,7 +36,7 @@
                 <span style="color: gray">.NET</span>
               </li>
               <li>
-                <span style="color: gray">Swift</span>
+                <a class="lang_swift" href="../swift/guide.html">Swift</a>
               </li>
               <li>
                 <span style="color: gray">JavaScript</span>
@@ -48,7 +47,7 @@
             </ul>
           </div>
           <ul class="nav">
-          <li><a href="#intro">Introduction</a></li><li><a href="#setup">Setup Configuration</a><ul class="nav"><li><a href="#network">Network Configuration</a></li><li><a href="#guides">Guides Configuration</a></li></ul></li><li><a href="#operation">Operation Overview</a></li><li><a href="#automatisms">Automatisms</a></li><li><a href="#methods">Terminal methods overview</a><ul class="nav"><li><a href="#mainFunc">Main / guide retail terminal functions</a></li><li class="filterGuides guideDialog"><a href="#dialogFunc">Guide dialog terminal functions</a></li><li><a href="#addMethods">Additional terminal listener-events</a></li></ul></li><li><a href="#clang">C Language Specifics</a><ul class="nav"><li><a href="#objects">Objects in TIM API C</a></li><li><a href="#memory">Memory Management in TIM API C</a></li><li><a href="#datatype">Data Types in TIM API C</a></li></ul></li><li><a href="#reference">Reference</a></li></ul>
+          <li><a href="#intro">Introduction</a></li><li><a href="#sysreq">System Requirements</a></li><li><a href="#setup">Setup Configuration</a><ul class="nav"><li><a href="#network">Network Configuration</a></li><li><a href="#guides">Guides Configuration</a></li></ul></li><li><a href="#operation">Operation Overview</a></li><li><a href="#automatisms">Automatisms</a></li><li><a href="#methods">Terminal methods overview</a><ul class="nav"><li><a href="#mainFunc">Main / guide retail terminal functions</a></li><li class="filterGuides guidePetrol"><a href="#petrolFunc">Guide Petrol terminal functions</a></li><li class="filterGuides guideUnattended"><a href="#uatFunc">Guide Unattended terminal functions</a></li><li class="filterGuides guideDialog"><a href="#dialogFunc">Guide dialog terminal functions</a></li><li><a href="#addMethods">Additional terminal listener-events</a></li></ul></li><li><a href="#clang">C Language Specifics</a><ul class="nav"><li><a href="#objects">Objects in TIM API C</a></li><li><a href="#memory">Memory Management in TIM API C</a></li><li><a href="#datatype">Data Types in TIM API C</a></li></ul></li><li><a href="#functionStateMatrix">Function-State-Matrix</a></li><li><a href="#reference">Reference</a></li></ul>
           <div class="seperator">&#160;</div>
           <div class="linkDiv">
             <a href="doc/index.html">API Documentation</a>
@@ -70,34 +69,56 @@
 
       <main>
       <section id="intro"><h1><a name="intro"></a>Introduction</h1><div class="row"><div class="col-md-6"><p>The TIM API is the standard application interface for ECR integration using SIX Payment Services terminals.
-        </p><p>TIM API provides a comprehensive feature set to support the requirements of several different markets. This
+        </p>
+        <p>TIM API provides a comprehensive feature set to support the requirements of several different markets. This
             guideline is intended to be used by ECR integrators that need to implement the TIM API functionality in
             their
             products.
-        </p><p>The following document contains an overview structure, description of the TIM API modes
+        </p>
+        <p>The following document contains an overview structure, description of the TIM API modes
             synchronous/asynchronous
             and describes the corresponding functions, notifiers and data elements that can be used with the TIM API.
             Furthermore implementation examples are provided. Nevertheless always the corresponding description of a
             function or data element is authoritative, not the examples.
-        </p><p>For further information about the architecture of the TIM API can be found in
+        </p>
+        <p>For further information about the architecture of the TIM API can be found in
             <a href="#reference">[B1]</a>, this document is meant to cover only implementation
             purposes.
-        </p><hr></div></div></section><section id="setup"><h1><a name="setup"></a>Setup Configuration</h1><div class="row"><div class="col-md-6"><p>The configuration of the <code><a href="doc/terminal_8h.html">terminal</a></code> can be done by creating and configuring a
+        </p>
+        <hr>
+    </div></div></section>
+    <section id="sysreq"><h1><a name="sysreq"></a>System Requirements</h1><div class="row"><div class="col-md-6"><p>The TIM API is available for multiple platforms. Due to such diversity the support for the TIM API is limited to certain standards. Those are the minimal system requirements: <ul lang="c">
+              <li>C99</li>
+              <li>GCC 2.95</li>
+              <li>Visual C 2015</li>
+              <li>RAM: 400kB + 600kB per terminal (i.e. min 1MB)</li>
+              <li>Libraries: Pthreads</li>
+          </ul> </p>
+        <hr>
+    </div></div></section>
+    <section id="setup"><h1><a name="setup"></a>Setup Configuration</h1><div class="row"><div class="col-md-6"><p lang="c">The configuration of the <code><a href="doc/terminal_8h.html">terminal</a></code> can be done by creating and configuring a
                 <code><a href="doc/terminal__settings_8h.html">terminal_settings</a></code>-instance. The
                 <code><a href="doc/terminal__settings_8h.html">terminal_settings</a></code>-instance must then be passed to the
                 <code><a href="doc/terminal_8h.html#ab71047155839a18148d9a41406db42b4">terminal_create</a></code>function.
-        </p><p>Once a
+        </p>
+        <p>Once a
             <code><a href="doc/terminal_8h.html">terminal</a></code>-instance has been created with a
             <code><a href="doc/terminal__settings_8h.html">terminal_settings</a></code>-instance, the settings can not be changed anymore.
             Changes to the
             <code><a href="doc/terminal__settings_8h.html">terminal_settings</a></code>-instance will be ignored.
-        </p><p>The network and guides configuration are explained in the following
+        </p>
+        <p>The network and guides configuration are explained in the following
             chapters.
             For further information refer to<code><a href="doc/terminal__settings_8h.html">terminal_settings</a></code>.
-        </p></div></div><section id="network"><h2><a name="network"></a>Network Configuration</h2><div class="row"><div class="col-md-6"><p>The TIM API module can communicate with the Terminal over different communication channels. The default
+        </p>
+
+
+        </div></div><section id="network"><h2><a name="network"></a>Network Configuration</h2><div class="row"><div class="col-md-6"><p>The TIM API module can communicate with the Terminal over different communication channels. The default
                 communication
                 is over TCP/IP connection.
-            </p><p>For TCP/IP connection there are two possible ways to connect to the terminal:</p><ul>
+            </p>
+            <p>For TCP/IP connection there are two possible ways to connect to the terminal:</p>
+            <ul>
                 <li>
                     <strong>Broadcast-Mode:</strong>
                     <ul>
@@ -115,7 +136,11 @@
                         <li>Connection is established directly via IP.</li>
                     </ul>
                 </li>
-            </ul></div></div></section><div class="row"><div class="col-md-6"></div></div><section id="guides"><h2><a name="guides"></a>Guides Configuration</h2><div class="row"><div class="col-md-6"><p>There are various
+            </ul>
+
+        </div></div></section>
+        <div class="row"><div class="col-md-6"></div></div><section id="guides"><h2><a name="guides"></a>Guides Configuration</h2><div class="row"><div class="col-md-6">
+                    <p>There are various
                         <code><a href="doc/guides_8h.html">guides</a></code>
                         covering different use case scenarios. The guide retail is the basic guide and is activated as
                         default. With
@@ -123,12 +148,13 @@
                         the guides can be configured. Important: the configuration needs to include all desired guides
                         (including
                         the retail guide).
-                    </p><p>
+                    </p>
 
-                </p></div><div class="col-md-6"><p>Code-example for creating a terminal including settings with activated guides retail and
+                </div><div class="col-md-6">
+                    <p>Code-example for creating a terminal including settings with activated guides retail and
                         hospitality:
-                    </p><p>
-                    </p><pre><code class="language-{.c}">ta_object_t terminal = ta_object_invalid;
+                    </p>
+                    <pre><code class="language-{.c}">ta_object_t terminal = ta_object_invalid;
 ta_object_t settings = ta_object_invalid;
 
 // create terminal settings instance
@@ -146,9 +172,16 @@ ta_object_release(settings);
 //...
 
 // in the end release terminal as well
-ta_oject_release(terminal);</code></pre><p>
-                </p></div></div><div class="row"><div class="col-md-6"><hr></div></div></section><div class="row"><div class="col-md-6"></div></div></section><section id="operation"><h1><a name="operation"></a>Operation Overview</h1><div class="row"><div class="col-md-6"><p>Follow these basic steps for using the TIM API:</p><p>
-                </p><ol>
+ta_oject_release(terminal);</code></pre>
+                </div></div>
+
+            <div class="row"><div class="col-md-6"><hr>
+        </div></div></section>
+        <div class="row"><div class="col-md-6"></div></div></section>
+    <section id="operation"><h1><a name="operation"></a>Operation Overview</h1><div class="row"><div class="col-md-6">
+
+                <p>Follow these basic steps for using the TIM API:</p>
+                <ol>
                     <li>Create
                         <code><a href="doc/terminal__settings_8h.html">terminal_settings</a></code>
                         and initialize connection parameters (see
@@ -182,10 +215,16 @@ ta_oject_release(terminal);</code></pre><p>
                         method.
                     </li>
                     <li>Use terminal operation functions.</li>
-                </ol><p>
-            </p></div><div class="col-md-6"><p>A basic flow to show a dialog is:</p><p>
-                </p><figure><img src="res/img/operations_overview.png"><figcaption>Operations overview</figcaption></figure><p>
-            </p></div></div><div class="row"><div class="col-md-6"><hr></div></div></section><section id="automatisms"><h1><a name="automatisms"></a>Automatisms</h1><div class="row"><div class="col-md-6"><p>The TIM API uses two different types of automatisms:</p><ul>
+                </ol>
+            </div><div class="col-md-6">
+                <p lang="c">A basic flow to show a dialog is:</p>
+                <figure><img src="res/img/operations_overview.png"><figcaption>Operations overview</figcaption></figure>
+            </div></div>
+        <div class="row"><div class="col-md-6"><hr>
+
+    </div></div></section>
+    <section id="automatisms"><h1><a name="automatisms"></a>Automatisms</h1><div class="row"><div class="col-md-6"><p>The TIM API uses two different types of automatisms:</p>
+        <ul>
             <li>
                 <p>
                     <strong>Pre-Automatisms:</strong>
@@ -210,29 +249,40 @@ ta_oject_release(terminal);</code></pre><p>
                     been made.  <code><a href="doc/terminal__settings_8h.html#a2be8b19ae60811461776046761f7e4c5">auto_commit</a></code> and <code><a href="doc/terminal__settings_8h.html#a37a5cb308ad77a3b7e7cea77c73b71c1">fetch_brands</a></code> are enabled by default.
                 </p>
             </li>
-        </ul><p>The following diagrams show the principle of the Pre-Automatisms and Post-Automatisms. Pre-Automatisms are
+        </ul>
+        <p>The following diagrams show the principle of the Pre-Automatisms and Post-Automatisms. Pre-Automatisms are
             enabled by default and cannot be disabled. If an error occurs the started request from the ECR is returned
             with an error.
-        </p></div></div><div class="row"><div class="col-md-6"><p>
+        </p>
+
+        </div></div><div class="row"><div class="col-md-6">
+
+                <p>
                     <strong>Synchronous flow</strong>
-                </p><p>
-                </p><figure><img src="res/img/sync_flow.png"><figcaption>Synchronous flow</figcaption></figure><p>
-            </p></div><div class="col-md-6"><p>
+                </p>
+                <figure><img src="res/img/sync_flow.png"><figcaption>Synchronous flow</figcaption></figure>
+            </div><div class="col-md-6">
+                <p>
                     <strong>Asynchronous flow</strong>
-                </p><p>
-                </p><figure><img src="res/img/async_flow.png"><figcaption>Asynchronous flow</figcaption></figure><p>
-            </p></div></div><div class="row"><div class="col-md-6"><hr></div></div></section><section id="methods"><h1><a name="methods"></a>Terminal methods overview</h1><div class="row"><div class="col-md-6"><p>The basic operation modes of terminal <span>function</span> calls are:</p><p>
-                </p><ol>
+                </p>
+                <figure><img src="res/img/async_flow.png"><figcaption>Asynchronous flow</figcaption></figure>
+            </div></div>
+        <div class="row"><div class="col-md-6"><hr>
+
+    </div></div></section>
+    <section id="methods"><h1><a name="methods"></a>Terminal methods overview</h1><div class="row"><div class="col-md-6">
+                <p>The basic operation modes of terminal <span lang="c">function</span> calls are:</p>
+                <ol>
                     <li>
                         <p>
                             <strong>Synchronous</strong>
-                            <br><span>Function calls are blocking and return after the operation has finished. Error code is provided and indicates if request was successful or not.</span>
+                            <br><span lang="c">Function calls are blocking and return after the operation has finished. Error code is provided and indicates if request was successful or not.</span>
                         </p>
                     </li>
                     <li>
                         <p>
                             <strong>Asynchronous</strong>
-                            <br> <span>
+                            <br> <span lang="c">
                                 Function call returns immediately after the operation has started successfully. A user-implemented callback
                     function will then be called, after operation has finished. All callback functions receive an
                     <code><a href="doc/structta__s__event.html">event</a></code>. The
@@ -242,12 +292,13 @@ ta_oject_release(terminal);</code></pre><p>
                             </span>
                         </p>
                     </li>
-                </ol><p>
-                </p><p>Functions called on terminal perform synchronous by default. The asynchronous method has the same name
-                    with <i>_aync</i> appended to its name.
-                </p><p>
-            </p></div><div class="col-md-6"><p>Code example for adding a terminal listener:</p><p>
-                </p><pre><code class="language-{.c}">/*
+                </ol>
+                <p lang="java c">Functions called on terminal perform synchronous by default. The asynchronous method has the same name
+                    with <i lang="c">_aync</i> appended to its name.
+                </p>
+                </div><div class="col-md-6">
+                <p>Code example for adding a terminal listener:</p>
+                <pre><code class="language-{.c}">/*
  * Example for adding a terminal status listener
  *
  * \param[in] terminal Terminal instance
@@ -287,8 +338,10 @@ void mylistener_terminal_status_changed(ta_object_t terminal,	void *user_pointer
 
 	// implement your code to process status change here...
 	//printf(&amp;quot; &amp;gt; listener_terminal_status_changed\n&amp;quot;);
-}</code></pre><p>
-            </p></div></div><div class="row"><div class="col-md-6"></div></div><section id="mainFunc"><h2><a name="mainFunc"></a>Main / guide retail terminal functions</h2><div class="row"><div class="col-md-6"><table class="table"><thead>
+}</code></pre>
+            </div></div>
+        <div class="row"><div class="col-md-6"></div></div><section id="mainFunc"><h2><a name="mainFunc"></a>Main / guide retail terminal functions</h2><div class="row"><div class="col-md-6"><table class="table">
+                <thead>
                     <tr>
                         <th>
                             <strong>Sync method</strong>
@@ -299,7 +352,8 @@ void mylistener_terminal_status_changed(ta_object_t terminal,	void *user_pointer
                         </th>
                         <th>Description</th>
                     </tr>
-                </thead><tbody>
+                </thead>
+                <tbody>
                     <tr>
                         <td>
                             <code class="syncMethod"><a class="syncMethod" href="doc/terminal_8h.html#a2bc6f9272859177eae06242f6838a753">ta_terminal_activate</a></code>
@@ -537,7 +591,150 @@ void mylistener_terminal_status_changed(ta_object_t terminal,	void *user_pointer
                         </td>
                         <td>Starts an EFT Terminal Transaction.</td>
                     </tr>
-                </tbody></table></div></div></section><div class="row"><div class="col-md-6"></div></div><section class="filterGuides guideDialog" id="dialogFunc"><h2><a name="dialogFunc"></a>Guide dialog terminal functions</h2><div class="row"><div class="col-md-6"><table class="table"><thead>
+                </tbody>
+            </table>
+
+        </div></div></section>  
+
+        <div class="row"><div class="col-md-6"></div></div><section class="filterGuides guidePetrol" id="petrolFunc"><h2><a name="petrolFunc"></a>Guide Petrol terminal functions</h2><div class="row"><div class="col-md-6"><table class="table">
+                <thead>
+                    <tr>
+                        <th>
+                            <strong>Sync method</strong>
+                            <br>
+                            <span class="asyncMethod">Async method</span>
+                            <br>
+                            <span class="completedMethod">Completed event</span>
+                        </th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <code class="asyncMethod"><a class="asyncMethod" href="doc/terminal_8h.html#a7aceb173071dec8687acc4fa9fe93989">ta_terminal_cancel</a></code>
+                        </td>
+                        <td>Cancel an asynchronous function.</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code class="syncMethod"><a class="syncMethod" href="doc/terminal_8h.html#aec31a48f33502fab0a02eb52e6e90ee7">ta_terminal_init_transaction</a></code>
+                            <br>
+                            <code class="asyncMethod"><a class="asyncMethod" href="doc/terminal_8h.html#ac4d632daf6e832115c0bfa89608dda01">ta_terminal_init_transaction_async</a></code>
+                            <br>
+                            <code class="completedMethod"><a class="completedMethod" href="doc/terminal__listener_8h.html#a9019e87bacfce04a6ddf5f4be5f1ca4a">init_transaction_completed</a></code>
+                        </td>
+                        <td>Retreive card data for the presented card.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div></div></section>  
+
+        <div class="row"><div class="col-md-6"></div></div><section class="filterGuides guideUnattended" id="uatFunc"><h2><a name="uatFunc"></a>Guide Unattended terminal functions</h2><div class="row"><div class="col-md-6"><table class="table">
+                <thead>
+                    <tr>
+                        <th>
+                            <strong>Sync method</strong>
+                            <br>
+                            <span class="asyncMethod">Async method</span>
+                            <br>
+                            <span class="completedMethod">Completed event</span>
+                        </th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <code class="syncMethod"><a class="syncMethod" href="doc/terminal_8h.html#aa7f8f12041936ce339c17bec2ccfe9f2">ta_terminal_open_reader</a></code>
+                            <br>
+                            <code class="openReaderasyncMethod"><a class="openReaderasyncMethod" href="doc/terminal_8h.html#a3c1bc113588d092591210c55e1e1e736">ta_terminal_async</a></code>
+                            <br>
+                            <code class="completedMethod"><a class="completedMethod" href="doc/terminal__listener_8h.html#a4b858b839bcbe394c139b644a8d385fd">open_reader_completed</a></code>
+                        </td>
+                        <td>Opens the shutter of the card reader.</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code class="syncMethod"><a class="syncMethod" href="doc/terminal_8h.html#ac55b5a60f04d3336ddf4ba46c49a5fea">ta_terminal_close_reader</a></code>
+                            <br>
+                            <code class="asyncMethod"><a class="asyncMethod" href="doc/terminal_8h.html#a4babe0e7f8b17cdc38e765994a3c309f">ta_terminal_close_reader_async</a></code>
+                            <br>
+                            <code class="completedMethod"><a class="completedMethod" href="doc/terminal__listener_8h.html#a7664fed628bcdd45f81694856b54a13e">close_reader_completed</a></code>
+                        </td>
+                        <td>Closes the shutter of the card reader.</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code class="syncMethod"><a class="syncMethod" href="doc/terminal_8h.html#ad888b7b2d3546f07f1fec8f635a46cd6">ta_terminal_eject_card</a></code>
+                            <br>
+                            <code class="asyncMethod"><a class="asyncMethod" href="doc/terminal_8h.html#a10ee5aa13a16c008a3696c3d88f63865">ta_terminal_eject_card_async</a></code>
+                            <br>
+                            <code class="completedMethod"><a class="completedMethod" href="doc/terminal__listener_8h.html#a4fc99165964e280c6773b79a37e01afc">eject_card_completed</a></code>
+                        </td>
+                        <td>Ejects the card from the card reader.</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code class="syncMethod"><a class="syncMethod" href="doc/terminal_8h.html#ab8e774067fbed221e160a6e8a88090ec">ta_terminal_open_maintenance_window</a></code>
+                            <br>
+                            <code class="asyncMethod"><a class="asyncMethod" href="doc/terminal_8h.html#a3c1bc113588d092591210c55e1e1e736">ta_terminal_open_maintenance_window_async</a></code>
+                            <br>
+                            <code class="completedMethod"><a class="completedMethod" href="doc/terminal__listener_8h.html#a70b3a473d8e606b3fcd59054d8f1e8b6">open_maintenance_window_completed</a></code>
+                        </td>
+                        <td>Opens a maintenance window where the terminal can perform all maintenance processes it was not able to perform before.&gt;</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code class="syncMethod"><a class="syncMethod" href="doc/terminal_8h.html#abac6ccdbd884a8f368f03230258f8791">ta_terminal_close_maintenance_window</a></code>
+                            <br>
+                            <code class="asyncMethod"><a class="asyncMethod" href="doc/terminal_8h.html#a70a36260241f529372ccaebcded47340">ta_terminal_close_maintenance_window_async</a></code>
+                            <br>
+                            <code class="completedMethod"><a class="completedMethod" href="doc/terminal__listener_8h.html#aea9de19f2d240d7dc93772004ebbb9a2">close_maintenance_window_completed</a></code>
+                        </td>
+                        <td>Prohibits the EFT terminal from performing any triggered maintenance tasks.</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code class="syncMethod"><a class="syncMethod" href="doc/terminal_8h.html#ac1b72345a56cb591426877e3016a0ae9">ta_terminal_hold_commit</a></code>
+                        </td>
+                        <td>Increases the commit timeout.</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code class="syncMethod"><a class="syncMethod" href="doc/terminal_8h.html#a7aceb173071dec8687acc4fa9fe93989">ta_terminal_cancel</a></code>
+                        </td>
+                        <td>Cancels a running request.</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code class="syncMethod"><a class="syncMethod" href="doc/terminal_8h.html#a1a8cb225510ae56543926bc6ee871a63">ta_terminal_commit</a></code>
+                            <br>
+                            <code class="asyncMethod"><a class="asyncMethod" href="doc/terminal_8h.html#ac28f0dfe2dd8d093536c8a9e57f8423f">ta_terminal_commit_async</a></code>
+                            <br>
+                            <code class="completedMethod"><a class="completedMethod" href="doc/terminal__listener_8h.html#a89b6799427e9efb30136d13bc6eb84e5">commit_completed</a></code>
+                        </td>
+                        <td>Commits a transaction after succesful authorization. A lower amount may be commited than the authorized amount.</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code class="syncMethod"><a class="syncMethod">ta_terminal_amt_adjustment</a></code>
+                            <br>
+                            <code class="asyncMethod"><a class="asyncMethod">ta_terminal_amt_adjustment_async</a></code>
+                            <br>
+                            <code class="completedMethod"><a class="completedMethod">amt_adjustment_completed</a></code>
+                        </td>
+                        <td>Send an amount adjustment notification to the terminal during an open transaction. The amount is used as the new amount for the transaction.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div></div></section> 
+         
+         
+
+
+        <div class="row"><div class="col-md-6"></div></div><section class="filterGuides guideDialog" id="dialogFunc"><h2><a name="dialogFunc"></a>Guide dialog terminal functions</h2><div class="row"><div class="col-md-6"><table class="table">
+              <thead>
                   <tr>
                       <th>
                           <strong>Sync method</strong>
@@ -548,7 +745,8 @@ void mylistener_terminal_status_changed(ta_object_t terminal,	void *user_pointer
                       </th>
                       <th>Description</th>
                   </tr>
-              </thead><tbody>
+              </thead>
+              <tbody>
                   <tr>
                       <td>
                           <code class="syncMethod"><a class="syncMethod" href="doc/terminal_8h.html#ae7f183c210fb52783d5704bdc27b430a">ta_terminal_open_dialog_mode</a></code>
@@ -589,12 +787,24 @@ void mylistener_terminal_status_changed(ta_object_t terminal,	void *user_pointer
                       </td>
                       <td>Show signature capture on the terminal.</td>
                   </tr>
-            </tbody></table></div></div></section><div class="row"><div class="col-md-6"></div></div><section id="addMethods"><h2><a name="addMethods"></a>Additional terminal listener-events</h2><div class="row"><div class="col-md-6"><table class="table"><thead>
+            </tbody>
+          </table>
+        </div></div></section>
+
+         
+         
+         
+         
+         
+
+        <div class="row"><div class="col-md-6"></div></div><section id="addMethods"><h2><a name="addMethods"></a>Additional terminal listener-events</h2><div class="row"><div class="col-md-6"><table class="table">
+                <thead>
                     <tr>
                         <th>Listener-event</th>
                         <th>Description</th>
                     </tr>
-                </thead><tbody>
+                </thead>
+                <tbody>
                     <tr>
                         <td>
                             <code class="completedMethod"><a class="completedMethod" href="doc/terminal__listener_8h.html#a6547832ef93cedf0884755827f6f1e10">request_completed</a></code>
@@ -616,14 +826,22 @@ void mylistener_terminal_status_changed(ta_object_t terminal,	void *user_pointer
                             retrieved from the TerminalStatus property.
                         </td>
                     </tr>
-                </tbody></table></div></div></section><div class="row"><div class="col-md-6"></div></div></section><section id="clang"><h1><a name="clang"></a>C Language Specifics</h1><section id="objects"><h2><a name="objects"></a>Objects in TIM API C</h2><div class="row"><div class="col-md-6"><p>The TIM API C is based on an object-type concept. Most TIM API functions will either take or return parameters
+                </tbody>
+            </table>
+
+        </div></div></section>
+
+    <div class="row"><div class="col-md-6"></div></div></section>
+    <section id="clang"><h1><a name="clang"></a>C Language Specifics</h1><section id="objects"><h2><a name="objects"></a>Objects in TIM API C</h2><div class="row"><div class="col-md-6"><p>The TIM API C is based on an object-type concept. Most TIM API functions will either take or return parameters
                 in shape of the "opaque type"
                 <code><a href="doc/object_8h.html">ta_object_t</a></code>. For example:
                 <code><a href="doc/terminal_8h.html#ab71047155839a18148d9a41406db42b4">ta_terminal_create</a></code> will create a new terminal-instance, which returns a
                 <code><a href="doc/object_8h.html">ta_object_t</a></code>. On the other hand terminal-function calls like
                 <code><a href="doc/terminal_8h.html#a69cd9a5fb957251c966827f7a897098e">ta_terminal_get_terminal_id</a></code> require the terminal-instance as parameter of type
-                <code><a href="doc/object_8h.html">ta_object_t</a></code>.</p><p>Note: This concept introduces a behaviour similar to certain aspects of object-oriented programming to the
-                environment of C. Similarities are as follows:</p><ul>
+                <code><a href="doc/object_8h.html">ta_object_t</a></code>.</p>
+              <p>Note: This concept introduces a behaviour similar to certain aspects of object-oriented programming to the
+                environment of C. Similarities are as follows:</p>
+              <ul>
                 <li>For each object-type there are functions similar to getters and setters, in order to access the object-properties.
                   <ul>
                     <li>The naming of getters and setters is as follows: ta_DATATYPE_get/set_PROPERTY</li>
@@ -646,9 +864,12 @@ void mylistener_terminal_status_changed(ta_object_t terminal,	void *user_pointer
                     </li>
                   </ul>
                 </li>
-              </ul></div></div></section><div class="row"><div class="col-md-6"></div></div><section id="memory"><h2><a name="memory"></a>Memory Management in TIM API C</h2><div class="row"><div class="col-md-6"><p>The memory needed for each object will be allocated and freed by the TIM API itself. However, the user is responsible
-                to release retained objects, when no longer needed. Retained objects are:</p><p>
-              </p><ul>
+              </ul>
+        </div></div></section>
+        <div class="row"><div class="col-md-6"></div></div><section id="memory"><h2><a name="memory"></a>Memory Management in TIM API C</h2><div class="row"><div class="col-md-6">
+            <p>The memory needed for each object will be allocated and freed by the TIM API itself. However, the user is responsible
+                to release retained objects, when no longer needed. Retained objects are:</p>
+              <ul>
                 <li>Objects returned by the TIM API as retained objects (e.g.
                   <code><a href="doc/terminal_8h.html">terminal</a></code>-instance created with
                   <code><a href="doc/terminal_8h.html#ab71047155839a18148d9a41406db42b4">ta_terminal_create</a></code>, or a
@@ -661,10 +882,12 @@ void mylistener_terminal_status_changed(ta_object_t terminal,	void *user_pointer
                   must not be released (would lead to errors)! Objects that are returned as not-retained are to read immediately
                   or to explictely retain with
                   <code><a href="doc/object_8h.html#a9a8917ee724f85a764111fa1c2553f40">ta_object_retain</a></code>.</li>
-              </ul><p>
-              </p><p>(see header-documentation or this doxygen-dok to determine, if objects are retained / not retained. Most IDE
-                support doxygen of header-documentation and will show these information while coding).</p><p>
-                </p></div><div class="col-md-6"><p>Following an example of memory management. Shown by using a list:</p><pre><code class="language-{.c}">/* --- Create list -------------------------------------------------- */
+              </ul>
+              <p>(see header-documentation or this doxygen-dok to determine, if objects are retained / not retained. Most IDE
+                support doxygen of header-documentation and will show these information while coding).</p>
+                </div><div class="col-md-6">
+                    Following an example of memory management. Shown by using a list:
+                    <pre><code class="language-{.c}">/* --- Create list -------------------------------------------------- */
 ta_object_t myList = ta_object_invalid;
 ta_list_create(&amp;amp;myList);
 
@@ -708,15 +931,20 @@ ta_object_release(myList);
 // - If user still wants to use myListElement, he needs to call
 //   ta_object_retain(myListElement) right after receiving it from
 //   the list. In this case, he later needs to release the list
-//   element with ta_object_release(myListElement).</code></pre><p>
-                </p></div></div><div class="row"><div class="col-md-6"></div></div></section><div class="row"><div class="col-md-6"></div></div><section id="datatype"><h2><a name="datatype"></a>Data Types in TIM API C</h2><div class="row"><div class="col-md-6"><p>C doesn't provide data types / collections like string, boolean, list, timedate etc. Therefore the TIM API
+//   element with ta_object_release(myListElement).</code></pre>
+                </div></div>
+        <div class="row"><div class="col-md-6"></div></div></section>
+        <div class="row"><div class="col-md-6"></div></div><section id="datatype"><h2><a name="datatype"></a>Data Types in TIM API C</h2><div class="row"><div class="col-md-6"><p>C doesn't provide data types / collections like string, boolean, list, timedate etc. Therefore the TIM API
                 uses and provides a set of basic data types. In various places the TIM API requires or returns these data
-                types.</p><table class="table"><thead>
+                types.</p>
+              <table class="table">
+                <thead>
                   <tr>
                     <th>Data Type</th>
                     <th>Description</th>
                   </tr>
-                </thead><tbody>
+                </thead>
+                <tbody>
                   <tr>
                     <td>
                         <code><a href="doc/boolean_8h.html">boolean</a></code>
@@ -759,19 +987,651 @@ ta_object_release(myList);
                     </td>
                     <td>Time-Date type.</td>
                   </tr>
-                </tbody></table></div></div></section><div class="row"><div class="col-md-6"></div></div></section><section id="reference"><h1><a name="reference"></a>Reference</h1><div class="row"><div class="col-md-6"><table class="table"><thead>
+                </tbody>
+              </table>
+        </div></div></section>
+    <div class="row"><div class="col-md-6"></div></div></section>
+    <section id="functionStateMatrix"><h1><a name="functionStateMatrix"></a>Function-State-Matrix</h1><div class="row"><div class="col-md-6"><p>Legend:
+        <ul>
+          <li>B1-Retail</li>
+          <li>B2-Petrol</li>
+          <li>B3-Unattended</li>
+          <li>B4-Advanced Retail</li>
+          <li>B5-Banking</li>
+          <li>B6-Dialog</li>
+          <li>B8-Gastro</li>
+          <li>B9-Hospitality</li>
+          <li>B10-Value Added Services (VAS)</li>
+          <li>B11-Austrian Use Cases</li>
+        </ul>
+      </p>
+        <table class="table">
+            <tr>
+                <th rowspan="4">Function</th>
+                <th colspan="5">State</th>
+                <th rowspan="4">Book(s)</th>
+            </tr>
+            <tr>
+                <th rowspan="3">Disconnected</th>
+                <th colspan="4">Connected</th>
+            </tr>
+            <tr>
+                <th rowspan="2">LoggedOut</th>
+                <th colspan="3">LoggedIn</th>
+            </tr>
+            <tr>
+                <th>Closed</th>
+                <th>Opened</th>
+                <th>Dialog</th>
+            </tr>
+            <tr>
+                <th>Activate</th>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>o</td>
+                <td>-</td>
+                <td>B1</td>
+            </tr>
+            <tr>
+                <th>ActivateServiceMenu</th>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>-</td>
+                <td>-</td>
+                <td>B3</td>
+            </tr>
+            <tr>
+                <th>AdjustReservation</th>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>-</td>
+                <td>B9</td>
+            </tr>
+            <tr>
+                <th>AmtAdjustment</th>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>-</td>
+                <td>B3</td>
+            </tr>
+            <tr>
+                <th>ApplicationInformation</th>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>-</td>
+                <td>-</td>
+                <td>B1</td>
+            </tr>
+            <tr>
+                <th>AuthorizeCredit</th>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>-</td>
+                <td>B5</td>
+            </tr>
+            <tr>
+                <th>AuthorizeDeposit</th>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>-</td>
+                <td>B5</td>
+            </tr>
+
+            <tr>
+                <th>Balance</th>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>-</td>
+                <td>-</td>
+                <td>B1</td>
+            </tr>
+            <tr>
+                <th>BalanceInquiry</th>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>-</td>
+                <td>B4, B5</td>
+            </tr>
+            <tr>
+                <th>Cancel</th>
+                <td>-</td>
+                <td>o</td>
+                <td>o</td>
+                <td>o</td>
+                <td>o</td>
+                <td>B1</td>
+            </tr>
+            <tr>
+                <th>CancelReservation</th>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>-</td>
+                <td>B9</td>
+            </tr>
+            <tr>
+                <th>CashAdvance</th>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>-</td>
+                <td>B4</td>
+            </tr>
+            <tr>
+                <th>ChangeSettings</th>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>-</td>
+                <td>-</td>
+                <td>B1</td>
+            </tr>
+            <tr>
+                <th>CloseDialogMode</th>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>B6</td>
+            </tr>
+            <tr>
+                <th>CloseMaintenanceWindow</th>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>-</td>
+                <td>-</td>
+                <td>B3</td>
+            </tr>
+            <tr>
+                <th>CloseReader</th>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>-</td>
+                <td>B3</td>
+            </tr>
+            <tr>
+                <th>CollectPoints</th>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>-</td>
+                <td>B10</td>
+            </tr>
+            <tr>
+                <th>Combined</th>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>-</td>
+                <td>B5</td>
+            </tr>
+            <tr>
+                <th>Commit</th>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>-</td>
+                <td>B1</td>
+            </tr>
+            <tr>
+                <th>CounterRequest</th>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>o</td>
+                <td>-</td>
+                <td>B1</td>
+            </tr>
+            <tr>
+                <th>Credit</th>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>-</td>
+                <td>B1</td>
+            </tr>
+            <tr>
+                <th>DccRates</th>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>-</td>
+                <td>-</td>
+                <td>B1</td>
+            </tr>
+            <tr>
+                <th>Deactivate</th>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>o</td>
+                <td>-</td>
+                <td>B1</td>
+            </tr>
+            <tr>
+                <th>EjectCard</th>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>-</td>
+                <td>B3</td>
+            </tr>
+            <tr>
+                <th>FeatureRequest</th>
+                <td>-</td>
+                <td>o</td>
+                <td>o</td>
+                <td>-</td>
+                <td>-</td>
+                <td>B1</td>
+            </tr>
+            <tr>
+                <th>FinalizePurchase</th>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>-</td>
+                <td>B2</td>
+            </tr>
+            <tr>
+                <th>FinishCeckout</th>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>-</td>
+                <td>B10</td>
+            </tr>
+            <tr>
+                <th>Giro</th>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>-</td>
+                <td>B5</td>
+            </tr>
+            <tr>
+                <th>HardwareInformation</th>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>-</td>
+                <td>-</td>
+                <td>B1</td>
+            </tr>
+            <tr>
+                <th>HoldCommit</th>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>-</td>
+                <td>B3</td>
+            </tr>
+            <tr>
+                <th>InitTransaction</th>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>-</td>
+                <td>B2</td>
+            </tr>
+            <tr>
+                <th>KeepAlive</th>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>o</td>
+                <td>o</td>
+                <td>B1</td>
+            </tr>
+            <tr>
+                <th>LicenseChanged</th>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>-</td>
+                <td>-</td>
+                <td>B1</td>
+            </tr>
+            <tr>
+                <th>LoadVoucher</th>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>-</td>
+                <td>B10</td>
+            </tr>
+            <tr>
+                <th>Login</th>
+                <td>-</td>
+                <td>o</td>
+                <td>o</td>
+                <td>-</td>
+                <td>-</td>
+                <td>B1</td>
+            </tr>
+            <tr>
+                <th>Logout</th>
+                <td>-</td>
+                <td>o</td>
+                <td>o</td>
+                <td>-</td>
+                <td>-</td>
+                <td>B1</td>
+            </tr>
+            <tr>
+                <th>LoyaltyData</th>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>-</td>
+                <td>B10</td>
+            </tr>
+            <tr>
+                <th>OpenDialogMode</th>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>-</td>
+                <td>B6</td>
+            </tr>
+            <tr>
+                <th>OpenMaintenanceWindow</th>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>-</td>
+                <td>-</td>
+                <td>B3</td>
+            </tr>
+            <tr>
+                <th>OpenReader</th>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>-</td>
+                <td>B3</td>
+            </tr>
+            <tr>
+                <th>PreAuthorization</th>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>-</td>
+                <td>B2</td>
+            </tr>
+            <tr>
+                <th>ProvideLoyaltyBasket</th>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>-</td>
+                <td>B10</td>
+            </tr>
+            <tr>
+                <th>Purchase</th>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>-</td>
+                <td>B1</td>
+            </tr>
+            <tr>
+                <th>PurchaseForcedAcceptance</th>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>-</td>
+                <td>B4</td>
+            </tr>
+            <tr>
+                <th>PurchaseMailOrdered</th>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>-</td>
+                <td>B4</td>
+            </tr>
+            <tr>
+                <th>PurchasePhoneAuthorized</th>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>-</td>
+                <td>B4</td>
+            </tr>
+            <tr>
+                <th>PurchasePhoneOrdered</th>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>-</td>
+                <td>B4</td>
+            </tr>
+            <tr>
+                <th>PurchaseReservation</th>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>-</td>
+                <td>B9</td>
+            </tr>
+            <tr>
+                <th>PurchaseReservationPhoneAuthorized</th>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>-</td>
+                <td>B9</td>
+            </tr>
+            <tr>
+                <th>PurchaseWithCashback</th>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>-</td>
+                <td>B4</td>
+            </tr>
+            <tr>
+                <th>Reboot</th>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>-</td>
+                <td>-</td>
+                <td>B1</td>
+            </tr>
+            <tr>
+                <th>ReceiptRequest</th>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>o</td>
+                <td>-</td>
+                <td>B1</td>
+            </tr>
+            <tr>
+                <th>Reconciliation</th>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>o</td>
+                <td>-</td>
+                <td>B1</td>
+            </tr>
+            <tr>
+                <th>Reconfig</th>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>-</td>
+                <td>-</td>
+                <td>B1</td>
+            </tr>
+            <tr>
+                <th>Reservation</th>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>-</td>
+                <td>B9</td>
+            </tr>
+            <tr>
+                <th>Reversal</th>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>-</td>
+                <td>B1</td>
+            </tr>
+            <tr>
+                <th>Rollback</th>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>-</td>
+                <td>B1</td>
+            </tr>
+            <tr>
+                <th>SendCardCommand</th>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>B6</td>
+            </tr>
+            <tr>
+                <th>ShowDialog</th>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>B6</td>
+            </tr>
+            <tr>
+                <th>ShowSignatureCapture</th>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>B6</td>
+            </tr>
+            <tr>
+                <th>SoftwareUpdate</th>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>-</td>
+                <td>-</td>
+                <td>B1</td>
+            </tr>
+            <tr>
+                <th>StartCheckout</th>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>-</td>
+                <td>B10</td>
+            </tr>
+            <tr>
+                <th>SystemInformation</th>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>-</td>
+                <td>-</td>
+                <td>B1</td>
+            </tr>
+            <tr>
+                <th>TerminalStatus</th>
+                <td>-</td>
+                <td>o</td>
+                <td>o</td>
+                <td>o</td>
+                <td>o</td>
+                <td>B1</td>
+            </tr>
+            <tr>
+                <th>VasInfo</th>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>-</td>
+                <td>B10</td>
+            </tr>
+        </table>
+      </div></div></section>
+
+    <section id="reference"><h1><a name="reference"></a>Reference</h1><div class="row"><div class="col-md-6"><table class="table">
+            <thead>
                 <tr>
                     <th>Ref.</th>
                     <th>Document</th>
                     <th>Version</th>
                 </tr>
-            </thead><tbody>
+            </thead>
+            <tbody>
                 <tr>
                     <td>[B1]</td>
                     <td>TIM &amp; SIXml Architecture: The SIX ECR Integration System</td>
                     <td>0.10</td>
                 </tr>
-            </tbody></table></div></div></section></main>
+            </tbody>
+        </table>
+
+    </div></div></section>
+</main>
     </div>
   </div>
 </body>

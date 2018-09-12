@@ -1,0 +1,1784 @@
+<dochub>
+    <section id="intro" title="Introduction">
+        <p>The TIM API is the standard application interface for ECR integration using SIX Payment Services terminals.
+        </p>
+        <p>TIM API provides a comprehensive feature set to support the requirements of several different markets. This
+            guideline is intended to be used by ECR integrators that need to implement the TIM API functionality in
+            their
+            products.
+        </p>
+        <p>The following document contains an overview structure, description of the TIM API modes
+            synchronous/asynchronous
+            and describes the corresponding functions, notifiers and data elements that can be used with the TIM API.
+            Furthermore implementation examples are provided. Nevertheless always the corresponding description of a
+            function or data element is authoritative, not the examples.
+        </p>
+        <p>For further information about the architecture of the TIM API can be found in
+            <section_link ref="reference">[B1]</section_link>, this document is meant to cover only implementation
+            purposes.
+        </p>
+        <line />
+    </section>
+    <section id="sysreq" title="System Requirements">
+        <p>The TIM API is available for multiple platforms. Due to such diversity the support for the TIM API is limited to certain standards. Those are the minimal system requirements:
+          <ul lang="java">
+              <li>Java 7 JRE</li>
+              <li>Android: API Level 16 (Android 4.1, Jelly Bean)</li>
+          </ul>
+          <ul lang="swift">
+              <li>iOS 10</li>
+              <li>Swift 4.1</li>
+          </ul>
+          <ul lang="c">
+              <li>C99</li>
+              <li>GCC 2.95</li>
+              <li>Visual C 2015</li>
+              <li>RAM: 400kB + 600kB per terminal (i.e. min 1MB)</li>
+              <li>Libraries: Pthreads</li>
+          </ul>
+          <ul lang="dotnet">
+              <li>.NET Framework 2.0</li>
+          </ul>
+          <ul lang="javascript">
+              <li>Firefox 56</li>
+              <li>Chrome 59</li>
+              <li>Edge 41</li>
+              <li>Safari 10</li>
+          </ul>
+        </p>
+        <line />
+    </section>
+    <section id="setup" title="Setup Configuration">
+        <p lang="java">The configuration of the <api_link key="terminal">Terminal</api_link> can be done in two ways:
+            <ol>
+                <li>In a configuration file &#8220;TimApi.cfg&#8221;.</li>
+                <li>Using / configuring the
+                    <api_link key="terminalSettings">TerminalSettings</api_link>
+                    within the application.
+                </li>
+            </ol>
+            The settings defined in the .cfg file will be overwritten by the changes done using the API code directly.
+        </p>
+        <p lang="c">The configuration of the <api_link key="terminal">Terminal</api_link> can be done by creating and configuring a
+                <api_link key="terminalSettings">TerminalSettings</api_link>-instance. The
+                <api_link key="terminalSettings">TerminalSettings</api_link>-instance must then be passed to the
+                <api_link key="terminalCreate">terminal_create</api_link>function.
+        </p>
+        <p>Once a
+            <api_link key="terminal">Terminal</api_link>-instance has been created with a
+            <api_link key="terminalSettings">TerminalSettings</api_link>-instance, the settings can not be changed anymore.
+            Changes to the
+            <api_link key="terminalSettings">TerminalSettings</api_link>-instance will be ignored.
+        </p>
+        <p>The network and guides configuration <span lang="java">as well as the configuration file</span> are explained in the following
+            chapters.
+            For further information refer to
+            <api_link key="terminalSettings">TerminalSettings</api_link>.
+        </p>
+
+
+        <section id="network" title="Network Configuration">
+
+
+            <p>The TIM API module can communicate with the Terminal over different communication channels. The default
+                communication
+                is over TCP/IP connection.
+            </p>
+            <p>For TCP/IP connection there are two possible ways to connect to the terminal:</p>
+            <ul>
+                <li>
+                    <strong>Broadcast-Mode:</strong>
+                    <ul>
+                        <li>Terminal ID (TID) is known.</li>
+                        <li>The TIM API starts broadcasting on the default interface and connects to the connection
+                            information sent
+                            by the matching terminal.
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Direct Connect:</strong>
+                    <ul>
+                        <li>IP address of the terminal is known.</li>
+                        <li>Connection is established directly via IP.</li>
+                    </ul>
+                </li>
+            </ul>
+
+        </section>
+        <section id="guides" title="Guides Configuration">
+            <splitbox>
+                <lbox>
+                    <p>There are various
+                        <api_link key="guides">Guides</api_link>
+                        covering different use case scenarios. The guide retail is the basic guide and is activated as
+                        default. With
+                        <api_link fmt="setter" key="setGuides">setGuides</api_link>
+                        the guides can be configured. Important: the configuration needs to include all desired guides
+                        (including
+                        the retail guide).
+                    </p>
+
+                </lbox>
+                <rbox>
+                    <p>Code-example for creating a terminal including settings with activated guides retail and
+                        hospitality:
+                    </p>
+                    <code src="*/res/code/terminal_settings.*" />
+                </rbox>
+            </splitbox>
+
+            <line />
+        </section>
+        <section id="configfile" lang="java" title="Configuration File">
+            <splitbox>
+                <lbox>
+                    <p>With the use of the configuration file &#8220;TimApi.cfg&#8221;
+                        <api_link key="terminalSettings">TerminalSettings</api_link>
+                        can be set from outside of the application. If the user wishes to use multiple instances of the
+                        Terminal
+                        class it can be configured using ini-sections in the config file which are separated with a user
+                        defined
+                        DeviceId. The same DeviceId has to be used in the constructor of the TerminalSettings class if
+                        the specified
+                        configuration is wished to use. If no DeviceId is specified the global ini-section is used.
+                    </p>
+                    <p>The precedence of the configuration is as follows:</p>
+                    <ol>
+                        <li>TimApi.cfg will be read first by creating a
+                            <api_link key="terminalSettings">TerminalSettings</api_link>
+                            object
+                        </li>
+                        <li>The config previously read from the TimApi.cfg file can be overwritten by hand using setter
+                            methods from
+                            the
+                            <api_link key="terminalSettings">TerminalSettings</api_link>
+                            class.
+                        </li>
+                    </ol>
+                    <p>Table with Configuration File Parameters:</p>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Parameter</th>
+                                <th>Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <strong>LogDir</strong>
+                                </td>
+                                <td>Directory where log files are generated</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <strong>LogLevel</strong>
+                                </td>
+                                <td>Logging level, defines how much information will be logged. For detailed values see
+                                    <section_link ref="logging">Logging / LogLevel</section_link>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <strong>TerminalId</strong>
+                                </td>
+                                <td>Terminal ID to be broadcasted in case of ConnectionMode Broadcast</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <strong>ConnectionMode</strong>
+                                </td>
+                                <td>Connection mode used between ECR and EFT. For more information see
+                                    <api_link key="connectionMode">ConnectionMode</api_link>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <strong>ConnectionIPString</strong>
+                                </td>
+                                <td>IP address of the EFT terminal in case of ConnectionMode OnFixIP and Websockets.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <strong>ConnectionIPPort</strong>
+                                </td>
+                                <td>Listening Port of the EFT terminal in case of ConnectionMode OnFixIP and
+                                    Websockets.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <strong>SerialPort</strong>
+                                </td>
+                                <td>Serial port to be used for serial connection in case of ConnectionMode Serial.</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <strong>SerialBaudrate</strong>
+                                </td>
+                                <td>Baudrate used in case of ConnectionMode Serial.</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <strong>ProtocolType</strong>
+                                </td>
+                                <td>Protocol type. For detailed values see
+                                    <api_link key="protocolType">ProtocolType</api_link>.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <strong>FetchBrands</strong>
+                                </td>
+                                <td>Automatically retrieves application information during logging in. Default is on
+                                    (value &#8220;On&#8221; or &#8220;Off&#8221;)
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <strong>AutoCommit</strong>
+                                </td>
+                                <td>After executing the Transaction- function the API commits the transaction
+                                    automatically. Default is on
+                                    (value &#8220;On&#8221; or &#8220;Off&#8221;)
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <strong>RequestRepetition</strong>
+                                </td>
+                                <td>Defines how many times a Commit or Rollback request is sent repeatedly, if the
+                                    original request has been
+                                    lost. (Default = 0, means disabled = no repetition)
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <strong>EnableKeepAlive</strong>
+                                </td>
+                                <td>Defines if KeepAlive functionality shall be enabled or not. Default is on (value
+                                    &#8220;On&#8221; or &#8220;Off&#8221;).
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <strong>SecuredConnection</strong>
+                                </td>
+                                <td>Defines if the TCP/IP or Websocket connection shall be secured using TLS. Default is
+                                    off (value &#8220;On&#8221;
+                                    or &#8220;Off&#8221;).
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </lbox>
+                <rbox>
+                    <p>Example &#8220;TimApi.cfg&#8221;: This example describes the TimApi.cfg file with a global ini-section and
+                        two different
+                        ini-sections for specific DeviceIds:
+                    </p>
+                    <code src="assets/code/TimApi.cfg" />
+                </rbox>
+            </splitbox>
+
+
+            <line />
+
+        </section>
+    </section>
+    <section id="operation" title="Operation Overview">
+        <splitbox>
+            <lbox>
+
+                <p>Follow these basic steps for using the TIM API:</p>
+                <ol>
+                    <li>Create
+                        <api_link key="terminalSettings">TerminalSettings</api_link>
+                        and initialize connection parameters (see
+                        <section_link ref="setup">Setup Configuration</section_link>)
+                    </li>
+                    <li>Create
+                        <api_link key="terminal">Terminal</api_link>
+                        instance using the created
+                        <api_link key="terminalSettings">TerminalSettings</api_link>
+                    </li>
+                    <li>Set some properties if needed:
+                        <ul>
+                            <li>set
+                                <api_link key="posId">PosId</api_link>
+                            </li>
+                            <li>
+                                create <strong>mandatory</strong>
+                                list of <api_link key="ecrInfo">EcrInfo</api_link> and add with <api_link fmt="func" key="addEcrData">addEcrData</api_link>
+                            </li>
+                            <li>create list of <api_link key="printOption">PrintOptions</api_link> and set with <api_link fmt="setter" key="setPrintOptions">setPrintOptions</api_link>
+                            </li>
+                            <li>add listeners (<api_link fmt="func" key="addListener">addListeners</api_link>)
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <api_link key="connect">Connect</api_link>
+                        and
+                        <api_link key="login">Login</api_link>. This can be done automatically, when the first terminal operation is called or manually using
+                        the login
+                        method.
+                    </li>
+                    <li>Use terminal operation functions.</li>
+                </ol>
+            </lbox>
+            <rbox>
+                <p lang="java">A basic flow to perform a transaction is:</p><p lang="c">A basic flow to show a dialog is:</p>
+                <img src="res/img/operations_overview.png">Operations overview</img>
+            </rbox>
+        </splitbox>
+        <line />
+
+    </section>
+    <section id="automatisms" title="Automatisms">
+
+        <p>The TIM API uses two different types of automatisms:</p>
+        <ul>
+            <li>
+                <p>
+                    <strong>Pre-Automatisms:</strong>
+                    This means that all actions that need to be done before a function can be called.
+                    E.g. a transaction can be called in disconnected state without having called connect, login and
+                    activate
+                    in advance. These are called automatically by the TIM API before the transaction is performed. The
+                    Pre-Automatisms
+                    are enabled by default.
+                </p>
+            </li>
+            <li>
+                <p>
+                    <strong>Post-Automatisms:</strong>
+                    These automatisms can be enabled or disabled using the members <api_link key="setAutoCommit">autoCommit</api_link> and
+                    <api_link key="setFetchBrands">fetchBrands</api_link>. A Post-Automatism is triggered after an action has been performed. E.g. if a connect
+                    has
+                    been called and <api_link key="setFetchBrands">fetchBrands</api_link> is activated, an <api_link key="applicationInformation">applicationInformation</api_link> request is called automatically
+                    after
+                    the connect. Or if  <api_link key="setAutoCommit">autoCommit</api_link> is activated a <api_link key="commit">commit</api_link> is performed automatically after a transaction
+                    has
+                    been made.  <api_link key="setAutoCommit">autoCommit</api_link> and <api_link key="setFetchBrands">fetchBrands</api_link> are enabled by default.
+                </p>
+            </li>
+        </ul>
+        <p>The following diagrams show the principle of the Pre-Automatisms and Post-Automatisms. Pre-Automatisms are
+            enabled by default and cannot be disabled. If an error occurs the started request from the ECR is returned
+            with an error.
+        </p>
+
+        <splitbox>
+            <lbox>
+
+                <p>
+                    <strong>Synchronous flow</strong>
+                </p>
+                <img src="res/img/sync_flow.png">Synchronous flow</img>
+            </lbox>
+            <rbox>
+                <p>
+                    <strong>Asynchronous flow</strong>
+                </p>
+                <img src="res/img/async_flow.png">Asynchronous flow</img>
+            </rbox>
+        </splitbox>
+        <line />
+
+    </section>
+    <section id="methods" title="Terminal methods overview">
+        <splitbox>
+            <lbox>
+                <p>The basic operation modes of terminal <span lang="java swift">method</span> <span lang="c">function</span> calls are:</p>
+                <ol>
+                    <li>
+                        <p>
+                            <strong>Synchronous</strong>
+                            <br /><span lang="java swift"> Method calls are blocking and return after operation is finished successfully or throw a
+                            TimException otherwise.
+                            Please not that it is highly discouraged to use synchronous method calls on mobile platforms like <i lang="java">Android</i> <i lang="swift">iOS</i>
+                            because the main thread will be blocked by a synchronous call which may not be tolerated by the platform, as they are quite strict regarding blocking calls.
+                            This may result in a crash of the mobile App.
+                            </span>
+                            <span lang="c">Function calls are blocking and return after the operation has finished. Error code is provided and indicates if request was successful or not.</span>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <strong>Asynchronous</strong>
+                            <br />
+                            <span lang="java swift">
+                                Method returns immediately after the operation has started or throws a
+                                <api_link key="timException">TimException</api_link>
+                                otherwise. A listener-event-method will be called after operation is finished successfully.
+                                All listener-event-methods
+                                contain a
+                                <api_link key="timEvent">TimEvent</api_link>. In case of failure a
+                                <api_link key="timException">TimException</api_link>
+                                is included. User-implemented listener-handlers can be added to the
+                                <api_link key="terminal">Terminal</api_link>-instance with
+                                <api_link key="addListener">addListener</api_link>.
+                            </span>
+                            <span lang="c">
+                                Function call returns immediately after the operation has started successfully. A user-implemented callback
+                    function will then be called, after operation has finished. All callback functions receive an
+                    <api_link key="event">event</api_link>. The
+                    <api_link key="event">event</api_link> contains a
+                    <api_link key="resultCode">resultCode</api_link> indicating if there were errors or not. The user-implemented callback function has to be registered
+                    with <api_link key="addListener">addListener</api_link>.
+                            </span>
+                        </p>
+                    </li>
+                </ol>
+                <p lang="java c">Functions called on terminal perform synchronous by default. The asynchronous method has the same name
+                    with <i lang="java">Async</i> <i lang="c">_aync</i> appended to its name.
+                </p>
+                <p lang="swift"> If asynchronous functions are used there are two ways to handle the callbacks:
+                  <ul>
+                    <li>Either the protocol <api_link key="terminalListener">TerminalListener</api_link> can be used directly. Which means that all defined
+                  protocol function must be implemented.</li>
+                    <li>Or the prepared default protocol implementation <api_link key="defaultTerminalListener">DefaultTerminalListener</api_link> can be used
+                  and only the necessary protocol function must be overwritten.</li>
+                  </ul>
+                </p>
+            </lbox>
+            <rbox>
+                <p>Code example for adding a terminal listener:</p>
+                <code src="*/res/code/terminal_listener.*" />
+            </rbox>
+        </splitbox>
+        <section id="mainFunc" title="Main / guide retail terminal functions"> 
+
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>
+                            <strong>Sync method</strong>
+                            <br />
+                            <span class="asyncMethod">Async method</span>
+                            <br />
+                            <span class="completedMethod">Completed event</span>
+                        </th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <api_link class="syncMethod" fmt="func" key="activate">activate</api_link>
+                            <br />
+                            <api_link class="asyncMethod" fmt="func" key="activateAsync">activateAsync</api_link>
+                            <br />
+                            <api_link class="completedMethod" key="activateCompleted">activateCompleted</api_link>
+                        </td>
+                        <td>Open a user shift.</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <api_link class="syncMethod" fmt="func" key="applicationInformation">applicationInformation</api_link>
+                            <br />
+                            <api_link class="asyncMethod" fmt="func" key="applicationInformationAsync">
+                                applicationInformationAsync
+                            </api_link>
+                            <br />
+                            <api_link class="completedMethod" key="applicationInformationCompleted">
+                                applicationInformationCompleted
+                            </api_link>
+                        </td>
+                        <td>Request the list of brands available on the terminal.</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <api_link class="syncMethod" fmt="func" key="balance">balance</api_link>
+                            <br />
+                            <api_link class="asyncMethod" fmt="func" key="balanceAsync">balanceAsync</api_link>
+                            <br />
+                            <api_link class="completedMethod" key="balanceCompleted">balanceCompleted</api_link>
+                        </td>
+                        <td>Force the EFT Terminal to transmit all transactions to the
+                            <br />
+                            host system as well to do the daily closing.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <api_link class="syncMethod" fmt="func" key="changeSettings">changeSettings</api_link>
+                            <br />
+                            <api_link class="asyncMethod" fmt="func" key="changeSettingsAsync">changeSettingsAsync</api_link>
+                            <br />
+                            <api_link class="completedMethod" key="changeSettingsCompleted">changeSettingsCompleted
+                            </api_link>
+                        </td>
+                        <td>Change configuration parameters of the EFT Terminal.</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <api_link class="syncMethod" fmt="func" key="commit">commit</api_link>
+                            <br />
+                            <api_link class="asyncMethod" fmt="func" key="commitAsync">commitAsync</api_link>
+                            <br />
+                            <api_link class="completedMethod" key="commitCompleted">commitCompleted</api_link>
+                        </td>
+                        <td>Perform Commit-operation after a successful Transaction call.</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <api_link class="syncMethod" fmt="func" key="connect">connect</api_link>
+                            <br />
+                            <api_link class="asyncMethod" fmt="func" key="connectAsync">connectAsync</api_link>
+                            <br />
+                            <api_link class="completedMethod" key="connectCompleted">connectCompleted</api_link>
+                        </td>
+                        <td>Initiates a connection to the EFT Terminal.</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <api_link class="syncMethod" fmt="func" key="counterRequest">counterRequest</api_link>
+                            <br />
+                            <api_link class="asyncMethod" fmt="func" key="counterRequestAsync">counterRequestAsync</api_link>
+                            <br />
+                            <api_link class="completedMethod" key="counterRequestCompleted">counterRequestCompleted
+                            </api_link>
+                        </td>
+                        <td>Get counter information`s from the EFT Terminal.</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <api_link class="syncMethod" fmt="func" key="dccRates">dccRates</api_link>
+                            <br />
+                            <api_link class="asyncMethod" fmt="func" key="dccRatesAsync">dccRatesAsync</api_link>
+                            <br />
+                            <api_link class="completedMethod" key="dccRatesCompleted">dccRatesCompleted</api_link>
+                        </td>
+                        <td>Request DCC rates from the EFT Terminal.</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <api_link class="syncMethod" fmt="func" key="deactivate">deactivate</api_link>
+                            <br />
+                            <api_link class="asyncMethod" fmt="func" key="deactivateAsync">deactivateAsync</api_link>
+                            <br />
+                            <api_link class="completedMethod" key="deactivateCompleted">deactivateCompleted</api_link>
+                        </td>
+                        <td>Close a user shift.</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <api_link class="syncMethod" fmt="func" key="disconnect">disconnect</api_link>
+                            <br />
+                            <api_link class="asyncMethod" fmt="func" key="disconnectAsync">disconnectAsync</api_link>
+                            <br />
+                            <api_link class="completedMethod" key="disconnected">disconnected</api_link>
+                        </td>
+                        <td>Interrupts the connection to the EFT Terminal.</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <api_link class="syncMethod" fmt="func" key="hardwareInformation">hardwareInformation</api_link>
+                            <br />
+                            <api_link class="asyncMethod" fmt="func" key="hardwareInformationAsync">hardwareInformationAsync
+                            </api_link>
+                            <br />
+                            <api_link class="completedMethod" key="hardwareInformationCompleted">
+                                hardwareInformationCompleted
+                            </api_link>
+                        </td>
+                        <td>Get hardware information from the EFT Terminal.</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <api_link class="syncMethod" fmt="func" key="login">login</api_link>
+                            <br />
+                            <api_link class="asyncMethod" fmt="func" key="loginAsync">loginAsync</api_link>
+                            <br />
+                            <api_link class="completedMethod" key="loginCompleted">loginCompleted</api_link>
+                        </td>
+                        <td>Activate a communication session between the ECR and
+                            <br />
+                            the terminal.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <api_link class="syncMethod" fmt="func" key="logout">logout</api_link>
+                            <br />
+                            <api_link class="asyncMethod" fmt="func" key="logoutAsync">logoutAsync</api_link>
+                            <br />
+                            <api_link class="completedMethod" key="logoutCompleted">logoutCompleted</api_link>
+                        </td>
+                        <td>Terminate an active communication session between the ECR<br />and the terminal.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <api_link class="syncMethod" fmt="func" key="reboot">reboot</api_link>
+                            <br />
+                            <api_link class="asyncMethod" fmt="func" key="rebootAsync">rebootAsync</api_link>
+                            <br />
+                            <api_link class="completedMethod" key="rebootCompleted">rebootCompleted</api_link>
+                        </td>
+                        <td>Force the EFT Terminal to reboot.</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <api_link class="syncMethod" fmt="func" key="receiptRequest">receiptRequest</api_link>
+                            <br />
+                            <api_link class="asyncMethod" fmt="func" key="receiptRequestAsync">receiptRequestAsync</api_link>
+                            <br />
+                            <api_link class="completedMethod" key="receiptRequestCompleted">receiptRequestCompleted
+                            </api_link>
+                        </td>
+                        <td>Receive the latest receipt or a list of silent receipts.</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <api_link class="syncMethod" fmt="func" key="reconciliation">reconciliation</api_link>
+                            <br />
+                            <api_link class="asyncMethod" fmt="func" key="reconciliationAsync">reconciliationAsync</api_link>
+                            <br />
+                            <api_link class="completedMethod" key="reconciliationCompleted">reconciliationCompleted
+                            </api_link>
+                        </td>
+                        <td>Force the EFT Terminal to transmit all financial transactions
+                            <br />
+                            to the host system.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <api_link class="syncMethod" fmt="func" key="reconfig">reconfig</api_link>
+                            <br />
+                            <api_link class="asyncMethod" fmt="func" key="reconfigAsync">reconfigAsync</api_link>
+                            <br />
+                            <api_link class="completedMethod" key="reconfigCompleted">reconfigCompleted</api_link>
+                        </td>
+                        <td>Force the EFT Terminal to get the configuration from the service center.</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <api_link class="syncMethod" fmt="func" key="rollback">rollback</api_link>
+                            <br />
+                            <api_link class="asyncMethod" fmt="func" key="rollbackAsync">rollbackAsync</api_link>
+                            <br />
+                            <api_link class="completedMethod" key="rollbackCompleted">rollbackCompleted</api_link>
+                        </td>
+                        <td>Prevent a transaction from being committed to the transaction
+                            <br />
+                            log and generates a technical reversal of the authorization.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <api_link class="syncMethod" fmt="func" key="softwareUpdate">softwareUpdate</api_link>
+                            <br />
+                            <api_link class="asyncMethod" fmt="func" key="softwareUpdateAsync">softwareUpdateAsync</api_link>
+                            <br />
+                            <api_link class="completedMethod" key="softwareUpdateCompleted">softwareUpdateCompleted
+                            </api_link>
+                        </td>
+                        <td>Force the EFT Terminal to start a Software Update.</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <api_link class="syncMethod" fmt="func" key="systemInformation">systemInformation</api_link>
+                            <br />
+                            <api_link class="asyncMethod" fmt="func" key="systemInformationAsync">systemInformationAsync</api_link>
+                            <br />
+                            <api_link class="completedMethod" key="systemInformationCompleted">
+                                systemInformationCompleted
+                            </api_link>
+                        </td>
+                        <td>Request system information from the EFT Terminal.</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <api_link class="syncMethod" fmt="func" key="transaction">transaction</api_link>
+                            <br />
+                            <api_link class="asyncMethod" fmt="func" key="transactionAsync">transactionAsync</api_link>
+                            <br />
+                            <api_link class="completedMethod" key="transactionCompleted">transactionCompleted</api_link>
+                        </td>
+                        <td>Starts an EFT Terminal Transaction.</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </section>  
+
+        <section guides="guidePetrol" id="petrolFunc" title="Guide Petrol terminal functions"> 
+           <table class="table">
+                <thead>
+                    <tr>
+                        <th>
+                            <strong>Sync method</strong>
+                            <br />
+                            <span class="asyncMethod">Async method</span>
+                            <br />
+                            <span class="completedMethod">Completed event</span>
+                        </th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <api_link class="asyncMethod" fmt="func" key="cancel">cancel</api_link>
+                        </td>
+                        <td>Cancel an asynchronous function.</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <api_link class="syncMethod" fmt="func" key="initTransaction">initTransaction</api_link>
+                            <br />
+                            <api_link class="asyncMethod" fmt="func" key="initTransactionAsync">initTransactionAsync</api_link>
+                            <br />
+                            <api_link class="completedMethod" key="initTransactionCompleted">initTransactionCompleted</api_link>
+                        </td>
+                        <td>Retreive card data for the presented card.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>  
+
+        <section guides="guideUnattended" id="uatFunc" title="Guide Unattended terminal functions"> 
+           <table class="table">
+                <thead>
+                    <tr>
+                        <th>
+                            <strong>Sync method</strong>
+                            <br />
+                            <span class="asyncMethod">Async method</span>
+                            <br />
+                            <span class="completedMethod">Completed event</span>
+                        </th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <api_link class="syncMethod" fmt="func" key="openReader">openReader</api_link>
+                            <br />
+                            <api_link class="openReaderasyncMethod" fmt="func" key="openReaderAsync">Async</api_link>
+                            <br />
+                            <api_link class="completedMethod" key="openReaderCompleted">openReaderCompleted</api_link>
+                        </td>
+                        <td>Opens the shutter of the card reader.</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <api_link class="syncMethod" fmt="func" key="closeReader">closeReader</api_link>
+                            <br />
+                            <api_link class="asyncMethod" fmt="func" key="closeReaderAsync">closeReaderAsync</api_link>
+                            <br />
+                            <api_link class="completedMethod" key="closeReaderCompleted">closeReaderCompleted</api_link>
+                        </td>
+                        <td>Closes the shutter of the card reader.</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <api_link class="syncMethod" fmt="func" key="ejectCard">ejectCard</api_link>
+                            <br />
+                            <api_link class="asyncMethod" fmt="func" key="ejectCardAsync">ejectCardAsync</api_link>
+                            <br />
+                            <api_link class="completedMethod" key="ejectCardCompleted">ejectCardCompleted</api_link>
+                        </td>
+                        <td>Ejects the card from the card reader.</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <api_link class="syncMethod" fmt="func" key="openMaintenanceWindow">openMaintenanceWindow</api_link>
+                            <br />
+                            <api_link class="asyncMethod" fmt="func" key="openMaintenanceWindowAsync">openMaintenanceWindowAsync</api_link>
+                            <br />
+                            <api_link class="completedMethod" key="openMaintenanceWindowCompleted">openMaintenanceWindowCompleted</api_link>
+                        </td>
+                        <td>Opens a maintenance window where the terminal can perform all maintenance processes it was not able to perform before.&gt;</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <api_link class="syncMethod" fmt="func" key="closeMaintenanceWindow">closeMaintenanceWindow</api_link>
+                            <br />
+                            <api_link class="asyncMethod" fmt="func" key="closeMaintenanceWindowAsync">closeMaintenanceWindowAsync</api_link>
+                            <br />
+                            <api_link class="completedMethod" key="closeMaintenanceWindowCompleted">closeMaintenanceWindowCompleted</api_link>
+                        </td>
+                        <td>Prohibits the EFT terminal from performing any triggered maintenance tasks.</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <api_link class="syncMethod" fmt="func" key="holdCommit">holdCommit</api_link>
+                        </td>
+                        <td>Increases the commit timeout.</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <api_link class="syncMethod" fmt="func" key="cancel">cancel</api_link>
+                        </td>
+                        <td>Cancels a running request.</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <api_link class="syncMethod" fmt="func" key="commit">commit</api_link>
+                            <br />
+                            <api_link class="asyncMethod" fmt="func" key="commitAsync">commitAsync</api_link>
+                            <br />
+                            <api_link class="completedMethod" key="commitCompleted">commitCompleted</api_link>
+                        </td>
+                        <td>Commits a transaction after succesful authorization. A lower amount may be commited than the authorized amount.</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <api_link class="syncMethod" fmt="func" key="amtAdjustment">amtAdjustment<ERROR>Api-Link-Key "amtAdjustment" is unknown for java</ERROR></api_link>
+                            <br />
+                            <api_link class="asyncMethod" fmt="func" key="amtAdjustmentAsync">amtAdjustmentAsync<ERROR>Api-Link-Key "amtAdjustmentAsync" is unknown for java</ERROR></api_link>
+                            <br />
+                            <api_link class="completedMethod" key="amtAdjustmentCompleted">amtAdjustmentCompleted<ERROR>Api-Link-Key "amtAdjustmentCompleted" is unknown for java</ERROR></api_link>
+                        </td>
+                        <td>Send an amount adjustment notification to the terminal during an open transaction. The amount is used as the new amount for the transaction.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section> 
+         
+         
+
+
+        <section guides="guideDialog" id="dialogFunc" title="Guide dialog terminal functions"> 
+          <table class="table">
+              <thead>
+                  <tr>
+                      <th>
+                          <strong>Sync method</strong>
+                          <br />
+                          <span class="asyncMethod">Async method</span>
+                          <br />
+                          <span class="completedMethod">Completed event</span>
+                      </th>
+                      <th>Description</th>
+                  </tr>
+              </thead>
+              <tbody>
+                  <tr>
+                      <td>
+                          <api_link class="syncMethod" fmt="func" key="openDialogMode">openDialogMode</api_link>
+                          <br />
+                          <api_link class="asyncMethod" fmt="func" key="openDialogModeAsync">openDialogModeAsync</api_link>
+                          <br />
+                          <api_link class="completedMethod" key="openDialogModeCompleted">openDialogModeCompleted</api_link>
+                      </td>
+                      <td>Open dialog mode on the terminal.</td>
+                  </tr>
+                  <tr>
+                      <td>
+                          <api_link class="syncMethod" fmt="func" key="closeDialogMode">closeDialogMode</api_link>
+                          <br />
+                          <api_link class="asyncMethod" fmt="func" key="closeDialogModeAsync">closeDialogModeAsync</api_link>
+                          <br />
+                          <api_link class="completedMethod" key="closeDialogModeCompleted">closeDialogModeCompleted</api_link>
+                      </td>
+                      <td>Close dialog mode on the terminal.</td>
+                  </tr>
+                  <tr>
+                      <td>
+                          <api_link class="syncMethod" fmt="func" key="showDialog">showDialog</api_link>
+                          <br />
+                          <api_link class="asyncMethod" fmt="func" key="showDialogAsync">showDialogAsync</api_link>
+                          <br />
+                          <api_link class="completedMethod" key="showDialogCompleted">showDialogCompleted</api_link>
+                      </td>
+                      <td>Show dialog on the terminal.</td>
+                  </tr>
+                  <tr>
+                      <td>
+                          <api_link class="syncMethod" fmt="func" key="showSignatureCapture">showSignatureCapture</api_link>
+                          <br />
+                          <api_link class="asyncMethod" fmt="func" key="showSignatureCaptureAsync">showSignatureCaptureAsync</api_link>
+                          <br />
+                          <api_link class="completedMethod" key="showSignatureCaptureCompleted">showSignatureCaptureCompleted</api_link>
+                      </td>
+                      <td>Show signature capture on the terminal.</td>
+                  </tr>
+            </tbody>
+          </table>
+        </section>
+
+         
+         
+         
+         
+         
+
+        <section id="addMethods" title="Additional terminal listener-events">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Listener-event</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <api_link class="completedMethod" key="requestCompleted">requestCompleted</api_link>
+                        </td>
+                        <td>Operation started by an asynchronous function has finished.
+                            <br />
+                            Applications can use both operation specific completion callback
+                            <br />
+                            in combination with this generic completion callback.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <api_link class="completedMethod" key="terminalStatusChanged">terminalStatusChanged
+                            </api_link>
+                        </td>
+                        <td>The terminal status has changed. The new status can be
+                            <br />
+                            retrieved from the TerminalStatus property.
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </section>
+
+    </section>
+    <section id="logging" lang="Java" title="Logging">
+
+        <splitbox>
+            <lbox>
+
+                <p>By default the TIM API has a Logger that defines how much logging is generated inside the TIM API. To
+                    this
+                    Logger different handlers can be added, e.g. ConsoleHandler for logging into the debug console or
+                    FileHandler
+                    to log into a file. By default a FileHandler is added to the TIM API logger.
+                </p>
+                <p>The standard Java LogLevels are valid:</p>
+                <ul>
+                    <li>ALL</li>
+                    <li>FINEST</li>
+                    <li>FINER</li>
+                    <li>FINE</li>
+                    <li>CONFIG</li>
+                    <li>INFO</li>
+                    <li>WARNING</li>
+                    <li>SEVERE</li>
+                    <li>OFF</li>
+                </ul>
+
+            </lbox>
+            <rbox>
+                <p>The logging level in Java can be adjusted programatically as follows after a terminal object has been
+                    created:
+                </p>
+                <code src="java/res/code/logger.java" />
+            </rbox>
+        </splitbox>
+    </section>
+    <section id="swiftspec" lang="swift" title="Swift Specifics">
+      <p>For Swift, the TIM API is delivered as a "Universal Framework". This means that the framework is build for multiple architectures,
+        for the physical iPhone (ARM) and for the iOS simulator (x86) for development purposes.
+      </p>
+      <p>To be able to upload your application to the Apple AppStore you must stripe the unused architecture from the framework as Apple does not allow
+        "Universal Frameworks" to be part of an App in the AppStore.
+        This can be done by adding a "Run Script" step to your build steps. Put is after your step to embed frameworks, set it to use "/bin/sh" and enter the following script:
+        <code src="swift/res/code/archStripeScript.sh" />
+      </p>
+      <p>The script will look through your built applications "Frameworks" folder and make sure only the architectures you&#8217;re building for are present in each Framework.</p>
+    </section>
+    <section id="clang" lang="c" title="C Language Specifics">
+        <section id="objects" title="Objects in TIM API C">
+            <p>The TIM API C is based on an object-type concept. Most TIM API functions will either take or return parameters
+                in shape of the "opaque type"
+                <api_link key="object">ta_object_t</api_link>. For example:
+                <api_link key="terminalCreate">ta_terminal_create</api_link> will create a new terminal-instance, which returns a
+                <api_link key="object">ta_object_t</api_link>. On the other hand terminal-function calls like
+                <api_link key="getTerminalId">ta_terminal_get_terminal_id</api_link> require the terminal-instance as parameter of type
+                <api_link key="object">ta_object_t</api_link>.</p>
+              <p>Note: This concept introduces a behaviour similar to certain aspects of object-oriented programming to the
+                environment of C. Similarities are as follows:</p>
+              <ul>
+                <li>For each object-type there are functions similar to getters and setters, in order to access the object-properties.
+                  <ul>
+                    <li>The naming of getters and setters is as follows: ta_DATATYPE_get/set_PROPERTY</li>
+                    <li>e.g.:
+                      <api_link key="settingsGetTerminalId">ta_terminal_settings_get_terminal_id()</api_link>
+                    </li>
+                  </ul>
+                </li>
+                <li>For each object-type there are functions similar to methods, performing object-specific tasks.
+                  <ul>
+                    <li>e.g.:
+                      <api_link key="login">ta_terminal_login()</api_link>
+                    </li>
+                  </ul>
+                </li>
+                <li>For certain object-types create-functions exist, which are similar to constructors.
+                  <ul>
+                    <li>e.g.:
+                      <api_link key="stringCreate">ta_string_create()</api_link>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+        </section>
+        <section id="memory" title="Memory Management in TIM API C">
+            <splitbox>
+                <lbox>
+            <p>The memory needed for each object will be allocated and freed by the TIM API itself. However, the user is responsible
+                to release retained objects, when no longer needed. Retained objects are:</p>
+              <ul>
+                <li>Objects returned by the TIM API as retained objects (e.g.
+                  <api_link key="terminal">terminal</api_link>-instance created with
+                  <api_link key="terminalCreate">ta_terminal_create</api_link>, or a
+                  <api_link key="hardwareInformationResponse">hardware_information_response</api_link>-instance returned by
+                  <api_link key="hardwareInformation">ta_terminal_hardware_information</api_link>).</li>
+                <li>Objects that the user explicitly retained by calling
+                  <api_link key="objectRetain">ta_object_retain</api_link>. Basically each
+                  <api_link key="objectRetain">ta_object_retain</api_link> must be paired with a
+                  <api_link key="objectRelease">ta_object_release</api_link>. The TIM API tells you if returned objects are already retained or not. An object that hasn't been retained,
+                  must not be released (would lead to errors)! Objects that are returned as not-retained are to read immediately
+                  or to explictely retain with
+                  <api_link key="objectRetain">ta_object_retain</api_link>.</li>
+              </ul>
+              <p>(see header-documentation or this doxygen-dok to determine, if objects are retained / not retained. Most IDE
+                support doxygen of header-documentation and will show these information while coding).</p>
+                </lbox>
+                <rbox>
+                    Following an example of memory management. Shown by using a list:
+                    <code src="c/res/code/memory.c" />
+                </rbox>
+            </splitbox>
+        </section>
+        <section id="datatype" title="Data Types in TIM API C">
+            <p>C doesn't provide data types / collections like string, boolean, list, timedate etc. Therefore the TIM API
+                uses and provides a set of basic data types. In various places the TIM API requires or returns these data
+                types.</p>
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>Data Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                        <api_link key="boolean">boolean</api_link>
+                    </td>
+                    <td>A Boolean type (true/false)</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <api_link key="integer">integer</api_link>
+                    </td>
+                    <td>An Integer type (64-bit)</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <api_link key="list">list</api_link>
+                    </td>
+                    <td>A list collection. Supports create, add, get, index of, remove and more.</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <api_link key="map">map</api_link>
+                    </td>
+                    <td>A map collection. Supports create, set, get, has, remove and more.</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <api_link key="object">object</api_link>
+                    </td>
+                    <td>The base object (see [Objects in TIM API`C`]).</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <api_link key="string">string</api_link>
+                    </td>
+                    <td>A String type. Null-terminated character sequence.</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <api_link key="timedate">timedate</api_link>
+                    </td>
+                    <td>Time-Date type.</td>
+                  </tr>
+                </tbody>
+              </table>
+        </section>
+    </section>
+    <section id="examples" lang="java" title="Code Examples">
+
+        <p>This chapter contains example implementations for TIM API.</p>
+        <splitbox>
+            <lbox>
+                <p>A simple implementation using synchronous calls looks like this:</p>
+                <code src="*/res/code/example_sync.*" />
+            </lbox>
+            <rbox>
+                <p>The same example as above but using asynchonous calls can look as follows:</p>
+                <code src="*/res/code/example_async.*" />
+                <p>
+                    <i>
+                        <b>Attention:</b>
+                        Events are send from inside a thread different than the main thread. If you need to access
+                        code in the event handling thread use something like java.awt.EventQueue.invokeLater or
+                        javax.swing.SwingUtilities.invokeLater
+                    </i>
+                </p>
+
+            </rbox>
+        </splitbox>
+    </section>
+
+    <section id="functionStateMatrix" title="Function-State-Matrix">
+      <p>Legend:
+        <ul>
+          <li>B1-Retail</li>
+          <li>B2-Petrol</li>
+          <li>B3-Unattended</li>
+          <li>B4-Advanced Retail</li>
+          <li>B5-Banking</li>
+          <li>B6-Dialog</li>
+          <li>B8-Gastro</li>
+          <li>B9-Hospitality</li>
+          <li>B10-Value Added Services (VAS)</li>
+          <li>B11-Austrian Use Cases</li>
+        </ul>
+      </p>
+        <table class="table">
+            <tr>
+                <th rowspan="4">Function</th>
+                <th colspan="5">State</th>
+                <th rowspan="4">Book(s)</th>
+            </tr>
+            <tr>
+                <th rowspan="3">Disconnected</th>
+                <th colspan="4">Connected</th>
+            </tr>
+            <tr>
+                <th rowspan="2">LoggedOut</th>
+                <th colspan="3">LoggedIn</th>
+            </tr>
+            <tr>
+                <th>Closed</th>
+                <th>Opened</th>
+                <th>Dialog</th>
+            </tr>
+            <tr>
+                <th>Activate</th>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>o</td>
+                <td>-</td>
+                <td>B1</td>
+            </tr>
+            <tr>
+                <th>ActivateServiceMenu</th>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>-</td>
+                <td>-</td>
+                <td>B3</td>
+            </tr>
+            <tr>
+                <th>AdjustReservation</th>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>-</td>
+                <td>B9</td>
+            </tr>
+            <tr>
+                <th>AmtAdjustment</th>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>-</td>
+                <td>B3</td>
+            </tr>
+            <tr>
+                <th>ApplicationInformation</th>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>-</td>
+                <td>-</td>
+                <td>B1</td>
+            </tr>
+            <tr>
+                <th>AuthorizeCredit</th>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>-</td>
+                <td>B5</td>
+            </tr>
+            <tr>
+                <th>AuthorizeDeposit</th>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>-</td>
+                <td>B5</td>
+            </tr>
+
+            <tr>
+                <th>Balance</th>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>-</td>
+                <td>-</td>
+                <td>B1</td>
+            </tr>
+            <tr>
+                <th>BalanceInquiry</th>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>-</td>
+                <td>B4, B5</td>
+            </tr>
+            <tr>
+                <th>Cancel</th>
+                <td>-</td>
+                <td>o</td>
+                <td>o</td>
+                <td>o</td>
+                <td>o</td>
+                <td>B1</td>
+            </tr>
+            <tr>
+                <th>CancelReservation</th>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>-</td>
+                <td>B9</td>
+            </tr>
+            <tr>
+                <th>CashAdvance</th>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>-</td>
+                <td>B4</td>
+            </tr>
+            <tr>
+                <th>ChangeSettings</th>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>-</td>
+                <td>-</td>
+                <td>B1</td>
+            </tr>
+            <tr>
+                <th>CloseDialogMode</th>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>B6</td>
+            </tr>
+            <tr>
+                <th>CloseMaintenanceWindow</th>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>-</td>
+                <td>-</td>
+                <td>B3</td>
+            </tr>
+            <tr>
+                <th>CloseReader</th>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>-</td>
+                <td>B3</td>
+            </tr>
+            <tr>
+                <th>CollectPoints</th>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>-</td>
+                <td>B10</td>
+            </tr>
+            <tr>
+                <th>Combined</th>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>-</td>
+                <td>B5</td>
+            </tr>
+            <tr>
+                <th>Commit</th>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>-</td>
+                <td>B1</td>
+            </tr>
+            <tr>
+                <th>CounterRequest</th>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>o</td>
+                <td>-</td>
+                <td>B1</td>
+            </tr>
+            <tr>
+                <th>Credit</th>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>-</td>
+                <td>B1</td>
+            </tr>
+            <tr>
+                <th>DccRates</th>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>-</td>
+                <td>-</td>
+                <td>B1</td>
+            </tr>
+            <tr>
+                <th>Deactivate</th>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>o</td>
+                <td>-</td>
+                <td>B1</td>
+            </tr>
+            <tr>
+                <th>EjectCard</th>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>-</td>
+                <td>B3</td>
+            </tr>
+            <tr>
+                <th>FeatureRequest</th>
+                <td>-</td>
+                <td>o</td>
+                <td>o</td>
+                <td>-</td>
+                <td>-</td>
+                <td>B1</td>
+            </tr>
+            <tr>
+                <th>FinalizePurchase</th>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>-</td>
+                <td>B2</td>
+            </tr>
+            <tr>
+                <th>FinishCeckout</th>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>-</td>
+                <td>B10</td>
+            </tr>
+            <tr>
+                <th>Giro</th>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>-</td>
+                <td>B5</td>
+            </tr>
+            <tr>
+                <th>HardwareInformation</th>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>-</td>
+                <td>-</td>
+                <td>B1</td>
+            </tr>
+            <tr>
+                <th>HoldCommit</th>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>-</td>
+                <td>B3</td>
+            </tr>
+            <tr>
+                <th>InitTransaction</th>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>-</td>
+                <td>B2</td>
+            </tr>
+            <tr>
+                <th>KeepAlive</th>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>o</td>
+                <td>o</td>
+                <td>B1</td>
+            </tr>
+            <tr>
+                <th>LicenseChanged</th>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>-</td>
+                <td>-</td>
+                <td>B1</td>
+            </tr>
+            <tr>
+                <th>LoadVoucher</th>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>-</td>
+                <td>B10</td>
+            </tr>
+            <tr>
+                <th>Login</th>
+                <td>-</td>
+                <td>o</td>
+                <td>o</td>
+                <td>-</td>
+                <td>-</td>
+                <td>B1</td>
+            </tr>
+            <tr>
+                <th>Logout</th>
+                <td>-</td>
+                <td>o</td>
+                <td>o</td>
+                <td>-</td>
+                <td>-</td>
+                <td>B1</td>
+            </tr>
+            <tr>
+                <th>LoyaltyData</th>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>-</td>
+                <td>B10</td>
+            </tr>
+            <tr>
+                <th>OpenDialogMode</th>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>-</td>
+                <td>B6</td>
+            </tr>
+            <tr>
+                <th>OpenMaintenanceWindow</th>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>-</td>
+                <td>-</td>
+                <td>B3</td>
+            </tr>
+            <tr>
+                <th>OpenReader</th>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>-</td>
+                <td>B3</td>
+            </tr>
+            <tr>
+                <th>PreAuthorization</th>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>-</td>
+                <td>B2</td>
+            </tr>
+            <tr>
+                <th>ProvideLoyaltyBasket</th>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>-</td>
+                <td>B10</td>
+            </tr>
+            <tr>
+                <th>Purchase</th>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>-</td>
+                <td>B1</td>
+            </tr>
+            <tr>
+                <th>PurchaseForcedAcceptance</th>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>-</td>
+                <td>B4</td>
+            </tr>
+            <tr>
+                <th>PurchaseMailOrdered</th>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>-</td>
+                <td>B4</td>
+            </tr>
+            <tr>
+                <th>PurchasePhoneAuthorized</th>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>-</td>
+                <td>B4</td>
+            </tr>
+            <tr>
+                <th>PurchasePhoneOrdered</th>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>-</td>
+                <td>B4</td>
+            </tr>
+            <tr>
+                <th>PurchaseReservation</th>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>-</td>
+                <td>B9</td>
+            </tr>
+            <tr>
+                <th>PurchaseReservationPhoneAuthorized</th>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>-</td>
+                <td>B9</td>
+            </tr>
+            <tr>
+                <th>PurchaseWithCashback</th>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>-</td>
+                <td>B4</td>
+            </tr>
+            <tr>
+                <th>Reboot</th>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>-</td>
+                <td>-</td>
+                <td>B1</td>
+            </tr>
+            <tr>
+                <th>ReceiptRequest</th>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>o</td>
+                <td>-</td>
+                <td>B1</td>
+            </tr>
+            <tr>
+                <th>Reconciliation</th>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>o</td>
+                <td>-</td>
+                <td>B1</td>
+            </tr>
+            <tr>
+                <th>Reconfig</th>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>-</td>
+                <td>-</td>
+                <td>B1</td>
+            </tr>
+            <tr>
+                <th>Reservation</th>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>-</td>
+                <td>B9</td>
+            </tr>
+            <tr>
+                <th>Reversal</th>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>-</td>
+                <td>B1</td>
+            </tr>
+            <tr>
+                <th>Rollback</th>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>-</td>
+                <td>B1</td>
+            </tr>
+            <tr>
+                <th>SendCardCommand</th>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>B6</td>
+            </tr>
+            <tr>
+                <th>ShowDialog</th>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>B6</td>
+            </tr>
+            <tr>
+                <th>ShowSignatureCapture</th>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>B6</td>
+            </tr>
+            <tr>
+                <th>SoftwareUpdate</th>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>-</td>
+                <td>-</td>
+                <td>B1</td>
+            </tr>
+            <tr>
+                <th>StartCheckout</th>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>-</td>
+                <td>B10</td>
+            </tr>
+            <tr>
+                <th>SystemInformation</th>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>-</td>
+                <td>-</td>
+                <td>B1</td>
+            </tr>
+            <tr>
+                <th>TerminalStatus</th>
+                <td>-</td>
+                <td>o</td>
+                <td>o</td>
+                <td>o</td>
+                <td>o</td>
+                <td>B1</td>
+            </tr>
+            <tr>
+                <th>VasInfo</th>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>-</td>
+                <td>B10</td>
+            </tr>
+        </table>
+      </section>
+
+    <section id="reference" title="Reference">
+
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Ref.</th>
+                    <th>Document</th>
+                    <th>Version</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>[B1]</td>
+                    <td>TIM &amp; SIXml Architecture: The SIX ECR Integration System</td>
+                    <td>0.10</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </section>
+</dochub>

@@ -47,7 +47,7 @@
             </ul>
           </div>
           <ul class="nav">
-          <li><a href="#intro">Introduction</a></li><li><a href="#sysreq">System Requirements</a></li><li><a href="#setup">Setup Configuration</a><ul class="nav"><li><a href="#network">Network Configuration</a></li><li><a href="#guides">Guides Configuration</a></li><li><a href="#configfile">Configuration File</a></li></ul></li><li><a href="#operation">Operation Overview</a></li><li><a href="#automatisms">Automatisms</a></li><li><a href="#methods">Terminal methods overview</a><ul class="nav"><li><a href="#mainFunc">Main / guide retail terminal functions</a></li><li class="filterGuides guideDialog"><a href="#dialogFunc">Guide dialog terminal functions</a></li><li><a href="#addMethods">Additional terminal listener-events</a></li></ul></li><li><a href="#logging">Logging</a></li><li><a href="#examples">Code Examples</a></li><li><a href="#functionStateMatrix">Function-State-Matrix</a></li><li><a href="#reference">Reference</a></li></ul>
+          <li><a href="#intro">Introduction</a></li><li><a href="#sysreq">System Requirements</a></li><li><a href="#setup">Setup Configuration</a><ul class="nav"><li><a href="#network">Network Configuration</a></li><li><a href="#guides">Guides Configuration</a></li><li><a href="#configfile">Configuration File</a></li></ul></li><li><a href="#operation">Operation Overview</a></li><li><a href="#automatisms">Automatisms</a></li><li><a href="#methods">Terminal methods overview</a><ul class="nav"><li><a href="#mainFunc">Main / guide retail terminal functions</a></li><li class="filterGuides guidePetrol"><a href="#petrolFunc">Guide Petrol terminal functions</a></li><li class="filterGuides guideUnattended"><a href="#uatFunc">Guide Unattended terminal functions</a></li><li class="filterGuides guideDialog"><a href="#dialogFunc">Guide dialog terminal functions</a></li><li><a href="#addMethods">Additional terminal listener-events</a></li></ul></li><li><a href="#logging">Logging</a></li><li><a href="#examples">Code Examples</a></li><li><a href="#functionStateMatrix">Function-State-Matrix</a></li><li><a href="#reference">Reference</a></li></ul>
           <div class="seperator">&#160;</div>
           <div class="linkDiv">
             <a href="doc/index.html">API Documentation</a>
@@ -455,21 +455,21 @@ SecuredConnection = On</code></pre>
 
     </div></div></section>
     <section id="methods"><h1><a name="methods"></a>Terminal methods overview</h1><div class="row"><div class="col-md-6">
-                <p>The basic operation modes of terminal <span lang="java">method</span> calls are:</p>
+                <p>The basic operation modes of terminal <span lang="java swift">method</span> calls are:</p>
                 <ol>
                     <li>
                         <p>
                             <strong>Synchronous</strong>
-                            <br><span lang="java"> Method calls are blocking and return after operation is finished successfully or throw a
-                            TimException
-                            otherwise.
-                            </span> </p>
+                            <br><span lang="java swift"> Method calls are blocking and return after operation is finished successfully or throw a
+                            TimException otherwise.
+                            Please not that it is highly discouraged to use synchronous method calls on mobile platforms like <i lang="java">Android</i> because the main thread will be blocked by a synchronous call which may not be tolerated by the platform, as they are quite strict regarding blocking calls.
+                            This may result in a crash of the mobile App.</span> </p>
                     </li>
                     <li>
                         <p>
                             <strong>Asynchronous</strong>
                             <br>
-                            <span lang="java">
+                            <span lang="java swift">
                                 Method returns immediately after the operation has started or throws a
                                 <code><a href="doc/index.html?com/six/timapi/TimException.html">TimException</a></code>
                                 otherwise. A listener-event-method will be called after operation is finished successfully.
@@ -483,9 +483,9 @@ SecuredConnection = On</code></pre>
                             </span> </p>
                     </li>
                 </ol>
-                <p>Functions called on terminal perform synchronous by default. The asynchronous method has the same name
+                <p lang="java c">Functions called on terminal perform synchronous by default. The asynchronous method has the same name
                     with <i lang="java">Async</i> appended to its name.</p>
-            </div><div class="col-md-6">
+                </div><div class="col-md-6">
                 <p>Code example for adding a terminal listener:</p>
                 <pre><code class="language-{.java}">/** Asynchronous listener handling terminal events. */
 class TerminalHandler extends com.six.DefaultTerminalListener {
@@ -792,7 +792,144 @@ terminal.transactionAsync(com.six.constants.TransactionType.PURCHASE,
                 </tbody>
             </table>
 
-        </div></div></section>
+        </div></div></section>  
+
+        <div class="row"><div class="col-md-6"></div></div><section class="filterGuides guidePetrol" id="petrolFunc"><h2><a name="petrolFunc"></a>Guide Petrol terminal functions</h2><div class="row"><div class="col-md-6"><table class="table">
+                <thead>
+                    <tr>
+                        <th>
+                            <strong>Sync method</strong>
+                            <br>
+                            <span class="asyncMethod">Async method</span>
+                            <br>
+                            <span class="completedMethod">Completed event</span>
+                        </th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <code class="asyncMethod"><a class="asyncMethod" href="doc/index.html?com/six/timapi/Terminal.html#cancel--">cancel</a></code>
+                        </td>
+                        <td>Cancel an asynchronous function.</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code class="syncMethod"><a class="syncMethod" href="doc/com/six/timapi/Terminal.html#initTransaction-boolean-com.six.timapi.Amount-">initTransaction</a></code>
+                            <br>
+                            <code class="asyncMethod"><a class="asyncMethod" href="doc/com/six/timapi/Terminal.html#initTransactionAsync-boolean-com.six.timapi.Amount-">initTransactionAsync</a></code>
+                            <br>
+                            <code class="completedMethod"><a class="completedMethod" href="doc/com/six/timapi/TerminalListener.html#initTransactionCompleted-com.six.timapi.TimEvent-com.six.timapi.CardData-">initTransactionCompleted</a></code>
+                        </td>
+                        <td>Retreive card data for the presented card.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div></div></section>  
+
+        <div class="row"><div class="col-md-6"></div></div><section class="filterGuides guideUnattended" id="uatFunc"><h2><a name="uatFunc"></a>Guide Unattended terminal functions</h2><div class="row"><div class="col-md-6"><table class="table">
+                <thead>
+                    <tr>
+                        <th>
+                            <strong>Sync method</strong>
+                            <br>
+                            <span class="asyncMethod">Async method</span>
+                            <br>
+                            <span class="completedMethod">Completed event</span>
+                        </th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <code class="syncMethod"><a class="syncMethod" href="doc/com/six/timapi/Terminal.html#openReader--">openReader</a></code>
+                            <br>
+                            <code class="openReaderasyncMethod"><a class="openReaderasyncMethod" href="doc/com/six/timapi/Terminal.html#openReaderAsync--">Async</a></code>
+                            <br>
+                            <code class="completedMethod"><a class="completedMethod" href="doc/com/six/timapi/TerminalListener.html#openReaderCompleted-com.six.timapi.TimEvent-">openReaderCompleted</a></code>
+                        </td>
+                        <td>Opens the shutter of the card reader.</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code class="syncMethod"><a class="syncMethod" href="doc/com/six/timapi/Terminal.html#closeReader--">closeReader</a></code>
+                            <br>
+                            <code class="asyncMethod"><a class="asyncMethod" href="doc/com/six/timapi/Terminal.html#closeReaderAsync--">closeReaderAsync</a></code>
+                            <br>
+                            <code class="completedMethod"><a class="completedMethod" href="doc/com/six/timapi/TerminalListener.html#closeReaderCompleted-com.six.timapi.TimEvent-">closeReaderCompleted</a></code>
+                        </td>
+                        <td>Closes the shutter of the card reader.</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code class="syncMethod"><a class="syncMethod" href="doc/com/six/timapi/Terminal.html#ejectCard--">ejectCard</a></code>
+                            <br>
+                            <code class="asyncMethod"><a class="asyncMethod" href="doc/com/six/timapi/Terminal.html#ejectCardAsync--">ejectCardAsync</a></code>
+                            <br>
+                            <code class="completedMethod"><a class="completedMethod" href="doc/com/six/timapi/TerminalListener.html#ejectCardCompleted-com.six.timapi.TimEvent-">ejectCardCompleted</a></code>
+                        </td>
+                        <td>Ejects the card from the card reader.</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code class="syncMethod"><a class="syncMethod" href="doc/com/six/timapi/Terminal.html#openMaintenanceWindow--">openMaintenanceWindow</a></code>
+                            <br>
+                            <code class="asyncMethod"><a class="asyncMethod" href="doc/com/six/timapi/Terminal.html#openMaintenanceWindowAsync--">openMaintenanceWindowAsync</a></code>
+                            <br>
+                            <code class="completedMethod"><a class="completedMethod" href="doc/com/six/timapi/TerminalListener.html#openMaintenanceWindowCompleted-com.six.timapi.TimEvent-">openMaintenanceWindowCompleted</a></code>
+                        </td>
+                        <td>Opens a maintenance window where the terminal can perform all maintenance processes it was not able to perform before.&gt;</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code class="syncMethod"><a class="syncMethod" href="doc/com/six/timapi/Terminal.html#closeMaintenanceWindow--">closeMaintenanceWindow</a></code>
+                            <br>
+                            <code class="asyncMethod"><a class="asyncMethod" href="doc/com/six/timapi/Terminal.html#closeMaintenanceWindowAsync--">closeMaintenanceWindowAsync</a></code>
+                            <br>
+                            <code class="completedMethod"><a class="completedMethod" href="doc/com/six/timapi/TerminalListener.html#closeMaintenanceWindowCompleted-com.six.timapi.TimEvent-">closeMaintenanceWindowCompleted</a></code>
+                        </td>
+                        <td>Prohibits the EFT terminal from performing any triggered maintenance tasks.</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code class="syncMethod"><a class="syncMethod" href="doc/com/six/timapi/Terminal.html#holdCommit--">holdCommit</a></code>
+                        </td>
+                        <td>Increases the commit timeout.</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code class="syncMethod"><a class="syncMethod" href="doc/index.html?com/six/timapi/Terminal.html#cancel--">cancel</a></code>
+                        </td>
+                        <td>Cancels a running request.</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code class="syncMethod"><a class="syncMethod" href="doc/index.html?com/six/timapi/Terminal.html#commit--">commit</a></code>
+                            <br>
+                            <code class="asyncMethod"><a class="asyncMethod" href="doc/index.html?com/six/timapi/Terminal.html#commitAsync--">commitAsync</a></code>
+                            <br>
+                            <code class="completedMethod"><a class="completedMethod" href="doc/index.html?com/six/timapi/TerminalListener.html#commitCompleted-com.six.timapi.TimEvent-com.six.timapi.PrintData-">commitCompleted</a></code>
+                        </td>
+                        <td>Commits a transaction after succesful authorization. A lower amount may be commited than the authorized amount.</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code class="syncMethod"><a class="syncMethod">amtAdjustment</a></code>
+                            <br>
+                            <code class="asyncMethod"><a class="asyncMethod">amtAdjustmentAsync</a></code>
+                            <br>
+                            <code class="completedMethod"><a class="completedMethod">amtAdjustmentCompleted</a></code>
+                        </td>
+                        <td>Send an amount adjustment notification to the terminal during an open transaction. The amount is used as the new amount for the transaction.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div></div></section> 
+         
+         
+
 
         <div class="row"><div class="col-md-6"></div></div><section class="filterGuides guideDialog" id="dialogFunc"><h2><a name="dialogFunc"></a>Guide dialog terminal functions</h2><div class="row"><div class="col-md-6"><table class="table">
               <thead>
@@ -851,6 +988,12 @@ terminal.transactionAsync(com.six.constants.TransactionType.PURCHASE,
             </tbody>
           </table>
         </div></div></section>
+
+         
+         
+         
+         
+         
 
         <div class="row"><div class="col-md-6"></div></div><section id="addMethods"><h2><a name="addMethods"></a>Additional terminal listener-events</h2><div class="row"><div class="col-md-6"><table class="table">
                 <thead>
@@ -1110,7 +1253,21 @@ class ECRSample {
             </div></div>
     <div class="row"><div class="col-md-6"></div></div></section>
 
-    <section id="functionStateMatrix"><h1><a name="functionStateMatrix"></a>Function-State-Matrix</h1><div class="row"><div class="col-md-6"><table class="table">
+    <section id="functionStateMatrix"><h1><a name="functionStateMatrix"></a>Function-State-Matrix</h1><div class="row"><div class="col-md-6"><p>Legend:
+        <ul>
+          <li>B1-Retail</li>
+          <li>B2-Petrol</li>
+          <li>B3-Unattended</li>
+          <li>B4-Advanced Retail</li>
+          <li>B5-Banking</li>
+          <li>B6-Dialog</li>
+          <li>B8-Gastro</li>
+          <li>B9-Hospitality</li>
+          <li>B10-Value Added Services (VAS)</li>
+          <li>B11-Austrian Use Cases</li>
+        </ul>
+      </p>
+        <table class="table">
             <tr>
                 <th rowspan="4">Function</th>
                 <th colspan="5">State</th>
@@ -1136,7 +1293,7 @@ class ECRSample {
                 <td>o</td>
                 <td>o</td>
                 <td>-</td>
-                <td>B1 - Retail</td>
+                <td>B1</td>
             </tr>
             <tr>
                 <th>ActivateServiceMenu</th>
@@ -1145,7 +1302,7 @@ class ECRSample {
                 <td>o</td>
                 <td>-</td>
                 <td>-</td>
-                <td>B3 - Unattended</td>
+                <td>B3</td>
             </tr>
             <tr>
                 <th>AdjustReservation</th>
@@ -1154,7 +1311,7 @@ class ECRSample {
                 <td>-</td>
                 <td>o</td>
                 <td>-</td>
-                <td>B9 - Hospitality</td>
+                <td>B9</td>
             </tr>
             <tr>
                 <th>AmtAdjustment</th>
@@ -1163,7 +1320,7 @@ class ECRSample {
                 <td>-</td>
                 <td>o</td>
                 <td>-</td>
-                <td>B3 - Unattended</td>
+                <td>B3</td>
             </tr>
             <tr>
                 <th>ApplicationInformation</th>
@@ -1172,7 +1329,7 @@ class ECRSample {
                 <td>o</td>
                 <td>-</td>
                 <td>-</td>
-                <td>B1 - Retail</td>
+                <td>B1</td>
             </tr>
             <tr>
                 <th>AuthorizeCredit</th>
@@ -1181,7 +1338,7 @@ class ECRSample {
                 <td>-</td>
                 <td>o</td>
                 <td>-</td>
-                <td>B5 - Banking</td>
+                <td>B5</td>
             </tr>
             <tr>
                 <th>AuthorizeDeposit</th>
@@ -1190,7 +1347,7 @@ class ECRSample {
                 <td>-</td>
                 <td>o</td>
                 <td>-</td>
-                <td>B5 - Banking</td>
+                <td>B5</td>
             </tr>
 
             <tr>
@@ -1200,7 +1357,7 @@ class ECRSample {
                 <td>o</td>
                 <td>-</td>
                 <td>-</td>
-                <td>B1 - Retail</td>
+                <td>B1</td>
             </tr>
             <tr>
                 <th>BalanceInquiry</th>
@@ -1209,7 +1366,7 @@ class ECRSample {
                 <td>-</td>
                 <td>o</td>
                 <td>-</td>
-                <td>B4, B5 - Banking</td>
+                <td>B4, B5</td>
             </tr>
             <tr>
                 <th>Cancel</th>
@@ -1218,7 +1375,7 @@ class ECRSample {
                 <td>o</td>
                 <td>o</td>
                 <td>o</td>
-                <td>B1 - Retail</td>
+                <td>B1</td>
             </tr>
             <tr>
                 <th>CancelReservation</th>
@@ -1227,7 +1384,7 @@ class ECRSample {
                 <td>-</td>
                 <td>o</td>
                 <td>-</td>
-                <td>B9 - Hospitality</td>
+                <td>B9</td>
             </tr>
             <tr>
                 <th>CashAdvance</th>
@@ -1236,7 +1393,7 @@ class ECRSample {
                 <td>-</td>
                 <td>o</td>
                 <td>-</td>
-                <td>B4 - Adv. Retail</td>
+                <td>B4</td>
             </tr>
             <tr>
                 <th>ChangeSettings</th>
@@ -1245,7 +1402,7 @@ class ECRSample {
                 <td>o</td>
                 <td>-</td>
                 <td>-</td>
-                <td>B1 - Retail</td>
+                <td>B1</td>
             </tr>
             <tr>
                 <th>CloseDialogMode</th>
@@ -1254,7 +1411,7 @@ class ECRSample {
                 <td>-</td>
                 <td>-</td>
                 <td>o</td>
-                <td>B6 - Dialog</td>
+                <td>B6</td>
             </tr>
             <tr>
                 <th>CloseMaintenanceWindow</th>
@@ -1263,7 +1420,7 @@ class ECRSample {
                 <td>o</td>
                 <td>-</td>
                 <td>-</td>
-                <td>B3 - Unattended</td>
+                <td>B3</td>
             </tr>
             <tr>
                 <th>CloseReader</th>
@@ -1272,7 +1429,7 @@ class ECRSample {
                 <td>-</td>
                 <td>o</td>
                 <td>-</td>
-                <td>B3 - Unattended</td>
+                <td>B3</td>
             </tr>
             <tr>
                 <th>CollectPoints</th>
@@ -1281,7 +1438,7 @@ class ECRSample {
                 <td>-</td>
                 <td>o</td>
                 <td>-</td>
-                <td>B10 - VAS</td>
+                <td>B10</td>
             </tr>
             <tr>
                 <th>Combined</th>
@@ -1290,7 +1447,7 @@ class ECRSample {
                 <td>-</td>
                 <td>o</td>
                 <td>-</td>
-                <td>B5 - Banking</td>
+                <td>B5</td>
             </tr>
             <tr>
                 <th>Commit</th>
@@ -1299,7 +1456,7 @@ class ECRSample {
                 <td>-</td>
                 <td>o</td>
                 <td>-</td>
-                <td>B1 - Retail</td>
+                <td>B1</td>
             </tr>
             <tr>
                 <th>CounterRequest</th>
@@ -1308,7 +1465,7 @@ class ECRSample {
                 <td>o</td>
                 <td>o</td>
                 <td>-</td>
-                <td>B1 - Retail</td>
+                <td>B1</td>
             </tr>
             <tr>
                 <th>Credit</th>
@@ -1317,7 +1474,7 @@ class ECRSample {
                 <td>-</td>
                 <td>o</td>
                 <td>-</td>
-                <td>B1 - Retail</td>
+                <td>B1</td>
             </tr>
             <tr>
                 <th>DccRates</th>
@@ -1326,7 +1483,7 @@ class ECRSample {
                 <td>o</td>
                 <td>-</td>
                 <td>-</td>
-                <td>B1 - Retail</td>
+                <td>B1</td>
             </tr>
             <tr>
                 <th>Deactivate</th>
@@ -1335,7 +1492,7 @@ class ECRSample {
                 <td>o</td>
                 <td>o</td>
                 <td>-</td>
-                <td>B1 - Retail</td>
+                <td>B1</td>
             </tr>
             <tr>
                 <th>EjectCard</th>
@@ -1344,7 +1501,7 @@ class ECRSample {
                 <td>-</td>
                 <td>o</td>
                 <td>-</td>
-                <td>B3 - Unattended</td>
+                <td>B3</td>
             </tr>
             <tr>
                 <th>FeatureRequest</th>
@@ -1353,7 +1510,7 @@ class ECRSample {
                 <td>o</td>
                 <td>-</td>
                 <td>-</td>
-                <td>B1 - Retail</td>
+                <td>B1</td>
             </tr>
             <tr>
                 <th>FinalizePurchase</th>
@@ -1362,7 +1519,7 @@ class ECRSample {
                 <td>-</td>
                 <td>o</td>
                 <td>-</td>
-                <td>B2 - Petrol</td>
+                <td>B2</td>
             </tr>
             <tr>
                 <th>FinishCeckout</th>
@@ -1371,7 +1528,7 @@ class ECRSample {
                 <td>-</td>
                 <td>o</td>
                 <td>-</td>
-                <td>B10 - VAS</td>
+                <td>B10</td>
             </tr>
             <tr>
                 <th>Giro</th>
@@ -1380,7 +1537,7 @@ class ECRSample {
                 <td>-</td>
                 <td>o</td>
                 <td>-</td>
-                <td>B5 - Banking</td>
+                <td>B5</td>
             </tr>
             <tr>
                 <th>HardwareInformation</th>
@@ -1389,7 +1546,7 @@ class ECRSample {
                 <td>o</td>
                 <td>-</td>
                 <td>-</td>
-                <td>B1 - Retail</td>
+                <td>B1</td>
             </tr>
             <tr>
                 <th>HoldCommit</th>
@@ -1398,7 +1555,7 @@ class ECRSample {
                 <td>-</td>
                 <td>o</td>
                 <td>-</td>
-                <td>B3 - Unattended</td>
+                <td>B3</td>
             </tr>
             <tr>
                 <th>InitTransaction</th>
@@ -1407,7 +1564,7 @@ class ECRSample {
                 <td>-</td>
                 <td>o</td>
                 <td>-</td>
-                <td>B2 - Petrol</td>
+                <td>B2</td>
             </tr>
             <tr>
                 <th>KeepAlive</th>
@@ -1416,7 +1573,7 @@ class ECRSample {
                 <td>o</td>
                 <td>o</td>
                 <td>o</td>
-                <td>B1 - Retail</td>
+                <td>B1</td>
             </tr>
             <tr>
                 <th>LicenseChanged</th>
@@ -1425,7 +1582,7 @@ class ECRSample {
                 <td>o</td>
                 <td>-</td>
                 <td>-</td>
-                <td>B1 - Retail</td>
+                <td>B1</td>
             </tr>
             <tr>
                 <th>LoadVoucher</th>
@@ -1434,7 +1591,7 @@ class ECRSample {
                 <td>-</td>
                 <td>o</td>
                 <td>-</td>
-                <td>B10 - VAS</td>
+                <td>B10</td>
             </tr>
             <tr>
                 <th>Login</th>
@@ -1443,7 +1600,7 @@ class ECRSample {
                 <td>o</td>
                 <td>-</td>
                 <td>-</td>
-                <td>B1 - Retail</td>
+                <td>B1</td>
             </tr>
             <tr>
                 <th>Logout</th>
@@ -1452,7 +1609,7 @@ class ECRSample {
                 <td>o</td>
                 <td>-</td>
                 <td>-</td>
-                <td>B1 - Retail</td>
+                <td>B1</td>
             </tr>
             <tr>
                 <th>LoyaltyData</th>
@@ -1461,7 +1618,7 @@ class ECRSample {
                 <td>-</td>
                 <td>o</td>
                 <td>-</td>
-                <td>B10 - VAS</td>
+                <td>B10</td>
             </tr>
             <tr>
                 <th>OpenDialogMode</th>
@@ -1470,7 +1627,7 @@ class ECRSample {
                 <td>-</td>
                 <td>o</td>
                 <td>-</td>
-                <td>B6 - Dialog</td>
+                <td>B6</td>
             </tr>
             <tr>
                 <th>OpenMaintenanceWindow</th>
@@ -1479,7 +1636,7 @@ class ECRSample {
                 <td>o</td>
                 <td>-</td>
                 <td>-</td>
-                <td>B3 - Unattended</td>
+                <td>B3</td>
             </tr>
             <tr>
                 <th>OpenReader</th>
@@ -1488,7 +1645,7 @@ class ECRSample {
                 <td>-</td>
                 <td>o</td>
                 <td>-</td>
-                <td>B3 - Unattended</td>
+                <td>B3</td>
             </tr>
             <tr>
                 <th>PreAuthorization</th>
@@ -1497,7 +1654,7 @@ class ECRSample {
                 <td>-</td>
                 <td>o</td>
                 <td>-</td>
-                <td>B2 - Petrol</td>
+                <td>B2</td>
             </tr>
             <tr>
                 <th>ProvideLoyaltyBasket</th>
@@ -1506,7 +1663,7 @@ class ECRSample {
                 <td>-</td>
                 <td>o</td>
                 <td>-</td>
-                <td>B10 - VAS</td>
+                <td>B10</td>
             </tr>
             <tr>
                 <th>Purchase</th>
@@ -1515,7 +1672,7 @@ class ECRSample {
                 <td>-</td>
                 <td>o</td>
                 <td>-</td>
-                <td>B1 - Retail</td>
+                <td>B1</td>
             </tr>
             <tr>
                 <th>PurchaseForcedAcceptance</th>
@@ -1524,7 +1681,7 @@ class ECRSample {
                 <td>-</td>
                 <td>o</td>
                 <td>-</td>
-                <td>B4 - Adv. Retail</td>
+                <td>B4</td>
             </tr>
             <tr>
                 <th>PurchaseMailOrdered</th>
@@ -1533,7 +1690,7 @@ class ECRSample {
                 <td>-</td>
                 <td>o</td>
                 <td>-</td>
-                <td>B4 - Adv. Retail</td>
+                <td>B4</td>
             </tr>
             <tr>
                 <th>PurchasePhoneAuthorized</th>
@@ -1542,7 +1699,7 @@ class ECRSample {
                 <td>-</td>
                 <td>o</td>
                 <td>-</td>
-                <td>B4 - Adv. Retail</td>
+                <td>B4</td>
             </tr>
             <tr>
                 <th>PurchasePhoneOrdered</th>
@@ -1551,7 +1708,7 @@ class ECRSample {
                 <td>-</td>
                 <td>o</td>
                 <td>-</td>
-                <td>B4 - Adv. Retail</td>
+                <td>B4</td>
             </tr>
             <tr>
                 <th>PurchaseReservation</th>
@@ -1560,7 +1717,7 @@ class ECRSample {
                 <td>-</td>
                 <td>o</td>
                 <td>-</td>
-                <td>B9 - Hospitality</td>
+                <td>B9</td>
             </tr>
             <tr>
                 <th>PurchaseReservationPhoneAuthorized</th>
@@ -1569,7 +1726,7 @@ class ECRSample {
                 <td>-</td>
                 <td>o</td>
                 <td>-</td>
-                <td>B9 - Hospitality</td>
+                <td>B9</td>
             </tr>
             <tr>
                 <th>PurchaseWithCashback</th>
@@ -1578,7 +1735,7 @@ class ECRSample {
                 <td>-</td>
                 <td>o</td>
                 <td>-</td>
-                <td>B4 - Adv. Retail</td>
+                <td>B4</td>
             </tr>
             <tr>
                 <th>Reboot</th>
@@ -1587,7 +1744,7 @@ class ECRSample {
                 <td>o</td>
                 <td>-</td>
                 <td>-</td>
-                <td>B1 - Retail</td>
+                <td>B1</td>
             </tr>
             <tr>
                 <th>ReceiptRequest</th>
@@ -1596,7 +1753,7 @@ class ECRSample {
                 <td>o</td>
                 <td>o</td>
                 <td>-</td>
-                <td>B1 - Retail</td>
+                <td>B1</td>
             </tr>
             <tr>
                 <th>Reconciliation</th>
@@ -1605,7 +1762,7 @@ class ECRSample {
                 <td>o</td>
                 <td>o</td>
                 <td>-</td>
-                <td>B1 - Retail</td>
+                <td>B1</td>
             </tr>
             <tr>
                 <th>Reconfig</th>
@@ -1614,7 +1771,7 @@ class ECRSample {
                 <td>o</td>
                 <td>-</td>
                 <td>-</td>
-                <td>B1 - Retail</td>
+                <td>B1</td>
             </tr>
             <tr>
                 <th>Reservation</th>
@@ -1623,7 +1780,7 @@ class ECRSample {
                 <td>-</td>
                 <td>o</td>
                 <td>-</td>
-                <td>B9 - Hospitality</td>
+                <td>B9</td>
             </tr>
             <tr>
                 <th>Reversal</th>
@@ -1632,7 +1789,7 @@ class ECRSample {
                 <td>-</td>
                 <td>o</td>
                 <td>-</td>
-                <td>B1 - Retail</td>
+                <td>B1</td>
             </tr>
             <tr>
                 <th>Rollback</th>
@@ -1641,7 +1798,7 @@ class ECRSample {
                 <td>-</td>
                 <td>o</td>
                 <td>-</td>
-                <td>B1 - Retail</td>
+                <td>B1</td>
             </tr>
             <tr>
                 <th>SendCardCommand</th>
@@ -1650,7 +1807,7 @@ class ECRSample {
                 <td>-</td>
                 <td>-</td>
                 <td>o</td>
-                <td>B6 - Dialog</td>
+                <td>B6</td>
             </tr>
             <tr>
                 <th>ShowDialog</th>
@@ -1659,7 +1816,7 @@ class ECRSample {
                 <td>-</td>
                 <td>-</td>
                 <td>o</td>
-                <td>B6 - Dialog</td>
+                <td>B6</td>
             </tr>
             <tr>
                 <th>ShowSignatureCapture</th>
@@ -1668,7 +1825,7 @@ class ECRSample {
                 <td>-</td>
                 <td>-</td>
                 <td>o</td>
-                <td>B6 - Dialog</td>
+                <td>B6</td>
             </tr>
             <tr>
                 <th>SoftwareUpdate</th>
@@ -1677,7 +1834,7 @@ class ECRSample {
                 <td>o</td>
                 <td>-</td>
                 <td>-</td>
-                <td>B1 - Retail</td>
+                <td>B1</td>
             </tr>
             <tr>
                 <th>StartCheckout</th>
@@ -1686,7 +1843,7 @@ class ECRSample {
                 <td>-</td>
                 <td>o</td>
                 <td>-</td>
-                <td>B10 - VAS</td>
+                <td>B10</td>
             </tr>
             <tr>
                 <th>SystemInformation</th>
@@ -1695,7 +1852,7 @@ class ECRSample {
                 <td>o</td>
                 <td>-</td>
                 <td>-</td>
-                <td>B1 - Retail</td>
+                <td>B1</td>
             </tr>
             <tr>
                 <th>TerminalStatus</th>
@@ -1704,7 +1861,7 @@ class ECRSample {
                 <td>o</td>
                 <td>o</td>
                 <td>o</td>
-                <td>B1 - Retail</td>
+                <td>B1</td>
             </tr>
             <tr>
                 <th>VasInfo</th>
@@ -1713,7 +1870,7 @@ class ECRSample {
                 <td>-</td>
                 <td>o</td>
                 <td>-</td>
-                <td>B10 - VAS</td>
+                <td>B10</td>
             </tr>
         </table>
       </div></div></section>

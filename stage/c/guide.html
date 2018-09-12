@@ -47,7 +47,7 @@
             </ul>
           </div>
           <ul class="nav">
-          <li><a href="#intro">Introduction</a></li><li><a href="#sysreq">System Requirements</a></li><li><a href="#setup">Setup Configuration</a><ul class="nav"><li><a href="#network">Network Configuration</a></li><li><a href="#guides">Guides Configuration</a></li></ul></li><li><a href="#operation">Operation Overview</a></li><li><a href="#automatisms">Automatisms</a></li><li><a href="#methods">Terminal methods overview</a><ul class="nav"><li><a href="#mainFunc">Main / guide retail terminal functions</a></li><li class="filterGuides guideDialog"><a href="#dialogFunc">Guide dialog terminal functions</a></li><li><a href="#addMethods">Additional terminal listener-events</a></li></ul></li><li><a href="#clang">C Language Specifics</a><ul class="nav"><li><a href="#objects">Objects in TIM API C</a></li><li><a href="#memory">Memory Management in TIM API C</a></li><li><a href="#datatype">Data Types in TIM API C</a></li></ul></li><li><a href="#functionStateMatrix">Function-State-Matrix</a></li><li><a href="#reference">Reference</a></li></ul>
+          <li><a href="#intro">Introduction</a></li><li><a href="#sysreq">System Requirements</a></li><li><a href="#setup">Setup Configuration</a><ul class="nav"><li><a href="#network">Network Configuration</a></li><li><a href="#guides">Guides Configuration</a></li></ul></li><li><a href="#operation">Operation Overview</a></li><li><a href="#automatisms">Automatisms</a></li><li><a href="#methods">Terminal methods overview</a><ul class="nav"><li><a href="#mainFunc">Main / guide retail terminal functions</a></li><li class="filterGuides guidePetrol"><a href="#petrolFunc">Guide Petrol terminal functions</a></li><li class="filterGuides guideUnattended"><a href="#uatFunc">Guide Unattended terminal functions</a></li><li class="filterGuides guideDialog"><a href="#dialogFunc">Guide dialog terminal functions</a></li><li><a href="#addMethods">Additional terminal listener-events</a></li></ul></li><li><a href="#clang">C Language Specifics</a><ul class="nav"><li><a href="#objects">Objects in TIM API C</a></li><li><a href="#memory">Memory Management in TIM API C</a></li><li><a href="#datatype">Data Types in TIM API C</a></li></ul></li><li><a href="#functionStateMatrix">Function-State-Matrix</a></li><li><a href="#reference">Reference</a></li></ul>
           <div class="seperator">&#160;</div>
           <div class="linkDiv">
             <a href="doc/index.html">API Documentation</a>
@@ -93,8 +93,7 @@
               <li>Visual C 2015</li>
               <li>RAM: 400kB + 600kB per terminal (i.e. min 1MB)</li>
               <li>Libraries: Pthreads</li>
-          </ul>
-        </p>
+          </ul> </p>
         <hr>
     </div></div></section>
     <section id="setup"><h1><a name="setup"></a>Setup Configuration</h1><div class="row"><div class="col-md-6"><p lang="c">The configuration of the <code><a href="doc/terminal_8h.html">terminal</a></code> can be done by creating and configuring a
@@ -294,10 +293,10 @@ ta_oject_release(terminal);</code></pre>
                         </p>
                     </li>
                 </ol>
-                <p>Functions called on terminal perform synchronous by default. The asynchronous method has the same name
+                <p lang="java c">Functions called on terminal perform synchronous by default. The asynchronous method has the same name
                     with <i lang="c">_aync</i> appended to its name.
                 </p>
-            </div><div class="col-md-6">
+                </div><div class="col-md-6">
                 <p>Code example for adding a terminal listener:</p>
                 <pre><code class="language-{.c}">/*
  * Example for adding a terminal status listener
@@ -595,7 +594,144 @@ void mylistener_terminal_status_changed(ta_object_t terminal,	void *user_pointer
                 </tbody>
             </table>
 
-        </div></div></section>
+        </div></div></section>  
+
+        <div class="row"><div class="col-md-6"></div></div><section class="filterGuides guidePetrol" id="petrolFunc"><h2><a name="petrolFunc"></a>Guide Petrol terminal functions</h2><div class="row"><div class="col-md-6"><table class="table">
+                <thead>
+                    <tr>
+                        <th>
+                            <strong>Sync method</strong>
+                            <br>
+                            <span class="asyncMethod">Async method</span>
+                            <br>
+                            <span class="completedMethod">Completed event</span>
+                        </th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <code class="asyncMethod"><a class="asyncMethod" href="doc/terminal_8h.html#a7aceb173071dec8687acc4fa9fe93989">ta_terminal_cancel</a></code>
+                        </td>
+                        <td>Cancel an asynchronous function.</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code class="syncMethod"><a class="syncMethod" href="doc/terminal_8h.html#aec31a48f33502fab0a02eb52e6e90ee7">ta_terminal_init_transaction</a></code>
+                            <br>
+                            <code class="asyncMethod"><a class="asyncMethod" href="doc/terminal_8h.html#ac4d632daf6e832115c0bfa89608dda01">ta_terminal_init_transaction_async</a></code>
+                            <br>
+                            <code class="completedMethod"><a class="completedMethod" href="doc/terminal__listener_8h.html#a9019e87bacfce04a6ddf5f4be5f1ca4a">init_transaction_completed</a></code>
+                        </td>
+                        <td>Retreive card data for the presented card.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div></div></section>  
+
+        <div class="row"><div class="col-md-6"></div></div><section class="filterGuides guideUnattended" id="uatFunc"><h2><a name="uatFunc"></a>Guide Unattended terminal functions</h2><div class="row"><div class="col-md-6"><table class="table">
+                <thead>
+                    <tr>
+                        <th>
+                            <strong>Sync method</strong>
+                            <br>
+                            <span class="asyncMethod">Async method</span>
+                            <br>
+                            <span class="completedMethod">Completed event</span>
+                        </th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <code class="syncMethod"><a class="syncMethod" href="doc/terminal_8h.html#aa7f8f12041936ce339c17bec2ccfe9f2">ta_terminal_open_reader</a></code>
+                            <br>
+                            <code class="openReaderasyncMethod"><a class="openReaderasyncMethod" href="doc/terminal_8h.html#a3c1bc113588d092591210c55e1e1e736">ta_terminal_async</a></code>
+                            <br>
+                            <code class="completedMethod"><a class="completedMethod" href="doc/terminal__listener_8h.html#a4b858b839bcbe394c139b644a8d385fd">open_reader_completed</a></code>
+                        </td>
+                        <td>Opens the shutter of the card reader.</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code class="syncMethod"><a class="syncMethod" href="doc/terminal_8h.html#ac55b5a60f04d3336ddf4ba46c49a5fea">ta_terminal_close_reader</a></code>
+                            <br>
+                            <code class="asyncMethod"><a class="asyncMethod" href="doc/terminal_8h.html#a4babe0e7f8b17cdc38e765994a3c309f">ta_terminal_close_reader_async</a></code>
+                            <br>
+                            <code class="completedMethod"><a class="completedMethod" href="doc/terminal__listener_8h.html#a7664fed628bcdd45f81694856b54a13e">close_reader_completed</a></code>
+                        </td>
+                        <td>Closes the shutter of the card reader.</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code class="syncMethod"><a class="syncMethod" href="doc/terminal_8h.html#ad888b7b2d3546f07f1fec8f635a46cd6">ta_terminal_eject_card</a></code>
+                            <br>
+                            <code class="asyncMethod"><a class="asyncMethod" href="doc/terminal_8h.html#a10ee5aa13a16c008a3696c3d88f63865">ta_terminal_eject_card_async</a></code>
+                            <br>
+                            <code class="completedMethod"><a class="completedMethod" href="doc/terminal__listener_8h.html#a4fc99165964e280c6773b79a37e01afc">eject_card_completed</a></code>
+                        </td>
+                        <td>Ejects the card from the card reader.</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code class="syncMethod"><a class="syncMethod" href="doc/terminal_8h.html#ab8e774067fbed221e160a6e8a88090ec">ta_terminal_open_maintenance_window</a></code>
+                            <br>
+                            <code class="asyncMethod"><a class="asyncMethod" href="doc/terminal_8h.html#a3c1bc113588d092591210c55e1e1e736">ta_terminal_open_maintenance_window_async</a></code>
+                            <br>
+                            <code class="completedMethod"><a class="completedMethod" href="doc/terminal__listener_8h.html#a70b3a473d8e606b3fcd59054d8f1e8b6">open_maintenance_window_completed</a></code>
+                        </td>
+                        <td>Opens a maintenance window where the terminal can perform all maintenance processes it was not able to perform before.&gt;</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code class="syncMethod"><a class="syncMethod" href="doc/terminal_8h.html#abac6ccdbd884a8f368f03230258f8791">ta_terminal_close_maintenance_window</a></code>
+                            <br>
+                            <code class="asyncMethod"><a class="asyncMethod" href="doc/terminal_8h.html#a70a36260241f529372ccaebcded47340">ta_terminal_close_maintenance_window_async</a></code>
+                            <br>
+                            <code class="completedMethod"><a class="completedMethod" href="doc/terminal__listener_8h.html#aea9de19f2d240d7dc93772004ebbb9a2">close_maintenance_window_completed</a></code>
+                        </td>
+                        <td>Prohibits the EFT terminal from performing any triggered maintenance tasks.</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code class="syncMethod"><a class="syncMethod" href="doc/terminal_8h.html#ac1b72345a56cb591426877e3016a0ae9">ta_terminal_hold_commit</a></code>
+                        </td>
+                        <td>Increases the commit timeout.</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code class="syncMethod"><a class="syncMethod" href="doc/terminal_8h.html#a7aceb173071dec8687acc4fa9fe93989">ta_terminal_cancel</a></code>
+                        </td>
+                        <td>Cancels a running request.</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code class="syncMethod"><a class="syncMethod" href="doc/terminal_8h.html#a1a8cb225510ae56543926bc6ee871a63">ta_terminal_commit</a></code>
+                            <br>
+                            <code class="asyncMethod"><a class="asyncMethod" href="doc/terminal_8h.html#ac28f0dfe2dd8d093536c8a9e57f8423f">ta_terminal_commit_async</a></code>
+                            <br>
+                            <code class="completedMethod"><a class="completedMethod" href="doc/terminal__listener_8h.html#a89b6799427e9efb30136d13bc6eb84e5">commit_completed</a></code>
+                        </td>
+                        <td>Commits a transaction after succesful authorization. A lower amount may be commited than the authorized amount.</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code class="syncMethod"><a class="syncMethod">ta_terminal_amt_adjustment</a></code>
+                            <br>
+                            <code class="asyncMethod"><a class="asyncMethod">ta_terminal_amt_adjustment_async</a></code>
+                            <br>
+                            <code class="completedMethod"><a class="completedMethod">amt_adjustment_completed</a></code>
+                        </td>
+                        <td>Send an amount adjustment notification to the terminal during an open transaction. The amount is used as the new amount for the transaction.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div></div></section> 
+         
+         
+
 
         <div class="row"><div class="col-md-6"></div></div><section class="filterGuides guideDialog" id="dialogFunc"><h2><a name="dialogFunc"></a>Guide dialog terminal functions</h2><div class="row"><div class="col-md-6"><table class="table">
               <thead>
@@ -654,6 +790,12 @@ void mylistener_terminal_status_changed(ta_object_t terminal,	void *user_pointer
             </tbody>
           </table>
         </div></div></section>
+
+         
+         
+         
+         
+         
 
         <div class="row"><div class="col-md-6"></div></div><section id="addMethods"><h2><a name="addMethods"></a>Additional terminal listener-events</h2><div class="row"><div class="col-md-6"><table class="table">
                 <thead>
@@ -849,7 +991,21 @@ ta_object_release(myList);
               </table>
         </div></div></section>
     <div class="row"><div class="col-md-6"></div></div></section>
-    <section id="functionStateMatrix"><h1><a name="functionStateMatrix"></a>Function-State-Matrix</h1><div class="row"><div class="col-md-6"><table class="table">
+    <section id="functionStateMatrix"><h1><a name="functionStateMatrix"></a>Function-State-Matrix</h1><div class="row"><div class="col-md-6"><p>Legend:
+        <ul>
+          <li>B1-Retail</li>
+          <li>B2-Petrol</li>
+          <li>B3-Unattended</li>
+          <li>B4-Advanced Retail</li>
+          <li>B5-Banking</li>
+          <li>B6-Dialog</li>
+          <li>B8-Gastro</li>
+          <li>B9-Hospitality</li>
+          <li>B10-Value Added Services (VAS)</li>
+          <li>B11-Austrian Use Cases</li>
+        </ul>
+      </p>
+        <table class="table">
             <tr>
                 <th rowspan="4">Function</th>
                 <th colspan="5">State</th>
@@ -875,7 +1031,7 @@ ta_object_release(myList);
                 <td>o</td>
                 <td>o</td>
                 <td>-</td>
-                <td>B1 - Retail</td>
+                <td>B1</td>
             </tr>
             <tr>
                 <th>ActivateServiceMenu</th>
@@ -884,7 +1040,7 @@ ta_object_release(myList);
                 <td>o</td>
                 <td>-</td>
                 <td>-</td>
-                <td>B3 - Unattended</td>
+                <td>B3</td>
             </tr>
             <tr>
                 <th>AdjustReservation</th>
@@ -893,7 +1049,7 @@ ta_object_release(myList);
                 <td>-</td>
                 <td>o</td>
                 <td>-</td>
-                <td>B9 - Hospitality</td>
+                <td>B9</td>
             </tr>
             <tr>
                 <th>AmtAdjustment</th>
@@ -902,7 +1058,7 @@ ta_object_release(myList);
                 <td>-</td>
                 <td>o</td>
                 <td>-</td>
-                <td>B3 - Unattended</td>
+                <td>B3</td>
             </tr>
             <tr>
                 <th>ApplicationInformation</th>
@@ -911,7 +1067,7 @@ ta_object_release(myList);
                 <td>o</td>
                 <td>-</td>
                 <td>-</td>
-                <td>B1 - Retail</td>
+                <td>B1</td>
             </tr>
             <tr>
                 <th>AuthorizeCredit</th>
@@ -920,7 +1076,7 @@ ta_object_release(myList);
                 <td>-</td>
                 <td>o</td>
                 <td>-</td>
-                <td>B5 - Banking</td>
+                <td>B5</td>
             </tr>
             <tr>
                 <th>AuthorizeDeposit</th>
@@ -929,7 +1085,7 @@ ta_object_release(myList);
                 <td>-</td>
                 <td>o</td>
                 <td>-</td>
-                <td>B5 - Banking</td>
+                <td>B5</td>
             </tr>
 
             <tr>
@@ -939,7 +1095,7 @@ ta_object_release(myList);
                 <td>o</td>
                 <td>-</td>
                 <td>-</td>
-                <td>B1 - Retail</td>
+                <td>B1</td>
             </tr>
             <tr>
                 <th>BalanceInquiry</th>
@@ -948,7 +1104,7 @@ ta_object_release(myList);
                 <td>-</td>
                 <td>o</td>
                 <td>-</td>
-                <td>B4, B5 - Banking</td>
+                <td>B4, B5</td>
             </tr>
             <tr>
                 <th>Cancel</th>
@@ -957,7 +1113,7 @@ ta_object_release(myList);
                 <td>o</td>
                 <td>o</td>
                 <td>o</td>
-                <td>B1 - Retail</td>
+                <td>B1</td>
             </tr>
             <tr>
                 <th>CancelReservation</th>
@@ -966,7 +1122,7 @@ ta_object_release(myList);
                 <td>-</td>
                 <td>o</td>
                 <td>-</td>
-                <td>B9 - Hospitality</td>
+                <td>B9</td>
             </tr>
             <tr>
                 <th>CashAdvance</th>
@@ -975,7 +1131,7 @@ ta_object_release(myList);
                 <td>-</td>
                 <td>o</td>
                 <td>-</td>
-                <td>B4 - Adv. Retail</td>
+                <td>B4</td>
             </tr>
             <tr>
                 <th>ChangeSettings</th>
@@ -984,7 +1140,7 @@ ta_object_release(myList);
                 <td>o</td>
                 <td>-</td>
                 <td>-</td>
-                <td>B1 - Retail</td>
+                <td>B1</td>
             </tr>
             <tr>
                 <th>CloseDialogMode</th>
@@ -993,7 +1149,7 @@ ta_object_release(myList);
                 <td>-</td>
                 <td>-</td>
                 <td>o</td>
-                <td>B6 - Dialog</td>
+                <td>B6</td>
             </tr>
             <tr>
                 <th>CloseMaintenanceWindow</th>
@@ -1002,7 +1158,7 @@ ta_object_release(myList);
                 <td>o</td>
                 <td>-</td>
                 <td>-</td>
-                <td>B3 - Unattended</td>
+                <td>B3</td>
             </tr>
             <tr>
                 <th>CloseReader</th>
@@ -1011,7 +1167,7 @@ ta_object_release(myList);
                 <td>-</td>
                 <td>o</td>
                 <td>-</td>
-                <td>B3 - Unattended</td>
+                <td>B3</td>
             </tr>
             <tr>
                 <th>CollectPoints</th>
@@ -1020,7 +1176,7 @@ ta_object_release(myList);
                 <td>-</td>
                 <td>o</td>
                 <td>-</td>
-                <td>B10 - VAS</td>
+                <td>B10</td>
             </tr>
             <tr>
                 <th>Combined</th>
@@ -1029,7 +1185,7 @@ ta_object_release(myList);
                 <td>-</td>
                 <td>o</td>
                 <td>-</td>
-                <td>B5 - Banking</td>
+                <td>B5</td>
             </tr>
             <tr>
                 <th>Commit</th>
@@ -1038,7 +1194,7 @@ ta_object_release(myList);
                 <td>-</td>
                 <td>o</td>
                 <td>-</td>
-                <td>B1 - Retail</td>
+                <td>B1</td>
             </tr>
             <tr>
                 <th>CounterRequest</th>
@@ -1047,7 +1203,7 @@ ta_object_release(myList);
                 <td>o</td>
                 <td>o</td>
                 <td>-</td>
-                <td>B1 - Retail</td>
+                <td>B1</td>
             </tr>
             <tr>
                 <th>Credit</th>
@@ -1056,7 +1212,7 @@ ta_object_release(myList);
                 <td>-</td>
                 <td>o</td>
                 <td>-</td>
-                <td>B1 - Retail</td>
+                <td>B1</td>
             </tr>
             <tr>
                 <th>DccRates</th>
@@ -1065,7 +1221,7 @@ ta_object_release(myList);
                 <td>o</td>
                 <td>-</td>
                 <td>-</td>
-                <td>B1 - Retail</td>
+                <td>B1</td>
             </tr>
             <tr>
                 <th>Deactivate</th>
@@ -1074,7 +1230,7 @@ ta_object_release(myList);
                 <td>o</td>
                 <td>o</td>
                 <td>-</td>
-                <td>B1 - Retail</td>
+                <td>B1</td>
             </tr>
             <tr>
                 <th>EjectCard</th>
@@ -1083,7 +1239,7 @@ ta_object_release(myList);
                 <td>-</td>
                 <td>o</td>
                 <td>-</td>
-                <td>B3 - Unattended</td>
+                <td>B3</td>
             </tr>
             <tr>
                 <th>FeatureRequest</th>
@@ -1092,7 +1248,7 @@ ta_object_release(myList);
                 <td>o</td>
                 <td>-</td>
                 <td>-</td>
-                <td>B1 - Retail</td>
+                <td>B1</td>
             </tr>
             <tr>
                 <th>FinalizePurchase</th>
@@ -1101,7 +1257,7 @@ ta_object_release(myList);
                 <td>-</td>
                 <td>o</td>
                 <td>-</td>
-                <td>B2 - Petrol</td>
+                <td>B2</td>
             </tr>
             <tr>
                 <th>FinishCeckout</th>
@@ -1110,7 +1266,7 @@ ta_object_release(myList);
                 <td>-</td>
                 <td>o</td>
                 <td>-</td>
-                <td>B10 - VAS</td>
+                <td>B10</td>
             </tr>
             <tr>
                 <th>Giro</th>
@@ -1119,7 +1275,7 @@ ta_object_release(myList);
                 <td>-</td>
                 <td>o</td>
                 <td>-</td>
-                <td>B5 - Banking</td>
+                <td>B5</td>
             </tr>
             <tr>
                 <th>HardwareInformation</th>
@@ -1128,7 +1284,7 @@ ta_object_release(myList);
                 <td>o</td>
                 <td>-</td>
                 <td>-</td>
-                <td>B1 - Retail</td>
+                <td>B1</td>
             </tr>
             <tr>
                 <th>HoldCommit</th>
@@ -1137,7 +1293,7 @@ ta_object_release(myList);
                 <td>-</td>
                 <td>o</td>
                 <td>-</td>
-                <td>B3 - Unattended</td>
+                <td>B3</td>
             </tr>
             <tr>
                 <th>InitTransaction</th>
@@ -1146,7 +1302,7 @@ ta_object_release(myList);
                 <td>-</td>
                 <td>o</td>
                 <td>-</td>
-                <td>B2 - Petrol</td>
+                <td>B2</td>
             </tr>
             <tr>
                 <th>KeepAlive</th>
@@ -1155,7 +1311,7 @@ ta_object_release(myList);
                 <td>o</td>
                 <td>o</td>
                 <td>o</td>
-                <td>B1 - Retail</td>
+                <td>B1</td>
             </tr>
             <tr>
                 <th>LicenseChanged</th>
@@ -1164,7 +1320,7 @@ ta_object_release(myList);
                 <td>o</td>
                 <td>-</td>
                 <td>-</td>
-                <td>B1 - Retail</td>
+                <td>B1</td>
             </tr>
             <tr>
                 <th>LoadVoucher</th>
@@ -1173,7 +1329,7 @@ ta_object_release(myList);
                 <td>-</td>
                 <td>o</td>
                 <td>-</td>
-                <td>B10 - VAS</td>
+                <td>B10</td>
             </tr>
             <tr>
                 <th>Login</th>
@@ -1182,7 +1338,7 @@ ta_object_release(myList);
                 <td>o</td>
                 <td>-</td>
                 <td>-</td>
-                <td>B1 - Retail</td>
+                <td>B1</td>
             </tr>
             <tr>
                 <th>Logout</th>
@@ -1191,7 +1347,7 @@ ta_object_release(myList);
                 <td>o</td>
                 <td>-</td>
                 <td>-</td>
-                <td>B1 - Retail</td>
+                <td>B1</td>
             </tr>
             <tr>
                 <th>LoyaltyData</th>
@@ -1200,7 +1356,7 @@ ta_object_release(myList);
                 <td>-</td>
                 <td>o</td>
                 <td>-</td>
-                <td>B10 - VAS</td>
+                <td>B10</td>
             </tr>
             <tr>
                 <th>OpenDialogMode</th>
@@ -1209,7 +1365,7 @@ ta_object_release(myList);
                 <td>-</td>
                 <td>o</td>
                 <td>-</td>
-                <td>B6 - Dialog</td>
+                <td>B6</td>
             </tr>
             <tr>
                 <th>OpenMaintenanceWindow</th>
@@ -1218,7 +1374,7 @@ ta_object_release(myList);
                 <td>o</td>
                 <td>-</td>
                 <td>-</td>
-                <td>B3 - Unattended</td>
+                <td>B3</td>
             </tr>
             <tr>
                 <th>OpenReader</th>
@@ -1227,7 +1383,7 @@ ta_object_release(myList);
                 <td>-</td>
                 <td>o</td>
                 <td>-</td>
-                <td>B3 - Unattended</td>
+                <td>B3</td>
             </tr>
             <tr>
                 <th>PreAuthorization</th>
@@ -1236,7 +1392,7 @@ ta_object_release(myList);
                 <td>-</td>
                 <td>o</td>
                 <td>-</td>
-                <td>B2 - Petrol</td>
+                <td>B2</td>
             </tr>
             <tr>
                 <th>ProvideLoyaltyBasket</th>
@@ -1245,7 +1401,7 @@ ta_object_release(myList);
                 <td>-</td>
                 <td>o</td>
                 <td>-</td>
-                <td>B10 - VAS</td>
+                <td>B10</td>
             </tr>
             <tr>
                 <th>Purchase</th>
@@ -1254,7 +1410,7 @@ ta_object_release(myList);
                 <td>-</td>
                 <td>o</td>
                 <td>-</td>
-                <td>B1 - Retail</td>
+                <td>B1</td>
             </tr>
             <tr>
                 <th>PurchaseForcedAcceptance</th>
@@ -1263,7 +1419,7 @@ ta_object_release(myList);
                 <td>-</td>
                 <td>o</td>
                 <td>-</td>
-                <td>B4 - Adv. Retail</td>
+                <td>B4</td>
             </tr>
             <tr>
                 <th>PurchaseMailOrdered</th>
@@ -1272,7 +1428,7 @@ ta_object_release(myList);
                 <td>-</td>
                 <td>o</td>
                 <td>-</td>
-                <td>B4 - Adv. Retail</td>
+                <td>B4</td>
             </tr>
             <tr>
                 <th>PurchasePhoneAuthorized</th>
@@ -1281,7 +1437,7 @@ ta_object_release(myList);
                 <td>-</td>
                 <td>o</td>
                 <td>-</td>
-                <td>B4 - Adv. Retail</td>
+                <td>B4</td>
             </tr>
             <tr>
                 <th>PurchasePhoneOrdered</th>
@@ -1290,7 +1446,7 @@ ta_object_release(myList);
                 <td>-</td>
                 <td>o</td>
                 <td>-</td>
-                <td>B4 - Adv. Retail</td>
+                <td>B4</td>
             </tr>
             <tr>
                 <th>PurchaseReservation</th>
@@ -1299,7 +1455,7 @@ ta_object_release(myList);
                 <td>-</td>
                 <td>o</td>
                 <td>-</td>
-                <td>B9 - Hospitality</td>
+                <td>B9</td>
             </tr>
             <tr>
                 <th>PurchaseReservationPhoneAuthorized</th>
@@ -1308,7 +1464,7 @@ ta_object_release(myList);
                 <td>-</td>
                 <td>o</td>
                 <td>-</td>
-                <td>B9 - Hospitality</td>
+                <td>B9</td>
             </tr>
             <tr>
                 <th>PurchaseWithCashback</th>
@@ -1317,7 +1473,7 @@ ta_object_release(myList);
                 <td>-</td>
                 <td>o</td>
                 <td>-</td>
-                <td>B4 - Adv. Retail</td>
+                <td>B4</td>
             </tr>
             <tr>
                 <th>Reboot</th>
@@ -1326,7 +1482,7 @@ ta_object_release(myList);
                 <td>o</td>
                 <td>-</td>
                 <td>-</td>
-                <td>B1 - Retail</td>
+                <td>B1</td>
             </tr>
             <tr>
                 <th>ReceiptRequest</th>
@@ -1335,7 +1491,7 @@ ta_object_release(myList);
                 <td>o</td>
                 <td>o</td>
                 <td>-</td>
-                <td>B1 - Retail</td>
+                <td>B1</td>
             </tr>
             <tr>
                 <th>Reconciliation</th>
@@ -1344,7 +1500,7 @@ ta_object_release(myList);
                 <td>o</td>
                 <td>o</td>
                 <td>-</td>
-                <td>B1 - Retail</td>
+                <td>B1</td>
             </tr>
             <tr>
                 <th>Reconfig</th>
@@ -1353,7 +1509,7 @@ ta_object_release(myList);
                 <td>o</td>
                 <td>-</td>
                 <td>-</td>
-                <td>B1 - Retail</td>
+                <td>B1</td>
             </tr>
             <tr>
                 <th>Reservation</th>
@@ -1362,7 +1518,7 @@ ta_object_release(myList);
                 <td>-</td>
                 <td>o</td>
                 <td>-</td>
-                <td>B9 - Hospitality</td>
+                <td>B9</td>
             </tr>
             <tr>
                 <th>Reversal</th>
@@ -1371,7 +1527,7 @@ ta_object_release(myList);
                 <td>-</td>
                 <td>o</td>
                 <td>-</td>
-                <td>B1 - Retail</td>
+                <td>B1</td>
             </tr>
             <tr>
                 <th>Rollback</th>
@@ -1380,7 +1536,7 @@ ta_object_release(myList);
                 <td>-</td>
                 <td>o</td>
                 <td>-</td>
-                <td>B1 - Retail</td>
+                <td>B1</td>
             </tr>
             <tr>
                 <th>SendCardCommand</th>
@@ -1389,7 +1545,7 @@ ta_object_release(myList);
                 <td>-</td>
                 <td>-</td>
                 <td>o</td>
-                <td>B6 - Dialog</td>
+                <td>B6</td>
             </tr>
             <tr>
                 <th>ShowDialog</th>
@@ -1398,7 +1554,7 @@ ta_object_release(myList);
                 <td>-</td>
                 <td>-</td>
                 <td>o</td>
-                <td>B6 - Dialog</td>
+                <td>B6</td>
             </tr>
             <tr>
                 <th>ShowSignatureCapture</th>
@@ -1407,7 +1563,7 @@ ta_object_release(myList);
                 <td>-</td>
                 <td>-</td>
                 <td>o</td>
-                <td>B6 - Dialog</td>
+                <td>B6</td>
             </tr>
             <tr>
                 <th>SoftwareUpdate</th>
@@ -1416,7 +1572,7 @@ ta_object_release(myList);
                 <td>o</td>
                 <td>-</td>
                 <td>-</td>
-                <td>B1 - Retail</td>
+                <td>B1</td>
             </tr>
             <tr>
                 <th>StartCheckout</th>
@@ -1425,7 +1581,7 @@ ta_object_release(myList);
                 <td>-</td>
                 <td>o</td>
                 <td>-</td>
-                <td>B10 - VAS</td>
+                <td>B10</td>
             </tr>
             <tr>
                 <th>SystemInformation</th>
@@ -1434,7 +1590,7 @@ ta_object_release(myList);
                 <td>o</td>
                 <td>-</td>
                 <td>-</td>
-                <td>B1 - Retail</td>
+                <td>B1</td>
             </tr>
             <tr>
                 <th>TerminalStatus</th>
@@ -1443,7 +1599,7 @@ ta_object_release(myList);
                 <td>o</td>
                 <td>o</td>
                 <td>o</td>
-                <td>B1 - Retail</td>
+                <td>B1</td>
             </tr>
             <tr>
                 <th>VasInfo</th>
@@ -1452,7 +1608,7 @@ ta_object_release(myList);
                 <td>-</td>
                 <td>o</td>
                 <td>-</td>
-                <td>B10 - VAS</td>
+                <td>B10</td>
             </tr>
         </table>
       </div></div></section>
