@@ -1,0 +1,1506 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+
+  <link href="../assets/css/vendors.css" rel="stylesheet">
+  <link href="../assets/css/helppage.css" rel="stylesheet">
+  <link href="res/css/lang_specific.css" rel="stylesheet">
+
+  <title>TIM API documentation</title>
+  <script src="../assets/js/vendors.js"></script>
+  <script src="../assets/js/helppage.js"></script>
+  <script src="../assets/js/guide.js"></script>
+  <script src="../assets/js/tim_inject.js"></script>
+  <script src="../assets/js/sdk_version.js"></script>
+  <script src="../assets/js/config.js"></script>
+  <script src="api_version.js"></script>
+</head>
+<body data-spy="scroll" data-target="#navScrollspy">
+  <div class="container-fluid" id="content">
+    <div>
+      <nav id="navScrollspy">
+        <div id="stageBanner">STAGING VERSION!</div>
+        <div id="archiveBanner">ARCHIVED VERSION!<br><a href="../../../doc/index.html" id="currentLink">-&gt; link to current version</a></div>
+        <div class="affix" data-spy="affix">
+          <div id="projectname">TIM SDK</div>
+          <div id="projectbrief">TIM API</div>
+          <div class="seperator" style="margin-top: 0px;">&#160;</div>
+          <div id="vSep">&#160;</div>
+          <div id="langSel">
+            <ul class="langList">
+              <li>
+                <a class="lang_java" href="../java/guide.html">Java</a>
+              </li>
+              <li>
+                <span style="color: gray">.NET</span>
+              </li>
+              <li>
+                <a class="lang_swift" href="../swift/guide.html">Swift</a>
+              </li>
+              <li>
+                <span style="color: gray">JavaScript</span>
+              </li>
+              <li>
+                <a class="lang_c" href="../c/guide.html">C</a>
+              </li>
+            </ul>
+          </div>
+          <ul class="nav">
+          <li><a href="#intro">Introduction</a></li><li><a href="#sysreq">System Requirements</a></li><li><a href="#setup">Setup Configuration</a><ul class="nav"><li><a href="#network">Network Configuration</a></li><li><a href="#guides">Guides Configuration</a></li></ul></li><li><a href="#operation">Operation Overview</a></li><li><a href="#automatisms">Automatisms</a></li><li><a href="#methods">Terminal methods overview</a><ul class="nav"><li><a href="#mainFunc">Main / guide retail terminal functions</a></li><li class="filterGuides guidePetrol"><a href="#petrolFunc">Guide Petrol terminal functions</a></li><li class="filterGuides guideUnattended"><a href="#uatFunc">Guide Unattended terminal functions</a></li><li class="filterGuides guideDialog"><a href="#dialogFunc">Guide dialog terminal functions</a></li><li><a href="#addMethods">Additional terminal listener-events</a></li></ul></li><li><a href="#swiftspec">Swift Specifics</a></li><li><a href="#functionStateMatrix">Function-State-Matrix</a></li><li><a href="#reference">Reference</a></li></ul>
+          <div class="seperator">&#160;</div>
+          <div class="linkDiv">
+            <a href="doc/index.html">API Documentation</a>
+          </div>
+          <div class="linkDiv">
+            <a href="../../version/version-history.html">Version History</a>
+          </div>
+          <div id="guideDiv">
+            <div id="guideTitle">
+              <b>Guides</b>
+            </div>
+            <div id="guideSel">
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <span class="print-page-break"></span>
+
+      <main>
+      <section id="intro"><h1><a name="intro"></a>Introduction</h1><div class="row"><div class="col-md-6"><p>The TIM API is the standard application interface for ECR integration using SIX Payment Services terminals.
+        </p>
+        <p>TIM API provides a comprehensive feature set to support the requirements of several different markets. This
+            guideline is intended to be used by ECR integrators that need to implement the TIM API functionality in
+            their
+            products.
+        </p>
+        <p>The following document contains an overview structure, description of the TIM API modes
+            synchronous/asynchronous
+            and describes the corresponding functions, notifiers and data elements that can be used with the TIM API.
+            Furthermore implementation examples are provided. Nevertheless always the corresponding description of a
+            function or data element is authoritative, not the examples.
+        </p>
+        <p>For further information about the architecture of the TIM API can be found in
+            <a href="#reference">[B1]</a>, this document is meant to cover only implementation
+            purposes.
+        </p>
+        <hr>
+    </div></div></section>
+    <section id="sysreq"><h1><a name="sysreq"></a>System Requirements</h1><div class="row"><div class="col-md-6"><p>The TIM API is available for multiple platforms. Due to such diversity the support for the TIM API is limited to certain standards. Those are the minimal system requirements: <ul lang="swift">
+              <li>iOS 10</li>
+              <li>Swift 4.1</li>
+          </ul> </p>
+        <hr>
+    </div></div></section>
+    <section id="setup"><h1><a name="setup"></a>Setup Configuration</h1><div class="row"><div class="col-md-6"><p>Once a
+            <code><a href="doc/Classes/Terminal.html">Terminal</a></code>-instance has been created with a
+            <code><a href="doc/Classes/TerminalSettings.html">TerminalSettings</a></code>-instance, the settings can not be changed anymore.
+            Changes to the
+            <code><a href="doc/Classes/TerminalSettings.html">TerminalSettings</a></code>-instance will be ignored.
+        </p>
+        <p>The network and guides configuration are explained in the following
+            chapters.
+            For further information refer to<code><a href="doc/Classes/TerminalSettings.html">TerminalSettings</a></code>.
+        </p>
+
+
+        </div></div><section id="network"><h2><a name="network"></a>Network Configuration</h2><div class="row"><div class="col-md-6"><p>The TIM API module can communicate with the Terminal over different communication channels. The default
+                communication
+                is over TCP/IP connection.
+            </p>
+            <p>For TCP/IP connection there are two possible ways to connect to the terminal:</p>
+            <ul>
+                <li>
+                    <strong>Broadcast-Mode:</strong>
+                    <ul>
+                        <li>Terminal ID (TID) is known.</li>
+                        <li>The TIM API starts broadcasting on the default interface and connects to the connection
+                            information sent
+                            by the matching terminal.
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Direct Connect:</strong>
+                    <ul>
+                        <li>IP address of the terminal is known.</li>
+                        <li>Connection is established directly via IP.</li>
+                    </ul>
+                </li>
+            </ul>
+
+        </div></div></section>
+        <div class="row"><div class="col-md-6"></div></div><section id="guides"><h2><a name="guides"></a>Guides Configuration</h2><div class="row"><div class="col-md-6">
+                    <p>There are various
+                        <code><a href="doc/Enums/CGuides.html">Guides</a></code>
+                        covering different use case scenarios. The guide retail is the basic guide and is activated as
+                        default. With
+                        <code><a href="doc/Classes/TerminalSettings.html#/s:6TimApi16TerminalSettingsC6guidess3SetVyAA7CGuidesOGvp">.guides</a></code>
+                        the guides can be configured. Important: the configuration needs to include all desired guides
+                        (including
+                        the retail guide).
+                    </p>
+
+                </div><div class="col-md-6">
+                    <p>Code-example for creating a terminal including settings with activated guides retail and
+                        hospitality:
+                    </p>
+                    <pre><code class="language-{.swift}">// Create settings with Terminal-ID of terminal to connect to
+let terminalSettings = try TerminalSettings()
+terminalSettings.terminalId = "12345678"
+
+// add wanted guides (with insert)
+terminalSettings.guides.insert(CGuides.retail)
+terminalSettings.guides.insert(CGuides.hospitality)
+
+// Create terminal
+var terminal = try Terminal(settings: terminalSettings)
+
+//...
+
+// Disconnect from terminal and clean up properly
+terminal.dispose()</code></pre>
+                </div></div>
+
+            <div class="row"><div class="col-md-6"><hr>
+        </div></div></section>
+        <div class="row"><div class="col-md-6"></div></div></section>
+    <section id="operation"><h1><a name="operation"></a>Operation Overview</h1><div class="row"><div class="col-md-6">
+
+                <p>Follow these basic steps for using the TIM API:</p>
+                <ol>
+                    <li>Create
+                        <code><a href="doc/Classes/TerminalSettings.html">TerminalSettings</a></code>
+                        and initialize connection parameters (see
+                        <a href="#setup">Setup Configuration</a>)
+                    </li>
+                    <li>Create
+                        <code><a href="doc/Classes/Terminal.html">Terminal</a></code>
+                        instance using the created
+                        <code><a href="doc/Classes/TerminalSettings.html">TerminalSettings</a></code>
+                    </li>
+                    <li>Set some properties if needed:
+                        <ul>
+                            <li>set
+                                <code><a href="doc/Classes/Terminal.html#/s:6TimApi8TerminalC5posIdSSvp">PosId</a></code>
+                            </li>
+                            <li>
+                                create <strong>mandatory</strong>
+                                list of <code><a href="doc/Classes/EcrInfo.html">EcrInfo</a></code> and add with <code><a href="doc/Classes/Terminal.html#/s:6TimApi8TerminalC10addEcrDatayAA0E4InfoC03ecrG0_tF">addEcrData</a></code>
+                            </li>
+                            <li>create list of <code><a href="doc/Classes/PrintOption.html">PrintOptions</a></code> and set with <code><a href="doc/Classes/Terminal.html#/s:6TimApi8TerminalC12printOptionsSayAA11PrintOptionCGvp">.printOptions</a></code>
+                            </li>
+                            <li>add listeners (<code><a href="doc/Classes/Terminal.html#/s:6TimApi8TerminalC11addListeneryAA0cE0_p8listener_tF">addListeners</a></code>)
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <code><a href="doc/Classes/Terminal.html#/s:6TimApi8TerminalC7connectyyKF">Connect</a></code>
+                        and
+                        <code><a href="doc/Classes/Terminal.html#/s:6TimApi8TerminalC5loginyyKF">Login</a></code>. This can be done automatically, when the first terminal operation is called or manually using
+                        the login
+                        method.
+                    </li>
+                    <li>Use terminal operation functions.</li>
+                </ol>
+            </div><div class="col-md-6">
+                <figure><img src="res/img/operations_overview.png"><figcaption>Operations overview</figcaption></figure>
+            </div></div>
+        <div class="row"><div class="col-md-6"><hr>
+
+    </div></div></section>
+    <section id="automatisms"><h1><a name="automatisms"></a>Automatisms</h1><div class="row"><div class="col-md-6"><p>The TIM API uses two different types of automatisms:</p>
+        <ul>
+            <li>
+                <p>
+                    <strong>Pre-Automatisms:</strong>
+                    This means that all actions that need to be done before a function can be called.
+                    E.g. a transaction can be called in disconnected state without having called connect, login and
+                    activate
+                    in advance. These are called automatically by the TIM API before the transaction is performed. The
+                    Pre-Automatisms
+                    are enabled by default.
+                </p>
+            </li>
+            <li>
+                <p>
+                    <strong>Post-Automatisms:</strong>
+                    These automatisms can be enabled or disabled using the members <code><a href="doc/Classes/TerminalSettings.html#/s:6TimApi16TerminalSettingsC10autoCommitSbvp">autoCommit</a></code> and
+                    <code><a href="doc/Classes/TerminalSettings.html#/s:6TimApi16TerminalSettingsC11fetchBrandsSbvp">fetchBrands</a></code>. A Post-Automatism is triggered after an action has been performed. E.g. if a connect
+                    has
+                    been called and <code><a href="doc/Classes/TerminalSettings.html#/s:6TimApi16TerminalSettingsC11fetchBrandsSbvp">fetchBrands</a></code> is activated, an <code><a href="doc/Classes/Terminal.html#/s:6TimApi8TerminalC22applicationInformationyyKF">applicationInformation</a></code> request is called automatically
+                    after
+                    the connect. Or if  <code><a href="doc/Classes/TerminalSettings.html#/s:6TimApi16TerminalSettingsC10autoCommitSbvp">autoCommit</a></code> is activated a <code><a href="doc/Classes/Terminal.html#/s:6TimApi8TerminalC6commityyKF">commit</a></code> is performed automatically after a transaction
+                    has
+                    been made.  <code><a href="doc/Classes/TerminalSettings.html#/s:6TimApi16TerminalSettingsC10autoCommitSbvp">autoCommit</a></code> and <code><a href="doc/Classes/TerminalSettings.html#/s:6TimApi16TerminalSettingsC11fetchBrandsSbvp">fetchBrands</a></code> are enabled by default.
+                </p>
+            </li>
+        </ul>
+        <p>The following diagrams show the principle of the Pre-Automatisms and Post-Automatisms. Pre-Automatisms are
+            enabled by default and cannot be disabled. If an error occurs the started request from the ECR is returned
+            with an error.
+        </p>
+
+        </div></div><div class="row"><div class="col-md-6">
+
+                <p>
+                    <strong>Synchronous flow</strong>
+                </p>
+                <figure><img src="res/img/sync_flow.png"><figcaption>Synchronous flow</figcaption></figure>
+            </div><div class="col-md-6">
+                <p>
+                    <strong>Asynchronous flow</strong>
+                </p>
+                <figure><img src="res/img/async_flow.png"><figcaption>Asynchronous flow</figcaption></figure>
+            </div></div>
+        <div class="row"><div class="col-md-6"><hr>
+
+    </div></div></section>
+    <section id="methods"><h1><a name="methods"></a>Terminal methods overview</h1><div class="row"><div class="col-md-6">
+                <p>The basic operation modes of terminal <span lang="java swift">method</span> calls are:</p>
+                <ol>
+                    <li>
+                        <p>
+                            <strong>Synchronous</strong>
+                            <br><span lang="java swift">Method calls are blocking and return after operation is finished successfully or throw a
+                            TimException otherwise.
+                            Please not that it is highly discouraged to use synchronous method calls on mobile platforms like <i lang="swift">iOS</i>
+                            because the main thread will be blocked by a synchronous call which may not be tolerated by the platform, as they are quite strict regarding blocking calls.
+                            This may result in a crash of the mobile App.
+                            </span> </p>
+                    </li>
+                    <li>
+                        <p>
+                            <strong>Asynchronous</strong>
+                            <br>
+                            <span lang="java swift">
+                                Method returns immediately after the operation has started or throws a
+                                <code><a href="doc/Classes/TimException.html">TimException</a></code>
+                                otherwise. A listener-event-method will be called after operation is finished successfully.
+                                All listener-event-methods
+                                contain a
+                                <code><a href="doc/Classes/TimEvent.html">TimEvent</a></code>. In case of failure a
+                                <code><a href="doc/Classes/TimException.html">TimException</a></code>
+                                is included. User-implemented listener-handlers can be added to the
+                                <code><a href="doc/Classes/Terminal.html">Terminal</a></code>-instance with
+                                <code><a href="doc/Classes/Terminal.html#/s:6TimApi8TerminalC11addListeneryAA0cE0_p8listener_tF">addListener</a></code>.
+                            </span> </p>
+                    </li>
+                </ol>
+                <p lang="swift"> If asynchronous functions are used there are two ways to handle the callbacks:
+                  <ul>
+                    <li>Either the protocol <code><a href="doc/Protocols/TerminalListener.html#">TerminalListener</a></code> can be used directly. Which means that all defined
+                  protocol function must be implemented.</li>
+                    <li>Or the prepared default protocol implementation <code><a href="doc/Classes/DefaultTerminalListener.html#">DefaultTerminalListener</a></code> can be used
+                  and only the necessary protocol function must be overwritten.</li>
+                  </ul>
+                </p>
+            </div><div class="col-md-6">
+                <p>Code example for adding a terminal listener:</p>
+                <pre><code class="language-{.swift}">//
+// Handle asynchronous terminal events.
+//
+class TerminalHandler: DefaultTerminalListener {
+
+    //
+    // The status of the terminal changed. This includes processing status and display content
+    //
+    override func terminalStatusChanged(terminal: Terminal) {
+        // Events usually originate from a different thread than the main thread.
+        // Always use DispatchQueue.main.async to be safe
+        DispatchQueue.main.async {
+            // handle terminal status change
+        }
+    }
+
+    //
+    // A call to Terminal.transactionAsync finished.
+    //
+    override func transactionCompleted(event: TimEvent, data: TransactionResponse?) {
+        // Events usually originate from a different thread than the main thread.
+        // Always use DispatchQueue.main.async to be safe
+        DispatchQueue.main.async {
+            // handle transaction finished using data
+        }
+    }
+}</code></pre>
+            </div></div>
+        <div class="row"><div class="col-md-6"></div></div><section id="mainFunc"><h2><a name="mainFunc"></a>Main / guide retail terminal functions</h2><div class="row"><div class="col-md-6"><table class="table">
+                <thead>
+                    <tr>
+                        <th>
+                            <strong>Sync method</strong>
+                            <br>
+                            <span class="asyncMethod">Async method</span>
+                            <br>
+                            <span class="completedMethod">Completed event</span>
+                        </th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <code class="syncMethod"><a class="syncMethod" href="doc/Classes/Terminal.html#/s:6TimApi8TerminalC8activateAA16ActivateResponseCyKF">activate</a></code>
+                            <br>
+                            <code class="asyncMethod"><a class="asyncMethod" href="doc/Classes/Terminal.html#/s:6TimApi8TerminalC13activateAsyncyyKF">activateAsync</a></code>
+                            <br>
+                            <code class="completedMethod"><a class="completedMethod" href="doc/Protocols/TerminalListener.html#/s:6TimApi16TerminalListenerP17activateCompletedyAA0A5EventC5event_AA16ActivateResponseCSg4datatF">activateCompleted</a></code>
+                        </td>
+                        <td>Open a user shift.</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code class="syncMethod"><a class="syncMethod" href="doc/Classes/Terminal.html#/s:6TimApi8TerminalC22applicationInformationyyKF">applicationInformation</a></code>
+                            <br>
+                            <code class="asyncMethod"><a class="asyncMethod" href="doc/Classes/Terminal.html#/s:6TimApi8TerminalC27applicationInformationAsyncyyKF">
+                                applicationInformationAsync
+                            </a></code>
+                            <br>
+                            <code class="completedMethod"><a class="completedMethod" href="doc/Protocols/TerminalListener.html#/s:6TimApi16TerminalListenerP31applicationInformationCompletedyAA0A5EventC5event_tF">
+                                applicationInformationCompleted
+                            </a></code>
+                        </td>
+                        <td>Request the list of brands available on the terminal.</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code class="syncMethod"><a class="syncMethod" href="doc/Classes/Terminal.html#/s:6TimApi8TerminalC7balanceAA15BalanceResponseCyKF">balance</a></code>
+                            <br>
+                            <code class="asyncMethod"><a class="asyncMethod" href="doc/Classes/Terminal.html#/s:6TimApi8TerminalC12balanceAsyncyyKF">balanceAsync</a></code>
+                            <br>
+                            <code class="completedMethod"><a class="completedMethod" href="doc/Protocols/TerminalListener.html#/s:6TimApi16TerminalListenerP16balanceCompletedyAA0A5EventC5event_AA15BalanceResponseCSg4datatF">balanceCompleted</a></code>
+                        </td>
+                        <td>Force the EFT Terminal to transmit all transactions to the
+                            <br>
+                            host system as well to do the daily closing.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code class="syncMethod"><a class="syncMethod" href="doc/Classes/Terminal.html#/s:6TimApi8TerminalC14changeSettingsys10DictionaryVyAA12CSettingTypeOSSG8settings_tKF">changeSettings</a></code>
+                            <br>
+                            <code class="asyncMethod"><a class="asyncMethod" href="doc/Classes/Terminal.html#/s:6TimApi8TerminalC19changeSettingsAsyncys10DictionaryVyAA12CSettingTypeOSSG8settings_tKF">changeSettingsAsync</a></code>
+                            <br>
+                            <code class="completedMethod"><a class="completedMethod" href="doc/Protocols/TerminalListener.html#/s:6TimApi16TerminalListenerP23changeSettingsCompletedyAA0A5EventC5event_tF">changeSettingsCompleted
+                            </a></code>
+                        </td>
+                        <td>Change configuration parameters of the EFT Terminal.</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code class="syncMethod"><a class="syncMethod" href="doc/Classes/Terminal.html#/s:6TimApi8TerminalC6commityyKF">commit</a></code>
+                            <br>
+                            <code class="asyncMethod"><a class="asyncMethod" href="doc/Classes/Terminal.html#/s:6TimApi8TerminalC11commitAsyncyyKF">commitAsync</a></code>
+                            <br>
+                            <code class="completedMethod"><a class="completedMethod" href="doc/Protocols/TerminalListener.html#/s:6TimApi16TerminalListenerP15commitCompletedyAA0A5EventC5event_AA9PrintDataCSg4datatF">commitCompleted</a></code>
+                        </td>
+                        <td>Perform Commit-operation after a successful Transaction call.</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code class="syncMethod"><a class="syncMethod" href="doc/Classes/Terminal.html#/s:6TimApi8TerminalC7connectyyKF">connect</a></code>
+                            <br>
+                            <code class="asyncMethod"><a class="asyncMethod" href="doc/Classes/Terminal.html#/s:6TimApi8TerminalC12connectAsyncyyKF">connectAsync</a></code>
+                            <br>
+                            <code class="completedMethod"><a class="completedMethod" href="doc/Protocols/TerminalListener.html#/s:6TimApi16TerminalListenerP16connectCompletedyAA0A5EventC5event_tF">connectCompleted</a></code>
+                        </td>
+                        <td>Initiates a connection to the EFT Terminal.</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code class="syncMethod"><a class="syncMethod" href="doc/Classes/Terminal.html#/s:6TimApi8TerminalC14counterRequestAA8CountersCAA12CCounterTypeO4type_tKF">counterRequest</a></code>
+                            <br>
+                            <code class="asyncMethod"><a class="asyncMethod" href="doc/Classes/Terminal.html#/s:6TimApi8TerminalC19counterRequestAsyncyAA12CCounterTypeO4type_tKF">counterRequestAsync</a></code>
+                            <br>
+                            <code class="completedMethod"><a class="completedMethod" href="doc/Protocols/TerminalListener.html#/s:6TimApi16TerminalListenerP23counterRequestCompletedyAA0A5EventC5event_AA8CountersCSg4datatF">counterRequestCompleted
+                            </a></code>
+                        </td>
+                        <td>Get counter information`s from the EFT Terminal.</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code class="syncMethod"><a class="syncMethod" href="doc/Classes/Terminal.html#/s:6TimApi8TerminalC8dccRatesAA9PrintDataCyKF">dccRates</a></code>
+                            <br>
+                            <code class="asyncMethod"><a class="asyncMethod" href="doc/Classes/Terminal.html#/s:6TimApi8TerminalC13dccRatesAsyncyyKF">dccRatesAsync</a></code>
+                            <br>
+                            <code class="completedMethod"><a class="completedMethod" href="doc/Protocols/TerminalListener.html#/s:6TimApi16TerminalListenerP17dccRatesCompletedyAA0A5EventC5event_AA9PrintDataCSg4datatF">dccRatesCompleted</a></code>
+                        </td>
+                        <td>Request DCC rates from the EFT Terminal.</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code class="syncMethod"><a class="syncMethod" href="doc/Classes/Terminal.html#/s:6TimApi8TerminalC10deactivateAA18DeactivateResponseCyKF">deactivate</a></code>
+                            <br>
+                            <code class="asyncMethod"><a class="asyncMethod" href="doc/Classes/Terminal.html#/s:6TimApi8TerminalC15deactivateAsyncyyKF">deactivateAsync</a></code>
+                            <br>
+                            <code class="completedMethod"><a class="completedMethod" href="doc/Protocols/TerminalListener.html#/s:6TimApi16TerminalListenerP19deactivateCompletedyAA0A5EventC5event_AA18DeactivateResponseCSg4datatF">deactivateCompleted</a></code>
+                        </td>
+                        <td>Close a user shift.</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code class="syncMethod"><a class="syncMethod" href="doc/Classes/Terminal.html#/s:6TimApi8TerminalC10disconnectyyKF">disconnect</a></code>
+                            <br>
+                            <code class="asyncMethod"><a class="asyncMethod" href="doc/Classes/Terminal.html#/s:6TimApi8TerminalC15disconnectAsyncyyKF">disconnectAsync</a></code>
+                            <br>
+                            <code class="completedMethod"><a class="completedMethod" href="doc/Protocols/TerminalListener.html#/s:6TimApi16TerminalListenerP19disconnectCompletedyAA0A5EventC5event_tF">disconnected</a></code>
+                        </td>
+                        <td>Interrupts the connection to the EFT Terminal.</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code class="syncMethod"><a class="syncMethod" href="doc/Classes/Terminal.html#/s:6TimApi8TerminalC19hardwareInformationAA08HardwareE8ResponseCSgyKF">hardwareInformation</a></code>
+                            <br>
+                            <code class="asyncMethod"><a class="asyncMethod" href="doc/Classes/Terminal.html#/s:6TimApi8TerminalC24hardwareInformationAsyncyyKF">hardwareInformationAsync
+                            </a></code>
+                            <br>
+                            <code class="completedMethod"><a class="completedMethod" href="doc/Protocols/TerminalListener.html#/s:6TimApi16TerminalListenerP28hardwareInformationCompletedyAA0A5EventC5event_AA08HardwareF8ResponseCSg4datatF">
+                                hardwareInformationCompleted
+                            </a></code>
+                        </td>
+                        <td>Get hardware information from the EFT Terminal.</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code class="syncMethod"><a class="syncMethod" href="doc/Classes/Terminal.html#/s:6TimApi8TerminalC5loginyyKF">login</a></code>
+                            <br>
+                            <code class="asyncMethod"><a class="asyncMethod" href="doc/Classes/Terminal.html#/s:6TimApi8TerminalC10loginAsyncyyKF">loginAsync</a></code>
+                            <br>
+                            <code class="completedMethod"><a class="completedMethod" href="doc/Protocols/TerminalListener.html#/s:6TimApi16TerminalListenerP14loginCompletedyAA0A5EventC5event_tF">loginCompleted</a></code>
+                        </td>
+                        <td>Activate a communication session between the ECR and
+                            <br>
+                            the terminal.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code class="syncMethod"><a class="syncMethod" href="doc/Classes/Terminal.html#/s:6TimApi8TerminalC6logoutyyKF">logout</a></code>
+                            <br>
+                            <code class="asyncMethod"><a class="asyncMethod" href="doc/Classes/Terminal.html#/s:6TimApi8TerminalC11logoutAsyncyyKF">logoutAsync</a></code>
+                            <br>
+                            <code class="completedMethod"><a class="completedMethod" href="doc/Protocols/TerminalListener.html#/s:6TimApi16TerminalListenerP15logoutCompletedyAA0A5EventC5event_tF">logoutCompleted</a></code>
+                        </td>
+                        <td>Terminate an active communication session between the ECR<br>and the terminal.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code class="syncMethod"><a class="syncMethod" href="doc/Classes/Terminal.html#/s:6TimApi8TerminalC6rebootyyKF">reboot</a></code>
+                            <br>
+                            <code class="asyncMethod"><a class="asyncMethod" href="doc/Classes/Terminal.html#/s:6TimApi8TerminalC11rebootAsyncyyKF">rebootAsync</a></code>
+                            <br>
+                            <code class="completedMethod"><a class="completedMethod" href="doc/Protocols/TerminalListener.html#/s:6TimApi16TerminalListenerP15rebootCompletedyAA0A5EventC5event_tF">rebootCompleted</a></code>
+                        </td>
+                        <td>Force the EFT Terminal to reboot.</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code class="syncMethod"><a class="syncMethod" href="doc/Classes/Terminal.html#/s:6TimApi8TerminalC14receiptRequestAA07ReceiptE8ResponseCAA08CReceiptE4TypeO4type_tKF">receiptRequest</a></code>
+                            <br>
+                            <code class="asyncMethod"><a class="asyncMethod" href="doc/Classes/Terminal.html#/s:6TimApi8TerminalC19receiptRequestAsyncyAA08CReceiptE4TypeO4type_tKF">receiptRequestAsync</a></code>
+                            <br>
+                            <code class="completedMethod"><a class="completedMethod" href="doc/Protocols/TerminalListener.html#/s:6TimApi16TerminalListenerP23receiptRequestCompletedyAA0A5EventC5event_AA07ReceiptF8ResponseCSg4datatF">receiptRequestCompleted
+                            </a></code>
+                        </td>
+                        <td>Receive the latest receipt or a list of silent receipts.</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code class="syncMethod"><a class="syncMethod" href="doc/Classes/Terminal.html#/s:6TimApi8TerminalC14reconciliationAA22ReconciliationResponseCyKF">reconciliation</a></code>
+                            <br>
+                            <code class="asyncMethod"><a class="asyncMethod" href="doc/Classes/Terminal.html#/s:6TimApi8TerminalC19reconciliationAsyncyyKF">reconciliationAsync</a></code>
+                            <br>
+                            <code class="completedMethod"><a class="completedMethod" href="doc/Protocols/TerminalListener.html#/s:6TimApi16TerminalListenerP23reconciliationCompletedyAA0A5EventC5event_AA22ReconciliationResponseCSg4datatF">reconciliationCompleted
+                            </a></code>
+                        </td>
+                        <td>Force the EFT Terminal to transmit all financial transactions
+                            <br>
+                            to the host system.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code class="syncMethod"><a class="syncMethod" href="doc/Classes/Terminal.html#/s:6TimApi8TerminalC8reconfigAA9PrintDataCyKF">reconfig</a></code>
+                            <br>
+                            <code class="asyncMethod"><a class="asyncMethod" href="doc/Classes/Terminal.html#/s:6TimApi8TerminalC13reconfigAsyncyyKF">reconfigAsync</a></code>
+                            <br>
+                            <code class="completedMethod"><a class="completedMethod" href="doc/Protocols/TerminalListener.html#/s:6TimApi16TerminalListenerP17reconfigCompletedyAA0A5EventC5event_AA9PrintDataCSg4datatF">reconfigCompleted</a></code>
+                        </td>
+                        <td>Force the EFT Terminal to get the configuration from the service center.</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code class="syncMethod"><a class="syncMethod" href="doc/Classes/Terminal.html#/s:6TimApi8TerminalC8rollbackAA9PrintDataCyKF">rollback</a></code>
+                            <br>
+                            <code class="asyncMethod"><a class="asyncMethod" href="doc/Classes/Terminal.html#/s:6TimApi8TerminalC13rollbackAsyncyyKF">rollbackAsync</a></code>
+                            <br>
+                            <code class="completedMethod"><a class="completedMethod" href="doc/Protocols/TerminalListener.html#/s:6TimApi16TerminalListenerP17rollbackCompletedyAA0A5EventC5event_AA9PrintDataCSg4datatF">rollbackCompleted</a></code>
+                        </td>
+                        <td>Prevent a transaction from being committed to the transaction
+                            <br>
+                            log and generates a technical reversal of the authorization.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code class="syncMethod"><a class="syncMethod" href="doc/Classes/Terminal.html#/s:6TimApi8TerminalC14softwareUpdateAA13CUpdateStatusOyKF">softwareUpdate</a></code>
+                            <br>
+                            <code class="asyncMethod"><a class="asyncMethod" href="doc/Classes/Terminal.html#/s:6TimApi8TerminalC19softwareUpdateAsyncyyKF">softwareUpdateAsync</a></code>
+                            <br>
+                            <code class="completedMethod"><a class="completedMethod" href="doc/Protocols/TerminalListener.html#/s:6TimApi16TerminalListenerP23softwareUpdateCompletedyAA0A5EventC5event_AA13CUpdateStatusOSg4datatF">softwareUpdateCompleted
+                            </a></code>
+                        </td>
+                        <td>Force the EFT Terminal to start a Software Update.</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code class="syncMethod"><a class="syncMethod" href="doc/Classes/Terminal.html#/s:6TimApi8TerminalC17systemInformationAA06SystemE8ResponseCyKF">systemInformation</a></code>
+                            <br>
+                            <code class="asyncMethod"><a class="asyncMethod" href="doc/Classes/Terminal.html#/s:6TimApi8TerminalC22systemInformationAsyncyyKF">systemInformationAsync</a></code>
+                            <br>
+                            <code class="completedMethod"><a class="completedMethod" href="doc/Protocols/TerminalListener.html#/s:6TimApi16TerminalListenerP26systemInformationCompletedyAA0A5EventC5event_AA06SystemF8ResponseCSg4datatF">
+                                systemInformationCompleted
+                            </a></code>
+                        </td>
+                        <td>Request system information from the EFT Terminal.</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code class="syncMethod"><a class="syncMethod" href="doc/Classes/Terminal.html#/s:6TimApi8TerminalC11transactionAA19TransactionResponseCAA16CTransactionTypeO4type_AA6AmountCSg6amounttKF">transaction</a></code>
+                            <br>
+                            <code class="asyncMethod"><a class="asyncMethod" href="doc/Classes/Terminal.html#/s:6TimApi8TerminalC16transactionAsyncyAA16CTransactionTypeO4type_AA6AmountCSg6amounttKF">transactionAsync</a></code>
+                            <br>
+                            <code class="completedMethod"><a class="completedMethod" href="doc/Protocols/TerminalListener.html#/s:6TimApi16TerminalListenerP20transactionCompletedyAA0A5EventC5event_AA19TransactionResponseCSg4datatF">transactionCompleted</a></code>
+                        </td>
+                        <td>Starts an EFT Terminal Transaction.</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div></div></section>  
+
+        <div class="row"><div class="col-md-6"></div></div><section class="filterGuides guidePetrol" id="petrolFunc"><h2><a name="petrolFunc"></a>Guide Petrol terminal functions</h2><div class="row"><div class="col-md-6"><table class="table">
+                <thead>
+                    <tr>
+                        <th>
+                            <strong>Sync method</strong>
+                            <br>
+                            <span class="asyncMethod">Async method</span>
+                            <br>
+                            <span class="completedMethod">Completed event</span>
+                        </th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <code class="asyncMethod"><a class="asyncMethod" href="doc/Classes/Terminal.html#/s:6TimApi8TerminalC6cancelyyKF">cancel</a></code>
+                        </td>
+                        <td>Cancel an asynchronous function.</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code class="syncMethod"><a class="syncMethod" href="doc/Classes/Terminal.html#/s:6TimApi8TerminalC15initTransactionAA8CardDataCSgSb13displayAmount_AA0I0CSg6amounttKF">initTransaction</a></code>
+                            <br>
+                            <code class="asyncMethod"><a class="asyncMethod" href="doc/Classes/Terminal.html#/s:6TimApi8TerminalC20initTransactionAsyncySb13displayAmount_AA0H0CSg6amounttKF">initTransactionAsync</a></code>
+                            <br>
+                            <code class="completedMethod"><a class="completedMethod" href="doc/Protocols/TerminalListener.html#/s:6TimApi16TerminalListenerP24initTransactionCompletedyAA0A5EventC5event_AA8CardDataCSg4datatF">initTransactionCompleted</a></code>
+                        </td>
+                        <td>Retreive card data for the presented card.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div></div></section>  
+
+        <div class="row"><div class="col-md-6"></div></div><section class="filterGuides guideUnattended" id="uatFunc"><h2><a name="uatFunc"></a>Guide Unattended terminal functions</h2><div class="row"><div class="col-md-6"><table class="table">
+                <thead>
+                    <tr>
+                        <th>
+                            <strong>Sync method</strong>
+                            <br>
+                            <span class="asyncMethod">Async method</span>
+                            <br>
+                            <span class="completedMethod">Completed event</span>
+                        </th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <code class="syncMethod"><a class="syncMethod" href="doc/Classes/Terminal.html#/s:6TimApi8TerminalC10openReaderyyKF">openReader</a></code>
+                            <br>
+                            <code class="openReaderasyncMethod"><a class="openReaderasyncMethod" href="doc/Classes/Terminal.html#/s:6TimApi8TerminalC15openReaderAsyncyyKF">Async</a></code>
+                            <br>
+                            <code class="completedMethod"><a class="completedMethod" href="doc/Protocols/TerminalListener.html#/s:6TimApi16TerminalListenerP19openReaderCompletedyAA0A5EventC5event_tF">openReaderCompleted</a></code>
+                        </td>
+                        <td>Opens the shutter of the card reader.</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code class="syncMethod"><a class="syncMethod" href="doc/Classes/Terminal.html#/s:6TimApi8TerminalC11closeReaderyyKF">closeReader</a></code>
+                            <br>
+                            <code class="asyncMethod"><a class="asyncMethod" href="doc/Classes/Terminal.html#/s:6TimApi8TerminalC16closeReaderAsyncyyKF">closeReaderAsync</a></code>
+                            <br>
+                            <code class="completedMethod"><a class="completedMethod" href="doc/Protocols/TerminalListener.html#/s:6TimApi16TerminalListenerP20closeReaderCompletedyAA0A5EventC5event_tF">closeReaderCompleted</a></code>
+                        </td>
+                        <td>Closes the shutter of the card reader.</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code class="syncMethod"><a class="syncMethod" href="doc/Classes/Terminal.html#/s:6TimApi8TerminalC9ejectCardyyKF">ejectCard</a></code>
+                            <br>
+                            <code class="asyncMethod"><a class="asyncMethod" href="doc/Classes/Terminal.html#/s:6TimApi8TerminalC14ejectCardAsyncyyKF">ejectCardAsync</a></code>
+                            <br>
+                            <code class="completedMethod"><a class="completedMethod" href="doc/Protocols/TerminalListener.html#/s:6TimApi16TerminalListenerP18ejectCardCompletedyAA0A5EventC5event_tF">ejectCardCompleted</a></code>
+                        </td>
+                        <td>Ejects the card from the card reader.</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code class="syncMethod"><a class="syncMethod" href="doc/Classes/Terminal.html#/s:6TimApi8TerminalC21openMaintenanceWindowyyKF">openMaintenanceWindow</a></code>
+                            <br>
+                            <code class="asyncMethod"><a class="asyncMethod" href="doc/Classes/Terminal.html#/s:6TimApi8TerminalC26openMaintenanceWindowAsyncyyKF">openMaintenanceWindowAsync</a></code>
+                            <br>
+                            <code class="completedMethod"><a class="completedMethod" href="doc/Protocols/TerminalListener.html#/s:6TimApi16TerminalListenerP30openMaintenanceWindowCompletedyAA0A5EventC5event_tF">openMaintenanceWindowCompleted</a></code>
+                        </td>
+                        <td>Opens a maintenance window where the terminal can perform all maintenance processes it was not able to perform before.&gt;</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code class="syncMethod"><a class="syncMethod" href="doc/Classes/Terminal.html#/s:6TimApi8TerminalC22closeMaintenanceWindowyyKF">closeMaintenanceWindow</a></code>
+                            <br>
+                            <code class="asyncMethod"><a class="asyncMethod" href="doc/Classes/Terminal.html#/s:6TimApi8TerminalC27closeMaintenanceWindowAsyncyyKF">closeMaintenanceWindowAsync</a></code>
+                            <br>
+                            <code class="completedMethod"><a class="completedMethod" href="doc/Protocols/TerminalListener.html#/s:6TimApi16TerminalListenerP31closeMaintenanceWindowCompletedyAA0A5EventC5event_tF">closeMaintenanceWindowCompleted</a></code>
+                        </td>
+                        <td>Prohibits the EFT terminal from performing any triggered maintenance tasks.</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code class="syncMethod"><a class="syncMethod" href="doc/Classes/Terminal.html#/s:6TimApi8TerminalC10holdCommityyKF">holdCommit</a></code>
+                        </td>
+                        <td>Increases the commit timeout.</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code class="syncMethod"><a class="syncMethod" href="doc/Classes/Terminal.html#/s:6TimApi8TerminalC6cancelyyKF">cancel</a></code>
+                        </td>
+                        <td>Cancels a running request.</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code class="syncMethod"><a class="syncMethod" href="doc/Classes/Terminal.html#/s:6TimApi8TerminalC6commityyKF">commit</a></code>
+                            <br>
+                            <code class="asyncMethod"><a class="asyncMethod" href="doc/Classes/Terminal.html#/s:6TimApi8TerminalC11commitAsyncyyKF">commitAsync</a></code>
+                            <br>
+                            <code class="completedMethod"><a class="completedMethod" href="doc/Protocols/TerminalListener.html#/s:6TimApi16TerminalListenerP15commitCompletedyAA0A5EventC5event_AA9PrintDataCSg4datatF">commitCompleted</a></code>
+                        </td>
+                        <td>Commits a transaction after succesful authorization. A lower amount may be commited than the authorized amount.</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code class="syncMethod"><a class="syncMethod">amtAdjustment</a></code>
+                            <br>
+                            <code class="asyncMethod"><a class="asyncMethod">amtAdjustmentAsync</a></code>
+                            <br>
+                            <code class="completedMethod"><a class="completedMethod">amtAdjustmentCompleted</a></code>
+                        </td>
+                        <td>Send an amount adjustment notification to the terminal during an open transaction. The amount is used as the new amount for the transaction.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div></div></section> 
+         
+         
+
+
+        <div class="row"><div class="col-md-6"></div></div><section class="filterGuides guideDialog" id="dialogFunc"><h2><a name="dialogFunc"></a>Guide dialog terminal functions</h2><div class="row"><div class="col-md-6"><table class="table">
+              <thead>
+                  <tr>
+                      <th>
+                          <strong>Sync method</strong>
+                          <br>
+                          <span class="asyncMethod">Async method</span>
+                          <br>
+                          <span class="completedMethod">Completed event</span>
+                      </th>
+                      <th>Description</th>
+                  </tr>
+              </thead>
+              <tbody>
+                  <tr>
+                      <td>
+                          <code class="syncMethod"><a class="syncMethod" href="doc/Classes/Terminal.html#/s:6TimApi8TerminalC14openDialogModeyyKF">openDialogMode</a></code>
+                          <br>
+                          <code class="asyncMethod"><a class="asyncMethod" href="doc/Classes/Terminal.html#/s:6TimApi8TerminalC19openDialogModeAsyncyyKF">openDialogModeAsync</a></code>
+                          <br>
+                          <code class="completedMethod"><a class="completedMethod" href="doc/Protocols/TerminalListener.html#/s:6TimApi16TerminalListenerP23openDialogModeCompletedyAA0A5EventC5event_tF">openDialogModeCompleted</a></code>
+                      </td>
+                      <td>Open dialog mode on the terminal.</td>
+                  </tr>
+                  <tr>
+                      <td>
+                          <code class="syncMethod"><a class="syncMethod" href="doc/Classes/Terminal.html#/s:6TimApi8TerminalC15closeDialogModeyyKF">closeDialogMode</a></code>
+                          <br>
+                          <code class="asyncMethod"><a class="asyncMethod" href="doc/Classes/Terminal.html#/s:6TimApi8TerminalC20closeDialogModeAsyncyyKF">closeDialogModeAsync</a></code>
+                          <br>
+                          <code class="completedMethod"><a class="completedMethod" href="doc/Protocols/TerminalListener.html#/s:6TimApi16TerminalListenerP24closeDialogModeCompletedyAA0A5EventC5event_tF">closeDialogModeCompleted</a></code>
+                      </td>
+                      <td>Close dialog mode on the terminal.</td>
+                  </tr>
+                  <tr>
+                      <td>
+                          <code class="syncMethod"><a class="syncMethod" href="doc/Classes/Terminal.html#/s:6TimApi8TerminalC10showDialogAA04ShowE8ResponseCAA0fE7RequestC7request_tKF">showDialog</a></code>
+                          <br>
+                          <code class="asyncMethod"><a class="asyncMethod" href="doc/Classes/Terminal.html#/s:6TimApi8TerminalC15showDialogAsyncyAA04ShowE7RequestC7request_tKF">showDialogAsync</a></code>
+                          <br>
+                          <code class="completedMethod"><a class="completedMethod" href="doc/Protocols/TerminalListener.html#/s:6TimApi16TerminalListenerP19showDialogCompletedyAA0A5EventC5event_AA04ShowF8ResponseCSg4datatF">showDialogCompleted</a></code>
+                      </td>
+                      <td>Show dialog on the terminal.</td>
+                  </tr>
+                  <tr>
+                      <td>
+                          <code class="syncMethod"><a class="syncMethod" href="doc/Classes/Terminal.html#/s:6TimApi8TerminalC20showSignatureCaptureAA04ShoweF8ResponseCAA0geF7RequestC7request_tKF">showSignatureCapture</a></code>
+                          <br>
+                          <code class="asyncMethod"><a class="asyncMethod" href="doc/Classes/Terminal.html#/s:6TimApi8TerminalC25showSignatureCaptureAsyncyAA04ShoweF7RequestC7request_tKF">showSignatureCaptureAsync</a></code>
+                          <br>
+                          <code class="completedMethod"><a class="completedMethod" href="doc/Protocols/TerminalListener.html#/s:6TimApi16TerminalListenerP29showSignatureCaptureCompletedyAA0A5EventC5event_AA04ShowfG8ResponseCSg4datatF">showSignatureCaptureCompleted</a></code>
+                      </td>
+                      <td>Show signature capture on the terminal.</td>
+                  </tr>
+            </tbody>
+          </table>
+        </div></div></section>
+
+         
+         
+         
+         
+         
+
+        <div class="row"><div class="col-md-6"></div></div><section id="addMethods"><h2><a name="addMethods"></a>Additional terminal listener-events</h2><div class="row"><div class="col-md-6"><table class="table">
+                <thead>
+                    <tr>
+                        <th>Listener-event</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <code class="completedMethod"><a class="completedMethod" href="doc/Classes/DefaultTerminalListener.html#/s:6TimApi23DefaultTerminalListenerC16requestCompletedyAA0A5EventC5event_ypSg4datatF">requestCompleted</a></code>
+                        </td>
+                        <td>Operation started by an asynchronous function has finished.
+                            <br>
+                            Applications can use both operation specific completion callback
+                            <br>
+                            in combination with this generic completion callback.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code class="completedMethod"><a class="completedMethod" href="doc/Protocols/TerminalListener.html#/s:6TimApi16TerminalListenerP21terminalStatusChangedyAA0C0C0E0_tF">terminalStatusChanged
+                            </a></code>
+                        </td>
+                        <td>The terminal status has changed. The new status can be
+                            <br>
+                            retrieved from the TerminalStatus property.
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div></div></section>
+
+    <div class="row"><div class="col-md-6"></div></div></section>
+    <section id="swiftspec"><h1><a name="swiftspec"></a>Swift Specifics</h1><div class="row"><div class="col-md-6"><p>For Swift, the TIM API is delivered as a "Universal Framework". This means that the framework is build for multiple architectures,
+        for the physical iPhone (ARM) and for the iOS simulator (x86) for development purposes.
+      </p>
+      <p>To be able to upload your application to the Apple AppStore you must stripe the unused architecture from the framework as Apple does not allow
+        "Universal Frameworks" to be part of an App in the AppStore.
+        This can be done by adding a "Run Script" step to your build steps. Put is after your step to embed frameworks, set it to use "/bin/sh" and enter the following script:
+        <pre><code class="language-{.sh}">APP_PATH="${TARGET_BUILD_DIR}/${WRAPPER_NAME}"
+
+# This script loops through all the frameworks that you have embedded
+# in the application and removes all unused architectures.
+# This procedure is required to be able to upload your application to the AppStore, that
+# uses the TIM API.
+find "$APP_PATH" -name '*.framework' -type d | while read -r FRAMEWORK
+do
+    FRAMEWORK_EXECUTABLE_NAME=$(defaults read "$FRAMEWORK/Info.plist" CFBundleExecutable)
+    FRAMEWORK_EXECUTABLE_PATH="$FRAMEWORK/$FRAMEWORK_EXECUTABLE_NAME"
+    echo "Executable is $FRAMEWORK_EXECUTABLE_PATH"
+
+    EXTRACTED_ARCHS=()
+
+    for ARCH in $ARCHS
+    do
+        echo "Extracting $ARCH from $FRAMEWORK_EXECUTABLE_NAME"
+        lipo -extract "$ARCH" "$FRAMEWORK_EXECUTABLE_PATH" -o "$FRAMEWORK_EXECUTABLE_PATH-$ARCH"
+        EXTRACTED_ARCHS+=("$FRAMEWORK_EXECUTABLE_PATH-$ARCH")
+    done
+
+    echo "Merging extracted architectures: ${ARCHS}"
+    lipo -o "$FRAMEWORK_EXECUTABLE_PATH-merged" -create "${EXTRACTED_ARCHS[@]}"
+    rm "${EXTRACTED_ARCHS[@]}"
+
+    echo "Replacing original executable with thinned version"
+    rm "$FRAMEWORK_EXECUTABLE_PATH"
+    mv "$FRAMEWORK_EXECUTABLE_PATH-merged" "$FRAMEWORK_EXECUTABLE_PATH"
+
+done
+</code></pre>
+      </p>
+      <p>The script will look through your built applications "Frameworks" folder and make sure only the architectures you&#8217;re building for are present in each Framework.</p>
+    </div></div></section>
+    <section id="functionStateMatrix"><h1><a name="functionStateMatrix"></a>Function-State-Matrix</h1><div class="row"><div class="col-md-6"><p>Legend:
+        <ul>
+          <li>B1-Retail</li>
+          <li>B2-Petrol</li>
+          <li>B3-Unattended</li>
+          <li>B4-Advanced Retail</li>
+          <li>B5-Banking</li>
+          <li>B6-Dialog</li>
+          <li>B8-Gastro</li>
+          <li>B9-Hospitality</li>
+          <li>B10-Value Added Services (VAS)</li>
+          <li>B11-Austrian Use Cases</li>
+        </ul>
+      </p>
+        <table class="table">
+            <tr>
+                <th rowspan="4">Function</th>
+                <th colspan="5">State</th>
+                <th rowspan="4">Book(s)</th>
+            </tr>
+            <tr>
+                <th rowspan="3">Disconnected</th>
+                <th colspan="4">Connected</th>
+            </tr>
+            <tr>
+                <th rowspan="2">LoggedOut</th>
+                <th colspan="3">LoggedIn</th>
+            </tr>
+            <tr>
+                <th>Closed</th>
+                <th>Opened</th>
+                <th>Dialog</th>
+            </tr>
+            <tr>
+                <th>Activate</th>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>o</td>
+                <td>-</td>
+                <td>B1</td>
+            </tr>
+            <tr>
+                <th>ActivateServiceMenu</th>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>-</td>
+                <td>-</td>
+                <td>B3</td>
+            </tr>
+            <tr>
+                <th>AdjustReservation</th>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>-</td>
+                <td>B9</td>
+            </tr>
+            <tr>
+                <th>AmtAdjustment</th>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>-</td>
+                <td>B3</td>
+            </tr>
+            <tr>
+                <th>ApplicationInformation</th>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>-</td>
+                <td>-</td>
+                <td>B1</td>
+            </tr>
+            <tr>
+                <th>AuthorizeCredit</th>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>-</td>
+                <td>B5</td>
+            </tr>
+            <tr>
+                <th>AuthorizeDeposit</th>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>-</td>
+                <td>B5</td>
+            </tr>
+
+            <tr>
+                <th>Balance</th>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>-</td>
+                <td>-</td>
+                <td>B1</td>
+            </tr>
+            <tr>
+                <th>BalanceInquiry</th>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>-</td>
+                <td>B4, B5</td>
+            </tr>
+            <tr>
+                <th>Cancel</th>
+                <td>-</td>
+                <td>o</td>
+                <td>o</td>
+                <td>o</td>
+                <td>o</td>
+                <td>B1</td>
+            </tr>
+            <tr>
+                <th>CancelReservation</th>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>-</td>
+                <td>B9</td>
+            </tr>
+            <tr>
+                <th>CashAdvance</th>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>-</td>
+                <td>B4</td>
+            </tr>
+            <tr>
+                <th>ChangeSettings</th>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>-</td>
+                <td>-</td>
+                <td>B1</td>
+            </tr>
+            <tr>
+                <th>CloseDialogMode</th>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>B6</td>
+            </tr>
+            <tr>
+                <th>CloseMaintenanceWindow</th>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>-</td>
+                <td>-</td>
+                <td>B3</td>
+            </tr>
+            <tr>
+                <th>CloseReader</th>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>-</td>
+                <td>B3</td>
+            </tr>
+            <tr>
+                <th>CollectPoints</th>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>-</td>
+                <td>B10</td>
+            </tr>
+            <tr>
+                <th>Combined</th>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>-</td>
+                <td>B5</td>
+            </tr>
+            <tr>
+                <th>Commit</th>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>-</td>
+                <td>B1</td>
+            </tr>
+            <tr>
+                <th>CounterRequest</th>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>o</td>
+                <td>-</td>
+                <td>B1</td>
+            </tr>
+            <tr>
+                <th>Credit</th>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>-</td>
+                <td>B1</td>
+            </tr>
+            <tr>
+                <th>DccRates</th>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>-</td>
+                <td>-</td>
+                <td>B1</td>
+            </tr>
+            <tr>
+                <th>Deactivate</th>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>o</td>
+                <td>-</td>
+                <td>B1</td>
+            </tr>
+            <tr>
+                <th>EjectCard</th>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>-</td>
+                <td>B3</td>
+            </tr>
+            <tr>
+                <th>FeatureRequest</th>
+                <td>-</td>
+                <td>o</td>
+                <td>o</td>
+                <td>-</td>
+                <td>-</td>
+                <td>B1</td>
+            </tr>
+            <tr>
+                <th>FinalizePurchase</th>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>-</td>
+                <td>B2</td>
+            </tr>
+            <tr>
+                <th>FinishCeckout</th>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>-</td>
+                <td>B10</td>
+            </tr>
+            <tr>
+                <th>Giro</th>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>-</td>
+                <td>B5</td>
+            </tr>
+            <tr>
+                <th>HardwareInformation</th>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>-</td>
+                <td>-</td>
+                <td>B1</td>
+            </tr>
+            <tr>
+                <th>HoldCommit</th>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>-</td>
+                <td>B3</td>
+            </tr>
+            <tr>
+                <th>InitTransaction</th>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>-</td>
+                <td>B2</td>
+            </tr>
+            <tr>
+                <th>KeepAlive</th>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>o</td>
+                <td>o</td>
+                <td>B1</td>
+            </tr>
+            <tr>
+                <th>LicenseChanged</th>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>-</td>
+                <td>-</td>
+                <td>B1</td>
+            </tr>
+            <tr>
+                <th>LoadVoucher</th>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>-</td>
+                <td>B10</td>
+            </tr>
+            <tr>
+                <th>Login</th>
+                <td>-</td>
+                <td>o</td>
+                <td>o</td>
+                <td>-</td>
+                <td>-</td>
+                <td>B1</td>
+            </tr>
+            <tr>
+                <th>Logout</th>
+                <td>-</td>
+                <td>o</td>
+                <td>o</td>
+                <td>-</td>
+                <td>-</td>
+                <td>B1</td>
+            </tr>
+            <tr>
+                <th>LoyaltyData</th>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>-</td>
+                <td>B10</td>
+            </tr>
+            <tr>
+                <th>OpenDialogMode</th>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>-</td>
+                <td>B6</td>
+            </tr>
+            <tr>
+                <th>OpenMaintenanceWindow</th>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>-</td>
+                <td>-</td>
+                <td>B3</td>
+            </tr>
+            <tr>
+                <th>OpenReader</th>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>-</td>
+                <td>B3</td>
+            </tr>
+            <tr>
+                <th>PreAuthorization</th>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>-</td>
+                <td>B2</td>
+            </tr>
+            <tr>
+                <th>ProvideLoyaltyBasket</th>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>-</td>
+                <td>B10</td>
+            </tr>
+            <tr>
+                <th>Purchase</th>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>-</td>
+                <td>B1</td>
+            </tr>
+            <tr>
+                <th>PurchaseForcedAcceptance</th>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>-</td>
+                <td>B4</td>
+            </tr>
+            <tr>
+                <th>PurchaseMailOrdered</th>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>-</td>
+                <td>B4</td>
+            </tr>
+            <tr>
+                <th>PurchasePhoneAuthorized</th>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>-</td>
+                <td>B4</td>
+            </tr>
+            <tr>
+                <th>PurchasePhoneOrdered</th>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>-</td>
+                <td>B4</td>
+            </tr>
+            <tr>
+                <th>PurchaseReservation</th>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>-</td>
+                <td>B9</td>
+            </tr>
+            <tr>
+                <th>PurchaseReservationPhoneAuthorized</th>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>-</td>
+                <td>B9</td>
+            </tr>
+            <tr>
+                <th>PurchaseWithCashback</th>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>-</td>
+                <td>B4</td>
+            </tr>
+            <tr>
+                <th>Reboot</th>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>-</td>
+                <td>-</td>
+                <td>B1</td>
+            </tr>
+            <tr>
+                <th>ReceiptRequest</th>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>o</td>
+                <td>-</td>
+                <td>B1</td>
+            </tr>
+            <tr>
+                <th>Reconciliation</th>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>o</td>
+                <td>-</td>
+                <td>B1</td>
+            </tr>
+            <tr>
+                <th>Reconfig</th>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>-</td>
+                <td>-</td>
+                <td>B1</td>
+            </tr>
+            <tr>
+                <th>Reservation</th>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>-</td>
+                <td>B9</td>
+            </tr>
+            <tr>
+                <th>Reversal</th>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>-</td>
+                <td>B1</td>
+            </tr>
+            <tr>
+                <th>Rollback</th>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>-</td>
+                <td>B1</td>
+            </tr>
+            <tr>
+                <th>SendCardCommand</th>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>B6</td>
+            </tr>
+            <tr>
+                <th>ShowDialog</th>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>B6</td>
+            </tr>
+            <tr>
+                <th>ShowSignatureCapture</th>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>B6</td>
+            </tr>
+            <tr>
+                <th>SoftwareUpdate</th>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>-</td>
+                <td>-</td>
+                <td>B1</td>
+            </tr>
+            <tr>
+                <th>StartCheckout</th>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>-</td>
+                <td>B10</td>
+            </tr>
+            <tr>
+                <th>SystemInformation</th>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>-</td>
+                <td>-</td>
+                <td>B1</td>
+            </tr>
+            <tr>
+                <th>TerminalStatus</th>
+                <td>-</td>
+                <td>o</td>
+                <td>o</td>
+                <td>o</td>
+                <td>o</td>
+                <td>B1</td>
+            </tr>
+            <tr>
+                <th>VasInfo</th>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>-</td>
+                <td>B10</td>
+            </tr>
+        </table>
+      </div></div></section>
+
+    <section id="reference"><h1><a name="reference"></a>Reference</h1><div class="row"><div class="col-md-6"><table class="table">
+            <thead>
+                <tr>
+                    <th>Ref.</th>
+                    <th>Document</th>
+                    <th>Version</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>[B1]</td>
+                    <td>TIM &amp; SIXml Architecture: The SIX ECR Integration System</td>
+                    <td>0.10</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div></div></section>
+</main>
+    </div>
+  </div>
+</body>
+
+</html>

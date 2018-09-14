@@ -1,0 +1,8 @@
+var connection__mode_8h =
+[
+    [ "ta_e_connection_mode_t", "connection__mode_8h.html#a1638638980346003ee7bef7212113fef", null ],
+    [ "ta_e_connection_mode", "connection__mode_8h.html#ac0c4f7250d3a3a97915f27fa57f7c9da", [
+      [ "ta_c_cm_broadcast", "connection__mode_8h.html#ac0c4f7250d3a3a97915f27fa57f7c9daa32826d9c97ef86c157c041b263875451", null ],
+      [ "ta_c_cm_on_fix_ip", "connection__mode_8h.html#ac0c4f7250d3a3a97915f27fa57f7c9daa1c4674d22c0d8cd8fa79f47a19a6ecf0", null ]
+    ] ]
+];
