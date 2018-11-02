@@ -13,6 +13,7 @@ var guides_8h =
       [ "ta_c_guide_gastro", "guides_8h.html#a3094ffa1812abd0acaa42bde196bf996ad47aa90d0b9a609a2d07bedd1d02f3b9", null ],
       [ "ta_c_guide_hospitality", "guides_8h.html#a3094ffa1812abd0acaa42bde196bf996ac3afa2a990fac35c5ff9bf17c40c098a", null ],
       [ "ta_c_guide_value_added_services", "guides_8h.html#a3094ffa1812abd0acaa42bde196bf996a87221478f4f7070158b3c88dbd255cfc", null ],
-      [ "ta_c_guide_austrian_use_cases", "guides_8h.html#a3094ffa1812abd0acaa42bde196bf996a68bc0e26e0cba711790d10baef48932b", null ]
+      [ "ta_c_guide_austrian_use_cases", "guides_8h.html#a3094ffa1812abd0acaa42bde196bf996a68bc0e26e0cba711790d10baef48932b", null ],
+      [ "ta_c_guide_certification_extension", "guides_8h.html#a3094ffa1812abd0acaa42bde196bf996a94d235369ca212c48353366d68972cb1", null ]
     ] ]
 ];
