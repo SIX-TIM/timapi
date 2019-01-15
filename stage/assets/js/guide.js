@@ -2,7 +2,7 @@ var allGuides = []
 var currentGuides = {}
 
 var onCol = "rgb(188, 221, 188)";
-var offCol = "rgb(220, 220, 220)";
+var offCol = "rgb(210, 210, 210)";
 
 /**
  * Updates document elements and buttons according to guide-selection
@@ -17,12 +17,13 @@ function updateGUI(animated) {
         classList.forEach(function(guideName) {
             if(allGuides.indexOf(guideName) >= 0) {
                 try {
-                    visible = (localStorage.getItem(guideName) == "true")
+                    visible = visible || (localStorage.getItem(guideName) == "true")
                 }
                 catch(err) {
                     if(guideName in currentGuides) {
-                        visible = currentGuides[guideName];
+                        visible = visible || currentGuides[guideName];
                     }
+                    // if guide not present in currentGuides, add it as visible
                     else {
                         currentGuides[guideName] = true;
                         visible = true;
@@ -124,8 +125,71 @@ function addGuidesStylesheet() {
         });
     });
 
+    var guideDiv = document.getElementById('guideDiv');
+    var guideTitle = document.getElementById('guideTitle');
+    var guideCloseBtn = document.getElementById('closeGuideSel');
+    var guideSel = document.getElementById('guideSel');
+
+    // start hidden
+    var showGuideSelection = false
+    guideSel.style.opacity = 0;
+    guideCloseBtn.style.opacity = 0;
+    guideSel.style.display = "none";
+
+    guideDiv.onclick = function (e) {
+
+        if(e.srcElement != guideDiv && e.srcElement != guideTitle && e.srcElement != guideCloseBtn) {
+            return;
+        }
+
+        // hide guide selection; set css classes for animation
+        if(showGuideSelection) {
+            if (guideDiv.classList.contains('showGuideSel')){
+                guideDiv.classList.remove('showGuideSel');
+            }
+            if (!guideDiv.classList.contains('hideGuideSel')){
+                guideDiv.classList.add('hideGuideSel');
+            }
+            if (!guideSel.classList.contains('fade-out')){
+                guideSel.classList.add('fade-out');
+            }
+            if (guideSel.classList.contains('fade-in')){
+                guideSel.classList.remove('fade-in');
+            }
+            if (!guideCloseBtn.classList.contains('fade-out')){
+                guideCloseBtn.classList.add('fade-out');
+            }
+            if (guideCloseBtn.classList.contains('fade-in')){
+                guideCloseBtn.classList.remove('fade-in');
+            }
+            guideSel.style.display = "none";
+        }
+        // show guide selection; set css classes for animation
+        else {
+            if (guideDiv.classList.contains('hideGuideSel')){
+                guideDiv.classList.remove('hideGuideSel');
+            }
+            if (!guideDiv.classList.contains('showGuideSel')){
+                guideDiv.classList.add('showGuideSel');
+            }
+            if (guideSel.classList.contains('fade-out')){
+                guideSel.classList.remove('fade-out');
+            }
+            if (!guideSel.classList.contains('fade-in')){
+                guideSel.classList.add('fade-in');
+            }
+            if (guideCloseBtn.classList.contains('fade-out')){
+                guideCloseBtn.classList.remove('fade-out');
+            }
+            if (!guideCloseBtn.classList.contains('fade-in')){
+                guideCloseBtn.classList.add('fade-in');
+            }
+            guideSel.style.display = "block";
+        }
+        showGuideSelection = !showGuideSelection;
+    }
+
     // create buttons for all found guides
-    guideSel = document.getElementById('guideSel');
     allGuides.forEach(function(guide) {
 
         // create button
@@ -149,21 +213,18 @@ function addGuidesStylesheet() {
 
     });
 
-    // adjust styling of button-selector
+    // adjust styling of guide-selector based on count of guide-buttons
     if(allGuides.length > 0) {
-        // set correct y-offset for amount of active guides
-        var yOff = ((allGuides.length * 40)+20);
-        var guideSelCSS = "#guideDiv { bottom: -"+ yOff +"px; }";
+        var height = ((allGuides.length * 40)+72);
+        var keyframesCSS = "@keyframes grow { from { height: 62.75px; margin-bottom: 80px; } to { height: "+height+"px; margin-bottom: 10px; } } @keyframes shrink { from { height: "+height+"px; margin-bottom: 10px; } to { height: 62.75px; margin-bottom: 80px; } }";
         var style = document.createElement("style");
         if (style.styleSheet) {
-            style.styleSheet.cssText = guideSelCSS;
+            style.styleSheet.cssText = keyframesText;
         } else {
-            style.appendChild(document.createTextNode(guideSelCSS));
+            style.appendChild(document.createTextNode(keyframesCSS));
         }
         document.getElementsByTagName('head')[0].appendChild(style);
-
-        guideDiv = document.getElementById('guideDiv');
-        guideDiv.style.display = 'block';
+        guideDiv.style.display = "block";
     }
 }
 
