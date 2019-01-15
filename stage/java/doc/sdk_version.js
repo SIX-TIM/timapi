@@ -1,1 +1,1 @@
-timsdk = {}; timsdk.sdk_version = "18-11"; timsdk.api_lang = "Java";
+timsdk = {}; timsdk.sdk_version = "18-09"; timsdk.api_lang = "Java";
