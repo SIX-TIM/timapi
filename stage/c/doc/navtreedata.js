@@ -1,28 +1,27 @@
 var NAVTREE =
 [
-   
-    [ "API Documentation", null, [
-      [ "Quick Reference", "usergroup0.html", [
-        [ "terminal", "terminal_8h.html", null ],
-        [ "terminal_settings", "terminal__settings_8h.html", null ],
-        [ "object", "object_8h.html", null ],
-        [ "string", "string_8h.html", null ],
-        [ "list", "list_8h.html", null ],
-        [ "map", "map_8h.html", null ]
-      ] ],
-      [ "All files", "files.html", "files" ]
-    ] ]
+  [ "API Documentation", "files.html", [
+    [ "Quick Reference", "usergroup0.html", [
+      [ "terminal", "terminal_8h.html", null ],
+      [ "terminal_settings", "terminal__settings_8h.html", null ],
+      [ "object", "object_8h.html", null ],
+      [ "string", "string_8h.html", null ],
+      [ "list", "list_8h.html", null ],
+      [ "map", "map_8h.html", null ]
+    ] ],
+    [ "All files", "files.html", "files" ]
+  ] ]
 ];
 
 var NAVTREEINDEX =
 [
 "activate__response_8h.html",
-"config__data_8h.html",
-"custom__receipt__formatter_8h.html#a883a5ff78a5d2ad805f9f6af32a8d2afa6bb16e249a2dcbd80f317a96ef73d97b",
-"merchant__option_8h.html#aafe5d6ccbc3cdf2cfb5e9c4917b12031",
-"request__type_8h.html#a38268da75c7795fd3a4f057bc6a7fcd2af5919105790a5cb23420a3cb70e87529",
-"show__signature__capture__request_8h.html#a3adbc1506251ce7bd6523ca0d5541036",
-"terminal__settings_8h.html#a8ede86675a614549dabd967cb10f3f65"
+"counter_8h.html#aa4309f98a8a27186142c595f5ecd6819",
+"cvm_8h.html#a4ce593c95fbd4377c0f66ccecd502d4a",
+"non__financial__transactions_8h.html#afdbdfeff32cdefa3395e95e133d0feb9",
+"resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9aac2116966faf8dda47068df0e227c94f",
+"status__functions_8h.html#abf752dbd5ab3b758d2c21f390d8ef248acd2ecc9add0259ff123aca4916a576bf",
+"timedate_8h.html#a360f69408c6a3e3fcfeda1369dd8b4b6"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

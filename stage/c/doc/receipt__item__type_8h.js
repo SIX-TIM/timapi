@@ -38,7 +38,6 @@ var receipt__item__type_8h =
       [ "ta_c_rit_amount_saldo", "receipt__item__type_8h.html#a3d3044dd871a9c7d630dbcf3d9b738beadc6589d8b59c884c5b2f8d9c0831225d", null ],
       [ "ta_c_rit_ecr_seq_counter", "receipt__item__type_8h.html#a3d3044dd871a9c7d630dbcf3d9b738bea57f34ce45881749a46c88f2e8a45bf41", null ],
       [ "ta_c_rit_pan_receipt_dol", "receipt__item__type_8h.html#a3d3044dd871a9c7d630dbcf3d9b738bea85130ac9aaf5ad6a86d41900d74508ff", null ],
-      [ "ta_c_rit_pan_receipt_dol_index", "receipt__item__type_8h.html#a3d3044dd871a9c7d630dbcf3d9b738beac8ab664593a6434db7ea1a636d6a7a11", null ],
-      [ "ta_c_rit_tender_name", "receipt__item__type_8h.html#a3d3044dd871a9c7d630dbcf3d9b738bea1de5ccb7f61d8e19588ccfc056cf9892", null ]
+      [ "ta_c_rit_pan_receipt_dol_index", "receipt__item__type_8h.html#a3d3044dd871a9c7d630dbcf3d9b738beac8ab664593a6434db7ea1a636d6a7a11", null ]
     ] ]
 ];

@@ -6,8 +6,6 @@ var terminal_8h =
     [ "ta_terminal_activate_service_menu_async", "terminal_8h.html#a2452ca5e352debc37c22755d6827fbcd", null ],
     [ "ta_terminal_add_ecr_data", "terminal_8h.html#ac6e2071bf93b33885f8d678cfe12ab9b", null ],
     [ "ta_terminal_add_listener", "terminal_8h.html#a818466e97be59b5d4ecf9799d74b8074", null ],
-    [ "ta_terminal_amt_adjustment", "terminal_8h.html#a06fdcbf5f56e790c08d16eedc218f44a", null ],
-    [ "ta_terminal_amt_adjustment_2", "terminal_8h.html#a8c4abcfa3eae20b00b17d130eae3f0a3", null ],
     [ "ta_terminal_application_information", "terminal_8h.html#a28f11c630b476feeb2693d887edcdf10", null ],
     [ "ta_terminal_application_information_async", "terminal_8h.html#a736b061ade076923823e6da9a1cbd2f1", null ],
     [ "ta_terminal_balance", "terminal_8h.html#ac93126e2d5a90a6fd1d4c081c0466636", null ],
