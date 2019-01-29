@@ -34,61 +34,7 @@
             <div class="class-description"><p>Terminal base implementation. Create instance of TerminalApi
 to connect to payment terminal.</p>
 
-<p>Most simple usage is using synchronous methods like this example:</p>
-<pre style='border:#a0a0a0 solid 1px; background:#f0f0f0;'>
-<code>
-// Create settings with Terminal-ID of terminal to connect to
-TerminalSettings settings = new TerminalSettings();
-settings.setTerminalId('12345678');
-
-// Create terminal
-Terminal terminal = new Terminal(settings);
-
-// Run transaction
-terminal.transaction(constants.TransactionType.purchase,
-   new Amount(8.5, constants.Currency.CHF));
-
-// Disconnect from terminal and clean up properly
-terminal.dispose();
-</code>
-</pre>
-</p>
-
-<p>The above example blocks until the transaction finishes. To create
-a responsive application use asynchronous methods like this example:</p>
-<pre style='border:#a0a0a0 solid 1px; background:#f0f0f0;'>
-<code>
-// Asynchronous listener handling terminal events.
-class TerminalHandler extends DefaultTerminalListener {
-   {@literal @}Override
-   public void transactionCompleted(TimEvent event, final TransactionResponse data) {
-       javax.swing.SwingUtilities.invokeLater(new Runnable() {
-           {@literal @}Override
-           public void run() {
-               // handle transaction finished using data
-           }
-       });
-   }
-}
-
-// Create settings with Terminal-ID of terminal to connect to
-TerminalSettings settings = new TerminalSettings();
-settings.setTerminalId('12345678');
-
-// Create terminal
-Terminal terminal = new Terminal(settings);
-
-// Add listener to handle events
-terminal.addListener(new TerminalHandler());
-
-// Run transaction
-terminal.transactionAsync(constants.TransactionType.purchase,
-   new Amount(8.5, constants.Currency.CHF));
-
-// Once the transaction completes TerminalHandler.transactionCompleted will be called
-</code>
-</pre>
-</p></div>
+</div>
         
     
 </header>
