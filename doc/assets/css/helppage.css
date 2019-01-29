@@ -78,19 +78,23 @@ h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
     margin-top: 0px;
 }
 
-
+#navbar {
+    background-color: white;
+    padding-left: 15px;
+}
 
 main {
-    margin-left: 270px;
+    margin-left: 280px;
+    padding-right: 10px;
 }
 
 
 #langSel {
-    width: 125px;
-    height: 125px;   
-    margin-left: 110px;
-    background-color: rgb(238, 238, 238);
-    text-align: right;
+    width: 117px;
+    height: 125px;
+    margin-left: 0px;
+    background-color: rgb(225, 225, 225);
+    text-align: left;
     padding: 10px;
     z-index: 15;
 }
@@ -111,7 +115,7 @@ main {
     height: 1440px;
     left: 250px;
     top: 0px;
-    background-color: rgb(220, 220, 220);
+    background-color: rgb(225, 225, 225);
 }
 
 .seperator {
@@ -119,7 +123,7 @@ main {
     height: 15px;
     width: 125px;
     margin-left: 110px;
-    background-color: rgb(220, 220, 220);
+    background-color: rgb(225, 225, 225);
 }
 
 .linkDiv a {
@@ -133,58 +137,74 @@ main {
 }
 
 #guideDiv {
-    width: 125px;
-    height: auto;  
-    margin-left: 110px;
-    background-color: rgb(220, 220, 220);
-    padding: 0px; 
-    position:fixed;
-    animation: swing;
+    width: 118px;
+    height: 62px;
+    margin-top: -125px;
+    margin-left: 117px;
+    margin-bottom: 80px;
+    background-color: rgb(245, 245, 245);
+    padding: 0px;
+    position:relative;
     display: none;
 }
 
-#guideDiv:hover {
-    transform-origin: bottom;
-    transition: all 0.5s;
-    bottom:0px;
-    animation: swing;
+#guideTitle:hover {
+    background-color: rgb(245, 245, 245);
 }
-
-#guideDiv:not(:hover) {
-    transform-origin: bottom;
-    transition: all 0.5s;
-    animation: swing;
-}
-
 
 #guideTitle {
-    width: 125px;
-    height: 40px; 
-    padding: 10px; 
-    text-align: right;
+    width: 118px;
+    height: 62px;
+    padding: 10px;
+    text-align: left;
+    font-size: 105%;
+    font-weight: bold;
+    color: rgb(104, 104, 104);
+    cursor: pointer;
+    background-color: rgb(235, 235, 235);
+}
+
+#guideSel {
+    width: 118px;
+    height: auto;
+    padding: 10px;
 }
 
 code {
     color: #de3919;
-    background-color: rgb(238, 238, 238);
+    background-color: rgb(245, 245, 245);
 }
 
-#guideSel {
-    width: 125px;
-    height: auto; 
-    background-color: rgb(238, 238, 238);
-    padding: 10px;  
+.showGuideSel {
+    animation: grow 0.5s ease-in 1 forwards;
+}
+
+.hideGuideSel {
+    animation: shrink 0.5s ease-out 1 forwards;
 }
 
 .btnGuide {
-    width: 105px;
+    width: 100px;
     border: none;
     height: 30px;
     margin-bottom: 10px;
-    text-align: right;
+    text-align: left;
     background-color: rgb(188, 221, 188);
     background-color: rgb(220, 220, 220);
 }
+
+
+#closeGuideSel {
+    margin-left: 80px;
+    margin-top: -40px;
+}
+
+.close_icon {
+    height: 16px;
+    width: 16px;
+    background-repeat: no-repeat;
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAAsTAAALEwEAmpwYAAABWWlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iWE1QIENvcmUgNS40LjAiPgogICA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPgogICAgICA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIgogICAgICAgICAgICB4bWxuczp0aWZmPSJodHRwOi8vbnMuYWRvYmUuY29tL3RpZmYvMS4wLyI+CiAgICAgICAgIDx0aWZmOk9yaWVudGF0aW9uPjE8L3RpZmY6T3JpZW50YXRpb24+CiAgICAgIDwvcmRmOkRlc2NyaXB0aW9uPgogICA8L3JkZjpSREY+CjwveDp4bXBtZXRhPgpMwidZAAACJklEQVQ4EU2TS0tUYRjH55wxlQrJggyE0k8QraSt2EYaYxhGCYN2w1yFWediPkNzZVZRtHEW6ow7tV1Sq/AbCOIQgSTeSz1vv//reScP/Hlu/+c5z+WcSIQnmUxGJW88HrrQe0qlkt8zUHo5BPoUyOVyD8BH8EJ26LeFHCeTyUxls9lPxWLxvjgqYt9CYNj3/Q/GmBn8P5Hxer3+LZVK3RKx2WxeUHgC/wrmI9BBfwvnt32753nvw+RTESi2QsKrarX6HVvdTSBWwQgQJ0ZOGfnGFkBZwvGSIvdEQIrYpjM7DnYb+yGcE/Q7yAOwhM8uSmOYfD4/SXAZDGH/AQNgD+IVvsfo52AQHOGL090mumc3q2VUKpUvQRAkCJ4QULKKjIbJ0gcVAwkluyuogGm1WoE2zVI2sKfBL6AiFyT8DXX5pkleF1c52Mbd1mA4fZ+kS+wI0qMD9z1c4dqXv9vt2rGlS/E4V59OlU6nn3GBDr5RvZnkfkv6r+8xZqzRaPzQicm5tAUgmUKh8JRgWzO7ZOQhsQCfruMWuxuNRmPlcnmbUXzbHnd+DuEzxHGS7Kmwz7FjdIQwa9i6gL6B22AHzNdqtS0390KYfIjUnc8gzGqp2jh2MvQp+RiMgQVwvTjesgjhK8lDSHUwR/WOti1QRB3MAnVwF2wxxjuk/WlsFyxwjB9lHbyWP7yz3ZFmlY/YnDiM/ES283vuo3COm0HpPHZXUhzXyX8j3hgsDAePrwAAAABJRU5ErkJggg==');
+ }
 
 #navScrollspy .affix {
 	width: 250px;
@@ -219,10 +239,10 @@ code {
 }
 
 #menu-collapse {
-    position: absolute; 
-    z-index: 40; 
-    width: 100%; 
-    background: rgba(255, 255, 255, 0.9); 
+    position: absolute;
+    z-index: 40;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.9);
     padding: 1em;
     left: 0;
 }
@@ -242,8 +262,8 @@ code {
 
 @media (min-width: 768px) {
     #menu-collapse {
-        -moz-columns: 3 auto; 
-        -ms-columns: 3; 
+        -moz-columns: 3 auto;
+        -ms-columns: 3;
         -webkit-columns: 3;
         columns: 3;
     }
@@ -273,7 +293,7 @@ code {
     visibility: visible;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 1312px) {
     #content main {
         background: linear-gradient(to right, #fff 0, #fff 50%, #B9B2A8 50%, #B9B2A8 100%);
         min-height: 100vh;
@@ -332,7 +352,23 @@ td {
     word-break: break-word;
 }
 
-.anchor-link span { 
+.table {
+    background-color: whitesmoke;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+svg {
+    background-color: whitesmoke;
+    border-radius: 6px;
+}
+
+img {
+    background-color: whitesmoke;
+    border-radius: 6px;
+}
+
+.anchor-link span {
     display: none;
     margin: 0 0 0 0.5em;
     color: #ccc;
@@ -387,7 +423,7 @@ a[target='_blank'] {
 	font-weight: bold;
 	font-size: 18px;
 }
-    
+
 #timnum
 {
 	font-family: Roboto, sans-serif;
@@ -458,6 +494,17 @@ a[target='_blank'] {
     color: #fff;
 }
 
+#docTitle
+{
+    font-family: Roboto, Arial,sans-serif;
+	margin-top: 20px;
+	margin-left:4px;
+	margin-bottom: 4px;
+	font-weight: bold;
+	font-size: 16px;
+}
+
+
 figcaption {
     font-weight: bold;
     text-align: center;
@@ -477,28 +524,23 @@ img {
 @keyframes fadeIn {
 from {
     opacity: 0;
-    display: block;
  }
   to {
     opacity: 1;
-    display: block;
   }
 }
 
 @keyframes fadeOut {
  from {
     opacity: 1;
-    display: block;
  }
 
   to {
     opacity: 0;
-    display: none;
   }
 }
 
 .fade-in {
-    display: block;
     opacity: 0;
     animation: fadeIn 0.75s ease-in 1 forwards;
 }
