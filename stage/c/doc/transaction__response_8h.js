@@ -12,6 +12,7 @@ var transaction__response_8h =
     [ "ta_transaction_response_get_amount_dcc", "transaction__response_8h.html#ade7ccd13245844ce074d251ed8ef95a8", null ],
     [ "ta_transaction_response_get_amount_due", "transaction__response_8h.html#af9e25b4aab98870bff37e235e36c0b14", null ],
     [ "ta_transaction_response_get_amount_saldo", "transaction__response_8h.html#a69650eb05df37c15d94e7defa899cd3d", null ],
+    [ "ta_transaction_response_get_amount_tip", "transaction__response_8h.html#ac479cbadc4b4512d3e899b12f25d2d99", null ],
     [ "ta_transaction_response_get_basket", "transaction__response_8h.html#a5767b9bd6df78e08793b378549085628", null ],
     [ "ta_transaction_response_get_card_data", "transaction__response_8h.html#a7ab97c3099f827fb402917663079b6eb", null ],
     [ "ta_transaction_response_get_dcc_disclaimer", "transaction__response_8h.html#a3abe37707d357ede8e7cc014f86efe92", null ],
