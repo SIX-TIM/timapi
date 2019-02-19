@@ -22,8 +22,6 @@ var transaction__type_8h =
       [ "ta_c_tt_adjust_reservation", "transaction__type_8h.html#a08f07046806962db06121bebefd306d1a215861c9d1ce62a985b66afb13ae2d06", null ],
       [ "ta_c_tt_cancel_reservation", "transaction__type_8h.html#a08f07046806962db06121bebefd306d1a2917c0ad46e658f9798c1788be7a8279", null ],
       [ "ta_c_tt_purchase_reservation", "transaction__type_8h.html#a08f07046806962db06121bebefd306d1a2d31a1f52982de70b8ae25d9b481e9de", null ],
-      [ "ta_c_tt_purchase_reservation_phone_authorized", "transaction__type_8h.html#a08f07046806962db06121bebefd306d1a5febf514c1b3f0d5ac66e9420a32a1ae", null ],
-      [ "ta_c_tt_load_voucher", "transaction__type_8h.html#a08f07046806962db06121bebefd306d1a2f8a90960e2bac6291716b01f17647da", null ],
-      [ "ta_c_tt_collect_points", "transaction__type_8h.html#a08f07046806962db06121bebefd306d1a1ba813f22e10637a1b54af6538a44181", null ]
+      [ "ta_c_tt_purchase_reservation_phone_authorized", "transaction__type_8h.html#a08f07046806962db06121bebefd306d1a5febf514c1b3f0d5ac66e9420a32a1ae", null ]
     ] ]
 ];

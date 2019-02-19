@@ -5,29 +5,26 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>TIM SDK: Search</title>
-<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<title>TIM API C: Search</title>
+<link href="../../assets/css/tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<link href="../../assets/css/navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="resize.js"></script>
 <script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript" src="api_version.js"></script>
-<script type="text/javascript" src="sdk_version.js"></script>
-<script type="text/javascript" src="tim_inject.js"></script>
+<script type="text/javascript" src="navtree.js"></script><script type="text/javascript" src="../../assets/js/tim_inject.js"></script><script type="text/javascript" src="../../assets/js/sdk_version.js"></script><script type="text/javascript" src="../api_version.js"></script>
 <script type="text/javascript">
   $(document).ready(initResizable);
 </script>
-<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<link href="../../assets/css/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/search.js"></script>
 <script type="text/javascript">
   $(document).ready(function() {
     if ($('.searchresults').length > 0) { searchBox.DOMSearchField().focus(); }
   });
 </script>
-<link rel="search" href="search_opensearch.php?v=opensearch.xml" type="application/opensearchdescription+xml" title="TIM SDK"/>
-<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link rel="search" href="search_opensearch.php?v=opensearch.xml" type="application/opensearchdescription+xml" title="TIM API C"/>
+<link href="../../assets/css/doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -36,14 +33,14 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">TIM SDK
+   <div id="projectname">TIM  SDK
    </div>
    <div id="projectbrief">TIM API C</div>
   </td>
    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
           <div class="left">
-            <form id="FSearchBox" action="search.html" method="get">
-               
+            <form id="FSearchBox" action="search.html" method="get"><img id="MSearchSelect" src="search/mag.png" alt=""/>
+              
               <input type="text" id="MSearchField" name="query" value="Search" size="20" accesskey="S" 
                      onfocus="searchBox.OnSearchFieldFocus(true)" 
                      onblur="searchBox.OnSearchFieldFocus(false)"/>
@@ -95,6 +92,7 @@ $(document).ready(function(){initNavTree('search.html','');});
 </body>
 </html>
 <script id="searchdata" type="text/xmldata">
+<?xml version="1.0" encoding="UTF-8"?>
 <add>
   <doc>
     <field name="type">file</field>
@@ -113,10 +111,10 @@ $(document).ready(function(){initNavTree('search.html','');});
   </doc>
   <doc>
     <field name="type">function</field>
-    <field name="name">ta_activate_response_get_act_seq_counter</field>
+    <field name="name">ta_activate_response_get_acq_seq_counter</field>
     <field name="args">(ta_object_t response, int *acq_seq_counter)</field>
-    <field name="url">activate__response_8h.html#a4e356f8fbffe783c054211df556fe168</field>
-    <field name="keywords">ta_activate_response_get_act_seq_counter</field>
+    <field name="url">activate__response_8h.html#a00859fce7aaa22d8864f40ef514ccb87</field>
+    <field name="keywords">ta_activate_response_get_acq_seq_counter</field>
     <field name="text">Activation sequence counter response Object instance of type activate_response acq_seq_counter Pointer to variable to write value to ta_c_rc_ok Value written to acq_seq_counter ta_c_rc_invalid_argument response is ta_invalid_object ta_c_rc_invalid_argument response is not of type activate_response ta_c_rc_invalid_argument acq_seq_counter is null-pointer</field>
   </doc>
   <doc>
@@ -318,51 +316,11 @@ $(document).ready(function(){initNavTree('search.html','');});
   </doc>
   <doc>
     <field name="type">function</field>
-    <field name="name">ta_amount_discount_create</field>
-    <field name="args">(ta_object_t *amount, int64_t value, ta_e_currency_t currency, ta_object_t discount_id)</field>
-    <field name="url">amount__discount_8h.html#ac727953f6c2d79d077dbab973d354178</field>
-    <field name="keywords">ta_amount_discount_create</field>
-    <field name="text">Create object of type amount_discount amount Pointer to variable to write created object instance to Created object instance is retained value Value of amount in minor units The currency selected by currency defines the used exponent For example with ta_c_currency_chf the exponent is 2 To create an amount equal to 1 CHF use a value of 100 currency Currency of amount discount_id Discount identifier as object of type string ta_c_rc_ok Object instance has been created and written to amount ta_c_rc_invalid_argument amount is null-pointer ta_c_rc_invalid_argument currency is not a valid value from ta_e_currency_t ta_c_rc_invalid_argument value is less than 0 ta_c_rc_invalid_argument discount_id is ta_invalid_object ta_c_rc_invalid_argument discount_id is not of type string ta_c_rc_out_of_memory Failed allocating memory</field>
-  </doc>
-  <doc>
-    <field name="type">function</field>
-    <field name="name">ta_amount_discount_create_decimal</field>
-    <field name="args">(ta_object_t *amount, double value, ta_e_currency_t currency, ta_object_t discount_id)</field>
-    <field name="url">amount__discount_8h.html#afb1c82a018031cf878f826ec0f76ce99</field>
-    <field name="keywords">ta_amount_discount_create_decimal</field>
-    <field name="text">Create object of type amount_discount using double precision floating point value Double precision floating point values can not provide the same level of numerical accuracy as int64_t It is recommended to use the integer based methods amount Pointer to variable to write created object instance to Created object instance is retained value Value of amount in major units The currency selected by currency defines the used exponent For example with ta_c_currency_chf the exponent is 2 Values with more than 2 digits after the period will be rounded according to regular mathematical rounding rules currency Currency of amount discount_id Discount identifier as object of type string ta_c_rc_ok Object instance has been created and written to amount ta_c_rc_invalid_argument amount is null-pointer ta_c_rc_invalid_argument currency is not a valid value from ta_e_currency_t ta_c_rc_invalid_argument value is less than 0 ta_c_rc_invalid_argument discount_id is ta_invalid_object ta_c_rc_invalid_argument discount_id is not of type string ta_c_rc_out_of_memory Failed allocating memory</field>
-  </doc>
-  <doc>
-    <field name="type">function</field>
-    <field name="name">ta_amount_discount_create_exponent</field>
-    <field name="args">(ta_object_t *amount, int64_t value, ta_e_currency_t currency, int exponent, ta_object_t discount_id)</field>
-    <field name="url">amount__discount_8h.html#a7d7a2f14108c76fd5545c2a9d7ee7b7b</field>
-    <field name="keywords">ta_amount_discount_create_exponent</field>
-    <field name="text">Create object of type amount_discount using custom exponent amount Pointer to variable to write created object instance to Created object instance is retained value Value of amount in minor units The value of exponent overrides the exponent defined by the currency selected by currency For example with an exponent of 3 to create an amount equal to 1 CHF use a value of 1000 currency Currency of amount exponent Exponent to use instead of the exponent defined by the currency discount_id Discount identifier as object of type string ta_c_rc_ok Object instance has been created and written to amount ta_c_rc_invalid_argument amount is null-pointer ta_c_rc_invalid_argument currency is not a valid value from ta_e_currency_t ta_c_rc_invalid_argument value is less than 0 ta_c_rc_invalid_argument exponent is less than 0 ta_c_rc_invalid_argument discount_id is ta_invalid_object ta_c_rc_invalid_argument discount_id is not of type string ta_c_rc_out_of_memory Failed allocating memory</field>
-  </doc>
-  <doc>
-    <field name="type">function</field>
-    <field name="name">ta_amount_discount_create_decimal_exponent</field>
-    <field name="args">(ta_object_t *amount, double value, ta_e_currency_t currency, int exponent, ta_object_t discount_id)</field>
-    <field name="url">amount__discount_8h.html#ad2a8c67105834dd3b1bfa9b9abbb0918</field>
-    <field name="keywords">ta_amount_discount_create_decimal_exponent</field>
-    <field name="text">Create object of type amount_discount using custom exponent and double precision value Double precision floating point values can not provide the same level of numerical accuracy as int64_t It is recommended to use the integer based methods amount Pointer to variable to write created object instance to Created object instance is retained value Value of amount in minor units The value of exponent overrides the exponent defined by the currency selected by currency For example with an exponent of 3 values with more than 3 digits after the period will be rounded according to regular mathematical rounding rules currency Currency of amount exponent Exponent to use instead of the exponent defined by the currency discount_id Discount identifier as object of type string ta_c_rc_ok Object instance has been created and written to amount ta_c_rc_invalid_argument amount is null-pointer ta_c_rc_invalid_argument currency is not a valid value from ta_e_currency_t ta_c_rc_invalid_argument value is less than 0 ta_c_rc_invalid_argument exponent is less than 0 ta_c_rc_invalid_argument discount_id is ta_invalid_object ta_c_rc_invalid_argument discount_id is not of type string ta_c_rc_out_of_memory Failed allocating memory</field>
-  </doc>
-  <doc>
-    <field name="type">function</field>
     <field name="name">ta_amount_discount_get_value</field>
     <field name="args">(ta_object_t amount, int64_t *value)</field>
     <field name="url">amount__discount_8h.html#a47f7e4ec54b196496e9d802a58a210a5</field>
     <field name="keywords">ta_amount_discount_get_value</field>
     <field name="text">Discount amount in minor units amount Object instance of type amount_discount value Pointer to variable to write value to Use ta_amount_discount_get_exponent to get the used exponent This can be a different exponent than the one defined by the used currency ta_c_rc_ok Value written to value ta_c_rc_invalid_argument amount is ta_invalid_object ta_c_rc_invalid_argument amount is not of type amount_discount ta_c_rc_invalid_argument value is null-pointer</field>
-  </doc>
-  <doc>
-    <field name="type">function</field>
-    <field name="name">ta_amount_discount_set_value</field>
-    <field name="args">(ta_object_t amount, int64_t value)</field>
-    <field name="url">amount__discount_8h.html#a93fec77ce9a511a5336881175c206193</field>
-    <field name="keywords">ta_amount_discount_set_value</field>
-    <field name="text">Set amount in minor units amount Object instance of type amount_discount value Value to set Use ta_amount_get_exponent to get the used exponent This can be a different exponent than the one defined by the used currency For example with an exponent of 2 to set an amount equal to 1 CHF you have to use a value of 100 ta_c_rc_ok Value assigned to amount ta_c_rc_invalid_argument amount is ta_invalid_object ta_c_rc_invalid_argument amount is not of type amount_discount ta_c_rc_invalid_argument value is less than 0</field>
   </doc>
   <doc>
     <field name="type">function</field>
@@ -374,27 +332,11 @@ $(document).ready(function(){initNavTree('search.html','');});
   </doc>
   <doc>
     <field name="type">function</field>
-    <field name="name">ta_amount_discount_set_decimal_value</field>
-    <field name="args">(ta_object_t amount, double value)</field>
-    <field name="url">amount__discount_8h.html#ac4551278a87256fb3a6e1c1670164e27</field>
-    <field name="keywords">ta_amount_discount_set_decimal_value</field>
-    <field name="text">Set amount in major units as double precision floating point value Double precision floating point values can not provide the same level of numerical accuracy as int64_t It is recommended to use the integer based methods amount Object instance of type amount_discount value Value to set Use ta_amount_get_exponent to get the used exponent For example with an exponent of 2 values with more than 2 digits after the period will be rounded according to regular mathematical rounding rules ta_c_rc_ok Value written to value ta_c_rc_invalid_argument amount is ta_invalid_object ta_c_rc_invalid_argument amount is not of type amount_discount ta_c_rc_out_of_memory Memory allocation required but failed</field>
-  </doc>
-  <doc>
-    <field name="type">function</field>
     <field name="name">ta_amount_discount_get_currency</field>
     <field name="args">(ta_object_t amount, ta_e_currency_t *currency)</field>
     <field name="url">amount__discount_8h.html#a8a8b9b01f08c5bf30d843836d5746943</field>
     <field name="keywords">ta_amount_discount_get_currency</field>
     <field name="text">Discount currency amount Object instance of type amount_discount currency Pointer to variable to write currency to ta_c_rc_ok Value written to currency ta_c_rc_invalid_argument amount is ta_invalid_object ta_c_rc_invalid_argument amount is not of type amount_discount ta_c_rc_invalid_argument currency is null-pointer</field>
-  </doc>
-  <doc>
-    <field name="type">function</field>
-    <field name="name">ta_amount_discount_set_currency</field>
-    <field name="args">(ta_object_t amount, ta_e_currency_t currency)</field>
-    <field name="url">amount__discount_8h.html#acff6471bc637eb5a06c70becf27eeca9</field>
-    <field name="keywords">ta_amount_discount_set_currency</field>
-    <field name="text">Set currency amount Object instance of type amount_discount currency Currency to set ta_c_rc_ok Value assigned to amount ta_c_rc_invalid_argument amount is ta_invalid_object ta_c_rc_invalid_argument amount is not of type amount_discount ta_c_rc_invalid_argument currency is not a valid value from ta_e_currency_t</field>
   </doc>
   <doc>
     <field name="type">function</field>
@@ -406,27 +348,11 @@ $(document).ready(function(){initNavTree('search.html','');});
   </doc>
   <doc>
     <field name="type">function</field>
-    <field name="name">ta_amount_discount_set_exponent</field>
-    <field name="args">(ta_object_t amount, int exponent)</field>
-    <field name="url">amount__discount_8h.html#a6b431bd79fb82e735cb5fb3d247f6621</field>
-    <field name="keywords">ta_amount_discount_set_exponent</field>
-    <field name="text">Set exponent amount Object instance of type amount_discount exponent Exponent to set ta_c_rc_ok Value assigned to amount ta_c_rc_invalid_argument amount is ta_invalid_object ta_c_rc_invalid_argument amount is not of type amount_discount ta_c_rc_invalid_argument exponent is less than 0</field>
-  </doc>
-  <doc>
-    <field name="type">function</field>
     <field name="name">ta_amount_discount_get_discount_id</field>
     <field name="args">(ta_object_t amount, ta_object_t *identifier)</field>
     <field name="url">amount__discount_8h.html#a1859824a79608adeeb79950b7a96c3fa</field>
     <field name="keywords">ta_amount_discount_get_discount_id</field>
     <field name="text">Discount identifier amount Object instance of type amount_discount identifier Pointer to variable to write object instance to Object instance is of type string and is not retained Object instance is ta_invalid_object if identifier is not set in amount_discount ta_c_rc_ok Object instance written to identifier ta_c_rc_invalid_argument amount is ta_invalid_object ta_c_rc_invalid_argument amount is not of type amount_discount ta_c_rc_invalid_argument identifier is null-pointer</field>
-  </doc>
-  <doc>
-    <field name="type">function</field>
-    <field name="name">ta_amount_discount_set_discount_id</field>
-    <field name="args">(ta_object_t amount, ta_object_t identifier)</field>
-    <field name="url">amount__discount_8h.html#a8a23c2706d1f474015896b82b6ae4bd0</field>
-    <field name="keywords">ta_amount_discount_set_discount_id</field>
-    <field name="text">Set discount identifier amount Object instance of type amount_discount discount_id Discount identifier as object of type string Object instance will be retained ta_c_rc_ok Value assigned to amount and retained ta_c_rc_invalid_argument amount is ta_invalid_object ta_c_rc_invalid_argument amount is not of type amount_discount ta_c_rc_invalid_argument discount_id is ta_invalid_object ta_c_rc_invalid_argument discount_id is not of type string</field>
   </doc>
   <doc>
     <field name="type">file</field>
@@ -718,54 +644,6 @@ $(document).ready(function(){initNavTree('search.html','');});
     <field name="url">basket__item_8h.html#aaedec48169ab220aa71e37ce3e8e8997</field>
     <field name="keywords">ta_basket_item_set_amount_tax</field>
     <field name="text">Set tax amount item Object instance of type basket_item amount_tax Object instance to set Object instance can be ta_invalid_object to clear the value in item If object instance is not ta_invalid_object is has to be of type amount ta_c_rc_ok Object instance assigned to item ta_c_rc_invalid_argument item is ta_invalid_object ta_c_rc_invalid_argument item is not of type basket_item ta_c_rc_invalid_argument amount_tax is not ta_invalid_object and is not of type amount</field>
-  </doc>
-  <doc>
-    <field name="type">function</field>
-    <field name="name">ta_basket_item_get_amount_gross</field>
-    <field name="args">(ta_object_t item, ta_object_t *amount_gross)</field>
-    <field name="url">basket__item_8h.html#a61dacc0885a0fd6e35ddca23d7d3e498</field>
-    <field name="keywords">ta_basket_item_get_amount_gross</field>
-    <field name="text">Gross amount item Object instance of type basket_item amount_gross Pointer to variable to write object instance to Object instance is of type amount and is not retained Object instance is ta_invalid_object if value is not set in item ta_c_rc_ok Object instance written to amount_gross ta_c_rc_invalid_argument item is ta_invalid_object ta_c_rc_invalid_argument item is not of type basket_item ta_c_rc_invalid_argument amount_gross is not null-pointer</field>
-  </doc>
-  <doc>
-    <field name="type">function</field>
-    <field name="name">ta_basket_item_set_amount_gross</field>
-    <field name="args">(ta_object_t item, ta_object_t amount_gross)</field>
-    <field name="url">basket__item_8h.html#abaa741fc93bfb71f43f4c544a37d350f</field>
-    <field name="keywords">ta_basket_item_set_amount_gross</field>
-    <field name="text">Set gross amount item Object instance of type basket_item amount_gross Object instance to set Object instance can be ta_invalid_object to clear the value in item If object instance is not ta_invalid_object is has to be of type amount ta_c_rc_ok Object instance assigned to item ta_c_rc_invalid_argument item is ta_invalid_object ta_c_rc_invalid_argument item is not of type basket_item ta_c_rc_invalid_argument amount_gross is not ta_invalid_object and is not of type amount</field>
-  </doc>
-  <doc>
-    <field name="type">function</field>
-    <field name="name">ta_basket_item_get_unit_amount_discount</field>
-    <field name="args">(ta_object_t item, ta_object_t *unit_amount_discount)</field>
-    <field name="url">basket__item_8h.html#a1fc5057a4b009a8cd01c40c862e677fc</field>
-    <field name="keywords">ta_basket_item_get_unit_amount_discount</field>
-    <field name="text">Tax amount item Object instance of type basket_item unit_amount_discount Pointer to variable to write object instance to Object instance is of type amount and is not retained Object instance is ta_invalid_object if value is not set in item ta_c_rc_ok Object instance written to unit_amount_discount ta_c_rc_invalid_argument item is ta_invalid_object ta_c_rc_invalid_argument item is not of type basket_item ta_c_rc_invalid_argument unit_amount_discount is not null-pointer</field>
-  </doc>
-  <doc>
-    <field name="type">function</field>
-    <field name="name">ta_basket_item_set_unit_amount_discount</field>
-    <field name="args">(ta_object_t item, ta_object_t unit_amount_discount)</field>
-    <field name="url">basket__item_8h.html#aee0178b2f40812a1233852b38dc66476</field>
-    <field name="keywords">ta_basket_item_set_unit_amount_discount</field>
-    <field name="text">Set unit_amount_discount amount item Object instance of type basket_item unit_amount_discount Object instance to set Object instance can be ta_invalid_object to clear the value in item If object instance is not ta_invalid_object is has to be of type amount ta_c_rc_ok Object instance assigned to item ta_c_rc_invalid_argument item is ta_invalid_object ta_c_rc_invalid_argument item is not of type basket_item ta_c_rc_invalid_argument unit_amount_discount is not ta_invalid_object and is not of type amount</field>
-  </doc>
-  <doc>
-    <field name="type">function</field>
-    <field name="name">ta_basket_item_get_unit_amount_gross</field>
-    <field name="args">(ta_object_t item, ta_object_t *unit_amount_gross)</field>
-    <field name="url">basket__item_8h.html#a0b49d0835802f5c1dd8676535198610a</field>
-    <field name="keywords">ta_basket_item_get_unit_amount_gross</field>
-    <field name="text">Tax amount item Object instance of type basket_item unit_amount_gross Pointer to variable to write object instance to Object instance is of type amount and is not retained Object instance is ta_invalid_object if value is not set in item ta_c_rc_ok Object instance written to unit_amount_gross ta_c_rc_invalid_argument item is ta_invalid_object ta_c_rc_invalid_argument item is not of type basket_item ta_c_rc_invalid_argument unit_amount_gross is not null-pointer</field>
-  </doc>
-  <doc>
-    <field name="type">function</field>
-    <field name="name">ta_basket_item_set_unit_amount_gross</field>
-    <field name="args">(ta_object_t item, ta_object_t unit_amount_gross)</field>
-    <field name="url">basket__item_8h.html#a7696dc43ab9e2645529ea61708563eed</field>
-    <field name="keywords">ta_basket_item_set_unit_amount_gross</field>
-    <field name="text">Set unit_amount_gross amount item Object instance of type basket_item unit_amount_gross Object instance to set Object instance can be ta_invalid_object to clear the value in item If object instance is not ta_invalid_object is has to be of type amount ta_c_rc_ok Object instance assigned to item ta_c_rc_invalid_argument item is ta_invalid_object ta_c_rc_invalid_argument item is not of type basket_item ta_c_rc_invalid_argument unit_amount_gross is not ta_invalid_object and is not of type amount</field>
   </doc>
   <doc>
     <field name="type">function</field>
@@ -1618,55 +1496,6 @@ $(document).ready(function(){initNavTree('search.html','');});
   </doc>
   <doc>
     <field name="type">file</field>
-    <field name="name">adjustment_result.h</field>
-    <field name="url">adjustment__result_8h.html</field>
-    <field name="keywords">adjustment_result.h</field>
-    <field name="text">Specifies if an amount adjustment notification was handled correctly 0 for success Copyright SIX Payment Services</field>
-  </doc>
-  <doc>
-    <field name="type">typedef</field>
-    <field name="name">ta_e_adjustment_result_t</field>
-    <field name="url">adjustment__result_8h.html#aefdc531755823cbc933bf5f5b800322b</field>
-    <field name="keywords">ta_e_adjustment_result_t</field>
-    <field name="text">Specifies if an amount adjustment notification was handled correctly 0 for success Specification unattended</field>
-  </doc>
-  <doc>
-    <field name="type">enum</field>
-    <field name="name">ta_e_adjustment_result</field>
-    <field name="url">adjustment__result_8h.html#ae7bfab4daf32622ef34a937325cd2b94</field>
-    <field name="keywords">ta_e_adjustment_result</field>
-    <field name="text">Specifies if an amount adjustment notification was handled correctly 0 for success Specification unattended</field>
-  </doc>
-  <doc>
-    <field name="type">enumvalue</field>
-    <field name="name">ta_c_ar_undefined</field>
-    <field name="url">adjustment__result_8h.html#ae7bfab4daf32622ef34a937325cd2b94a5fb0b5b9731cdd2739db5b3a6c837c57</field>
-    <field name="keywords">ta_c_ar_undefined</field>
-    <field name="text">Undefined/invalid value</field>
-  </doc>
-  <doc>
-    <field name="type">enumvalue</field>
-    <field name="name">ta_c_ar_ok</field>
-    <field name="url">adjustment__result_8h.html#ae7bfab4daf32622ef34a937325cd2b94a9a17026635d6fdd25dd06603ecef4c53</field>
-    <field name="keywords">ta_c_ar_ok</field>
-    <field name="text">The amount adjustment was successful</field>
-  </doc>
-  <doc>
-    <field name="type">enumvalue</field>
-    <field name="name">ta_c_ar_fail_request_to_late</field>
-    <field name="url">adjustment__result_8h.html#ae7bfab4daf32622ef34a937325cd2b94a532b6dc65cc3cd6828af379074c93c20</field>
-    <field name="keywords">ta_c_ar_fail_request_to_late</field>
-    <field name="text">The amount adjustment failed because adjustment notification was sent to late</field>
-  </doc>
-  <doc>
-    <field name="type">enumvalue</field>
-    <field name="name">ta_c_ar_fail_amount_to_high</field>
-    <field name="url">adjustment__result_8h.html#ae7bfab4daf32622ef34a937325cd2b94aab11dd0dbca4a6c422c6e8e660fe5816</field>
-    <field name="keywords">ta_c_ar_fail_amount_to_high</field>
-    <field name="text">The amount adjustment failed because adjusted amount is to high</field>
-  </doc>
-  <doc>
-    <field name="type">file</field>
     <field name="name">admin_functions.h</field>
     <field name="url">admin__functions_8h.html</field>
     <field name="keywords">admin_functions.h</field>
@@ -2209,21 +2038,21 @@ $(document).ready(function(){initNavTree('search.html','');});
     <field name="name">card_reader_status.h</field>
     <field name="url">card__reader__status_8h.html</field>
     <field name="keywords">card_reader_status.h</field>
-    <field name="text">The CardReaderStatus tag is used to transport information about the current card reader activity The following values are valid Copyright SIX Payment Services</field>
+    <field name="text">The CardReaderStatus tag is used to transport information about the current card reader activity Copyright SIX Payment Services</field>
   </doc>
   <doc>
     <field name="type">typedef</field>
     <field name="name">ta_e_card_reader_status_t</field>
     <field name="url">card__reader__status_8h.html#a9eb464ea69a0e24d4c6165b827c5e214</field>
     <field name="keywords">ta_e_card_reader_status_t</field>
-    <field name="text">The CardReaderStatus tag is used to transport information about the current card reader activity The following values are valid Specification retail</field>
+    <field name="text">The CardReaderStatus tag is used to transport information about the current card reader activity Specification retail</field>
   </doc>
   <doc>
     <field name="type">enum</field>
     <field name="name">ta_e_card_reader_status</field>
     <field name="url">card__reader__status_8h.html#afe875efd1014de65ccc0bbcce8a1b12f</field>
     <field name="keywords">ta_e_card_reader_status</field>
-    <field name="text">The CardReaderStatus tag is used to transport information about the current card reader activity The following values are valid Specification retail</field>
+    <field name="text">The CardReaderStatus tag is used to transport information about the current card reader activity Specification retail</field>
   </doc>
   <doc>
     <field name="type">enumvalue</field>
@@ -2328,21 +2157,21 @@ $(document).ready(function(){initNavTree('search.html','');});
     <field name="name">connection_status.h</field>
     <field name="url">connection__status_8h.html</field>
     <field name="keywords">connection_status.h</field>
-    <field name="text">The sixml ConnectionStatus tag is used to transport information about the current connection between the ECR and the terminal All status information tags always contain the current status of the terminal not the ECR The following values are valid Copyright SIX Payment Services</field>
+    <field name="text">The sixml ConnectionStatus tag is used to transport information about the current connection between the ECR and the terminal Copyright SIX Payment Services</field>
   </doc>
   <doc>
     <field name="type">typedef</field>
     <field name="name">ta_e_connection_status_t</field>
     <field name="url">connection__status_8h.html#a8562f2abed61d4e90aedfc9e3cef5134</field>
     <field name="keywords">ta_e_connection_status_t</field>
-    <field name="text">The sixml ConnectionStatus tag is used to transport information about the current connection between the ECR and the terminal All status information tags always contain the current status of the terminal not the ECR The following values are valid Specification retail</field>
+    <field name="text">The sixml ConnectionStatus tag is used to transport information about the current connection between the ECR and the terminal Specification retail</field>
   </doc>
   <doc>
     <field name="type">enum</field>
     <field name="name">ta_e_connection_status</field>
     <field name="url">connection__status_8h.html#a68acb5103da58120fc6cc26ec3e3bbdc</field>
     <field name="keywords">ta_e_connection_status</field>
-    <field name="text">The sixml ConnectionStatus tag is used to transport information about the current connection between the ECR and the terminal All status information tags always contain the current status of the terminal not the ECR The following values are valid Specification retail</field>
+    <field name="text">The sixml ConnectionStatus tag is used to transport information about the current connection between the ECR and the terminal Specification retail</field>
   </doc>
   <doc>
     <field name="type">enumvalue</field>
@@ -2377,21 +2206,21 @@ $(document).ready(function(){initNavTree('search.html','');});
     <field name="name">counter_type.h</field>
     <field name="url">counter__type_8h.html</field>
     <field name="keywords">counter_type.h</field>
-    <field name="text">Identifies the type of transaction counter This type identifier is used to define what kind of counters shall be returned in the response The following values are valid Copyright SIX Payment Services</field>
+    <field name="text">Identifies the type of transaction counter Copyright SIX Payment Services</field>
   </doc>
   <doc>
     <field name="type">typedef</field>
     <field name="name">ta_e_counter_type_t</field>
     <field name="url">counter__type_8h.html#a91842943360d55478097b284dde159c0</field>
     <field name="keywords">ta_e_counter_type_t</field>
-    <field name="text">Identifies the type of transaction counter This type identifier is used to define what kind of counters shall be returned in the response The following values are valid Specification retail</field>
+    <field name="text">Identifies the type of transaction counter Specification retail</field>
   </doc>
   <doc>
     <field name="type">enum</field>
     <field name="name">ta_e_counter_type</field>
     <field name="url">counter__type_8h.html#a23b120c6b3cc3ddac8d1f01f069d35c1</field>
     <field name="keywords">ta_e_counter_type</field>
-    <field name="text">Identifies the type of transaction counter This type identifier is used to define what kind of counters shall be returned in the response The following values are valid Specification retail</field>
+    <field name="text">Identifies the type of transaction counter Specification retail</field>
   </doc>
   <doc>
     <field name="type">enumvalue</field>
@@ -2413,69 +2242,6 @@ $(document).ready(function(){initNavTree('search.html','');});
     <field name="url">counter__type_8h.html#a23b120c6b3cc3ddac8d1f01f069d35c1a63d3ea54bd0b56b4c9764e3d61f44848</field>
     <field name="keywords">ta_c_cntt_balance</field>
     <field name="text">Final balance Daily closing counters Specification retail</field>
-  </doc>
-  <doc>
-    <field name="type">file</field>
-    <field name="name">coupon_rejection_reason.h</field>
-    <field name="url">coupon__rejection__reason_8h.html</field>
-    <field name="keywords">coupon_rejection_reason.h</field>
-    <field name="text">Defines why a coupon has been rejected Copyright SIX Payment Services</field>
-  </doc>
-  <doc>
-    <field name="type">typedef</field>
-    <field name="name">ta_e_coupon_rejection_reason_t</field>
-    <field name="url">coupon__rejection__reason_8h.html#add443cfd2010a57650cb2114b70f3eca</field>
-    <field name="keywords">ta_e_coupon_rejection_reason_t</field>
-    <field name="text">Defines why a coupon has been rejected Specification valueAddedServices</field>
-  </doc>
-  <doc>
-    <field name="type">enum</field>
-    <field name="name">ta_e_coupon_rejection_reason</field>
-    <field name="url">coupon__rejection__reason_8h.html#aad77657103ac40a91a06e03abb610d8a</field>
-    <field name="keywords">ta_e_coupon_rejection_reason</field>
-    <field name="text">Defines why a coupon has been rejected Specification valueAddedServices</field>
-  </doc>
-  <doc>
-    <field name="type">enumvalue</field>
-    <field name="name">ta_c_crr_undefined</field>
-    <field name="url">coupon__rejection__reason_8h.html#aad77657103ac40a91a06e03abb610d8aa01d44b9c33bac2e1dd83fe4385cf6d61</field>
-    <field name="keywords">ta_c_crr_undefined</field>
-    <field name="text">Undefined/invalid value</field>
-  </doc>
-  <doc>
-    <field name="type">enumvalue</field>
-    <field name="name">ta_c_crr_already_redeemed</field>
-    <field name="url">coupon__rejection__reason_8h.html#aad77657103ac40a91a06e03abb610d8aa008915e18def11dcfc17562f8cb09679</field>
-    <field name="keywords">ta_c_crr_already_redeemed</field>
-    <field name="text">Already redeemed Specification valueAddedServices</field>
-  </doc>
-  <doc>
-    <field name="type">enumvalue</field>
-    <field name="name">ta_c_crr_article_delisted</field>
-    <field name="url">coupon__rejection__reason_8h.html#aad77657103ac40a91a06e03abb610d8aa97ccfe290b3df08b3571c5f7d3a07d36</field>
-    <field name="keywords">ta_c_crr_article_delisted</field>
-    <field name="text">Article delisted Specification valueAddedServices</field>
-  </doc>
-  <doc>
-    <field name="type">enumvalue</field>
-    <field name="name">ta_c_crr_campaign_expired</field>
-    <field name="url">coupon__rejection__reason_8h.html#aad77657103ac40a91a06e03abb610d8aaf23c6971b9555cf00d1d2b04dc2b77ac</field>
-    <field name="keywords">ta_c_crr_campaign_expired</field>
-    <field name="text">Campaign expired Specification valueAddedServices</field>
-  </doc>
-  <doc>
-    <field name="type">enumvalue</field>
-    <field name="name">ta_c_crr_campaign_cancelled</field>
-    <field name="url">coupon__rejection__reason_8h.html#aad77657103ac40a91a06e03abb610d8aadd71f5eba357b9108fd4671db176de17</field>
-    <field name="keywords">ta_c_crr_campaign_cancelled</field>
-    <field name="text">Campaig cancelled Specification valueAddedServices</field>
-  </doc>
-  <doc>
-    <field name="type">enumvalue</field>
-    <field name="name">ta_c_crr_other</field>
-    <field name="url">coupon__rejection__reason_8h.html#aad77657103ac40a91a06e03abb610d8aab62bb93823da6b7f855c5e3ea42d23f3</field>
-    <field name="keywords">ta_c_crr_other</field>
-    <field name="text">Other rejection reason Specification valueAddedServices</field>
   </doc>
   <doc>
     <field name="type">file</field>
@@ -3634,59 +3400,10 @@ $(document).ready(function(){initNavTree('search.html','');});
   </doc>
   <doc>
     <field name="type">enumvalue</field>
-    <field name="name">ta_c_currency_xag</field>
-    <field name="url">currency_8h.html#ad375db379bcf5a792280a2735f80f7d9aa054589f3c7723286778e10771519ea4</field>
-    <field name="keywords">ta_c_currency_xag</field>
-    <field name="text">Silver</field>
-  </doc>
-  <doc>
-    <field name="type">enumvalue</field>
-    <field name="name">ta_c_currency_xau</field>
-    <field name="url">currency_8h.html#ad375db379bcf5a792280a2735f80f7d9a1ee137715b27a21831654339a860460b</field>
-    <field name="keywords">ta_c_currency_xau</field>
-    <field name="text">Gold</field>
-  </doc>
-  <doc>
-    <field name="type">enumvalue</field>
-    <field name="name">ta_c_currency_xba</field>
-    <field name="url">currency_8h.html#ad375db379bcf5a792280a2735f80f7d9ae207d137f489396484111e4cd1b3f56d</field>
-    <field name="keywords">ta_c_currency_xba</field>
-    <field name="text">Bond Markets Unit European Composite Unit EURCO</field>
-  </doc>
-  <doc>
-    <field name="type">enumvalue</field>
-    <field name="name">ta_c_currency_xbb</field>
-    <field name="url">currency_8h.html#ad375db379bcf5a792280a2735f80f7d9a0f9bf4424a7d584dbe9e3c3393a05c19</field>
-    <field name="keywords">ta_c_currency_xbb</field>
-    <field name="text">Bond Markets Unit European Monetary Unit E.M.U</field>
-  </doc>
-  <doc>
-    <field name="type">enumvalue</field>
-    <field name="name">ta_c_currency_xbc</field>
-    <field name="url">currency_8h.html#ad375db379bcf5a792280a2735f80f7d9a47f7d72e76364eac3e4300dacc672328</field>
-    <field name="keywords">ta_c_currency_xbc</field>
-    <field name="text">Bond Markets Unit European Unit of Account 9 E.U.A</field>
-  </doc>
-  <doc>
-    <field name="type">enumvalue</field>
-    <field name="name">ta_c_currency_xbd</field>
-    <field name="url">currency_8h.html#ad375db379bcf5a792280a2735f80f7d9a64ed339bd819982737b08c40e158023a</field>
-    <field name="keywords">ta_c_currency_xbd</field>
-    <field name="text">Bond Markets Unit European Unit of Account 17 E.U.A</field>
-  </doc>
-  <doc>
-    <field name="type">enumvalue</field>
     <field name="name">ta_c_currency_xcd</field>
     <field name="url">currency_8h.html#ad375db379bcf5a792280a2735f80f7d9a8352af36f1ad6a74d2a2cb0141ebdcdc</field>
     <field name="keywords">ta_c_currency_xcd</field>
     <field name="text">East Caribbean Dollar</field>
-  </doc>
-  <doc>
-    <field name="type">enumvalue</field>
-    <field name="name">ta_c_currency_xdr</field>
-    <field name="url">currency_8h.html#ad375db379bcf5a792280a2735f80f7d9ab92f5d70fe4358ecc4ee7a63b6a0de56</field>
-    <field name="keywords">ta_c_currency_xdr</field>
-    <field name="text">SDR Special Drawing Right</field>
   </doc>
   <doc>
     <field name="type">enumvalue</field>
@@ -3697,52 +3414,10 @@ $(document).ready(function(){initNavTree('search.html','');});
   </doc>
   <doc>
     <field name="type">enumvalue</field>
-    <field name="name">ta_c_currency_xpd</field>
-    <field name="url">currency_8h.html#ad375db379bcf5a792280a2735f80f7d9a5a997b4104dd63593bde28629b814143</field>
-    <field name="keywords">ta_c_currency_xpd</field>
-    <field name="text">Palladium</field>
-  </doc>
-  <doc>
-    <field name="type">enumvalue</field>
     <field name="name">ta_c_currency_xpf</field>
     <field name="url">currency_8h.html#ad375db379bcf5a792280a2735f80f7d9aeae992b2a9efe4fb3d8fcb700fdb7bb3</field>
     <field name="keywords">ta_c_currency_xpf</field>
     <field name="text">CFP Franc</field>
-  </doc>
-  <doc>
-    <field name="type">enumvalue</field>
-    <field name="name">ta_c_currency_xpt</field>
-    <field name="url">currency_8h.html#ad375db379bcf5a792280a2735f80f7d9a132496d67498ca9534427d3d9bb9f4a1</field>
-    <field name="keywords">ta_c_currency_xpt</field>
-    <field name="text">Platinum</field>
-  </doc>
-  <doc>
-    <field name="type">enumvalue</field>
-    <field name="name">ta_c_currency_xsu</field>
-    <field name="url">currency_8h.html#ad375db379bcf5a792280a2735f80f7d9a24d195e0dacd89a2779bc50fee10a7f5</field>
-    <field name="keywords">ta_c_currency_xsu</field>
-    <field name="text">Sucre</field>
-  </doc>
-  <doc>
-    <field name="type">enumvalue</field>
-    <field name="name">ta_c_currency_xts</field>
-    <field name="url">currency_8h.html#ad375db379bcf5a792280a2735f80f7d9a5619f3373b19a4f33cd2e8cef93023c6</field>
-    <field name="keywords">ta_c_currency_xts</field>
-    <field name="text">Codes specifically reserved for testing purposes</field>
-  </doc>
-  <doc>
-    <field name="type">enumvalue</field>
-    <field name="name">ta_c_currency_xua</field>
-    <field name="url">currency_8h.html#ad375db379bcf5a792280a2735f80f7d9a557c8fe94b2db3f8e46bccb50d4c37ee</field>
-    <field name="keywords">ta_c_currency_xua</field>
-    <field name="text">ADB Unit of Account</field>
-  </doc>
-  <doc>
-    <field name="type">enumvalue</field>
-    <field name="name">ta_c_currency_xxx</field>
-    <field name="url">currency_8h.html#ad375db379bcf5a792280a2735f80f7d9a00225f3064bb685a593201a30ac15ebd</field>
-    <field name="keywords">ta_c_currency_xxx</field>
-    <field name="text">The codes assigned for transactions where no currency is involved</field>
   </doc>
   <doc>
     <field name="type">enumvalue</field>
@@ -3793,21 +3468,21 @@ $(document).ready(function(){initNavTree('search.html','');});
     <field name="name">currency_type.h</field>
     <field name="url">currency__type_8h.html</field>
     <field name="keywords">currency_type.h</field>
-    <field name="text">Specifies the type of currency Used to distinguish between base and DCC currencies The following values are valid Copyright SIX Payment Services</field>
+    <field name="text">Specifies the type of currency Used to distinguish between base and DCC currencies Copyright SIX Payment Services</field>
   </doc>
   <doc>
     <field name="type">typedef</field>
     <field name="name">ta_e_currency_type_t</field>
     <field name="url">currency__type_8h.html#ae89fd6d10d5eb934dc3e4398577b616c</field>
     <field name="keywords">ta_e_currency_type_t</field>
-    <field name="text">Specifies the type of currency Used to distinguish between base and DCC currencies The following values are valid Specification retail</field>
+    <field name="text">Specifies the type of currency Used to distinguish between base and DCC currencies Specification retail</field>
   </doc>
   <doc>
     <field name="type">enum</field>
     <field name="name">ta_e_currency_type</field>
     <field name="url">currency__type_8h.html#a6bdf77d94996459c726b3a34c5ef8611</field>
     <field name="keywords">ta_e_currency_type</field>
-    <field name="text">Specifies the type of currency Used to distinguish between base and DCC currencies The following values are valid Specification retail</field>
+    <field name="text">Specifies the type of currency Used to distinguish between base and DCC currencies Specification retail</field>
   </doc>
   <doc>
     <field name="type">enumvalue</field>
@@ -3842,21 +3517,21 @@ $(document).ready(function(){initNavTree('search.html','');});
     <field name="name">cvm.h</field>
     <field name="url">cvm_8h.html</field>
     <field name="keywords">cvm.h</field>
-    <field name="text">Specifies which cardholder verification method has been performed during the transaction The supported cardholder verification methods are defined both on the terminal and on the card The first match of both sides will be performed according to EMV Book 3 B11 The following values are valid Copyright SIX Payment Services</field>
+    <field name="text">Specifies which cardholder verification method has been performed during the transaction Copyright SIX Payment Services</field>
   </doc>
   <doc>
     <field name="type">typedef</field>
     <field name="name">ta_e_cvm_t</field>
     <field name="url">cvm_8h.html#a4ce593c95fbd4377c0f66ccecd502d4a</field>
     <field name="keywords">ta_e_cvm_t</field>
-    <field name="text">Specifies which cardholder verification method has been performed during the transaction The supported cardholder verification methods are defined both on the terminal and on the card The first match of both sides will be performed according to EMV Book 3 B11 The following values are valid Specification retail</field>
+    <field name="text">Specifies which cardholder verification method has been performed during the transaction Specification retail</field>
   </doc>
   <doc>
     <field name="type">enum</field>
     <field name="name">ta_e_cvm</field>
     <field name="url">cvm_8h.html#aa1eec890888312d72912378cd7fcfc03</field>
     <field name="keywords">ta_e_cvm</field>
-    <field name="text">Specifies which cardholder verification method has been performed during the transaction The supported cardholder verification methods are defined both on the terminal and on the card The first match of both sides will be performed according to EMV Book 3 B11 The following values are valid Specification retail</field>
+    <field name="text">Specifies which cardholder verification method has been performed during the transaction Specification retail</field>
   </doc>
   <doc>
     <field name="type">enumvalue</field>
@@ -3954,21 +3629,21 @@ $(document).ready(function(){initNavTree('search.html','');});
     <field name="name">ecr_info_type.h</field>
     <field name="url">ecr__info__type_8h.html</field>
     <field name="keywords">ecr_info_type.h</field>
-    <field name="text">The EcrInfoType attribute is used to specify what kind of information is sent in the sixml EcrInfo tag The following values are valid Copyright SIX Payment Services</field>
+    <field name="text">The EcrInfoType attribute is used to specify what kind of information is sent in the sixml EcrInfo tag Copyright SIX Payment Services</field>
   </doc>
   <doc>
     <field name="type">typedef</field>
     <field name="name">ta_e_ecr_info_type_t</field>
     <field name="url">ecr__info__type_8h.html#ae6ae16aaf8ad34667b2897642b211e4e</field>
     <field name="keywords">ta_e_ecr_info_type_t</field>
-    <field name="text">The EcrInfoType attribute is used to specify what kind of information is sent in the sixml EcrInfo tag The following values are valid Specification retail</field>
+    <field name="text">The EcrInfoType attribute is used to specify what kind of information is sent in the sixml EcrInfo tag Specification retail</field>
   </doc>
   <doc>
     <field name="type">enum</field>
     <field name="name">ta_e_ecr_info_type</field>
     <field name="url">ecr__info__type_8h.html#a265061e9002e2d2d0fd7e8b5c0593de4</field>
     <field name="keywords">ta_e_ecr_info_type</field>
-    <field name="text">The EcrInfoType attribute is used to specify what kind of information is sent in the sixml EcrInfo tag The following values are valid Specification retail</field>
+    <field name="text">The EcrInfoType attribute is used to specify what kind of information is sent in the sixml EcrInfo tag Specification retail</field>
   </doc>
   <doc>
     <field name="type">enumvalue</field>
@@ -4300,32 +3975,25 @@ $(document).ready(function(){initNavTree('search.html','');});
     <field name="text">Addons for value added services Specification retail</field>
   </doc>
   <doc>
-    <field name="type">enumvalue</field>
-    <field name="name">ta_c_guide_certification_extension</field>
-    <field name="url">guides_8h.html#a3094ffa1812abd0acaa42bde196bf996a94d235369ca212c48353366d68972cb1</field>
-    <field name="keywords">ta_c_guide_certification_extension</field>
-    <field name="text">Certification Extension Specification retail</field>
-  </doc>
-  <doc>
     <field name="type">file</field>
     <field name="name">hardware_type.h</field>
     <field name="url">hardware__type_8h.html</field>
     <field name="keywords">hardware_type.h</field>
-    <field name="text">HardwareTypes are used to label hardware related data in the HardwareInformation response The following values are valid Copyright SIX Payment Services</field>
+    <field name="text">HardwareTypes are used to label hardware related data in the HardwareInformation response Copyright SIX Payment Services</field>
   </doc>
   <doc>
     <field name="type">typedef</field>
     <field name="name">ta_e_hardware_type_t</field>
     <field name="url">hardware__type_8h.html#a3542e3fa5a94920b0098e00b17d7404e</field>
     <field name="keywords">ta_e_hardware_type_t</field>
-    <field name="text">HardwareTypes are used to label hardware related data in the HardwareInformation response The following values are valid Specification retail</field>
+    <field name="text">HardwareTypes are used to label hardware related data in the HardwareInformation response Specification retail</field>
   </doc>
   <doc>
     <field name="type">enum</field>
     <field name="name">ta_e_hardware_type</field>
     <field name="url">hardware__type_8h.html#a59b128d289d9842fb3c2b4a90e3d46e4</field>
     <field name="keywords">ta_e_hardware_type</field>
-    <field name="text">HardwareTypes are used to label hardware related data in the HardwareInformation response The following values are valid Specification retail</field>
+    <field name="text">HardwareTypes are used to label hardware related data in the HardwareInformation response Specification retail</field>
   </doc>
   <doc>
     <field name="type">enumvalue</field>
@@ -4381,21 +4049,21 @@ $(document).ready(function(){initNavTree('search.html','');});
     <field name="name">image_file_format.h</field>
     <field name="url">image__file__format_8h.html</field>
     <field name="keywords">image_file_format.h</field>
-    <field name="text">Defines the file format of the signature image This field can either be used as attribute in the sixml SignatureData tag to define the file format of the signature image that is wished to be returned or in the sixml SignatureInformation to specify the file format of the signature image that has actually been returned from the terminal The following values are valid Copyright SIX Payment Services</field>
+    <field name="text">Supported file format of the signature image Copyright SIX Payment Services</field>
   </doc>
   <doc>
     <field name="type">typedef</field>
     <field name="name">ta_e_image_file_format_t</field>
     <field name="url">image__file__format_8h.html#ad253d3fde87ad089f4b3e1022a9b2bbf</field>
     <field name="keywords">ta_e_image_file_format_t</field>
-    <field name="text">Defines the file format of the signature image This field can either be used as attribute in the sixml SignatureData tag to define the file format of the signature image that is wished to be returned or in the sixml SignatureInformation to specify the file format of the signature image that has actually been returned from the terminal The following values are valid Specification retail</field>
+    <field name="text">Supported file format of the signature image Specification retail</field>
   </doc>
   <doc>
     <field name="type">enum</field>
     <field name="name">ta_e_image_file_format</field>
     <field name="url">image__file__format_8h.html#a978941f0fdb28c4dc4965a2314b56685</field>
     <field name="keywords">ta_e_image_file_format</field>
-    <field name="text">Defines the file format of the signature image This field can either be used as attribute in the sixml SignatureData tag to define the file format of the signature image that is wished to be returned or in the sixml SignatureInformation to specify the file format of the signature image that has actually been returned from the terminal The following values are valid Specification retail</field>
+    <field name="text">Supported file format of the signature image Specification retail</field>
   </doc>
   <doc>
     <field name="type">enumvalue</field>
@@ -4423,21 +4091,21 @@ $(document).ready(function(){initNavTree('search.html','');});
     <field name="name">kernel_type.h</field>
     <field name="url">kernel__type_8h.html</field>
     <field name="keywords">kernel_type.h</field>
-    <field name="text">Enumeration that specifies the type of kernel This field is used as attribute of the sixml KernelVersion tag to specify the type of the kernel accoring to EMV The following values are valid Copyright SIX Payment Services</field>
+    <field name="text">Specifies the type of kernel Copyright SIX Payment Services</field>
   </doc>
   <doc>
     <field name="type">typedef</field>
     <field name="name">ta_e_kernel_type_t</field>
     <field name="url">kernel__type_8h.html#a084307ef3fbd62531c2ffb55a16f8081</field>
     <field name="keywords">ta_e_kernel_type_t</field>
-    <field name="text">Enumeration that specifies the type of kernel This field is used as attribute of the sixml KernelVersion tag to specify the type of the kernel accoring to EMV The following values are valid Specification retail</field>
+    <field name="text">Specifies the type of kernel Specification retail</field>
   </doc>
   <doc>
     <field name="type">enum</field>
     <field name="name">ta_e_kernel_type</field>
     <field name="url">kernel__type_8h.html#a09c41b2ef45de74238a9f3897ce4e78a</field>
     <field name="keywords">ta_e_kernel_type</field>
-    <field name="text">Enumeration that specifies the type of kernel This field is used as attribute of the sixml KernelVersion tag to specify the type of the kernel accoring to EMV The following values are valid Specification retail</field>
+    <field name="text">Specifies the type of kernel Specification retail</field>
   </doc>
   <doc>
     <field name="type">enumvalue</field>
@@ -4465,126 +4133,70 @@ $(document).ready(function(){initNavTree('search.html','');});
     <field name="name">ta_c_kt_kernel1</field>
     <field name="url">kernel__type_8h.html#a09c41b2ef45de74238a9f3897ce4e78aaa49c87808c8f499e2a896694b3b63cdb</field>
     <field name="keywords">ta_c_kt_kernel1</field>
-    <field name="text">EMV Contactless kernel number according to kernel numbering as defined by EMV contactless Book A B35</field>
+    <field name="text">EMV Contactless kernel number according to kernel numbering as defined by EMV contactless B4</field>
   </doc>
   <doc>
     <field name="type">enumvalue</field>
     <field name="name">ta_c_kt_kernel2</field>
     <field name="url">kernel__type_8h.html#a09c41b2ef45de74238a9f3897ce4e78aa4e7d368bd3b605c5d52e40dace3f533c</field>
     <field name="keywords">ta_c_kt_kernel2</field>
-    <field name="text">EMV Contactless kernel number according to kernel numbering as defined by EMV contactless Book A B35</field>
+    <field name="text">EMV Contactless kernel number according to kernel numbering as defined by EMV contactless B4</field>
   </doc>
   <doc>
     <field name="type">enumvalue</field>
     <field name="name">ta_c_kt_kernel3</field>
     <field name="url">kernel__type_8h.html#a09c41b2ef45de74238a9f3897ce4e78aaaf993f243528cfba8e458d47c34575d1</field>
     <field name="keywords">ta_c_kt_kernel3</field>
-    <field name="text">EMV Contactless kernel number according to kernel numbering as defined by EMV contactless Book A B35</field>
+    <field name="text">EMV Contactless kernel number according to kernel numbering as defined by EMV contactless B4</field>
   </doc>
   <doc>
     <field name="type">enumvalue</field>
     <field name="name">ta_c_kt_kernel4</field>
     <field name="url">kernel__type_8h.html#a09c41b2ef45de74238a9f3897ce4e78aa22f92d24af59298600305004d4c3c191</field>
     <field name="keywords">ta_c_kt_kernel4</field>
-    <field name="text">EMV Contactless kernel number according to kernel numbering as defined by EMV contactless Book A B35</field>
+    <field name="text">EMV Contactless kernel number according to kernel numbering as defined by EMV contactless B4</field>
   </doc>
   <doc>
     <field name="type">enumvalue</field>
     <field name="name">ta_c_kt_kernel5</field>
     <field name="url">kernel__type_8h.html#a09c41b2ef45de74238a9f3897ce4e78aac49a14f1323663ab4dca440b31cd2110</field>
     <field name="keywords">ta_c_kt_kernel5</field>
-    <field name="text">EMV Contactless kernel number according to kernel numbering as defined by EMV contactless Book A B35</field>
+    <field name="text">EMV Contactless kernel number according to kernel numbering as defined by EMV contactless B4</field>
   </doc>
   <doc>
     <field name="type">enumvalue</field>
     <field name="name">ta_c_kt_kernel6</field>
     <field name="url">kernel__type_8h.html#a09c41b2ef45de74238a9f3897ce4e78aae5fd4b7d1799e2a8f8027bb31fce525e</field>
     <field name="keywords">ta_c_kt_kernel6</field>
-    <field name="text">EMV Contactless kernel number according to kernel numbering as defined by EMV contactless Book A B35</field>
+    <field name="text">EMV Contactless kernel number according to kernel numbering as defined by EMV contactless B4</field>
   </doc>
   <doc>
     <field name="type">enumvalue</field>
     <field name="name">ta_c_kt_kernel7</field>
     <field name="url">kernel__type_8h.html#a09c41b2ef45de74238a9f3897ce4e78aa7dc1ed1bfdb7e96ef297ffb94a4332a0</field>
     <field name="keywords">ta_c_kt_kernel7</field>
-    <field name="text">EMV Contactless kernel number according to kernel numbering as defined by EMV contactless Book A B35</field>
-  </doc>
-  <doc>
-    <field name="type">file</field>
-    <field name="name">loyalty_function_type.h</field>
-    <field name="url">loyalty__function__type_8h.html</field>
-    <field name="keywords">loyalty_function_type.h</field>
-    <field name="text">Defines what kind of loyalty mode will be used Copyright SIX Payment Services</field>
-  </doc>
-  <doc>
-    <field name="type">typedef</field>
-    <field name="name">ta_e_loyalty_function_type_t</field>
-    <field name="url">loyalty__function__type_8h.html#a0d2a2bc964077dc52e5e0e5042c9184e</field>
-    <field name="keywords">ta_e_loyalty_function_type_t</field>
-    <field name="text">Defines what kind of loyalty mode will be used Specification valueAddedServices</field>
-  </doc>
-  <doc>
-    <field name="type">enum</field>
-    <field name="name">ta_e_loyalty_function_type</field>
-    <field name="url">loyalty__function__type_8h.html#ae34d625b831c335c633e976a45c15dd2</field>
-    <field name="keywords">ta_e_loyalty_function_type</field>
-    <field name="text">Defines what kind of loyalty mode will be used Specification valueAddedServices</field>
-  </doc>
-  <doc>
-    <field name="type">enumvalue</field>
-    <field name="name">ta_c_lft_undefined</field>
-    <field name="url">loyalty__function__type_8h.html#ae34d625b831c335c633e976a45c15dd2ac9d117ca7e2243158b8aeabfd1f02867</field>
-    <field name="keywords">ta_c_lft_undefined</field>
-    <field name="text">Undefined/invalid value</field>
-  </doc>
-  <doc>
-    <field name="type">enumvalue</field>
-    <field name="name">ta_c_lft_init</field>
-    <field name="url">loyalty__function__type_8h.html#ae34d625b831c335c633e976a45c15dd2a567d398734b407d806ff523fd73705cf</field>
-    <field name="keywords">ta_c_lft_init</field>
-    <field name="text">Loyalty initialization Specification valueAddedServices</field>
-  </doc>
-  <doc>
-    <field name="type">enumvalue</field>
-    <field name="name">ta_c_lft_update</field>
-    <field name="url">loyalty__function__type_8h.html#ae34d625b831c335c633e976a45c15dd2a1ce2d6e89fa6a828b926cdf8046edc87</field>
-    <field name="keywords">ta_c_lft_update</field>
-    <field name="text">Loyalty data update Specification valueAddedServices</field>
-  </doc>
-  <doc>
-    <field name="type">enumvalue</field>
-    <field name="name">ta_c_lft_deinit</field>
-    <field name="url">loyalty__function__type_8h.html#ae34d625b831c335c633e976a45c15dd2a1f3d9701d1e77e442dc4dde9d598f464</field>
-    <field name="keywords">ta_c_lft_deinit</field>
-    <field name="text">Loyalty deinitialization Specification valueAddedServices</field>
-  </doc>
-  <doc>
-    <field name="type">enumvalue</field>
-    <field name="name">ta_c_lft_query</field>
-    <field name="url">loyalty__function__type_8h.html#ae34d625b831c335c633e976a45c15dd2a9012cb39517621feba9d40c4e99fd493</field>
-    <field name="keywords">ta_c_lft_query</field>
-    <field name="text">Loyalty query Specification valueAddedServices</field>
+    <field name="text">EMV Contactless kernel number according to kernel numbering as defined by EMV contactless B4</field>
   </doc>
   <doc>
     <field name="type">file</field>
     <field name="name">management_status.h</field>
     <field name="url">management__status_8h.html</field>
     <field name="keywords">management_status.h</field>
-    <field name="text">The sixml ManagementStatus tag is used to transport information about the current activation state of the terminal i.e shift open shift closed The following values are valid Copyright SIX Payment Services</field>
+    <field name="text">The sixml ManagementStatus tag is used to transport information about the current activation state of the terminal i.e shift open shift closed Copyright SIX Payment Services</field>
   </doc>
   <doc>
     <field name="type">typedef</field>
     <field name="name">ta_e_management_status_t</field>
     <field name="url">management__status_8h.html#a816c526c8d96eec6ad132cb3a6158624</field>
     <field name="keywords">ta_e_management_status_t</field>
-    <field name="text">The sixml ManagementStatus tag is used to transport information about the current activation state of the terminal i.e shift open shift closed The following values are valid Specification retail</field>
+    <field name="text">The sixml ManagementStatus tag is used to transport information about the current activation state of the terminal i.e shift open shift closed Specification retail</field>
   </doc>
   <doc>
     <field name="type">enum</field>
     <field name="name">ta_e_management_status</field>
     <field name="url">management__status_8h.html#a0815e7cf1e193cdb55d4505ad6142913</field>
     <field name="keywords">ta_e_management_status</field>
-    <field name="text">The sixml ManagementStatus tag is used to transport information about the current activation state of the terminal i.e shift open shift closed The following values are valid Specification retail</field>
+    <field name="text">The sixml ManagementStatus tag is used to transport information about the current activation state of the terminal i.e shift open shift closed Specification retail</field>
   </doc>
   <doc>
     <field name="type">enumvalue</field>
@@ -4661,21 +4273,21 @@ $(document).ready(function(){initNavTree('search.html','');});
     <field name="name">merchant_option_type.h</field>
     <field name="url">merchant__option__type_8h.html</field>
     <field name="keywords">merchant_option_type.h</field>
-    <field name="text">Specifies type of merchant option The following values are valid Copyright SIX Payment Services</field>
+    <field name="text">Specifies type of merchant option Copyright SIX Payment Services</field>
   </doc>
   <doc>
     <field name="type">typedef</field>
     <field name="name">ta_e_merchant_option_type_t</field>
     <field name="url">merchant__option__type_8h.html#a85baa6c1a5b70326c0ab26fb93c563ee</field>
     <field name="keywords">ta_e_merchant_option_type_t</field>
-    <field name="text">Specifies type of merchant option The following values are valid Specification retail</field>
+    <field name="text">Specifies type of merchant option Specification retail</field>
   </doc>
   <doc>
     <field name="type">enum</field>
     <field name="name">ta_e_merchant_option_type</field>
     <field name="url">merchant__option__type_8h.html#aea3eaf253bcce054769642d812d46362</field>
     <field name="keywords">ta_e_merchant_option_type</field>
-    <field name="text">Specifies type of merchant option The following values are valid Specification retail</field>
+    <field name="text">Specifies type of merchant option Specification retail</field>
   </doc>
   <doc>
     <field name="type">enumvalue</field>
@@ -4711,41 +4323,6 @@ $(document).ready(function(){initNavTree('search.html','');});
     <field name="url">merchant__option__type_8h.html#aea3eaf253bcce054769642d812d46362a8100c542cc9670de1db3acea385ebe53</field>
     <field name="keywords">ta_c_mot_merchant_tid</field>
     <field name="text">Specific terminal identifier defined by the merchant Specification retail</field>
-  </doc>
-  <doc>
-    <field name="type">enumvalue</field>
-    <field name="name">ta_c_mot_clerk_identifier</field>
-    <field name="url">merchant__option__type_8h.html#aea3eaf253bcce054769642d812d46362a8d573caf210ba36675c5ee4f537a6f91</field>
-    <field name="keywords">ta_c_mot_clerk_identifier</field>
-    <field name="text">Used for petrol MOC provided by ECR Specification retail</field>
-  </doc>
-  <doc>
-    <field name="type">enumvalue</field>
-    <field name="name">ta_c_mot_fuel_dispenser_number</field>
-    <field name="url">merchant__option__type_8h.html#aea3eaf253bcce054769642d812d46362a17ed3ffa300bcf915754877f5deef460</field>
-    <field name="keywords">ta_c_mot_fuel_dispenser_number</field>
-    <field name="text">Used for petrol MOC provided by ECR Specification retail</field>
-  </doc>
-  <doc>
-    <field name="type">enumvalue</field>
-    <field name="name">ta_c_mot_posdnumber</field>
-    <field name="url">merchant__option__type_8h.html#aea3eaf253bcce054769642d812d46362a770fa5489b1d638a8780896eff4a748d</field>
-    <field name="keywords">ta_c_mot_posdnumber</field>
-    <field name="text">Used for petrol MOC provided by ECR Specification retail</field>
-  </doc>
-  <doc>
-    <field name="type">enumvalue</field>
-    <field name="name">ta_c_mot_receipt_number</field>
-    <field name="url">merchant__option__type_8h.html#aea3eaf253bcce054769642d812d46362a0ace3ceeec8b839e2b9185ae6acb5c45</field>
-    <field name="keywords">ta_c_mot_receipt_number</field>
-    <field name="text">Used for petrol MOC provided by ECR Specification retail</field>
-  </doc>
-  <doc>
-    <field name="type">enumvalue</field>
-    <field name="name">ta_c_mot_shift_number</field>
-    <field name="url">merchant__option__type_8h.html#aea3eaf253bcce054769642d812d46362a6c181472ceda7a1043af135be9c8973a</field>
-    <field name="keywords">ta_c_mot_shift_number</field>
-    <field name="text">Used for petrol MOC provided by ECR Specification retail</field>
   </doc>
   <doc>
     <field name="type">file</field>
@@ -4969,21 +4546,21 @@ $(document).ready(function(){initNavTree('search.html','');});
     <field name="name">pos_entry_mode.h</field>
     <field name="url">pos__entry__mode_8h.html</field>
     <field name="keywords">pos_entry_mode.h</field>
-    <field name="text">Defines how the cardholder used the card with the terminal for the transaction Enumeration according to EMV definition The following values are valid Copyright SIX Payment Services</field>
+    <field name="text">According to EMV definition Copyright SIX Payment Services</field>
   </doc>
   <doc>
     <field name="type">typedef</field>
     <field name="name">ta_e_pos_entry_mode_t</field>
     <field name="url">pos__entry__mode_8h.html#a6a25ee364b81a7c418296edb197fc6c8</field>
     <field name="keywords">ta_e_pos_entry_mode_t</field>
-    <field name="text">Defines how the cardholder used the card with the terminal for the transaction Enumeration according to EMV definition The following values are valid Specification retail</field>
+    <field name="text">According to EMV definition Specification retail</field>
   </doc>
   <doc>
     <field name="type">enum</field>
     <field name="name">ta_e_pos_entry_mode</field>
     <field name="url">pos__entry__mode_8h.html#abcd49dcaa026c564bba0a40e0779c198</field>
     <field name="keywords">ta_e_pos_entry_mode</field>
-    <field name="text">Defines how the cardholder used the card with the terminal for the transaction Enumeration according to EMV definition The following values are valid Specification retail</field>
+    <field name="text">According to EMV definition Specification retail</field>
   </doc>
   <doc>
     <field name="type">enumvalue</field>
@@ -5417,21 +4994,21 @@ $(document).ready(function(){initNavTree('search.html','');});
     <field name="name">receipt_item_type.h</field>
     <field name="url">receipt__item__type_8h.html</field>
     <field name="keywords">receipt_item_type.h</field>
-    <field name="text">Specifies type of ReceiptItem This field has a freetext format but the following values are predefined Copyright SIX Payment Services</field>
+    <field name="text">Specifies type of ReceiptItem Freetext format Copyright SIX Payment Services</field>
   </doc>
   <doc>
     <field name="type">typedef</field>
     <field name="name">ta_e_receipt_item_type_t</field>
     <field name="url">receipt__item__type_8h.html#a0e227c7b4f74a6932a18f9cda56223dc</field>
     <field name="keywords">ta_e_receipt_item_type_t</field>
-    <field name="text">Specifies type of ReceiptItem This field has a freetext format but the following values are predefined Specification retail</field>
+    <field name="text">Specifies type of ReceiptItem Freetext format Specification retail</field>
   </doc>
   <doc>
     <field name="type">enum</field>
     <field name="name">ta_e_receipt_item_type</field>
     <field name="url">receipt__item__type_8h.html#a3d3044dd871a9c7d630dbcf3d9b738be</field>
     <field name="keywords">ta_e_receipt_item_type</field>
-    <field name="text">Specifies type of ReceiptItem This field has a freetext format but the following values are predefined Specification retail</field>
+    <field name="text">Specifies type of ReceiptItem Freetext format Specification retail</field>
   </doc>
   <doc>
     <field name="type">enumvalue</field>
@@ -5693,13 +5270,6 @@ $(document).ready(function(){initNavTree('search.html','');});
     <field name="text">Ep2 PAN receipt DOL index Specification retail</field>
   </doc>
   <doc>
-    <field name="type">enumvalue</field>
-    <field name="name">ta_c_rit_tender_name</field>
-    <field name="url">receipt__item__type_8h.html#a3d3044dd871a9c7d630dbcf3d9b738bea1de5ccb7f61d8e19588ccfc056cf9892</field>
-    <field name="keywords">ta_c_rit_tender_name</field>
-    <field name="text">TenderName of the card used Specification retail</field>
-  </doc>
-  <doc>
     <field name="type">file</field>
     <field name="name">receipt_request_type.h</field>
     <field name="url">receipt__request__type_8h.html</field>
@@ -5746,21 +5316,21 @@ $(document).ready(function(){initNavTree('search.html','');});
     <field name="name">receipt_type.h</field>
     <field name="url">receipt__type_8h.html</field>
     <field name="keywords">receipt_type.h</field>
-    <field name="text">Specifies type of the receipt The following values are valid Copyright SIX Payment Services</field>
+    <field name="text">Specifies type of the receipt Copyright SIX Payment Services</field>
   </doc>
   <doc>
     <field name="type">typedef</field>
     <field name="name">ta_e_receipt_type_t</field>
     <field name="url">receipt__type_8h.html#acef3040faca98790d14aa86c518c649b</field>
     <field name="keywords">ta_e_receipt_type_t</field>
-    <field name="text">Specifies type of the receipt The following values are valid Specification retail</field>
+    <field name="text">Specifies type of the receipt Specification retail</field>
   </doc>
   <doc>
     <field name="type">enum</field>
     <field name="name">ta_e_receipt_type</field>
     <field name="url">receipt__type_8h.html#a74be600736ad05d66a867681226384f1</field>
     <field name="keywords">ta_e_receipt_type</field>
-    <field name="text">Specifies type of the receipt The following values are valid Specification retail</field>
+    <field name="text">Specifies type of the receipt Specification retail</field>
   </doc>
   <doc>
     <field name="type">enumvalue</field>
@@ -5795,21 +5365,21 @@ $(document).ready(function(){initNavTree('search.html','');});
     <field name="name">recipient.h</field>
     <field name="url">recipient_8h.html</field>
     <field name="keywords">recipient.h</field>
-    <field name="text">Specifies the recipient of a receipt The following values are valid Copyright SIX Payment Services</field>
+    <field name="text">Specifies the recipient of a receipt Copyright SIX Payment Services</field>
   </doc>
   <doc>
     <field name="type">typedef</field>
     <field name="name">ta_e_recipient_t</field>
     <field name="url">recipient_8h.html#a6fcefb70801410541ea0dafac2cb4b55</field>
     <field name="keywords">ta_e_recipient_t</field>
-    <field name="text">Specifies the recipient of a receipt The following values are valid Specification retail</field>
+    <field name="text">Specifies the recipient of a receipt Specification retail</field>
   </doc>
   <doc>
     <field name="type">enum</field>
     <field name="name">ta_e_recipient</field>
     <field name="url">recipient_8h.html#a7d9fdd093196d7a9f946f6ea86563cf0</field>
     <field name="keywords">ta_e_recipient</field>
-    <field name="text">Specifies the recipient of a receipt The following values are valid Specification retail</field>
+    <field name="text">Specifies the recipient of a receipt Specification retail</field>
   </doc>
   <doc>
     <field name="type">enumvalue</field>
@@ -6110,21 +5680,21 @@ $(document).ready(function(){initNavTree('search.html','');});
     <field name="name">resource_id.h</field>
     <field name="url">resource__id_8h.html</field>
     <field name="keywords">resource_id.h</field>
-    <field name="text">Enumeration attribute defines which dialog shall be displayed All dialogs are divided into multiple groups containing dialogs similar operational area The dialog description contains the following elements Element Description Value Unique dialog number PrimaryIcon The primary icon that shall be displayed during the dialog SecondaryIcon The secondary icon that shall be displayed during the dialog Text The text for the dialog Placeholder Placeholder element that shall be replaced by the corresponding value InputMask Defines the input format d digit h hidden digit ActiveConfirmation The active pinpad and/or displayed button that shall be active during the dialog SigCapFlag Indicates if the dialog can be used for signature capturing An InputMask with hidden digit means that the input must not be displayed in plain text but must be hidden e.g using instead of plain text The following groups are defined Group Description 0xxx Petrol dialogs 1000-1099 Post dialogs 1100-1200 Banking dialogs 2xxx Unattended dialogs 3xxx AT dialogs Petrol Dialogs The following petrol dialogs are valid Value PrimaryIcon SecondaryIcon Text Placeholder InputMask ActiveConfirmation ResourceParameter 0100 PinPad Enter mileage OK i dddddddd Ok Stop 0101 PinPad Enter your car number OK i dddddd Ok Stop 0102 PinPad Enter drivercode OK i dddddd Ok Stop 0103 PinPad Enter fleet ID OK i dddddd Ok Stop 0104 PinPad 0 1 Please select pump i OK 0 Currency optional 1 Amount optional dd Ok Stop 0105 PinPad Please select washing station i OK dd Ok Stop 0106 PinPad Please select program i OK dd Ok Stop 0107 PinPad Please select product i OK dd Ok Stop 0108 PinPad Load card Amount i OK dd Ok Stop 0109 PinPad Tankcode i hhhhhhhhhhhh Ok Stop 0110 PinPad CODE OK c hhhhhhhhhhhh Ok Stop CodeCheckType CodeCheckKeyId optional CodeCheckData optional PetrolCardData1 optional PetrolCardData2 optional PetrolCardData3 optional 0111 PinPad Enter additional information OK i dddddddddddddddddddd Ok Stop 0112 PinPad Enter cost center OK i dddddddddddddddddddd Ok Stop 0113 PinPad Enter employee no OK i dddddddddddddddddddd Ok Stop 0114 PinPad Enter license plate OK i dddddddddddddddddddd Ok Stop 0115 PinPad Enter project no OK i dddddddddddddddddddd Ok Stop 0116 Print receipt YES NO Ok Stop 0117 RemoveCard Remove card CardReader 0118 Out of order Ok Stop 0119 Invalid entry Ok Stop 0120 Please refuel at dispenser 0 0 Dispenser number n2 mandatory Ok Stop 0121 Please consider main screen Ok Stop 0122 Please refuel 0123 Please refuel for 0 1 0 Currency an mandatory e.g EUR 1 Amount n mandatory e.g 45.00 Note Dialog 0110 is not supposed to return the input value but shall check the code according to the CodeCheckType and return the result in the Reason CodeOk for success and CodeNok for failure Postal Dialogs The following postal dialogs are valid Value PrimaryIcon SecondaryIcon Text Placeholder InputMask ActiveConfirmation SigCapFlag 1000 Keine Recharge Karte Ok 0 not allowed in SignatureCapture 1 allowed 1001 MobilePhone 0 1 2 0 phone number 1 Currency 2 Amount Ok Stop 0 1002 PinPad Card Bitte Tel Nummer oder PrePaid-Karte i ddd ddd dd dd Ok Stop CardReader 0 1003 Tel Nummer zu lang Ok Stop 0 1004 Tel Nummer zu kurz Ok Stop 0 1005 PinPad Bitte Telefonnummer eingeben i ddd ddd dd dd Ok Stop 0 1006 PleaseWait Bitte warten 0 1007 Declined Verarbeitung fehlgeschlagen Ok 0 1008 Ok Verarbeitung OK Ok 0 1009 Karte anmelden Ok Stop 0 1010 InsertCard Willkommen Karte bitte CardReader 0 1011 PinPad Ihre Telefonnummer lautet 0 0 phone number Ok Stop 0 1012 Von 0 1 2 3 auf 4 5 6 7 8 9 0 LastKonto 1 LastKontoTyp 2 Currency LastKonto 3 LastKonto-Bezeichnung 4 GutsKonto 5 GutsKontoTyp 6 Currency Gutskonto 7 GutsKonto-Bezeichnung 8 Currency 9 Amount Ok Stop 0 1013 0 1 2 3 4 5 6 7 8 9 0 LastKonto 1 LastKontoTyp 2 Currency LastKonto 3 Currency 4 AmountSaldo 5 GutsKonto 6 GutsKontoTyp 7 Currency GutsKonto 8 Currency 9 AmountSaldo Ok 0 1014 Bezug ab Konto 0 1 2 OK 0 Debit Account 1 Debit Currency 2 Amount Ok Stop 0 1015 Einz auf eigenes Kto Autorisierung 0 1 OK 0 Currency 1 Amount Ok Stop 0 1016 Ok Stop 1 1017 Ich habe die Sendungen und die darauf aufgeführten Inhalte erhalten Ok Stop 1 1018 PinPad Bitte PIN eingeben i hhhhhh Ok Stop 0 Banking Dialogs The following banking dialogs are valid Value PrimaryIcon SecondaryIcon Text Placeholder InputMask ActiveConfirmation SigCapFlag ResourceParameter 1100 InsertCard Welcome card please CardReader 0 1101 PinPad PIN OK i hhhhhh Ok Stop 0 1102 PinPad Press key to show saldo 0 Currency 1 Amount Ok Stop 0 1103 PinPad Confirm amount 2 0 1 0 Currency 1 Amount 2 Time and Date optional Ok Stop 0 1104 RemoveCard Remove card CardReader 0 1105 InsertCard Welcome card please 0 AT Dialogs The following at dialogs are valid Value PrimaryIcon SecondaryIcon Text Placeholder InputMask ActiveConfirmation SigCapFlag ResourceParameter 3000 InsertCard Stammkundenabfrage CardReader Stop 0 RegularDataQueryType 3001 PleaseWait Bitte warten Stop 0 3002 Daten geschrieben Ok 0 3003 Karte initialisiert Ok 0 3004 Karte deinitialisiert Ok 0 3005 RemoveCard Karte entnehmen CardReader 0 Copyright SIX Payment Services</field>
+    <field name="text">This attribute defines which dialog shall be displayed All dialogs are divided into multiple groups containing dialogs similar operational area The dialog description contains the following elements Element Description Value Unique dialog number PrimaryIcon The primary icon that shall be displayed during the dialog SecondaryIcon The secondary icon that shall be displayed during the dialog Text The text for the dialog Placeholder Placeholder element that shall be replaced by the corresponding value InputMask Defines the input format d digit h hidden digit ActiveConfirmation The active pinpad and/or displayed button that shall be active during the dialog SigCapFlag Indicates if the dialog can be used for signature capturing An InputMask with hidden digit means that the input must not be displayed in plain text but must be hidden e.g using instead of plain text The following groups are defined Group Description 0xxx Petrol dialogs 1000-1099 Post dialogs 1100-1200 Banking dialogs 2xxx Unattended dialogs 3xxx AT dialogs Petrol Dialogs The following petrol dialogs are valid Value PrimaryIcon SecondaryIcon Text Placeholder InputMask ActiveConfirmation ResourceParameter 0100 PinPad Please enter mileage OK i dd ddd ddd Ok Stop 0101 PinPad Enter your car number OK i ddd ddd Ok Stop 0102 PinPad Enter driver code OK i ddd ddd Ok Stop 0103 PinPad Enter fleet id OK i ddd ddd Ok Stop 0104 PinPad 0 1 Please select pump i OK 0 Currency optional 1 Amount optional dd Ok Stop 0105 PinPad Please select washing station i OK dd Ok Stop 0106 PinPad Please select program i OK dd Ok Stop 0107 PinPad Please select product i OK dd Ok Stop 0108 PinPad Load card Amount i OK dd Ok Stop 0109 PinPad Tankcode i hhhhhhhhhhhh Ok Stop 0110 PinPad CODE OK c hhhhhhhhhhhh Ok Stop CodeCheckType CodeCheckKeyId optional CodeCheckData optional PetrolCardData1 optional PetrolCardData2 optional PetrolCardData3 optional 0111 PinPad Enter additional information OK i dddddddddddddddddddd Ok Stop 0112 PinPad Enter cost center OK i dddddddddddddddddddd Ok Stop 0113 PinPad Enter employee no OK i dddddddddddddddddddd Ok Stop 0114 PinPad Enter license plate OK i dddddddddddddddddddd Ok Stop 0115 PinPad Enter project no OK i dddddddddddddddddddd Ok Stop 0116 Print receipt YES NO Ok Stop 0117 RemoveCard Remove card CardReader 0118 Out of order Ok Stop 0119 Invalid entry Ok Stop 0120 Please refuel at dispenser 0 0 Dispenser number n2 mandatory Ok Stop 0121 Please consider main screen Ok Stop Note Dialog 0110 is not supposed to return the input value but shall check the code according to the CodeCheckType and return the result in the Reason CodeOk for success and CodeNok for failure Postal Dialogs The following postal dialogs are valid Value PrimaryIcon SecondaryIcon Text Placeholder InputMask ActiveConfirmation SigCapFlag 1000 Keine Recharge Karte Ok 0 not allowed in SignatureCapture 1 allowed 1001 MobilePhone 0 1 2 0 phone number 1 Currency 2 Amount Ok Stop 0 1002 PinPad Card Bitte Tel Nummer oder PrePaid-Karte i ddd ddd dd dd Ok Stop CardReader 0 1003 Tel Nummer zu lang Ok Stop 0 1004 Tel Nummer zu kurz Ok Stop 0 1005 PinPad Bitte Telefonnummer eingeben i ddd ddd dd dd Ok Stop 0 1006 PleaseWait Bitte warten 0 1007 Declined Verarbeitung fehlgeschlagen Ok 0 1008 Ok Verarbeitung OK Ok 0 1009 Karte anmelden Ok Stop 0 1010 InsertCard Willkommen Karte bitte CardReader 0 1011 PinPad Ihre Telefonnummer lautet 0 0 phone number Ok Stop 0 1012 Von 0 1 2 3 auf 4 5 6 7 8 9 0 LastKonto 1 LastKontoTyp 2 Currency LastKonto 3 LastKonto-Bezeichnung 4 GutsKonto 5 GutsKontoTyp 6 Currency Gutskonto 7 GutsKonto-Bezeichnung 8 Currency 9 Amount Ok Stop 0 1013 0 1 2 3 4 5 6 7 8 9 0 LastKonto 1 LastKontoTyp 2 Currency LastKonto 3 Currency 4 AmountSaldo 5 GutsKonto 6 GutsKontoTyp 7 Currency GutsKonto 8 Currency 9 AmountSaldo Ok 0 1014 Bezug ab Konto 0 1 2 OK 0 Debit Account 1 Debit Currency 2 Amount Ok Stop 0 1015 Einz auf eigenes Kto Autorisierung 0 1 OK 0 Currency 1 Amount Ok Stop 0 1016 Ok Stop 1 1017 Ich habe die Sendungen und die darauf aufgeführten Inhalte erhalten Ok Stop 1 1018 PinPad Bitte PIN eingeben i hhhhhh Ok Stop 0 Banking Dialogs The following banking dialogs are valid Value PrimaryIcon SecondaryIcon Text Placeholder InputMask ActiveConfirmation SigCapFlag ResourceParameter 1100 InsertCard Welcome card please CardReader 0 1101 PinPad PIN OK i hhhhhh Ok Stop 0 1102 PinPad Press key to show saldo 0 Currency 1 Amount Ok Stop 0 1103 PinPad Confirm amount 2 0 1 0 Currency 1 Amount 2 Time and Date optional Ok Stop 0 1104 RemoveCard Remove card CardReader 0 1105 InsertCard Welcome card please 0 AT Dialogs The following at dialogs are valid Value PrimaryIcon SecondaryIcon Text Placeholder InputMask ActiveConfirmation SigCapFlag ResourceParameter 3000 InsertCard Stammkundenabfrage CardReader Stop 0 RegularDataQueryType 3001 PleaseWait Bitte warten Stop 0 3002 Daten geschrieben Ok 0 3003 Karte initialisiert Ok 0 3004 Karte deinitialisiert Ok 0 3005 RemoveCard Karte entnehmen CardReader 0 Copyright SIX Payment Services</field>
   </doc>
   <doc>
     <field name="type">typedef</field>
     <field name="name">ta_e_resource_id_t</field>
     <field name="url">resource__id_8h.html#a5a2c1c93f7f241f841768500f44be229</field>
     <field name="keywords">ta_e_resource_id_t</field>
-    <field name="text">Enumeration attribute defines which dialog shall be displayed All dialogs are divided into multiple groups containing dialogs similar operational area The dialog description contains the following elements Element Description Value Unique dialog number PrimaryIcon The primary icon that shall be displayed during the dialog SecondaryIcon The secondary icon that shall be displayed during the dialog Text The text for the dialog Placeholder Placeholder element that shall be replaced by the corresponding value InputMask Defines the input format d digit h hidden digit ActiveConfirmation The active pinpad and/or displayed button that shall be active during the dialog SigCapFlag Indicates if the dialog can be used for signature capturing An InputMask with hidden digit means that the input must not be displayed in plain text but must be hidden e.g using instead of plain text The following groups are defined Group Description 0xxx Petrol dialogs 1000-1099 Post dialogs 1100-1200 Banking dialogs 2xxx Unattended dialogs 3xxx AT dialogs Petrol Dialogs The following petrol dialogs are valid Value PrimaryIcon SecondaryIcon Text Placeholder InputMask ActiveConfirmation ResourceParameter 0100 PinPad Enter mileage OK i dddddddd Ok Stop 0101 PinPad Enter your car number OK i dddddd Ok Stop 0102 PinPad Enter drivercode OK i dddddd Ok Stop 0103 PinPad Enter fleet ID OK i dddddd Ok Stop 0104 PinPad 0 1 Please select pump i OK 0 Currency optional 1 Amount optional dd Ok Stop 0105 PinPad Please select washing station i OK dd Ok Stop 0106 PinPad Please select program i OK dd Ok Stop 0107 PinPad Please select product i OK dd Ok Stop 0108 PinPad Load card Amount i OK dd Ok Stop 0109 PinPad Tankcode i hhhhhhhhhhhh Ok Stop 0110 PinPad CODE OK c hhhhhhhhhhhh Ok Stop CodeCheckType CodeCheckKeyId optional CodeCheckData optional PetrolCardData1 optional PetrolCardData2 optional PetrolCardData3 optional 0111 PinPad Enter additional information OK i dddddddddddddddddddd Ok Stop 0112 PinPad Enter cost center OK i dddddddddddddddddddd Ok Stop 0113 PinPad Enter employee no OK i dddddddddddddddddddd Ok Stop 0114 PinPad Enter license plate OK i dddddddddddddddddddd Ok Stop 0115 PinPad Enter project no OK i dddddddddddddddddddd Ok Stop 0116 Print receipt YES NO Ok Stop 0117 RemoveCard Remove card CardReader 0118 Out of order Ok Stop 0119 Invalid entry Ok Stop 0120 Please refuel at dispenser 0 0 Dispenser number n2 mandatory Ok Stop 0121 Please consider main screen Ok Stop 0122 Please refuel 0123 Please refuel for 0 1 0 Currency an mandatory e.g EUR 1 Amount n mandatory e.g 45.00 Note Dialog 0110 is not supposed to return the input value but shall check the code according to the CodeCheckType and return the result in the Reason CodeOk for success and CodeNok for failure Postal Dialogs The following postal dialogs are valid Value PrimaryIcon SecondaryIcon Text Placeholder InputMask ActiveConfirmation SigCapFlag 1000 Keine Recharge Karte Ok 0 not allowed in SignatureCapture 1 allowed 1001 MobilePhone 0 1 2 0 phone number 1 Currency 2 Amount Ok Stop 0 1002 PinPad Card Bitte Tel Nummer oder PrePaid-Karte i ddd ddd dd dd Ok Stop CardReader 0 1003 Tel Nummer zu lang Ok Stop 0 1004 Tel Nummer zu kurz Ok Stop 0 1005 PinPad Bitte Telefonnummer eingeben i ddd ddd dd dd Ok Stop 0 1006 PleaseWait Bitte warten 0 1007 Declined Verarbeitung fehlgeschlagen Ok 0 1008 Ok Verarbeitung OK Ok 0 1009 Karte anmelden Ok Stop 0 1010 InsertCard Willkommen Karte bitte CardReader 0 1011 PinPad Ihre Telefonnummer lautet 0 0 phone number Ok Stop 0 1012 Von 0 1 2 3 auf 4 5 6 7 8 9 0 LastKonto 1 LastKontoTyp 2 Currency LastKonto 3 LastKonto-Bezeichnung 4 GutsKonto 5 GutsKontoTyp 6 Currency Gutskonto 7 GutsKonto-Bezeichnung 8 Currency 9 Amount Ok Stop 0 1013 0 1 2 3 4 5 6 7 8 9 0 LastKonto 1 LastKontoTyp 2 Currency LastKonto 3 Currency 4 AmountSaldo 5 GutsKonto 6 GutsKontoTyp 7 Currency GutsKonto 8 Currency 9 AmountSaldo Ok 0 1014 Bezug ab Konto 0 1 2 OK 0 Debit Account 1 Debit Currency 2 Amount Ok Stop 0 1015 Einz auf eigenes Kto Autorisierung 0 1 OK 0 Currency 1 Amount Ok Stop 0 1016 Ok Stop 1 1017 Ich habe die Sendungen und die darauf aufgeführten Inhalte erhalten Ok Stop 1 1018 PinPad Bitte PIN eingeben i hhhhhh Ok Stop 0 Banking Dialogs The following banking dialogs are valid Value PrimaryIcon SecondaryIcon Text Placeholder InputMask ActiveConfirmation SigCapFlag ResourceParameter 1100 InsertCard Welcome card please CardReader 0 1101 PinPad PIN OK i hhhhhh Ok Stop 0 1102 PinPad Press key to show saldo 0 Currency 1 Amount Ok Stop 0 1103 PinPad Confirm amount 2 0 1 0 Currency 1 Amount 2 Time and Date optional Ok Stop 0 1104 RemoveCard Remove card CardReader 0 1105 InsertCard Welcome card please 0 AT Dialogs The following at dialogs are valid Value PrimaryIcon SecondaryIcon Text Placeholder InputMask ActiveConfirmation SigCapFlag ResourceParameter 3000 InsertCard Stammkundenabfrage CardReader Stop 0 RegularDataQueryType 3001 PleaseWait Bitte warten Stop 0 3002 Daten geschrieben Ok 0 3003 Karte initialisiert Ok 0 3004 Karte deinitialisiert Ok 0 3005 RemoveCard Karte entnehmen CardReader 0 Specification dialog</field>
+    <field name="text">This attribute defines which dialog shall be displayed All dialogs are divided into multiple groups containing dialogs similar operational area The dialog description contains the following elements Element Description Value Unique dialog number PrimaryIcon The primary icon that shall be displayed during the dialog SecondaryIcon The secondary icon that shall be displayed during the dialog Text The text for the dialog Placeholder Placeholder element that shall be replaced by the corresponding value InputMask Defines the input format d digit h hidden digit ActiveConfirmation The active pinpad and/or displayed button that shall be active during the dialog SigCapFlag Indicates if the dialog can be used for signature capturing An InputMask with hidden digit means that the input must not be displayed in plain text but must be hidden e.g using instead of plain text The following groups are defined Group Description 0xxx Petrol dialogs 1000-1099 Post dialogs 1100-1200 Banking dialogs 2xxx Unattended dialogs 3xxx AT dialogs Petrol Dialogs The following petrol dialogs are valid Value PrimaryIcon SecondaryIcon Text Placeholder InputMask ActiveConfirmation ResourceParameter 0100 PinPad Please enter mileage OK i dd ddd ddd Ok Stop 0101 PinPad Enter your car number OK i ddd ddd Ok Stop 0102 PinPad Enter driver code OK i ddd ddd Ok Stop 0103 PinPad Enter fleet id OK i ddd ddd Ok Stop 0104 PinPad 0 1 Please select pump i OK 0 Currency optional 1 Amount optional dd Ok Stop 0105 PinPad Please select washing station i OK dd Ok Stop 0106 PinPad Please select program i OK dd Ok Stop 0107 PinPad Please select product i OK dd Ok Stop 0108 PinPad Load card Amount i OK dd Ok Stop 0109 PinPad Tankcode i hhhhhhhhhhhh Ok Stop 0110 PinPad CODE OK c hhhhhhhhhhhh Ok Stop CodeCheckType CodeCheckKeyId optional CodeCheckData optional PetrolCardData1 optional PetrolCardData2 optional PetrolCardData3 optional 0111 PinPad Enter additional information OK i dddddddddddddddddddd Ok Stop 0112 PinPad Enter cost center OK i dddddddddddddddddddd Ok Stop 0113 PinPad Enter employee no OK i dddddddddddddddddddd Ok Stop 0114 PinPad Enter license plate OK i dddddddddddddddddddd Ok Stop 0115 PinPad Enter project no OK i dddddddddddddddddddd Ok Stop 0116 Print receipt YES NO Ok Stop 0117 RemoveCard Remove card CardReader 0118 Out of order Ok Stop 0119 Invalid entry Ok Stop 0120 Please refuel at dispenser 0 0 Dispenser number n2 mandatory Ok Stop 0121 Please consider main screen Ok Stop Note Dialog 0110 is not supposed to return the input value but shall check the code according to the CodeCheckType and return the result in the Reason CodeOk for success and CodeNok for failure Postal Dialogs The following postal dialogs are valid Value PrimaryIcon SecondaryIcon Text Placeholder InputMask ActiveConfirmation SigCapFlag 1000 Keine Recharge Karte Ok 0 not allowed in SignatureCapture 1 allowed 1001 MobilePhone 0 1 2 0 phone number 1 Currency 2 Amount Ok Stop 0 1002 PinPad Card Bitte Tel Nummer oder PrePaid-Karte i ddd ddd dd dd Ok Stop CardReader 0 1003 Tel Nummer zu lang Ok Stop 0 1004 Tel Nummer zu kurz Ok Stop 0 1005 PinPad Bitte Telefonnummer eingeben i ddd ddd dd dd Ok Stop 0 1006 PleaseWait Bitte warten 0 1007 Declined Verarbeitung fehlgeschlagen Ok 0 1008 Ok Verarbeitung OK Ok 0 1009 Karte anmelden Ok Stop 0 1010 InsertCard Willkommen Karte bitte CardReader 0 1011 PinPad Ihre Telefonnummer lautet 0 0 phone number Ok Stop 0 1012 Von 0 1 2 3 auf 4 5 6 7 8 9 0 LastKonto 1 LastKontoTyp 2 Currency LastKonto 3 LastKonto-Bezeichnung 4 GutsKonto 5 GutsKontoTyp 6 Currency Gutskonto 7 GutsKonto-Bezeichnung 8 Currency 9 Amount Ok Stop 0 1013 0 1 2 3 4 5 6 7 8 9 0 LastKonto 1 LastKontoTyp 2 Currency LastKonto 3 Currency 4 AmountSaldo 5 GutsKonto 6 GutsKontoTyp 7 Currency GutsKonto 8 Currency 9 AmountSaldo Ok 0 1014 Bezug ab Konto 0 1 2 OK 0 Debit Account 1 Debit Currency 2 Amount Ok Stop 0 1015 Einz auf eigenes Kto Autorisierung 0 1 OK 0 Currency 1 Amount Ok Stop 0 1016 Ok Stop 1 1017 Ich habe die Sendungen und die darauf aufgeführten Inhalte erhalten Ok Stop 1 1018 PinPad Bitte PIN eingeben i hhhhhh Ok Stop 0 Banking Dialogs The following banking dialogs are valid Value PrimaryIcon SecondaryIcon Text Placeholder InputMask ActiveConfirmation SigCapFlag ResourceParameter 1100 InsertCard Welcome card please CardReader 0 1101 PinPad PIN OK i hhhhhh Ok Stop 0 1102 PinPad Press key to show saldo 0 Currency 1 Amount Ok Stop 0 1103 PinPad Confirm amount 2 0 1 0 Currency 1 Amount 2 Time and Date optional Ok Stop 0 1104 RemoveCard Remove card CardReader 0 1105 InsertCard Welcome card please 0 AT Dialogs The following at dialogs are valid Value PrimaryIcon SecondaryIcon Text Placeholder InputMask ActiveConfirmation SigCapFlag ResourceParameter 3000 InsertCard Stammkundenabfrage CardReader Stop 0 RegularDataQueryType 3001 PleaseWait Bitte warten Stop 0 3002 Daten geschrieben Ok 0 3003 Karte initialisiert Ok 0 3004 Karte deinitialisiert Ok 0 3005 RemoveCard Karte entnehmen CardReader 0 Specification dialog</field>
   </doc>
   <doc>
     <field name="type">enum</field>
     <field name="name">ta_e_resource_id</field>
     <field name="url">resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9</field>
     <field name="keywords">ta_e_resource_id</field>
-    <field name="text">Enumeration attribute defines which dialog shall be displayed All dialogs are divided into multiple groups containing dialogs similar operational area The dialog description contains the following elements Element Description Value Unique dialog number PrimaryIcon The primary icon that shall be displayed during the dialog SecondaryIcon The secondary icon that shall be displayed during the dialog Text The text for the dialog Placeholder Placeholder element that shall be replaced by the corresponding value InputMask Defines the input format d digit h hidden digit ActiveConfirmation The active pinpad and/or displayed button that shall be active during the dialog SigCapFlag Indicates if the dialog can be used for signature capturing An InputMask with hidden digit means that the input must not be displayed in plain text but must be hidden e.g using instead of plain text The following groups are defined Group Description 0xxx Petrol dialogs 1000-1099 Post dialogs 1100-1200 Banking dialogs 2xxx Unattended dialogs 3xxx AT dialogs Petrol Dialogs The following petrol dialogs are valid Value PrimaryIcon SecondaryIcon Text Placeholder InputMask ActiveConfirmation ResourceParameter 0100 PinPad Enter mileage OK i dddddddd Ok Stop 0101 PinPad Enter your car number OK i dddddd Ok Stop 0102 PinPad Enter drivercode OK i dddddd Ok Stop 0103 PinPad Enter fleet ID OK i dddddd Ok Stop 0104 PinPad 0 1 Please select pump i OK 0 Currency optional 1 Amount optional dd Ok Stop 0105 PinPad Please select washing station i OK dd Ok Stop 0106 PinPad Please select program i OK dd Ok Stop 0107 PinPad Please select product i OK dd Ok Stop 0108 PinPad Load card Amount i OK dd Ok Stop 0109 PinPad Tankcode i hhhhhhhhhhhh Ok Stop 0110 PinPad CODE OK c hhhhhhhhhhhh Ok Stop CodeCheckType CodeCheckKeyId optional CodeCheckData optional PetrolCardData1 optional PetrolCardData2 optional PetrolCardData3 optional 0111 PinPad Enter additional information OK i dddddddddddddddddddd Ok Stop 0112 PinPad Enter cost center OK i dddddddddddddddddddd Ok Stop 0113 PinPad Enter employee no OK i dddddddddddddddddddd Ok Stop 0114 PinPad Enter license plate OK i dddddddddddddddddddd Ok Stop 0115 PinPad Enter project no OK i dddddddddddddddddddd Ok Stop 0116 Print receipt YES NO Ok Stop 0117 RemoveCard Remove card CardReader 0118 Out of order Ok Stop 0119 Invalid entry Ok Stop 0120 Please refuel at dispenser 0 0 Dispenser number n2 mandatory Ok Stop 0121 Please consider main screen Ok Stop 0122 Please refuel 0123 Please refuel for 0 1 0 Currency an mandatory e.g EUR 1 Amount n mandatory e.g 45.00 Note Dialog 0110 is not supposed to return the input value but shall check the code according to the CodeCheckType and return the result in the Reason CodeOk for success and CodeNok for failure Postal Dialogs The following postal dialogs are valid Value PrimaryIcon SecondaryIcon Text Placeholder InputMask ActiveConfirmation SigCapFlag 1000 Keine Recharge Karte Ok 0 not allowed in SignatureCapture 1 allowed 1001 MobilePhone 0 1 2 0 phone number 1 Currency 2 Amount Ok Stop 0 1002 PinPad Card Bitte Tel Nummer oder PrePaid-Karte i ddd ddd dd dd Ok Stop CardReader 0 1003 Tel Nummer zu lang Ok Stop 0 1004 Tel Nummer zu kurz Ok Stop 0 1005 PinPad Bitte Telefonnummer eingeben i ddd ddd dd dd Ok Stop 0 1006 PleaseWait Bitte warten 0 1007 Declined Verarbeitung fehlgeschlagen Ok 0 1008 Ok Verarbeitung OK Ok 0 1009 Karte anmelden Ok Stop 0 1010 InsertCard Willkommen Karte bitte CardReader 0 1011 PinPad Ihre Telefonnummer lautet 0 0 phone number Ok Stop 0 1012 Von 0 1 2 3 auf 4 5 6 7 8 9 0 LastKonto 1 LastKontoTyp 2 Currency LastKonto 3 LastKonto-Bezeichnung 4 GutsKonto 5 GutsKontoTyp 6 Currency Gutskonto 7 GutsKonto-Bezeichnung 8 Currency 9 Amount Ok Stop 0 1013 0 1 2 3 4 5 6 7 8 9 0 LastKonto 1 LastKontoTyp 2 Currency LastKonto 3 Currency 4 AmountSaldo 5 GutsKonto 6 GutsKontoTyp 7 Currency GutsKonto 8 Currency 9 AmountSaldo Ok 0 1014 Bezug ab Konto 0 1 2 OK 0 Debit Account 1 Debit Currency 2 Amount Ok Stop 0 1015 Einz auf eigenes Kto Autorisierung 0 1 OK 0 Currency 1 Amount Ok Stop 0 1016 Ok Stop 1 1017 Ich habe die Sendungen und die darauf aufgeführten Inhalte erhalten Ok Stop 1 1018 PinPad Bitte PIN eingeben i hhhhhh Ok Stop 0 Banking Dialogs The following banking dialogs are valid Value PrimaryIcon SecondaryIcon Text Placeholder InputMask ActiveConfirmation SigCapFlag ResourceParameter 1100 InsertCard Welcome card please CardReader 0 1101 PinPad PIN OK i hhhhhh Ok Stop 0 1102 PinPad Press key to show saldo 0 Currency 1 Amount Ok Stop 0 1103 PinPad Confirm amount 2 0 1 0 Currency 1 Amount 2 Time and Date optional Ok Stop 0 1104 RemoveCard Remove card CardReader 0 1105 InsertCard Welcome card please 0 AT Dialogs The following at dialogs are valid Value PrimaryIcon SecondaryIcon Text Placeholder InputMask ActiveConfirmation SigCapFlag ResourceParameter 3000 InsertCard Stammkundenabfrage CardReader Stop 0 RegularDataQueryType 3001 PleaseWait Bitte warten Stop 0 3002 Daten geschrieben Ok 0 3003 Karte initialisiert Ok 0 3004 Karte deinitialisiert Ok 0 3005 RemoveCard Karte entnehmen CardReader 0 Specification dialog</field>
+    <field name="text">This attribute defines which dialog shall be displayed All dialogs are divided into multiple groups containing dialogs similar operational area The dialog description contains the following elements Element Description Value Unique dialog number PrimaryIcon The primary icon that shall be displayed during the dialog SecondaryIcon The secondary icon that shall be displayed during the dialog Text The text for the dialog Placeholder Placeholder element that shall be replaced by the corresponding value InputMask Defines the input format d digit h hidden digit ActiveConfirmation The active pinpad and/or displayed button that shall be active during the dialog SigCapFlag Indicates if the dialog can be used for signature capturing An InputMask with hidden digit means that the input must not be displayed in plain text but must be hidden e.g using instead of plain text The following groups are defined Group Description 0xxx Petrol dialogs 1000-1099 Post dialogs 1100-1200 Banking dialogs 2xxx Unattended dialogs 3xxx AT dialogs Petrol Dialogs The following petrol dialogs are valid Value PrimaryIcon SecondaryIcon Text Placeholder InputMask ActiveConfirmation ResourceParameter 0100 PinPad Please enter mileage OK i dd ddd ddd Ok Stop 0101 PinPad Enter your car number OK i ddd ddd Ok Stop 0102 PinPad Enter driver code OK i ddd ddd Ok Stop 0103 PinPad Enter fleet id OK i ddd ddd Ok Stop 0104 PinPad 0 1 Please select pump i OK 0 Currency optional 1 Amount optional dd Ok Stop 0105 PinPad Please select washing station i OK dd Ok Stop 0106 PinPad Please select program i OK dd Ok Stop 0107 PinPad Please select product i OK dd Ok Stop 0108 PinPad Load card Amount i OK dd Ok Stop 0109 PinPad Tankcode i hhhhhhhhhhhh Ok Stop 0110 PinPad CODE OK c hhhhhhhhhhhh Ok Stop CodeCheckType CodeCheckKeyId optional CodeCheckData optional PetrolCardData1 optional PetrolCardData2 optional PetrolCardData3 optional 0111 PinPad Enter additional information OK i dddddddddddddddddddd Ok Stop 0112 PinPad Enter cost center OK i dddddddddddddddddddd Ok Stop 0113 PinPad Enter employee no OK i dddddddddddddddddddd Ok Stop 0114 PinPad Enter license plate OK i dddddddddddddddddddd Ok Stop 0115 PinPad Enter project no OK i dddddddddddddddddddd Ok Stop 0116 Print receipt YES NO Ok Stop 0117 RemoveCard Remove card CardReader 0118 Out of order Ok Stop 0119 Invalid entry Ok Stop 0120 Please refuel at dispenser 0 0 Dispenser number n2 mandatory Ok Stop 0121 Please consider main screen Ok Stop Note Dialog 0110 is not supposed to return the input value but shall check the code according to the CodeCheckType and return the result in the Reason CodeOk for success and CodeNok for failure Postal Dialogs The following postal dialogs are valid Value PrimaryIcon SecondaryIcon Text Placeholder InputMask ActiveConfirmation SigCapFlag 1000 Keine Recharge Karte Ok 0 not allowed in SignatureCapture 1 allowed 1001 MobilePhone 0 1 2 0 phone number 1 Currency 2 Amount Ok Stop 0 1002 PinPad Card Bitte Tel Nummer oder PrePaid-Karte i ddd ddd dd dd Ok Stop CardReader 0 1003 Tel Nummer zu lang Ok Stop 0 1004 Tel Nummer zu kurz Ok Stop 0 1005 PinPad Bitte Telefonnummer eingeben i ddd ddd dd dd Ok Stop 0 1006 PleaseWait Bitte warten 0 1007 Declined Verarbeitung fehlgeschlagen Ok 0 1008 Ok Verarbeitung OK Ok 0 1009 Karte anmelden Ok Stop 0 1010 InsertCard Willkommen Karte bitte CardReader 0 1011 PinPad Ihre Telefonnummer lautet 0 0 phone number Ok Stop 0 1012 Von 0 1 2 3 auf 4 5 6 7 8 9 0 LastKonto 1 LastKontoTyp 2 Currency LastKonto 3 LastKonto-Bezeichnung 4 GutsKonto 5 GutsKontoTyp 6 Currency Gutskonto 7 GutsKonto-Bezeichnung 8 Currency 9 Amount Ok Stop 0 1013 0 1 2 3 4 5 6 7 8 9 0 LastKonto 1 LastKontoTyp 2 Currency LastKonto 3 Currency 4 AmountSaldo 5 GutsKonto 6 GutsKontoTyp 7 Currency GutsKonto 8 Currency 9 AmountSaldo Ok 0 1014 Bezug ab Konto 0 1 2 OK 0 Debit Account 1 Debit Currency 2 Amount Ok Stop 0 1015 Einz auf eigenes Kto Autorisierung 0 1 OK 0 Currency 1 Amount Ok Stop 0 1016 Ok Stop 1 1017 Ich habe die Sendungen und die darauf aufgeführten Inhalte erhalten Ok Stop 1 1018 PinPad Bitte PIN eingeben i hhhhhh Ok Stop 0 Banking Dialogs The following banking dialogs are valid Value PrimaryIcon SecondaryIcon Text Placeholder InputMask ActiveConfirmation SigCapFlag ResourceParameter 1100 InsertCard Welcome card please CardReader 0 1101 PinPad PIN OK i hhhhhh Ok Stop 0 1102 PinPad Press key to show saldo 0 Currency 1 Amount Ok Stop 0 1103 PinPad Confirm amount 2 0 1 0 Currency 1 Amount 2 Time and Date optional Ok Stop 0 1104 RemoveCard Remove card CardReader 0 1105 InsertCard Welcome card please 0 AT Dialogs The following at dialogs are valid Value PrimaryIcon SecondaryIcon Text Placeholder InputMask ActiveConfirmation SigCapFlag ResourceParameter 3000 InsertCard Stammkundenabfrage CardReader Stop 0 RegularDataQueryType 3001 PleaseWait Bitte warten Stop 0 3002 Daten geschrieben Ok 0 3003 Karte initialisiert Ok 0 3004 Karte deinitialisiert Ok 0 3005 RemoveCard Karte entnehmen CardReader 0 Specification dialog</field>
   </doc>
   <doc>
     <field name="type">enumvalue</field>
@@ -6286,20 +5856,6 @@ $(document).ready(function(){initNavTree('search.html','');});
     <field name="url">resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9adbbca28f9354dfcfa4782ff0875a285c</field>
     <field name="keywords">ta_c_rid_petrol_see_other_screen</field>
     <field name="text">Petrol See Other Screen Petrol dialogs</field>
-  </doc>
-  <doc>
-    <field name="type">enumvalue</field>
-    <field name="name">ta_c_rid_petrol_please_refuel</field>
-    <field name="url">resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9a1f395079c1a686eb8bdd1af7adf58ae3</field>
-    <field name="keywords">ta_c_rid_petrol_please_refuel</field>
-    <field name="text">Petrol Please refuel Petrol dialogs</field>
-  </doc>
-  <doc>
-    <field name="type">enumvalue</field>
-    <field name="name">ta_c_rid_petrol_please_refuel_for_amt</field>
-    <field name="url">resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9ae554d04d8a9efcc0cb0eff06fb237893</field>
-    <field name="keywords">ta_c_rid_petrol_please_refuel_for_amt</field>
-    <field name="text">Petrol Please refuel for amount Petrol dialogs PlaceholderItems 0 Currency 1 Amount</field>
   </doc>
   <doc>
     <field name="type">enumvalue</field>
@@ -6881,27 +6437,6 @@ $(document).ready(function(){initNavTree('search.html','');});
     <field name="url">result__code_8h.html#aebaf00d1ceef4b827866ca9de0bd3320a3d33140fff97da7c177fe53b1306ac1f</field>
     <field name="keywords">ta_c_rc_rs232_not_configured</field>
     <field name="text">Connected RS232 device not configured Error message Device not configured RS232 Specification retail</field>
-  </doc>
-  <doc>
-    <field name="type">enumvalue</field>
-    <field name="name">ta_c_rc_sw_installation_failed</field>
-    <field name="url">result__code_8h.html#aebaf00d1ceef4b827866ca9de0bd3320aeeefa63e6fecd2540d3061b27aa5a9b7</field>
-    <field name="keywords">ta_c_rc_sw_installation_failed</field>
-    <field name="text">Something went wrong during the SW Update process Error message SW Installation failed Specification retail</field>
-  </doc>
-  <doc>
-    <field name="type">enumvalue</field>
-    <field name="name">ta_c_rc_sw_version_not_suitable</field>
-    <field name="url">result__code_8h.html#aebaf00d1ceef4b827866ca9de0bd3320aa57a16e1b9d6c5af6c1fd3e2ffccbbb6</field>
-    <field name="keywords">ta_c_rc_sw_version_not_suitable</field>
-    <field name="text">SW version set for update in the SCS is not suitable for the device Error message SW version not suitable Specification retail</field>
-  </doc>
-  <doc>
-    <field name="type">enumvalue</field>
-    <field name="name">ta_c_rc_sw_authentication_failed</field>
-    <field name="url">result__code_8h.html#aebaf00d1ceef4b827866ca9de0bd3320aeee4d640eb45dd3e2e6038639231a52f</field>
-    <field name="keywords">ta_c_rc_sw_authentication_failed</field>
-    <field name="text">SW authentication failed due to hash check failure Error message SW authentication failed Specification retail</field>
   </doc>
   <doc>
     <field name="type">enumvalue</field>
@@ -7790,21 +7325,21 @@ $(document).ready(function(){initNavTree('search.html','');});
     <field name="name">transaction_status.h</field>
     <field name="url">transaction__status_8h.html</field>
     <field name="keywords">transaction_status.h</field>
-    <field name="text">Information of the current transaction state This field is returned in the TerminalStatus notification to give the current transaction state from the terminal The following values are valid Copyright SIX Payment Services</field>
+    <field name="text">Information of the current transaction state Copyright SIX Payment Services</field>
   </doc>
   <doc>
     <field name="type">typedef</field>
     <field name="name">ta_e_transaction_status_t</field>
     <field name="url">transaction__status_8h.html#a6823922b53b8cbfc5a095127f1af4339</field>
     <field name="keywords">ta_e_transaction_status_t</field>
-    <field name="text">Information of the current transaction state This field is returned in the TerminalStatus notification to give the current transaction state from the terminal The following values are valid Specification retail</field>
+    <field name="text">Information of the current transaction state Specification retail</field>
   </doc>
   <doc>
     <field name="type">enum</field>
     <field name="name">ta_e_transaction_status</field>
     <field name="url">transaction__status_8h.html#a71a1d6fb385eb7008599dba8d7347567</field>
     <field name="keywords">ta_e_transaction_status</field>
-    <field name="text">Information of the current transaction state This field is returned in the TerminalStatus notification to give the current transaction state from the terminal The following values are valid Specification retail</field>
+    <field name="text">Information of the current transaction state Specification retail</field>
   </doc>
   <doc>
     <field name="type">enumvalue</field>
@@ -7902,21 +7437,21 @@ $(document).ready(function(){initNavTree('search.html','');});
     <field name="name">transaction_type.h</field>
     <field name="url">transaction__type_8h.html</field>
     <field name="keywords">transaction_type.h</field>
-    <field name="text">Defines the type of transaction Used as attribute to classify the transaction in the sixml TrxDetail field The following values are valid Copyright SIX Payment Services</field>
+    <field name="text">Defines the type of transaction Copyright SIX Payment Services</field>
   </doc>
   <doc>
     <field name="type">typedef</field>
     <field name="name">ta_e_transaction_type_t</field>
     <field name="url">transaction__type_8h.html#ab6ee5e4d83de5d339ec03b569082c238</field>
     <field name="keywords">ta_e_transaction_type_t</field>
-    <field name="text">Defines the type of transaction Used as attribute to classify the transaction in the sixml TrxDetail field The following values are valid Specifications retail petrol advancedRetail banking hospitality valueAddedServices</field>
+    <field name="text">Defines the type of transaction Specifications retail petrol advancedRetail banking hospitality</field>
   </doc>
   <doc>
     <field name="type">enum</field>
     <field name="name">ta_e_transaction_type</field>
     <field name="url">transaction__type_8h.html#a08f07046806962db06121bebefd306d1</field>
     <field name="keywords">ta_e_transaction_type</field>
-    <field name="text">Defines the type of transaction Used as attribute to classify the transaction in the sixml TrxDetail field The following values are valid Specifications retail petrol advancedRetail banking hospitality valueAddedServices</field>
+    <field name="text">Defines the type of transaction Specifications retail petrol advancedRetail banking hospitality</field>
   </doc>
   <doc>
     <field name="type">enumvalue</field>
@@ -8066,39 +7601,25 @@ $(document).ready(function(){initNavTree('search.html','');});
     <field name="text">Purchase reservation phone authorized function Specification hospitality</field>
   </doc>
   <doc>
-    <field name="type">enumvalue</field>
-    <field name="name">ta_c_tt_load_voucher</field>
-    <field name="url">transaction__type_8h.html#a08f07046806962db06121bebefd306d1a2f8a90960e2bac6291716b01f17647da</field>
-    <field name="keywords">ta_c_tt_load_voucher</field>
-    <field name="text">Load Voucher Specification valueAddedServices</field>
-  </doc>
-  <doc>
-    <field name="type">enumvalue</field>
-    <field name="name">ta_c_tt_collect_points</field>
-    <field name="url">transaction__type_8h.html#a08f07046806962db06121bebefd306d1a1ba813f22e10637a1b54af6538a44181</field>
-    <field name="keywords">ta_c_tt_collect_points</field>
-    <field name="text">Collect Points Specification valueAddedServices</field>
-  </doc>
-  <doc>
     <field name="type">file</field>
     <field name="name">update_status.h</field>
     <field name="url">update__status_8h.html</field>
     <field name="keywords">update_status.h</field>
-    <field name="text">Contains the current software update status Used in the SoftwareUpdate response returned by the treminal The following values are valid Copyright SIX Payment Services</field>
+    <field name="text">Contains the current software update status Copyright SIX Payment Services</field>
   </doc>
   <doc>
     <field name="type">typedef</field>
     <field name="name">ta_e_update_status_t</field>
     <field name="url">update__status_8h.html#a10c0f498e8af511f9082d41d6a3d41b8</field>
     <field name="keywords">ta_e_update_status_t</field>
-    <field name="text">Contains the current software update status Used in the SoftwareUpdate response returned by the treminal The following values are valid Specification retail</field>
+    <field name="text">Contains the current software update status Specification retail</field>
   </doc>
   <doc>
     <field name="type">enum</field>
     <field name="name">ta_e_update_status</field>
     <field name="url">update__status_8h.html#a7286df411d42cd12307b6c8b4e9a7210</field>
     <field name="keywords">ta_e_update_status</field>
-    <field name="text">Contains the current software update status Used in the SoftwareUpdate response returned by the treminal The following values are valid Specification retail</field>
+    <field name="text">Contains the current software update status Specification retail</field>
   </doc>
   <doc>
     <field name="type">enumvalue</field>
@@ -9020,108 +8541,6 @@ $(document).ready(function(){initNavTree('search.html','');});
   </doc>
   <doc>
     <field name="type">file</field>
-    <field name="name">loyalty_coupon.h</field>
-    <field name="url">loyalty__coupon_8h.html</field>
-    <field name="keywords">loyalty_coupon.h</field>
-    <field name="text">Object type loyalty_coupon</field>
-  </doc>
-  <doc>
-    <field name="type">function</field>
-    <field name="name">ta_loyalty_coupon_create</field>
-    <field name="args">(ta_object_t *loyalty_coupon, int amount, ta_e_currency_t currency, int exponent, ta_object_t id, ta_e_coupon_rejection_reason_t rejection_reason)</field>
-    <field name="url">loyalty__coupon_8h.html#a0eb362403368ec6e1846e2b18f1b5b43</field>
-    <field name="keywords">ta_loyalty_coupon_create</field>
-    <field name="text">Create object of type loyalty_coupon loyalty_coupon Pointer to variable to write created object instance to Created object instance is retained amount Coupon amount in minor units currency Currency of amount exponent Exponent of amount id Coupon ID rejection_reason Rejection reason ta_c_rc_ok Object instance has been created and written to loyalty_coupon ta_c_rc_invalid_argument loyalty_coupon is null-pointer ta_c_rc_invalid_argument currency is not a valid value from ta_e_currency_t ta_c_rc_invalid_argument amount is less than 0 ta_c_rc_invalid_argument exponent is less than 0 ta_c_rc_invalid_argument id is ta_invalid_object ta_c_rc_invalid_argument rejection_reason is not a valid value from ta_e_coupon_rejection_reason_t ta_c_rc_out_of_memory Failed allocating memory</field>
-  </doc>
-  <doc>
-    <field name="type">function</field>
-    <field name="name">ta_loyalty_coupon_get_amount</field>
-    <field name="args">(ta_object_t loyalty_coupon, int *value)</field>
-    <field name="url">loyalty__coupon_8h.html#ae1a4ce6b48f8fb69213fd3bbfff88603</field>
-    <field name="keywords">ta_loyalty_coupon_get_amount</field>
-    <field name="text">Coupon amount loyalty_coupon Object instance of type loyalty_coupon amount Pointer to variable to write value to ta_c_rc_ok Object instance written to amount ta_c_rc_invalid_argument loyalty_coupon is ta_invalid_object ta_c_rc_invalid_argument loyalty_coupon is not of type loyalty_coupon ta_c_rc_invalid_argument amount is null-pointer</field>
-  </doc>
-  <doc>
-    <field name="type">function</field>
-    <field name="name">ta_loyalty_coupon_get_currency</field>
-    <field name="args">(ta_object_t loyalty_coupon, ta_e_currency_t *currency)</field>
-    <field name="url">loyalty__coupon_8h.html#a56ab4186badb07fec6aad312705aba60</field>
-    <field name="keywords">ta_loyalty_coupon_get_currency</field>
-    <field name="text">Coupon currency loyalty_coupon Object instance of type loyalty_coupon currency Pointer to variable to write value to ta_c_rc_ok Object instance written to amount ta_c_rc_invalid_argument loyalty_coupon is ta_invalid_object ta_c_rc_invalid_argument loyalty_coupon is not of type loyalty_coupon ta_c_rc_invalid_argument currency is null-pointer</field>
-  </doc>
-  <doc>
-    <field name="type">function</field>
-    <field name="name">ta_loyalty_coupon_get_exponent</field>
-    <field name="args">(ta_object_t loyalty_coupon, int *exponent)</field>
-    <field name="url">loyalty__coupon_8h.html#a886d035bb98c3f05a30d5f8d4da06a33</field>
-    <field name="keywords">ta_loyalty_coupon_get_exponent</field>
-    <field name="text">Exponent of coupon amount loyalty_coupon Object instance of type loyalty_coupon exponent Pointer to variable to write value to ta_c_rc_ok Object instance written to exponent ta_c_rc_invalid_argument loyalty_coupon is ta_invalid_object ta_c_rc_invalid_argument loyalty_coupon is not of type loyalty_coupon ta_c_rc_invalid_argument exponent is null-pointer</field>
-  </doc>
-  <doc>
-    <field name="type">function</field>
-    <field name="name">ta_loyalty_coupon_get_id</field>
-    <field name="args">(ta_object_t loyalty_coupon, ta_object_t *id)</field>
-    <field name="url">loyalty__coupon_8h.html#a9355f3aceb32adc8cc09feb98c6121de</field>
-    <field name="keywords">ta_loyalty_coupon_get_id</field>
-    <field name="text">Coupon ID loyalty_coupon Object instance of type loyalty_coupon id Pointer to variable to write object instance to Object instance is of type string and is not retained ta_c_rc_ok Object instance written to id ta_c_rc_invalid_argument loyalty_coupon is ta_invalid_object ta_c_rc_invalid_argument loyalty_coupon is not of type loyalty_coupon ta_c_rc_invalid_argument id is null-pointer</field>
-  </doc>
-  <doc>
-    <field name="type">function</field>
-    <field name="name">ta_loyalty_coupon_get_rejection_reason</field>
-    <field name="args">(ta_object_t loyalty_coupon, ta_e_coupon_rejection_reason_t *rejection_reason)</field>
-    <field name="url">loyalty__coupon_8h.html#a4cb09ba7b9cde25612142f67ab9fe1ba</field>
-    <field name="keywords">ta_loyalty_coupon_get_rejection_reason</field>
-    <field name="text">Coupon rejection reason loyalty_coupon Object instance of type loyalty_coupon rejection_reason Pointer to variable to write value to ta_c_rc_ok Object instance written to rejection_reason ta_c_rc_invalid_argument loyalty_coupon is ta_invalid_object ta_c_rc_invalid_argument loyalty_coupon is not of type loyalty_coupon ta_c_rc_invalid_argument rejection_reason is null-pointer</field>
-  </doc>
-  <doc>
-    <field name="type">file</field>
-    <field name="name">loyalty_information.h</field>
-    <field name="url">loyalty__information_8h.html</field>
-    <field name="keywords">loyalty_information.h</field>
-    <field name="text">Object type loyalty_information</field>
-  </doc>
-  <doc>
-    <field name="type">function</field>
-    <field name="name">ta_loyalty_information_create</field>
-    <field name="args">(ta_object_t *loyalty_information, ta_object_t value, ta_object_t loyalty_info_type, ta_e_loyalty_function_type_t loyalty_function_type, ta_object_t loyalty_number)</field>
-    <field name="url">loyalty__information_8h.html#a685db6430f44602bddf428d83bc850ca</field>
-    <field name="keywords">ta_loyalty_information_create</field>
-    <field name="text">Create object of type loyalty_information loyalty_information Pointer to variable to write created object instance to Created object instance is retained value Value of information Object instance has to be of type string and is retained loyalty_info_type Information type Object instance has to be of type string and is retained loyalty_function_type Loyalty function type loyalty_number Loyalty number Object instance has to be of type string and is retained ta_c_rc_ok Object instance has been created and written to loyalty_information ta_c_rc_invalid_argument loyalty_information is null-pointer ta_c_rc_invalid_argument value is ta_invalid_object ta_c_rc_invalid_argument value is not of type string ta_c_rc_invalid_argument loyalty_info_type is ta_invalid_object ta_c_rc_invalid_argument loyalty_info_type is not of type string ta_c_rc_invalid_argument loyalty_function_type is not a valid value from ta_e_loyalty_function_type_t ta_c_rc_invalid_argument loyalty_number is ta_invalid_object ta_c_rc_invalid_argument loyalty_number is not of type string ta_c_rc_out_of_memory Failed allocating memory</field>
-  </doc>
-  <doc>
-    <field name="type">function</field>
-    <field name="name">ta_loyalty_information_get_value</field>
-    <field name="args">(ta_object_t loyalty_information, ta_object_t *value)</field>
-    <field name="url">loyalty__information_8h.html#a01a9d200daea0fa116f03be1c358e4f6</field>
-    <field name="keywords">ta_loyalty_information_get_value</field>
-    <field name="text">Information value loyalty_information Object instance of type loyalty_information value Pointer to variable to write object instance to Object instance is of type string and is not retained ta_c_rc_ok Object instance written to value ta_c_rc_invalid_argument loyalty_information is ta_invalid_object ta_c_rc_invalid_argument loyalty_information is not of type loyalty_information ta_c_rc_invalid_argument value is null-pointer</field>
-  </doc>
-  <doc>
-    <field name="type">function</field>
-    <field name="name">ta_loyalty_information_get_loyalty_info_type</field>
-    <field name="args">(ta_object_t loyalty_information, ta_object_t *loyalty_info_type)</field>
-    <field name="url">loyalty__information_8h.html#a51942016590263cfb68e1bfac5181be4</field>
-    <field name="keywords">ta_loyalty_information_get_loyalty_info_type</field>
-    <field name="text">Specifies type of loyalty information loyalty_information Object instance of type loyalty_information loyalty_info_type Pointer to variable to write object instance to Object instance is of type string and is not retained ta_c_rc_ok Object instance written to value ta_c_rc_invalid_argument loyalty_information is ta_invalid_object ta_c_rc_invalid_argument loyalty_information is not of type loyalty_information ta_c_rc_invalid_argument loyalty_info_type is null-pointer</field>
-  </doc>
-  <doc>
-    <field name="type">function</field>
-    <field name="name">ta_loyalty_information_get_loyalty_function_type</field>
-    <field name="args">(ta_object_t loyalty_information, ta_e_loyalty_function_type_t *loyalty_function_type)</field>
-    <field name="url">loyalty__information_8h.html#a32bce129db1ee0103b467d850a4ee178</field>
-    <field name="keywords">ta_loyalty_information_get_loyalty_function_type</field>
-    <field name="text">Defines what kind of loyalty mode will be used loyalty_information Object instance of type loyalty_information loyalty_function_type Pointer to variable to write value to ta_c_rc_ok Object instance written to value ta_c_rc_invalid_argument loyalty_information is ta_invalid_object ta_c_rc_invalid_argument loyalty_information is not of type loyalty_information ta_c_rc_invalid_argument loyalty_function_type is null-pointer</field>
-  </doc>
-  <doc>
-    <field name="type">function</field>
-    <field name="name">ta_loyalty_information_get_loyalty_number</field>
-    <field name="args">(ta_object_t loyalty_information, ta_object_t *loyalty_number)</field>
-    <field name="url">loyalty__information_8h.html#ad007ec1d16ba0310601d9d9b63fbd90f</field>
-    <field name="keywords">ta_loyalty_information_get_loyalty_number</field>
-    <field name="text">Coupon ID loyalty_information Object instance of type loyalty_information loyalty_number Pointer to variable to write object instance to Object instance is of type string and is not retained ta_c_rc_ok Object instance written to id ta_c_rc_invalid_argument loyalty_information is ta_invalid_object ta_c_rc_invalid_argument loyalty_information is not of type loyalty_information ta_c_rc_invalid_argument loyalty_number is null-pointer</field>
-  </doc>
-  <doc>
-    <field name="type">file</field>
     <field name="name">merchant_option.h</field>
     <field name="url">merchant__option_8h.html</field>
     <field name="keywords">merchant_option.h</field>
@@ -9226,7 +8645,7 @@ $(document).ready(function(){initNavTree('search.html','');});
     <field name="args">(ta_object_t *print_option, ta_e_recipient_t recipient, ta_e_print_format_t print_format, int print_width, int print_flags)</field>
     <field name="url">print__option_8h.html#abba03644177c641a35199be5948d8af2</field>
     <field name="keywords">ta_print_option_create</field>
-    <field name="text">Create print option print_option Pointer to variable to write created object instance to Created object instance is retained recipient Recipient print_format Print format print_width Print width in characters print_flags Print flags using OR combined values from ta_e_print_flag_t ta_c_rc_ok Object instance has been created and written to print_option ta_c_rc_invalid_argument print_option is null-pointer ta_c_rc_invalid_argument print_width is less than 1 ta_c_rc_out_of_memory Failed allocating memory</field>
+    <field name="text">Create print option print_option Pointer to variable to write created object instance to Created object instance is retained recipient Recipient print_format Print format print_width Print width in characters print_flags Print flags using OR combined values from ta_e_print_format_t ta_c_rc_ok Object instance has been created and written to print_option ta_c_rc_invalid_argument print_option is null-pointer ta_c_rc_invalid_argument print_width is less than 1 ta_c_rc_out_of_memory Failed allocating memory</field>
   </doc>
   <doc>
     <field name="type">function</field>
@@ -9258,7 +8677,7 @@ $(document).ready(function(){initNavTree('search.html','');});
     <field name="args">(ta_object_t print_option, int *print_flags)</field>
     <field name="url">print__option_8h.html#a0f5239da0c49c7c7d5791f08bd60d8a8</field>
     <field name="keywords">ta_print_option_get_print_flags</field>
-    <field name="text">Print flags as OR combined values from ta_e_print_flag_t print_option Object instance of type print_option print_flags Pointer to variable to write value to ta_c_rc_ok Value written to print_flags ta_c_rc_invalid_argument print_option is ta_invalid_object ta_c_rc_invalid_argument print_option is not of type print_option ta_c_rc_invalid_argument print_flags is null-pointer</field>
+    <field name="text">Print flags as OR combined values from ta_e_print_format_t print_option Object instance of type print_option print_flags Pointer to variable to write value to ta_c_rc_ok Value written to print_flags ta_c_rc_invalid_argument print_option is ta_invalid_object ta_c_rc_invalid_argument print_option is not of type print_option ta_c_rc_invalid_argument print_flags is null-pointer</field>
   </doc>
   <doc>
     <field name="type">file</field>
@@ -9980,7 +9399,7 @@ $(document).ready(function(){initNavTree('search.html','');});
     <field name="args">(ta_object_t terminal, ta_object_t *terminal_id)</field>
     <field name="url">terminal_8h.html#a69cd9a5fb957251c966827f7a897098e</field>
     <field name="keywords">ta_terminal_get_terminal_id</field>
-    <field name="text">Terminal identifier of connected terminal Returns ta_object_invalid if the terminal identifier is not known The terminal identifier is available after logging in to the terminal The terminal identifier obtained from the terminal is potentially different from the terminal identifier set in the terminal_settings This is especially true if ta_c_cm_on_fix_ip is used terminal Object instance of type terminal terminal_id Pointer to variable to write object instance to Object instance is of type string Object instance is retained ta_c_rc_ok Object instance written to settings Object instance has been retained ta_c_rc_invalid_argument terminal is ta_invalid_object ta_c_rc_invalid_argument terminal is not of type terminal ta_c_rc_invalid_argument terminal has been disposed ta_c_rc_invalid_argument terminal_id is null-pointer</field>
+    <field name="text">Terminal identifier of connected terminal Returns empty string if the terminal identifier is not known The terminal identifier is available after logging in to the terminal The terminal identifier obtained from the terminal is potentially different from the terminal identifier set in the terminal_settings This is especially true if ta_c_cm_on_fix_ip is used terminal Object instance of type terminal terminal_id Pointer to variable to write object instance to Object instance is of type string Object instance is retained ta_c_rc_ok Object instance written to settings Object instance has been retained ta_c_rc_invalid_argument terminal is ta_invalid_object ta_c_rc_invalid_argument terminal is not of type terminal ta_c_rc_invalid_argument terminal has been disposed ta_c_rc_invalid_argument terminal_id is null-pointer</field>
   </doc>
   <doc>
     <field name="type">function</field>
@@ -10661,22 +10080,6 @@ $(document).ready(function(){initNavTree('search.html','');});
     <field name="url">terminal_8h.html#a2452ca5e352debc37c22755d6827fbcd</field>
     <field name="keywords">ta_terminal_activate_service_menu_async</field>
     <field name="text">Activate service menu Asynchronous version of ta_terminal_activate_service_menu Callback function is ta_cb_terminal_activate_service_menu_completed This method is only available if guide unattended is enabled terminal Object instance of type terminal ta_c_rc_ok Request started successfully ta_c_rc_invalid_argument terminal is ta_invalid_object ta_c_rc_invalid_argument terminal is not of type terminal ta_c_rc_invalid_argument terminal has been disposed</field>
-  </doc>
-  <doc>
-    <field name="type">function</field>
-    <field name="name">ta_terminal_amt_adjustment</field>
-    <field name="args">(ta_object_t terminal, ta_object_t amount)</field>
-    <field name="url">terminal_8h.html#a06fdcbf5f56e790c08d16eedc218f44a</field>
-    <field name="keywords">ta_terminal_amt_adjustment</field>
-    <field name="text">Dynamically adjusts the transaction amount of an already running transaction This is a function and will be processed as long as the underlaying payment protocol supports it The amount transmitted in the notification is the new total amount The EFT does not calculate amounts this is the ECRs responsibility To be able to validate if this notification has been processed correctly the TerminalStatus-notification must return the current adjusted Amount This method is only available if guide unattended is enabled terminal Object instance of type terminal amount Object instance of type amount ta_c_rc_ok Hold commit send to terminal ta_c_rc_invalid_argument terminal is ta_invalid_object ta_c_rc_invalid_argument terminal is not of type terminal ta_c_rc_invalid_argument terminal has been disposed ta_c_rc_invalid_argument amount is ta_invalid_object ta_c_rc_invalid_argument amount is not of type amount</field>
-  </doc>
-  <doc>
-    <field name="type">function</field>
-    <field name="name">ta_terminal_amt_adjustment_2</field>
-    <field name="args">(ta_object_t terminal, ta_object_t amount, ta_object_t amount_discount, ta_object_t loyalty_coupon_list, ta_object_t loyalty_information_list)</field>
-    <field name="url">terminal_8h.html#a8c4abcfa3eae20b00b17d130eae3f0a3</field>
-    <field name="keywords">ta_terminal_amt_adjustment_2</field>
-    <field name="text">Dynamically adjusts the transaction amount of an already running transaction This is a function and will be processed as long as the underlaying payment protocol supports it The amount transmitted in the notification is the new total amount The EFT does not calculate amounts this is the ECRs responsibility To be able to validate if this notification has been processed correctly the TerminalStatus-notification must return the current adjusted Amount This method is only available if guide unattended is enabled terminal Object instance of type terminal amount Object instance of type amount amount_discount Optional discount amount If not ta_invalid_object object instance has to be of type amount loyalty_coupon_list Optional list of loyalty coupons If not ta_invalid_object object instance has to be of type list with elements inside have to be of type loyalty_coupon loyalty_information_list Optional list of loyalty information If not ta_invalid_object object instance has to be of type list with elements inside have to be of type loyalty_information ta_c_rc_ok Hold commit send to terminal ta_c_rc_invalid_argument terminal is ta_invalid_object ta_c_rc_invalid_argument terminal is not of type terminal ta_c_rc_invalid_argument terminal has been disposed ta_c_rc_invalid_argument amount is ta_invalid_object ta_c_rc_invalid_argument amount is not of type amount ta_c_rc_invalid_argument amount_discount is not ta_invalid_object and is not of type amount_discount ta_c_rc_invalid_argument loyalty_coupon_list is not ta_invalid_object and not of type list ta_c_rc_invalid_argument Elements in loyalty_coupon_list are ta_invalid_object ta_c_rc_invalid_argument Elements in loyalty_coupon_list are not of type loyalty_coupon ta_c_rc_invalid_argument loyalty_information_list is not ta_invalid_object and not of type list ta_c_rc_invalid_argument Elements in loyalty_information_list are ta_invalid_object ta_c_rc_invalid_argument Elements in loyalty_information_list are not of type loyalty_information</field>
   </doc>
   <doc>
     <field name="type">function</field>
@@ -11596,22 +10999,6 @@ $(document).ready(function(){initNavTree('search.html','');});
   </doc>
   <doc>
     <field name="type">function</field>
-    <field name="name">ta_terminal_settings_is_fast_ntf_mode</field>
-    <field name="args">(ta_object_t settings, ta_e_boolean_t *is_fast_ntf_mode)</field>
-    <field name="url">terminal__settings_8h.html#ad6f2a3c8853adfd4bb87d8214816eb57</field>
-    <field name="keywords">ta_terminal_settings_is_fast_ntf_mode</field>
-    <field name="text">Enable fast notification mode This parameter is only used if austrian use cases guide is enabled settings Object instance of type terminal_settings is_fast_ntf_mode Pointer to variable to write value to ta_c_rc_ok Object instance written to is_fast_ntf_mode ta_c_rc_invalid_argument settings is ta_invalid_object ta_c_rc_invalid_argument settings is not of type terminal_settings ta_c_rc_invalid_argument is_fast_ntf_mode is null-pointer</field>
-  </doc>
-  <doc>
-    <field name="type">function</field>
-    <field name="name">ta_terminal_settings_set_fast_ntf_mode</field>
-    <field name="args">(ta_object_t settings, ta_e_boolean_t fast_ntf_mode)</field>
-    <field name="url">terminal__settings_8h.html#a645ca4124d6f51951d016c88ab2262a3</field>
-    <field name="keywords">ta_terminal_settings_set_fast_ntf_mode</field>
-    <field name="text">Set enable fast notification mode This parameter is only used if austrian use cases guide is enabled settings Object instance of type terminal_settings fast_ntf_mode Value to set ta_c_rc_ok Value assigned to settings ta_c_rc_invalid_argument settings is ta_invalid_object ta_c_rc_invalid_argument settings is not of type terminal_settings</field>
-  </doc>
-  <doc>
-    <field name="type">function</field>
     <field name="name">ta_terminal_settings_get_request_repetition</field>
     <field name="args">(ta_object_t settings, int *request_repetition)</field>
     <field name="url">terminal__settings_8h.html#a20df440bbb8fcf0f6ad859a952295b5d</field>
@@ -11786,14 +11173,6 @@ $(document).ready(function(){initNavTree('search.html','');});
     <field name="text">Software update is available terminal_status Object instance of type terminal_status sw_update_available Pointer to variable to write value to Value is ta_c_b_undefined if value is not set in terminal_status ta_c_rc_ok Value written to sw_update_available ta_c_rc_invalid_argument terminal_status is ta_invalid_object ta_c_rc_invalid_argument terminal_status is not of type terminal_status ta_c_rc_invalid_argument sw_update_available is null-pointer</field>
   </doc>
   <doc>
-    <field name="type">function</field>
-    <field name="name">ta_terminal_status_get_final_amount</field>
-    <field name="args">(ta_object_t terminal_status, ta_object_t *amount)</field>
-    <field name="url">terminal__status_8h.html#aeffc734fb7255c63108c327e6b248f80</field>
-    <field name="keywords">ta_terminal_status_get_final_amount</field>
-    <field name="text">If the amount of the original transaction has been adjusted terminal_status Object instance of type terminal_status amount Pointer to variable to write object instance to Object instance is of type amount_final and is not retained Object instance is ta_invalid_object if value is not set in terminal_status ta_c_rc_ok Object instance written to card_data ta_c_rc_invalid_argument terminal_status is ta_invalid_object ta_c_rc_invalid_argument terminal_status is not of type terminal_status ta_c_rc_invalid_argument amount is null-pointer</field>
-  </doc>
-  <doc>
     <field name="type">file</field>
     <field name="name">timapi.h</field>
     <field name="url">timapi_8h.html</field>
@@ -11825,43 +11204,11 @@ $(document).ready(function(){initNavTree('search.html','');});
   </doc>
   <doc>
     <field name="type">function</field>
-    <field name="name">ta_total_get_amount_sum_tip</field>
-    <field name="args">(ta_object_t total, ta_object_t *amount_sum)</field>
-    <field name="url">total_8h.html#a450ae9338d06e0a88481324ffa1f0819</field>
-    <field name="keywords">ta_total_get_amount_sum_tip</field>
-    <field name="text">Total tip amount per currency total Object instance of type total amount_sum Pointer to variable to write object instance to Object instance is of type amount and is not retained ta_c_rc_ok Object instance written to amount_sum ta_c_rc_invalid_argument total is ta_invalid_object ta_c_rc_invalid_argument total is not of type total ta_c_rc_invalid_argument amount_sum is null-pointer</field>
-  </doc>
-  <doc>
-    <field name="type">function</field>
-    <field name="name">ta_total_get_amount_sum_other</field>
-    <field name="args">(ta_object_t total, ta_object_t *amount_sum)</field>
-    <field name="url">total_8h.html#a7c9eb0b4bea0ec94e15edc4044510966</field>
-    <field name="keywords">ta_total_get_amount_sum_other</field>
-    <field name="text">Total other amount per currency total Object instance of type total amount_sum Pointer to variable to write object instance to Object instance is of type amount and is not retained ta_c_rc_ok Object instance written to amount_sum ta_c_rc_invalid_argument total is ta_invalid_object ta_c_rc_invalid_argument total is not of type total ta_c_rc_invalid_argument amount_sum is null-pointer</field>
-  </doc>
-  <doc>
-    <field name="type">function</field>
     <field name="name">ta_total_get_trx_details</field>
     <field name="args">(ta_object_t total, ta_object_t *trx_details)</field>
     <field name="url">total_8h.html#a210b9d2208e8c1560b6fc0a0bcf44750</field>
     <field name="keywords">ta_total_get_trx_details</field>
     <field name="text">List of transaction details total Object instance of type total trx_details Pointer to variable to write object instance to Object instance is of type list and is not retained The list contains elements of type trx_detail ta_c_rc_ok Object instance written to trx_details ta_c_rc_invalid_argument total is ta_invalid_object ta_c_rc_invalid_argument total is not of type total ta_c_rc_invalid_argument trx_details is null-pointer</field>
-  </doc>
-  <doc>
-    <field name="type">function</field>
-    <field name="name">ta_total_get_currency</field>
-    <field name="args">(ta_object_t total, ta_e_currency_t *currency)</field>
-    <field name="url">total_8h.html#a1ef8e4efa0c264e6674e5416d82bee63</field>
-    <field name="keywords">ta_total_get_currency</field>
-    <field name="text">Currency total Object instance of type total currency Pointer to variable to write currency to ta_c_rc_ok Object instance written to currency ta_c_rc_invalid_argument total is ta_invalid_object ta_c_rc_invalid_argument total is not of type total ta_c_rc_invalid_argument currency is null-pointer</field>
-  </doc>
-  <doc>
-    <field name="type">function</field>
-    <field name="name">ta_total_get_exponent</field>
-    <field name="args">(ta_object_t total, int *exponent)</field>
-    <field name="url">total_8h.html#a493d982f83bc3007dcf46889a6c34898</field>
-    <field name="keywords">ta_total_get_exponent</field>
-    <field name="text">Exponent total Object instance of type total exponent Pointer to variable to write exponent to ta_c_rc_ok Object instance written to currency ta_c_rc_invalid_argument total is ta_invalid_object ta_c_rc_invalid_argument total is not of type total ta_c_rc_invalid_argument exponent is null-pointer</field>
   </doc>
   <doc>
     <field name="type">file</field>
@@ -12454,10 +11801,10 @@ $(document).ready(function(){initNavTree('search.html','');});
   </doc>
   <doc>
     <field name="type">function</field>
-    <field name="name">ta_transaction_request_set_basket</field>
+    <field name="name">ta_transaction_request_set_request</field>
     <field name="args">(ta_object_t request, ta_object_t basket)</field>
-    <field name="url">transaction__request_8h.html#aeadd8a25df4cd283575157100084a7bf</field>
-    <field name="keywords">ta_transaction_request_set_basket</field>
+    <field name="url">transaction__request_8h.html#a7a635c78cdaafd4676c58e45e99cd51b</field>
+    <field name="keywords">ta_transaction_request_set_request</field>
     <field name="text">Set request petrol request Object instance of type transaction_request basket Object instance to set Object instance can be ta_invalid_object to clear the value in request If object instance is not ta_invalid_object is has to be of type basket ta_c_rc_ok Object instance assigned to request ta_c_rc_invalid_argument request is ta_invalid_object ta_c_rc_invalid_argument request is not of type transaction_request ta_c_rc_invalid_argument basket is not ta_invalid_object and is not of type basket</field>
   </doc>
   <doc>
@@ -12557,14 +11904,6 @@ $(document).ready(function(){initNavTree('search.html','');});
     <field name="url">transaction__response_8h.html#af9e25b4aab98870bff37e235e36c0b14</field>
     <field name="keywords">ta_transaction_response_get_amount_due</field>
     <field name="text">Due amount in the transaction response Object instance of type transaction_response amount_due Pointer to variable to write object instance to Object instance is of type amount and is not retained Object instance is ta_invalid_object if value is not set in response ta_c_rc_ok Object instance written to amount_due ta_c_rc_invalid_argument response is ta_invalid_object ta_c_rc_invalid_argument response is not of type transaction_response ta_c_rc_invalid_argument amount_due is null-pointer</field>
-  </doc>
-  <doc>
-    <field name="type">function</field>
-    <field name="name">ta_transaction_response_get_amount_tip</field>
-    <field name="args">(ta_object_t response, ta_object_t *amount_tip)</field>
-    <field name="url">transaction__response_8h.html#ac479cbadc4b4512d3e899b12f25d2d99</field>
-    <field name="keywords">ta_transaction_response_get_amount_tip</field>
-    <field name="text">Tip amount in the transaction response Object instance of type transaction_response amount_due Pointer to variable to write object instance to Object instance is of type amount and is not retained Object instance is ta_invalid_object if value is not set in response ta_c_rc_ok Object instance written to amount_due ta_c_rc_invalid_argument response is ta_invalid_object ta_c_rc_invalid_argument response is not of type transaction_response ta_c_rc_invalid_argument amount_due is null-pointer</field>
   </doc>
   <doc>
     <field name="type">function</field>
@@ -12724,54 +12063,6 @@ $(document).ready(function(){initNavTree('search.html','');});
     <field name="url">trx__detail_8h.html#a1466c1b77b82a44c5316a778c385eb55</field>
     <field name="keywords">ta_trx_detail_get_amount_sum</field>
     <field name="text">Total of amount trx_detail Object instance of type trx_detail amount_sum Pointer to variable to write object instance to Object instance is of type amount and is not retained Object instance is ta_invalid_object if value is not set in trx_detail ta_c_rc_ok Object instance written to amount_sum ta_c_rc_invalid_argument trx_detail is ta_invalid_object ta_c_rc_invalid_argument trx_detail is not of type trx_detail ta_c_rc_invalid_argument amount_sum is null-pointer</field>
-  </doc>
-  <doc>
-    <field name="type">function</field>
-    <field name="name">ta_trx_detail_get_amount_sum_tip</field>
-    <field name="args">(ta_object_t trx_detail, ta_object_t *amount_sum)</field>
-    <field name="url">trx__detail_8h.html#aaa3ef62b9751542c7ddebb24db6a2ccd</field>
-    <field name="keywords">ta_trx_detail_get_amount_sum_tip</field>
-    <field name="text">Total of tip amount trx_detail Object instance of type trx_detail amount_sum Pointer to variable to write object instance to Object instance is of type amount and is not retained Object instance is ta_invalid_object if value is not set in trx_detail ta_c_rc_ok Object instance written to amount_sum ta_c_rc_invalid_argument trx_detail is ta_invalid_object ta_c_rc_invalid_argument trx_detail is not of type trx_detail ta_c_rc_invalid_argument amount_sum is null-pointer</field>
-  </doc>
-  <doc>
-    <field name="type">function</field>
-    <field name="name">ta_trx_detail_get_amount_sum_other</field>
-    <field name="args">(ta_object_t trx_detail, ta_object_t *amount_sum)</field>
-    <field name="url">trx__detail_8h.html#a073e178b2e3a3e037a9b7af3683a5f6f</field>
-    <field name="keywords">ta_trx_detail_get_amount_sum_other</field>
-    <field name="text">Total of other amount trx_detail Object instance of type trx_detail amount_sum Pointer to variable to write object instance to Object instance is of type amount and is not retained Object instance is ta_invalid_object if value is not set in trx_detail ta_c_rc_ok Object instance written to amount_sum ta_c_rc_invalid_argument trx_detail is ta_invalid_object ta_c_rc_invalid_argument trx_detail is not of type trx_detail ta_c_rc_invalid_argument amount_sum is null-pointer</field>
-  </doc>
-  <doc>
-    <field name="type">function</field>
-    <field name="name">ta_trx_detail_get_aid</field>
-    <field name="args">(ta_object_t trx_detail, ta_object_t *aid)</field>
-    <field name="url">trx__detail_8h.html#a3afb9b7d3011a7f6aa9b957e175d74ae</field>
-    <field name="keywords">ta_trx_detail_get_aid</field>
-    <field name="text">AID aid Object instance of type string aid Pointer to variable to write object instance to Object instance is of type string and is not retained Object instance is ta_invalid_object if value is not set in trx_detail ta_c_rc_ok Object instance written to aid ta_c_rc_invalid_argument aid is ta_invalid_object ta_c_rc_invalid_argument aid is not of type string ta_c_rc_invalid_argument aid is null-pointer</field>
-  </doc>
-  <doc>
-    <field name="type">function</field>
-    <field name="name">ta_trx_detail_get_markup</field>
-    <field name="args">(ta_object_t trx_detail, ta_object_t *markup)</field>
-    <field name="url">trx__detail_8h.html#ab976c110b2877c367de9fea2c8d55c1d</field>
-    <field name="keywords">ta_trx_detail_get_markup</field>
-    <field name="text">Markup percentage value markup Object instance of type integer markup Pointer to variable to write object instance to Object instance is of type integer and is not retained Object instance is ta_invalid_object if value is not set in trx_detail ta_c_rc_ok Object instance written to markup ta_c_rc_invalid_argument markup is ta_invalid_object ta_c_rc_invalid_argument markup is not of type integer ta_c_rc_invalid_argument markup is null-pointer</field>
-  </doc>
-  <doc>
-    <field name="type">function</field>
-    <field name="name">ta_trx_detail_get_markup_exponent</field>
-    <field name="args">(ta_object_t trx_detail, ta_object_t *markup_exponent)</field>
-    <field name="url">trx__detail_8h.html#aa5a0dafae48b60efdf5172216b189e53</field>
-    <field name="keywords">ta_trx_detail_get_markup_exponent</field>
-    <field name="text">Markup percentage value exponent markup_exponent Object instance of type integer markup_exponent Pointer to variable to write object instance to Object instance is of type integer and is not retained Object instance is ta_invalid_object if value is not set in trx_detail ta_c_rc_ok Object instance written to markup_exponent ta_c_rc_invalid_argument markup_exponent is ta_invalid_object ta_c_rc_invalid_argument markup_exponent is not of type integer ta_c_rc_invalid_argument markup_exponent is null-pointer</field>
-  </doc>
-  <doc>
-    <field name="type">function</field>
-    <field name="name">ta_trx_detail_get_ngvused_flag</field>
-    <field name="args">(ta_object_t trx_detail, ta_e_boolean_t *ngvused)</field>
-    <field name="url">trx__detail_8h.html#aff702d74f4b2e9ef9692a30abe5b2efe</field>
-    <field name="keywords">ta_trx_detail_get_ngvused_flag</field>
-    <field name="text">Indicates if a transaction was performed as non guaranteed payment NGV trx_detail Object instance of type trx_detail ngvused Pointer to variable to write value to ta_c_rc_ok Object instance written to dcc_flag ta_c_rc_invalid_argument trx_detail is ta_invalid_object ta_c_rc_invalid_argument trx_detail is not of type trx_detail ta_c_rc_invalid_argument ngvused is null-pointer</field>
   </doc>
   <doc>
     <field name="type">struct</field>
@@ -13215,13 +12506,6 @@ $(document).ready(function(){initNavTree('search.html','');});
     <field name="text">Supported SIXml dialog functions ta_e_dialog_functions_t</field>
   </doc>
   <doc>
-    <field name="type">variable</field>
-    <field name="name">ta_s_features_sixml::fast_ntf_mdoe</field>
-    <field name="url">structta__s__features__sixml.html#a1f8c10d3feba41e21db23045a9cf0f11</field>
-    <field name="keywords">fast_ntf_mdoe ta_s_features_sixml::fast_ntf_mdoe ta_s_features_sixml</field>
-    <field name="text">Support for fast notification mode</field>
-  </doc>
-  <doc>
     <field name="type">struct</field>
     <field name="name">ta_s_log_record</field>
     <field name="url">structta__s__log__record.html</field>
@@ -13234,13 +12518,6 @@ $(document).ready(function(){initNavTree('search.html','');});
     <field name="url">structta__s__log__record.html#a428b1e36b051cfabb3504f5b2eaae070</field>
     <field name="keywords">level ta_s_log_record::level ta_s_log_record</field>
     <field name="text">Log level</field>
-  </doc>
-  <doc>
-    <field name="type">variable</field>
-    <field name="name">ta_s_log_record::thread</field>
-    <field name="url">structta__s__log__record.html#a6c58c18912cdd6333333fea4dd9e40b3</field>
-    <field name="keywords">thread ta_s_log_record::thread ta_s_log_record</field>
-    <field name="text">Thread identifier</field>
   </doc>
   <doc>
     <field name="type">variable</field>
@@ -13682,6 +12959,13 @@ $(document).ready(function(){initNavTree('search.html','');});
     <field name="url">structta__s__timedate.html#a299213a64cd3033f430833a2e6a5f24d</field>
     <field name="keywords">second ta_s_timedate::second ta_s_timedate</field>
     <field name="text">Second</field>
+  </doc>
+  <doc>
+    <field name="type">page</field>
+    <field name="name">index</field>
+    <field name="url">index.html</field>
+    <field name="keywords"></field>
+    <field name="text">The TIM API is the standard application interface for ECR integration using SIX Payment Services terminals TIM API provides a comprehensive feature set to support the requirements of several different markets This guideline is intended to be used by ECR integrators that need to implement the TIM API functionality in their products The following document contains an overview structure description of the TIM API modes synchronous/asynchronous and describes the corresponding functions notifiers and data elements that can be used with the TIM API The following chapters describe a brief system overview The configuration of the terminal can be done by creating and configuring a terminal settings The terminal settings must then be passed to the terminal_create-function Once a terminal has been created with a terminal settings the settings can not be changed anymore Changes to the terminal settings will be ignored The network and guides configuration are explained in the following two chapters For further information refer to terminal settings The TIM API module can communicate with the Terminal over different communication channels The default communication is over TCP/IP connection For TCP/IP connection there are two possible ways to connect to the terminal Broadcast-Mode Terminal ID TID is known The TIM API starts broadcasting on the default interface and connects to the connection information sent by the matching terminal Direct Connect IP address of the terminal is known Connection is established directly via IP There are various guides covering different use case scenarios The guide retail ta_c_guide_retail is the basic guide and is activated as default With ta_terminal_settings_set_guides the guides can be configured Important the configuration needs to include all desired guides including the retail guide Code-example for creating a terminal including settings with activated guides retail and dialog Follow these basic steps for using the TIM API Create terminal_settings and initialize connection parameters see Setup Configuration Create terminal instance using the created terminal_settings Set some properties if needed set pos_id create ecr_info and add with ta_terminal_add_ecr_data add listeners ta_terminal_add_listener Connect and login This can be done automatically when the first terminal operation is called or manually using the login method Use terminal operation functions A basic flow to show a dialog is The TIM API uses two different types of automatisms Pre-Automatisms This means that all actions that need to be done before a function can be called E.g a transaction can be called in disconnected state without having called connect login and activate in advance These are called automatically by the TIM API before the transaction is performed The Pre-Automatisms are enabled by default Post-Automatisms These automatisms can be enabled or disabled using the fields auto_commit and fetch_brands A Post-Automatism is triggered after an action has been performed E.g if a connect has been called and fetch_brands is activated an application_information request is called automatically after the connect Or if auto_commit is activated a commit is performed automatically after a transaction has been made auto_commit and fetch_brands are enabled by default The following diagrams show the principle of the Pre-Automatisms and Post-Automatisms Pre-Automatisms are enabled by default and cannot be disabled If an error occurs the started request from the ECR is returned with an error Synchronous flow Asynchronous flow The basic operation mode of the terminal function calls are Synchronous Function calls are blocking and return after the operation has finished Error code is provided and indicates if request was successful or not Asynchronous Function call returns immediately after the operation has started successfully A user-implemented callback function will then be called after operation has finished All callback functions receive an event The event contains a result_code indicating if there were errors or not The user-implemented callback function has to be registered with ta_terminal_add_listener Function calls on the terminal perform synchronous by default The asynchronous function has the same name with appended to its name Code example for adding a terminal status listener Description Sync Async function Callback-Function Open a user shift ta_terminal_activate ta_terminal_activate_async activate_completed Request the list of brands available on the terminal ta_terminal_application_information ta_terminal_application_information_async application_information_completed Force the EFT Terminal to transmit all transactions to the host system as well to do the daily closing ta_terminal_balance ta_terminal_balance_async balance_completed Change configuration parameters of the EFT Terminal ta_terminal_change_settings ta_terminal_change_settings_async change_settings_completed Perform Commit-operation after a successful Transaction call ta_terminal_commit ta_terminal_commit_async commit_completed Get counter information s from the EFT Terminal ta_terminal_counter_request ta_terminal_counter_request_async counter_request_completed Initiates a connection to the EFT Terminal ta_terminal_connect ta_terminal_connect_async connect_completed Request DCC rates from the EFT Terminal ta_terminal_dcc_rates ta_terminal_dcc_rates_async dcc_rates_completed Close a user shift ta_terminal_deactivate ta_terminal_deactivate_async deactivate_completed Interrupts the connection to the EFT Terminal ta_terminal_disconnect ta_terminal_disconnect_async disconnect_completed Get hardware information from the EFT Terminal ta_terminal_hardware_information ta_terminal_hardware_information_async hardware_information_completed Activate a communication session between the ECR and the terminal ta_terminal_login ta_terminal_login_async login_completed Terminate an active communication session between the ECR and the terminal ta_terminal_logout ta_terminal_logout_async logout_completed Force the EFT Terminal to reboot ta_terminal_reboot ta_terminal_reboot_async reboot_completed Receive the latest receipt or a list of silent receipts ta_terminal_receipt_request ta_terminal_receipt_request_async receipt_request_completed Force the EFT Terminal to transmit all financial transactions to the host system ta_terminal_reconciliation ta_terminal_reconciliation_async reconciliation_completed Force the EFT Terminal to get the configuration from the service center ta_terminal_reconfig ta_terminal_reconfig_async reconfig_completed Prevent a transaction from being committed to the transaction log and generates a technical reversal of the authorization ta_terminal_rollback ta_terminal_rollback_async rollback_completed Force the EFT Terminal to start a Software Update ta_terminal_software_update ta_terminal_software_update_async software_update_completed Request system information from the EFT Terminal ta_terminal_system_information ta_terminal_system_information_async system_information_completed Starts an EFT Terminal Transaction ta_terminal_transaction ta_terminal_transaction_async transaction_completed Description Sync Async function Callback-Function Close dialog mode on the terminal ta_terminal_close_dialog_mode ta_terminal_close_dialog_mode_async close_dialog_mode_completed Open dialog mode on the terminal ta_terminal_open_dialog_mode ta_terminal_open_dialog_mode_async open_dialog_mode_completed Show dialog on the terminal ta_terminal_show_dialog ta_terminal_show_dialog_async show_dialog_completed Show signature capture on the terminal ta_terminal_show_signature_capture ta_terminal_show_signature_capture_async show_signature_capture_completed Callback-Function Description request_completed Operation started by an asynchronous function has finished Applications can use both operation specific completion callback in combination with this generic completion callback terminal_status_changed The terminal status has changed The new status can be retrieved from the TerminalStatus property The TIM API C is based on an object-type concept Most TIM API functions will either take or return parameters in shape of the ta_object_t For example ta_terminal_create will create a new terminal-instance which returns a ta_object_t On the other hand terminal-function calls like ta_terminal_get_terminal_id require the terminal-instance as parameter of type ta_object_t Note This concept introduces a behaviour similar to certain aspects of object-oriented programming to the environment of C Similarities are as follows For each object-type there are functions similar to getters and setters in order to access the object-properties The naming of getters and setters is as folllows ta_DATATYPE_get/set_PROPERTY e.g ta_terminal_settings_get_terminal_id() For each object-type there are functions similar to methods performing object-specific tasks e.g ta_terminal_login() For certain object-types create-functions exist which are similar to constructors e.g ta_string_create() The memory needed for each object will be allocated and freed by the TIM API itself However the user is responsible to release retained objects when no longer needed Retained objects are Objects returned by the TIM API as retained objects e.g terminal created with ta_terminal_create or a hardware_information_response returned by ta_terminal_hardware_information Objects that the user explicitly retained by calling ta_object_retain Basically each ta_object_retain must be paired with a ta_object_release The TIM API tells you if returned objects are already retained or not An object that hasn t been retained must not be released would lead to errors Objects that are returned as not-retained are to read immediately or to explictely retain with ta_object_retain see header-documentation or this doxygen-dok to determine if objects are retained not retained Most IDE support doxygen of header-documentation and will show these information while coding Following an example of memory management Shown by using a list C doesn t provide data types collections like string boolean list timedate etc Therefore the TIM API uses and provides a set of basic data types In various places the TIM API requires or returns these data types Data Type Description boolean A Boolean type true/false integer An Integer type 64-bit list A list collection Supports create add get index of remove and more map A map collection Supports create set get has remove and more object The base object see Objects in TIM API C string A String type Null-terminated character sequence timedate Time-Date type</field>
   </doc>
 </add>
 </script>

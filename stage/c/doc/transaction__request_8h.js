@@ -14,8 +14,8 @@ var transaction__request_8h =
     [ "ta_transaction_request_set_amount", "transaction__request_8h.html#a8665eec100e8b6119dd0062345999e28", null ],
     [ "ta_transaction_request_set_amount_other", "transaction__request_8h.html#ae8f4617b0cf231dfb9f1b0ed17bf735e", null ],
     [ "ta_transaction_request_set_amount_tip", "transaction__request_8h.html#a3931f80f093fca25f44c4128de422473", null ],
-    [ "ta_transaction_request_set_basket", "transaction__request_8h.html#aeadd8a25df4cd283575157100084a7bf", null ],
     [ "ta_transaction_request_set_merchant_options", "transaction__request_8h.html#a4713d75973b7067536f56116efecfd5f", null ],
+    [ "ta_transaction_request_set_request", "transaction__request_8h.html#a7a635c78cdaafd4676c58e45e99cd51b", null ],
     [ "ta_transaction_request_set_transaction_data", "transaction__request_8h.html#a727bba7bf327cb69833a5526b10a1055", null ],
     [ "ta_transaction_request_set_user_id", "transaction__request_8h.html#ae9c55fdd977a61ce42492c3fac97e21e", null ]
 ];

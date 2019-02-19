@@ -5,7 +5,6 @@ var structta__s__features__sixml =
     [ "auto_shift_management", "structta__s__features__sixml.html#a69835ac604143f2ef2243f6a1368d018", null ],
     [ "auto_shutter_management", "structta__s__features__sixml.html#ab34c2b04cb5ff2b5ff7b32dc924fda94", null ],
     [ "dialog_functions", "structta__s__features__sixml.html#a05e44ad6eed65546ddc5f7446bb6602d", null ],
-    [ "fast_ntf_mdoe", "structta__s__features__sixml.html#a1f8c10d3feba41e21db23045a9cf0f11", null ],
     [ "financial_functions", "structta__s__features__sixml.html#a11cfa525c0f61ab18bf2b4d94419b483", null ],
     [ "guides", "structta__s__features__sixml.html#aec97c760f84e1c2746f971028fc16da6", null ],
     [ "non_financial_functions", "structta__s__features__sixml.html#abe1ab6448744b372a46cdc59c255b606", null ],
