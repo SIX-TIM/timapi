@@ -5,26 +5,29 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>TIM API C: src/constants/resource_id.h File Reference</title>
-<link href="../../assets/css/tabs.css" rel="stylesheet" type="text/css"/>
+<title>TIM SDK: src/constants/resource_id.h File Reference</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="../../assets/css/navtree.css" rel="stylesheet" type="text/css"/>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="resize.js"></script>
 <script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script><script type="text/javascript" src="../../assets/js/tim_inject.js"></script><script type="text/javascript" src="../../assets/js/sdk_version.js"></script><script type="text/javascript" src="../api_version.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="sdk_version.js"></script>
+<script type="text/javascript" src="api_version.js"></script>
+<script type="text/javascript" src="tim_inject.js"></script>
 <script type="text/javascript">
   $(document).ready(initResizable);
 </script>
-<link href="../../assets/css/search.css" rel="stylesheet" type="text/css"/>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/search.js"></script>
 <script type="text/javascript">
   $(document).ready(function() {
     if ($('.searchresults').length > 0) { searchBox.DOMSearchField().focus(); }
   });
 </script>
-<link rel="search" href="search_opensearch.php?v=opensearch.xml" type="application/opensearchdescription+xml" title="TIM API C"/>
-<link href="../../assets/css/doxygen.css" rel="stylesheet" type="text/css" />
+<link rel="search" href="search_opensearch.php?v=opensearch.xml" type="application/opensearchdescription+xml" title="TIM SDK"/>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -33,14 +36,14 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">TIM  SDK
+   <div id="projectname">TIM SDK
    </div>
    <div id="projectbrief">TIM API C</div>
   </td>
    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
           <div class="left">
-            <form id="FSearchBox" action="search.html" method="get"><img id="MSearchSelect" src="search/mag.png" alt=""/>
-              
+            <form id="FSearchBox" action="search.html" method="get">
+               
               <input type="text" id="MSearchField" name="query" value="Search" size="20" accesskey="S" 
                      onfocus="searchBox.OnSearchFieldFocus(true)" 
                      onblur="searchBox.OnSearchFieldFocus(false)"/>
@@ -81,7 +84,7 @@ $(document).ready(function(){initNavTree('resource__id_8h.html','');});
 </div><!--header-->
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">Description</h2>
-<div class="textblock"><p>This attribute defines which dialog shall be displayed. All dialogs are divided into multiple groups containing dialogs similar operational area.</p>
+<div class="textblock"><p>Enumeration attribute defines which dialog shall be displayed. All dialogs are divided into multiple groups containing dialogs similar operational area.</p>
 <p>The dialog description contains the following elements: </p><table class="doxtable">
 <tr>
 <th>Element </th><th>Description  </th></tr>
@@ -121,21 +124,17 @@ $(document).ready(function(){initNavTree('resource__id_8h.html','');});
 <tr>
 <th>Value </th><th>PrimaryIcon </th><th>SecondaryIcon </th><th>Text </th><th>Placeholder </th><th>InputMask </th><th>ActiveConfirmation </th><th>ResourceParameter  </th></tr>
 <tr>
-<td>0100 </td><td>PinPad </td><td>- </td><td>Please enter mileage<br />
- OK<br />
- i </td><td>- </td><td>dd'ddd'ddd </td><td>Ok, Stop </td><td>-  </td></tr>
+<td>0100 </td><td>PinPad </td><td>- </td><td>Enter mileage + OK<br />
+ i </td><td>- </td><td>dddddddd </td><td>Ok, Stop </td><td>-  </td></tr>
 <tr>
-<td>0101 </td><td>PinPad </td><td>- </td><td>Enter your car number<br />
- OK<br />
- i </td><td>- </td><td>ddd'ddd </td><td>Ok, Stop </td><td>-  </td></tr>
+<td>0101 </td><td>PinPad </td><td>- </td><td>Enter your car number + OK<br />
+ i </td><td>- </td><td>dddddd </td><td>Ok, Stop </td><td>-  </td></tr>
 <tr>
-<td>0102 </td><td>PinPad </td><td>- </td><td>Enter driver code<br />
- OK<br />
- i </td><td>- </td><td>ddd'ddd </td><td>Ok, Stop </td><td>-  </td></tr>
+<td>0102 </td><td>PinPad </td><td>- </td><td>Enter drivercode + OK<br />
+ i </td><td>- </td><td>dddddd </td><td>Ok, Stop </td><td>-  </td></tr>
 <tr>
-<td>0103 </td><td>PinPad </td><td>- </td><td>Enter fleet id<br />
- OK<br />
- i </td><td>- </td><td>ddd'ddd </td><td>Ok, Stop </td><td>-  </td></tr>
+<td>0103 </td><td>PinPad </td><td>- </td><td>Enter fleet ID + OK<br />
+ i </td><td>- </td><td>dddddd </td><td>Ok, Stop </td><td>-  </td></tr>
 <tr>
 <td>0104 </td><td>PinPad </td><td>- </td><td>%0 %1<br />
  Please select pump: i<br />
@@ -182,24 +181,19 @@ PetrolCardData3 (optional) </li>
 </ul>
 </td></tr>
 <tr>
-<td>0111 </td><td>PinPad </td><td>- </td><td>Enter additional information<br />
- OK<br />
+<td>0111 </td><td>PinPad </td><td>- </td><td>Enter additional information + OK<br />
  i </td><td>- </td><td>dddddddddddddddddddd </td><td>Ok, Stop </td><td>-  </td></tr>
 <tr>
-<td>0112 </td><td>PinPad </td><td>- </td><td>Enter cost center<br />
- OK<br />
+<td>0112 </td><td>PinPad </td><td>- </td><td>Enter cost center + OK<br />
  i </td><td>- </td><td>dddddddddddddddddddd </td><td>Ok, Stop </td><td>-  </td></tr>
 <tr>
-<td>0113 </td><td>PinPad </td><td>- </td><td>Enter employee no<br />
- OK<br />
+<td>0113 </td><td>PinPad </td><td>- </td><td>Enter employee no + OK<br />
  i </td><td>- </td><td>dddddddddddddddddddd </td><td>Ok, Stop </td><td>-  </td></tr>
 <tr>
-<td>0114 </td><td>PinPad </td><td>- </td><td>Enter license plate<br />
- OK<br />
+<td>0114 </td><td>PinPad </td><td>- </td><td>Enter license plate + OK<br />
  i </td><td>- </td><td>dddddddddddddddddddd </td><td>Ok, Stop </td><td>-  </td></tr>
 <tr>
-<td>0115 </td><td>PinPad </td><td>- </td><td>Enter project no<br />
- OK<br />
+<td>0115 </td><td>PinPad </td><td>- </td><td>Enter project no + OK<br />
  i </td><td>- </td><td>dddddddddddddddddddd </td><td>Ok, Stop </td><td>-  </td></tr>
 <tr>
 <td>0116 </td><td>- </td><td>- </td><td>Print receipt?<br />
@@ -223,6 +217,17 @@ PetrolCardData3 (optional) </li>
 <td>0121 </td><td>- </td><td>- </td><td>Please consider<br />
  main screen<br />
   </td><td>- </td><td>- </td><td>Ok, Stop </td><td>-  </td></tr>
+<tr>
+<td>0122 </td><td>- </td><td>- </td><td>Please refuel </td><td>- </td><td>- </td><td>- </td><td>-  </td></tr>
+<tr>
+<td>0123 </td><td>- </td><td>- </td><td>Please refuel for<br />
+ %0 %1 </td><td><ul>
+<li>
+0: Currency (an, mandatory) (e.g. EUR) </li>
+<li>
+1: Amount (n, mandatory) (e.g. 45.00) </li>
+</ul>
+</td><td>- </td><td>- </td><td>-  </td></tr>
 </table>
 <p><b>Note:</b> Dialog 0110 is not supposed to return the input value, but shall check the code according to the <em>CodeCheckType</em> and return the result in the <em>Reason</em> . <em>CodeOk</em> for success and <em>CodeNok</em> for failure.</p>
 <p>Postal Dialogs. The following postal dialogs are valid: </p><table class="doxtable">
@@ -461,44 +466,46 @@ Enumerations</h2></td></tr>
 &#160;&#160;<a class="el" href="resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9a186432049d85671420996ecf4644f11b">ta_c_rid_petrol_invalid_entry</a>, 
 <a class="el" href="resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9aafa0457315a647f0eef6fecc7bc37fb2">ta_c_rid_petrol_refuel_at_pump</a>, 
 <a class="el" href="resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9adbbca28f9354dfcfa4782ff0875a285c">ta_c_rid_petrol_see_other_screen</a>, 
+<a class="el" href="resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9a1f395079c1a686eb8bdd1af7adf58ae3">ta_c_rid_petrol_please_refuel</a>, 
+<br />
+&#160;&#160;<a class="el" href="resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9ae554d04d8a9efcc0cb0eff06fb237893">ta_c_rid_petrol_please_refuel_for_amt</a>, 
 <a class="el" href="resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9a4f4bc41f35d20046ac5e8e9c8524209f">ta_c_rid_no_recharge_card</a>, 
-<br />
-&#160;&#160;<a class="el" href="resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9aac2116966faf8dda47068df0e227c94f">ta_c_rid_show_phone_number_with_amount</a>, 
+<a class="el" href="resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9aac2116966faf8dda47068df0e227c94f">ta_c_rid_show_phone_number_with_amount</a>, 
 <a class="el" href="resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9a9d32ea00f1973160359dc58597804576">ta_c_rid_enter_phone_or_prepaid_number</a>, 
-<a class="el" href="resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9aa17f6d94454001037b539d0ba4d3ed13">ta_c_rid_phone_number_too_long</a>, 
+<br />
+&#160;&#160;<a class="el" href="resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9aa17f6d94454001037b539d0ba4d3ed13">ta_c_rid_phone_number_too_long</a>, 
 <a class="el" href="resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9a94a8a9b721daf14478f2ccfd74d51b43">ta_c_rid_phone_number_too_short</a>, 
-<br />
-&#160;&#160;<a class="el" href="resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9a33bdbfe0bab29a82ccd2894c95907832">ta_c_rid_enter_phone_number</a>, 
+<a class="el" href="resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9a33bdbfe0bab29a82ccd2894c95907832">ta_c_rid_enter_phone_number</a>, 
 <a class="el" href="resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9afadbc7151280c0b80d5b08b7fb0f07b6">ta_c_rid_please_wait</a>, 
-<a class="el" href="resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9a393ccd9507aacac54c1ed0463dbc2458">ta_c_rid_processing_declined</a>, 
+<br />
+&#160;&#160;<a class="el" href="resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9a393ccd9507aacac54c1ed0463dbc2458">ta_c_rid_processing_declined</a>, 
 <a class="el" href="resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9a8c24b403087aa61cfbb54bfcea0de7a7">ta_c_rid_processing_ok</a>, 
-<br />
-&#160;&#160;<a class="el" href="resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9a8b15740048c2cb489b5271cf438a342d">ta_c_rid_register_card</a>, 
+<a class="el" href="resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9a8b15740048c2cb489b5271cf438a342d">ta_c_rid_register_card</a>, 
 <a class="el" href="resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9a4ffb9ede77cb9f2101e6279d4aa6aa0b">ta_c_rid_welcome_card</a>, 
-<a class="el" href="resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9ac5e1d78f671967e7f0f3d258aa3e490f">ta_c_rid_show_phone_number</a>, 
+<br />
+&#160;&#160;<a class="el" href="resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9ac5e1d78f671967e7f0f3d258aa3e490f">ta_c_rid_show_phone_number</a>, 
 <a class="el" href="resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9a17ac14dec614e6edd6b08646bd59a0d0">ta_c_rid_inter_account_transfer</a>, 
-<br />
-&#160;&#160;<a class="el" href="resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9a39bf0fcd50864fef68a947745d3a21d0">ta_c_rid_inter_account_transfer_confirmation</a>, 
+<a class="el" href="resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9a39bf0fcd50864fef68a947745d3a21d0">ta_c_rid_inter_account_transfer_confirmation</a>, 
 <a class="el" href="resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9afbfed90228edef47d64fd9b4b4b2bc2a">ta_c_rid_disbursement_from_account</a>, 
-<a class="el" href="resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9a678d5b72d182e02c4cfe020b3b05a22f">ta_c_rid_deposit_own_account</a>, 
+<br />
+&#160;&#160;<a class="el" href="resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9a678d5b72d182e02c4cfe020b3b05a22f">ta_c_rid_deposit_own_account</a>, 
 <a class="el" href="resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9a1c39c66992ab578336780b0fe6411406">ta_c_rid_empty_dialog</a>, 
-<br />
-&#160;&#160;<a class="el" href="resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9ab96171d3599c3f5d80a47677e0ea11aa">ta_c_rid_packet_acknowledgement</a>, 
+<a class="el" href="resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9ab96171d3599c3f5d80a47677e0ea11aa">ta_c_rid_packet_acknowledgement</a>, 
 <a class="el" href="resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9a8a85f50c77c47532b356121d13cabbf0">ta_c_rid_pin_entry</a>, 
-<a class="el" href="resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9ad55032f46f2c0e7e1f865c224e15fa54">ta_c_rid_banking_insert_card</a>, 
+<br />
+&#160;&#160;<a class="el" href="resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9ad55032f46f2c0e7e1f865c224e15fa54">ta_c_rid_banking_insert_card</a>, 
 <a class="el" href="resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9a93af25ad0d4ba3dd903cfcd483238121">ta_c_rid_banking_pin_check</a>, 
-<br />
-&#160;&#160;<a class="el" href="resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9ac7b49d46f65ca6e69cec8835ae1a8812">ta_c_rid_banking_show_saldo</a>, 
+<a class="el" href="resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9ac7b49d46f65ca6e69cec8835ae1a8812">ta_c_rid_banking_show_saldo</a>, 
 <a class="el" href="resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9abe1cf027de125b0092cf52cae9facff9">ta_c_rid_banking_confirm_amount</a>, 
-<a class="el" href="resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9ab5f0ab1515a469e3e62bfffe0a3317f8">ta_c_rid_banking_remove_card</a>, 
+<br />
+&#160;&#160;<a class="el" href="resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9ab5f0ab1515a469e3e62bfffe0a3317f8">ta_c_rid_banking_remove_card</a>, 
 <a class="el" href="resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9ad30bbbc02e1f2997d19c5f4fc4b915c8">ta_c_rid_banking_welcome</a>, 
-<br />
-&#160;&#160;<a class="el" href="resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9a8072ba0f056e46e66a573418b2d3c080">ta_c_rid_common_regular</a>, 
+<a class="el" href="resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9a8072ba0f056e46e66a573418b2d3c080">ta_c_rid_common_regular</a>, 
 <a class="el" href="resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9af4e8bd1be5cea5e2945240f5d74de4ef">ta_c_rid_common_please_wait</a>, 
-<a class="el" href="resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9a529a809dd2e8d0d7504abb06ff12ca11">ta_c_rid_common_data_saved</a>, 
-<a class="el" href="resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9a57f9e567db9a3d59cd3671014ad2f4b5">ta_c_rid_common_card_initialized</a>, 
 <br />
-&#160;&#160;<a class="el" href="resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9a94a71eb2f3f71d1ea4b70742e979a5be">ta_c_rid_common_card_deinitialized</a>, 
+&#160;&#160;<a class="el" href="resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9a529a809dd2e8d0d7504abb06ff12ca11">ta_c_rid_common_data_saved</a>, 
+<a class="el" href="resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9a57f9e567db9a3d59cd3671014ad2f4b5">ta_c_rid_common_card_initialized</a>, 
+<b>ta_c_rid_common_card_deinitialized</b>, 
 <a class="el" href="resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9a03fc4a4af9b03a8fdf3085d646df48fe">ta_c_rid_common_remove_card</a>
 <br />
  }</td></tr>
@@ -516,7 +523,7 @@ Enumerations</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>This attribute defines which dialog shall be displayed. All dialogs are divided into multiple groups containing dialogs similar operational area.</p>
+<p>Enumeration attribute defines which dialog shall be displayed. All dialogs are divided into multiple groups containing dialogs similar operational area.</p>
 <p>The dialog description contains the following elements: </p><table class="doxtable">
 <tr>
 <th>Element </th><th>Description  </th></tr>
@@ -556,21 +563,17 @@ Enumerations</h2></td></tr>
 <tr>
 <th>Value </th><th>PrimaryIcon </th><th>SecondaryIcon </th><th>Text </th><th>Placeholder </th><th>InputMask </th><th>ActiveConfirmation </th><th>ResourceParameter  </th></tr>
 <tr>
-<td>0100 </td><td>PinPad </td><td>- </td><td>Please enter mileage<br />
- OK<br />
- i </td><td>- </td><td>dd'ddd'ddd </td><td>Ok, Stop </td><td>-  </td></tr>
+<td>0100 </td><td>PinPad </td><td>- </td><td>Enter mileage + OK<br />
+ i </td><td>- </td><td>dddddddd </td><td>Ok, Stop </td><td>-  </td></tr>
 <tr>
-<td>0101 </td><td>PinPad </td><td>- </td><td>Enter your car number<br />
- OK<br />
- i </td><td>- </td><td>ddd'ddd </td><td>Ok, Stop </td><td>-  </td></tr>
+<td>0101 </td><td>PinPad </td><td>- </td><td>Enter your car number + OK<br />
+ i </td><td>- </td><td>dddddd </td><td>Ok, Stop </td><td>-  </td></tr>
 <tr>
-<td>0102 </td><td>PinPad </td><td>- </td><td>Enter driver code<br />
- OK<br />
- i </td><td>- </td><td>ddd'ddd </td><td>Ok, Stop </td><td>-  </td></tr>
+<td>0102 </td><td>PinPad </td><td>- </td><td>Enter drivercode + OK<br />
+ i </td><td>- </td><td>dddddd </td><td>Ok, Stop </td><td>-  </td></tr>
 <tr>
-<td>0103 </td><td>PinPad </td><td>- </td><td>Enter fleet id<br />
- OK<br />
- i </td><td>- </td><td>ddd'ddd </td><td>Ok, Stop </td><td>-  </td></tr>
+<td>0103 </td><td>PinPad </td><td>- </td><td>Enter fleet ID + OK<br />
+ i </td><td>- </td><td>dddddd </td><td>Ok, Stop </td><td>-  </td></tr>
 <tr>
 <td>0104 </td><td>PinPad </td><td>- </td><td>%0 %1<br />
  Please select pump: i<br />
@@ -617,24 +620,19 @@ PetrolCardData3 (optional) </li>
 </ul>
 </td></tr>
 <tr>
-<td>0111 </td><td>PinPad </td><td>- </td><td>Enter additional information<br />
- OK<br />
+<td>0111 </td><td>PinPad </td><td>- </td><td>Enter additional information + OK<br />
  i </td><td>- </td><td>dddddddddddddddddddd </td><td>Ok, Stop </td><td>-  </td></tr>
 <tr>
-<td>0112 </td><td>PinPad </td><td>- </td><td>Enter cost center<br />
- OK<br />
+<td>0112 </td><td>PinPad </td><td>- </td><td>Enter cost center + OK<br />
  i </td><td>- </td><td>dddddddddddddddddddd </td><td>Ok, Stop </td><td>-  </td></tr>
 <tr>
-<td>0113 </td><td>PinPad </td><td>- </td><td>Enter employee no<br />
- OK<br />
+<td>0113 </td><td>PinPad </td><td>- </td><td>Enter employee no + OK<br />
  i </td><td>- </td><td>dddddddddddddddddddd </td><td>Ok, Stop </td><td>-  </td></tr>
 <tr>
-<td>0114 </td><td>PinPad </td><td>- </td><td>Enter license plate<br />
- OK<br />
+<td>0114 </td><td>PinPad </td><td>- </td><td>Enter license plate + OK<br />
  i </td><td>- </td><td>dddddddddddddddddddd </td><td>Ok, Stop </td><td>-  </td></tr>
 <tr>
-<td>0115 </td><td>PinPad </td><td>- </td><td>Enter project no<br />
- OK<br />
+<td>0115 </td><td>PinPad </td><td>- </td><td>Enter project no + OK<br />
  i </td><td>- </td><td>dddddddddddddddddddd </td><td>Ok, Stop </td><td>-  </td></tr>
 <tr>
 <td>0116 </td><td>- </td><td>- </td><td>Print receipt?<br />
@@ -658,6 +656,17 @@ PetrolCardData3 (optional) </li>
 <td>0121 </td><td>- </td><td>- </td><td>Please consider<br />
  main screen<br />
   </td><td>- </td><td>- </td><td>Ok, Stop </td><td>-  </td></tr>
+<tr>
+<td>0122 </td><td>- </td><td>- </td><td>Please refuel </td><td>- </td><td>- </td><td>- </td><td>-  </td></tr>
+<tr>
+<td>0123 </td><td>- </td><td>- </td><td>Please refuel for<br />
+ %0 %1 </td><td><ul>
+<li>
+0: Currency (an, mandatory) (e.g. EUR) </li>
+<li>
+1: Amount (n, mandatory) (e.g. 45.00) </li>
+</ul>
+</td><td>- </td><td>- </td><td>-  </td></tr>
 </table>
 <p><b>Note:</b> Dialog 0110 is not supposed to return the input value, but shall check the code according to the <em>CodeCheckType</em> and return the result in the <em>Reason</em> . <em>CodeOk</em> for success and <em>CodeNok</em> for failure.</p>
 <p>Postal Dialogs. The following postal dialogs are valid: </p><table class="doxtable">
@@ -874,7 +883,7 @@ RegularDataQueryType </li>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>This attribute defines which dialog shall be displayed. All dialogs are divided into multiple groups containing dialogs similar operational area.</p>
+<p>Enumeration attribute defines which dialog shall be displayed. All dialogs are divided into multiple groups containing dialogs similar operational area.</p>
 <p>The dialog description contains the following elements: </p><table class="doxtable">
 <tr>
 <th>Element </th><th>Description  </th></tr>
@@ -914,21 +923,17 @@ RegularDataQueryType </li>
 <tr>
 <th>Value </th><th>PrimaryIcon </th><th>SecondaryIcon </th><th>Text </th><th>Placeholder </th><th>InputMask </th><th>ActiveConfirmation </th><th>ResourceParameter  </th></tr>
 <tr>
-<td>0100 </td><td>PinPad </td><td>- </td><td>Please enter mileage<br />
- OK<br />
- i </td><td>- </td><td>dd'ddd'ddd </td><td>Ok, Stop </td><td>-  </td></tr>
+<td>0100 </td><td>PinPad </td><td>- </td><td>Enter mileage + OK<br />
+ i </td><td>- </td><td>dddddddd </td><td>Ok, Stop </td><td>-  </td></tr>
 <tr>
-<td>0101 </td><td>PinPad </td><td>- </td><td>Enter your car number<br />
- OK<br />
- i </td><td>- </td><td>ddd'ddd </td><td>Ok, Stop </td><td>-  </td></tr>
+<td>0101 </td><td>PinPad </td><td>- </td><td>Enter your car number + OK<br />
+ i </td><td>- </td><td>dddddd </td><td>Ok, Stop </td><td>-  </td></tr>
 <tr>
-<td>0102 </td><td>PinPad </td><td>- </td><td>Enter driver code<br />
- OK<br />
- i </td><td>- </td><td>ddd'ddd </td><td>Ok, Stop </td><td>-  </td></tr>
+<td>0102 </td><td>PinPad </td><td>- </td><td>Enter drivercode + OK<br />
+ i </td><td>- </td><td>dddddd </td><td>Ok, Stop </td><td>-  </td></tr>
 <tr>
-<td>0103 </td><td>PinPad </td><td>- </td><td>Enter fleet id<br />
- OK<br />
- i </td><td>- </td><td>ddd'ddd </td><td>Ok, Stop </td><td>-  </td></tr>
+<td>0103 </td><td>PinPad </td><td>- </td><td>Enter fleet ID + OK<br />
+ i </td><td>- </td><td>dddddd </td><td>Ok, Stop </td><td>-  </td></tr>
 <tr>
 <td>0104 </td><td>PinPad </td><td>- </td><td>%0 %1<br />
  Please select pump: i<br />
@@ -975,24 +980,19 @@ PetrolCardData3 (optional) </li>
 </ul>
 </td></tr>
 <tr>
-<td>0111 </td><td>PinPad </td><td>- </td><td>Enter additional information<br />
- OK<br />
+<td>0111 </td><td>PinPad </td><td>- </td><td>Enter additional information + OK<br />
  i </td><td>- </td><td>dddddddddddddddddddd </td><td>Ok, Stop </td><td>-  </td></tr>
 <tr>
-<td>0112 </td><td>PinPad </td><td>- </td><td>Enter cost center<br />
- OK<br />
+<td>0112 </td><td>PinPad </td><td>- </td><td>Enter cost center + OK<br />
  i </td><td>- </td><td>dddddddddddddddddddd </td><td>Ok, Stop </td><td>-  </td></tr>
 <tr>
-<td>0113 </td><td>PinPad </td><td>- </td><td>Enter employee no<br />
- OK<br />
+<td>0113 </td><td>PinPad </td><td>- </td><td>Enter employee no + OK<br />
  i </td><td>- </td><td>dddddddddddddddddddd </td><td>Ok, Stop </td><td>-  </td></tr>
 <tr>
-<td>0114 </td><td>PinPad </td><td>- </td><td>Enter license plate<br />
- OK<br />
+<td>0114 </td><td>PinPad </td><td>- </td><td>Enter license plate + OK<br />
  i </td><td>- </td><td>dddddddddddddddddddd </td><td>Ok, Stop </td><td>-  </td></tr>
 <tr>
-<td>0115 </td><td>PinPad </td><td>- </td><td>Enter project no<br />
- OK<br />
+<td>0115 </td><td>PinPad </td><td>- </td><td>Enter project no + OK<br />
  i </td><td>- </td><td>dddddddddddddddddddd </td><td>Ok, Stop </td><td>-  </td></tr>
 <tr>
 <td>0116 </td><td>- </td><td>- </td><td>Print receipt?<br />
@@ -1016,6 +1016,17 @@ PetrolCardData3 (optional) </li>
 <td>0121 </td><td>- </td><td>- </td><td>Please consider<br />
  main screen<br />
   </td><td>- </td><td>- </td><td>Ok, Stop </td><td>-  </td></tr>
+<tr>
+<td>0122 </td><td>- </td><td>- </td><td>Please refuel </td><td>- </td><td>- </td><td>- </td><td>-  </td></tr>
+<tr>
+<td>0123 </td><td>- </td><td>- </td><td>Please refuel for<br />
+ %0 %1 </td><td><ul>
+<li>
+0: Currency (an, mandatory) (e.g. EUR) </li>
+<li>
+1: Amount (n, mandatory) (e.g. 45.00) </li>
+</ul>
+</td><td>- </td><td>- </td><td>-  </td></tr>
 </table>
 <p><b>Note:</b> Dialog 0110 is not supposed to return the input value, but shall check the code according to the <em>CodeCheckType</em> and return the result in the <em>Reason</em> . <em>CodeOk</em> for success and <em>CodeNok</em> for failure.</p>
 <p>Postal Dialogs. The following postal dialogs are valid: </p><table class="doxtable">
@@ -1286,6 +1297,16 @@ RegularDataQueryType </li>
 </td></tr>
 <tr><td class="fieldname"><a id="a334bce2189c86641d9e5b8aa2dbceec9adbbca28f9354dfcfa4782ff0875a285c"></a>ta_c_rid_petrol_see_other_screen&#160;</td><td class="fielddoc"><p><b>Petrol See Other Screen</b> | Petrol dialogs </p>
 </td></tr>
+<tr><td class="fieldname"><a id="a334bce2189c86641d9e5b8aa2dbceec9a1f395079c1a686eb8bdd1af7adf58ae3"></a>ta_c_rid_petrol_please_refuel&#160;</td><td class="fielddoc"><p><b>Petrol Please refuel</b> | Petrol dialogs </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a334bce2189c86641d9e5b8aa2dbceec9ae554d04d8a9efcc0cb0eff06fb237893"></a>ta_c_rid_petrol_please_refuel_for_amt&#160;</td><td class="fielddoc"><p><b>Petrol Please refuel for amount</b> | Petrol dialogs<br />
+ PlaceholderItems:<br />
+</p><ul>
+<li>0: Currency<br />
+</li>
+<li>1: Amount </li>
+</ul>
+</td></tr>
 <tr><td class="fieldname"><a id="a334bce2189c86641d9e5b8aa2dbceec9a4f4bc41f35d20046ac5e8e9c8524209f"></a>ta_c_rid_no_recharge_card&#160;</td><td class="fielddoc"><p><b>No Recharge Card</b> | Postal dialogs </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a334bce2189c86641d9e5b8aa2dbceec9aac2116966faf8dda47068df0e227c94f"></a>ta_c_rid_show_phone_number_with_amount&#160;</td><td class="fielddoc"><p><b>Show Phone Number With Amount</b> | Postal dialogs<br />
@@ -1430,8 +1451,6 @@ black;"|12.04.2018lderItems:<br />
 <tr><td class="fieldname"><a id="a334bce2189c86641d9e5b8aa2dbceec9a529a809dd2e8d0d7504abb06ff12ca11"></a>ta_c_rid_common_data_saved&#160;</td><td class="fielddoc"><p><b>Common Data Saved</b> | AT dialogs </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a334bce2189c86641d9e5b8aa2dbceec9a57f9e567db9a3d59cd3671014ad2f4b5"></a>ta_c_rid_common_card_initialized&#160;</td><td class="fielddoc"><p><b>Common Card Initialized</b> | AT dialogs </p>
-</td></tr>
-<tr><td class="fieldname"><a id="a334bce2189c86641d9e5b8aa2dbceec9a94a71eb2f3f71d1ea4b70742e979a5be"></a>ta_c_rid_common_card_deinitialized&#160;</td><td class="fielddoc"><p><b>Common Card Deinitialized</b> | AT dialogs </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a334bce2189c86641d9e5b8aa2dbceec9a03fc4a4af9b03a8fdf3085d646df48fe"></a>ta_c_rid_common_remove_card&#160;</td><td class="fielddoc"><p><b>Common Remove Card</b> | AT dialogs </p>
 </td></tr>

@@ -25,6 +25,8 @@ var resource__id_8h =
       [ "ta_c_rid_petrol_invalid_entry", "resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9a186432049d85671420996ecf4644f11b", null ],
       [ "ta_c_rid_petrol_refuel_at_pump", "resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9aafa0457315a647f0eef6fecc7bc37fb2", null ],
       [ "ta_c_rid_petrol_see_other_screen", "resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9adbbca28f9354dfcfa4782ff0875a285c", null ],
+      [ "ta_c_rid_petrol_please_refuel", "resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9a1f395079c1a686eb8bdd1af7adf58ae3", null ],
+      [ "ta_c_rid_petrol_please_refuel_for_amt", "resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9ae554d04d8a9efcc0cb0eff06fb237893", null ],
       [ "ta_c_rid_no_recharge_card", "resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9a4f4bc41f35d20046ac5e8e9c8524209f", null ],
       [ "ta_c_rid_show_phone_number_with_amount", "resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9aac2116966faf8dda47068df0e227c94f", null ],
       [ "ta_c_rid_enter_phone_or_prepaid_number", "resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9a9d32ea00f1973160359dc58597804576", null ],

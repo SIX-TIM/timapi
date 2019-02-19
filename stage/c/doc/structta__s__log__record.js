@@ -9,5 +9,6 @@ var structta__s__log__record =
     [ "parameters", "structta__s__log__record.html#a7f343cccdd0f0e41342bbbfe2f5c1fd3", null ],
     [ "stack_trace", "structta__s__log__record.html#aed6807a1cc643712f48c69b8b9c66ff3", null ],
     [ "stack_trace_count", "structta__s__log__record.html#a35a9d42a56fad6db9db44770d75d89a0", null ],
+    [ "thread", "structta__s__log__record.html#a6c58c18912cdd6333333fea4dd9e40b3", null ],
     [ "timetstamp", "structta__s__log__record.html#a8d8b1f3ba960dee304f2bf3405e62ffa", null ]
 ];

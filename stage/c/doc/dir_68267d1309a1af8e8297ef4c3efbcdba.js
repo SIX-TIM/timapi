@@ -30,6 +30,10 @@ var dir_68267d1309a1af8e8297ef4c3efbcdba =
     [ "hardware_information_response.h", "hardware__information__response_8h.html", "hardware__information__response_8h" ],
     [ "item_quantity.h", "item__quantity_8h.html", "item__quantity_8h" ],
     [ "logging.h", "logging_8h.html", "logging_8h" ],
+    [ "loyalty_coupon.h", "loyalty__coupon_8h.html", "loyalty__coupon_8h" ],
+    [ "loyalty_discount.h", "loyalty__discount_8h.html", "loyalty__discount_8h" ],
+    [ "loyalty_information.h", "loyalty__information_8h.html", "loyalty__information_8h" ],
+    [ "loyalty_item.h", "loyalty__item_8h.html", "loyalty__item_8h" ],
     [ "merchant_option.h", "merchant__option_8h.html", "merchant__option_8h" ],
     [ "network_information.h", "network__information_8h.html", "network__information_8h" ],
     [ "print_data.h", "print__data_8h.html", "print__data_8h" ],
@@ -56,5 +60,6 @@ var dir_68267d1309a1af8e8297ef4c3efbcdba =
     [ "transaction_information.h", "transaction__information_8h.html", "transaction__information_8h" ],
     [ "transaction_request.h", "transaction__request_8h.html", "transaction__request_8h" ],
     [ "transaction_response.h", "transaction__response_8h.html", "transaction__response_8h" ],
-    [ "trx_detail.h", "trx__detail_8h.html", "trx__detail_8h" ]
+    [ "trx_detail.h", "trx__detail_8h.html", "trx__detail_8h" ],
+    [ "vas_checkout_information.h", "vas__checkout__information_8h.html", "vas__checkout__information_8h" ]
 ];

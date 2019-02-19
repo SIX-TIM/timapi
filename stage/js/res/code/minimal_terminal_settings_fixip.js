@@ -1,10 +1,10 @@
 // Create new TerminalSettings instance
-var settings = new timapi.TerminalSettings()	
+let settings = new timapi.TerminalSettings();
 
 // ----------------------------CONNECTION----------------------------
 
 //IP address of the terminal.
-settings.connectionIPString = "192.168.2.12";
+settings.connectionIPString = "192.168.1.10";
 
 //Port to be used for connection.
 // Port list:

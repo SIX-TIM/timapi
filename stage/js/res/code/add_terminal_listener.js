@@ -6,7 +6,7 @@
 */
 class MyTerminalListener extends timapi.DefaultTerminalListener {
 
-// Overwrite all methods of the DefaultTerminalListener hererin
+// Overwrite all wanted methods of the DefaultTerminalListener herein
 
 }
 

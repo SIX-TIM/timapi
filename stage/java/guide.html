@@ -14,7 +14,7 @@
   <script src="../assets/js/tim_inject.js"></script>
   <script src="../assets/js/sdk_version.js"></script>
   <script src="../assets/js/config.js"></script>
-  <script src="api_version.js"></script>
+  <script src="doc/api_version.js"></script>
 </head>
 <body data-spy="scroll" data-target="#navScrollspy">
   <div class="container-fluid" id="content">
@@ -38,7 +38,7 @@
                 <a class="lang_swift" href="../swift/guide.html">Swift</a>
               </li>
               <li>
-                <a class="lang_js" href="../js/simple.html">JavaScript</a>
+                <a class="lang_js" href="../js/guide.html">JavaScript</a>
               </li>
               <li>
                 <a class="lang_c" href="../c/guide.html">C</a>
@@ -51,20 +51,10 @@
           </div>
           <div id="docTitle">Detailed Implementation Guide</div>
           <ul class="nav">
-          <li><a href="#intro">Introduction</a></li><li><a href="#sysreq">System Requirements</a></li><li><a href="#setup">Setup Configuration</a><ul class="nav"><li><a href="#network">Network Configuration</a></li><li><a href="#guides">Guides Configuration</a></li><li><a href="#configfile">Configuration File</a></li></ul></li><li><a href="#operation">Operation Overview</a></li><li><a href="#automatisms">Automatisms</a></li><li><a href="#useCase">Use Cases</a><ul class="nav"><li class="filterGuides guidePetrol"><a href="#petrolUseCase">Guide Petrol Use Cases</a><ul class="nav"><li><a href="#petrolUseCaseIndoorOnline">Indoor - Online Card</a></li><li><a href="#petrolUseCaseOutdoorOnline">Outdoor - Online Card</a></li><li><a href="#petrolUseCaseIndoorOffline">Indoor - Offline Card</a></li><li><a href="#petrolUseCaseOutdoorOffline">Outdoor - Offline Card</a></li></ul></li><li class="filterGuides guideUnattended"><a href="#uatUseCase">Guide Unattended Use Cases</a><ul class="nav"><li><a href="#uatUseCasePartialCommit">Use Case Partial Commit</a></li><li><a href="#uatUseCaseHoldCommit">Use Case Hold Commit</a></li><li><a href="#uatUseCaseAmountAdjustment">Use Case Amount Adjustment</a></li><li><a href="#uatUseCaseRetainCard">Use Case Retain Card</a></li><li><a href="#uatUseCaseSilentFlag">Use Case Silent Abort</a></li></ul></li><li class="filterGuides guideAustria"><a href="#austrianUseCase">Guide Austrian Use Cases</a><ul class="nav"><li class="filterGuides guideAustria"><a href="#austrianUseCaseNGV">Austrian Use Case: NGV</a></li><li class="filterGuides guideAustria"><a href="#austrianUseCaseDelayedPayment">Austrian Use Case: Delayed Payment</a></li></ul></li></ul></li><li><a href="#methods">Terminal methods overview</a><ul class="nav"><li><a href="#mainFunc">Main / guide retail terminal functions</a></li><li class="filterGuides guidePetrol"><a href="#petrolFunc">Guide Petrol Terminal Functions</a></li><li class="filterGuides guideUnattended"><a href="#uatFunc">Guide Unattended terminal functions</a></li><li class="filterGuides guideDialog"><a href="#dialogFunc">Guide dialog terminal functions</a></li><li><a href="#addMethods">Additional terminal listener-events</a></li></ul></li><li><a href="#flows">Flows</a><ul class="nav"><li class="filterGuides guidePetrol"><a href="#petrolFlows">Guide Petrol Additional Flows</a><ul class="nav"><li><a href="#petrolFlowIndoorOnline">Petrol Flow: Indoor - Online Card</a></li><li><a href="#petrolFlowOutdoorOnline">Petrol Flow: Outdoor - Online Card</a></li><li><a href="#petrolFlowIndoorOffline">Petrol Flow: Indoor - Offline Card</a></li><li><a href="#petrolFlowOutdoorOffline">Petrol Flow: Outdoor - Offline Card</a></li></ul></li><li class="filterGuides guideUnattended"><a href="#uatFlows">Guide Unattended Additional Flows</a><ul class="nav"><li><a href="#uatFlowPartialCommit"> Flow: Partial Commit</a></li><li><a href="#uatFlowHoldCommit"> Flow: Hold commit</a></li><li><a href="#uatFlowAmountAdjustment"> Flow: Amount adjustment</a></li><li><a href="#uatFlowPreAuth"> Flow: PreAuthorization</a></li><li><a href="#uatFlowRetainCard"> Flow: Retain card</a></li><li><a href="#uatFlowSilentFlag"> Flow: Silent abort</a></li></ul></li><li class="filterGuides guideAustria"><a href="#austrianFlows">Guide Austrian Additional Flows</a><ul class="nav"><li><a href="#austrianFlowNGVWithoutDelay">Austrian Flow: NGV Purchase without delay</a></li><li><a href="#austrianFlowNGVWithDelay">Austrian Flow: NGV Purchase with delay</a></li><li><a href="#austrianFlowNGVFallback">Austrian Flow: NGV Purchase fallback with Non-NGV card</a></li><li><a href="#austrianFlowNGVMandatoryError">Austrian Flow: NGV Purchase mandatory with error</a></li></ul></li></ul></li><li><a href="#logging">Logging</a><ul class="nav"><li><a href="#loglevel">LogLevel</a></li><li><a href="#logRotation">Log Rotation Handling</a></li></ul></li><li><a href="#examples">Code Examples</a></li><li><a href="#functionStateMatrix">Function-State-Matrix</a></li></ul>
+          <li><a href="#intro">Introduction</a></li><li><a href="#sysreq">System Requirements</a></li><li><a href="#setup">Setup Configuration</a><ul class="nav"><li><a href="#network">Network Configuration</a></li><li><a href="#guides">Guides Configuration</a></li><li><a href="#configfile">Configuration File</a></li></ul></li><li><a href="#operation">Operation Overview</a></li><li><a href="#automatisms">Automatisms</a></li><li><a href="#useCase">Use Cases</a><ul class="nav"><li class="filterGuides guidePetrol"><a href="#petrolUseCase">Guide Petrol Use Cases</a><ul class="nav"><li><a href="#petrolUseCaseIndoorOnline">Indoor - Online Card</a></li><li><a href="#petrolUseCaseOutdoorOnline">Outdoor - Online Card</a></li><li><a href="#petrolUseCaseIndoorOffline">Indoor - Offline Card</a></li><li><a href="#petrolUseCaseOutdoorOffline">Outdoor - Offline Card</a></li></ul></li><li class="filterGuides guideUnattended"><a href="#uatUseCase">Guide Unattended Use Cases</a><ul class="nav"><li><a href="#uatUseCasePartialCommit">Use Case Partial Commit</a></li><li><a href="#uatUseCaseHoldCommit">Use Case Hold Commit</a></li><li><a href="#uatUseCaseAmountAdjustment">Use Case Amount Adjustment</a></li><li><a href="#uatUseCaseRetainCard">Use Case Retain Card</a></li><li><a href="#uatUseCaseSilentFlag">Use Case Silent Abort</a></li></ul></li><li class="filterGuides guideAustria"><a href="#austrianUseCase">Guide Austrian Use Cases</a><ul class="nav"><li class="filterGuides guideAustria"><a href="#austrianUseCaseNGV">Austrian Use Case: NGV</a></li><li class="filterGuides guideAustria"><a href="#austrianUseCaseDelayedPayment">Austrian Use Case: Delayed Payment</a></li></ul></li></ul></li><li><a href="#methods">Terminal methods overview</a><ul class="nav"><li><a href="#mainFunc">Main / guide Retail terminal functions</a></li><li class="filterGuides guidePetrol"><a href="#petrolFunc">Guide Petrol terminal functions</a></li><li class="filterGuides guideUnattended"><a href="#uatFunc">Guide Unattended terminal functions</a></li><li class="filterGuides guideDialog"><a href="#dialogFunc">Guide Dialog terminal functions</a></li><li><a href="#addMethods">Additional terminal listener-events</a></li></ul></li><li><a href="#flows">Flows</a><ul class="nav"><li class="filterGuides guidePetrol"><a href="#petrolFlows">Guide Petrol Additional Flows</a><ul class="nav"><li><a href="#petrolFlowIndoorOnline">Petrol Flow: Indoor - Online Card</a></li><li><a href="#petrolFlowOutdoorOnline">Petrol Flow: Outdoor - Online Card</a></li><li><a href="#petrolFlowIndoorOffline">Petrol Flow: Indoor - Offline Card</a></li><li><a href="#petrolFlowOutdoorOffline">Petrol Flow: Outdoor - Offline Card</a></li></ul></li><li class="filterGuides guideUnattended"><a href="#uatFlows">Guide Unattended Additional Flows</a><ul class="nav"><li><a href="#uatFlowPartialCommit"> Flow: Partial Commit</a></li><li><a href="#uatFlowHoldCommit"> Flow: Hold commit</a></li><li><a href="#uatFlowAmountAdjustment"> Flow: Amount adjustment</a></li><li><a href="#uatFlowPreAuth"> Flow: PreAuthorization</a></li><li><a href="#uatFlowRetainCard"> Flow: Retain card</a></li><li><a href="#uatFlowSilentFlag"> Flow: Silent abort</a></li></ul></li><li class="filterGuides guideAustria"><a href="#austrianFlows">Guide Austrian Additional Flows</a><ul class="nav"><li><a href="#austrianFlowNGVWithoutDelay">Austrian Flow: NGV Purchase without delay</a></li><li><a href="#austrianFlowNGVWithDelay">Austrian Flow: NGV Purchase with delay</a></li><li><a href="#austrianFlowNGVFallback">Austrian Flow: NGV Purchase fallback with Non-NGV card</a></li><li><a href="#austrianFlowNGVMandatoryError">Austrian Flow: NGV Purchase mandatory with error</a></li></ul></li></ul></li><li><a href="#logging">Logging</a><ul class="nav"><li><a href="#loglevel">LogLevel</a></li><li><a href="#logRotation">Log Rotation Handling</a></li></ul></li><li><a href="#examples">Code Examples</a></li></ul>
           <div class="seperator">&#160;</div>
-          <div class="linkDiv">
-            <a href="simple.html">Simple Implementation Guide</a>
-          </div>
-          <div class="linkDiv">
-            <a href="appendix.html">Appendix</a>
-          </div>
-          <div class="linkDiv">
-            <a href="doc/index.html">API Documentation</a>
-          </div>
-          <div class="linkDiv">
-            <a href="../../version/version-history.html">Version History</a>
-          </div>
+          <div id="docLinks">
+          <div class="linkDiv"><a href="simple.html">Simple Implementation Guide</a></div><div class="linkDiv"><a href="appendix.html">Appendix</a></div><div class="linkDiv"><a href="doc/index.html">API Documentation</a></div><div class="linkDiv"><a href="../../version/version-history.html">Version History</a></div></div>
         </div>
       </nav>
 
@@ -78,19 +68,20 @@
             their
             products.
         </p>
-        <p>The following document contains an overview structure, description of the TIM API modes
-            synchronous/asynchronous
+        <p>The following document contains an overview structure<span excl="js">, description of the TIM API modes
+            synchronous/asynchronous</span>
             and describes the corresponding functions, notifiers and data elements that can be used with the TIM API.
             Furthermore implementation examples are provided. Nevertheless always the corresponding description of a
             function or data element is authoritative, not the examples.
         </p>
         <hr>
     </div></div></section>
-    <section id="sysreq"><h1><a name="sysreq"></a>System Requirements</h1><div class="row"><div class="col-md-6"><p>The TIM API is available for multiple platforms. Due to such diversity the support for the TIM API is limited to certain standards. Those are the minimal system requirements:
-          <ul lang="java">
-              <li>Java 7 JRE</li>
-              <li>Android: API Level 16 (Android 4.1, Jelly Bean)</li>
-          </ul> </p> <hr>
+    <section id="sysreq"><h1><a name="sysreq"></a>System Requirements</h1><div class="row"><div class="col-md-6"><p>The TIM API is available for multiple platforms. Due to such diversity the support for the TIM API is limited to certain standards. Those are the minimal system requirements:</p>
+        <ul lang="java">
+          <li>Java 7 JRE</li>
+          <li>Android: API Level 16 (Android 4.1, Jelly Bean)</li>
+        </ul>
+        <hr>
     </div></div></section>
     <section id="setup"><h1><a name="setup"></a>Setup Configuration</h1><div class="row"><div class="col-md-6"><p lang="java">The configuration of the <code><a href="doc/index.html?com/six/timapi/Terminal.html">Terminal</a></code> can be done in two ways:
             <ol>
@@ -115,31 +106,31 @@
         </p>
 
 
-        </div></div><section id="network"><h2><a name="network"></a>Network Configuration</h2><div class="row"><div class="col-md-6"><p>Depending on the platform used, the TIM API module can communicate with the Terminal over different communication channels.
-            The default communication is over TCP/IP connection. Default port used is 7784.
-            </p>
-            <p lang="Java Swift">On mobile devices also a Bluetooth connection is possible.</p>
-            <p>For TCP/IP connection there are two possible ways to connect to the terminal:</p>
-            <ul>
-                <li>
-                    <strong>Broadcast-Mode:</strong>
-                    <ul>
-                        <li>Terminal ID (TID) is known.</li>
-                        <li>The TIM API starts broadcasting on the default interface and connects to the connection
-                            information sent by the matching terminal.
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <strong>Direct Connect:</strong>
-                    <ul>
-                        <li>IP address of the terminal is known.</li>
-                        <li>Connection is established directly via IP.</li>
-                    </ul>
-                </li>
-            </ul>
-
-        </div></div></section>
+        </div></div><section id="network"><h2><a name="network"></a>Network Configuration</h2><div class="row"><div class="col-md-6"><p>Depending on the platform used, the TIM API module can communicate with the Terminal over different communication channels.</p>
+            <div excl="js">
+                <p>The default communication is over TCP/IP connection. Default port used is 7784.</p>
+                <p lang="java swift">On mobile devices also a Bluetooth connection is possible.</p>
+                <p>For TCP/IP connection there are two possible ways to connect to the terminal:</p>
+                <ul>
+                    <li>
+                        <strong>Broadcast-Mode:</strong>
+                        <ul>
+                            <li>Terminal ID (TID) is known.</li>
+                            <li>The TIM API starts broadcasting on the default interface and connects to the connection
+                                information sent by the matching terminal.
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>Direct Connect:</strong>
+                        <ul>
+                            <li>IP address of the terminal is known.</li>
+                            <li>Connection is established directly via IP.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            </div></div></section>
         <div class="row"><div class="col-md-6"></div></div><section id="guides"><h2><a name="guides"></a>Guides Configuration</h2><div class="row"><div class="col-md-6">
                     <p>There are various
                         <code><a href="doc/index.html?com/six/timapi/constants/Guides.html">Guides</a></code>
@@ -384,8 +375,7 @@ SecuredConnection = On</code></pre>
                     </li>
                     <li>Set some properties where required:
                         <ul>
-                            <li>set
-                                <code><a href="doc/index.html?com/six/timapi/Terminal.html#setPosId-java.lang.String-">PosId</a></code>
+                            <li>Define a <code><a href="doc/index.html?com/six/timapi/Terminal.html#setPosId-java.lang.String-">POS ID</a></code>
                             </li>
                             <li>
                                 create <strong>mandatory</strong>
@@ -393,7 +383,7 @@ SecuredConnection = On</code></pre>
                             </li>
                             <li>create list of <code><a href="doc/index.html?com/six/timapi/PrintOption.html">PrintOptions</a></code> and set with <code><a href="doc/index.html?com/six/timapi/Terminal.html#setPrintOptions-java.util.List-">setPrintOptions</a></code>
                             </li>
-                            <li>add listeners (<code><a href="doc/index.html?com/six/timapi/Terminal.html#addListener-com.six.timapi.TerminalListener-">addListeners</a></code>)
+                            <li><code><a href="doc/index.html?com/six/timapi/Terminal.html#addListener-com.six.timapi.TerminalListener-">addListeners</a></code>
                             </li>
                         </ul>
                     </li>
@@ -435,14 +425,13 @@ SecuredConnection = On</code></pre>
                     after
                     the connect. Or if  <code><a href="doc/index.html?com/six/timapi/TerminalSettings.html#setAutoCommit-boolean-">autoCommit</a></code> is activated a <code><a href="doc/index.html?com/six/timapi/Terminal.html#commit--">commit</a></code> is performed automatically after a transaction
                     has
-                    been made.  <code><a href="doc/index.html?com/six/timapi/TerminalSettings.html#setAutoCommit-boolean-">autoCommit</a></code> and <code><a href="doc/index.html?com/six/timapi/TerminalSettings.html#setFetchBrands-boolean-">fetchBrands</a></code> are enabled by default.
+                    been made.  <code><a href="doc/index.html?com/six/timapi/TerminalSettings.html#setAutoCommit-boolean-">AutoCommit</a></code> and <code><a href="doc/index.html?com/six/timapi/TerminalSettings.html#setFetchBrands-boolean-">fetchBrands</a></code> are enabled by default.
                 </p>
             </li>
         </ul>
-        <p>The following diagrams show the principle of the Pre-Automatisms and Post-Automatisms. Pre-Automatisms are
+        <p>The following diagram<span excl="js">s</span>show the principle of the Pre-Automatisms and Post-Automatisms. Pre-Automatisms are
             enabled by default and cannot be disabled. If an error occurs the started request from the ECR is returned
-            with an error.
-        </p>
+            with an error.</p>
 
         </div></div><div class="row"><div class="col-md-6">
 
@@ -460,7 +449,8 @@ SecuredConnection = On</code></pre>
 
     </div></div></section>
 
-    <section id="useCase"><h1><a name="useCase"></a>Use Cases</h1><section class="filterGuides guidePetrol" id="petrolUseCase"><h2><a name="petrolUseCase"></a>Guide Petrol Use Cases</h2><div class="row"><div class="col-md-6"><p>Petrol functionality adds a number of
+    <section id="useCase"><h1><a name="useCase"></a>Use Cases</h1><div class="row"><div class="col-md-6"><p>This chapter describes various use cases and their specific guide. (If none visible, try to select a guide under "Guide Selection" on the left) </p>
+    	</div></div><section class="filterGuides guidePetrol" id="petrolUseCase"><h2><a name="petrolUseCase"></a>Guide Petrol Use Cases</h2><div class="row"><div class="col-md-6"><p>Petrol functionality adds a number of
  	    <a href="#petrolFunc">additional methods</a>,
  			<code><a href="doc/index.html?com/six/timapi/constants/TransactionType.html">transaction types</a></code>,
  			containers (<code><a href="doc/index.html?com/six/timapi/TransactionResponse.html#getAdditionalInfo--">AdditionalInfoList</a></code>,
@@ -594,7 +584,7 @@ SecuredConnection = On</code></pre>
             See <a href="#uatFlowSilentFlag">this flow</a> for reference.
         </div></div></section>
   <div class="row"><div class="col-md-6"></div></div></section>
-    <div class="row"><div class="col-md-6"></div></div><section class="filterGuides guideAustria" id="austrianUseCase"><h2><a name="austrianUseCase"></a>Guide Austrian Use Cases</h2><div class="row"><div class="col-md-6"><p>The Austria guide adds two new use cases:
+        <div class="row"><div class="col-md-6"></div></div><section class="filterGuides guideAustria" id="austrianUseCase"><h2><a name="austrianUseCase"></a>Guide Austrian Use Cases</h2><div class="row"><div class="col-md-6"><p>The Austria guide adds two new use cases:
       <ul>
         <li>Non guaranteed payment (NGV)</li>
         <li>Delayed payment</li>
@@ -633,8 +623,7 @@ SecuredConnection = On</code></pre>
     <div class="row"><div class="col-md-6"></div></div></section> 
 
     <section id="methods"><h1><a name="methods"></a>Terminal methods overview</h1><div class="row"><div class="col-md-6">
-                <p>The basic operation modes of terminal <span lang="java swift">method</span> calls are:</p>
-                <ol>
+                <p excl="js">The basic operation modes of terminal <span lang="java swift">method</span> calls are:<ol>
                     <li>
                         <p>
                             <strong>Synchronous</strong>
@@ -661,6 +650,7 @@ SecuredConnection = On</code></pre>
                             </span> </p>
                     </li>
                 </ol>
+                </p>
                 <p lang="java c">Functions called on terminal perform synchronous by default. The asynchronous method has the same name
                     with <i lang="java">Async</i> appended to its name.</p>
                 </div><div class="col-md-6">
@@ -680,12 +670,12 @@ terminal.addListener(new MyTerminalListener());
 
 </code></pre>
             </div></div>
-        <div class="row"><div class="col-md-6"></div></div><section id="mainFunc"><h2><a name="mainFunc"></a>Main / guide retail terminal functions</h2><div class="row"><div class="col-md-6"><table class="table">
+        <div class="row"><div class="col-md-6"></div></div><section id="mainFunc"><h2><a name="mainFunc"></a>Main / guide Retail terminal functions</h2><div class="row"><div class="col-md-6"><table class="table">
                 <thead>
                     <tr>
                         <th>
-                            <strong>Sync method</strong>
-                            <br>
+                            <strong class="syncMethod">Sync method</strong>
+                            <br class="syncMethod">
                             <span class="asyncMethod">Async method</span>
                             <br>
                             <span class="completedMethod">Completed event</span>
@@ -697,7 +687,7 @@ terminal.addListener(new MyTerminalListener());
                     <tr>
                         <td>
                             <code class="syncMethod"><a class="syncMethod" href="doc/index.html?com/six/timapi/Terminal.html#activate--">activate</a></code>
-                            <br>
+                            <br class="syncMethod">
                             <code class="asyncMethod"><a class="asyncMethod" href="doc/index.html?com/six/timapi/Terminal.html#activateAsync--">activateAsync</a></code>
                             <br>
                             <code class="completedMethod"><a class="completedMethod" href="doc/index.html?com/six/timapi/TerminalListener.html#activateCompleted-com.six.timapi.TimEvent-com.six.timapi.ActivateResponse-">activateCompleted</a></code>
@@ -707,7 +697,7 @@ terminal.addListener(new MyTerminalListener());
                     <tr>
                         <td>
                             <code class="syncMethod"><a class="syncMethod" href="doc/index.html?com/six/timapi/Terminal.html#applicationInformation--">applicationInformation</a></code>
-                            <br>
+                            <br class="syncMethod">
                             <code class="asyncMethod"><a class="asyncMethod" href="doc/index.html?com/six/timapi/Terminal.html#applicationInformationAsync--">
                                 applicationInformationAsync
                             </a></code>
@@ -721,7 +711,7 @@ terminal.addListener(new MyTerminalListener());
                     <tr>
                         <td>
                             <code class="syncMethod"><a class="syncMethod" href="doc/index.html?com/six/timapi/Terminal.html#balance--">balance</a></code>
-                            <br>
+                            <br class="syncMethod">
                             <code class="asyncMethod"><a class="asyncMethod" href="doc/index.html?com/six/timapi/Terminal.html#balanceAsync--">balanceAsync</a></code>
                             <br>
                             <code class="completedMethod"><a class="completedMethod" href="doc/index.html?com/six/timapi/TerminalListener.html#balanceCompleted-com.six.timapi.TimEvent-com.six.timapi.BalanceResponse-">balanceCompleted</a></code>
@@ -733,8 +723,14 @@ terminal.addListener(new MyTerminalListener());
                     </tr>
                     <tr>
                         <td>
+                            <code class="notifyMethod"><a class="notifyMethod" href="doc/index.html?com/six/timapi/Terminal.html#cancel--">cancel</a></code>
+                        </td>
+                        <td>Aborts an open asynchronous Financial Transaction or Non-Financial Transaction request, except for a commit or rollback request, which cannot be cancelled.</td>
+                    </tr>
+                    <tr>
+                        <td>
                             <code class="syncMethod"><a class="syncMethod" href="doc/index.html?com/six/timapi/Terminal.html#changeSettings-java.util.Map-">changeSettings</a></code>
-                            <br>
+                            <br class="syncMethod">
                             <code class="asyncMethod"><a class="asyncMethod" href="doc/index.html?com/six/timapi/Terminal.html#changeSettingsAsync-java.util.Map-">changeSettingsAsync</a></code>
                             <br>
                             <code class="completedMethod"><a class="completedMethod" href="doc/index.html?com/six/timapi/TerminalListener.html#changeSettingsCompleted-com.six.timapi.TimEvent-">changeSettingsCompleted
@@ -745,7 +741,7 @@ terminal.addListener(new MyTerminalListener());
                     <tr>
                         <td>
                             <code class="syncMethod"><a class="syncMethod" href="doc/index.html?com/six/timapi/Terminal.html#commit--">commit</a></code>
-                            <br>
+                            <br class="syncMethod">
                             <code class="asyncMethod"><a class="asyncMethod" href="doc/index.html?com/six/timapi/Terminal.html#commitAsync--">commitAsync</a></code>
                             <br>
                             <code class="completedMethod"><a class="completedMethod" href="doc/index.html?com/six/timapi/TerminalListener.html#commitCompleted-com.six.timapi.TimEvent-com.six.timapi.PrintData-">commitCompleted</a></code>
@@ -755,7 +751,7 @@ terminal.addListener(new MyTerminalListener());
                     <tr>
                         <td>
                             <code class="syncMethod"><a class="syncMethod" href="doc/index.html?com/six/timapi/Terminal.html#connect--">connect</a></code>
-                            <br>
+                            <br class="syncMethod">
                             <code class="asyncMethod"><a class="asyncMethod" href="doc/index.html?com/six/timapi/Terminal.html#connectAsync--">connectAsync</a></code>
                             <br>
                             <code class="completedMethod"><a class="completedMethod" href="doc/index.html?com/six/timapi/TerminalListener.html#connectCompleted-com.six.timapi.TimEvent-">connectCompleted</a></code>
@@ -765,7 +761,7 @@ terminal.addListener(new MyTerminalListener());
                     <tr>
                         <td>
                             <code class="syncMethod"><a class="syncMethod" href="doc/index.html?com/six/timapi/Terminal.html#counterRequest-com.six.timapi.constants.CounterType-">counterRequest</a></code>
-                            <br>
+                            <br class="syncMethod">
                             <code class="asyncMethod"><a class="asyncMethod" href="doc/index.html?com/six/timapi/Terminal.html#counterRequestAsync-com.six.timapi.constants.CounterType-">counterRequestAsync</a></code>
                             <br>
                             <code class="completedMethod"><a class="completedMethod" href="doc/index.html?com/six/timapi/TerminalListener.html#counterRequestCompleted-com.six.timapi.TimEvent-com.six.timapi.Counters-">counterRequestCompleted
@@ -776,7 +772,7 @@ terminal.addListener(new MyTerminalListener());
                     <tr>
                         <td>
                             <code class="syncMethod"><a class="syncMethod" href="doc/index.html?com/six/timapi/Terminal.html#dccRates--">dccRates</a></code>
-                            <br>
+                            <br class="syncMethod">
                             <code class="asyncMethod"><a class="asyncMethod" href="doc/index.html?com/six/timapi/Terminal.html#dccRatesAsync--">dccRatesAsync</a></code>
                             <br>
                             <code class="completedMethod"><a class="completedMethod" href="doc/index.html?com/six/timapi/TerminalListener.html#dccRatesCompleted-com.six.timapi.TimEvent-com.six.timapi.PrintData-">dccRatesCompleted</a></code>
@@ -786,7 +782,7 @@ terminal.addListener(new MyTerminalListener());
                     <tr>
                         <td>
                             <code class="syncMethod"><a class="syncMethod" href="doc/index.html?com/six/timapi/Terminal.html#deactivate--">deactivate</a></code>
-                            <br>
+                            <br class="syncMethod">
                             <code class="asyncMethod"><a class="asyncMethod" href="doc/index.html?com/six/timapi/Terminal.html#deactivateAsync--">deactivateAsync</a></code>
                             <br>
                             <code class="completedMethod"><a class="completedMethod" href="doc/index.html?com/six/timapi/TerminalListener.html#deactivateCompleted-com.six.timapi.TimEvent-com.six.timapi.DeactivateResponse-">deactivateCompleted</a></code>
@@ -796,7 +792,7 @@ terminal.addListener(new MyTerminalListener());
                     <tr>
                         <td>
                             <code class="syncMethod"><a class="syncMethod" href="doc/index.html?com/six/timapi/Terminal.html#disconnect--">disconnect</a></code>
-                            <br>
+                            <br class="syncMethod">
                             <code class="asyncMethod"><a class="asyncMethod" href="doc/index.html?com/six/timapi/Terminal.html#disconnectAsync--">disconnectAsync</a></code>
                             <br>
                             <code class="completedMethod"><a class="completedMethod" href="doc/index.html?com/six/timapi/TerminalListener.html#disconnected-com.six.timapi.Terminal-com.six.timapi.TimException-">disconnected</a></code>
@@ -806,7 +802,7 @@ terminal.addListener(new MyTerminalListener());
                     <tr>
                         <td>
                             <code class="syncMethod"><a class="syncMethod" href="doc/index.html?com/six/timapi/Terminal.html#hardwareInformation--">hardwareInformation</a></code>
-                            <br>
+                            <br class="syncMethod">
                             <code class="asyncMethod"><a class="asyncMethod" href="doc/index.html?com/six/timapi/Terminal.html#hardwareInformationAsync--">hardwareInformationAsync
                             </a></code>
                             <br>
@@ -819,7 +815,7 @@ terminal.addListener(new MyTerminalListener());
                     <tr>
                         <td>
                             <code class="syncMethod"><a class="syncMethod" href="doc/index.html?com/six/timapi/Terminal.html#login--">login</a></code>
-                            <br>
+                            <br class="syncMethod">
                             <code class="asyncMethod"><a class="asyncMethod" href="doc/index.html?com/six/timapi/Terminal.html#loginAsync--">loginAsync</a></code>
                             <br>
                             <code class="completedMethod"><a class="completedMethod" href="doc/index.html?com/six/timapi/TerminalListener.html#loginCompleted-com.six.timapi.TimEvent-">loginCompleted</a></code>
@@ -832,7 +828,7 @@ terminal.addListener(new MyTerminalListener());
                     <tr>
                         <td>
                             <code class="syncMethod"><a class="syncMethod" href="doc/index.html?com/six/timapi/Terminal.html#logout--">logout</a></code>
-                            <br>
+                            <br class="syncMethod">
                             <code class="asyncMethod"><a class="asyncMethod" href="doc/index.html?com/six/timapi/Terminal.html#logoutAsync--">logoutAsync</a></code>
                             <br>
                             <code class="completedMethod"><a class="completedMethod" href="doc/index.html?com/six/timapi/TerminalListener.html#logoutCompleted-com.six.timapi.TimEvent-">logoutCompleted</a></code>
@@ -843,7 +839,7 @@ terminal.addListener(new MyTerminalListener());
                     <tr>
                         <td>
                             <code class="syncMethod"><a class="syncMethod" href="doc/index.html?com/six/timapi/Terminal.html#reboot--">reboot</a></code>
-                            <br>
+                            <br class="syncMethod">
                             <code class="asyncMethod"><a class="asyncMethod" href="doc/index.html?com/six/timapi/Terminal.html#rebootAsync--">rebootAsync</a></code>
                             <br>
                             <code class="completedMethod"><a class="completedMethod" href="doc/index.html?com/six/timapi/TerminalListener.html#rebootCompleted-com.six.timapi.TimEvent-">rebootCompleted</a></code>
@@ -853,7 +849,7 @@ terminal.addListener(new MyTerminalListener());
                     <tr>
                         <td>
                             <code class="syncMethod"><a class="syncMethod" href="doc/index.html?com/six/timapi/Terminal.html#receiptRequest-com.six.timapi.constants.ReceiptRequestType-">receiptRequest</a></code>
-                            <br>
+                            <br class="syncMethod">
                             <code class="asyncMethod"><a class="asyncMethod" href="doc/index.html?com/six/timapi/Terminal.html#receiptRequestAsync-com.six.timapi.constants.ReceiptRequestType-">receiptRequestAsync</a></code>
                             <br>
                             <code class="completedMethod"><a class="completedMethod" href="doc/index.html?com/six/timapi/TerminalListener.html#receiptRequestCompleted-com.six.timapi.TimEvent-com.six.timapi.ReceiptRequestResponse-">receiptRequestCompleted
@@ -864,7 +860,7 @@ terminal.addListener(new MyTerminalListener());
                     <tr>
                         <td>
                             <code class="syncMethod"><a class="syncMethod" href="doc/index.html?com/six/timapi/Terminal.html#reconciliation--">reconciliation</a></code>
-                            <br>
+                            <br class="syncMethod">
                             <code class="asyncMethod"><a class="asyncMethod" href="doc/index.html?com/six/timapi/Terminal.html#reconciliationAsync--">reconciliationAsync</a></code>
                             <br>
                             <code class="completedMethod"><a class="completedMethod" href="doc/index.html?com/six/timapi/TerminalListener.html#reconciliationCompleted-com.six.timapi.TimEvent-com.six.timapi.ReconciliationResponse-">reconciliationCompleted
@@ -878,7 +874,7 @@ terminal.addListener(new MyTerminalListener());
                     <tr>
                         <td>
                             <code class="syncMethod"><a class="syncMethod" href="doc/index.html?com/six/timapi/Terminal.html#reconfig--">reconfig</a></code>
-                            <br>
+                            <br class="syncMethod">
                             <code class="asyncMethod"><a class="asyncMethod" href="doc/index.html?com/six/timapi/Terminal.html#reconfigAsync--">reconfigAsync</a></code>
                             <br>
                             <code class="completedMethod"><a class="completedMethod" href="doc/index.html?com/six/timapi/TerminalListener.html#reconfigCompleted-com.six.timapi.TimEvent-com.six.timapi.PrintData-">reconfigCompleted</a></code>
@@ -888,7 +884,7 @@ terminal.addListener(new MyTerminalListener());
                     <tr>
                         <td>
                             <code class="syncMethod"><a class="syncMethod" href="doc/index.html?com/six/timapi/Terminal.html#rollback--">rollback</a></code>
-                            <br>
+                            <br class="syncMethod">
                             <code class="asyncMethod"><a class="asyncMethod" href="doc/index.html?com/six/timapi/Terminal.html#rollbackAsync--">rollbackAsync</a></code>
                             <br>
                             <code class="completedMethod"><a class="completedMethod" href="doc/index.html?com/six/timapi/TerminalListener.html#rollbackCompleted-com.six.timapi.TimEvent-com.six.timapi.PrintData-">rollbackCompleted</a></code>
@@ -901,7 +897,7 @@ terminal.addListener(new MyTerminalListener());
                     <tr>
                         <td>
                             <code class="syncMethod"><a class="syncMethod" href="doc/index.html?com/six/timapi/Terminal.html#softwareUpdate--">softwareUpdate</a></code>
-                            <br>
+                            <br class="syncMethod">
                             <code class="asyncMethod"><a class="asyncMethod" href="doc/index.html?com/six/timapi/Terminal.html#softwareUpdateAsync--">softwareUpdateAsync</a></code>
                             <br>
                             <code class="completedMethod"><a class="completedMethod" href="doc/index.html?com/six/timapi/TerminalListener.html#softwareUpdateCompleted-com.six.timapi.TimEvent-com.six.timapi.constants.UpdateStatus-">softwareUpdateCompleted
@@ -912,7 +908,7 @@ terminal.addListener(new MyTerminalListener());
                     <tr>
                         <td>
                             <code class="syncMethod"><a class="syncMethod" href="doc/index.html?com/six/timapi/Terminal.html#systemInformation--">systemInformation</a></code>
-                            <br>
+                            <br class="syncMethod">
                             <code class="asyncMethod"><a class="asyncMethod" href="doc/index.html?com/six/timapi/Terminal.html#systemInformationAsync--">systemInformationAsync</a></code>
                             <br>
                             <code class="completedMethod"><a class="completedMethod" href="doc/index.html?com/six/timapi/TerminalListener.html#systemInformationCompleted-com.six.timapi.TimEvent-com.six.timapi.SystemInformationResponse-">
@@ -924,7 +920,7 @@ terminal.addListener(new MyTerminalListener());
                     <tr>
                         <td>
                             <code class="syncMethod"><a class="syncMethod" href="doc/index.html?com/six/timapi/Terminal.html#transaction-com.six.timapi.constants.TransactionType-com.six.timapi.Amount-">transaction</a></code>
-                            <br>
+                            <br class="syncMethod">
                             <code class="asyncMethod"><a class="asyncMethod" href="doc/index.html?com/six/timapi/Terminal.html#transactionAsync-com.six.timapi.constants.TransactionType-com.six.timapi.Amount-">transactionAsync</a></code>
                             <br>
                             <code class="completedMethod"><a class="completedMethod" href="doc/index.html?com/six/timapi/TerminalListener.html#transactionCompleted-com.six.timapi.TimEvent-com.six.timapi.TransactionResponse-">transactionCompleted</a></code>
@@ -936,12 +932,12 @@ terminal.addListener(new MyTerminalListener());
 
         </div></div></section>  
 
-        <div class="row"><div class="col-md-6"></div></div><section class="filterGuides guidePetrol" id="petrolFunc"><h2><a name="petrolFunc"></a>Guide Petrol Terminal Functions</h2><div class="row"><div class="col-md-6"><table class="table">
+        <div class="row"><div class="col-md-6"></div></div><section class="filterGuides guidePetrol" id="petrolFunc"><h2><a name="petrolFunc"></a>Guide Petrol terminal functions</h2><div class="row"><div class="col-md-6"><table class="table">
           <thead>
               <tr>
                   <th>
-                      <strong>Sync method</strong>
-                      <br>
+                      <strong class="syncMethod">Sync method</strong>
+                      <br class="syncMethod">
                       <span class="asyncMethod">Async method</span>
                       <br>
                       <span class="completedMethod">Completed event</span>
@@ -952,14 +948,8 @@ terminal.addListener(new MyTerminalListener());
           <tbody>
               <tr>
                   <td>
-                      <code class="asyncMethod"><a class="asyncMethod" href="doc/index.html?com/six/timapi/Terminal.html#cancel--">cancel</a></code>
-                  </td>
-                  <td>Cancel an asynchronous function.</td>
-              </tr>
-              <tr>
-                  <td>
                       <code class="syncMethod"><a class="syncMethod" href="doc/com/six/timapi/Terminal.html#initTransaction-boolean-com.six.timapi.Amount-">initTransaction</a></code>
-                      <br>
+                      <br class="syncMethod">
                       <code class="asyncMethod"><a class="asyncMethod" href="doc/com/six/timapi/Terminal.html#initTransactionAsync-boolean-com.six.timapi.Amount-">initTransactionAsync</a></code>
                       <br>
                       <code class="completedMethod"><a class="completedMethod" href="doc/com/six/timapi/TerminalListener.html#initTransactionCompleted-com.six.timapi.TimEvent-com.six.timapi.CardData-">initTransactionCompleted</a></code>
@@ -973,7 +963,7 @@ terminal.addListener(new MyTerminalListener());
         <thead>
             <tr>
                 <th>
-                    <strong>Sync method</strong>
+                    <strong class="syncMethod">Sync method</strong>
                     <br>
                     <span class="asyncMethod">Async method</span>
                     <br>
@@ -986,8 +976,8 @@ terminal.addListener(new MyTerminalListener());
             <tr>
                 <td>
                     <code class="syncMethod"><a class="syncMethod" href="doc/com/six/timapi/Terminal.html#openReader--">openReader</a></code>
-                    <br>
-                    <code class="openReaderasyncMethod"><a class="openReaderasyncMethod" href="doc/com/six/timapi/Terminal.html#openReaderAsync--">Async</a></code>
+                    <br class="syncMethod">
+                    <code class="asyncMethod"><a class="asyncMethod" href="doc/com/six/timapi/Terminal.html#openReaderAsync--">openReaderAsync</a></code>
                     <br>
                     <code class="completedMethod"><a class="completedMethod" href="doc/com/six/timapi/TerminalListener.html#openReaderCompleted-com.six.timapi.TimEvent-">openReaderCompleted</a></code>
                 </td>
@@ -995,38 +985,14 @@ terminal.addListener(new MyTerminalListener());
             </tr>
             <tr>
                 <td>
-                    <code class="syncMethod"><a class="syncMethod" href="doc/com/six/timapi/Terminal.html#closeReader--">closeReader</a></code>
-                    <br>
-                    <code class="asyncMethod"><a class="asyncMethod" href="doc/com/six/timapi/Terminal.html#closeReaderAsync--">closeReaderAsync</a></code>
-                    <br>
-                    <code class="completedMethod"><a class="completedMethod" href="doc/com/six/timapi/TerminalListener.html#closeReaderCompleted-com.six.timapi.TimEvent-">closeReaderCompleted</a></code>
+                    <code class="notifyMethod"><a class="notifyMethod" href="doc/index.html?com/six/timapi/Terminal.html#amtAdjustment-com.six.timapi.Amount-">amtAdjustment</a></code>
                 </td>
-                <td>Closes the shutter of the card reader.</td>
-            </tr>
-            <tr>
-                <td>
-                    <code class="syncMethod"><a class="syncMethod" href="doc/com/six/timapi/Terminal.html#ejectCard--">ejectCard</a></code>
-                    <br>
-                    <code class="asyncMethod"><a class="asyncMethod" href="doc/com/six/timapi/Terminal.html#ejectCardAsync--">ejectCardAsync</a></code>
-                    <br>
-                    <code class="completedMethod"><a class="completedMethod" href="doc/com/six/timapi/TerminalListener.html#ejectCardCompleted-com.six.timapi.TimEvent-">ejectCardCompleted</a></code>
-                </td>
-                <td>Ejects the card from the card reader.</td>
-            </tr>
-            <tr>
-                <td>
-                    <code class="syncMethod"><a class="syncMethod" href="doc/com/six/timapi/Terminal.html#openMaintenanceWindow--">openMaintenanceWindow</a></code>
-                    <br>
-                    <code class="asyncMethod"><a class="asyncMethod" href="doc/com/six/timapi/Terminal.html#openMaintenanceWindowAsync--">openMaintenanceWindowAsync</a></code>
-                    <br>
-                    <code class="completedMethod"><a class="completedMethod" href="doc/com/six/timapi/TerminalListener.html#openMaintenanceWindowCompleted-com.six.timapi.TimEvent-">openMaintenanceWindowCompleted</a></code>
-                </td>
-                <td>Opens a maintenance window where the terminal can perform all maintenance processes it was not able to perform before.&gt;</td>
+                <td>Send an amount adjustment notification to the terminal during an open transaction. The amount is used as the new amount for the transaction.</td>
             </tr>
             <tr>
                 <td>
                     <code class="syncMethod"><a class="syncMethod" href="doc/com/six/timapi/Terminal.html#closeMaintenanceWindow--">closeMaintenanceWindow</a></code>
-                    <br>
+                    <br class="syncMethod">
                     <code class="asyncMethod"><a class="asyncMethod" href="doc/com/six/timapi/Terminal.html#closeMaintenanceWindowAsync--">closeMaintenanceWindowAsync</a></code>
                     <br>
                     <code class="completedMethod"><a class="completedMethod" href="doc/com/six/timapi/TerminalListener.html#closeMaintenanceWindowCompleted-com.six.timapi.TimEvent-">closeMaintenanceWindowCompleted</a></code>
@@ -1035,20 +1001,18 @@ terminal.addListener(new MyTerminalListener());
             </tr>
             <tr>
                 <td>
-                    <code class="syncMethod"><a class="syncMethod" href="doc/com/six/timapi/Terminal.html#holdCommit--">holdCommit</a></code>
+                    <code class="syncMethod"><a class="syncMethod" href="doc/com/six/timapi/Terminal.html#closeReader--">closeReader</a></code>
+                    <br class="syncMethod">
+                    <code class="asyncMethod"><a class="asyncMethod" href="doc/com/six/timapi/Terminal.html#closeReaderAsync--">closeReaderAsync</a></code>
+                    <br>
+                    <code class="completedMethod"><a class="completedMethod" href="doc/com/six/timapi/TerminalListener.html#closeReaderCompleted-com.six.timapi.TimEvent-">closeReaderCompleted</a></code>
                 </td>
-                <td>Increases the commit timeout.</td>
-            </tr>
-            <tr>
-                <td>
-                    <code class="syncMethod"><a class="syncMethod" href="doc/index.html?com/six/timapi/Terminal.html#cancel--">cancel</a></code>
-                </td>
-                <td>Cancels a running request.</td>
+                <td>Closes the shutter of the card reader.</td>
             </tr>
             <tr>
                 <td>
                     <code class="syncMethod"><a class="syncMethod" href="doc/index.html?com/six/timapi/Terminal.html#commit--">commit</a></code>
-                    <br>
+                    <br class="syncMethod">
                     <code class="asyncMethod"><a class="asyncMethod" href="doc/index.html?com/six/timapi/Terminal.html#commitAsync--">commitAsync</a></code>
                     <br>
                     <code class="completedMethod"><a class="completedMethod" href="doc/index.html?com/six/timapi/TerminalListener.html#commitCompleted-com.six.timapi.TimEvent-com.six.timapi.PrintData-">commitCompleted</a></code>
@@ -1057,20 +1021,40 @@ terminal.addListener(new MyTerminalListener());
             </tr>
             <tr>
                 <td>
-                    <code class="syncMethod"><a class="syncMethod" href="doc/index.html?com/six/timapi/Terminal.html#amtAdjustment-com.six.timapi.Amount-">amtAdjustment</a></code>
+                    <code class="syncMethod"><a class="syncMethod" href="doc/com/six/timapi/Terminal.html#ejectCard--">ejectCard</a></code>
+                    <br class="syncMethod">
+                    <code class="asyncMethod"><a class="asyncMethod" href="doc/com/six/timapi/Terminal.html#ejectCardAsync--">ejectCardAsync</a></code>
+                    <br>
+                    <code class="completedMethod"><a class="completedMethod" href="doc/com/six/timapi/TerminalListener.html#ejectCardCompleted-com.six.timapi.TimEvent-">ejectCardCompleted</a></code>
                 </td>
-                <td>Send an amount adjustment notification to the terminal during an open transaction. The amount is used as the new amount for the transaction.</td>
+                <td>Ejects the card from the card reader.</td>
+            </tr>
+            <tr>
+                <td>
+                    <code class="notifyMethod"><a class="notifyMethod" href="doc/com/six/timapi/Terminal.html#holdCommit--">holdCommit</a></code>
+                </td>
+                <td>Increases the commit timeout.</td>
+            </tr>
+            <tr>
+                <td>
+                    <code class="syncMethod"><a class="syncMethod" href="doc/com/six/timapi/Terminal.html#openMaintenanceWindow--">openMaintenanceWindow</a></code>
+                    <br class="syncMethod">
+                    <code class="asyncMethod"><a class="asyncMethod" href="doc/com/six/timapi/Terminal.html#openMaintenanceWindowAsync--">openMaintenanceWindowAsync</a></code>
+                    <br>
+                    <code class="completedMethod"><a class="completedMethod" href="doc/com/six/timapi/TerminalListener.html#openMaintenanceWindowCompleted-com.six.timapi.TimEvent-">openMaintenanceWindowCompleted</a></code>
+                </td>
+                <td>Opens a maintenance window where the terminal can perform all maintenance processes it was not able to perform before.&gt;</td>
             </tr>
         </tbody>
      </table>
   </div></div></section>
         
         
-        <div class="row"><div class="col-md-6"></div></div><section class="filterGuides guideDialog" id="dialogFunc"><h2><a name="dialogFunc"></a>Guide dialog terminal functions</h2><div class="row"><div class="col-md-6"><table class="table">
+        <div class="row"><div class="col-md-6"></div></div><section class="filterGuides guideDialog" id="dialogFunc"><h2><a name="dialogFunc"></a>Guide Dialog terminal functions</h2><div class="row"><div class="col-md-6"><table class="table">
         <thead>
             <tr>
                 <th>
-                    <strong>Sync method</strong>
+                    <strong class="syncMethod">Sync method</strong>
                     <br>
                     <span class="asyncMethod">Async method</span>
                     <br>
@@ -1083,7 +1067,7 @@ terminal.addListener(new MyTerminalListener());
             <tr>
                 <td>
                     <code class="syncMethod"><a class="syncMethod" href="doc/index.html?com/six/timapi/Terminal.html#openDialogMode--">openDialogMode</a></code>
-                    <br>
+                    <br class="syncMethod">
                     <code class="asyncMethod"><a class="asyncMethod" href="doc/index.html?com/six/timapi/Terminal.html#openDialogModeAsync--">openDialogModeAsync</a></code>
                     <br>
                     <code class="completedMethod"><a class="completedMethod" href="doc/index.html?com/six/timapi/TerminalListener.html#openDialogModeCompleted-com.six.timapi.TimEvent-">openDialogModeCompleted</a></code>
@@ -1093,7 +1077,7 @@ terminal.addListener(new MyTerminalListener());
             <tr>
                 <td>
                     <code class="syncMethod"><a class="syncMethod" href="doc/index.html?com/six/timapi/Terminal.html#closeDialogMode--">closeDialogMode</a></code>
-                    <br>
+                    <br class="syncMethod">
                     <code class="asyncMethod"><a class="asyncMethod" href="doc/index.html?com/six/timapi/Terminal.html#closeDialogModeAsync--">closeDialogModeAsync</a></code>
                     <br>
                     <code class="completedMethod"><a class="completedMethod" href="doc/index.html?com/six/timapi/TerminalListener.html#closeDialogModeCompleted-com.six.timapi.TimEvent-">closeDialogModeCompleted</a></code>
@@ -1103,7 +1087,7 @@ terminal.addListener(new MyTerminalListener());
             <tr>
                 <td>
                     <code class="syncMethod"><a class="syncMethod" href="doc/index.html?com/six/timapi/Terminal.html#showDialog-com.six.timapi.ShowDialogRequest-">showDialog</a></code>
-                    <br>
+                    <br class="syncMethod">
                     <code class="asyncMethod"><a class="asyncMethod" href="doc/index.html?com/six/timapi/Terminal.html#showDialogAsync-com.six.timapi.ShowDialogRequest-">showDialogAsync</a></code>
                     <br>
                     <code class="completedMethod"><a class="completedMethod" href="doc/index.html?com/six/timapi/TerminalListener.html#showDialogCompleted-com.six.timapi.TimEvent-com.six.timapi.ShowDialogResponse-">showDialogCompleted</a></code>
@@ -1113,7 +1097,7 @@ terminal.addListener(new MyTerminalListener());
             <tr>
                 <td>
                     <code class="syncMethod"><a class="syncMethod" href="doc/index.html?com/six/timapi/Terminal.html#showSignatureCapture-com.six.timapi.ShowSignatureCaptureRequest-">showSignatureCapture</a></code>
-                    <br>
+                    <br class="syncMethod">
                     <code class="asyncMethod"><a class="asyncMethod" href="doc/index.html?com/six/timapi/Terminal.html#showSignatureCaptureAsync-com.six.timapi.ShowSignatureCaptureRequest-">showSignatureCaptureAsync</a></code>
                     <br>
                     <code class="completedMethod"><a class="completedMethod" href="doc/index.html?com/six/timapi/TerminalListener.html#showSignatureCaptureCompleted-com.six.timapi.TimEvent-com.six.timapi.ShowSignatureCaptureResponse-">showSignatureCaptureCompleted</a></code>
@@ -1176,7 +1160,8 @@ terminal.addListener(new MyTerminalListener());
 
     <div class="row"><div class="col-md-6"></div></div></section>
 
-    <section id="flows"><h1><a name="flows"></a>Flows</h1><section class="filterGuides guidePetrol" id="petrolFlows"><h2><a name="petrolFlows"></a>Guide Petrol Additional Flows</h2><section id="petrolFlowIndoorOnline"><h3><a name="petrolFlowIndoorOnline"></a>Petrol Flow: Indoor - Online Card</h3><div class="row"><div class="col-md-6"><figure><svg contentScriptType="application/ecmascript" contentStyleType="text/css" height="691.3333px" preserveAspectRatio="none" style="width:762px;height:691px;" version="1.1" viewBox="0 0 762 691" width="762px" zoomAndPan="magnify"><defs><filter height="300%" id="f16m7kanzx8ab2" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="1.3333333333333333"></feGaussianBlur><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"></feColorMatrix><feOffset dx="2.6666666666666665" dy="2.6666666666666665" in="blurOut2" result="blurOut3"></feOffset><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"></feBlend></filter></defs><g><line style="stroke: #A80036; stroke-width: 0.6666666666666666; stroke-dasharray: 5.0,5.0;" x1="20.6667" x2="20.6667" y1="57.5313" y2="633.1667"></line><line style="stroke: #A80036; stroke-width: 0.6666666666666666; stroke-dasharray: 5.0,5.0;" x1="429.6667" x2="429.6667" y1="57.5313" y2="633.1667"></line><line style="stroke: #A80036; stroke-width: 0.6666666666666666; stroke-dasharray: 5.0,5.0;" x1="575.3333" x2="575.3333" y1="57.5313" y2="633.1667"></line><line style="stroke: #A80036; stroke-width: 0.6666666666666666; stroke-dasharray: 5.0,5.0;" x1="719" x2="719" y1="57.5313" y2="633.1667"></line><rect fill="#FEFECE" filter="url(#f16m7kanzx8ab2)" height="20.1979" style="stroke: #A80036; stroke-width: 1.0;" width="28.6667" x="5.3333" y="34"></rect><text fill="#000000" font-family="sans-serif" font-size="9.3333" lengthAdjust="spacingAndGlyphs" textLength="19.3333" x="10" y="47.3301">ECR</text><rect fill="#FEFECE" filter="url(#f16m7kanzx8ab2)" height="20.1979" style="stroke: #A80036; stroke-width: 1.0;" width="28.6667" x="5.3333" y="632.5"></rect><text fill="#000000" font-family="sans-serif" font-size="9.3333" lengthAdjust="spacingAndGlyphs" textLength="19.3333" x="10" y="645.8301">ECR</text><rect fill="#FEFECE" filter="url(#f16m7kanzx8ab2)" height="20.1979" style="stroke: #A80036; stroke-width: 1.0;" width="26.6667" x="415" y="34"></rect><text fill="#000000" font-family="sans-serif" font-size="9.3333" lengthAdjust="spacingAndGlyphs" textLength="17.3333" x="419.6667" y="47.3301">EFT</text><rect fill="#FEFECE" filter="url(#f16m7kanzx8ab2)" height="20.1979" style="stroke: #A80036; stroke-width: 1.0;" width="26.6667" x="415" y="632.5"></rect><text fill="#000000" font-family="sans-serif" font-size="9.3333" lengthAdjust="spacingAndGlyphs" textLength="17.3333" x="419.6667" y="645.8301">EFT</text><text fill="#000000" font-family="sans-serif" font-size="9.3333" lengthAdjust="spacingAndGlyphs" textLength="26" x="560.6667" y="55.3301">Client</text><ellipse cx="575.6667" cy="8.6667" fill="#FEFECE" filter="url(#f16m7kanzx8ab2)" rx="5.3333" ry="5.3333" style="stroke: #A80036; stroke-width: 1.3333333333333333;"></ellipse><path d="M575.6667,14 L575.6667,32 M567,19.3333 L584.3333,19.3333 M575.6667,32 L567,42 M575.6667,32 L584.3333,42 " fill="none" filter="url(#f16m7kanzx8ab2)" style="stroke: #A80036; stroke-width: 1.3333333333333333;"></path><text fill="#000000" font-family="sans-serif" font-size="9.3333" lengthAdjust="spacingAndGlyphs" textLength="26" x="560.6667" y="641.1634">Client</text><ellipse cx="575.6667" cy="650.0313" fill="#FEFECE" filter="url(#f16m7kanzx8ab2)" rx="5.3333" ry="5.3333" style="stroke: #A80036; stroke-width: 1.3333333333333333;"></ellipse><path d="M575.6667,655.3646 L575.6667,673.3646 M567,660.6979 L584.3333,660.6979 M575.6667,673.3646 L567,683.3646 M575.6667,673.3646 L584.3333,683.3646 " fill="none" filter="url(#f16m7kanzx8ab2)" style="stroke: #A80036; stroke-width: 1.3333333333333333;"></path><rect fill="#FEFECE" filter="url(#f16m7kanzx8ab2)" height="20.1979" style="stroke: #A80036; stroke-width: 1.0;" width="30.6667" x="702.3333" y="34"></rect><text fill="#000000" font-family="sans-serif" font-size="9.3333" lengthAdjust="spacingAndGlyphs" textLength="21.3333" x="707" y="47.3301">Host</text><rect fill="#FEFECE" filter="url(#f16m7kanzx8ab2)" height="20.1979" style="stroke: #A80036; stroke-width: 1.0;" width="30.6667" x="702.3333" y="632.5"></rect><text fill="#000000" font-family="sans-serif" font-size="9.3333" lengthAdjust="spacingAndGlyphs" textLength="21.3333" x="707" y="645.8301">Host</text><path d="M316.6667,67.5313 L316.6667,84.1979 L423.3333,84.1979 L423.3333,74.1979 L416.6667,67.5313 L316.6667,67.5313 " fill="#FBFB77" filter="url(#f16m7kanzx8ab2)" style="stroke: #A80036; stroke-width: 0.6666666666666666;"></path><path d="M416.6667,67.5313 L416.6667,74.1979 L423.3333,74.1979 L416.6667,67.5313 " fill="#FBFB77" style="stroke: #A80036; stroke-width: 0.6666666666666666;"></path><text fill="#000000" font-family="sans-serif" font-size="8.6667" lengthAdjust="spacingAndGlyphs" textLength="92.6667" x="320.6667" y="78.9092">TransactionState: Idle</text><polygon fill="#A80036" points="421.6667,101.7083,428.3333,104.375,421.6667,107.0417,424.3333,104.375" style="stroke: #A80036; stroke-width: 0.6666666666666666;"></polygon><line style="stroke: #A80036; stroke-width: 0.6666666666666666;" x1="21" x2="425.6667" y1="104.375" y2="104.375"></line><text fill="#000000" font-family="sans-serif" font-size="8.6667" lengthAdjust="spacingAndGlyphs" textLength="145.3333" x="25.6667" y="100.9977">Init Transaction Request (Amount)</text><path d="M280,113.0417 L280,129.7083 L423.3333,129.7083 L423.3333,119.7083 L416.6667,113.0417 L280,113.0417 " fill="#FBFB77" filter="url(#f16m7kanzx8ab2)" style="stroke: #A80036; stroke-width: 0.6666666666666666;"></path><path d="M416.6667,113.0417 L416.6667,119.7083 L423.3333,119.7083 L416.6667,113.0417 " fill="#FBFB77" style="stroke: #A80036; stroke-width: 0.6666666666666666;"></path><text fill="#000000" font-family="sans-serif" font-size="8.6667" lengthAdjust="spacingAndGlyphs" textLength="129.3333" x="284" y="124.4196">TransactionState: WaitForCard</text><polygon fill="#A80036" points="437,147.2188,430.3333,149.8854,437,152.5521,434.3333,149.8854" style="stroke: #A80036; stroke-width: 0.6666666666666666;"></polygon><line style="stroke: #A80036; stroke-width: 0.6666666666666666;" x1="433" x2="575" y1="149.8854" y2="149.8854"></line><text fill="#000000" font-family="sans-serif" font-size="8.6667" lengthAdjust="spacingAndGlyphs" textLength="46.6667" x="441" y="146.5081">Insert Card</text><line style="stroke: #A80036; stroke-width: 0.6666666666666666;" x1="429.6667" x2="457.6667" y1="169.3073" y2="169.3073"></line><line style="stroke: #A80036; stroke-width: 0.6666666666666666;" x1="457.6667" x2="457.6667" y1="169.3073" y2="177.974"></line><line style="stroke: #A80036; stroke-width: 0.6666666666666666;" x1="430.3333" x2="457.6667" y1="177.974" y2="177.974"></line><polygon fill="#A80036" points="437,175.3073,430.3333,177.974,437,180.6406,434.3333,177.974" style="stroke: #A80036; stroke-width: 0.6666666666666666;"></polygon><text fill="#000000" font-family="sans-serif" font-size="8.6667" lengthAdjust="spacingAndGlyphs" textLength="77.3333" x="434.3333" y="165.93">Start reading card</text><path d="M277.3333,186.6406 L277.3333,203.3073 L423.3333,203.3073 L423.3333,193.3073 L416.6667,186.6406 L277.3333,186.6406 " fill="#FBFB77" filter="url(#f16m7kanzx8ab2)" style="stroke: #A80036; stroke-width: 0.6666666666666666;"></path><path d="M416.6667,186.6406 L416.6667,193.3073 L423.3333,193.3073 L416.6667,186.6406 " fill="#FBFB77" style="stroke: #A80036; stroke-width: 0.6666666666666666;"></path><text fill="#000000" font-family="sans-serif" font-size="8.6667" lengthAdjust="spacingAndGlyphs" textLength="132" x="281.3333" y="198.0186">TransactionState: ReadingCard</text><path d="M245.3333,212.7292 L245.3333,229.3958 L423.3333,229.3958 L423.3333,219.3958 L416.6667,212.7292 L245.3333,212.7292 " fill="#FBFB77" filter="url(#f16m7kanzx8ab2)" style="stroke: #A80036; stroke-width: 0.6666666666666666;"></path><path d="M416.6667,212.7292 L416.6667,219.3958 L423.3333,219.3958 L416.6667,212.7292 " fill="#FBFB77" style="stroke: #A80036; stroke-width: 0.6666666666666666;"></path><text fill="#000000" font-family="sans-serif" font-size="8.6667" lengthAdjust="spacingAndGlyphs" textLength="164" x="249.3333" y="224.1071">TransactionState: ApplicationSelection</text><line style="stroke: #A80036; stroke-width: 0.6666666666666666;" x1="429.6667" x2="457.6667" y1="249.5729" y2="249.5729"></line><line style="stroke: #A80036; stroke-width: 0.6666666666666666;" x1="457.6667" x2="457.6667" y1="249.5729" y2="258.2396"></line><line style="stroke: #A80036; stroke-width: 0.6666666666666666;" x1="430.3333" x2="457.6667" y1="258.2396" y2="258.2396"></line><polygon fill="#A80036" points="437,255.5729,430.3333,258.2396,437,260.9063,434.3333,258.2396" style="stroke: #A80036; stroke-width: 0.6666666666666666;"></polygon><text fill="#000000" font-family="sans-serif" font-size="8.6667" lengthAdjust="spacingAndGlyphs" textLength="99.3333" x="434.3333" y="246.1956">Have read all card data</text><path d="M265.3333,266.9063 L265.3333,283.5729 L423.3333,283.5729 L423.3333,273.5729 L416.6667,266.9063 L265.3333,266.9063 " fill="#FBFB77" filter="url(#f16m7kanzx8ab2)" style="stroke: #A80036; stroke-width: 0.6666666666666666;"></path><path d="M416.6667,266.9063 L416.6667,273.5729 L423.3333,273.5729 L416.6667,266.9063 " fill="#FBFB77" style="stroke: #A80036; stroke-width: 0.6666666666666666;"></path><text fill="#000000" font-family="sans-serif" font-size="8.6667" lengthAdjust="spacingAndGlyphs" textLength="144" x="269.3333" y="278.2842">TransactionState: WaitForProceed</text><polygon fill="#A80036" points="28.3333,301.0833,21.6667,303.75,28.3333,306.4167,25.6667,303.75" style="stroke: #A80036; stroke-width: 0.6666666666666666;"></polygon><line style="stroke: #A80036; stroke-width: 0.6666666666666666;" x1="24.3333" x2="429" y1="303.75" y2="303.75"></line><text fill="#000000" font-family="sans-serif" font-size="8.6667" lengthAdjust="spacingAndGlyphs" textLength="304" x="32.3333" y="300.3727">Init Transaction Response ([CardData], [ProcessingDisposition=OnEFT])</text><polygon fill="#A80036" points="421.6667,320.5052,428.3333,323.1719,421.6667,325.8385,424.3333,323.1719" style="stroke: #A80036; stroke-width: 0.6666666666666666;"></polygon><line style="stroke: #A80036; stroke-width: 0.6666666666666666;" x1="21" x2="425.6667" y1="323.1719" y2="323.1719"></line><text fill="#000000" font-family="sans-serif" font-size="8.6667" lengthAdjust="spacingAndGlyphs" textLength="161.3333" x="25.6667" y="319.7946">Purchase Request ([Basket], Amount)</text><path d="M401.6667,333.1719 L448.3333,333.1719 L448.3333,337.8385 L441.6667,344.5052 L401.6667,344.5052 L401.6667,333.1719 " fill="#EEEEEE" style="stroke: #000000; stroke-width: 0.6666666666666666;"></path><rect fill="none" height="71.0208" style="stroke: #000000; stroke-width: 1.3333333333333333;" width="353.3333" x="401.6667" y="333.1719"></rect><text fill="#000000" font-family="sans-serif" font-size="8.6667" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="16.6667" x="411.6667" y="341.8831">opt</text><text fill="#000000" font-family="sans-serif" font-size="7.3333" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="293.3333" x="458.3333" y="341.3122">[MOC Petrol: AdditionalInformation already required in AuthRequest]</text><path d="M408.3333,349.2604 L459.6667,349.2604 L459.6667,353.9271 L453,360.5938 L408.3333,360.5938 L408.3333,349.2604 " fill="#EEEEEE" style="stroke: #000000; stroke-width: 0.6666666666666666;"></path><rect fill="none" height="50.2656" style="stroke: #000000; stroke-width: 1.3333333333333333;" width="189" x="408.3333" y="349.2604"></rect><text fill="#000000" font-family="sans-serif" font-size="8.6667" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="21.3333" x="418.3333" y="357.9717">loop</text><text fill="#000000" font-family="sans-serif" font-size="7.3333" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="22.6667" x="469.6667" y="357.4007">[0..n]</text><polygon fill="#A80036" points="567.6667,372.1042,574.3333,374.7708,567.6667,377.4375,570.3333,374.7708" style="stroke: #A80036; stroke-width: 0.6666666666666666;"></polygon><line style="stroke: #A80036; stroke-width: 0.6666666666666666;" x1="429.6667" x2="571.6667" y1="374.7708" y2="374.7708"></line><text fill="#000000" font-family="sans-serif" font-size="8.6667" lengthAdjust="spacingAndGlyphs" textLength="130" x="434.3333" y="371.3936">Request additional information</text><polygon fill="#A80036" points="437,391.526,430.3333,394.1927,437,396.8594,434.3333,394.1927" style="stroke: #A80036; stroke-width: 0.6666666666666666;"></polygon><line style="stroke: #A80036; stroke-width: 0.6666666666666666;" x1="433" x2="575" y1="394.1927" y2="394.1927"></line><text fill="#000000" font-family="sans-serif" font-size="8.6667" lengthAdjust="spacingAndGlyphs" textLength="117.3333" x="441" y="390.8154">Entry additional information</text><polygon fill="#A80036" points="711,420.2813,717.6667,422.9479,711,425.6146,713.6667,422.9479" style="stroke: #A80036; stroke-width: 0.6666666666666666;"></polygon><line style="stroke: #A80036; stroke-width: 0.6666666666666666;" x1="429.6667" x2="715" y1="422.9479" y2="422.9479"></line><text fill="#000000" font-family="sans-serif" font-size="8.6667" lengthAdjust="spacingAndGlyphs" textLength="266.6667" x="434.3333" y="419.5706">Authorization Request (Amount, [AddInfo], [SetOfRestrictions])</text><polygon fill="#A80036" points="437,439.7031,430.3333,442.3698,437,445.0365,434.3333,442.3698" style="stroke: #A80036; stroke-width: 0.6666666666666666;"></polygon><line style="stroke: #A80036; stroke-width: 0.6666666666666666;" x1="433" x2="718.3333" y1="442.3698" y2="442.3698"></line><text fill="#000000" font-family="sans-serif" font-size="8.6667" lengthAdjust="spacingAndGlyphs" textLength="273.3333" x="441" y="438.9925">Authorization Response (Amount, [AddInfo], [SetOfRestrictions])</text><path d="M401.6667,452.3698 L448.3333,452.3698 L448.3333,457.0365 L441.6667,463.7031 L401.6667,463.7031 L401.6667,452.3698 " fill="#EEEEEE" style="stroke: #000000; stroke-width: 0.6666666666666666;"></path><rect fill="none" height="71.0208" style="stroke: #000000; stroke-width: 1.3333333333333333;" width="336" x="401.6667" y="452.3698"></rect><text fill="#000000" font-family="sans-serif" font-size="8.6667" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="16.6667" x="411.6667" y="461.0811">opt</text><text fill="#000000" font-family="sans-serif" font-size="7.3333" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="276" x="458.3333" y="460.5101">[MOC Online: AdditionalInformation only required in submission]</text><path d="M408.3333,468.4583 L459.6667,468.4583 L459.6667,473.125 L453,479.7917 L408.3333,479.7917 L408.3333,468.4583 " fill="#EEEEEE" style="stroke: #000000; stroke-width: 0.6666666666666666;"></path><rect fill="none" height="50.2656" style="stroke: #000000; stroke-width: 1.3333333333333333;" width="189" x="408.3333" y="468.4583"></rect><text fill="#000000" font-family="sans-serif" font-size="8.6667" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="21.3333" x="418.3333" y="477.1696">loop</text><text fill="#000000" font-family="sans-serif" font-size="7.3333" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="22.6667" x="469.6667" y="476.5986">[0..n]</text><polygon fill="#A80036" points="567.6667,491.3021,574.3333,493.9688,567.6667,496.6354,570.3333,493.9688" style="stroke: #A80036; stroke-width: 0.6666666666666666;"></polygon><line style="stroke: #A80036; stroke-width: 0.6666666666666666;" x1="429.6667" x2="571.6667" y1="493.9688" y2="493.9688"></line><text fill="#000000" font-family="sans-serif" font-size="8.6667" lengthAdjust="spacingAndGlyphs" textLength="130" x="434.3333" y="490.5915">Request additional information</text><polygon fill="#A80036" points="437,510.724,430.3333,513.3906,437,516.0573,434.3333,513.3906" style="stroke: #A80036; stroke-width: 0.6666666666666666;"></polygon><line style="stroke: #A80036; stroke-width: 0.6666666666666666;" x1="433" x2="575" y1="513.3906" y2="513.3906"></line><text fill="#000000" font-family="sans-serif" font-size="8.6667" lengthAdjust="spacingAndGlyphs" textLength="117.3333" x="441" y="510.0133">Entry additional information</text><path d="M408.3333,532.724 L455,532.724 L455,537.3906 L448.3333,544.0573 L408.3333,544.0573 L408.3333,532.724 " fill="#EEEEEE" style="stroke: #000000; stroke-width: 0.6666666666666666;"></path><rect fill="none" height="30.8438" style="stroke: #000000; stroke-width: 1.3333333333333333;" width="290.6667" x="408.3333" y="532.724"></rect><text fill="#000000" font-family="sans-serif" font-size="8.6667" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="16.6667" x="418.3333" y="541.4352">opt</text><text fill="#000000" font-family="sans-serif" font-size="7.3333" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="230.6667" x="465" y="540.8643">[Amount may have changed: Cardholder confirmation]</text><polygon fill="#A80036" points="437,555.5677,430.3333,558.2344,437,560.901,434.3333,558.2344" style="stroke: #A80036; stroke-width: 0.6666666666666666;"></polygon><line style="stroke: #A80036; stroke-width: 0.6666666666666666;" x1="433" x2="575" y1="558.2344" y2="558.2344"></line><text fill="#000000" font-family="sans-serif" font-size="8.6667" lengthAdjust="spacingAndGlyphs" textLength="88.6667" x="441" y="554.8571">Confirm new amount</text><polygon fill="#A80036" points="28.3333,579.6563,21.6667,582.3229,28.3333,584.9896,25.6667,582.3229" style="stroke: #A80036; stroke-width: 0.6666666666666666;"></polygon><line style="stroke: #A80036; stroke-width: 0.6666666666666666;" x1="24.3333" x2="429" y1="582.3229" y2="582.3229"></line><text fill="#000000" font-family="sans-serif" font-size="8.6667" lengthAdjust="spacingAndGlyphs" textLength="392.6667" x="32.3333" y="578.9456">Purchase Response (Amount, [AdditionalInfo], [Basket], [PrintData], TransactionInformation)</text><polygon fill="#A80036" points="421.6667,599.0781,428.3333,601.7448,421.6667,604.4115,424.3333,601.7448" style="stroke: #A80036; stroke-width: 0.6666666666666666;"></polygon><line style="stroke: #A80036; stroke-width: 0.6666666666666666;" x1="21" x2="425.6667" y1="601.7448" y2="601.7448"></line><text fill="#000000" font-family="sans-serif" font-size="8.6667" lengthAdjust="spacingAndGlyphs" textLength="71.3333" x="25.6667" y="598.3675">Commit Request</text><polygon fill="#A80036" points="28.3333,618.5,21.6667,621.1667,28.3333,623.8333,25.6667,621.1667" style="stroke: #A80036; stroke-width: 0.6666666666666666;"></polygon><line style="stroke: #A80036; stroke-width: 0.6666666666666666;" x1="24.3333" x2="429" y1="621.1667" y2="621.1667"></line><text fill="#000000" font-family="sans-serif" font-size="8.6667" lengthAdjust="spacingAndGlyphs" textLength="78" x="32.3333" y="617.7894">Commit Response</text></g></svg></figure>
+    <section id="flows"><h1><a name="flows"></a>Flows</h1><div class="row"><div class="col-md-6"><p>This chapter contains flows for specific guides. (If none visible, try to select a guide under "Guide Selection" on the left) </p>
+    	</div></div><section class="filterGuides guidePetrol" id="petrolFlows"><h2><a name="petrolFlows"></a>Guide Petrol Additional Flows</h2><section id="petrolFlowIndoorOnline"><h3><a name="petrolFlowIndoorOnline"></a>Petrol Flow: Indoor - Online Card</h3><div class="row"><div class="col-md-6"><figure><svg contentScriptType="application/ecmascript" contentStyleType="text/css" height="691.3333px" preserveAspectRatio="none" style="width:762px;height:691px;" version="1.1" viewBox="0 0 762 691" width="762px" zoomAndPan="magnify"><defs><filter height="300%" id="f16m7kanzx8ab2" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="1.3333333333333333"></feGaussianBlur><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"></feColorMatrix><feOffset dx="2.6666666666666665" dy="2.6666666666666665" in="blurOut2" result="blurOut3"></feOffset><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"></feBlend></filter></defs><g><line style="stroke: #A80036; stroke-width: 0.6666666666666666; stroke-dasharray: 5.0,5.0;" x1="20.6667" x2="20.6667" y1="57.5313" y2="633.1667"></line><line style="stroke: #A80036; stroke-width: 0.6666666666666666; stroke-dasharray: 5.0,5.0;" x1="429.6667" x2="429.6667" y1="57.5313" y2="633.1667"></line><line style="stroke: #A80036; stroke-width: 0.6666666666666666; stroke-dasharray: 5.0,5.0;" x1="575.3333" x2="575.3333" y1="57.5313" y2="633.1667"></line><line style="stroke: #A80036; stroke-width: 0.6666666666666666; stroke-dasharray: 5.0,5.0;" x1="719" x2="719" y1="57.5313" y2="633.1667"></line><rect fill="#FEFECE" filter="url(#f16m7kanzx8ab2)" height="20.1979" style="stroke: #A80036; stroke-width: 1.0;" width="28.6667" x="5.3333" y="34"></rect><text fill="#000000" font-family="sans-serif" font-size="9.3333" lengthAdjust="spacingAndGlyphs" textLength="19.3333" x="10" y="47.3301">ECR</text><rect fill="#FEFECE" filter="url(#f16m7kanzx8ab2)" height="20.1979" style="stroke: #A80036; stroke-width: 1.0;" width="28.6667" x="5.3333" y="632.5"></rect><text fill="#000000" font-family="sans-serif" font-size="9.3333" lengthAdjust="spacingAndGlyphs" textLength="19.3333" x="10" y="645.8301">ECR</text><rect fill="#FEFECE" filter="url(#f16m7kanzx8ab2)" height="20.1979" style="stroke: #A80036; stroke-width: 1.0;" width="26.6667" x="415" y="34"></rect><text fill="#000000" font-family="sans-serif" font-size="9.3333" lengthAdjust="spacingAndGlyphs" textLength="17.3333" x="419.6667" y="47.3301">EFT</text><rect fill="#FEFECE" filter="url(#f16m7kanzx8ab2)" height="20.1979" style="stroke: #A80036; stroke-width: 1.0;" width="26.6667" x="415" y="632.5"></rect><text fill="#000000" font-family="sans-serif" font-size="9.3333" lengthAdjust="spacingAndGlyphs" textLength="17.3333" x="419.6667" y="645.8301">EFT</text><text fill="#000000" font-family="sans-serif" font-size="9.3333" lengthAdjust="spacingAndGlyphs" textLength="26" x="560.6667" y="55.3301">Client</text><ellipse cx="575.6667" cy="8.6667" fill="#FEFECE" filter="url(#f16m7kanzx8ab2)" rx="5.3333" ry="5.3333" style="stroke: #A80036; stroke-width: 1.3333333333333333;"></ellipse><path d="M575.6667,14 L575.6667,32 M567,19.3333 L584.3333,19.3333 M575.6667,32 L567,42 M575.6667,32 L584.3333,42 " fill="none" filter="url(#f16m7kanzx8ab2)" style="stroke: #A80036; stroke-width: 1.3333333333333333;"></path><text fill="#000000" font-family="sans-serif" font-size="9.3333" lengthAdjust="spacingAndGlyphs" textLength="26" x="560.6667" y="641.1634">Client</text><ellipse cx="575.6667" cy="650.0313" fill="#FEFECE" filter="url(#f16m7kanzx8ab2)" rx="5.3333" ry="5.3333" style="stroke: #A80036; stroke-width: 1.3333333333333333;"></ellipse><path d="M575.6667,655.3646 L575.6667,673.3646 M567,660.6979 L584.3333,660.6979 M575.6667,673.3646 L567,683.3646 M575.6667,673.3646 L584.3333,683.3646 " fill="none" filter="url(#f16m7kanzx8ab2)" style="stroke: #A80036; stroke-width: 1.3333333333333333;"></path><rect fill="#FEFECE" filter="url(#f16m7kanzx8ab2)" height="20.1979" style="stroke: #A80036; stroke-width: 1.0;" width="30.6667" x="702.3333" y="34"></rect><text fill="#000000" font-family="sans-serif" font-size="9.3333" lengthAdjust="spacingAndGlyphs" textLength="21.3333" x="707" y="47.3301">Host</text><rect fill="#FEFECE" filter="url(#f16m7kanzx8ab2)" height="20.1979" style="stroke: #A80036; stroke-width: 1.0;" width="30.6667" x="702.3333" y="632.5"></rect><text fill="#000000" font-family="sans-serif" font-size="9.3333" lengthAdjust="spacingAndGlyphs" textLength="21.3333" x="707" y="645.8301">Host</text><path d="M316.6667,67.5313 L316.6667,84.1979 L423.3333,84.1979 L423.3333,74.1979 L416.6667,67.5313 L316.6667,67.5313 " fill="#FBFB77" filter="url(#f16m7kanzx8ab2)" style="stroke: #A80036; stroke-width: 0.6666666666666666;"></path><path d="M416.6667,67.5313 L416.6667,74.1979 L423.3333,74.1979 L416.6667,67.5313 " fill="#FBFB77" style="stroke: #A80036; stroke-width: 0.6666666666666666;"></path><text fill="#000000" font-family="sans-serif" font-size="8.6667" lengthAdjust="spacingAndGlyphs" textLength="92.6667" x="320.6667" y="78.9092">TransactionState: Idle</text><polygon fill="#A80036" points="421.6667,101.7083,428.3333,104.375,421.6667,107.0417,424.3333,104.375" style="stroke: #A80036; stroke-width: 0.6666666666666666;"></polygon><line style="stroke: #A80036; stroke-width: 0.6666666666666666;" x1="21" x2="425.6667" y1="104.375" y2="104.375"></line><text fill="#000000" font-family="sans-serif" font-size="8.6667" lengthAdjust="spacingAndGlyphs" textLength="145.3333" x="25.6667" y="100.9977">Init Transaction Request (Amount)</text><path d="M280,113.0417 L280,129.7083 L423.3333,129.7083 L423.3333,119.7083 L416.6667,113.0417 L280,113.0417 " fill="#FBFB77" filter="url(#f16m7kanzx8ab2)" style="stroke: #A80036; stroke-width: 0.6666666666666666;"></path><path d="M416.6667,113.0417 L416.6667,119.7083 L423.3333,119.7083 L416.6667,113.0417 " fill="#FBFB77" style="stroke: #A80036; stroke-width: 0.6666666666666666;"></path><text fill="#000000" font-family="sans-serif" font-size="8.6667" lengthAdjust="spacingAndGlyphs" textLength="129.3333" x="284" y="124.4196">TransactionState: WaitForCard</text><polygon fill="#A80036" points="437,147.2188,430.3333,149.8854,437,152.5521,434.3333,149.8854" style="stroke: #A80036; stroke-width: 0.6666666666666666;"></polygon><line style="stroke: #A80036; stroke-width: 0.6666666666666666;" x1="433" x2="575" y1="149.8854" y2="149.8854"></line><text fill="#000000" font-family="sans-serif" font-size="8.6667" lengthAdjust="spacingAndGlyphs" textLength="46.6667" x="441" y="146.5081">Insert Card</text><line style="stroke: #A80036; stroke-width: 0.6666666666666666;" x1="429.6667" x2="457.6667" y1="169.3073" y2="169.3073"></line><line style="stroke: #A80036; stroke-width: 0.6666666666666666;" x1="457.6667" x2="457.6667" y1="169.3073" y2="177.974"></line><line style="stroke: #A80036; stroke-width: 0.6666666666666666;" x1="430.3333" x2="457.6667" y1="177.974" y2="177.974"></line><polygon fill="#A80036" points="437,175.3073,430.3333,177.974,437,180.6406,434.3333,177.974" style="stroke: #A80036; stroke-width: 0.6666666666666666;"></polygon><text fill="#000000" font-family="sans-serif" font-size="8.6667" lengthAdjust="spacingAndGlyphs" textLength="77.3333" x="434.3333" y="165.93">Start reading card</text><path d="M277.3333,186.6406 L277.3333,203.3073 L423.3333,203.3073 L423.3333,193.3073 L416.6667,186.6406 L277.3333,186.6406 " fill="#FBFB77" filter="url(#f16m7kanzx8ab2)" style="stroke: #A80036; stroke-width: 0.6666666666666666;"></path><path d="M416.6667,186.6406 L416.6667,193.3073 L423.3333,193.3073 L416.6667,186.6406 " fill="#FBFB77" style="stroke: #A80036; stroke-width: 0.6666666666666666;"></path><text fill="#000000" font-family="sans-serif" font-size="8.6667" lengthAdjust="spacingAndGlyphs" textLength="132" x="281.3333" y="198.0186">TransactionState: ReadingCard</text><path d="M245.3333,212.7292 L245.3333,229.3958 L423.3333,229.3958 L423.3333,219.3958 L416.6667,212.7292 L245.3333,212.7292 " fill="#FBFB77" filter="url(#f16m7kanzx8ab2)" style="stroke: #A80036; stroke-width: 0.6666666666666666;"></path><path d="M416.6667,212.7292 L416.6667,219.3958 L423.3333,219.3958 L416.6667,212.7292 " fill="#FBFB77" style="stroke: #A80036; stroke-width: 0.6666666666666666;"></path><text fill="#000000" font-family="sans-serif" font-size="8.6667" lengthAdjust="spacingAndGlyphs" textLength="164" x="249.3333" y="224.1071">TransactionState: ApplicationSelection</text><line style="stroke: #A80036; stroke-width: 0.6666666666666666;" x1="429.6667" x2="457.6667" y1="249.5729" y2="249.5729"></line><line style="stroke: #A80036; stroke-width: 0.6666666666666666;" x1="457.6667" x2="457.6667" y1="249.5729" y2="258.2396"></line><line style="stroke: #A80036; stroke-width: 0.6666666666666666;" x1="430.3333" x2="457.6667" y1="258.2396" y2="258.2396"></line><polygon fill="#A80036" points="437,255.5729,430.3333,258.2396,437,260.9063,434.3333,258.2396" style="stroke: #A80036; stroke-width: 0.6666666666666666;"></polygon><text fill="#000000" font-family="sans-serif" font-size="8.6667" lengthAdjust="spacingAndGlyphs" textLength="99.3333" x="434.3333" y="246.1956">Have read all card data</text><path d="M265.3333,266.9063 L265.3333,283.5729 L423.3333,283.5729 L423.3333,273.5729 L416.6667,266.9063 L265.3333,266.9063 " fill="#FBFB77" filter="url(#f16m7kanzx8ab2)" style="stroke: #A80036; stroke-width: 0.6666666666666666;"></path><path d="M416.6667,266.9063 L416.6667,273.5729 L423.3333,273.5729 L416.6667,266.9063 " fill="#FBFB77" style="stroke: #A80036; stroke-width: 0.6666666666666666;"></path><text fill="#000000" font-family="sans-serif" font-size="8.6667" lengthAdjust="spacingAndGlyphs" textLength="144" x="269.3333" y="278.2842">TransactionState: WaitForProceed</text><polygon fill="#A80036" points="28.3333,301.0833,21.6667,303.75,28.3333,306.4167,25.6667,303.75" style="stroke: #A80036; stroke-width: 0.6666666666666666;"></polygon><line style="stroke: #A80036; stroke-width: 0.6666666666666666;" x1="24.3333" x2="429" y1="303.75" y2="303.75"></line><text fill="#000000" font-family="sans-serif" font-size="8.6667" lengthAdjust="spacingAndGlyphs" textLength="304" x="32.3333" y="300.3727">Init Transaction Response ([CardData], [ProcessingDisposition=OnEFT])</text><polygon fill="#A80036" points="421.6667,320.5052,428.3333,323.1719,421.6667,325.8385,424.3333,323.1719" style="stroke: #A80036; stroke-width: 0.6666666666666666;"></polygon><line style="stroke: #A80036; stroke-width: 0.6666666666666666;" x1="21" x2="425.6667" y1="323.1719" y2="323.1719"></line><text fill="#000000" font-family="sans-serif" font-size="8.6667" lengthAdjust="spacingAndGlyphs" textLength="161.3333" x="25.6667" y="319.7946">Purchase Request ([Basket], Amount)</text><path d="M401.6667,333.1719 L448.3333,333.1719 L448.3333,337.8385 L441.6667,344.5052 L401.6667,344.5052 L401.6667,333.1719 " fill="#EEEEEE" style="stroke: #000000; stroke-width: 0.6666666666666666;"></path><rect fill="none" height="71.0208" style="stroke: #000000; stroke-width: 1.3333333333333333;" width="353.3333" x="401.6667" y="333.1719"></rect><text fill="#000000" font-family="sans-serif" font-size="8.6667" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="16.6667" x="411.6667" y="341.8831">opt</text><text fill="#000000" font-family="sans-serif" font-size="7.3333" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="293.3333" x="458.3333" y="341.3122">[MOC Petrol: AdditionalInformation already required in AuthRequest]</text><path d="M408.3333,349.2604 L459.6667,349.2604 L459.6667,353.9271 L453,360.5938 L408.3333,360.5938 L408.3333,349.2604 " fill="#EEEEEE" style="stroke: #000000; stroke-width: 0.6666666666666666;"></path><rect fill="none" height="50.2656" style="stroke: #000000; stroke-width: 1.3333333333333333;" width="189" x="408.3333" y="349.2604"></rect><text fill="#000000" font-family="sans-serif" font-size="8.6667" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="21.3333" x="418.3333" y="357.9717">loop</text><text fill="#000000" font-family="sans-serif" font-size="7.3333" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="22.6667" x="469.6667" y="357.4007">[0..n]</text><polygon fill="#A80036" points="567.6667,372.1042,574.3333,374.7708,567.6667,377.4375,570.3333,374.7708" style="stroke: #A80036; stroke-width: 0.6666666666666666;"></polygon><line style="stroke: #A80036; stroke-width: 0.6666666666666666;" x1="429.6667" x2="571.6667" y1="374.7708" y2="374.7708"></line><text fill="#000000" font-family="sans-serif" font-size="8.6667" lengthAdjust="spacingAndGlyphs" textLength="130" x="434.3333" y="371.3936">Request additional information</text><polygon fill="#A80036" points="437,391.526,430.3333,394.1927,437,396.8594,434.3333,394.1927" style="stroke: #A80036; stroke-width: 0.6666666666666666;"></polygon><line style="stroke: #A80036; stroke-width: 0.6666666666666666;" x1="433" x2="575" y1="394.1927" y2="394.1927"></line><text fill="#000000" font-family="sans-serif" font-size="8.6667" lengthAdjust="spacingAndGlyphs" textLength="117.3333" x="441" y="390.8154">Entry additional information</text><polygon fill="#A80036" points="711,420.2813,717.6667,422.9479,711,425.6146,713.6667,422.9479" style="stroke: #A80036; stroke-width: 0.6666666666666666;"></polygon><line style="stroke: #A80036; stroke-width: 0.6666666666666666;" x1="429.6667" x2="715" y1="422.9479" y2="422.9479"></line><text fill="#000000" font-family="sans-serif" font-size="8.6667" lengthAdjust="spacingAndGlyphs" textLength="266.6667" x="434.3333" y="419.5706">Authorization Request (Amount, [AddInfo], [SetOfRestrictions])</text><polygon fill="#A80036" points="437,439.7031,430.3333,442.3698,437,445.0365,434.3333,442.3698" style="stroke: #A80036; stroke-width: 0.6666666666666666;"></polygon><line style="stroke: #A80036; stroke-width: 0.6666666666666666;" x1="433" x2="718.3333" y1="442.3698" y2="442.3698"></line><text fill="#000000" font-family="sans-serif" font-size="8.6667" lengthAdjust="spacingAndGlyphs" textLength="273.3333" x="441" y="438.9925">Authorization Response (Amount, [AddInfo], [SetOfRestrictions])</text><path d="M401.6667,452.3698 L448.3333,452.3698 L448.3333,457.0365 L441.6667,463.7031 L401.6667,463.7031 L401.6667,452.3698 " fill="#EEEEEE" style="stroke: #000000; stroke-width: 0.6666666666666666;"></path><rect fill="none" height="71.0208" style="stroke: #000000; stroke-width: 1.3333333333333333;" width="336" x="401.6667" y="452.3698"></rect><text fill="#000000" font-family="sans-serif" font-size="8.6667" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="16.6667" x="411.6667" y="461.0811">opt</text><text fill="#000000" font-family="sans-serif" font-size="7.3333" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="276" x="458.3333" y="460.5101">[MOC Online: AdditionalInformation only required in submission]</text><path d="M408.3333,468.4583 L459.6667,468.4583 L459.6667,473.125 L453,479.7917 L408.3333,479.7917 L408.3333,468.4583 " fill="#EEEEEE" style="stroke: #000000; stroke-width: 0.6666666666666666;"></path><rect fill="none" height="50.2656" style="stroke: #000000; stroke-width: 1.3333333333333333;" width="189" x="408.3333" y="468.4583"></rect><text fill="#000000" font-family="sans-serif" font-size="8.6667" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="21.3333" x="418.3333" y="477.1696">loop</text><text fill="#000000" font-family="sans-serif" font-size="7.3333" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="22.6667" x="469.6667" y="476.5986">[0..n]</text><polygon fill="#A80036" points="567.6667,491.3021,574.3333,493.9688,567.6667,496.6354,570.3333,493.9688" style="stroke: #A80036; stroke-width: 0.6666666666666666;"></polygon><line style="stroke: #A80036; stroke-width: 0.6666666666666666;" x1="429.6667" x2="571.6667" y1="493.9688" y2="493.9688"></line><text fill="#000000" font-family="sans-serif" font-size="8.6667" lengthAdjust="spacingAndGlyphs" textLength="130" x="434.3333" y="490.5915">Request additional information</text><polygon fill="#A80036" points="437,510.724,430.3333,513.3906,437,516.0573,434.3333,513.3906" style="stroke: #A80036; stroke-width: 0.6666666666666666;"></polygon><line style="stroke: #A80036; stroke-width: 0.6666666666666666;" x1="433" x2="575" y1="513.3906" y2="513.3906"></line><text fill="#000000" font-family="sans-serif" font-size="8.6667" lengthAdjust="spacingAndGlyphs" textLength="117.3333" x="441" y="510.0133">Entry additional information</text><path d="M408.3333,532.724 L455,532.724 L455,537.3906 L448.3333,544.0573 L408.3333,544.0573 L408.3333,532.724 " fill="#EEEEEE" style="stroke: #000000; stroke-width: 0.6666666666666666;"></path><rect fill="none" height="30.8438" style="stroke: #000000; stroke-width: 1.3333333333333333;" width="290.6667" x="408.3333" y="532.724"></rect><text fill="#000000" font-family="sans-serif" font-size="8.6667" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="16.6667" x="418.3333" y="541.4352">opt</text><text fill="#000000" font-family="sans-serif" font-size="7.3333" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="230.6667" x="465" y="540.8643">[Amount may have changed: Cardholder confirmation]</text><polygon fill="#A80036" points="437,555.5677,430.3333,558.2344,437,560.901,434.3333,558.2344" style="stroke: #A80036; stroke-width: 0.6666666666666666;"></polygon><line style="stroke: #A80036; stroke-width: 0.6666666666666666;" x1="433" x2="575" y1="558.2344" y2="558.2344"></line><text fill="#000000" font-family="sans-serif" font-size="8.6667" lengthAdjust="spacingAndGlyphs" textLength="88.6667" x="441" y="554.8571">Confirm new amount</text><polygon fill="#A80036" points="28.3333,579.6563,21.6667,582.3229,28.3333,584.9896,25.6667,582.3229" style="stroke: #A80036; stroke-width: 0.6666666666666666;"></polygon><line style="stroke: #A80036; stroke-width: 0.6666666666666666;" x1="24.3333" x2="429" y1="582.3229" y2="582.3229"></line><text fill="#000000" font-family="sans-serif" font-size="8.6667" lengthAdjust="spacingAndGlyphs" textLength="392.6667" x="32.3333" y="578.9456">Purchase Response (Amount, [AdditionalInfo], [Basket], [PrintData], TransactionInformation)</text><polygon fill="#A80036" points="421.6667,599.0781,428.3333,601.7448,421.6667,604.4115,424.3333,601.7448" style="stroke: #A80036; stroke-width: 0.6666666666666666;"></polygon><line style="stroke: #A80036; stroke-width: 0.6666666666666666;" x1="21" x2="425.6667" y1="601.7448" y2="601.7448"></line><text fill="#000000" font-family="sans-serif" font-size="8.6667" lengthAdjust="spacingAndGlyphs" textLength="71.3333" x="25.6667" y="598.3675">Commit Request</text><polygon fill="#A80036" points="28.3333,618.5,21.6667,621.1667,28.3333,623.8333,25.6667,621.1667" style="stroke: #A80036; stroke-width: 0.6666666666666666;"></polygon><line style="stroke: #A80036; stroke-width: 0.6666666666666666;" x1="24.3333" x2="429" y1="621.1667" y2="621.1667"></line><text fill="#000000" font-family="sans-serif" font-size="8.6667" lengthAdjust="spacingAndGlyphs" textLength="78" x="32.3333" y="617.7894">Commit Response</text></g></svg></figure>
   	</div></div></section>
   	<div class="row"><div class="col-md-6"></div></div><section id="petrolFlowOutdoorOnline"><h3><a name="petrolFlowOutdoorOnline"></a>Petrol Flow: Outdoor - Online Card</h3><div class="row"><div class="col-md-6"><figure><svg contentScriptType="application/ecmascript" contentStyleType="text/css" height="1018px" preserveAspectRatio="none" style="width:740px;height:1018px;" version="1.1" viewBox="0 0 740 1018" width="740.6667px" zoomAndPan="magnify"><defs><filter height="300%" id="f16wyokedut4fo" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="1.3333333333333333"></feGaussianBlur><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"></feColorMatrix><feOffset dx="2.6666666666666665" dy="2.6666666666666665" in="blurOut2" result="blurOut3"></feOffset><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"></feBlend></filter></defs><g><line style="stroke: #A80036; stroke-width: 0.6666666666666666; stroke-dasharray: 5.0,5.0;" x1="37.3333" x2="37.3333" y1="57.5313" y2="959.9167"></line><line style="stroke: #A80036; stroke-width: 0.6666666666666666; stroke-dasharray: 5.0,5.0;" x1="408.3333" x2="408.3333" y1="57.5313" y2="959.9167"></line><line style="stroke: #A80036; stroke-width: 0.6666666666666666; stroke-dasharray: 5.0,5.0;" x1="554" x2="554" y1="57.5313" y2="959.9167"></line><line style="stroke: #A80036; stroke-width: 0.6666666666666666; stroke-dasharray: 5.0,5.0;" x1="698.3333" x2="698.3333" y1="57.5313" y2="959.9167"></line><rect fill="#FEFECE" filter="url(#f16wyokedut4fo)" height="20.1979" style="stroke: #A80036; stroke-width: 1.0;" width="28.6667" x="22" y="34"></rect><text fill="#000000" font-family="sans-serif" font-size="9.3333" lengthAdjust="spacingAndGlyphs" textLength="19.3333" x="26.6667" y="47.3301">ECR</text><rect fill="#FEFECE" filter="url(#f16wyokedut4fo)" height="20.1979" style="stroke: #A80036; stroke-width: 1.0;" width="28.6667" x="22" y="959.25"></rect><text fill="#000000" font-family="sans-serif" font-size="9.3333" lengthAdjust="spacingAndGlyphs" textLength="19.3333" x="26.6667" y="972.5801">ECR</text><rect fill="#FEFECE" filter="url(#f16wyokedut4fo)" height="20.1979" style="stroke: #A80036; stroke-width: 1.0;" width="26.6667" x="393.6667" y="34"></rect><text fill="#000000" font-family="sans-serif" font-size="9.3333" lengthAdjust="spacingAndGlyphs" textLength="17.3333" x="398.3333" y="47.3301">EFT</text><rect fill="#FEFECE" filter="url(#f16wyokedut4fo)" height="20.1979" style="stroke: #A80036; stroke-width: 1.0;" width="26.6667" x="393.6667" y="959.25"></rect><text fill="#000000" font-family="sans-serif" font-size="9.3333" lengthAdjust="spacingAndGlyphs" textLength="17.3333" x="398.3333" y="972.5801">EFT</text><text fill="#000000" font-family="sans-serif" font-size="9.3333" lengthAdjust="spacingAndGlyphs" textLength="26" x="539.3333" y="55.3301">Client</text><ellipse cx="554.3333" cy="8.6667" fill="#FEFECE" filter="url(#f16wyokedut4fo)" rx="5.3333" ry="5.3333" style="stroke: #A80036; stroke-width: 1.3333333333333333;"></ellipse><path d="M554.3333,14 L554.3333,32 M545.6667,19.3333 L563,19.3333 M554.3333,32 L545.6667,42 M554.3333,32 L563,42 " fill="none" filter="url(#f16wyokedut4fo)" style="stroke: #A80036; stroke-width: 1.3333333333333333;"></path><text fill="#000000" font-family="sans-serif" font-size="9.3333" lengthAdjust="spacingAndGlyphs" textLength="26" x="539.3333" y="967.9134">Client</text><ellipse cx="554.3333" cy="976.7813" fill="#FEFECE" filter="url(#f16wyokedut4fo)" rx="5.3333" ry="5.3333" style="stroke: #A80036; stroke-width: 1.3333333333333333;"></ellipse><path d="M554.3333,982.1146 L554.3333,1000.1146 M545.6667,987.4479 L563,987.4479 M554.3333,1000.1146 L545.6667,1010.1146 M554.3333,1000.1146 L563,1010.1146 " fill="none" filter="url(#f16wyokedut4fo)" style="stroke: #A80036; stroke-width: 1.3333333333333333;"></path><rect fill="#FEFECE" filter="url(#f16wyokedut4fo)" height="20.1979" style="stroke: #A80036; stroke-width: 1.0;" width="30.6667" x="681.6667" y="34"></rect><text fill="#000000" font-family="sans-serif" font-size="9.3333" lengthAdjust="spacingAndGlyphs" textLength="21.3333" x="686.3333" y="47.3301">Host</text><rect fill="#FEFECE" filter="url(#f16wyokedut4fo)" height="20.1979" style="stroke: #A80036; stroke-width: 1.0;" width="30.6667" x="681.6667" y="959.25"></rect><text fill="#000000" font-family="sans-serif" font-size="9.3333" lengthAdjust="spacingAndGlyphs" textLength="21.3333" x="686.3333" y="972.5801">Host</text><polygon fill="#A80036" points="400.3333,75.6198,407,78.2865,400.3333,80.9531,403,78.2865" style="stroke: #A80036; stroke-width: 0.6666666666666666;"></polygon><line style="stroke: #A80036; stroke-width: 0.6666666666666666;" x1="37.6667" x2="404.3333" y1="78.2865" y2="78.2865"></line><text fill="#000000" font-family="sans-serif" font-size="8.6667" lengthAdjust="spacingAndGlyphs" textLength="102" x="42.3333" y="74.9092">Init Transaction Request</text><path d="M258.6667,86.9531 L258.6667,103.6198 L402,103.6198 L402,93.6198 L395.3333,86.9531 L258.6667,86.9531 " fill="#FBFB77" filter="url(#f16wyokedut4fo)" style="stroke: #A80036; stroke-width: 0.6666666666666666;"></path><path d="M395.3333,86.9531 L395.3333,93.6198 L402,93.6198 L395.3333,86.9531 " fill="#FBFB77" style="stroke: #A80036; stroke-width: 0.6666666666666666;"></path><text fill="#000000" font-family="sans-serif" font-size="8.6667" lengthAdjust="spacingAndGlyphs" textLength="129.3333" x="262.6667" y="98.3311">TransactionState: WaitForCard</text><polygon fill="#A80036" points="415.6667,121.1302,409,123.7969,415.6667,126.4635,413,123.7969" style="stroke: #A80036; stroke-width: 0.6666666666666666;"></polygon><line style="stroke: #A80036; stroke-width: 0.6666666666666666;" x1="411.6667" x2="553.6667" y1="123.7969" y2="123.7969"></line><text fill="#000000" font-family="sans-serif" font-size="8.6667" lengthAdjust="spacingAndGlyphs" textLength="46.6667" x="419.6667" y="120.4196">Insert Card</text><line style="stroke: #A80036; stroke-width: 0.6666666666666666;" x1="408.3333" x2="436.3333" y1="143.2188" y2="143.2188"></line><line style="stroke: #A80036; stroke-width: 0.6666666666666666;" x1="436.3333" x2="436.3333" y1="143.2188" y2="151.8854"></line><line style="stroke: #A80036; stroke-width: 0.6666666666666666;" x1="409" x2="436.3333" y1="151.8854" y2="151.8854"></line><polygon fill="#A80036" points="415.6667,149.2188,409,151.8854,415.6667,154.5521,413,151.8854" style="stroke: #A80036; stroke-width: 0.6666666666666666;"></polygon><text fill="#000000" font-family="sans-serif" font-size="8.6667" lengthAdjust="spacingAndGlyphs" textLength="77.3333" x="413" y="139.8415">Start reading card</text><path d="M256,160.5521 L256,177.2188 L402,177.2188 L402,167.2188 L395.3333,160.5521 L256,160.5521 " fill="#FBFB77" filter="url(#f16wyokedut4fo)" style="stroke: #A80036; stroke-width: 0.6666666666666666;"></path><path d="M395.3333,160.5521 L395.3333,167.2188 L402,167.2188 L395.3333,160.5521 " fill="#FBFB77" style="stroke: #A80036; stroke-width: 0.6666666666666666;"></path><text fill="#000000" font-family="sans-serif" font-size="8.6667" lengthAdjust="spacingAndGlyphs" textLength="132" x="260" y="171.93">TransactionState: ReadingCard</text><path d="M224,186.6406 L224,203.3073 L402,203.3073 L402,193.3073 L395.3333,186.6406 L224,186.6406 " fill="#FBFB77" filter="url(#f16wyokedut4fo)" style="stroke: #A80036; stroke-width: 0.6666666666666666;"></path><path d="M395.3333,186.6406 L395.3333,193.3073 L402,193.3073 L395.3333,186.6406 " fill="#FBFB77" style="stroke: #A80036; stroke-width: 0.6666666666666666;"></path><text fill="#000000" font-family="sans-serif" font-size="8.6667" lengthAdjust="spacingAndGlyphs" textLength="164" x="228" y="198.0186">TransactionState: ApplicationSelection</text><line style="stroke: #A80036; stroke-width: 0.6666666666666666;" x1="408.3333" x2="436.3333" y1="223.4844" y2="223.4844"></line><line style="stroke: #A80036; stroke-width: 0.6666666666666666;" x1="436.3333" x2="436.3333" y1="223.4844" y2="232.151"></line><line style="stroke: #A80036; stroke-width: 0.6666666666666666;" x1="409" x2="436.3333" y1="232.151" y2="232.151"></line><polygon fill="#A80036" points="415.6667,229.4844,409,232.151,415.6667,234.8177,413,232.151" style="stroke: #A80036; stroke-width: 0.6666666666666666;"></polygon><text fill="#000000" font-family="sans-serif" font-size="8.6667" lengthAdjust="spacingAndGlyphs" textLength="99.3333" x="413" y="220.1071">Have read all card data</text><path d="M244,240.8177 L244,257.4844 L402,257.4844 L402,247.4844 L395.3333,240.8177 L244,240.8177 " fill="#FBFB77" filter="url(#f16wyokedut4fo)" style="stroke: #A80036; stroke-width: 0.6666666666666666;"></path><path d="M395.3333,240.8177 L395.3333,247.4844 L402,247.4844 L395.3333,240.8177 " fill="#FBFB77" style="stroke: #A80036; stroke-width: 0.6666666666666666;"></path><text fill="#000000" font-family="sans-serif" font-size="8.6667" lengthAdjust="spacingAndGlyphs" textLength="144" x="248" y="252.1956">TransactionState: WaitForProceed</text><polygon fill="#A80036" points="45,274.9948,38.3333,277.6615,45,280.3281,42.3333,277.6615" style="stroke: #A80036; stroke-width: 0.6666666666666666;"></polygon><line style="stroke: #A80036; stroke-width: 0.6666666666666666;" x1="41" x2="407.6667" y1="277.6615" y2="277.6615"></line><text fill="#000000" font-family="sans-serif" font-size="8.6667" lengthAdjust="spacingAndGlyphs" textLength="304" x="49" y="274.2842">Init Transaction Response ([CardData], [ProcessingDisposition=OnEFT])</text><polygon fill="#A80036" points="400.3333,294.4167,407,297.0833,400.3333,299.75,403,297.0833" style="stroke: #A80036; stroke-width: 0.6666666666666666;"></polygon><line style="stroke: #A80036; stroke-width: 0.6666666666666666;" x1="37.6667" x2="404.3333" y1="297.0833" y2="297.0833"></line><text fill="#000000" font-family="sans-serif" font-size="8.6667" lengthAdjust="spacingAndGlyphs" textLength="114.6667" x="42.3333" y="293.7061">PreAuth Request (Amount)</text><path d="M380.3333,307.0833 L427,307.0833 L427,311.75 L420.3333,318.4167 L380.3333,318.4167 L380.3333,307.0833 " fill="#EEEEEE" style="stroke: #000000; stroke-width: 0.6666666666666666;"></path><rect fill="none" height="71.0208" style="stroke: #000000; stroke-width: 1.3333333333333333;" width="353.3333" x="380.3333" y="307.0833"></rect><text fill="#000000" font-family="sans-serif" font-size="8.6667" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="16.6667" x="390.3333" y="315.7946">opt</text><text fill="#000000" font-family="sans-serif" font-size="7.3333" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="293.3333" x="437" y="315.2236">[MOC Petrol: AdditionalInformation already required in AuthRequest]</text><path d="M387,323.1719 L438.3333,323.1719 L438.3333,327.8385 L431.6667,334.5052 L387,334.5052 L387,323.1719 " fill="#EEEEEE" style="stroke: #000000; stroke-width: 0.6666666666666666;"></path><rect fill="none" height="50.2656" style="stroke: #000000; stroke-width: 1.3333333333333333;" width="189" x="387" y="323.1719"></rect><text fill="#000000" font-family="sans-serif" font-size="8.6667" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="21.3333" x="397" y="331.8831">loop</text><text fill="#000000" font-family="sans-serif" font-size="7.3333" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="22.6667" x="448.3333" y="331.3122">[0..n]</text><polygon fill="#A80036" points="546.3333,346.0156,553,348.6823,546.3333,351.349,549,348.6823" style="stroke: #A80036; stroke-width: 0.6666666666666666;"></polygon><line style="stroke: #A80036; stroke-width: 0.6666666666666666;" x1="408.3333" x2="550.3333" y1="348.6823" y2="348.6823"></line><text fill="#000000" font-family="sans-serif" font-size="8.6667" lengthAdjust="spacingAndGlyphs" textLength="130" x="413" y="345.305">Request additional information</text><polygon fill="#A80036" points="415.6667,365.4375,409,368.1042,415.6667,370.7708,413,368.1042" style="stroke: #A80036; stroke-width: 0.6666666666666666;"></polygon><line style="stroke: #A80036; stroke-width: 0.6666666666666666;" x1="411.6667" x2="553.6667" y1="368.1042" y2="368.1042"></line><text fill="#000000" font-family="sans-serif" font-size="8.6667" lengthAdjust="spacingAndGlyphs" textLength="117.3333" x="419.6667" y="364.7269">Entry additional information</text><polygon fill="#A80036" points="690.3333,394.1927,697,396.8594,690.3333,399.526,693,396.8594" style="stroke: #A80036; stroke-width: 0.6666666666666666;"></polygon><line style="stroke: #A80036; stroke-width: 0.6666666666666666;" x1="408.3333" x2="694.3333" y1="396.8594" y2="396.8594"></line><text fill="#000000" font-family="sans-serif" font-size="8.6667" lengthAdjust="spacingAndGlyphs" textLength="262" x="413" y="393.4821">Authorization Request (Amount, [AddInfo], [SetOfRestriction])</text><polygon fill="#A80036" points="415.6667,413.6146,409,416.2813,415.6667,418.9479,413,416.2813" style="stroke: #A80036; stroke-width: 0.6666666666666666;"></polygon><line style="stroke: #A80036; stroke-width: 0.6666666666666666;" x1="411.6667" x2="697.6667" y1="416.2813" y2="416.2813"></line><text fill="#000000" font-family="sans-serif" font-size="8.6667" lengthAdjust="spacingAndGlyphs" textLength="234" x="419.6667" y="412.904">Authorization Response ([AddInfo], [SetOfRestrictions])</text><path d="M380.3333,426.2813 L427,426.2813 L427,430.9479 L420.3333,437.6146 L380.3333,437.6146 L380.3333,426.2813 " fill="#EEEEEE" style="stroke: #000000; stroke-width: 0.6666666666666666;"></path><rect fill="none" height="71.0208" style="stroke: #000000; stroke-width: 1.3333333333333333;" width="336" x="380.3333" y="426.2813"></rect><text fill="#000000" font-family="sans-serif" font-size="8.6667" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="16.6667" x="390.3333" y="434.9925">opt</text><text fill="#000000" font-family="sans-serif" font-size="7.3333" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="276" x="437" y="434.4215">[MOC Online: AdditionalInformation only required in submission]</text><path d="M387,442.3698 L438.3333,442.3698 L438.3333,447.0365 L431.6667,453.7031 L387,453.7031 L387,442.3698 " fill="#EEEEEE" style="stroke: #000000; stroke-width: 0.6666666666666666;"></path><rect fill="none" height="50.2656" style="stroke: #000000; stroke-width: 1.3333333333333333;" width="189" x="387" y="442.3698"></rect><text fill="#000000" font-family="sans-serif" font-size="8.6667" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="21.3333" x="397" y="451.0811">loop</text><text fill="#000000" font-family="sans-serif" font-size="7.3333" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="22.6667" x="448.3333" y="450.5101">[0..n]</text><polygon fill="#A80036" points="546.3333,465.2135,553,467.8802,546.3333,470.5469,549,467.8802" style="stroke: #A80036; stroke-width: 0.6666666666666666;"></polygon><line style="stroke: #A80036; stroke-width: 0.6666666666666666;" x1="408.3333" x2="550.3333" y1="467.8802" y2="467.8802"></line><text fill="#000000" font-family="sans-serif" font-size="8.6667" lengthAdjust="spacingAndGlyphs" textLength="130" x="413" y="464.5029">Request additional information</text><polygon fill="#A80036" points="415.6667,484.6354,409,487.3021,415.6667,489.9688,413,487.3021" style="stroke: #A80036; stroke-width: 0.6666666666666666;"></polygon><line style="stroke: #A80036; stroke-width: 0.6666666666666666;" x1="411.6667" x2="553.6667" y1="487.3021" y2="487.3021"></line><text fill="#000000" font-family="sans-serif" font-size="8.6667" lengthAdjust="spacingAndGlyphs" textLength="117.3333" x="419.6667" y="483.9248">Entry additional information</text><polygon fill="#A80036" points="45,513.3906,38.3333,516.0573,45,518.724,42.3333,516.0573" style="stroke: #A80036; stroke-width: 0.6666666666666666;"></polygon><line style="stroke: #A80036; stroke-width: 0.6666666666666666;" x1="41" x2="407.6667" y1="516.0573" y2="516.0573"></line><text fill="#000000" font-family="sans-serif" font-size="8.6667" lengthAdjust="spacingAndGlyphs" textLength="232" x="49" y="512.68">PreAuth Response ([AdditionalInfo], [Basket], Amount)</text><path d="M8.6667,526.0573 L55.3333,526.0573 L55.3333,530.724 L48.6667,537.3906 L8.6667,537.3906 L8.6667,526.0573 " fill="#EEEEEE" style="stroke: #000000; stroke-width: 0.6666666666666666;"></path><rect fill="none" height="213.6406" style="stroke: #000000; stroke-width: 1.3333333333333333;" width="574" x="8.6667" y="526.0573"></rect><text fill="#000000" font-family="sans-serif" font-size="8.6667" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="16.6667" x="18.6667" y="534.7686">opt</text><text fill="#000000" font-family="sans-serif" font-size="7.3333" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="80.6667" x="65.3333" y="534.1976">[At ECR Discretion]</text><polygon fill="#A80036" points="400.3333,548.901,407,551.5677,400.3333,554.2344,403,551.5677" style="stroke: #A80036; stroke-width: 0.6666666666666666;"></polygon><line style="stroke: #A80036; stroke-width: 0.6666666666666666;" x1="37.6667" x2="404.3333" y1="551.5677" y2="551.5677"></line><text fill="#000000" font-family="sans-serif" font-size="8.6667" lengthAdjust="spacingAndGlyphs" textLength="110" x="42.3333" y="548.1904">OpenDialogMode Request</text><polygon fill="#A80036" points="45,568.3229,38.3333,570.9896,45,573.6563,42.3333,570.9896" style="stroke: #A80036; stroke-width: 0.6666666666666666;"></polygon><line style="stroke: #A80036; stroke-width: 0.6666666666666666;" x1="41" x2="407.6667" y1="570.9896" y2="570.9896"></line><text fill="#000000" font-family="sans-serif" font-size="8.6667" lengthAdjust="spacingAndGlyphs" textLength="116.6667" x="49" y="567.6123">OpenDialogMode Response</text><path d="M15.3333,580.9896 L66.6667,580.9896 L66.6667,585.6563 L60,592.3229 L15.3333,592.3229 L15.3333,580.9896 " fill="#EEEEEE" style="stroke: #000000; stroke-width: 0.6666666666666666;"></path><rect fill="none" height="115.1979" style="stroke: #000000; stroke-width: 1.3333333333333333;" width="560.6667" x="15.3333" y="580.9896"></rect><text fill="#000000" font-family="sans-serif" font-size="8.6667" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="21.3333" x="25.3333" y="589.7008">loop</text><text fill="#000000" font-family="sans-serif" font-size="7.3333" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="22.6667" x="76.6667" y="589.1299">[0..n]</text><path d="M40.6667,595.7448 L40.6667,612.4115 L272,612.4115 L272,602.4115 L265.3333,595.7448 L40.6667,595.7448 " fill="#FBFB77" filter="url(#f16wyokedut4fo)" style="stroke: #A80036; stroke-width: 0.6666666666666666;"></path><path d="M265.3333,595.7448 L265.3333,602.4115 L272,602.4115 L265.3333,595.7448 " fill="#FBFB77" style="stroke: #A80036; stroke-width: 0.6666666666666666;"></path><text fill="#000000" font-family="sans-serif" font-size="8.6667" lengthAdjust="spacingAndGlyphs" textLength="217.3333" x="44.6667" y="607.1227">Dialog mainly used for pump selection and the like.</text><polygon fill="#A80036" points="400.3333,629.9219,407,632.5885,400.3333,635.2552,403,632.5885" style="stroke: #A80036; stroke-width: 0.6666666666666666;"></polygon><line style="stroke: #A80036; stroke-width: 0.6666666666666666;" x1="37.6667" x2="404.3333" y1="632.5885" y2="632.5885"></line><text fill="#000000" font-family="sans-serif" font-size="8.6667" lengthAdjust="spacingAndGlyphs" textLength="64" x="42.3333" y="629.2113">Dialog Request</text><polygon fill="#A80036" points="546.3333,649.3438,553,652.0104,546.3333,654.6771,549,652.0104" style="stroke: #A80036; stroke-width: 0.6666666666666666;"></polygon><line style="stroke: #A80036; stroke-width: 0.6666666666666666;" x1="408.3333" x2="550.3333" y1="652.0104" y2="652.0104"></line><text fill="#000000" font-family="sans-serif" font-size="8.6667" lengthAdjust="spacingAndGlyphs" textLength="130" x="413" y="648.6331">Request additional information</text><polygon fill="#A80036" points="415.6667,668.7656,409,671.4323,415.6667,674.099,413,671.4323" style="stroke: #A80036; stroke-width: 0.6666666666666666;"></polygon><line style="stroke: #A80036; stroke-width: 0.6666666666666666;" x1="411.6667" x2="553.6667" y1="671.4323" y2="671.4323"></line><text fill="#000000" font-family="sans-serif" font-size="8.6667" lengthAdjust="spacingAndGlyphs" textLength="117.3333" x="419.6667" y="668.055">Entry additional information</text><polygon fill="#A80036" points="45,688.1875,38.3333,690.8542,45,693.5208,42.3333,690.8542" style="stroke: #A80036; stroke-width: 0.6666666666666666;"></polygon><line style="stroke: #A80036; stroke-width: 0.6666666666666666;" x1="41" x2="407.6667" y1="690.8542" y2="690.8542"></line><text fill="#000000" font-family="sans-serif" font-size="8.6667" lengthAdjust="spacingAndGlyphs" textLength="70.6667" x="49" y="687.4769">Dialog Response</text><polygon fill="#A80036" points="400.3333,712.276,407,714.9427,400.3333,717.6094,403,714.9427" style="stroke: #A80036; stroke-width: 0.6666666666666666;"></polygon><line style="stroke: #A80036; stroke-width: 0.6666666666666666;" x1="37.6667" x2="404.3333" y1="714.9427" y2="714.9427"></line><text fill="#000000" font-family="sans-serif" font-size="8.6667" lengthAdjust="spacingAndGlyphs" textLength="110.6667" x="42.3333" y="711.5654">CloseDialogMode Request</text><polygon fill="#A80036" points="45,731.6979,38.3333,734.3646,45,737.0313,42.3333,734.3646" style="stroke: #A80036; stroke-width: 0.6666666666666666;"></polygon><line style="stroke: #A80036; stroke-width: 0.6666666666666666;" x1="41" x2="407.6667" y1="734.3646" y2="734.3646"></line><text fill="#000000" font-family="sans-serif" font-size="8.6667" lengthAdjust="spacingAndGlyphs" textLength="117.3333" x="49" y="730.9873">CloseDialogMode Response</text><path d="M470.6667,747.6979 L470.6667,764.3646 L548,764.3646 L548,754.3646 L541.3333,747.6979 L470.6667,747.6979 " fill="#FBFB77" filter="url(#f16wyokedut4fo)" style="stroke: #A80036; stroke-width: 0.6666666666666666;"></path><path d="M541.3333,747.6979 L541.3333,754.3646 L548,754.3646 L541.3333,747.6979 " fill="#FBFB77" style="stroke: #A80036; stroke-width: 0.6666666666666666;"></path><text fill="#000000" font-family="sans-serif" font-size="8.6667" lengthAdjust="spacingAndGlyphs" textLength="63.3333" x="474.6667" y="759.0758">Pump selected</text><polygon fill="#A80036" points="415.6667,781.875,409,784.5417,415.6667,787.2083,413,784.5417" style="stroke: #A80036; stroke-width: 0.6666666666666666;"></polygon><line style="stroke: #A80036; stroke-width: 0.6666666666666666;" x1="411.6667" x2="553.6667" y1="784.5417" y2="784.5417"></line><text fill="#000000" font-family="sans-serif" font-size="8.6667" lengthAdjust="spacingAndGlyphs" textLength="56" x="419.6667" y="781.1644">Remove card</text><path d="M520,793.2083 L520,809.875 L586,809.875 L586,799.875 L579.3333,793.2083 L520,793.2083 " fill="#FBFB77" filter="url(#f16wyokedut4fo)" style="stroke: #A80036; stroke-width: 0.6666666666666666;"></path><path d="M579.3333,793.2083 L579.3333,799.875 L586,799.875 L579.3333,793.2083 " fill="#FBFB77" style="stroke: #A80036; stroke-width: 0.6666666666666666;"></path><text fill="#000000" font-family="sans-serif" font-size="8.6667" lengthAdjust="spacingAndGlyphs" textLength="52" x="524" y="804.5863">Pump petrol</text><polygon fill="#A80036" points="400.3333,827.3854,407,830.0521,400.3333,832.7188,403,830.0521" style="stroke: #A80036; stroke-width: 0.6666666666666666;"></polygon><line style="stroke: #A80036; stroke-width: 0.6666666666666666;" x1="37.6667" x2="404.3333" y1="830.0521" y2="830.0521"></line><text fill="#000000" font-family="sans-serif" font-size="8.6667" lengthAdjust="spacingAndGlyphs" textLength="350.6667" x="42.3333" y="826.6748">FinalizePurchase Request ([AdditionalInfo], [Amount], [TransactionData], [Basket])</text><path d="M387,840.0521 L438.3333,840.0521 L438.3333,844.7188 L431.6667,851.3854 L387,851.3854 L387,840.0521 " fill="#EEEEEE" style="stroke: #000000; stroke-width: 0.6666666666666666;"></path><rect fill="none" height="50.2656" style="stroke: #000000; stroke-width: 1.3333333333333333;" width="334.6667" x="387" y="840.0521"></rect><text fill="#000000" font-family="sans-serif" font-size="8.6667" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="21.3333" x="397" y="848.7633">loop</text><text fill="#000000" font-family="sans-serif" font-size="7.3333" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="22.6667" x="448.3333" y="848.1924">[1..3]</text><polygon fill="#A80036" points="690.3333,862.8958,697,865.5625,690.3333,868.2292,693,865.5625" style="stroke: #A80036; stroke-width: 0.6666666666666666;"></polygon><line style="stroke: #A80036; stroke-width: 0.6666666666666666;" x1="408.3333" x2="694.3333" y1="865.5625" y2="865.5625"></line><text fill="#000000" font-family="sans-serif" font-size="8.6667" lengthAdjust="spacingAndGlyphs" textLength="267.3333" x="413" y="862.1852">Online Advice Request (Amount, [AddInfo], [SetOfRestrictions])</text><polygon fill="#A80036" points="415.6667,882.3177,409,884.9844,415.6667,887.651,413,884.9844" style="stroke: #A80036; stroke-width: 0.6666666666666666;"></polygon><line style="stroke: #A80036; stroke-width: 0.6666666666666666;" x1="411.6667" x2="697.6667" y1="884.9844" y2="884.9844"></line><text fill="#000000" font-family="sans-serif" font-size="8.6667" lengthAdjust="spacingAndGlyphs" textLength="274" x="419.6667" y="881.6071">Online Advice Response (Amount, [AddInfo], [SetOfRestrictions])</text><polygon fill="#A80036" points="45,906.4063,38.3333,909.0729,45,911.7396,42.3333,909.0729" style="stroke: #A80036; stroke-width: 0.6666666666666666;"></polygon><line style="stroke: #A80036; stroke-width: 0.6666666666666666;" x1="41" x2="407.6667" y1="909.0729" y2="909.0729"></line><text fill="#000000" font-family="sans-serif" font-size="8.6667" lengthAdjust="spacingAndGlyphs" textLength="354.6667" x="49" y="905.6956">FinalizePurchase Response (Amount, [Basket], [PrintData], TransactionInformation)</text><polygon fill="#A80036" points="400.3333,925.8281,407,928.4948,400.3333,931.1615,403,928.4948" style="stroke: #A80036; stroke-width: 0.6666666666666666;"></polygon><line style="stroke: #A80036; stroke-width: 0.6666666666666666;" x1="37.6667" x2="404.3333" y1="928.4948" y2="928.4948"></line><text fill="#000000" font-family="sans-serif" font-size="8.6667" lengthAdjust="spacingAndGlyphs" textLength="71.3333" x="42.3333" y="925.1175">Commit Request</text><polygon fill="#A80036" points="45,945.25,38.3333,947.9167,45,950.5833,42.3333,947.9167" style="stroke: #A80036; stroke-width: 0.6666666666666666;"></polygon><line style="stroke: #A80036; stroke-width: 0.6666666666666666;" x1="41" x2="407.6667" y1="947.9167" y2="947.9167"></line><text fill="#000000" font-family="sans-serif" font-size="8.6667" lengthAdjust="spacingAndGlyphs" textLength="78" x="49" y="944.5394">Commit Response</text></g></svg></figure>
   	</div></div></section>
@@ -1185,7 +1170,7 @@ terminal.addListener(new MyTerminalListener());
   	<div class="row"><div class="col-md-6"></div></div><section id="petrolFlowOutdoorOffline"><h3><a name="petrolFlowOutdoorOffline"></a>Petrol Flow: Outdoor - Offline Card</h3><div class="row"><div class="col-md-6"><figure><svg contentScriptType="application/ecmascript" contentStyleType="text/css" height="647.3333px" preserveAspectRatio="none" style="width:558px;height:647px;" version="1.1" viewBox="0 0 558 647" width="558.6667px" zoomAndPan="magnify"><defs><filter height="300%" id="fjtlxocs6aprg" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="1.3333333333333333"></feGaussianBlur><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"></feColorMatrix><feOffset dx="2.6666666666666665" dy="2.6666666666666665" in="blurOut2" result="blurOut3"></feOffset><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"></feBlend></filter></defs><g><line style="stroke: #A80036; stroke-width: 0.6666666666666666; stroke-dasharray: 5.0,5.0;" x1="30.6667" x2="30.6667" y1="57.5313" y2="589.7448"></line><line style="stroke: #A80036; stroke-width: 0.6666666666666666; stroke-dasharray: 5.0,5.0;" x1="353" x2="353" y1="57.5313" y2="589.7448"></line><line style="stroke: #A80036; stroke-width: 0.6666666666666666; stroke-dasharray: 5.0,5.0;" x1="498.6667" x2="498.6667" y1="57.5313" y2="589.7448"></line><line style="stroke: #A80036; stroke-width: 0.6666666666666666; stroke-dasharray: 5.0,5.0;" x1="537.3333" x2="537.3333" y1="57.5313" y2="589.7448"></line><rect fill="#FEFECE" filter="url(#fjtlxocs6aprg)" height="20.1979" style="stroke: #A80036; stroke-width: 1.0;" width="28.6667" x="15.3333" y="34"></rect><text fill="#000000" font-family="sans-serif" font-size="9.3333" lengthAdjust="spacingAndGlyphs" textLength="19.3333" x="20" y="47.3301">ECR</text><rect fill="#FEFECE" filter="url(#fjtlxocs6aprg)" height="20.1979" style="stroke: #A80036; stroke-width: 1.0;" width="28.6667" x="15.3333" y="589.0781"></rect><text fill="#000000" font-family="sans-serif" font-size="9.3333" lengthAdjust="spacingAndGlyphs" textLength="19.3333" x="20" y="602.4082">ECR</text><rect fill="#FEFECE" filter="url(#fjtlxocs6aprg)" height="20.1979" style="stroke: #A80036; stroke-width: 1.0;" width="26.6667" x="338.3333" y="34"></rect><text fill="#000000" font-family="sans-serif" font-size="9.3333" lengthAdjust="spacingAndGlyphs" textLength="17.3333" x="343" y="47.3301">EFT</text><rect fill="#FEFECE" filter="url(#fjtlxocs6aprg)" height="20.1979" style="stroke: #A80036; stroke-width: 1.0;" width="26.6667" x="338.3333" y="589.0781"></rect><text fill="#000000" font-family="sans-serif" font-size="9.3333" lengthAdjust="spacingAndGlyphs" textLength="17.3333" x="343" y="602.4082">EFT</text><text fill="#000000" font-family="sans-serif" font-size="9.3333" lengthAdjust="spacingAndGlyphs" textLength="26" x="484" y="55.3301">Client</text><ellipse cx="499" cy="8.6667" fill="#FEFECE" filter="url(#fjtlxocs6aprg)" rx="5.3333" ry="5.3333" style="stroke: #A80036; stroke-width: 1.3333333333333333;"></ellipse><path d="M499,14 L499,32 M490.3333,19.3333 L507.6667,19.3333 M499,32 L490.3333,42 M499,32 L507.6667,42 " fill="none" filter="url(#fjtlxocs6aprg)" style="stroke: #A80036; stroke-width: 1.3333333333333333;"></path><text fill="#000000" font-family="sans-serif" font-size="9.3333" lengthAdjust="spacingAndGlyphs" textLength="26" x="484" y="597.7415">Client</text><ellipse cx="499" cy="606.6094" fill="#FEFECE" filter="url(#fjtlxocs6aprg)" rx="5.3333" ry="5.3333" style="stroke: #A80036; stroke-width: 1.3333333333333333;"></ellipse><path d="M499,611.9427 L499,629.9427 M490.3333,617.276 L507.6667,617.276 M499,629.9427 L490.3333,639.9427 M499,629.9427 L507.6667,639.9427 " fill="none" filter="url(#fjtlxocs6aprg)" style="stroke: #A80036; stroke-width: 1.3333333333333333;"></path><rect fill="#FEFECE" filter="url(#fjtlxocs6aprg)" height="20.1979" style="stroke: #A80036; stroke-width: 1.0;" width="30.6667" x="520.6667" y="34"></rect><text fill="#000000" font-family="sans-serif" font-size="9.3333" lengthAdjust="spacingAndGlyphs" textLength="21.3333" x="525.3333" y="47.3301">Host</text><rect fill="#FEFECE" filter="url(#fjtlxocs6aprg)" height="20.1979" style="stroke: #A80036; stroke-width: 1.0;" width="30.6667" x="520.6667" y="589.0781"></rect><text fill="#000000" font-family="sans-serif" font-size="9.3333" lengthAdjust="spacingAndGlyphs" textLength="21.3333" x="525.3333" y="602.4082">Host</text><polygon fill="#A80036" points="345,75.6198,351.6667,78.2865,345,80.9531,347.6667,78.2865" style="stroke: #A80036; stroke-width: 0.6666666666666666;"></polygon><line style="stroke: #A80036; stroke-width: 0.6666666666666666;" x1="31" x2="349" y1="78.2865" y2="78.2865"></line><text fill="#000000" font-family="sans-serif" font-size="8.6667" lengthAdjust="spacingAndGlyphs" textLength="102" x="35.6667" y="74.9092">Init Transaction Request</text><path d="M203.3333,86.9531 L203.3333,103.6198 L346.6667,103.6198 L346.6667,93.6198 L340,86.9531 L203.3333,86.9531 " fill="#FBFB77" filter="url(#fjtlxocs6aprg)" style="stroke: #A80036; stroke-width: 0.6666666666666666;"></path><path d="M340,86.9531 L340,93.6198 L346.6667,93.6198 L340,86.9531 " fill="#FBFB77" style="stroke: #A80036; stroke-width: 0.6666666666666666;"></path><text fill="#000000" font-family="sans-serif" font-size="8.6667" lengthAdjust="spacingAndGlyphs" textLength="129.3333" x="207.3333" y="98.3311">TransactionState: WaitForCard</text><polygon fill="#A80036" points="360.3333,121.1302,353.6667,123.7969,360.3333,126.4635,357.6667,123.7969" style="stroke: #A80036; stroke-width: 0.6666666666666666;"></polygon><line style="stroke: #A80036; stroke-width: 0.6666666666666666;" x1="356.3333" x2="498.3333" y1="123.7969" y2="123.7969"></line><text fill="#000000" font-family="sans-serif" font-size="8.6667" lengthAdjust="spacingAndGlyphs" textLength="46.6667" x="364.3333" y="120.4196">Insert Card</text><line style="stroke: #A80036; stroke-width: 0.6666666666666666;" x1="353" x2="381" y1="143.2188" y2="143.2188"></line><line style="stroke: #A80036; stroke-width: 0.6666666666666666;" x1="381" x2="381" y1="143.2188" y2="151.8854"></line><line style="stroke: #A80036; stroke-width: 0.6666666666666666;" x1="353.6667" x2="381" y1="151.8854" y2="151.8854"></line><polygon fill="#A80036" points="360.3333,149.2188,353.6667,151.8854,360.3333,154.5521,357.6667,151.8854" style="stroke: #A80036; stroke-width: 0.6666666666666666;"></polygon><text fill="#000000" font-family="sans-serif" font-size="8.6667" lengthAdjust="spacingAndGlyphs" textLength="77.3333" x="357.6667" y="139.8415">Start reading card</text><path d="M200.6667,160.5521 L200.6667,177.2188 L346.6667,177.2188 L346.6667,167.2188 L340,160.5521 L200.6667,160.5521 " fill="#FBFB77" filter="url(#fjtlxocs6aprg)" style="stroke: #A80036; stroke-width: 0.6666666666666666;"></path><path d="M340,160.5521 L340,167.2188 L346.6667,167.2188 L340,160.5521 " fill="#FBFB77" style="stroke: #A80036; stroke-width: 0.6666666666666666;"></path><text fill="#000000" font-family="sans-serif" font-size="8.6667" lengthAdjust="spacingAndGlyphs" textLength="132" x="204.6667" y="171.93">TransactionState: ReadingCard</text><path d="M168.6667,186.6406 L168.6667,203.3073 L346.6667,203.3073 L346.6667,193.3073 L340,186.6406 L168.6667,186.6406 " fill="#FBFB77" filter="url(#fjtlxocs6aprg)" style="stroke: #A80036; stroke-width: 0.6666666666666666;"></path><path d="M340,186.6406 L340,193.3073 L346.6667,193.3073 L340,186.6406 " fill="#FBFB77" style="stroke: #A80036; stroke-width: 0.6666666666666666;"></path><text fill="#000000" font-family="sans-serif" font-size="8.6667" lengthAdjust="spacingAndGlyphs" textLength="164" x="172.6667" y="198.0186">TransactionState: ApplicationSelection</text><line style="stroke: #A80036; stroke-width: 0.6666666666666666;" x1="353" x2="381" y1="223.4844" y2="223.4844"></line><line style="stroke: #A80036; stroke-width: 0.6666666666666666;" x1="381" x2="381" y1="223.4844" y2="232.151"></line><line style="stroke: #A80036; stroke-width: 0.6666666666666666;" x1="353.6667" x2="381" y1="232.151" y2="232.151"></line><polygon fill="#A80036" points="360.3333,229.4844,353.6667,232.151,360.3333,234.8177,357.6667,232.151" style="stroke: #A80036; stroke-width: 0.6666666666666666;"></polygon><text fill="#000000" font-family="sans-serif" font-size="8.6667" lengthAdjust="spacingAndGlyphs" textLength="99.3333" x="357.6667" y="220.1071">Have read all card data</text><path d="M240,240.8177 L240,257.4844 L346.6667,257.4844 L346.6667,247.4844 L340,240.8177 L240,240.8177 " fill="#FBFB77" filter="url(#fjtlxocs6aprg)" style="stroke: #A80036; stroke-width: 0.6666666666666666;"></path><path d="M340,240.8177 L340,247.4844 L346.6667,247.4844 L340,240.8177 " fill="#FBFB77" style="stroke: #A80036; stroke-width: 0.6666666666666666;"></path><text fill="#000000" font-family="sans-serif" font-size="8.6667" lengthAdjust="spacingAndGlyphs" textLength="92.6667" x="244" y="252.1956">TransactionState: Idle</text><polygon fill="#A80036" points="38.3333,274.9948,31.6667,277.6615,38.3333,280.3281,35.6667,277.6615" style="stroke: #A80036; stroke-width: 0.6666666666666666;"></polygon><line style="stroke: #A80036; stroke-width: 0.6666666666666666;" x1="34.3333" x2="352.3333" y1="277.6615" y2="277.6615"></line><text fill="#000000" font-family="sans-serif" font-size="8.6667" lengthAdjust="spacingAndGlyphs" textLength="306" x="42.3333" y="274.2842">Init Transaction Response ([CardData], [ProcessingDisposition=OnECR])</text><polygon fill="#A80036" points="345,294.4167,351.6667,297.0833,345,299.75,347.6667,297.0833" style="stroke: #A80036; stroke-width: 0.6666666666666666;"></polygon><line style="stroke: #A80036; stroke-width: 0.6666666666666666;" x1="31" x2="349" y1="297.0833" y2="297.0833"></line><text fill="#000000" font-family="sans-serif" font-size="8.6667" lengthAdjust="spacingAndGlyphs" textLength="110" x="35.6667" y="293.7061">OpenDialogMode Request</text><polygon fill="#A80036" points="38.3333,313.8385,31.6667,316.5052,38.3333,319.1719,35.6667,316.5052" style="stroke: #A80036; stroke-width: 0.6666666666666666;"></polygon><line style="stroke: #A80036; stroke-width: 0.6666666666666666;" x1="34.3333" x2="352.3333" y1="316.5052" y2="316.5052"></line><text fill="#000000" font-family="sans-serif" font-size="8.6667" lengthAdjust="spacingAndGlyphs" textLength="116.6667" x="42.3333" y="313.1279">OpenDialogMode Response</text><path d="M8.6667,326.5052 L60,326.5052 L60,331.1719 L53.3333,337.8385 L8.6667,337.8385 L8.6667,326.5052 " fill="#EEEEEE" style="stroke: #000000; stroke-width: 0.6666666666666666;"></path><rect fill="none" height="135.375" style="stroke: #000000; stroke-width: 1.3333333333333333;" width="512" x="8.6667" y="326.5052"></rect><text fill="#000000" font-family="sans-serif" font-size="8.6667" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="21.3333" x="18.6667" y="335.2165">loop</text><text fill="#000000" font-family="sans-serif" font-size="7.3333" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="22.6667" x="70" y="334.6455">[0..n]</text><polygon fill="#A80036" points="345,349.349,351.6667,352.0156,345,354.6823,347.6667,352.0156" style="stroke: #A80036; stroke-width: 0.6666666666666666;"></polygon><line style="stroke: #A80036; stroke-width: 0.6666666666666666;" x1="31" x2="349" y1="352.0156" y2="352.0156"></line><text fill="#000000" font-family="sans-serif" font-size="8.6667" lengthAdjust="spacingAndGlyphs" textLength="64" x="35.6667" y="348.6383">Dialog Request</text><polygon fill="#A80036" points="491,368.7708,497.6667,371.4375,491,374.1042,493.6667,371.4375" style="stroke: #A80036; stroke-width: 0.6666666666666666;"></polygon><line style="stroke: #A80036; stroke-width: 0.6666666666666666;" x1="353" x2="495" y1="371.4375" y2="371.4375"></line><text fill="#000000" font-family="sans-serif" font-size="8.6667" lengthAdjust="spacingAndGlyphs" textLength="130" x="357.6667" y="368.0602">Request additional information</text><path d="M34,380.1042 L34,416.7708 L212.6667,416.7708 L212.6667,386.7708 L206,380.1042 L34,380.1042 " fill="#FBFB77" filter="url(#fjtlxocs6aprg)" style="stroke: #A80036; stroke-width: 0.6666666666666666;"></path><path d="M206,380.1042 L206,386.7708 L212.6667,386.7708 L206,380.1042 " fill="#FBFB77" style="stroke: #A80036; stroke-width: 0.6666666666666666;"></path><text fill="#000000" font-family="sans-serif" font-size="8.6667" lengthAdjust="spacingAndGlyphs" textLength="164.6667" x="38" y="391.4821">- Collection of FleetID, Mileage, UserID.</text><text fill="#000000" font-family="sans-serif" font-size="8.6667" lengthAdjust="spacingAndGlyphs" textLength="47.3333" x="38" y="401.5706">- PIN check</text><text fill="#000000" font-family="sans-serif" font-size="8.6667" lengthAdjust="spacingAndGlyphs" textLength="71.3333" x="38" y="411.6592">- Pump selection</text><polygon fill="#A80036" points="360.3333,434.4583,353.6667,437.125,360.3333,439.7917,357.6667,437.125" style="stroke: #A80036; stroke-width: 0.6666666666666666;"></polygon><line style="stroke: #A80036; stroke-width: 0.6666666666666666;" x1="356.3333" x2="498.3333" y1="437.125" y2="437.125"></line><text fill="#000000" font-family="sans-serif" font-size="8.6667" lengthAdjust="spacingAndGlyphs" textLength="117.3333" x="364.3333" y="433.7477">Entry additional information</text><polygon fill="#A80036" points="38.3333,453.8802,31.6667,456.5469,38.3333,459.2135,35.6667,456.5469" style="stroke: #A80036; stroke-width: 0.6666666666666666;"></polygon><line style="stroke: #A80036; stroke-width: 0.6666666666666666;" x1="34.3333" x2="352.3333" y1="456.5469" y2="456.5469"></line><text fill="#000000" font-family="sans-serif" font-size="8.6667" lengthAdjust="spacingAndGlyphs" textLength="70.6667" x="42.3333" y="453.1696">Dialog Response</text><polygon fill="#A80036" points="345,477.9688,351.6667,480.6354,345,483.3021,347.6667,480.6354" style="stroke: #A80036; stroke-width: 0.6666666666666666;"></polygon><line style="stroke: #A80036; stroke-width: 0.6666666666666666;" x1="31" x2="349" y1="480.6354" y2="480.6354"></line><text fill="#000000" font-family="sans-serif" font-size="8.6667" lengthAdjust="spacingAndGlyphs" textLength="134.6667" x="35.6667" y="477.2581">Dialog Request ([RemoveCard])</text><polygon fill="#A80036" points="491,497.3906,497.6667,500.0573,491,502.724,493.6667,500.0573" style="stroke: #A80036; stroke-width: 0.6666666666666666;"></polygon><line style="stroke: #A80036; stroke-width: 0.6666666666666666;" x1="353" x2="495" y1="500.0573" y2="500.0573"></line><text fill="#000000" font-family="sans-serif" font-size="8.6667" lengthAdjust="spacingAndGlyphs" textLength="118.6667" x="357.6667" y="496.68">Show "Please Remove card"</text><polygon fill="#A80036" points="360.3333,516.8125,353.6667,519.4792,360.3333,522.1458,357.6667,519.4792" style="stroke: #A80036; stroke-width: 0.6666666666666666;"></polygon><line style="stroke: #A80036; stroke-width: 0.6666666666666666;" x1="356.3333" x2="498.3333" y1="519.4792" y2="519.4792"></line><text fill="#000000" font-family="sans-serif" font-size="8.6667" lengthAdjust="spacingAndGlyphs" textLength="46" x="364.3333" y="516.1019">Takes card</text><polygon fill="#A80036" points="38.3333,536.2344,31.6667,538.901,38.3333,541.5677,35.6667,538.901" style="stroke: #A80036; stroke-width: 0.6666666666666666;"></polygon><line style="stroke: #A80036; stroke-width: 0.6666666666666666;" x1="34.3333" x2="352.3333" y1="538.901" y2="538.901"></line><text fill="#000000" font-family="sans-serif" font-size="8.6667" lengthAdjust="spacingAndGlyphs" textLength="70.6667" x="42.3333" y="535.5238">Dialog Response</text><polygon fill="#A80036" points="345,555.6563,351.6667,558.3229,345,560.9896,347.6667,558.3229" style="stroke: #A80036; stroke-width: 0.6666666666666666;"></polygon><line style="stroke: #A80036; stroke-width: 0.6666666666666666;" x1="31" x2="349" y1="558.3229" y2="558.3229"></line><text fill="#000000" font-family="sans-serif" font-size="8.6667" lengthAdjust="spacingAndGlyphs" textLength="110.6667" x="35.6667" y="554.9456">CloseDialogMode Request</text><polygon fill="#A80036" points="38.3333,575.0781,31.6667,577.7448,38.3333,580.4115,35.6667,577.7448" style="stroke: #A80036; stroke-width: 0.6666666666666666;"></polygon><line style="stroke: #A80036; stroke-width: 0.6666666666666666;" x1="34.3333" x2="352.3333" y1="577.7448" y2="577.7448"></line><text fill="#000000" font-family="sans-serif" font-size="8.6667" lengthAdjust="spacingAndGlyphs" textLength="117.3333" x="42.3333" y="574.3675">CloseDialogMode Response</text></g></svg></figure>
   	</div></div></section>
   <div class="row"><div class="col-md-6"></div></div></section>
-			<div class="row"><div class="col-md-6"></div></div><section class="filterGuides guideUnattended" id="uatFlows"><h2><a name="uatFlows"></a>Guide Unattended Additional Flows</h2><section id="uatFlowPartialCommit"><h3><a name="uatFlowPartialCommit"></a> Flow: Partial Commit</h3><div class="row"><div class="col-md-6"><figure><svg contentScriptType="application/ecmascript" contentStyleType="text/css" height="340.6667px" preserveAspectRatio="none" style="width:347px;height:340px;" version="1.1" viewBox="0 0 347 340" width="347.3333px" zoomAndPan="magnify"><defs><filter height="300%" id="f5bbv5nkabsao" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="1.3333333333333333"></feGaussianBlur><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"></feColorMatrix><feOffset dx="2.6666666666666665" dy="2.6666666666666665" in="blurOut2" result="blurOut3"></feOffset><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"></feBlend></filter></defs><g><line style="stroke: #A80036; stroke-width: 0.6666666666666666; stroke-dasharray: 5.0,5.0;" x1="30.6667" x2="30.6667" y1="57.5313" y2="282.9531"></line><line style="stroke: #A80036; stroke-width: 0.6666666666666666; stroke-dasharray: 5.0,5.0;" x1="68" x2="68" y1="57.5313" y2="282.9531"></line><line style="stroke: #A80036; stroke-width: 0.6666666666666666; stroke-dasharray: 5.0,5.0;" x1="104" x2="104" y1="57.5313" y2="282.9531"></line><line style="stroke: #A80036; stroke-width: 0.6666666666666666; stroke-dasharray: 5.0,5.0;" x1="142.6667" x2="142.6667" y1="57.5313" y2="282.9531"></line><line style="stroke: #A80036; stroke-width: 0.6666666666666666; stroke-dasharray: 5.0,5.0;" x1="233.3333" x2="233.3333" y1="57.5313" y2="282.9531"></line><rect fill="#FEFECE" filter="url(#f5bbv5nkabsao)" height="20.1979" style="stroke: #A80036; stroke-width: 1.0;" width="28.6667" x="15.3333" y="34"></rect><text fill="#000000" font-family="sans-serif" font-size="9.3333" lengthAdjust="spacingAndGlyphs" textLength="19.3333" x="20" y="47.3301">ECR</text><rect fill="#FEFECE" filter="url(#f5bbv5nkabsao)" height="20.1979" style="stroke: #A80036; stroke-width: 1.0;" width="28.6667" x="15.3333" y="282.2865"></rect><text fill="#000000" font-family="sans-serif" font-size="9.3333" lengthAdjust="spacingAndGlyphs" textLength="19.3333" x="20" y="295.6165">ECR</text><rect fill="#FEFECE" filter="url(#f5bbv5nkabsao)" height="20.1979" style="stroke: #A80036; stroke-width: 1.0;" width="26.6667" x="53.3333" y="34"></rect><text fill="#000000" font-family="sans-serif" font-size="9.3333" lengthAdjust="spacingAndGlyphs" textLength="17.3333" x="58" y="47.3301">EFT</text><rect fill="#FEFECE" filter="url(#f5bbv5nkabsao)" height="20.1979" style="stroke: #A80036; stroke-width: 1.0;" width="26.6667" x="53.3333" y="282.2865"></rect><text fill="#000000" font-family="sans-serif" font-size="9.3333" lengthAdjust="spacingAndGlyphs" textLength="17.3333" x="58" y="295.6165">EFT</text><text fill="#000000" font-family="sans-serif" font-size="9.3333" lengthAdjust="spacingAndGlyphs" textLength="26" x="89.3333" y="55.3301">Client</text><ellipse cx="104.3333" cy="8.6667" fill="#FEFECE" filter="url(#f5bbv5nkabsao)" rx="5.3333" ry="5.3333" style="stroke: #A80036; stroke-width: 1.3333333333333333;"></ellipse><path d="M104.3333,14 L104.3333,32 M95.6667,19.3333 L113,19.3333 M104.3333,32 L95.6667,42 M104.3333,32 L113,42 " fill="none" filter="url(#f5bbv5nkabsao)" style="stroke: #A80036; stroke-width: 1.3333333333333333;"></path><text fill="#000000" font-family="sans-serif" font-size="9.3333" lengthAdjust="spacingAndGlyphs" textLength="26" x="89.3333" y="290.9499">Client</text><ellipse cx="104.3333" cy="299.8177" fill="#FEFECE" filter="url(#f5bbv5nkabsao)" rx="5.3333" ry="5.3333" style="stroke: #A80036; stroke-width: 1.3333333333333333;"></ellipse><path d="M104.3333,305.151 L104.3333,323.151 M95.6667,310.4844 L113,310.4844 M104.3333,323.151 L95.6667,333.151 M104.3333,323.151 L113,333.151 " fill="none" filter="url(#f5bbv5nkabsao)" style="stroke: #A80036; stroke-width: 1.3333333333333333;"></path><rect fill="#FEFECE" filter="url(#f5bbv5nkabsao)" height="20.1979" style="stroke: #A80036; stroke-width: 1.0;" width="30.6667" x="126" y="34"></rect><text fill="#000000" font-family="sans-serif" font-size="9.3333" lengthAdjust="spacingAndGlyphs" textLength="21.3333" x="130.6667" y="47.3301">Host</text><rect fill="#FEFECE" filter="url(#f5bbv5nkabsao)" height="20.1979" style="stroke: #A80036; stroke-width: 1.0;" width="30.6667" x="126" y="282.2865"></rect><text fill="#000000" font-family="sans-serif" font-size="9.3333" lengthAdjust="spacingAndGlyphs" textLength="21.3333" x="130.6667" y="295.6165">Host</text><rect fill="#FEFECE" filter="url(#f5bbv5nkabsao)" height="20.1979" style="stroke: #A80036; stroke-width: 1.0;" width="48.6667" x="208" y="34"></rect><text fill="#000000" font-family="sans-serif" font-size="9.3333" lengthAdjust="spacingAndGlyphs" textLength="39.3333" x="212.6667" y="47.3301">Terminal</text><rect fill="#FEFECE" filter="url(#f5bbv5nkabsao)" height="20.1979" style="stroke: #A80036; stroke-width: 1.0;" width="48.6667" x="208" y="282.2865"></rect><text fill="#000000" font-family="sans-serif" font-size="9.3333" lengthAdjust="spacingAndGlyphs" textLength="39.3333" x="212.6667" y="295.6165">Terminal</text><polygon fill="#A80036" points="225.6667,75.6198,232.3333,78.2865,225.6667,80.9531,228.3333,78.2865" style="stroke: #A80036; stroke-width: 0.6666666666666666;"></polygon><line style="stroke: #A80036; stroke-width: 0.6666666666666666;" x1="31" x2="229.6667" y1="78.2865" y2="78.2865"></line><text fill="#000000" font-family="sans-serif" font-size="8.6667" lengthAdjust="spacingAndGlyphs" textLength="155.3333" x="35.6667" y="74.9092">Purchase(Amount, TransactionData)</text><polygon fill="#A80036" points="225.6667,95.0417,232.3333,97.7083,225.6667,100.375,228.3333,97.7083" style="stroke: #A80036; stroke-width: 0.6666666666666666;"></polygon><line style="stroke: #A80036; stroke-width: 0.6666666666666666;" x1="104.3333" x2="229.6667" y1="97.7083" y2="97.7083"></line><text fill="#000000" font-family="sans-serif" font-size="8.6667" lengthAdjust="spacingAndGlyphs" textLength="87.3333" x="109" y="94.3311">InsertCard / TapCard</text><polygon fill="#A80036" points="225.6667,114.4635,232.3333,117.1302,225.6667,119.7969,228.3333,117.1302" style="stroke: #A80036; stroke-width: 0.6666666666666666;"></polygon><line style="stroke: #A80036; stroke-width: 0.6666666666666666;" x1="104.3333" x2="229.6667" y1="117.1302" y2="117.1302"></line><text fill="#000000" font-family="sans-serif" font-size="8.6667" lengthAdjust="spacingAndGlyphs" textLength="34.6667" x="109" y="113.7529">PinEntry</text><polygon fill="#A80036" points="225.6667,133.8854,232.3333,136.5521,225.6667,139.2188,228.3333,136.5521" style="stroke: #A80036; stroke-width: 0.6666666666666666;"></polygon><line style="stroke: #A80036; stroke-width: 0.6666666666666666;" x1="104.3333" x2="229.6667" y1="136.5521" y2="136.5521"></line><text fill="#000000" font-family="sans-serif" font-size="8.6667" lengthAdjust="spacingAndGlyphs" textLength="113.3333" x="109" y="133.1748">CardRemoval (for Contact)</text><polygon fill="#A80036" points="38.3333,153.3073,31.6667,155.974,38.3333,158.6406,35.6667,155.974" style="stroke: #A80036; stroke-width: 0.6666666666666666;"></polygon><line style="stroke: #A80036; stroke-width: 0.6666666666666666;" x1="34.3333" x2="233" y1="155.974" y2="155.974"></line><text fill="#000000" font-family="sans-serif" font-size="8.6667" lengthAdjust="spacingAndGlyphs" textLength="140.6667" x="42.3333" y="152.5967">return Purchase(ResultCode = 0)</text><path d="M70,164.6406 L70,181.3073 L227.3333,181.3073 L227.3333,171.3073 L220.6667,164.6406 L70,164.6406 " fill="#FBFB77" filter="url(#f5bbv5nkabsao)" style="stroke: #A80036; stroke-width: 0.6666666666666666;"></path><path d="M220.6667,164.6406 L220.6667,171.3073 L227.3333,171.3073 L220.6667,164.6406 " fill="#FBFB77" style="stroke: #A80036; stroke-width: 0.6666666666666666;"></path><text fill="#000000" font-family="sans-serif" font-size="8.6667" lengthAdjust="spacingAndGlyphs" textLength="143.3333" x="74" y="176.0186">TransactionState: WaitForCommit</text><path d="M8.6667,192.0625 L51.3333,192.0625 L51.3333,196.7292 L44.6667,203.3958 L8.6667,203.3958 L8.6667,192.0625 " fill="#EEEEEE" style="stroke: #000000; stroke-width: 0.6666666666666666;"></path><rect fill="none" height="60.1354" style="stroke: #000000; stroke-width: 1.3333333333333333;" width="330.6667" x="8.6667" y="192.0625"></rect><text fill="#000000" font-family="sans-serif" font-size="8.6667" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="12.6667" x="18.6667" y="200.7738">alt</text><text fill="#000000" font-family="sans-serif" font-size="7.3333" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="274.6667" x="61.3333" y="200.2028">["Partial Commit" if Vending Machine failed to deliver all goods]</text><polygon fill="#A80036" points="225.6667,214.9063,232.3333,217.5729,225.6667,220.2396,228.3333,217.5729" style="stroke: #A80036; stroke-width: 0.6666666666666666;"></polygon><line style="stroke: #A80036; stroke-width: 0.6666666666666666;" x1="31" x2="229.6667" y1="217.5729" y2="217.5729"></line><text fill="#000000" font-family="sans-serif" font-size="8.6667" lengthAdjust="spacingAndGlyphs" textLength="74.6667" x="35.6667" y="214.1956">Commit(Amount)</text><line style="stroke: #000000; stroke-width: 0.6666666666666666; stroke-dasharray: 2.0,2.0;" x1="8.6667" x2="339.3333" y1="223.5729" y2="223.5729"></line><text fill="#000000" font-family="sans-serif" font-size="7.3333" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="99.3333" x="12" y="230.3799">["Commit" no discount]</text><polygon fill="#A80036" points="225.6667,244.1979,232.3333,246.8646,225.6667,249.5313,228.3333,246.8646" style="stroke: #A80036; stroke-width: 0.6666666666666666;"></polygon><line style="stroke: #A80036; stroke-width: 0.6666666666666666;" x1="31" x2="229.6667" y1="246.8646" y2="246.8646"></line><text fill="#000000" font-family="sans-serif" font-size="8.6667" lengthAdjust="spacingAndGlyphs" textLength="40.6667" x="35.6667" y="243.4873">Commit()</text><polygon fill="#A80036" points="38.3333,268.2865,31.6667,270.9531,38.3333,273.6198,35.6667,270.9531" style="stroke: #A80036; stroke-width: 0.6666666666666666;"></polygon><line style="stroke: #A80036; stroke-width: 0.6666666666666666;" x1="34.3333" x2="233" y1="270.9531" y2="270.9531"></line><text fill="#000000" font-family="sans-serif" font-size="8.6667" lengthAdjust="spacingAndGlyphs" textLength="69.3333" x="42.3333" y="267.5758">return Commit()</text></g></svg></figure>
+        <div class="row"><div class="col-md-6"></div></div><section class="filterGuides guideUnattended" id="uatFlows"><h2><a name="uatFlows"></a>Guide Unattended Additional Flows</h2><section id="uatFlowPartialCommit"><h3><a name="uatFlowPartialCommit"></a> Flow: Partial Commit</h3><div class="row"><div class="col-md-6"><figure><svg contentScriptType="application/ecmascript" contentStyleType="text/css" height="340.6667px" preserveAspectRatio="none" style="width:347px;height:340px;" version="1.1" viewBox="0 0 347 340" width="347.3333px" zoomAndPan="magnify"><defs><filter height="300%" id="f5bbv5nkabsao" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="1.3333333333333333"></feGaussianBlur><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"></feColorMatrix><feOffset dx="2.6666666666666665" dy="2.6666666666666665" in="blurOut2" result="blurOut3"></feOffset><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"></feBlend></filter></defs><g><line style="stroke: #A80036; stroke-width: 0.6666666666666666; stroke-dasharray: 5.0,5.0;" x1="30.6667" x2="30.6667" y1="57.5313" y2="282.9531"></line><line style="stroke: #A80036; stroke-width: 0.6666666666666666; stroke-dasharray: 5.0,5.0;" x1="68" x2="68" y1="57.5313" y2="282.9531"></line><line style="stroke: #A80036; stroke-width: 0.6666666666666666; stroke-dasharray: 5.0,5.0;" x1="104" x2="104" y1="57.5313" y2="282.9531"></line><line style="stroke: #A80036; stroke-width: 0.6666666666666666; stroke-dasharray: 5.0,5.0;" x1="142.6667" x2="142.6667" y1="57.5313" y2="282.9531"></line><line style="stroke: #A80036; stroke-width: 0.6666666666666666; stroke-dasharray: 5.0,5.0;" x1="233.3333" x2="233.3333" y1="57.5313" y2="282.9531"></line><rect fill="#FEFECE" filter="url(#f5bbv5nkabsao)" height="20.1979" style="stroke: #A80036; stroke-width: 1.0;" width="28.6667" x="15.3333" y="34"></rect><text fill="#000000" font-family="sans-serif" font-size="9.3333" lengthAdjust="spacingAndGlyphs" textLength="19.3333" x="20" y="47.3301">ECR</text><rect fill="#FEFECE" filter="url(#f5bbv5nkabsao)" height="20.1979" style="stroke: #A80036; stroke-width: 1.0;" width="28.6667" x="15.3333" y="282.2865"></rect><text fill="#000000" font-family="sans-serif" font-size="9.3333" lengthAdjust="spacingAndGlyphs" textLength="19.3333" x="20" y="295.6165">ECR</text><rect fill="#FEFECE" filter="url(#f5bbv5nkabsao)" height="20.1979" style="stroke: #A80036; stroke-width: 1.0;" width="26.6667" x="53.3333" y="34"></rect><text fill="#000000" font-family="sans-serif" font-size="9.3333" lengthAdjust="spacingAndGlyphs" textLength="17.3333" x="58" y="47.3301">EFT</text><rect fill="#FEFECE" filter="url(#f5bbv5nkabsao)" height="20.1979" style="stroke: #A80036; stroke-width: 1.0;" width="26.6667" x="53.3333" y="282.2865"></rect><text fill="#000000" font-family="sans-serif" font-size="9.3333" lengthAdjust="spacingAndGlyphs" textLength="17.3333" x="58" y="295.6165">EFT</text><text fill="#000000" font-family="sans-serif" font-size="9.3333" lengthAdjust="spacingAndGlyphs" textLength="26" x="89.3333" y="55.3301">Client</text><ellipse cx="104.3333" cy="8.6667" fill="#FEFECE" filter="url(#f5bbv5nkabsao)" rx="5.3333" ry="5.3333" style="stroke: #A80036; stroke-width: 1.3333333333333333;"></ellipse><path d="M104.3333,14 L104.3333,32 M95.6667,19.3333 L113,19.3333 M104.3333,32 L95.6667,42 M104.3333,32 L113,42 " fill="none" filter="url(#f5bbv5nkabsao)" style="stroke: #A80036; stroke-width: 1.3333333333333333;"></path><text fill="#000000" font-family="sans-serif" font-size="9.3333" lengthAdjust="spacingAndGlyphs" textLength="26" x="89.3333" y="290.9499">Client</text><ellipse cx="104.3333" cy="299.8177" fill="#FEFECE" filter="url(#f5bbv5nkabsao)" rx="5.3333" ry="5.3333" style="stroke: #A80036; stroke-width: 1.3333333333333333;"></ellipse><path d="M104.3333,305.151 L104.3333,323.151 M95.6667,310.4844 L113,310.4844 M104.3333,323.151 L95.6667,333.151 M104.3333,323.151 L113,333.151 " fill="none" filter="url(#f5bbv5nkabsao)" style="stroke: #A80036; stroke-width: 1.3333333333333333;"></path><rect fill="#FEFECE" filter="url(#f5bbv5nkabsao)" height="20.1979" style="stroke: #A80036; stroke-width: 1.0;" width="30.6667" x="126" y="34"></rect><text fill="#000000" font-family="sans-serif" font-size="9.3333" lengthAdjust="spacingAndGlyphs" textLength="21.3333" x="130.6667" y="47.3301">Host</text><rect fill="#FEFECE" filter="url(#f5bbv5nkabsao)" height="20.1979" style="stroke: #A80036; stroke-width: 1.0;" width="30.6667" x="126" y="282.2865"></rect><text fill="#000000" font-family="sans-serif" font-size="9.3333" lengthAdjust="spacingAndGlyphs" textLength="21.3333" x="130.6667" y="295.6165">Host</text><rect fill="#FEFECE" filter="url(#f5bbv5nkabsao)" height="20.1979" style="stroke: #A80036; stroke-width: 1.0;" width="48.6667" x="208" y="34"></rect><text fill="#000000" font-family="sans-serif" font-size="9.3333" lengthAdjust="spacingAndGlyphs" textLength="39.3333" x="212.6667" y="47.3301">Terminal</text><rect fill="#FEFECE" filter="url(#f5bbv5nkabsao)" height="20.1979" style="stroke: #A80036; stroke-width: 1.0;" width="48.6667" x="208" y="282.2865"></rect><text fill="#000000" font-family="sans-serif" font-size="9.3333" lengthAdjust="spacingAndGlyphs" textLength="39.3333" x="212.6667" y="295.6165">Terminal</text><polygon fill="#A80036" points="225.6667,75.6198,232.3333,78.2865,225.6667,80.9531,228.3333,78.2865" style="stroke: #A80036; stroke-width: 0.6666666666666666;"></polygon><line style="stroke: #A80036; stroke-width: 0.6666666666666666;" x1="31" x2="229.6667" y1="78.2865" y2="78.2865"></line><text fill="#000000" font-family="sans-serif" font-size="8.6667" lengthAdjust="spacingAndGlyphs" textLength="155.3333" x="35.6667" y="74.9092">Purchase(Amount, TransactionData)</text><polygon fill="#A80036" points="225.6667,95.0417,232.3333,97.7083,225.6667,100.375,228.3333,97.7083" style="stroke: #A80036; stroke-width: 0.6666666666666666;"></polygon><line style="stroke: #A80036; stroke-width: 0.6666666666666666;" x1="104.3333" x2="229.6667" y1="97.7083" y2="97.7083"></line><text fill="#000000" font-family="sans-serif" font-size="8.6667" lengthAdjust="spacingAndGlyphs" textLength="87.3333" x="109" y="94.3311">InsertCard / TapCard</text><polygon fill="#A80036" points="225.6667,114.4635,232.3333,117.1302,225.6667,119.7969,228.3333,117.1302" style="stroke: #A80036; stroke-width: 0.6666666666666666;"></polygon><line style="stroke: #A80036; stroke-width: 0.6666666666666666;" x1="104.3333" x2="229.6667" y1="117.1302" y2="117.1302"></line><text fill="#000000" font-family="sans-serif" font-size="8.6667" lengthAdjust="spacingAndGlyphs" textLength="34.6667" x="109" y="113.7529">PinEntry</text><polygon fill="#A80036" points="225.6667,133.8854,232.3333,136.5521,225.6667,139.2188,228.3333,136.5521" style="stroke: #A80036; stroke-width: 0.6666666666666666;"></polygon><line style="stroke: #A80036; stroke-width: 0.6666666666666666;" x1="104.3333" x2="229.6667" y1="136.5521" y2="136.5521"></line><text fill="#000000" font-family="sans-serif" font-size="8.6667" lengthAdjust="spacingAndGlyphs" textLength="113.3333" x="109" y="133.1748">CardRemoval (for Contact)</text><polygon fill="#A80036" points="38.3333,153.3073,31.6667,155.974,38.3333,158.6406,35.6667,155.974" style="stroke: #A80036; stroke-width: 0.6666666666666666;"></polygon><line style="stroke: #A80036; stroke-width: 0.6666666666666666;" x1="34.3333" x2="233" y1="155.974" y2="155.974"></line><text fill="#000000" font-family="sans-serif" font-size="8.6667" lengthAdjust="spacingAndGlyphs" textLength="140.6667" x="42.3333" y="152.5967">return Purchase(ResultCode = 0)</text><path d="M70,164.6406 L70,181.3073 L227.3333,181.3073 L227.3333,171.3073 L220.6667,164.6406 L70,164.6406 " fill="#FBFB77" filter="url(#f5bbv5nkabsao)" style="stroke: #A80036; stroke-width: 0.6666666666666666;"></path><path d="M220.6667,164.6406 L220.6667,171.3073 L227.3333,171.3073 L220.6667,164.6406 " fill="#FBFB77" style="stroke: #A80036; stroke-width: 0.6666666666666666;"></path><text fill="#000000" font-family="sans-serif" font-size="8.6667" lengthAdjust="spacingAndGlyphs" textLength="143.3333" x="74" y="176.0186">TransactionState: WaitForCommit</text><path d="M8.6667,192.0625 L51.3333,192.0625 L51.3333,196.7292 L44.6667,203.3958 L8.6667,203.3958 L8.6667,192.0625 " fill="#EEEEEE" style="stroke: #000000; stroke-width: 0.6666666666666666;"></path><rect fill="none" height="60.1354" style="stroke: #000000; stroke-width: 1.3333333333333333;" width="330.6667" x="8.6667" y="192.0625"></rect><text fill="#000000" font-family="sans-serif" font-size="8.6667" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="12.6667" x="18.6667" y="200.7738">alt</text><text fill="#000000" font-family="sans-serif" font-size="7.3333" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="274.6667" x="61.3333" y="200.2028">["Partial Commit" if Vending Machine failed to deliver all goods]</text><polygon fill="#A80036" points="225.6667,214.9063,232.3333,217.5729,225.6667,220.2396,228.3333,217.5729" style="stroke: #A80036; stroke-width: 0.6666666666666666;"></polygon><line style="stroke: #A80036; stroke-width: 0.6666666666666666;" x1="31" x2="229.6667" y1="217.5729" y2="217.5729"></line><text fill="#000000" font-family="sans-serif" font-size="8.6667" lengthAdjust="spacingAndGlyphs" textLength="74.6667" x="35.6667" y="214.1956">Commit(Amount)</text><line style="stroke: #000000; stroke-width: 0.6666666666666666; stroke-dasharray: 2.0,2.0;" x1="8.6667" x2="339.3333" y1="223.5729" y2="223.5729"></line><text fill="#000000" font-family="sans-serif" font-size="7.3333" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="99.3333" x="12" y="230.3799">["Commit" no discount]</text><polygon fill="#A80036" points="225.6667,244.1979,232.3333,246.8646,225.6667,249.5313,228.3333,246.8646" style="stroke: #A80036; stroke-width: 0.6666666666666666;"></polygon><line style="stroke: #A80036; stroke-width: 0.6666666666666666;" x1="31" x2="229.6667" y1="246.8646" y2="246.8646"></line><text fill="#000000" font-family="sans-serif" font-size="8.6667" lengthAdjust="spacingAndGlyphs" textLength="40.6667" x="35.6667" y="243.4873">Commit()</text><polygon fill="#A80036" points="38.3333,268.2865,31.6667,270.9531,38.3333,273.6198,35.6667,270.9531" style="stroke: #A80036; stroke-width: 0.6666666666666666;"></polygon><line style="stroke: #A80036; stroke-width: 0.6666666666666666;" x1="34.3333" x2="233" y1="270.9531" y2="270.9531"></line><text fill="#000000" font-family="sans-serif" font-size="8.6667" lengthAdjust="spacingAndGlyphs" textLength="69.3333" x="42.3333" y="267.5758">return Commit()</text></g></svg></figure>
   	</div></div></section>
 
   	<div class="row"><div class="col-md-6"></div></div><section id="uatFlowHoldCommit"><h3><a name="uatFlowHoldCommit"></a> Flow: Hold commit</h3><div class="row"><div class="col-md-6"><figure><svg contentScriptType="application/ecmascript" contentStyleType="text/css" height="325.3333px" preserveAspectRatio="none" style="width:484px;height:325px;" version="1.1" viewBox="0 0 484 325" width="484px" zoomAndPan="magnify"><defs><filter height="300%" id="fxa7cgby8w488" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="1.3333333333333333"></feGaussianBlur><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"></feColorMatrix><feOffset dx="2.6666666666666665" dy="2.6666666666666665" in="blurOut2" result="blurOut3"></feOffset><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"></feBlend></filter></defs><g><line style="stroke: #A80036; stroke-width: 0.6666666666666666; stroke-dasharray: 5.0,5.0;" x1="37.3333" x2="37.3333" y1="57.5313" y2="267.75"></line><line style="stroke: #A80036; stroke-width: 0.6666666666666666; stroke-dasharray: 5.0,5.0;" x1="74.6667" x2="74.6667" y1="57.5313" y2="267.75"></line><line style="stroke: #A80036; stroke-width: 0.6666666666666666; stroke-dasharray: 5.0,5.0;" x1="110.6667" x2="110.6667" y1="57.5313" y2="267.75"></line><line style="stroke: #A80036; stroke-width: 0.6666666666666666; stroke-dasharray: 5.0,5.0;" x1="149.3333" x2="149.3333" y1="57.5313" y2="267.75"></line><line style="stroke: #A80036; stroke-width: 0.6666666666666666; stroke-dasharray: 5.0,5.0;" x1="240" x2="240" y1="57.5313" y2="267.75"></line><rect fill="#FEFECE" filter="url(#fxa7cgby8w488)" height="20.1979" style="stroke: #A80036; stroke-width: 1.0;" width="28.6667" x="22" y="34"></rect><text fill="#000000" font-family="sans-serif" font-size="9.3333" lengthAdjust="spacingAndGlyphs" textLength="19.3333" x="26.6667" y="47.3301">ECR</text><rect fill="#FEFECE" filter="url(#fxa7cgby8w488)" height="20.1979" style="stroke: #A80036; stroke-width: 1.0;" width="28.6667" x="22" y="267.0833"></rect><text fill="#000000" font-family="sans-serif" font-size="9.3333" lengthAdjust="spacingAndGlyphs" textLength="19.3333" x="26.6667" y="280.4134">ECR</text><rect fill="#FEFECE" filter="url(#fxa7cgby8w488)" height="20.1979" style="stroke: #A80036; stroke-width: 1.0;" width="26.6667" x="60" y="34"></rect><text fill="#000000" font-family="sans-serif" font-size="9.3333" lengthAdjust="spacingAndGlyphs" textLength="17.3333" x="64.6667" y="47.3301">EFT</text><rect fill="#FEFECE" filter="url(#fxa7cgby8w488)" height="20.1979" style="stroke: #A80036; stroke-width: 1.0;" width="26.6667" x="60" y="267.0833"></rect><text fill="#000000" font-family="sans-serif" font-size="9.3333" lengthAdjust="spacingAndGlyphs" textLength="17.3333" x="64.6667" y="280.4134">EFT</text><text fill="#000000" font-family="sans-serif" font-size="9.3333" lengthAdjust="spacingAndGlyphs" textLength="26" x="96" y="55.3301">Client</text><ellipse cx="111" cy="8.6667" fill="#FEFECE" filter="url(#fxa7cgby8w488)" rx="5.3333" ry="5.3333" style="stroke: #A80036; stroke-width: 1.3333333333333333;"></ellipse><path d="M111,14 L111,32 M102.3333,19.3333 L119.6667,19.3333 M111,32 L102.3333,42 M111,32 L119.6667,42 " fill="none" filter="url(#fxa7cgby8w488)" style="stroke: #A80036; stroke-width: 1.3333333333333333;"></path><text fill="#000000" font-family="sans-serif" font-size="9.3333" lengthAdjust="spacingAndGlyphs" textLength="26" x="96" y="275.7467">Client</text><ellipse cx="111" cy="284.6146" fill="#FEFECE" filter="url(#fxa7cgby8w488)" rx="5.3333" ry="5.3333" style="stroke: #A80036; stroke-width: 1.3333333333333333;"></ellipse><path d="M111,289.9479 L111,307.9479 M102.3333,295.2813 L119.6667,295.2813 M111,307.9479 L102.3333,317.9479 M111,307.9479 L119.6667,317.9479 " fill="none" filter="url(#fxa7cgby8w488)" style="stroke: #A80036; stroke-width: 1.3333333333333333;"></path><rect fill="#FEFECE" filter="url(#fxa7cgby8w488)" height="20.1979" style="stroke: #A80036; stroke-width: 1.0;" width="30.6667" x="132.6667" y="34"></rect><text fill="#000000" font-family="sans-serif" font-size="9.3333" lengthAdjust="spacingAndGlyphs" textLength="21.3333" x="137.3333" y="47.3301">Host</text><rect fill="#FEFECE" filter="url(#fxa7cgby8w488)" height="20.1979" style="stroke: #A80036; stroke-width: 1.0;" width="30.6667" x="132.6667" y="267.0833"></rect><text fill="#000000" font-family="sans-serif" font-size="9.3333" lengthAdjust="spacingAndGlyphs" textLength="21.3333" x="137.3333" y="280.4134">Host</text><rect fill="#FEFECE" filter="url(#fxa7cgby8w488)" height="20.1979" style="stroke: #A80036; stroke-width: 1.0;" width="48.6667" x="214.6667" y="34"></rect><text fill="#000000" font-family="sans-serif" font-size="9.3333" lengthAdjust="spacingAndGlyphs" textLength="39.3333" x="219.3333" y="47.3301">Terminal</text><rect fill="#FEFECE" filter="url(#fxa7cgby8w488)" height="20.1979" style="stroke: #A80036; stroke-width: 1.0;" width="48.6667" x="214.6667" y="267.0833"></rect><text fill="#000000" font-family="sans-serif" font-size="9.3333" lengthAdjust="spacingAndGlyphs" textLength="39.3333" x="219.3333" y="280.4134">Terminal</text><polygon fill="#A80036" points="232.3333,75.6198,239,78.2865,232.3333,80.9531,235,78.2865" style="stroke: #A80036; stroke-width: 0.6666666666666666;"></polygon><line style="stroke: #A80036; stroke-width: 0.6666666666666666;" x1="37.6667" x2="236.3333" y1="78.2865" y2="78.2865"></line><text fill="#000000" font-family="sans-serif" font-size="8.6667" lengthAdjust="spacingAndGlyphs" textLength="155.3333" x="42.3333" y="74.9092">Purchase(Amount, TransactionData)</text><polygon fill="#A80036" points="232.3333,95.0417,239,97.7083,232.3333,100.375,235,97.7083" style="stroke: #A80036; stroke-width: 0.6666666666666666;"></polygon><line style="stroke: #A80036; stroke-width: 0.6666666666666666;" x1="111" x2="236.3333" y1="97.7083" y2="97.7083"></line><text fill="#000000" font-family="sans-serif" font-size="8.6667" lengthAdjust="spacingAndGlyphs" textLength="87.3333" x="115.6667" y="94.3311">InsertCard / TapCard</text><polygon fill="#A80036" points="232.3333,114.4635,239,117.1302,232.3333,119.7969,235,117.1302" style="stroke: #A80036; stroke-width: 0.6666666666666666;"></polygon><line style="stroke: #A80036; stroke-width: 0.6666666666666666;" x1="111" x2="236.3333" y1="117.1302" y2="117.1302"></line><text fill="#000000" font-family="sans-serif" font-size="8.6667" lengthAdjust="spacingAndGlyphs" textLength="34.6667" x="115.6667" y="113.7529">PinEntry</text><polygon fill="#A80036" points="232.3333,133.8854,239,136.5521,232.3333,139.2188,235,136.5521" style="stroke: #A80036; stroke-width: 0.6666666666666666;"></polygon><line style="stroke: #A80036; stroke-width: 0.6666666666666666;" x1="111" x2="236.3333" y1="136.5521" y2="136.5521"></line><text fill="#000000" font-family="sans-serif" font-size="8.6667" lengthAdjust="spacingAndGlyphs" textLength="113.3333" x="115.6667" y="133.1748">CardRemoval (for Contact)</text><polygon fill="#A80036" points="45,153.3073,38.3333,155.974,45,158.6406,42.3333,155.974" style="stroke: #A80036; stroke-width: 0.6666666666666666;"></polygon><line style="stroke: #A80036; stroke-width: 0.6666666666666666;" x1="41" x2="239.6667" y1="155.974" y2="155.974"></line><text fill="#000000" font-family="sans-serif" font-size="8.6667" lengthAdjust="spacingAndGlyphs" textLength="140.6667" x="49" y="152.5967">return Purchase(ResultCode = 0)</text><path d="M8.6667,165.974 L55.3333,165.974 L55.3333,170.6406 L48.6667,177.3073 L8.6667,177.3073 L8.6667,165.974 " fill="#EEEEEE" style="stroke: #000000; stroke-width: 0.6666666666666666;"></path><rect fill="none" height="51.599" style="stroke: #000000; stroke-width: 1.3333333333333333;" width="468" x="8.6667" y="165.974"></rect><text fill="#000000" font-family="sans-serif" font-size="8.6667" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="16.6667" x="18.6667" y="174.6852">opt</text><text fill="#000000" font-family="sans-serif" font-size="7.3333" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="110.6667" x="65.3333" y="174.1143">["Vending Machine busy"]</text><path d="M15.3333,182.0625 L66.6667,182.0625 L66.6667,186.7292 L60,193.3958 L15.3333,193.3958 L15.3333,182.0625 " fill="#EEEEEE" style="stroke: #000000; stroke-width: 0.6666666666666666;"></path><rect fill="none" height="30.8438" style="stroke: #000000; stroke-width: 1.3333333333333333;" width="454.6667" x="15.3333" y="182.0625"></rect><text fill="#000000" font-family="sans-serif" font-size="8.6667" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="21.3333" x="25.3333" y="190.7738">loop</text><text fill="#000000" font-family="sans-serif" font-size="7.3333" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="42" x="76.6667" y="190.2028">["Sending</text><text fill="#000000" font-family="sans-serif" font-size="7.3333" font-style="italic" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="51.3333" x="121.3333" y="190.2028">HoldCommit</text><text fill="#000000" font-family="sans-serif" font-size="7.3333" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="291.3333" x="175.3333" y="190.2028">notifications as long as Vending Machine is not ready to continue."]</text><polygon fill="#A80036" points="232.3333,204.9063,239,207.5729,232.3333,210.2396,235,207.5729" style="stroke: #A80036; stroke-width: 0.6666666666666666;"></polygon><line style="stroke: #A80036; stroke-width: 0.6666666666666666;" x1="37.6667" x2="236.3333" y1="207.5729" y2="207.5729"></line><text fill="#000000" font-family="sans-serif" font-size="8.6667" lengthAdjust="spacingAndGlyphs" textLength="60" x="42.3333" y="204.1956">HoldCommit()</text><polygon fill="#A80036" points="232.3333,233.6615,239,236.3281,232.3333,238.9948,235,236.3281" style="stroke: #A80036; stroke-width: 0.6666666666666666;"></polygon><line style="stroke: #A80036; stroke-width: 0.6666666666666666;" x1="37.6667" x2="236.3333" y1="236.3281" y2="236.3281"></line><text fill="#000000" font-family="sans-serif" font-size="8.6667" lengthAdjust="spacingAndGlyphs" textLength="40.6667" x="42.3333" y="232.9508">Commit()</text><polygon fill="#A80036" points="45,253.0833,38.3333,255.75,45,258.4167,42.3333,255.75" style="stroke: #A80036; stroke-width: 0.6666666666666666;"></polygon><line style="stroke: #A80036; stroke-width: 0.6666666666666666;" x1="41" x2="239.6667" y1="255.75" y2="255.75"></line><text fill="#000000" font-family="sans-serif" font-size="8.6667" lengthAdjust="spacingAndGlyphs" textLength="69.3333" x="49" y="252.3727">return Commit()</text></g></svg></figure>
@@ -1230,12 +1215,12 @@ terminal.addListener(new MyTerminalListener());
     <div class="row"><div class="col-md-6"></div></div></section> 
 
     <section id="logging"><h1><a name="logging"></a>Logging</h1><section id="loglevel"><h2><a name="loglevel"></a>LogLevel</h2><div class="row"><div class="col-md-6">
-                <p lang="Java Swift">By default the TIM API has a Logger that defines how much logging is generated inside the TIM API. To
+                <p lang="java swift">By default the TIM API has a Logger that defines how much logging is generated inside the TIM API. To
                     this Logger different handlers can be added, e.g. ConsoleHandler for logging into the debug console or FileHandler
                     to log into a file. By default a FileHandler is added to the TIM API logger.
                 </p>
-                <p lang="Java Swift">The following logging levels are valid:
-                  <ul lang="Java">
+                <p lang="java swift">The following logging levels are valid:
+                  <ul lang="java">
                     <li>ALL</li>
                     <li>FINEST</li>
                     <li>FINER</li>
@@ -1247,7 +1232,7 @@ terminal.addListener(new MyTerminalListener());
                     <li>OFF</li>
                   </ul> </p>
               </div><div class="col-md-6">
-                <p lang="Java Swift">The logging level can be adjusted programatically as follows after a terminal object has been
+                <p lang="java swift">The logging level can be adjusted programatically as follows after a terminal object has been
                     created:
                 <pre><code class="language-{.java}">// Set the TIM API internal logging level
 Logger.getLogger(terminal.getLoggerName()).setLevel(Level.ALL);
@@ -1269,18 +1254,21 @@ Logger.getLogger(terminal.getLoggerName()).addHandler(myHandler);
             that it can be defined how many log files should be kept before deleting or archiving them.
             Furthermore it can be defined how many log files are allowed in one archive and how many archives should be kept before deleting the oldest.
             To define this behaviour the following parameter can be used, which are located in <code><a href="doc/index.html?com/six/timapi/TerminalSettings.html">TerminalSettings</a></code> if they shall be set programatically.
-            If not they can be also set in the<a href="#configfile">TimApi.cfg</a> file.</p>
+            If not they can be also set in the <a href="#configfile">TimApi.cfg</a> file.</p>
             <p>
               <ul>
                 <li>
-                  <p>LogRetainFileCount: Defines how many log files will be kept before deleting (or archiving) the oldest.</p>
-                  <code><a href="doc/index.html?com/six/timapi/TerminalSettings.html#setLogRetainFileCount-int-">setLogRetainFileCount</a></code> </li>
+                  <p><code><a href="doc/index.html?com/six/timapi/TerminalSettings.html#setLogRetainFileCount-int-">LogRetainFileCount</a></code>: Defines how many log files will be kept before deleting (or archiving) the oldest.</p>
+
+                </li>
                 <li>
-                  <p>LogFileCountPerArchive: Defines how many log files will be put in an archive before creating a new archive.</p>
-                  <code><a href="doc/index.html?com/six/timapi/TerminalSettings.html#setLogFileCountPerArchive-int-">setLogFileCountPerArchive</a></code> </li>
+                  <p><code><a href="doc/index.html?com/six/timapi/TerminalSettings.html#setLogFileCountPerArchive-int-">LogFileCountPerArchive</a></code>: Defines how many log files will be put in an archive before creating a new archive.</p>
+
+                </li>
                 <li>
-                  <p>LogRetainArchiveCount: Defines how many archives will be kept before deleting the oldest. 0 = no archiving</p>
-                  <code><a href="doc/index.html?com/six/timapi/TerminalSettings.html#setLogRetainArchiveCount-int-">logRetainArchiveCount</a></code> </li>
+                  <p><code><a href="doc/index.html?com/six/timapi/TerminalSettings.html#setLogRetainArchiveCount-int-">LogRetainArchiveCount</a></code>: Defines how many archives will be kept before deleting the oldest. 0 = no archiving</p>
+
+                </li>
               </ul>
             </p>
           </div><div class="col-md-6">
@@ -1468,630 +1456,8 @@ class ECRSample {
                         javax.swing.SwingUtilities.invokeLater
                     </i>
                 </p>
-
             </div></div>
     <div class="row"><div class="col-md-6"></div></div></section>
-    <section id="functionStateMatrix"><h1><a name="functionStateMatrix"></a>Function-State-Matrix</h1><div class="row"><div class="col-md-6"><p>Legend:
-        <ul>
-          <li>B1-Retail</li>
-          <li>B2-Petrol</li>
-          <li>B3-Unattended</li>
-          <li>B4-Advanced Retail</li>
-          <li>B5-Banking</li>
-          <li>B6-Dialog</li>
-          <li>B8-Gastro</li>
-          <li>B9-Hospitality</li>
-          <li>B10-Value Added Services (VAS)</li>
-          <li>B11-Austrian Use Cases</li>
-        </ul>
-      </p>
-        <table class="table">
-            <tr>
-                <th rowspan="4">Function</th>
-                <th colspan="5">State</th>
-                <th rowspan="4">Book(s)</th>
-            </tr>
-            <tr>
-                <th rowspan="3">Disconnected</th>
-                <th colspan="4">Connected</th>
-            </tr>
-            <tr>
-                <th rowspan="2">LoggedOut</th>
-                <th colspan="3">LoggedIn</th>
-            </tr>
-            <tr>
-                <th>Closed</th>
-                <th>Opened</th>
-                <th>Dialog</th>
-            </tr>
-            <tr>
-                <th>Activate</th>
-                <td>-</td>
-                <td>-</td>
-                <td>o</td>
-                <td>o</td>
-                <td>-</td>
-                <td>B1</td>
-            </tr>
-            <tr>
-                <th>ActivateServiceMenu</th>
-                <td>-</td>
-                <td>-</td>
-                <td>o</td>
-                <td>-</td>
-                <td>-</td>
-                <td>B3</td>
-            </tr>
-            <tr>
-                <th>AdjustReservation</th>
-                <td>-</td>
-                <td>-</td>
-                <td>-</td>
-                <td>o</td>
-                <td>-</td>
-                <td>B9</td>
-            </tr>
-            <tr>
-                <th>AmtAdjustment</th>
-                <td>-</td>
-                <td>-</td>
-                <td>-</td>
-                <td>o</td>
-                <td>-</td>
-                <td>B3</td>
-            </tr>
-            <tr>
-                <th>ApplicationInformation</th>
-                <td>-</td>
-                <td>-</td>
-                <td>o</td>
-                <td>-</td>
-                <td>-</td>
-                <td>B1</td>
-            </tr>
-            <tr>
-                <th>AuthorizeCredit</th>
-                <td>-</td>
-                <td>-</td>
-                <td>-</td>
-                <td>o</td>
-                <td>-</td>
-                <td>B5</td>
-            </tr>
-            <tr>
-                <th>AuthorizeDeposit</th>
-                <td>-</td>
-                <td>-</td>
-                <td>-</td>
-                <td>o</td>
-                <td>-</td>
-                <td>B5</td>
-            </tr>
-
-            <tr>
-                <th>Balance</th>
-                <td>-</td>
-                <td>-</td>
-                <td>o</td>
-                <td>-</td>
-                <td>-</td>
-                <td>B1</td>
-            </tr>
-            <tr>
-                <th>BalanceInquiry</th>
-                <td>-</td>
-                <td>-</td>
-                <td>-</td>
-                <td>o</td>
-                <td>-</td>
-                <td>B4, B5</td>
-            </tr>
-            <tr>
-                <th>Cancel</th>
-                <td>-</td>
-                <td>o</td>
-                <td>o</td>
-                <td>o</td>
-                <td>o</td>
-                <td>B1</td>
-            </tr>
-            <tr>
-                <th>CancelReservation</th>
-                <td>-</td>
-                <td>-</td>
-                <td>-</td>
-                <td>o</td>
-                <td>-</td>
-                <td>B9</td>
-            </tr>
-            <tr>
-                <th>CashAdvance</th>
-                <td>-</td>
-                <td>-</td>
-                <td>-</td>
-                <td>o</td>
-                <td>-</td>
-                <td>B4</td>
-            </tr>
-            <tr>
-                <th>ChangeSettings</th>
-                <td>-</td>
-                <td>-</td>
-                <td>o</td>
-                <td>-</td>
-                <td>-</td>
-                <td>B1</td>
-            </tr>
-            <tr>
-                <th>CloseDialogMode</th>
-                <td>-</td>
-                <td>-</td>
-                <td>-</td>
-                <td>-</td>
-                <td>o</td>
-                <td>B6</td>
-            </tr>
-            <tr>
-                <th>CloseMaintenanceWindow</th>
-                <td>-</td>
-                <td>-</td>
-                <td>o</td>
-                <td>-</td>
-                <td>-</td>
-                <td>B3</td>
-            </tr>
-            <tr>
-                <th>CloseReader</th>
-                <td>-</td>
-                <td>-</td>
-                <td>-</td>
-                <td>o</td>
-                <td>-</td>
-                <td>B3</td>
-            </tr>
-            <tr>
-                <th>CollectPoints</th>
-                <td>-</td>
-                <td>-</td>
-                <td>-</td>
-                <td>o</td>
-                <td>-</td>
-                <td>B10</td>
-            </tr>
-            <tr>
-                <th>Combined</th>
-                <td>-</td>
-                <td>-</td>
-                <td>-</td>
-                <td>o</td>
-                <td>-</td>
-                <td>B5</td>
-            </tr>
-            <tr>
-                <th>Commit</th>
-                <td>-</td>
-                <td>-</td>
-                <td>-</td>
-                <td>o</td>
-                <td>-</td>
-                <td>B1</td>
-            </tr>
-            <tr>
-                <th>CounterRequest</th>
-                <td>-</td>
-                <td>-</td>
-                <td>o</td>
-                <td>o</td>
-                <td>-</td>
-                <td>B1</td>
-            </tr>
-            <tr>
-                <th>Credit</th>
-                <td>-</td>
-                <td>-</td>
-                <td>-</td>
-                <td>o</td>
-                <td>-</td>
-                <td>B1</td>
-            </tr>
-            <tr>
-                <th>DccRates</th>
-                <td>-</td>
-                <td>-</td>
-                <td>o</td>
-                <td>-</td>
-                <td>-</td>
-                <td>B1</td>
-            </tr>
-            <tr>
-                <th>Deactivate</th>
-                <td>-</td>
-                <td>-</td>
-                <td>o</td>
-                <td>o</td>
-                <td>-</td>
-                <td>B1</td>
-            </tr>
-            <tr>
-                <th>EjectCard</th>
-                <td>-</td>
-                <td>-</td>
-                <td>-</td>
-                <td>o</td>
-                <td>-</td>
-                <td>B3</td>
-            </tr>
-            <tr>
-                <th>FeatureRequest</th>
-                <td>-</td>
-                <td>o</td>
-                <td>o</td>
-                <td>-</td>
-                <td>-</td>
-                <td>B1</td>
-            </tr>
-            <tr>
-                <th>FinalizePurchase</th>
-                <td>-</td>
-                <td>-</td>
-                <td>-</td>
-                <td>o</td>
-                <td>-</td>
-                <td>B2</td>
-            </tr>
-            <tr>
-                <th>FinishCeckout</th>
-                <td>-</td>
-                <td>-</td>
-                <td>-</td>
-                <td>o</td>
-                <td>-</td>
-                <td>B10</td>
-            </tr>
-            <tr>
-                <th>Giro</th>
-                <td>-</td>
-                <td>-</td>
-                <td>-</td>
-                <td>o</td>
-                <td>-</td>
-                <td>B5</td>
-            </tr>
-            <tr>
-                <th>HardwareInformation</th>
-                <td>-</td>
-                <td>-</td>
-                <td>o</td>
-                <td>-</td>
-                <td>-</td>
-                <td>B1</td>
-            </tr>
-            <tr>
-                <th>HoldCommit</th>
-                <td>-</td>
-                <td>-</td>
-                <td>-</td>
-                <td>o</td>
-                <td>-</td>
-                <td>B3</td>
-            </tr>
-            <tr>
-                <th>InitTransaction</th>
-                <td>-</td>
-                <td>-</td>
-                <td>-</td>
-                <td>o</td>
-                <td>-</td>
-                <td>B2</td>
-            </tr>
-            <tr>
-                <th>KeepAlive</th>
-                <td>-</td>
-                <td>-</td>
-                <td>o</td>
-                <td>o</td>
-                <td>o</td>
-                <td>B1</td>
-            </tr>
-            <tr>
-                <th>LicenseChanged</th>
-                <td>-</td>
-                <td>-</td>
-                <td>o</td>
-                <td>-</td>
-                <td>-</td>
-                <td>B1</td>
-            </tr>
-            <tr>
-                <th>LoadVoucher</th>
-                <td>-</td>
-                <td>-</td>
-                <td>-</td>
-                <td>o</td>
-                <td>-</td>
-                <td>B10</td>
-            </tr>
-            <tr>
-                <th>Login</th>
-                <td>-</td>
-                <td>o</td>
-                <td>o</td>
-                <td>-</td>
-                <td>-</td>
-                <td>B1</td>
-            </tr>
-            <tr>
-                <th>Logout</th>
-                <td>-</td>
-                <td>o</td>
-                <td>o</td>
-                <td>-</td>
-                <td>-</td>
-                <td>B1</td>
-            </tr>
-            <tr>
-                <th>LoyaltyData</th>
-                <td>-</td>
-                <td>-</td>
-                <td>-</td>
-                <td>o</td>
-                <td>-</td>
-                <td>B10</td>
-            </tr>
-            <tr>
-                <th>OpenDialogMode</th>
-                <td>-</td>
-                <td>-</td>
-                <td>-</td>
-                <td>o</td>
-                <td>-</td>
-                <td>B6</td>
-            </tr>
-            <tr>
-                <th>OpenMaintenanceWindow</th>
-                <td>-</td>
-                <td>-</td>
-                <td>o</td>
-                <td>-</td>
-                <td>-</td>
-                <td>B3</td>
-            </tr>
-            <tr>
-                <th>OpenReader</th>
-                <td>-</td>
-                <td>-</td>
-                <td>-</td>
-                <td>o</td>
-                <td>-</td>
-                <td>B3</td>
-            </tr>
-            <tr>
-                <th>PreAuthorization</th>
-                <td>-</td>
-                <td>-</td>
-                <td>-</td>
-                <td>o</td>
-                <td>-</td>
-                <td>B2</td>
-            </tr>
-            <tr>
-                <th>ProvideLoyaltyBasket</th>
-                <td>-</td>
-                <td>-</td>
-                <td>-</td>
-                <td>o</td>
-                <td>-</td>
-                <td>B10</td>
-            </tr>
-            <tr>
-                <th>Purchase</th>
-                <td>-</td>
-                <td>-</td>
-                <td>-</td>
-                <td>o</td>
-                <td>-</td>
-                <td>B1</td>
-            </tr>
-            <tr>
-                <th>PurchaseForcedAcceptance</th>
-                <td>-</td>
-                <td>-</td>
-                <td>-</td>
-                <td>o</td>
-                <td>-</td>
-                <td>B4</td>
-            </tr>
-            <tr>
-                <th>PurchaseMailOrdered</th>
-                <td>-</td>
-                <td>-</td>
-                <td>-</td>
-                <td>o</td>
-                <td>-</td>
-                <td>B4</td>
-            </tr>
-            <tr>
-                <th>PurchasePhoneAuthorized</th>
-                <td>-</td>
-                <td>-</td>
-                <td>-</td>
-                <td>o</td>
-                <td>-</td>
-                <td>B4</td>
-            </tr>
-            <tr>
-                <th>PurchasePhoneOrdered</th>
-                <td>-</td>
-                <td>-</td>
-                <td>-</td>
-                <td>o</td>
-                <td>-</td>
-                <td>B4</td>
-            </tr>
-            <tr>
-                <th>PurchaseReservation</th>
-                <td>-</td>
-                <td>-</td>
-                <td>-</td>
-                <td>o</td>
-                <td>-</td>
-                <td>B9</td>
-            </tr>
-            <tr>
-                <th>PurchaseReservationPhoneAuthorized</th>
-                <td>-</td>
-                <td>-</td>
-                <td>-</td>
-                <td>o</td>
-                <td>-</td>
-                <td>B9</td>
-            </tr>
-            <tr>
-                <th>PurchaseWithCashback</th>
-                <td>-</td>
-                <td>-</td>
-                <td>-</td>
-                <td>o</td>
-                <td>-</td>
-                <td>B4</td>
-            </tr>
-            <tr>
-                <th>Reboot</th>
-                <td>-</td>
-                <td>-</td>
-                <td>o</td>
-                <td>-</td>
-                <td>-</td>
-                <td>B1</td>
-            </tr>
-            <tr>
-                <th>ReceiptRequest</th>
-                <td>-</td>
-                <td>-</td>
-                <td>o</td>
-                <td>o</td>
-                <td>-</td>
-                <td>B1</td>
-            </tr>
-            <tr>
-                <th>Reconciliation</th>
-                <td>-</td>
-                <td>-</td>
-                <td>o</td>
-                <td>o</td>
-                <td>-</td>
-                <td>B1</td>
-            </tr>
-            <tr>
-                <th>Reconfig</th>
-                <td>-</td>
-                <td>-</td>
-                <td>o</td>
-                <td>-</td>
-                <td>-</td>
-                <td>B1</td>
-            </tr>
-            <tr>
-                <th>Reservation</th>
-                <td>-</td>
-                <td>-</td>
-                <td>-</td>
-                <td>o</td>
-                <td>-</td>
-                <td>B9</td>
-            </tr>
-            <tr>
-                <th>Reversal</th>
-                <td>-</td>
-                <td>-</td>
-                <td>-</td>
-                <td>o</td>
-                <td>-</td>
-                <td>B1</td>
-            </tr>
-            <tr>
-                <th>Rollback</th>
-                <td>-</td>
-                <td>-</td>
-                <td>-</td>
-                <td>o</td>
-                <td>-</td>
-                <td>B1</td>
-            </tr>
-            <tr>
-                <th>SendCardCommand</th>
-                <td>-</td>
-                <td>-</td>
-                <td>-</td>
-                <td>-</td>
-                <td>o</td>
-                <td>B6</td>
-            </tr>
-            <tr>
-                <th>ShowDialog</th>
-                <td>-</td>
-                <td>-</td>
-                <td>-</td>
-                <td>-</td>
-                <td>o</td>
-                <td>B6</td>
-            </tr>
-            <tr>
-                <th>ShowSignatureCapture</th>
-                <td>-</td>
-                <td>-</td>
-                <td>-</td>
-                <td>-</td>
-                <td>o</td>
-                <td>B6</td>
-            </tr>
-            <tr>
-                <th>SoftwareUpdate</th>
-                <td>-</td>
-                <td>-</td>
-                <td>o</td>
-                <td>-</td>
-                <td>-</td>
-                <td>B1</td>
-            </tr>
-            <tr>
-                <th>StartCheckout</th>
-                <td>-</td>
-                <td>-</td>
-                <td>-</td>
-                <td>o</td>
-                <td>-</td>
-                <td>B10</td>
-            </tr>
-            <tr>
-                <th>SystemInformation</th>
-                <td>-</td>
-                <td>-</td>
-                <td>o</td>
-                <td>-</td>
-                <td>-</td>
-                <td>B1</td>
-            </tr>
-            <tr>
-                <th>TerminalStatus</th>
-                <td>-</td>
-                <td>o</td>
-                <td>o</td>
-                <td>o</td>
-                <td>o</td>
-                <td>B1</td>
-            </tr>
-            <tr>
-                <th>VasInfo</th>
-                <td>-</td>
-                <td>-</td>
-                <td>-</td>
-                <td>o</td>
-                <td>-</td>
-                <td>B10</td>
-            </tr>
-        </table>
-      </div></div></section>
 
 </main>
     </div>

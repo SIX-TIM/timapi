@@ -14,7 +14,7 @@
   <script src="../assets/js/tim_inject.js"></script>
   <script src="../assets/js/sdk_version.js"></script>
   <script src="../assets/js/config.js"></script>
-  <script src="api_version.js"></script>
+  <script src="doc/api_version.js"></script>
 </head>
 <body data-spy="scroll" data-target="#navScrollspy">
   <div class="container-fluid" id="content">
@@ -51,17 +51,10 @@
           </div>
           <div id="docTitle">Appendix</div>
           <ul class="nav">
-          <li><a href="#appendixResultCode">ResultCodes</a></li></ul>
+          <li><a href="#appendixResultCode">ResultCodes</a></li><li><a href="#functionStateMatrix">Function-State-Matrix</a></li></ul>
           <div class="seperator">&#160;</div>
-          <div class="linkDiv">
-            <a href="simple.html">Simple Implementation Guide</a>
-          </div>
-          <div class="linkDiv">
-            <a href="doc/timapi.Terminal.html">API Documentation</a>
-          </div>
-          <div class="linkDiv">
-            <a href="../../version/version-history.html">Version History</a>
-          </div>
+          <div id="docLinks">
+          <div class="linkDiv"><a href="guide.html">Detailed Implementation Guide</a></div><div class="linkDiv"><a href="simple.html">Simple Implementation Guide</a></div><div class="linkDiv"><a href="doc/index.html">API Documentation</a></div><div class="linkDiv"><a href="../../version/version-history.html">Version History</a></div></div>
         </div>
       </nav>
 
@@ -74,7 +67,7 @@
         to the fact that the TIM API ResultCodes are fully generated and are internally mapped to the SIXml ResultCodes. The numeric int values of the TIM API enumeration
         are therefore also generated and may not match to the exact numeric value of the ResultCode of SIXml protocol which are predefined. An example
         for this handling is the following:
-<pre><code>This example shows a SIXml response including the SIXml
+            <pre><code>This example shows a SIXml response including the SIXml
 "ResultCode = 50 - Current request has been cancelled by the ECR":
 
 &lt;sixml:Response xmlns:sixml="www.six-payment-services.com/"
@@ -89,675 +82,1296 @@ enumeration "ResultCode.API_CANCEL_ECR".
 As this enumeration is generated, the numeric integer value of this enumeration can differ
 from the numeric value on SIXml Protocol, therefore the integer value of the enumeration
 must not be used, but only directly the enum value "API_CANCEL_ECR".</code></pre>
-    </p>
-    <p>For overview purpose the following table contains the numeric ResultCode used on SIXml Protocol and the enumeration mapping used on TIM API side. There is explicitly no numeric value on TIM API
+        </p>
+        <p>For overview purpose the following table contains the numeric ResultCode used on SIXml Protocol and the enumeration mapping used on TIM API side. There is explicitly no numeric value on TIM API
     side mentioned as it is forbidden to use the numeric integer value of the ResultCode enumeration:
-    <table class="table">
-        <thead>
-            <tr>
-                <th>SIXml Protocol value</th>
-                <th>TIM API Enum value</th>
-                <th>Error description</th>
-            </tr>
-        </thead>
-        <tbody>
-          <tr>
-          <td>0</td>
-          <td>ResultCode.OK</td>
-          <td>The request has been performed successfully, no error occured.</td>
-          </tr>
-          <tr>
-          <td>50</td>
-          <td>ResultCode.API_CANCEL_ECR</td>
-          <td>Current request has been cancelled by the ECR.</td>
-          </tr>
-          <tr>
-          <td>51</td>
-          <td>ResultCode.API_INVALID_ANSWER</td>
-          <td>The ECR received an invalid answer from the terminal.</td>
-          </tr>
-          <tr>
-          <td>52</td>
-          <td>ResultCode.API_DISABLED_FEATURE</td>
-          <td>The current request cannot be handled because the required feature is disabled.</td>
-          </tr>
-          <tr>
-          <td>53</td>
-          <td>ResultCode.API_FUNCTION_DISALLOWED</td>
-          <td>The requested function is not allowed with the current license Communication.</td>
-          </tr>
-          <tr>
-          <td>54</td>
-          <td>ResultCode.API_PERSISTENCY_PROBLEM</td>
-          <td>Persistent data damaged, out of space or storage permission problem.</td>
-          </tr>
-          <tr>
-          <td>100</td>
-          <td>ResultCode.API_CONNECT_FAIL_SERVER</td>
-          <td>The ECR was not able to connect to the TIM Server.</td>
-          </tr>
-          <tr>
-          <td>101</td>
-          <td>ResultCode.API_CONNECT_FAIL_TERMINAL</td>
-          <td>The ECR was not able to connect to the EFT Terminal.</td>
-          </tr>
-          <tr>
-          <td>102</td>
-          <td>ResultCode.API_CONNECTION_LOST_SERVER</td>
-          <td>The ECR lost the connection to the TIM Server.</td>
-          </tr>
-          <tr>
-          <td>103</td>
-          <td>ResultCode.API_CONNECTION_LOST_TERMINAL</td>
-          <td>The ECR lost the connection to the EFT Terminal.</td>
-          </tr>
-          <tr>
-          <td>104</td>
-          <td>ResultCode.ETHERNET_DISCONNECTED</td>
-          <td>No ethernet cable has been connected.</td>
-          </tr>
-          <tr>
-          <td>105</td>
-          <td>ResultCode.RS232_DISCONNECTED</td>
-          <td>No RS232 cable has been connected.</td>
-          </tr>
-          <tr>
-          <td>106</td>
-          <td>ResultCode.API_TIMEOUT_SERVER</td>
-          <td>Timeout during connection establishment from TIM API to TIM Server.</td>
-          </tr>
-          <tr>
-          <td>107</td>
-          <td>ResultCode.API_TIMEOUT_TERMINAL</td>
-          <td>Timeout during connection establishment from TIM API to EFT Terminal.</td>
-          </tr>
-          <tr>
-          <td>200</td>
-          <td>ResultCode.SERVER_INVALID_ANSWER</td>
-          <td>TIM Server received an invalid answer from the terminal.</td>
-          </tr>
-          <tr>
-          <td>201</td>
-          <td>ResultCode.SERVER_INVALID_REQUEST</td>
-          <td>TIM Server received an invalid request from TIM API.</td>
-          </tr>
-          <tr>
-          <td>202</td>
-          <td>ResultCode.SERVER_DISABLED_FEATURE</td>
-          <td>TIM Server received a message that requires a disabled feature.</td>
-          </tr>
-          <tr>
-          <td>203</td>
-          <td>ResultCode.SERVER_PERSISTENCY_PROBLEM</td>
-          <td>Persistent data damaged, out of space or storage permission problem.</td>
-          </tr>
-          <tr>
-          <td>250</td>
-          <td>ResultCode.SERVER_CONNECT_FAIL_TERMINAL</td>
-          <td>TIM Server was not able to connect to EFT Terminal.</td>
-          </tr>
-          <tr>
-          <td>251</td>
-          <td>ResultCode.SERVER_CONNECTION_LOST_TERMINAL</td>
-          <td>TIM Server lost connection to the EFT Terminal.</td>
-          </tr>
-          <tr>
-          <td>252</td>
-          <td>ResultCode.SERVER_TIMEOUT_TERMINAL</td>
-          <td>Timeout during connection establishment from TIM Server to EFT Terminal.</td>
-          </tr>
-          <tr>
-          <td>300</td>
-          <td>ResultCode.CCR_UNAVAILABLE</td>
-          <td>Hardware error, Chip card reader not available.</td>
-          </tr>
-          <tr>
-          <td>301</td>
-          <td>ResultCode.MCR_UNAVAILABLE</td>
-          <td>Hardware error, Magstripe card reader not available.</td>
-          </tr>
-          <tr>
-          <td>302</td>
-          <td>ResultCode.NFC_UNAVAILABLE</td>
-          <td>Hardware error, Contactless card reader not available.</td>
-          </tr>
-          <tr>
-          <td>303</td>
-          <td>ResultCode.DISPLAY_UNAVAILABLE</td>
-          <td>Hardware error, Display not available.</td>
-          </tr>
-          <tr>
-          <td>304</td>
-          <td>ResultCode.PIN_PAD_UNAVAILABLE</td>
-          <td>Hardware error, PinPad not available.</td>
-          </tr>
-          <tr>
-          <td>305</td>
-          <td>ResultCode.RS232_UNAVAILABLE</td>
-          <td>Hardware error, RS232 device not available.</td>
-          </tr>
-          <tr>
-          <td>306</td>
-          <td>ResultCode.RS232_NOT_CONFIGURED</td>
-          <td>Connected RS232 device not configured.</td>
-          </tr>
-          <tr>
-          <td>307</td>
-          <td>ResultCode.SW_INSTALLATION_FAILED</td>
-          <td>Something went wrong during the SW Update process.</td>
-          </tr>
-          <tr>
-          <td>308</td>
-          <td>ResultCode.SW_VERSION_NOT_SUITABLE</td>
-          <td>SW version set for update in the SCS is not suitable for the device.</td>
-          </tr>
-          <tr>
-          <td>309</td>
-          <td>ResultCode.SW_AUTHENTICATION_FAILED</td>
-          <td>SW authentication failed due to hash check failure.</td>
-          </tr>
-
-          <tr>
-          <td>400</td>
-          <td>ResultCode.CARD_READER_ERROR_CCR</td>
-          <td>Chip card reader error occured.</td>
-          </tr>
-
-          <tr>
-          <td>401</td>
-          <td>ResultCode.CARD_READER_ERROR_MCR</td>
-          <td>Magstripe card reader error occured.</td>
-          </tr>
-
-          <tr>
-          <td>402</td>
-          <td>ResultCode.CARD_READER_ERROR_NFC</td>
-          <td>Contactless card reader error occured.</td>
-          </tr>
-
-          <tr>
-          <td>403</td>
-          <td>ResultCode.CARD_ERROR_CCR</td>
-          <td>Card error occured using the chip card reader.</td>
-          </tr>
-
-          <tr>
-          <td>404</td>
-          <td>ResultCode.CARD_ERROR_MCR</td>
-          <td>Card error occured using the magstripe card reader.</td>
-          </tr>
-
-          <tr>
-          <td>405</td>
-          <td>ResultCode.CARD_ERROR_NFC</td>
-          <td>Card error occured using the contactless card reader.</td>
-          </tr>
-
-          <tr>
-          <td>406</td>
-          <td>ResultCode.CARD_READ_ERROR</td>
-          <td>Reading error occured during card reading.</td>
-          </tr>
-
-          <tr>
-          <td>407</td>
-          <td>ResultCode.CARD_READ_TIMEOUT</td>
-          <td>Timeout occured during card reading.</td>
-          </tr>
-
-          <tr>
-          <td>408</td>
-          <td>ResultCode.CARD_INSERTION_TIMEOUT</td>
-          <td>Cardholder did not insert card during timeout.</td>
-          </tr>
-
-          <tr>
-          <td>409</td>
-          <td>ResultCode.CARD_READER_KEYS_LOST</td>
-          <td>Keys lost for secure communication.</td>
-          </tr>
-
-          <tr>
-          <td>410</td>
-          <td>ResultCode.CARD_READER_SECURITY_ERROR</td>
-          <td>Security error occured.</td>
-          </tr>
-
-          <tr>
-          <td>411</td>
-          <td>ResultCode.CARD_TIMEOUT</td>
-          <td>Card did not respond in time.</td>
-          </tr>
-
-          <tr>
-          <td>412</td>
-          <td>ResultCode.CARD_NOT_READABLE</td>
-          <td>Card could not be read.</td>
-          </tr>
-
-          <tr>
-          <td>413</td>
-          <td>ResultCode.CARD_INVALID_DATA</td>
-          <td>Invalid card data read.</td>
-          </tr>
-
-          <tr>
-          <td>414</td>
-          <td>ResultCode.CARD_FUNCTION_NOT_FOUND</td>
-          <td>Corresponding card function not found.</td>
-          </tr>
-
-          <tr>
-          <td>415</td>
-          <td>ResultCode.CARD_FUNCTION_NOT_ALLOWED</td>
-          <td>Card function not allowed.</td>
-          </tr>
-
-          <tr>
-          <td>500</td>
-          <td>ResultCode.PIN_PAD_SECURITY_ERROR</td>
-          <td>Security error occured.</td>
-          </tr>
-
-          <tr>
-          <td>501</td>
-          <td>ResultCode.PIN_PAD_TAMPERED</td>
-          <td>PinPad has be tampered.</td>
-          </tr>
-
-          <tr>
-          <td>502</td>
-          <td>ResultCode.PIN_PAD_KEYS_LOST</td>
-          <td>Keys lost for secure communication.</td>
-          </tr>
-
-          <tr>
-          <td>550</td>
-          <td>ResultCode.CARDHOLDER_STOP</td>
-          <td>Cardholder cancelled transaction pushing the Stop key.</td>
-          </tr>
-
-          <tr>
-          <td>551</td>
-          <td>ResultCode.CARDHOLDER_TIMEOUT</td>
-          <td>Cardholder did not react in time.</td>
-          </tr>
-
-          <tr>
-          <td>552</td>
-          <td>ResultCode.CARD_REMOVED</td>
-          <td>Card has been removed by the cardholder.</td>
-          </tr>
-
-          <tr>
-          <td>600</td>
-          <td>ResultCode.TIM_TIMEOUT_ECR</td>
-          <td>ECR did not respond in time to a request.</td>
-          </tr>
-
-          <tr>
-          <td>601</td>
-          <td>ResultCode.TIM_CONNECT_FAIL_PAYMENT_HOST</td>
-          <td>EFT terminal not able to connect to payment host.</td>
-          </tr>
-
-          <tr>
-          <td>602</td>
-          <td>ResultCode.TIM_CONNECTION_LOST_PAYMENT_HOST</td>
-          <td>EFT Terminal did lose connection to payment host.</td>
-          </tr>
-
-          <tr>
-          <td>603</td>
-          <td>ResultCode.TIM_TIMEOUT_ANSWER_RS232</td>
-          <td>RS232 device did not respond in time to a request.</td>
-          </tr>
-
-          <tr>
-          <td>604</td>
-          <td>ResultCode.TIM_COMMUNICATION_FAILURE</td>
-          <td>Communication failed.</td>
-          </tr>
-
-          <tr>
-          <td>605</td>
-          <td>ResultCode.TIM_CONFIG_FAILURE</td>
-          <td>Reconfig request partially successful - Config failed.</td>
-          </tr>
-
-          <tr>
-          <td>606</td>
-          <td>ResultCode.TIM_INIT_FAILURE</td>
-          <td>Reconfig request partially successful - Init not or only partially successful.</td>
-          </tr>
-
-          <tr>
-          <td>700</td>
-          <td>ResultCode.SIXML_GENERAL_ERROR</td>
-          <td>General error on SIXml Protocol.</td>
-          </tr>
-
-          <tr>
-          <td>701</td>
-          <td>ResultCode.SIXML_INVALID_REQUEST</td>
-          <td>Generic error if request not valid.</td>
-          </tr>
-
-          <tr>
-          <td>702</td>
-          <td>ResultCode.SIXML_WRONG_CASHIER</td>
-          <td>Wrong UsrId entered for Activate.</td>
-          </tr>
-
-          <tr>
-          <td>703</td>
-          <td>ResultCode.SIXML_WRONG_ECR_ID</td>
-          <td>Wrong EcrId entered for Login.</td>
-          </tr>
-
-          <tr>
-          <td>704</td>
-          <td>ResultCode.SIXML_UNKNOWN_REFERENCE_NUMBER</td>
-          <td>Unknown reference number entered for Credit or Reversal.</td>
-          </tr>
-
-          <tr>
-          <td>705</td>
-          <td>ResultCode.SIXML_WRONG_STATE</td>
-          <td>Request not allowed in the current terminal state.</td>
-          </tr>
-
-          <tr>
-          <td>706</td>
-          <td>ResultCode.BUSY_OTHER_CONTROLLER</td>
-          <td>Another controller is currently using the EFT.</td>
-          </tr>
-
-          <tr>
-          <td>707</td>
-          <td>ResultCode.BUSY_MAINTENANCE</td>
-          <td>Mainenance task in progress.</td>
-          </tr>
-
-          <tr>
-          <td>708</td>
-          <td>ResultCode.REQUEST_PENDING</td>
-          <td>Another request from the same controller is already running.</td>
-          </tr>
-
-          <tr>
-          <td>709</td>
-          <td>ResultCode.SIXML_UNSUPPORTED_REQUEST</td>
-          <td>Request not supported by terminal.</td>
-          </tr>
-
-          <tr>
-          <td>800</td>
-          <td>ResultCode.TRX_NO_COMMON_APPLICATIONS</td>
-          <td>No common application found on card during Application Selection.</td>
-          </tr>
-
-          <tr>
-          <td>801</td>
-          <td>ResultCode.TRX_LIMIT_EXCEEDED</td>
-          <td>Current transaction exceeds transaction limit (amount).</td>
-          </tr>
-
-          <tr>
-          <td>802</td>
-          <td>ResultCode.TRX_NO_COMMON_CVM</td>
-          <td>No common cardholder verification method found on card during.</td>
-          </tr>
-
-          <tr>
-          <td>803</td>
-          <td>ResultCode.DECLINED_CVM_FAILED</td>
-          <td>Performed CVM failed.</td>
-          </tr>
-
-          <tr>
-          <td>804</td>
-          <td>ResultCode.TRX_REFERRAL</td>
-          <td>Referral required for current transaction.</td>
-          </tr>
-
-          <tr>
-          <td>805</td>
-          <td>ResultCode.TRX_INVALID_AUTH_RESPONSE</td>
-          <td>Authorization response invalid.</td>
-          </tr>
-
-          <tr>
-          <td>806</td>
-          <td>ResultCode.DECLINED_GENERIC</td>
-          <td>Authorization failed, generic error.</td>
-          </tr>
-
-          <tr>
-          <td>807</td>
-          <td>ResultCode.DECLINED_SALDO_TOO_LOW</td>
-          <td>Authorization failed, saldo too low.</td>
-          </tr>
-
-          <tr>
-          <td>808</td>
-          <td>ResultCode.DECLINED_WRONG_PIN</td>
-          <td>Authorization failed, cardholder entered wrong PIN.</td>
-          </tr>
-
-          <tr>
-          <td>809</td>
-          <td>ResultCode.DECLINED_CARD_BLOCKED</td>
-          <td>Authorization failed, card blocked.</td>
-          </tr>
-
-          <tr>
-          <td>810</td>
-          <td>ResultCode.DECLINED_SECURITY_ISSUE</td>
-          <td>Authorization failed, security issue.</td>
-          </tr>
-
-          <tr>
-          <td>811</td>
-          <td>ResultCode.DECLINED_USAGE_CONTROL</td>
-          <td>Authorization failed, usage control.</td>
-          </tr>
-
-          <tr>
-          <td>812</td>
-          <td>ResultCode.DECLINED_DOUBLE_TRANSACTION</td>
-          <td>Authorization failed, current transaction may be a double transaction.</td>
-          </tr>
-
-          <tr>
-          <td>813</td>
-          <td>ResultCode.DECLINED_GENERIC_FIRST_AC</td>
-          <td>Authorization failed, first AC generation failed.</td>
-          </tr>
-
-          <tr>
-          <td>814</td>
-          <td>ResultCode.DECLINED_GENERIC_SECOND_AC</td>
-          <td>Authorization failed, second AC generation failed.</td>
-          </tr>
-
-          <tr>
-          <td>815</td>
-          <td>ResultCode.TRX_COMMIT_TIMEOUT</td>
-          <td>Commit request not sent in time.</td>
-          </tr>
-
-          <tr>
-          <td>816</td>
-          <td>ResultCode.TRX_ROLLBACK_IMPOSSIBLE</td>
-          <td>Rollback not possible for current transaction.</td>
-          </tr>
-
-          <tr>
-          <td>817</td>
-          <td>ResultCode.CASHBACK_AMOUNT_TOO_LOW</td>
-          <td>The intended cashback amount is too low.</td>
-          </tr>
-
-          <tr>
-          <td>818</td>
-          <td>ResultCode.CASHBACK_AMOUNT_TOO_HIGH</td>
-          <td>The intended cashback amount is too high.</td>
-          </tr>
-
-          <tr>
-          <td>819</td>
-          <td>ResultCode.BASKET_DECLINED</td>
-          <td>Part of the basket is not allowed. Transaction declined.</td>
-          </tr>
-
-          <tr>
-          <td>820</td>
-          <td>ResultCode.NO_TRX_IN_GROUP_EXCEEDED</td>
-          <td>Current transaction exceeds the limit for the number of transactions in a group.</td>
-          </tr>
-
-          <tr>
-          <td>821</td>
-          <td>ResultCode.UNSUPPORTED_CHARACTERS_IN_MESSAGE</td>
-          <td>Current request contains unsupported characters.</td>
-          </tr>
-
-          <tr>
-          <td>822</td>
-          <td>ResultCode.LOYALTY_CHECK_IN_PENDING</td>
-          <td>So far no loyalty data is available, check-in pending.</td>
-          </tr>
-
-          <tr>
-          <td>823</td>
-          <td>ResultCode.DECLINED_CARD_ERROR</td>
-          <td>Authorization failed, card error.</td>
-          </tr>
-
-          <tr>
-          <td>824</td>
-          <td>ResultCode.DECLINED_CARD_EXPIRED</td>
-          <td>Authorization failed, card expired.</td>
-          </tr>
-
-          <tr>
-          <td>825</td>
-          <td>ResultCode.DECLINED_TRX_INVALID</td>
-          <td>Authorization failed, transaction invalid.</td>
-          </tr>
-
-          <tr>
-          <td>826</td>
-          <td>ResultCode.DECLINED_TRY_LATER</td>
-          <td>Authorization failed, try later.</td>
-          </tr>
-
-          <tr>
-          <td>827</td>
-          <td>ResultCode.DECLINED_TRY_ANOTHER_INTERFACE</td>
-          <td>Authorization failed, try another interface.</td>
-          </tr>
-
-          <tr>
-          <td>828</td>
-          <td>ResultCode.DECLINED_INVALID_MERCHANT</td>
-          <td>Authorization failed, invalid merchant.</td>
-          </tr>
-
-          <tr>
-          <td>829</td>
-          <td>ResultCode.DECLINED_RESTRICTION_DECLINED</td>
-          <td>Authorization failed, restriction declined.</td>
-          </tr>
-
-          <tr>
-          <td>830</td>
-          <td>ResultCode.DECLINED_WRONG_CURRENCY</td>
-          <td>Authorization failed, wrong currency.</td>
-          </tr>
-
-          <tr>
-          <td>831</td>
-          <td>ResultCode.DECLINED_AUTOREVERSAL_PENDING</td>
-          <td>Authorization failed, autoreversal pending.</td>
-          </tr>
-
-          <tr>
-          <td>832</td>
-          <td>ResultCode.DECLINED_WRONG_CARD_NUMBER</td>
-          <td>Authorization failed, wrong card number.</td>
-          </tr>
-
-          <tr>
-          <td>833</td>
-          <td>ResultCode.DECLINED_WRONG_CARD_EXPIRY_DATE</td>
-          <td>Authorization failed, wrong card expiry date.</td>
-          </tr>
-
-          <tr>
-          <td>834</td>
-          <td>ResultCode.DECLINED_RETRY_TEMPORARY_UNAVAILABLE</td>
-          <td>Authorization failed, retry, temporary unavailable.</td>
-          </tr>
-
-          <tr>
-          <td>835</td>
-          <td>ResultCode.DECLINED_SERVICE_NOT_ALLOWED</td>
-          <td>Authorization failed, service not allowed.</td>
-          </tr>
-
-          <tr>
-          <td>836</td>
-          <td>ResultCode.DECLINED_CARDHOLDER_INFORMATION_ISSUE</td>
-          <td>Authorization failed, cardholder information issue.</td>
-          </tr>
-
-          <tr>
-          <td>837</td>
-          <td>ResultCode.DECLINED_REFERRAL_WRONG_AUTH_CODE</td>
-          <td>Authorization failed, wrong auth code.</td>
-          </tr>
-
-          <tr>
-          <td>838</td>
-          <td>ResultCode.DECLINED_REFERRAL_WRONG_AMOUNT</td>
-          <td>Authorization failed, wrong amount.</td>
-          </tr>
-          <tr>
-          <td>839</td>
-          <td>ResultCode.DECLINED_REFERRAL_OTHER_REASON</td>
-          <td>Authorization failed, referral generic.</td>
-          </tr>
-          <tr>
-          <td>840</td>
-          <td>ResultCode.DECLINED_CAPTURE_CARD_GENERIC</td>
-          <td>Capture card, generic.</td>
-          </tr>
-          <tr>
-          <td>841</td>
-          <td>ResultCode.DECLINED_CAPTURE_CARD_INFO_TO_CLIENT</td>
-          <td>Capture card, information to the client.</td>
-          </tr>
-          <tr>
-          <td>842</td>
-          <td>ResultCode.DECLINED_CAPTURE_CARD_ORDER_TO_CLIENT</td>
-          <td>Capture card, order to the client.</td>
-          </tr>
-          <tr>
-          <td>843</td>
-          <td>ResultCode.DECLINED_CAPTURE_CARD_TIMEOUT_REMOVING_CARD</td>
-          <td>Capture card, timeout removing card from terminal.</td>
-          </tr>
-          <tr>
-          <td>844</td>
-          <td>ResultCode.DECLINED_NOT_SUPPORTED</td>
-          <td>Authorization failed, not supported.</td>
-          </tr>
-        </tbody>
-    </table>
-    </p>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>SIXml Protocol value</th>
+                        <th>TIM API Enum value</th>
+                        <th>Error description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>0</td>
+                        <td>ResultCode.OK</td>
+                        <td>The request has been performed successfully, no error occured.</td>
+                    </tr>
+                    <tr>
+                        <td>50</td>
+                        <td>ResultCode.API_CANCEL_ECR</td>
+                        <td>Current request has been cancelled by the ECR.</td>
+                    </tr>
+                    <tr>
+                        <td>51</td>
+                        <td>ResultCode.API_INVALID_ANSWER</td>
+                        <td>The ECR received an invalid answer from the terminal.</td>
+                    </tr>
+                    <tr>
+                        <td>52</td>
+                        <td>ResultCode.API_DISABLED_FEATURE</td>
+                        <td>The current request cannot be handled because the required feature is disabled.</td>
+                    </tr>
+                    <tr>
+                        <td>53</td>
+                        <td>ResultCode.API_FUNCTION_DISALLOWED</td>
+                        <td>The requested function is not allowed with the current license Communication.</td>
+                    </tr>
+                    <tr>
+                        <td>54</td>
+                        <td>ResultCode.API_PERSISTENCY_PROBLEM</td>
+                        <td>Persistent data damaged, out of space or storage permission problem.</td>
+                    </tr>
+                    <tr>
+                        <td>100</td>
+                        <td>ResultCode.API_CONNECT_FAIL_SERVER</td>
+                        <td>The ECR was not able to connect to the TIM Server.</td>
+                    </tr>
+                    <tr>
+                        <td>101</td>
+                        <td>ResultCode.API_CONNECT_FAIL_TERMINAL</td>
+                        <td>The ECR was not able to connect to the EFT Terminal.</td>
+                    </tr>
+                    <tr>
+                        <td>102</td>
+                        <td>ResultCode.API_CONNECTION_LOST_SERVER</td>
+                        <td>The ECR lost the connection to the TIM Server.</td>
+                    </tr>
+                    <tr>
+                        <td>103</td>
+                        <td>ResultCode.API_CONNECTION_LOST_TERMINAL</td>
+                        <td>The ECR lost the connection to the EFT Terminal.</td>
+                    </tr>
+                    <tr>
+                        <td>104</td>
+                        <td>ResultCode.ETHERNET_DISCONNECTED</td>
+                        <td>No ethernet cable has been connected.</td>
+                    </tr>
+                    <tr>
+                        <td>105</td>
+                        <td>ResultCode.RS232_DISCONNECTED</td>
+                        <td>No RS232 cable has been connected.</td>
+                    </tr>
+                    <tr>
+                        <td>106</td>
+                        <td>ResultCode.API_TIMEOUT_SERVER</td>
+                        <td>Timeout during connection establishment from TIM API to TIM Server.</td>
+                    </tr>
+                    <tr>
+                        <td>107</td>
+                        <td>ResultCode.API_TIMEOUT_TERMINAL</td>
+                        <td>Timeout during connection establishment from TIM API to EFT Terminal.</td>
+                    </tr>
+                    <tr>
+                        <td>200</td>
+                        <td>ResultCode.SERVER_INVALID_ANSWER</td>
+                        <td>TIM Server received an invalid answer from the terminal.</td>
+                    </tr>
+                    <tr>
+                        <td>201</td>
+                        <td>ResultCode.SERVER_INVALID_REQUEST</td>
+                        <td>TIM Server received an invalid request from TIM API.</td>
+                    </tr>
+                    <tr>
+                        <td>202</td>
+                        <td>ResultCode.SERVER_DISABLED_FEATURE</td>
+                        <td>TIM Server received a message that requires a disabled feature.</td>
+                    </tr>
+                    <tr>
+                        <td>203</td>
+                        <td>ResultCode.SERVER_PERSISTENCY_PROBLEM</td>
+                        <td>Persistent data damaged, out of space or storage permission problem.</td>
+                    </tr>
+                    <tr>
+                        <td>250</td>
+                        <td>ResultCode.SERVER_CONNECT_FAIL_TERMINAL</td>
+                        <td>TIM Server was not able to connect to EFT Terminal.</td>
+                    </tr>
+                    <tr>
+                        <td>251</td>
+                        <td>ResultCode.SERVER_CONNECTION_LOST_TERMINAL</td>
+                        <td>TIM Server lost connection to the EFT Terminal.</td>
+                    </tr>
+                    <tr>
+                        <td>252</td>
+                        <td>ResultCode.SERVER_TIMEOUT_TERMINAL</td>
+                        <td>Timeout during connection establishment from TIM Server to EFT Terminal.</td>
+                    </tr>
+                    <tr>
+                        <td>300</td>
+                        <td>ResultCode.CCR_UNAVAILABLE</td>
+                        <td>Hardware error, Chip card reader not available.</td>
+                    </tr>
+                    <tr>
+                        <td>301</td>
+                        <td>ResultCode.MCR_UNAVAILABLE</td>
+                        <td>Hardware error, Magstripe card reader not available.</td>
+                    </tr>
+                    <tr>
+                        <td>302</td>
+                        <td>ResultCode.NFC_UNAVAILABLE</td>
+                        <td>Hardware error, Contactless card reader not available.</td>
+                    </tr>
+                    <tr>
+                        <td>303</td>
+                        <td>ResultCode.DISPLAY_UNAVAILABLE</td>
+                        <td>Hardware error, Display not available.</td>
+                    </tr>
+                    <tr>
+                        <td>304</td>
+                        <td>ResultCode.PIN_PAD_UNAVAILABLE</td>
+                        <td>Hardware error, PinPad not available.</td>
+                    </tr>
+                    <tr>
+                        <td>305</td>
+                        <td>ResultCode.RS232_UNAVAILABLE</td>
+                        <td>Hardware error, RS232 device not available.</td>
+                    </tr>
+                    <tr>
+                        <td>306</td>
+                        <td>ResultCode.RS232_NOT_CONFIGURED</td>
+                        <td>Connected RS232 device not configured.</td>
+                    </tr>
+                    <tr>
+                        <td>307</td>
+                        <td>ResultCode.SW_INSTALLATION_FAILED</td>
+                        <td>Something went wrong during the SW Update process.</td>
+                    </tr>
+                    <tr>
+                        <td>308</td>
+                        <td>ResultCode.SW_VERSION_NOT_SUITABLE</td>
+                        <td>SW version set for update in the SCS is not suitable for the device.</td>
+                    </tr>
+                    <tr>
+                        <td>309</td>
+                        <td>ResultCode.SW_AUTHENTICATION_FAILED</td>
+                        <td>SW authentication failed due to hash check failure.</td>
+                    </tr>
+
+                    <tr>
+                        <td>400</td>
+                        <td>ResultCode.CARD_READER_ERROR_CCR</td>
+                        <td>Chip card reader error occured.</td>
+                    </tr>
+
+                    <tr>
+                        <td>401</td>
+                        <td>ResultCode.CARD_READER_ERROR_MCR</td>
+                        <td>Magstripe card reader error occured.</td>
+                    </tr>
+
+                    <tr>
+                        <td>402</td>
+                        <td>ResultCode.CARD_READER_ERROR_NFC</td>
+                        <td>Contactless card reader error occured.</td>
+                    </tr>
+
+                    <tr>
+                        <td>403</td>
+                        <td>ResultCode.CARD_ERROR_CCR</td>
+                        <td>Card error occured using the chip card reader.</td>
+                    </tr>
+
+                    <tr>
+                        <td>404</td>
+                        <td>ResultCode.CARD_ERROR_MCR</td>
+                        <td>Card error occured using the magstripe card reader.</td>
+                    </tr>
+
+                    <tr>
+                        <td>405</td>
+                        <td>ResultCode.CARD_ERROR_NFC</td>
+                        <td>Card error occured using the contactless card reader.</td>
+                    </tr>
+
+                    <tr>
+                        <td>406</td>
+                        <td>ResultCode.CARD_READ_ERROR</td>
+                        <td>Reading error occured during card reading.</td>
+                    </tr>
+
+                    <tr>
+                        <td>407</td>
+                        <td>ResultCode.CARD_READ_TIMEOUT</td>
+                        <td>Timeout occured during card reading.</td>
+                    </tr>
+
+                    <tr>
+                        <td>408</td>
+                        <td>ResultCode.CARD_INSERTION_TIMEOUT</td>
+                        <td>Cardholder did not insert card during timeout.</td>
+                    </tr>
+
+                    <tr>
+                        <td>409</td>
+                        <td>ResultCode.CARD_READER_KEYS_LOST</td>
+                        <td>Keys lost for secure communication.</td>
+                    </tr>
+
+                    <tr>
+                        <td>410</td>
+                        <td>ResultCode.CARD_READER_SECURITY_ERROR</td>
+                        <td>Security error occured.</td>
+                    </tr>
+
+                    <tr>
+                        <td>411</td>
+                        <td>ResultCode.CARD_TIMEOUT</td>
+                        <td>Card did not respond in time.</td>
+                    </tr>
+
+                    <tr>
+                        <td>412</td>
+                        <td>ResultCode.CARD_NOT_READABLE</td>
+                        <td>Card could not be read.</td>
+                    </tr>
+
+                    <tr>
+                        <td>413</td>
+                        <td>ResultCode.CARD_INVALID_DATA</td>
+                        <td>Invalid card data read.</td>
+                    </tr>
+
+                    <tr>
+                        <td>414</td>
+                        <td>ResultCode.CARD_FUNCTION_NOT_FOUND</td>
+                        <td>Corresponding card function not found.</td>
+                    </tr>
+
+                    <tr>
+                        <td>415</td>
+                        <td>ResultCode.CARD_FUNCTION_NOT_ALLOWED</td>
+                        <td>Card function not allowed.</td>
+                    </tr>
+
+                    <tr>
+                        <td>500</td>
+                        <td>ResultCode.PIN_PAD_SECURITY_ERROR</td>
+                        <td>Security error occured.</td>
+                    </tr>
+
+                    <tr>
+                        <td>501</td>
+                        <td>ResultCode.PIN_PAD_TAMPERED</td>
+                        <td>PinPad has be tampered.</td>
+                    </tr>
+
+                    <tr>
+                        <td>502</td>
+                        <td>ResultCode.PIN_PAD_KEYS_LOST</td>
+                        <td>Keys lost for secure communication.</td>
+                    </tr>
+
+                    <tr>
+                        <td>550</td>
+                        <td>ResultCode.CARDHOLDER_STOP</td>
+                        <td>Cardholder cancelled transaction pushing the Stop key.</td>
+                    </tr>
+
+                    <tr>
+                        <td>551</td>
+                        <td>ResultCode.CARDHOLDER_TIMEOUT</td>
+                        <td>Cardholder did not react in time.</td>
+                    </tr>
+
+                    <tr>
+                        <td>552</td>
+                        <td>ResultCode.CARD_REMOVED</td>
+                        <td>Card has been removed by the cardholder.</td>
+                    </tr>
+
+                    <tr>
+                        <td>600</td>
+                        <td>ResultCode.TIM_TIMEOUT_ECR</td>
+                        <td>ECR did not respond in time to a request.</td>
+                    </tr>
+
+                    <tr>
+                        <td>601</td>
+                        <td>ResultCode.TIM_CONNECT_FAIL_PAYMENT_HOST</td>
+                        <td>EFT terminal not able to connect to payment host.</td>
+                    </tr>
+
+                    <tr>
+                        <td>602</td>
+                        <td>ResultCode.TIM_CONNECTION_LOST_PAYMENT_HOST</td>
+                        <td>EFT Terminal did lose connection to payment host.</td>
+                    </tr>
+
+                    <tr>
+                        <td>603</td>
+                        <td>ResultCode.TIM_TIMEOUT_ANSWER_RS232</td>
+                        <td>RS232 device did not respond in time to a request.</td>
+                    </tr>
+
+                    <tr>
+                        <td>604</td>
+                        <td>ResultCode.TIM_COMMUNICATION_FAILURE</td>
+                        <td>Communication failed.</td>
+                    </tr>
+
+                    <tr>
+                        <td>605</td>
+                        <td>ResultCode.TIM_CONFIG_FAILURE</td>
+                        <td>Reconfig request partially successful - Config failed.</td>
+                    </tr>
+
+                    <tr>
+                        <td>606</td>
+                        <td>ResultCode.TIM_INIT_FAILURE</td>
+                        <td>Reconfig request partially successful - Init not or only partially successful.</td>
+                    </tr>
+
+                    <tr>
+                        <td>700</td>
+                        <td>ResultCode.SIXML_GENERAL_ERROR</td>
+                        <td>General error on SIXml Protocol.</td>
+                    </tr>
+
+                    <tr>
+                        <td>701</td>
+                        <td>ResultCode.SIXML_INVALID_REQUEST</td>
+                        <td>Generic error if request not valid.</td>
+                    </tr>
+
+                    <tr>
+                        <td>702</td>
+                        <td>ResultCode.SIXML_WRONG_CASHIER</td>
+                        <td>Wrong UsrId entered for Activate.</td>
+                    </tr>
+
+                    <tr>
+                        <td>703</td>
+                        <td>ResultCode.SIXML_WRONG_ECR_ID</td>
+                        <td>Wrong EcrId entered for Login.</td>
+                    </tr>
+
+                    <tr>
+                        <td>704</td>
+                        <td>ResultCode.SIXML_UNKNOWN_REFERENCE_NUMBER</td>
+                        <td>Unknown reference number entered for Credit or Reversal.</td>
+                    </tr>
+
+                    <tr>
+                        <td>705</td>
+                        <td>ResultCode.SIXML_WRONG_STATE</td>
+                        <td>Request not allowed in the current terminal state.</td>
+                    </tr>
+
+                    <tr>
+                        <td>706</td>
+                        <td>ResultCode.BUSY_OTHER_CONTROLLER</td>
+                        <td>Another controller is currently using the EFT.</td>
+                    </tr>
+
+                    <tr>
+                        <td>707</td>
+                        <td>ResultCode.BUSY_MAINTENANCE</td>
+                        <td>Mainenance task in progress.</td>
+                    </tr>
+
+                    <tr>
+                        <td>708</td>
+                        <td>ResultCode.REQUEST_PENDING</td>
+                        <td>Another request from the same controller is already running.</td>
+                    </tr>
+
+                    <tr>
+                        <td>709</td>
+                        <td>ResultCode.SIXML_UNSUPPORTED_REQUEST</td>
+                        <td>Request not supported by terminal.</td>
+                    </tr>
+
+                    <tr>
+                        <td>800</td>
+                        <td>ResultCode.TRX_NO_COMMON_APPLICATIONS</td>
+                        <td>No common application found on card during Application Selection.</td>
+                    </tr>
+
+                    <tr>
+                        <td>801</td>
+                        <td>ResultCode.TRX_LIMIT_EXCEEDED</td>
+                        <td>Current transaction exceeds transaction limit (amount).</td>
+                    </tr>
+
+                    <tr>
+                        <td>802</td>
+                        <td>ResultCode.TRX_NO_COMMON_CVM</td>
+                        <td>No common cardholder verification method found on card during.</td>
+                    </tr>
+
+                    <tr>
+                        <td>803</td>
+                        <td>ResultCode.DECLINED_CVM_FAILED</td>
+                        <td>Performed CVM failed.</td>
+                    </tr>
+
+                    <tr>
+                        <td>804</td>
+                        <td>ResultCode.TRX_REFERRAL</td>
+                        <td>Referral required for current transaction.</td>
+                    </tr>
+
+                    <tr>
+                        <td>805</td>
+                        <td>ResultCode.TRX_INVALID_AUTH_RESPONSE</td>
+                        <td>Authorization response invalid.</td>
+                    </tr>
+
+                    <tr>
+                        <td>806</td>
+                        <td>ResultCode.DECLINED_GENERIC</td>
+                        <td>Authorization failed, generic error.</td>
+                    </tr>
+
+                    <tr>
+                        <td>807</td>
+                        <td>ResultCode.DECLINED_SALDO_TOO_LOW</td>
+                        <td>Authorization failed, saldo too low.</td>
+                    </tr>
+
+                    <tr>
+                        <td>808</td>
+                        <td>ResultCode.DECLINED_WRONG_PIN</td>
+                        <td>Authorization failed, cardholder entered wrong PIN.</td>
+                    </tr>
+
+                    <tr>
+                        <td>809</td>
+                        <td>ResultCode.DECLINED_CARD_BLOCKED</td>
+                        <td>Authorization failed, card blocked.</td>
+                    </tr>
+
+                    <tr>
+                        <td>810</td>
+                        <td>ResultCode.DECLINED_SECURITY_ISSUE</td>
+                        <td>Authorization failed, security issue.</td>
+                    </tr>
+
+                    <tr>
+                        <td>811</td>
+                        <td>ResultCode.DECLINED_USAGE_CONTROL</td>
+                        <td>Authorization failed, usage control.</td>
+                    </tr>
+
+                    <tr>
+                        <td>812</td>
+                        <td>ResultCode.DECLINED_DOUBLE_TRANSACTION</td>
+                        <td>Authorization failed, current transaction may be a double transaction.</td>
+                    </tr>
+
+                    <tr>
+                        <td>813</td>
+                        <td>ResultCode.DECLINED_GENERIC_FIRST_AC</td>
+                        <td>Authorization failed, first AC generation failed.</td>
+                    </tr>
+
+                    <tr>
+                        <td>814</td>
+                        <td>ResultCode.DECLINED_GENERIC_SECOND_AC</td>
+                        <td>Authorization failed, second AC generation failed.</td>
+                    </tr>
+
+                    <tr>
+                        <td>815</td>
+                        <td>ResultCode.TRX_COMMIT_TIMEOUT</td>
+                        <td>Commit request not sent in time.</td>
+                    </tr>
+
+                    <tr>
+                        <td>816</td>
+                        <td>ResultCode.TRX_ROLLBACK_IMPOSSIBLE</td>
+                        <td>Rollback not possible for current transaction.</td>
+                    </tr>
+
+                    <tr>
+                        <td>817</td>
+                        <td>ResultCode.CASHBACK_AMOUNT_TOO_LOW</td>
+                        <td>The intended cashback amount is too low.</td>
+                    </tr>
+
+                    <tr>
+                        <td>818</td>
+                        <td>ResultCode.CASHBACK_AMOUNT_TOO_HIGH</td>
+                        <td>The intended cashback amount is too high.</td>
+                    </tr>
+
+                    <tr>
+                        <td>819</td>
+                        <td>ResultCode.BASKET_DECLINED</td>
+                        <td>Part of the basket is not allowed. Transaction declined.</td>
+                    </tr>
+
+                    <tr>
+                        <td>820</td>
+                        <td>ResultCode.NO_TRX_IN_GROUP_EXCEEDED</td>
+                        <td>Current transaction exceeds the limit for the number of transactions in a group.</td>
+                    </tr>
+
+                    <tr>
+                        <td>821</td>
+                        <td>ResultCode.UNSUPPORTED_CHARACTERS_IN_MESSAGE</td>
+                        <td>Current request contains unsupported characters.</td>
+                    </tr>
+
+                    <tr>
+                        <td>822</td>
+                        <td>ResultCode.LOYALTY_CHECK_IN_PENDING</td>
+                        <td>So far no loyalty data is available, check-in pending.</td>
+                    </tr>
+
+                    <tr>
+                        <td>823</td>
+                        <td>ResultCode.DECLINED_CARD_ERROR</td>
+                        <td>Authorization failed, card error.</td>
+                    </tr>
+
+                    <tr>
+                        <td>824</td>
+                        <td>ResultCode.DECLINED_CARD_EXPIRED</td>
+                        <td>Authorization failed, card expired.</td>
+                    </tr>
+
+                    <tr>
+                        <td>825</td>
+                        <td>ResultCode.DECLINED_TRX_INVALID</td>
+                        <td>Authorization failed, transaction invalid.</td>
+                    </tr>
+
+                    <tr>
+                        <td>826</td>
+                        <td>ResultCode.DECLINED_TRY_LATER</td>
+                        <td>Authorization failed, try later.</td>
+                    </tr>
+
+                    <tr>
+                        <td>827</td>
+                        <td>ResultCode.DECLINED_TRY_ANOTHER_INTERFACE</td>
+                        <td>Authorization failed, try another interface.</td>
+                    </tr>
+
+                    <tr>
+                        <td>828</td>
+                        <td>ResultCode.DECLINED_INVALID_MERCHANT</td>
+                        <td>Authorization failed, invalid merchant.</td>
+                    </tr>
+
+                    <tr>
+                        <td>829</td>
+                        <td>ResultCode.DECLINED_RESTRICTION_DECLINED</td>
+                        <td>Authorization failed, restriction declined.</td>
+                    </tr>
+
+                    <tr>
+                        <td>830</td>
+                        <td>ResultCode.DECLINED_WRONG_CURRENCY</td>
+                        <td>Authorization failed, wrong currency.</td>
+                    </tr>
+
+                    <tr>
+                        <td>831</td>
+                        <td>ResultCode.DECLINED_AUTOREVERSAL_PENDING</td>
+                        <td>Authorization failed, autoreversal pending.</td>
+                    </tr>
+
+                    <tr>
+                        <td>832</td>
+                        <td>ResultCode.DECLINED_WRONG_CARD_NUMBER</td>
+                        <td>Authorization failed, wrong card number.</td>
+                    </tr>
+
+                    <tr>
+                        <td>833</td>
+                        <td>ResultCode.DECLINED_WRONG_CARD_EXPIRY_DATE</td>
+                        <td>Authorization failed, wrong card expiry date.</td>
+                    </tr>
+
+                    <tr>
+                        <td>834</td>
+                        <td>ResultCode.DECLINED_RETRY_TEMPORARY_UNAVAILABLE</td>
+                        <td>Authorization failed, retry, temporary unavailable.</td>
+                    </tr>
+
+                    <tr>
+                        <td>835</td>
+                        <td>ResultCode.DECLINED_SERVICE_NOT_ALLOWED</td>
+                        <td>Authorization failed, service not allowed.</td>
+                    </tr>
+
+                    <tr>
+                        <td>836</td>
+                        <td>ResultCode.DECLINED_CARDHOLDER_INFORMATION_ISSUE</td>
+                        <td>Authorization failed, cardholder information issue.</td>
+                    </tr>
+
+                    <tr>
+                        <td>837</td>
+                        <td>ResultCode.DECLINED_REFERRAL_WRONG_AUTH_CODE</td>
+                        <td>Authorization failed, wrong auth code.</td>
+                    </tr>
+
+                    <tr>
+                        <td>838</td>
+                        <td>ResultCode.DECLINED_REFERRAL_WRONG_AMOUNT</td>
+                        <td>Authorization failed, wrong amount.</td>
+                    </tr>
+                    <tr>
+                        <td>839</td>
+                        <td>ResultCode.DECLINED_REFERRAL_OTHER_REASON</td>
+                        <td>Authorization failed, referral generic.</td>
+                    </tr>
+                    <tr>
+                        <td>840</td>
+                        <td>ResultCode.DECLINED_CAPTURE_CARD_GENERIC</td>
+                        <td>Capture card, generic.</td>
+                    </tr>
+                    <tr>
+                        <td>841</td>
+                        <td>ResultCode.DECLINED_CAPTURE_CARD_INFO_TO_CLIENT</td>
+                        <td>Capture card, information to the client.</td>
+                    </tr>
+                    <tr>
+                        <td>842</td>
+                        <td>ResultCode.DECLINED_CAPTURE_CARD_ORDER_TO_CLIENT</td>
+                        <td>Capture card, order to the client.</td>
+                    </tr>
+                    <tr>
+                        <td>843</td>
+                        <td>ResultCode.DECLINED_CAPTURE_CARD_TIMEOUT_REMOVING_CARD</td>
+                        <td>Capture card, timeout removing card from terminal.</td>
+                    </tr>
+                    <tr>
+                        <td>844</td>
+                        <td>ResultCode.DECLINED_NOT_SUPPORTED</td>
+                        <td>Authorization failed, not supported.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </p>
     </div></div></section>
+    <section id="functionStateMatrix"><h1><a name="functionStateMatrix"></a>Function-State-Matrix</h1><div class="row"><div class="col-md-6"><p>Legend:
+        <ul>
+          <li>B1-Retail</li>
+          <li>B2-Petrol</li>
+          <li>B3-Unattended</li>
+          <li>B4-Advanced Retail</li>
+          <li>B5-Banking</li>
+          <li>B6-Dialog</li>
+          <li>B8-Gastro</li>
+          <li>B9-Hospitality</li>
+          <li>B10-Value Added Services (VAS)</li>
+          <li>B11-Austrian Use Cases</li>
+        </ul>
+      </p>
+        <table class="table">
+            <tr>
+                <th rowspan="4">Function</th>
+                <th colspan="5">State</th>
+                <th rowspan="4">Book(s)</th>
+            </tr>
+            <tr>
+                <th rowspan="3">Disconnected</th>
+                <th colspan="4">Connected</th>
+            </tr>
+            <tr>
+                <th rowspan="2">LoggedOut</th>
+                <th colspan="3">LoggedIn</th>
+            </tr>
+            <tr>
+                <th>Closed</th>
+                <th>Opened</th>
+                <th>Dialog</th>
+            </tr>
+            <tr>
+                <th>Activate</th>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>o</td>
+                <td>-</td>
+                <td>B1</td>
+            </tr>
+            <tr>
+                <th>ActivateServiceMenu</th>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>-</td>
+                <td>-</td>
+                <td>B3</td>
+            </tr>
+            <tr>
+                <th>AdjustReservation</th>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>-</td>
+                <td>B9</td>
+            </tr>
+            <tr>
+                <th>AmtAdjustment</th>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>-</td>
+                <td>B3</td>
+            </tr>
+            <tr>
+                <th>ApplicationInformation</th>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>-</td>
+                <td>-</td>
+                <td>B1</td>
+            </tr>
+            <tr>
+                <th>AuthorizeCredit</th>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>-</td>
+                <td>B5</td>
+            </tr>
+            <tr>
+                <th>AuthorizeDeposit</th>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>-</td>
+                <td>B5</td>
+            </tr>
+
+            <tr>
+                <th>Balance</th>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>-</td>
+                <td>-</td>
+                <td>B1</td>
+            </tr>
+            <tr>
+                <th>BalanceInquiry</th>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>-</td>
+                <td>B4, B5</td>
+            </tr>
+            <tr>
+                <th>Cancel</th>
+                <td>-</td>
+                <td>o</td>
+                <td>o</td>
+                <td>o</td>
+                <td>o</td>
+                <td>B1</td>
+            </tr>
+            <tr>
+                <th>CancelReservation</th>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>-</td>
+                <td>B9</td>
+            </tr>
+            <tr>
+                <th>CashAdvance</th>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>-</td>
+                <td>B4</td>
+            </tr>
+            <tr>
+                <th>ChangeSettings</th>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>-</td>
+                <td>-</td>
+                <td>B1</td>
+            </tr>
+            <tr>
+                <th>CloseDialogMode</th>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>B6</td>
+            </tr>
+            <tr>
+                <th>CloseMaintenanceWindow</th>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>-</td>
+                <td>-</td>
+                <td>B3</td>
+            </tr>
+            <tr>
+                <th>CloseReader</th>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>-</td>
+                <td>B3</td>
+            </tr>
+            <tr>
+                <th>CollectPoints</th>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>-</td>
+                <td>B10</td>
+            </tr>
+            <tr>
+                <th>Combined</th>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>-</td>
+                <td>B5</td>
+            </tr>
+            <tr>
+                <th>Commit</th>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>-</td>
+                <td>B1</td>
+            </tr>
+            <tr>
+                <th>CounterRequest</th>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>o</td>
+                <td>-</td>
+                <td>B1</td>
+            </tr>
+            <tr>
+                <th>Credit</th>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>-</td>
+                <td>B1</td>
+            </tr>
+            <tr>
+                <th>DccRates</th>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>-</td>
+                <td>-</td>
+                <td>B1</td>
+            </tr>
+            <tr>
+                <th>Deactivate</th>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>o</td>
+                <td>-</td>
+                <td>B1</td>
+            </tr>
+            <tr>
+                <th>EjectCard</th>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>-</td>
+                <td>B3</td>
+            </tr>
+            <tr>
+                <th>FeatureRequest</th>
+                <td>-</td>
+                <td>o</td>
+                <td>o</td>
+                <td>-</td>
+                <td>-</td>
+                <td>B1</td>
+            </tr>
+            <tr>
+                <th>FinalizePurchase</th>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>-</td>
+                <td>B2</td>
+            </tr>
+            <tr>
+                <th>FinishCeckout</th>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>-</td>
+                <td>B10</td>
+            </tr>
+            <tr>
+                <th>Giro</th>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>-</td>
+                <td>B5</td>
+            </tr>
+            <tr>
+                <th>HardwareInformation</th>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>-</td>
+                <td>-</td>
+                <td>B1</td>
+            </tr>
+            <tr>
+                <th>HoldCommit</th>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>-</td>
+                <td>B3</td>
+            </tr>
+            <tr>
+                <th>InitTransaction</th>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>-</td>
+                <td>B2</td>
+            </tr>
+            <tr>
+                <th>KeepAlive</th>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>o</td>
+                <td>o</td>
+                <td>B1</td>
+            </tr>
+            <tr>
+                <th>LicenseChanged</th>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>-</td>
+                <td>-</td>
+                <td>B1</td>
+            </tr>
+            <tr>
+                <th>LoadVoucher</th>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>-</td>
+                <td>B10</td>
+            </tr>
+            <tr>
+                <th>Login</th>
+                <td>-</td>
+                <td>o</td>
+                <td>o</td>
+                <td>-</td>
+                <td>-</td>
+                <td>B1</td>
+            </tr>
+            <tr>
+                <th>Logout</th>
+                <td>-</td>
+                <td>o</td>
+                <td>o</td>
+                <td>-</td>
+                <td>-</td>
+                <td>B1</td>
+            </tr>
+            <tr>
+                <th>LoyaltyData</th>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>-</td>
+                <td>B10</td>
+            </tr>
+            <tr>
+                <th>OpenDialogMode</th>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>-</td>
+                <td>B6</td>
+            </tr>
+            <tr>
+                <th>OpenMaintenanceWindow</th>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>-</td>
+                <td>-</td>
+                <td>B3</td>
+            </tr>
+            <tr>
+                <th>OpenReader</th>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>-</td>
+                <td>B3</td>
+            </tr>
+            <tr>
+                <th>PreAuthorization</th>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>-</td>
+                <td>B2</td>
+            </tr>
+            <tr>
+                <th>ProvideLoyaltyBasket</th>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>-</td>
+                <td>B10</td>
+            </tr>
+            <tr>
+                <th>Purchase</th>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>-</td>
+                <td>B1</td>
+            </tr>
+            <tr>
+                <th>PurchaseForcedAcceptance</th>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>-</td>
+                <td>B4</td>
+            </tr>
+            <tr>
+                <th>PurchaseMailOrdered</th>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>-</td>
+                <td>B4</td>
+            </tr>
+            <tr>
+                <th>PurchasePhoneAuthorized</th>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>-</td>
+                <td>B4</td>
+            </tr>
+            <tr>
+                <th>PurchasePhoneOrdered</th>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>-</td>
+                <td>B4</td>
+            </tr>
+            <tr>
+                <th>PurchaseReservation</th>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>-</td>
+                <td>B9</td>
+            </tr>
+            <tr>
+                <th>PurchaseReservationPhoneAuthorized</th>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>-</td>
+                <td>B9</td>
+            </tr>
+            <tr>
+                <th>PurchaseWithCashback</th>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>-</td>
+                <td>B4</td>
+            </tr>
+            <tr>
+                <th>Reboot</th>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>-</td>
+                <td>-</td>
+                <td>B1</td>
+            </tr>
+            <tr>
+                <th>ReceiptRequest</th>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>o</td>
+                <td>-</td>
+                <td>B1</td>
+            </tr>
+            <tr>
+                <th>Reconciliation</th>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>o</td>
+                <td>-</td>
+                <td>B1</td>
+            </tr>
+            <tr>
+                <th>Reconfig</th>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>-</td>
+                <td>-</td>
+                <td>B1</td>
+            </tr>
+            <tr>
+                <th>Reservation</th>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>-</td>
+                <td>B9</td>
+            </tr>
+            <tr>
+                <th>Reversal</th>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>-</td>
+                <td>B1</td>
+            </tr>
+            <tr>
+                <th>Rollback</th>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>-</td>
+                <td>B1</td>
+            </tr>
+            <tr>
+                <th>SendCardCommand</th>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>B6</td>
+            </tr>
+            <tr>
+                <th>ShowDialog</th>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>B6</td>
+            </tr>
+            <tr>
+                <th>ShowSignatureCapture</th>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>B6</td>
+            </tr>
+            <tr>
+                <th>SoftwareUpdate</th>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>-</td>
+                <td>-</td>
+                <td>B1</td>
+            </tr>
+            <tr>
+                <th>StartCheckout</th>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>-</td>
+                <td>B10</td>
+            </tr>
+            <tr>
+                <th>SystemInformation</th>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>-</td>
+                <td>-</td>
+                <td>B1</td>
+            </tr>
+            <tr>
+                <th>TerminalStatus</th>
+                <td>-</td>
+                <td>o</td>
+                <td>o</td>
+                <td>o</td>
+                <td>o</td>
+                <td>B1</td>
+            </tr>
+            <tr>
+                <th>VasInfo</th>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>o</td>
+                <td>-</td>
+                <td>B10</td>
+            </tr>
+        </table>
+      </div></div></section>
 </main>
     </div>
   </div>

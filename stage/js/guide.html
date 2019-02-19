@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+
+  <link href="../assets/css/vendors.css" rel="stylesheet">
+  <link href="../assets/css/helppage.css" rel="stylesheet">
+  <link href="res/css/lang_specific.css" rel="stylesheet">
+
+  <title>TIM API documentation</title>
+  <script src="../assets/js/vendors.js"></script>
+  <script src="../assets/js/helppage.js"></script>
+  <script src="../assets/js/guide.js"></script>
+  <script src="../assets/js/tim_inject.js"></script>
+  <script src="../assets/js/sdk_version.js"></script>
+  <script src="../assets/js/config.js"></script>
+  <script src="doc/api_version.js"></script>
+</head>
+<body data-spy="scroll" data-target="#navScrollspy">
+  <div class="container-fluid" id="content">
+    <div>
+      <nav id="navScrollspy">
+        <div id="stageBanner">STAGING VERSION!</div>
+        <div id="archiveBanner">ARCHIVED VERSION!<br><a href="../../../doc/index.html" id="currentLink">-&gt; link to current version</a></div>
+        <div class="affix" data-spy="affix" id="navbar">
+          <div id="projectname">TIM SDK</div>
+          <div id="projectbrief">TIM API</div>
+          <div id="vSep">&#160;</div>
+          <div id="langSel">
+            <ul class="langList">
+              <li>
+                <a class="lang_java" href="../java/guide.html">Java</a>
+              </li>
+              <li>
+                <span style="color: gray">.NET</span>
+              </li>
+              <li>
+                <a class="lang_swift" href="../swift/guide.html">Swift</a>
+              </li>
+              <li>
+                <a class="lang_js" href="../js/guide.html">JavaScript</a>
+              </li>
+              <li>
+                <a class="lang_c" href="../c/guide.html">C</a>
+              </li>
+            </ul>
+          </div>
+          <div id="guideDiv">
+            <div id="guideTitle">Guide Selection<div class="close_icon" id="closeGuideSel"></div></div>
+            <div id="guideSel"></div>
+          </div>
+          <div id="docTitle">Detailed Implementation Guide</div>
+          <ul class="nav">
+          <li><a href="#intro">Introduction</a></li><li><a href="#sysreq">System Requirements</a></li><li><a href="#setup">Setup Configuration</a><ul class="nav"><li><a href="#network">Network Configuration</a></li><li><a href="#guides">Guides Configuration</a></li></ul></li><li><a href="#operation">Operation Overview</a></li><li><a href="#automatisms">Automatisms</a></li><li><a href="#methods">Terminal methods overview</a><ul class="nav"><li><a href="#mainFunc">Main / guide Retail terminal functions</a></li><li><a href="#addMethods">Additional terminal listener-events</a></li></ul></li></ul>
+          <div class="seperator">&#160;</div>
+          <div id="docLinks">
+          <div class="linkDiv"><a href="simple.html">Simple Implementation Guide</a></div><div class="linkDiv"><a href="appendix.html">Appendix</a></div><div class="linkDiv"><a href="doc/index.html">API Documentation</a></div><div class="linkDiv"><a href="../../version/version-history.html">Version History</a></div></div>
+        </div>
+      </nav>
+
+      <span class="print-page-break"></span>
+
+      <main>
+      <section id="intro"><h1><a name="intro"></a>Introduction</h1><div class="row"><div class="col-md-6"><p>The TIM API is the standard application interface for ECR integration using SIX Payment Services terminals.
+        </p>
+        <p>TIM API provides a comprehensive feature set to support the requirements of several different markets. This
+            guideline is intended to be used by ECR integrators that need to implement the TIM API functionality in
+            their
+            products.
+        </p>
+        <p>The following document contains an overview structure and describes the corresponding functions, notifiers and data elements that can be used with the TIM API.
+            Furthermore implementation examples are provided. Nevertheless always the corresponding description of a
+            function or data element is authoritative, not the examples.</p>
+        <hr>
+    </div></div></section>
+    <section id="sysreq"><h1><a name="sysreq"></a>System Requirements</h1><div class="row"><div class="col-md-6"><p>The TIM API is available for multiple platforms. Due to such diversity the support for the TIM API is limited to certain standards. Those are the minimal system requirements:</p>
+        <div lang="js" style="margin-left: 10px;">
+          <span>Minimal browser version:</span>
+          <ul>
+              <li>Firefox 56</li>
+              <li>Chrome 59</li>
+              <li>Edge 41</li>
+              <li>Safari 11</li>
+          </ul>
+          <span>If run in Node.js environment, minimal version:</span>
+          <ul>
+              <li>Node.js 9</li>
+          </ul>
+        </div>
+        <hr>
+    </div></div></section>
+    <section id="setup"><h1><a name="setup"></a>Setup Configuration</h1><div class="row"><div class="col-md-6"><p>Once a
+            <code><a href="doc/timapi.Terminal.html">Terminal</a></code>-instance has been created with a
+            <code><a href="doc/timapi.TerminalSettings.html">TerminalSettings</a></code>-instance, the settings can not be changed anymore.
+            Changes to the
+            <code><a href="doc/timapi.TerminalSettings.html">TerminalSettings</a></code>-instance will be ignored.
+        </p>
+        <p>The network and guides configuration are explained in the following
+            chapters.
+            For further information refer to<code><a href="doc/timapi.TerminalSettings.html">TerminalSettings</a></code>.
+        </p>
+
+
+        </div></div><section id="network"><h2><a name="network"></a>Network Configuration</h2><div class="row"><div class="col-md-6"><p>Depending on the platform used, the TIM API module can communicate with the Terminal over different communication channels.</p>
+            <div lang="js">
+                <p>TIM API JavaScript communicates with the terminals over WebSocket.
+                Unlike in other TIM APIs, there's no broadcast mode, since WebSocket doesn't support this feature.
+                Default port is 80 (for some terminals, e.g. Verifone, it's 8080).</p>
+                <p>In order to start a connection to a terminal, it's IP address must be known and configured in the <code><a href="doc/timapi.TerminalSettings.html">TerminalSettings</a></code>.</p>
+            </div>
+        </div></div></section>
+        <div class="row"><div class="col-md-6"></div></div><section id="guides"><h2><a name="guides"></a>Guides Configuration</h2><div class="row"><div class="col-md-6">
+                    <p>There are various
+                        <code><a href="doc/timapi.constants.Guides.html">Guides</a></code>
+                        covering different use case scenarios. The guide retail is the basic guide and is activated as
+                        default. With
+                        <code><a href="doc/timapi.TerminalSettings.html#guides">guides</a></code>
+                        the guides can be configured. Important: the configuration needs to include all desired guides
+                        (including
+                        the retail guide).
+                    </p>
+
+                </div><div class="col-md-6">
+                    <p>Code-example for creating a terminal including settings with activated guides retail and
+                        hospitality:
+                    </p>
+                    <pre><code class="language-{.js}">// Create settings with IP-address and port of terminal to connect to
+let settings = new timapi.TerminalSettings();
+settings.connectionIPString = "192.168.1.10";
+settings.connectionIPPort = 80;
+
+// add wanted guides (with bitwise or)
+settings.guides.add(timapi.constants.Guides.hospitality);
+
+// Create terminal
+let terminal = new timapi.Terminal(settings);
+
+//...
+
+// Disconnect from terminal and clean up properly
+terminal.dispose();</code></pre>
+                </div></div>
+
+            <div class="row"><div class="col-md-6"><hr>
+        </div></div></section>
+        <div class="row"><div class="col-md-6"></div></div></section>
+    <section id="operation"><h1><a name="operation"></a>Operation Overview</h1><div class="row"><div class="col-md-6">
+
+                <p>Follow these basic steps for using the TIM API:</p>
+                <ol>
+                    <li>Create
+                        <code><a href="doc/timapi.TerminalSettings.html">TerminalSettings</a></code>
+                        and initialize connection parameters (see
+                        <a href="#setup">Setup Configuration</a>)
+                    </li>
+                    <li>Create
+                        <code><a href="doc/timapi.Terminal.html">Terminal</a></code>
+                        instance using the created
+                        <code><a href="doc/timapi.TerminalSettings.html">TerminalSettings</a></code>
+                    </li>
+                    <li>Set some properties where required:
+                        <ul>
+                            <li>Define a <code><a href="doc/timapi.Terminal.html#setPosId">POS ID</a></code>
+                            </li>
+                            <li>
+                                create <strong>mandatory</strong>
+                                list of <code><a href="doc/timapi.EcrInfo.html">EcrInfo</a></code> and add with <code><a href="doc/timapi.Terminal.html#addEcrData">addEcrData</a></code>
+                            </li>
+                            <li>create list of <code><a href="doc/timapi.PrintOption.html">PrintOptions</a></code> and set with <code><a href="doc/timapi.Terminal.html#setPrintOptions">setPrintOptions</a></code>
+                            </li>
+                            <li><code><a href="doc/timapi.Terminal.html#addListener">addListeners</a></code>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <code><a href="doc/timapi.Terminal.html#connectAsync">Connect</a></code>
+                        and
+                        <code><a href="doc/timapi.Terminal.html#loginAsync">Login</a></code>. This can be done automatically, when the first terminal operation is called or manually using
+                        the login
+                        method.
+                    </li>
+                    <li>Use terminal operation functions.</li>
+                </ol>
+            </div><div class="col-md-6">
+                <figure><img src="res/img/operations_overview.png"><figcaption>Operations overview</figcaption></figure>
+            </div></div>
+        <div class="row"><div class="col-md-6"><hr>
+
+    </div></div></section>
+    <section id="automatisms"><h1><a name="automatisms"></a>Automatisms</h1><div class="row"><div class="col-md-6"><p>The TIM API uses two different types of automatisms:</p>
+        <ul>
+            <li>
+                <p>
+                    <strong>Pre-Automatisms:</strong>
+                    This means that all actions that need to be done before a function can be called.
+                    E.g. a transaction can be called in disconnected state without having called connect, login and
+                    activate
+                    in advance. These are called automatically by the TIM API before the transaction is performed. The
+                    Pre-Automatisms
+                    are enabled by default.
+                </p>
+            </li>
+            <li>
+                <p>
+                    <strong>Post-Automatisms:</strong>
+                    These automatisms can be enabled or disabled using the members <code><a href="doc/timapi.TerminalSettings.html#autoCommit">autoCommit</a></code> and
+                    <code><a href="doc/timapi.TerminalSettings.html#fetchBrands">fetchBrands</a></code>. A Post-Automatism is triggered after an action has been performed. E.g. if a connect
+                    has
+                    been called and <code><a href="doc/timapi.TerminalSettings.html#fetchBrands">fetchBrands</a></code> is activated, an <code><a href="doc/timapi.Terminal.html#applicationInformationAsync">applicationInformation</a></code> request is called automatically
+                    after
+                    the connect. Or if  <code><a href="doc/timapi.TerminalSettings.html#autoCommit">autoCommit</a></code> is activated a <code><a href="doc/timapi.Terminal.html#commitAsync">commit</a></code> is performed automatically after a transaction
+                    has
+                    been made.  <code><a href="doc/timapi.TerminalSettings.html#autoCommit">AutoCommit</a></code> and <code><a href="doc/timapi.TerminalSettings.html#fetchBrands">fetchBrands</a></code> are enabled by default.
+                </p>
+            </li>
+        </ul>
+        <p>The following diagram show<span lang="js">s</span> the principle of the Pre-Automatisms and Post-Automatisms. Pre-Automatisms are
+            enabled by default and cannot be disabled. If an error occurs the started request from the ECR is returned
+            with an error.
+        </p>
+
+        <div lang="js">
+            <figure><img src="res/img/async_flow.png"><figcaption>Pre-Automatisms flow</figcaption></figure>
+        </div>
+        <hr>
+
+    </div></div></section>
+
+    <section id="methods"><h1><a name="methods"></a>Terminal methods overview</h1><div class="row"><div class="col-md-6">
+                <p lang="js">
+                    All terminal methods are in async-mode. Method-calls return immediately after the operation has
+                    started or throws a <code><a href="doc/timapi.TimException.html">TimException</a></code> otherwise.
+                    A listener-event-method will be called after operation is finished successfully.
+                    All listener-event-methods
+                    contain a
+                    <code><a href="doc/timapi.TimEvent.html">TimEvent</a></code>. In case of failure a
+                    <code><a href="doc/timapi.constants.ResultCode.html">ResultCode</a></code>
+                    is included. User-implemented listener-handlers (that extend <code><a href="doc/timapi.DefaultTerminalListener.html">DefaultTerminalListener</a></code>) can be added to the
+                    <code><a href="doc/timapi.Terminal.html">Terminal</a></code>-instance with
+                    <code><a href="doc/timapi.Terminal.html#addListener">addListener</a></code>.
+                </p>
+            </div><div class="col-md-6">
+                <p>Code example for adding a terminal listener:</p>
+                <pre><code class="language-{.js}">/** Asynchronous listener handling terminal events. */
+
+/* Define your own TerminalListener by overwrite all required 
+ * methods from the DefaultTerminalListener class
+ * which you want to use.
+*/
+class MyTerminalListener extends timapi.DefaultTerminalListener {
+
+// Overwrite all wanted methods of the DefaultTerminalListener herein
+
+}
+
+/* Then create an instance of your "MyTerminalListener" and add it to
+ * your terminal instance.
+*/
+var myListener = new MyTerminalListener();
+
+terminal.addListener(myListener);
+
+
+</code></pre>
+            </div></div>
+        <div class="row"><div class="col-md-6"></div></div><section id="mainFunc"><h2><a name="mainFunc"></a>Main / guide Retail terminal functions</h2><div class="row"><div class="col-md-6"><table class="table">
+                <thead>
+                    <tr>
+                        <th>
+                            <strong class="syncMethod">Sync method</strong>
+                            <br class="syncMethod">
+                            <span class="asyncMethod">Async method</span>
+                            <br>
+                            <span class="completedMethod">Completed event</span>
+                        </th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <code class="syncMethod"><a class="syncMethod" href="doc/timapi.Terminal.html#activateAsync">activate</a></code>
+                            <br class="syncMethod">
+                            <code class="asyncMethod"><a class="asyncMethod" href="doc/timapi.Terminal.html#activateAsync">activateAsync</a></code>
+                            <br>
+                            <code class="completedMethod"><a class="completedMethod" href="doc/timapi.DefaultTerminalListener.html#activateCompleted">activateCompleted</a></code>
+                        </td>
+                        <td>Open a user shift.</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code class="syncMethod"><a class="syncMethod" href="doc/timapi.Terminal.html#applicationInformationAsync">applicationInformation</a></code>
+                            <br class="syncMethod">
+                            <code class="asyncMethod"><a class="asyncMethod" href="doc/timapi.Terminal.html#applicationInformationAsync">
+                                applicationInformationAsync
+                            </a></code>
+                            <br>
+                            <code class="completedMethod"><a class="completedMethod" href="doc/timapi.DefaultTerminalListener.html#applicationInformationCompleted">
+                                applicationInformationCompleted
+                            </a></code>
+                        </td>
+                        <td>Request the list of brands available on the terminal.</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code class="syncMethod"><a class="syncMethod" href="doc/timapi.Terminal.html#balanceAsync">balance</a></code>
+                            <br class="syncMethod">
+                            <code class="asyncMethod"><a class="asyncMethod" href="doc/timapi.Terminal.html#balanceAsync">balanceAsync</a></code>
+                            <br>
+                            <code class="completedMethod"><a class="completedMethod" href="doc/timapi.DefaultTerminalListener.html#balanceCompleted">balanceCompleted</a></code>
+                        </td>
+                        <td>Force the EFT Terminal to transmit all transactions to the
+                            <br>
+                            host system as well to do the daily closing.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code class="notifyMethod"><a class="notifyMethod" href="doc/timapi.Terminal.html#cancel">cancel</a></code>
+                        </td>
+                        <td>Aborts an open asynchronous Financial Transaction or Non-Financial Transaction request, except for a commit or rollback request, which cannot be cancelled.</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code class="syncMethod"><a class="syncMethod" href="doc/timapi.Terminal.html#changeSettingsAsync">changeSettings</a></code>
+                            <br class="syncMethod">
+                            <code class="asyncMethod"><a class="asyncMethod" href="doc/timapi.Terminal.html#changeSettingsAsync">changeSettingsAsync</a></code>
+                            <br>
+                            <code class="completedMethod"><a class="completedMethod" href="doc/timapi.DefaultTerminalListener.html#changeSettingsCompleted">changeSettingsCompleted
+                            </a></code>
+                        </td>
+                        <td>Change configuration parameters of the EFT Terminal.</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code class="syncMethod"><a class="syncMethod" href="doc/timapi.Terminal.html#commitAsync">commit</a></code>
+                            <br class="syncMethod">
+                            <code class="asyncMethod"><a class="asyncMethod" href="doc/timapi.Terminal.html#commitAsync">commitAsync</a></code>
+                            <br>
+                            <code class="completedMethod"><a class="completedMethod" href="doc/timapi.DefaultTerminalListener.html#commitCompleted">commitCompleted</a></code>
+                        </td>
+                        <td>Perform Commit-operation after a successful Transaction call.</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code class="syncMethod"><a class="syncMethod" href="doc/timapi.Terminal.html#connectAsync">connect</a></code>
+                            <br class="syncMethod">
+                            <code class="asyncMethod"><a class="asyncMethod" href="doc/timapi.Terminal.html#connectAsync">connectAsync</a></code>
+                            <br>
+                            <code class="completedMethod"><a class="completedMethod" href="doc/timapi.DefaultTerminalListener.html#connectCompleted">connectCompleted</a></code>
+                        </td>
+                        <td>Initiates a connection to the EFT Terminal.</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code class="syncMethod"><a class="syncMethod" href="doc/timapi.Terminal.html#counterRequestAsync">counterRequest</a></code>
+                            <br class="syncMethod">
+                            <code class="asyncMethod"><a class="asyncMethod" href="doc/timapi.Terminal.html#counterRequestAsync">counterRequestAsync</a></code>
+                            <br>
+                            <code class="completedMethod"><a class="completedMethod" href="doc/timapi.DefaultTerminalListener.html#counterRequestCompleted">counterRequestCompleted
+                            </a></code>
+                        </td>
+                        <td>Get counter information`s from the EFT Terminal.</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code class="syncMethod"><a class="syncMethod" href="doc/timapi.Terminal.html#dccRatesAsync">dccRates</a></code>
+                            <br class="syncMethod">
+                            <code class="asyncMethod"><a class="asyncMethod" href="doc/timapi.Terminal.html#dccRatesAsync">dccRatesAsync</a></code>
+                            <br>
+                            <code class="completedMethod"><a class="completedMethod" href="doc/timapi.DefaultTerminalListener.html#dccRatesCompleted">dccRatesCompleted</a></code>
+                        </td>
+                        <td>Request DCC rates from the EFT Terminal.</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code class="syncMethod"><a class="syncMethod" href="doc/timapi.Terminal.html#deactivateAsync">deactivate</a></code>
+                            <br class="syncMethod">
+                            <code class="asyncMethod"><a class="asyncMethod" href="doc/timapi.Terminal.html#deactivateAsync">deactivateAsync</a></code>
+                            <br>
+                            <code class="completedMethod"><a class="completedMethod" href="doc/timapi.DefaultTerminalListener.html#deactivateCompleted">deactivateCompleted</a></code>
+                        </td>
+                        <td>Close a user shift.</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code class="syncMethod"><a class="syncMethod" href="doc/timapi.Terminal.html#disconnectAsync">disconnect</a></code>
+                            <br class="syncMethod">
+                            <code class="asyncMethod"><a class="asyncMethod" href="doc/timapi.Terminal.html#disconnectAsync">disconnectAsync</a></code>
+                            <br>
+                            <code class="completedMethod"><a class="completedMethod" href="doc/index.html?com/six/timapi/TerminalListener.html#disconnected-com.six.timapi.Terminal-com.six.timapi.TimException-">disconnected</a></code>
+                        </td>
+                        <td>Interrupts the connection to the EFT Terminal.</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code class="syncMethod"><a class="syncMethod" href="doc/timapi.Terminal.html#hardwareInformationAsync">hardwareInformation</a></code>
+                            <br class="syncMethod">
+                            <code class="asyncMethod"><a class="asyncMethod" href="doc/timapi.Terminal.html#hardwareInformationAsync">hardwareInformationAsync
+                            </a></code>
+                            <br>
+                            <code class="completedMethod"><a class="completedMethod" href="doc/timapi.DefaultTerminalListener.html#hardwareInformationCompleted">
+                                hardwareInformationCompleted
+                            </a></code>
+                        </td>
+                        <td>Get hardware information from the EFT Terminal.</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code class="syncMethod"><a class="syncMethod" href="doc/timapi.Terminal.html#loginAsync">login</a></code>
+                            <br class="syncMethod">
+                            <code class="asyncMethod"><a class="asyncMethod" href="doc/timapi.Terminal.html#loginAsync">loginAsync</a></code>
+                            <br>
+                            <code class="completedMethod"><a class="completedMethod" href="doc/timapi.DefaultTerminalListener.html#loginCompleted">loginCompleted</a></code>
+                        </td>
+                        <td>Activate a communication session between the ECR and
+                            <br>
+                            the terminal.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code class="syncMethod"><a class="syncMethod" href="doc/timapi.Terminal.html#logoutAsync">logout</a></code>
+                            <br class="syncMethod">
+                            <code class="asyncMethod"><a class="asyncMethod" href="doc/timapi.Terminal.html#logoutAsync">logoutAsync</a></code>
+                            <br>
+                            <code class="completedMethod"><a class="completedMethod" href="doc/timapi.DefaultTerminalListener.html#logoutCompleted">logoutCompleted</a></code>
+                        </td>
+                        <td>Terminate an active communication session between the ECR<br>and the terminal.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code class="syncMethod"><a class="syncMethod" href="doc/timapi.Terminal.html#rebootAsync">reboot</a></code>
+                            <br class="syncMethod">
+                            <code class="asyncMethod"><a class="asyncMethod" href="doc/timapi.Terminal.html#rebootAsync">rebootAsync</a></code>
+                            <br>
+                            <code class="completedMethod"><a class="completedMethod" href="doc/timapi.DefaultTerminalListener.html#rebootCompleted">rebootCompleted</a></code>
+                        </td>
+                        <td>Force the EFT Terminal to reboot.</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code class="syncMethod"><a class="syncMethod" href="doc/timapi.Terminal.html#receiptRequestAsync">receiptRequest</a></code>
+                            <br class="syncMethod">
+                            <code class="asyncMethod"><a class="asyncMethod" href="doc/timapi.Terminal.html#receiptRequestAsync">receiptRequestAsync</a></code>
+                            <br>
+                            <code class="completedMethod"><a class="completedMethod" href="doc/timapi.DefaultTerminalListener.html#receiptRequestCompleted">receiptRequestCompleted
+                            </a></code>
+                        </td>
+                        <td>Receive the latest receipt or a list of silent receipts.</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code class="syncMethod"><a class="syncMethod" href="doc/timapi.Terminal.html#reconciliationAsync">reconciliation</a></code>
+                            <br class="syncMethod">
+                            <code class="asyncMethod"><a class="asyncMethod" href="doc/timapi.Terminal.html#reconciliationAsync">reconciliationAsync</a></code>
+                            <br>
+                            <code class="completedMethod"><a class="completedMethod" href="doc/timapi.DefaultTerminalListener.html#reconciliationCompleted">reconciliationCompleted
+                            </a></code>
+                        </td>
+                        <td>Force the EFT Terminal to transmit all financial transactions
+                            <br>
+                            to the host system.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code class="syncMethod"><a class="syncMethod" href="doc/timapi.Terminal.html#reconfigAsync">reconfig</a></code>
+                            <br class="syncMethod">
+                            <code class="asyncMethod"><a class="asyncMethod" href="doc/timapi.Terminal.html#reconfigAsync">reconfigAsync</a></code>
+                            <br>
+                            <code class="completedMethod"><a class="completedMethod" href="doc/timapi.DefaultTerminalListener.html#reconfigCompleted">reconfigCompleted</a></code>
+                        </td>
+                        <td>Force the EFT Terminal to get the configuration from the service center.</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code class="syncMethod"><a class="syncMethod" href="doc/timapi.Terminal.html#rollbackAsync">rollback</a></code>
+                            <br class="syncMethod">
+                            <code class="asyncMethod"><a class="asyncMethod" href="doc/timapi.Terminal.html#rollbackAsync">rollbackAsync</a></code>
+                            <br>
+                            <code class="completedMethod"><a class="completedMethod" href="doc/timapi.DefaultTerminalListener.html#rollbackCompleted">rollbackCompleted</a></code>
+                        </td>
+                        <td>Prevent a transaction from being committed to the transaction
+                            <br>
+                            log and generates a technical reversal of the authorization.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code class="syncMethod"><a class="syncMethod" href="doc/timapi.Terminal.html#softwareUpdateAsync">softwareUpdate</a></code>
+                            <br class="syncMethod">
+                            <code class="asyncMethod"><a class="asyncMethod" href="doc/timapi.Terminal.html#softwareUpdateAsync">softwareUpdateAsync</a></code>
+                            <br>
+                            <code class="completedMethod"><a class="completedMethod" href="doc/timapi.DefaultTerminalListener.html#softwareUpdateCompleted">softwareUpdateCompleted
+                            </a></code>
+                        </td>
+                        <td>Force the EFT Terminal to start a Software Update.</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code class="syncMethod"><a class="syncMethod" href="doc/timapi.Terminal.html#systemInformationAsync">systemInformation</a></code>
+                            <br class="syncMethod">
+                            <code class="asyncMethod"><a class="asyncMethod" href="doc/timapi.Terminal.html#systemInformationAsync">systemInformationAsync</a></code>
+                            <br>
+                            <code class="completedMethod"><a class="completedMethod" href="doc/timapi.DefaultTerminalListener.html#systemInformationCompleted">
+                                systemInformationCompleted
+                            </a></code>
+                        </td>
+                        <td>Request system information from the EFT Terminal.</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code class="syncMethod"><a class="syncMethod" href="doc/timapi.Terminal.html#transactionAsync">transaction</a></code>
+                            <br class="syncMethod">
+                            <code class="asyncMethod"><a class="asyncMethod" href="doc/timapi.Terminal.html#transactionAsync">transactionAsync</a></code>
+                            <br>
+                            <code class="completedMethod"><a class="completedMethod" href="doc/timapi.DefaultTerminalListener.html#transactionCompleted">transactionCompleted</a></code>
+                        </td>
+                        <td>Starts an EFT Terminal Transaction.</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div></div></section>  
+
+        <div class="row"><div class="col-md-6"></div></div><section id="addMethods"><h2><a name="addMethods"></a>Additional terminal listener-events</h2><div class="row"><div class="col-md-6"><table class="table">
+                <thead>
+                    <tr>
+                        <th>Listener-event</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <code class="completedMethod"><a class="completedMethod" href="doc/timapi.DefaultTerminalListener.html#requestCompleted">requestCompleted</a></code>
+                        </td>
+                        <td>Operation started by an asynchronous function has finished.
+                            <br>
+                            Applications can use both operation specific completion callback
+                            <br>
+                            in combination with this generic completion callback.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code class="completedMethod"><a class="completedMethod" href="doc/timapi.DefaultTerminalListener.html#terminalStatusChanged">terminalStatusChanged
+                            </a></code>
+                        </td>
+                        <td>The terminal status has changed. The new status can be
+                            <br>
+                            retrieved from the TerminalStatus property.
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div></div></section>
+
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+
+    <div class="row"><div class="col-md-6"></div></div></section>
+
+    </main>
+    </div>
+  </div>
+</body>
+
+</html>

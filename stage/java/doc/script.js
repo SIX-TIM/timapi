@@ -1,5 +1,4 @@
-function show(type)
-{
+function show(type) {
     count = 0;
     for (var key in methods) {
         var row = document.getElementById(key);
@@ -13,8 +12,7 @@ function show(type)
     updateTabs(type);
 }
 
-function updateTabs(type)
-{
+function updateTabs(type) {
     for (var value in tabs) {
         var sNode = document.getElementById(tabs[value][0]);
         var spanNode = sNode.firstChild;
@@ -29,8 +27,21 @@ function updateTabs(type)
     }
 }
 
-function injectGuidelink() {
+function setSdkVersion(sdk_version) {
+    if(sdk_version !== undefined) {
+        // Project name
+        var projectName = document.getElementById("projectname");
+        if(projectName != undefined) {
+            // SDK-num
+            var sdknum = document.createElement("span");
+            sdknum.innerHTML = sdk_version;
+            sdknum.id = "sdknum";
+            projectName.appendChild(sdknum);
+        }
+    }
+}
 
+function injectGuidelink() {
     var navLists = document.getElementsByClassName("navList");
 
     if((navLists.length > 0) && (navLists[0].title == "Navigation")) {
@@ -40,18 +51,53 @@ function injectGuidelink() {
         // link to implementation guide
         var guidelink = document.createElement("a");
         guidelink.href = href;
-        guidelink.innerHTML = "Back to Implementation Guide";
+        guidelink.innerHTML = "Implementation Guide";
         guidelink.id = "guidelink_noframes";
         guidelink.target = "_top"
         navLists[0].appendChild(guidelink);
     }
 }
 
-window.onload = function(evt) { 
 
-    if((this.timDoc != undefined) && (this.timDoc.injecter != undefined)) {
-        this.timDoc.injecter();    
+function timVersionInject() {
+    // If no sdk version set, try to load as json from asset folder 
+    if(typeof timsdk === "undefined") {
+        timsdk = {};
+        fetch("../../assets/sdk_version.json")
+            .then(response => response.json(), reason => reason)
+            .then(json => setSdkVersion(json.sdk_version), reason => reason);
     }
-    injectGuidelink();
+    else {
+        setSdkVersion(timsdk.sdk_version);
+    }
+
+    // TIM API version
+    var projectbrief = document.getElementById("projectbrief");
+    if (projectbrief != undefined) {
+        if((typeof timapi !== "undefined") && (timapi.api_lang != undefined)) {
+            projectbrief.innerHTML = "TIM API " + timapi.api_lang;
+        }
+
+        if((typeof timapi !== "undefined") && (timapi.api_version != undefined)) {
+            var timnum = document.createElement("span");
+            timnum.innerHTML = timapi.api_version;
+            timnum.id = "timnum";
+            projectbrief.appendChild(timnum);
+        }
+    }
+
+    // Implementation guide
+    var projectalign = document.getElementById("projectalign");
+        if(projectalign != undefined) {
+        var guidelink = document.createElement("a");
+        guidelink.href = "../guide.html";
+        guidelink.innerHTML = "Implementation Guide";
+        guidelink.id = "guidelink";
+        projectalign.appendChild(guidelink);
+    }
 }
 
+window.onload = function(evt) { 
+    timVersionInject();
+    injectGuidelink();
+}

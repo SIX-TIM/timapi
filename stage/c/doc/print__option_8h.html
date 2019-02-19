@@ -5,26 +5,29 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>TIM API C: src/print_option.h File Reference</title>
-<link href="../../assets/css/tabs.css" rel="stylesheet" type="text/css"/>
+<title>TIM SDK: src/print_option.h File Reference</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="../../assets/css/navtree.css" rel="stylesheet" type="text/css"/>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="resize.js"></script>
 <script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script><script type="text/javascript" src="../../assets/js/tim_inject.js"></script><script type="text/javascript" src="../../assets/js/sdk_version.js"></script><script type="text/javascript" src="../api_version.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="sdk_version.js"></script>
+<script type="text/javascript" src="api_version.js"></script>
+<script type="text/javascript" src="tim_inject.js"></script>
 <script type="text/javascript">
   $(document).ready(initResizable);
 </script>
-<link href="../../assets/css/search.css" rel="stylesheet" type="text/css"/>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/search.js"></script>
 <script type="text/javascript">
   $(document).ready(function() {
     if ($('.searchresults').length > 0) { searchBox.DOMSearchField().focus(); }
   });
 </script>
-<link rel="search" href="search_opensearch.php?v=opensearch.xml" type="application/opensearchdescription+xml" title="TIM API C"/>
-<link href="../../assets/css/doxygen.css" rel="stylesheet" type="text/css" />
+<link rel="search" href="search_opensearch.php?v=opensearch.xml" type="application/opensearchdescription+xml" title="TIM SDK"/>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -33,14 +36,14 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">TIM  SDK
+   <div id="projectname">TIM SDK
    </div>
    <div id="projectbrief">TIM API C</div>
   </td>
    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
           <div class="left">
-            <form id="FSearchBox" action="search.html" method="get"><img id="MSearchSelect" src="search/mag.png" alt=""/>
-              
+            <form id="FSearchBox" action="search.html" method="get">
+               
               <input type="text" id="MSearchField" name="query" value="Search" size="20" accesskey="S" 
                      onfocus="searchBox.OnSearchFieldFocus(true)" 
                      onblur="searchBox.OnSearchFieldFocus(false)"/>
@@ -98,7 +101,7 @@ Functions</h2></td></tr>
 <tr class="memdesc:a03fea862e9cb57f5221f75fdae9eda87"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specifies the print width of the receipt (default = 40).  <a href="#a03fea862e9cb57f5221f75fdae9eda87">More...</a><br /></td></tr>
 <tr class="separator:a03fea862e9cb57f5221f75fdae9eda87"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0f5239da0c49c7c7d5791f08bd60d8a8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="result__code_8h.html#ae860ee870a289833a24a586ba0c24975">ta_e_result_code_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="print__option_8h.html#a0f5239da0c49c7c7d5791f08bd60d8a8">ta_print_option_get_print_flags</a> (<a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a> print_option, int *print_flags)</td></tr>
-<tr class="memdesc:a0f5239da0c49c7c7d5791f08bd60d8a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Print flags as OR combined values from <em>ta_e_print_format_t</em>.  <a href="#a0f5239da0c49c7c7d5791f08bd60d8a8">More...</a><br /></td></tr>
+<tr class="memdesc:a0f5239da0c49c7c7d5791f08bd60d8a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Print flags as OR combined values from <em>ta_e_print_flag_t</em>.  <a href="#a0f5239da0c49c7c7d5791f08bd60d8a8">More...</a><br /></td></tr>
 <tr class="separator:a0f5239da0c49c7c7d5791f08bd60d8a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
@@ -153,7 +156,7 @@ Functions</h2></td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">recipient</td><td>Recipient. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">print_format</td><td>Print format. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">print_width</td><td>Print width in characters. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">print_flags</td><td>Print flags using OR combined values from <em>ta_e_print_format_t</em>.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">print_flags</td><td>Print flags using OR combined values from <em>ta_e_print_flag_t</em>.</td></tr>
   </table>
   </dd>
 </dl>
@@ -195,7 +198,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Print flags as OR combined values from <em>ta_e_print_format_t</em>. </p>
+<p>Print flags as OR combined values from <em>ta_e_print_flag_t</em>. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">print_option</td><td>Object instance of type <a class="el" href="print__option_8h.html">print_option</a>. </td></tr>
