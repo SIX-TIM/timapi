@@ -92,10 +92,10 @@ let settings = new timapi.TerminalSettings();
 
 // ----------------------------CONNECTION----------------------------
 
-//IP address of the terminal.
+// IP address of the terminal.
 settings.connectionIPString = "192.168.1.10";
 
-//Port to be used for connection.
+// Port to be used for connection.
 // Port list:
 // 80 - Standard port for ws:// connection
 // 8080 - If ports below 1024 are privileged and cannot be used.
@@ -261,12 +261,12 @@ terminal.addListener(myListener);
             <h2>Print data</h2>
             <p>
               The <code><a href="doc/timapi.TransactionResponse.html">TransactionResponse</a></code> has a member <code><a href="doc/timapi.PrintData.html">PrintData</a></code>
-              (accessed via <code><a href="doc/timapi.TransactionResponse.html#getPrintData--">getPrintData</a></code>) which contains merchant and cardholder receipts.
+              (accessed via <code><a href="doc/timapi.TransactionResponse.html#getPrintData--">printData</a></code>) which contains merchant and cardholder receipts.
             </p>
             <p>The <code><a href="doc/timapi.PrintData.html">PrintData</a></code> returned in the
             <code><a href="doc/timapi.TransactionResponse.html">TransactionResponse</a></code> contains a merchant and
             a cardholder receipt which can be retrieved in the <code><a href="doc/timapi.DefaultTerminalListener.html#transactionCompleted">transactionCompleted</a></code>
-            callback using the <code><a href="doc/timapi.TransactionResponse.html#getPrintData--">getPrintData</a></code> function. The <code><a href="doc/timapi.PrintData.html">PrintData</a></code> object
+            callback using the <code><a href="doc/timapi.TransactionResponse.html#getPrintData--">printData</a></code> function. The <code><a href="doc/timapi.PrintData.html">PrintData</a></code> object
             then contains a list of <code><a href="doc/timapi.Receipt.html">Receipt</a></code> objects which can be retrieved individually.</p>
             <hr>
             <h2>Card data</h2>
@@ -291,7 +291,7 @@ transactionCompleted(event, data){
 /*--- Check transaction outcome ---------------------------------------*/
 
   // Check if transaction has been successful
-  if (event.exception == undefined)
+  if (event.exception === undefined)
   {
     console.log("Transaction was performed successfully!");
 
@@ -300,11 +300,11 @@ transactionCompleted(event, data){
     // Further information can be retrieved as the transaction has be successful
 
     // Get print data which contains a list of receipts
-    if (data != undefined &amp;&amp; data.printData != undefined){
+    if (data !== undefined &amp;&amp; data.printData !== undefined){
       var myPrintData = data.printData;
 
       // Go through all available receipts and print them accordingly
-      if(myPrintData.receipts != undefined){
+      if(myPrintData.receipts !== undefined){
       var myReceipts = myPrintData.receipts;
 
       // If you want to differ bewteen merchant and cardholder receipt
@@ -323,7 +323,7 @@ transactionCompleted(event, data){
 /*--- Card data -------------------------------------------------------*/
 
     // Get CardData which contains all available card information
-    if (data.cardData != undefined){
+    if (data.cardData !== undefined){
       var myCardData = data.cardData;
 
       // Further card information can be retrieved out of the CardData object
@@ -334,7 +334,7 @@ transactionCompleted(event, data){
 /*--- Further transaction information ---------------------------------*/
 
     // Further transaction information is available in the TransactionInformation object
-    if (data.transactionInformation != undefined){
+    if (data.transactionInformation !== undefined){
       var myTrxInfo = data.transactionInformation;
 
       // This object contains e.g. acquirer id or transaction reference and more information..

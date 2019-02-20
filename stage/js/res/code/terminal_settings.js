@@ -3,7 +3,7 @@ let settings = new timapi.TerminalSettings();
 settings.connectionIPString = "192.168.1.10";
 settings.connectionIPPort = 80;
 
-// add wanted guides (with bitwise or)
+// Add wanted guides (with bitwise or)
 settings.guides.add(timapi.constants.Guides.hospitality);
 
 // Create terminal

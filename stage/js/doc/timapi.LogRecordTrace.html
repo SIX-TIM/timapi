@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>TIM API JavaScript Documentation: Class: CardReaderStatus</title>
+    <title>TIM API JavaScript Documentation: Class: LogRecordTrace</title>
 
     <!--[if lt IE 9]>
       <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -32,7 +32,7 @@
 
 <div id="main">
 
-    <h1 class="page-title">Class: CardReaderStatus</h1>
+    <h1 class="page-title">Class: LogRecordTrace</h1>
 
     
 
@@ -44,7 +44,10 @@
 <header>
     
         <h2><span class="attribs"><span class="type-signature"></span></span>
-            <span class="ancestors"><a href="timapi.html">timapi</a><a href="timapi.constants.html">.constants</a>.</span>CardReaderStatus<span class="signature">()</span><span class="type-signature"></span></h2>
+            <span class="ancestors"><a href="timapi.html">timapi</a>.</span>LogRecordTrace</h2>
+        
+            <div class="class-description">LogRecord Trace.
+Represents a single stack-trace entry for logs</div>
         
     
 </header>
@@ -148,73 +151,28 @@
             
                 <tr>
                     <td>
-                        <li><a href="timapi.constants.CardReaderStatus.html#.cardEjected">cardEjected</a></li>
+                        <li><a href="timapi.LogRecordTrace.html#file">file</a></li>
                     </td>
                     <td>
-                        <span class="type-signature"></span>
-                    </td>
-                </tr>
-            
-                <tr>
-                    <td>
-                        <li><a href="timapi.constants.CardReaderStatus.html#.cardInserted">cardInserted</a></li>
-                    </td>
-                    <td>
-                        <span class="type-signature"></span>
+                        <span class="type-signature"> :String</span>
                     </td>
                 </tr>
             
                 <tr>
                     <td>
-                        <li><a href="timapi.constants.CardReaderStatus.html#.cardManuallyEntered">cardManuallyEntered</a></li>
+                        <li><a href="timapi.LogRecordTrace.html#line">line</a></li>
                     </td>
                     <td>
-                        <span class="type-signature"></span>
-                    </td>
-                </tr>
-            
-                <tr>
-                    <td>
-                        <li><a href="timapi.constants.CardReaderStatus.html#.cardNotRemoved">cardNotRemoved</a></li>
-                    </td>
-                    <td>
-                        <span class="type-signature"></span>
+                        <span class="type-signature"> :Number</span>
                     </td>
                 </tr>
             
                 <tr>
                     <td>
-                        <li><a href="timapi.constants.CardReaderStatus.html#.cardPresented">cardPresented</a></li>
+                        <li><a href="timapi.LogRecordTrace.html#method">method</a></li>
                     </td>
                     <td>
-                        <span class="type-signature"></span>
-                    </td>
-                </tr>
-            
-                <tr>
-                    <td>
-                        <li><a href="timapi.constants.CardReaderStatus.html#.cardReaderClosed">cardReaderClosed</a></li>
-                    </td>
-                    <td>
-                        <span class="type-signature"></span>
-                    </td>
-                </tr>
-            
-                <tr>
-                    <td>
-                        <li><a href="timapi.constants.CardReaderStatus.html#.cardReaderEmpty">cardReaderEmpty</a></li>
-                    </td>
-                    <td>
-                        <span class="type-signature"></span>
-                    </td>
-                </tr>
-            
-                <tr>
-                    <td>
-                        <li><a href="timapi.constants.CardReaderStatus.html#.cardSwiped">cardSwiped</a></li>
-                    </td>
-                    <td>
-                        <span class="type-signature"></span>
+                        <span class="type-signature"> :String</span>
                     </td>
                 </tr>
             
@@ -230,22 +188,7 @@
     
     
 
-    
 
-    
-    <h4 class="name" id="CardReaderStatus"><span class="type-signature"></span>new CardReaderStatus<span class="signature">()</span><span class="type-signature"></span></h4>
-    
-
-    
-
-
-
-<div class="description">
-    <p><p>The CardReaderStatus tag is used to transport information about the current card reader
-activity.</p>
-<p>The following values are valid:</p></p>
-<p>Specification: retail.</p>
-</div>
 
 
 
@@ -319,20 +262,29 @@ activity.</p>
         
             <div class="member">
                 
-<h4 class="name" id=".cardEjected">
-    <a href="timapi.constants.CardReaderStatus.html#.cardEjected">cardEjected</a> <span class="type-signature">(static, constant) </span><span class="type-signature"></span>
+<h4 class="name" id="file">
+    <a href="timapi.LogRecordTrace.html#file">file</a> <span class="type-signature"></span><span class="type-signature"> :String</span>
 </h4>
 
 
 
 
 <div class="description">
-    <p>Card has been ejected by the application.</p>
-<p>Specification: retail.</p>
+    Filename
 </div>
 
 
 <!-- not needed, since it's in the signature 
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type">String</span>
+
+
+        </li>
+    </ul>
 
 -->
 
@@ -383,20 +335,29 @@ activity.</p>
         
             <div class="member">
                 
-<h4 class="name" id=".cardInserted">
-    <a href="timapi.constants.CardReaderStatus.html#.cardInserted">cardInserted</a> <span class="type-signature">(static, constant) </span><span class="type-signature"></span>
+<h4 class="name" id="line">
+    <a href="timapi.LogRecordTrace.html#line">line</a> <span class="type-signature"></span><span class="type-signature"> :Number</span>
 </h4>
 
 
 
 
 <div class="description">
-    <p>Card in the chip reader.</p>
-<p>Specification: retail.</p>
+    Codeline
 </div>
 
 
 <!-- not needed, since it's in the signature 
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type">Number</span>
+
+
+        </li>
+    </ul>
 
 -->
 
@@ -447,342 +408,29 @@ activity.</p>
         
             <div class="member">
                 
-<h4 class="name" id=".cardManuallyEntered">
-    <a href="timapi.constants.CardReaderStatus.html#.cardManuallyEntered">cardManuallyEntered</a> <span class="type-signature">(static, constant) </span><span class="type-signature"></span>
+<h4 class="name" id="method">
+    <a href="timapi.LogRecordTrace.html#method">method</a> <span class="type-signature"></span><span class="type-signature"> :String</span>
 </h4>
 
 
 
 
 <div class="description">
-    <p>Card information has been manually entered. Valid for Manual-Pan-Key.</p>
-<p>Specification: retail.</p>
+    Method
 </div>
 
 
 <!-- not needed, since it's in the signature 
 
--->
-
-
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-            </div>
-        
-            <div class="member">
-                
-<h4 class="name" id=".cardNotRemoved">
-    <a href="timapi.constants.CardReaderStatus.html#.cardNotRemoved">cardNotRemoved</a> <span class="type-signature">(static, constant) </span><span class="type-signature"></span>
-</h4>
-
-
-
-
-<div class="description">
-    <p>Card has not been removed by the cardholder despite being prompted to do so (timeout: 15s).
-Valid for ICC.</p>
-<p>Specification: retail.</p>
-</div>
-
-
-<!-- not needed, since it's in the signature 
-
--->
-
-
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-            </div>
-        
-            <div class="member">
-                
-<h4 class="name" id=".cardPresented">
-    <a href="timapi.constants.CardReaderStatus.html#.cardPresented">cardPresented</a> <span class="type-signature">(static, constant) </span><span class="type-signature"></span>
-</h4>
-
-
-
-
-<div class="description">
-    <p>Contactless card has been presented. Only for ICC contactless transactions. Valid for
-Contactless.</p>
-<p>Specification: retail.</p>
-</div>
-
-
-<!-- not needed, since it's in the signature 
-
--->
-
-
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-            </div>
-        
-            <div class="member">
-                
-<h4 class="name" id=".cardReaderClosed">
-    <a href="timapi.constants.CardReaderStatus.html#.cardReaderClosed">cardReaderClosed</a> <span class="type-signature">(static, constant) </span><span class="type-signature"></span>
-</h4>
-
-
-
-
-<div class="description">
-    <p>The shutter of the card reader is closed. No cards can be inserted.</p>
-<p>Specification: retail.</p>
-</div>
-
-
-<!-- not needed, since it's in the signature 
-
--->
-
-
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-            </div>
-        
-            <div class="member">
-                
-<h4 class="name" id=".cardReaderEmpty">
-    <a href="timapi.constants.CardReaderStatus.html#.cardReaderEmpty">cardReaderEmpty</a> <span class="type-signature">(static, constant) </span><span class="type-signature"></span>
-</h4>
-
-
-
-
-<div class="description">
-    <p>The card reader is empty and accepts cards.</p>
-<p>Specification: retail.</p>
-</div>
-
-
-<!-- not needed, since it's in the signature 
-
--->
-
-
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-            </div>
-        
-            <div class="member">
-                
-<h4 class="name" id=".cardSwiped">
-    <a href="timapi.constants.CardReaderStatus.html#.cardSwiped">cardSwiped</a> <span class="type-signature">(static, constant) </span><span class="type-signature"></span>
-</h4>
-
-
-
-
-<div class="description">
-    <p>Card has been swiped. Valid for Mag-Stripe.</p>
-<p>Specification: retail.</p>
-</div>
-
-
-<!-- not needed, since it's in the signature 
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type">String</span>
+
+
+        </li>
+    </ul>
 
 -->
 

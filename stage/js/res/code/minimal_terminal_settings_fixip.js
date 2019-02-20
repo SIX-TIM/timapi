@@ -3,10 +3,10 @@ let settings = new timapi.TerminalSettings();
 
 // ----------------------------CONNECTION----------------------------
 
-//IP address of the terminal.
+// IP address of the terminal.
 settings.connectionIPString = "192.168.1.10";
 
-//Port to be used for connection.
+// Port to be used for connection.
 // Port list:
 // 80 - Standard port for ws:// connection
 // 8080 - If ports below 1024 are privileged and cannot be used.
