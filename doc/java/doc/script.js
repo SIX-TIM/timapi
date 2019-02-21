@@ -1,5 +1,4 @@
-function show(type)
-{
+function show(type) {
     count = 0;
     for (var key in methods) {
         var row = document.getElementById(key);
@@ -13,8 +12,7 @@ function show(type)
     updateTabs(type);
 }
 
-function updateTabs(type)
-{
+function updateTabs(type) {
     for (var value in tabs) {
         var sNode = document.getElementById(tabs[value][0]);
         var spanNode = sNode.firstChild;
@@ -29,8 +27,21 @@ function updateTabs(type)
     }
 }
 
-function injectGuidelink() {
+function setSdkVersion(sdk_version) {
+    if(sdk_version !== undefined) {
+        // Project name
+        var projectName = document.getElementById("projectname");
+        if(projectName != undefined) {
+            // SDK-num
+            var sdknum = document.createElement("span");
+            sdknum.innerHTML = sdk_version;
+            sdknum.id = "sdknum";
+            projectName.appendChild(sdknum);
+        }
+    }
+}
 
+function injectGuidelink() {
     var navLists = document.getElementsByClassName("navList");
 
     if((navLists.length > 0) && (navLists[0].title == "Navigation")) {
@@ -49,16 +60,15 @@ function injectGuidelink() {
 
 
 function timVersionInject() {
-    // Project name
-    var projectName = document.getElementById("projectname");
-    if(projectName != undefined) {
-        if((typeof timsdk !== "undefined") && (timsdk.sdk_version != undefined)) {
-            // SDK-num
-            var sdknum = document.createElement("span");
-            sdknum.innerHTML = timsdk.sdk_version;
-            sdknum.id = "sdknum";
-            projectName.appendChild(sdknum);
-        }
+    // If no sdk version set, try to load as json from asset folder 
+    if(typeof timsdk === "undefined") {
+        timsdk = {};
+        fetch("../../assets/sdk_version.json")
+            .then(response => response.json(), reason => reason)
+            .then(json => setSdkVersion(json.sdk_version), reason => reason);
+    }
+    else {
+        setSdkVersion(timsdk.sdk_version);
     }
 
     // TIM API version
@@ -87,11 +97,7 @@ function timVersionInject() {
     }
 }
 
-
-
 window.onload = function(evt) { 
-
     timVersionInject();
     injectGuidelink();
 }
-
