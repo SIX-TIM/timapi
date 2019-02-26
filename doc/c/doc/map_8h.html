@@ -13,8 +13,8 @@
 <script type="text/javascript" src="resize.js"></script>
 <script type="text/javascript" src="navtreedata.js"></script>
 <script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript" src="sdk_version.js"></script>
 <script type="text/javascript" src="api_version.js"></script>
+<script type="text/javascript" src="sdk_version.js"></script>
 <script type="text/javascript" src="tim_inject.js"></script>
 <script type="text/javascript">
   $(document).ready(initResizable);
@@ -112,9 +112,6 @@ Functions</h2></td></tr>
 <tr class="memitem:ad89b866e46994f6aade0dcf167e5e252"><td class="memItemLeft" align="right" valign="top"><a class="el" href="result__code_8h.html#ae860ee870a289833a24a586ba0c24975">ta_e_result_code_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="map_8h.html#ad89b866e46994f6aade0dcf167e5e252">ta_map_get_default</a> (<a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a> map, <a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a> key, <a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a> *value, <a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a> default_value)</td></tr>
 <tr class="memdesc:ad89b866e46994f6aade0dcf167e5e252"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get value for key in map or default value if absent.  <a href="#ad89b866e46994f6aade0dcf167e5e252">More...</a><br /></td></tr>
 <tr class="separator:ad89b866e46994f6aade0dcf167e5e252"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afa0fba93461de65371b53498e509924a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="result__code_8h.html#ae860ee870a289833a24a586ba0c24975">ta_e_result_code_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="map_8h.html#afa0fba93461de65371b53498e509924a">ta_map_get_at</a> (<a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a> map, size_t index, <a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a> *key, <a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a> *value)</td></tr>
-<tr class="memdesc:afa0fba93461de65371b53498e509924a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get key and value by index from map.  <a href="#afa0fba93461de65371b53498e509924a">More...</a><br /></td></tr>
-<tr class="separator:afa0fba93461de65371b53498e509924a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="a308696c468946f2bb527eb24acf16c4b"></a>
@@ -201,70 +198,6 @@ Functions</h2></td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>map</em> is <em>ta_invalid_object</em>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>map</em> is not of type <a class="el" href="map_8h.html">map</a>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>key</em> is not present in the map. </td></tr>
-    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>value</em> is <em>null-pointer</em>. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="afa0fba93461de65371b53498e509924a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afa0fba93461de65371b53498e509924a">&#9670;&nbsp;</a></span>ta_map_get_at()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="result__code_8h.html#ae860ee870a289833a24a586ba0c24975">ta_e_result_code_t</a> ta_map_get_at </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a>&#160;</td>
-          <td class="paramname"><em>map</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>index</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a> *&#160;</td>
-          <td class="paramname"><em>key</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a> *&#160;</td>
-          <td class="paramname"><em>value</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Get key and value by index from map. </p>
-<dl class="section warning"><dt>Warning</dt><dd>This is for iteration purpose only. The order of entries in the map can change with any call to ta_map_set and ta_map_remove.</dd></dl>
-<p>Key and value are not retained. User has to call ta_object_retain to hold the returned objects outside of the map.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">map</td><td>Object instance of type <a class="el" href="map_8h.html">map</a>. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">index</td><td>Index of entry to retrieve. </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">key</td><td>Pointer to variable to write key object instance to. Written object instance is not retained. </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">value</td><td>Pointer to variable to write value object instance to. Written object instance can be <em>ta_invalid_object</em>. Written object instance is not retained.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">ta_c_rc_ok</td><td>Object instance written to to <em>value</em>. </td></tr>
-    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>map</em> is <em>ta_invalid_object</em>. </td></tr>
-    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>map</em> is not of type <a class="el" href="map_8h.html">map</a>. </td></tr>
-    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>index</em> is less than 0 or greater than or equal to ta_map_count. </td></tr>
-    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>key</em> is <em>null-pointer</em>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>value</em> is <em>null-pointer</em>. </td></tr>
   </table>
   </dd>

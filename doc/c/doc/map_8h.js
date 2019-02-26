@@ -2,7 +2,6 @@ var map_8h =
 [
     [ "ta_map_create", "map_8h.html#a308696c468946f2bb527eb24acf16c4b", null ],
     [ "ta_map_get", "map_8h.html#a0bf0aa128d608a79e5ad59f37a95529f", null ],
-    [ "ta_map_get_at", "map_8h.html#afa0fba93461de65371b53498e509924a", null ],
     [ "ta_map_get_count", "map_8h.html#a32f0a090b118a2b3dc83d0b4d532562a", null ],
     [ "ta_map_get_default", "map_8h.html#ad89b866e46994f6aade0dcf167e5e252", null ],
     [ "ta_map_has", "map_8h.html#adbbed0c9ed357d0fd3c398fcfaf061d8", null ],

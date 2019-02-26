@@ -12,7 +12,6 @@ var brand__bar__brand_8h =
       [ "ta_c_bbb_cup", "brand__bar__brand_8h.html#a065fb75dccd6ee5e82f29d4cce775549a505de3cf50e97bbe7350f41fb4820596", null ],
       [ "ta_c_bbb_diners", "brand__bar__brand_8h.html#a065fb75dccd6ee5e82f29d4cce775549aca8181872a17daf109d2e2515c44d8ba", null ],
       [ "ta_c_bbb_diner_club", "brand__bar__brand_8h.html#a065fb75dccd6ee5e82f29d4cce775549ae698a7d01eedffa035330750add102ce", null ],
-      [ "ta_c_bbb_diplomatkarte", "brand__bar__brand_8h.html#a065fb75dccd6ee5e82f29d4cce775549a42535287c9f351592ad08c80e5ddb53c", null ],
       [ "ta_c_bbb_jcb", "brand__bar__brand_8h.html#a065fb75dccd6ee5e82f29d4cce775549a4d5efe67b398bb87979b54c99006cb65", null ],
       [ "ta_c_bbb_lebara", "brand__bar__brand_8h.html#a065fb75dccd6ee5e82f29d4cce775549a589eaec75382bab9f65fef626ddd7f63", null ],
       [ "ta_c_bbb_lyca_mobile", "brand__bar__brand_8h.html#a065fb75dccd6ee5e82f29d4cce775549a0cc4a8b55f11306ef4a6e5181382be48", null ],

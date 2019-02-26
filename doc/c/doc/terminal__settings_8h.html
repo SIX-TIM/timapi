@@ -13,8 +13,8 @@
 <script type="text/javascript" src="resize.js"></script>
 <script type="text/javascript" src="navtreedata.js"></script>
 <script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript" src="sdk_version.js"></script>
 <script type="text/javascript" src="api_version.js"></script>
+<script type="text/javascript" src="sdk_version.js"></script>
 <script type="text/javascript" src="tim_inject.js"></script>
 <script type="text/javascript">
   $(document).ready(initResizable);
@@ -247,12 +247,6 @@ Functions</h2></td></tr>
 <tr class="memitem:a645ca4124d6f51951d016c88ab2262a3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="result__code_8h.html#ae860ee870a289833a24a586ba0c24975">ta_e_result_code_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="terminal__settings_8h.html#a645ca4124d6f51951d016c88ab2262a3">ta_terminal_settings_set_fast_ntf_mode</a> (<a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a> settings, <a class="el" href="boolean_8h.html#a5d3636b1f1f5de7550c138d0f81825bf">ta_e_boolean_t</a> fast_ntf_mode)</td></tr>
 <tr class="memdesc:a645ca4124d6f51951d016c88ab2262a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set enable fast notification mode.  <a href="#a645ca4124d6f51951d016c88ab2262a3">More...</a><br /></td></tr>
 <tr class="separator:a645ca4124d6f51951d016c88ab2262a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad8d4a217cce6dc2a9023112b11cf953d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="result__code_8h.html#ae860ee870a289833a24a586ba0c24975">ta_e_result_code_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="terminal__settings_8h.html#ad8d4a217cce6dc2a9023112b11cf953d">ta_terminal_settings_late_checkin_timeout</a> (<a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a> settings, int *timeout)</td></tr>
-<tr class="memdesc:ad8d4a217cce6dc2a9023112b11cf953d"><td class="mdescLeft">&#160;</td><td class="mdescRight">This timeout indicates how long a terminal shall wait in seconds for an AmtAdjustment notification from the ECR in case of a late-checkin.  <a href="#ad8d4a217cce6dc2a9023112b11cf953d">More...</a><br /></td></tr>
-<tr class="separator:ad8d4a217cce6dc2a9023112b11cf953d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa40238746ecc3e1b11a2e33d9b9d7215"><td class="memItemLeft" align="right" valign="top"><a class="el" href="result__code_8h.html#ae860ee870a289833a24a586ba0c24975">ta_e_result_code_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="terminal__settings_8h.html#aa40238746ecc3e1b11a2e33d9b9d7215">ta_terminal_settings_set_late_checkin_timeout</a> (<a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a> settings, int timeout)</td></tr>
-<tr class="memdesc:aa40238746ecc3e1b11a2e33d9b9d7215"><td class="mdescLeft">&#160;</td><td class="mdescRight">This timeout indicates how long a terminal shall wait in seconds for an AmtAdjustment notification from the ECR in case of a late-checkin.  <a href="#aa40238746ecc3e1b11a2e33d9b9d7215">More...</a><br /></td></tr>
-<tr class="separator:aa40238746ecc3e1b11a2e33d9b9d7215"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a20df440bbb8fcf0f6ad859a952295b5d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="result__code_8h.html#ae860ee870a289833a24a586ba0c24975">ta_e_result_code_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="terminal__settings_8h.html#a20df440bbb8fcf0f6ad859a952295b5d">ta_terminal_settings_get_request_repetition</a> (<a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a> settings, int *request_repetition)</td></tr>
 <tr class="memdesc:a20df440bbb8fcf0f6ad859a952295b5d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of send request repetitions or 0 to disable.  <a href="#a20df440bbb8fcf0f6ad859a952295b5d">More...</a><br /></td></tr>
 <tr class="separator:a20df440bbb8fcf0f6ad859a952295b5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1807,53 +1801,6 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ad8d4a217cce6dc2a9023112b11cf953d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad8d4a217cce6dc2a9023112b11cf953d">&#9670;&nbsp;</a></span>ta_terminal_settings_late_checkin_timeout()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="result__code_8h.html#ae860ee870a289833a24a586ba0c24975">ta_e_result_code_t</a> ta_terminal_settings_late_checkin_timeout </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a>&#160;</td>
-          <td class="paramname"><em>settings</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int *&#160;</td>
-          <td class="paramname"><em>timeout</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>This timeout indicates how long a terminal shall wait in seconds for an AmtAdjustment notification from the ECR in case of a late-checkin. </p>
-<p>This parameter is only used if value added services guide is enabled.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">settings</td><td>Object instance of type <a class="el" href="terminal__settings_8h.html">terminal_settings</a>. </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">timeout</td><td>Pointer to variable to write value to.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">ta_c_rc_ok</td><td>Object instance written to <em>is_fast_ntf_mode</em>. </td></tr>
-    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>settings</em> is <em>ta_invalid_object</em>. </td></tr>
-    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>settings</em> is not of type <a class="el" href="terminal__settings_8h.html">terminal_settings</a>. </td></tr>
-    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>is_fast_ntf_mode</em> is <em>null-pointer</em>. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
 <a id="a4dd422f9b2f5b4ac88acbd4a5b8cbb20"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4dd422f9b2f5b4ac88acbd4a5b8cbb20">&#9670;&nbsp;</a></span>ta_terminal_settings_set_allow_closed_card_insert()</h2>
 
@@ -2627,52 +2574,6 @@ Functions</h2></td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>settings</em> is not of type <a class="el" href="terminal__settings_8h.html">terminal_settings</a>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>integrator_id</em> is <em>ta_invalid_object</em>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>integrator_id</em> is not of type <a class="el" href="string_8h.html">string</a>. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="aa40238746ecc3e1b11a2e33d9b9d7215"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa40238746ecc3e1b11a2e33d9b9d7215">&#9670;&nbsp;</a></span>ta_terminal_settings_set_late_checkin_timeout()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="result__code_8h.html#ae860ee870a289833a24a586ba0c24975">ta_e_result_code_t</a> ta_terminal_settings_set_late_checkin_timeout </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a>&#160;</td>
-          <td class="paramname"><em>settings</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>timeout</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>This timeout indicates how long a terminal shall wait in seconds for an AmtAdjustment notification from the ECR in case of a late-checkin. </p>
-<p>This parameter is only used if value added services guide is enabled.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">settings</td><td>Object instance of type <a class="el" href="terminal__settings_8h.html">terminal_settings</a>. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">timeout</td><td>Value to set.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">ta_c_rc_ok</td><td>Value assigned to <em>settings</em>. </td></tr>
-    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>settings</em> is <em>ta_invalid_object</em>. </td></tr>
-    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>settings</em> is not of type <a class="el" href="terminal__settings_8h.html">terminal_settings</a>. </td></tr>
   </table>
   </dd>
 </dl>
