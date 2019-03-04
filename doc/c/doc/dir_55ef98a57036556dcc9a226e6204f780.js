@@ -1,5 +1,6 @@
 var dir_55ef98a57036556dcc9a226e6204f780 =
 [
+    [ "enum_string_maps", "dir_2b8e89bb36cb38816e6fe595fb71ec42.html", "dir_2b8e89bb36cb38816e6fe595fb71ec42" ],
     [ "adjustment_result.h", "adjustment__result_8h.html", "adjustment__result_8h" ],
     [ "admin_functions.h", "admin__functions_8h.html", "admin__functions_8h" ],
     [ "brand_bar_brand.h", "brand__bar__brand_8h.html", "brand__bar__brand_8h" ],
@@ -15,6 +16,7 @@ var dir_55ef98a57036556dcc9a226e6204f780 =
     [ "cvm.h", "cvm_8h.html", "cvm_8h" ],
     [ "dialog_functions.h", "dialog__functions_8h.html", "dialog__functions_8h" ],
     [ "ecr_info_type.h", "ecr__info__type_8h.html", "ecr__info__type_8h" ],
+    [ "feature_support.h", "feature__support_8h.html", "feature__support_8h" ],
     [ "financial_transactions.h", "financial__transactions_8h.html", "financial__transactions_8h" ],
     [ "guides.h", "guides_8h.html", "guides_8h" ],
     [ "hardware_type.h", "hardware__type_8h.html", "hardware__type_8h" ],
