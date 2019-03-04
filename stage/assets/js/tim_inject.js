@@ -72,4 +72,4 @@ if(window.onload == undefined) {
     window.onload = timVersionInject;
 }
 
-this.timDoc.injecter = timVersionInject;
+timDoc.injecter = timVersionInject;
