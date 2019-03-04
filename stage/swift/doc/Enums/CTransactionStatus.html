@@ -5,7 +5,9 @@
     <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
     <meta charset='utf-8'>
-    <script src="../js/jquery.min.js" defer></script>
+    <script src="../sdk_version.js"></script>
+<script src="../api_version.js"></script>
+<script src="../js/jquery.min.js" defer></script>
     <script src="../js/jazzy.js" defer></script>
     
   </head>
@@ -14,19 +16,19 @@
     <a title="CTransactionStatus Enumeration Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../index.html"> Docs</a> (98% documented)</p>
+        <p><a href="../index.html"> Docs</a> (97% documented)</p>
       </div>
     </header>
     <div class="content-wrapper">
       <p id="breadcrumbs">
-        <a href="../../guide.html"> Implementation Guide</a>         <img id="carat" src="../img/carat.png" />         <a href="../index.html"> Reference</a>
+        <a href="../index.html"> Reference</a>
         <img id="carat" src="../img/carat.png" />
         CTransactionStatus Enumeration Reference
       </p>
     </div>
     <div class="content-wrapper">
       <nav class="sidebar">
-        <ul class="nav-groups">
+        <ul class="nav-groups"><li class="nav-group-name" id="titlearea"><td id="projectalign"><div id="projectname">TIM SDK</div><div id="projectbrief">TIM API Swift</div></td><div id="guidelink"><a href="../guide.html">Implementation Guide</a></div></li>
           <li class="nav-group-name">
             <a href="../Classes.html">Classes</a>
             <ul class="nav-group-tasks">
@@ -166,7 +168,19 @@
                 <a href="../Classes/Logger/Level.html">– Level</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Classes/Logger.html#/s:6TimApi6LoggerC9LogRecordV">– LogRecord</a>
+                <a href="../Classes/Logger/LogRecord.html">– LogRecord</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/LoyaltyCoupon.html">LoyaltyCoupon</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/LoyaltyDiscount.html">LoyaltyDiscount</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/LoyaltyInformation.html">LoyaltyInformation</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/LoyaltyItem.html">LoyaltyItem</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Classes/NativeError.html">NativeError</a>
@@ -267,6 +281,9 @@
               <li class="nav-group-task">
                 <a href="../Classes/UltraCompactReceiptFormatter.html">UltraCompactReceiptFormatter</a>
               </li>
+              <li class="nav-group-task">
+                <a href="../Classes/VasCheckoutInformation.html">VasCheckoutInformation</a>
+              </li>
             </ul>
           </li>
           <li class="nav-group-name">
@@ -331,6 +348,9 @@
               </li>
               <li class="nav-group-task">
                 <a href="../Enums/CKernelType.html">CKernelType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CLoyaltyFunctionType.html">CLoyaltyFunctionType</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Enums/CManagementStatus.html">CManagementStatus</a>
@@ -431,7 +451,7 @@
             <a href="../Functions.html">Functions</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a href="../Functions.html#/s:6TimApi6unwrapxxSgKlF">unwrap(_:)</a>
+                <a href="../Functions.html#/s:6TimApi6unwrapyxxSgKlF">unwrap(_:)</a>
               </li>
             </ul>
           </li>
@@ -478,7 +498,12 @@
 
                 </div>
               </div>
-            <p>Information of the current transaction state.</p>
+            <p><p>Information of the current transaction state.</p>
+
+<p>This field is returned in the TerminalStatus notification to give the current transaction
+state from the terminal.</p>
+
+<p>The following values are valid:</p></p>
 
 <p>Specification: retail.</p>
 
@@ -489,9 +514,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6TimApi18CTransactionStatusO4busyA2CmF"></a>
+                    <a name="/s:6TimApi18CTransactionStatusO4busyyA2CmF"></a>
                     <a name="//apple_ref/swift/Element/busy" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6TimApi18CTransactionStatusO4busyA2CmF">busy</a>
+                    <a class="token" href="#/s:6TimApi18CTransactionStatusO4busyyA2CmF">busy</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -519,9 +544,9 @@ timed Balance.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6TimApi18CTransactionStatusO4idleA2CmF"></a>
+                    <a name="/s:6TimApi18CTransactionStatusO4idleyA2CmF"></a>
                     <a name="//apple_ref/swift/Element/idle" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6TimApi18CTransactionStatusO4idleA2CmF">idle</a>
+                    <a class="token" href="#/s:6TimApi18CTransactionStatusO4idleyA2CmF">idle</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -548,9 +573,9 @@ timed Balance.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6TimApi18CTransactionStatusO11waitForCardA2CmF"></a>
+                    <a name="/s:6TimApi18CTransactionStatusO11waitForCardyA2CmF"></a>
                     <a name="//apple_ref/swift/Element/waitForCard" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6TimApi18CTransactionStatusO11waitForCardA2CmF">waitForCard</a>
+                    <a class="token" href="#/s:6TimApi18CTransactionStatusO11waitForCardyA2CmF">waitForCard</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -577,9 +602,9 @@ timed Balance.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6TimApi18CTransactionStatusO11readingCardA2CmF"></a>
+                    <a name="/s:6TimApi18CTransactionStatusO11readingCardyA2CmF"></a>
                     <a name="//apple_ref/swift/Element/readingCard" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6TimApi18CTransactionStatusO11readingCardA2CmF">readingCard</a>
+                    <a class="token" href="#/s:6TimApi18CTransactionStatusO11readingCardyA2CmF">readingCard</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -606,9 +631,9 @@ timed Balance.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6TimApi18CTransactionStatusO20applicationSelectionA2CmF"></a>
+                    <a name="/s:6TimApi18CTransactionStatusO20applicationSelectionyA2CmF"></a>
                     <a name="//apple_ref/swift/Element/applicationSelection" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6TimApi18CTransactionStatusO20applicationSelectionA2CmF">applicationSelection</a>
+                    <a class="token" href="#/s:6TimApi18CTransactionStatusO20applicationSelectionyA2CmF">applicationSelection</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -635,9 +660,9 @@ timed Balance.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6TimApi18CTransactionStatusO14waitForProceedA2CmF"></a>
+                    <a name="/s:6TimApi18CTransactionStatusO14waitForProceedyA2CmF"></a>
                     <a name="//apple_ref/swift/Element/waitForProceed" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6TimApi18CTransactionStatusO14waitForProceedA2CmF">waitForProceed</a>
+                    <a class="token" href="#/s:6TimApi18CTransactionStatusO14waitForProceedyA2CmF">waitForProceed</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -664,9 +689,9 @@ timed Balance.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6TimApi18CTransactionStatusO12dccSelectionA2CmF"></a>
+                    <a name="/s:6TimApi18CTransactionStatusO12dccSelectionyA2CmF"></a>
                     <a name="//apple_ref/swift/Element/dccSelection" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6TimApi18CTransactionStatusO12dccSelectionA2CmF">dccSelection</a>
+                    <a class="token" href="#/s:6TimApi18CTransactionStatusO12dccSelectionyA2CmF">dccSelection</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -693,9 +718,9 @@ timed Balance.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6TimApi18CTransactionStatusO8enterTipA2CmF"></a>
+                    <a name="/s:6TimApi18CTransactionStatusO8enterTipyA2CmF"></a>
                     <a name="//apple_ref/swift/Element/enterTip" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6TimApi18CTransactionStatusO8enterTipA2CmF">enterTip</a>
+                    <a class="token" href="#/s:6TimApi18CTransactionStatusO8enterTipyA2CmF">enterTip</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -722,9 +747,9 @@ timed Balance.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6TimApi18CTransactionStatusO8pinEntryA2CmF"></a>
+                    <a name="/s:6TimApi18CTransactionStatusO8pinEntryyA2CmF"></a>
                     <a name="//apple_ref/swift/Element/pinEntry" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6TimApi18CTransactionStatusO8pinEntryA2CmF">pinEntry</a>
+                    <a class="token" href="#/s:6TimApi18CTransactionStatusO8pinEntryyA2CmF">pinEntry</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -751,9 +776,9 @@ timed Balance.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6TimApi18CTransactionStatusO16signatureCaptureA2CmF"></a>
+                    <a name="/s:6TimApi18CTransactionStatusO16signatureCaptureyA2CmF"></a>
                     <a name="//apple_ref/swift/Element/signatureCapture" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6TimApi18CTransactionStatusO16signatureCaptureA2CmF">signatureCapture</a>
+                    <a class="token" href="#/s:6TimApi18CTransactionStatusO16signatureCaptureyA2CmF">signatureCapture</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -780,9 +805,9 @@ timed Balance.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6TimApi18CTransactionStatusO10processingA2CmF"></a>
+                    <a name="/s:6TimApi18CTransactionStatusO10processingyA2CmF"></a>
                     <a name="//apple_ref/swift/Element/processing" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6TimApi18CTransactionStatusO10processingA2CmF">processing</a>
+                    <a class="token" href="#/s:6TimApi18CTransactionStatusO10processingyA2CmF">processing</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -809,9 +834,9 @@ timed Balance.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6TimApi18CTransactionStatusO13waitForCommitA2CmF"></a>
+                    <a name="/s:6TimApi18CTransactionStatusO13waitForCommityA2CmF"></a>
                     <a name="//apple_ref/swift/Element/waitForCommit" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6TimApi18CTransactionStatusO13waitForCommitA2CmF">waitForCommit</a>
+                    <a class="token" href="#/s:6TimApi18CTransactionStatusO13waitForCommityA2CmF">waitForCommit</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -840,8 +865,8 @@ timed Balance.</p>
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2018 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2018-08-29)</p>
-          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+          <p>&copy; 2019 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2019-03-04)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.5</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>
     </div>
