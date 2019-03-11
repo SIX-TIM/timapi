@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="../doc/assets/css/vendors.css">
-    <link rel="stylesheet" href="version-history.css">
-    <link rel="stylesheet" href="../doc/assets/css/helppage.css">
+    <link href="../doc/assets/css/vendors.css" rel="stylesheet">
+    <link href="version-history.css" rel="stylesheet">
+    <link href="../doc/assets/css/helppage.css" rel="stylesheet">
     <title>TIM Version History</title>
 </head>
 
@@ -13,7 +12,7 @@
     <div class="container-fluid" id="content">
         <div>
             <nav id="navScrollspy">
-                <div class="affix" data-spy="affix">
+                <div class="affix" data-spy="affix" id="navbar">
                     <div id="projectname">Version History</div>
                     <div id="projectbrief">TIM SDK and API</div>
                     <div class="seperator">&#160;</div>
@@ -36,111 +35,39 @@
             </nav>
             <span class="print-page-break"></span>
             <main>
-
                 <section id="matrix">
                     <h1>
                         <a name="matrix"></a>Version-Matrix</h1>
                     <div class="row">
                         <div class="col-md-6">
-                            <table>
+                            <table id="version-matrix">
                                 <tr>
                                     <th colspan="2" rowspan="2"></th>
                                     <th colspan="5">TIM SDK</th>
                                 </tr>
-                                <tr>
-                                    <th>
-                                        <a href="../archive/18-07-2/index.html">18-07-2</a>
-                                    </th>
-                                    <th>
-                                        <a href="../archive/18-07-3/index.html">18-07-3</a>
-                                    </th>
-                                    <th>
-                                        <a href="../archive/18-09/index.html">18-09</a>
-                                    </th>
-                                    <th>
-                                        <a href="../archive/19-01/index.html">19-01</a>
-                                    </th>
-                                    <th>
-                                        <a href="../doc/index.html">19-03</a>
-                                    </th>
-                                </tr>
-                                <tr>
+                                <tr id="sdk_row">
+                                <th><a href="../archive/18-07-2/index.html">18-07-2</a></th><th><a href="../archive/18-07-3/index.html">18-07-3</a></th><th><a href="../archive/18-09/index.html">18-09</a></th><th><a href="../archive/19-01/index.html">19-01</a></th><th><a href="../doc/index.html">19-03</a></th></tr>
+                                <tr id="java_row">
                                     <td rowspan="6">
                                         <div class="vertical_header">TIM API</div>
                                     </td>
                                     <th>Java</th>
-                                    <td>
-                                        <a href="../archive/18-07-2/java/guide.html">3.14.0</a>
-                                    </td>
-                                    <td>
-                                        <a href="../archive/18-07-3/java/guide.html">3.14.0</a>
-                                    </td>
-                                    <td>
-                                        <a href="../archive/18-09/java/guide.html">3.14.0</a>
-                                    </td>
-                                    <td>
-                                        <a href="../archive/19-01/java/guide.html">3.16.2</a>
-                                    </td>
-                                    <td>
-                                        <a href="../doc/java/guide.html">3.16.2</a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th>Swift</th>
-                                    <td>3.14.0</td>
-                                    <td>
-                                      <a href="../archive/18-07-3/swift/guide.html">3.15.1</a>
-                                    </td>
-                                    <td>
-                                        <a href="../archive/18-09/swift/guide.html">3.15.1</a>
-                                    </td>
-                                    <td>
-                                      <a href="../archive/19-01/swift/guide.html">3.16.2</a>
-                                    </td>
-                                    <td>
-                                        <a href="../doc/swift/guide.html">3.16.2</a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th>C</th>
-                                    <td>
-                                        <a href="../archive/18-07-2/c/guide.html">3.10.0</a>
-                                    </td>
-                                    <td>
-                                        <a href="../archive/18-07-3/c/guide.html">3.11.0</a>
-                                    </td>
-                                    <td>
-                                        <a href="../archive/18-09/c/guide.html">3.11.0</a>
-                                    </td>
-                                    <td>
-                                        <a href="../archive/19-01/c/guide.html">3.13.2</a>
-                                    </td>
-                                    <td>
-                                        <a href="../doc/c/guide.html">3.14.0</a>
-                                    </td>
-                                </tr>
-                                <tr>
+                                <td><a href="../archive/18-07-2/java/guide.html">3.14.0</a></td><td><a href="../archive/18-07-3/java/guide.html">3.14.0</a></td><td><a href="../archive/18-09/java/guide.html">3.14.0</a></td><td><a href="../archive/19-01/java/guide.html">3.16.2</a></td><td><a href="../doc/java/guide.html">3.16.2</a></td></tr>
+                                <tr id="cs_row">
                                     <th>.NET</th>
-                                    <td>3.2.4</td>
-                                    <td>3.2.4</td>
-                                    <td>3.2.4</td>
-                                    <td>3.3.0</td>
-                                    <td>3.3.0</td>
-                                </tr>
-                                <tr>
+                                <td><span>3.2.4</span></td><td><span>3.2.4</span></td><td><span>3.2.4</span></td><td><span>3.3.0</span></td><td><span>3.3.0</span></td></tr>
+                                <tr id="swift_row">
+                                    <th>Swift</th>
+                                <td><span>3.14.0</span></td><td><a href="../archive/18-07-3/swift/guide.html">3.15.1</a></td><td><a href="../archive/18-09/swift/guide.html">3.15.1</a></td><td><a href="../archive/19-01/swift/guide.html">3.16.2</a></td><td><a href="../doc/swift/guide.html">3.15.1</a></td></tr>
+                                <tr id="js_row">
                                     <th>JavaScript</th>
-                                    <td>3.7.0</td>
-                                    <td>3.8.0</td>
-                                    <td>3.8.1</td>
-                                    <td>3.8.1</td>
-                                    <td>
-                                        <a href="../doc/js/guide.html">4.0.0</a>
-                                    </td>
-                                </tr>
+                                <td><span>3.7.0</span></td><td><span>3.8.0</span></td><td><span>3.8.1</span></td><td><span>3.8.1</span></td><td><a href="../doc/js/guide.html">4.0.0</a></td></tr>
+                                <tr id="c_row">
+                                    <th>C</th>
+                                <td><a href="../archive/18-07-2/c/guide.html">3.10.0</a></td><td><a href="../archive/18-07-3/c/guide.html">3.11.0</a></td><td><a href="../archive/18-09/c/guide.html">3.11.0</a></td><td><a href="../archive/19-01/c/guide.html">3.13.2</a></td><td><a href="../doc/c/guide.html">3.14.0</a></td></tr>
                             </table>
                         </div>
                     </div>
-                </br></br>
                 </section>
                 <section id="old">
                     <h1>
@@ -149,80 +76,14 @@
                         <div class="col-md-6">
                             <p>
                                 These are older released version:
-                                <ul>
-                                        <li>TIM SDK 18-07-1
-                                                <ul>
-                                                    <li>TIM API Java 3.13.0</li>
-                                                    <li>TIM API Swift 3.13.0</li>
-                                                    <li>TIM API C 3.9.0</li>
-                                                    <li>TIM API .NET 3.2.4</li>
-                                                    <li>TIM API JavaScript 3.7.0</li>
-                                                </ul>
-                                            </li>
-                                    <li>TIM SDK 18-07
-                                        <ul>
-                                            <li>TIM API Java 3.12.0</li>
-                                            <li>TIM API Swift 3.12.0</li>
-                                            <li>TIM API C 3.8.0</li>
-                                            <li>TIM API .NET 3.2.1</li>
-                                            <li>TIM API JavaScript 3.7.0</li>
-                                        </ul>
-                                    </li>
-                                  <li>TIM SDK 18-05-3
-                                      <ul>
-                                          <li>TIM API Java 3.11.0</li>
-                                          <li>TIM API Swift 3.11.0</li>
-                                          <li>TIM API C 3.7.0</li>
-                                          <li>TIM API .NET 3.2.1</li>
-                                          <li>TIM API JavaScript 3.7.0</li>
-                                      </ul>
-                                  </li>
-                                  <li>TIM SDK 18-05-2
-                                      <ul>
-                                          <li>TIM API Java 3.10.0</li>
-                                          <li>TIM API Swift 3.10.0</li>
-                                          <li>TIM API C 3.6.0</li>
-                                          <li>TIM API .NET 3.2.1</li>
-                                          <li>TIM API JavaScript 3.6.0</li>
-                                      </ul>
-                                  </li>
-                                    <li>TIM SDK 18-03-2
-                                        <ul>
-                                            <li>TIM API Java 3.8.0</li>
-                                            <li>TIM API Swift 3.8.0</li>
-                                            <li>TIM API C 3.4.0</li>
-                                            <li>TIM API .NET 3.2.1</li>
-                                            <li>TIM API JavaScript 3.4.0</li>
-                                        </ul>
-                                    </li>
-                                    <li>TIM SDK 18-03-1
-                                        <ul>
-                                            <li>TIM API Java 3.7.0</li>
-                                            <li>TIM API Swift 3.7.0</li>
-                                            <li>TIM API C 3.3.0</li>
-                                            <li>TIM API .NET 3.2.1</li>
-                                            <li>TIM API JavaScript 3.3.0</li>
-                                        </ul>
-                                    </li>
-
-                                    <li>TIM SDK 18-03
-                                            <ul>
-                                                <li>TIM API Java 3.6.0</li>
-                                                <li>TIM API Swift 3.6.0</li>
-                                                <li>TIM API C 3.2.0</li>
-                                                <li>TIM API .NET 3.2.1</li>
-                                                <li>TIM API JavaScript 3.3.0</li>
-                                            </ul>
-                                        </li>
-                                </ul>
+                                <ul id="version-list">
+                                <li><a href="../archive/18-07-1/index.html">TIM SDK 18-07-1</a><ul><li><a href="../archive/18-07-1/c/guide.html">TIM API C 3.9.0</a></li><li><span>TIM API .NET 3.2.4</span></li><li><a href="../archive/18-07-1/java/guide.html">TIM API Java 3.13.0</a></li><li><span>TIM API JavaScript 3.7.0</span></li><li><span>TIM API Swift 3.13.0</span></li></ul></li><li><span>TIM SDK 18-07</span><ul><li><span>TIM API C 3.8.0</span></li><li><span>TIM API .NET 3.2.1</span></li><li><span>TIM API Java 3.12.0</span></li><li><span>TIM API JavaScript 3.7.0</span></li><li><span>TIM API Swift 3.12.0</span></li></ul></li><li><span>TIM SDK 18-05-3</span><ul><li><span>TIM API C 3.7.0</span></li><li><span>TIM API .NET 3.2.1</span></li><li><span>TIM API Java 3.11.0</span></li><li><span>TIM API JavaScript 3.7.0</span></li><li><span>TIM API Swift 3.11.0</span></li></ul></li><li><span>TIM SDK 18-05-2</span><ul><li><span>TIM API C 3.6.0</span></li><li><span>TIM API .NET 3.2.1</span></li><li><span>TIM API Java 3.10.0</span></li><li><span>TIM API JavaScript 3.6.0</span></li><li><span>TIM API Swift 3.10.0</span></li></ul></li><li><span>TIM SDK 18-03-2</span><ul><li><span>TIM API C 3.4.0</span></li><li><span>TIM API .NET 3.2.1</span></li><li><span>TIM API Java 3.8.0</span></li><li><span>TIM API JavaScript 3.4.0</span></li><li><span>TIM API Swift 3.8.0</span></li></ul></li><li><span>TIM SDK 18-03-1</span><ul><li><span>TIM API C 3.3.0</span></li><li><span>TIM API .NET 3.2.1</span></li><li><span>TIM API Java 3.7.0</span></li><li><span>TIM API JavaScript 3.3.0</span></li><li><span>TIM API Swift 3.7.0</span></li></ul></li><li><span>TIM SDK 18-03</span><ul><li><span>TIM API C 3.2.0</span></li><li><span>TIM API .NET 3.2.1</span></li><li><span>TIM API Java 3.6.0</span></li><li><span>TIM API JavaScript 3.3.0</span></li><li><span>TIM API Swift 3.6.0</span></li></ul></li></ul>
                             </p>
                         </div>
                     </div>
                 </section>
+            </main>
         </div>
-        </main>
-    </div>
     </div>
 </body>
-
 </html>
