@@ -5,7 +5,9 @@
     <link rel="stylesheet" type="text/css" href="css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="css/highlight.css" />
     <meta charset='utf-8'>
-    <script src="js/jquery.min.js" defer></script>
+    <script src="sdk_version.js"></script>
+<script src="api_version.js"></script>
+<script src="js/jquery.min.js" defer></script>
     <script src="js/jazzy.js" defer></script>
     
   </head>
@@ -14,19 +16,19 @@
     <a title="Enumerations  Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="index.html"> Docs</a> (98% documented)</p>
+        <p><a href="index.html"> Docs</a> (97% documented)</p>
       </div>
     </header>
     <div class="content-wrapper">
       <p id="breadcrumbs">
-        <a href="../guide.html"> Implementation Guide</a>         <img id="carat" src="img/carat.png" />         <a href="index.html"> Reference</a>
+        <a href="index.html"> Reference</a>
         <img id="carat" src="img/carat.png" />
         Enumerations  Reference
       </p>
     </div>
     <div class="content-wrapper">
       <nav class="sidebar">
-        <ul class="nav-groups">
+        <ul class="nav-groups"><li class="nav-group-name" id="titlearea"><td id="projectalign"><div id="projectname">TIM SDK</div><div id="projectbrief">TIM API Swift</div></td><div id="guidelink"><a href="../guide.html">Implementation Guide</a></div></li>
           <li class="nav-group-name">
             <a href="Classes.html">Classes</a>
             <ul class="nav-group-tasks">
@@ -166,7 +168,19 @@
                 <a href="Classes/Logger/Level.html">– Level</a>
               </li>
               <li class="nav-group-task">
-                <a href="Classes/Logger.html#/s:6TimApi6LoggerC9LogRecordV">– LogRecord</a>
+                <a href="Classes/Logger/LogRecord.html">– LogRecord</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/LoyaltyCoupon.html">LoyaltyCoupon</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/LoyaltyDiscount.html">LoyaltyDiscount</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/LoyaltyInformation.html">LoyaltyInformation</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/LoyaltyItem.html">LoyaltyItem</a>
               </li>
               <li class="nav-group-task">
                 <a href="Classes/NativeError.html">NativeError</a>
@@ -267,6 +281,9 @@
               <li class="nav-group-task">
                 <a href="Classes/UltraCompactReceiptFormatter.html">UltraCompactReceiptFormatter</a>
               </li>
+              <li class="nav-group-task">
+                <a href="Classes/VasCheckoutInformation.html">VasCheckoutInformation</a>
+              </li>
             </ul>
           </li>
           <li class="nav-group-name">
@@ -331,6 +348,9 @@
               </li>
               <li class="nav-group-task">
                 <a href="Enums/CKernelType.html">CKernelType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/CLoyaltyFunctionType.html">CLoyaltyFunctionType</a>
               </li>
               <li class="nav-group-task">
                 <a href="Enums/CManagementStatus.html">CManagementStatus</a>
@@ -431,7 +451,7 @@
             <a href="Functions.html">Functions</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a href="Functions.html#/s:6TimApi6unwrapxxSgKlF">unwrap(_:)</a>
+                <a href="Functions.html#/s:6TimApi6unwrapyxxSgKlF">unwrap(_:)</a>
               </li>
             </ul>
           </li>
@@ -523,7 +543,12 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Specifies if an amount adjustment notification was handled correctly. 0 for success.</p>
+                        <p><p>Specifies if an amount adjustment notification was handled correctly. 0 for success.</p>
+
+<p>This field is returned in a standard TerminalStatus notification from terminal to ECR in case
+an AmtAdjustment notification as been sent from ECR to terminal.</p>
+
+<p>The following values are valid:</p></p>
 
 <p>Specification: unattended.</p>
 
@@ -625,8 +650,10 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>This attribute is used to specify which Brand icons are shown in the BrandBar element in a
+                        <p><p>This attribute is used to specify which Brand icons are shown in the BrandBar element in a
 dialog.</p>
+
+<p>The following values are valid:</p></p>
 
 <p>Specification: dialog.</p>
 
@@ -660,7 +687,9 @@ dialog.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Defines that shall be used for the card commands.</p>
+                        <p><p>Defines that shall be used for the card commands.</p>
+
+<p>The following values are valid:</p></p>
 
 <p>Specification: dialog.</p>
 
@@ -694,7 +723,10 @@ dialog.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>The CardReaderStatus tag is used to transport information about the current card reader activity.</p>
+                        <p><p>The CardReaderStatus tag is used to transport information about the current card reader
+activity.</p>
+
+<p>The following values are valid:</p></p>
 
 <p>Specification: retail.</p>
 
@@ -760,8 +792,13 @@ dialog.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>The sixml:ConnectionStatus tag is used to transport information about the current connection
+                        <p><p>The sixml:ConnectionStatus tag is used to transport information about the current connection
 between the ECR and the terminal.</p>
+
+<p>All status information tags always contain the current status of the terminal, not the
+ECR.</p>
+
+<p>The following values are valid:</p></p>
 
 <p>Specification: retail.</p>
 
@@ -795,7 +832,12 @@ between the ECR and the terminal.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Identifies the type of transaction counter.</p>
+                        <p><p>Identifies the type of transaction counter.</p>
+
+<p>This type identifier is used to define what kind of counters shall be returned in the
+&ldquo;CounterRequest&rdquo; response.</p>
+
+<p>The following values are valid:</p></p>
 
 <p>Specification: retail.</p>
 
@@ -829,7 +871,9 @@ between the ECR and the terminal.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Defines why a coupon has been rejected.</p>
+                        <p><p>Defines why a coupon has been rejected.</p>
+
+<p>The following values are valid:</p></p>
 
 <p>Specification: valueAddedServices.</p>
 
@@ -896,7 +940,9 @@ which contains additional information.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Specifies the type of currency. Used to distinguish between base and DCC currencies.</p>
+                        <p><p>Specifies the type of currency. Used to distinguish between base and DCC currencies.</p>
+
+<p>The following values are valid:</p></p>
 
 <p>Specification: retail.</p>
 
@@ -930,7 +976,12 @@ which contains additional information.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Specifies which cardholder verification method has been performed during the transaction.</p>
+                        <p><p>Specifies which cardholder verification method has been performed during the transaction.</p>
+
+<p>The supported cardholder verification methods are defined both, on the terminal and on the
+card. The first match of both sides will be performed according to EMV Book 3 [B11].</p>
+
+<p>The following values are valid:</p></p>
 
 <p>Specification: retail.</p>
 
@@ -998,8 +1049,10 @@ which contains additional information.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>The EcrInfoType attribute is used to specify what kind of information is sent in the
+                        <p><p>The EcrInfoType attribute is used to specify what kind of information is sent in the
 sixml:EcrInfo tag.</p>
+
+<p>The following values are valid:</p></p>
 
 <p>Specification: retail.</p>
 
@@ -1101,7 +1154,9 @@ sixml:EcrInfo tag.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>HardwareTypes are used to label hardware related data in the HardwareInformation response.</p>
+                        <p><p>HardwareTypes are used to label hardware related data in the HardwareInformation response.</p>
+
+<p>The following values are valid:</p></p>
 
 <p>Specification: retail.</p>
 
@@ -1135,7 +1190,14 @@ sixml:EcrInfo tag.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Supported file format of the signature image.</p>
+                        <p><p>Defines the file format of the signature image.</p>
+
+<p>This field can either be used as attribute in the <sixml:SignatureData> tag to define the file
+format of the signature image that is wished to be returned, or in the
+<sixml:SignatureInformation> to specify the file format of the signature image that has actually
+been returned from the terminal.</p>
+
+<p>The following values are valid:</p></p>
 
 <p>Specification: retail.</p>
 
@@ -1169,7 +1231,12 @@ sixml:EcrInfo tag.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Specifies the type of kernel.</p>
+                        <p><p>Enumeration that specifies the type of kernel.</p>
+
+<p>This field is used as attribute of the <sixml:KernelVersion> tag to specify the type of the
+kernel accoring to EMV.</p>
+
+<p>The following values are valid:</p></p>
 
 <p>Specification: retail.</p>
 
@@ -1193,6 +1260,44 @@ sixml:EcrInfo tag.</p>
                 <li class="item">
                   <div>
                     <code>
+                    <a name="/s:6TimApi20CLoyaltyFunctionTypeO"></a>
+                    <a name="//apple_ref/swift/Enum/CLoyaltyFunctionType" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TimApi20CLoyaltyFunctionTypeO">CLoyaltyFunctionType</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p><p>Defines what kind of loyalty mode will be used.</p>
+
+<p>The are different modes that can be used with the LoyaltyData function.</p>
+
+<p>The following values are valid:</p></p>
+
+<p>Specification: valueAddedServices.</p>
+
+                        <a href="Enums/CLoyaltyFunctionType.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">CLoyaltyFunctionType</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
                     <a name="/s:6TimApi17CManagementStatusO"></a>
                     <a name="//apple_ref/swift/Enum/CManagementStatus" class="dashAnchor"></a>
                     <a class="token" href="#/s:6TimApi17CManagementStatusO">CManagementStatus</a>
@@ -1203,8 +1308,10 @@ sixml:EcrInfo tag.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>The sixml:ManagementStatus tag is used to transport information about the current activation
+                        <p><p>The <sixml:ManagementStatus> tag is used to transport information about the current activation
 state of the terminal, i.e. shift open / shift closed.</p>
+
+<p>The following values are valid:</p></p>
 
 <p>Specification: retail.</p>
 
@@ -1272,7 +1379,9 @@ state of the terminal, i.e. shift open / shift closed.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Specifies type of merchant option.</p>
+                        <p><p>Specifies type of merchant option.</p>
+
+<p>The following values are valid:</p></p>
 
 <p>Specification: retail.</p>
 
@@ -1306,7 +1415,15 @@ state of the terminal, i.e. shift open / shift closed.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Defines if NGV usage is mandatory or optional if card supports it.</p>
+                        <p><p>Defines if NGV usage is mandatory or optional if card supports it.</p>
+
+<p>This field can be set in a purchase transaction request to define the NGV behaviour for the
+current transaction.</p>
+
+<p>Example: NGV purchase transaction with one day clearing delay: <sixml:TransactionData
+NGVMode='AllowedWithFallback' NGVClearingDelay='1' ... /></p>
+
+<p>The following values are valid:</p></p>
 
 <p>Specification: austrianUseCases.</p>
 
@@ -1408,7 +1525,9 @@ state of the terminal, i.e. shift open / shift closed.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>According to EMV definition.</p>
+                        <p><p>Defines how the cardholder used the card with the terminal for the transaction.</p>
+
+<p>Enumeration according to EMV definition. The following values are valid:</p></p>
 
 <p>Specification: retail.</p>
 
@@ -1510,7 +1629,9 @@ state of the terminal, i.e. shift open / shift closed.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Defines if the ECR or EFT is responsible for further trx handling.</p>
+                        <p><p>Defines if the ECR or EFT is responsible for further trx handling.</p>
+
+<p>The following values are valid:</p></p>
 
 <p>Specification: petrol.</p>
 
@@ -1646,7 +1767,9 @@ state of the terminal, i.e. shift open / shift closed.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Specifies type of ReceiptItem. Freetext format.</p>
+                        <p><p>Specifies type of ReceiptItem.</p>
+
+<p>This field has a freetext format, but the following values are predefined:</p></p>
 
 <p>Specification: retail.</p>
 
@@ -1714,7 +1837,9 @@ state of the terminal, i.e. shift open / shift closed.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Specifies type of the receipt.</p>
+                        <p><p>Specifies type of the receipt.</p>
+
+<p>The following values are valid:</p></p>
 
 <p>Specification: retail.</p>
 
@@ -1748,7 +1873,9 @@ state of the terminal, i.e. shift open / shift closed.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Specifies the recipient of a receipt.</p>
+                        <p><p>Specifies the recipient of a receipt.</p>
+
+<p>The following values are valid:</p></p>
 
 <p>Specification: retail.</p>
 
@@ -1814,8 +1941,8 @@ state of the terminal, i.e. shift open / shift closed.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p><p>This attribute defines which dialog shall be displayed. All dialogs are divided into multiple
-groups containing dialogs similar operational area.</p>
+                        <p><p>Enumeration attribute defines which dialog shall be displayed. All dialogs are divided into
+multiple groups containing dialogs similar operational area.</p>
 
 <p>The dialog description contains the following elements:
   <table>
@@ -2156,6 +2283,31 @@ but must be hidden e.g. using &ldquo;*&rdquo; instead of plain text.</p>
       <td>-</td>
       <td>-</td>
       <td>Ok, Stop</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>0122</td>
+      <td>-</td>
+      <td>-</td>
+      <td>Please refuel</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>0123</td>
+      <td>-</td>
+      <td>-</td>
+      <td>Please refuel for<br />
+        %0 %1</td>
+      <td>
+        <ul>
+          <li>0: Currency (an, mandatory) (e.g. EUR)</li>
+          <li>1: Amount (n, mandatory) (e.g. 45.00)</li>
+        </ul></td>
+      <td>-</td>
+      <td>-</td>
       <td>-</td>
     </tr>
   </table></p>
@@ -2651,7 +2803,11 @@ according to the <em>CodeCheckType</em> and return the result in the <em>Reason<
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Parameter type</p>
+                        <p><p>Parameter type</p>
+
+<p>Classifies the value of the <sixml:ResourceParameter> tag.</p>
+
+<p>The following values are valid:</p></p>
 
 <p>Specification: dialog.</p>
 
@@ -2685,7 +2841,9 @@ according to the <em>CodeCheckType</em> and return the result in the <em>Reason<
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Defines the outcome type of the command response.</p>
+                        <p><p>Defines the outcome type of the command response.</p>
+
+<p>The following values are valid:</p></p>
 
 <p>Specification: dialog.</p>
 
@@ -2889,7 +3047,9 @@ according to the <em>CodeCheckType</em> and return the result in the <em>Reason<
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Defines the appearance of the dialog.</p>
+                        <p><p>Defines the appearance of the dialog.</p>
+
+<p>The following values are valid:</p></p>
 
 <p>Specification: dialog.</p>
 
@@ -2923,7 +3083,12 @@ according to the <em>CodeCheckType</em> and return the result in the <em>Reason<
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Information of the current transaction state.</p>
+                        <p><p>Information of the current transaction state.</p>
+
+<p>This field is returned in the TerminalStatus notification to give the current transaction
+state from the terminal.</p>
+
+<p>The following values are valid:</p></p>
 
 <p>Specification: retail.</p>
 
@@ -2957,9 +3122,13 @@ according to the <em>CodeCheckType</em> and return the result in the <em>Reason<
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Defines the type of transaction.</p>
+                        <p><p>Defines the type of transaction.</p>
 
-<p>Specifications: retail, petrol, advancedRetail, banking, hospitality.</p>
+<p>Used as attribute to classify the transaction in the <sixml:TrxDetail> field.</p>
+
+<p>The following values are valid:</p></p>
+
+<p>Specifications: retail, petrol, advancedRetail, banking, hospitality, valueAddedServices.</p>
 
                         <a href="Enums/CTransactionType.html" class="slightly-smaller">See more</a>
                       </div>
@@ -2991,7 +3160,11 @@ according to the <em>CodeCheckType</em> and return the result in the <em>Reason<
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Contains the current software update status.</p>
+                        <p><p>Contains the current software update status.</p>
+
+<p>Used in the SoftwareUpdate response returned by the treminal.</p>
+
+<p>The following values are valid:</p></p>
 
 <p>Specification: retail.</p>
 
@@ -3013,8 +3186,8 @@ according to the <em>CodeCheckType</em> and return the result in the <em>Reason<
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2018 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2018-08-29)</p>
-          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+          <p>&copy; 2019 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2019-03-12)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.5</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>
     </div>

@@ -1,46 +1,58 @@
-window.jazzy = {'docset': false}
-if (typeof window.dash != 'undefined') {
-  document.documentElement.className += ' dash'
-  window.jazzy.docset = true
+
+
+function injectGuidelink() {
+  // Since some of the doc-files are in sub-folders, we need to determine the nesting-level
+  // As every page has a breadcrumbs-tag with the image carat.png, we take this to
+  // probe the nesting level and create our own url for the guide.html
+  let probe = document.getElementById("carat");
+  let guideUrl = probe.src.replace("img/carat.png", "../guide.html");
+
+  // inject link to implementation guide
+  let guidelinkDiv = document.getElementById("guidelink");
+  let guidelink = guidelinkDiv.childNodes[0];
+  guidelink.setAttribute("href", guideUrl);  
+  guidelink.setAttribute("style", "backround-color: red;");
+  //alert(guidelink);
 }
-if (navigator.userAgent.match(/xcode/i)) {
-  document.documentElement.className += ' xcode'
-  window.jazzy.docset = true
+
+function setSdkVersion(sdk_version) {
+  if(sdk_version !== undefined) {
+      // Project name
+      var projectName = document.getElementById("projectname");
+      if(projectName != undefined) {
+          // SDK-num
+          var sdknum = document.createElement("span");
+          sdknum.innerHTML = sdk_version;
+          sdknum.id = "sdknum";
+          projectName.appendChild(sdknum);
+      }
+  }
 }
 
-// On doc load, toggle the URL hash discussion if present
-$(document).ready(function() {
-  if (!window.jazzy.docset) {
-    var linkToHash = $('a[href="' + window.location.hash +'"]');
-    linkToHash.trigger("click");
+function timVersionInject() {
+  // TIM SDK version 
+  if(typeof timsdk !== "undefined") {
+    setSdkVersion(timsdk.sdk_version);
   }
-});
 
-// On token click, toggle its discussion and animate token.marginLeft
-$(".token").click(function(event) {
-  if (window.jazzy.docset) {
-    return;
+  // TIM API version
+  var projectbrief = document.getElementById("projectbrief");
+  if (projectbrief != undefined) {
+      if((typeof timapi !== "undefined") && (timapi.api_lang != undefined)) {
+          projectbrief.innerHTML = "TIM API " + timapi.api_lang;
+      }
+
+      if((typeof timapi !== "undefined") && (timapi.api_version != undefined)) {
+          var timnum = document.createElement("span");
+          timnum.innerHTML = timapi.api_version;
+          timnum.id = "timnum";
+          projectbrief.appendChild(timnum);
+      }
   }
-  var link = $(this);
-  var animationDuration = 300;
-  var tokenOffset = "15px";
-  var original = link.css('marginLeft') == tokenOffset;
-  link.animate({'margin-left':original ? "0px" : tokenOffset}, animationDuration);
-  $content = link.parent().parent().next();
-  $content.slideToggle(animationDuration);
+}
 
-  // Keeps the document from jumping to the hash.
-  var href = $(this).attr('href');
-  if (history.pushState) {
-    history.pushState({}, '', href);
-  } else {
-    location.hash = href;
-  }
-  event.preventDefault();
-});
+window.onload = function(evt) { 
+  timVersionInject();
+  injectGuidelink();
+}
 
-// Dumb down quotes within code blocks that delimit strings instead of quotations
-// https://github.com/realm/jazzy/issues/714
-$("code q").replaceWith(function () {
-  return ["\"", $(this).contents(), "\""];
-});

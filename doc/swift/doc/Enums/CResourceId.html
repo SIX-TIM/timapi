@@ -5,7 +5,9 @@
     <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
     <meta charset='utf-8'>
-    <script src="../js/jquery.min.js" defer></script>
+    <script src="../sdk_version.js"></script>
+<script src="../api_version.js"></script>
+<script src="../js/jquery.min.js" defer></script>
     <script src="../js/jazzy.js" defer></script>
     
   </head>
@@ -14,19 +16,19 @@
     <a title="CResourceId Enumeration Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../index.html"> Docs</a> (98% documented)</p>
+        <p><a href="../index.html"> Docs</a> (97% documented)</p>
       </div>
     </header>
     <div class="content-wrapper">
       <p id="breadcrumbs">
-        <a href="../../guide.html"> Implementation Guide</a>         <img id="carat" src="../img/carat.png" />         <a href="../index.html"> Reference</a>
+        <a href="../index.html"> Reference</a>
         <img id="carat" src="../img/carat.png" />
         CResourceId Enumeration Reference
       </p>
     </div>
     <div class="content-wrapper">
       <nav class="sidebar">
-        <ul class="nav-groups">
+        <ul class="nav-groups"><li class="nav-group-name" id="titlearea"><td id="projectalign"><div id="projectname">TIM SDK</div><div id="projectbrief">TIM API Swift</div></td><div id="guidelink"><a href="../guide.html">Implementation Guide</a></div></li>
           <li class="nav-group-name">
             <a href="../Classes.html">Classes</a>
             <ul class="nav-group-tasks">
@@ -166,7 +168,19 @@
                 <a href="../Classes/Logger/Level.html">– Level</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Classes/Logger.html#/s:6TimApi6LoggerC9LogRecordV">– LogRecord</a>
+                <a href="../Classes/Logger/LogRecord.html">– LogRecord</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/LoyaltyCoupon.html">LoyaltyCoupon</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/LoyaltyDiscount.html">LoyaltyDiscount</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/LoyaltyInformation.html">LoyaltyInformation</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/LoyaltyItem.html">LoyaltyItem</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Classes/NativeError.html">NativeError</a>
@@ -267,6 +281,9 @@
               <li class="nav-group-task">
                 <a href="../Classes/UltraCompactReceiptFormatter.html">UltraCompactReceiptFormatter</a>
               </li>
+              <li class="nav-group-task">
+                <a href="../Classes/VasCheckoutInformation.html">VasCheckoutInformation</a>
+              </li>
             </ul>
           </li>
           <li class="nav-group-name">
@@ -331,6 +348,9 @@
               </li>
               <li class="nav-group-task">
                 <a href="../Enums/CKernelType.html">CKernelType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CLoyaltyFunctionType.html">CLoyaltyFunctionType</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Enums/CManagementStatus.html">CManagementStatus</a>
@@ -431,7 +451,7 @@
             <a href="../Functions.html">Functions</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a href="../Functions.html#/s:6TimApi6unwrapxxSgKlF">unwrap(_:)</a>
+                <a href="../Functions.html#/s:6TimApi6unwrapyxxSgKlF">unwrap(_:)</a>
               </li>
             </ul>
           </li>
@@ -478,8 +498,8 @@
 
                 </div>
               </div>
-            <p><p>This attribute defines which dialog shall be displayed. All dialogs are divided into multiple
-groups containing dialogs similar operational area.</p>
+            <p><p>Enumeration attribute defines which dialog shall be displayed. All dialogs are divided into
+multiple groups containing dialogs similar operational area.</p>
 
 <p>The dialog description contains the following elements:
   <table>
@@ -820,6 +840,31 @@ but must be hidden e.g. using &ldquo;*&rdquo; instead of plain text.</p>
       <td>-</td>
       <td>-</td>
       <td>Ok, Stop</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>0122</td>
+      <td>-</td>
+      <td>-</td>
+      <td>Please refuel</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>0123</td>
+      <td>-</td>
+      <td>-</td>
+      <td>Please refuel for<br />
+        %0 %1</td>
+      <td>
+        <ul>
+          <li>0: Currency (an, mandatory) (e.g. EUR)</li>
+          <li>1: Amount (n, mandatory) (e.g. 45.00)</li>
+        </ul></td>
+      <td>-</td>
+      <td>-</td>
       <td>-</td>
     </tr>
   </table></p>
@@ -1292,9 +1337,9 @@ according to the <em>CodeCheckType</em> and return the result in the <em>Reason<
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6TimApi11CResourceIdO12enterMileageA2CmF"></a>
+                    <a name="/s:6TimApi11CResourceIdO12enterMileageyA2CmF"></a>
                     <a name="//apple_ref/swift/Element/enterMileage" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6TimApi11CResourceIdO12enterMileageA2CmF">enterMileage</a>
+                    <a class="token" href="#/s:6TimApi11CResourceIdO12enterMileageyA2CmF">enterMileage</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1320,9 +1365,9 @@ Input Mask: dd&#39;ddd&#39;ddd</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6TimApi11CResourceIdO14enterCarNumberA2CmF"></a>
+                    <a name="/s:6TimApi11CResourceIdO14enterCarNumberyA2CmF"></a>
                     <a name="//apple_ref/swift/Element/enterCarNumber" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6TimApi11CResourceIdO14enterCarNumberA2CmF">enterCarNumber</a>
+                    <a class="token" href="#/s:6TimApi11CResourceIdO14enterCarNumberyA2CmF">enterCarNumber</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1348,9 +1393,9 @@ Input Mask: ddd&#39;ddd</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6TimApi11CResourceIdO15enterDriverCodeA2CmF"></a>
+                    <a name="/s:6TimApi11CResourceIdO15enterDriverCodeyA2CmF"></a>
                     <a name="//apple_ref/swift/Element/enterDriverCode" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6TimApi11CResourceIdO15enterDriverCodeA2CmF">enterDriverCode</a>
+                    <a class="token" href="#/s:6TimApi11CResourceIdO15enterDriverCodeyA2CmF">enterDriverCode</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1376,9 +1421,9 @@ Input Mask: ddd&#39;ddd</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6TimApi11CResourceIdO010enterFleetD0A2CmF"></a>
+                    <a name="/s:6TimApi11CResourceIdO010enterFleetD0yA2CmF"></a>
                     <a name="//apple_ref/swift/Element/enterFleetId" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6TimApi11CResourceIdO010enterFleetD0A2CmF">enterFleetId</a>
+                    <a class="token" href="#/s:6TimApi11CResourceIdO010enterFleetD0yA2CmF">enterFleetId</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1404,9 +1449,9 @@ Input Mask: ddd&#39;ddd</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6TimApi11CResourceIdO10selectPumpA2CmF"></a>
+                    <a name="/s:6TimApi11CResourceIdO10selectPumpyA2CmF"></a>
                     <a name="//apple_ref/swift/Element/selectPump" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6TimApi11CResourceIdO10selectPumpA2CmF">selectPump</a>
+                    <a class="token" href="#/s:6TimApi11CResourceIdO10selectPumpyA2CmF">selectPump</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1438,9 +1483,9 @@ PlaceholderItems:<br /></p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6TimApi11CResourceIdO20selectWashingStationA2CmF"></a>
+                    <a name="/s:6TimApi11CResourceIdO20selectWashingStationyA2CmF"></a>
                     <a name="//apple_ref/swift/Element/selectWashingStation" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6TimApi11CResourceIdO20selectWashingStationA2CmF">selectWashingStation</a>
+                    <a class="token" href="#/s:6TimApi11CResourceIdO20selectWashingStationyA2CmF">selectWashingStation</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1466,9 +1511,9 @@ Input Mask: dd</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6TimApi11CResourceIdO13selectProgramA2CmF"></a>
+                    <a name="/s:6TimApi11CResourceIdO13selectProgramyA2CmF"></a>
                     <a name="//apple_ref/swift/Element/selectProgram" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6TimApi11CResourceIdO13selectProgramA2CmF">selectProgram</a>
+                    <a class="token" href="#/s:6TimApi11CResourceIdO13selectProgramyA2CmF">selectProgram</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1494,9 +1539,9 @@ Input Mask: dd</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6TimApi11CResourceIdO13selectProductA2CmF"></a>
+                    <a name="/s:6TimApi11CResourceIdO13selectProductyA2CmF"></a>
                     <a name="//apple_ref/swift/Element/selectProduct" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6TimApi11CResourceIdO13selectProductA2CmF">selectProduct</a>
+                    <a class="token" href="#/s:6TimApi11CResourceIdO13selectProductyA2CmF">selectProduct</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1522,9 +1567,9 @@ Input Mask: dd</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6TimApi11CResourceIdO8loadCardA2CmF"></a>
+                    <a name="/s:6TimApi11CResourceIdO8loadCardyA2CmF"></a>
                     <a name="//apple_ref/swift/Element/loadCard" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6TimApi11CResourceIdO8loadCardA2CmF">loadCard</a>
+                    <a class="token" href="#/s:6TimApi11CResourceIdO8loadCardyA2CmF">loadCard</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1550,9 +1595,9 @@ Input Mask: dd</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6TimApi11CResourceIdO8readCodeA2CmF"></a>
+                    <a name="/s:6TimApi11CResourceIdO8readCodeyA2CmF"></a>
                     <a name="//apple_ref/swift/Element/readCode" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6TimApi11CResourceIdO8readCodeA2CmF">readCode</a>
+                    <a class="token" href="#/s:6TimApi11CResourceIdO8readCodeyA2CmF">readCode</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1578,9 +1623,9 @@ Input Mask: hhhhhhhhhhhh</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6TimApi11CResourceIdO9checkCodeA2CmF"></a>
+                    <a name="/s:6TimApi11CResourceIdO9checkCodeyA2CmF"></a>
                     <a name="//apple_ref/swift/Element/checkCode" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6TimApi11CResourceIdO9checkCodeA2CmF">checkCode</a>
+                    <a class="token" href="#/s:6TimApi11CResourceIdO9checkCodeyA2CmF">checkCode</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1606,9 +1651,9 @@ Input Mask: hhhhhhhhhhhh</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6TimApi11CResourceIdO26enterAdditionalInformationA2CmF"></a>
+                    <a name="/s:6TimApi11CResourceIdO26enterAdditionalInformationyA2CmF"></a>
                     <a name="//apple_ref/swift/Element/enterAdditionalInformation" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6TimApi11CResourceIdO26enterAdditionalInformationA2CmF">enterAdditionalInformation</a>
+                    <a class="token" href="#/s:6TimApi11CResourceIdO26enterAdditionalInformationyA2CmF">enterAdditionalInformation</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1634,9 +1679,9 @@ Input Mask: dddddddddddddddddddd</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6TimApi11CResourceIdO15enterCostCenterA2CmF"></a>
+                    <a name="/s:6TimApi11CResourceIdO15enterCostCenteryA2CmF"></a>
                     <a name="//apple_ref/swift/Element/enterCostCenter" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6TimApi11CResourceIdO15enterCostCenterA2CmF">enterCostCenter</a>
+                    <a class="token" href="#/s:6TimApi11CResourceIdO15enterCostCenteryA2CmF">enterCostCenter</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1662,9 +1707,9 @@ Input Mask: dddddddddddddddddddd</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6TimApi11CResourceIdO19enterEmployeeNumberA2CmF"></a>
+                    <a name="/s:6TimApi11CResourceIdO19enterEmployeeNumberyA2CmF"></a>
                     <a name="//apple_ref/swift/Element/enterEmployeeNumber" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6TimApi11CResourceIdO19enterEmployeeNumberA2CmF">enterEmployeeNumber</a>
+                    <a class="token" href="#/s:6TimApi11CResourceIdO19enterEmployeeNumberyA2CmF">enterEmployeeNumber</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1690,9 +1735,9 @@ Input Mask: dddddddddddddddddddd</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6TimApi11CResourceIdO17enterLicensePlateA2CmF"></a>
+                    <a name="/s:6TimApi11CResourceIdO17enterLicensePlateyA2CmF"></a>
                     <a name="//apple_ref/swift/Element/enterLicensePlate" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6TimApi11CResourceIdO17enterLicensePlateA2CmF">enterLicensePlate</a>
+                    <a class="token" href="#/s:6TimApi11CResourceIdO17enterLicensePlateyA2CmF">enterLicensePlate</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1718,9 +1763,9 @@ Input Mask: dddddddddddddddddddd</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6TimApi11CResourceIdO18enterProjectNumberA2CmF"></a>
+                    <a name="/s:6TimApi11CResourceIdO18enterProjectNumberyA2CmF"></a>
                     <a name="//apple_ref/swift/Element/enterProjectNumber" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6TimApi11CResourceIdO18enterProjectNumberA2CmF">enterProjectNumber</a>
+                    <a class="token" href="#/s:6TimApi11CResourceIdO18enterProjectNumberyA2CmF">enterProjectNumber</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1746,9 +1791,9 @@ Input Mask: dddddddddddddddddddd</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6TimApi11CResourceIdO18petrolPrintReceiptA2CmF"></a>
+                    <a name="/s:6TimApi11CResourceIdO18petrolPrintReceiptyA2CmF"></a>
                     <a name="//apple_ref/swift/Element/petrolPrintReceipt" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6TimApi11CResourceIdO18petrolPrintReceiptA2CmF">petrolPrintReceipt</a>
+                    <a class="token" href="#/s:6TimApi11CResourceIdO18petrolPrintReceiptyA2CmF">petrolPrintReceipt</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1773,9 +1818,9 @@ Input Mask: dddddddddddddddddddd</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6TimApi11CResourceIdO16petrolRemoveCardA2CmF"></a>
+                    <a name="/s:6TimApi11CResourceIdO16petrolRemoveCardyA2CmF"></a>
                     <a name="//apple_ref/swift/Element/petrolRemoveCard" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6TimApi11CResourceIdO16petrolRemoveCardA2CmF">petrolRemoveCard</a>
+                    <a class="token" href="#/s:6TimApi11CResourceIdO16petrolRemoveCardyA2CmF">petrolRemoveCard</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1800,9 +1845,9 @@ Input Mask: dddddddddddddddddddd</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6TimApi11CResourceIdO16petrolOutOfOrderA2CmF"></a>
+                    <a name="/s:6TimApi11CResourceIdO16petrolOutOfOrderyA2CmF"></a>
                     <a name="//apple_ref/swift/Element/petrolOutOfOrder" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6TimApi11CResourceIdO16petrolOutOfOrderA2CmF">petrolOutOfOrder</a>
+                    <a class="token" href="#/s:6TimApi11CResourceIdO16petrolOutOfOrderyA2CmF">petrolOutOfOrder</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1827,9 +1872,9 @@ Input Mask: dddddddddddddddddddd</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6TimApi11CResourceIdO18petrolInvalidEntryA2CmF"></a>
+                    <a name="/s:6TimApi11CResourceIdO18petrolInvalidEntryyA2CmF"></a>
                     <a name="//apple_ref/swift/Element/petrolInvalidEntry" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6TimApi11CResourceIdO18petrolInvalidEntryA2CmF">petrolInvalidEntry</a>
+                    <a class="token" href="#/s:6TimApi11CResourceIdO18petrolInvalidEntryyA2CmF">petrolInvalidEntry</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1854,9 +1899,9 @@ Input Mask: dddddddddddddddddddd</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6TimApi11CResourceIdO18petrolRefuelAtPumpA2CmF"></a>
+                    <a name="/s:6TimApi11CResourceIdO18petrolRefuelAtPumpyA2CmF"></a>
                     <a name="//apple_ref/swift/Element/petrolRefuelAtPump" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6TimApi11CResourceIdO18petrolRefuelAtPumpA2CmF">petrolRefuelAtPump</a>
+                    <a class="token" href="#/s:6TimApi11CResourceIdO18petrolRefuelAtPumpyA2CmF">petrolRefuelAtPump</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1881,9 +1926,9 @@ Input Mask: dddddddddddddddddddd</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6TimApi11CResourceIdO20petrolSeeOtherScreenA2CmF"></a>
+                    <a name="/s:6TimApi11CResourceIdO20petrolSeeOtherScreenyA2CmF"></a>
                     <a name="//apple_ref/swift/Element/petrolSeeOtherScreen" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6TimApi11CResourceIdO20petrolSeeOtherScreenA2CmF">petrolSeeOtherScreen</a>
+                    <a class="token" href="#/s:6TimApi11CResourceIdO20petrolSeeOtherScreenyA2CmF">petrolSeeOtherScreen</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1908,9 +1953,69 @@ Input Mask: dddddddddddddddddddd</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6TimApi11CResourceIdO14noRechargeCardA2CmF"></a>
+                    <a name="/s:6TimApi11CResourceIdO18petrolPleaseRefuelyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/petrolPleaseRefuel" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TimApi11CResourceIdO18petrolPleaseRefuelyA2CmF">petrolPleaseRefuel</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p><b>Petrol Please refuel</b> | Petrol dialogs</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">petrolPleaseRefuel</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6TimApi11CResourceIdO24petrolPleaseRefuelForAmtyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/petrolPleaseRefuelForAmt" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TimApi11CResourceIdO24petrolPleaseRefuelForAmtyA2CmF">petrolPleaseRefuelForAmt</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p><b>Petrol Please refuel for amount</b> | Petrol dialogs<br />
+PlaceholderItems:<br /></p>
+
+<ul>
+<li>0: Currency<br /></li>
+<li>1: Amount</li>
+</ul>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">petrolPleaseRefuelForAmt</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6TimApi11CResourceIdO14noRechargeCardyA2CmF"></a>
                     <a name="//apple_ref/swift/Element/noRechargeCard" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6TimApi11CResourceIdO14noRechargeCardA2CmF">noRechargeCard</a>
+                    <a class="token" href="#/s:6TimApi11CResourceIdO14noRechargeCardyA2CmF">noRechargeCard</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1935,9 +2040,9 @@ Input Mask: dddddddddddddddddddd</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6TimApi11CResourceIdO25showPhoneNumberWithAmountA2CmF"></a>
+                    <a name="/s:6TimApi11CResourceIdO25showPhoneNumberWithAmountyA2CmF"></a>
                     <a name="//apple_ref/swift/Element/showPhoneNumberWithAmount" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6TimApi11CResourceIdO25showPhoneNumberWithAmountA2CmF">showPhoneNumberWithAmount</a>
+                    <a class="token" href="#/s:6TimApi11CResourceIdO25showPhoneNumberWithAmountyA2CmF">showPhoneNumberWithAmount</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1969,9 +2074,9 @@ PlaceholderItems:<br /></p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6TimApi11CResourceIdO25enterPhoneOrPrepaidNumberA2CmF"></a>
+                    <a name="/s:6TimApi11CResourceIdO25enterPhoneOrPrepaidNumberyA2CmF"></a>
                     <a name="//apple_ref/swift/Element/enterPhoneOrPrepaidNumber" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6TimApi11CResourceIdO25enterPhoneOrPrepaidNumberA2CmF">enterPhoneOrPrepaidNumber</a>
+                    <a class="token" href="#/s:6TimApi11CResourceIdO25enterPhoneOrPrepaidNumberyA2CmF">enterPhoneOrPrepaidNumber</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1997,9 +2102,9 @@ Input Mask: ddd ddd dd dd</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6TimApi11CResourceIdO18phoneNumberTooLongA2CmF"></a>
+                    <a name="/s:6TimApi11CResourceIdO18phoneNumberTooLongyA2CmF"></a>
                     <a name="//apple_ref/swift/Element/phoneNumberTooLong" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6TimApi11CResourceIdO18phoneNumberTooLongA2CmF">phoneNumberTooLong</a>
+                    <a class="token" href="#/s:6TimApi11CResourceIdO18phoneNumberTooLongyA2CmF">phoneNumberTooLong</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -2024,9 +2129,9 @@ Input Mask: ddd ddd dd dd</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6TimApi11CResourceIdO19phoneNumberTooShortA2CmF"></a>
+                    <a name="/s:6TimApi11CResourceIdO19phoneNumberTooShortyA2CmF"></a>
                     <a name="//apple_ref/swift/Element/phoneNumberTooShort" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6TimApi11CResourceIdO19phoneNumberTooShortA2CmF">phoneNumberTooShort</a>
+                    <a class="token" href="#/s:6TimApi11CResourceIdO19phoneNumberTooShortyA2CmF">phoneNumberTooShort</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -2051,9 +2156,9 @@ Input Mask: ddd ddd dd dd</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6TimApi11CResourceIdO16enterPhoneNumberA2CmF"></a>
+                    <a name="/s:6TimApi11CResourceIdO16enterPhoneNumberyA2CmF"></a>
                     <a name="//apple_ref/swift/Element/enterPhoneNumber" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6TimApi11CResourceIdO16enterPhoneNumberA2CmF">enterPhoneNumber</a>
+                    <a class="token" href="#/s:6TimApi11CResourceIdO16enterPhoneNumberyA2CmF">enterPhoneNumber</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -2079,9 +2184,9 @@ Input Mask: ddd ddd dd dd</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6TimApi11CResourceIdO10pleaseWaitA2CmF"></a>
+                    <a name="/s:6TimApi11CResourceIdO10pleaseWaityA2CmF"></a>
                     <a name="//apple_ref/swift/Element/pleaseWait" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6TimApi11CResourceIdO10pleaseWaitA2CmF">pleaseWait</a>
+                    <a class="token" href="#/s:6TimApi11CResourceIdO10pleaseWaityA2CmF">pleaseWait</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -2106,9 +2211,9 @@ Input Mask: ddd ddd dd dd</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6TimApi11CResourceIdO18processingDeclinedA2CmF"></a>
+                    <a name="/s:6TimApi11CResourceIdO18processingDeclinedyA2CmF"></a>
                     <a name="//apple_ref/swift/Element/processingDeclined" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6TimApi11CResourceIdO18processingDeclinedA2CmF">processingDeclined</a>
+                    <a class="token" href="#/s:6TimApi11CResourceIdO18processingDeclinedyA2CmF">processingDeclined</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -2133,9 +2238,9 @@ Input Mask: ddd ddd dd dd</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6TimApi11CResourceIdO12processingOkA2CmF"></a>
+                    <a name="/s:6TimApi11CResourceIdO12processingOkyA2CmF"></a>
                     <a name="//apple_ref/swift/Element/processingOk" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6TimApi11CResourceIdO12processingOkA2CmF">processingOk</a>
+                    <a class="token" href="#/s:6TimApi11CResourceIdO12processingOkyA2CmF">processingOk</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -2160,9 +2265,9 @@ Input Mask: ddd ddd dd dd</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6TimApi11CResourceIdO12registerCardA2CmF"></a>
+                    <a name="/s:6TimApi11CResourceIdO12registerCardyA2CmF"></a>
                     <a name="//apple_ref/swift/Element/registerCard" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6TimApi11CResourceIdO12registerCardA2CmF">registerCard</a>
+                    <a class="token" href="#/s:6TimApi11CResourceIdO12registerCardyA2CmF">registerCard</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -2187,9 +2292,9 @@ Input Mask: ddd ddd dd dd</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6TimApi11CResourceIdO11welcomeCardA2CmF"></a>
+                    <a name="/s:6TimApi11CResourceIdO11welcomeCardyA2CmF"></a>
                     <a name="//apple_ref/swift/Element/welcomeCard" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6TimApi11CResourceIdO11welcomeCardA2CmF">welcomeCard</a>
+                    <a class="token" href="#/s:6TimApi11CResourceIdO11welcomeCardyA2CmF">welcomeCard</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -2214,9 +2319,9 @@ Input Mask: ddd ddd dd dd</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6TimApi11CResourceIdO15showPhoneNumberA2CmF"></a>
+                    <a name="/s:6TimApi11CResourceIdO15showPhoneNumberyA2CmF"></a>
                     <a name="//apple_ref/swift/Element/showPhoneNumber" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6TimApi11CResourceIdO15showPhoneNumberA2CmF">showPhoneNumber</a>
+                    <a class="token" href="#/s:6TimApi11CResourceIdO15showPhoneNumberyA2CmF">showPhoneNumber</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -2246,9 +2351,9 @@ PlaceholderItems:<br /></p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6TimApi11CResourceIdO20interAccountTransferA2CmF"></a>
+                    <a name="/s:6TimApi11CResourceIdO20interAccountTransferyA2CmF"></a>
                     <a name="//apple_ref/swift/Element/interAccountTransfer" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6TimApi11CResourceIdO20interAccountTransferA2CmF">interAccountTransfer</a>
+                    <a class="token" href="#/s:6TimApi11CResourceIdO20interAccountTransferyA2CmF">interAccountTransfer</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -2287,9 +2392,9 @@ PlaceholderItems:<br /></p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6TimApi11CResourceIdO32interAccountTransferConfirmationA2CmF"></a>
+                    <a name="/s:6TimApi11CResourceIdO32interAccountTransferConfirmationyA2CmF"></a>
                     <a name="//apple_ref/swift/Element/interAccountTransferConfirmation" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6TimApi11CResourceIdO32interAccountTransferConfirmationA2CmF">interAccountTransferConfirmation</a>
+                    <a class="token" href="#/s:6TimApi11CResourceIdO32interAccountTransferConfirmationyA2CmF">interAccountTransferConfirmation</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -2328,9 +2433,9 @@ PlaceholderItems:<br /></p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6TimApi11CResourceIdO23disbursementFromAccountA2CmF"></a>
+                    <a name="/s:6TimApi11CResourceIdO23disbursementFromAccountyA2CmF"></a>
                     <a name="//apple_ref/swift/Element/disbursementFromAccount" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6TimApi11CResourceIdO23disbursementFromAccountA2CmF">disbursementFromAccount</a>
+                    <a class="token" href="#/s:6TimApi11CResourceIdO23disbursementFromAccountyA2CmF">disbursementFromAccount</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -2362,9 +2467,9 @@ PlaceholderItems:<br /></p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6TimApi11CResourceIdO17depositOwnAccountA2CmF"></a>
+                    <a name="/s:6TimApi11CResourceIdO17depositOwnAccountyA2CmF"></a>
                     <a name="//apple_ref/swift/Element/depositOwnAccount" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6TimApi11CResourceIdO17depositOwnAccountA2CmF">depositOwnAccount</a>
+                    <a class="token" href="#/s:6TimApi11CResourceIdO17depositOwnAccountyA2CmF">depositOwnAccount</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -2395,9 +2500,9 @@ PlaceholderItems:<br /></p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6TimApi11CResourceIdO11emptyDialogA2CmF"></a>
+                    <a name="/s:6TimApi11CResourceIdO11emptyDialogyA2CmF"></a>
                     <a name="//apple_ref/swift/Element/emptyDialog" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6TimApi11CResourceIdO11emptyDialogA2CmF">emptyDialog</a>
+                    <a class="token" href="#/s:6TimApi11CResourceIdO11emptyDialogyA2CmF">emptyDialog</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -2422,9 +2527,9 @@ PlaceholderItems:<br /></p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6TimApi11CResourceIdO21packetAcknowledgementA2CmF"></a>
+                    <a name="/s:6TimApi11CResourceIdO21packetAcknowledgementyA2CmF"></a>
                     <a name="//apple_ref/swift/Element/packetAcknowledgement" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6TimApi11CResourceIdO21packetAcknowledgementA2CmF">packetAcknowledgement</a>
+                    <a class="token" href="#/s:6TimApi11CResourceIdO21packetAcknowledgementyA2CmF">packetAcknowledgement</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -2449,9 +2554,9 @@ PlaceholderItems:<br /></p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6TimApi11CResourceIdO8pinEntryA2CmF"></a>
+                    <a name="/s:6TimApi11CResourceIdO8pinEntryyA2CmF"></a>
                     <a name="//apple_ref/swift/Element/pinEntry" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6TimApi11CResourceIdO8pinEntryA2CmF">pinEntry</a>
+                    <a class="token" href="#/s:6TimApi11CResourceIdO8pinEntryyA2CmF">pinEntry</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -2477,9 +2582,9 @@ Input Mask: hhhhhh</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6TimApi11CResourceIdO17bankingInsertCardA2CmF"></a>
+                    <a name="/s:6TimApi11CResourceIdO17bankingInsertCardyA2CmF"></a>
                     <a name="//apple_ref/swift/Element/bankingInsertCard" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6TimApi11CResourceIdO17bankingInsertCardA2CmF">bankingInsertCard</a>
+                    <a class="token" href="#/s:6TimApi11CResourceIdO17bankingInsertCardyA2CmF">bankingInsertCard</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -2504,9 +2609,9 @@ Input Mask: hhhhhh</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6TimApi11CResourceIdO15bankingPinCheckA2CmF"></a>
+                    <a name="/s:6TimApi11CResourceIdO15bankingPinCheckyA2CmF"></a>
                     <a name="//apple_ref/swift/Element/bankingPinCheck" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6TimApi11CResourceIdO15bankingPinCheckA2CmF">bankingPinCheck</a>
+                    <a class="token" href="#/s:6TimApi11CResourceIdO15bankingPinCheckyA2CmF">bankingPinCheck</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -2532,9 +2637,9 @@ Input Mask: hhhhhh</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6TimApi11CResourceIdO16bankingShowSaldoA2CmF"></a>
+                    <a name="/s:6TimApi11CResourceIdO16bankingShowSaldoyA2CmF"></a>
                     <a name="//apple_ref/swift/Element/bankingShowSaldo" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6TimApi11CResourceIdO16bankingShowSaldoA2CmF">bankingShowSaldo</a>
+                    <a class="token" href="#/s:6TimApi11CResourceIdO16bankingShowSaldoyA2CmF">bankingShowSaldo</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -2566,9 +2671,9 @@ black;</q>|12.04.2018lderItems:<br /></p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6TimApi11CResourceIdO20bankingConfirmAmountA2CmF"></a>
+                    <a name="/s:6TimApi11CResourceIdO20bankingConfirmAmountyA2CmF"></a>
                     <a name="//apple_ref/swift/Element/bankingConfirmAmount" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6TimApi11CResourceIdO20bankingConfirmAmountA2CmF">bankingConfirmAmount</a>
+                    <a class="token" href="#/s:6TimApi11CResourceIdO20bankingConfirmAmountyA2CmF">bankingConfirmAmount</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -2599,9 +2704,9 @@ PlaceholderItems:<br /></p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6TimApi11CResourceIdO17bankingRemoveCardA2CmF"></a>
+                    <a name="/s:6TimApi11CResourceIdO17bankingRemoveCardyA2CmF"></a>
                     <a name="//apple_ref/swift/Element/bankingRemoveCard" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6TimApi11CResourceIdO17bankingRemoveCardA2CmF">bankingRemoveCard</a>
+                    <a class="token" href="#/s:6TimApi11CResourceIdO17bankingRemoveCardyA2CmF">bankingRemoveCard</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -2626,9 +2731,9 @@ PlaceholderItems:<br /></p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6TimApi11CResourceIdO14bankingWelcomeA2CmF"></a>
+                    <a name="/s:6TimApi11CResourceIdO14bankingWelcomeyA2CmF"></a>
                     <a name="//apple_ref/swift/Element/bankingWelcome" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6TimApi11CResourceIdO14bankingWelcomeA2CmF">bankingWelcome</a>
+                    <a class="token" href="#/s:6TimApi11CResourceIdO14bankingWelcomeyA2CmF">bankingWelcome</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -2653,9 +2758,9 @@ PlaceholderItems:<br /></p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6TimApi11CResourceIdO13commonRegularA2CmF"></a>
+                    <a name="/s:6TimApi11CResourceIdO13commonRegularyA2CmF"></a>
                     <a name="//apple_ref/swift/Element/commonRegular" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6TimApi11CResourceIdO13commonRegularA2CmF">commonRegular</a>
+                    <a class="token" href="#/s:6TimApi11CResourceIdO13commonRegularyA2CmF">commonRegular</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -2680,9 +2785,9 @@ PlaceholderItems:<br /></p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6TimApi11CResourceIdO16commonPleaseWaitA2CmF"></a>
+                    <a name="/s:6TimApi11CResourceIdO16commonPleaseWaityA2CmF"></a>
                     <a name="//apple_ref/swift/Element/commonPleaseWait" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6TimApi11CResourceIdO16commonPleaseWaitA2CmF">commonPleaseWait</a>
+                    <a class="token" href="#/s:6TimApi11CResourceIdO16commonPleaseWaityA2CmF">commonPleaseWait</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -2707,9 +2812,9 @@ PlaceholderItems:<br /></p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6TimApi11CResourceIdO15commonDataSavedA2CmF"></a>
+                    <a name="/s:6TimApi11CResourceIdO15commonDataSavedyA2CmF"></a>
                     <a name="//apple_ref/swift/Element/commonDataSaved" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6TimApi11CResourceIdO15commonDataSavedA2CmF">commonDataSaved</a>
+                    <a class="token" href="#/s:6TimApi11CResourceIdO15commonDataSavedyA2CmF">commonDataSaved</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -2734,9 +2839,9 @@ PlaceholderItems:<br /></p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6TimApi11CResourceIdO21commonCardInitializedA2CmF"></a>
+                    <a name="/s:6TimApi11CResourceIdO21commonCardInitializedyA2CmF"></a>
                     <a name="//apple_ref/swift/Element/commonCardInitialized" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6TimApi11CResourceIdO21commonCardInitializedA2CmF">commonCardInitialized</a>
+                    <a class="token" href="#/s:6TimApi11CResourceIdO21commonCardInitializedyA2CmF">commonCardInitialized</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -2761,9 +2866,9 @@ PlaceholderItems:<br /></p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6TimApi11CResourceIdO23commonCardDeinitializedA2CmF"></a>
+                    <a name="/s:6TimApi11CResourceIdO23commonCardDeinitializedyA2CmF"></a>
                     <a name="//apple_ref/swift/Element/commonCardDeinitialized" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6TimApi11CResourceIdO23commonCardDeinitializedA2CmF">commonCardDeinitialized</a>
+                    <a class="token" href="#/s:6TimApi11CResourceIdO23commonCardDeinitializedyA2CmF">commonCardDeinitialized</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -2771,7 +2876,7 @@ PlaceholderItems:<br /></p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p><b>Common Card Deinitialized</b> | AT dialogs</p>
+                        <p>Undocumented</p>
 
                       </div>
                       <div class="declaration">
@@ -2788,9 +2893,9 @@ PlaceholderItems:<br /></p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6TimApi11CResourceIdO16commonRemoveCardA2CmF"></a>
+                    <a name="/s:6TimApi11CResourceIdO16commonRemoveCardyA2CmF"></a>
                     <a name="//apple_ref/swift/Element/commonRemoveCard" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6TimApi11CResourceIdO16commonRemoveCardA2CmF">commonRemoveCard</a>
+                    <a class="token" href="#/s:6TimApi11CResourceIdO16commonRemoveCardyA2CmF">commonRemoveCard</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -2817,8 +2922,8 @@ PlaceholderItems:<br /></p>
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2018 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2018-08-29)</p>
-          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+          <p>&copy; 2019 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2019-03-12)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.5</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>
     </div>

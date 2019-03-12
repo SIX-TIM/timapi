@@ -5,7 +5,9 @@
     <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
     <meta charset='utf-8'>
-    <script src="../js/jquery.min.js" defer></script>
+    <script src="../sdk_version.js"></script>
+<script src="../api_version.js"></script>
+<script src="../js/jquery.min.js" defer></script>
     <script src="../js/jazzy.js" defer></script>
     
   </head>
@@ -14,19 +16,19 @@
     <a title="SynchronousTerminalListener Class Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../index.html"> Docs</a> (98% documented)</p>
+        <p><a href="../index.html"> Docs</a> (97% documented)</p>
       </div>
     </header>
     <div class="content-wrapper">
       <p id="breadcrumbs">
-        <a href="../../guide.html"> Implementation Guide</a>         <img id="carat" src="../img/carat.png" />         <a href="../index.html"> Reference</a>
+        <a href="../index.html"> Reference</a>
         <img id="carat" src="../img/carat.png" />
         SynchronousTerminalListener Class Reference
       </p>
     </div>
     <div class="content-wrapper">
       <nav class="sidebar">
-        <ul class="nav-groups">
+        <ul class="nav-groups"><li class="nav-group-name" id="titlearea"><td id="projectalign"><div id="projectname">TIM SDK</div><div id="projectbrief">TIM API Swift</div></td><div id="guidelink"><a href="../guide.html">Implementation Guide</a></div></li>
           <li class="nav-group-name">
             <a href="../Classes.html">Classes</a>
             <ul class="nav-group-tasks">
@@ -166,7 +168,19 @@
                 <a href="../Classes/Logger/Level.html">– Level</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Classes/Logger.html#/s:6TimApi6LoggerC9LogRecordV">– LogRecord</a>
+                <a href="../Classes/Logger/LogRecord.html">– LogRecord</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/LoyaltyCoupon.html">LoyaltyCoupon</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/LoyaltyDiscount.html">LoyaltyDiscount</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/LoyaltyInformation.html">LoyaltyInformation</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/LoyaltyItem.html">LoyaltyItem</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Classes/NativeError.html">NativeError</a>
@@ -267,6 +281,9 @@
               <li class="nav-group-task">
                 <a href="../Classes/UltraCompactReceiptFormatter.html">UltraCompactReceiptFormatter</a>
               </li>
+              <li class="nav-group-task">
+                <a href="../Classes/VasCheckoutInformation.html">VasCheckoutInformation</a>
+              </li>
             </ul>
           </li>
           <li class="nav-group-name">
@@ -331,6 +348,9 @@
               </li>
               <li class="nav-group-task">
                 <a href="../Enums/CKernelType.html">CKernelType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CLoyaltyFunctionType.html">CLoyaltyFunctionType</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Enums/CManagementStatus.html">CManagementStatus</a>
@@ -431,7 +451,7 @@
             <a href="../Functions.html">Functions</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a href="../Functions.html#/s:6TimApi6unwrapxxSgKlF">unwrap(_:)</a>
+                <a href="../Functions.html#/s:6TimApi6unwrapyxxSgKlF">unwrap(_:)</a>
               </li>
             </ul>
           </li>
@@ -508,9 +528,9 @@ listener.waitForRequestCompleted();
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6TimApi27SynchronousTerminalListenerC03runC0yAA12CRequestTypeO07requestH0_yyKc5blocktKF"></a>
+                    <a name="/s:6TimApi27SynchronousTerminalListenerC03runC011requestType5blockyAA08CRequestH0O_yyKXEtKF"></a>
                     <a name="//apple_ref/swift/Method/runSynchronous(requestType:block:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6TimApi27SynchronousTerminalListenerC03runC0yAA12CRequestTypeO07requestH0_yyKc5blocktKF">runSynchronous(requestType:block:)</a>
+                    <a class="token" href="#/s:6TimApi27SynchronousTerminalListenerC03runC011requestType5blockyAA08CRequestH0O_yyKXEtKF">runSynchronous(requestType:block:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -537,9 +557,9 @@ Clears all stored responses before waiting for the request to complete.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6TimApi16TerminalListenerP16connectCompletedyAA0A5EventC5event_tF"></a>
+                    <a name="/s:6TimApi16TerminalListenerP16connectCompleted5eventyAA0A5EventC_tF"></a>
                     <a name="//apple_ref/swift/Method/connectCompleted(event:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6TimApi16TerminalListenerP16connectCompletedyAA0A5EventC5event_tF">connectCompleted(event:)</a>
+                    <a class="token" href="#/s:6TimApi16TerminalListenerP16connectCompleted5eventyAA0A5EventC_tF">connectCompleted(event:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -563,9 +583,9 @@ Clears all stored responses before waiting for the request to complete.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6TimApi16TerminalListenerP19disconnectCompletedyAA0A5EventC5event_tF"></a>
+                    <a name="/s:6TimApi16TerminalListenerP19disconnectCompleted5eventyAA0A5EventC_tF"></a>
                     <a name="//apple_ref/swift/Method/disconnectCompleted(event:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6TimApi16TerminalListenerP19disconnectCompletedyAA0A5EventC5event_tF">disconnectCompleted(event:)</a>
+                    <a class="token" href="#/s:6TimApi16TerminalListenerP19disconnectCompleted5eventyAA0A5EventC_tF">disconnectCompleted(event:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -589,9 +609,9 @@ Clears all stored responses before waiting for the request to complete.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6TimApi16TerminalListenerP17activateCompletedyAA0A5EventC5event_AA16ActivateResponseCSg4datatF"></a>
+                    <a name="/s:6TimApi16TerminalListenerP17activateCompleted5event4datayAA0A5EventC_AA16ActivateResponseCSgtF"></a>
                     <a name="//apple_ref/swift/Method/activateCompleted(event:data:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6TimApi16TerminalListenerP17activateCompletedyAA0A5EventC5event_AA16ActivateResponseCSg4datatF">activateCompleted(event:data:)</a>
+                    <a class="token" href="#/s:6TimApi16TerminalListenerP17activateCompleted5event4datayAA0A5EventC_AA16ActivateResponseCSgtF">activateCompleted(event:data:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -615,9 +635,9 @@ Clears all stored responses before waiting for the request to complete.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6TimApi16TerminalListenerP31applicationInformationCompletedyAA0A5EventC5event_tF"></a>
+                    <a name="/s:6TimApi16TerminalListenerP31applicationInformationCompleted5eventyAA0A5EventC_tF"></a>
                     <a name="//apple_ref/swift/Method/applicationInformationCompleted(event:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6TimApi16TerminalListenerP31applicationInformationCompletedyAA0A5EventC5event_tF">applicationInformationCompleted(event:)</a>
+                    <a class="token" href="#/s:6TimApi16TerminalListenerP31applicationInformationCompleted5eventyAA0A5EventC_tF">applicationInformationCompleted(event:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -641,9 +661,9 @@ Clears all stored responses before waiting for the request to complete.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6TimApi16TerminalListenerP16balanceCompletedyAA0A5EventC5event_AA15BalanceResponseCSg4datatF"></a>
+                    <a name="/s:6TimApi16TerminalListenerP16balanceCompleted5event4datayAA0A5EventC_AA15BalanceResponseCSgtF"></a>
                     <a name="//apple_ref/swift/Method/balanceCompleted(event:data:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6TimApi16TerminalListenerP16balanceCompletedyAA0A5EventC5event_AA15BalanceResponseCSg4datatF">balanceCompleted(event:data:)</a>
+                    <a class="token" href="#/s:6TimApi16TerminalListenerP16balanceCompleted5event4datayAA0A5EventC_AA15BalanceResponseCSgtF">balanceCompleted(event:data:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -667,9 +687,9 @@ Clears all stored responses before waiting for the request to complete.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6TimApi16TerminalListenerP23changeSettingsCompletedyAA0A5EventC5event_tF"></a>
+                    <a name="/s:6TimApi16TerminalListenerP23changeSettingsCompleted5eventyAA0A5EventC_tF"></a>
                     <a name="//apple_ref/swift/Method/changeSettingsCompleted(event:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6TimApi16TerminalListenerP23changeSettingsCompletedyAA0A5EventC5event_tF">changeSettingsCompleted(event:)</a>
+                    <a class="token" href="#/s:6TimApi16TerminalListenerP23changeSettingsCompleted5eventyAA0A5EventC_tF">changeSettingsCompleted(event:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -693,9 +713,9 @@ Clears all stored responses before waiting for the request to complete.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6TimApi16TerminalListenerP15commitCompletedyAA0A5EventC5event_AA9PrintDataCSg4datatF"></a>
+                    <a name="/s:6TimApi16TerminalListenerP15commitCompleted5event4datayAA0A5EventC_AA9PrintDataCSgtF"></a>
                     <a name="//apple_ref/swift/Method/commitCompleted(event:data:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6TimApi16TerminalListenerP15commitCompletedyAA0A5EventC5event_AA9PrintDataCSg4datatF">commitCompleted(event:data:)</a>
+                    <a class="token" href="#/s:6TimApi16TerminalListenerP15commitCompleted5event4datayAA0A5EventC_AA9PrintDataCSgtF">commitCompleted(event:data:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -719,9 +739,9 @@ Clears all stored responses before waiting for the request to complete.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6TimApi16TerminalListenerP23counterRequestCompletedyAA0A5EventC5event_AA8CountersCSg4datatF"></a>
+                    <a name="/s:6TimApi16TerminalListenerP23counterRequestCompleted5event4datayAA0A5EventC_AA8CountersCSgtF"></a>
                     <a name="//apple_ref/swift/Method/counterRequestCompleted(event:data:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6TimApi16TerminalListenerP23counterRequestCompletedyAA0A5EventC5event_AA8CountersCSg4datatF">counterRequestCompleted(event:data:)</a>
+                    <a class="token" href="#/s:6TimApi16TerminalListenerP23counterRequestCompleted5event4datayAA0A5EventC_AA8CountersCSgtF">counterRequestCompleted(event:data:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -745,9 +765,9 @@ Clears all stored responses before waiting for the request to complete.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6TimApi16TerminalListenerP19deactivateCompletedyAA0A5EventC5event_AA18DeactivateResponseCSg4datatF"></a>
+                    <a name="/s:6TimApi16TerminalListenerP19deactivateCompleted5event4datayAA0A5EventC_AA18DeactivateResponseCSgtF"></a>
                     <a name="//apple_ref/swift/Method/deactivateCompleted(event:data:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6TimApi16TerminalListenerP19deactivateCompletedyAA0A5EventC5event_AA18DeactivateResponseCSg4datatF">deactivateCompleted(event:data:)</a>
+                    <a class="token" href="#/s:6TimApi16TerminalListenerP19deactivateCompleted5event4datayAA0A5EventC_AA18DeactivateResponseCSgtF">deactivateCompleted(event:data:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -771,9 +791,9 @@ Clears all stored responses before waiting for the request to complete.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6TimApi16TerminalListenerP17dccRatesCompletedyAA0A5EventC5event_AA9PrintDataCSg4datatF"></a>
+                    <a name="/s:6TimApi16TerminalListenerP17dccRatesCompleted5event4datayAA0A5EventC_AA9PrintDataCSgtF"></a>
                     <a name="//apple_ref/swift/Method/dccRatesCompleted(event:data:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6TimApi16TerminalListenerP17dccRatesCompletedyAA0A5EventC5event_AA9PrintDataCSg4datatF">dccRatesCompleted(event:data:)</a>
+                    <a class="token" href="#/s:6TimApi16TerminalListenerP17dccRatesCompleted5event4datayAA0A5EventC_AA9PrintDataCSgtF">dccRatesCompleted(event:data:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -797,9 +817,9 @@ Clears all stored responses before waiting for the request to complete.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6TimApi16TerminalListenerP28hardwareInformationCompletedyAA0A5EventC5event_AA08HardwareF8ResponseCSg4datatF"></a>
+                    <a name="/s:6TimApi16TerminalListenerP28hardwareInformationCompleted5event4datayAA0A5EventC_AA08HardwareF8ResponseCSgtF"></a>
                     <a name="//apple_ref/swift/Method/hardwareInformationCompleted(event:data:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6TimApi16TerminalListenerP28hardwareInformationCompletedyAA0A5EventC5event_AA08HardwareF8ResponseCSg4datatF">hardwareInformationCompleted(event:data:)</a>
+                    <a class="token" href="#/s:6TimApi16TerminalListenerP28hardwareInformationCompleted5event4datayAA0A5EventC_AA08HardwareF8ResponseCSgtF">hardwareInformationCompleted(event:data:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -823,9 +843,9 @@ Clears all stored responses before waiting for the request to complete.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6TimApi16TerminalListenerP24initTransactionCompletedyAA0A5EventC5event_AA8CardDataCSg4datatF"></a>
+                    <a name="/s:6TimApi16TerminalListenerP24initTransactionCompleted5event4datayAA0A5EventC_AA8CardDataCSgtF"></a>
                     <a name="//apple_ref/swift/Method/initTransactionCompleted(event:data:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6TimApi16TerminalListenerP24initTransactionCompletedyAA0A5EventC5event_AA8CardDataCSg4datatF">initTransactionCompleted(event:data:)</a>
+                    <a class="token" href="#/s:6TimApi16TerminalListenerP24initTransactionCompleted5event4datayAA0A5EventC_AA8CardDataCSgtF">initTransactionCompleted(event:data:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -849,9 +869,9 @@ Clears all stored responses before waiting for the request to complete.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6TimApi16TerminalListenerP14loginCompletedyAA0A5EventC5event_tF"></a>
+                    <a name="/s:6TimApi16TerminalListenerP14loginCompleted5eventyAA0A5EventC_tF"></a>
                     <a name="//apple_ref/swift/Method/loginCompleted(event:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6TimApi16TerminalListenerP14loginCompletedyAA0A5EventC5event_tF">loginCompleted(event:)</a>
+                    <a class="token" href="#/s:6TimApi16TerminalListenerP14loginCompleted5eventyAA0A5EventC_tF">loginCompleted(event:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -875,9 +895,9 @@ Clears all stored responses before waiting for the request to complete.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6TimApi16TerminalListenerP15logoutCompletedyAA0A5EventC5event_tF"></a>
+                    <a name="/s:6TimApi16TerminalListenerP15logoutCompleted5eventyAA0A5EventC_tF"></a>
                     <a name="//apple_ref/swift/Method/logoutCompleted(event:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6TimApi16TerminalListenerP15logoutCompletedyAA0A5EventC5event_tF">logoutCompleted(event:)</a>
+                    <a class="token" href="#/s:6TimApi16TerminalListenerP15logoutCompleted5eventyAA0A5EventC_tF">logoutCompleted(event:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -901,9 +921,9 @@ Clears all stored responses before waiting for the request to complete.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6TimApi16TerminalListenerP15rebootCompletedyAA0A5EventC5event_tF"></a>
+                    <a name="/s:6TimApi16TerminalListenerP15rebootCompleted5eventyAA0A5EventC_tF"></a>
                     <a name="//apple_ref/swift/Method/rebootCompleted(event:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6TimApi16TerminalListenerP15rebootCompletedyAA0A5EventC5event_tF">rebootCompleted(event:)</a>
+                    <a class="token" href="#/s:6TimApi16TerminalListenerP15rebootCompleted5eventyAA0A5EventC_tF">rebootCompleted(event:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -927,9 +947,9 @@ Clears all stored responses before waiting for the request to complete.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6TimApi16TerminalListenerP23reconciliationCompletedyAA0A5EventC5event_AA22ReconciliationResponseCSg4datatF"></a>
+                    <a name="/s:6TimApi16TerminalListenerP23reconciliationCompleted5event4datayAA0A5EventC_AA22ReconciliationResponseCSgtF"></a>
                     <a name="//apple_ref/swift/Method/reconciliationCompleted(event:data:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6TimApi16TerminalListenerP23reconciliationCompletedyAA0A5EventC5event_AA22ReconciliationResponseCSg4datatF">reconciliationCompleted(event:data:)</a>
+                    <a class="token" href="#/s:6TimApi16TerminalListenerP23reconciliationCompleted5event4datayAA0A5EventC_AA22ReconciliationResponseCSgtF">reconciliationCompleted(event:data:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -953,9 +973,9 @@ Clears all stored responses before waiting for the request to complete.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6TimApi16TerminalListenerP23receiptRequestCompletedyAA0A5EventC5event_AA07ReceiptF8ResponseCSg4datatF"></a>
+                    <a name="/s:6TimApi16TerminalListenerP23receiptRequestCompleted5event4datayAA0A5EventC_AA07ReceiptF8ResponseCSgtF"></a>
                     <a name="//apple_ref/swift/Method/receiptRequestCompleted(event:data:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6TimApi16TerminalListenerP23receiptRequestCompletedyAA0A5EventC5event_AA07ReceiptF8ResponseCSg4datatF">receiptRequestCompleted(event:data:)</a>
+                    <a class="token" href="#/s:6TimApi16TerminalListenerP23receiptRequestCompleted5event4datayAA0A5EventC_AA07ReceiptF8ResponseCSgtF">receiptRequestCompleted(event:data:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -979,9 +999,9 @@ Clears all stored responses before waiting for the request to complete.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6TimApi16TerminalListenerP17reconfigCompletedyAA0A5EventC5event_AA9PrintDataCSg4datatF"></a>
+                    <a name="/s:6TimApi16TerminalListenerP17reconfigCompleted5event4datayAA0A5EventC_AA9PrintDataCSgtF"></a>
                     <a name="//apple_ref/swift/Method/reconfigCompleted(event:data:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6TimApi16TerminalListenerP17reconfigCompletedyAA0A5EventC5event_AA9PrintDataCSg4datatF">reconfigCompleted(event:data:)</a>
+                    <a class="token" href="#/s:6TimApi16TerminalListenerP17reconfigCompleted5event4datayAA0A5EventC_AA9PrintDataCSgtF">reconfigCompleted(event:data:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1005,9 +1025,9 @@ Clears all stored responses before waiting for the request to complete.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6TimApi16TerminalListenerP17rollbackCompletedyAA0A5EventC5event_AA9PrintDataCSg4datatF"></a>
+                    <a name="/s:6TimApi16TerminalListenerP17rollbackCompleted5event4datayAA0A5EventC_AA9PrintDataCSgtF"></a>
                     <a name="//apple_ref/swift/Method/rollbackCompleted(event:data:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6TimApi16TerminalListenerP17rollbackCompletedyAA0A5EventC5event_AA9PrintDataCSg4datatF">rollbackCompleted(event:data:)</a>
+                    <a class="token" href="#/s:6TimApi16TerminalListenerP17rollbackCompleted5event4datayAA0A5EventC_AA9PrintDataCSgtF">rollbackCompleted(event:data:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1031,9 +1051,9 @@ Clears all stored responses before waiting for the request to complete.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6TimApi16TerminalListenerP23softwareUpdateCompletedyAA0A5EventC5event_AA13CUpdateStatusOSg4datatF"></a>
+                    <a name="/s:6TimApi16TerminalListenerP23softwareUpdateCompleted5event4datayAA0A5EventC_AA13CUpdateStatusOSgtF"></a>
                     <a name="//apple_ref/swift/Method/softwareUpdateCompleted(event:data:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6TimApi16TerminalListenerP23softwareUpdateCompletedyAA0A5EventC5event_AA13CUpdateStatusOSg4datatF">softwareUpdateCompleted(event:data:)</a>
+                    <a class="token" href="#/s:6TimApi16TerminalListenerP23softwareUpdateCompleted5event4datayAA0A5EventC_AA13CUpdateStatusOSgtF">softwareUpdateCompleted(event:data:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1057,9 +1077,9 @@ Clears all stored responses before waiting for the request to complete.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6TimApi16TerminalListenerP26systemInformationCompletedyAA0A5EventC5event_AA06SystemF8ResponseCSg4datatF"></a>
+                    <a name="/s:6TimApi16TerminalListenerP26systemInformationCompleted5event4datayAA0A5EventC_AA06SystemF8ResponseCSgtF"></a>
                     <a name="//apple_ref/swift/Method/systemInformationCompleted(event:data:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6TimApi16TerminalListenerP26systemInformationCompletedyAA0A5EventC5event_AA06SystemF8ResponseCSg4datatF">systemInformationCompleted(event:data:)</a>
+                    <a class="token" href="#/s:6TimApi16TerminalListenerP26systemInformationCompleted5event4datayAA0A5EventC_AA06SystemF8ResponseCSgtF">systemInformationCompleted(event:data:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1083,9 +1103,9 @@ Clears all stored responses before waiting for the request to complete.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6TimApi16TerminalListenerP20transactionCompletedyAA0A5EventC5event_AA19TransactionResponseCSg4datatF"></a>
+                    <a name="/s:6TimApi16TerminalListenerP20transactionCompleted5event4datayAA0A5EventC_AA19TransactionResponseCSgtF"></a>
                     <a name="//apple_ref/swift/Method/transactionCompleted(event:data:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6TimApi16TerminalListenerP20transactionCompletedyAA0A5EventC5event_AA19TransactionResponseCSg4datatF">transactionCompleted(event:data:)</a>
+                    <a class="token" href="#/s:6TimApi16TerminalListenerP20transactionCompleted5event4datayAA0A5EventC_AA19TransactionResponseCSgtF">transactionCompleted(event:data:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1109,9 +1129,9 @@ Clears all stored responses before waiting for the request to complete.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6TimApi16TerminalListenerP21terminalStatusChangedyAA0C0C0E0_tF"></a>
+                    <a name="/s:6TimApi16TerminalListenerP21terminalStatusChanged0E0yAA0C0C_tF"></a>
                     <a name="//apple_ref/swift/Method/terminalStatusChanged(terminal:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6TimApi16TerminalListenerP21terminalStatusChangedyAA0C0C0E0_tF">terminalStatusChanged(terminal:)</a>
+                    <a class="token" href="#/s:6TimApi16TerminalListenerP21terminalStatusChanged0E0yAA0C0C_tF">terminalStatusChanged(terminal:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1135,9 +1155,9 @@ Clears all stored responses before waiting for the request to complete.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6TimApi27SynchronousTerminalListenerC20closeReaderCompletedyAA0A5EventC5event_tF"></a>
+                    <a name="/s:6TimApi27SynchronousTerminalListenerC20closeReaderCompleted5eventyAA0A5EventC_tF"></a>
                     <a name="//apple_ref/swift/Method/closeReaderCompleted(event:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6TimApi27SynchronousTerminalListenerC20closeReaderCompletedyAA0A5EventC5event_tF">closeReaderCompleted(event:)</a>
+                    <a class="token" href="#/s:6TimApi27SynchronousTerminalListenerC20closeReaderCompleted5eventyAA0A5EventC_tF">closeReaderCompleted(event:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1165,9 +1185,9 @@ Clears all stored responses before waiting for the request to complete.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6TimApi27SynchronousTerminalListenerC19openReaderCompletedyAA0A5EventC5event_tF"></a>
+                    <a name="/s:6TimApi27SynchronousTerminalListenerC19openReaderCompleted5eventyAA0A5EventC_tF"></a>
                     <a name="//apple_ref/swift/Method/openReaderCompleted(event:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6TimApi27SynchronousTerminalListenerC19openReaderCompletedyAA0A5EventC5event_tF">openReaderCompleted(event:)</a>
+                    <a class="token" href="#/s:6TimApi27SynchronousTerminalListenerC19openReaderCompleted5eventyAA0A5EventC_tF">openReaderCompleted(event:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1195,9 +1215,9 @@ Clears all stored responses before waiting for the request to complete.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6TimApi27SynchronousTerminalListenerC18ejectCardCompletedyAA0A5EventC5event_tF"></a>
+                    <a name="/s:6TimApi27SynchronousTerminalListenerC18ejectCardCompleted5eventyAA0A5EventC_tF"></a>
                     <a name="//apple_ref/swift/Method/ejectCardCompleted(event:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6TimApi27SynchronousTerminalListenerC18ejectCardCompletedyAA0A5EventC5event_tF">ejectCardCompleted(event:)</a>
+                    <a class="token" href="#/s:6TimApi27SynchronousTerminalListenerC18ejectCardCompleted5eventyAA0A5EventC_tF">ejectCardCompleted(event:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1225,9 +1245,9 @@ Clears all stored responses before waiting for the request to complete.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6TimApi27SynchronousTerminalListenerC30openMaintenanceWindowCompletedyAA0A5EventC5event_tF"></a>
+                    <a name="/s:6TimApi27SynchronousTerminalListenerC30openMaintenanceWindowCompleted5eventyAA0A5EventC_tF"></a>
                     <a name="//apple_ref/swift/Method/openMaintenanceWindowCompleted(event:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6TimApi27SynchronousTerminalListenerC30openMaintenanceWindowCompletedyAA0A5EventC5event_tF">openMaintenanceWindowCompleted(event:)</a>
+                    <a class="token" href="#/s:6TimApi27SynchronousTerminalListenerC30openMaintenanceWindowCompleted5eventyAA0A5EventC_tF">openMaintenanceWindowCompleted(event:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1255,9 +1275,9 @@ Clears all stored responses before waiting for the request to complete.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6TimApi27SynchronousTerminalListenerC31closeMaintenanceWindowCompletedyAA0A5EventC5event_tF"></a>
+                    <a name="/s:6TimApi27SynchronousTerminalListenerC31closeMaintenanceWindowCompleted5eventyAA0A5EventC_tF"></a>
                     <a name="//apple_ref/swift/Method/closeMaintenanceWindowCompleted(event:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6TimApi27SynchronousTerminalListenerC31closeMaintenanceWindowCompletedyAA0A5EventC5event_tF">closeMaintenanceWindowCompleted(event:)</a>
+                    <a class="token" href="#/s:6TimApi27SynchronousTerminalListenerC31closeMaintenanceWindowCompleted5eventyAA0A5EventC_tF">closeMaintenanceWindowCompleted(event:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1285,9 +1305,9 @@ Clears all stored responses before waiting for the request to complete.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6TimApi27SynchronousTerminalListenerC28activateServiceMenuCompletedyAA0A5EventC5event_tF"></a>
+                    <a name="/s:6TimApi27SynchronousTerminalListenerC28activateServiceMenuCompleted5eventyAA0A5EventC_tF"></a>
                     <a name="//apple_ref/swift/Method/activateServiceMenuCompleted(event:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6TimApi27SynchronousTerminalListenerC28activateServiceMenuCompletedyAA0A5EventC5event_tF">activateServiceMenuCompleted(event:)</a>
+                    <a class="token" href="#/s:6TimApi27SynchronousTerminalListenerC28activateServiceMenuCompleted5eventyAA0A5EventC_tF">activateServiceMenuCompleted(event:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1315,9 +1335,9 @@ Clears all stored responses before waiting for the request to complete.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6TimApi27SynchronousTerminalListenerC23openDialogModeCompletedyAA0A5EventC5event_tF"></a>
+                    <a name="/s:6TimApi27SynchronousTerminalListenerC23openDialogModeCompleted5eventyAA0A5EventC_tF"></a>
                     <a name="//apple_ref/swift/Method/openDialogModeCompleted(event:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6TimApi27SynchronousTerminalListenerC23openDialogModeCompletedyAA0A5EventC5event_tF">openDialogModeCompleted(event:)</a>
+                    <a class="token" href="#/s:6TimApi27SynchronousTerminalListenerC23openDialogModeCompleted5eventyAA0A5EventC_tF">openDialogModeCompleted(event:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1345,9 +1365,9 @@ Clears all stored responses before waiting for the request to complete.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6TimApi27SynchronousTerminalListenerC24closeDialogModeCompletedyAA0A5EventC5event_tF"></a>
+                    <a name="/s:6TimApi27SynchronousTerminalListenerC24closeDialogModeCompleted5eventyAA0A5EventC_tF"></a>
                     <a name="//apple_ref/swift/Method/closeDialogModeCompleted(event:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6TimApi27SynchronousTerminalListenerC24closeDialogModeCompletedyAA0A5EventC5event_tF">closeDialogModeCompleted(event:)</a>
+                    <a class="token" href="#/s:6TimApi27SynchronousTerminalListenerC24closeDialogModeCompleted5eventyAA0A5EventC_tF">closeDialogModeCompleted(event:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1375,9 +1395,9 @@ Clears all stored responses before waiting for the request to complete.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6TimApi27SynchronousTerminalListenerC29showSignatureCaptureCompletedyAA0A5EventC5event_AA04ShowgH8ResponseCSg4datatF"></a>
+                    <a name="/s:6TimApi27SynchronousTerminalListenerC29showSignatureCaptureCompleted5event4datayAA0A5EventC_AA04ShowgH8ResponseCSgtF"></a>
                     <a name="//apple_ref/swift/Method/showSignatureCaptureCompleted(event:data:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6TimApi27SynchronousTerminalListenerC29showSignatureCaptureCompletedyAA0A5EventC5event_AA04ShowgH8ResponseCSg4datatF">showSignatureCaptureCompleted(event:data:)</a>
+                    <a class="token" href="#/s:6TimApi27SynchronousTerminalListenerC29showSignatureCaptureCompleted5event4datayAA0A5EventC_AA04ShowgH8ResponseCSgtF">showSignatureCaptureCompleted(event:data:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1405,9 +1425,9 @@ Clears all stored responses before waiting for the request to complete.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6TimApi27SynchronousTerminalListenerC19showDialogCompletedyAA0A5EventC5event_AA04ShowG8ResponseCSg4datatF"></a>
+                    <a name="/s:6TimApi27SynchronousTerminalListenerC19showDialogCompleted5event4datayAA0A5EventC_AA04ShowG8ResponseCSgtF"></a>
                     <a name="//apple_ref/swift/Method/showDialogCompleted(event:data:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6TimApi27SynchronousTerminalListenerC19showDialogCompletedyAA0A5EventC5event_AA04ShowG8ResponseCSg4datatF">showDialogCompleted(event:data:)</a>
+                    <a class="token" href="#/s:6TimApi27SynchronousTerminalListenerC19showDialogCompleted5event4datayAA0A5EventC_AA04ShowG8ResponseCSgtF">showDialogCompleted(event:data:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1435,9 +1455,9 @@ Clears all stored responses before waiting for the request to complete.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6TimApi27SynchronousTerminalListenerC24sendCardCommandCompletedyAA0A5EventC5event_SayAA0H8ResponseCGSg4datatF"></a>
+                    <a name="/s:6TimApi27SynchronousTerminalListenerC24sendCardCommandCompleted5event4datayAA0A5EventC_SayAA0H8ResponseCGSgtF"></a>
                     <a name="//apple_ref/swift/Method/sendCardCommandCompleted(event:data:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6TimApi27SynchronousTerminalListenerC24sendCardCommandCompletedyAA0A5EventC5event_SayAA0H8ResponseCGSg4datatF">sendCardCommandCompleted(event:data:)</a>
+                    <a class="token" href="#/s:6TimApi27SynchronousTerminalListenerC24sendCardCommandCompleted5event4datayAA0A5EventC_SayAA0H8ResponseCGSgtF">sendCardCommandCompleted(event:data:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1465,9 +1485,9 @@ Clears all stored responses before waiting for the request to complete.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6TimApi27SynchronousTerminalListenerC23balanceInquiryCompletedyAA0A5EventC5event_AA07BalanceG8ResponseCSg4datatF"></a>
+                    <a name="/s:6TimApi27SynchronousTerminalListenerC23balanceInquiryCompleted5event4datayAA0A5EventC_AA07BalanceG8ResponseCSgtF"></a>
                     <a name="//apple_ref/swift/Method/balanceInquiryCompleted(event:data:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6TimApi27SynchronousTerminalListenerC23balanceInquiryCompletedyAA0A5EventC5event_AA07BalanceG8ResponseCSg4datatF">balanceInquiryCompleted(event:data:)</a>
+                    <a class="token" href="#/s:6TimApi27SynchronousTerminalListenerC23balanceInquiryCompleted5event4datayAA0A5EventC_AA07BalanceG8ResponseCSgtF">balanceInquiryCompleted(event:data:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1495,9 +1515,152 @@ Clears all stored responses before waiting for the request to complete.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6TimApi27SynchronousTerminalListenerC21requestAliasCompletedyAA0A5EventC5event_SSSg4datatF"></a>
+                    <a name="/s:6TimApi27SynchronousTerminalListenerC7vasInfo8terminalADyAA0D0C_AA22VasCheckoutInformationCtF"></a>
+                    <a name="//apple_ref/swift/Method/vasInfo(terminal:vasInfo:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TimApi27SynchronousTerminalListenerC7vasInfo8terminalADyAA0D0C_AA22VasCheckoutInformationCtF">vasInfo(terminal:vasInfo:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>VAS checkout information received.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">vasInfo</span><span class="p">(</span><span class="nv">terminal</span><span class="p">:</span> <span class="kt"><a href="../Classes/Terminal.html">Terminal</a></span><span class="p">,</span> <span class="nv">vasInfo</span><span class="p">:</span> <span class="kt"><a href="../Classes/VasCheckoutInformation.html">VasCheckoutInformation</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6TimApi27SynchronousTerminalListenerC20loyaltyDataCompleted5event4datayAA0A5EventC_AA04CardG0CSgtF"></a>
+                    <a name="//apple_ref/swift/Method/loyaltyDataCompleted(event:data:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TimApi27SynchronousTerminalListenerC20loyaltyDataCompleted5event4datayAA0A5EventC_AA04CardG0CSgtF">loyaltyDataCompleted(event:data:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Called if an loyaltyDataAsync() started request finished.</p>
+
+<p>Supported only if .valueAddedServices guid is enabled.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">loyaltyDataCompleted</span><span class="p">(</span><span class="nv">event</span><span class="p">:</span> <span class="kt"><a href="../Classes/TimEvent.html">TimEvent</a></span><span class="p">,</span> <span class="nv">data</span><span class="p">:</span> <span class="kt"><a href="../Classes/CardData.html">CardData</a></span><span class="p">?)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6TimApi27SynchronousTerminalListenerC22startCheckoutCompleted5eventyAA0A5EventC_tF"></a>
+                    <a name="//apple_ref/swift/Method/startCheckoutCompleted(event:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TimApi27SynchronousTerminalListenerC22startCheckoutCompleted5eventyAA0A5EventC_tF">startCheckoutCompleted(event:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Called if an Terminal.startCheckoutAsync() started request finished.</p>
+
+<p>Supported only if .valueAddedServices guid is enabled.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">startCheckoutCompleted</span><span class="p">(</span><span class="nv">event</span><span class="p">:</span> <span class="kt"><a href="../Classes/TimEvent.html">TimEvent</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6TimApi27SynchronousTerminalListenerC23finishCheckoutCompleted5event4datayAA0A5EventC_AA03VasG11InformationCSgtF"></a>
+                    <a name="//apple_ref/swift/Method/finishCheckoutCompleted(event:data:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TimApi27SynchronousTerminalListenerC23finishCheckoutCompleted5event4datayAA0A5EventC_AA03VasG11InformationCSgtF">finishCheckoutCompleted(event:data:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Called if an Terminal.finishCheckoutAsync() started request finished.</p>
+
+<p>Supported only if .valueAddedServices guid is enabled.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">finishCheckoutCompleted</span><span class="p">(</span><span class="nv">event</span><span class="p">:</span> <span class="kt"><a href="../Classes/TimEvent.html">TimEvent</a></span><span class="p">,</span> <span class="nv">data</span><span class="p">:</span> <span class="kt"><a href="../Classes/VasCheckoutInformation.html">VasCheckoutInformation</a></span><span class="p">?)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6TimApi27SynchronousTerminalListenerC29provideLoyaltyBasketCompleted5event4datayAA0A5EventC_SayAA0G4ItemCGSgtF"></a>
+                    <a name="//apple_ref/swift/Method/provideLoyaltyBasketCompleted(event:data:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TimApi27SynchronousTerminalListenerC29provideLoyaltyBasketCompleted5event4datayAA0A5EventC_SayAA0G4ItemCGSgtF">provideLoyaltyBasketCompleted(event:data:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Called if an Terminal.provideLoyaltyBasketAsync() started request finished.</p>
+
+<p>Supported only if .valueAddedServices guid is enabled.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">provideLoyaltyBasketCompleted</span><span class="p">(</span><span class="nv">event</span><span class="p">:</span> <span class="kt"><a href="../Classes/TimEvent.html">TimEvent</a></span><span class="p">,</span> <span class="nv">data</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Classes/LoyaltyItem.html">LoyaltyItem</a></span><span class="p">]?)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6TimApi27SynchronousTerminalListenerC21requestAliasCompleted5event4datayAA0A5EventC_SSSgtF"></a>
                     <a name="//apple_ref/swift/Method/requestAliasCompleted(event:data:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6TimApi27SynchronousTerminalListenerC21requestAliasCompletedyAA0A5EventC5event_SSSg4datatF">requestAliasCompleted(event:data:)</a>
+                    <a class="token" href="#/s:6TimApi27SynchronousTerminalListenerC21requestAliasCompleted5event4datayAA0A5EventC_SSSgtF">requestAliasCompleted(event:data:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -2169,13 +2332,94 @@ Clears all stored responses before waiting for the request to complete.</p>
                     </section>
                   </div>
                 </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6TimApi27SynchronousTerminalListenerC23lastLoyaltyDataResponseAA04CardH0CSgvp"></a>
+                    <a name="//apple_ref/swift/Property/lastLoyaltyDataResponse" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TimApi27SynchronousTerminalListenerC23lastLoyaltyDataResponseAA04CardH0CSgvp">lastLoyaltyDataResponse</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Last loyalty data response or <em>null</em> if none.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">private(set)</span> <span class="k">var</span> <span class="nv">lastLoyaltyDataResponse</span><span class="p">:</span> <span class="kt"><a href="../Classes/CardData.html">CardData</a></span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6TimApi27SynchronousTerminalListenerC26lastFinishCheckoutResponseAA03VasH11InformationCSgvp"></a>
+                    <a name="//apple_ref/swift/Property/lastFinishCheckoutResponse" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TimApi27SynchronousTerminalListenerC26lastFinishCheckoutResponseAA03VasH11InformationCSgvp">lastFinishCheckoutResponse</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Last finish checkout response or <em>null</em> if none.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">private(set)</span> <span class="k">var</span> <span class="nv">lastFinishCheckoutResponse</span><span class="p">:</span> <span class="kt"><a href="../Classes/VasCheckoutInformation.html">VasCheckoutInformation</a></span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6TimApi27SynchronousTerminalListenerC32lastProvideLoyaltyBasketResponseSayAA0H4ItemCGSgvp"></a>
+                    <a name="//apple_ref/swift/Property/lastProvideLoyaltyBasketResponse" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TimApi27SynchronousTerminalListenerC32lastProvideLoyaltyBasketResponseSayAA0H4ItemCGSgvp">lastProvideLoyaltyBasketResponse</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Last provide loyalty basket response or <em>null</em> if none.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">private(set)</span> <span class="k">var</span> <span class="nv">lastProvideLoyaltyBasketResponse</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Classes/LoyaltyItem.html">LoyaltyItem</a></span><span class="p">]?</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
               </ul>
             </div>
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2018 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2018-08-29)</p>
-          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+          <p>&copy; 2019 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2019-03-12)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.5</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>
     </div>

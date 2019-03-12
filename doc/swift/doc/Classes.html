@@ -5,7 +5,9 @@
     <link rel="stylesheet" type="text/css" href="css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="css/highlight.css" />
     <meta charset='utf-8'>
-    <script src="js/jquery.min.js" defer></script>
+    <script src="sdk_version.js"></script>
+<script src="api_version.js"></script>
+<script src="js/jquery.min.js" defer></script>
     <script src="js/jazzy.js" defer></script>
     
   </head>
@@ -14,19 +16,19 @@
     <a title="Classes  Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="index.html"> Docs</a> (98% documented)</p>
+        <p><a href="index.html"> Docs</a> (97% documented)</p>
       </div>
     </header>
     <div class="content-wrapper">
       <p id="breadcrumbs">
-        <a href="../guide.html"> Implementation Guide</a>         <img id="carat" src="img/carat.png" />         <a href="index.html"> Reference</a>
+        <a href="index.html"> Reference</a>
         <img id="carat" src="img/carat.png" />
         Classes  Reference
       </p>
     </div>
     <div class="content-wrapper">
       <nav class="sidebar">
-        <ul class="nav-groups">
+        <ul class="nav-groups"><li class="nav-group-name" id="titlearea"><td id="projectalign"><div id="projectname">TIM SDK</div><div id="projectbrief">TIM API Swift</div></td><div id="guidelink"><a href="../guide.html">Implementation Guide</a></div></li>
           <li class="nav-group-name">
             <a href="Classes.html">Classes</a>
             <ul class="nav-group-tasks">
@@ -166,7 +168,19 @@
                 <a href="Classes/Logger/Level.html">– Level</a>
               </li>
               <li class="nav-group-task">
-                <a href="Classes/Logger.html#/s:6TimApi6LoggerC9LogRecordV">– LogRecord</a>
+                <a href="Classes/Logger/LogRecord.html">– LogRecord</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/LoyaltyCoupon.html">LoyaltyCoupon</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/LoyaltyDiscount.html">LoyaltyDiscount</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/LoyaltyInformation.html">LoyaltyInformation</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/LoyaltyItem.html">LoyaltyItem</a>
               </li>
               <li class="nav-group-task">
                 <a href="Classes/NativeError.html">NativeError</a>
@@ -267,6 +281,9 @@
               <li class="nav-group-task">
                 <a href="Classes/UltraCompactReceiptFormatter.html">UltraCompactReceiptFormatter</a>
               </li>
+              <li class="nav-group-task">
+                <a href="Classes/VasCheckoutInformation.html">VasCheckoutInformation</a>
+              </li>
             </ul>
           </li>
           <li class="nav-group-name">
@@ -331,6 +348,9 @@
               </li>
               <li class="nav-group-task">
                 <a href="Enums/CKernelType.html">CKernelType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/CLoyaltyFunctionType.html">CLoyaltyFunctionType</a>
               </li>
               <li class="nav-group-task">
                 <a href="Enums/CManagementStatus.html">CManagementStatus</a>
@@ -431,7 +451,7 @@
             <a href="Functions.html">Functions</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a href="Functions.html#/s:6TimApi6unwrapxxSgKlF">unwrap(_:)</a>
+                <a href="Functions.html#/s:6TimApi6unwrapyxxSgKlF">unwrap(_:)</a>
               </li>
             </ul>
           </li>
@@ -1680,6 +1700,134 @@ Immutable class.</p>
                 <li class="item">
                   <div>
                     <code>
+                    <a name="/s:6TimApi13LoyaltyCouponC"></a>
+                    <a name="//apple_ref/swift/Class/LoyaltyCoupon" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TimApi13LoyaltyCouponC">LoyaltyCoupon</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Loyalty coupon.</p>
+
+                        <a href="Classes/LoyaltyCoupon.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">LoyaltyCoupon</span> <span class="p">:</span> <span class="kt">CustomStringConvertible</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6TimApi15LoyaltyDiscountC"></a>
+                    <a name="//apple_ref/swift/Class/LoyaltyDiscount" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TimApi15LoyaltyDiscountC">LoyaltyDiscount</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Loyalty discount.</p>
+
+                        <a href="Classes/LoyaltyDiscount.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">LoyaltyDiscount</span> <span class="p">:</span> <span class="kt"><a href="Classes/Amount.html">Amount</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6TimApi18LoyaltyInformationC"></a>
+                    <a name="//apple_ref/swift/Class/LoyaltyInformation" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TimApi18LoyaltyInformationC">LoyaltyInformation</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Loyalty information.</p>
+
+                        <a href="Classes/LoyaltyInformation.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">LoyaltyInformation</span> <span class="p">:</span> <span class="kt">CustomStringConvertible</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6TimApi11LoyaltyItemC"></a>
+                    <a name="//apple_ref/swift/Class/LoyaltyItem" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TimApi11LoyaltyItemC">LoyaltyItem</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Loyalty item.</p>
+
+                        <a href="Classes/LoyaltyItem.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">LoyaltyItem</span> <span class="p">:</span> <span class="kt">CustomStringConvertible</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
                     <a name="/s:6TimApi11NativeErrorC"></a>
                     <a name="//apple_ref/swift/Class/NativeError" class="dashAnchor"></a>
                     <a class="token" href="#/s:6TimApi11NativeErrorC">NativeError</a>
@@ -2285,11 +2433,11 @@ Immutable class.</p>
  <pre style='border:#a0a0a0 solid 1px background:#f0f0f0'>
  <code>
  // Create settings with Terminal-ID of terminal to connect to
- com.six.TerminalSettings settings = new com.six.TerminalSettings()
- settings.setTerminalId(<q>12345678</q>)</p>
+ let terminalSettings = try TerminalSettings()
+ terminalSettings.terminalId = <q>12345678</q></p>
 
 <p>// Create terminal
- com.six.Terminal terminal = new com.six.Terminal(settings)</p>
+ var terminal = try Terminal(settings: terminalSettings)</p>
 
 <p>// Run transaction
  terminal.transaction(com.six.constants.TransactionType.PURCHASE,
@@ -2756,6 +2904,38 @@ Immutable class.</p>
                 <li class="item">
                   <div>
                     <code>
+                    <a name="/s:6TimApi22VasCheckoutInformationC"></a>
+                    <a name="//apple_ref/swift/Class/VasCheckoutInformation" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TimApi22VasCheckoutInformationC">VasCheckoutInformation</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="Classes/VasCheckoutInformation.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">VasCheckoutInformation</span> <span class="p">:</span> <span class="kt">CustomStringConvertible</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
                     <a name="/s:6TimApi23CompactReceiptFormatterC"></a>
                     <a name="//apple_ref/swift/Class/CompactReceiptFormatter" class="dashAnchor"></a>
                     <a class="token" href="#/s:6TimApi23CompactReceiptFormatterC">CompactReceiptFormatter</a>
@@ -2914,8 +3094,8 @@ Immutable class.</p>
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2018 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2018-08-29)</p>
-          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+          <p>&copy; 2019 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2019-03-12)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.5</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>
     </div>

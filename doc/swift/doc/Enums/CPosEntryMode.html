@@ -5,7 +5,9 @@
     <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
     <meta charset='utf-8'>
-    <script src="../js/jquery.min.js" defer></script>
+    <script src="../sdk_version.js"></script>
+<script src="../api_version.js"></script>
+<script src="../js/jquery.min.js" defer></script>
     <script src="../js/jazzy.js" defer></script>
     
   </head>
@@ -14,19 +16,19 @@
     <a title="CPosEntryMode Enumeration Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../index.html"> Docs</a> (98% documented)</p>
+        <p><a href="../index.html"> Docs</a> (97% documented)</p>
       </div>
     </header>
     <div class="content-wrapper">
       <p id="breadcrumbs">
-        <a href="../../guide.html"> Implementation Guide</a>         <img id="carat" src="../img/carat.png" />         <a href="../index.html"> Reference</a>
+        <a href="../index.html"> Reference</a>
         <img id="carat" src="../img/carat.png" />
         CPosEntryMode Enumeration Reference
       </p>
     </div>
     <div class="content-wrapper">
       <nav class="sidebar">
-        <ul class="nav-groups">
+        <ul class="nav-groups"><li class="nav-group-name" id="titlearea"><td id="projectalign"><div id="projectname">TIM SDK</div><div id="projectbrief">TIM API Swift</div></td><div id="guidelink"><a href="../guide.html">Implementation Guide</a></div></li>
           <li class="nav-group-name">
             <a href="../Classes.html">Classes</a>
             <ul class="nav-group-tasks">
@@ -166,7 +168,19 @@
                 <a href="../Classes/Logger/Level.html">– Level</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Classes/Logger.html#/s:6TimApi6LoggerC9LogRecordV">– LogRecord</a>
+                <a href="../Classes/Logger/LogRecord.html">– LogRecord</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/LoyaltyCoupon.html">LoyaltyCoupon</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/LoyaltyDiscount.html">LoyaltyDiscount</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/LoyaltyInformation.html">LoyaltyInformation</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/LoyaltyItem.html">LoyaltyItem</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Classes/NativeError.html">NativeError</a>
@@ -267,6 +281,9 @@
               <li class="nav-group-task">
                 <a href="../Classes/UltraCompactReceiptFormatter.html">UltraCompactReceiptFormatter</a>
               </li>
+              <li class="nav-group-task">
+                <a href="../Classes/VasCheckoutInformation.html">VasCheckoutInformation</a>
+              </li>
             </ul>
           </li>
           <li class="nav-group-name">
@@ -331,6 +348,9 @@
               </li>
               <li class="nav-group-task">
                 <a href="../Enums/CKernelType.html">CKernelType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CLoyaltyFunctionType.html">CLoyaltyFunctionType</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Enums/CManagementStatus.html">CManagementStatus</a>
@@ -431,7 +451,7 @@
             <a href="../Functions.html">Functions</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a href="../Functions.html#/s:6TimApi6unwrapxxSgKlF">unwrap(_:)</a>
+                <a href="../Functions.html#/s:6TimApi6unwrapyxxSgKlF">unwrap(_:)</a>
               </li>
             </ul>
           </li>
@@ -478,7 +498,9 @@
 
                 </div>
               </div>
-            <p>According to EMV definition.</p>
+            <p><p>Defines how the cardholder used the card with the terminal for the transaction.</p>
+
+<p>Enumeration according to EMV definition. The following values are valid:</p></p>
 
 <p>Specification: retail.</p>
 
@@ -489,9 +511,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6TimApi13CPosEntryModeO11unspecifiedA2CmF"></a>
+                    <a name="/s:6TimApi13CPosEntryModeO11unspecifiedyA2CmF"></a>
                     <a name="//apple_ref/swift/Element/unspecified" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6TimApi13CPosEntryModeO11unspecifiedA2CmF">unspecified</a>
+                    <a class="token" href="#/s:6TimApi13CPosEntryModeO11unspecifiedyA2CmF">unspecified</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -516,9 +538,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6TimApi13CPosEntryModeO6manualA2CmF"></a>
+                    <a name="/s:6TimApi13CPosEntryModeO6manualyA2CmF"></a>
                     <a name="//apple_ref/swift/Element/manual" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6TimApi13CPosEntryModeO6manualA2CmF">manual</a>
+                    <a class="token" href="#/s:6TimApi13CPosEntryModeO6manualyA2CmF">manual</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -543,9 +565,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6TimApi13CPosEntryModeO19magStripeIncompleteA2CmF"></a>
+                    <a name="/s:6TimApi13CPosEntryModeO19magStripeIncompleteyA2CmF"></a>
                     <a name="//apple_ref/swift/Element/magStripeIncomplete" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6TimApi13CPosEntryModeO19magStripeIncompleteA2CmF">magStripeIncomplete</a>
+                    <a class="token" href="#/s:6TimApi13CPosEntryModeO19magStripeIncompleteyA2CmF">magStripeIncomplete</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -571,9 +593,9 @@ requirement: PAN data.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6TimApi13CPosEntryModeO7barCodeA2CmF"></a>
+                    <a name="/s:6TimApi13CPosEntryModeO7barCodeyA2CmF"></a>
                     <a name="//apple_ref/swift/Element/barCode" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6TimApi13CPosEntryModeO7barCodeA2CmF">barCode</a>
+                    <a class="token" href="#/s:6TimApi13CPosEntryModeO7barCodeyA2CmF">barCode</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -598,9 +620,9 @@ requirement: PAN data.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6TimApi13CPosEntryModeO3ocrA2CmF"></a>
+                    <a name="/s:6TimApi13CPosEntryModeO3ocryA2CmF"></a>
                     <a name="//apple_ref/swift/Element/ocr" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6TimApi13CPosEntryModeO3ocrA2CmF">ocr</a>
+                    <a class="token" href="#/s:6TimApi13CPosEntryModeO3ocryA2CmF">ocr</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -625,9 +647,9 @@ requirement: PAN data.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6TimApi13CPosEntryModeO3iccA2CmF"></a>
+                    <a name="/s:6TimApi13CPosEntryModeO3iccyA2CmF"></a>
                     <a name="//apple_ref/swift/Element/icc" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6TimApi13CPosEntryModeO3iccA2CmF">icc</a>
+                    <a class="token" href="#/s:6TimApi13CPosEntryModeO3iccyA2CmF">icc</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -652,9 +674,9 @@ requirement: PAN data.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6TimApi13CPosEntryModeO9magStripeA2CmF"></a>
+                    <a name="/s:6TimApi13CPosEntryModeO9magStripeyA2CmF"></a>
                     <a name="//apple_ref/swift/Element/magStripe" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6TimApi13CPosEntryModeO9magStripeA2CmF">magStripe</a>
+                    <a class="token" href="#/s:6TimApi13CPosEntryModeO9magStripeyA2CmF">magStripe</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -680,9 +702,9 @@ with <q>2</q> or <q>6</q>.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6TimApi13CPosEntryModeO17magStripeFallbackA2CmF"></a>
+                    <a name="/s:6TimApi13CPosEntryModeO17magStripeFallbackyA2CmF"></a>
                     <a name="//apple_ref/swift/Element/magStripeFallback" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6TimApi13CPosEntryModeO17magStripeFallbackA2CmF">magStripeFallback</a>
+                    <a class="token" href="#/s:6TimApi13CPosEntryModeO17magStripeFallbackyA2CmF">magStripeFallback</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -708,9 +730,9 @@ transaction in the transaction log was a successful chip or magnetic stripe tran
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6TimApi13CPosEntryModeO22magStripeFallbackAgainA2CmF"></a>
+                    <a name="/s:6TimApi13CPosEntryModeO22magStripeFallbackAgainyA2CmF"></a>
                     <a name="//apple_ref/swift/Element/magStripeFallbackAgain" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6TimApi13CPosEntryModeO22magStripeFallbackAgainA2CmF">magStripeFallbackAgain</a>
+                    <a class="token" href="#/s:6TimApi13CPosEntryModeO22magStripeFallbackAgainyA2CmF">magStripeFallbackAgain</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -737,9 +759,9 @@ transaction log was also a fallback transaction. If the number of transactions w
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6TimApi13CPosEntryModeO24magStripeFallbackIccFailA2CmF"></a>
+                    <a name="/s:6TimApi13CPosEntryModeO24magStripeFallbackIccFailyA2CmF"></a>
                     <a name="//apple_ref/swift/Element/magStripeFallbackIccFail" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6TimApi13CPosEntryModeO24magStripeFallbackIccFailA2CmF">magStripeFallbackIccFail</a>
+                    <a class="token" href="#/s:6TimApi13CPosEntryModeO24magStripeFallbackIccFailyA2CmF">magStripeFallbackIccFail</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -768,9 +790,9 @@ been aborted because of unknown reasons.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6TimApi13CPosEntryModeO013emergencyDataD0A2CmF"></a>
+                    <a name="/s:6TimApi13CPosEntryModeO013emergencyDataD0yA2CmF"></a>
                     <a name="//apple_ref/swift/Element/emergencyDataEntry" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6TimApi13CPosEntryModeO013emergencyDataD0A2CmF">emergencyDataEntry</a>
+                    <a class="token" href="#/s:6TimApi13CPosEntryModeO013emergencyDataD0yA2CmF">emergencyDataEntry</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -795,9 +817,9 @@ been aborted because of unknown reasons.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6TimApi13CPosEntryModeO9ecommerceA2CmF"></a>
+                    <a name="/s:6TimApi13CPosEntryModeO9ecommerceyA2CmF"></a>
                     <a name="//apple_ref/swift/Element/ecommerce" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6TimApi13CPosEntryModeO9ecommerceA2CmF">ecommerce</a>
+                    <a class="token" href="#/s:6TimApi13CPosEntryModeO9ecommerceyA2CmF">ecommerce</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -822,9 +844,9 @@ been aborted because of unknown reasons.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6TimApi13CPosEntryModeO9ctlessIccA2CmF"></a>
+                    <a name="/s:6TimApi13CPosEntryModeO9ctlessIccyA2CmF"></a>
                     <a name="//apple_ref/swift/Element/ctlessIcc" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6TimApi13CPosEntryModeO9ctlessIccA2CmF">ctlessIcc</a>
+                    <a class="token" href="#/s:6TimApi13CPosEntryModeO9ctlessIccyA2CmF">ctlessIcc</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -849,9 +871,9 @@ been aborted because of unknown reasons.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6TimApi13CPosEntryModeO15ctlessMagStrigeA2CmF"></a>
+                    <a name="/s:6TimApi13CPosEntryModeO15ctlessMagStrigeyA2CmF"></a>
                     <a name="//apple_ref/swift/Element/ctlessMagStrige" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6TimApi13CPosEntryModeO15ctlessMagStrigeA2CmF">ctlessMagStrige</a>
+                    <a class="token" href="#/s:6TimApi13CPosEntryModeO15ctlessMagStrigeyA2CmF">ctlessMagStrige</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -878,8 +900,8 @@ been aborted because of unknown reasons.</p>
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2018 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2018-08-29)</p>
-          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+          <p>&copy; 2019 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2019-03-12)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.5</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>
     </div>
