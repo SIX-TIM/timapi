@@ -30,15 +30,9 @@ function setSdkVersion(sdk_version) {
 }
 
 function timVersionInject() {
-  // If no sdk version set, try to load as json from asset folder 
-  if(typeof timsdk === "undefined") {
-      timsdk = {};
-      fetch("../../assets/sdk_version.json")
-          .then(response => response.json(), reason => reason)
-          .then(json => setSdkVersion(json.sdk_version), reason => reason);
-  }
-  else {
-      setSdkVersion(timsdk.sdk_version);
+  // TIM SDK version 
+  if(typeof timsdk !== "undefined") {
+    setSdkVersion(timsdk.sdk_version);
   }
 
   // TIM API version

@@ -51,7 +51,7 @@
           </div>
           <div id="docTitle">Detailed Implementation Guide</div>
           <ul class="nav">
-          <li><a href="#intro">Introduction</a></li><li><a href="#sysreq">System Requirements</a></li><li><a href="#setup">Setup Configuration</a><ul class="nav"><li><a href="#network">Network Configuration</a></li><li><a href="#guides">Guides Configuration</a></li><li><a href="#configfile">Configuration File</a></li></ul></li><li><a href="#operation">Operation Overview</a></li><li><a href="#automatisms">Automatisms</a></li><li><a href="#useCase">Use Cases</a><ul class="nav"><li><a href="#retailManualPanKeyEntry">Manual Pan Key Entry</a></li><li class="filterGuides guidePetrol"><a href="#petrolBasketHandling">Petrol Basket Handling</a></li><li class="filterGuides guidePetrol"><a href="#petrolUseCase">Guide Petrol Use Cases</a><ul class="nav"><li><a href="#petrolUseCaseIndoorOnline">Indoor - Online Card</a></li><li><a href="#petrolUseCaseOutdoorOnline">Outdoor - Online Card</a></li><li><a href="#petrolUseCaseIndoorOffline">Indoor - Offline Card</a></li><li><a href="#petrolUseCaseOutdoorOffline">Outdoor - Offline Card</a></li></ul></li><li class="filterGuides guideUnattended"><a href="#uatUseCase">Guide Unattended Use Cases</a><ul class="nav"><li><a href="#uatUseCasePartialCommit">Use Case Partial Commit</a></li><li><a href="#uatUseCaseHoldCommit">Use Case Hold Commit</a></li><li><a href="#uatUseCaseAmountAdjustment">Use Case Amount Adjustment</a></li><li><a href="#uatUseCaseRetainCard">Use Case Retain Card</a></li><li><a href="#uatUseCaseSilentFlag">Use Case Silent Abort</a></li></ul></li><li class="filterGuides guideAustria"><a href="#austrianUseCase">Guide Austrian Use Cases</a><ul class="nav"><li class="filterGuides guideAustria"><a href="#austrianUseCaseNGV">Austrian Use Case: NGV</a></li><li class="filterGuides guideAustria"><a href="#austrianUseCaseDelayedPayment">Austrian Use Case: Delayed Payment</a></li></ul></li></ul></li><li><a href="#methods">Terminal methods overview</a><ul class="nav"><li><a href="#mainFunc">Main / guide Retail terminal functions</a></li><li class="filterGuides guidePetrol"><a href="#petrolFunc">Guide Petrol terminal functions</a></li><li class="filterGuides guideUnattended"><a href="#uatFunc">Guide Unattended terminal functions</a></li><li class="filterGuides guideDialog"><a href="#dialogFunc">Guide Dialog terminal functions</a></li><li><a href="#addMethods">Additional terminal listener-events</a></li></ul></li><li><a href="#flows">Flows</a><ul class="nav"><li class="filterGuides guidePetrol"><a href="#petrolFlows">Petrol Additional Flows</a><ul class="nav"><li><a href="#petrolFlowIndoorOnline">Petrol Flow: Indoor - Online Card</a></li><li><a href="#petrolFlowOutdoorOnline">Petrol Flow: Outdoor - Online Card</a></li><li><a href="#petrolFlowIndoorOffline">Petrol Flow: Indoor - Offline Card</a></li><li><a href="#petrolFlowOutdoorOffline">Petrol Flow: Outdoor - Offline Card</a></li></ul></li><li class="filterGuides guideUnattended"><a href="#uatFlows">Guide Unattended Additional Flows</a><ul class="nav"><li><a href="#uatFlowPartialCommit"> Flow: Partial Commit</a></li><li><a href="#uatFlowHoldCommit"> Flow: Hold commit</a></li><li><a href="#uatFlowAmountAdjustment"> Flow: Amount adjustment</a></li><li><a href="#uatFlowPreAuth"> Flow: PreAuthorization</a></li><li><a href="#uatFlowRetainCard"> Flow: Retain card</a></li><li><a href="#uatFlowSilentFlag"> Flow: Silent abort</a></li></ul></li><li class="filterGuides guideAustria"><a href="#austrianFlows">Guide Austrian Additional Flows</a><ul class="nav"><li><a href="#austrianFlowNGVWithoutDelay">Austrian Flow: NGV Purchase without delay</a></li><li><a href="#austrianFlowNGVWithDelay">Austrian Flow: NGV Purchase with delay</a></li><li><a href="#austrianFlowNGVFallback">Austrian Flow: NGV Purchase fallback with Non-NGV card</a></li><li><a href="#austrianFlowNGVMandatoryError">Austrian Flow: NGV Purchase mandatory with error</a></li></ul></li></ul></li><li><a href="#logging">Logging</a><ul class="nav"><li><a href="#loglevel">LogLevel</a></li><li><a href="#logRotation">Log Rotation Handling</a></li></ul></li><li><a href="#examples">Code Examples</a></li></ul>
+          <li><a href="#intro">Introduction</a></li><li><a href="#sysreq">System Requirements</a></li><li><a href="#setup">Setup Configuration</a><ul class="nav"><li><a href="#network">Network Configuration</a></li><li><a href="#guides">Guides Configuration</a></li><li><a href="#configfile">Configuration File</a></li></ul></li><li><a href="#operation">Operation Overview</a></li><li><a href="#automatisms">Automatisms</a></li><li><a href="#useCase">Use Cases</a><ul class="nav"><li><a href="#retailManualPanKeyEntry">Manual Pan Key Entry</a></li><li class="filterGuides guidePetrol"><a href="#petrolUseCase">Guide Petrol Use Cases</a><ul class="nav"><li class="filterGuides guidePetrol"><a href="#petrolBasketHandling">Petrol Basket Handling</a></li><li><a href="#petrolUseCaseIndoorOnline">Indoor - Online Card</a></li><li><a href="#petrolUseCaseOutdoorOnline">Outdoor - Online Card</a></li><li><a href="#petrolUseCaseIndoorOffline">Indoor - Offline Card</a></li><li><a href="#petrolUseCaseOutdoorOffline">Outdoor - Offline Card</a></li></ul></li><li class="filterGuides guideUnattended"><a href="#uatUseCase">Guide Unattended Use Cases</a><ul class="nav"><li><a href="#uatUseCasePartialCommit">Use Case Partial Commit</a></li><li><a href="#uatUseCaseHoldCommit">Use Case Hold Commit</a></li><li><a href="#uatUseCaseAmountAdjustment">Use Case Amount Adjustment</a></li><li><a href="#uatUseCaseRetainCard">Use Case Retain Card</a></li><li><a href="#uatUseCaseSilentFlag">Use Case Silent Abort</a></li></ul></li><li class="filterGuides guideAustria"><a href="#austrianUseCase">Guide Austrian Use Cases</a><ul class="nav"><li class="filterGuides guideAustria"><a href="#austrianUseCaseNGV">Austrian Use Case: NGV</a></li><li class="filterGuides guideAustria"><a href="#austrianUseCaseDelayedPayment">Austrian Use Case: Delayed Payment</a></li></ul></li></ul></li><li><a href="#methods">Terminal methods overview</a><ul class="nav"><li><a href="#mainFunc">Main / guide Retail terminal functions</a></li><li class="filterGuides guidePetrol"><a href="#petrolFunc">Guide Petrol terminal functions</a></li><li class="filterGuides guideUnattended"><a href="#uatFunc">Guide Unattended terminal functions</a></li><li class="filterGuides guideDialog"><a href="#dialogFunc">Guide Dialog terminal functions</a></li><li><a href="#addMethods">Additional terminal listener-events</a></li></ul></li><li><a href="#flows">Flows</a><ul class="nav"><li class="filterGuides guidePetrol"><a href="#petrolFlows">Petrol Additional Flows</a><ul class="nav"><li><a href="#petrolFlowIndoorOnline">Petrol Flow: Indoor - Online Card</a></li><li><a href="#petrolFlowOutdoorOnline">Petrol Flow: Outdoor - Online Card</a></li><li><a href="#petrolFlowIndoorOffline">Petrol Flow: Indoor - Offline Card</a></li><li><a href="#petrolFlowOutdoorOffline">Petrol Flow: Outdoor - Offline Card</a></li></ul></li><li class="filterGuides guideUnattended"><a href="#uatFlows">Guide Unattended Additional Flows</a><ul class="nav"><li><a href="#uatFlowPartialCommit"> Flow: Partial Commit</a></li><li><a href="#uatFlowHoldCommit"> Flow: Hold commit</a></li><li><a href="#uatFlowAmountAdjustment"> Flow: Amount adjustment</a></li><li><a href="#uatFlowPreAuth"> Flow: PreAuthorization</a></li><li><a href="#uatFlowRetainCard"> Flow: Retain card</a></li><li><a href="#uatFlowSilentFlag"> Flow: Silent abort</a></li></ul></li><li class="filterGuides guideAustria"><a href="#austrianFlows">Guide Austrian Additional Flows</a><ul class="nav"><li><a href="#austrianFlowNGVWithoutDelay">Austrian Flow: NGV Purchase without delay</a></li><li><a href="#austrianFlowNGVWithDelay">Austrian Flow: NGV Purchase with delay</a></li><li><a href="#austrianFlowNGVFallback">Austrian Flow: NGV Purchase fallback with Non-NGV card</a></li><li><a href="#austrianFlowNGVMandatoryError">Austrian Flow: NGV Purchase mandatory with error</a></li></ul></li></ul></li><li><a href="#logging">Logging</a><ul class="nav"><li><a href="#loglevel">LogLevel</a></li><li><a href="#logRotation">Log Rotation Handling</a></li></ul></li><li><a href="#examples">Code Examples</a></li></ul>
           <div class="seperator">&#160;</div>
           <div id="docLinks">
           <div class="linkDiv"><a href="simple.html">Simple Implementation Guide</a></div><div class="linkDiv"><a href="appendix.html">Appendix</a></div><div class="linkDiv"><a href="doc/index.html">API Documentation</a></div><div class="linkDiv"><a href="../../version/version-history.html">Version History</a></div></div>
@@ -452,50 +452,62 @@ SecuredConnection = On</code></pre>
     <section id="useCase"><h1><a name="useCase"></a>Use Cases</h1><div class="row"><div class="col-md-6"><p>This chapter describes various guides and their use cases.</p>
         <p>Hint: if no content visible, try to select a guide under "Guide Selection" on the left.</p>
         </div></div><section id="retailManualPanKeyEntry"><h2><a name="retailManualPanKeyEntry"></a>Manual Pan Key Entry</h2><div class="row"><div class="col-md-6"><p>The TIM API offers the possibility to perform a Manual Pan Key Entry (MPKE) on ECR side, e.g. if no physical card is present. 
-        This can be done by setting the <code><a href="doc/index.html?com/six/timapi/TransactionData.html#setCardRef-java.lang.String-">CardRef</a></code> field in the <code><a href="doc/index.html?com/six/timapi/TransactionData.html">TransactionData</a></code>container
-        which is then used in the next transaction request message.</p>
+        This can be done by setting the <code><a href="doc/index.html?com/six/timapi/TransactionData.html#setCardRef-java.lang.String-">CardRef</a></code> field in the <code><a href="doc/index.html?com/six/timapi/Terminal.html#getTransactionData--">TransactionData</a></code>container 
+        present in the terminal instance.</p>
         <p>This <code><a href="doc/index.html?com/six/timapi/TransactionData.html#setCardRef-java.lang.String-">CardRef</a></code> field must have the following format to reference a non-PCI PAN:</p>
         <p>Example: "061234567801234567" : "06" is the prefix that defines the content type that follows (non-PCI PAN), "1234568701234567" is then the non-PCI PAN.</p>
         <p><b>Important</b>: The MPKE on the ECR is only allowed for non-PCI brands, otherwise the manual entry must only be performed on the PIN Pad.</p>
         </div></div></section>
-    	<div class="row"><div class="col-md-6"></div></div><section class="filterGuides guidePetrol" id="petrolBasketHandling"><h2><a name="petrolBasketHandling"></a>Petrol Basket Handling</h2><div class="row"><div class="col-md-6">
-	<p>An essential part of the petrol use cases is the usage of the <code><a href="doc/index.html?com/six/timapi/Basket.html">Basket</a></code> container.
-	This container is used to exchange information regarding purchased goods and fuel at a petrol station. It is important to know that the correctness of the content
-	of the basket container lies within the responsibility of the ECR and/or the acquiring host, not of the TIM API or the terminal.</p>
-	<p>The <code><a href="doc/index.html?com/six/timapi/Basket.html">Basket</a></code> is sent from the ECR to the terminal, then from the terminal to the host.
-	The host may adjust the content of the <code><a href="doc/index.html?com/six/timapi/Basket.html">Basket</a></code> depending on the card used for the transaction,
-	therefore the <code><a href="doc/index.html?com/six/timapi/Basket.html">Basket</a></code> sent from ECR to terminal may differ from the 
-	<code><a href="doc/index.html?com/six/timapi/Basket.html">Basket</a></code> returned from terminal to ECR.</p>
-	<p>A <code><a href="doc/index.html?com/six/timapi/Basket.html">Basket</a></code> may be used with the following <code><a href="doc/index.html?com/six/timapi/constants/TransactionType.html">TransactionTypes</a></code>:
-		<ul>
+
+        <div class="row"><div class="col-md-6"></div></div><section class="filterGuides guidePetrol" id="petrolUseCase"><h2><a name="petrolUseCase"></a>Guide Petrol Use Cases</h2><div class="row"><div class="col-md-6"><p>Petrol functionality adds a number of
+ 	    <a href="#petrolFunc">additional methods</a>,
+ 			<code><a href="doc/index.html?com/six/timapi/constants/TransactionType.html">transaction types</a></code>,
+ 			containers (<code><a href="doc/index.html?com/six/timapi/TransactionResponse.html#getAdditionalInfo--">AdditionalInfoList</a></code>,
+ 			<code><a href="doc/index.html?com/six/timapi/Basket.html">Basket</a></code>) and
+ 			container content (<code><a href="doc/index.html?com/six/timapi/constants/ProcessingDisposition.html">ProcessingDisposition</a></code>)
+ 			<a href="#petrolAddMethods">notifiers</a> and
+ 			<a href="#petrolFlows">flows</a>
+ 			tailored to the needs at petrol stations.</p>
+
+      <p>Petrol has the following basic use cases:</p>
+
+			</div></div><section class="filterGuides guidePetrol" id="petrolBasketHandling"><h3><a name="petrolBasketHandling"></a>Petrol Basket Handling</h3><div class="row"><div class="col-md-6">
+			<p>An essential part of the petrol use cases is the usage of the <code><a href="doc/index.html?com/six/timapi/Basket.html">Basket</a></code> container.
+			This container is used to exchange information regarding purchased goods and fuel at a petrol station. It is important to know that the correctness of the content
+			of the basket container lies within the responsibility of the ECR and/or the acquiring host, not of the TIM API or the terminal.</p>
+			<p>The <code><a href="doc/index.html?com/six/timapi/Basket.html">Basket</a></code> is sent from the ECR to the terminal, then from the terminal to the host.
+			The host may adjust the content of the <code><a href="doc/index.html?com/six/timapi/Basket.html">Basket</a></code> depending on the card used for the transaction,
+			therefore the <code><a href="doc/index.html?com/six/timapi/Basket.html">Basket</a></code> sent from ECR to terminal may differ from the 
+			<code><a href="doc/index.html?com/six/timapi/Basket.html">Basket</a></code> returned from terminal to ECR.</p>
+			<p>A <code><a href="doc/index.html?com/six/timapi/Basket.html">Basket</a></code> may be used with the following <code><a href="doc/index.html?com/six/timapi/constants/TransactionType.html">TransactionTypes</a></code>:
+			<ul>
 			<li>
 			Purchase
 			</li>
 			<li>
 			FinalizePurchase
 			</li>
-		</ul>
-	</p>
-	<p>To send a <code><a href="doc/index.html?com/six/timapi/Basket.html">Basket</a></code> within a request, the <code><a href="doc/index.html?com/six/timapi/TransactionRequest.html">TransactionRequest</a></code>
-	must be created by the integrator and the <code><a href="doc/index.html?com/six/timapi/Basket.html">Basket</a></code>
-	and its <code><a href="doc/index.html?com/six/timapi/BasketItem.html">BasketItems</a></code> must then be set in the <code><a href="doc/index.html?com/six/timapi/TransactionRequest.html">TransactionRequest</a></code>.
-	The <code><a href="doc/index.html?com/six/timapi/TransactionRequest.html">TransactionRequest</a></code> is then used as parameter of the <code><a href="doc/index.html?com/six/timapi/Terminal.html#transaction-com.six.timapi.constants.TransactionType-com.six.timapi.Amount-">Transaction</a></code>/<code><a href="doc/index.html?com/six/timapi/Terminal.html#transactionAsync-com.six.timapi.constants.TransactionType-com.six.timapi.Amount-">TransactionAsync</a></code>
-	function.</p>
-	</div><div class="col-md-6">
-	<p lang="Java">The following snippet shows how to do this in code:
-	<pre><code class="language-{.java}">/* Create a TransactionRequest object which can then
- * be sent in a transaction() or transactionAsync()
- * function.
- */
- TransactionRequest request = new TransactionRequest();
+			</ul>
+			</p>
+			<p>To send a <code><a href="doc/index.html?com/six/timapi/Basket.html">Basket</a></code> within a request, the <code><a href="doc/index.html?com/six/timapi/TransactionRequest.html">TransactionRequest</a></code>
+			must be created by the integrator and the <code><a href="doc/index.html?com/six/timapi/Basket.html">Basket</a></code>
+			and its <code><a href="doc/index.html?com/six/timapi/BasketItem.html">BasketItems</a></code> must then be set in the <code><a href="doc/index.html?com/six/timapi/TransactionRequest.html">TransactionRequest</a></code>.
+			The <code><a href="doc/index.html?com/six/timapi/TransactionRequest.html">TransactionRequest</a></code> is then used as parameter of the <code><a href="doc/index.html?com/six/timapi/Terminal.html#transaction-com.six.timapi.constants.TransactionType-com.six.timapi.TransactionRequest-">Transaction</a></code>/
+			<code><a href="doc/index.html?com/six/timapi/Terminal.html#transactionAsync-com.six.timapi.constants.TransactionType-com.six.timapi.TransactionRequest-">TransactionAsync</a></code>
+			function.</p>
+			</div><div class="col-md-6">
+			<p lang="Java">The following snippet shows how to do this in code:
+			<pre><code class="language-{.java}">// Create a TransactionRequest object which can then
+// be sent in a transaction() or transactionAsync()
+// function.
+TransactionRequest request = new TransactionRequest();
 
- // At least an amount has to be set
- request.setAmount(new Amount(25000, Currency.CHF));
+// At least an amount has to be set
+request.setAmount(new Amount(25000, Currency.CHF));
 
- /* Create a basket object which can then contain
-  * a list of BasketItems.
-  */
- Basket basket = new Basket();
+// Create a basket object which can then contain
+// a list of BasketItems.
+Basket basket = new Basket();
 
 // Create as many BasketItems as required
 BasketItem basketItem = new BasketItem();
@@ -509,7 +521,7 @@ basketItem.setProdDescription("Diesel");
 
 BasketItem basketItem2 = new BasketItem();
 
-basketItem.setItemId("200");
+basketItem.setItemId("45");
 basketItem.setAmount(new Amount(500, Currency.CHF));
 basketItem.setItemQuantity(new ItemQuantity(20, 0, "pcs"));
 basketItem.setTotalAmount(10000, Currency.CHF);
@@ -519,30 +531,18 @@ basketItem.setProdDescription("Sweets");
 basket.getItems().add(basketItem);
 basket.getItems().add(basketItem2);
 
-/* If all required BasketItems have been added to the
- * Basket, the Basket itself can be added the 
- * TransactionRequest.
- */
- request.setBasket(basket);
+// If all required BasketItems have been added to the
+// Basket, the Basket itself can be added the 
+// TransactionRequest.
+request.setBasket(basket);
 
- // The request can then be used in a transaction
- terminal.transactionAsync(TransactionType.PURCHASE, request);
+// The request can then be used in a transaction
+terminal.transactionAsync(TransactionType.PURCHASE, request);
 </code></pre>
-	</p>
-	</div></div>
-	<div class="row"><div class="col-md-6"></div></div></section>
-        <div class="row"><div class="col-md-6"></div></div><section class="filterGuides guidePetrol" id="petrolUseCase"><h2><a name="petrolUseCase"></a>Guide Petrol Use Cases</h2><div class="row"><div class="col-md-6"><p>Petrol functionality adds a number of
- 	    <a href="#petrolFunc">additional methods</a>,
- 			<code><a href="doc/index.html?com/six/timapi/constants/TransactionType.html">transaction types</a></code>,
- 			containers (<code><a href="doc/index.html?com/six/timapi/TransactionResponse.html#getAdditionalInfo--">AdditionalInfoList</a></code>,
- 			<code><a href="doc/index.html?com/six/timapi/Basket.html">Basket</a></code>) and
- 			container content (<code><a href="doc/index.html?com/six/timapi/constants/ProcessingDisposition.html">ProcessingDisposition</a></code>)
- 			<a href="#petrolAddMethods">notifiers</a> and
- 			<a href="#petrolFlows">flows</a>
- 			tailored to the needs at petrol stations.</p>
-
-            <p>Petrol has the following basic use cases:</p>
- 			</div></div><section id="petrolUseCaseIndoorOnline"><h3><a name="petrolUseCaseIndoorOnline"></a>Indoor - Online Card</h3><div class="row"><div class="col-md-6"><p>Online cards are processed like a standard credit or debit payment card through an online system,
+			</p>
+			</div></div>
+			<div class="row"><div class="col-md-6"></div></div></section>
+ 			<div class="row"><div class="col-md-6"></div></div><section id="petrolUseCaseIndoorOnline"><h3><a name="petrolUseCaseIndoorOnline"></a>Indoor - Online Card</h3><div class="row"><div class="col-md-6"><p>Online cards are processed like a standard credit or debit payment card through an online system,
 				no mather if it is a standard credit card or an oil company card. In the latter case however,
 				depending on the exact brand rules, additional data must be supplied by the ECR system
 				(usually the type of goods being purchased, see <code><a href="doc/index.html?com/six/timapi/Basket.html">Basket</a></code>)
@@ -557,7 +557,7 @@ basket.getItems().add(basketItem2);
 				between online cards (this scenario) and offline cards
 				(<a href="#petrolOverviewIndoorOffline">that scenario</a> ) it is
 				necessary to first initiate a card detection through an
-				<code class="asyncMethod"><a class="asyncMethod" href="doc/com/six/timapi/Terminal.html#initTransactionAsync-boolean-com.six.timapi.Amount-">InitTransaction</a></code> call.</p>
+				<code class="asyncMethod"><a class="asyncMethod" href="doc/index.html?com/six/timapi/Terminal.html#initTransactionAsync-boolean-com.six.timapi.Amount-">InitTransaction</a></code> call.</p>
 
 				<p>This is an indoor scenario, i.e. takes place in an attended environment, usually a shop that
 				is part of the petrol station. See <a href="#petrolFlowIndoorOnline">this flow</a>
@@ -581,9 +581,9 @@ basket.getItems().add(basketItem2);
  			<div class="row"><div class="col-md-6"></div></div><section id="petrolUseCaseIndoorOffline"><h3><a name="petrolUseCaseIndoorOffline"></a>Indoor - Offline Card</h3><div class="row"><div class="col-md-6"><p>Offline cards are cards that are processed entirely by the ECR system. The EFT operates only
  				as a card reader, display and keyboard for the ECR. The ECR recognises offline cards based on
  				the <code><a href="doc/index.html?com/six/timapi/constants/ProcessingDisposition.html">ProcessingDisposition</a></code>
- 				returned from <code class="asyncMethod"><a class="asyncMethod" href="doc/com/six/timapi/Terminal.html#initTransactionAsync-boolean-com.six.timapi.Amount-">InitTransaction</a></code>.</p>
+ 				returned from <code class="asyncMethod"><a class="asyncMethod" href="doc/index.html?com/six/timapi/Terminal.html#initTransactionAsync-boolean-com.six.timapi.Amount-">InitTransaction</a></code>.</p>
 
- 				<p>After the completion of <code class="asyncMethod"><a class="asyncMethod" href="doc/com/six/timapi/Terminal.html#initTransactionAsync-boolean-com.six.timapi.Amount-">InitTransaction</a></code>
+ 				<p>After the completion of <code class="asyncMethod"><a class="asyncMethod" href="doc/index.html?com/six/timapi/Terminal.html#initTransactionAsync-boolean-com.six.timapi.Amount-">InitTransaction</a></code>
  				the ECR is responsible for all further interaction. For cardholder interaction a number of
  				dialogs (part of the "Dialog" guide) can be used.</p>
 
@@ -1025,11 +1025,11 @@ terminal.addListener(new MyTerminalListener());
           <tbody>
               <tr>
                   <td>
-                      <code class="syncMethod"><a class="syncMethod" href="doc/com/six/timapi/Terminal.html#initTransaction-boolean-com.six.timapi.Amount-">initTransaction</a></code>
+                      <code class="syncMethod"><a class="syncMethod" href="doc/index.html?com/six/timapi/Terminal.html#initTransaction-boolean-com.six.timapi.Amount-">initTransaction</a></code>
                       <br class="syncMethod">
-                      <code class="asyncMethod"><a class="asyncMethod" href="doc/com/six/timapi/Terminal.html#initTransactionAsync-boolean-com.six.timapi.Amount-">initTransactionAsync</a></code>
+                      <code class="asyncMethod"><a class="asyncMethod" href="doc/index.html?com/six/timapi/Terminal.html#initTransactionAsync-boolean-com.six.timapi.Amount-">initTransactionAsync</a></code>
                       <br>
-                      <code class="completedMethod"><a class="completedMethod" href="doc/com/six/timapi/TerminalListener.html#initTransactionCompleted-com.six.timapi.TimEvent-com.six.timapi.CardData-">initTransactionCompleted</a></code>
+                      <code class="completedMethod"><a class="completedMethod" href="doc/index.html?com/six/timapi/TerminalListener.html#initTransactionCompleted-com.six.timapi.TimEvent-com.six.timapi.CardData-">initTransactionCompleted</a></code>
                   </td>
                   <td>Retrieve card data for the presented card.</td>
               </tr>
@@ -1052,11 +1052,11 @@ terminal.addListener(new MyTerminalListener());
         <tbody>
             <tr>
                 <td>
-                    <code class="syncMethod"><a class="syncMethod" href="doc/com/six/timapi/Terminal.html#openReader--">openReader</a></code>
+                    <code class="syncMethod"><a class="syncMethod" href="doc/index.html?com/six/timapi/Terminal.html#openReader--">openReader</a></code>
                     <br class="syncMethod">
-                    <code class="asyncMethod"><a class="asyncMethod" href="doc/com/six/timapi/Terminal.html#openReaderAsync--">openReaderAsync</a></code>
+                    <code class="asyncMethod"><a class="asyncMethod" href="doc/index.html?com/six/timapi/Terminal.html#openReaderAsync--">openReaderAsync</a></code>
                     <br>
-                    <code class="completedMethod"><a class="completedMethod" href="doc/com/six/timapi/TerminalListener.html#openReaderCompleted-com.six.timapi.TimEvent-">openReaderCompleted</a></code>
+                    <code class="completedMethod"><a class="completedMethod" href="doc/index.html?com/six/timapi/TerminalListener.html#openReaderCompleted-com.six.timapi.TimEvent-">openReaderCompleted</a></code>
                 </td>
                 <td>Opens the shutter of the card reader.</td>
             </tr>
@@ -1068,21 +1068,21 @@ terminal.addListener(new MyTerminalListener());
             </tr>
             <tr>
                 <td>
-                    <code class="syncMethod"><a class="syncMethod" href="doc/com/six/timapi/Terminal.html#closeMaintenanceWindow--">closeMaintenanceWindow</a></code>
+                    <code class="syncMethod"><a class="syncMethod" href="doc/index.html?com/six/timapi/Terminal.html#closeMaintenanceWindow--">closeMaintenanceWindow</a></code>
                     <br class="syncMethod">
-                    <code class="asyncMethod"><a class="asyncMethod" href="doc/com/six/timapi/Terminal.html#closeMaintenanceWindowAsync--">closeMaintenanceWindowAsync</a></code>
+                    <code class="asyncMethod"><a class="asyncMethod" href="doc/index.html?com/six/timapi/Terminal.html#closeMaintenanceWindowAsync--">closeMaintenanceWindowAsync</a></code>
                     <br>
-                    <code class="completedMethod"><a class="completedMethod" href="doc/com/six/timapi/TerminalListener.html#closeMaintenanceWindowCompleted-com.six.timapi.TimEvent-">closeMaintenanceWindowCompleted</a></code>
+                    <code class="completedMethod"><a class="completedMethod" href="doc/index.html?com/six/timapi/TerminalListener.html#closeMaintenanceWindowCompleted-com.six.timapi.TimEvent-">closeMaintenanceWindowCompleted</a></code>
                 </td>
                 <td>Prohibits the EFT terminal from performing any triggered maintenance tasks.</td>
             </tr>
             <tr>
                 <td>
-                    <code class="syncMethod"><a class="syncMethod" href="doc/com/six/timapi/Terminal.html#closeReader--">closeReader</a></code>
+                    <code class="syncMethod"><a class="syncMethod" href="doc/index.html?com/six/timapi/Terminal.html#closeReader--">closeReader</a></code>
                     <br class="syncMethod">
-                    <code class="asyncMethod"><a class="asyncMethod" href="doc/com/six/timapi/Terminal.html#closeReaderAsync--">closeReaderAsync</a></code>
+                    <code class="asyncMethod"><a class="asyncMethod" href="doc/index.html?com/six/timapi/Terminal.html#closeReaderAsync--">closeReaderAsync</a></code>
                     <br>
-                    <code class="completedMethod"><a class="completedMethod" href="doc/com/six/timapi/TerminalListener.html#closeReaderCompleted-com.six.timapi.TimEvent-">closeReaderCompleted</a></code>
+                    <code class="completedMethod"><a class="completedMethod" href="doc/index.html?com/six/timapi/TerminalListener.html#closeReaderCompleted-com.six.timapi.TimEvent-">closeReaderCompleted</a></code>
                 </td>
                 <td>Closes the shutter of the card reader.</td>
             </tr>
@@ -1098,27 +1098,27 @@ terminal.addListener(new MyTerminalListener());
             </tr>
             <tr>
                 <td>
-                    <code class="syncMethod"><a class="syncMethod" href="doc/com/six/timapi/Terminal.html#ejectCard--">ejectCard</a></code>
+                    <code class="syncMethod"><a class="syncMethod" href="doc/index.html?com/six/timapi/Terminal.html#ejectCard--">ejectCard</a></code>
                     <br class="syncMethod">
-                    <code class="asyncMethod"><a class="asyncMethod" href="doc/com/six/timapi/Terminal.html#ejectCardAsync--">ejectCardAsync</a></code>
+                    <code class="asyncMethod"><a class="asyncMethod" href="doc/index.html?com/six/timapi/Terminal.html#ejectCardAsync--">ejectCardAsync</a></code>
                     <br>
-                    <code class="completedMethod"><a class="completedMethod" href="doc/com/six/timapi/TerminalListener.html#ejectCardCompleted-com.six.timapi.TimEvent-">ejectCardCompleted</a></code>
+                    <code class="completedMethod"><a class="completedMethod" href="doc/index.html?com/six/timapi/TerminalListener.html#ejectCardCompleted-com.six.timapi.TimEvent-">ejectCardCompleted</a></code>
                 </td>
                 <td>Ejects the card from the card reader.</td>
             </tr>
             <tr>
                 <td>
-                    <code class="notifyMethod"><a class="notifyMethod" href="doc/com/six/timapi/Terminal.html#holdCommit--">holdCommit</a></code>
+                    <code class="notifyMethod"><a class="notifyMethod" href="doc/index.html?com/six/timapi/Terminal.html#holdCommit--">holdCommit</a></code>
                 </td>
                 <td>Increases the commit timeout.</td>
             </tr>
             <tr>
                 <td>
-                    <code class="syncMethod"><a class="syncMethod" href="doc/com/six/timapi/Terminal.html#openMaintenanceWindow--">openMaintenanceWindow</a></code>
+                    <code class="syncMethod"><a class="syncMethod" href="doc/index.html?com/six/timapi/Terminal.html#openMaintenanceWindow--">openMaintenanceWindow</a></code>
                     <br class="syncMethod">
-                    <code class="asyncMethod"><a class="asyncMethod" href="doc/com/six/timapi/Terminal.html#openMaintenanceWindowAsync--">openMaintenanceWindowAsync</a></code>
+                    <code class="asyncMethod"><a class="asyncMethod" href="doc/index.html?com/six/timapi/Terminal.html#openMaintenanceWindowAsync--">openMaintenanceWindowAsync</a></code>
                     <br>
-                    <code class="completedMethod"><a class="completedMethod" href="doc/com/six/timapi/TerminalListener.html#openMaintenanceWindowCompleted-com.six.timapi.TimEvent-">openMaintenanceWindowCompleted</a></code>
+                    <code class="completedMethod"><a class="completedMethod" href="doc/index.html?com/six/timapi/TerminalListener.html#openMaintenanceWindowCompleted-com.six.timapi.TimEvent-">openMaintenanceWindowCompleted</a></code>
                 </td>
                 <td>Opens a maintenance window where the terminal can perform all maintenance processes it was not able to perform before.&gt;</td>
             </tr>

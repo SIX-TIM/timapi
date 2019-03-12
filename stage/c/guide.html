@@ -51,7 +51,7 @@
           </div>
           <div id="docTitle">Detailed Implementation Guide</div>
           <ul class="nav">
-          <li><a href="#intro">Introduction</a></li><li><a href="#sysreq">System Requirements</a></li><li><a href="#setup">Setup Configuration</a><ul class="nav"><li><a href="#network">Network Configuration</a></li><li><a href="#guides">Guides Configuration</a></li></ul></li><li><a href="#operation">Operation Overview</a></li><li><a href="#automatisms">Automatisms</a></li><li><a href="#useCase">Use Cases</a><ul class="nav"><li><a href="#retailManualPanKeyEntry">Manual Pan Key Entry</a></li><li class="filterGuides guidePetrol"><a href="#petrolBasketHandling">Petrol Basket Handling</a></li><li class="filterGuides guidePetrol"><a href="#petrolUseCase">Guide Petrol Use Cases</a><ul class="nav"><li><a href="#petrolUseCaseIndoorOnline">Indoor - Online Card</a></li><li><a href="#petrolUseCaseOutdoorOnline">Outdoor - Online Card</a></li><li><a href="#petrolUseCaseIndoorOffline">Indoor - Offline Card</a></li><li><a href="#petrolUseCaseOutdoorOffline">Outdoor - Offline Card</a></li></ul></li><li class="filterGuides guideUnattended"><a href="#uatUseCase">Guide Unattended Use Cases</a><ul class="nav"><li><a href="#uatUseCasePartialCommit">Use Case Partial Commit</a></li><li><a href="#uatUseCaseHoldCommit">Use Case Hold Commit</a></li><li><a href="#uatUseCaseAmountAdjustment">Use Case Amount Adjustment</a></li><li><a href="#uatUseCaseRetainCard">Use Case Retain Card</a></li><li><a href="#uatUseCaseSilentFlag">Use Case Silent Abort</a></li></ul></li><li class="filterGuides guideAustria"><a href="#austrianUseCase">Guide Austrian Use Cases</a><ul class="nav"><li class="filterGuides guideAustria"><a href="#austrianUseCaseNGV">Austrian Use Case: NGV</a></li><li class="filterGuides guideAustria"><a href="#austrianUseCaseDelayedPayment">Austrian Use Case: Delayed Payment</a></li></ul></li></ul></li><li><a href="#methods">Terminal methods overview</a><ul class="nav"><li><a href="#mainFunc">Main / guide Retail terminal functions</a></li><li class="filterGuides guidePetrol"><a href="#petrolFunc">Guide Petrol terminal functions</a></li><li class="filterGuides guideUnattended"><a href="#uatFunc">Guide Unattended terminal functions</a></li><li class="filterGuides guideDialog"><a href="#dialogFunc">Guide Dialog terminal functions</a></li><li><a href="#addMethods">Additional terminal listener-events</a></li></ul></li><li><a href="#flows">Flows</a><ul class="nav"><li class="filterGuides guidePetrol"><a href="#petrolFlows">Petrol Additional Flows</a><ul class="nav"><li><a href="#petrolFlowIndoorOnline">Petrol Flow: Indoor - Online Card</a></li><li><a href="#petrolFlowOutdoorOnline">Petrol Flow: Outdoor - Online Card</a></li><li><a href="#petrolFlowIndoorOffline">Petrol Flow: Indoor - Offline Card</a></li><li><a href="#petrolFlowOutdoorOffline">Petrol Flow: Outdoor - Offline Card</a></li></ul></li><li class="filterGuides guideUnattended"><a href="#uatFlows">Guide Unattended Additional Flows</a><ul class="nav"><li><a href="#uatFlowPartialCommit"> Flow: Partial Commit</a></li><li><a href="#uatFlowHoldCommit"> Flow: Hold commit</a></li><li><a href="#uatFlowAmountAdjustment"> Flow: Amount adjustment</a></li><li><a href="#uatFlowPreAuth"> Flow: PreAuthorization</a></li><li><a href="#uatFlowRetainCard"> Flow: Retain card</a></li><li><a href="#uatFlowSilentFlag"> Flow: Silent abort</a></li></ul></li><li class="filterGuides guideAustria"><a href="#austrianFlows">Guide Austrian Additional Flows</a><ul class="nav"><li><a href="#austrianFlowNGVWithoutDelay">Austrian Flow: NGV Purchase without delay</a></li><li><a href="#austrianFlowNGVWithDelay">Austrian Flow: NGV Purchase with delay</a></li><li><a href="#austrianFlowNGVFallback">Austrian Flow: NGV Purchase fallback with Non-NGV card</a></li><li><a href="#austrianFlowNGVMandatoryError">Austrian Flow: NGV Purchase mandatory with error</a></li></ul></li></ul></li><li><a href="#logging">Logging</a><ul class="nav"><li><a href="#loglevel">LogLevel</a></li></ul></li><li><a href="#clang">C Language Specifics</a><ul class="nav"><li><a href="#objects">Objects in TIM API C</a></li><li><a href="#memory">Memory Management in TIM API C</a></li><li><a href="#datatype">Data Types in TIM API C</a></li></ul></li></ul>
+          <li><a href="#intro">Introduction</a></li><li><a href="#sysreq">System Requirements</a></li><li><a href="#setup">Setup Configuration</a><ul class="nav"><li><a href="#network">Network Configuration</a></li><li><a href="#guides">Guides Configuration</a></li></ul></li><li><a href="#operation">Operation Overview</a></li><li><a href="#automatisms">Automatisms</a></li><li><a href="#useCase">Use Cases</a><ul class="nav"><li><a href="#retailManualPanKeyEntry">Manual Pan Key Entry</a></li><li class="filterGuides guidePetrol"><a href="#petrolUseCase">Guide Petrol Use Cases</a><ul class="nav"><li class="filterGuides guidePetrol"><a href="#petrolBasketHandling">Petrol Basket Handling</a></li><li><a href="#petrolUseCaseIndoorOnline">Indoor - Online Card</a></li><li><a href="#petrolUseCaseOutdoorOnline">Outdoor - Online Card</a></li><li><a href="#petrolUseCaseIndoorOffline">Indoor - Offline Card</a></li><li><a href="#petrolUseCaseOutdoorOffline">Outdoor - Offline Card</a></li></ul></li><li class="filterGuides guideUnattended"><a href="#uatUseCase">Guide Unattended Use Cases</a><ul class="nav"><li><a href="#uatUseCasePartialCommit">Use Case Partial Commit</a></li><li><a href="#uatUseCaseHoldCommit">Use Case Hold Commit</a></li><li><a href="#uatUseCaseAmountAdjustment">Use Case Amount Adjustment</a></li><li><a href="#uatUseCaseRetainCard">Use Case Retain Card</a></li><li><a href="#uatUseCaseSilentFlag">Use Case Silent Abort</a></li></ul></li><li class="filterGuides guideAustria"><a href="#austrianUseCase">Guide Austrian Use Cases</a><ul class="nav"><li class="filterGuides guideAustria"><a href="#austrianUseCaseNGV">Austrian Use Case: NGV</a></li><li class="filterGuides guideAustria"><a href="#austrianUseCaseDelayedPayment">Austrian Use Case: Delayed Payment</a></li></ul></li></ul></li><li><a href="#methods">Terminal methods overview</a><ul class="nav"><li><a href="#mainFunc">Main / guide Retail terminal functions</a></li><li class="filterGuides guidePetrol"><a href="#petrolFunc">Guide Petrol terminal functions</a></li><li class="filterGuides guideUnattended"><a href="#uatFunc">Guide Unattended terminal functions</a></li><li class="filterGuides guideDialog"><a href="#dialogFunc">Guide Dialog terminal functions</a></li><li><a href="#addMethods">Additional terminal listener-events</a></li></ul></li><li><a href="#flows">Flows</a><ul class="nav"><li class="filterGuides guidePetrol"><a href="#petrolFlows">Petrol Additional Flows</a><ul class="nav"><li><a href="#petrolFlowIndoorOnline">Petrol Flow: Indoor - Online Card</a></li><li><a href="#petrolFlowOutdoorOnline">Petrol Flow: Outdoor - Online Card</a></li><li><a href="#petrolFlowIndoorOffline">Petrol Flow: Indoor - Offline Card</a></li><li><a href="#petrolFlowOutdoorOffline">Petrol Flow: Outdoor - Offline Card</a></li></ul></li><li class="filterGuides guideUnattended"><a href="#uatFlows">Guide Unattended Additional Flows</a><ul class="nav"><li><a href="#uatFlowPartialCommit"> Flow: Partial Commit</a></li><li><a href="#uatFlowHoldCommit"> Flow: Hold commit</a></li><li><a href="#uatFlowAmountAdjustment"> Flow: Amount adjustment</a></li><li><a href="#uatFlowPreAuth"> Flow: PreAuthorization</a></li><li><a href="#uatFlowRetainCard"> Flow: Retain card</a></li><li><a href="#uatFlowSilentFlag"> Flow: Silent abort</a></li></ul></li><li class="filterGuides guideAustria"><a href="#austrianFlows">Guide Austrian Additional Flows</a><ul class="nav"><li><a href="#austrianFlowNGVWithoutDelay">Austrian Flow: NGV Purchase without delay</a></li><li><a href="#austrianFlowNGVWithDelay">Austrian Flow: NGV Purchase with delay</a></li><li><a href="#austrianFlowNGVFallback">Austrian Flow: NGV Purchase fallback with Non-NGV card</a></li><li><a href="#austrianFlowNGVMandatoryError">Austrian Flow: NGV Purchase mandatory with error</a></li></ul></li></ul></li><li><a href="#logging">Logging</a><ul class="nav"><li><a href="#loglevel">LogLevel</a></li></ul></li><li><a href="#clang">C Language Specifics</a><ul class="nav"><li><a href="#objects">Objects in TIM API C</a></li><li><a href="#memory">Memory Management in TIM API C</a></li><li><a href="#datatype">Data Types in TIM API C</a></li></ul></li></ul>
           <div class="seperator">&#160;</div>
           <div id="docLinks">
           <div class="linkDiv"><a href="appendix.html">Appendix</a></div><div class="linkDiv"><a href="doc/index.html">API Documentation</a></div><div class="linkDiv"><a href="../../version/version-history.html">Version History</a></div></div>
@@ -258,38 +258,13 @@ ta_oject_release(terminal);</code></pre>
     <section id="useCase"><h1><a name="useCase"></a>Use Cases</h1><div class="row"><div class="col-md-6"><p>This chapter describes various guides and their use cases.</p>
         <p>Hint: if no content visible, try to select a guide under "Guide Selection" on the left.</p>
         </div></div><section id="retailManualPanKeyEntry"><h2><a name="retailManualPanKeyEntry"></a>Manual Pan Key Entry</h2><div class="row"><div class="col-md-6"><p>The TIM API offers the possibility to perform a Manual Pan Key Entry (MPKE) on ECR side, e.g. if no physical card is present. 
-        This can be done by setting the <code><a href="doc/transaction__data_8h.html#a23eed39e0a1116e6a4ff36f65d5280e1">card_ref</a></code> field in the <code><a href="doc/transaction__data_8h.html">transaction_data</a></code>container
-        which is then used in the next transaction request message.</p>
+        This can be done by setting the <code><a href="doc/transaction__data_8h.html#a23eed39e0a1116e6a4ff36f65d5280e1">card_ref</a></code> field in the <code><a href="doc/terminal_8h.html#a2fb543b90841f89e10118c291255073d">transaction_data</a></code>container 
+        present in the terminal instance.</p>
         <p>This <code><a href="doc/transaction__data_8h.html#a23eed39e0a1116e6a4ff36f65d5280e1">card_ref</a></code> field must have the following format to reference a non-PCI PAN:</p>
         <p>Example: "061234567801234567" : "06" is the prefix that defines the content type that follows (non-PCI PAN), "1234568701234567" is then the non-PCI PAN.</p>
         <p><b>Important</b>: The MPKE on the ECR is only allowed for non-PCI brands, otherwise the manual entry must only be performed on the PIN Pad.</p>
         </div></div></section>
-    	<div class="row"><div class="col-md-6"></div></div><section class="filterGuides guidePetrol" id="petrolBasketHandling"><h2><a name="petrolBasketHandling"></a>Petrol Basket Handling</h2><div class="row"><div class="col-md-6">
-	<p>An essential part of the petrol use cases is the usage of the <code><a href="doc/basket_8h.html">basket</a></code> container.
-	This container is used to exchange information regarding purchased goods and fuel at a petrol station. It is important to know that the correctness of the content
-	of the basket container lies within the responsibility of the ECR and/or the acquiring host, not of the TIM API or the terminal.</p>
-	<p>The <code><a href="doc/basket_8h.html">basket</a></code> is sent from the ECR to the terminal, then from the terminal to the host.
-	The host may adjust the content of the <code><a href="doc/basket_8h.html">basket</a></code> depending on the card used for the transaction,
-	therefore the <code><a href="doc/basket_8h.html">basket</a></code> sent from ECR to terminal may differ from the 
-	<code><a href="doc/basket_8h.html">basket</a></code> returned from terminal to ECR.</p>
-	<p>A <code><a href="doc/basket_8h.html">basket</a></code> may be used with the following <code><a href="doc/transaction__type_8h.html">transaction_types</a></code>:
-		<ul>
-			<li>
-			Purchase
-			</li>
-			<li>
-			FinalizePurchase
-			</li>
-		</ul>
-	</p>
-	<p>To send a <code><a href="doc/basket_8h.html">basket</a></code> within a request, the <code><a href="doc/transaction__request_8h.html">transaction_request</a></code>
-	must be created by the integrator and the <code><a href="doc/basket_8h.html">basket</a></code>
-	and its <code><a href="doc/basket__item_8h.html">basket_items</a></code> must then be set in the <code><a href="doc/transaction__request_8h.html">transaction_request</a></code>.
-	The <code><a href="doc/transaction__request_8h.html">transaction_request</a></code> is then used as parameter of the <code><a href="doc/terminal_8h.html#a5496a9848ca4ceebba16eab8f82a4ebe">transaction</a></code>/<code><a href="doc/terminal_8h.html#a1989dbd83629a0d617e76d3e79b42735">transaction_async</a></code>
-	function.</p>
-	</div><div class="col-md-6">
-	</div></div>
-	<div class="row"><div class="col-md-6"></div></div></section>
+
         <div class="row"><div class="col-md-6"></div></div><section class="filterGuides guidePetrol" id="petrolUseCase"><h2><a name="petrolUseCase"></a>Guide Petrol Use Cases</h2><div class="row"><div class="col-md-6"><p>Petrol functionality adds a number of
  	    <a href="#petrolFunc">additional methods</a>,
  			<code><a href="doc/transaction__type_8h.html">transaction types</a></code>,
@@ -300,8 +275,36 @@ ta_oject_release(terminal);</code></pre>
  			<a href="#petrolFlows">flows</a>
  			tailored to the needs at petrol stations.</p>
 
-            <p>Petrol has the following basic use cases:</p>
- 			</div></div><section id="petrolUseCaseIndoorOnline"><h3><a name="petrolUseCaseIndoorOnline"></a>Indoor - Online Card</h3><div class="row"><div class="col-md-6"><p>Online cards are processed like a standard credit or debit payment card through an online system,
+      <p>Petrol has the following basic use cases:</p>
+
+			</div></div><section class="filterGuides guidePetrol" id="petrolBasketHandling"><h3><a name="petrolBasketHandling"></a>Petrol Basket Handling</h3><div class="row"><div class="col-md-6">
+			<p>An essential part of the petrol use cases is the usage of the <code><a href="doc/basket_8h.html">basket</a></code> container.
+			This container is used to exchange information regarding purchased goods and fuel at a petrol station. It is important to know that the correctness of the content
+			of the basket container lies within the responsibility of the ECR and/or the acquiring host, not of the TIM API or the terminal.</p>
+			<p>The <code><a href="doc/basket_8h.html">basket</a></code> is sent from the ECR to the terminal, then from the terminal to the host.
+			The host may adjust the content of the <code><a href="doc/basket_8h.html">basket</a></code> depending on the card used for the transaction,
+			therefore the <code><a href="doc/basket_8h.html">basket</a></code> sent from ECR to terminal may differ from the 
+			<code><a href="doc/basket_8h.html">basket</a></code> returned from terminal to ECR.</p>
+			<p>A <code><a href="doc/basket_8h.html">basket</a></code> may be used with the following <code><a href="doc/transaction__type_8h.html">transaction_types</a></code>:
+			<ul>
+			<li>
+			Purchase
+			</li>
+			<li>
+			FinalizePurchase
+			</li>
+			</ul>
+			</p>
+			<p>To send a <code><a href="doc/basket_8h.html">basket</a></code> within a request, the <code><a href="doc/transaction__request_8h.html">transaction_request</a></code>
+			must be created by the integrator and the <code><a href="doc/basket_8h.html">basket</a></code>
+			and its <code><a href="doc/basket__item_8h.html">basket_items</a></code> must then be set in the <code><a href="doc/transaction__request_8h.html">transaction_request</a></code>.
+			The <code><a href="doc/transaction__request_8h.html">transaction_request</a></code> is then used as parameter of the <code><a href="doc/terminal_8h.html#ab0f82ecd7a92f365725dac028bf626b6">transaction</a></code>/
+			<code><a href="doc/terminal_8h.html#a1ed2dfdcbac9c6abf20a3cc288705bb0">transaction_async</a></code>
+			function.</p>
+			</div><div class="col-md-6">
+			</div></div>
+			<div class="row"><div class="col-md-6"></div></div></section>
+ 			<div class="row"><div class="col-md-6"></div></div><section id="petrolUseCaseIndoorOnline"><h3><a name="petrolUseCaseIndoorOnline"></a>Indoor - Online Card</h3><div class="row"><div class="col-md-6"><p>Online cards are processed like a standard credit or debit payment card through an online system,
 				no mather if it is a standard credit card or an oil company card. In the latter case however,
 				depending on the exact brand rules, additional data must be supplied by the ECR system
 				(usually the type of goods being purchased, see <code><a href="doc/basket_8h.html">basket</a></code>)

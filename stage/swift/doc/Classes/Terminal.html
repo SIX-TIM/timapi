@@ -505,11 +505,11 @@
  <pre style='border:#a0a0a0 solid 1px background:#f0f0f0'>
  <code>
  // Create settings with Terminal-ID of terminal to connect to
- com.six.TerminalSettings settings = new com.six.TerminalSettings()
- settings.setTerminalId(<q>12345678</q>)</p>
+ let terminalSettings = try TerminalSettings()
+ terminalSettings.terminalId = <q>12345678</q></p>
 
 <p>// Create terminal
- com.six.Terminal terminal = new com.six.Terminal(settings)</p>
+ var terminal = try Terminal(settings: terminalSettings)</p>
 
 <p>// Run transaction
  terminal.transaction(com.six.constants.TransactionType.PURCHASE,
@@ -601,7 +601,8 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Tim Api Build Version.</p>
+                        <p>Tim Api Build Version.
+@see<code>terminalSettings</code></p>
 
                       </div>
                       <div class="declaration">
@@ -710,8 +711,8 @@
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>Opens a user shift. If the shift is already open, no error is returned.
-Asynchronous version of {@link Terminal#activate}. Returns immediately and calls
-{@link TerminalListener#activateCompleted} on all notifiers once finished.</p>
+Asynchronous version of <code><a href="../Classes/Terminal.html#/s:6TimApi8TerminalC8activateAA16ActivateResponseCyKF">Terminal.activate(...)</a></code>. Returns immediately and calls
+<code><a href="../Protocols/TerminalListener.html#/s:6TimApi16TerminalListenerP17activateCompleted5event4datayAA0A5EventC_AA16ActivateResponseCSgtF">TerminalListener.activateCompleted(...)</a></code> on all notifiers once finished.</p>
 
                       </div>
                       <div class="declaration">
@@ -741,7 +742,7 @@ Asynchronous version of {@link Terminal#activate}. Returns immediately and calls
                         <p><p>Requests the list of brands available on the terminal.</p></p>
 
 <p><p><b>Side-Effect:</b> Updates Brands member with all brands
- available on the terminal. Use {@link Terminal#getBrands} to
+ available on the terminal. Use <code>Terminal.getBrands(...)</code> to
  retrieve them.</p></p>
 
                       </div>
@@ -770,8 +771,8 @@ Asynchronous version of {@link Terminal#activate}. Returns immediately and calls
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p><p>Requests the list of brands available on the terminal. Asynchronous version of
- {@link Terminal#applicationInformation}. Returns immediately and calls
- {@link TerminalListener#applicationInformationCompleted} on all notifiers once
+ <code><a href="../Classes/Terminal.html#/s:6TimApi8TerminalC22applicationInformationyyKF">Terminal.applicationInformation(...)</a></code>. Returns immediately and calls
+ <code><a href="../Protocols/TerminalListener.html#/s:6TimApi16TerminalListenerP31applicationInformationCompleted5eventyAA0A5EventC_tF">TerminalListener.applicationInformationCompleted(...)</a></code> on all notifiers once
  finished.</p></p>
 
 <p><p><b>Side-Effect:</b> Updates Brands member with all brands available on the
@@ -831,8 +832,8 @@ to do the daily closing.</p>
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>Forces the EFT Terminal to transmit all transactions to the host system as well
-to do the daily closing. Asynchronous version of {@link #balance}. Returns
-immediately and calls {@link TerminalListener#balanceCompleted} on all notifiers
+to do the daily closing. Asynchronous version of <code><a href="../Classes/Terminal.html#/s:6TimApi8TerminalC7balanceAA15BalanceResponseCyKF">balance(...)</a></code>. Returns
+immediately and calls <code><a href="../Protocols/TerminalListener.html#/s:6TimApi16TerminalListenerP16balanceCompleted5event4datayAA0A5EventC_AA15BalanceResponseCSgtF">TerminalListener.balanceCompleted(...)</a></code> on all notifiers
 once finished.</p>
 
                       </div>
@@ -861,7 +862,7 @@ once finished.</p>
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p><p>Aborts an open asynchronous Financial Transaction or Non-Financial Transaction
- request, except for a {@link Terminal#commit} or {@link Terminal#rollbackAsync}
+ request, except for a <code><a href="../Classes/Terminal.html#/s:6TimApi8TerminalC6commityyKF">Terminal.commit(...)</a></code> or <code><a href="../Classes/Terminal.html#/s:6TimApi8TerminalC13rollbackAsyncyyKF">Terminal.rollbackAsync(...)</a></code>
  request, which cannot be cancelled.</p></p>
 
 <p><p> Further information: A Cancel-request is a best effort request. The EFT
@@ -903,7 +904,7 @@ once finished.</p>
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p><p>Aborts an open asynchronous Financial Transaction or Non-Financial Transaction
- request, except for a {@link Terminal#commit} or {@link Terminal#rollbackAsync}
+ request, except for a <code><a href="../Classes/Terminal.html#/s:6TimApi8TerminalC6commityyKF">Terminal.commit(...)</a></code> or <code><a href="../Classes/Terminal.html#/s:6TimApi8TerminalC13rollbackAsyncyyKF">Terminal.rollbackAsync(...)</a></code>
  request, which cannot be cancelled.</p></p>
 
 <p><p> Further information: A Cancel-request is a best effort request. The EFT
@@ -944,8 +945,7 @@ once finished.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Changes configuration parameters of the EFT Terminal.
-@param settings Dictionary of values for settings types to change.</p>
+                        <p>Changes configuration parameters of the EFT Terminal.</p>
 
                       </div>
                       <div class="declaration">
@@ -955,6 +955,25 @@ once finished.</p>
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">changeSettings</span><span class="p">(</span><span class="nv">settings</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Enums/CSettingType.html">CSettingType</a></span> <span class="p">:</span> <span class="kt">String</span><span class="p">])</span> <span class="k">throws</span></code></pre>
 
                         </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>settings</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Dictionary of values for settings types to change.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
                       </div>
                     </section>
                   </div>
@@ -973,9 +992,8 @@ once finished.</p>
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>Changes configuration parameters of the EFT Terminal. Asynchronous version of
-{@link Terminal#changeSettings}. Returns immediately and calls
-{@link TerminalListener#changeSettingsCompleted} on all notifiers once finished.
-@param settings Dictionary of values for settings types to change.</p>
+ <code><a href="../Classes/Terminal.html#/s:6TimApi8TerminalC14changeSettings8settingsySDyAA12CSettingTypeOSSG_tKF">Terminal.changeSettings(...)</a></code>. Returns immediately and calls
+ <code><a href="../Protocols/TerminalListener.html#/s:6TimApi16TerminalListenerP23changeSettingsCompleted5eventyAA0A5EventC_tF">TerminalListener.changeSettingsCompleted(...)</a></code> on all notifiers once finished.</p>
 
                       </div>
                       <div class="declaration">
@@ -985,6 +1003,25 @@ once finished.</p>
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">changeSettingsAsync</span><span class="p">(</span><span class="nv">settings</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Enums/CSettingType.html">CSettingType</a></span> <span class="p">:</span> <span class="kt">String</span><span class="p">])</span> <span class="k">throws</span></code></pre>
 
                         </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>settings</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Dictionary of values for settings types to change.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
                       </div>
                     </section>
                   </div>
@@ -1029,9 +1066,9 @@ once finished.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Performs Commit-operation after a successful call to {@link Terminal#transaction} or
-{@link Terminal#transactionAsync}. Asynchronous version of {@link Terminal#commit}.
-Returns immediately and calls {@link TerminalListener#commitCompleted} on all
+                        <p>Performs Commit-operation after a successful call to <code><a href="../Classes/Terminal.html#/s:6TimApi8TerminalC11transaction4type6amountAA19TransactionResponseCAA16CTransactionTypeO_AA6AmountCSgtKF">Terminal.transaction(...)</a></code> or
+<code><a href="../Classes/Terminal.html#/s:6TimApi8TerminalC16transactionAsync4type6amountyAA16CTransactionTypeO_AA6AmountCSgtKF">Terminal.transactionAsync(...)</a></code>. Asynchronous version of <code><a href="../Classes/Terminal.html#/s:6TimApi8TerminalC6commityyKF">Terminal.commit(...)</a></code>.
+Returns immediately and calls <code><a href="../Protocols/TerminalListener.html#/s:6TimApi16TerminalListenerP15commitCompleted5event4datayAA0A5EventC_AA9PrintDataCSgtF">TerminalListener.commitCompleted(...)</a></code> on all
 notifiers once finished.</p>
 
                       </div>
@@ -1086,9 +1123,9 @@ notifiers once finished.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Performs Commit-operation after a successful call to {@link Terminal#transaction} or
-{@link Terminal#transactionAsync}. Asynchronous version of {@link Terminal#commit}.
-Returns immediately and calls {@link TerminalListener#commitCompleted} on all
+                        <p>Performs Commit-operation after a successful call to <code><a href="../Classes/Terminal.html#/s:6TimApi8TerminalC11transaction4type6amountAA19TransactionResponseCAA16CTransactionTypeO_AA6AmountCSgtKF">Terminal.transaction(...)</a></code> or
+<code><a href="../Classes/Terminal.html#/s:6TimApi8TerminalC16transactionAsync4type6amountyAA16CTransactionTypeO_AA6AmountCSgtKF">Terminal.transactionAsync(...)</a></code>. Asynchronous version of <code><a href="../Classes/Terminal.html#/s:6TimApi8TerminalC6commityyKF">Terminal.commit(...)</a></code>.
+Returns immediately and calls <code><a href="../Protocols/TerminalListener.html#/s:6TimApi16TerminalListenerP15commitCompleted5event4datayAA0A5EventC_AA9PrintDataCSgtF">TerminalListener.commitCompleted(...)</a></code> on all
 notifiers once finished.</p>
 
                       </div>
@@ -1116,7 +1153,7 @@ notifiers once finished.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Initiates a connection to the EFT Terminal. Calling the {@link Terminal#connect}
+                        <p>Initiates a connection to the EFT Terminal. Calling the <code>Terminal.connect(...)</code>
 is not needed normally, because all methods make first a connect, if not connected.</p>
 
                       </div>
@@ -1145,8 +1182,8 @@ is not needed normally, because all methods make first a connect, if not connect
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>Initiates a connection to the EFT Terminal. Asynchronous version of
-{@link Terminal#connect}. Returns immediately and calls
-{@link TerminalListener#connectCompleted} on all notifiers once finished.</p>
+<code><a href="../Classes/Terminal.html#/s:6TimApi8TerminalC7connectyyKF">Terminal.connect(...)</a></code>. Returns immediately and calls
+<code><a href="../Protocols/TerminalListener.html#/s:6TimApi16TerminalListenerP16connectCompleted5eventyAA0A5EventC_tF">TerminalListener.connectCompleted(...)</a></code> on all notifiers once finished.</p>
 
                       </div>
                       <div class="declaration">
@@ -1173,8 +1210,7 @@ is not needed normally, because all methods make first a connect, if not connect
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Get counter information&rsquo;s from the EFT Terminal.
-@param type type of counters to request.</p>
+                        <p>Get counter information&rsquo;s from the EFT Terminal.</p>
 
                       </div>
                       <div class="declaration">
@@ -1202,8 +1238,8 @@ is not needed normally, because all methods make first a connect, if not connect
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>Get counter information&rsquo;s from the EFT Terminal. Asynchronous version of
-{@link Terminal#counterRequest}. Returns immediately and calls
-{@link TerminalListener#counterRequestCompleted} on all notifiers once finished.</p>
+<code><a href="../Classes/Terminal.html#/s:6TimApi8TerminalC14counterRequest4typeAA8CountersCAA12CCounterTypeO_tKF">Terminal.counterRequest(...)</a></code>. Returns immediately and calls
+<code><a href="../Protocols/TerminalListener.html#/s:6TimApi16TerminalListenerP23counterRequestCompleted5event4datayAA0A5EventC_AA8CountersCSgtF">TerminalListener.counterRequestCompleted(...)</a></code> on all notifiers once finished.</p>
 
                       </div>
                       <div class="declaration">
@@ -1258,8 +1294,8 @@ is not needed normally, because all methods make first a connect, if not connect
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>Closes a user shift. If the shift is already closed, no error is returned.
-Asynchronous version of {@link Terminal#deactivate}. Returns immediately and
-calls {@link TerminalListener#deactivateCompleted} on all notifiers once finished.</p>
+Asynchronous version of <code><a href="../Classes/Terminal.html#/s:6TimApi8TerminalC10deactivateAA18DeactivateResponseCyKF">Terminal.deactivate(...)</a></code>. Returns immediately and
+calls <code><a href="../Protocols/TerminalListener.html#/s:6TimApi16TerminalListenerP19deactivateCompleted5event4datayAA0A5EventC_AA18DeactivateResponseCSgtF">TerminalListener.deactivateCompleted(...)</a></code> on all notifiers once finished.</p>
 
                       </div>
                       <div class="declaration">
@@ -1314,8 +1350,8 @@ calls {@link TerminalListener#deactivateCompleted} on all notifiers once finishe
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>Interrupts the connection to the EFT Terminal.
-Asynchronous version of {@link Terminal#disconnect}. Returns immediately and
-calls {@link TerminalListener#disconnectCompleted} on all notifiers once finished.</p>
+Asynchronous version of <code><a href="../Classes/Terminal.html#/s:6TimApi8TerminalC10disconnectyyKF">Terminal.disconnect(...)</a></code>. Returns immediately and
+calls <code><a href="../Protocols/TerminalListener.html#/s:6TimApi16TerminalListenerP19disconnectCompleted5eventyAA0A5EventC_tF">TerminalListener.disconnectCompleted(...)</a></code> on all notifiers once finished.</p>
 
                       </div>
                       <div class="declaration">
@@ -1370,8 +1406,8 @@ calls {@link TerminalListener#disconnectCompleted} on all notifiers once finishe
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>Requests DCC rates from the EFT Terminal. The DCC rates are returned as receipt.
-Asynchronous version of {@link Terminal#dccRates}. Returns immediately and calls
-{@link TerminalListener#dccRatesCompleted} on all notifiers once finished.</p>
+Asynchronous version of <code><a href="../Classes/Terminal.html#/s:6TimApi8TerminalC8dccRatesAA9PrintDataCyKF">Terminal.dccRates(...)</a></code>. Returns immediately and calls
+<code><a href="../Protocols/TerminalListener.html#/s:6TimApi16TerminalListenerP17dccRatesCompleted5event4datayAA0A5EventC_AA9PrintDataCSgtF">TerminalListener.dccRatesCompleted(...)</a></code> on all notifiers once finished.</p>
 
                       </div>
                       <div class="declaration">
@@ -1426,8 +1462,8 @@ Asynchronous version of {@link Terminal#dccRates}. Returns immediately and calls
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>Get hardware information from the EFT Terminal. Asynchronous version of
-{@link Terminal#hardwareInformation}. Returns immediately and calls
-{@link TerminalListener#hardwareInformationCompleted} on all notifiers
+<code><a href="../Classes/Terminal.html#/s:6TimApi8TerminalC19hardwareInformationAA08HardwareE8ResponseCSgyKF">Terminal.hardwareInformation(...)</a></code>. Returns immediately and calls
+<code><a href="../Protocols/TerminalListener.html#/s:6TimApi16TerminalListenerP28hardwareInformationCompleted5event4datayAA0A5EventC_AA08HardwareF8ResponseCSgtF">TerminalListener.hardwareInformationCompleted(...)</a></code> on all notifiers
 once finished.</p>
 
                       </div>
@@ -1517,7 +1553,7 @@ once finished.</p>
 <p><p><b>Side-Effect:</b> After completing the request updates the features,
  brands and terminal identifier in the terminal instance. Fetching these
  information can be disabled if Auto-FetchBrands is disabled in
- {@link TerminalSettings}.</p></p>
+ <code><a href="../Classes/TerminalSettings.html">TerminalSettings</a></code>.</p></p>
 
                       </div>
                       <div class="declaration">
@@ -1545,8 +1581,8 @@ once finished.</p>
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p><p>Activate a communication session between the ECR and the terminal.
- Asynchronous version of {@link Terminal#login}. Returns immediately and
- calls {@link TerminalListener#loginCompleted} on all notifiers once
+ Asynchronous version of <code><a href="../Classes/Terminal.html#/s:6TimApi8TerminalC5loginyyKF">Terminal.login(...)</a></code>. Returns immediately and
+ calls <code><a href="../Protocols/TerminalListener.html#/s:6TimApi16TerminalListenerP14loginCompleted5eventyAA0A5EventC_tF">TerminalListener.loginCompleted(...)</a></code> on all notifiers once
  finished.</p></p>
 
 <p><p><b>Note:</b> Before calling set the print options, POS identifier and
@@ -1555,7 +1591,7 @@ once finished.</p>
 <p><p><b>Side-Effect:</b> After completing the request updates the features,
  brands and terminal identifier is set in the terminal instance. Fetching
  these information can be disabled with Auto-FetchBrands in
- {@link TerminalSettings}.</p></p>
+ <code><a href="../Classes/TerminalSettings.html">TerminalSettings</a></code>.</p></p>
 
                       </div>
                       <div class="declaration">
@@ -1610,8 +1646,8 @@ once finished.</p>
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>Terminates an active communication session between the ECR and the terminal.
-Asynchronous version of {@link Terminal#logout}. Returns immediately and
-calls {@link TerminalListener#logoutCompleted} on all notifiers once finished.</p>
+Asynchronous version of <code><a href="../Classes/Terminal.html#/s:6TimApi8TerminalC6logoutyyKF">Terminal.logout(...)</a></code>. Returns immediately and
+calls <code><a href="../Protocols/TerminalListener.html#/s:6TimApi16TerminalListenerP15logoutCompleted5eventyAA0A5EventC_tF">TerminalListener.logoutCompleted(...)</a></code> on all notifiers once finished.</p>
 
                       </div>
                       <div class="declaration">
@@ -1666,8 +1702,8 @@ calls {@link TerminalListener#logoutCompleted} on all notifiers once finished.</
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>Force the EFT Terminal to reboot. Asynchronous version of
-{@link Terminal#reboot}. Returns immediately and calls
-{@link TerminalListener#rebootCompleted} on all notifiers once finished.</p>
+<code><a href="../Classes/Terminal.html#/s:6TimApi8TerminalC6rebootyyKF">Terminal.reboot(...)</a></code>. Returns immediately and calls
+<code><a href="../Protocols/TerminalListener.html#/s:6TimApi16TerminalListenerP15rebootCompleted5eventyAA0A5EventC_tF">TerminalListener.rebootCompleted(...)</a></code> on all notifiers once finished.</p>
 
                       </div>
                       <div class="declaration">
@@ -1723,8 +1759,8 @@ host system.</p>
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>Force the EFT Terminal to transmit all financial transactions to the
-host system. Asynchronous version of {@link Terminal#reconciliation}.
-Returns immediately and calls {@link TerminalListener#reconciliationCompleted}
+host system. Asynchronous version of <code><a href="../Classes/Terminal.html#/s:6TimApi8TerminalC14reconciliationAA22ReconciliationResponseCyKF">Terminal.reconciliation(...)</a></code>.
+Returns immediately and calls <code><a href="../Protocols/TerminalListener.html#/s:6TimApi16TerminalListenerP23reconciliationCompleted5event4datayAA0A5EventC_AA22ReconciliationResponseCSgtF">TerminalListener.reconciliationCompleted(...)</a></code>
 on all notifiers once finished.</p>
 
                       </div>
@@ -1752,8 +1788,7 @@ on all notifiers once finished.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Receive the latest receipt or a list of silent receipts.
-@param type Type of receipts to request from the EFT Terminal.</p>
+                        <p>Receive the latest receipt or a list of silent receipts.</p>
 
                       </div>
                       <div class="declaration">
@@ -1763,6 +1798,25 @@ on all notifiers once finished.</p>
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">receiptRequest</span><span class="p">(</span><span class="nv">type</span><span class="p">:</span> <span class="kt"><a href="../Enums/CReceiptRequestType.html">CReceiptRequestType</a></span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/ReceiptRequestResponse.html">ReceiptRequestResponse</a></span></code></pre>
 
                         </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>type</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Type of receipts to request from the EFT Terminal.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
                       </div>
                     </section>
                   </div>
@@ -1781,8 +1835,8 @@ on all notifiers once finished.</p>
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>Receive the latest receipt or a list of silent receipts. Asynchronous version
-of {@link Terminal#receiptRequest}. Returns immediately and calls
-{@link TerminalListener#receiptRequestCompleted} on all notifiers once finished.</p>
+of <code><a href="../Classes/Terminal.html#/s:6TimApi8TerminalC14receiptRequest4typeAA07ReceiptE8ResponseCAA08CReceiptE4TypeO_tKF">Terminal.receiptRequest(...)</a></code>. Returns immediately and calls
+<code><a href="../Protocols/TerminalListener.html#/s:6TimApi16TerminalListenerP23receiptRequestCompleted5event4datayAA0A5EventC_AA07ReceiptF8ResponseCSgtF">TerminalListener.receiptRequestCompleted(...)</a></code> on all notifiers once finished.</p>
 
                       </div>
                       <div class="declaration">
@@ -1837,8 +1891,8 @@ of {@link Terminal#receiptRequest}. Returns immediately and calls
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>Force the EFT Terminal to get the configuration from the service center.
-Asynchronous version of {@link Terminal#reconfig}. Returns immediately and
-calls {@link TerminalListener#reconfigCompleted} on all notifiers once finished.</p>
+Asynchronous version of <code><a href="../Classes/Terminal.html#/s:6TimApi8TerminalC8reconfigAA9PrintDataCyKF">Terminal.reconfig(...)</a></code>. Returns immediately and
+calls <code><a href="../Protocols/TerminalListener.html#/s:6TimApi16TerminalListenerP17reconfigCompleted5event4datayAA0A5EventC_AA9PrintDataCSgtF">TerminalListener.reconfigCompleted(...)</a></code> on all notifiers once finished.</p>
 
                       </div>
                       <div class="declaration">
@@ -1897,8 +1951,8 @@ supporting the function a declined receipt may be generated.</p>
                         <p>Prevents a transaction from being committed to the transaction log and
 generates a technical reversal of the authorization. For payment protocols
 supporting the function a declined receipt may be generated. Asynchronous
-version of {@link Terminal#rollback}. Returns immediately and calls
-{@link TerminalListener#rollbackCompleted} on all notifiers once finished.</p>
+version of <code><a href="../Classes/Terminal.html#/s:6TimApi8TerminalC8rollbackAA9PrintDataCyKF">Terminal.rollback(...)</a></code>. Returns immediately and calls
+<code><a href="../Protocols/TerminalListener.html#/s:6TimApi16TerminalListenerP17rollbackCompleted5event4datayAA0A5EventC_AA9PrintDataCSgtF">TerminalListener.rollbackCompleted(...)</a></code> on all notifiers once finished.</p>
 
                       </div>
                       <div class="declaration">
@@ -2009,8 +2063,8 @@ version of {@link Terminal#rollback}. Returns immediately and calls
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p><p>Request system information from the EFT Terminal. Asynchronous version
- of {@link Terminal#systemInformation}. Returns immediately and calls
- {@link TerminalListener#systemInformationCompleted} on all notifiers
+ of <code><a href="../Classes/Terminal.html#/s:6TimApi8TerminalC17systemInformationAA06SystemE8ResponseCyKF">Terminal.systemInformation(...)</a></code>. Returns immediately and calls
+ <code><a href="../Protocols/TerminalListener.html#/s:6TimApi16TerminalListenerP26systemInformationCompleted5event4datayAA0A5EventC_AA06SystemF8ResponseCSgtF">TerminalListener.systemInformationCompleted(...)</a></code> on all notifiers
  once finished.</p></p>
 
 <p><p><b>Note:</b> Set EcrData property before calling SystemInformation.</p></p>
@@ -2045,9 +2099,6 @@ version of {@link Terminal#rollback}. Returns immediately and calls
 <p><p><b>Note:</b> The transaction parameters are taken from TransactionRequest
  terminal property since those do not change often if at all (default parameters).</p></p>
 
-<p>@param type Financial Transaction Function.
- @param amount Transaction amount.</p>
-
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
@@ -2056,6 +2107,37 @@ version of {@link Terminal#rollback}. Returns immediately and calls
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">transaction</span><span class="p">(</span><span class="nv">type</span><span class="p">:</span> <span class="kt"><a href="../Enums/CTransactionType.html">CTransactionType</a></span><span class="p">,</span> <span class="nv">amount</span><span class="p">:</span> <span class="kt"><a href="../Classes/Amount.html">Amount</a></span><span class="p">?)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/TransactionResponse.html">TransactionResponse</a></span></code></pre>
 
                         </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>type</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Financial Transaction Function.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>amount</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Transaction amount.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
                       </div>
                     </section>
                   </div>
@@ -2078,9 +2160,6 @@ version of {@link Terminal#rollback}. Returns immediately and calls
 <p><p><b>Note:</b> The transaction parameters are taken from TransactionRequest
  terminal property since those do not change often if at all (default parameters).</p></p>
 
-<p>@param type Financial Transaction Function.
- @param request Transaction parameters without using TransactionRequest property.</p>
-
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
@@ -2089,6 +2168,37 @@ version of {@link Terminal#rollback}. Returns immediately and calls
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">transaction</span><span class="p">(</span><span class="nv">type</span><span class="p">:</span> <span class="kt"><a href="../Enums/CTransactionType.html">CTransactionType</a></span><span class="p">,</span> <span class="nv">request</span><span class="p">:</span> <span class="kt"><a href="../Classes/TransactionRequest.html">TransactionRequest</a></span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/TransactionResponse.html">TransactionResponse</a></span></code></pre>
 
                         </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>type</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Financial Transaction Function.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>request</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Transaction parameters without using TransactionRequest property.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
                       </div>
                     </section>
                   </div>
@@ -2107,14 +2217,11 @@ version of {@link Terminal#rollback}. Returns immediately and calls
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p><p>Starts an EFT Terminal Transaction. Asynchronous version of
- {@link Terminal#transaction}. Returns immediately and calls
- {@link TerminalListener#transactionCompleted} on all notifiers once finished.</p></p>
+ <code><a href="../Classes/Terminal.html#/s:6TimApi8TerminalC11transaction4type6amountAA19TransactionResponseCAA16CTransactionTypeO_AA6AmountCSgtKF">Terminal.transaction(...)</a></code>. Returns immediately and calls
+ <code><a href="../Protocols/TerminalListener.html#/s:6TimApi16TerminalListenerP20transactionCompleted5event4datayAA0A5EventC_AA19TransactionResponseCSgtF">TerminalListener.transactionCompleted(...)</a></code> on all notifiers once finished.</p></p>
 
 <p><p><b>Note:</b> The transaction parameters are taken from TransactionRequest
  terminal property since those do not change often if at all (default parameters).</p></p>
-
-<p>@param type Financial Transaction Function.
- @param amount Transaction amount.</p>
 
                       </div>
                       <div class="declaration">
@@ -2124,6 +2231,37 @@ version of {@link Terminal#rollback}. Returns immediately and calls
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">transactionAsync</span><span class="p">(</span><span class="nv">type</span><span class="p">:</span> <span class="kt"><a href="../Enums/CTransactionType.html">CTransactionType</a></span><span class="p">,</span> <span class="nv">amount</span><span class="p">:</span> <span class="kt"><a href="../Classes/Amount.html">Amount</a></span><span class="p">?)</span> <span class="k">throws</span></code></pre>
 
                         </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>type</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Financial Transaction Function.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>amount</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Transaction amount.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
                       </div>
                     </section>
                   </div>
@@ -2146,9 +2284,6 @@ version of {@link Terminal#rollback}. Returns immediately and calls
 <p><p><b>Note:</b> The transaction parameters are taken from TransactionRequest
  terminal property since those do not change often if at all (default parameters).</p></p>
 
-<p>@param type Financial Transaction Function.
- @param request Transaction parameters without using TransactionRequest property.</p>
-
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
@@ -2157,6 +2292,37 @@ version of {@link Terminal#rollback}. Returns immediately and calls
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">transactionAsync</span><span class="p">(</span><span class="nv">type</span><span class="p">:</span> <span class="kt"><a href="../Enums/CTransactionType.html">CTransactionType</a></span><span class="p">,</span> <span class="nv">request</span><span class="p">:</span> <span class="kt"><a href="../Classes/TransactionRequest.html">TransactionRequest</a></span><span class="p">)</span> <span class="k">throws</span></code></pre>
 
                         </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>type</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Financial Transaction Function.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>request</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Transaction parameters without using TransactionRequest property.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
                       </div>
                     </section>
                   </div>
@@ -2179,12 +2345,8 @@ version of {@link Terminal#rollback}. Returns immediately and calls
 <p><p><b>Note:</b> The transaction parameters are taken from TransactionRequest
  terminal property since those do not change often if at all (default parameters).</p></p>
 
-<p><p><b>Note:</b> This method is only available if {@link com.six.timapi.constants.Guides#GASTRO}
+<p><p><b>Note:</b> This method is only available if <code><a href="../Enums/CGuides.html#/s:6TimApi7CGuidesO6gastroyA2CmF">CGuides.gastro</a></code>
  is enabled.</p></p>
-
-<p>@param type Financial Transaction Function.
- @param amount Transaction amount.
- @param tipAmount Proposed tip amount.</p>
 
                       </div>
                       <div class="declaration">
@@ -2194,6 +2356,49 @@ version of {@link Terminal#rollback}. Returns immediately and calls
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">transactionTip</span><span class="p">(</span><span class="nv">type</span><span class="p">:</span> <span class="kt"><a href="../Enums/CTransactionType.html">CTransactionType</a></span><span class="p">,</span> <span class="nv">amount</span><span class="p">:</span> <span class="kt"><a href="../Classes/Amount.html">Amount</a></span><span class="p">?,</span> <span class="nv">tipAmount</span><span class="p">:</span> <span class="kt"><a href="../Classes/Amount.html">Amount</a></span><span class="p">?)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/TransactionResponse.html">TransactionResponse</a></span></code></pre>
 
                         </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>type</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Financial Transaction Function.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>amount</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Transaction amount.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>tipAmount</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Proposed tip amount.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
                       </div>
                     </section>
                   </div>
@@ -2212,18 +2417,14 @@ version of {@link Terminal#rollback}. Returns immediately and calls
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p><p>Starts an EFT Terminal Transaction. Asynchronous version of
- {@link Terminal#transaction}. Returns immediately and calls
- {@link TerminalListener#transactionCompleted} on all notifiers once finished.</p></p>
+ <code><a href="../Classes/Terminal.html#/s:6TimApi8TerminalC11transaction4type6amountAA19TransactionResponseCAA16CTransactionTypeO_AA6AmountCSgtKF">Terminal.transaction(...)</a></code>. Returns immediately and calls
+ <code><a href="../Protocols/TerminalListener.html#/s:6TimApi16TerminalListenerP20transactionCompleted5event4datayAA0A5EventC_AA19TransactionResponseCSgtF">TerminalListener.transactionCompleted(...)</a></code> on all notifiers once finished.</p></p>
 
 <p><p><b>Note:</b> The transaction parameters are taken from TransactionRequest
  terminal property since those do not change often if at all (default parameters).</p></p>
 
-<p><p><b>Note:</b> This method is only available if {@link com.six.timapi.constants.Guides#GASTRO}
+<p><p><b>Note:</b> This method is only available if <code><a href="../Enums/CGuides.html#/s:6TimApi7CGuidesO6gastroyA2CmF">CGuides.gastro</a></code>
  is enabled.</p></p>
-
-<p>@param type Financial Transaction Function.
- @param amount Transaction amount.
- @param tipAmount Proposed tip amount.</p>
 
                       </div>
                       <div class="declaration">
@@ -2233,6 +2434,49 @@ version of {@link Terminal#rollback}. Returns immediately and calls
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">transactionTipAsync</span><span class="p">(</span><span class="nv">type</span><span class="p">:</span> <span class="kt"><a href="../Enums/CTransactionType.html">CTransactionType</a></span><span class="p">,</span> <span class="nv">amount</span><span class="p">:</span> <span class="kt"><a href="../Classes/Amount.html">Amount</a></span><span class="p">?,</span> <span class="nv">tipAmount</span><span class="p">:</span> <span class="kt"><a href="../Classes/Amount.html">Amount</a></span><span class="p">?)</span> <span class="k">throws</span></code></pre>
 
                         </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>type</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Financial Transaction Function.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>amount</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Transaction amount.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>tipAmount</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Proposed tip amount.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
                       </div>
                     </section>
                   </div>
@@ -2252,7 +2496,7 @@ version of {@link Terminal#rollback}. Returns immediately and calls
                       <div class="abstract">
                         <p><p>Close the shutter of the card reader.</p></p>
 
-<p><p><b>Note:</b> This method is only available if {@link com.six.timapi.constants.Guides#UNATTENDED}
+<p><p><b>Note:</b> This method is only available if <code><a href="../Enums/CGuides.html#/s:6TimApi7CGuidesO10unattendedyA2CmF">CGuides.unattended</a></code>
  is enabled.</p></p>
 
                       </div>
@@ -2282,10 +2526,10 @@ version of {@link Terminal#rollback}. Returns immediately and calls
                       <div class="abstract">
                         <p><p>Close the shutter of the card reader.</p></p>
 
-<p><p>Asynchronous version of {@link Terminal#closeReader}. Returns immediately and calls
- {@link TerminalListener#closeReaderCompleted} on all notifiers once finished.</p></p>
+<p><p>Asynchronous version of <code><a href="../Classes/Terminal.html#/s:6TimApi8TerminalC11closeReaderyyKF">Terminal.closeReader(...)</a></code>. Returns immediately and calls
+ <code><a href="../Protocols/TerminalListener.html#/s:6TimApi16TerminalListenerP20closeReaderCompleted5eventyAA0A5EventC_tF">TerminalListener.closeReaderCompleted(...)</a></code> on all notifiers once finished.</p></p>
 
-<p><p><b>Note:</b> This method is only available if {@link com.six.timapi.constants.Guides#UNATTENDED}
+<p><p><b>Note:</b> This method is only available if <code><a href="../Enums/CGuides.html#/s:6TimApi7CGuidesO10unattendedyA2CmF">CGuides.unattended</a></code>
  is enabled.</p></p>
 
                       </div>
@@ -2315,7 +2559,7 @@ version of {@link Terminal#rollback}. Returns immediately and calls
                       <div class="abstract">
                         <p><p>Open the shutter of the card reader.</p></p>
 
-<p><p><b>Note:</b> This method is only available if {@link com.six.timapi.constants.Guides#UNATTENDED}
+<p><p><b>Note:</b> This method is only available if <code><a href="../Enums/CGuides.html#/s:6TimApi7CGuidesO10unattendedyA2CmF">CGuides.unattended</a></code>
  is enabled.</p></p>
 
                       </div>
@@ -2345,10 +2589,10 @@ version of {@link Terminal#rollback}. Returns immediately and calls
                       <div class="abstract">
                         <p><p>Open the shutter of the card reader.</p></p>
 
-<p><p>Asynchronous version of {@link Terminal#openReader}. Returns immediately and calls
- {@link TerminalListener#openReaderCompleted} on all notifiers once finished.</p></p>
+<p><p>Asynchronous version of <code><a href="../Classes/Terminal.html#/s:6TimApi8TerminalC10openReaderyyKF">Terminal.openReader(...)</a></code>. Returns immediately and calls
+ <code><a href="../Protocols/TerminalListener.html#/s:6TimApi16TerminalListenerP19openReaderCompleted5eventyAA0A5EventC_tF">TerminalListener.openReaderCompleted(...)</a></code> on all notifiers once finished.</p></p>
 
-<p><p><b>Note:</b> This method is only available if {@link com.six.timapi.constants.Guides#UNATTENDED}
+<p><p><b>Note:</b> This method is only available if <code><a href="../Enums/CGuides.html#/s:6TimApi7CGuidesO10unattendedyA2CmF">CGuides.unattended</a></code>
  is enabled.</p></p>
 
                       </div>
@@ -2378,7 +2622,7 @@ version of {@link Terminal#rollback}. Returns immediately and calls
                       <div class="abstract">
                         <p><p>Eject a card from the card reader.</p></p>
 
-<p><p><b>Note:</b> This method is only available if {@link com.six.timapi.constants.Guides#UNATTENDED}
+<p><p><b>Note:</b> This method is only available if <code><a href="../Enums/CGuides.html#/s:6TimApi7CGuidesO10unattendedyA2CmF">CGuides.unattended</a></code>
  is enabled.</p></p>
 
                       </div>
@@ -2408,10 +2652,10 @@ version of {@link Terminal#rollback}. Returns immediately and calls
                       <div class="abstract">
                         <p><p>Eject a card from the card reader.</p></p>
 
-<p><p>Asynchronous version of {@link Terminal#ejectCard}. Returns immediately and calls
- {@link TerminalListener#ejectCardCompleted} on all notifiers once finished.</p></p>
+<p><p>Asynchronous version of <code><a href="../Classes/Terminal.html#/s:6TimApi8TerminalC9ejectCardyyKF">Terminal.ejectCard(...)</a></code>. Returns immediately and calls
+ <code><a href="../Protocols/TerminalListener.html#/s:6TimApi16TerminalListenerP18ejectCardCompleted5eventyAA0A5EventC_tF">TerminalListener.ejectCardCompleted(...)</a></code> on all notifiers once finished.</p></p>
 
-<p><p><b>Note:</b> This method is only available if {@link com.six.timapi.constants.Guides#UNATTENDED}
+<p><p><b>Note:</b> This method is only available if <code><a href="../Enums/CGuides.html#/s:6TimApi7CGuidesO10unattendedyA2CmF">CGuides.unattended</a></code>
  is enabled.</p></p>
 
                       </div>
@@ -2450,7 +2694,7 @@ version of {@link Terminal#rollback}. Returns immediately and calls
 <p><p>It is possible that the connection between ECR and EFT terminal is terminated due to
  one or multiple reboot processes.</p></p>
 
-<p><p><b>Note:</b> This method is only available if {@link com.six.timapi.constants.Guides#UNATTENDED}
+<p><p><b>Note:</b> This method is only available if <code><a href="../Enums/CGuides.html#/s:6TimApi7CGuidesO10unattendedyA2CmF">CGuides.unattended</a></code>
  is enabled.</p></p>
 
                       </div>
@@ -2489,10 +2733,10 @@ version of {@link Terminal#rollback}. Returns immediately and calls
 <p><p>It is possible that the connection between ECR and EFT terminal is terminated due to
  one or multiple reboot processes.</p></p>
 
-<p><p>Asynchronous version of {@link Terminal#openMaintenanceWindow}. Returns immediately and calls
- {@link TerminalListener#openMaintenanceWindowCompleted} on all notifiers once finished.</p></p>
+<p><p>Asynchronous version of <code><a href="../Classes/Terminal.html#/s:6TimApi8TerminalC21openMaintenanceWindowyyKF">Terminal.openMaintenanceWindow(...)</a></code>. Returns immediately and calls
+ <code><a href="../Protocols/TerminalListener.html#/s:6TimApi16TerminalListenerP30openMaintenanceWindowCompleted5eventyAA0A5EventC_tF">TerminalListener.openMaintenanceWindowCompleted(...)</a></code> on all notifiers once finished.</p></p>
 
-<p><p><b>Note:</b> This method is only available if {@link com.six.timapi.constants.Guides#UNATTENDED}
+<p><p><b>Note:</b> This method is only available if <code><a href="../Enums/CGuides.html#/s:6TimApi7CGuidesO10unattendedyA2CmF">CGuides.unattended</a></code>
  is enabled.</p></p>
 
                       </div>
@@ -2531,7 +2775,7 @@ version of {@link Terminal#rollback}. Returns immediately and calls
 <p><p>It is possible that the connection between ECR and EFT terminal is terminated due to
  one or multiple reboot processes.</p></p>
 
-<p><p><b>Note:</b> This method is only available if {@link com.six.timapi.constants.Guides#UNATTENDED}
+<p><p><b>Note:</b> This method is only available if <code><a href="../Enums/CGuides.html#/s:6TimApi7CGuidesO10unattendedyA2CmF">CGuides.unattended</a></code>
  is enabled.</p></p>
 
                       </div>
@@ -2570,10 +2814,10 @@ version of {@link Terminal#rollback}. Returns immediately and calls
 <p><p>It is possible that the connection between ECR and EFT terminal is terminated due to
  one or multiple reboot processes.</p></p>
 
-<p><p>Asynchronous version of {@link Terminal#closeMaintenanceWindow}. Returns immediately and calls
- {@link TerminalListener#closeMaintenanceWindowCompleted} on all notifiers once finished.</p></p>
+<p><p>Asynchronous version of <code><a href="../Classes/Terminal.html#/s:6TimApi8TerminalC22closeMaintenanceWindowyyKF">Terminal.closeMaintenanceWindow(...)</a></code>. Returns immediately and calls
+ <code><a href="../Protocols/TerminalListener.html#/s:6TimApi16TerminalListenerP31closeMaintenanceWindowCompleted5eventyAA0A5EventC_tF">TerminalListener.closeMaintenanceWindowCompleted(...)</a></code> on all notifiers once finished.</p></p>
 
-<p><p><b>Note:</b> This method is only available if {@link com.six.timapi.constants.Guides#UNATTENDED}
+<p><p><b>Note:</b> This method is only available if <code><a href="../Enums/CGuides.html#/s:6TimApi7CGuidesO10unattendedyA2CmF">CGuides.unattended</a></code>
  is enabled.</p></p>
 
                       </div>
@@ -2608,7 +2852,7 @@ version of {@link Terminal#rollback}. Returns immediately and calls
  the <em>Commit</em> timeout as well. If the printing action fails after some tickets a
  partial commit can be performed.</p></p>
 
-<p><p><b>Note:</b> This method is only available if {@link com.six.timapi.constants.Guides#UNATTENDED}
+<p><p><b>Note:</b> This method is only available if <code><a href="../Enums/CGuides.html#/s:6TimApi7CGuidesO10unattendedyA2CmF">CGuides.unattended</a></code>
  is enabled.</p></p>
 
                       </div>
@@ -2638,7 +2882,7 @@ version of {@link Terminal#rollback}. Returns immediately and calls
                       <div class="abstract">
                         <p><p>Activate service menu.</p></p>
 
-<p><p><b>Note:</b> This method is only available if {@link com.six.timapi.constants.Guides#UNATTENDED}
+<p><p><b>Note:</b> This method is only available if <code><a href="../Enums/CGuides.html#/s:6TimApi7CGuidesO10unattendedyA2CmF">CGuides.unattended</a></code>
  is enabled.</p></p>
 
                       </div>
@@ -2668,10 +2912,10 @@ version of {@link Terminal#rollback}. Returns immediately and calls
                       <div class="abstract">
                         <p><p>Activate service menu.</p></p>
 
-<p><p>Asynchronous version of {@link Terminal#activateServiceMenu}. Returns immediately and calls
- {@link TerminalListener#activateServiceMenuCompleted} on all notifiers once finished.</p></p>
+<p><p>Asynchronous version of <code><a href="../Classes/Terminal.html#/s:6TimApi8TerminalC19activateServiceMenuyyKF">Terminal.activateServiceMenu(...)</a></code>. Returns immediately and calls
+ <code><a href="../Protocols/TerminalListener.html#/s:6TimApi16TerminalListenerP28activateServiceMenuCompleted5eventyAA0A5EventC_tF">TerminalListener.activateServiceMenuCompleted(...)</a></code> on all notifiers once finished.</p></p>
 
-<p><p><b>Note:</b> This method is only available if {@link com.six.timapi.constants.Guides#UNATTENDED}
+<p><p><b>Note:</b> This method is only available if <code><a href="../Enums/CGuides.html#/s:6TimApi7CGuidesO10unattendedyA2CmF">CGuides.unattended</a></code>
  is enabled.</p></p>
 
                       </div>
@@ -2701,7 +2945,7 @@ version of {@link Terminal#rollback}. Returns immediately and calls
                       <div class="abstract">
                         <p>Amount adjustment request.</p>
 
-<p><p><b>Note:</b> This method is only available if {@link com.six.timapi.constants.Guides#UNATTENDED}
+<p><p><b>Note:</b> This method is only available if <code><a href="../Enums/CGuides.html#/s:6TimApi7CGuidesO10unattendedyA2CmF">CGuides.unattended</a></code>
  is enabled.</p></p>
 
                       </div>
@@ -2731,7 +2975,7 @@ version of {@link Terminal#rollback}. Returns immediately and calls
                       <div class="abstract">
                         <p>Amount adjustment request.</p>
 
-<p><p><b>Note:</b> This method is only available if {@link com.six.timapi.constants.Guides#UNATTENDED}
+<p><p><b>Note:</b> This method is only available if <code><a href="../Enums/CGuides.html#/s:6TimApi7CGuidesO10unattendedyA2CmF">CGuides.unattended</a></code>
  is enabled.</p></p>
 
                       </div>
@@ -2763,13 +3007,8 @@ version of {@link Terminal#rollback}. Returns immediately and calls
                       <div class="abstract">
                         <p>This function is used to query and configure loyalty information.</p>
 
-<p><p><b>Note:</b> This method is only available if {@link com.six.timapi.constants.Guides#VALUE_ADDED_SERVICES}
+<p><p><b>Note:</b> This method is only available if <code><a href="../Enums/CGuides.html#/s:6TimApi7CGuidesO18valueAddedServicesyA2CmF">CGuides.valueAddedServices</a></code>
  is enabled.</p></p>
-
-<p>@param functionType Defines what kind of loyalty mode will beused.
- @param dataType Specifies type of loyalty data. Mandatory for .init, .update and .deinit
- @param data Loyalty data.
- @param retainCard True to not eject card otherwise false.</p>
 
                       </div>
                       <div class="declaration">
@@ -2779,6 +3018,61 @@ version of {@link Terminal#rollback}. Returns immediately and calls
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">loyaltyData</span><span class="p">(</span><span class="nv">functionType</span><span class="p">:</span> <span class="kt"><a href="../Enums/CLoyaltyFunctionType.html">CLoyaltyFunctionType</a></span><span class="p">,</span> <span class="nv">dataType</span><span class="p">:</span> <span class="kt">String</span><span class="p">?,</span> <span class="nv">data</span><span class="p">:</span> <span class="kt">Data</span><span class="p">,</span> <span class="nv">retainCard</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/CardData.html">CardData</a></span></code></pre>
 
                         </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>functionType</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Defines what kind of loyalty mode will beused.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>dataType</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Specifies type of loyalty data. Mandatory for .init, .update and .deinit</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>data</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Loyalty data.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>retainCard</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>True to not eject card otherwise false.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
                       </div>
                     </section>
                   </div>
@@ -2798,13 +3092,8 @@ version of {@link Terminal#rollback}. Returns immediately and calls
                       <div class="abstract">
                         <p>This function is used to query and configure loyalty information.</p>
 
-<p><p><b>Note:</b> This method is only available if {@link com.six.timapi.constants.Guides#VALUE_ADDED_SERVICES}
+<p><p><b>Note:</b> This method is only available if <code><a href="../Enums/CGuides.html#/s:6TimApi7CGuidesO18valueAddedServicesyA2CmF">CGuides.valueAddedServices</a></code>
  is enabled.</p></p>
-
-<p>@param functionType Defines what kind of loyalty mode will beused.
- @param dataType Specifies type of loyalty data. Mandatory for .init, .update and .deinit
- @param data Loyalty data.
- @param retainCard True to not eject card otherwise false.</p>
 
                       </div>
                       <div class="declaration">
@@ -2814,6 +3103,61 @@ version of {@link Terminal#rollback}. Returns immediately and calls
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">loyaltyDataAsync</span><span class="p">(</span><span class="nv">functionType</span><span class="p">:</span> <span class="kt"><a href="../Enums/CLoyaltyFunctionType.html">CLoyaltyFunctionType</a></span><span class="p">,</span> <span class="nv">dataType</span><span class="p">:</span> <span class="kt">String</span><span class="p">?,</span> <span class="nv">data</span><span class="p">:</span> <span class="kt">Data</span><span class="p">,</span> <span class="nv">retainCard</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span> <span class="k">throws</span></code></pre>
 
                         </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>functionType</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Defines what kind of loyalty mode will beused.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>dataType</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Specifies type of loyalty data. Mandatory for .init, .update and .deinit</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>data</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Loyalty data.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>retainCard</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>True to not eject card otherwise false.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
                       </div>
                     </section>
                   </div>
@@ -2838,7 +3182,7 @@ version of {@link Terminal#rollback}. Returns immediately and calls
  on the terminal before returning to its Idle screen can be defined in the Login request using the
  OptionType - QRCTimeout, see SIXml Book C: Appendix for further information.</p>
 
-<p><p><b>Note:</b> This method is only available if .valueAddedServices guide is enabled.</p></p>
+<p><p><b>Note:</b> This method is only available if <code><a href="../Enums/CGuides.html#/s:6TimApi7CGuidesO18valueAddedServicesyA2CmF">CGuides.valueAddedServices</a></code> guide is enabled.</p></p>
 
                       </div>
                       <div class="declaration">
@@ -2872,7 +3216,7 @@ version of {@link Terminal#rollback}. Returns immediately and calls
  on the terminal before returning to its Idle screen can be defined in the Login request using the
  OptionType - QRCTimeout, see SIXml Book C: Appendix for further information.</p>
 
-<p><p><b>Note:</b> This method is only available if .valueAddedServices guide is enabled.</p></p>
+<p><p><b>Note:</b> This method is only available if <code><a href="../Enums/CGuides.html#/s:6TimApi7CGuidesO18valueAddedServicesyA2CmF">CGuides.valueAddedServices</a></code> guide is enabled.</p></p>
 
                       </div>
                       <div class="declaration">
@@ -2902,7 +3246,7 @@ version of {@link Terminal#rollback}. Returns immediately and calls
                         <p>This function is used to finish a previously started checkout process with StartCheckout and to retrieve
  consumer loyalty data from the terminal that has been collected during this checkout process.</p>
 
-<p><p><b>Note:</b> This method is only available if .valueAddedServices guide is enabled.</p></p>
+<p><p><b>Note:</b> This method is only available if <code><a href="../Enums/CGuides.html#/s:6TimApi7CGuidesO18valueAddedServicesyA2CmF">CGuides.valueAddedServices</a></code> guide is enabled.</p></p>
 
                       </div>
                       <div class="declaration">
@@ -2932,7 +3276,7 @@ version of {@link Terminal#rollback}. Returns immediately and calls
                         <p>This function is used to finish a previously started checkout process with StartCheckout and to retrieve
  consumer loyalty data from the terminal that has been collected during this checkout process.</p>
 
-<p><p><b>Note:</b> This method is only available if .valueAddedServices guide is enabled.</p></p>
+<p><p><b>Note:</b> This method is only available if <code><a href="../Enums/CGuides.html#/s:6TimApi7CGuidesO18valueAddedServicesyA2CmF">CGuides.valueAddedServices</a></code> guide is enabled.</p></p>
 
                       </div>
                       <div class="declaration">
@@ -2961,7 +3305,7 @@ version of {@link Terminal#rollback}. Returns immediately and calls
                       <div class="abstract">
                         <p>This function is used to provide the terminal with a LoyaltyBasket if the correspondig loyalty scheme requires it.</p>
 
-<p><p><b>Note:</b> This method is only available if .valueAddedServices guide is enabled.</p></p>
+<p><p><b>Note:</b> This method is only available if <code><a href="../Enums/CGuides.html#/s:6TimApi7CGuidesO18valueAddedServicesyA2CmF">CGuides.valueAddedServices</a></code> guide is enabled.</p></p>
 
                       </div>
                       <div class="declaration">
@@ -2990,7 +3334,7 @@ version of {@link Terminal#rollback}. Returns immediately and calls
                       <div class="abstract">
                         <p>This function is used to provide the terminal with a LoyaltyBasket if the correspondig loyalty scheme requires it.</p>
 
-<p><p><b>Note:</b> This method is only available if .valueAddedServices guide is enabled.</p></p>
+<p><p><b>Note:</b> This method is only available if <code><a href="../Enums/CGuides.html#/s:6TimApi7CGuidesO18valueAddedServicesyA2CmF">CGuides.valueAddedServices</a></code> guide is enabled.</p></p>
 
                       </div>
                       <div class="declaration">
@@ -3019,7 +3363,7 @@ version of {@link Terminal#rollback}. Returns immediately and calls
                       <div class="abstract">
                         <p><p>Open dialog mode on the terminal.</p></p>
 
-<p><p><b>Note:</b> This method is only available if {@link com.six.timapi.constants.Guides#DIALOG}
+<p><p><b>Note:</b> This method is only available if <code><a href="../Enums/CGuides.html#/s:6TimApi7CGuidesO6dialogyA2CmF">CGuides.dialog</a></code>
  is enabled.</p></p>
 
                       </div>
@@ -3049,10 +3393,10 @@ version of {@link Terminal#rollback}. Returns immediately and calls
                       <div class="abstract">
                         <p><p>Open dialog mode on the terminal.</p></p>
 
-<p><p>Asynchronous version of {@link Terminal#openDialogMode}. Returns immediately and calls
- {@link TerminalListener#openDialogModeCompleted} on all notifiers once finished.</p></p>
+<p><p>Asynchronous version of <code><a href="../Classes/Terminal.html#/s:6TimApi8TerminalC14openDialogModeyyKF">Terminal.openDialogMode(...)</a></code>. Returns immediately and calls
+ <code><a href="../Protocols/TerminalListener.html#/s:6TimApi16TerminalListenerP23openDialogModeCompleted5eventyAA0A5EventC_tF">TerminalListener.openDialogModeCompleted(...)</a></code> on all notifiers once finished.</p></p>
 
-<p><p><b>Note:</b> This method is only available if {@link com.six.timapi.constants.Guides#DIALOG}
+<p><p><b>Note:</b> This method is only available if <code><a href="../Enums/CGuides.html#/s:6TimApi7CGuidesO6dialogyA2CmF">CGuides.dialog</a></code>
  is enabled.</p></p>
 
                       </div>
@@ -3082,7 +3426,7 @@ version of {@link Terminal#rollback}. Returns immediately and calls
                       <div class="abstract">
                         <p><p>Close dialog mode on the terminal.</p></p>
 
-<p><p><b>Note:</b> This method is only available if {@link com.six.timapi.constants.Guides#DIALOG}
+<p><p><b>Note:</b> This method is only available if <code><a href="../Enums/CGuides.html#/s:6TimApi7CGuidesO6dialogyA2CmF">CGuides.dialog</a></code>
  is enabled.</p></p>
 
                       </div>
@@ -3112,10 +3456,10 @@ version of {@link Terminal#rollback}. Returns immediately and calls
                       <div class="abstract">
                         <p><p>Close dialog mode on the terminal.</p></p>
 
-<p><p>Asynchronous version of {@link Terminal#closeDialogMode}. Returns immediately and calls
- {@link TerminalListener#closeDialogModeCompleted} on all notifiers once finished.</p></p>
+<p><p>Asynchronous version of <code><a href="../Classes/Terminal.html#/s:6TimApi8TerminalC15closeDialogModeyyKF">Terminal.closeDialogMode(...)</a></code>. Returns immediately and calls
+ <code><a href="../Protocols/TerminalListener.html#/s:6TimApi16TerminalListenerP24closeDialogModeCompleted5eventyAA0A5EventC_tF">TerminalListener.closeDialogModeCompleted(...)</a></code> on all notifiers once finished.</p></p>
 
-<p><p><b>Note:</b> This method is only available if {@link com.six.timapi.constants.Guides#DIALOG}
+<p><p><b>Note:</b> This method is only available if <code><a href="../Enums/CGuides.html#/s:6TimApi7CGuidesO6dialogyA2CmF">CGuides.dialog</a></code>
  is enabled.</p></p>
 
                       </div>
@@ -3147,7 +3491,7 @@ version of {@link Terminal#rollback}. Returns immediately and calls
 
 <p><p>Can be called only if dialog mode is open.</p></p>
 
-<p><p><b>Note:</b> This method is only available if {@link com.six.timapi.constants.Guides#DIALOG}
+<p><p><b>Note:</b> This method is only available if <code><a href="../Enums/CGuides.html#/s:6TimApi7CGuidesO6dialogyA2CmF">CGuides.dialog</a></code>
  is enabled.</p></p>
 
                       </div>
@@ -3177,10 +3521,10 @@ version of {@link Terminal#rollback}. Returns immediately and calls
                       <div class="abstract">
                         <p><p>Show signature capture on the terminal.</p></p>
 
-<p><p>Asynchronous version of {@link Terminal#showSignatureCapture}. Returns immediately and calls
- {@link TerminalListener#showSignatureCaptureCompleted} on all notifiers once finished.</p></p>
+<p><p>Asynchronous version of <code><a href="../Classes/Terminal.html#/s:6TimApi8TerminalC20showSignatureCapture7requestAA04ShoweF8ResponseCAA0heF7RequestC_tKF">Terminal.showSignatureCapture(...)</a></code>. Returns immediately and calls
+ <code><a href="../Protocols/TerminalListener.html#/s:6TimApi16TerminalListenerP29showSignatureCaptureCompleted5event4datayAA0A5EventC_AA04ShowfG8ResponseCSgtF">TerminalListener.showSignatureCaptureCompleted(...)</a></code> on all notifiers once finished.</p></p>
 
-<p><p><b>Note:</b> This method is only available if {@link com.six.timapi.constants.Guides#DIALOG}
+<p><p><b>Note:</b> This method is only available if <code><a href="../Enums/CGuides.html#/s:6TimApi7CGuidesO6dialogyA2CmF">CGuides.dialog</a></code>
  is enabled.</p></p>
 
                       </div>
@@ -3212,7 +3556,7 @@ version of {@link Terminal#rollback}. Returns immediately and calls
 
 <p><p>Can be called only if dialog mode is open.</p></p>
 
-<p><p><b>Note:</b> This method is only available if {@link com.six.timapi.constants.Guides#DIALOG}
+<p><p><b>Note:</b> This method is only available if <code><a href="../Enums/CGuides.html#/s:6TimApi7CGuidesO6dialogyA2CmF">CGuides.dialog</a></code>
  is enabled.</p></p>
 
                       </div>
@@ -3242,10 +3586,10 @@ version of {@link Terminal#rollback}. Returns immediately and calls
                       <div class="abstract">
                         <p><p>Show dialog on the terminal.</p></p>
 
-<p><p>Asynchronous version of {@link Terminal#showDialog}. Returns immediately and calls
- {@link TerminalListener#showDialogCompleted} on all notifiers once finished.</p></p>
+<p><p>Asynchronous version of <code><a href="../Classes/Terminal.html#/s:6TimApi8TerminalC10showDialog7requestAA04ShowE8ResponseCAA0gE7RequestC_tKF">Terminal.showDialog(...)</a></code>. Returns immediately and calls
+ <code><a href="../Protocols/TerminalListener.html#/s:6TimApi16TerminalListenerP19showDialogCompleted5event4datayAA0A5EventC_AA04ShowF8ResponseCSgtF">TerminalListener.showDialogCompleted(...)</a></code> on all notifiers once finished.</p></p>
 
-<p><p><b>Note:</b> This method is only available if {@link com.six.timapi.constants.Guides#DIALOG}
+<p><p><b>Note:</b> This method is only available if <code><a href="../Enums/CGuides.html#/s:6TimApi7CGuidesO6dialogyA2CmF">CGuides.dialog</a></code>
  is enabled.</p></p>
 
                       </div>
@@ -3277,7 +3621,7 @@ version of {@link Terminal#rollback}. Returns immediately and calls
 
 <p>Can be called only if dialog mode is open.</p>
 
-<p>Note: This method is only available if .dialog guide is enabled.</p>
+<p>Note: This method is only available if <code><a href="../Enums/CGuides.html#/s:6TimApi7CGuidesO6dialogyA2CmF">CGuides.dialog</a></code> guide is enabled.</p>
 
                       </div>
                       <div class="declaration">
@@ -3306,10 +3650,10 @@ version of {@link Terminal#rollback}. Returns immediately and calls
                       <div class="abstract">
                         <p>Send card command to card.</p>
 
-<p>Asynchronous version of {@link Terminal#sendCardCommand}. Returns immediately and calls
- {@link TerminalListener#sendCardCommandCompleted} on all notifiers once finished.</p></p>
+<p>Asynchronous version of <code><a href="../Classes/Terminal.html#/s:6TimApi8TerminalC15sendCardCommand8requestsSayAA0F8ResponseCGSayAA0F7RequestCG_tKF">Terminal.sendCardCommand(...)</a></code>. Returns immediately and calls
+ <code><a href="../Protocols/TerminalListener.html#/s:6TimApi16TerminalListenerP24sendCardCommandCompleted5event4datayAA0A5EventC_SayAA0G8ResponseCGSgtF">TerminalListener.sendCardCommandCompleted(...)</a></code> on all notifiers once finished.</p></p>
 
-<p>Note: This method is only available if .dialog guide is enabled.</p>
+<p>Note: This method is only available if <code><a href="../Enums/CGuides.html#/s:6TimApi7CGuidesO6dialogyA2CmF">CGuides.dialog</a></code> guide is enabled.</p>
 
                       </div>
                       <div class="declaration">
@@ -3339,7 +3683,7 @@ version of {@link Terminal#rollback}. Returns immediately and calls
                         <p><p>Get information about the current account balance of the inserted card.</p></p>
 
 <p><p><b>Note:</b> This method is only available if
- {@link com.six.timapi.constants.Guides#ADVANCED_RETAIL} is enabled.</p></p>
+ <code><a href="../Enums/CGuides.html#/s:6TimApi7CGuidesO14advancedRetailyA2CmF">CGuides.advancedRetail</a></code> is enabled.</p></p>
 
                       </div>
                       <div class="declaration">
@@ -3368,11 +3712,11 @@ version of {@link Terminal#rollback}. Returns immediately and calls
                       <div class="abstract">
                         <p><p>Get information about the current account balance of the inserted card.</p></p>
 
-<p><p>Asynchronous version of {@link Terminal#balanceInquiry}. Returns immediately and calls
- {@link TerminalListener#balanceInquiryCompleted} on all notifiers once finished.</p></p>
+<p><p>Asynchronous version of <code><a href="../Classes/Terminal.html#/s:6TimApi8TerminalC14balanceInquiryAA07BalanceE8ResponseCyKF">Terminal.balanceInquiry(...)</a></code>. Returns immediately and calls
+ <code><a href="../Protocols/TerminalListener.html#/s:6TimApi16TerminalListenerP23balanceInquiryCompleted5event4datayAA0A5EventC_AA07BalanceF8ResponseCSgtF">TerminalListener.balanceInquiryCompleted(...)</a></code> on all notifiers once finished.</p></p>
 
 <p><p><b>Note:</b> This method is only available if
- {@link com.six.timapi.constants.Guides#ADVANCED_RETAIL} is enabled.</p></p>
+ <code><a href="../Enums/CGuides.html#/s:6TimApi7CGuidesO14advancedRetailyA2CmF">CGuides.advancedRetail</a></code> is enabled.</p></p>
 
                       </div>
                       <div class="declaration">
@@ -3414,8 +3758,7 @@ version of {@link Terminal#rollback}. Returns immediately and calls
  </ul>
  </p></p>
 
-<p>@param sixTransRef The SIX omni channel reference number.
- @returns The Alias created by Saferpay.</p>
+<p>@returns The Alias created by Saferpay.</p>
 
                       </div>
                       <div class="declaration">
@@ -3425,6 +3768,25 @@ version of {@link Terminal#rollback}. Returns immediately and calls
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">requestAlias</span><span class="p">(</span><span class="nv">sixTransRef</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">String</span></code></pre>
 
                         </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>sixTransRef</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The SIX omni channel reference number.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
                       </div>
                     </section>
                   </div>
@@ -3457,11 +3819,9 @@ version of {@link Terminal#rollback}. Returns immediately and calls
  </ul>
  </p></p>
 
-<p><p>Asynchronous version of {@link Terminal#requestAlias}. Returns immediately
- and calls {@link TerminalListener#requestAliasCompleted} on all notifiers
+<p><p>Asynchronous version of <code><a href="../Classes/Terminal.html#/s:6TimApi8TerminalC12requestAlias11sixTransRefS2S_tKF">Terminal.requestAlias(...)</a></code>. Returns immediately
+ and calls <code><a href="../Protocols/TerminalListener.html#/s:6TimApi16TerminalListenerP21requestAliasCompleted5event4datayAA0A5EventC_SSSgtF">TerminalListener.requestAliasCompleted(...)</a></code> on all notifiers
  once finished.</p></p>
-
-<p>@param sixTransRef The SIX omni channel reference number.</p>
 
                       </div>
                       <div class="declaration">
@@ -3471,6 +3831,25 @@ version of {@link Terminal#rollback}. Returns immediately and calls
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">requestAliasAsync</span><span class="p">(</span><span class="nv">sixTransRef</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="k">throws</span></code></pre>
 
                         </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>sixTransRef</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The SIX omni channel reference number.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
                       </div>
                     </section>
                   </div>
@@ -3844,8 +4223,8 @@ version of {@link Terminal#rollback}. Returns immediately and calls
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>Transaction data to use for transaction requests unless overwritten in
-{@link #transaction(TransactionType, TransactionRequest)} or
-{@link #transactionAsync(TransactionType, TransactionRequest)}.</p>
+<code>transaction(type:request:)} or
+</code>transactionAsync(type:request:)}.</p>
 
                       </div>
                       <div class="declaration">
@@ -4146,8 +4525,8 @@ version of {@link Terminal#rollback}. Returns immediately and calls
 terminal identifier is not known. The terminal identifier is available
 after logging in to the terminal. The terminal identifier obtained from
 the terminal is potentially different from the terminal identifier set
-in the {@link TerminalSettings}. This is especially true if
-{@link ConnectionMode#ON_FIX_IP} is used.</p>
+in the <code><a href="../Classes/TerminalSettings.html">TerminalSettings</a></code>. This is especially true if
+<code><a href="../Enums/CConnectionMode.html#/s:6TimApi15CConnectionModeO7onFixIpyA2CmF">CConnectionMode.onFixIp</a></code> is used.</p>
 
                       </div>
                       <div class="declaration">
@@ -4193,7 +4572,7 @@ in the {@link TerminalSettings}. This is especially true if
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2019 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2019-03-04)</p>
+          <p>&copy; 2019 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2019-03-12)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.5</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>
