@@ -430,6 +430,53 @@ $(document).ready(function(){initNavTree('search.html','');});
   </doc>
   <doc>
     <field name="type">file</field>
+    <field name="name">amount_final.h</field>
+    <field name="url">amount__final_8h.html</field>
+    <field name="keywords">amount_final.h</field>
+    <field name="text">Object type amount_final</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">ta_amount_final_get_value</field>
+    <field name="args">(ta_object_t amount_final, int64_t *value)</field>
+    <field name="url">amount__final_8h.html#a6a1966516a0bb8d662355fb2776ca544</field>
+    <field name="keywords">ta_amount_final_get_value</field>
+    <field name="text">Amount in minor units amount_final Object instance of type amount_final value Pointer to variable to write value to Use ta_amount_final_get_exponent to get the used exponent This can be a different exponent than the one defined by the used currency ta_c_rc_ok Value written to value ta_c_rc_invalid_argument amount_final is ta_invalid_object ta_c_rc_invalid_argument amount_final is not of type amount_final ta_c_rc_invalid_argument value is null-pointer</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">ta_amount_final_get_decimal_value</field>
+    <field name="args">(ta_object_t amount_final, double *value)</field>
+    <field name="url">amount__final_8h.html#a471ed9d9dbf66bd7dfa1a5d1df444667</field>
+    <field name="keywords">ta_amount_final_get_decimal_value</field>
+    <field name="text">Amount in major units as double precision floating point value Double precision floating point values can not provide the same level of numerical accuracy as int64_t It is recommended to use the integer based methods amount_final Object instance of type amount_final value Pointer to variable to write value to ta_c_rc_ok Value written to value ta_c_rc_invalid_argument amount_final is ta_invalid_object ta_c_rc_invalid_argument amount_final is not of type amount_final ta_c_rc_invalid_argument value is null-pointer</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">ta_amount_final_get_currency</field>
+    <field name="args">(ta_object_t amount_final, ta_e_currency_t *currency)</field>
+    <field name="url">amount__final_8h.html#a3812095865c613a667ff5599c6dd5f10</field>
+    <field name="keywords">ta_amount_final_get_currency</field>
+    <field name="text">Currency amount_final Object instance of type amount_final currency Pointer to variable to write currency to ta_c_rc_ok Value written to currency ta_c_rc_invalid_argument amount_final is ta_invalid_object ta_c_rc_invalid_argument amount_final is not of type amount_final ta_c_rc_invalid_argument currency is null-pointer</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">ta_amount_final_get_exponent</field>
+    <field name="args">(ta_object_t amount_final, int *exponent)</field>
+    <field name="url">amount__final_8h.html#adf28824accd7e5ee831c1dad071641ae</field>
+    <field name="keywords">ta_amount_final_get_exponent</field>
+    <field name="text">Exponent amount_final Object instance of type amount_final exponent Pointer to variable to write exponent to ta_c_rc_ok Value written to exponent ta_c_rc_invalid_argument amount_final is ta_invalid_object ta_c_rc_invalid_argument amount_final is not of type amount_final ta_c_rc_invalid_argument exponent is null-pointer</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">ta_amount_final_get_adjustment_result</field>
+    <field name="args">(ta_object_t amount_final, ta_e_adjustment_result_t *adjustment_result)</field>
+    <field name="url">amount__final_8h.html#ae17116e4ef313a5910256a0bb69f9bfb</field>
+    <field name="keywords">ta_amount_final_get_adjustment_result</field>
+    <field name="text">Adjustment result amount_final Object instance of type amount_final adjustment_result Pointer to variable to write value to ta_c_rc_ok Value written to currency ta_c_rc_invalid_argument amount_final is ta_invalid_object ta_c_rc_invalid_argument amount_final is not of type amount_final ta_c_rc_invalid_argument adjustment_result is null-pointer</field>
+  </doc>
+  <doc>
+    <field name="type">file</field>
     <field name="name">application.h</field>
     <field name="url">application_8h.html</field>
     <field name="keywords">application.h</field>
@@ -11332,6 +11379,22 @@ $(document).ready(function(){initNavTree('search.html','');});
   </doc>
   <doc>
     <field name="type">function</field>
+    <field name="name">ta_terminal_commit_amount</field>
+    <field name="args">(ta_object_t terminal, ta_object_t amount, ta_object_t *response)</field>
+    <field name="url">terminal_8h.html#a044219520df73a515335ac521878de28</field>
+    <field name="keywords">ta_terminal_commit_amount</field>
+    <field name="text">Performs Commit-operation after a successful Transaction call terminal Object instance of type terminal amount Object instance of type amount or ta_invalid_object response Pointer to write object instance of type print_data ta_c_rc_ok Request finished successfully ta_c_rc_invalid_argument terminal is ta_invalid_object ta_c_rc_invalid_argument terminal is not of type terminal ta_c_rc_invalid_argument terminal has been disposed ta_c_rc_invalid_argument amount is not ta_invalid_object and object instance is not of type amount ta_c_rc_invalid_argument response is null-pointer</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">ta_terminal_commit_amount_async</field>
+    <field name="args">(ta_object_t terminal, ta_object_t amount)</field>
+    <field name="url">terminal_8h.html#a582129e1fe34296f976d3a7a3a670e27</field>
+    <field name="keywords">ta_terminal_commit_amount_async</field>
+    <field name="text">Performs Commit-operation after a successful Transaction call Asynchronous version of ta_terminal_commit Callback function is ta_cb_terminal_commit_completed terminal Object instance of type terminal amount Object instance of type amount or ta_invalid_object ta_c_rc_ok Request started successfully ta_c_rc_invalid_argument terminal is ta_invalid_object ta_c_rc_invalid_argument terminal is not of type terminal ta_c_rc_invalid_argument terminal has been disposed ta_c_rc_invalid_argument amount is not ta_invalid_object and object instance is not of type amount</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
     <field name="name">ta_terminal_connect</field>
     <field name="args">(ta_object_t terminal)</field>
     <field name="url">terminal_8h.html#a73af37fdbac5972361a434cdabb83a36</field>
@@ -11768,7 +11831,7 @@ $(document).ready(function(){initNavTree('search.html','');});
     <field name="args">(ta_object_t terminal, ta_object_t amount, ta_object_t amount_discount, ta_object_t loyalty_coupon_list, ta_object_t loyalty_information_list)</field>
     <field name="url">terminal_8h.html#a8c4abcfa3eae20b00b17d130eae3f0a3</field>
     <field name="keywords">ta_terminal_amt_adjustment_2</field>
-    <field name="text">Dynamically adjusts the transaction amount of an already running transaction This is a function and will be processed as long as the underlaying payment protocol supports it The amount transmitted in the notification is the new total amount The EFT does not calculate amounts this is the ECRs responsibility To be able to validate if this notification has been processed correctly the TerminalStatus-notification must return the current adjusted Amount This method is only available if guide unattended is enabled terminal Object instance of type terminal amount Object instance of type amount amount_discount Optional discount amount If not ta_invalid_object object instance has to be of type amount loyalty_coupon_list Optional list of loyalty coupons If not ta_invalid_object object instance has to be of type list with elements inside have to be of type loyalty_coupon loyalty_information_list Optional list of loyalty information If not ta_invalid_object object instance has to be of type list with elements inside have to be of type loyalty_information ta_c_rc_ok Hold commit send to terminal ta_c_rc_invalid_argument terminal is ta_invalid_object ta_c_rc_invalid_argument terminal is not of type terminal ta_c_rc_invalid_argument terminal has been disposed ta_c_rc_invalid_argument amount is ta_invalid_object ta_c_rc_invalid_argument amount is not of type amount ta_c_rc_invalid_argument amount_discount is not ta_invalid_object and is not of type amount_discount ta_c_rc_invalid_argument loyalty_coupon_list is not ta_invalid_object and not of type list ta_c_rc_invalid_argument Elements in loyalty_coupon_list are ta_invalid_object ta_c_rc_invalid_argument Elements in loyalty_coupon_list are not of type loyalty_coupon ta_c_rc_invalid_argument loyalty_information_list is not ta_invalid_object and not of type list ta_c_rc_invalid_argument Elements in loyalty_information_list are ta_invalid_object ta_c_rc_invalid_argument Elements in loyalty_information_list are not of type loyalty_information</field>
+    <field name="text">Dynamically adjusts the transaction amount of an already running transaction This is a function and will be processed as long as the underlaying payment protocol supports it The amount transmitted in the notification is the new total amount The EFT does not calculate amounts this is the ECRs responsibility To be able to validate if this notification has been processed correctly the TerminalStatus-notification must return the current adjusted Amount This method is only available if guide unattended is enabled terminal Object instance of type terminal amount Object instance of type amount amount_discount Optional discount amount If not ta_invalid_object object instance has to be of type amount_discount loyalty_coupon_list Optional list of loyalty coupons If not ta_invalid_object object instance has to be of type list with elements inside have to be of type loyalty_coupon loyalty_information_list Optional list of loyalty information If not ta_invalid_object object instance has to be of type list with elements inside have to be of type loyalty_information ta_c_rc_ok Hold commit send to terminal ta_c_rc_invalid_argument terminal is ta_invalid_object ta_c_rc_invalid_argument terminal is not of type terminal ta_c_rc_invalid_argument terminal has been disposed ta_c_rc_invalid_argument amount is ta_invalid_object ta_c_rc_invalid_argument amount is not of type amount ta_c_rc_invalid_argument amount_discount is not ta_invalid_object and is not of type amount_discount ta_c_rc_invalid_argument loyalty_coupon_list is not ta_invalid_object and not of type list ta_c_rc_invalid_argument Elements in loyalty_coupon_list are ta_invalid_object ta_c_rc_invalid_argument Elements in loyalty_coupon_list are not of type loyalty_coupon ta_c_rc_invalid_argument loyalty_information_list is not ta_invalid_object and not of type list ta_c_rc_invalid_argument Elements in loyalty_information_list are ta_invalid_object ta_c_rc_invalid_argument Elements in loyalty_information_list are not of type loyalty_information</field>
   </doc>
   <doc>
     <field name="type">function</field>
@@ -11784,7 +11847,7 @@ $(document).ready(function(){initNavTree('search.html','');});
     <field name="args">(ta_object_t terminal, ta_e_loyalty_function_type_t function_type, ta_object_t data_type, ta_object_t data, ta_e_boolean_t retain_card)</field>
     <field name="url">terminal_8h.html#a5b9e8b9b841f2f1d2a7402196a78b3e2</field>
     <field name="keywords">ta_terminal_loyalty_data_async</field>
-    <field name="text">This function is used to query and configure loyalty information Asynchronous version of ta_terminal_loyalty_data Callback function is ta_cb_terminal_open_dialog_mode_completed This method is only available if guide dialog is enabled terminal Object instance of type terminal function_type Defines what kind of loyalty mode will be used data_type Specifies type of loyalty data Mandatory for function_type ta_c_lft_init ta_c_lft_update and ta_c_lft_deinit If not ta_invalid_object has to be of type string data Loyalty data Object of type string retain_card ta_c_b_true to not eject card otherwise ta_c_b_false ta_c_rc_ok Request started successfully ta_c_rc_invalid_argument terminal is ta_invalid_object ta_c_rc_invalid_argument terminal is not of type terminal ta_c_rc_invalid_argument terminal has been disposed ta_c_rc_invalid_argument function_type is not a valid value of ta_e_loyalty_function_type_t ta_c_rc_invalid_argument data_type is not ta_invalid_object and is not of type string ta_c_rc_invalid_argument data is ta_invalid_object ta_c_rc_invalid_argument data is not of type string ta_c_rc_invalid_argument retain_card is ta_c_b_undefined</field>
+    <field name="text">This function is used to query and configure loyalty information Asynchronous version of ta_terminal_loyalty_data Callback function is ta_cb_terminal_loyalty_data_completed This method is only available if guide dialog is enabled terminal Object instance of type terminal function_type Defines what kind of loyalty mode will be used data_type Specifies type of loyalty data Mandatory for function_type ta_c_lft_init ta_c_lft_update and ta_c_lft_deinit If not ta_invalid_object has to be of type string data Loyalty data Object of type string retain_card ta_c_b_true to not eject card otherwise ta_c_b_false ta_c_rc_ok Request started successfully ta_c_rc_invalid_argument terminal is ta_invalid_object ta_c_rc_invalid_argument terminal is not of type terminal ta_c_rc_invalid_argument terminal has been disposed ta_c_rc_invalid_argument function_type is not a valid value of ta_e_loyalty_function_type_t ta_c_rc_invalid_argument data_type is not ta_invalid_object and is not of type string ta_c_rc_invalid_argument data is ta_invalid_object ta_c_rc_invalid_argument data is not of type string ta_c_rc_invalid_argument retain_card is ta_c_b_undefined</field>
   </doc>
   <doc>
     <field name="type">function</field>

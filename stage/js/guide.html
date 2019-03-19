@@ -51,7 +51,7 @@
           </div>
           <div id="docTitle">Detailed Implementation Guide</div>
           <ul class="nav">
-          <li><a href="#intro">Introduction</a></li><li><a href="#sysreq">System Requirements</a></li><li><a href="#setup">Setup Configuration</a><ul class="nav"><li><a href="#network">Network Configuration</a></li><li><a href="#guides">Guides Configuration</a></li></ul></li><li><a href="#operation">Operation Overview</a></li><li><a href="#automatisms">Automatisms</a></li><li><a href="#useCase">Use Cases</a><ul class="nav"><li><a href="#retailManualPanKeyEntry">Manual Pan Key Entry</a></li><li class="filterGuides guideAustria"><a href="#austrianUseCase">Guide Austrian Use Cases</a><ul class="nav"><li class="filterGuides guideAustria"><a href="#austrianUseCaseNGV">Austrian Use Case: NGV</a></li><li class="filterGuides guideAustria"><a href="#austrianUseCaseDelayedPayment">Austrian Use Case: Delayed Payment</a></li></ul></li></ul></li><li><a href="#methods">Terminal methods overview</a><ul class="nav"><li><a href="#mainFunc">Main / guide Retail terminal functions</a></li><li><a href="#addMethods">Additional terminal listener-events</a></li></ul></li><li><a href="#flows">Flows</a><ul class="nav"><li class="filterGuides guideAustria"><a href="#austrianFlows">Guide Austrian Additional Flows</a><ul class="nav"><li><a href="#austrianFlowNGVWithoutDelay">Austrian Flow: NGV Purchase without delay</a></li><li><a href="#austrianFlowNGVWithDelay">Austrian Flow: NGV Purchase with delay</a></li><li><a href="#austrianFlowNGVFallback">Austrian Flow: NGV Purchase fallback with Non-NGV card</a></li><li><a href="#austrianFlowNGVMandatoryError">Austrian Flow: NGV Purchase mandatory with error</a></li></ul></li></ul></li></ul>
+          <li><a href="#intro">Introduction</a></li><li><a href="#sysreq">System Requirements</a></li><li><a href="#setup">Setup Configuration</a><ul class="nav"><li><a href="#network">Network Configuration</a></li><li><a href="#guides">Guides Configuration</a></li></ul></li><li><a href="#operation">Operation Overview</a></li><li><a href="#automatisms">Automatisms</a></li><li><a href="#useCase">Use Cases</a><ul class="nav"><li><a href="#retailManualPanKeyEntry">Manual Pan Key Entry</a></li><li class="filterGuides guideAustria"><a href="#austrianUseCase">Guide Austrian Use Cases</a><ul class="nav"><li class="filterGuides guideAustria"><a href="#austrianUseCaseNGV">Austrian Use Case: NGV</a></li><li class="filterGuides guideAustria"><a href="#austrianUseCaseDelayedPayment">Austrian Use Case: Delayed Payment</a></li></ul></li></ul></li><li><a href="#methods">Terminal methods overview</a><ul class="nav"><li><a href="#mainFunc">Main / guide Retail terminal functions</a></li><li><a href="#addMethods">Additional terminal listener-events</a></li></ul></li><li><a href="#flows">Flows</a><ul class="nav"><li class="filterGuides guideAustria"><a href="#austrianFlows">Guide Austrian Additional Flows</a><ul class="nav"><li><a href="#austrianFlowNGVWithoutDelay">Austrian Flow: NGV Purchase without delay</a></li><li><a href="#austrianFlowNGVWithDelay">Austrian Flow: NGV Purchase with delay</a></li><li><a href="#austrianFlowNGVFallback">Austrian Flow: NGV Purchase fallback with Non-NGV card</a></li><li><a href="#austrianFlowNGVMandatoryError">Austrian Flow: NGV Purchase mandatory with error</a></li></ul></li></ul></li><li><a href="#logging">Logging</a><ul class="nav"></ul></li><li><a href="#MigrationJStoWASM">Migration from old TIM API JS to TIM API JS with WebAssembly</a><ul class="nav"><li><a href="#MigrationJSInit">Ready Initialization</a></li><li><a href="#MigrationJSNames">Class Variable Names</a></li><li><a href="#MigrationJSListenerDeclaration">Listener Declaration</a></li><li><a href="#MigrationJSLogging">Logging</a></li></ul></li></ul>
           <div class="seperator">&#160;</div>
           <div id="docLinks">
           <div class="linkDiv"><a href="simple.html">Simple Implementation Guide</a></div><div class="linkDiv"><a href="appendix.html">Appendix</a></div><div class="linkDiv"><a href="doc/index.html">API Documentation</a></div><div class="linkDiv"><a href="../../version/version-history.html">Version History</a></div></div>
@@ -71,6 +71,8 @@
         <p>The following document contains an overview structure and describes the corresponding functions, notifiers and data elements that can be used with the TIM API.
             Furthermore implementation examples are provided. Nevertheless always the corresponding description of a
             function or data element is authoritative, not the examples.</p>
+        <p lang="Java JS">Before starting with the detailed implementation guide, make sure that you read the 
+        <a href="simple.html">Simple Implementation Guide</a> first.</p>
         <hr>
     </div></div></section>
     <section id="sysreq"><h1><a name="sysreq"></a>System Requirements</h1><div class="row"><div class="col-md-6"><p>The TIM API is available for multiple platforms. Due to such diversity the support for the TIM API is limited to certain standards. Those are the minimal system requirements:</p>
@@ -89,7 +91,9 @@
         </div>
         <hr>
     </div></div></section>
-    <section id="setup"><h1><a name="setup"></a>Setup Configuration</h1><div class="row"><div class="col-md-6"><p>Once a
+    <section id="setup"><h1><a name="setup"></a>Setup Configuration</h1><div class="row"><div class="col-md-6"><p lang="JS">Before starting using the TIM API, make sure that onTimApiReady() has been called as described in
+    the <a href="simple.html#usageLibray.html">Simple Implementation Guide</a> in chapter "Library usage".</p>
+        <p>Once a
             <code><a href="doc/timapi.Terminal.html">Terminal</a></code>-instance has been created with a
             <code><a href="doc/timapi.TerminalSettings.html">TerminalSettings</a></code>-instance, the settings can not be changed anymore.
             Changes to the
@@ -648,7 +652,124 @@ terminal.addListener(myListener);
           <div class="row"><div class="col-md-6"></div></div></section>
     <div class="row"><div class="col-md-6"></div></div></section> 
 
-    </main>
+    <section id="logging"><h1><a name="logging"></a>Logging</h1><div class="row"><div class="col-md-6"><p lang="JS">By default the TIM API JavaScript logs to the webconsole of the corresponding browser used, or to the system shell in case of Node.js.
+    This is due to security restrictions in the web context as it is not allowed to create files locally.
+    Nevertheless, the TIM API JavaScript offers the possibility that the integrator can overwrite this behaviour by using the onTimApiPublishLogRecord(logRecord) or the
+    onTimApiLog(message) method. If the TIM API JavaScript is used in web context it is recommended that the log message shall be sent to a log server or alike. 
+    If used with Node.js the message can be written into a file locally, as there are not such security restrictions in conjunction with Node.js.
+    <p>The onTimApiPublishLogRecord(logRecord) function can be used if the user wants to filter certain log messages. The log entry is transmitted in a
+    <code><a href="doc/timapi.LogRecord.html">LogRecord</a></code>object that includes several information about the log entry. The user then can filter the entry e.g. regarding the
+    logLevel and may then use the <code><a href="doc/timapi.html#.log">Log</a></code> function to log the message accordingly, if wished so.</p>
+    <pre><code>/*
+* Function to filter certain log records according
+* some information given in parameter "record", e.g. LogLevel.
+*/
+onTimApiPublishLogRecord = function (record) {
+  // Do some filtering if wished so.
+  if (!record.matchesLevel(timapi.LogRecord.LogLevel.info)) {
+    return;
+  }
+
+  // timapi.log() will call the onTimApiLog function 
+  timapi.log(String(record));
+}</code></pre>
+    <p>The onTimApiLog(message) method is used with a string message as log entry, not with an object. This method should be used to redirect the standard console
+    logging e.g. to a log server or to a local file in case of Node.js.</p>
+    <pre><code>/**
+ * Function will be called, when timapi has a log message
+ */
+onTimApiLog = function(message) {
+ /* Send message to log server or alike
+  * or write it into a log file if Node.js
+  */ is used.
+}</code></pre>
+    Attention: If this function is used, the default behaviour will not be performed by the TIM API and no console logging is done.
+    </p>
+      </div></div></section>
+    <section id="MigrationJStoWASM"><h1><a name="MigrationJStoWASM"></a>Migration from old TIM API JS to TIM API JS with WebAssembly</h1><div class="row"><div class="col-md-6"><p>The following sections will provide information which changes have to be made to switch from the old TIM API JS solution
+        to the new TIM API JS with WebAssembly. Each section contains an example of the old TIM API JS and one of the new TIM API JS with
+        WebAssembly to directly show the differences.</p>
+          </div></div><section id="MigrationJSInit"><h2><a name="MigrationJSInit"></a>Ready Initialization</h2><div class="row"><div class="col-md-6"><p>Below is an example how the TIM API must be initialized to be available.</p>
+          </div></div><div class="row"><div class="col-md-6">
+            <p>With the old TIM API JS it was essential to check if the TIM API was available before using it. This
+            could be done with the following check:</p>
+            <pre><code>if(timapi == undefined){
+                // TIM API not ready
+            }else{
+                // Start using TIM API
+            }</code></pre>
+                </div><div class="col-md-6">
+          <p>In the new TIM API JS with WebAssembly a callback function is called as soon as the TIM API
+          is ready to be used by the application:</p>
+            <pre><code>function onTimApiReady() {
+            // Start using TIM API
+            }</code></pre>
+            </div></div>
+                    <div class="row"><div class="col-md-6"></div></div></section>
+                    <div class="row"><div class="col-md-6"></div></div><section id="MigrationJSNames"><h2><a name="MigrationJSNames"></a>Class Variable Names</h2><div class="row"><div class="col-md-6"><p>The naming of class variable names changed slightly:</p>
+                    </div></div><div class="row"><div class="col-md-6">
+            <p>Old TIM API JS used variables names with a '$'-sign like this:</p>
+            <pre><code>settings.$connectionIPString = "..."</code></pre>
+            </div><div class="col-md-6">
+                    <p>New TIM API JS with WebAssembly uses variables names like this (if " or ' is not important. JS supports both):</p>
+            <pre><code>settings.connectionIPString = '...'</code></pre>
+                    
+            </div></div>
+          <div class="row"><div class="col-md-6"></div></div></section>
+          <div class="row"><div class="col-md-6"></div></div><section id="MigrationJSListenerDeclaration"><h2><a name="MigrationJSListenerDeclaration"></a>Listener Declaration</h2><div class="row"><div class="col-md-6">
+          <p>The old TIM API JS used a non-OOP like way to create listeners. A DefaultTerminalListener was created and then the
+            respective methods were "replaced":</p>
+            <pre><code>var listener = new timapi.DefaultTerminalListener();
+            listener.terminalStatusChanged = function (_terminal) {
+            timapi.DefaultTerminalListener.prototype.terminalStatusChanged(_terminal);
+            // Do stuff
+            }
+
+            listener.connectCompleted = function (_event) {
+            timapi.DefaultTerminalListener.prototype.connectCompleted(_event);
+            // Do stuff
+            }
+
+            listener.transactionCompleted = function(_event, _data) {
+            timapi.DefaultTerminalListener.prototype.transactionCompleted(_event, _data);
+            // Do stuff
+            }</code></pre>
+                    </div><div class="col-md-6">
+          <p>
+            The new TIM API JS with WebAssembly uses proper subclassing like this:</p>
+
+            <pre><code>class myTerminalListener extends timapi.DefaultTerminalListener {
+            terminalStatusChanged(terminal) {
+                super.terminalStatusChanged(terminal);
+                ...
+            }
+            requestCompleted(event, data) {
+                super.requestCompleted(event, data);
+                ...
+            }
+            }</code></pre>
+          </div></div>
+                    <div class="row"><div class="col-md-6"></div></div></section>
+                    <div class="row"><div class="col-md-6"></div></div><section id="MigrationJSLogging"><h2><a name="MigrationJSLogging"></a>Logging</h2><div class="row"><div class="col-md-6">
+            <p>In the old TIM API JS there was only the possibility to set the logging level but there was no chance to
+            control the logging messages on user application level:</p>
+            <pre><code>timapi.logging.Log.logLevel = timapi.logging.Level.FINE</code></pre>
+            </div><div class="col-md-6">
+                    <p>
+            This is not existing anymore in WebAssembly. Instead the logger goes to the web console by default
+            but can be intercepted by the user application like this:</p>
+            <pre><code>onTimApiLog = function(message) {
+            ... // message is of type String
+            }</code></pre>
+
+            <p>Which allows to simply output a final predefined log message.</p>
+
+            <p>To further filter the logMessages the "onTimApiPublishLogRecord" function can be used.</p>
+            </div></div>
+          <div class="row"><div class="col-md-6"></div></div></section>
+        <div class="row"><div class="col-md-6"></div></div></section>
+
+</main>
     </div>
   </div>
 </body>

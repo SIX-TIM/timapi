@@ -6,6 +6,7 @@ var dir_68267d1309a1af8e8297ef4c3efbcdba =
     [ "amount.h", "amount_8h.html", "amount_8h" ],
     [ "amount_dcc.h", "amount__dcc_8h.html", "amount__dcc_8h" ],
     [ "amount_discount.h", "amount__discount_8h.html", "amount__discount_8h" ],
+    [ "amount_final.h", "amount__final_8h.html", "amount__final_8h" ],
     [ "application.h", "application_8h.html", "application_8h" ],
     [ "balance_inquiry_response.h", "balance__inquiry__response_8h.html", "balance__inquiry__response_8h" ],
     [ "balance_response.h", "balance__response_8h.html", "balance__response_8h" ],
