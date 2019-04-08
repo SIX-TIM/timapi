@@ -1,9 +1,7 @@
 var loyalty__item_8h =
 [
     [ "ta_loyalty_coupon_get_loyalty_coupons", "loyalty__item_8h.html#aeca0cf178896a0ecea96fd9bc03bbb4c", null ],
-    [ "ta_loyalty_coupon_set_loyalty_coupons", "loyalty__item_8h.html#ab86da1a096d6fdc6e1024cb559ec0e5b", null ],
     [ "ta_loyalty_discount_get_loyalty_discounts", "loyalty__item_8h.html#a5db756f39fe8e143a9ad21e2b5babc31", null ],
-    [ "ta_loyalty_discount_set_loyalty_discounts", "loyalty__item_8h.html#a342dc401d954c28bde8b701b43b1bb8f", null ],
     [ "ta_loyalty_item_copy", "loyalty__item_8h.html#a56c26b6f505b12386fcfd62f99ed26e8", null ],
     [ "ta_loyalty_item_create", "loyalty__item_8h.html#a69ae99c7e97764ff8dd173bda20b6987", null ],
     [ "ta_loyalty_item_get_amount", "loyalty__item_8h.html#a957efcf8517b9e4755e8bb01a359785c", null ],

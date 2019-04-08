@@ -205,6 +205,12 @@ const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <tr class="memitem:ac28f0dfe2dd8d093536c8a9e57f8423f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="result__code_8h.html#ae860ee870a289833a24a586ba0c24975">ta_e_result_code_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="terminal_8h.html#ac28f0dfe2dd8d093536c8a9e57f8423f">ta_terminal_commit_async</a> (<a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a> terminal)</td></tr>
 <tr class="memdesc:ac28f0dfe2dd8d093536c8a9e57f8423f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Performs Commit-operation after a successful Transaction call.  <a href="#ac28f0dfe2dd8d093536c8a9e57f8423f">More...</a><br /></td></tr>
 <tr class="separator:ac28f0dfe2dd8d093536c8a9e57f8423f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a044219520df73a515335ac521878de28"><td class="memItemLeft" align="right" valign="top"><a class="el" href="result__code_8h.html#ae860ee870a289833a24a586ba0c24975">ta_e_result_code_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="terminal_8h.html#a044219520df73a515335ac521878de28">ta_terminal_commit_amount</a> (<a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a> terminal, <a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a> amount, <a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a> *response)</td></tr>
+<tr class="memdesc:a044219520df73a515335ac521878de28"><td class="mdescLeft">&#160;</td><td class="mdescRight">Performs Commit-operation after a successful Transaction call.  <a href="#a044219520df73a515335ac521878de28">More...</a><br /></td></tr>
+<tr class="separator:a044219520df73a515335ac521878de28"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a582129e1fe34296f976d3a7a3a670e27"><td class="memItemLeft" align="right" valign="top"><a class="el" href="result__code_8h.html#ae860ee870a289833a24a586ba0c24975">ta_e_result_code_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="terminal_8h.html#a582129e1fe34296f976d3a7a3a670e27">ta_terminal_commit_amount_async</a> (<a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a> terminal, <a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a> amount)</td></tr>
+<tr class="memdesc:a582129e1fe34296f976d3a7a3a670e27"><td class="mdescLeft">&#160;</td><td class="mdescRight">Performs Commit-operation after a successful Transaction call.  <a href="#a582129e1fe34296f976d3a7a3a670e27">More...</a><br /></td></tr>
+<tr class="separator:a582129e1fe34296f976d3a7a3a670e27"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a73af37fdbac5972361a434cdabb83a36"><td class="memItemLeft" align="right" valign="top"><a class="el" href="result__code_8h.html#ae860ee870a289833a24a586ba0c24975">ta_e_result_code_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="terminal_8h.html#a73af37fdbac5972361a434cdabb83a36">ta_terminal_connect</a> (<a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a> terminal)</td></tr>
 <tr class="memdesc:a73af37fdbac5972361a434cdabb83a36"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initiates a connection to the EFT Terminal.  <a href="#a73af37fdbac5972361a434cdabb83a36">More...</a><br /></td></tr>
 <tr class="separator:a73af37fdbac5972361a434cdabb83a36"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -815,7 +821,7 @@ const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">terminal</td><td>Object instance of type <a class="el" href="terminal_8h.html">terminal</a>. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">amount</td><td>Object instance of type <a class="el" href="amount_8h.html">amount</a>. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">amount_discount</td><td>Optional discount amount. If not ta_invalid_object object instance has to be of type <a class="el" href="amount_8h.html">amount</a>. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">amount_discount</td><td>Optional discount amount. If not ta_invalid_object object instance has to be of type <a class="el" href="amount__discount_8h.html">amount_discount</a>. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">loyalty_coupon_list</td><td>Optional list of loyalty coupons. If not ta_invalid_object object instance has to be of type <a class="el" href="list_8h.html">list</a> with elements inside have to be of type <a class="el" href="loyalty__coupon_8h.html">loyalty_coupon</a>. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">loyalty_information_list</td><td>Optional list of loyalty information. If not ta_invalid_object object instance has to be of type <a class="el" href="list_8h.html">list</a> with elements inside have to be of type <a class="el" href="loyalty__information_8h.html">loyalty_information</a>.</td></tr>
   </table>
@@ -1675,6 +1681,109 @@ const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>terminal</em> is ta_invalid_object. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>terminal</em> is not of type <a class="el" href="terminal_8h.html">terminal</a>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>terminal</em> has been disposed. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a044219520df73a515335ac521878de28"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a044219520df73a515335ac521878de28">&#9670;&nbsp;</a></span>ta_terminal_commit_amount()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="result__code_8h.html#ae860ee870a289833a24a586ba0c24975">ta_e_result_code_t</a> ta_terminal_commit_amount </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a>&#160;</td>
+          <td class="paramname"><em>terminal</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a>&#160;</td>
+          <td class="paramname"><em>amount</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a> *&#160;</td>
+          <td class="paramname"><em>response</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Performs Commit-operation after a successful Transaction call. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">terminal</td><td>Object instance of type <a class="el" href="terminal_8h.html">terminal</a>. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">amount</td><td>Object instance of type <a class="el" href="amount_8h.html">amount</a> or <em>ta_invalid_object</em>. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">response</td><td>Pointer to write object instance of type <a class="el" href="print__data_8h.html">print_data</a>.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">ta_c_rc_ok</td><td>Request finished successfully. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>terminal</em> is ta_invalid_object. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>terminal</em> is not of type <a class="el" href="terminal_8h.html">terminal</a>. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>terminal</em> has been disposed. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>amount</em> is not ta_invalid_object and object instance is not of type <a class="el" href="amount_8h.html">amount</a>. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>response</em> is null-pointer. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a582129e1fe34296f976d3a7a3a670e27"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a582129e1fe34296f976d3a7a3a670e27">&#9670;&nbsp;</a></span>ta_terminal_commit_amount_async()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="result__code_8h.html#ae860ee870a289833a24a586ba0c24975">ta_e_result_code_t</a> ta_terminal_commit_amount_async </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a>&#160;</td>
+          <td class="paramname"><em>terminal</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a>&#160;</td>
+          <td class="paramname"><em>amount</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Performs Commit-operation after a successful Transaction call. </p>
+<p>Asynchronous version of <a class="el" href="terminal_8h.html#a1a8cb225510ae56543926bc6ee871a63">ta_terminal_commit</a>. Callback function is <a class="el" href="terminal__listener_8h.html#a89b6799427e9efb30136d13bc6eb84e5">ta_cb_terminal_commit_completed</a>.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">terminal</td><td>Object instance of type <a class="el" href="terminal_8h.html">terminal</a>. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">amount</td><td>Object instance of type <a class="el" href="amount_8h.html">amount</a> or <em>ta_invalid_object</em>.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">ta_c_rc_ok</td><td>Request started successfully. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>terminal</em> is ta_invalid_object. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>terminal</em> is not of type <a class="el" href="terminal_8h.html">terminal</a>. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>terminal</em> has been disposed. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>amount</em> is not ta_invalid_object and object instance is not of type <a class="el" href="amount_8h.html">amount</a>. </td></tr>
   </table>
   </dd>
 </dl>
@@ -3598,7 +3707,7 @@ const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 </div><div class="memdoc">
 
 <p>This function is used to query and configure loyalty information. </p>
-<p>Asynchronous version of <a class="el" href="terminal_8h.html#a2a81346192a321325d37dd80284ea9c9">ta_terminal_loyalty_data</a>. Callback function is <a class="el" href="terminal__listener_8h.html#a54782f0100eb05fb5233ddd161550d2d">ta_cb_terminal_open_dialog_mode_completed</a>.</p>
+<p>Asynchronous version of <a class="el" href="terminal_8h.html#a2a81346192a321325d37dd80284ea9c9">ta_terminal_loyalty_data</a>. Callback function is <a class="el" href="terminal__listener_8h.html#a854386a428da81afc168284fe0923146">ta_cb_terminal_loyalty_data_completed</a>.</p>
 <dl class="section note"><dt>Note</dt><dd>This method is only available if guide dialog is enabled.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">

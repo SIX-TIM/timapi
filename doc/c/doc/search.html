@@ -430,6 +430,53 @@ $(document).ready(function(){initNavTree('search.html','');});
   </doc>
   <doc>
     <field name="type">file</field>
+    <field name="name">amount_final.h</field>
+    <field name="url">amount__final_8h.html</field>
+    <field name="keywords">amount_final.h</field>
+    <field name="text">Object type amount_final</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">ta_amount_final_get_value</field>
+    <field name="args">(ta_object_t amount_final, int64_t *value)</field>
+    <field name="url">amount__final_8h.html#a6a1966516a0bb8d662355fb2776ca544</field>
+    <field name="keywords">ta_amount_final_get_value</field>
+    <field name="text">Amount in minor units amount_final Object instance of type amount_final value Pointer to variable to write value to Use ta_amount_final_get_exponent to get the used exponent This can be a different exponent than the one defined by the used currency ta_c_rc_ok Value written to value ta_c_rc_invalid_argument amount_final is ta_invalid_object ta_c_rc_invalid_argument amount_final is not of type amount_final ta_c_rc_invalid_argument value is null-pointer</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">ta_amount_final_get_decimal_value</field>
+    <field name="args">(ta_object_t amount_final, double *value)</field>
+    <field name="url">amount__final_8h.html#a471ed9d9dbf66bd7dfa1a5d1df444667</field>
+    <field name="keywords">ta_amount_final_get_decimal_value</field>
+    <field name="text">Amount in major units as double precision floating point value Double precision floating point values can not provide the same level of numerical accuracy as int64_t It is recommended to use the integer based methods amount_final Object instance of type amount_final value Pointer to variable to write value to ta_c_rc_ok Value written to value ta_c_rc_invalid_argument amount_final is ta_invalid_object ta_c_rc_invalid_argument amount_final is not of type amount_final ta_c_rc_invalid_argument value is null-pointer</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">ta_amount_final_get_currency</field>
+    <field name="args">(ta_object_t amount_final, ta_e_currency_t *currency)</field>
+    <field name="url">amount__final_8h.html#a3812095865c613a667ff5599c6dd5f10</field>
+    <field name="keywords">ta_amount_final_get_currency</field>
+    <field name="text">Currency amount_final Object instance of type amount_final currency Pointer to variable to write currency to ta_c_rc_ok Value written to currency ta_c_rc_invalid_argument amount_final is ta_invalid_object ta_c_rc_invalid_argument amount_final is not of type amount_final ta_c_rc_invalid_argument currency is null-pointer</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">ta_amount_final_get_exponent</field>
+    <field name="args">(ta_object_t amount_final, int *exponent)</field>
+    <field name="url">amount__final_8h.html#adf28824accd7e5ee831c1dad071641ae</field>
+    <field name="keywords">ta_amount_final_get_exponent</field>
+    <field name="text">Exponent amount_final Object instance of type amount_final exponent Pointer to variable to write exponent to ta_c_rc_ok Value written to exponent ta_c_rc_invalid_argument amount_final is ta_invalid_object ta_c_rc_invalid_argument amount_final is not of type amount_final ta_c_rc_invalid_argument exponent is null-pointer</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">ta_amount_final_get_adjustment_result</field>
+    <field name="args">(ta_object_t amount_final, ta_e_adjustment_result_t *adjustment_result)</field>
+    <field name="url">amount__final_8h.html#ae17116e4ef313a5910256a0bb69f9bfb</field>
+    <field name="keywords">ta_amount_final_get_adjustment_result</field>
+    <field name="text">Adjustment result amount_final Object instance of type amount_final adjustment_result Pointer to variable to write value to ta_c_rc_ok Value written to currency ta_c_rc_invalid_argument amount_final is ta_invalid_object ta_c_rc_invalid_argument amount_final is not of type amount_final ta_c_rc_invalid_argument adjustment_result is null-pointer</field>
+  </doc>
+  <doc>
+    <field name="type">file</field>
     <field name="name">application.h</field>
     <field name="url">application_8h.html</field>
     <field name="keywords">application.h</field>
@@ -967,11 +1014,11 @@ $(document).ready(function(){initNavTree('search.html','');});
   </doc>
   <doc>
     <field name="type">function</field>
-    <field name="name">ta_card_data_get_loyalty_informations</field>
-    <field name="args">(ta_object_t card_data, ta_object_t *loyalty_informations)</field>
-    <field name="url">card__data_8h.html#ad94a2208a7e150fd61f66adf5d259d3f</field>
-    <field name="keywords">ta_card_data_get_loyalty_informations</field>
-    <field name="text">Loyalty information if present Keyed by loyalty type string card_data Object instance of type card_data loyalty_informations Pointer to variable to write object instance to Object instance is of type map and is not retained The map contains keys and values both of type string ta_c_rc_ok Object instance written to loyalty_informations ta_c_rc_invalid_argument card_data is ta_invalid_object ta_c_rc_invalid_argument card_data is not of type card_data ta_c_rc_invalid_argument loyalty_informations is null-pointer</field>
+    <field name="name">ta_card_data_get_loyalty_information</field>
+    <field name="args">(ta_object_t card_data, ta_object_t *loyalty_information)</field>
+    <field name="url">card__data_8h.html#aaf77a503e29f15db3c490cf582e64227</field>
+    <field name="keywords">ta_card_data_get_loyalty_information</field>
+    <field name="text">Loyalty information if present Keyed by loyalty type string card_data Object instance of type card_data loyalty_information Pointer to variable to write object instance to Object instance is of type map and is not retained The map contains keys and values both of type string ta_c_rc_ok Object instance written to loyalty_information ta_c_rc_invalid_argument card_data is ta_invalid_object ta_c_rc_invalid_argument card_data is not of type card_data ta_c_rc_invalid_argument loyalty_information is null-pointer</field>
   </doc>
   <doc>
     <field name="type">function</field>
@@ -1996,6 +2043,13 @@ $(document).ready(function(){initNavTree('search.html','');});
     <field name="name">ta_c_bbb_diplomatkarte</field>
     <field name="url">brand__bar__brand_8h.html#a065fb75dccd6ee5e82f29d4cce775549a42535287c9f351592ad08c80e5ddb53c</field>
     <field name="keywords">ta_c_bbb_diplomatkarte</field>
+    <field name="text">Specification dialog</field>
+  </doc>
+  <doc>
+    <field name="type">enumvalue</field>
+    <field name="name">ta_c_bbb_frei_und_flott</field>
+    <field name="url">brand__bar__brand_8h.html#a065fb75dccd6ee5e82f29d4cce775549ae59c75bd7d9c165bee81598ac6d0fd6f</field>
+    <field name="keywords">ta_c_bbb_frei_und_flott</field>
     <field name="text">Specification dialog</field>
   </doc>
   <doc>
@@ -6878,7 +6932,7 @@ $(document).ready(function(){initNavTree('search.html','');});
     <field name="name">ta_c_rpt_code_check_key_id</field>
     <field name="url">resource__parameter__type_8h.html#a24c84814e0ce6a320ff3bd3826a297fba3b7a5d33b2f2980caffb84a5c52ffd03</field>
     <field name="keywords">ta_c_rpt_code_check_key_id</field>
-    <field name="text">GKLP key id of the key to use for the selected CodeCheckType 0 Tokheim key id 1 HecPAC key id 2 Diplomatkarten key id This value is to be encoded as a ascii number i.e using characters in the range 30h to 39h Specification dialog</field>
+    <field name="text">GKLP key id of the key to use for the selected CodeCheckType 0 Tokheim key id 1 HecPAC key id 2 DASAG key id 3 Diplomatkarten key id 5000 Start of test key range 5002 DASAG test key id This value is to be encoded as a ascii number i.e using characters in the range 30h to 39h Specification dialog</field>
   </doc>
   <doc>
     <field name="type">enumvalue</field>
@@ -9866,18 +9920,18 @@ $(document).ready(function(){initNavTree('search.html','');});
   <doc>
     <field name="type">function</field>
     <field name="name">ta_loyalty_coupon_create</field>
-    <field name="args">(ta_object_t *loyalty_coupon, int amount, ta_e_currency_t currency, int exponent, ta_object_t id, ta_e_coupon_rejection_reason_t rejection_reason)</field>
-    <field name="url">loyalty__coupon_8h.html#a0eb362403368ec6e1846e2b18f1b5b43</field>
+    <field name="args">(ta_object_t *loyalty_coupon, ta_object_t amount, ta_e_currency_t currency, ta_object_t exponent, ta_object_t id, ta_e_coupon_rejection_reason_t rejection_reason)</field>
+    <field name="url">loyalty__coupon_8h.html#afe4edc6d8252b425daff198b0b80e96f</field>
     <field name="keywords">ta_loyalty_coupon_create</field>
-    <field name="text">Create object of type loyalty_coupon loyalty_coupon Pointer to variable to write created object instance to Created object instance is retained amount Coupon amount in minor units currency Currency of amount exponent Exponent of amount id Coupon ID rejection_reason Rejection reason ta_c_rc_ok Object instance has been created and written to loyalty_coupon ta_c_rc_invalid_argument loyalty_coupon is null-pointer ta_c_rc_invalid_argument currency is not a valid value from ta_e_currency_t ta_c_rc_invalid_argument amount is less than 0 ta_c_rc_invalid_argument exponent is less than 0 ta_c_rc_invalid_argument id is ta_invalid_object ta_c_rc_invalid_argument rejection_reason is not a valid value from ta_e_coupon_rejection_reason_t ta_c_rc_out_of_memory Failed allocating memory</field>
+    <field name="text">Create object of type loyalty_coupon loyalty_coupon Pointer to variable to write created object instance to Created object instance is retained amount Coupon amount in minor units as object of type integer currency Currency of amount exponent Exponent of amount as object of type integer id Coupon ID rejection_reason Rejection reason ta_c_rc_ok Object instance has been created and written to loyalty_coupon ta_c_rc_invalid_argument loyalty_coupon is null-pointer ta_c_rc_invalid_argument currency is not a valid value from ta_e_currency_t ta_c_rc_invalid_argument amount is less than 0 ta_c_rc_invalid_argument exponent is less than 0 ta_c_rc_invalid_argument amount is ta_invalid_object ta_c_rc_invalid_argument exponent is ta_invalid_object ta_c_rc_invalid_argument id is ta_invalid_object ta_c_rc_invalid_argument rejection_reason is not a valid value from ta_e_coupon_rejection_reason_t ta_c_rc_out_of_memory Failed allocating memory</field>
   </doc>
   <doc>
     <field name="type">function</field>
     <field name="name">ta_loyalty_coupon_get_amount</field>
-    <field name="args">(ta_object_t loyalty_coupon, int *value)</field>
-    <field name="url">loyalty__coupon_8h.html#ae1a4ce6b48f8fb69213fd3bbfff88603</field>
+    <field name="args">(ta_object_t loyalty_coupon, ta_object_t *value)</field>
+    <field name="url">loyalty__coupon_8h.html#af167a01c83f1336181b6820ce902b290</field>
     <field name="keywords">ta_loyalty_coupon_get_amount</field>
-    <field name="text">Coupon amount loyalty_coupon Object instance of type loyalty_coupon amount Pointer to variable to write value to ta_c_rc_ok Object instance written to amount ta_c_rc_invalid_argument loyalty_coupon is ta_invalid_object ta_c_rc_invalid_argument loyalty_coupon is not of type loyalty_coupon ta_c_rc_invalid_argument amount is null-pointer</field>
+    <field name="text">Coupon amount loyalty_coupon Object instance of type loyalty_coupon amount Pointer to variable to write value to Object instance of type integer and is not retained ta_c_rc_ok Object instance written to amount ta_c_rc_invalid_argument loyalty_coupon is ta_invalid_object ta_c_rc_invalid_argument loyalty_coupon is not of type loyalty_coupon ta_c_rc_invalid_argument amount is null-pointer</field>
   </doc>
   <doc>
     <field name="type">function</field>
@@ -9890,10 +9944,10 @@ $(document).ready(function(){initNavTree('search.html','');});
   <doc>
     <field name="type">function</field>
     <field name="name">ta_loyalty_coupon_get_exponent</field>
-    <field name="args">(ta_object_t loyalty_coupon, int *exponent)</field>
-    <field name="url">loyalty__coupon_8h.html#a886d035bb98c3f05a30d5f8d4da06a33</field>
+    <field name="args">(ta_object_t loyalty_coupon, ta_object_t *exponent)</field>
+    <field name="url">loyalty__coupon_8h.html#a1751ccfa9dff35a6957e342b1df70d63</field>
     <field name="keywords">ta_loyalty_coupon_get_exponent</field>
-    <field name="text">Exponent of coupon amount loyalty_coupon Object instance of type loyalty_coupon exponent Pointer to variable to write value to ta_c_rc_ok Object instance written to exponent ta_c_rc_invalid_argument loyalty_coupon is ta_invalid_object ta_c_rc_invalid_argument loyalty_coupon is not of type loyalty_coupon ta_c_rc_invalid_argument exponent is null-pointer</field>
+    <field name="text">Exponent of coupon amount loyalty_coupon Object instance of type loyalty_coupon exponent Pointer to variable to write value to Object instance of type integer and is not retained ta_c_rc_ok Object instance written to exponent ta_c_rc_invalid_argument loyalty_coupon is ta_invalid_object ta_c_rc_invalid_argument loyalty_coupon is not of type loyalty_coupon ta_c_rc_invalid_argument exponent is null-pointer</field>
   </doc>
   <doc>
     <field name="type">function</field>
@@ -9920,51 +9974,11 @@ $(document).ready(function(){initNavTree('search.html','');});
   </doc>
   <doc>
     <field name="type">function</field>
-    <field name="name">ta_loyalty_discount_create</field>
-    <field name="args">(ta_object_t *amount, int64_t value, ta_e_currency_t currency, ta_object_t discount_description)</field>
-    <field name="url">loyalty__discount_8h.html#a1226d628e7bf2d3010b0cf2ef2eab937</field>
-    <field name="keywords">ta_loyalty_discount_create</field>
-    <field name="text">Create object of type loyalty_discount amount Pointer to variable to write created object instance to Created object instance is retained value Value of amount in minor units The currency selected by currency defines the used exponent For example with ta_c_currency_chf the exponent is 2 To create an amount equal to 1 CHF use a value of 100 currency Currency of amount discount_description Discount identifier as object of type string ta_c_rc_ok Object instance has been created and written to amount ta_c_rc_invalid_argument amount is null-pointer ta_c_rc_invalid_argument currency is not a valid value from ta_e_currency_t ta_c_rc_invalid_argument value is less than 0 ta_c_rc_invalid_argument discount_description is ta_invalid_object ta_c_rc_invalid_argument discount_description is not of type string ta_c_rc_out_of_memory Failed allocating memory</field>
-  </doc>
-  <doc>
-    <field name="type">function</field>
-    <field name="name">ta_loyalty_discount_create_decimal</field>
-    <field name="args">(ta_object_t *amount, double value, ta_e_currency_t currency, ta_object_t discount_description)</field>
-    <field name="url">loyalty__discount_8h.html#a9c33f78297b58c1dd63fbd4d2daa6ad9</field>
-    <field name="keywords">ta_loyalty_discount_create_decimal</field>
-    <field name="text">Create object of type loyalty_discount using double precision floating point value Double precision floating point values can not provide the same level of numerical accuracy as int64_t It is recommended to use the integer based methods amount Pointer to variable to write created object instance to Created object instance is retained value Value of amount in major units The currency selected by currency defines the used exponent For example with ta_c_currency_chf the exponent is 2 Values with more than 2 digits after the period will be rounded according to regular mathematical rounding rules currency Currency of amount discount_description Discount identifier as object of type string ta_c_rc_ok Object instance has been created and written to amount ta_c_rc_invalid_argument amount is null-pointer ta_c_rc_invalid_argument currency is not a valid value from ta_e_currency_t ta_c_rc_invalid_argument value is less than 0 ta_c_rc_invalid_argument discount_description is ta_invalid_object ta_c_rc_invalid_argument discount_description is not of type string ta_c_rc_out_of_memory Failed allocating memory</field>
-  </doc>
-  <doc>
-    <field name="type">function</field>
-    <field name="name">ta_loyalty_discount_create_exponent</field>
-    <field name="args">(ta_object_t *amount, int64_t value, ta_e_currency_t currency, int exponent, ta_object_t discount_description)</field>
-    <field name="url">loyalty__discount_8h.html#ac07410b5970040dc32a1444cc54a6a58</field>
-    <field name="keywords">ta_loyalty_discount_create_exponent</field>
-    <field name="text">Create object of type loyalty_discount using custom exponent amount Pointer to variable to write created object instance to Created object instance is retained value Value of amount in minor units The value of exponent overrides the exponent defined by the currency selected by currency For example with an exponent of 3 to create an amount equal to 1 CHF use a value of 1000 currency Currency of amount exponent Exponent to use instead of the exponent defined by the currency discount_description Discount identifier as object of type string ta_c_rc_ok Object instance has been created and written to amount ta_c_rc_invalid_argument amount is null-pointer ta_c_rc_invalid_argument currency is not a valid value from ta_e_currency_t ta_c_rc_invalid_argument value is less than 0 ta_c_rc_invalid_argument exponent is less than 0 ta_c_rc_invalid_argument discount_description is ta_invalid_object ta_c_rc_invalid_argument discount_description is not of type string ta_c_rc_out_of_memory Failed allocating memory</field>
-  </doc>
-  <doc>
-    <field name="type">function</field>
-    <field name="name">ta_loyalty_discount_create_decimal_exponent</field>
-    <field name="args">(ta_object_t *amount, double value, ta_e_currency_t currency, int exponent, ta_object_t discount_description)</field>
-    <field name="url">loyalty__discount_8h.html#aace8009f964f5d3d27def332c4d5f6b1</field>
-    <field name="keywords">ta_loyalty_discount_create_decimal_exponent</field>
-    <field name="text">Create object of type loyalty_discount using custom exponent and double precision value Double precision floating point values can not provide the same level of numerical accuracy as int64_t It is recommended to use the integer based methods amount Pointer to variable to write created object instance to Created object instance is retained value Value of amount in minor units The value of exponent overrides the exponent defined by the currency selected by currency For example with an exponent of 3 values with more than 3 digits after the period will be rounded according to regular mathematical rounding rules currency Currency of amount exponent Exponent to use instead of the exponent defined by the currency discount_description Discount identifier as object of type string ta_c_rc_ok Object instance has been created and written to amount ta_c_rc_invalid_argument amount is null-pointer ta_c_rc_invalid_argument currency is not a valid value from ta_e_currency_t ta_c_rc_invalid_argument value is less than 0 ta_c_rc_invalid_argument exponent is less than 0 ta_c_rc_invalid_argument discount_description is ta_invalid_object ta_c_rc_invalid_argument discount_description is not of type string ta_c_rc_out_of_memory Failed allocating memory</field>
-  </doc>
-  <doc>
-    <field name="type">function</field>
     <field name="name">ta_loyalty_discount_get_value</field>
     <field name="args">(ta_object_t amount, int64_t *value)</field>
     <field name="url">loyalty__discount_8h.html#a96bb544dcbf1c0c22ad645af0806b5f1</field>
     <field name="keywords">ta_loyalty_discount_get_value</field>
     <field name="text">Discount amount in minor units amount Object instance of type loyalty_discount value Pointer to variable to write value to Use ta_loyalty_discount_get_exponent to get the used exponent This can be a different exponent than the one defined by the used currency ta_c_rc_ok Value written to value ta_c_rc_invalid_argument amount is ta_invalid_object ta_c_rc_invalid_argument amount is not of type loyalty_discount ta_c_rc_invalid_argument value is null-pointer</field>
-  </doc>
-  <doc>
-    <field name="type">function</field>
-    <field name="name">ta_loyalty_discount_set_value</field>
-    <field name="args">(ta_object_t amount, int64_t value)</field>
-    <field name="url">loyalty__discount_8h.html#ae68ff3daa35651e83e5bbdd900f1d73d</field>
-    <field name="keywords">ta_loyalty_discount_set_value</field>
-    <field name="text">Set amount in minor units amount Object instance of type loyalty_discount value Value to set Use ta_amount_get_exponent to get the used exponent This can be a different exponent than the one defined by the used currency For example with an exponent of 2 to set an amount equal to 1 CHF you have to use a value of 100 ta_c_rc_ok Value assigned to amount ta_c_rc_invalid_argument amount is ta_invalid_object ta_c_rc_invalid_argument amount is not of type loyalty_discount ta_c_rc_invalid_argument value is less than 0</field>
   </doc>
   <doc>
     <field name="type">function</field>
@@ -9976,27 +9990,11 @@ $(document).ready(function(){initNavTree('search.html','');});
   </doc>
   <doc>
     <field name="type">function</field>
-    <field name="name">ta_loyalty_discount_set_decimal_value</field>
-    <field name="args">(ta_object_t amount, double value)</field>
-    <field name="url">loyalty__discount_8h.html#ac9b9a2e090adc74853e3b131746c162a</field>
-    <field name="keywords">ta_loyalty_discount_set_decimal_value</field>
-    <field name="text">Set amount in major units as double precision floating point value Double precision floating point values can not provide the same level of numerical accuracy as int64_t It is recommended to use the integer based methods amount Object instance of type loyalty_discount value Value to set Use ta_amount_get_exponent to get the used exponent For example with an exponent of 2 values with more than 2 digits after the period will be rounded according to regular mathematical rounding rules ta_c_rc_ok Value written to value ta_c_rc_invalid_argument amount is ta_invalid_object ta_c_rc_invalid_argument amount is not of type loyalty_discount ta_c_rc_out_of_memory Memory allocation required but failed</field>
-  </doc>
-  <doc>
-    <field name="type">function</field>
     <field name="name">ta_loyalty_discount_get_currency</field>
     <field name="args">(ta_object_t amount, ta_e_currency_t *currency)</field>
     <field name="url">loyalty__discount_8h.html#a218859dfaf53dd37c2f74ebf2b98c7cf</field>
     <field name="keywords">ta_loyalty_discount_get_currency</field>
     <field name="text">Discount currency amount Object instance of type loyalty_discount currency Pointer to variable to write currency to ta_c_rc_ok Value written to currency ta_c_rc_invalid_argument amount is ta_invalid_object ta_c_rc_invalid_argument amount is not of type loyalty_discount ta_c_rc_invalid_argument currency is null-pointer</field>
-  </doc>
-  <doc>
-    <field name="type">function</field>
-    <field name="name">ta_loyalty_discount_set_currency</field>
-    <field name="args">(ta_object_t amount, ta_e_currency_t currency)</field>
-    <field name="url">loyalty__discount_8h.html#a529ffe392871e43139ffed27c60882c2</field>
-    <field name="keywords">ta_loyalty_discount_set_currency</field>
-    <field name="text">Set currency amount Object instance of type loyalty_discount currency Currency to set ta_c_rc_ok Value assigned to amount ta_c_rc_invalid_argument amount is ta_invalid_object ta_c_rc_invalid_argument amount is not of type loyalty_discount ta_c_rc_invalid_argument currency is not a valid value from ta_e_currency_t</field>
   </doc>
   <doc>
     <field name="type">function</field>
@@ -10008,27 +10006,11 @@ $(document).ready(function(){initNavTree('search.html','');});
   </doc>
   <doc>
     <field name="type">function</field>
-    <field name="name">ta_loyalty_discount_set_exponent</field>
-    <field name="args">(ta_object_t amount, int exponent)</field>
-    <field name="url">loyalty__discount_8h.html#a89efbbe6688820bfaffb79bae0309314</field>
-    <field name="keywords">ta_loyalty_discount_set_exponent</field>
-    <field name="text">Set exponent amount Object instance of type loyalty_discount exponent Exponent to set ta_c_rc_ok Value assigned to amount ta_c_rc_invalid_argument amount is ta_invalid_object ta_c_rc_invalid_argument amount is not of type loyalty_discount ta_c_rc_invalid_argument exponent is less than 0</field>
-  </doc>
-  <doc>
-    <field name="type">function</field>
     <field name="name">ta_loyalty_discount_get_discount_description</field>
     <field name="args">(ta_object_t amount, ta_object_t *identifier)</field>
     <field name="url">loyalty__discount_8h.html#a3e3b2a70b55453448ac4955a11687fa5</field>
     <field name="keywords">ta_loyalty_discount_get_discount_description</field>
     <field name="text">Discount identifier amount Object instance of type loyalty_discount identifier Pointer to variable to write object instance to Object instance is of type string and is not retained Object instance is ta_invalid_object if identifier is not set in loyalty_discount ta_c_rc_ok Object instance written to identifier ta_c_rc_invalid_argument amount is ta_invalid_object ta_c_rc_invalid_argument amount is not of type loyalty_discount ta_c_rc_invalid_argument identifier is null-pointer</field>
-  </doc>
-  <doc>
-    <field name="type">function</field>
-    <field name="name">ta_loyalty_discount_set_discount_description</field>
-    <field name="args">(ta_object_t amount, ta_object_t identifier)</field>
-    <field name="url">loyalty__discount_8h.html#abcff48239d576a2bed4cf03854b01742</field>
-    <field name="keywords">ta_loyalty_discount_set_discount_description</field>
-    <field name="text">Set discount identifier amount Object instance of type loyalty_discount discount_description Discount identifier as object of type string Object instance will be retained ta_c_rc_ok Value assigned to amount and retained ta_c_rc_invalid_argument amount is ta_invalid_object ta_c_rc_invalid_argument amount is not of type loyalty_discount ta_c_rc_invalid_argument discount_description is ta_invalid_object ta_c_rc_invalid_argument discount_description is not of type string</field>
   </doc>
   <doc>
     <field name="type">file</field>
@@ -10040,10 +10022,10 @@ $(document).ready(function(){initNavTree('search.html','');});
   <doc>
     <field name="type">function</field>
     <field name="name">ta_loyalty_information_create</field>
-    <field name="args">(ta_object_t *loyalty_information, ta_object_t value, ta_object_t loyalty_info_type, ta_e_loyalty_function_type_t loyalty_function_type, ta_object_t loyalty_number)</field>
-    <field name="url">loyalty__information_8h.html#a685db6430f44602bddf428d83bc850ca</field>
+    <field name="args">(ta_object_t *loyalty_information, ta_object_t value, ta_object_t loyalty_info_type)</field>
+    <field name="url">loyalty__information_8h.html#a81176491075fe6b6564489b680d86758</field>
     <field name="keywords">ta_loyalty_information_create</field>
-    <field name="text">Create object of type loyalty_information loyalty_information Pointer to variable to write created object instance to Created object instance is retained value Value of information Object instance has to be of type string and is retained loyalty_info_type Information type Object instance has to be of type string and is retained loyalty_function_type Loyalty function type loyalty_number Loyalty number Object instance has to be of type string and is retained ta_c_rc_ok Object instance has been created and written to loyalty_information ta_c_rc_invalid_argument loyalty_information is null-pointer ta_c_rc_invalid_argument value is ta_invalid_object ta_c_rc_invalid_argument value is not of type string ta_c_rc_invalid_argument loyalty_info_type is ta_invalid_object ta_c_rc_invalid_argument loyalty_info_type is not of type string ta_c_rc_invalid_argument loyalty_function_type is not a valid value from ta_e_loyalty_function_type_t ta_c_rc_invalid_argument loyalty_number is ta_invalid_object ta_c_rc_invalid_argument loyalty_number is not of type string ta_c_rc_out_of_memory Failed allocating memory</field>
+    <field name="text">Create object of type loyalty_information loyalty_information Pointer to variable to write created object instance to Created object instance is retained value Value of information Object instance has to be of type string and is retained loyalty_info_type Information type Object instance has to be of type string and is retained ta_c_rc_ok Object instance has been created and written to loyalty_information ta_c_rc_invalid_argument loyalty_information is null-pointer ta_c_rc_invalid_argument value is ta_invalid_object ta_c_rc_invalid_argument value is not of type string ta_c_rc_invalid_argument loyalty_info_type is ta_invalid_object ta_c_rc_invalid_argument loyalty_info_type is not of type string ta_c_rc_out_of_memory Failed allocating memory</field>
   </doc>
   <doc>
     <field name="type">function</field>
@@ -10190,27 +10172,11 @@ $(document).ready(function(){initNavTree('search.html','');});
   </doc>
   <doc>
     <field name="type">function</field>
-    <field name="name">ta_loyalty_discount_set_loyalty_discounts</field>
-    <field name="args">(ta_object_t item, ta_object_t loyalty_discounts)</field>
-    <field name="url">loyalty__item_8h.html#a342dc401d954c28bde8b701b43b1bb8f</field>
-    <field name="keywords">ta_loyalty_discount_set_loyalty_discounts</field>
-    <field name="text">Set list of loyalty discounts item Object instance of type loyalty_discount loyalty_discounts Object instance to set Object instance can be ta_invalid_object to clear the value in item If object instance is not ta_invalid_object is has to be of type list with list elements of type loyalty_discount ta_c_rc_ok Object instance assigned to item ta_c_rc_invalid_argument item is ta_invalid_object ta_c_rc_invalid_argument item is not of type loyalty_discount ta_c_rc_invalid_argument loyalty_discounts is not ta_invalid_object and is not of type list ta_c_rc_invalid_argument Element in loyalty_discounts is ta_invalid_object ta_c_rc_invalid_argument Element in loyalty_discounts is not of type loyalty_discount</field>
-  </doc>
-  <doc>
-    <field name="type">function</field>
     <field name="name">ta_loyalty_coupon_get_loyalty_coupons</field>
     <field name="args">(ta_object_t item, ta_object_t *loyalty_coupons)</field>
     <field name="url">loyalty__item_8h.html#aeca0cf178896a0ecea96fd9bc03bbb4c</field>
     <field name="keywords">ta_loyalty_coupon_get_loyalty_coupons</field>
     <field name="text">List of loyalty coupons item Object instance of type loyalty_item loyalty_coupons Pointer to variable to write object instance to Object instance is of type list and is not retained Elements are of type loyalty_coupon List object instance is ta_invalid_object if value is not set in loyalty_coupon ta_c_rc_ok Object instance written to auth_result ta_c_rc_invalid_argument item is ta_invalid_object ta_c_rc_invalid_argument item is not of type loyalty_item ta_c_rc_invalid_argument loyalty_coupons is not null-pointer</field>
-  </doc>
-  <doc>
-    <field name="type">function</field>
-    <field name="name">ta_loyalty_coupon_set_loyalty_coupons</field>
-    <field name="args">(ta_object_t item, ta_object_t loyalty_coupons)</field>
-    <field name="url">loyalty__item_8h.html#ab86da1a096d6fdc6e1024cb559ec0e5b</field>
-    <field name="keywords">ta_loyalty_coupon_set_loyalty_coupons</field>
-    <field name="text">Set list of loyalty coupons item Object instance of type loyalty_item loyalty_coupons Object instance to set Object instance can be ta_invalid_object to clear the value in item If object instance is not ta_invalid_object is has to be of type list with list elements of type loyalty_coupon ta_c_rc_ok Object instance assigned to item ta_c_rc_invalid_argument item is ta_invalid_object ta_c_rc_invalid_argument item is not of type loyalty_item ta_c_rc_invalid_argument loyalty_coupons is not ta_invalid_object and is not of type list ta_c_rc_invalid_argument Element in loyalty_coupons is ta_invalid_object ta_c_rc_invalid_argument Element in loyalty_coupons is not of type loyalty_coupon</field>
   </doc>
   <doc>
     <field name="type">file</field>
@@ -10242,6 +10208,37 @@ $(document).ready(function(){initNavTree('search.html','');});
     <field name="url">merchant__option_8h.html#aa2d6173637ab56a69dddc02638030ec0</field>
     <field name="keywords">ta_merchant_option_get_value</field>
     <field name="text">Option value merchant_option Object instance of type merchant_option value Pointer to variable to write object instance to Object instance is of type string and is not retained Object instance is ta_invalid_object if value is not set in merchant_option ta_c_rc_ok Object instance written to value ta_c_rc_invalid_argument merchant_option is ta_invalid_object ta_c_rc_invalid_argument merchant_option is not of type merchant_option ta_c_rc_invalid_argument value is null-pointer</field>
+  </doc>
+  <doc>
+    <field name="type">file</field>
+    <field name="name">native_error.h</field>
+    <field name="url">native__error_8h.html</field>
+    <field name="keywords">native_error.h</field>
+    <field name="text">Object type native_error</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">ta_native_error_get_code</field>
+    <field name="args">(ta_object_t response, int *code)</field>
+    <field name="url">native__error_8h.html#a17b5013ac5b51c9f56c271f1bb912b01</field>
+    <field name="keywords">ta_native_error_get_code</field>
+    <field name="text">Error code response Object instance of type native_error code Pointer to variable to write value to ta_c_rc_ok Value written to code ta_c_rc_invalid_argument response is ta_invalid_object ta_c_rc_invalid_argument response is not of type native_error ta_c_rc_invalid_argument code is null-pointer</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">ta_native_error_get_message</field>
+    <field name="args">(ta_object_t response, ta_object_t *message)</field>
+    <field name="url">native__error_8h.html#a972d32bd65156dfcfbb797fcf87d18a1</field>
+    <field name="keywords">ta_native_error_get_message</field>
+    <field name="text">Print information for merchant receipt response Object instance of type native_error message Pointer to variable to write object instance to Object instance is of type string and is not retained Object instance is ta_invalid_object if value is not set in response ta_c_rc_ok Object instance written to message ta_c_rc_invalid_argument response is ta_invalid_object ta_c_rc_invalid_argument response is not of type native_error ta_c_rc_invalid_argument message is null-pointer</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">ta_native_error_get_source</field>
+    <field name="args">(ta_object_t response, ta_object_t *source)</field>
+    <field name="url">native__error_8h.html#a2070d14b7f404494aaf2c1f5cd6734de</field>
+    <field name="keywords">ta_native_error_get_source</field>
+    <field name="text">Print information for merchant receipt response Object instance of type native_error source Pointer to variable to write object instance to Object instance is of type string and is not retained Object instance is ta_invalid_object if value is not set in response ta_c_rc_ok Object instance written to source ta_c_rc_invalid_argument response is ta_invalid_object ta_c_rc_invalid_argument response is not of type native_error ta_c_rc_invalid_argument source is null-pointer</field>
   </doc>
   <doc>
     <field name="type">file</field>
@@ -10281,6 +10278,53 @@ $(document).ready(function(){initNavTree('search.html','');});
     <field name="url">network__information_8h.html#a623fcefea835f89d17f0a6ef1bd6d4b3</field>
     <field name="keywords">ta_network_information_get_terminal_ip_dns</field>
     <field name="text">Terminal IP dns host name network_info Object instance of type network_information terminal_ip_dns Pointer to variable to write object instance to Object instance is of type string and is not retained ta_c_rc_ok Object instance written to terminal_ip_dns ta_c_rc_invalid_argument network_info is ta_invalid_object ta_c_rc_invalid_argument network_info is not of type network_information ta_c_rc_invalid_argument terminal_ip_dns is null-pointer</field>
+  </doc>
+  <doc>
+    <field name="type">file</field>
+    <field name="name">ppinfo.h</field>
+    <field name="url">ppinfo_8h.html</field>
+    <field name="keywords">ppinfo.h</field>
+    <field name="text">Object type ppinfo</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">ta_ppinfo_get_payment_protocol</field>
+    <field name="args">(ta_object_t response, ta_e_payment_protocol_t *payment_protocol)</field>
+    <field name="url">ppinfo_8h.html#a3d405d62be56b2fc3f7c475a60176ecd</field>
+    <field name="keywords">ta_ppinfo_get_payment_protocol</field>
+    <field name="text">Specifies the payment protocol used Specification retail response Object instance of type ppinfo payment_protocol Pointer to variable to write value to ta_c_rc_ok Value written to payment_protocol ta_c_rc_invalid_argument response is ta_invalid_object ta_c_rc_invalid_argument response is not of type ppinfo ta_c_rc_invalid_argument payment_protocol is null-pointer</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">ta_ppinfo_get_pp_ep2_trans_seq_cnt</field>
+    <field name="args">(ta_object_t response, ta_object_t *pp_ep2_trans_seq_cnt)</field>
+    <field name="url">ppinfo_8h.html#aeeaac69fa078c86f8622dde345de7152</field>
+    <field name="keywords">ta_ppinfo_get_pp_ep2_trans_seq_cnt</field>
+    <field name="text">Payment protocol specific transaction sequence counter which refers to a previous transaction Optional Mandatory if payment protocol provides info Specification retail response Object instance of type ppinfo pp_ep2_trans_seq_cnt_orig Pointer to variable to write value to Object instance of type integer and is not retained ta_c_rc_ok Value written to pp_ep2_trans_seq_cnt_orig ta_c_rc_invalid_argument response is ta_invalid_object ta_c_rc_invalid_argument response is not of type ppinfo ta_c_rc_invalid_argument pp_ep2_trans_seq_cnt_orig is null-pointer</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">ta_ppinfo_get_pp_ep2_trans_seq_cnt_orig</field>
+    <field name="args">(ta_object_t response, ta_object_t *pp_ep2_trans_seq_cnt_orig)</field>
+    <field name="url">ppinfo_8h.html#a9c7b5f2047d28c1797782f24b45e1fb9</field>
+    <field name="keywords">ta_ppinfo_get_pp_ep2_trans_seq_cnt_orig</field>
+    <field name="text">Payment protocol specific original transaction sequence counter which refers to a previous transaction Optional Mandatory if payment protocol provides info Specification retail response Object instance of type ppinfo pp_ep2_trans_seq_cnt_orig Pointer to variable to write value to Object instance of type integer and is not retained ta_c_rc_ok Value written to pp_ep2_trans_seq_cnt_orig ta_c_rc_invalid_argument response is ta_invalid_object ta_c_rc_invalid_argument response is not of type ppinfo ta_c_rc_invalid_argument pp_ep2_trans_seq_cnt_orig is null-pointer</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">ta_ppinfo_get_pp_ep2_auth_reslt</field>
+    <field name="args">(ta_object_t response, ta_object_t *pp_ep2_auth_reslt)</field>
+    <field name="url">ppinfo_8h.html#a9d0f3ec8812b9a317cf596397f127254</field>
+    <field name="keywords">ta_ppinfo_get_pp_ep2_auth_reslt</field>
+    <field name="text">Payment protocol specific authorisation result Optional Mandatory if payment protocol provides info Specification retail response Object instance of type ppinfo pp_ep2_auth_reslt Pointer to variable to write value to Object instance of type integer and is not retained ta_c_rc_ok Value written to pp_ep2_auth_reslt ta_c_rc_invalid_argument response is ta_invalid_object ta_c_rc_invalid_argument response is not of type ppinfo ta_c_rc_invalid_argument pp_ep2_auth_reslt is null-pointer</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">ta_ppinfo_get_pp_ep2_auth_resp_c</field>
+    <field name="args">(ta_object_t response, ta_object_t *pp_ep2_auth_resp_c)</field>
+    <field name="url">ppinfo_8h.html#ab72a3de685b037cd52aa4e239756faa8</field>
+    <field name="keywords">ta_ppinfo_get_pp_ep2_auth_resp_c</field>
+    <field name="text">Payment protocol specific authorisation response code Optional Mandatory if payment protocol provides info Specification retail response Object instance of type ppinfo pp_ep2_auth_resp_c Pointer to variable to write object instance to Object instance is of type string and is not retained Object instance is ta_invalid_object if value is not set in response ta_c_rc_ok Object instance written to pp_ep2_auth_resp_c ta_c_rc_invalid_argument response is ta_invalid_object ta_c_rc_invalid_argument response is not of type ppinfo ta_c_rc_invalid_argument pp_ep2_auth_resp_c is null-pointer</field>
   </doc>
   <doc>
     <field name="type">file</field>
@@ -11332,6 +11376,22 @@ $(document).ready(function(){initNavTree('search.html','');});
   </doc>
   <doc>
     <field name="type">function</field>
+    <field name="name">ta_terminal_commit_amount</field>
+    <field name="args">(ta_object_t terminal, ta_object_t amount, ta_object_t *response)</field>
+    <field name="url">terminal_8h.html#a044219520df73a515335ac521878de28</field>
+    <field name="keywords">ta_terminal_commit_amount</field>
+    <field name="text">Performs Commit-operation after a successful Transaction call terminal Object instance of type terminal amount Object instance of type amount or ta_invalid_object response Pointer to write object instance of type print_data ta_c_rc_ok Request finished successfully ta_c_rc_invalid_argument terminal is ta_invalid_object ta_c_rc_invalid_argument terminal is not of type terminal ta_c_rc_invalid_argument terminal has been disposed ta_c_rc_invalid_argument amount is not ta_invalid_object and object instance is not of type amount ta_c_rc_invalid_argument response is null-pointer</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">ta_terminal_commit_amount_async</field>
+    <field name="args">(ta_object_t terminal, ta_object_t amount)</field>
+    <field name="url">terminal_8h.html#a582129e1fe34296f976d3a7a3a670e27</field>
+    <field name="keywords">ta_terminal_commit_amount_async</field>
+    <field name="text">Performs Commit-operation after a successful Transaction call Asynchronous version of ta_terminal_commit Callback function is ta_cb_terminal_commit_completed terminal Object instance of type terminal amount Object instance of type amount or ta_invalid_object ta_c_rc_ok Request started successfully ta_c_rc_invalid_argument terminal is ta_invalid_object ta_c_rc_invalid_argument terminal is not of type terminal ta_c_rc_invalid_argument terminal has been disposed ta_c_rc_invalid_argument amount is not ta_invalid_object and object instance is not of type amount</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
     <field name="name">ta_terminal_connect</field>
     <field name="args">(ta_object_t terminal)</field>
     <field name="url">terminal_8h.html#a73af37fdbac5972361a434cdabb83a36</field>
@@ -11768,7 +11828,7 @@ $(document).ready(function(){initNavTree('search.html','');});
     <field name="args">(ta_object_t terminal, ta_object_t amount, ta_object_t amount_discount, ta_object_t loyalty_coupon_list, ta_object_t loyalty_information_list)</field>
     <field name="url">terminal_8h.html#a8c4abcfa3eae20b00b17d130eae3f0a3</field>
     <field name="keywords">ta_terminal_amt_adjustment_2</field>
-    <field name="text">Dynamically adjusts the transaction amount of an already running transaction This is a function and will be processed as long as the underlaying payment protocol supports it The amount transmitted in the notification is the new total amount The EFT does not calculate amounts this is the ECRs responsibility To be able to validate if this notification has been processed correctly the TerminalStatus-notification must return the current adjusted Amount This method is only available if guide unattended is enabled terminal Object instance of type terminal amount Object instance of type amount amount_discount Optional discount amount If not ta_invalid_object object instance has to be of type amount loyalty_coupon_list Optional list of loyalty coupons If not ta_invalid_object object instance has to be of type list with elements inside have to be of type loyalty_coupon loyalty_information_list Optional list of loyalty information If not ta_invalid_object object instance has to be of type list with elements inside have to be of type loyalty_information ta_c_rc_ok Hold commit send to terminal ta_c_rc_invalid_argument terminal is ta_invalid_object ta_c_rc_invalid_argument terminal is not of type terminal ta_c_rc_invalid_argument terminal has been disposed ta_c_rc_invalid_argument amount is ta_invalid_object ta_c_rc_invalid_argument amount is not of type amount ta_c_rc_invalid_argument amount_discount is not ta_invalid_object and is not of type amount_discount ta_c_rc_invalid_argument loyalty_coupon_list is not ta_invalid_object and not of type list ta_c_rc_invalid_argument Elements in loyalty_coupon_list are ta_invalid_object ta_c_rc_invalid_argument Elements in loyalty_coupon_list are not of type loyalty_coupon ta_c_rc_invalid_argument loyalty_information_list is not ta_invalid_object and not of type list ta_c_rc_invalid_argument Elements in loyalty_information_list are ta_invalid_object ta_c_rc_invalid_argument Elements in loyalty_information_list are not of type loyalty_information</field>
+    <field name="text">Dynamically adjusts the transaction amount of an already running transaction This is a function and will be processed as long as the underlaying payment protocol supports it The amount transmitted in the notification is the new total amount The EFT does not calculate amounts this is the ECRs responsibility To be able to validate if this notification has been processed correctly the TerminalStatus-notification must return the current adjusted Amount This method is only available if guide unattended is enabled terminal Object instance of type terminal amount Object instance of type amount amount_discount Optional discount amount If not ta_invalid_object object instance has to be of type amount_discount loyalty_coupon_list Optional list of loyalty coupons If not ta_invalid_object object instance has to be of type list with elements inside have to be of type loyalty_coupon loyalty_information_list Optional list of loyalty information If not ta_invalid_object object instance has to be of type list with elements inside have to be of type loyalty_information ta_c_rc_ok Hold commit send to terminal ta_c_rc_invalid_argument terminal is ta_invalid_object ta_c_rc_invalid_argument terminal is not of type terminal ta_c_rc_invalid_argument terminal has been disposed ta_c_rc_invalid_argument amount is ta_invalid_object ta_c_rc_invalid_argument amount is not of type amount ta_c_rc_invalid_argument amount_discount is not ta_invalid_object and is not of type amount_discount ta_c_rc_invalid_argument loyalty_coupon_list is not ta_invalid_object and not of type list ta_c_rc_invalid_argument Elements in loyalty_coupon_list are ta_invalid_object ta_c_rc_invalid_argument Elements in loyalty_coupon_list are not of type loyalty_coupon ta_c_rc_invalid_argument loyalty_information_list is not ta_invalid_object and not of type list ta_c_rc_invalid_argument Elements in loyalty_information_list are ta_invalid_object ta_c_rc_invalid_argument Elements in loyalty_information_list are not of type loyalty_information</field>
   </doc>
   <doc>
     <field name="type">function</field>
@@ -11784,7 +11844,7 @@ $(document).ready(function(){initNavTree('search.html','');});
     <field name="args">(ta_object_t terminal, ta_e_loyalty_function_type_t function_type, ta_object_t data_type, ta_object_t data, ta_e_boolean_t retain_card)</field>
     <field name="url">terminal_8h.html#a5b9e8b9b841f2f1d2a7402196a78b3e2</field>
     <field name="keywords">ta_terminal_loyalty_data_async</field>
-    <field name="text">This function is used to query and configure loyalty information Asynchronous version of ta_terminal_loyalty_data Callback function is ta_cb_terminal_open_dialog_mode_completed This method is only available if guide dialog is enabled terminal Object instance of type terminal function_type Defines what kind of loyalty mode will be used data_type Specifies type of loyalty data Mandatory for function_type ta_c_lft_init ta_c_lft_update and ta_c_lft_deinit If not ta_invalid_object has to be of type string data Loyalty data Object of type string retain_card ta_c_b_true to not eject card otherwise ta_c_b_false ta_c_rc_ok Request started successfully ta_c_rc_invalid_argument terminal is ta_invalid_object ta_c_rc_invalid_argument terminal is not of type terminal ta_c_rc_invalid_argument terminal has been disposed ta_c_rc_invalid_argument function_type is not a valid value of ta_e_loyalty_function_type_t ta_c_rc_invalid_argument data_type is not ta_invalid_object and is not of type string ta_c_rc_invalid_argument data is ta_invalid_object ta_c_rc_invalid_argument data is not of type string ta_c_rc_invalid_argument retain_card is ta_c_b_undefined</field>
+    <field name="text">This function is used to query and configure loyalty information Asynchronous version of ta_terminal_loyalty_data Callback function is ta_cb_terminal_loyalty_data_completed This method is only available if guide dialog is enabled terminal Object instance of type terminal function_type Defines what kind of loyalty mode will be used data_type Specifies type of loyalty data Mandatory for function_type ta_c_lft_init ta_c_lft_update and ta_c_lft_deinit If not ta_invalid_object has to be of type string data Loyalty data Object of type string retain_card ta_c_b_true to not eject card otherwise ta_c_b_false ta_c_rc_ok Request started successfully ta_c_rc_invalid_argument terminal is ta_invalid_object ta_c_rc_invalid_argument terminal is not of type terminal ta_c_rc_invalid_argument terminal has been disposed ta_c_rc_invalid_argument function_type is not a valid value of ta_e_loyalty_function_type_t ta_c_rc_invalid_argument data_type is not ta_invalid_object and is not of type string ta_c_rc_invalid_argument data is ta_invalid_object ta_c_rc_invalid_argument data is not of type string ta_c_rc_invalid_argument retain_card is ta_c_b_undefined</field>
   </doc>
   <doc>
     <field name="type">function</field>
@@ -13007,6 +13067,61 @@ $(document).ready(function(){initNavTree('search.html','');});
   </doc>
   <doc>
     <field name="type">file</field>
+    <field name="name">tim_error.h</field>
+    <field name="url">tim__error_8h.html</field>
+    <field name="keywords">tim_error.h</field>
+    <field name="text">Object type tim_error</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">ta_tim_error_get_error_message</field>
+    <field name="args">(ta_object_t response, ta_object_t *error_message)</field>
+    <field name="url">tim__error_8h.html#af33f67151222b2b8cc5062ae561090ef</field>
+    <field name="keywords">ta_tim_error_get_error_message</field>
+    <field name="text">Error message in the ECR language or ta_invalid_object if not present response Object instance of type tim_error error_message Pointer to variable to write object instance to Object instance is of type string and is not retained Object instance is ta_invalid_object if value is not set in response ta_c_rc_ok Object instance written to error_message ta_c_rc_invalid_argument response is ta_invalid_object ta_c_rc_invalid_argument response is not of type tim_error ta_c_rc_invalid_argument error_message is null-pointer</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">ta_tim_error_get_native_error</field>
+    <field name="args">(ta_object_t response, ta_object_t *native_error)</field>
+    <field name="url">tim__error_8h.html#a17e0e823a6fd8f4c9a1d518f71331999</field>
+    <field name="keywords">ta_tim_error_get_native_error</field>
+    <field name="text">Native error if present or ta_invalid_object if not present response Object instance of type tim_error native_error Pointer to variable to write object instance to Object instance is of type native_error and is not retained Object instance is ta_invalid_object if value is not set in response ta_c_rc_ok Object instance written to native_error ta_c_rc_invalid_argument response is ta_invalid_object ta_c_rc_invalid_argument response is not of type tim_error ta_c_rc_invalid_argument native_error is null-pointer</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">ta_tim_error_get_ppinfo</field>
+    <field name="args">(ta_object_t response, ta_object_t *ppinfo)</field>
+    <field name="url">tim__error_8h.html#a5695d8065a168c1928c813d83395274f</field>
+    <field name="keywords">ta_tim_error_get_ppinfo</field>
+    <field name="text">Payment protocol specific information Mandatory if any information is given by the underlying payment protocol response Object instance of type tim_error ppinfo Pointer to variable to write object instance to Object instance is of type ppinfo and is not retained Object instance is ta_invalid_object if value is not set in response ta_c_rc_ok Object instance written to ppinfo ta_c_rc_invalid_argument response is ta_invalid_object ta_c_rc_invalid_argument response is not of type tim_error ta_c_rc_invalid_argument ppinfo is null-pointer</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">ta_tim_error_get_additional_error_info</field>
+    <field name="args">(ta_object_t response, ta_object_t *additional_error_info)</field>
+    <field name="url">tim__error_8h.html#abf6bafef1dad86f352358f7827894d88</field>
+    <field name="keywords">ta_tim_error_get_additional_error_info</field>
+    <field name="text">Additional error information mapping item text to item text code Mandatory if any additional error information available response Object instance of type tim_error additional_error_info Pointer to variable to write object instance to Object instance is of type map and is not retained Keys and values are of type string and are retained by the map Object instance is ta_invalid_object if value is not set in response ta_c_rc_ok Object instance written to additional_error_info ta_c_rc_invalid_argument response is ta_invalid_object ta_c_rc_invalid_argument response is not of type tim_error ta_c_rc_invalid_argument additional_error_info is null-pointer</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">ta_tim_error_get_print_data</field>
+    <field name="args">(ta_object_t response, ta_object_t *print_data)</field>
+    <field name="url">tim__error_8h.html#a18f7644530d43e9b40fae354f22533b5</field>
+    <field name="keywords">ta_tim_error_get_print_data</field>
+    <field name="text">Print data or ta_invalid_object if absent response Object instance of type tim_error print_data Pointer to variable to write object instance to Object instance is of type print_data and is not retained Object instance is ta_invalid_object if value is not set in response ta_c_rc_ok Object instance written to print_data ta_c_rc_invalid_argument response is ta_invalid_object ta_c_rc_invalid_argument response is not of type tim_error ta_c_rc_invalid_argument print_data is null-pointer</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">ta_tim_error_get_rejected_basket</field>
+    <field name="args">(ta_object_t response, ta_object_t *rejected_basket)</field>
+    <field name="url">tim__error_8h.html#aecda304e8a16fd023c17821d55183c2a</field>
+    <field name="keywords">ta_tim_error_get_rejected_basket</field>
+    <field name="text">Rejected basket as modified by host or null if absent Used for ta_c_guide_petrol only response Object instance of type tim_error rejected_basket Pointer to variable to write object instance to Object instance is of type basket and is not retained Object instance is ta_invalid_object if value is not set in response ta_c_rc_ok Object instance written to rejected_basket ta_c_rc_invalid_argument response is ta_invalid_object ta_c_rc_invalid_argument response is not of type tim_error ta_c_rc_invalid_argument rejected_basket is null-pointer</field>
+  </doc>
+  <doc>
+    <field name="type">file</field>
     <field name="name">timapi.h</field>
     <field name="url">timapi_8h.html</field>
     <field name="keywords">timapi.h</field>
@@ -13705,6 +13820,54 @@ $(document).ready(function(){initNavTree('search.html','');});
     <field name="text">Set cashback amount and currency request Object instance of type transaction_request amount_other Object instance to set Object instance can be ta_invalid_object to clear the value in request If object instance is not ta_invalid_object is has to be of type amount ta_c_rc_ok Object instance assigned to request ta_c_rc_invalid_argument request is ta_invalid_object ta_c_rc_invalid_argument request is not of type transaction_request ta_c_rc_invalid_argument amount_other is not ta_invalid_object and is not of type amount</field>
   </doc>
   <doc>
+    <field name="type">function</field>
+    <field name="name">ta_transaction_request_get_amount_discount</field>
+    <field name="args">(ta_object_t request, ta_object_t *amount_discount)</field>
+    <field name="url">transaction__request_8h.html#a0c89a4944a8a82c1a9611a1b9e844192</field>
+    <field name="keywords">ta_transaction_request_get_amount_discount</field>
+    <field name="text">Discount amount and currency request Object instance of type transaction_request amount_discount Pointer to variable to write object instance to Object instance is of type amount and is not retained Object instance is ta_invalid_object if value is not set in request ta_c_rc_ok Object instance written to amount_discount ta_c_rc_invalid_argument request is ta_invalid_object ta_c_rc_invalid_argument request is not of type transaction_request ta_c_rc_invalid_argument amount_discount is null-pointer</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">ta_transaction_request_set_amount_discount</field>
+    <field name="args">(ta_object_t request, ta_object_t amount_discount)</field>
+    <field name="url">transaction__request_8h.html#a1059b455bf0b52d1d00cc9004ac88de2</field>
+    <field name="keywords">ta_transaction_request_set_amount_discount</field>
+    <field name="text">Set discount amount and currency request Object instance of type transaction_request amount_discount Object instance to set Object instance can be ta_invalid_object to clear the value in request If object instance is not ta_invalid_object is has to be of type amount_discount ta_c_rc_ok Object instance assigned to request ta_c_rc_invalid_argument request is ta_invalid_object ta_c_rc_invalid_argument request is not of type transaction_request ta_c_rc_invalid_argument amount_discount is not ta_invalid_object and is not of type amount_discount</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">ta_transaction_request_get_loyalty_coupon_list</field>
+    <field name="args">(ta_object_t request, ta_object_t *loyalty_coupon_list)</field>
+    <field name="url">transaction__request_8h.html#a6f5cf958de4825a04322782237a9accf</field>
+    <field name="keywords">ta_transaction_request_get_loyalty_coupon_list</field>
+    <field name="text">Loyalty coupon list request Object instance of type transaction_request loyalty_coupon_list Pointer to variable to write object instance to Object instance is of type list and is not retained The list contains elements of type loyalty_coupon ta_c_rc_ok Object instance written to loyalty_coupon_list ta_c_rc_invalid_argument request is ta_invalid_object ta_c_rc_invalid_argument request is not of type transaction_request ta_c_rc_invalid_argument loyalty_coupon_list is null-pointer</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">ta_transaction_request_set_loyalty_coupon_list</field>
+    <field name="args">(ta_object_t request, ta_object_t loyalty_coupon_list)</field>
+    <field name="url">transaction__request_8h.html#afc339ff30a7f8a3ed238f01a9cccd43f</field>
+    <field name="keywords">ta_transaction_request_set_loyalty_coupon_list</field>
+    <field name="text">Set loyalty coupon list request Object instance of type transaction_request loyalty_coupon_list Object instance to set Object instance has to be of type list The list has to contain elements of type loyalty_coupon ta_c_rc_ok Object instance assigned to request ta_c_rc_invalid_argument request is ta_invalid_object ta_c_rc_invalid_argument request is not of type transaction_request ta_c_rc_invalid_argument loyalty_coupon_list is ta_invalid_object ta_c_rc_invalid_argument loyalty_coupon_list is not of type list ta_c_rc_invalid_argument Element in loyalty_coupon_list is ta_invalid_object ta_c_rc_invalid_argument Element in loyalty_coupon_list is not of type loyalty_coupon</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">ta_transaction_request_get_retain_card</field>
+    <field name="args">(ta_object_t request, ta_e_boolean_t *retain_card)</field>
+    <field name="url">transaction__request_8h.html#af7278e9fda68f02457b6f817b78aae2b</field>
+    <field name="keywords">ta_transaction_request_get_retain_card</field>
+    <field name="text">Retain card request Object instance of type transaction_request retain_card Pointer to variable to write object instance to ta_c_rc_ok Object instance written to retain_card ta_c_rc_invalid_argument request is ta_invalid_object ta_c_rc_invalid_argument request is not of type transaction_request ta_c_rc_invalid_argument retain_card is null-pointer</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">ta_transaction_request_set_retain_card</field>
+    <field name="args">(ta_object_t request, ta_e_boolean_t retain_card)</field>
+    <field name="url">transaction__request_8h.html#a5b31a237e37f09656a2a609b511b299d</field>
+    <field name="keywords">ta_transaction_request_set_retain_card</field>
+    <field name="text">Set retain card request Object instance of type transaction_request retain_card Value to set ta_c_rc_ok Object instance assigned to request ta_c_rc_invalid_argument request is ta_invalid_object ta_c_rc_invalid_argument request is not of type transaction_request</field>
+  </doc>
+  <doc>
     <field name="type">file</field>
     <field name="name">transaction_response.h</field>
     <field name="url">transaction__response_8h.html</field>
@@ -13849,6 +14012,14 @@ $(document).ready(function(){initNavTree('search.html','');});
     <field name="url">transaction__response_8h.html#a5767b9bd6df78e08793b378549085628</field>
     <field name="keywords">ta_transaction_response_get_basket</field>
     <field name="text">Petrol Basket response Object instance of type transaction_response basket Pointer to variable to write object instance to Object instance is of type basket and is not retained Object instance is ta_invalid_object if value is not set in response ta_c_rc_ok Object instance written to basket ta_c_rc_invalid_argument response is ta_invalid_object ta_c_rc_invalid_argument response is not of type transaction_response ta_c_rc_invalid_argument basket is null-pointer</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">ta_transaction_response_get_amount_loyalty_cashback</field>
+    <field name="args">(ta_object_t response, ta_object_t *amount)</field>
+    <field name="url">transaction__response_8h.html#a02a8d9d6e413af019115905ca39422ad</field>
+    <field name="keywords">ta_transaction_response_get_amount_loyalty_cashback</field>
+    <field name="text">Loyalty cashback amount response Object instance of type transaction_response amount Pointer to variable to write object instance to Object instance is of type amount and is not retained Object instance is ta_invalid_object if value is not set in response ta_c_rc_ok Object instance written to basket ta_c_rc_invalid_argument response is ta_invalid_object ta_c_rc_invalid_argument response is not of type transaction_response ta_c_rc_invalid_argument amount is null-pointer</field>
   </doc>
   <doc>
     <field name="type">function</field>
@@ -14010,11 +14181,11 @@ $(document).ready(function(){initNavTree('search.html','');});
   </doc>
   <doc>
     <field name="type">function</field>
-    <field name="name">ta_vas_checkout_information_get_loyalty_informations</field>
-    <field name="args">(ta_object_t vas_checkout_information, ta_object_t *loyalty_informations)</field>
-    <field name="url">vas__checkout__information_8h.html#a3f71f7b92ae7da2cae76a00f4bf22905</field>
-    <field name="keywords">ta_vas_checkout_information_get_loyalty_informations</field>
-    <field name="text">List of loyalty information vas_checkout_information Object instance of type vas_checkout_information loyalty_informations Pointer to variable to write object instance to Object instance is of type list and is not retained The list contains elements of type loyalty_information If list is not present ta_invalid_object is written ta_c_rc_ok Object instance written to loyalty_informations ta_c_rc_invalid_argument vas_checkout_information is ta_invalid_object ta_c_rc_invalid_argument vas_checkout_information is not of type vas_checkout_information ta_c_rc_invalid_argument loyalty_informations is null-pointer</field>
+    <field name="name">ta_vas_checkout_information_get_loyalty_information</field>
+    <field name="args">(ta_object_t vas_checkout_information, ta_object_t *loyalty_information)</field>
+    <field name="url">vas__checkout__information_8h.html#a78ac0cb1f8cc94d57b2ceab1b609e059</field>
+    <field name="keywords">ta_vas_checkout_information_get_loyalty_information</field>
+    <field name="text">List of loyalty information vas_checkout_information Object instance of type vas_checkout_information loyalty_information Pointer to variable to write object instance to Object instance is of type list and is not retained The list contains elements of type loyalty_information If list is not present ta_invalid_object is written ta_c_rc_ok Object instance written to loyalty_information ta_c_rc_invalid_argument vas_checkout_information is ta_invalid_object ta_c_rc_invalid_argument vas_checkout_information is not of type vas_checkout_information ta_c_rc_invalid_argument loyalty_information is null-pointer</field>
   </doc>
   <doc>
     <field name="type">function</field>
@@ -14234,6 +14405,13 @@ $(document).ready(function(){initNavTree('search.html','');});
     <field name="url">structta__s__event.html#ad537b9ffba1ad9c572c8741e548e4909</field>
     <field name="keywords">request_type ta_s_event::request_type ta_s_event</field>
     <field name="text">Type of request this event has been send for</field>
+  </doc>
+  <doc>
+    <field name="type">variable</field>
+    <field name="name">ta_s_event::error</field>
+    <field name="url">structta__s__event.html#a46f36892e8308aacb7eb1aab36b6088c</field>
+    <field name="keywords">error ta_s_event::error ta_s_event</field>
+    <field name="text">Additional error information present if send by terminal Is ta_object_invalid if not set Otherwise object instance is of type tim_error Object instance is not retained</field>
   </doc>
   <doc>
     <field name="type">struct</field>

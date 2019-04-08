@@ -28,6 +28,8 @@ var terminal_8h =
     [ "ta_terminal_close_reader", "terminal_8h.html#ac55b5a60f04d3336ddf4ba46c49a5fea", null ],
     [ "ta_terminal_close_reader_async", "terminal_8h.html#a4babe0e7f8b17cdc38e765994a3c309f", null ],
     [ "ta_terminal_commit", "terminal_8h.html#a1a8cb225510ae56543926bc6ee871a63", null ],
+    [ "ta_terminal_commit_amount", "terminal_8h.html#a044219520df73a515335ac521878de28", null ],
+    [ "ta_terminal_commit_amount_async", "terminal_8h.html#a582129e1fe34296f976d3a7a3a670e27", null ],
     [ "ta_terminal_commit_async", "terminal_8h.html#ac28f0dfe2dd8d093536c8a9e57f8423f", null ],
     [ "ta_terminal_connect", "terminal_8h.html#a73af37fdbac5972361a434cdabb83a36", null ],
     [ "ta_terminal_connect_async", "terminal_8h.html#a005d07c182cbb40410653a66c953b996", null ],
