@@ -145,6 +145,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a5767b9bd6df78e08793b378549085628"><td class="memItemLeft" align="right" valign="top"><a class="el" href="result__code_8h.html#ae860ee870a289833a24a586ba0c24975">ta_e_result_code_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="transaction__response_8h.html#a5767b9bd6df78e08793b378549085628">ta_transaction_response_get_basket</a> (<a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a> response, <a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a> *basket)</td></tr>
 <tr class="memdesc:a5767b9bd6df78e08793b378549085628"><td class="mdescLeft">&#160;</td><td class="mdescRight">Petrol: Basket.  <a href="#a5767b9bd6df78e08793b378549085628">More...</a><br /></td></tr>
 <tr class="separator:a5767b9bd6df78e08793b378549085628"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02a8d9d6e413af019115905ca39422ad"><td class="memItemLeft" align="right" valign="top"><a class="el" href="result__code_8h.html#ae860ee870a289833a24a586ba0c24975">ta_e_result_code_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="transaction__response_8h.html#a02a8d9d6e413af019115905ca39422ad">ta_transaction_response_get_amount_loyalty_cashback</a> (<a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a> response, <a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a> *amount)</td></tr>
+<tr class="memdesc:a02a8d9d6e413af019115905ca39422ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loyalty cashback amount.  <a href="#a02a8d9d6e413af019115905ca39422ad">More...</a><br /></td></tr>
+<tr class="separator:a02a8d9d6e413af019115905ca39422ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a873aa6914c63eeda07e77aa0fe86572b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="result__code_8h.html#ae860ee870a289833a24a586ba0c24975">ta_e_result_code_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="transaction__response_8h.html#a873aa6914c63eeda07e77aa0fe86572b">ta_transaction_response_was_dcc</a> (<a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a> response, <a class="el" href="boolean_8h.html#a5d3636b1f1f5de7550c138d0f81825bf">ta_e_boolean_t</a> *was_dcc)</td></tr>
 <tr class="memdesc:a873aa6914c63eeda07e77aa0fe86572b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transaction has been using DCC.  <a href="#a873aa6914c63eeda07e77aa0fe86572b">More...</a><br /></td></tr>
 <tr class="separator:a873aa6914c63eeda07e77aa0fe86572b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -417,6 +420,52 @@ Functions</h2></td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>response</em> is <em>ta_invalid_object</em>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>response</em> is not of type <a class="el" href="transaction__response_8h.html">transaction_response</a>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>amount_due</em> is <em>null-pointer</em>. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a02a8d9d6e413af019115905ca39422ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a02a8d9d6e413af019115905ca39422ad">&#9670;&nbsp;</a></span>ta_transaction_response_get_amount_loyalty_cashback()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="result__code_8h.html#ae860ee870a289833a24a586ba0c24975">ta_e_result_code_t</a> ta_transaction_response_get_amount_loyalty_cashback </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a>&#160;</td>
+          <td class="paramname"><em>response</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a> *&#160;</td>
+          <td class="paramname"><em>amount</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Loyalty cashback amount. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">response</td><td>Object instance of type <a class="el" href="transaction__response_8h.html">transaction_response</a>. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">amount</td><td>Pointer to variable to write object instance to. Object instance is of type <a class="el" href="amount_8h.html">amount</a> and is not retained. Object instance is <em>ta_invalid_object</em> if value is not set in <em>response</em>.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">ta_c_rc_ok</td><td>Object instance written to <em>basket</em>. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>response</em> is <em>ta_invalid_object</em>. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>response</em> is not of type <a class="el" href="transaction__response_8h.html">transaction_response</a>. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>amount</em> is <em>null-pointer</em>. </td></tr>
   </table>
   </dd>
 </dl>

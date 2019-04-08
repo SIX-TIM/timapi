@@ -133,7 +133,7 @@ let settings = new timapi.TerminalSettings();
 settings.connectionIPString = "192.168.1.10";
 settings.connectionIPPort = 80;
 
-// Add wanted guides (with bitwise or)
+// Add wanted guides
 settings.guides.add(timapi.constants.Guides.hospitality);
 
 // Create terminal
@@ -653,7 +653,7 @@ terminal.addListener(myListener);
     <div class="row"><div class="col-md-6"></div></div></section> 
 
     <section id="logging"><h1><a name="logging"></a>Logging</h1><div class="row"><div class="col-md-6"><p lang="JS">By default the TIM API JavaScript logs to the webconsole of the corresponding browser used, or to the system shell in case of Node.js.
-    This is due to security restrictions in the web context as it is not allowed to create files locally.
+    Due to security restrictions in the web context no log-files are created locally.
     Nevertheless, the TIM API JavaScript offers the possibility that the integrator can overwrite this behaviour by using the onTimApiPublishLogRecord(logRecord) or the
     onTimApiLog(message) method. If the TIM API JavaScript is used in web context it is recommended that the log message shall be sent to a log server or alike. 
     If used with Node.js the message can be written into a file locally, as there are not such security restrictions in conjunction with Node.js.
@@ -689,85 +689,80 @@ onTimApiLog = function(message) {
     <section id="MigrationJStoWASM"><h1><a name="MigrationJStoWASM"></a>Migration from old TIM API JS to TIM API JS with WebAssembly</h1><div class="row"><div class="col-md-6"><p>The following sections will provide information which changes have to be made to switch from the old TIM API JS solution
         to the new TIM API JS with WebAssembly. Each section contains an example of the old TIM API JS and one of the new TIM API JS with
         WebAssembly to directly show the differences.</p>
-          </div></div><section id="MigrationJSInit"><h2><a name="MigrationJSInit"></a>Ready Initialization</h2><div class="row"><div class="col-md-6"><p>Below is an example how the TIM API must be initialized to be available.</p>
-          </div></div><div class="row"><div class="col-md-6">
-            <p>With the old TIM API JS it was essential to check if the TIM API was available before using it. This
-            could be done with the following check:</p>
-            <pre><code>if(timapi == undefined){
-                // TIM API not ready
-            }else{
-                // Start using TIM API
-            }</code></pre>
-                </div><div class="col-md-6">
-          <p>In the new TIM API JS with WebAssembly a callback function is called as soon as the TIM API
-          is ready to be used by the application:</p>
-            <pre><code>function onTimApiReady() {
-            // Start using TIM API
-            }</code></pre>
-            </div></div>
-                    <div class="row"><div class="col-md-6"></div></div></section>
-                    <div class="row"><div class="col-md-6"></div></div><section id="MigrationJSNames"><h2><a name="MigrationJSNames"></a>Class Variable Names</h2><div class="row"><div class="col-md-6"><p>The naming of class variable names changed slightly:</p>
-                    </div></div><div class="row"><div class="col-md-6">
-            <p>Old TIM API JS used variables names with a '$'-sign like this:</p>
-            <pre><code>settings.$connectionIPString = "..."</code></pre>
-            </div><div class="col-md-6">
-                    <p>New TIM API JS with WebAssembly uses variables names like this (if " or ' is not important. JS supports both):</p>
-            <pre><code>settings.connectionIPString = '...'</code></pre>
-                    
-            </div></div>
-          <div class="row"><div class="col-md-6"></div></div></section>
-          <div class="row"><div class="col-md-6"></div></div><section id="MigrationJSListenerDeclaration"><h2><a name="MigrationJSListenerDeclaration"></a>Listener Declaration</h2><div class="row"><div class="col-md-6">
-          <p>The old TIM API JS used a non-OOP like way to create listeners. A DefaultTerminalListener was created and then the
-            respective methods were "replaced":</p>
-            <pre><code>var listener = new timapi.DefaultTerminalListener();
-            listener.terminalStatusChanged = function (_terminal) {
-            timapi.DefaultTerminalListener.prototype.terminalStatusChanged(_terminal);
-            // Do stuff
-            }
-
-            listener.connectCompleted = function (_event) {
-            timapi.DefaultTerminalListener.prototype.connectCompleted(_event);
-            // Do stuff
-            }
-
-            listener.transactionCompleted = function(_event, _data) {
-            timapi.DefaultTerminalListener.prototype.transactionCompleted(_event, _data);
-            // Do stuff
-            }</code></pre>
+            </div></div><section id="MigrationJSInit"><h2><a name="MigrationJSInit"></a>Ready Initialization</h2><div class="row"><div class="col-md-6"><p>Below is an example how the TIM API must be initialized to be available.</p>
+                </div></div><div class="row"><div class="col-md-6">
+                        <p>With the old TIM API JS it was essential to check if the TIM API was available before using it. This
+                        could be done with the following check:</p>
+                        <pre><code>if(timapi == undefined){
+  // TIM API not ready
+}else{
+  // Start using TIM API
+}</code></pre>
                     </div><div class="col-md-6">
-          <p>
-            The new TIM API JS with WebAssembly uses proper subclassing like this:</p>
+                        <p>In the new TIM API JS with WebAssembly a callback function is called as soon as the TIM API
+                        is ready to be used by the application:</p>
+                        <pre><code>function onTimApiReady() {
+  // Start using TIM API
+}</code></pre>
+                    </div></div>
+            <div class="row"><div class="col-md-6"></div></div></section>
+            <div class="row"><div class="col-md-6"></div></div><section id="MigrationJSNames"><h2><a name="MigrationJSNames"></a>Class Variable Names</h2><div class="row"><div class="col-md-6"><p>The naming of class variable names changed slightly:</p>
+                </div></div><div class="row"><div class="col-md-6">
+                        <p>Old TIM API JS used variables names with a '$'-sign like this:</p>
+                        <pre><code>settings.$connectionIPString = "..."</code></pre>
+                    </div><div class="col-md-6">
+                        <p>New TIM API JS with WebAssembly uses variables names like this (if " or ' is not important. JS supports both):</p>
+                        <pre><code>settings.connectionIPString = '...'</code></pre>
+                    </div></div>
+            <div class="row"><div class="col-md-6"></div></div></section>
+        <div class="row"><div class="col-md-6"></div></div><section id="MigrationJSListenerDeclaration"><h2><a name="MigrationJSListenerDeclaration"></a>Listener Declaration</h2><div class="row"><div class="col-md-6">
+                    <p>The old TIM API JS used a non-OOP like way to create listeners. A DefaultTerminalListener was created and then the
+                    respective methods were "replaced":</p>
+                    <pre><code>var listener = new timapi.DefaultTerminalListener();
+listener.terminalStatusChanged = function (_terminal) {
+timapi.DefaultTerminalListener.prototype.terminalStatusChanged(_terminal);
+  // Do stuff
+}
 
-            <pre><code>class myTerminalListener extends timapi.DefaultTerminalListener {
-            terminalStatusChanged(terminal) {
-                super.terminalStatusChanged(terminal);
-                ...
-            }
-            requestCompleted(event, data) {
-                super.requestCompleted(event, data);
-                ...
-            }
-            }</code></pre>
-          </div></div>
-                    <div class="row"><div class="col-md-6"></div></div></section>
-                    <div class="row"><div class="col-md-6"></div></div><section id="MigrationJSLogging"><h2><a name="MigrationJSLogging"></a>Logging</h2><div class="row"><div class="col-md-6">
-            <p>In the old TIM API JS there was only the possibility to set the logging level but there was no chance to
-            control the logging messages on user application level:</p>
-            <pre><code>timapi.logging.Log.logLevel = timapi.logging.Level.FINE</code></pre>
-            </div><div class="col-md-6">
-                    <p>
-            This is not existing anymore in WebAssembly. Instead the logger goes to the web console by default
-            but can be intercepted by the user application like this:</p>
-            <pre><code>onTimApiLog = function(message) {
-            ... // message is of type String
-            }</code></pre>
+listener.connectCompleted = function (_event) {
+timapi.DefaultTerminalListener.prototype.connectCompleted(_event);
+  // Do stuff
+}
 
-            <p>Which allows to simply output a final predefined log message.</p>
-
-            <p>To further filter the logMessages the "onTimApiPublishLogRecord" function can be used.</p>
-            </div></div>
-          <div class="row"><div class="col-md-6"></div></div></section>
+listener.transactionCompleted = function(_event, _data) {
+timapi.DefaultTerminalListener.prototype.transactionCompleted(_event, _data);
+  // Do stuff
+}</code></pre>
+                </div><div class="col-md-6">
+                    <p>The new TIM API JS with WebAssembly uses proper subclassing like this:</p>
+                    <pre><code>class myTerminalListener extends timapi.DefaultTerminalListener {
+  terminalStatusChanged(terminal) {
+    super.terminalStatusChanged(terminal);
+    ...
+  }
+  requestCompleted(event, data) {
+    super.requestCompleted(event, data);
+    ...
+  }
+}</code></pre>
+                </div></div>
         <div class="row"><div class="col-md-6"></div></div></section>
+        <div class="row"><div class="col-md-6"></div></div><section id="MigrationJSLogging"><h2><a name="MigrationJSLogging"></a>Logging</h2><div class="row"><div class="col-md-6">
+                    <p>In the old TIM API JS there was only the possibility to set the logging level but there was no chance to
+                    control the logging messages on user application level:</p>
+                    <pre><code>timapi.logging.Log.logLevel = timapi.logging.Level.FINE</code></pre>
+                </div><div class="col-md-6">
+                    <p>
+                    This is not existing anymore in WebAssembly. Instead the logger goes to the web console by default
+                    but can be intercepted by the user application like this:</p>
+                    <pre><code>onTimApiLog = function(message) {
+  ... // message is of type String
+}</code></pre>
+                    <p>Which allows to simply output a final predefined log message.</p>
+                    <p>To further filter the logMessages the "onTimApiPublishLogRecord" function can be used.</p>
+                </div></div>
+        <div class="row"><div class="col-md-6"></div></div></section>
+    <div class="row"><div class="col-md-6"></div></div></section>
 
 </main>
     </div>
