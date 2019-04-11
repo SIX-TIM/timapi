@@ -74,8 +74,10 @@
               <li>Either you use the TIM API Javascript in a web context in conjunction with a webbrowser. If so you require a webserver as the TIM API Javascript
                 has a core written in C, compiled into WebAssembly format and a Javascript interface layer. Due to security restrictions of the webbrowsers the .wasm WebAssembly module
                 must be placed on a webserver next to the webpage and the timapi.js Javascript interface layer, as it is not allowed to load local modules via JavaScript in a webbrowser.</li>
-                <li>Or you can use it in conjunction with e.g. NodeJS for local usage. If you use it outside of a webbrowser, no webserver is required as there are no such security restrictions
-                  in conjunction with NodeJS.</li>
+                <li>Or you can use it in conjunction with e.g. Node.js for local usage. If you use it outside of a webbrowser, no webserver is required as there are no such security restrictions
+                  in conjunction with Node.js. In addition in this case the Websocket module must be installed by entering the following command in the command line tool
+                  in the corresponding project directory:
+                  <pre><code>npm install websocket</code></pre></li>
                 </ul>
               </p>
               <p>Another speciality of the TIM API JavaScript is that the API offers a onTimApiReady() callback function which must be implemented by the integrator.
