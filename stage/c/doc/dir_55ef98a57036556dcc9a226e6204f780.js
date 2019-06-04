@@ -13,6 +13,7 @@ var dir_55ef98a57036556dcc9a226e6204f780 =
     [ "coupon_rejection_reason.h", "coupon__rejection__reason_8h.html", "coupon__rejection__reason_8h" ],
     [ "currency.h", "currency_8h.html", "currency_8h" ],
     [ "currency_type.h", "currency__type_8h.html", "currency__type_8h" ],
+    [ "customer_data_type.h", "customer__data__type_8h.html", "customer__data__type_8h" ],
     [ "cvm.h", "cvm_8h.html", "cvm_8h" ],
     [ "dialog_functions.h", "dialog__functions_8h.html", "dialog__functions_8h" ],
     [ "ecr_info_type.h", "ecr__info__type_8h.html", "ecr__info__type_8h" ],
@@ -52,5 +53,7 @@ var dir_55ef98a57036556dcc9a226e6204f780 =
     [ "theme.h", "theme_8h.html", "theme_8h" ],
     [ "transaction_status.h", "transaction__status_8h.html", "transaction__status_8h" ],
     [ "transaction_type.h", "transaction__type_8h.html", "transaction__type_8h" ],
-    [ "update_status.h", "update__status_8h.html", "update__status_8h" ]
+    [ "update_status.h", "update__status_8h.html", "update__status_8h" ],
+    [ "vas_info_list_type.h", "vas__info__list__type_8h.html", "vas__info__list__type_8h" ],
+    [ "vas_info_type.h", "vas__info__type_8h.html", "vas__info__type_8h" ]
 ];

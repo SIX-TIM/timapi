@@ -17,13 +17,14 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "activate__response_8h.html",
-"command__request_8h.html#ae7c4ff47ac927755262b787bf7f07a86",
-"custom__receipt__formatter_8h.html#a07c5b9d0b4ce2c471dd995fbae1716b0a0826e5fed0af3c978f47c1874b593749",
-"guides_8h.html#a3094ffa1812abd0acaa42bde196bf996ab140ed7731b8bf6463b8db37ab99aead",
-"print__format_8h.html#a44afe747b1718776d62504470fdf46c6a34065c00abc896a9b9fb054f0abe840d",
-"result__code_8h.html#aebaf00d1ceef4b827866ca9de0bd3320a08eaa2a22d04466d9eccc1da10b5be4c",
-"terminal_8h.html#a28f11c630b476feeb2693d887edcdf10",
-"transaction__data_8h.html"
+"command__request_8h.html#ad9827c673d53c16c47c8f127d6331257",
+"custom__receipt__formatter_8h.html#a07c5b9d0b4ce2c471dd995fbae1716b0",
+"financial__transactions_8h.html#acb14a85df061e531e84d9409a28ead04a8a6dd9f46f12f658a12c5ef4a4920536",
+"pos__entry__mode_8h.html#abcd49dcaa026c564bba0a40e0779c198aa92e81f70ba5224b66816b77c7d2a5ea",
+"resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9ac7b49d46f65ca6e69cec8835ae1a8812",
+"string_8h.html",
+"terminal__settings_8h.html#af50057b39c7196dc7d354d7cafe19b9f",
+"vas__info__type_8h.html#ae8d3a7b42cbd07892a5292b8fb5f8f74aef47ca605613f94b4cc23a96202ceecb"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

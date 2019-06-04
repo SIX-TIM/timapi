@@ -142,6 +142,12 @@ const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <tr class="memitem:a64a7a63ae65438f6599b712b5c57b576"><td class="memItemLeft" align="right" valign="top"><a class="el" href="result__code_8h.html#ae860ee870a289833a24a586ba0c24975">ta_e_result_code_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="terminal_8h.html#a64a7a63ae65438f6599b712b5c57b576">ta_terminal_set_merchant_options</a> (<a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a> terminal, <a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a> merchant_options)</td></tr>
 <tr class="memdesc:a64a7a63ae65438f6599b712b5c57b576"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set Merchant options.  <a href="#a64a7a63ae65438f6599b712b5c57b576">More...</a><br /></td></tr>
 <tr class="separator:a64a7a63ae65438f6599b712b5c57b576"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66dc7444c1ed5335c79f5f7a7c198f47"><td class="memItemLeft" align="right" valign="top"><a class="el" href="result__code_8h.html#ae860ee870a289833a24a586ba0c24975">ta_e_result_code_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="terminal_8h.html#a66dc7444c1ed5335c79f5f7a7c198f47">ta_terminal_get_customer_data</a> (<a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a> terminal, <a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a> *customer_data)</td></tr>
+<tr class="memdesc:a66dc7444c1ed5335c79f5f7a7c198f47"><td class="mdescLeft">&#160;</td><td class="mdescRight">Customer data.  <a href="#a66dc7444c1ed5335c79f5f7a7c198f47">More...</a><br /></td></tr>
+<tr class="separator:a66dc7444c1ed5335c79f5f7a7c198f47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2601193bf71263322436957a98a89447"><td class="memItemLeft" align="right" valign="top"><a class="el" href="result__code_8h.html#ae860ee870a289833a24a586ba0c24975">ta_e_result_code_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="terminal_8h.html#a2601193bf71263322436957a98a89447">ta_terminal_set_customer_data</a> (<a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a> terminal, <a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a> customer_data)</td></tr>
+<tr class="memdesc:a2601193bf71263322436957a98a89447"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set Customer data.  <a href="#a2601193bf71263322436957a98a89447">More...</a><br /></td></tr>
+<tr class="separator:a2601193bf71263322436957a98a89447"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2fb543b90841f89e10118c291255073d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="result__code_8h.html#ae860ee870a289833a24a586ba0c24975">ta_e_result_code_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="terminal_8h.html#a2fb543b90841f89e10118c291255073d">ta_terminal_get_transaction_data</a> (<a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a> terminal, <a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a> *transaction_data)</td></tr>
 <tr class="memdesc:a2fb543b90841f89e10118c291255073d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transaction data to use for transaction requests unless set manually.  <a href="#a2fb543b90841f89e10118c291255073d">More...</a><br /></td></tr>
 <tr class="separator:a2fb543b90841f89e10118c291255073d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -2624,6 +2630,53 @@ const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 
 </div>
 </div>
+<a id="a66dc7444c1ed5335c79f5f7a7c198f47"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a66dc7444c1ed5335c79f5f7a7c198f47">&#9670;&nbsp;</a></span>ta_terminal_get_customer_data()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="result__code_8h.html#ae860ee870a289833a24a586ba0c24975">ta_e_result_code_t</a> ta_terminal_get_customer_data </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a>&#160;</td>
+          <td class="paramname"><em>terminal</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a> *&#160;</td>
+          <td class="paramname"><em>customer_data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Customer data. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">terminal</td><td>Object instance of type <a class="el" href="terminal_8h.html">terminal</a>. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">customer_data</td><td>Pointer to variable to write object instance to. Object instance is of type <a class="el" href="map_8h.html">map</a>. Object instance is retained. Elements in the map are of key type <a class="el" href="integer_8h.html">integer</a> containing values of enumeration <a class="el" href="customer__data__type_8h.html#a812c69adec834b7df085db320d6a0cb6">ta_e_customer_data_type_t</a> and value type <a class="el" href="string_8h.html">string</a>.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">ta_c_rc_ok</td><td>Object instance written to <em>customer_data</em>. Object instance has been retained. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>terminal</em> is ta_invalid_object. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>terminal</em> is not of type <a class="el" href="terminal_8h.html">terminal</a>. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>terminal</em> has been disposed. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>customer_data</em> is <em>null-pointer</em>. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a1910dfc8531b666df50282ccdc5cf77c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1910dfc8531b666df50282ccdc5cf77c">&#9670;&nbsp;</a></span>ta_terminal_get_ecr_data()</h2>
 
@@ -4827,6 +4880,57 @@ Dialog shown after receiving a negative response: sixml:NegativeResource </li>
     <tr><td class="paramname">ta_c_rc_ok</td><td>Listener removed from <em>terminal</em>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>terminal</em> is ta_invalid_object. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>terminal</em> is not of type <a class="el" href="terminal_8h.html">terminal</a>. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a2601193bf71263322436957a98a89447"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2601193bf71263322436957a98a89447">&#9670;&nbsp;</a></span>ta_terminal_set_customer_data()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="result__code_8h.html#ae860ee870a289833a24a586ba0c24975">ta_e_result_code_t</a> ta_terminal_set_customer_data </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a>&#160;</td>
+          <td class="paramname"><em>terminal</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a>&#160;</td>
+          <td class="paramname"><em>customer_data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set Customer data. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">terminal</td><td>Object instance of type <a class="el" href="terminal_8h.html">terminal</a>. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">customer_data</td><td>Object instance to set. Object instance has to be of type <a class="el" href="map_8h.html">map</a>. Elements in the list have to be of key type <a class="el" href="integer_8h.html">integer</a> with values from enumeration <a class="el" href="customer__data__type_8h.html#a812c69adec834b7df085db320d6a0cb6">ta_e_customer_data_type_t</a> and value type <a class="el" href="string_8h.html">string</a>.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">ta_c_rc_ok</td><td>Object instance assigned to <em>terminal</em>. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>terminal</em> is ta_invalid_object. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>terminal</em> is not of type <a class="el" href="terminal_8h.html">terminal</a>. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>terminal</em> has been disposed. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>customer_data</em> is ta_invalid_object. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>customer_data</em> is not of type <a class="el" href="map_8h.html">map</a>. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td>Element value in <em>customer_data</em> is ta_invalid_object. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td>Element key in <em>customer_data</em> is not of type <em></em>  <a class="el" href="integer_8h.html" title="Integer value. ">integer.h</a> "integer" with values from enumeration <a class="el" href="customer__data__type_8h.html#a812c69adec834b7df085db320d6a0cb6">ta_e_customer_data_type_t</a>. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td>Element value in <em>customer_data</em> is not of type <em></em>  <a class="el" href="string_8h.html" title="String value. ">string.h</a> "string". </td></tr>
   </table>
   </dd>
 </dl>

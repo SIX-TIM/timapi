@@ -241,6 +241,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ab7f5aab7a96d0f77d93e30ea0bbd6d63"><td class="memItemLeft" align="right" valign="top"><a class="el" href="result__code_8h.html#ae860ee870a289833a24a586ba0c24975">ta_e_result_code_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="terminal__listener_8h.html#ab7f5aab7a96d0f77d93e30ea0bbd6d63">ta_terminal_listener_create</a> (<a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a> *listener, const <a class="el" href="terminal__listener_8h.html#adc06e0cca24d3fbb6c241224c4d959bf">ta_s_terminal_listener_t</a> *configuration)</td></tr>
 <tr class="memdesc:ab7f5aab7a96d0f77d93e30ea0bbd6d63"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create terminal listener.  <a href="#ab7f5aab7a96d0f77d93e30ea0bbd6d63">More...</a><br /></td></tr>
 <tr class="separator:ab7f5aab7a96d0f77d93e30ea0bbd6d63"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad06f2909df66cdab4b14d08ae225bbeb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="result__code_8h.html#ae860ee870a289833a24a586ba0c24975">ta_e_result_code_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="terminal__listener_8h.html#ad06f2909df66cdab4b14d08ae225bbeb">ta_process_print_receipts</a> (<a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a> terminal, <a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a> data)</td></tr>
+<tr class="memdesc:ad06f2909df66cdab4b14d08ae225bbeb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Process print receipts.  <a href="#ad06f2909df66cdab4b14d08ae225bbeb">More...</a><br /></td></tr>
+<tr class="separator:ad06f2909df66cdab4b14d08ae225bbeb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Typedef Documentation</h2>
 <a id="acbfefabfc85c91779a0f6293988ec9a8"></a>
@@ -1319,6 +1322,44 @@ ta_cb_terminal_transaction_completed </li>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="ad06f2909df66cdab4b14d08ae225bbeb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad06f2909df66cdab4b14d08ae225bbeb">&#9670;&nbsp;</a></span>ta_process_print_receipts()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="result__code_8h.html#ae860ee870a289833a24a586ba0c24975">ta_e_result_code_t</a> ta_process_print_receipts </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a>&#160;</td>
+          <td class="paramname"><em>terminal</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a>&#160;</td>
+          <td class="paramname"><em>data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Process print receipts. </p>
+<p>Use this method inside <em>print_receipts</em> in <em>ta_s_terminal_listener_t</em> if you use receipt items. This uses the receipt_formatter set in the terminal instance to format the receipts. Without this method only receipt items will be returned and no receipts.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">terminal</td><td>Terminal object provided by print_receipts callback. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>Print data object provided by print_receipts callback. If <em>ta_object_invalid</em> no processing is done. Otherwise receipt items are processed and placed in <em>data</em>. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="ab7f5aab7a96d0f77d93e30ea0bbd6d63"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab7f5aab7a96d0f77d93e30ea0bbd6d63">&#9670;&nbsp;</a></span>ta_terminal_listener_create()</h2>
 
