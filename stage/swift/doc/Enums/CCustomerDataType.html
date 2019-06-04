@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>ConfigData Class Reference</title>
+    <title>CCustomerDataType Enumeration Reference</title>
     <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
     <meta charset='utf-8'>
@@ -12,8 +12,8 @@
     
   </head>
   <body>
-    <a name="//apple_ref/swift/Class/ConfigData" class="dashAnchor"></a>
-    <a title="ConfigData Class Reference"></a>
+    <a name="//apple_ref/swift/Enum/CCustomerDataType" class="dashAnchor"></a>
+    <a title="CCustomerDataType Enumeration Reference"></a>
     <header>
       <div class="content-wrapper">
         <p><a href="../index.html"> Docs</a> (96% documented)</p>
@@ -23,7 +23,7 @@
       <p id="breadcrumbs">
         <a href="../index.html"> Reference</a>
         <img id="carat" src="../img/carat.png" />
-        ConfigData Class Reference
+        CCustomerDataType Enumeration Reference
       </p>
     </div>
     <div class="content-wrapper">
@@ -528,16 +528,18 @@
       <article class="main-content">
         <section>
           <section class="section">
-            <h1>ConfigData</h1>
+            <h1>CCustomerDataType</h1>
               <div class="declaration">
                 <div class="language">
-                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">ConfigData</span> <span class="p">:</span> <span class="kt">CustomStringConvertible</span></code></pre>
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">CCustomerDataType</span></code></pre>
 
                 </div>
               </div>
-            <p>Contains terminal information required for ECR applications to produce receipts on
-their own. This data is available after the Login operation has been performed.
-Immutable class.</p>
+            <p><p>Specifies what kind of customer information the sixml:CustomerDataItem contains.</p>
+
+<p>The following values are valid:</p></p>
+
+<p>Specification: retail.</p>
 
           </section>
           <section class="section task-group-section">
@@ -546,9 +548,9 @@ Immutable class.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6TimApi10ConfigDataC13receiptHeader8languageACSaySSG_SStcfc"></a>
-                    <a name="//apple_ref/swift/Method/init(receiptHeader:language:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6TimApi10ConfigDataC13receiptHeader8languageACSaySSG_SStcfc">init(receiptHeader:language:)</a>
+                    <a name="/s:6TimApi17CCustomerDataTypeO10customerIdyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/customerId" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TimApi17CCustomerDataTypeO10customerIdyA2CmF">customerId</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -556,14 +558,16 @@ Immutable class.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Create terminal configuration information.</p>
+                        <p>Customer identifier e.g. of a Loyalty program.</p>
+
+<p>Specification: retail.</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">receiptHeader</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">],</span> <span class="nv">language</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">customerId</span></code></pre>
 
                         </div>
                       </div>
@@ -573,9 +577,9 @@ Immutable class.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6TimApi10ConfigDataC13receiptHeaderSaySSGvp"></a>
-                    <a name="//apple_ref/swift/Property/receiptHeader" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6TimApi10ConfigDataC13receiptHeaderSaySSGvp">receiptHeader</a>
+                    <a name="/s:6TimApi17CCustomerDataTypeO14loyaltyBrandIdyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/loyaltyBrandId" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TimApi17CCustomerDataTypeO14loyaltyBrandIdyA2CmF">loyaltyBrandId</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -583,15 +587,16 @@ Immutable class.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>List of text lines forming the receipt header.</br>
-<b>Remark</b>: Configured in the service center or ECR. Can be overwritten by the card.</p>
+                        <p>Identifier of the loyalty brand used.</p>
+
+<p>Specification: retail.</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">private(set)</span> <span class="k">var</span> <span class="nv">receiptHeader</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">]</span></code></pre>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">loyaltyBrandId</span></code></pre>
 
                         </div>
                       </div>
@@ -601,9 +606,9 @@ Immutable class.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6TimApi10ConfigDataC8languageSSvp"></a>
-                    <a name="//apple_ref/swift/Property/language" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6TimApi10ConfigDataC8languageSSvp">language</a>
+                    <a name="/s:6TimApi17CCustomerDataTypeO11furtherInfoyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/furtherInfo" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TimApi17CCustomerDataTypeO11furtherInfoyA2CmF">furtherInfo</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -611,41 +616,17 @@ Immutable class.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Language to use for printing receipts.</p>
+                        <p>Further information e.g. promotion codes or promotion descriptions. The values are defined by
+the merchant or acquirer.</p>
+
+<p>Specification: retail.</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">private(set)</span> <span class="k">var</span> <span class="nv">language</span><span class="p">:</span> <span class="kt">String</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:6TimApi10ConfigDataC11descriptionSSvp"></a>
-                    <a name="//apple_ref/swift/Property/description" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6TimApi10ConfigDataC11descriptionSSvp">description</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Textual representation.</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">description</span><span class="p">:</span> <span class="kt">String</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">furtherInfo</span></code></pre>
 
                         </div>
                       </div>
