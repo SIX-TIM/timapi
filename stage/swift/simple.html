@@ -141,7 +141,33 @@
       <p>The following section explains how to easily retrieve response data from the which is available after a transaction as described above.</p>
         <p>The first step is to implement your own terminal listener class wherein you overwrite the functions you want to use.
           If you are mainly interested in the transaction response you can use the following code:</p>
-          <pre><code></code></pre>
+          <pre><code class="language-{.swift}">//
+// Handle asynchronous terminal events.
+//
+class TerminalHandler: DefaultTerminalListener {
+
+    //
+    // The status of the terminal changed. This includes processing status and display content
+    //
+    override func terminalStatusChanged(terminal: Terminal) {
+        // Events usually originate from a different thread than the main thread.
+        // Always use DispatchQueue.main.async to be safe
+        DispatchQueue.main.async {
+            // handle terminal status change
+        }
+    }
+
+    //
+    // A call to Terminal.transactionAsync finished.
+    //
+    override func transactionCompleted(event: TimEvent, data: TransactionResponse?) {
+        // Events usually originate from a different thread than the main thread.
+        // Always use DispatchQueue.main.async to be safe
+        DispatchQueue.main.async {
+            // handle transaction finished using data
+        }
+    }
+}</code></pre>
           <h2>Check transaction outcome</h2>
           <p>To check if a transaction has been performed successfully you have to check the <code><a href="doc/Enums/CResultCode.html">ResultCode</a></code>
           which is part of the
