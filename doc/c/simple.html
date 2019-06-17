@@ -147,7 +147,47 @@
       <p>The following section explains how to easily retrieve response data from the which is available after a transaction as described above.</p>
         <p>The first step is to implement your own terminal listener class wherein you overwrite the functions you want to use.
           If you are mainly interested in the transaction response you can use the following code:</p>
-          <pre><code></code></pre>
+          <pre><code class="language-{.c}">/*
+ * Example for adding a terminal status listener
+ *
+ * \param[in] terminal Terminal instance
+ */
+void add_status_listener(ta_object_t terminal) {
+    ta_object_t listener = ta_object_invalid;
+    ta_s_terminal_listener_t listener_config;
+
+    // clear listener-config
+    memset(&amp;amp;listener_config, 0, sizeof(listener_config));
+
+    // add user-implemented callback to listener-config
+    listener_config.terminal_status_changed = mylistener_terminal_status_changed;
+
+    // optional: add user content to listener,
+    // pointer will be handed over to all callbacks:
+    //listener_config.user_pointer = &amp;amp;custom_struct;
+
+    // create listener-object
+    ta_terminal_listener_create(&amp;amp;listener, &amp;amp;listener_config);
+
+    // add listener-object to terminal
+    ta_terminal_add_listener(terminal, listener);
+
+    // release listener-object
+    ta_object_release(listener);
+}
+
+/*
+ * Callback for terminal status changes
+ *
+ * Will be called when status of terminal changes.
+ * \param[in] terminal Terminal instance
+ * \param[in] user_pointe User-pointer which can be set in the terminal listener
+ */
+void mylistener_terminal_status_changed(ta_object_t terminal,	void *user_pointer) {
+
+	// implement your code to process status change here...
+	//printf(&amp;quot; &amp;gt; listener_terminal_status_changed\n&amp;quot;);
+}</code></pre>
           <h2>Check transaction outcome</h2>
           <p>To check if a transaction has been performed successfully you have to check the <code><a href="doc/result__code_8h.html#aebaf00d1ceef4b827866ca9de0bd3320">result_code</a></code>which is part of the <code><a href="doc/structta__s__event.html">event</a></code> object in the <code><a href="doc/terminal__listener_8h.html#acb4d8efc06602d461d8c634e92cca491">transaction_completed</a></code> callback.</p>
           <p>Further error information can be retrieved as described in the API documentation in the <code><a href="doc/result__code_8h.html#aebaf00d1ceef4b827866ca9de0bd3320">result_code</a></code> section.</p>
