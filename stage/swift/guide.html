@@ -628,6 +628,19 @@ class TerminalHandler: DefaultTerminalListener {
             // handle transaction finished using data
         }
     }
+}
+
+class ExampleECR {    
+    func createTerminal(settings: terminalSettings) {
+        // create terminal from terminal settings
+        guard let terminal = Terminal(settings: terminalSettings) else {
+            // throw error, since creating terminal from settings failed
+            return
+        }
+
+        // add listener (can be done at sany time, not just during init)
+        terminal.addListener(listener: TerminalHandler())
+    }
 }</code></pre>
             </div></div>
         <div class="row"><div class="col-md-6"></div></div><section id="mainFunc"><h2><a name="mainFunc"></a>Main / guide Retail terminal functions</h2><div class="row"><div class="col-md-6"><table class="table">

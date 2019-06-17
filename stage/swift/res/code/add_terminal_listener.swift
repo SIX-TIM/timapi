@@ -25,3 +25,16 @@ class TerminalHandler: DefaultTerminalListener {
         }
     }
 }
+
+class ExampleECR {    
+    func createTerminal(settings: terminalSettings) {
+        // create terminal from terminal settings
+        guard let terminal = Terminal(settings: terminalSettings) else {
+            // throw error, since creating terminal from settings failed
+            return
+        }
+
+        // add listener (can be done at sany time, not just during init)
+        terminal.addListener(listener: TerminalHandler())
+    }
+}
