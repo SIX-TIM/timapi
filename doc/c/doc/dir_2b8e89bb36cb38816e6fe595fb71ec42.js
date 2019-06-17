@@ -10,6 +10,7 @@ var dir_2b8e89bb36cb38816e6fe595fb71ec42 =
     [ "counter_type.h", "enum__string__maps_2counter__type_8h.html", "enum__string__maps_2counter__type_8h" ],
     [ "coupon_rejection_reason.h", "enum__string__maps_2coupon__rejection__reason_8h.html", "enum__string__maps_2coupon__rejection__reason_8h" ],
     [ "currency_type.h", "enum__string__maps_2currency__type_8h.html", "enum__string__maps_2currency__type_8h" ],
+    [ "customer_data_type.h", "enum__string__maps_2customer__data__type_8h.html", "enum__string__maps_2customer__data__type_8h" ],
     [ "cvm.h", "enum__string__maps_2cvm_8h.html", "enum__string__maps_2cvm_8h" ],
     [ "dialog_functions.h", "enum__string__maps_2dialog__functions_8h.html", "enum__string__maps_2dialog__functions_8h" ],
     [ "ecr_info_type.h", "enum__string__maps_2ecr__info__type_8h.html", "enum__string__maps_2ecr__info__type_8h" ],
@@ -47,5 +48,7 @@ var dir_2b8e89bb36cb38816e6fe595fb71ec42 =
     [ "theme.h", "enum__string__maps_2theme_8h.html", "enum__string__maps_2theme_8h" ],
     [ "transaction_status.h", "enum__string__maps_2transaction__status_8h.html", "enum__string__maps_2transaction__status_8h" ],
     [ "transaction_type.h", "enum__string__maps_2transaction__type_8h.html", "enum__string__maps_2transaction__type_8h" ],
-    [ "update_status.h", "enum__string__maps_2update__status_8h.html", "enum__string__maps_2update__status_8h" ]
+    [ "update_status.h", "enum__string__maps_2update__status_8h.html", "enum__string__maps_2update__status_8h" ],
+    [ "vas_info_list_type.h", "enum__string__maps_2vas__info__list__type_8h.html", "enum__string__maps_2vas__info__list__type_8h" ],
+    [ "vas_info_type.h", "enum__string__maps_2vas__info__type_8h.html", "enum__string__maps_2vas__info__type_8h" ]
 ];

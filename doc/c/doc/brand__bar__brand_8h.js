@@ -35,6 +35,7 @@ var brand__bar__brand_8h =
       [ "ta_c_bbb_visa", "brand__bar__brand_8h.html#a065fb75dccd6ee5e82f29d4cce775549a0a564901bbdafdf55babfb690dfc8bdc", null ],
       [ "ta_c_bbb_visa_electron", "brand__bar__brand_8h.html#a065fb75dccd6ee5e82f29d4cce775549a72a11d9294fadb99025fd98725459d51", null ],
       [ "ta_c_bbb_vpay", "brand__bar__brand_8h.html#a065fb75dccd6ee5e82f29d4cce775549ac1a13ec0e28874696d960470c0a676ab", null ],
+      [ "ta_c_bbb_we_chat", "brand__bar__brand_8h.html#a065fb75dccd6ee5e82f29d4cce775549a7b0f1bae01d7bdcb15a171dd111a28f6", null ],
       [ "ta_c_bbb_wir_card", "brand__bar__brand_8h.html#a065fb75dccd6ee5e82f29d4cce775549afbc0a54e8db99062ecaf5316d4ad411f", null ],
       [ "ta_c_bbb_yallo", "brand__bar__brand_8h.html#a065fb75dccd6ee5e82f29d4cce775549a08e707039ef425ddf43e748513cb11a0", null ]
     ] ]
