@@ -4,6 +4,9 @@ var currentGuides = {}
 var onCol = "rgb(188, 221, 188)";
 var offCol = "rgb(210, 210, 210)";
 
+var div_min_height = 20;
+var div_min_margin = 120;
+
 /**
  * Updates document elements and buttons according to guide-selection
  */
@@ -17,16 +20,15 @@ function updateGUI(animated) {
         classList.forEach(function(guideName) {
             if(allGuides.indexOf(guideName) >= 0) {
                 try {
-                    visible = visible || (localStorage.getItem(guideName) == "true")
+                    var storedVisibility = localStorage.getItem(guideName);
+                    if(storedVisibility == "true") {
+                        visible = true;
+                    }
                 }
+                // if local storage not available out of security reasons...
                 catch(err) {
                     if(guideName in currentGuides) {
                         visible = visible || currentGuides[guideName];
-                    }
-                    // if guide not present in currentGuides, add it as visible
-                    else {
-                        currentGuides[guideName] = true;
-                        visible = true;
                     }
                 }
             }
@@ -77,7 +79,6 @@ function updateGUI(animated) {
                     visible = true;
                 }
             }
-
             btnGuide.style.background = (visible ? onCol : offCol);
         }
     });
@@ -105,7 +106,6 @@ function toggleGuide(btnGuide) {
                 currentGuides[guideName] = true;
             }
         }
-        
     }
     updateGUI(true);
 }
@@ -125,16 +125,31 @@ function addGuidesStylesheet() {
         });
     });
 
+    // sync/add all found guide-names to local storage and
+    allGuides.forEach(function(guideName) {
+        // update local storage
+        try {
+            var storedVisibility = localStorage.getItem(guideName);
+            if((storedVisibility != "true") && (storedVisibility != "false")){
+                localStorage.setItem(guideName, "true"); // default true
+            }
+        }
+        catch(err) { }
+        currentGuides[guideName] = true;
+    });
+    
+    visible = true;   
+
     var guideDiv = document.getElementById('guideDiv');
     var guideTitle = document.getElementById('guideTitle');
     var guideCloseBtn = document.getElementById('closeGuideSel');
     var guideSel = document.getElementById('guideSel');
 
-    // start hidden
-    var showGuideSelection = false
-    guideSel.style.opacity = 0;
-    guideCloseBtn.style.opacity = 0;
-    guideSel.style.display = "none";
+    // start visible
+    var showGuideSelection = true
+    guideSel.style.opacity = 1;
+    guideCloseBtn.style.opacity = 1;
+    guideSel.style.display = "block";
 
     guideDiv.onclick = function (e) {
 
@@ -156,11 +171,11 @@ function addGuidesStylesheet() {
             if (guideSel.classList.contains('fade-in')){
                 guideSel.classList.remove('fade-in');
             }
-            if (!guideCloseBtn.classList.contains('fade-out')){
-                guideCloseBtn.classList.add('fade-out');
+            if (!guideCloseBtn.classList.contains('plus_icon')){
+                guideCloseBtn.classList.add('plus_icon');
             }
-            if (guideCloseBtn.classList.contains('fade-in')){
-                guideCloseBtn.classList.remove('fade-in');
+            if (guideCloseBtn.classList.contains('close_icon')){
+                guideCloseBtn.classList.remove('close_icon');
             }
             guideSel.style.display = "none";
         }
@@ -178,11 +193,11 @@ function addGuidesStylesheet() {
             if (!guideSel.classList.contains('fade-in')){
                 guideSel.classList.add('fade-in');
             }
-            if (guideCloseBtn.classList.contains('fade-out')){
-                guideCloseBtn.classList.remove('fade-out');
+            if (guideCloseBtn.classList.contains('plus_icon')){
+                guideCloseBtn.classList.remove('plus_icon');
             }
-            if (!guideCloseBtn.classList.contains('fade-in')){
-                guideCloseBtn.classList.add('fade-in');
+            if (!guideCloseBtn.classList.contains('close_icon')){
+                guideCloseBtn.classList.add('close_icon');
             }
             guideSel.style.display = "block";
         }
@@ -215,8 +230,33 @@ function addGuidesStylesheet() {
 
     // adjust styling of guide-selector based on count of guide-buttons
     if(allGuides.length > 0) {
-        var height = ((allGuides.length * 40)+72);
-        var keyframesCSS = "@keyframes grow { from { height: 62.75px; margin-bottom: 80px; } to { height: "+height+"px; margin-bottom: 10px; } } @keyframes shrink { from { height: "+height+"px; margin-bottom: 10px; } to { height: 62.75px; margin-bottom: 80px; } }";
+
+        // get div height depending on guide-buttons heights and margins + title offset
+        var height = ((allGuides.length * 29)+42);
+
+        if(height > div_min_margin) {
+            margin = 0;
+        }
+        else {
+            margin = div_min_margin - height + 20;
+        }
+
+        // get margin (distance to index-navigation), depending div height
+       // var margin = div_min_height - height;
+
+
+        if(height < div_min_height) {
+            height = div_min_height;
+        }
+        var keyframesCSS = "@keyframes grow { from { height: "
+            +div_min_height+"px; margin-bottom: "
+            +div_min_margin+"px; } to { height: "
+            +height+"px; margin-bottom: "+
+            +margin+"px; } } @keyframes shrink { from { height: "
+            +height+"px; margin-bottom: "+
+            +margin+"px; } to { height: "
+            +div_min_height+"px; margin-bottom: "
+            +div_min_margin+"px; } }";
         var style = document.createElement("style");
         if (style.styleSheet) {
             style.styleSheet.cssText = keyframesText;
@@ -225,7 +265,12 @@ function addGuidesStylesheet() {
         }
         document.getElementsByTagName('head')[0].appendChild(style);
         guideDiv.style.display = "block";
-    }
+        guideDiv.style.height = height + "px";
+        guideDiv.style.marginBottom = margin + "px";
+    }    
+    
+    /*var img = document.getElementById('closeGuideSel');
+    img.setAttribute('style','transform:rotate(45deg)');    */
 }
 
 window.onload = function(evt) { 

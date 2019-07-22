@@ -16,7 +16,7 @@
   <script src="../assets/js/config.js"></script>
   <script src="doc/api_version.js"></script>
 </head>
-<body data-spy="scroll" data-target="#navScrollspy">
+<body class="appendix" data-spy="scroll" data-target="#navScrollspy">
   <div class="container-fluid" id="content">
     <div>
       <nav id="navScrollspy">
@@ -58,10 +58,15 @@
         </div>
       </nav>
 
+      <div id="titleFloating">
+        <div><a href="guide.html" id="linkOtherGuide">go to Detailed Implementation Guide</a></div>
+        <div id="lblDiv">Appendix</div>
+      </div>
+
       <span class="print-page-break"></span>
 
       <main>
-      <section id="appendixResultCode"><h1><a name="appendixResultCode"></a>ResultCodes</h1><div class="row"><div class="col-md-6"><p>The following section gives an overview how the ResultCodes on SIXml protocol side and on TIM API side clearly have to be differentiated.
+      <section><h1><a id="appendixResultCode" name="appendixResultCode">&#160;</a>ResultCodes</h1><div class="row"><div class="col-md-6"><p>The following section gives an overview how the ResultCodes on SIXml protocol side and on TIM API side clearly have to be differentiated.
         It is essential to know that on SIXml protocol side each ResultCode is returned as a numeric value while on TIM API side only enumerations are used,
         no numeric values. An integrator must never use the numeric integer value of a TIM API ResultCode enumeration, but only the enum value. This is due
         to the fact that the TIM API ResultCodes are fully generated and are internally mapped to the SIXml ResultCodes. The numeric int values of the TIM API enumeration
@@ -751,7 +756,7 @@ must not be used, but only directly the enum value "API_CANCEL_ECR".</code></pre
             </table>
         </p>
     </div></div></section>
-    <section id="functionStateMatrix"><h1><a name="functionStateMatrix"></a>Function-State-Matrix</h1><div class="row"><div class="col-md-6"><p>Legend:
+    <section><h1><a id="functionStateMatrix" name="functionStateMatrix">&#160;</a>Function-State-Matrix</h1><div class="row"><div class="col-md-6"><p>Legend:
         <ul>
           <li>B1-Retail</li>
           <li>B2-Petrol</li>

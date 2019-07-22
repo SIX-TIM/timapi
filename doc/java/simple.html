@@ -16,7 +16,7 @@
   <script src="../assets/js/config.js"></script>
   <script src="doc/api_version.js"></script>
 </head>
-<body data-spy="scroll" data-target="#navScrollspy">
+<body class="simple" data-spy="scroll" data-target="#navScrollspy">
   <div class="container-fluid" id="content">
     <div>
       <nav id="navScrollspy">
@@ -58,21 +58,26 @@
         </div>
       </nav>
 
+      <div id="titleFloating">
+          <div><a href="guide.html" id="linkOtherGuide">go to Detailed Implementation Guide</a></div>
+          <div id="lblDiv">Simple Implementation Guide</div>
+      </div>
+
       <span class="print-page-break"></span>
 
       <main>
-      <section id="simpleIntro"><h1><a name="simpleIntro"></a>Introduction</h1><div class="row"><div class="col-md-6"><p>The following sections give a simple overview how to make a simple TIM API integration
+      <section><h1><a id="simpleIntro" name="simpleIntro">&#160;</a>Introduction</h1><div class="row"><div class="col-md-6"><p>The following sections give a simple overview how to make a simple TIM API integration
       without any special configurations. Therefore default values are used as often as possible to keep it simple.
       If special features are required, visit the section <a href="guide.html">Integration in Detail</a>
       for a more sophisticated overview.
     </p>
   </div></div></section>
-  <section id="usageLibrary"><h1><a name="usageLibrary"></a>Library usage</h1><div class="row"><div class="col-md-6"><p>As the TIM SDK offers the TIM API in multiple languages you can chose the one that is suitable for your platform.
+  <section><h1><a id="usageLibrary" name="usageLibrary">&#160;</a>Library usage</h1><div class="row"><div class="col-md-6"><p>As the TIM SDK offers the TIM API in multiple languages you can chose the one that is suitable for your platform.
       To use the TIM API
       <span lang="Java">Java you have to import the <b>JAR-File</b></span> <span lang="C Java Swift">into your project in the programming environment you are using. The file include path may have to be adjusted accordingly,
         depending where you place the TIM API.</span> </p>
           </div></div></section>
-          <section id="usageSettings"><h1><a name="usageSettings"></a>Minimal Settings</h1><div class="row"><div class="col-md-6"><p>To start right away only a minimal set of settings has to be given:
+          <section><h1><a id="usageSettings" name="usageSettings">&#160;</a>Minimal Settings</h1><div class="row"><div class="col-md-6"><p>To start right away only a minimal set of settings has to be given:
               <ul>
                 <li lang="Java">Logging Directory: The directory where the LogFile shall be saved.</li>
                 <li lang="Java Swift C">Terminal ID: The ID of the terminal that shall be used afterwards. Used for broadcast connection (Default).</li>
@@ -201,7 +206,7 @@ ConnectionIPString = 192.168.1.13
                     </p>
                   </div></div>
               <div class="row"><div class="col-md-6"></div></div></section>
-              <section id="simpleTransaction"><h1><a name="simpleTransaction"></a>Simple Transaction</h1><div class="row"><div class="col-md-6">
+              <section><h1><a id="simpleTransaction" name="simpleTransaction">&#160;</a>Simple Transaction</h1><div class="row"><div class="col-md-6">
                     <p>
                       The flow on the right shows a simple transaction flow and which steps are done by which participant.
                       Note that for a simple use the integrator only needs to follow 4 simple steps, steps 1 to 4. Steps 1-4 can be performed multiple times (loop) if wished.
@@ -287,7 +292,7 @@ public class SimpleTransaction {
   <figure><img src="../assets/img/QuickTrxFlow_v6.png"><figcaption>Simple Transaction Flow</figcaption></figure>
 </div></div>
 <div class="row"><div class="col-md-6"></div></div></section>
-<section id="simpleResponse"><h1><a name="simpleResponse"></a>Simple Response Handling</h1><div class="row"><div class="col-md-6">
+<section><h1><a id="simpleResponse" name="simpleResponse">&#160;</a>Simple Response Handling</h1><div class="row"><div class="col-md-6">
       <p>The following section explains how to easily retrieve response data from the
         <code><a href="doc/index.html?com/six/timapi/TransactionResponse.html">TransactionResponse</a></code> which is available after a transaction as described above.</p>
         <p>The first step is to implement your own terminal listener class wherein you overwrite the functions you want to use.
