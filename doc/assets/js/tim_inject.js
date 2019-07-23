@@ -37,7 +37,7 @@ function timVersionInject() {
 
     // Implementation guide
     var projectalign = document.getElementById("projectalign");
-        if(projectalign != undefined) {
+    if(projectalign != undefined) {
         var guidelink = document.createElement("a");
         guidelink.href = "../guide.html";
         guidelink.innerHTML = "Back to Implementation Guide";
@@ -57,6 +57,15 @@ function timVersionInject() {
             // make banner visible
             bannerElement.style.display = 'block';
         }
+    }
+
+    // Hide elements for given language
+    if(timapi.api_lang != undefined) {
+        var language = timapi.api_lang.toLowerCase();
+        // Change visibility of all elements with class "hide_{language}"
+        [].forEach.call(document.querySelectorAll(".hide_" + language), function (el) {
+            el.style.display = "none";
+        });
     }
 }
 
