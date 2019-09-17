@@ -24,6 +24,7 @@ var dir_68267d1309a1af8e8297ef4c3efbcdba =
     [ "currency_item.h", "currency__item_8h.html", "currency__item_8h" ],
     [ "custom_receipt_formatter.h", "custom__receipt__formatter_8h.html", "custom__receipt__formatter_8h" ],
     [ "deactivate_response.h", "deactivate__response_8h.html", "deactivate__response_8h" ],
+    [ "display_product_info.h", "display__product__info_8h.html", "display__product__info_8h" ],
     [ "ecr_info.h", "ecr__info_8h.html", "ecr__info_8h" ],
     [ "error_messages.h", "error__messages_8h.html", "error__messages_8h" ],
     [ "features.h", "features_8h.html", "features_8h" ],
@@ -65,5 +66,6 @@ var dir_68267d1309a1af8e8297ef4c3efbcdba =
     [ "transaction_request.h", "transaction__request_8h.html", "transaction__request_8h" ],
     [ "transaction_response.h", "transaction__response_8h.html", "transaction__response_8h" ],
     [ "trx_detail.h", "trx__detail_8h.html", "trx__detail_8h" ],
-    [ "vas_checkout_information.h", "vas__checkout__information_8h.html", "vas__checkout__information_8h" ]
+    [ "vas_checkout_information.h", "vas__checkout__information_8h.html", "vas__checkout__information_8h" ],
+    [ "vas_result.h", "vas__result_8h.html", "vas__result_8h" ]
 ];

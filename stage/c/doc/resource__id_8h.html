@@ -99,13 +99,27 @@ $(document).ready(function(){initNavTree('resource__id_8h.html','');});
 <tr>
 <td>Placeholder </td><td>Placeholder element that shall be replaced by the corresponding value.  </td></tr>
 <tr>
-<td>InputMask </td><td>Defines the input format. d = digit, h = hidden digit  </td></tr>
+<td>InputMask </td><td>Defines the input format. a = alphanumeric, d = digit, h = hidden digit, l = letter  </td></tr>
 <tr>
 <td>ActiveConfirmation </td><td>The active pinpad and/or displayed button that shall be active during the dialog.  </td></tr>
 <tr>
 <td>SigCapFlag </td><td>Indicates if the dialog can be used for signature capturing.  </td></tr>
 </table>
+<table class="doxtable">
+<tr>
+<th>Format </th><th>Description  </th></tr>
+<tr>
+<td>a </td><td>Alphanumeric, digits and letters. 0-9, a-z/A-Z  </td></tr>
+<tr>
+<td>d </td><td>Numeric digits, 0-9  </td></tr>
+<tr>
+<td>h </td><td>Hidden numeric digits, 0-9. Masked with '*'.  </td></tr>
+<tr>
+<td>l </td><td>Letters, a-z/A-Z  </td></tr>
+</table>
 <p>An InputMask with "h" = hidden digit means that the input must not be displayed in plain text but must be hidden e.g. using "*" instead of plain text.</p>
+<p>The "ActiveConfirmation" describes which elements linke buttons, card reader or timeout can confirm the ongoing dialog. If there is no "ActiveConfirmation" element, the dialog immediately returns with Reason = AutoConfirm. Those dialogs are used to change the display text as defined until there is a new request started:</p>
+<p>Example: If s dialog with "ResourceId = 0125 - Please wait" is sent, the terminal immediately returns the dialog with "Reason = AutoConfirm" and changes the display to "Please wait" until a new request is started.</p>
 <p>The following groups are defined: </p><table class="doxtable">
 <tr>
 <th>Group </th><th>Description  </th></tr>
@@ -122,19 +136,23 @@ $(document).ready(function(){initNavTree('resource__id_8h.html','');});
 </table>
 <p>Petrol Dialogs. The following petrol dialogs are valid: </p><table class="doxtable">
 <tr>
-<th>Value </th><th>PrimaryIcon </th><th>SecondaryIcon </th><th>Text </th><th>Placeholder </th><th>InputMask </th><th>ActiveConfirmation </th><th>ResourceParameter  </th></tr>
+<th>Value </th><th>PrimaryIcon </th><th>SecondaryIcon </th><th>Text </th><th>Placeholder </th><th>Format / InputMask </th><th>ActiveConfirmation </th><th>ResourceParameter  </th></tr>
 <tr>
 <td>0100 </td><td>PinPad </td><td>- </td><td>Enter mileage + OK<br />
- i </td><td>- </td><td>dddddddd </td><td>Ok, Stop </td><td>-  </td></tr>
+ i </td><td>- </td><td>d8,<br />
+ input mask: dddddddd </td><td>Ok, Stop </td><td>-  </td></tr>
 <tr>
 <td>0101 </td><td>PinPad </td><td>- </td><td>Enter your car number + OK<br />
- i </td><td>- </td><td>dddddd </td><td>Ok, Stop </td><td>-  </td></tr>
+ i </td><td>- </td><td>a8,<br />
+ input mask: aaaaaaaa </td><td>Ok, Stop </td><td>-  </td></tr>
 <tr>
 <td>0102 </td><td>PinPad </td><td>- </td><td>Enter drivercode + OK<br />
- i </td><td>- </td><td>dddddd </td><td>Ok, Stop </td><td>-  </td></tr>
+ i </td><td>- </td><td>a8,<br />
+ input mask: aaaaaaaa </td><td>Ok, Stop </td><td>-  </td></tr>
 <tr>
 <td>0103 </td><td>PinPad </td><td>- </td><td>Enter fleet ID + OK<br />
- i </td><td>- </td><td>dddddd </td><td>Ok, Stop </td><td>-  </td></tr>
+ i </td><td>- </td><td>a8,<br />
+ input mask: aaaaaaaa </td><td>Ok, Stop </td><td>-  </td></tr>
 <tr>
 <td>0104 </td><td>PinPad </td><td>- </td><td>%0 %1<br />
  Please select pump: i<br />
@@ -147,25 +165,32 @@ $(document).ready(function(){initNavTree('resource__id_8h.html','');});
 <li>
 1: Amount (optional) </li>
 </ul>
-</td><td>dd </td><td>Ok, Stop </td><td>-  </td></tr>
+</td><td>d2,<br />
+ input mask: dd </td><td>Ok, Stop </td><td>-  </td></tr>
 <tr>
 <td>0105 </td><td>PinPad </td><td>- </td><td>Please select washing<br />
- station: i + OK </td><td>- </td><td>dd </td><td>Ok, Stop </td><td>-  </td></tr>
+ station: i + OK </td><td>- </td><td>d2,<br />
+ input mask: dd </td><td>Ok, Stop </td><td>-  </td></tr>
 <tr>
 <td>0106 </td><td>PinPad </td><td>- </td><td>Please select program:<br />
- i + OK </td><td>- </td><td>dd </td><td>Ok, Stop </td><td>-  </td></tr>
+ i + OK </td><td>- </td><td>d2,<br />
+ input mask: dd </td><td>Ok, Stop </td><td>-  </td></tr>
 <tr>
 <td>0107 </td><td>PinPad </td><td>- </td><td>Please select product:<br />
- i + OK </td><td>- </td><td>dd </td><td>Ok, Stop </td><td>-  </td></tr>
+ i + OK </td><td>- </td><td>d2,<br />
+ input mask: dd </td><td>Ok, Stop </td><td>-  </td></tr>
 <tr>
 <td>0108 </td><td>PinPad </td><td>- </td><td>Load card<br />
- Amount: i + OK </td><td>- </td><td>dd </td><td>Ok, Stop </td><td>-  </td></tr>
+ Amount: i + OK </td><td>- </td><td>d2,<br />
+ input mask: dd </td><td>Ok, Stop </td><td>-  </td></tr>
 <tr>
 <td>0109 </td><td>PinPad </td><td>- </td><td>Tankcode?<br />
- i </td><td>- </td><td>hhhhhhhhhhhh </td><td>Ok, Stop </td><td>-  </td></tr>
+ i </td><td>- </td><td>h12,<br />
+ input mask: hhhhhhhhhhhh </td><td>Ok, Stop </td><td>-  </td></tr>
 <tr>
 <td>0110 </td><td>PinPad </td><td>- </td><td>CODE &amp; OK?<br />
- c </td><td>- </td><td>hhhhhhhhhhhh </td><td>Ok, Stop </td><td><ul>
+ i </td><td>- </td><td>h12,<br />
+ input mask: hhhhhhhhhhhh </td><td>Ok, Stop </td><td><ul>
 <li>
 CodeCheckType </li>
 <li>
@@ -182,19 +207,24 @@ PetrolCardData3 (optional) </li>
 </td></tr>
 <tr>
 <td>0111 </td><td>PinPad </td><td>- </td><td>Enter additional information + OK<br />
- i </td><td>- </td><td>dddddddddddddddddddd </td><td>Ok, Stop </td><td>-  </td></tr>
+ i </td><td>- </td><td>a20,<br />
+ input mask: aaaaaaaaaaaaaaaaaaaa </td><td>Ok, Stop </td><td>-  </td></tr>
 <tr>
 <td>0112 </td><td>PinPad </td><td>- </td><td>Enter cost center + OK<br />
- i </td><td>- </td><td>dddddddddddddddddddd </td><td>Ok, Stop </td><td>-  </td></tr>
+ i </td><td>- </td><td>a20,<br />
+ input mask: aaaaaaaaaaaaaaaaaaaa </td><td>Ok, Stop </td><td>-  </td></tr>
 <tr>
 <td>0113 </td><td>PinPad </td><td>- </td><td>Enter employee no + OK<br />
- i </td><td>- </td><td>dddddddddddddddddddd </td><td>Ok, Stop </td><td>-  </td></tr>
+ i </td><td>- </td><td>a20,<br />
+ input mask: aaaaaaaaaaaaaaaaaaaa </td><td>Ok, Stop </td><td>-  </td></tr>
 <tr>
 <td>0114 </td><td>PinPad </td><td>- </td><td>Enter license plate + OK<br />
- i </td><td>- </td><td>dddddddddddddddddddd </td><td>Ok, Stop </td><td>-  </td></tr>
+ i </td><td>- </td><td>a12,<br />
+ input mask: aaaaaaaaaaaa </td><td>Ok, Stop </td><td>-  </td></tr>
 <tr>
 <td>0115 </td><td>PinPad </td><td>- </td><td>Enter project no + OK<br />
- i </td><td>- </td><td>dddddddddddddddddddd </td><td>Ok, Stop </td><td>-  </td></tr>
+ i </td><td>- </td><td>a20,<br />
+ input mask: aaaaaaaaaaaaaaaaaaaa </td><td>Ok, Stop </td><td>-  </td></tr>
 <tr>
 <td>0116 </td><td>- </td><td>- </td><td>Print receipt?<br />
  YES / NO<br />
@@ -228,11 +258,76 @@ PetrolCardData3 (optional) </li>
 1: Amount (n, mandatory) (e.g. 45.00) </li>
 </ul>
 </td><td>- </td><td>- </td><td>-  </td></tr>
+<tr>
+<td>0124 </td><td>InsertCard </td><td>- </td><td>Welcome,<br />
+ card please </td><td>- </td><td>- </td><td>CardReader </td><td>ActiveReaders  </td></tr>
+<tr>
+<td>0125 </td><td>PleaseWait </td><td>- </td><td>Please wait </td><td>- </td><td>- </td><td>- </td><td>-  </td></tr>
+<tr>
+<td>0126 </td><td>LastCodeTry </td><td>- </td><td>Last CODE try<br />
+ CODE + OK<br />
+ i </td><td>- </td><td>h12,<br />
+ input mask: hhhhhhhhhhhh </td><td>Ok, Stop </td><td><ul>
+<li>
+CodeCheckType </li>
+<li>
+CodeCheckKeyId (optional) </li>
+<li>
+CodeCheckData (optional) </li>
+<li>
+PetrolCardData1 (optional) </li>
+<li>
+PetrolCardData2 (optional) </li>
+<li>
+PetrolCardData3 (optional) </li>
+</ul>
+</td></tr>
+<tr>
+<td>0127 </td><td>CodeTriesLeft </td><td>- </td><td>%0 tries left<br />
+ CODE + OK<br />
+ i </td><td>0: Number of tries left (n, mandatory) </td><td>h12,<br />
+ input mask: hhhhhhhhhhhh </td><td>Ok, Stop </td><td><ul>
+<li>
+CodeCheckType </li>
+<li>
+CodeCheckKeyId (optional) </li>
+<li>
+CodeCheckData (optional) </li>
+<li>
+PetrolCardData1 (optional) </li>
+<li>
+PetrolCardData2 (optional) </li>
+<li>
+PetrolCardData3 (optional) </li>
+</ul>
+</td></tr>
+<tr>
+<td>0128 </td><td>NoCodeTriesLeft </td><td>- </td><td>No more CODE<br />
+ tries left<br />
+  </td><td>- </td><td>- </td><td>Ok, Stop </td><td>-  </td></tr>
+<tr>
+<td>0129 </td><td>CodeIncorrect </td><td>- </td><td>CODE incorrect </td><td>- </td><td>- </td><td>Ok, Stop </td><td>-  </td></tr>
+<tr>
+<td>0130 </td><td>LastTankcodeTry </td><td>- </td><td>Last try<br />
+ Tankcode + OK<br />
+ i </td><td>- </td><td>h12,<br />
+ input mask: hhhhhhhhhhhh </td><td>Ok, Stop </td><td>-  </td></tr>
+<tr>
+<td>0131 </td><td>TankcodeTriesLeft </td><td>- </td><td>%0 tries left<br />
+ Tankcode + OK<br />
+ i </td><td>0: Number of tries left (n, mandatory) </td><td>h12,<br />
+ input mask: hhhhhhhhhhhh </td><td>Ok, Stop </td><td>-  </td></tr>
+<tr>
+<td>0132 </td><td>NoTankcodeTriesLeft </td><td>- </td><td>No more Tankcode<br />
+ tries left<br />
+  </td><td>- </td><td>- </td><td>Ok, Stop </td><td>-  </td></tr>
+<tr>
+<td>0133 </td><td>TankcodeIncorrect </td><td>- </td><td>Tankcode incorrect </td><td>- </td><td>- </td><td>Ok, Stop </td><td>-  </td></tr>
 </table>
 <p><b>Note:</b> Dialog 0110 is not supposed to return the input value, but shall check the code according to the <em>CodeCheckType</em> and return the result in the <em>Reason</em> . <em>CodeOk</em> for success and <em>CodeNok</em> for failure.</p>
 <p>Postal Dialogs. The following postal dialogs are valid: </p><table class="doxtable">
 <tr>
-<th>Value </th><th>PrimaryIcon </th><th>SecondaryIcon </th><th>Text </th><th>Placeholder </th><th>InputMask </th><th>ActiveConfirmation </th><th>SigCapFlag  </th></tr>
+<th>Value </th><th>PrimaryIcon </th><th>SecondaryIcon </th><th>Text </th><th>Placeholder </th><th>Format / InputMask </th><th>ActiveConfirmation </th><th>SigCapFlag  </th></tr>
 <tr>
 <td>1000 </td><td>- </td><td>- </td><td>Keine Recharge<br />
  Karte </td><td>- </td><td>- </td><td>Ok </td><td><ul>
@@ -256,8 +351,8 @@ PetrolCardData3 (optional) </li>
 <tr>
 <td>1002 </td><td>PinPad </td><td>Card </td><td>Bitte Tel. Nummer<br />
  oder PrePaid-Karte<br />
- i </td><td>- </td><td>ddd ddd<br />
- dd dd </td><td>Ok, Stop, CardReader </td><td>0  </td></tr>
+ i </td><td>- </td><td>d10,<br />
+ input mask: ddd ddd dd dd </td><td>Ok, Stop, CardReader </td><td>0  </td></tr>
 <tr>
 <td>1003 </td><td>- </td><td>- </td><td>Tel. Nummer zu lang </td><td>- </td><td>- </td><td>Ok, Stop </td><td>0  </td></tr>
 <tr>
@@ -266,10 +361,10 @@ PetrolCardData3 (optional) </li>
 <td>1005 </td><td>PinPad </td><td>- </td><td>Bitte<br />
  Telefonnummer<br />
  eingeben<br />
- i </td><td>- </td><td>ddd ddd<br />
- dd dd </td><td>Ok, Stop </td><td>0  </td></tr>
+ i </td><td>- </td><td>d10,<br />
+ input mask: ddd ddd dd dd </td><td>Ok, Stop </td><td>0  </td></tr>
 <tr>
-<td>1006 </td><td>PleaseWait </td><td>- </td><td>Bitte warten </td><td>- </td><td>- </td><td>- </td><td>0  </td></tr>
+<td>1006 </td><td>PleaseWait </td><td>- </td><td>Bitte warten </td><td>- </td><td>- </td><td>Timeout </td><td>0  </td></tr>
 <tr>
 <td>1007 </td><td>Declined </td><td>- </td><td>Verarbeitung<br />
  fehlgeschlagen </td><td>- </td><td>- </td><td>Ok </td><td>0  </td></tr>
@@ -376,7 +471,8 @@ PetrolCardData3 (optional) </li>
 <tr>
 <td>1018 </td><td>PinPad </td><td>- </td><td>Bitte PIN<br />
  eingeben:<br />
- i </td><td>- </td><td>hhhhhh </td><td>Ok, Stop </td><td>0  </td></tr>
+ i </td><td>- </td><td>h6,<br />
+ input mask: hhhhhh </td><td>Ok, Stop </td><td>0  </td></tr>
 </table>
 <p>Banking Dialogs. The following banking dialogs are valid: </p><table class="doxtable">
 <tr>
@@ -386,7 +482,7 @@ PetrolCardData3 (optional) </li>
  card please </td><td>- </td><td>- </td><td>CardReader </td><td>0 </td><td>-  </td></tr>
 <tr>
 <td>1101 </td><td>PinPad </td><td>- </td><td>PIN &amp; OK<br />
- i </td><td>- </td><td>hhhhhh </td><td>Ok, Stop </td><td>0 </td><td>-  </td></tr>
+ i </td><td>- </td><td>h6, input mask: hhhhhh </td><td>Ok, Stop </td><td>0 </td><td>-  </td></tr>
 <tr>
 <td>1102 </td><td>PinPad </td><td>- </td><td>Press key<br />
  to show saldo </td><td>0: Currency 1: Amount </td><td>- </td><td>Ok, Stop </td><td>0 </td><td>-  </td></tr>
@@ -469,43 +565,56 @@ Enumerations</h2></td></tr>
 <a class="el" href="resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9a1f395079c1a686eb8bdd1af7adf58ae3">ta_c_rid_petrol_please_refuel</a>, 
 <br />
 &#160;&#160;<a class="el" href="resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9ae554d04d8a9efcc0cb0eff06fb237893">ta_c_rid_petrol_please_refuel_for_amt</a>, 
+<a class="el" href="resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9ad143d6460f48eb658f25c829874cd6f9">ta_c_rid_petrol_insert_card</a>, 
+<a class="el" href="resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9a596a6158601b006fd8034810cdad4001">ta_c_rid_petrol_please_wait</a>, 
+<a class="el" href="resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9a787681c99c849c890bb140b2c7c21823">ta_c_rid_petrol_last_code_try</a>, 
+<br />
+&#160;&#160;<a class="el" href="resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9ac8dd4b5fb4e9992db8d51000c0622bcc">ta_c_rid_petrol_code_tries_left</a>, 
+<a class="el" href="resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9a3abffafe458f74268ee7df0249e8a0c4">ta_c_rid_petrol_no_code_tries_left</a>, 
+<a class="el" href="resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9afece7f98169f8b4215a1c516777f424f">ta_c_rid_petrol_code_incorrect</a>, 
+<a class="el" href="resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9a3018faeee28536be1d08e3d63c021a11">ta_c_rid_petrol_last_tankcode_try</a>, 
+<br />
+&#160;&#160;<a class="el" href="resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9abfd93ac544b73cb1c8bbf710dd640d3d">ta_c_rid_petrol_tankcode_tries_left</a>, 
+<a class="el" href="resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9ac13a31cbff4d4d0f7d7793f2c9a80655">ta_c_rid_petrol_no_tankcode_tries_left</a>, 
+<a class="el" href="resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9a90e03d24f75e333f0ce5570080a2f0a0">ta_c_rid_petrol_tankcode_incorrect</a>, 
 <a class="el" href="resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9a4f4bc41f35d20046ac5e8e9c8524209f">ta_c_rid_no_recharge_card</a>, 
-<a class="el" href="resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9aac2116966faf8dda47068df0e227c94f">ta_c_rid_show_phone_number_with_amount</a>, 
+<br />
+&#160;&#160;<a class="el" href="resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9aac2116966faf8dda47068df0e227c94f">ta_c_rid_show_phone_number_with_amount</a>, 
 <a class="el" href="resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9a9d32ea00f1973160359dc58597804576">ta_c_rid_enter_phone_or_prepaid_number</a>, 
-<br />
-&#160;&#160;<a class="el" href="resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9aa17f6d94454001037b539d0ba4d3ed13">ta_c_rid_phone_number_too_long</a>, 
+<a class="el" href="resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9aa17f6d94454001037b539d0ba4d3ed13">ta_c_rid_phone_number_too_long</a>, 
 <a class="el" href="resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9a94a8a9b721daf14478f2ccfd74d51b43">ta_c_rid_phone_number_too_short</a>, 
-<a class="el" href="resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9a33bdbfe0bab29a82ccd2894c95907832">ta_c_rid_enter_phone_number</a>, 
+<br />
+&#160;&#160;<a class="el" href="resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9a33bdbfe0bab29a82ccd2894c95907832">ta_c_rid_enter_phone_number</a>, 
 <a class="el" href="resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9afadbc7151280c0b80d5b08b7fb0f07b6">ta_c_rid_please_wait</a>, 
-<br />
-&#160;&#160;<a class="el" href="resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9a393ccd9507aacac54c1ed0463dbc2458">ta_c_rid_processing_declined</a>, 
+<a class="el" href="resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9a393ccd9507aacac54c1ed0463dbc2458">ta_c_rid_processing_declined</a>, 
 <a class="el" href="resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9a8c24b403087aa61cfbb54bfcea0de7a7">ta_c_rid_processing_ok</a>, 
-<a class="el" href="resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9a8b15740048c2cb489b5271cf438a342d">ta_c_rid_register_card</a>, 
+<br />
+&#160;&#160;<a class="el" href="resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9a8b15740048c2cb489b5271cf438a342d">ta_c_rid_register_card</a>, 
 <a class="el" href="resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9a4ffb9ede77cb9f2101e6279d4aa6aa0b">ta_c_rid_welcome_card</a>, 
-<br />
-&#160;&#160;<a class="el" href="resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9ac5e1d78f671967e7f0f3d258aa3e490f">ta_c_rid_show_phone_number</a>, 
+<a class="el" href="resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9ac5e1d78f671967e7f0f3d258aa3e490f">ta_c_rid_show_phone_number</a>, 
 <a class="el" href="resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9a17ac14dec614e6edd6b08646bd59a0d0">ta_c_rid_inter_account_transfer</a>, 
-<a class="el" href="resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9a39bf0fcd50864fef68a947745d3a21d0">ta_c_rid_inter_account_transfer_confirmation</a>, 
+<br />
+&#160;&#160;<a class="el" href="resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9a39bf0fcd50864fef68a947745d3a21d0">ta_c_rid_inter_account_transfer_confirmation</a>, 
 <a class="el" href="resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9afbfed90228edef47d64fd9b4b4b2bc2a">ta_c_rid_disbursement_from_account</a>, 
-<br />
-&#160;&#160;<a class="el" href="resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9a678d5b72d182e02c4cfe020b3b05a22f">ta_c_rid_deposit_own_account</a>, 
+<a class="el" href="resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9a678d5b72d182e02c4cfe020b3b05a22f">ta_c_rid_deposit_own_account</a>, 
 <a class="el" href="resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9a1c39c66992ab578336780b0fe6411406">ta_c_rid_empty_dialog</a>, 
-<a class="el" href="resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9ab96171d3599c3f5d80a47677e0ea11aa">ta_c_rid_packet_acknowledgement</a>, 
+<br />
+&#160;&#160;<a class="el" href="resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9ab96171d3599c3f5d80a47677e0ea11aa">ta_c_rid_packet_acknowledgement</a>, 
 <a class="el" href="resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9a8a85f50c77c47532b356121d13cabbf0">ta_c_rid_pin_entry</a>, 
-<br />
-&#160;&#160;<a class="el" href="resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9ad55032f46f2c0e7e1f865c224e15fa54">ta_c_rid_banking_insert_card</a>, 
+<a class="el" href="resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9ad55032f46f2c0e7e1f865c224e15fa54">ta_c_rid_banking_insert_card</a>, 
 <a class="el" href="resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9a93af25ad0d4ba3dd903cfcd483238121">ta_c_rid_banking_pin_check</a>, 
-<a class="el" href="resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9ac7b49d46f65ca6e69cec8835ae1a8812">ta_c_rid_banking_show_saldo</a>, 
+<br />
+&#160;&#160;<a class="el" href="resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9ac7b49d46f65ca6e69cec8835ae1a8812">ta_c_rid_banking_show_saldo</a>, 
 <a class="el" href="resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9abe1cf027de125b0092cf52cae9facff9">ta_c_rid_banking_confirm_amount</a>, 
-<br />
-&#160;&#160;<a class="el" href="resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9ab5f0ab1515a469e3e62bfffe0a3317f8">ta_c_rid_banking_remove_card</a>, 
+<a class="el" href="resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9ab5f0ab1515a469e3e62bfffe0a3317f8">ta_c_rid_banking_remove_card</a>, 
 <a class="el" href="resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9ad30bbbc02e1f2997d19c5f4fc4b915c8">ta_c_rid_banking_welcome</a>, 
-<a class="el" href="resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9a8072ba0f056e46e66a573418b2d3c080">ta_c_rid_common_regular</a>, 
-<a class="el" href="resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9af4e8bd1be5cea5e2945240f5d74de4ef">ta_c_rid_common_please_wait</a>, 
 <br />
-&#160;&#160;<a class="el" href="resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9a529a809dd2e8d0d7504abb06ff12ca11">ta_c_rid_common_data_saved</a>, 
+&#160;&#160;<a class="el" href="resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9a8072ba0f056e46e66a573418b2d3c080">ta_c_rid_common_regular</a>, 
+<a class="el" href="resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9af4e8bd1be5cea5e2945240f5d74de4ef">ta_c_rid_common_please_wait</a>, 
+<a class="el" href="resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9a529a809dd2e8d0d7504abb06ff12ca11">ta_c_rid_common_data_saved</a>, 
 <a class="el" href="resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9a57f9e567db9a3d59cd3671014ad2f4b5">ta_c_rid_common_card_initialized</a>, 
-<b>ta_c_rid_common_card_deinitialized</b>, 
+<br />
+&#160;&#160;<b>ta_c_rid_common_card_deinitialized</b>, 
 <a class="el" href="resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9a03fc4a4af9b03a8fdf3085d646df48fe">ta_c_rid_common_remove_card</a>
 <br />
  }</td></tr>
@@ -538,13 +647,27 @@ Enumerations</h2></td></tr>
 <tr>
 <td>Placeholder </td><td>Placeholder element that shall be replaced by the corresponding value.  </td></tr>
 <tr>
-<td>InputMask </td><td>Defines the input format. d = digit, h = hidden digit  </td></tr>
+<td>InputMask </td><td>Defines the input format. a = alphanumeric, d = digit, h = hidden digit, l = letter  </td></tr>
 <tr>
 <td>ActiveConfirmation </td><td>The active pinpad and/or displayed button that shall be active during the dialog.  </td></tr>
 <tr>
 <td>SigCapFlag </td><td>Indicates if the dialog can be used for signature capturing.  </td></tr>
 </table>
+<table class="doxtable">
+<tr>
+<th>Format </th><th>Description  </th></tr>
+<tr>
+<td>a </td><td>Alphanumeric, digits and letters. 0-9, a-z/A-Z  </td></tr>
+<tr>
+<td>d </td><td>Numeric digits, 0-9  </td></tr>
+<tr>
+<td>h </td><td>Hidden numeric digits, 0-9. Masked with '*'.  </td></tr>
+<tr>
+<td>l </td><td>Letters, a-z/A-Z  </td></tr>
+</table>
 <p>An InputMask with "h" = hidden digit means that the input must not be displayed in plain text but must be hidden e.g. using "*" instead of plain text.</p>
+<p>The "ActiveConfirmation" describes which elements linke buttons, card reader or timeout can confirm the ongoing dialog. If there is no "ActiveConfirmation" element, the dialog immediately returns with Reason = AutoConfirm. Those dialogs are used to change the display text as defined until there is a new request started:</p>
+<p>Example: If s dialog with "ResourceId = 0125 - Please wait" is sent, the terminal immediately returns the dialog with "Reason = AutoConfirm" and changes the display to "Please wait" until a new request is started.</p>
 <p>The following groups are defined: </p><table class="doxtable">
 <tr>
 <th>Group </th><th>Description  </th></tr>
@@ -561,19 +684,23 @@ Enumerations</h2></td></tr>
 </table>
 <p>Petrol Dialogs. The following petrol dialogs are valid: </p><table class="doxtable">
 <tr>
-<th>Value </th><th>PrimaryIcon </th><th>SecondaryIcon </th><th>Text </th><th>Placeholder </th><th>InputMask </th><th>ActiveConfirmation </th><th>ResourceParameter  </th></tr>
+<th>Value </th><th>PrimaryIcon </th><th>SecondaryIcon </th><th>Text </th><th>Placeholder </th><th>Format / InputMask </th><th>ActiveConfirmation </th><th>ResourceParameter  </th></tr>
 <tr>
 <td>0100 </td><td>PinPad </td><td>- </td><td>Enter mileage + OK<br />
- i </td><td>- </td><td>dddddddd </td><td>Ok, Stop </td><td>-  </td></tr>
+ i </td><td>- </td><td>d8,<br />
+ input mask: dddddddd </td><td>Ok, Stop </td><td>-  </td></tr>
 <tr>
 <td>0101 </td><td>PinPad </td><td>- </td><td>Enter your car number + OK<br />
- i </td><td>- </td><td>dddddd </td><td>Ok, Stop </td><td>-  </td></tr>
+ i </td><td>- </td><td>a8,<br />
+ input mask: aaaaaaaa </td><td>Ok, Stop </td><td>-  </td></tr>
 <tr>
 <td>0102 </td><td>PinPad </td><td>- </td><td>Enter drivercode + OK<br />
- i </td><td>- </td><td>dddddd </td><td>Ok, Stop </td><td>-  </td></tr>
+ i </td><td>- </td><td>a8,<br />
+ input mask: aaaaaaaa </td><td>Ok, Stop </td><td>-  </td></tr>
 <tr>
 <td>0103 </td><td>PinPad </td><td>- </td><td>Enter fleet ID + OK<br />
- i </td><td>- </td><td>dddddd </td><td>Ok, Stop </td><td>-  </td></tr>
+ i </td><td>- </td><td>a8,<br />
+ input mask: aaaaaaaa </td><td>Ok, Stop </td><td>-  </td></tr>
 <tr>
 <td>0104 </td><td>PinPad </td><td>- </td><td>%0 %1<br />
  Please select pump: i<br />
@@ -586,25 +713,32 @@ Enumerations</h2></td></tr>
 <li>
 1: Amount (optional) </li>
 </ul>
-</td><td>dd </td><td>Ok, Stop </td><td>-  </td></tr>
+</td><td>d2,<br />
+ input mask: dd </td><td>Ok, Stop </td><td>-  </td></tr>
 <tr>
 <td>0105 </td><td>PinPad </td><td>- </td><td>Please select washing<br />
- station: i + OK </td><td>- </td><td>dd </td><td>Ok, Stop </td><td>-  </td></tr>
+ station: i + OK </td><td>- </td><td>d2,<br />
+ input mask: dd </td><td>Ok, Stop </td><td>-  </td></tr>
 <tr>
 <td>0106 </td><td>PinPad </td><td>- </td><td>Please select program:<br />
- i + OK </td><td>- </td><td>dd </td><td>Ok, Stop </td><td>-  </td></tr>
+ i + OK </td><td>- </td><td>d2,<br />
+ input mask: dd </td><td>Ok, Stop </td><td>-  </td></tr>
 <tr>
 <td>0107 </td><td>PinPad </td><td>- </td><td>Please select product:<br />
- i + OK </td><td>- </td><td>dd </td><td>Ok, Stop </td><td>-  </td></tr>
+ i + OK </td><td>- </td><td>d2,<br />
+ input mask: dd </td><td>Ok, Stop </td><td>-  </td></tr>
 <tr>
 <td>0108 </td><td>PinPad </td><td>- </td><td>Load card<br />
- Amount: i + OK </td><td>- </td><td>dd </td><td>Ok, Stop </td><td>-  </td></tr>
+ Amount: i + OK </td><td>- </td><td>d2,<br />
+ input mask: dd </td><td>Ok, Stop </td><td>-  </td></tr>
 <tr>
 <td>0109 </td><td>PinPad </td><td>- </td><td>Tankcode?<br />
- i </td><td>- </td><td>hhhhhhhhhhhh </td><td>Ok, Stop </td><td>-  </td></tr>
+ i </td><td>- </td><td>h12,<br />
+ input mask: hhhhhhhhhhhh </td><td>Ok, Stop </td><td>-  </td></tr>
 <tr>
 <td>0110 </td><td>PinPad </td><td>- </td><td>CODE &amp; OK?<br />
- c </td><td>- </td><td>hhhhhhhhhhhh </td><td>Ok, Stop </td><td><ul>
+ i </td><td>- </td><td>h12,<br />
+ input mask: hhhhhhhhhhhh </td><td>Ok, Stop </td><td><ul>
 <li>
 CodeCheckType </li>
 <li>
@@ -621,19 +755,24 @@ PetrolCardData3 (optional) </li>
 </td></tr>
 <tr>
 <td>0111 </td><td>PinPad </td><td>- </td><td>Enter additional information + OK<br />
- i </td><td>- </td><td>dddddddddddddddddddd </td><td>Ok, Stop </td><td>-  </td></tr>
+ i </td><td>- </td><td>a20,<br />
+ input mask: aaaaaaaaaaaaaaaaaaaa </td><td>Ok, Stop </td><td>-  </td></tr>
 <tr>
 <td>0112 </td><td>PinPad </td><td>- </td><td>Enter cost center + OK<br />
- i </td><td>- </td><td>dddddddddddddddddddd </td><td>Ok, Stop </td><td>-  </td></tr>
+ i </td><td>- </td><td>a20,<br />
+ input mask: aaaaaaaaaaaaaaaaaaaa </td><td>Ok, Stop </td><td>-  </td></tr>
 <tr>
 <td>0113 </td><td>PinPad </td><td>- </td><td>Enter employee no + OK<br />
- i </td><td>- </td><td>dddddddddddddddddddd </td><td>Ok, Stop </td><td>-  </td></tr>
+ i </td><td>- </td><td>a20,<br />
+ input mask: aaaaaaaaaaaaaaaaaaaa </td><td>Ok, Stop </td><td>-  </td></tr>
 <tr>
 <td>0114 </td><td>PinPad </td><td>- </td><td>Enter license plate + OK<br />
- i </td><td>- </td><td>dddddddddddddddddddd </td><td>Ok, Stop </td><td>-  </td></tr>
+ i </td><td>- </td><td>a12,<br />
+ input mask: aaaaaaaaaaaa </td><td>Ok, Stop </td><td>-  </td></tr>
 <tr>
 <td>0115 </td><td>PinPad </td><td>- </td><td>Enter project no + OK<br />
- i </td><td>- </td><td>dddddddddddddddddddd </td><td>Ok, Stop </td><td>-  </td></tr>
+ i </td><td>- </td><td>a20,<br />
+ input mask: aaaaaaaaaaaaaaaaaaaa </td><td>Ok, Stop </td><td>-  </td></tr>
 <tr>
 <td>0116 </td><td>- </td><td>- </td><td>Print receipt?<br />
  YES / NO<br />
@@ -667,11 +806,76 @@ PetrolCardData3 (optional) </li>
 1: Amount (n, mandatory) (e.g. 45.00) </li>
 </ul>
 </td><td>- </td><td>- </td><td>-  </td></tr>
+<tr>
+<td>0124 </td><td>InsertCard </td><td>- </td><td>Welcome,<br />
+ card please </td><td>- </td><td>- </td><td>CardReader </td><td>ActiveReaders  </td></tr>
+<tr>
+<td>0125 </td><td>PleaseWait </td><td>- </td><td>Please wait </td><td>- </td><td>- </td><td>- </td><td>-  </td></tr>
+<tr>
+<td>0126 </td><td>LastCodeTry </td><td>- </td><td>Last CODE try<br />
+ CODE + OK<br />
+ i </td><td>- </td><td>h12,<br />
+ input mask: hhhhhhhhhhhh </td><td>Ok, Stop </td><td><ul>
+<li>
+CodeCheckType </li>
+<li>
+CodeCheckKeyId (optional) </li>
+<li>
+CodeCheckData (optional) </li>
+<li>
+PetrolCardData1 (optional) </li>
+<li>
+PetrolCardData2 (optional) </li>
+<li>
+PetrolCardData3 (optional) </li>
+</ul>
+</td></tr>
+<tr>
+<td>0127 </td><td>CodeTriesLeft </td><td>- </td><td>%0 tries left<br />
+ CODE + OK<br />
+ i </td><td>0: Number of tries left (n, mandatory) </td><td>h12,<br />
+ input mask: hhhhhhhhhhhh </td><td>Ok, Stop </td><td><ul>
+<li>
+CodeCheckType </li>
+<li>
+CodeCheckKeyId (optional) </li>
+<li>
+CodeCheckData (optional) </li>
+<li>
+PetrolCardData1 (optional) </li>
+<li>
+PetrolCardData2 (optional) </li>
+<li>
+PetrolCardData3 (optional) </li>
+</ul>
+</td></tr>
+<tr>
+<td>0128 </td><td>NoCodeTriesLeft </td><td>- </td><td>No more CODE<br />
+ tries left<br />
+  </td><td>- </td><td>- </td><td>Ok, Stop </td><td>-  </td></tr>
+<tr>
+<td>0129 </td><td>CodeIncorrect </td><td>- </td><td>CODE incorrect </td><td>- </td><td>- </td><td>Ok, Stop </td><td>-  </td></tr>
+<tr>
+<td>0130 </td><td>LastTankcodeTry </td><td>- </td><td>Last try<br />
+ Tankcode + OK<br />
+ i </td><td>- </td><td>h12,<br />
+ input mask: hhhhhhhhhhhh </td><td>Ok, Stop </td><td>-  </td></tr>
+<tr>
+<td>0131 </td><td>TankcodeTriesLeft </td><td>- </td><td>%0 tries left<br />
+ Tankcode + OK<br />
+ i </td><td>0: Number of tries left (n, mandatory) </td><td>h12,<br />
+ input mask: hhhhhhhhhhhh </td><td>Ok, Stop </td><td>-  </td></tr>
+<tr>
+<td>0132 </td><td>NoTankcodeTriesLeft </td><td>- </td><td>No more Tankcode<br />
+ tries left<br />
+  </td><td>- </td><td>- </td><td>Ok, Stop </td><td>-  </td></tr>
+<tr>
+<td>0133 </td><td>TankcodeIncorrect </td><td>- </td><td>Tankcode incorrect </td><td>- </td><td>- </td><td>Ok, Stop </td><td>-  </td></tr>
 </table>
 <p><b>Note:</b> Dialog 0110 is not supposed to return the input value, but shall check the code according to the <em>CodeCheckType</em> and return the result in the <em>Reason</em> . <em>CodeOk</em> for success and <em>CodeNok</em> for failure.</p>
 <p>Postal Dialogs. The following postal dialogs are valid: </p><table class="doxtable">
 <tr>
-<th>Value </th><th>PrimaryIcon </th><th>SecondaryIcon </th><th>Text </th><th>Placeholder </th><th>InputMask </th><th>ActiveConfirmation </th><th>SigCapFlag  </th></tr>
+<th>Value </th><th>PrimaryIcon </th><th>SecondaryIcon </th><th>Text </th><th>Placeholder </th><th>Format / InputMask </th><th>ActiveConfirmation </th><th>SigCapFlag  </th></tr>
 <tr>
 <td>1000 </td><td>- </td><td>- </td><td>Keine Recharge<br />
  Karte </td><td>- </td><td>- </td><td>Ok </td><td><ul>
@@ -695,8 +899,8 @@ PetrolCardData3 (optional) </li>
 <tr>
 <td>1002 </td><td>PinPad </td><td>Card </td><td>Bitte Tel. Nummer<br />
  oder PrePaid-Karte<br />
- i </td><td>- </td><td>ddd ddd<br />
- dd dd </td><td>Ok, Stop, CardReader </td><td>0  </td></tr>
+ i </td><td>- </td><td>d10,<br />
+ input mask: ddd ddd dd dd </td><td>Ok, Stop, CardReader </td><td>0  </td></tr>
 <tr>
 <td>1003 </td><td>- </td><td>- </td><td>Tel. Nummer zu lang </td><td>- </td><td>- </td><td>Ok, Stop </td><td>0  </td></tr>
 <tr>
@@ -705,10 +909,10 @@ PetrolCardData3 (optional) </li>
 <td>1005 </td><td>PinPad </td><td>- </td><td>Bitte<br />
  Telefonnummer<br />
  eingeben<br />
- i </td><td>- </td><td>ddd ddd<br />
- dd dd </td><td>Ok, Stop </td><td>0  </td></tr>
+ i </td><td>- </td><td>d10,<br />
+ input mask: ddd ddd dd dd </td><td>Ok, Stop </td><td>0  </td></tr>
 <tr>
-<td>1006 </td><td>PleaseWait </td><td>- </td><td>Bitte warten </td><td>- </td><td>- </td><td>- </td><td>0  </td></tr>
+<td>1006 </td><td>PleaseWait </td><td>- </td><td>Bitte warten </td><td>- </td><td>- </td><td>Timeout </td><td>0  </td></tr>
 <tr>
 <td>1007 </td><td>Declined </td><td>- </td><td>Verarbeitung<br />
  fehlgeschlagen </td><td>- </td><td>- </td><td>Ok </td><td>0  </td></tr>
@@ -815,7 +1019,8 @@ PetrolCardData3 (optional) </li>
 <tr>
 <td>1018 </td><td>PinPad </td><td>- </td><td>Bitte PIN<br />
  eingeben:<br />
- i </td><td>- </td><td>hhhhhh </td><td>Ok, Stop </td><td>0  </td></tr>
+ i </td><td>- </td><td>h6,<br />
+ input mask: hhhhhh </td><td>Ok, Stop </td><td>0  </td></tr>
 </table>
 <p>Banking Dialogs. The following banking dialogs are valid: </p><table class="doxtable">
 <tr>
@@ -825,7 +1030,7 @@ PetrolCardData3 (optional) </li>
  card please </td><td>- </td><td>- </td><td>CardReader </td><td>0 </td><td>-  </td></tr>
 <tr>
 <td>1101 </td><td>PinPad </td><td>- </td><td>PIN &amp; OK<br />
- i </td><td>- </td><td>hhhhhh </td><td>Ok, Stop </td><td>0 </td><td>-  </td></tr>
+ i </td><td>- </td><td>h6, input mask: hhhhhh </td><td>Ok, Stop </td><td>0 </td><td>-  </td></tr>
 <tr>
 <td>1102 </td><td>PinPad </td><td>- </td><td>Press key<br />
  to show saldo </td><td>0: Currency 1: Amount </td><td>- </td><td>Ok, Stop </td><td>0 </td><td>-  </td></tr>
@@ -898,13 +1103,27 @@ RegularDataQueryType </li>
 <tr>
 <td>Placeholder </td><td>Placeholder element that shall be replaced by the corresponding value.  </td></tr>
 <tr>
-<td>InputMask </td><td>Defines the input format. d = digit, h = hidden digit  </td></tr>
+<td>InputMask </td><td>Defines the input format. a = alphanumeric, d = digit, h = hidden digit, l = letter  </td></tr>
 <tr>
 <td>ActiveConfirmation </td><td>The active pinpad and/or displayed button that shall be active during the dialog.  </td></tr>
 <tr>
 <td>SigCapFlag </td><td>Indicates if the dialog can be used for signature capturing.  </td></tr>
 </table>
+<table class="doxtable">
+<tr>
+<th>Format </th><th>Description  </th></tr>
+<tr>
+<td>a </td><td>Alphanumeric, digits and letters. 0-9, a-z/A-Z  </td></tr>
+<tr>
+<td>d </td><td>Numeric digits, 0-9  </td></tr>
+<tr>
+<td>h </td><td>Hidden numeric digits, 0-9. Masked with '*'.  </td></tr>
+<tr>
+<td>l </td><td>Letters, a-z/A-Z  </td></tr>
+</table>
 <p>An InputMask with "h" = hidden digit means that the input must not be displayed in plain text but must be hidden e.g. using "*" instead of plain text.</p>
+<p>The "ActiveConfirmation" describes which elements linke buttons, card reader or timeout can confirm the ongoing dialog. If there is no "ActiveConfirmation" element, the dialog immediately returns with Reason = AutoConfirm. Those dialogs are used to change the display text as defined until there is a new request started:</p>
+<p>Example: If s dialog with "ResourceId = 0125 - Please wait" is sent, the terminal immediately returns the dialog with "Reason = AutoConfirm" and changes the display to "Please wait" until a new request is started.</p>
 <p>The following groups are defined: </p><table class="doxtable">
 <tr>
 <th>Group </th><th>Description  </th></tr>
@@ -921,19 +1140,23 @@ RegularDataQueryType </li>
 </table>
 <p>Petrol Dialogs. The following petrol dialogs are valid: </p><table class="doxtable">
 <tr>
-<th>Value </th><th>PrimaryIcon </th><th>SecondaryIcon </th><th>Text </th><th>Placeholder </th><th>InputMask </th><th>ActiveConfirmation </th><th>ResourceParameter  </th></tr>
+<th>Value </th><th>PrimaryIcon </th><th>SecondaryIcon </th><th>Text </th><th>Placeholder </th><th>Format / InputMask </th><th>ActiveConfirmation </th><th>ResourceParameter  </th></tr>
 <tr>
 <td>0100 </td><td>PinPad </td><td>- </td><td>Enter mileage + OK<br />
- i </td><td>- </td><td>dddddddd </td><td>Ok, Stop </td><td>-  </td></tr>
+ i </td><td>- </td><td>d8,<br />
+ input mask: dddddddd </td><td>Ok, Stop </td><td>-  </td></tr>
 <tr>
 <td>0101 </td><td>PinPad </td><td>- </td><td>Enter your car number + OK<br />
- i </td><td>- </td><td>dddddd </td><td>Ok, Stop </td><td>-  </td></tr>
+ i </td><td>- </td><td>a8,<br />
+ input mask: aaaaaaaa </td><td>Ok, Stop </td><td>-  </td></tr>
 <tr>
 <td>0102 </td><td>PinPad </td><td>- </td><td>Enter drivercode + OK<br />
- i </td><td>- </td><td>dddddd </td><td>Ok, Stop </td><td>-  </td></tr>
+ i </td><td>- </td><td>a8,<br />
+ input mask: aaaaaaaa </td><td>Ok, Stop </td><td>-  </td></tr>
 <tr>
 <td>0103 </td><td>PinPad </td><td>- </td><td>Enter fleet ID + OK<br />
- i </td><td>- </td><td>dddddd </td><td>Ok, Stop </td><td>-  </td></tr>
+ i </td><td>- </td><td>a8,<br />
+ input mask: aaaaaaaa </td><td>Ok, Stop </td><td>-  </td></tr>
 <tr>
 <td>0104 </td><td>PinPad </td><td>- </td><td>%0 %1<br />
  Please select pump: i<br />
@@ -946,25 +1169,32 @@ RegularDataQueryType </li>
 <li>
 1: Amount (optional) </li>
 </ul>
-</td><td>dd </td><td>Ok, Stop </td><td>-  </td></tr>
+</td><td>d2,<br />
+ input mask: dd </td><td>Ok, Stop </td><td>-  </td></tr>
 <tr>
 <td>0105 </td><td>PinPad </td><td>- </td><td>Please select washing<br />
- station: i + OK </td><td>- </td><td>dd </td><td>Ok, Stop </td><td>-  </td></tr>
+ station: i + OK </td><td>- </td><td>d2,<br />
+ input mask: dd </td><td>Ok, Stop </td><td>-  </td></tr>
 <tr>
 <td>0106 </td><td>PinPad </td><td>- </td><td>Please select program:<br />
- i + OK </td><td>- </td><td>dd </td><td>Ok, Stop </td><td>-  </td></tr>
+ i + OK </td><td>- </td><td>d2,<br />
+ input mask: dd </td><td>Ok, Stop </td><td>-  </td></tr>
 <tr>
 <td>0107 </td><td>PinPad </td><td>- </td><td>Please select product:<br />
- i + OK </td><td>- </td><td>dd </td><td>Ok, Stop </td><td>-  </td></tr>
+ i + OK </td><td>- </td><td>d2,<br />
+ input mask: dd </td><td>Ok, Stop </td><td>-  </td></tr>
 <tr>
 <td>0108 </td><td>PinPad </td><td>- </td><td>Load card<br />
- Amount: i + OK </td><td>- </td><td>dd </td><td>Ok, Stop </td><td>-  </td></tr>
+ Amount: i + OK </td><td>- </td><td>d2,<br />
+ input mask: dd </td><td>Ok, Stop </td><td>-  </td></tr>
 <tr>
 <td>0109 </td><td>PinPad </td><td>- </td><td>Tankcode?<br />
- i </td><td>- </td><td>hhhhhhhhhhhh </td><td>Ok, Stop </td><td>-  </td></tr>
+ i </td><td>- </td><td>h12,<br />
+ input mask: hhhhhhhhhhhh </td><td>Ok, Stop </td><td>-  </td></tr>
 <tr>
 <td>0110 </td><td>PinPad </td><td>- </td><td>CODE &amp; OK?<br />
- c </td><td>- </td><td>hhhhhhhhhhhh </td><td>Ok, Stop </td><td><ul>
+ i </td><td>- </td><td>h12,<br />
+ input mask: hhhhhhhhhhhh </td><td>Ok, Stop </td><td><ul>
 <li>
 CodeCheckType </li>
 <li>
@@ -981,19 +1211,24 @@ PetrolCardData3 (optional) </li>
 </td></tr>
 <tr>
 <td>0111 </td><td>PinPad </td><td>- </td><td>Enter additional information + OK<br />
- i </td><td>- </td><td>dddddddddddddddddddd </td><td>Ok, Stop </td><td>-  </td></tr>
+ i </td><td>- </td><td>a20,<br />
+ input mask: aaaaaaaaaaaaaaaaaaaa </td><td>Ok, Stop </td><td>-  </td></tr>
 <tr>
 <td>0112 </td><td>PinPad </td><td>- </td><td>Enter cost center + OK<br />
- i </td><td>- </td><td>dddddddddddddddddddd </td><td>Ok, Stop </td><td>-  </td></tr>
+ i </td><td>- </td><td>a20,<br />
+ input mask: aaaaaaaaaaaaaaaaaaaa </td><td>Ok, Stop </td><td>-  </td></tr>
 <tr>
 <td>0113 </td><td>PinPad </td><td>- </td><td>Enter employee no + OK<br />
- i </td><td>- </td><td>dddddddddddddddddddd </td><td>Ok, Stop </td><td>-  </td></tr>
+ i </td><td>- </td><td>a20,<br />
+ input mask: aaaaaaaaaaaaaaaaaaaa </td><td>Ok, Stop </td><td>-  </td></tr>
 <tr>
 <td>0114 </td><td>PinPad </td><td>- </td><td>Enter license plate + OK<br />
- i </td><td>- </td><td>dddddddddddddddddddd </td><td>Ok, Stop </td><td>-  </td></tr>
+ i </td><td>- </td><td>a12,<br />
+ input mask: aaaaaaaaaaaa </td><td>Ok, Stop </td><td>-  </td></tr>
 <tr>
 <td>0115 </td><td>PinPad </td><td>- </td><td>Enter project no + OK<br />
- i </td><td>- </td><td>dddddddddddddddddddd </td><td>Ok, Stop </td><td>-  </td></tr>
+ i </td><td>- </td><td>a20,<br />
+ input mask: aaaaaaaaaaaaaaaaaaaa </td><td>Ok, Stop </td><td>-  </td></tr>
 <tr>
 <td>0116 </td><td>- </td><td>- </td><td>Print receipt?<br />
  YES / NO<br />
@@ -1027,11 +1262,76 @@ PetrolCardData3 (optional) </li>
 1: Amount (n, mandatory) (e.g. 45.00) </li>
 </ul>
 </td><td>- </td><td>- </td><td>-  </td></tr>
+<tr>
+<td>0124 </td><td>InsertCard </td><td>- </td><td>Welcome,<br />
+ card please </td><td>- </td><td>- </td><td>CardReader </td><td>ActiveReaders  </td></tr>
+<tr>
+<td>0125 </td><td>PleaseWait </td><td>- </td><td>Please wait </td><td>- </td><td>- </td><td>- </td><td>-  </td></tr>
+<tr>
+<td>0126 </td><td>LastCodeTry </td><td>- </td><td>Last CODE try<br />
+ CODE + OK<br />
+ i </td><td>- </td><td>h12,<br />
+ input mask: hhhhhhhhhhhh </td><td>Ok, Stop </td><td><ul>
+<li>
+CodeCheckType </li>
+<li>
+CodeCheckKeyId (optional) </li>
+<li>
+CodeCheckData (optional) </li>
+<li>
+PetrolCardData1 (optional) </li>
+<li>
+PetrolCardData2 (optional) </li>
+<li>
+PetrolCardData3 (optional) </li>
+</ul>
+</td></tr>
+<tr>
+<td>0127 </td><td>CodeTriesLeft </td><td>- </td><td>%0 tries left<br />
+ CODE + OK<br />
+ i </td><td>0: Number of tries left (n, mandatory) </td><td>h12,<br />
+ input mask: hhhhhhhhhhhh </td><td>Ok, Stop </td><td><ul>
+<li>
+CodeCheckType </li>
+<li>
+CodeCheckKeyId (optional) </li>
+<li>
+CodeCheckData (optional) </li>
+<li>
+PetrolCardData1 (optional) </li>
+<li>
+PetrolCardData2 (optional) </li>
+<li>
+PetrolCardData3 (optional) </li>
+</ul>
+</td></tr>
+<tr>
+<td>0128 </td><td>NoCodeTriesLeft </td><td>- </td><td>No more CODE<br />
+ tries left<br />
+  </td><td>- </td><td>- </td><td>Ok, Stop </td><td>-  </td></tr>
+<tr>
+<td>0129 </td><td>CodeIncorrect </td><td>- </td><td>CODE incorrect </td><td>- </td><td>- </td><td>Ok, Stop </td><td>-  </td></tr>
+<tr>
+<td>0130 </td><td>LastTankcodeTry </td><td>- </td><td>Last try<br />
+ Tankcode + OK<br />
+ i </td><td>- </td><td>h12,<br />
+ input mask: hhhhhhhhhhhh </td><td>Ok, Stop </td><td>-  </td></tr>
+<tr>
+<td>0131 </td><td>TankcodeTriesLeft </td><td>- </td><td>%0 tries left<br />
+ Tankcode + OK<br />
+ i </td><td>0: Number of tries left (n, mandatory) </td><td>h12,<br />
+ input mask: hhhhhhhhhhhh </td><td>Ok, Stop </td><td>-  </td></tr>
+<tr>
+<td>0132 </td><td>NoTankcodeTriesLeft </td><td>- </td><td>No more Tankcode<br />
+ tries left<br />
+  </td><td>- </td><td>- </td><td>Ok, Stop </td><td>-  </td></tr>
+<tr>
+<td>0133 </td><td>TankcodeIncorrect </td><td>- </td><td>Tankcode incorrect </td><td>- </td><td>- </td><td>Ok, Stop </td><td>-  </td></tr>
 </table>
 <p><b>Note:</b> Dialog 0110 is not supposed to return the input value, but shall check the code according to the <em>CodeCheckType</em> and return the result in the <em>Reason</em> . <em>CodeOk</em> for success and <em>CodeNok</em> for failure.</p>
 <p>Postal Dialogs. The following postal dialogs are valid: </p><table class="doxtable">
 <tr>
-<th>Value </th><th>PrimaryIcon </th><th>SecondaryIcon </th><th>Text </th><th>Placeholder </th><th>InputMask </th><th>ActiveConfirmation </th><th>SigCapFlag  </th></tr>
+<th>Value </th><th>PrimaryIcon </th><th>SecondaryIcon </th><th>Text </th><th>Placeholder </th><th>Format / InputMask </th><th>ActiveConfirmation </th><th>SigCapFlag  </th></tr>
 <tr>
 <td>1000 </td><td>- </td><td>- </td><td>Keine Recharge<br />
  Karte </td><td>- </td><td>- </td><td>Ok </td><td><ul>
@@ -1055,8 +1355,8 @@ PetrolCardData3 (optional) </li>
 <tr>
 <td>1002 </td><td>PinPad </td><td>Card </td><td>Bitte Tel. Nummer<br />
  oder PrePaid-Karte<br />
- i </td><td>- </td><td>ddd ddd<br />
- dd dd </td><td>Ok, Stop, CardReader </td><td>0  </td></tr>
+ i </td><td>- </td><td>d10,<br />
+ input mask: ddd ddd dd dd </td><td>Ok, Stop, CardReader </td><td>0  </td></tr>
 <tr>
 <td>1003 </td><td>- </td><td>- </td><td>Tel. Nummer zu lang </td><td>- </td><td>- </td><td>Ok, Stop </td><td>0  </td></tr>
 <tr>
@@ -1065,10 +1365,10 @@ PetrolCardData3 (optional) </li>
 <td>1005 </td><td>PinPad </td><td>- </td><td>Bitte<br />
  Telefonnummer<br />
  eingeben<br />
- i </td><td>- </td><td>ddd ddd<br />
- dd dd </td><td>Ok, Stop </td><td>0  </td></tr>
+ i </td><td>- </td><td>d10,<br />
+ input mask: ddd ddd dd dd </td><td>Ok, Stop </td><td>0  </td></tr>
 <tr>
-<td>1006 </td><td>PleaseWait </td><td>- </td><td>Bitte warten </td><td>- </td><td>- </td><td>- </td><td>0  </td></tr>
+<td>1006 </td><td>PleaseWait </td><td>- </td><td>Bitte warten </td><td>- </td><td>- </td><td>Timeout </td><td>0  </td></tr>
 <tr>
 <td>1007 </td><td>Declined </td><td>- </td><td>Verarbeitung<br />
  fehlgeschlagen </td><td>- </td><td>- </td><td>Ok </td><td>0  </td></tr>
@@ -1175,7 +1475,8 @@ PetrolCardData3 (optional) </li>
 <tr>
 <td>1018 </td><td>PinPad </td><td>- </td><td>Bitte PIN<br />
  eingeben:<br />
- i </td><td>- </td><td>hhhhhh </td><td>Ok, Stop </td><td>0  </td></tr>
+ i </td><td>- </td><td>h6,<br />
+ input mask: hhhhhh </td><td>Ok, Stop </td><td>0  </td></tr>
 </table>
 <p>Banking Dialogs. The following banking dialogs are valid: </p><table class="doxtable">
 <tr>
@@ -1185,7 +1486,7 @@ PetrolCardData3 (optional) </li>
  card please </td><td>- </td><td>- </td><td>CardReader </td><td>0 </td><td>-  </td></tr>
 <tr>
 <td>1101 </td><td>PinPad </td><td>- </td><td>PIN &amp; OK<br />
- i </td><td>- </td><td>hhhhhh </td><td>Ok, Stop </td><td>0 </td><td>-  </td></tr>
+ i </td><td>- </td><td>h6, input mask: hhhhhh </td><td>Ok, Stop </td><td>0 </td><td>-  </td></tr>
 <tr>
 <td>1102 </td><td>PinPad </td><td>- </td><td>Press key<br />
  to show saldo </td><td>0: Currency 1: Amount </td><td>- </td><td>Ok, Stop </td><td>0 </td><td>-  </td></tr>
@@ -1235,13 +1536,13 @@ RegularDataQueryType </li>
  Input Mask: dd'ddd'ddd </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a334bce2189c86641d9e5b8aa2dbceec9af43686e51d33a9518d0d1646702d94d3"></a>ta_c_rid_enter_car_number&#160;</td><td class="fielddoc"><p><b>Enter Car Number</b> | Petrol dialogs<br />
- Input Mask: ddd'ddd </p>
+ Input Mask: aaaaaaaa </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a334bce2189c86641d9e5b8aa2dbceec9a4e0433728afa94dd63c1e6320dd587b7"></a>ta_c_rid_enter_driver_code&#160;</td><td class="fielddoc"><p><b>Enter Driver Code</b> | Petrol dialogs<br />
- Input Mask: ddd'ddd </p>
+ Input Mask: aaaaaaaa </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a334bce2189c86641d9e5b8aa2dbceec9a936ec6434ecf8c89d182aa99fc910417"></a>ta_c_rid_enter_fleet_id&#160;</td><td class="fielddoc"><p><b>Enter Fleet ID</b> | Petrol dialogs<br />
- Input Mask: ddd'ddd </p>
+ Input Mask: aaaaaaaa </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a334bce2189c86641d9e5b8aa2dbceec9a06e3f4f4248cb02aae5dea3c903cbb77"></a>ta_c_rid_select_pump&#160;</td><td class="fielddoc"><p><b>Select Pump</b> | Petrol dialogs<br />
  Input Mask: dd<br />
@@ -1271,19 +1572,19 @@ RegularDataQueryType </li>
  Input Mask: hhhhhhhhhhhh </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a334bce2189c86641d9e5b8aa2dbceec9aa473a98d00de75b36db76e7db64d6900"></a>ta_c_rid_enter_additional_information&#160;</td><td class="fielddoc"><p><b>Enter Additional Information</b> | Petrol dialogs<br />
- Input Mask: dddddddddddddddddddd </p>
+ Input Mask: aaaaaaaaaaaaaaaaaaaa </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a334bce2189c86641d9e5b8aa2dbceec9a937134c524a9cf343c6e3392882befba"></a>ta_c_rid_enter_cost_center&#160;</td><td class="fielddoc"><p><b>Enter Cost Center</b> | Petrol dialogs<br />
- Input Mask: dddddddddddddddddddd </p>
+ Input Mask: aaaaaaaaaaaaaaaaaaaa </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a334bce2189c86641d9e5b8aa2dbceec9a58a256c2468377c0fcd84ee11f9f74e9"></a>ta_c_rid_enter_employee_number&#160;</td><td class="fielddoc"><p><b>Enter Employee Number</b> | Petrol dialogs<br />
- Input Mask: dddddddddddddddddddd </p>
+ Input Mask: aaaaaaaaaaaaaaaaaaaa </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a334bce2189c86641d9e5b8aa2dbceec9a8cc25cb0bac30395ab85975c72c7a2f6"></a>ta_c_rid_enter_license_plate&#160;</td><td class="fielddoc"><p><b>Enter License Plate</b> | Petrol dialogs<br />
  Input Mask: dddddddddddddddddddd </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a334bce2189c86641d9e5b8aa2dbceec9ae72c8fd750b20657391c8cbb98674758"></a>ta_c_rid_enter_project_number&#160;</td><td class="fielddoc"><p><b>Enter Project Number</b> | Petrol dialogs<br />
- Input Mask: dddddddddddddddddddd </p>
+ Input Mask: aaaaaaaaaaaaaaaaaaaa </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a334bce2189c86641d9e5b8aa2dbceec9a76ef0151eeed080d0de5d0597ebf114e"></a>ta_c_rid_petrol_print_receipt&#160;</td><td class="fielddoc"><p><b>Banking Print Receipt</b> | Petrol dialogs </p>
 </td></tr>
@@ -1306,6 +1607,36 @@ RegularDataQueryType </li>
 </li>
 <li>1: Amount </li>
 </ul>
+</td></tr>
+<tr><td class="fieldname"><a id="a334bce2189c86641d9e5b8aa2dbceec9ad143d6460f48eb658f25c829874cd6f9"></a>ta_c_rid_petrol_insert_card&#160;</td><td class="fielddoc"><p><b>Petrol Insert card</b> | Petrol dialogs </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a334bce2189c86641d9e5b8aa2dbceec9a596a6158601b006fd8034810cdad4001"></a>ta_c_rid_petrol_please_wait&#160;</td><td class="fielddoc"><p><b>Petrol Please wait</b> | Petrol dialogs </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a334bce2189c86641d9e5b8aa2dbceec9a787681c99c849c890bb140b2c7c21823"></a>ta_c_rid_petrol_last_code_try&#160;</td><td class="fielddoc"><p>Last CODE try<br />
+ CODE + OK<br />
+ i </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a334bce2189c86641d9e5b8aa2dbceec9ac8dd4b5fb4e9992db8d51000c0622bcc"></a>ta_c_rid_petrol_code_tries_left&#160;</td><td class="fielddoc"><p>%0 tries left<br />
+ CODE + OK<br />
+ i </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a334bce2189c86641d9e5b8aa2dbceec9a3abffafe458f74268ee7df0249e8a0c4"></a>ta_c_rid_petrol_no_code_tries_left&#160;</td><td class="fielddoc"><p>No more CODE<br />
+ tries left </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a334bce2189c86641d9e5b8aa2dbceec9afece7f98169f8b4215a1c516777f424f"></a>ta_c_rid_petrol_code_incorrect&#160;</td><td class="fielddoc"><p>CODE incorrect </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a334bce2189c86641d9e5b8aa2dbceec9a3018faeee28536be1d08e3d63c021a11"></a>ta_c_rid_petrol_last_tankcode_try&#160;</td><td class="fielddoc"><p>Last try<br />
+ Tankcode + OK<br />
+ i </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a334bce2189c86641d9e5b8aa2dbceec9abfd93ac544b73cb1c8bbf710dd640d3d"></a>ta_c_rid_petrol_tankcode_tries_left&#160;</td><td class="fielddoc"><p>%0 tries left<br />
+ Tankcode + OK<br />
+ i </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a334bce2189c86641d9e5b8aa2dbceec9ac13a31cbff4d4d0f7d7793f2c9a80655"></a>ta_c_rid_petrol_no_tankcode_tries_left&#160;</td><td class="fielddoc"><p>No more Tankcode<br />
+ tries left </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a334bce2189c86641d9e5b8aa2dbceec9a90e03d24f75e333f0ce5570080a2f0a0"></a>ta_c_rid_petrol_tankcode_incorrect&#160;</td><td class="fielddoc"><p>Tankcode incorrect </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a334bce2189c86641d9e5b8aa2dbceec9a4f4bc41f35d20046ac5e8e9c8524209f"></a>ta_c_rid_no_recharge_card&#160;</td><td class="fielddoc"><p><b>No Recharge Card</b> | Postal dialogs </p>
 </td></tr>

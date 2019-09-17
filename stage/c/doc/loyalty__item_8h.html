@@ -130,6 +130,12 @@ Functions</h2></td></tr>
 <tr class="memitem:aeca0cf178896a0ecea96fd9bc03bbb4c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="result__code_8h.html#ae860ee870a289833a24a586ba0c24975">ta_e_result_code_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="loyalty__item_8h.html#aeca0cf178896a0ecea96fd9bc03bbb4c">ta_loyalty_coupon_get_loyalty_coupons</a> (<a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a> item, <a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a> *loyalty_coupons)</td></tr>
 <tr class="memdesc:aeca0cf178896a0ecea96fd9bc03bbb4c"><td class="mdescLeft">&#160;</td><td class="mdescRight">List of loyalty coupons.  <a href="#aeca0cf178896a0ecea96fd9bc03bbb4c">More...</a><br /></td></tr>
 <tr class="separator:aeca0cf178896a0ecea96fd9bc03bbb4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00a84263b7f48a95b844dfaf99368987"><td class="memItemLeft" align="right" valign="top"><a class="el" href="result__code_8h.html#ae860ee870a289833a24a586ba0c24975">ta_e_result_code_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="loyalty__item_8h.html#a00a84263b7f48a95b844dfaf99368987">ta_loyalty_item_get_display_product_info</a> (<a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a> item, <a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a> *display_product_info)</td></tr>
+<tr class="memdesc:a00a84263b7f48a95b844dfaf99368987"><td class="mdescLeft">&#160;</td><td class="mdescRight">Display product info.  <a href="#a00a84263b7f48a95b844dfaf99368987">More...</a><br /></td></tr>
+<tr class="separator:a00a84263b7f48a95b844dfaf99368987"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9813477b6a8e4efaef988a389d98b5ff"><td class="memItemLeft" align="right" valign="top"><a class="el" href="result__code_8h.html#ae860ee870a289833a24a586ba0c24975">ta_e_result_code_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="loyalty__item_8h.html#a9813477b6a8e4efaef988a389d98b5ff">ta_loyalty_item_set_display_product_info</a> (<a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a> item, <a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a> display_product_info)</td></tr>
+<tr class="memdesc:a9813477b6a8e4efaef988a389d98b5ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set display product info.  <a href="#a9813477b6a8e4efaef988a389d98b5ff">More...</a><br /></td></tr>
+<tr class="separator:a9813477b6a8e4efaef988a389d98b5ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="aeca0cf178896a0ecea96fd9bc03bbb4c"></a>
@@ -397,6 +403,52 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a00a84263b7f48a95b844dfaf99368987"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a00a84263b7f48a95b844dfaf99368987">&#9670;&nbsp;</a></span>ta_loyalty_item_get_display_product_info()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="result__code_8h.html#ae860ee870a289833a24a586ba0c24975">ta_e_result_code_t</a> ta_loyalty_item_get_display_product_info </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a>&#160;</td>
+          <td class="paramname"><em>item</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a> *&#160;</td>
+          <td class="paramname"><em>display_product_info</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Display product info. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">item</td><td>Object instance of type <a class="el" href="loyalty__item_8h.html">loyalty_item</a>. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">info</td><td>Pointer to variable to write object instance to. Object instance is of type <a class="el" href="display__product__info_8h.html">display_product_info</a> and is not retained. Object instance is <em>ta_invalid_object</em> if value is not set in <em>loyalty_item</em>.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">ta_c_rc_ok</td><td>Object instance written to <em>auth_result</em>. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>item</em> is <em>ta_invalid_object</em>. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>item</em> is not of type <a class="el" href="loyalty__item_8h.html">loyalty_item</a>. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>info</em> is not <em>null-pointer</em>. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a5ae1007eb3afb9aec90ece2c4bb246b5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5ae1007eb3afb9aec90ece2c4bb246b5">&#9670;&nbsp;</a></span>ta_loyalty_item_get_item_id()</h2>
 
@@ -621,6 +673,52 @@ Functions</h2></td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>item</em> is <em>ta_invalid_object</em>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>item</em> is not of type <a class="el" href="loyalty__item_8h.html">loyalty_item</a>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>amount_total</em> is not <em>ta_invalid_object</em> and is not of type <a class="el" href="amount_8h.html">amount</a>. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a9813477b6a8e4efaef988a389d98b5ff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9813477b6a8e4efaef988a389d98b5ff">&#9670;&nbsp;</a></span>ta_loyalty_item_set_display_product_info()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="result__code_8h.html#ae860ee870a289833a24a586ba0c24975">ta_e_result_code_t</a> ta_loyalty_item_set_display_product_info </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a>&#160;</td>
+          <td class="paramname"><em>item</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a>&#160;</td>
+          <td class="paramname"><em>display_product_info</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set display product info. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">item</td><td>Object instance of type <a class="el" href="loyalty__item_8h.html">loyalty_item</a>. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">info</td><td>Object instance to set. Object instance can be <em>ta_invalid_object</em> to clear the value in <em>item</em>. If object instance is not ta_invalid_object is has to be of type <a class="el" href="display__product__info_8h.html">display_product_info</a>.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">ta_c_rc_ok</td><td>Object instance assigned to <em>item</em>. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>item</em> is <em>ta_invalid_object</em>. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>item</em> is not of type <a class="el" href="loyalty__item_8h.html">loyalty_item</a>. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>info</em> is not <em>ta_invalid_object</em> and is not of type <a class="el" href="display__product__info_8h.html">display_product_info</a>. </td></tr>
   </table>
   </dd>
 </dl>

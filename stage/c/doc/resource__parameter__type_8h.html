@@ -107,7 +107,8 @@ Enumerations</h2></td></tr>
 <a class="el" href="resource__parameter__type_8h.html#a24c84814e0ce6a320ff3bd3826a297fbaa7e56aed5c3a8b464b3485a6fd8cc05e">ta_c_rpt_petrol_card_data1</a>, 
 <a class="el" href="resource__parameter__type_8h.html#a24c84814e0ce6a320ff3bd3826a297fbafb7b8c6713d6a3cea383a849f3988b47">ta_c_rpt_petrol_card_data2</a>, 
 <br />
-&#160;&#160;<a class="el" href="resource__parameter__type_8h.html#a24c84814e0ce6a320ff3bd3826a297fbacf33b6be20714c5e787ba88d5c3bef55">ta_c_rpt_petrol_card_data3</a>
+&#160;&#160;<a class="el" href="resource__parameter__type_8h.html#a24c84814e0ce6a320ff3bd3826a297fbacf33b6be20714c5e787ba88d5c3bef55">ta_c_rpt_petrol_card_data3</a>, 
+<a class="el" href="resource__parameter__type_8h.html#a24c84814e0ce6a320ff3bd3826a297fba66d3c65752825af467f4441cf27ede3a">ta_c_rpt_active_readers</a>
 <br />
  }</td></tr>
 <tr class="separator:a24c84814e0ce6a320ff3bd3826a297fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -230,6 +231,30 @@ StfkV4: Version 4 regular data query type in Austria. </li>
 <p>Specification: dialog.</p>
 </td></tr>
 <tr><td class="fieldname"><a id="a24c84814e0ce6a320ff3bd3826a297fbacf33b6be20714c5e787ba88d5c3bef55"></a>ta_c_rpt_petrol_card_data3&#160;</td><td class="fielddoc"><p>Track 3 of a petrol card. This value is to be encoded as a ascii string.</p>
+<p>Specification: dialog.</p>
+</td></tr>
+<tr><td class="fieldname"><a id="a24c84814e0ce6a320ff3bd3826a297fba66d3c65752825af467f4441cf27ede3a"></a>ta_c_rpt_active_readers&#160;</td><td class="fielddoc"><p>Defines which card readers are active during the dialog. This is a bitmap. Value 0 = reader not active, 1 = reader active.<br />
+ Example 1: Only magstripe reader active = 00000001 = 01 hex<br />
+ Example 2: Only contactless reader active = 00000100 = 04h<br />
+ Example 3: Magstripe, chip and contactless reader active = 00000111 = 07h </p><ul>
+<li>
+Bit 1: Magstripe reader </li>
+<li>
+Bit 2: Chip reader </li>
+<li>
+Bit 3: Contactless reader </li>
+<li>
+Bit 4: RFU </li>
+<li>
+Bit 5: RFU </li>
+<li>
+Bit 6: RFU </li>
+<li>
+Bit 7: RFU </li>
+<li>
+Bit 8: RFU </li>
+</ul>
+<p>This value is to be transmitted hex encoded. Example: For a value of 00000111 (Magstripe, Chip and Ctless active), the value '07' hex must be transmitted.</p>
 <p>Specification: dialog.</p>
 </td></tr>
 </table>

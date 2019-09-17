@@ -50,6 +50,7 @@ var result__code_8h =
       [ "ta_c_rc_card_invalid_data", "result__code_8h.html#aebaf00d1ceef4b827866ca9de0bd3320a4ddfb429b89e86159aa81d27101f50f2", null ],
       [ "ta_c_rc_card_function_not_found", "result__code_8h.html#aebaf00d1ceef4b827866ca9de0bd3320a588b9be10ba36c6f354495ff4bec473a", null ],
       [ "ta_c_rc_card_function_not_allowed", "result__code_8h.html#aebaf00d1ceef4b827866ca9de0bd3320adef76a07261fbd871090001f321aeab3", null ],
+      [ "ta_c_rc_card_unexpectedly_present_in_reader", "result__code_8h.html#aebaf00d1ceef4b827866ca9de0bd3320afead6796e56e3040461043136a3bb5d3", null ],
       [ "ta_c_rc_pin_pad_security_error", "result__code_8h.html#aebaf00d1ceef4b827866ca9de0bd3320a8151603d48b89113e2ffddc91769b43b", null ],
       [ "ta_c_rc_pin_pad_tampered", "result__code_8h.html#aebaf00d1ceef4b827866ca9de0bd3320a2a7865883c5baf9d2a52d2daa0f3b47a", null ],
       [ "ta_c_rc_pin_pad_keys_lost", "result__code_8h.html#aebaf00d1ceef4b827866ca9de0bd3320a11e63c67e9ab926319e5df8dd8fc521a", null ],
@@ -118,6 +119,7 @@ var result__code_8h =
       [ "ta_c_rc_declined_capture_card_order_to_client", "result__code_8h.html#aebaf00d1ceef4b827866ca9de0bd3320a6f80f5a3060907d6bd9430fcbc72592b", null ],
       [ "ta_c_rc_declined_capture_card_timeout_removing_card", "result__code_8h.html#aebaf00d1ceef4b827866ca9de0bd3320a58caa5c89b17908faf21b23c7b9074c6", null ],
       [ "ta_c_rc_declined_not_supported", "result__code_8h.html#aebaf00d1ceef4b827866ca9de0bd3320a113cce68fd45af766cbf7ee763af6cad", null ],
+      [ "ta_c_rc_value_out_of_range_in_this_context", "result__code_8h.html#aebaf00d1ceef4b827866ca9de0bd3320a153dbb4bcdddf6f6ab45ad9cccce55e0", null ],
       [ "ta_c_rc_invalid_argument", "result__code_8h.html#aebaf00d1ceef4b827866ca9de0bd3320a306acc157474b36c57faa559c710d8c3", null ],
       [ "ta_c_rc_out_of_memory", "result__code_8h.html#aebaf00d1ceef4b827866ca9de0bd3320a1895fe80e9772f70ef54177746bfed4a", null ],
       [ "ta_c_rc_system_error", "result__code_8h.html#aebaf00d1ceef4b827866ca9de0bd3320a58db8236054739cfd49c849b0c16e1be", null ]

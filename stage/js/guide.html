@@ -32,7 +32,7 @@
                 <a class="lang_java" href="../java/guide.html">Java</a>
               </li>
               <li>
-                <span style="color: gray">.NET</span>
+                <a class="lang_cs" href="../cs/guide.html">.NET</a>
               </li>
               <li>
                 <a class="lang_swift" href="../swift/guide.html">Swift</a>
@@ -59,7 +59,7 @@
       </nav>
 
       <div id="titleFloating">
-          <div><a href="simple.html" id="linkOtherGuide">go to Simple Implementation Guide</a></div>
+          <div><a class="hide_c hide_swift hide_cs" href="simple.html" id="linkOtherGuide">go to Simple Implementation Guide</a></div>
           <div id="lblDiv">Detailed Implementation Guide</div>
       </div>
 
@@ -121,12 +121,11 @@
         <div class="row"><div class="col-md-6"></div></div><section><h2><a id="guides" name="guides">&#160;</a>Guides Configuration</h2><div class="row"><div class="col-md-6">
                     <p>There are various
                         <code><a href="doc/timapi.constants.Guides.html">Guides</a></code>
-                        covering different use case scenarios. The guide <code><a href="doc/timapi.constants.Guides.html#.retail">Retail</a></code> is the basic guide and is activated as
-                        default. With
-                        <code><a href="doc/timapi.TerminalSettings.html#guides">guides</a></code>
-                        the guides can be configured. Important: the configuration needs to include all desired guides
+                        covering different use case scenarios. The guide <code><a href="doc/timapi.constants.Guides.html#.retail">Retail</a></code>is the basic guide and is activated as
+                        default. With <code><a href="doc/timapi.TerminalSettings.html#guides">guides</a></code>
+                        the guides can be configured. <span excl="cs">Important: the configuration needs to include all desired guides
                         (including
-                        the retail guide).
+                        the retail guide).</span>
                     </p>
 
                 </div><div class="col-md-6">
@@ -175,11 +174,14 @@ terminal.dispose();</code></pre>
                                 create <strong>mandatory</strong>
                                 list of <code><a href="doc/timapi.EcrInfo.html">EcrInfo</a></code> and add with <code><a href="doc/timapi.Terminal.html#addEcrData">addEcrData</a></code>
                             </li>
-                            <li>create list of <code><a href="doc/timapi.PrintOption.html">PrintOptions</a></code> and set with <code><a href="doc/timapi.Terminal.html#setPrintOptions">setPrintOptions</a></code>
+                            <li>
+                                create list of 
+                                <code><a href="doc/timapi.PrintOption.html">PrintOptions</a></code>
+                                and set
+                                <span excl="cs">with</span> <code><a href="doc/timapi.Terminal.html#setPrintOptions">setPrintOptions</a></code>
                             </li>
-                            <li><code><a href="doc/timapi.Terminal.html#addListener">addListeners</a></code>
-                            </li>
-                        </ul>
+                            <li excl="cs"><code><a href="doc/timapi.Terminal.html#addListener">addListeners</a></code>
+                            </li> </ul>
                     </li>
                     <li>
                         <code><a href="doc/timapi.Terminal.html#connectAsync">Connect</a></code>
@@ -590,7 +592,7 @@ terminal.addListener(myListener);
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
+                    <tr excl="cs">
                         <td>
                             <code class="completedMethod"><a class="completedMethod" href="doc/timapi.DefaultTerminalListener.html#requestCompleted">requestCompleted</a></code>
                         </td>

@@ -32,7 +32,7 @@
                 <a class="lang_java" href="../java/guide.html">Java</a>
               </li>
               <li>
-                <span style="color: gray">.NET</span>
+                <a class="lang_cs" href="../cs/guide.html">.NET</a>
               </li>
               <li>
                 <a class="lang_swift" href="../swift/guide.html">Swift</a>
@@ -59,7 +59,7 @@
       </nav>
 
       <div id="titleFloating">
-          <div><a href="simple.html" id="linkOtherGuide">go to Simple Implementation Guide</a></div>
+          <div><a class="hide_c hide_swift hide_cs" href="simple.html" id="linkOtherGuide">go to Simple Implementation Guide</a></div>
           <div id="lblDiv">Detailed Implementation Guide</div>
       </div>
 
@@ -141,12 +141,11 @@
         <div class="row"><div class="col-md-6"></div></div><section><h2><a id="guides" name="guides">&#160;</a>Guides Configuration</h2><div class="row"><div class="col-md-6">
                     <p>There are various
                         <code><a href="doc/index.html?com/six/timapi/constants/Guides.html">Guides</a></code>
-                        covering different use case scenarios. The guide <code><a href="doc/index.html?com/six/timapi/constants/Guides.html#RETAIL">Retail</a></code> is the basic guide and is activated as
-                        default. With
-                        <code><a href="doc/index.html?com/six/timapi/TerminalSettings.html#setGuides-java.util.EnumSet-">setGuides</a></code>
-                        the guides can be configured. Important: the configuration needs to include all desired guides
+                        covering different use case scenarios. The guide <code><a href="doc/index.html?com/six/timapi/constants/Guides.html#RETAIL">Retail</a></code>is the basic guide and is activated as
+                        default. With <code><a href="doc/index.html?com/six/timapi/TerminalSettings.html#setGuides-java.util.EnumSet-">setGuides</a></code>
+                        the guides can be configured. <span excl="cs">Important: the configuration needs to include all desired guides
                         (including
-                        the retail guide).
+                        the retail guide).</span>
                     </p>
 
                 </div><div class="col-md-6">
@@ -388,11 +387,14 @@ SecuredConnection = On</code></pre>
                                 create <strong>mandatory</strong>
                                 list of <code><a href="doc/index.html?com/six/timapi/EcrInfo.html">EcrInfo</a></code> and add with <code><a href="doc/index.html?com/six/timapi/Terminal.html#addEcrData-com.six.timapi.EcrInfo-">addEcrData</a></code>
                             </li>
-                            <li>create list of <code><a href="doc/index.html?com/six/timapi/PrintOption.html">PrintOptions</a></code> and set with <code><a href="doc/index.html?com/six/timapi/Terminal.html#setPrintOptions-java.util.List-">setPrintOptions</a></code>
+                            <li>
+                                create list of 
+                                <code><a href="doc/index.html?com/six/timapi/PrintOption.html">PrintOptions</a></code>
+                                and set
+                                <span excl="cs">with</span> <code><a href="doc/index.html?com/six/timapi/Terminal.html#setPrintOptions-java.util.List-">setPrintOptions</a></code>
                             </li>
-                            <li><code><a href="doc/index.html?com/six/timapi/Terminal.html#addListener-com.six.timapi.TerminalListener-">addListeners</a></code>
-                            </li>
-                        </ul>
+                            <li excl="cs"><code><a href="doc/index.html?com/six/timapi/Terminal.html#addListener-com.six.timapi.TerminalListener-">addListeners</a></code>
+                            </li> </ul>
                     </li>
                     <li>
                         <code><a href="doc/index.html?com/six/timapi/Terminal.html#connect--">Connect</a></code>
@@ -467,13 +469,12 @@ SecuredConnection = On</code></pre>
         </div></div></section>
 
         <div class="row"><div class="col-md-6"></div></div><section class="filterGuides guidePetrol"><h2><a id="petrolUseCase" name="petrolUseCase">&#160;</a>Guide Petrol Use Cases</h2><div class="row"><div class="col-md-6"><p>Petrol functionality adds a number of
- 	    <a href="#petrolFunc">additional methods</a>,
+ 	    <a href="#petrolFunc">additional methods and notifiers</a>,
  			<code><a href="doc/index.html?com/six/timapi/constants/TransactionType.html">transaction types</a></code>,
  			containers (<code><a href="doc/index.html?com/six/timapi/TransactionResponse.html#getAdditionalInfo--">AdditionalInfoList</a></code>,
- 			<code><a href="doc/index.html?com/six/timapi/Basket.html">Basket</a></code>) and
- 			container content (<code><a href="doc/index.html?com/six/timapi/constants/ProcessingDisposition.html">ProcessingDisposition</a></code>)
- 			<a href="#petrolAddMethods">notifiers</a> and
- 			<a href="#petrolFlows">flows</a>
+ 			<code><a href="doc/index.html?com/six/timapi/Basket.html">Basket</a></code>)
+			 , container content (<code><a href="doc/index.html?com/six/timapi/constants/ProcessingDisposition.html">ProcessingDisposition</a></code>)
+ 			and <a href="#petrolFlows">flows</a>
  			tailored to the needs at petrol stations.</p>
 
       <p>Petrol has the following basic use cases:</p>
@@ -669,9 +670,9 @@ terminal.transactionAsync(TransactionType.PURCHASE, request);
         </div></div></section>
   <div class="row"><div class="col-md-6"></div></div></section>
         <div class="row"><div class="col-md-6"></div></div><section class="filterGuides guideBanking"><h2><a id="bankingUseCase" name="bankingUseCase">&#160;</a>Guide Banking Use Cases</h2><div class="row"><div class="col-md-6"><p>Banking functionality adds an
- 	    <a href="#bankingFunc">additional method</a>, 
+ 	    <a href="#bankingFunc">additional methods and notifiers</a>, 
  			<code><a href="doc/index.html?com/six/timapi/constants/TransactionType.html">banking transaction types</a></code>,
- 			<a href="#bakingAddMethods">notifiers</a> and 
+ 	    and 
  			<a href="#bankingFlows">flows</a> 
  			tailored to the needs of banking use cases.
  		</p>
@@ -1315,7 +1316,7 @@ terminal.addListener(new MyTerminalListener());
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
+                    <tr excl="cs">
                         <td>
                             <code class="completedMethod"><a class="completedMethod" href="doc/index.html?com/six/timapi/DefaultTerminalListener.html#requestCompleted-com.six.timapi.TimEvent-java.lang.Object-">requestCompleted</a></code>
                         </td>
@@ -1428,11 +1429,11 @@ terminal.addListener(new MyTerminalListener());
     <div class="row"><div class="col-md-6"></div></div></section> 
 
     <section><h1><a id="logging" name="logging">&#160;</a>Logging</h1><section><h2><a id="loglevel" name="loglevel">&#160;</a>LogLevel</h2><div class="row"><div class="col-md-6">
-                <p lang="java swift">By default the TIM API has a Logger that defines how much logging is generated inside the TIM API. To
+                <p> By default the TIM API has a Logger that defines how much logging is generated inside the TIM API. <span lang="java swift">To
                     this Logger different handlers can be added, e.g. ConsoleHandler for logging into the debug console or FileHandler
-                    to log into a file. By default a FileHandler is added to the TIM API logger.
+                    to log into a file. By default a FileHandler is added to the TIM API logger.</span>
                 </p>
-                <p lang="java swift">The following logging levels are valid:
+                <p> The following logging levels are valid:
                   <ul lang="java">
                     <li>ALL</li>
                     <li>FINEST</li>
@@ -1459,7 +1460,8 @@ for (Handler handler : handlers){
 
 // To add a special handler to the TIM API logger
 Logger.getLogger(terminal.getLoggerName()).addHandler(myHandler);
-</code></pre> </p>
+</code></pre>
+                </p>
             </div></div>
       <div class="row"><div class="col-md-6"></div></div></section>
       <div class="row"><div class="col-md-6"></div></div><section><h2><a id="logRotation" name="logRotation">&#160;</a>Log Rotation Handling</h2><div class="row"><div class="col-md-6">
