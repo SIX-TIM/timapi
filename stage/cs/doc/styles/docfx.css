@@ -327,7 +327,7 @@ article section {
   padding: 10px;
 }
 .search-results-group-heading {
-
+  font-family: "Open Sans";
   padding-left: 10px;
   color: white;
 }
@@ -435,7 +435,7 @@ article section {
 
 .sidetoc {
   position: fixed;
-  width: 315px;
+  width: 260px;
   top: 210px;
   bottom: 0;
   overflow-x: hidden;
@@ -551,7 +551,7 @@ body .toc{
 .sidefilter {
   position: fixed;
   top: 140px;
-  width: 315px;
+  width: 260px;
   background-color: #ffffff;
   padding: 15px;
   z-index: 1;
@@ -562,25 +562,25 @@ body .toc{
   position: fixed;
   font-size: 150%;
   top: 0px;
-  width: 315px;
+  width: 260px;
   height: 140px;
   background-color: #f0f0f0;
-  padding: 19px 10px 10px 15px;
+  padding: 15px 10px 10px 10px;
   z-index: 1;
   border-bottom: 15px solid #dcdcdc;
   border-right: 15px solid #dcdcdc;
 }
 
 #guidelink {
-  font-size: 15px;
-  margin-left: 7px;
+  font-size: 14px;
+  margin-left: 10px;
 }
 
 #projectname
 {
 	font-family: Roboto,sans-serif;
 	margin-left:7px;
-	margin-bottom: -5px;
+	margin-bottom: -1px;
 	color: rgb(70, 70, 70);
 	font-weight: bold;
 	font-size: 24px;
@@ -592,14 +592,14 @@ body .toc{
 	color: #de3919;
 	font-weight: 100;
 	font-size: 16px;
-	margin-left: 3px;
+	margin-left: 4px;
 }
 
 #projectbrief
 {
 	font-family: Roboto, Arial,sans-serif;
 	margin-left:7px;
-	margin-bottom: 16px;
+	margin-bottom: 20px;
 	color: rgb(104, 104, 104);
 	font-weight: bold;
 	font-size: 18px;
@@ -647,7 +647,7 @@ body .toc{
 }
 
 .article.grid-right {
-  margin-left: 335px;
+  margin-left: 280px;
 }
 
 .inheritance hr {
@@ -658,11 +658,11 @@ body .toc{
   max-width: 100%;
 }
 .sideaffix {
-  margin-top: 50px;
+  margin-top: 30px;
   font-size: 12px;
-  max-height: 100%;
+  height: auto;
   overflow: hidden;
-  top: 100px;
+  top: 30px;
   bottom: 10px;
   position: fixed;
 }
@@ -671,7 +671,7 @@ body .toc{
 }
 .affix {
   position: relative;
-  height: 100%;
+  height: auto;
 }
 .sideaffix > div.contribution {
   margin-bottom: 20px;
@@ -696,8 +696,9 @@ body .toc{
 .affix > ul.level1 {
   overflow: hidden;
   padding-bottom: 10px;
-  height: calc(100% - 100px);
+  height: auto; 
 }
+
 .affix ul > li > a:before {
   color: #cccccc;
   position: absolute;
@@ -744,9 +745,17 @@ body .toc{
 .affix ul > li.active > ul,
 .affix ul > li.active > a:before,
 .affix ul > li > a:hover:before {
+
   display: block;
   white-space: nowrap;
 }
+
+li.active > ul.nav.bs-docs-sidenav {
+  overflow-y: scroll;
+  height: auto;
+  max-height: 300px;
+}
+
 .codewrapper {
   position: relative;
 }
