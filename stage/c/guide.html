@@ -51,7 +51,7 @@
           </div>
           <div id="docTitle">Detailed Implementation Guide</div>
           <ul class="nav">
-          <li><a href="#intro">Introduction</a></li><li><a href="#sysreq">System Requirements</a></li><li><a href="#setup">Setup Configuration</a><ul class="nav"><li><a href="#network">Network Configuration</a></li><li><a href="#guides">Guides Configuration</a></li></ul></li><li><a href="#operation">Operation Overview</a></li><li><a href="#automatisms">Automatisms</a></li><li><a href="#useCase">Use Cases</a><ul class="nav"><li><a href="#retailManualPanKeyEntry">Manual Pan Key Entry</a></li><li class="filterGuides guidePetrol"><a href="#petrolUseCase">Guide Petrol Use Cases</a><ul class="nav"><li class="filterGuides guidePetrol"><a href="#petrolBasketHandling">Petrol Basket Handling</a></li><li><a href="#petrolUseCaseIndoorOnline">Indoor - Online Card</a></li><li><a href="#petrolUseCaseOutdoorOnline">Outdoor - Online Card</a></li><li><a href="#petrolUseCaseIndoorOffline">Indoor - Offline Card</a></li><li><a href="#petrolUseCaseOutdoorOffline">Outdoor - Offline Card</a></li></ul></li><li class="filterGuides guideUnattended"><a href="#uatUseCase">Guide Unattended Use Cases</a><ul class="nav"><li><a href="#uatUseCasePartialCommit">Use Case Partial Commit</a></li><li><a href="#uatUseCaseHoldCommit">Use Case Hold Commit</a></li><li><a href="#uatUseCaseAmountAdjustment">Use Case Amount Adjustment</a></li><li><a href="#uatUseCaseRetainCard">Use Case Retain Card</a></li><li><a href="#uatUseCaseSilentFlag">Use Case Silent Abort</a></li></ul></li><li class="filterGuides guideBanking"><a href="#bankingUseCase">Guide Banking Use Cases</a><ul class="nav"><li><a href="#bankingBalanceInquiryUseCase">Balance Inquiry</a></li><li><a href="#bankingClientIdentificationUseCase">Client Identification</a></li><li><a href="#bankingSignatureCaptureUseCase">Signature Capture</a></li><li><a href="#bankingCardIdentificationUseCase">Card Identification</a></li><li><a href="#bankingAccountTransferUseCase">Account Transfer: Swiss Post only</a></li><li><a href="#bankingAccountDepositUseCase">Account Deposit: Swiss Post only</a></li><li><a href="#bankingAccountPayoutUseCase">Account Payout: Swiss Post only</a></li><li><a href="#bankingParcelAcknowledgementUseCase">Parcel Acknowledgement: Swiss Post only</a></li><li><a href="#bankingLoadPrePaidPhoneUseCase">Load PrePaid Phone: Swiss Post only</a></li></ul></li><li class="filterGuides guideAustria"><a href="#austrianUseCase">Guide Austrian Use Cases</a><ul class="nav"><li class="filterGuides guideAustria"><a href="#austrianUseCaseNGV">Austrian Use Case: NGV</a></li><li class="filterGuides guideAustria"><a href="#austrianUseCaseDelayedPayment">Austrian Use Case: Delayed Payment</a></li></ul></li></ul></li><li><a href="#methods">Terminal methods overview</a><ul class="nav"><li><a href="#mainFunc">Main / guide Retail terminal functions</a></li><li class="filterGuides guidePetrol"><a href="#petrolFunc">Guide Petrol terminal functions</a></li><li class="filterGuides guideUnattended"><a href="#uatFunc">Guide Unattended terminal functions</a></li><li class="filterGuides guideDialog"><a href="#dialogFunc">Guide Dialog terminal functions</a></li><li><a href="#addMethods">Additional terminal listener-events</a></li></ul></li><li><a href="#flows">Flows</a><ul class="nav"><li class="filterGuides guidePetrol"><a href="#petrolFlows">Petrol Additional Flows</a><ul class="nav"><li><a href="#petrolFlowIndoorOnline">Petrol Flow: Indoor - Online Card</a></li><li><a href="#petrolFlowOutdoorOnline">Petrol Flow: Outdoor - Online Card</a></li><li><a href="#petrolFlowIndoorOffline">Petrol Flow: Indoor - Offline Card</a></li><li><a href="#petrolFlowOutdoorOffline">Petrol Flow: Outdoor - Offline Card</a></li></ul></li><li class="filterGuides guideUnattended"><a href="#uatFlows">Guide Unattended Additional Flows</a><ul class="nav"><li><a href="#uatFlowPartialCommit"> Flow: Partial Commit</a></li><li><a href="#uatFlowHoldCommit"> Flow: Hold commit</a></li><li><a href="#uatFlowAmountAdjustment"> Flow: Amount adjustment</a></li><li><a href="#uatFlowPreAuth"> Flow: PreAuthorization</a></li><li><a href="#uatFlowRetainCard"> Flow: Retain card</a></li><li><a href="#uatFlowSilentFlag"> Flow: Silent abort</a></li></ul></li><li class="filterGuides guideBanking"><a href="#bankingFlows">Banking Additional Flows</a><ul class="nav"><li><a href="#bankingBalanceInquiryFlow">Banking Flow: BalanceInquiry</a></li><li><a href="#bankingClientIdentificationFlow">Banking Flow: Client Identification</a></li><li><a href="#bankingCardIdentificationFlow">Banking Flow: Card Identification</a></li><li><a href="#bankingAccountTransferFlow">Banking Flow: Account Transfer</a></li><li><a href="#bankingAccountDepositFlow">Banking Flow: Account Deposit</a></li><li><a href="#bankingAccountPayoutFlow">Banking Flow: Account Payout</a></li><li><a href="#bankingParcelAcknowledgementFlow">Banking Flow: Parcel Acknowledgement</a></li><li><a href="#bankingLoadPrePaidPhoneFlow">Banking Flow: Load PrePaid Phone</a></li></ul></li><li class="filterGuides guideAustria"><a href="#austrianFlows">Guide Austrian Additional Flows</a><ul class="nav"><li><a href="#austrianFlowNGVWithoutDelay">Austrian Flow: NGV Purchase without delay</a></li><li><a href="#austrianFlowNGVWithDelay">Austrian Flow: NGV Purchase with delay</a></li><li><a href="#austrianFlowNGVFallback">Austrian Flow: NGV Purchase fallback with Non-NGV card</a></li><li><a href="#austrianFlowNGVMandatoryError">Austrian Flow: NGV Purchase mandatory with error</a></li></ul></li></ul></li><li><a href="#clang">C Language Specifics</a><ul class="nav"><li><a href="#objects">Objects in TIM API C</a></li><li><a href="#memory">Memory Management in TIM API C</a></li><li><a href="#datatype">Data Types in TIM API C</a></li></ul></li></ul>
+          <li><a href="#intro">Introduction</a></li><li><a href="#sysreq">System Requirements</a></li><li><a href="#setup">Setup Configuration</a><ul class="nav"><li><a href="#network">Network Configuration</a></li><li><a href="#guides">Guides Configuration</a></li></ul></li><li><a href="#operation">Operation Overview</a></li><li><a href="#automatisms">Automatisms</a></li><li><a href="#useCase">Use Cases</a><ul class="nav"><li><a href="#retailManualPanKeyEntry">Manual Pan Key Entry</a></li><li class="filterGuides guidePetrol"><a href="#petrolUseCase">Guide Petrol Use Cases</a><ul class="nav"><li class="filterGuides guidePetrol"><a href="#petrolBasketHandling">Petrol Basket Handling</a></li><li><a href="#petrolUseCaseIndoorOnline">Indoor - Online Card</a></li><li><a href="#petrolUseCaseOutdoorOnline">Outdoor - Online Card</a></li><li><a href="#petrolUseCaseIndoorOffline">Indoor - Offline Card</a></li><li><a href="#petrolUseCaseOutdoorOffline">Outdoor - Offline Card</a></li></ul></li><li class="filterGuides guideUnattended"><a href="#uatUseCase">Guide Unattended Use Cases</a><ul class="nav"><li><a href="#uatUseCasePartialCommit">Use Case Partial Commit</a></li><li><a href="#uatUseCaseHoldCommit">Use Case Hold Commit</a></li><li><a href="#uatUseCaseAmountAdjustment">Use Case Amount Adjustment</a></li><li><a href="#uatUseCaseRetainCard">Use Case Retain Card</a></li><li><a href="#uatUseCaseSilentFlag">Use Case Silent Abort</a></li></ul></li><li class="filterGuides guideBanking"><a href="#bankingUseCase">Guide Banking Use Cases</a><ul class="nav"><li><a href="#bankingBalanceInquiryUseCase">Balance Inquiry</a></li><li><a href="#bankingClientIdentificationUseCase">Client Identification</a></li><li><a href="#bankingSignatureCaptureUseCase">Signature Capture</a></li><li><a href="#bankingCardIdentificationUseCase">Card Identification</a></li><li><a href="#bankingAccountTransferUseCase">Account Transfer: Swiss Post only</a></li><li><a href="#bankingAccountDepositUseCase">Account Deposit: Swiss Post only</a></li><li><a href="#bankingAccountPayoutUseCase">Account Payout: Swiss Post only</a></li><li><a href="#bankingParcelAcknowledgementUseCase">Parcel Acknowledgement: Swiss Post only</a></li><li><a href="#bankingLoadPrePaidPhoneUseCase">Load PrePaid Phone: Swiss Post only</a></li></ul></li><li class="filterGuides guideAustria"><a href="#austrianUseCase">Guide Austrian Use Cases</a><ul class="nav"><li class="filterGuides guideAustria"><a href="#austrianUseCaseNGV">Austrian Use Case: NGV</a></li><li class="filterGuides guideAustria"><a href="#austrianUseCaseDelayedPayment">Austrian Use Case: Delayed Payment</a></li></ul></li></ul></li><li><a href="#methods">Terminal methods overview</a><ul class="nav"><li><a href="#mainFunc">Main / guide Retail terminal functions</a></li><li class="filterGuides guidePetrol"><a href="#petrolFunc">Guide Petrol terminal functions</a></li><li class="filterGuides guideUnattended"><a href="#uatFunc">Guide Unattended terminal functions</a></li><li class="filterGuides guideBanking"><a href="#bankingFunc">Banking terminal functions</a></li><li class="filterGuides guideDialog"><a href="#dialogFunc">Guide Dialog terminal functions</a></li><li><a href="#addMethods">Additional terminal listener-events</a></li></ul></li><li><a href="#flows">Flows</a><ul class="nav"><li class="filterGuides guidePetrol"><a href="#petrolFlows">Petrol Additional Flows</a><ul class="nav"><li><a href="#petrolFlowIndoorOnline">Petrol Flow: Indoor - Online Card</a></li><li><a href="#petrolFlowOutdoorOnline">Petrol Flow: Outdoor - Online Card</a></li><li><a href="#petrolFlowIndoorOffline">Petrol Flow: Indoor - Offline Card</a></li><li><a href="#petrolFlowOutdoorOffline">Petrol Flow: Outdoor - Offline Card</a></li></ul></li><li class="filterGuides guideUnattended"><a href="#uatFlows">Guide Unattended Additional Flows</a><ul class="nav"><li><a href="#uatFlowPartialCommit"> Flow: Partial Commit</a></li><li><a href="#uatFlowHoldCommit"> Flow: Hold commit</a></li><li><a href="#uatFlowAmountAdjustment"> Flow: Amount adjustment</a></li><li><a href="#uatFlowPreAuth"> Flow: PreAuthorization</a></li><li><a href="#uatFlowRetainCard"> Flow: Retain card</a></li><li><a href="#uatFlowSilentFlag"> Flow: Silent abort</a></li></ul></li><li class="filterGuides guideBanking"><a href="#bankingFlows">Banking Additional Flows</a><ul class="nav"><li><a href="#bankingBalanceInquiryFlow">Banking Flow: BalanceInquiry</a></li><li><a href="#bankingClientIdentificationFlow">Banking Flow: Client Identification</a></li><li><a href="#bankingCardIdentificationFlow">Banking Flow: Card Identification</a></li><li><a href="#bankingAccountTransferFlow">Banking Flow: Account Transfer</a></li><li><a href="#bankingAccountDepositFlow">Banking Flow: Account Deposit</a></li><li><a href="#bankingAccountPayoutFlow">Banking Flow: Account Payout</a></li><li><a href="#bankingParcelAcknowledgementFlow">Banking Flow: Parcel Acknowledgement</a></li><li><a href="#bankingLoadPrePaidPhoneFlow">Banking Flow: Load PrePaid Phone</a></li></ul></li><li class="filterGuides guideAustria"><a href="#austrianFlows">Guide Austrian Additional Flows</a><ul class="nav"><li><a href="#austrianFlowNGVWithoutDelay">Austrian Flow: NGV Purchase without delay</a></li><li><a href="#austrianFlowNGVWithDelay">Austrian Flow: NGV Purchase with delay</a></li><li><a href="#austrianFlowNGVFallback">Austrian Flow: NGV Purchase fallback with Non-NGV card</a></li><li><a href="#austrianFlowNGVMandatoryError">Austrian Flow: NGV Purchase mandatory with error</a></li></ul></li></ul></li><li><a href="#logging">Logging</a><ul class="nav"><li><a href="#loglevel">Log Level</a></li><li><a href="#logConfig">Log Configuration</a></li></ul></li><li><a href="#clang">C Language Specifics</a><ul class="nav"><li><a href="#objects">Objects in TIM API C</a></li><li><a href="#memory">Memory Management in TIM API C</a></li><li><a href="#datatype">Data Types in TIM API C</a></li></ul></li></ul>
           <div class="seperator">&#160;</div>
           <div id="docLinks">
           <div class="linkDiv"><a href="appendix.html">Appendix</a></div><div class="linkDiv"><a href="doc/index.html">API Documentation</a></div><div class="linkDiv"><a href="../../version/version-history.html">Version History</a></div></div>
@@ -963,7 +963,7 @@ void mylistener_terminal_status_changed(ta_object_t terminal,	void *user_pointer
             </tr>
             <tr>
                 <td>
-                    <code class="notifyMethod"><a class="notifyMethod">amtAdjustment</a></code>
+                    <code class="notifyMethod"><a class="notifyMethod" href="doc/terminal_8h.html#a06fdcbf5f56e790c08d16eedc218f44a">ta_terminal_amt_adjustment</a></code>
                 </td>
                 <td>Send an amount adjustment notification to the terminal during an open transaction. The amount is used as the new amount for the transaction.</td>
             </tr>
@@ -1027,7 +1027,33 @@ void mylistener_terminal_status_changed(ta_object_t terminal,	void *user_pointer
      </table>
   </div></div></section>
         
-        
+        <div class="row"><div class="col-md-6"></div></div><section><h2><a id="bankingFunc" name="bankingFunc">&#160;</a>Banking terminal functions</h2><div class="row"><div class="col-md-6"><table class="table">
+        <thead>
+            <tr>
+                <th>
+                    <strong class="syncMethod">Sync method</strong>
+                    <br>
+                    <span class="asyncMethod">Async method</span>
+                    <br>
+                    <span class="completedMethod">Completed event</span>
+                </th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <code class="syncMethod"><a class="syncMethod" href="doc/terminal_8h.html#a246f6a6e3a0a4ed6460707b1b7b51591">ta_terminal_balance_inquiry</a></code>
+                    <br class="syncMethod">
+                    <code class="asyncMethod"><a class="asyncMethod" href="doc/terminal_8h.html#a1a8b8261546426c1b545f8d31107bead">ta_terminal_balance_inquiry_async</a></code>
+                    <br>
+                    <code class="completedMethod"><a class="completedMethod" href="doc/terminal__listener_8h.html#aee3b197131cd0666da2ad08fa23cc2a7">balance_inquiry_completed</a></code>
+                </td>
+                <td>Perform a balance check of a card/account on the terminal.</td>
+            </tr>
+      </tbody>
+    </table>
+  </div></div></section>
         <div class="row"><div class="col-md-6"></div></div><section class="filterGuides guideDialog"><h2><a id="dialogFunc" name="dialogFunc">&#160;</a>Guide Dialog terminal functions</h2><div class="row"><div class="col-md-6"><table class="table">
         <thead>
             <tr>
@@ -1211,6 +1237,56 @@ void mylistener_terminal_status_changed(ta_object_t terminal,	void *user_pointer
           <div class="row"><div class="col-md-6"></div></div></section>
     <div class="row"><div class="col-md-6"></div></div></section> 
 
+    <section><h1><a id="logging" name="logging">&#160;</a>Logging</h1><div class="row"><div class="col-md-6"><p>
+        The TIM API is able to log an extensive set of events and actions within the TIM API. It's key that logs are created and stored properly. 
+        Logging enables support and makes bug-tracking much easier.
+        </p>
+        <p lang="c">
+            <p>
+                The TIM API C fires log events for every <code><a href="doc/structta__s__log__record.html">log_record</a></code>. It's the application's responsibility to manage and store these.
+            </p>
+            <p>
+                In order to get notified about log-events, implement the callback function 
+                <code><a href="doc/logging_8h.html#a0fca5add0db207bba174a8d19b65ea22">ta_cb_publish_log_record</a></code>
+                and register it with 
+                <code><a href="doc/logging_8h.html#a91b25284353ed3b71653908fdcd8ad33">ta_logger_set_global_logger</a></code>
+                .
+            </p>
+            <p>
+                <b>Note:</b> The TIM SDK contains example code for how to manage and store log-records. 
+                You can find the files "timapi_loghelper.c" and "timapi_loghelper.h" under "C/Utils/" in the TIM SDK.
+            </p>
+            
+        </p> 
+
+        </div></div><section><h2><a id="loglevel" name="loglevel">&#160;</a>Log Level</h2><div class="row"><div class="col-md-6"><p lang="c">
+                The following logging levels exist:
+                <ul>
+                    <li>ta_c_ll_finest</li>
+                    <li>ta_c_ll_fine</li>
+                    <li>ta_c_ll_info</li>
+                    <li>ta_c_ll_warning</li>
+                    <li>ta_c_ll_severe</li>
+                    <li>ta_c_ll_off</li>
+                </ul>
+            </p>
+        </div></div></section>
+      <div class="row"><div class="col-md-6"></div></div><section><h2><a id="logConfig" name="logConfig">&#160;</a>Log Configuration</h2><div class="row"><div class="col-md-6"><p lang="c">
+            <b>Note:</b> <code><a href="doc/terminal__settings_8h.html">ta_terminal_settings</a></code> contains deprecated options regarding logging. Do not use these:
+            <ul>
+                <li><s>set_log_dir</s></li>
+                <li><s>get_log_dir</s></li>
+                <li><s>set_log_file_count_per_archive</s></li>
+                <li><s>get_log_file_count_per_archive</s></li>
+                <li><s>set_log_retain_archive_count</s></li>
+                <li><s>get_log_retain_archive_count</s></li>
+                <li><s>set_log_retain_file_count</s></li>
+                <li><s>get_log_retain_file_count</s></li>
+            </ul>
+            See chapter <a href="#logging">Logging</a> for how to get logs in TIM API C.
+        </p>
+      </div></div></section>
+    <div class="row"><div class="col-md-6"></div></div></section>
     <section><h1><a id="clang" name="clang">&#160;</a>C Language Specifics</h1><section><h2><a id="objects" name="objects">&#160;</a>Objects in TIM API C</h2><div class="row"><div class="col-md-6"><p>The TIM API C is based on an object-type concept. Most TIM API functions will either take or return parameters
                 in shape of the "opaque type"
                 <code><a href="doc/object_8h.html">ta_object_t</a></code>. For example:
