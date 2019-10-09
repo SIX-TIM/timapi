@@ -1,5 +1,13 @@
 var NAVTREEINDEX8 =
 {
+"transaction__type_8h.html#a08f07046806962db06121bebefd306d1a5febf514c1b3f0d5ac66e9420a32a1ae":[1,1,0,1,52,1,20],
+"transaction__type_8h.html#a08f07046806962db06121bebefd306d1a8547aaf1574af98275fe03018d5ec27a":[1,1,0,1,52,1,16],
+"transaction__type_8h.html#a08f07046806962db06121bebefd306d1aaddd7f701b9dffb42bf974d9896dc00b":[1,1,0,1,52,1,15],
+"transaction__type_8h.html#a08f07046806962db06121bebefd306d1aade97ade4dae0fbc81799e20c93ab5da":[1,1,0,1,52,1,9],
+"transaction__type_8h.html#a08f07046806962db06121bebefd306d1ab1d5cc4bc4690f73b44f961890ba4794":[1,1,0,1,52,1,11],
+"transaction__type_8h.html#a08f07046806962db06121bebefd306d1abfa34cd2ac3fea6d45fc80dbdefc25b0":[1,1,0,1,52,1,7],
+"transaction__type_8h.html#a08f07046806962db06121bebefd306d1ac9d4e87198ab31d00d1688995088c5de":[1,1,0,1,52,1,1],
+"transaction__type_8h.html#a08f07046806962db06121bebefd306d1ad6bbce99f3cc3eaa2b52adca62be1ae0":[1,1,0,1,52,1,5],
 "transaction__type_8h.html#a08f07046806962db06121bebefd306d1af518598d8f9d3066a53d5c896b2831f2":[1,1,0,1,52,1,14],
 "transaction__type_8h.html#a08f07046806962db06121bebefd306d1afbb5f383e092efa3c659924bee4e389a":[1,1,0,1,52,1,2],
 "transaction__type_8h.html#ab6ee5e4d83de5d339ec03b569082c238":[1,1,0,1,52,0],

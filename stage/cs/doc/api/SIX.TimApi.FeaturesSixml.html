@@ -811,13 +811,13 @@ Immutable class.</p>
   
   
   <a id="SIX_TimApi_FeaturesSixml__ctor_" data-uid="SIX.TimApi.FeaturesSixml.#ctor*"></a>
-  <h4 id="SIX_TimApi_FeaturesSixml__ctor_System_Collections_Generic_List_SIX_TimApi_Constants_AdminFunctions__SIX_TimApi_FeaturesSixml_Support_SIX_TimApi_FeaturesSixml_Support_SIX_TimApi_FeaturesSixml_Support_System_Boolean_System_Collections_Generic_List_SIX_TimApi_Constants_FinancialTransactions__System_Collections_Generic_List_SIX_TimApi_Constants_Guides__System_Collections_Generic_List_SIX_TimApi_Constants_NonFinancialTransactions__System_Collections_Generic_List_SIX_TimApi_Constants_ProtocolLevel__System_Boolean_System_Collections_Generic_List_SIX_TimApi_Constants_StatusFunctions__System_Collections_Generic_List_SIX_TimApi_Constants_DialogFunctions__System_Boolean_System_Boolean_" data-uid="SIX.TimApi.FeaturesSixml.#ctor(System.Collections.Generic.List{SIX.TimApi.Constants.AdminFunctions},SIX.TimApi.FeaturesSixml.Support,SIX.TimApi.FeaturesSixml.Support,SIX.TimApi.FeaturesSixml.Support,System.Boolean,System.Collections.Generic.List{SIX.TimApi.Constants.FinancialTransactions},System.Collections.Generic.List{SIX.TimApi.Constants.Guides},System.Collections.Generic.List{SIX.TimApi.Constants.NonFinancialTransactions},System.Collections.Generic.List{SIX.TimApi.Constants.ProtocolLevel},System.Boolean,System.Collections.Generic.List{SIX.TimApi.Constants.StatusFunctions},System.Collections.Generic.List{SIX.TimApi.Constants.DialogFunctions},System.Boolean,System.Boolean)">FeaturesSixml(List&lt;AdminFunctions&gt;, FeaturesSixml.Support, FeaturesSixml.Support, FeaturesSixml.Support, Boolean, List&lt;FinancialTransactions&gt;, List&lt;Guides&gt;, List&lt;NonFinancialTransactions&gt;, List&lt;ProtocolLevel&gt;, Boolean, List&lt;StatusFunctions&gt;, List&lt;DialogFunctions&gt;, Boolean, Boolean)</h4>
+  <h4 id="SIX_TimApi_FeaturesSixml__ctor_System_Collections_Generic_List_SIX_TimApi_Constants_AdminFunctions__SIX_TimApi_FeaturesSixml_Support_SIX_TimApi_FeaturesSixml_Support_SIX_TimApi_FeaturesSixml_Support_System_Boolean_System_Collections_Generic_List_SIX_TimApi_Constants_FinancialTransactions__System_Collections_Generic_List_SIX_TimApi_Constants_Guides__System_Collections_Generic_List_SIX_TimApi_Constants_NonFinancialTransactions__System_Collections_Generic_List_SIX_TimApi_Constants_ProtocolLevel__System_Boolean_System_Collections_Generic_List_SIX_TimApi_Constants_StatusFunctions__System_Collections_Generic_List_SIX_TimApi_Constants_DialogFunctions__System_Boolean_System_Boolean_System_Boolean_" data-uid="SIX.TimApi.FeaturesSixml.#ctor(System.Collections.Generic.List{SIX.TimApi.Constants.AdminFunctions},SIX.TimApi.FeaturesSixml.Support,SIX.TimApi.FeaturesSixml.Support,SIX.TimApi.FeaturesSixml.Support,System.Boolean,System.Collections.Generic.List{SIX.TimApi.Constants.FinancialTransactions},System.Collections.Generic.List{SIX.TimApi.Constants.Guides},System.Collections.Generic.List{SIX.TimApi.Constants.NonFinancialTransactions},System.Collections.Generic.List{SIX.TimApi.Constants.ProtocolLevel},System.Boolean,System.Collections.Generic.List{SIX.TimApi.Constants.StatusFunctions},System.Collections.Generic.List{SIX.TimApi.Constants.DialogFunctions},System.Boolean,System.Boolean,System.Boolean)">FeaturesSixml(List&lt;AdminFunctions&gt;, FeaturesSixml.Support, FeaturesSixml.Support, FeaturesSixml.Support, Boolean, List&lt;FinancialTransactions&gt;, List&lt;Guides&gt;, List&lt;NonFinancialTransactions&gt;, List&lt;ProtocolLevel&gt;, Boolean, List&lt;StatusFunctions&gt;, List&lt;DialogFunctions&gt;, Boolean, Boolean, Boolean)</h4>
   <div class="markdown level1 summary"><p>Create hardware features.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public FeaturesSixml(List&lt;AdminFunctions&gt; adminFunctions, FeaturesSixml.Support autoCommit, FeaturesSixml.Support autoShiftManagement, FeaturesSixml.Support autoShutterManagement, bool requestRepetition, List&lt;FinancialTransactions&gt; financialFunctions, List&lt;Guides&gt; guides, List&lt;NonFinancialTransactions&gt; nonFinancialFunctions, List&lt;ProtocolLevel&gt; protocolLevels, bool sleepTimer, List&lt;StatusFunctions&gt; statusFunctions, List&lt;DialogFunctions&gt; dialogFunctions, bool allowClosedCardInsertion, bool fastNtfMode)</code></pre>
+    <pre><code class="lang-csharp hljs">public FeaturesSixml(List&lt;AdminFunctions&gt; adminFunctions, FeaturesSixml.Support autoCommit, FeaturesSixml.Support autoShiftManagement, FeaturesSixml.Support autoShutterManagement, bool requestRepetition, List&lt;FinancialTransactions&gt; financialFunctions, List&lt;Guides&gt; guides, List&lt;NonFinancialTransactions&gt; nonFinancialFunctions, List&lt;ProtocolLevel&gt; protocolLevels, bool sleepTimer, List&lt;StatusFunctions&gt; statusFunctions, List&lt;DialogFunctions&gt; dialogFunctions, bool allowClosedCardInsertion, bool fastNtfMode, bool persistentState)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -897,6 +897,40 @@ Immutable class.</p>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
         <td><span class="parametername">fastNtfMode</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">persistentState</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  
+  
+  <h4 id="SIX_TimApi_FeaturesSixml_PersistentState" data-uid="SIX.TimApi.FeaturesSixml.PersistentState">PersistentState</h4>
+  <div class="markdown level1 summary"><p>Supports if the SIXml session should start in the default Closed management state
+or the last known management state (e.g. before a reboot) should be used. For the
+latter option the terminal shall indicate the state in the login response.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly bool PersistentState</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
         <td></td>
       </tr>
     </tbody>

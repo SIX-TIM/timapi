@@ -2317,6 +2317,36 @@ one or multiple reboot processes.</p>
   </table>
   
   
+  <a id="SIX_TimApi_Terminal_ConnectAsync_" data-uid="SIX.TimApi.Terminal.ConnectAsync*"></a>
+  <h4 id="SIX_TimApi_Terminal_ConnectAsync" data-uid="SIX.TimApi.Terminal.ConnectAsync">ConnectAsync()</h4>
+  <div class="markdown level1 summary"><p>Initiates a connection to the EFT Terminal.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ConnectAsync()</code></pre>
+  </div>
+  <h5 id="SIX_TimApi_Terminal_ConnectAsync_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Calling the <a class="xref" href="SIX.TimApi.Terminal.html#SIX_TimApi_Terminal_Connect">Connect()</a> is not needed normally, because all methods make first a connect, if not connected.</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="SIX.TimApi.TimException.html">TimException</a></td>
+        <td><p>an error occurred during the Cancel</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="SIX_TimApi_Terminal_CounterRequest_" data-uid="SIX.TimApi.Terminal.CounterRequest*"></a>
   <h4 id="SIX_TimApi_Terminal_CounterRequest_SIX_TimApi_Constants_CounterType_" data-uid="SIX.TimApi.Terminal.CounterRequest(SIX.TimApi.Constants.CounterType)">CounterRequest(CounterType)</h4>
   <div class="markdown level1 summary"><p>Get counter information's from the EFT Terminal.</p>
@@ -2545,6 +2575,33 @@ The response is available in the <a class="xref" href="SIX.TimApi.Terminal.Deact
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void Disconnect()</code></pre>
+  </div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="SIX.TimApi.TimException.html">TimException</a></td>
+        <td><p>an error occurred during the disconnect</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SIX_TimApi_Terminal_DisconnectAsync_" data-uid="SIX.TimApi.Terminal.DisconnectAsync*"></a>
+  <h4 id="SIX_TimApi_Terminal_DisconnectAsync" data-uid="SIX.TimApi.Terminal.DisconnectAsync">DisconnectAsync()</h4>
+  <div class="markdown level1 summary"><p>Interrupts the connection to the EFT Terminal.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DisconnectAsync()</code></pre>
   </div>
   <h5 class="exceptions">Exceptions</h5>
   <table class="table table-bordered table-striped table-condensed">

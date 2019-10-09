@@ -847,6 +847,66 @@
       </tr>
     </tbody>
   </table>
+  <h3 id="fields">Fields
+  </h3>
+  
+  
+  <h4 id="SIX_TimApi_TransactionData_AppExpirationDate" data-uid="SIX.TimApi.TransactionData.AppExpirationDate">AppExpirationDate</h4>
+  <div class="markdown level1 summary"><p>Application expiration date.
+Each application on a card has a corresponding expiration date and can be read from the card.
+Example: The format of an 'Expiration Date' is defined as MMyy, 2 digits for the month and
+2 digits for the year. So January 2018 will have the following format as 'Expiration Date': 0118
+Optional: Used for MPKE for non-PCI brands based transactions.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DateTime? AppExpirationDate</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.DateTime</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="SIX_TimApi_TransactionData_Cvc2" data-uid="SIX.TimApi.TransactionData.Cvc2">Cvc2</h4>
+  <div class="markdown level1 summary"><p>Card verification code 2.
+The card verification code 2 is used for transactions with MPKE as an additional security
+element that has to be provided.
+It has an n3 value: Numeric 3 digits: 012
+Optional: Used for MPKE for non-PCI brands.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public long? Cvc2</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int64</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="properties">Properties
   </h3>
   

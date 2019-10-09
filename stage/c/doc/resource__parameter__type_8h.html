@@ -108,7 +108,8 @@ Enumerations</h2></td></tr>
 <a class="el" href="resource__parameter__type_8h.html#a24c84814e0ce6a320ff3bd3826a297fbafb7b8c6713d6a3cea383a849f3988b47">ta_c_rpt_petrol_card_data2</a>, 
 <br />
 &#160;&#160;<a class="el" href="resource__parameter__type_8h.html#a24c84814e0ce6a320ff3bd3826a297fbacf33b6be20714c5e787ba88d5c3bef55">ta_c_rpt_petrol_card_data3</a>, 
-<a class="el" href="resource__parameter__type_8h.html#a24c84814e0ce6a320ff3bd3826a297fba66d3c65752825af467f4441cf27ede3a">ta_c_rpt_active_readers</a>
+<a class="el" href="resource__parameter__type_8h.html#a24c84814e0ce6a320ff3bd3826a297fba66d3c65752825af467f4441cf27ede3a">ta_c_rpt_active_readers</a>, 
+<a class="el" href="resource__parameter__type_8h.html#a24c84814e0ce6a320ff3bd3826a297fba69768b4250a06886e8b79098988d3406">ta_c_rpt_exponent</a>
 <br />
  }</td></tr>
 <tr class="separator:a24c84814e0ce6a320ff3bd3826a297fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -255,6 +256,11 @@ Bit 7: RFU </li>
 Bit 8: RFU </li>
 </ul>
 <p>This value is to be transmitted hex encoded. Example: For a value of 00000111 (Magstripe, Chip and Ctless active), the value '07' hex must be transmitted.</p>
+<p>Specification: dialog.</p>
+</td></tr>
+<tr><td class="fieldname"><a id="a24c84814e0ce6a320ff3bd3826a297fba69768b4250a06886e8b79098988d3406"></a>ta_c_rpt_exponent&#160;</td><td class="fielddoc"><p>Currency Exponent e.g. to define input mask for Amount entry. n2 value<br />
+ Example 1: Exponent = 2 will result in an input mask of XXXX.XX with 2 positions after decimal point.<br />
+ Example 2: Exponent = 3 will result in an input mask of XXX.XXX with 3 positions after decimal point.</p>
 <p>Specification: dialog.</p>
 </td></tr>
 </table>
