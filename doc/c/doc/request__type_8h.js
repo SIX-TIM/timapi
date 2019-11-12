@@ -35,10 +35,12 @@ var request__type_8h =
       [ "ta_c_req_show_signature_capture", "request__type_8h.html#a38268da75c7795fd3a4f057bc6a7fcd2a388a8c726461c2aa0849bc88346ceb30", null ],
       [ "ta_c_req_show_dialog", "request__type_8h.html#a38268da75c7795fd3a4f057bc6a7fcd2a48427cd573db64b0b249c4de5623ffc2", null ],
       [ "ta_c_req_send_card_command", "request__type_8h.html#a38268da75c7795fd3a4f057bc6a7fcd2adef98d9861cb796c31710911b8036e4e", null ],
+      [ "ta_c_req_print_on_terminal", "request__type_8h.html#a38268da75c7795fd3a4f057bc6a7fcd2a32e18c5596155d06a1d8edfd52598486", null ],
       [ "ta_c_req_loyalty_data", "request__type_8h.html#a38268da75c7795fd3a4f057bc6a7fcd2a4bf2d27fa5cb5ec22dd421df96c63a37", null ],
       [ "ta_c_req_start_checkout", "request__type_8h.html#a38268da75c7795fd3a4f057bc6a7fcd2a1ecdbd571899bed3021222b2b3675c2f", null ],
       [ "ta_c_req_finish_checkout", "request__type_8h.html#a38268da75c7795fd3a4f057bc6a7fcd2a10bfcd133fa163c82c910d333ebde416", null ],
       [ "ta_c_req_provide_loyalty_basket", "request__type_8h.html#a38268da75c7795fd3a4f057bc6a7fcd2a19fa69870c83b85bc90c8fd7c7cc225c", null ],
+      [ "ta_c_req_provide_vas_result", "request__type_8h.html#a38268da75c7795fd3a4f057bc6a7fcd2aa12c99a3e91e309b88c00019f1e0e830", null ],
       [ "ta_c_req_balance_inquiry", "request__type_8h.html#a38268da75c7795fd3a4f057bc6a7fcd2ab440ebcbc62d0eb28b58332db3a92eb5", null ],
       [ "ta_c_req_request_alias", "request__type_8h.html#a38268da75c7795fd3a4f057bc6a7fcd2af5919105790a5cb23420a3cb70e87529", null ]
     ] ]

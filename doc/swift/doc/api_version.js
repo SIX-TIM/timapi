@@ -1,1 +1,1 @@
-timapi = {}; timapi.api_version = "v3.18.1"; timapi.api_lang = "Swift";
+timapi = {}; timapi.api_version = "v3.19.0"; timapi.api_lang = "Swift";

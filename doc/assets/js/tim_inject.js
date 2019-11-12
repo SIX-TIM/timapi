@@ -60,7 +60,15 @@ function timVersionInject() {
     }
 
     // Hide elements for given language
-    if(timapi.api_lang != undefined) {
+    if(timapi.api_id != undefined) {
+        var language = timapi.api_id;
+        // Change visibility of all elements with class "hide_{language}"
+        [].forEach.call(document.querySelectorAll(".hide_" + language), function (el) {
+            el.style.display = "none";
+        });
+    }
+    // downwards compatibility (older versions don't have timapi.api_id)
+    else if(timapi.api_lang != undefined) {
         var language = timapi.api_lang.toLowerCase();
         // Change visibility of all elements with class "hide_{language}"
         [].forEach.call(document.querySelectorAll(".hide_" + language), function (el) {

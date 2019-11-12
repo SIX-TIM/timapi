@@ -95,10 +95,32 @@ Typedefs</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr class="memitem:a74be600736ad05d66a867681226384f1"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="receipt__type_8h.html#a74be600736ad05d66a867681226384f1">ta_e_receipt_type</a> { <a class="el" href="receipt__type_8h.html#a74be600736ad05d66a867681226384f1a0b549fdf410c8d10dde50bee654ba35f">ta_c_rt_undefined</a>, 
-<a class="el" href="receipt__type_8h.html#a74be600736ad05d66a867681226384f1a3f4aff07b94390fbc6253227d16f21ae">ta_c_rt_purchase</a>, 
+<tr class="memitem:a74be600736ad05d66a867681226384f1"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="receipt__type_8h.html#a74be600736ad05d66a867681226384f1">ta_e_receipt_type</a> { <br />
+&#160;&#160;<a class="el" href="receipt__type_8h.html#a74be600736ad05d66a867681226384f1a0b549fdf410c8d10dde50bee654ba35f">ta_c_rt_undefined</a>, 
+<a class="el" href="receipt__type_8h.html#a74be600736ad05d66a867681226384f1ae5fbac8b1a78300b01c01221055ef058">ta_c_rt_activate_card</a>, 
+<a class="el" href="receipt__type_8h.html#a74be600736ad05d66a867681226384f1a2a28a706298de61ae926883875723bf7">ta_c_rt_adjust_reservation</a>, 
+<a class="el" href="receipt__type_8h.html#a74be600736ad05d66a867681226384f1a86fd8d4226c17ff91e562ce8ebd3f07b">ta_c_rt_balance_inquiry</a>, 
+<br />
+&#160;&#160;<a class="el" href="receipt__type_8h.html#a74be600736ad05d66a867681226384f1ab125b50eaa4b17f1abe249a90fbd2cba">ta_c_rt_cash_advance</a>, 
+<a class="el" href="receipt__type_8h.html#a74be600736ad05d66a867681226384f1a36d63d9fa78922971efb68f108bed0a8">ta_c_rt_cancel_reservation</a>, 
 <a class="el" href="receipt__type_8h.html#a74be600736ad05d66a867681226384f1a91403412c766f77e691a78c25006a3e4">ta_c_rt_credit</a>, 
+<a class="el" href="receipt__type_8h.html#a74be600736ad05d66a867681226384f1ae905c59aaea249aad1a73da3c556e731">ta_c_rt_confirm_reservation</a>, 
+<br />
+&#160;&#160;<a class="el" href="receipt__type_8h.html#a74be600736ad05d66a867681226384f1a0892d04c3a69d4eba1fc6818efb44150">ta_c_rt_finalize_purchase</a>, 
+<a class="el" href="receipt__type_8h.html#a74be600736ad05d66a867681226384f1a83875f1729161bed7fc21e10fdad4bcd">ta_c_rt_load</a>, 
+<a class="el" href="receipt__type_8h.html#a74be600736ad05d66a867681226384f1a34dae7edf4a4e3df60748f731808547e">ta_c_rt_pre_authorization</a>, 
+<a class="el" href="receipt__type_8h.html#a74be600736ad05d66a867681226384f1a3f4aff07b94390fbc6253227d16f21ae">ta_c_rt_purchase</a>, 
+<br />
+&#160;&#160;<a class="el" href="receipt__type_8h.html#a74be600736ad05d66a867681226384f1acee825cc6bc25105a405b2f9669f4dd0">ta_c_rt_purchase_forced_acceptance</a>, 
+<a class="el" href="receipt__type_8h.html#a74be600736ad05d66a867681226384f1ad08a02c2abb1134a018cb278fe64800e">ta_c_rt_purchase_mail_ordered</a>, 
+<a class="el" href="receipt__type_8h.html#a74be600736ad05d66a867681226384f1a222490d307ce64899036fe9779e515cf">ta_c_rt_purchase_phone_authorized</a>, 
+<a class="el" href="receipt__type_8h.html#a74be600736ad05d66a867681226384f1ad95e873a2af4feb4a8bf02cefd4418c4">ta_c_rt_purchase_phone_ordered</a>, 
+<br />
+&#160;&#160;<a class="el" href="receipt__type_8h.html#a74be600736ad05d66a867681226384f1a800dbd419b8cb441b5905cd61b0f5403">ta_c_rt_purchase_reservation</a>, 
+<a class="el" href="receipt__type_8h.html#a74be600736ad05d66a867681226384f1acf2d6175e71ad69346bb7cf8dfe458be">ta_c_rt_purchase_with_cashback</a>, 
+<a class="el" href="receipt__type_8h.html#a74be600736ad05d66a867681226384f1a1c321544448a1a3a258d97c7c60e5a23">ta_c_rt_reservation</a>, 
 <a class="el" href="receipt__type_8h.html#a74be600736ad05d66a867681226384f1a6ef94d65b8c7397c655eb060c203de24">ta_c_rt_reversal</a>
+<br />
  }</td></tr>
 <tr class="separator:a74be600736ad05d66a867681226384f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -138,10 +160,58 @@ Enumerations</h2></td></tr>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a74be600736ad05d66a867681226384f1a0b549fdf410c8d10dde50bee654ba35f"></a>ta_c_rt_undefined&#160;</td><td class="fielddoc"><p>Undefined/invalid value. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a74be600736ad05d66a867681226384f1a3f4aff07b94390fbc6253227d16f21ae"></a>ta_c_rt_purchase&#160;</td><td class="fielddoc"><p>Purchase receipt.</p>
+<tr><td class="fieldname"><a id="a74be600736ad05d66a867681226384f1ae5fbac8b1a78300b01c01221055ef058"></a>ta_c_rt_activate_card&#160;</td><td class="fielddoc"><p>ActivateCard receipt.</p>
+<p>Specification: retail.</p>
+</td></tr>
+<tr><td class="fieldname"><a id="a74be600736ad05d66a867681226384f1a2a28a706298de61ae926883875723bf7"></a>ta_c_rt_adjust_reservation&#160;</td><td class="fielddoc"><p>AdjustReservation receipt.</p>
+<p>Specification: retail.</p>
+</td></tr>
+<tr><td class="fieldname"><a id="a74be600736ad05d66a867681226384f1a86fd8d4226c17ff91e562ce8ebd3f07b"></a>ta_c_rt_balance_inquiry&#160;</td><td class="fielddoc"><p>BalanceInquiry receipt.</p>
+<p>Specification: retail.</p>
+</td></tr>
+<tr><td class="fieldname"><a id="a74be600736ad05d66a867681226384f1ab125b50eaa4b17f1abe249a90fbd2cba"></a>ta_c_rt_cash_advance&#160;</td><td class="fielddoc"><p>CashAdvance receipt.</p>
+<p>Specification: retail.</p>
+</td></tr>
+<tr><td class="fieldname"><a id="a74be600736ad05d66a867681226384f1a36d63d9fa78922971efb68f108bed0a8"></a>ta_c_rt_cancel_reservation&#160;</td><td class="fielddoc"><p>CancelReservation receipt.</p>
 <p>Specification: retail.</p>
 </td></tr>
 <tr><td class="fieldname"><a id="a74be600736ad05d66a867681226384f1a91403412c766f77e691a78c25006a3e4"></a>ta_c_rt_credit&#160;</td><td class="fielddoc"><p>Credit receipt.</p>
+<p>Specification: retail.</p>
+</td></tr>
+<tr><td class="fieldname"><a id="a74be600736ad05d66a867681226384f1ae905c59aaea249aad1a73da3c556e731"></a>ta_c_rt_confirm_reservation&#160;</td><td class="fielddoc"><p>ConfirmReservation receipt.</p>
+<p>Specification: retail.</p>
+</td></tr>
+<tr><td class="fieldname"><a id="a74be600736ad05d66a867681226384f1a0892d04c3a69d4eba1fc6818efb44150"></a>ta_c_rt_finalize_purchase&#160;</td><td class="fielddoc"><p>FinalizePurchase receipt.</p>
+<p>Specification: retail.</p>
+</td></tr>
+<tr><td class="fieldname"><a id="a74be600736ad05d66a867681226384f1a83875f1729161bed7fc21e10fdad4bcd"></a>ta_c_rt_load&#160;</td><td class="fielddoc"><p>Load card/voucher receipt.</p>
+<p>Specification: retail.</p>
+</td></tr>
+<tr><td class="fieldname"><a id="a74be600736ad05d66a867681226384f1a34dae7edf4a4e3df60748f731808547e"></a>ta_c_rt_pre_authorization&#160;</td><td class="fielddoc"><p>PreAuthorization receipt.</p>
+<p>Specification: retail.</p>
+</td></tr>
+<tr><td class="fieldname"><a id="a74be600736ad05d66a867681226384f1a3f4aff07b94390fbc6253227d16f21ae"></a>ta_c_rt_purchase&#160;</td><td class="fielddoc"><p>Purchase receipt.</p>
+<p>Specification: retail.</p>
+</td></tr>
+<tr><td class="fieldname"><a id="a74be600736ad05d66a867681226384f1acee825cc6bc25105a405b2f9669f4dd0"></a>ta_c_rt_purchase_forced_acceptance&#160;</td><td class="fielddoc"><p>PurchaseForcedAcceptance receipt.</p>
+<p>Specification: retail.</p>
+</td></tr>
+<tr><td class="fieldname"><a id="a74be600736ad05d66a867681226384f1ad08a02c2abb1134a018cb278fe64800e"></a>ta_c_rt_purchase_mail_ordered&#160;</td><td class="fielddoc"><p>PurchaseMailOrdered receipt.</p>
+<p>Specification: retail.</p>
+</td></tr>
+<tr><td class="fieldname"><a id="a74be600736ad05d66a867681226384f1a222490d307ce64899036fe9779e515cf"></a>ta_c_rt_purchase_phone_authorized&#160;</td><td class="fielddoc"><p>PurchasePhoneAuthorized receipt.</p>
+<p>Specification: retail.</p>
+</td></tr>
+<tr><td class="fieldname"><a id="a74be600736ad05d66a867681226384f1ad95e873a2af4feb4a8bf02cefd4418c4"></a>ta_c_rt_purchase_phone_ordered&#160;</td><td class="fielddoc"><p>PurchasePhoneOrdered receipt.</p>
+<p>Specification: retail.</p>
+</td></tr>
+<tr><td class="fieldname"><a id="a74be600736ad05d66a867681226384f1a800dbd419b8cb441b5905cd61b0f5403"></a>ta_c_rt_purchase_reservation&#160;</td><td class="fielddoc"><p>PurchaseReservation receipt.</p>
+<p>Specification: retail.</p>
+</td></tr>
+<tr><td class="fieldname"><a id="a74be600736ad05d66a867681226384f1acf2d6175e71ad69346bb7cf8dfe458be"></a>ta_c_rt_purchase_with_cashback&#160;</td><td class="fielddoc"><p>PurchaseWithCashback receipt.</p>
+<p>Specification: retail.</p>
+</td></tr>
+<tr><td class="fieldname"><a id="a74be600736ad05d66a867681226384f1a1c321544448a1a3a258d97c7c60e5a23"></a>ta_c_rt_reservation&#160;</td><td class="fielddoc"><p>Reservation receipt.</p>
 <p>Specification: retail.</p>
 </td></tr>
 <tr><td class="fieldname"><a id="a74be600736ad05d66a867681226384f1a6ef94d65b8c7397c655eb060c203de24"></a>ta_c_rt_reversal&#160;</td><td class="fielddoc"><p>Reversal receipt.</p>

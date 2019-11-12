@@ -10,6 +10,8 @@ var pos__entry__mode_8h =
       [ "ta_c_pem_ocr", "pos__entry__mode_8h.html#abcd49dcaa026c564bba0a40e0779c198a12b05c4ef6d3506b3357ab32a54783f7", null ],
       [ "ta_c_pem_icc", "pos__entry__mode_8h.html#abcd49dcaa026c564bba0a40e0779c198a00ee2ccc99f6a686ab2031f2f8f3aca7", null ],
       [ "ta_c_pem_reference_based", "pos__entry__mode_8h.html#abcd49dcaa026c564bba0a40e0779c198a03f3ef8f25c6aee337a387f2beb67280", null ],
+      [ "ta_c_pem_bluetooth_low_energy", "pos__entry__mode_8h.html#abcd49dcaa026c564bba0a40e0779c198a465401a6913849bef1d51df26eaa2a9c", null ],
+      [ "ta_c_pem_qrc_on_terminal", "pos__entry__mode_8h.html#abcd49dcaa026c564bba0a40e0779c198a0cc1a839984bac1b56d98714007b67ce", null ],
       [ "ta_c_pem_qrc_on_mobile", "pos__entry__mode_8h.html#abcd49dcaa026c564bba0a40e0779c198abe612af5ef8504f8c186f69b7c8058eb", null ],
       [ "ta_c_pem_token_based_ecommerce", "pos__entry__mode_8h.html#abcd49dcaa026c564bba0a40e0779c198aa564d885a7b0e6519c028d122e129f54", null ],
       [ "ta_c_pem_mag_stripe", "pos__entry__mode_8h.html#abcd49dcaa026c564bba0a40e0779c198ae9d60486a1ed836696194c8a04430ac2", null ],

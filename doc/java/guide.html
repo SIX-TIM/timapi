@@ -32,7 +32,7 @@
                 <a class="lang_java" href="../java/guide.html">Java</a>
               </li>
               <li>
-                <span style="color: gray">.NET</span>
+                <a class="lang_cs" href="../cs/guide.html">.NET</a>
               </li>
               <li>
                 <a class="lang_swift" href="../swift/guide.html">Swift</a>
@@ -51,7 +51,7 @@
           </div>
           <div id="docTitle">Detailed Implementation Guide</div>
           <ul class="nav">
-          <li><a href="#intro">Introduction</a></li><li><a href="#sysreq">System Requirements</a></li><li><a href="#setup">Setup Configuration</a><ul class="nav"><li><a href="#network">Network Configuration</a></li><li><a href="#guides">Guides Configuration</a></li><li><a href="#configfile">Configuration File</a></li></ul></li><li><a href="#operation">Operation Overview</a></li><li><a href="#automatisms">Automatisms</a></li><li><a href="#useCase">Use Cases</a><ul class="nav"><li><a href="#retailManualPanKeyEntry">Manual Pan Key Entry</a></li><li class="filterGuides guidePetrol"><a href="#petrolUseCase">Guide Petrol Use Cases</a><ul class="nav"><li class="filterGuides guidePetrol"><a href="#petrolBasketHandling">Petrol Basket Handling</a></li><li><a href="#petrolUseCaseIndoorOnline">Indoor - Online Card</a></li><li><a href="#petrolUseCaseOutdoorOnline">Outdoor - Online Card</a></li><li><a href="#petrolUseCaseIndoorOffline">Indoor - Offline Card</a></li><li><a href="#petrolUseCaseOutdoorOffline">Outdoor - Offline Card</a></li></ul></li><li class="filterGuides guideUnattended"><a href="#uatUseCase">Guide Unattended Use Cases</a><ul class="nav"><li><a href="#uatUseCasePartialCommit">Use Case Partial Commit</a></li><li><a href="#uatUseCaseHoldCommit">Use Case Hold Commit</a></li><li><a href="#uatUseCaseAmountAdjustment">Use Case Amount Adjustment</a></li><li><a href="#uatUseCaseRetainCard">Use Case Retain Card</a></li><li><a href="#uatUseCaseSilentFlag">Use Case Silent Abort</a></li></ul></li><li class="filterGuides guideBanking"><a href="#bankingUseCase">Guide Banking Use Cases</a><ul class="nav"><li><a href="#bankingBalanceInquiryUseCase">Balance Inquiry</a></li><li><a href="#bankingClientIdentificationUseCase">Client Identification</a></li><li><a href="#bankingSignatureCaptureUseCase">Signature Capture</a></li><li><a href="#bankingCardIdentificationUseCase">Card Identification</a></li><li><a href="#bankingAccountTransferUseCase">Account Transfer: Swiss Post only</a></li><li><a href="#bankingAccountDepositUseCase">Account Deposit: Swiss Post only</a></li><li><a href="#bankingAccountPayoutUseCase">Account Payout: Swiss Post only</a></li><li><a href="#bankingParcelAcknowledgementUseCase">Parcel Acknowledgement: Swiss Post only</a></li><li><a href="#bankingLoadPrePaidPhoneUseCase">Load PrePaid Phone: Swiss Post only</a></li></ul></li><li class="filterGuides guideAustria"><a href="#austrianUseCase">Guide Austrian Use Cases</a><ul class="nav"><li class="filterGuides guideAustria"><a href="#austrianUseCaseNGV">Austrian Use Case: NGV</a></li><li class="filterGuides guideAustria"><a href="#austrianUseCaseDelayedPayment">Austrian Use Case: Delayed Payment</a></li></ul></li></ul></li><li><a href="#methods">Terminal methods overview</a><ul class="nav"><li><a href="#mainFunc">Main / guide Retail terminal functions</a></li><li class="filterGuides guidePetrol"><a href="#petrolFunc">Guide Petrol terminal functions</a></li><li class="filterGuides guideUnattended"><a href="#uatFunc">Guide Unattended terminal functions</a></li><li class="filterGuides guideDialog"><a href="#dialogFunc">Guide Dialog terminal functions</a></li><li><a href="#addMethods">Additional terminal listener-events</a></li></ul></li><li><a href="#flows">Flows</a><ul class="nav"><li class="filterGuides guidePetrol"><a href="#petrolFlows">Petrol Additional Flows</a><ul class="nav"><li><a href="#petrolFlowIndoorOnline">Petrol Flow: Indoor - Online Card</a></li><li><a href="#petrolFlowOutdoorOnline">Petrol Flow: Outdoor - Online Card</a></li><li><a href="#petrolFlowIndoorOffline">Petrol Flow: Indoor - Offline Card</a></li><li><a href="#petrolFlowOutdoorOffline">Petrol Flow: Outdoor - Offline Card</a></li></ul></li><li class="filterGuides guideUnattended"><a href="#uatFlows">Guide Unattended Additional Flows</a><ul class="nav"><li><a href="#uatFlowPartialCommit"> Flow: Partial Commit</a></li><li><a href="#uatFlowHoldCommit"> Flow: Hold commit</a></li><li><a href="#uatFlowAmountAdjustment"> Flow: Amount adjustment</a></li><li><a href="#uatFlowPreAuth"> Flow: PreAuthorization</a></li><li><a href="#uatFlowRetainCard"> Flow: Retain card</a></li><li><a href="#uatFlowSilentFlag"> Flow: Silent abort</a></li></ul></li><li class="filterGuides guideBanking"><a href="#bankingFlows">Banking Additional Flows</a><ul class="nav"><li><a href="#bankingBalanceInquiryFlow">Banking Flow: BalanceInquiry</a></li><li><a href="#bankingClientIdentificationFlow">Banking Flow: Client Identification</a></li><li><a href="#bankingCardIdentificationFlow">Banking Flow: Card Identification</a></li><li><a href="#bankingAccountTransferFlow">Banking Flow: Account Transfer</a></li><li><a href="#bankingAccountDepositFlow">Banking Flow: Account Deposit</a></li><li><a href="#bankingAccountPayoutFlow">Banking Flow: Account Payout</a></li><li><a href="#bankingParcelAcknowledgementFlow">Banking Flow: Parcel Acknowledgement</a></li><li><a href="#bankingLoadPrePaidPhoneFlow">Banking Flow: Load PrePaid Phone</a></li></ul></li><li class="filterGuides guideAustria"><a href="#austrianFlows">Guide Austrian Additional Flows</a><ul class="nav"><li><a href="#austrianFlowNGVWithoutDelay">Austrian Flow: NGV Purchase without delay</a></li><li><a href="#austrianFlowNGVWithDelay">Austrian Flow: NGV Purchase with delay</a></li><li><a href="#austrianFlowNGVFallback">Austrian Flow: NGV Purchase fallback with Non-NGV card</a></li><li><a href="#austrianFlowNGVMandatoryError">Austrian Flow: NGV Purchase mandatory with error</a></li></ul></li></ul></li><li><a href="#logging">Logging</a><ul class="nav"><li><a href="#loglevel">LogLevel</a></li><li><a href="#logRotation">Log Rotation Handling</a></li></ul></li><li><a href="#examples">Code Examples</a></li></ul>
+          <li><a href="#intro">Introduction</a></li><li><a href="#sysreq">System Requirements</a></li><li><a href="#setup">Setup Configuration</a><ul class="nav"><li><a href="#network">Network Configuration</a></li><li><a href="#guides">Guides Configuration</a></li><li><a href="#configfile">Configuration File</a></li></ul></li><li><a href="#operation">Operation Overview</a></li><li><a href="#automatisms">Automatisms</a></li><li><a href="#useCase">Use Cases</a><ul class="nav"><li><a href="#retailManualPanKeyEntry">Manual Pan Key Entry</a></li><li class="filterGuides guidePetrol"><a href="#petrolUseCase">Guide Petrol Use Cases</a><ul class="nav"><li class="filterGuides guidePetrol"><a href="#petrolBasketHandling">Petrol Basket Handling</a></li><li><a href="#petrolUseCaseIndoorOnline">Indoor - Online Card</a></li><li><a href="#petrolUseCaseOutdoorOnline">Outdoor - Online Card</a></li><li><a href="#petrolUseCaseIndoorOffline">Indoor - Offline Card</a></li><li><a href="#petrolUseCaseOutdoorOffline">Outdoor - Offline Card</a></li></ul></li><li class="filterGuides guideUnattended"><a href="#uatUseCase">Guide Unattended Use Cases</a><ul class="nav"><li><a href="#uatUseCasePartialCommit">Use Case Partial Commit</a></li><li><a href="#uatUseCaseHoldCommit">Use Case Hold Commit</a></li><li><a href="#uatUseCaseAmountAdjustment">Use Case Amount Adjustment</a></li><li><a href="#uatUseCaseRetainCard">Use Case Retain Card</a></li><li><a href="#uatUseCaseSilentFlag">Use Case Silent Abort</a></li></ul></li><li class="filterGuides guideBanking"><a href="#bankingUseCase">Guide Banking Use Cases</a><ul class="nav"><li><a href="#bankingBalanceInquiryUseCase">Balance Inquiry</a></li><li><a href="#bankingClientIdentificationUseCase">Client Identification</a></li><li><a href="#bankingSignatureCaptureUseCase">Signature Capture</a></li><li><a href="#bankingCardIdentificationUseCase">Card Identification</a></li><li><a href="#bankingAccountTransferUseCase">Account Transfer: Swiss Post only</a></li><li><a href="#bankingAccountDepositUseCase">Account Deposit: Swiss Post only</a></li><li><a href="#bankingAccountPayoutUseCase">Account Payout: Swiss Post only</a></li><li><a href="#bankingParcelAcknowledgementUseCase">Parcel Acknowledgement: Swiss Post only</a></li><li><a href="#bankingLoadPrePaidPhoneUseCase">Load PrePaid Phone: Swiss Post only</a></li></ul></li><li class="filterGuides guideAustria"><a href="#austrianUseCase">Guide Austrian Use Cases</a><ul class="nav"><li class="filterGuides guideAustria"><a href="#austrianUseCaseNGV">Austrian Use Case: NGV</a></li><li class="filterGuides guideAustria"><a href="#austrianUseCaseDelayedPayment">Austrian Use Case: Delayed Payment</a></li></ul></li></ul></li><li><a href="#methods">Terminal methods overview</a><ul class="nav"><li><a href="#mainFunc">Main / guide Retail terminal functions</a></li><li class="filterGuides guidePetrol"><a href="#petrolFunc">Guide Petrol terminal functions</a></li><li class="filterGuides guideUnattended"><a href="#uatFunc">Guide Unattended terminal functions</a></li><li class="filterGuides guideBanking"><a href="#bankingFunc">Banking terminal functions</a></li><li class="filterGuides guideDialog"><a href="#dialogFunc">Guide Dialog terminal functions</a></li><li><a href="#addMethods">Additional terminal listener-events</a></li></ul></li><li><a href="#flows">Flows</a><ul class="nav"><li class="filterGuides guidePetrol"><a href="#petrolFlows">Petrol Additional Flows</a><ul class="nav"><li><a href="#petrolFlowIndoorOnline">Petrol Flow: Indoor - Online Card</a></li><li><a href="#petrolFlowOutdoorOnline">Petrol Flow: Outdoor - Online Card</a></li><li><a href="#petrolFlowIndoorOffline">Petrol Flow: Indoor - Offline Card</a></li><li><a href="#petrolFlowOutdoorOffline">Petrol Flow: Outdoor - Offline Card</a></li></ul></li><li class="filterGuides guideUnattended"><a href="#uatFlows">Guide Unattended Additional Flows</a><ul class="nav"><li><a href="#uatFlowPartialCommit"> Flow: Partial Commit</a></li><li><a href="#uatFlowHoldCommit"> Flow: Hold commit</a></li><li><a href="#uatFlowAmountAdjustment"> Flow: Amount adjustment</a></li><li><a href="#uatFlowPreAuth"> Flow: PreAuthorization</a></li><li><a href="#uatFlowRetainCard"> Flow: Retain card</a></li><li><a href="#uatFlowSilentFlag"> Flow: Silent abort</a></li></ul></li><li class="filterGuides guideBanking"><a href="#bankingFlows">Banking Additional Flows</a><ul class="nav"><li><a href="#bankingBalanceInquiryFlow">Banking Flow: BalanceInquiry</a></li><li><a href="#bankingClientIdentificationFlow">Banking Flow: Client Identification</a></li><li><a href="#bankingCardIdentificationFlow">Banking Flow: Card Identification</a></li><li><a href="#bankingAccountTransferFlow">Banking Flow: Account Transfer</a></li><li><a href="#bankingAccountDepositFlow">Banking Flow: Account Deposit</a></li><li><a href="#bankingAccountPayoutFlow">Banking Flow: Account Payout</a></li><li><a href="#bankingParcelAcknowledgementFlow">Banking Flow: Parcel Acknowledgement</a></li><li><a href="#bankingLoadPrePaidPhoneFlow">Banking Flow: Load PrePaid Phone</a></li></ul></li><li class="filterGuides guideAustria"><a href="#austrianFlows">Guide Austrian Additional Flows</a><ul class="nav"><li><a href="#austrianFlowNGVWithoutDelay">Austrian Flow: NGV Purchase without delay</a></li><li><a href="#austrianFlowNGVWithDelay">Austrian Flow: NGV Purchase with delay</a></li><li><a href="#austrianFlowNGVFallback">Austrian Flow: NGV Purchase fallback with Non-NGV card</a></li><li><a href="#austrianFlowNGVMandatoryError">Austrian Flow: NGV Purchase mandatory with error</a></li></ul></li></ul></li><li><a href="#logging">Logging</a><ul class="nav"><li><a href="#loglevel">Log Level</a></li><li><a href="#logRotation">Log Rotation Handling</a></li></ul></li><li><a href="#examples">Code Examples</a></li></ul>
           <div class="seperator">&#160;</div>
           <div id="docLinks">
           <div class="linkDiv"><a href="simple.html">Simple Implementation Guide</a></div><div class="linkDiv"><a href="appendix.html">Appendix</a></div><div class="linkDiv"><a href="doc/index.html">API Documentation</a></div><div class="linkDiv"><a href="../../version/version-history.html">Version History</a></div></div>
@@ -59,7 +59,7 @@
       </nav>
 
       <div id="titleFloating">
-          <div><a class="hide_c hide_swift" href="simple.html" id="linkOtherGuide">go to Simple Implementation Guide</a></div>
+          <div><a class="hide_c hide_swift hide_cs" href="simple.html" id="linkOtherGuide">go to Simple Implementation Guide</a></div>
           <div id="lblDiv">Detailed Implementation Guide</div>
       </div>
 
@@ -141,12 +141,11 @@
         <div class="row"><div class="col-md-6"></div></div><section><h2><a id="guides" name="guides">&#160;</a>Guides Configuration</h2><div class="row"><div class="col-md-6">
                     <p>There are various
                         <code><a href="doc/index.html?com/six/timapi/constants/Guides.html">Guides</a></code>
-                        covering different use case scenarios. The guide <code><a href="doc/index.html?com/six/timapi/constants/Guides.html#RETAIL">Retail</a></code> is the basic guide and is activated as
-                        default. With
-                        <code><a href="doc/index.html?com/six/timapi/TerminalSettings.html#setGuides-java.util.EnumSet-">setGuides</a></code>
-                        the guides can be configured. Important: the configuration needs to include all desired guides
+                        covering different use case scenarios. The guide <code><a href="doc/index.html?com/six/timapi/constants/Guides.html#RETAIL">Retail</a></code>is the basic guide and is activated as
+                        default. With <code><a href="doc/index.html?com/six/timapi/TerminalSettings.html#setGuides-java.util.EnumSet-">setGuides</a></code>
+                        the guides can be configured. <span excl="cs">Important: the configuration needs to include all desired guides
                         (including
-                        the retail guide).
+                        the retail guide).</span>
                     </p>
 
                 </div><div class="col-md-6">
@@ -210,23 +209,21 @@ terminal.dispose();</code></pre>
                                 </td>
                                 <td>Directory where log files are generated</td>
                             </tr>
-                            <tr>
+                            <tr lang="java">
                                 <td>
                                     <strong>LogLevel</strong>
                                 </td>
                                 <td>Logging level, defines how much information will be logged. For detailed values see
                                     <a href="#loglevel">Logging / LogLevel</a>
                                 </td>
-                            </tr>
-                            <tr>
+                            </tr> <tr lang="java">
                                 <td>
                                     <strong>LogRetainFileCount</strong>
                                 </td>
-                                <td>Defines how many log files will be kept before deleting (or archiving) to oldest.
+                                <td>Defines how many log files will be kept before deleting (or archiving) the oldest.
                                     <a href="#logRotation">Logging / Log Rotation Handling</a>
                                 </td>
-                            </tr>
-                            <tr>
+                            </tr> <tr>
                                 <td>
                                     <strong>TerminalId</strong>
                                 </td>
@@ -388,11 +385,14 @@ SecuredConnection = On</code></pre>
                                 create <strong>mandatory</strong>
                                 list of <code><a href="doc/index.html?com/six/timapi/EcrInfo.html">EcrInfo</a></code> and add with <code><a href="doc/index.html?com/six/timapi/Terminal.html#addEcrData-com.six.timapi.EcrInfo-">addEcrData</a></code>
                             </li>
-                            <li>create list of <code><a href="doc/index.html?com/six/timapi/PrintOption.html">PrintOptions</a></code> and set with <code><a href="doc/index.html?com/six/timapi/Terminal.html#setPrintOptions-java.util.List-">setPrintOptions</a></code>
+                            <li>
+                                create list of 
+                                <code><a href="doc/index.html?com/six/timapi/PrintOption.html">PrintOptions</a></code>
+                                and set
+                                <span excl="cs">with</span> <code><a href="doc/index.html?com/six/timapi/Terminal.html#setPrintOptions-java.util.List-">setPrintOptions</a></code>
                             </li>
-                            <li><code><a href="doc/index.html?com/six/timapi/Terminal.html#addListener-com.six.timapi.TerminalListener-">addListeners</a></code>
-                            </li>
-                        </ul>
+                            <li excl="cs"><code><a href="doc/index.html?com/six/timapi/Terminal.html#addListener-com.six.timapi.TerminalListener-">addListeners</a></code>
+                            </li> </ul>
                     </li>
                     <li>
                         <code><a href="doc/index.html?com/six/timapi/Terminal.html#connect--">Connect</a></code>
@@ -467,13 +467,12 @@ SecuredConnection = On</code></pre>
         </div></div></section>
 
         <div class="row"><div class="col-md-6"></div></div><section class="filterGuides guidePetrol"><h2><a id="petrolUseCase" name="petrolUseCase">&#160;</a>Guide Petrol Use Cases</h2><div class="row"><div class="col-md-6"><p>Petrol functionality adds a number of
- 	    <a href="#petrolFunc">additional methods</a>,
+ 	    <a href="#petrolFunc">additional methods and notifiers</a>,
  			<code><a href="doc/index.html?com/six/timapi/constants/TransactionType.html">transaction types</a></code>,
  			containers (<code><a href="doc/index.html?com/six/timapi/TransactionResponse.html#getAdditionalInfo--">AdditionalInfoList</a></code>,
- 			<code><a href="doc/index.html?com/six/timapi/Basket.html">Basket</a></code>) and
- 			container content (<code><a href="doc/index.html?com/six/timapi/constants/ProcessingDisposition.html">ProcessingDisposition</a></code>)
- 			<a href="#petrolAddMethods">notifiers</a> and
- 			<a href="#petrolFlows">flows</a>
+ 			<code><a href="doc/index.html?com/six/timapi/Basket.html">Basket</a></code>)
+			 , container content (<code><a href="doc/index.html?com/six/timapi/constants/ProcessingDisposition.html">ProcessingDisposition</a></code>)
+ 			and <a href="#petrolFlows">flows</a>
  			tailored to the needs at petrol stations.</p>
 
       <p>Petrol has the following basic use cases:</p>
@@ -669,9 +668,9 @@ terminal.transactionAsync(TransactionType.PURCHASE, request);
         </div></div></section>
   <div class="row"><div class="col-md-6"></div></div></section>
         <div class="row"><div class="col-md-6"></div></div><section class="filterGuides guideBanking"><h2><a id="bankingUseCase" name="bankingUseCase">&#160;</a>Guide Banking Use Cases</h2><div class="row"><div class="col-md-6"><p>Banking functionality adds an
- 	    <a href="#bankingFunc">additional method</a>, 
+ 	    <a href="#bankingFunc">additional methods and notifiers</a>, 
  			<code><a href="doc/index.html?com/six/timapi/constants/TransactionType.html">banking transaction types</a></code>,
- 			<a href="#bakingAddMethods">notifiers</a> and 
+ 	    and 
  			<a href="#bankingFlows">flows</a> 
  			tailored to the needs of banking use cases.
  		</p>
@@ -1243,7 +1242,33 @@ terminal.addListener(new MyTerminalListener());
      </table>
   </div></div></section>
         
-        
+        <div class="row"><div class="col-md-6"></div></div><section><h2><a id="bankingFunc" name="bankingFunc">&#160;</a>Banking terminal functions</h2><div class="row"><div class="col-md-6"><table class="table">
+        <thead>
+            <tr>
+                <th>
+                    <strong class="syncMethod">Sync method</strong>
+                    <br>
+                    <span class="asyncMethod">Async method</span>
+                    <br>
+                    <span class="completedMethod">Completed event</span>
+                </th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <code class="syncMethod"><a class="syncMethod" href="doc/index.html?com/six/timapi/Terminal.html#balanceInquiry--">balanceInquiry</a></code>
+                    <br class="syncMethod">
+                    <code class="asyncMethod"><a class="asyncMethod" href="doc/index.html?com/six/timapi/Terminal.html#balanceInquiryAsync--">balanceInquiryAsync</a></code>
+                    <br>
+                    <code class="completedMethod"><a class="completedMethod" href="doc/index.html?com/six/timapi/TerminalListener.html#balanceInquiryCompleted-com.six.timapi.TimEvent-com.six.timapi.BalanceInquiryResponse-">balanceInquiryCompleted</a></code>
+                </td>
+                <td>Perform a balance check of a card/account on the terminal.</td>
+            </tr>
+      </tbody>
+    </table>
+  </div></div></section>
         <div class="row"><div class="col-md-6"></div></div><section class="filterGuides guideDialog"><h2><a id="dialogFunc" name="dialogFunc">&#160;</a>Guide Dialog terminal functions</h2><div class="row"><div class="col-md-6"><table class="table">
         <thead>
             <tr>
@@ -1315,7 +1340,7 @@ terminal.addListener(new MyTerminalListener());
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
+                    <tr excl="cs">
                         <td>
                             <code class="completedMethod"><a class="completedMethod" href="doc/index.html?com/six/timapi/DefaultTerminalListener.html#requestCompleted-com.six.timapi.TimEvent-java.lang.Object-">requestCompleted</a></code>
                         </td>
@@ -1427,27 +1452,31 @@ terminal.addListener(new MyTerminalListener());
           <div class="row"><div class="col-md-6"></div></div></section>
     <div class="row"><div class="col-md-6"></div></div></section> 
 
-    <section><h1><a id="logging" name="logging">&#160;</a>Logging</h1><section><h2><a id="loglevel" name="loglevel">&#160;</a>LogLevel</h2><div class="row"><div class="col-md-6">
-                <p lang="java swift">By default the TIM API has a Logger that defines how much logging is generated inside the TIM API. To
-                    this Logger different handlers can be added, e.g. ConsoleHandler for logging into the debug console or FileHandler
-                    to log into a file. By default a FileHandler is added to the TIM API logger.
-                </p>
-                <p lang="java swift">The following logging levels are valid:
-                  <ul lang="java">
-                    <li>ALL</li>
-                    <li>FINEST</li>
-                    <li>FINER</li>
-                    <li>FINE</li>
-                    <li>CONFIG</li>
-                    <li>INFO</li>
-                    <li>WARNING</li>
-                    <li>SEVERE</li>
-                    <li>OFF</li>
-                  </ul> </p>
-              </div><div class="col-md-6">
-                <p lang="java swift">The logging level can be adjusted programatically as follows after a terminal object has been
-                    created:
-                <pre><code class="language-{.java}">// Set the TIM API internal logging level
+    <section><h1><a id="logging" name="logging">&#160;</a>Logging</h1><div class="row"><div class="col-md-6"><p>
+        The TIM API is able to log an extensive set of events and actions within the TIM API. It's key that logs are created and stored properly. 
+        Logging enables support and makes bug-tracking much easier.
+        </p>
+        </div></div><section><h2><a id="loglevel" name="loglevel">&#160;</a>Log Level</h2><div class="row"><div class="col-md-6">
+                    <p> By default the TIM API has a Logger that defines how much logging is generated inside the TIM API. <span lang="java swift">To
+                        this Logger different handlers can be added, e.g. ConsoleHandler for logging into the debug console or FileHandler
+                        to log into a file. By default a FileHandler is added to the TIM API logger.</span>
+                    </p>
+                    <p> The following logging levels are valid:
+                    <ul lang="java">
+                        <li>ALL</li>
+                        <li>FINEST</li>
+                        <li>FINER</li>
+                        <li>FINE</li>
+                        <li>CONFIG</li>
+                        <li>INFO</li>
+                        <li>WARNING</li>
+                        <li>SEVERE</li>
+                        <li>OFF</li>
+                    </ul> </p>
+                </div><div class="col-md-6">
+                    <p lang="java swift">The logging level can be adjusted programatically as follows after a terminal object has been
+                        created:
+                    <pre><code class="language-{.java}">// Set the TIM API internal logging level
 Logger.getLogger(terminal.getLoggerName()).setLevel(Level.ALL);
 
 // Set the logging level of the different handlers that have been added to the logger
@@ -1459,9 +1488,10 @@ for (Handler handler : handlers){
 
 // To add a special handler to the TIM API logger
 Logger.getLogger(terminal.getLoggerName()).addHandler(myHandler);
-</code></pre> </p>
-            </div></div>
-      <div class="row"><div class="col-md-6"></div></div></section>
+</code></pre>
+                    </p>
+                </div></div>
+            <div class="row"><div class="col-md-6"></div></div></section>
       <div class="row"><div class="col-md-6"></div></div><section><h2><a id="logRotation" name="logRotation">&#160;</a>Log Rotation Handling</h2><div class="row"><div class="col-md-6">
             <p>The TIM API allows to configure a log file rotation handling, which means
             that it can be defined how many log files should be kept before deleting or archiving them.
@@ -1488,7 +1518,7 @@ Logger.getLogger(terminal.getLoggerName()).addHandler(myHandler);
             <figure><img src="../assets/img/TimApiRotationLoggingPrinciple.png"><figcaption>Log Rotation Handling Process</figcaption></figure>
           </div></div>
       <div class="row"><div class="col-md-6"></div></div></section>
-    <div class="row"><div class="col-md-6"></div></div></section>
+      <div class="row"><div class="col-md-6"></div></div></section>
     <section><h1><a id="examples" name="examples">&#160;</a>Code Examples</h1><div class="row"><div class="col-md-6"><p>This chapter contains example implementations for TIM API.</p>
         </div></div><div class="row"><div class="col-md-6">
                 <p>A simple implementation using synchronous calls looks like this:</p>
