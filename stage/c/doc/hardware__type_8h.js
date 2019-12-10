@@ -8,6 +8,10 @@ var hardware__type_8h =
       [ "ta_c_ht_pin_pad", "hardware__type_8h.html#a59b128d289d9842fb3c2b4a90e3d46e4aaf00af78628a46a0de2fe2be17442d3f", null ],
       [ "ta_c_ht_contact_reader", "hardware__type_8h.html#a59b128d289d9842fb3c2b4a90e3d46e4a06f45053254fe94e910d11c47b33ee5a", null ],
       [ "ta_c_ht_contactless_reader", "hardware__type_8h.html#a59b128d289d9842fb3c2b4a90e3d46e4af1478386fabc95fcd2cd8f70ef1a9842", null ],
-      [ "ta_c_ht_mag_stripe_reader", "hardware__type_8h.html#a59b128d289d9842fb3c2b4a90e3d46e4a143b97e66ad8a2a554e1d898ed346ddd", null ]
+      [ "ta_c_ht_mag_stripe_reader", "hardware__type_8h.html#a59b128d289d9842fb3c2b4a90e3d46e4a143b97e66ad8a2a554e1d898ed346ddd", null ],
+      [ "ta_c_ht_wifi_adapter", "hardware__type_8h.html#a59b128d289d9842fb3c2b4a90e3d46e4a38647f7960b4f035e515a5dec045a2f2", null ],
+      [ "ta_c_ht_lan_adapter", "hardware__type_8h.html#a59b128d289d9842fb3c2b4a90e3d46e4a3adbebc26fb6e18bd31109f9a73d0998", null ],
+      [ "ta_c_ht_bluetooth_adapter", "hardware__type_8h.html#a59b128d289d9842fb3c2b4a90e3d46e4af4173c3d41200a79a80b9977f57ef4e8", null ],
+      [ "ta_c_ht_mobile_adapter", "hardware__type_8h.html#a59b128d289d9842fb3c2b4a90e3d46e4a0d4562a286e2087d4db455ff219a8b76", null ]
     ] ]
 ];

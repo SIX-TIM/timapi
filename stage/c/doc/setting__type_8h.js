@@ -7,6 +7,7 @@ var setting__type_8h =
       [ "ta_c_st_display_contrast", "setting__type_8h.html#a68163926aacae5b0e415c0dcf343b6cbab27d3c16bb0d8adb498de77a2231ebc1", null ],
       [ "ta_c_st_keypad_tones", "setting__type_8h.html#a68163926aacae5b0e415c0dcf343b6cba8223d74032133b268000f2b4861c58fa", null ],
       [ "ta_c_st_alert_tones", "setting__type_8h.html#a68163926aacae5b0e415c0dcf343b6cba75ac9d4aa140c3c82486bca0eb4cbd34", null ],
-      [ "ta_c_st_language", "setting__type_8h.html#a68163926aacae5b0e415c0dcf343b6cbac3ea97dc4a6fc08549d6379f98032ae8", null ]
+      [ "ta_c_st_language", "setting__type_8h.html#a68163926aacae5b0e415c0dcf343b6cbac3ea97dc4a6fc08549d6379f98032ae8", null ],
+      [ "ta_c_st_power_management_mode", "setting__type_8h.html#a68163926aacae5b0e415c0dcf343b6cbad0ed08906af4235082bebc73051aa904", null ]
     ] ]
 ];

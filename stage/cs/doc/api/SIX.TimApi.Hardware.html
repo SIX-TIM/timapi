@@ -587,6 +587,9 @@
                             <a href="SIX.TimApi.Constants.FinancialTransactions.html" title="FinancialTransactions" class="">FinancialTransactions</a>
                           </li>
                           <li class="">
+                            <a href="SIX.TimApi.Constants.FunctionHint.html" title="FunctionHint" class="">FunctionHint</a>
+                          </li>
+                          <li class="">
                             <a href="SIX.TimApi.Constants.Guides.html" title="Guides" class="">Guides</a>
                           </li>
                           <li class="">
@@ -811,13 +814,13 @@ Immutable class.</p>
   
   
   <a id="SIX_TimApi_Hardware__ctor_" data-uid="SIX.TimApi.Hardware.#ctor*"></a>
-  <h4 id="SIX_TimApi_Hardware__ctor_SIX_TimApi_Constants_HardwareType_System_String_System_DateTime_System_String_System_String_SIX_TimApi_Constants_SecurityStatus_System_DateTime_" data-uid="SIX.TimApi.Hardware.#ctor(SIX.TimApi.Constants.HardwareType,System.String,System.DateTime,System.String,System.String,SIX.TimApi.Constants.SecurityStatus,System.DateTime)">Hardware(HardwareType, String, DateTime, String, String, SecurityStatus, DateTime)</h4>
+  <h4 id="SIX_TimApi_Hardware__ctor_SIX_TimApi_Constants_HardwareType_System_String_System_DateTime_System_String_System_String_SIX_TimApi_Constants_SecurityStatus_System_DateTime_System_String_System_String_System_String_System_String_System_String_" data-uid="SIX.TimApi.Hardware.#ctor(SIX.TimApi.Constants.HardwareType,System.String,System.DateTime,System.String,System.String,SIX.TimApi.Constants.SecurityStatus,System.DateTime,System.String,System.String,System.String,System.String,System.String)">Hardware(HardwareType, String, DateTime, String, String, SecurityStatus, DateTime, String, String, String, String, String)</h4>
   <div class="markdown level1 summary"><p>Create hardware information.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Hardware(HardwareType hardwareType, string serialNumber, DateTime productionDate, string productVersion, string firmwareVersion, SecurityStatus securityStatus, DateTime lastCleaningDate)</code></pre>
+    <pre><code class="lang-csharp hljs">public Hardware(HardwareType hardwareType, string serialNumber, DateTime productionDate, string productVersion, string firmwareVersion, SecurityStatus securityStatus, DateTime lastCleaningDate, string imsi, string imei, string iccid, string hardwareAddress, string hardwareDescription)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -862,6 +865,153 @@ Immutable class.</p>
       <tr>
         <td><span class="xref">System.DateTime</span></td>
         <td><span class="parametername">lastCleaningDate</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">imsi</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">imei</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">iccid</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">hardwareAddress</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">hardwareDescription</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  
+  
+  <h4 id="SIX_TimApi_Hardware_HardwareAddress" data-uid="SIX.TimApi.Hardware.HardwareAddress">HardwareAddress</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string HardwareAddress</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="SIX_TimApi_Hardware_HardwareDescription" data-uid="SIX.TimApi.Hardware.HardwareDescription">HardwareDescription</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string HardwareDescription</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="SIX_TimApi_Hardware_Iccid" data-uid="SIX.TimApi.Hardware.Iccid">Iccid</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Iccid</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="SIX_TimApi_Hardware_Imei" data-uid="SIX.TimApi.Hardware.Imei">Imei</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Imei</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="SIX_TimApi_Hardware_Imsi" data-uid="SIX.TimApi.Hardware.Imsi">Imsi</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Imsi</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
         <td></td>
       </tr>
     </tbody>

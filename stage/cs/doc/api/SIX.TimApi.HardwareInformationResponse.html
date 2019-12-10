@@ -587,6 +587,9 @@
                             <a href="SIX.TimApi.Constants.FinancialTransactions.html" title="FinancialTransactions" class="">FinancialTransactions</a>
                           </li>
                           <li class="">
+                            <a href="SIX.TimApi.Constants.FunctionHint.html" title="FunctionHint" class="">FunctionHint</a>
+                          </li>
+                          <li class="">
                             <a href="SIX.TimApi.Constants.Guides.html" title="Guides" class="">Guides</a>
                           </li>
                           <li class="">
@@ -811,13 +814,13 @@ Immutable class.</p>
   
   
   <a id="SIX_TimApi_HardwareInformationResponse__ctor_" data-uid="SIX.TimApi.HardwareInformationResponse.#ctor*"></a>
-  <h4 id="SIX_TimApi_HardwareInformationResponse__ctor_System_Collections_Generic_List_SIX_TimApi_Hardware__System_Collections_Generic_Dictionary_SIX_TimApi_Constants_KernelType_System_String__System_Collections_Generic_Dictionary_SIX_TimApi_Constants_SettingType_System_String__System_Collections_Generic_Dictionary_System_String_System_String__" data-uid="SIX.TimApi.HardwareInformationResponse.#ctor(System.Collections.Generic.List{SIX.TimApi.Hardware},System.Collections.Generic.Dictionary{SIX.TimApi.Constants.KernelType,System.String},System.Collections.Generic.Dictionary{SIX.TimApi.Constants.SettingType,System.String},System.Collections.Generic.Dictionary{System.String,System.String})">HardwareInformationResponse(List&lt;Hardware&gt;, Dictionary&lt;KernelType, String&gt;, Dictionary&lt;SettingType, String&gt;, Dictionary&lt;String, String&gt;)</h4>
+  <h4 id="SIX_TimApi_HardwareInformationResponse__ctor_System_Collections_Generic_List_SIX_TimApi_Hardware__System_Collections_Generic_Dictionary_SIX_TimApi_Constants_KernelType_System_String__System_Collections_Generic_Dictionary_SIX_TimApi_Constants_SettingType_System_String__System_Collections_Generic_Dictionary_System_String_System_String__System_Int32_System_Boolean_" data-uid="SIX.TimApi.HardwareInformationResponse.#ctor(System.Collections.Generic.List{SIX.TimApi.Hardware},System.Collections.Generic.Dictionary{SIX.TimApi.Constants.KernelType,System.String},System.Collections.Generic.Dictionary{SIX.TimApi.Constants.SettingType,System.String},System.Collections.Generic.Dictionary{System.String,System.String},System.Int32,System.Boolean)">HardwareInformationResponse(List&lt;Hardware&gt;, Dictionary&lt;KernelType, String&gt;, Dictionary&lt;SettingType, String&gt;, Dictionary&lt;String, String&gt;, Int32, Boolean)</h4>
   <div class="markdown level1 summary"><p>Create hardware information response.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public HardwareInformationResponse(List&lt;Hardware&gt; hardwares, Dictionary&lt;KernelType, string&gt; kernelVersions, Dictionary&lt;SettingType, string&gt; settings, Dictionary&lt;string, string&gt; statistics)</code></pre>
+    <pre><code class="lang-csharp hljs">public HardwareInformationResponse(List&lt;Hardware&gt; hardwares, Dictionary&lt;KernelType, string&gt; kernelVersions, Dictionary&lt;SettingType, string&gt; settings, Dictionary&lt;string, string&gt; statistics, int batteryLevel, bool batteryCharging)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -847,6 +850,69 @@ Immutable class.</p>
       <tr>
         <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.String</span>&gt;</td>
         <td><span class="parametername">statistics</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">batteryLevel</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">batteryCharging</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  
+  
+  <h4 id="SIX_TimApi_HardwareInformationResponse_BatteryCharging" data-uid="SIX.TimApi.HardwareInformationResponse.BatteryCharging">BatteryCharging</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly bool BatteryCharging</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="SIX_TimApi_HardwareInformationResponse_BatteryLevel" data-uid="SIX.TimApi.HardwareInformationResponse.BatteryLevel">BatteryLevel</h4>
+  <div class="markdown level1 summary"><p>Charging level of the battery as a percentage value of the total charge.
+0% is defined as the amount of charge where the device performs an automatic shutdown.
+100% is a full charge.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly int BatteryLevel</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
         <td></td>
       </tr>
     </tbody>

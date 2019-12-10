@@ -587,6 +587,9 @@
                             <a href="SIX.TimApi.Constants.FinancialTransactions.html" title="FinancialTransactions" class="">FinancialTransactions</a>
                           </li>
                           <li class="">
+                            <a href="SIX.TimApi.Constants.FunctionHint.html" title="FunctionHint" class="">FunctionHint</a>
+                          </li>
+                          <li class="">
                             <a href="SIX.TimApi.Constants.Guides.html" title="Guides" class="">Guides</a>
                           </li>
                           <li class="">
@@ -850,6 +853,16 @@ sixml:EcrInfo tag.</p>
       <h4><a class="xref" href="SIX.TimApi.Constants.FinancialTransactions.html">FinancialTransactions</a></h4>
       <section><p>Flag constants for FeatureType and OptionType sixml:FinancialTransactions value.</p>
 </section>
+      <h4><a class="xref" href="SIX.TimApi.Constants.FunctionHint.html">FunctionHint</a></h4>
+      <section><p><p>Hint to the subsequent Finacial Transaction Function that will be called in the
+“WaitForProceed”-state following an InitTransaction.</p>
+<p>The value shall be used to initialize the contact less kernels and to determine if a
+certain POS entry mode is even possible. The ECR is allowed to not follow this indication
+and send another transaction type. This may lead the terminal application to do require a
+double tap or even terminate the transaction.</p>
+<p>The following values area valid:</p></p>
+<p>Specifications: petrol, advancedRetail, banking, hospitality, valueAddedServices.</p>
+</section>
       <h4><a class="xref" href="SIX.TimApi.Constants.Guides.html">Guides</a></h4>
       <section><p>Flag constants for FeatureType and OptionType sixml:Guides value.</p>
 </section>
@@ -926,7 +939,10 @@ response.</p>
 <p>The following values are valid:</p>
 </section>
       <h4><a class="xref" href="SIX.TimApi.Constants.ResourceId.html">ResourceId</a></h4>
-      <section></section>
+      <section><p>Enumeration attribute defines which dialog shall be displayed. All dialogs are divided into
+multiple groups containing dialogs similar operational area.</p>
+<p>Specification: dialog.</p>
+</section>
       <h4><a class="xref" href="SIX.TimApi.Constants.ResourceParameterType.html">ResourceParameterType</a></h4>
       <section></section>
       <h4><a class="xref" href="SIX.TimApi.Constants.ResponseType.html">ResponseType</a></h4>
