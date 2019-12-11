@@ -68,6 +68,8 @@ var terminal_8h =
     [ "ta_terminal_has_sw_update", "terminal_8h.html#a0fafa4e769959917faf5669cea133b6d", null ],
     [ "ta_terminal_hold_commit", "terminal_8h.html#ac1b72345a56cb591426877e3016a0ae9", null ],
     [ "ta_terminal_init_transaction", "terminal_8h.html#aec31a48f33502fab0a02eb52e6e90ee7", null ],
+    [ "ta_terminal_init_transaction2", "terminal_8h.html#a99f83f5346cd0ec54f06a525edaea77e", null ],
+    [ "ta_terminal_init_transaction2_async", "terminal_8h.html#a012cd68f352b29011194fbe044fb0a30", null ],
     [ "ta_terminal_init_transaction_async", "terminal_8h.html#ac4d632daf6e832115c0bfa89608dda01", null ],
     [ "ta_terminal_login", "terminal_8h.html#a227343e36d8f4956c9342945109b3b26", null ],
     [ "ta_terminal_login_async", "terminal_8h.html#aae9210abb8b3ed7f13f35e77e5d8c502", null ],

@@ -100,8 +100,108 @@ Functions</h2></td></tr>
 <tr class="memitem:a9a0701dbb125b0036ee270a423acd51a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="result__code_8h.html#ae860ee870a289833a24a586ba0c24975">ta_e_result_code_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hardware__information__response_8h.html#a9a0701dbb125b0036ee270a423acd51a">ta_hardware_information_response_get_statistics</a> (<a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a> response, <a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a> *statistics)</td></tr>
 <tr class="memdesc:a9a0701dbb125b0036ee270a423acd51a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Hardware statistics.  <a href="#a9a0701dbb125b0036ee270a423acd51a">More...</a><br /></td></tr>
 <tr class="separator:a9a0701dbb125b0036ee270a423acd51a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4eeafe0aa906e91cd8480c225041f81"><td class="memItemLeft" align="right" valign="top"><a class="el" href="result__code_8h.html#ae860ee870a289833a24a586ba0c24975">ta_e_result_code_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hardware__information__response_8h.html#ae4eeafe0aa906e91cd8480c225041f81">ta_hardware_information_response_get_battery_level</a> (<a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a> response, int *level)</td></tr>
+<tr class="memdesc:ae4eeafe0aa906e91cd8480c225041f81"><td class="mdescLeft">&#160;</td><td class="mdescRight">Charging level of the battery as a percentage value of the total charge.  <a href="#ae4eeafe0aa906e91cd8480c225041f81">More...</a><br /></td></tr>
+<tr class="separator:ae4eeafe0aa906e91cd8480c225041f81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53ebddc5d5de2ecee4b2688ffb487c44"><td class="memItemLeft" align="right" valign="top"><a class="el" href="result__code_8h.html#ae860ee870a289833a24a586ba0c24975">ta_e_result_code_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hardware__information__response_8h.html#a53ebddc5d5de2ecee4b2688ffb487c44">ta_hardware_information_response_get_battery_charging</a> (<a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a> response, <a class="el" href="boolean_8h.html#a5d3636b1f1f5de7550c138d0f81825bf">ta_e_boolean_t</a> *charging)</td></tr>
+<tr class="memdesc:a53ebddc5d5de2ecee4b2688ffb487c44"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates whether the batterie is being charged i.e. the device is plugged in.  <a href="#a53ebddc5d5de2ecee4b2688ffb487c44">More...</a><br /></td></tr>
+<tr class="separator:a53ebddc5d5de2ecee4b2688ffb487c44"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="a53ebddc5d5de2ecee4b2688ffb487c44"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a53ebddc5d5de2ecee4b2688ffb487c44">&#9670;&nbsp;</a></span>ta_hardware_information_response_get_battery_charging()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="result__code_8h.html#ae860ee870a289833a24a586ba0c24975">ta_e_result_code_t</a> ta_hardware_information_response_get_battery_charging </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a>&#160;</td>
+          <td class="paramname"><em>response</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="boolean_8h.html#a5d3636b1f1f5de7550c138d0f81825bf">ta_e_boolean_t</a> *&#160;</td>
+          <td class="paramname"><em>charging</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Indicates whether the batterie is being charged i.e. the device is plugged in. </p>
+<p>true: Plugged in false: Not plugged in</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">response</td><td>Object instance of type <a class="el" href="hardware__information__response_8h.html">hardware_information_response</a>. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">charging</td><td>Pointer to variable to write value to.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">ta_c_rc_ok</td><td>Object instance written to <em>statistics</em>. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>response</em> is <em>ta_invalid_object</em>. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>response</em> is not of type <a class="el" href="hardware__information__response_8h.html">hardware_information_response</a>. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>statistics</em> is <em>null-pointer</em>. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ae4eeafe0aa906e91cd8480c225041f81"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae4eeafe0aa906e91cd8480c225041f81">&#9670;&nbsp;</a></span>ta_hardware_information_response_get_battery_level()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="result__code_8h.html#ae860ee870a289833a24a586ba0c24975">ta_e_result_code_t</a> ta_hardware_information_response_get_battery_level </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a>&#160;</td>
+          <td class="paramname"><em>response</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>level</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Charging level of the battery as a percentage value of the total charge. </p>
+<p>0% is defined as the amount of charge where the device performs an automatic shutdown. 100% is a full charge.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">response</td><td>Object instance of type <a class="el" href="hardware__information__response_8h.html">hardware_information_response</a>. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">level</td><td>Pointer to variable to write value to.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">ta_c_rc_ok</td><td>Object instance written to <em>statistics</em>. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>response</em> is <em>ta_invalid_object</em>. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>response</em> is not of type <a class="el" href="hardware__information__response_8h.html">hardware_information_response</a>. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>statistics</em> is <em>null-pointer</em>. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="ab95d31fcb87c395fd56616bdfab632a7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab95d31fcb87c395fd56616bdfab632a7">&#9670;&nbsp;</a></span>ta_hardware_information_response_get_hardwares()</h2>
 

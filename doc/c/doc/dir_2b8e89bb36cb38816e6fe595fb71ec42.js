@@ -15,6 +15,7 @@ var dir_2b8e89bb36cb38816e6fe595fb71ec42 =
     [ "dialog_functions.h", "enum__string__maps_2dialog__functions_8h.html", "enum__string__maps_2dialog__functions_8h" ],
     [ "ecr_info_type.h", "enum__string__maps_2ecr__info__type_8h.html", "enum__string__maps_2ecr__info__type_8h" ],
     [ "financial_transactions.h", "enum__string__maps_2financial__transactions_8h.html", "enum__string__maps_2financial__transactions_8h" ],
+    [ "function_hint.h", "enum__string__maps_2function__hint_8h.html", "enum__string__maps_2function__hint_8h" ],
     [ "guides.h", "enum__string__maps_2guides_8h.html", "enum__string__maps_2guides_8h" ],
     [ "hardware_type.h", "enum__string__maps_2hardware__type_8h.html", "enum__string__maps_2hardware__type_8h" ],
     [ "image_file_format.h", "enum__string__maps_2image__file__format_8h.html", "enum__string__maps_2image__file__format_8h" ],

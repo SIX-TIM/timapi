@@ -19,6 +19,7 @@ var dir_55ef98a57036556dcc9a226e6204f780 =
     [ "ecr_info_type.h", "ecr__info__type_8h.html", "ecr__info__type_8h" ],
     [ "feature_support.h", "feature__support_8h.html", "feature__support_8h" ],
     [ "financial_transactions.h", "financial__transactions_8h.html", "financial__transactions_8h" ],
+    [ "function_hint.h", "function__hint_8h.html", "function__hint_8h" ],
     [ "guides.h", "guides_8h.html", "guides_8h" ],
     [ "hardware_type.h", "hardware__type_8h.html", "hardware__type_8h" ],
     [ "image_file_format.h", "image__file__format_8h.html", "image__file__format_8h" ],
