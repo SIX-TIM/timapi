@@ -242,6 +242,9 @@
                             <a href="SIX.TimApi.SIXmlConstants.ResourceId.html" title="SIXmlConstants.ResourceId" class="">SIXmlConstants.ResourceId</a>
                           </li>
                           <li class="">
+                            <a href="SIX.TimApi.SubTransaction.html" title="SubTransaction" class="">SubTransaction</a>
+                          </li>
+                          <li class="">
                             <a href="SIX.TimApi.SystemInformationResponse.html" title="SystemInformationResponse" class="">SystemInformationResponse</a>
                           </li>
                           <li class="">
@@ -329,6 +332,9 @@
                             <a href="SIX.TimApi.Terminal.DeactivateCompletedEventHandler.html" title="Terminal.DeactivateCompletedEventHandler" class="">Terminal.DeactivateCompletedEventHandler</a>
                           </li>
                           <li class="">
+                            <a href="SIX.TimApi.Terminal.DeferredAuthHandler.html" title="Terminal.DeferredAuthHandler" class="">Terminal.DeferredAuthHandler</a>
+                          </li>
+                          <li class="">
                             <a href="SIX.TimApi.Terminal.DisconnectedHandler.html" title="Terminal.DisconnectedHandler" class="">Terminal.DisconnectedHandler</a>
                           </li>
                           <li class="">
@@ -336,6 +342,9 @@
                           </li>
                           <li class="">
                             <a href="SIX.TimApi.Terminal.EjectCardCompletedEventHandler.html" title="Terminal.EjectCardCompletedEventHandler" class="">Terminal.EjectCardCompletedEventHandler</a>
+                          </li>
+                          <li class="">
+                            <a href="SIX.TimApi.Terminal.ErrorNotificationHandler.html" title="Terminal.ErrorNotificationHandler" class="">Terminal.ErrorNotificationHandler</a>
                           </li>
                           <li class="">
                             <a href="SIX.TimApi.Terminal.FinishCheckoutCompletedEventArgs.html" title="Terminal.FinishCheckoutCompletedEventArgs" class="">Terminal.FinishCheckoutCompletedEventArgs</a>
@@ -551,6 +560,9 @@
                             <a href="SIX.TimApi.Constants.BrandMode.html" title="BrandMode" class="">BrandMode</a>
                           </li>
                           <li class="">
+                            <a href="SIX.TimApi.Constants.CardProductType.html" title="CardProductType" class="">CardProductType</a>
+                          </li>
+                          <li class="">
                             <a href="SIX.TimApi.Constants.CardReader.html" title="CardReader" class="">CardReader</a>
                           </li>
                           <li class="">
@@ -656,6 +668,9 @@
                             <a href="SIX.TimApi.Constants.Recipient.html" title="Recipient" class="">Recipient</a>
                           </li>
                           <li class="">
+                            <a href="SIX.TimApi.Constants.ReconciliationMode.html" title="ReconciliationMode" class="">ReconciliationMode</a>
+                          </li>
+                          <li class="">
                             <a href="SIX.TimApi.Constants.ResourceId.html" title="ResourceId" class="">ResourceId</a>
                           </li>
                           <li class="">
@@ -681,6 +696,9 @@
                           </li>
                           <li class="">
                             <a href="SIX.TimApi.Constants.Theme.html" title="Theme" class="">Theme</a>
+                          </li>
+                          <li class="">
+                            <a href="SIX.TimApi.Constants.TransactionReason.html" title="TransactionReason" class="">TransactionReason</a>
                           </li>
                           <li class="">
                             <a href="SIX.TimApi.Constants.TransactionStatus.html" title="TransactionStatus" class="">TransactionStatus</a>
@@ -824,6 +842,26 @@
 </td>
       </tr>
       <tr>
+        <td id="SIX_TimApi_Constants_ReceiptItemType_AmountInstallmentFee">AmountInstallmentFee</td>
+        <td><p>Fee amount charged for the installment service.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="SIX_TimApi_Constants_ReceiptItemType_AmountInstallmentFirst">AmountInstallmentFirst</td>
+        <td><p>Amount of the first installment payment.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="SIX_TimApi_Constants_ReceiptItemType_AmountInstallmentOne">AmountInstallmentOne</td>
+        <td><p>Amount of one installment payment (Not the first if a first amount is present).</p>
+</td>
+      </tr>
+      <tr>
+        <td id="SIX_TimApi_Constants_ReceiptItemType_AmountInstallmentTotal">AmountInstallmentTotal</td>
+        <td><p>Total amount including including installment fees and interest rates.</p>
+</td>
+      </tr>
+      <tr>
         <td id="SIX_TimApi_Constants_ReceiptItemType_AmountOther">AmountOther</td>
         <td><p>Other amount of the transaction</p>
 </td>
@@ -929,13 +967,33 @@
 </td>
       </tr>
       <tr>
+        <td id="SIX_TimApi_Constants_ReceiptItemType_InterestInstallment">InterestInstallment</td>
+        <td><p>Interest rate of the installment option.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="SIX_TimApi_Constants_ReceiptItemType_KeyPanReceiptIndex">KeyPanReceiptIndex</td>
+        <td><p>Key Index of encrypted PAN on receipt</p>
+</td>
+      </tr>
+      <tr>
         <td id="SIX_TimApi_Constants_ReceiptItemType_MarkupDcc">MarkupDcc</td>
         <td><p>DCC markup</p>
 </td>
       </tr>
       <tr>
+        <td id="SIX_TimApi_Constants_ReceiptItemType_MarkupDccRegulated">MarkupDccRegulated</td>
+        <td><p>DCC markup vs regulated (ECB) reference exchange rate</p>
+</td>
+      </tr>
+      <tr>
         <td id="SIX_TimApi_Constants_ReceiptItemType_MarkupExponentDcc">MarkupExponentDcc</td>
         <td><p>Exponent of DCC markup</p>
+</td>
+      </tr>
+      <tr>
+        <td id="SIX_TimApi_Constants_ReceiptItemType_MarkupExponentDccRegulated">MarkupExponentDccRegulated</td>
+        <td><p>Exponent of regulated DCC markup</p>
 </td>
       </tr>
       <tr>
@@ -1001,8 +1059,18 @@ transaction.</p>
 </td>
       </tr>
       <tr>
+        <td id="SIX_TimApi_Constants_ReceiptItemType_RateDccRegulated">RateDccRegulated</td>
+        <td><p>DCC rate vs regulated (ECB) reference exchange rate</p>
+</td>
+      </tr>
+      <tr>
         <td id="SIX_TimApi_Constants_ReceiptItemType_RateExponentDcc">RateExponentDcc</td>
         <td><p>Exponent of DCC rate</p>
+</td>
+      </tr>
+      <tr>
+        <td id="SIX_TimApi_Constants_ReceiptItemType_RateExponentDccRegulated">RateExponentDccRegulated</td>
+        <td><p>Exponent of regulated DCC rate</p>
 </td>
       </tr>
       <tr>

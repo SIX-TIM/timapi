@@ -289,6 +289,12 @@ const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <tr class="memitem:a027527f1631d2e0f383e1d4103f4679f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="result__code_8h.html#ae860ee870a289833a24a586ba0c24975">ta_e_result_code_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="terminal_8h.html#a027527f1631d2e0f383e1d4103f4679f">ta_terminal_reconciliation_async</a> (<a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a> terminal)</td></tr>
 <tr class="memdesc:a027527f1631d2e0f383e1d4103f4679f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Force the EFT Terminal to transmit all financial transactions to the host system.  <a href="#a027527f1631d2e0f383e1d4103f4679f">More...</a><br /></td></tr>
 <tr class="separator:a027527f1631d2e0f383e1d4103f4679f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2e4949704bcd73221cd12687c748c06"><td class="memItemLeft" align="right" valign="top"><a class="el" href="result__code_8h.html#ae860ee870a289833a24a586ba0c24975">ta_e_result_code_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="terminal_8h.html#aa2e4949704bcd73221cd12687c748c06">ta_terminal_reconciliation2</a> (<a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a> terminal, <a class="el" href="reconciliation__mode_8h.html#a77062222410bd0dcb44add0de8418ee1">ta_e_reconciliation_mode_t</a> reconciliation_mode, <a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a> *response)</td></tr>
+<tr class="memdesc:aa2e4949704bcd73221cd12687c748c06"><td class="mdescLeft">&#160;</td><td class="mdescRight">Force the EFT Terminal to transmit all financial transactions to the host system.  <a href="#aa2e4949704bcd73221cd12687c748c06">More...</a><br /></td></tr>
+<tr class="separator:aa2e4949704bcd73221cd12687c748c06"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08dd262385c7fc8a81d2027d7ed13bc4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="result__code_8h.html#ae860ee870a289833a24a586ba0c24975">ta_e_result_code_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="terminal_8h.html#a08dd262385c7fc8a81d2027d7ed13bc4">ta_terminal_reconciliation2_async</a> (<a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a> terminal, <a class="el" href="reconciliation__mode_8h.html#a77062222410bd0dcb44add0de8418ee1">ta_e_reconciliation_mode_t</a> reconciliation_mode)</td></tr>
+<tr class="memdesc:a08dd262385c7fc8a81d2027d7ed13bc4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Force the EFT Terminal to transmit all financial transactions to the host system.  <a href="#a08dd262385c7fc8a81d2027d7ed13bc4">More...</a><br /></td></tr>
+<tr class="separator:a08dd262385c7fc8a81d2027d7ed13bc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae713ccbe684b97d1e58be74b4d5429e7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="result__code_8h.html#ae860ee870a289833a24a586ba0c24975">ta_e_result_code_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="terminal_8h.html#ae713ccbe684b97d1e58be74b4d5429e7">ta_terminal_receipt_request</a> (<a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a> terminal, <a class="el" href="receipt__request__type_8h.html#a6e43d6ff4d6d100def9a112d1bc57469">ta_e_receipt_request_type_t</a> type, <a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a> *response)</td></tr>
 <tr class="memdesc:ae713ccbe684b97d1e58be74b4d5429e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Receive the latest receipt or a list of silent receipts.  <a href="#ae713ccbe684b97d1e58be74b4d5429e7">More...</a><br /></td></tr>
 <tr class="separator:ae713ccbe684b97d1e58be74b4d5429e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -4689,6 +4695,105 @@ const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>terminal</em> is not of type <a class="el" href="terminal_8h.html">terminal</a>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>terminal</em> has been disposed. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>response</em> is <em>null-pointer</em>. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aa2e4949704bcd73221cd12687c748c06"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa2e4949704bcd73221cd12687c748c06">&#9670;&nbsp;</a></span>ta_terminal_reconciliation2()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="result__code_8h.html#ae860ee870a289833a24a586ba0c24975">ta_e_result_code_t</a> ta_terminal_reconciliation2 </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a>&#160;</td>
+          <td class="paramname"><em>terminal</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="reconciliation__mode_8h.html#a77062222410bd0dcb44add0de8418ee1">ta_e_reconciliation_mode_t</a>&#160;</td>
+          <td class="paramname"><em>reconciliation_mode</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a> *&#160;</td>
+          <td class="paramname"><em>response</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Force the EFT Terminal to transmit all financial transactions to the host system. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">terminal</td><td>Object instance of type <a class="el" href="terminal_8h.html">terminal</a>. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">response</td><td>Pointer to variable to write object instance to. Object instance is of type <a class="el" href="reconciliation__response_8h.html">reconciliation_response</a>. Object instance is retained.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">ta_c_rc_ok</td><td>Request finished successfully. Object instance written to <em>response</em>. Object instance has been retained. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>terminal</em> is ta_invalid_object. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>terminal</em> is not of type <a class="el" href="terminal_8h.html">terminal</a>. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>terminal</em> has been disposed. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>response</em> is <em>null-pointer</em>. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a08dd262385c7fc8a81d2027d7ed13bc4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a08dd262385c7fc8a81d2027d7ed13bc4">&#9670;&nbsp;</a></span>ta_terminal_reconciliation2_async()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="result__code_8h.html#ae860ee870a289833a24a586ba0c24975">ta_e_result_code_t</a> ta_terminal_reconciliation2_async </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a>&#160;</td>
+          <td class="paramname"><em>terminal</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="reconciliation__mode_8h.html#a77062222410bd0dcb44add0de8418ee1">ta_e_reconciliation_mode_t</a>&#160;</td>
+          <td class="paramname"><em>reconciliation_mode</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Force the EFT Terminal to transmit all financial transactions to the host system. </p>
+<p>Asynchronous version of <a class="el" href="terminal_8h.html#a59d856ac7dbae4bbfa783943a1f62ed9">ta_terminal_reconciliation</a>. Callback function is <a class="el" href="terminal__listener_8h.html#a97cd8e4eaae1c97d985f18475bb2d1cb">ta_cb_terminal_reconciliation_completed</a>.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">terminal</td><td>Object instance of type <a class="el" href="terminal_8h.html">terminal</a>.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">ta_c_rc_ok</td><td>Request started successfully. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>terminal</em> is ta_invalid_object. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>terminal</em> is not of type <a class="el" href="terminal_8h.html">terminal</a>. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>terminal</em> has been disposed. </td></tr>
   </table>
   </dd>
 </dl>

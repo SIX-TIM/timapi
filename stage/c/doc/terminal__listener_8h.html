@@ -175,6 +175,12 @@ typedef struct <a class="el" href="structta__s__event.html">ta_s_event</a>&#160;
 <tr class="memitem:ae2b2230010970a7bc7d3db11c3eaf7ba"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="terminal__listener_8h.html#ae2b2230010970a7bc7d3db11c3eaf7ba">ta_cb_terminal_vas_info</a>) (<a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a> terminal, <a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a> vas_checkout_information, void *user_pointer)</td></tr>
 <tr class="memdesc:ae2b2230010970a7bc7d3db11c3eaf7ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called if VAS information has been received from the terminal.  <a href="#ae2b2230010970a7bc7d3db11c3eaf7ba">More...</a><br /></td></tr>
 <tr class="separator:ae2b2230010970a7bc7d3db11c3eaf7ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb918381c327092bea7333f1182a6157"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="terminal__listener_8h.html#aeb918381c327092bea7333f1182a6157">ta_cb_terminal_deferred_auth</a>) (<a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a> terminal, <a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a> response, void *user_pointer)</td></tr>
+<tr class="memdesc:aeb918381c327092bea7333f1182a6157"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called if deferred authorization has been received from the terminal.  <a href="#aeb918381c327092bea7333f1182a6157">More...</a><br /></td></tr>
+<tr class="separator:aeb918381c327092bea7333f1182a6157"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c2e944cbc609df4276710919f7ff72c"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="terminal__listener_8h.html#a8c2e944cbc609df4276710919f7ff72c">ta_cb_terminal_error_notification</a>) (<a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a> terminal, <a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a> tim_error, void *user_pointer)</td></tr>
+<tr class="memdesc:a8c2e944cbc609df4276710919f7ff72c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called if error notification has been received from the terminal.  <a href="#a8c2e944cbc609df4276710919f7ff72c">More...</a><br /></td></tr>
+<tr class="separator:a8c2e944cbc609df4276710919f7ff72c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7664fed628bcdd45f81694856b54a13e"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="terminal__listener_8h.html#a7664fed628bcdd45f81694856b54a13e">ta_cb_terminal_close_reader_completed</a>) (const <a class="el" href="terminal__listener_8h.html#aca8b2685a1635d99cb135134b2de1521">ta_s_event_t</a> *event, void *user_pointer)</td></tr>
 <tr class="memdesc:a7664fed628bcdd45f81694856b54a13e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called if an ta_terminal_close_reader_async started request finished.  <a href="#a7664fed628bcdd45f81694856b54a13e">More...</a><br /></td></tr>
 <tr class="separator:a7664fed628bcdd45f81694856b54a13e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -586,6 +592,30 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="aeb918381c327092bea7333f1182a6157"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeb918381c327092bea7333f1182a6157">&#9670;&nbsp;</a></span>ta_cb_terminal_deferred_auth</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef void( * ta_cb_terminal_deferred_auth) (<a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a> terminal, <a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a> response, void *user_pointer)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Called if deferred authorization has been received from the terminal. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">terminal</td><td>Object instance of type <a class="el" href="terminal_8h.html">terminal</a>. Object instance is not retained. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">response</td><td>Object instance of type <a class="el" href="transaction__response_8h.html">transaction_response</a>. Object instance is not retained. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">user_pointer</td><td>User pointer value used while creating the listener. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="ac65708ebc5bcae749739890d941c4f9c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac65708ebc5bcae749739890d941c4f9c">&#9670;&nbsp;</a></span>ta_cb_terminal_disconnected</h2>
 
@@ -628,6 +658,30 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">event</td><td>Pointer to struct containing information about the event. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">user_pointer</td><td>User pointer value used while creating the listener. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a8c2e944cbc609df4276710919f7ff72c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c2e944cbc609df4276710919f7ff72c">&#9670;&nbsp;</a></span>ta_cb_terminal_error_notification</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef void( * ta_cb_terminal_error_notification) (<a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a> terminal, <a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a> tim_error, void *user_pointer)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Called if error notification has been received from the terminal. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">terminal</td><td>Object instance of type <a class="el" href="terminal_8h.html">terminal</a>. Object instance is not retained. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">response</td><td>Object instance of type <a class="el" href="tim__error_8h.html">tim_error</a>. Object instance is not retained. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">user_pointer</td><td>User pointer value used while creating the listener. </td></tr>
   </table>
   </dd>

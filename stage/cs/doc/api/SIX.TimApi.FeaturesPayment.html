@@ -242,6 +242,9 @@
                             <a href="SIX.TimApi.SIXmlConstants.ResourceId.html" title="SIXmlConstants.ResourceId" class="">SIXmlConstants.ResourceId</a>
                           </li>
                           <li class="">
+                            <a href="SIX.TimApi.SubTransaction.html" title="SubTransaction" class="">SubTransaction</a>
+                          </li>
+                          <li class="">
                             <a href="SIX.TimApi.SystemInformationResponse.html" title="SystemInformationResponse" class="">SystemInformationResponse</a>
                           </li>
                           <li class="">
@@ -329,6 +332,9 @@
                             <a href="SIX.TimApi.Terminal.DeactivateCompletedEventHandler.html" title="Terminal.DeactivateCompletedEventHandler" class="">Terminal.DeactivateCompletedEventHandler</a>
                           </li>
                           <li class="">
+                            <a href="SIX.TimApi.Terminal.DeferredAuthHandler.html" title="Terminal.DeferredAuthHandler" class="">Terminal.DeferredAuthHandler</a>
+                          </li>
+                          <li class="">
                             <a href="SIX.TimApi.Terminal.DisconnectedHandler.html" title="Terminal.DisconnectedHandler" class="">Terminal.DisconnectedHandler</a>
                           </li>
                           <li class="">
@@ -336,6 +342,9 @@
                           </li>
                           <li class="">
                             <a href="SIX.TimApi.Terminal.EjectCardCompletedEventHandler.html" title="Terminal.EjectCardCompletedEventHandler" class="">Terminal.EjectCardCompletedEventHandler</a>
+                          </li>
+                          <li class="">
+                            <a href="SIX.TimApi.Terminal.ErrorNotificationHandler.html" title="Terminal.ErrorNotificationHandler" class="">Terminal.ErrorNotificationHandler</a>
                           </li>
                           <li class="">
                             <a href="SIX.TimApi.Terminal.FinishCheckoutCompletedEventArgs.html" title="Terminal.FinishCheckoutCompletedEventArgs" class="">Terminal.FinishCheckoutCompletedEventArgs</a>
@@ -551,6 +560,9 @@
                             <a href="SIX.TimApi.Constants.BrandMode.html" title="BrandMode" class="">BrandMode</a>
                           </li>
                           <li class="">
+                            <a href="SIX.TimApi.Constants.CardProductType.html" title="CardProductType" class="">CardProductType</a>
+                          </li>
+                          <li class="">
                             <a href="SIX.TimApi.Constants.CardReader.html" title="CardReader" class="">CardReader</a>
                           </li>
                           <li class="">
@@ -656,6 +668,9 @@
                             <a href="SIX.TimApi.Constants.Recipient.html" title="Recipient" class="">Recipient</a>
                           </li>
                           <li class="">
+                            <a href="SIX.TimApi.Constants.ReconciliationMode.html" title="ReconciliationMode" class="">ReconciliationMode</a>
+                          </li>
+                          <li class="">
                             <a href="SIX.TimApi.Constants.ResourceId.html" title="ResourceId" class="">ResourceId</a>
                           </li>
                           <li class="">
@@ -681,6 +696,9 @@
                           </li>
                           <li class="">
                             <a href="SIX.TimApi.Constants.Theme.html" title="Theme" class="">Theme</a>
+                          </li>
+                          <li class="">
+                            <a href="SIX.TimApi.Constants.TransactionReason.html" title="TransactionReason" class="">TransactionReason</a>
                           </li>
                           <li class="">
                             <a href="SIX.TimApi.Constants.TransactionStatus.html" title="TransactionStatus" class="">TransactionStatus</a>
@@ -814,13 +832,13 @@ Immutable class.</p>
   
   
   <a id="SIX_TimApi_FeaturesPayment__ctor_" data-uid="SIX.TimApi.FeaturesPayment.#ctor*"></a>
-  <h4 id="SIX_TimApi_FeaturesPayment__ctor_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_" data-uid="SIX.TimApi.FeaturesPayment.#ctor(System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean)">FeaturesPayment(Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean)</h4>
+  <h4 id="SIX_TimApi_FeaturesPayment__ctor_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_" data-uid="SIX.TimApi.FeaturesPayment.#ctor(System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean)">FeaturesPayment(Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean)</h4>
   <div class="markdown level1 summary"><p>Create hardware features.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public FeaturesPayment(bool dcc, bool declinedReceipts, bool partialApproval, bool ep2Available, bool ep2Dcc, bool ep2DeclinedReceipts, bool ep2MultiAccountSelection, bool ep2MultiContractSelection)</code></pre>
+    <pre><code class="lang-csharp hljs">public FeaturesPayment(bool dcc, bool declinedReceipts, bool partialApproval, bool partialCommit, bool ep2Available, bool ep2Dcc, bool ep2DeclinedReceipts, bool ep2MultiAccountSelection, bool ep2MultiContractSelection)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -845,6 +863,11 @@ Immutable class.</p>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
         <td><span class="parametername">partialApproval</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">partialCommit</span></td>
         <td></td>
       </tr>
       <tr>
@@ -1042,6 +1065,32 @@ Immutable class.</p>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public bool canPartialApproval()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SIX_TimApi_FeaturesPayment_canPartialCommit_" data-uid="SIX.TimApi.FeaturesPayment.canPartialCommit*"></a>
+  <h4 id="SIX_TimApi_FeaturesPayment_canPartialCommit" data-uid="SIX.TimApi.FeaturesPayment.canPartialCommit">canPartialCommit()</h4>
+  <div class="markdown level1 summary"><p>Support for &quot;Partial Commit&quot;.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool canPartialCommit()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">

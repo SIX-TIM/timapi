@@ -94,6 +94,8 @@ var terminal_8h =
     [ "ta_terminal_receipt_request", "terminal_8h.html#ae713ccbe684b97d1e58be74b4d5429e7", null ],
     [ "ta_terminal_receipt_request_async", "terminal_8h.html#a51f491a0190c43e9f0e02cd17c749943", null ],
     [ "ta_terminal_reconciliation", "terminal_8h.html#a59d856ac7dbae4bbfa783943a1f62ed9", null ],
+    [ "ta_terminal_reconciliation2", "terminal_8h.html#aa2e4949704bcd73221cd12687c748c06", null ],
+    [ "ta_terminal_reconciliation2_async", "terminal_8h.html#a08dd262385c7fc8a81d2027d7ed13bc4", null ],
     [ "ta_terminal_reconciliation_async", "terminal_8h.html#a027527f1631d2e0f383e1d4103f4679f", null ],
     [ "ta_terminal_reconfig", "terminal_8h.html#abff257f57485515a6a2e1b3067e5f9bb", null ],
     [ "ta_terminal_reconfig_async", "terminal_8h.html#aaea67fb8914fe33312faf976ff6beae0", null ],

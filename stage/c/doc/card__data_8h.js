@@ -2,6 +2,7 @@ var card__data_8h =
 [
     [ "ta_card_data_get_acc", "card__data_8h.html#a05ff3c930eee5af6c9950ee267d44951", null ],
     [ "ta_card_data_get_aid", "card__data_8h.html#a0185eb69f13b183cd277c3d78c22b2f8", null ],
+    [ "ta_card_data_get_asrpd", "card__data_8h.html#a0345580a994785d02eaaa3fdfd1c29bf", null ],
     [ "ta_card_data_get_brand_name", "card__data_8h.html#ac94de996c10f804b03cce1c11ea2bd9f", null ],
     [ "ta_card_data_get_card_country_code", "card__data_8h.html#acf52897aa437609291cc412eb15d5ec2", null ],
     [ "ta_card_data_get_card_expiry_date", "card__data_8h.html#a13fecfe3049126a92b42e64abab0741f", null ],
@@ -10,6 +11,7 @@ var card__data_8h =
     [ "ta_card_data_get_card_number_enc_key_index", "card__data_8h.html#a089bd9c6b2e200314975ef3975155463", null ],
     [ "ta_card_data_get_card_number_printable", "card__data_8h.html#a459972328a08fca1a59e3ab4a34d21d5", null ],
     [ "ta_card_data_get_card_number_printable_cardholder", "card__data_8h.html#a5fb172b127b7301dac1de6ab2e158379", null ],
+    [ "ta_card_data_get_card_product_type", "card__data_8h.html#ad4ee11a152c0f17062781302ca09ed92", null ],
     [ "ta_card_data_get_card_ref", "card__data_8h.html#aa6038e2097976f9f01e78b67e19c1a33", null ],
     [ "ta_card_data_get_card_track_datas", "card__data_8h.html#a1a7e3960582593e1304ab098ac9f4ef8", null ],
     [ "ta_card_data_get_language", "card__data_8h.html#a500f5ed08722d8584edb6e76c70c405c", null ],

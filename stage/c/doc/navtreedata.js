@@ -18,14 +18,15 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "activate__response_8h.html",
-"command__request_8h.html#ad9827c673d53c16c47c8f127d6331257",
-"custom__receipt__formatter_8h.html#a07c5b9d0b4ce2c471dd995fbae1716b0",
-"features_8h.html#a7c24d09e8e202cc141c77de53ee379c6",
-"network__information_8h.html#aa5a79d30b1e1b3a8c19038ce17ad74e9",
-"request__type_8h.html#a38268da75c7795fd3a4f057bc6a7fcd2a48427cd573db64b0b249c4de5623ffc2",
-"result__code_8h.html#aebaf00d1ceef4b827866ca9de0bd3320a7baf49e20f9b2c357f96c3e11dc56166",
-"terminal_8h.html#aa52006b12a61c14bb56254a0d3fd0c47",
-"transaction__information_8h.html"
+"brand__mode_8h.html#a5581ba8d4256d05c15ccc9cfd474eeb4",
+"currency_8h.html#ad375db379bcf5a792280a2735f80f7d9a90eca3bd433ed86ef68949fa68e8d599",
+"enum__string__maps_2image__file__format_8h.html",
+"loyalty__coupon_8h.html#a4cb09ba7b9cde25612142f67ab9fe1ba",
+"receipt__item__type_8h.html#a3d3044dd871a9c7d630dbcf3d9b738bea2f22993cf13f584cdc21bab180e98e63",
+"resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9ac8dd4b5fb4e9992db8d51000c0622bcc",
+"show__signature__capture__response_8h.html#ad5974686c86b036c63e4553e24968117",
+"terminal__settings_8h.html#a4e23655d8663d996129877f59448d17e",
+"transaction__type_8h.html#a08f07046806962db06121bebefd306d1a3b3bd7049ce5aaa0d5af81a34f7fa2b1"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

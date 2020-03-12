@@ -120,6 +120,8 @@ var result__code_8h =
       [ "ta_c_rc_declined_capture_card_timeout_removing_card", "result__code_8h.html#aebaf00d1ceef4b827866ca9de0bd3320a58caa5c89b17908faf21b23c7b9074c6", null ],
       [ "ta_c_rc_declined_not_supported", "result__code_8h.html#aebaf00d1ceef4b827866ca9de0bd3320a113cce68fd45af766cbf7ee763af6cad", null ],
       [ "ta_c_rc_value_out_of_range_in_this_context", "result__code_8h.html#aebaf00d1ceef4b827866ca9de0bd3320a153dbb4bcdddf6f6ab45ad9cccce55e0", null ],
+      [ "ta_c_rc_voucher_type_not_available", "result__code_8h.html#aebaf00d1ceef4b827866ca9de0bd3320ac378020e201b4fadecfccfd7caa352fd", null ],
+      [ "ta_c_rc_transaction_mismatch", "result__code_8h.html#aebaf00d1ceef4b827866ca9de0bd3320a02e174c4be1439584ba85c38f33fd9a8", null ],
       [ "ta_c_rc_invalid_argument", "result__code_8h.html#aebaf00d1ceef4b827866ca9de0bd3320a306acc157474b36c57faa559c710d8c3", null ],
       [ "ta_c_rc_out_of_memory", "result__code_8h.html#aebaf00d1ceef4b827866ca9de0bd3320a1895fe80e9772f70ef54177746bfed4a", null ],
       [ "ta_c_rc_system_error", "result__code_8h.html#aebaf00d1ceef4b827866ca9de0bd3320a58db8236054739cfd49c849b0c16e1be", null ]

@@ -242,10 +242,12 @@ Enumerations</h2></td></tr>
 <br />
 &#160;&#160;<a class="el" href="result__code_8h.html#aebaf00d1ceef4b827866ca9de0bd3320a113cce68fd45af766cbf7ee763af6cad">ta_c_rc_declined_not_supported</a>, 
 <a class="el" href="result__code_8h.html#aebaf00d1ceef4b827866ca9de0bd3320a153dbb4bcdddf6f6ab45ad9cccce55e0">ta_c_rc_value_out_of_range_in_this_context</a>, 
-<a class="el" href="result__code_8h.html#aebaf00d1ceef4b827866ca9de0bd3320a306acc157474b36c57faa559c710d8c3">ta_c_rc_invalid_argument</a>, 
-<a class="el" href="result__code_8h.html#aebaf00d1ceef4b827866ca9de0bd3320a1895fe80e9772f70ef54177746bfed4a">ta_c_rc_out_of_memory</a>, 
+<a class="el" href="result__code_8h.html#aebaf00d1ceef4b827866ca9de0bd3320ac378020e201b4fadecfccfd7caa352fd">ta_c_rc_voucher_type_not_available</a>, 
+<a class="el" href="result__code_8h.html#aebaf00d1ceef4b827866ca9de0bd3320a02e174c4be1439584ba85c38f33fd9a8">ta_c_rc_transaction_mismatch</a>, 
 <br />
-&#160;&#160;<a class="el" href="result__code_8h.html#aebaf00d1ceef4b827866ca9de0bd3320a58db8236054739cfd49c849b0c16e1be">ta_c_rc_system_error</a>
+&#160;&#160;<a class="el" href="result__code_8h.html#aebaf00d1ceef4b827866ca9de0bd3320a306acc157474b36c57faa559c710d8c3">ta_c_rc_invalid_argument</a>, 
+<a class="el" href="result__code_8h.html#aebaf00d1ceef4b827866ca9de0bd3320a1895fe80e9772f70ef54177746bfed4a">ta_c_rc_out_of_memory</a>, 
+<a class="el" href="result__code_8h.html#aebaf00d1ceef4b827866ca9de0bd3320a58db8236054739cfd49c849b0c16e1be">ta_c_rc_system_error</a>
 <br />
  }</td></tr>
 <tr class="separator:aebaf00d1ceef4b827866ca9de0bd3320"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -303,7 +305,7 @@ Enumerations</h2></td></tr>
  <b>Error message:</b> Function not allowed - License issue</p>
 <p>Specification: retail.</p>
 </td></tr>
-<tr><td class="fieldname"><a id="aebaf00d1ceef4b827866ca9de0bd3320ab2d79bb6cdaed1e15d361980bb978ab4"></a>ta_c_rc_api_persistency_problem&#160;</td><td class="fielddoc"><p>Persistent data damaged, out of space orstorage permission problem.</p>
+<tr><td class="fieldname"><a id="aebaf00d1ceef4b827866ca9de0bd3320ab2d79bb6cdaed1e15d361980bb978ab4"></a>ta_c_rc_api_persistency_problem&#160;</td><td class="fielddoc"><p>Persistent data damaged, out of space or storage permission problem.</p>
 <p>Specification: retail.</p>
 </td></tr>
 <tr><td class="fieldname"><a id="aebaf00d1ceef4b827866ca9de0bd3320a065802b9d1283b961efedfd83e636b77"></a>ta_c_rc_api_connect_fail_server&#160;</td><td class="fielddoc"><p>The ECR was not able to connect to the TIM Server.<br />
@@ -749,6 +751,14 @@ Enumerations</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a id="aebaf00d1ceef4b827866ca9de0bd3320a153dbb4bcdddf6f6ab45ad9cccce55e0"></a>ta_c_rc_value_out_of_range_in_this_context&#160;</td><td class="fielddoc"><p>Value out of range in this context, e.g. negative where only positive values are supported.<br />
  <b>Error message:</b> Value out of range in this context</p>
+<p>Specification: retail.</p>
+</td></tr>
+<tr><td class="fieldname"><a id="aebaf00d1ceef4b827866ca9de0bd3320ac378020e201b4fadecfccfd7caa352fd"></a>ta_c_rc_voucher_type_not_available&#160;</td><td class="fielddoc"><p>The (mobile topup) voucher cannot be generated with this combination of issuer and value.<br />
+ <b>Error message:</b> Requested voucher not available</p>
+<p>Specification: retail.</p>
+</td></tr>
+<tr><td class="fieldname"><a id="aebaf00d1ceef4b827866ca9de0bd3320a02e174c4be1439584ba85c38f33fd9a8"></a>ta_c_rc_transaction_mismatch&#160;</td><td class="fielddoc"><p>The InitTransaction <em>FunctionHint</em> is not compatible to the transaction function. No recovery possible.<br />
+ <b>Error message:</b> Transaction mismatch</p>
 <p>Specification: retail.</p>
 </td></tr>
 <tr><td class="fieldname"><a id="aebaf00d1ceef4b827866ca9de0bd3320a306acc157474b36c57faa559c710d8c3"></a>ta_c_rc_invalid_argument&#160;</td><td class="fielddoc"><p>Invalid argument. </p>
