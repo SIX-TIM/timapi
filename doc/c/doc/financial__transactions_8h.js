@@ -25,6 +25,12 @@ var financial__transactions_8h =
       [ "ta_c_ft_purchase_reservation_phone_authorized", "financial__transactions_8h.html#acb14a85df061e531e84d9409a28ead04a833874e1736356f24faea1a4a3af9685", null ],
       [ "ta_c_ft_amt_adjustment", "financial__transactions_8h.html#acb14a85df061e531e84d9409a28ead04a0c5187119534bf5b27683d7b16cb641e", null ],
       [ "ta_c_ft_purchase_phone_ordered", "financial__transactions_8h.html#acb14a85df061e531e84d9409a28ead04a1b307881f5a814b195ab5801ae1ce6ad", null ],
-      [ "ta_c_ft_purchase_mail_ordered", "financial__transactions_8h.html#acb14a85df061e531e84d9409a28ead04a10053136de6f959973f59623e5b8efb5", null ]
+      [ "ta_c_ft_purchase_mail_ordered", "financial__transactions_8h.html#acb14a85df061e531e84d9409a28ead04a10053136de6f959973f59623e5b8efb5", null ],
+      [ "ta_c_ft_activate_card", "financial__transactions_8h.html#acb14a85df061e531e84d9409a28ead04aad1f6e14cadcef028e2c92856d6bd97c", null ],
+      [ "ta_c_ft_load", "financial__transactions_8h.html#acb14a85df061e531e84d9409a28ead04a1740094d981c27a3bee0bf3e1bdb0def", null ],
+      [ "ta_c_ft_unload", "financial__transactions_8h.html#acb14a85df061e531e84d9409a28ead04afd651414509900e5a9a2f66ad0cc3a27", null ],
+      [ "ta_c_ft_funding", "financial__transactions_8h.html#acb14a85df061e531e84d9409a28ead04adac2836109e44a702bcf5f035a4ca7a1", null ],
+      [ "ta_c_ft_refunding", "financial__transactions_8h.html#acb14a85df061e531e84d9409a28ead04acc12d8a0d0f4f086bd63eba1acf256b0", null ],
+      [ "ta_c_ft_debt_recovery", "financial__transactions_8h.html#acb14a85df061e531e84d9409a28ead04ace67128f3046d1c60c74cfdd4ea1ae86", null ]
     ] ]
 ];

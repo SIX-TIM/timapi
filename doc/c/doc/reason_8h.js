@@ -12,6 +12,9 @@ var reason_8h =
       [ "ta_c_rsn_code_ok", "reason_8h.html#ab10e533f4ad4f7409b4a8fbdaefbf972a8a5ab8d45d56f90b82e7780de81605ae", null ],
       [ "ta_c_rsn_code_nok", "reason_8h.html#ab10e533f4ad4f7409b4a8fbdaefbf972ac0a458ea144020c33377564df950e966", null ],
       [ "ta_c_rsn_pin_ok", "reason_8h.html#ab10e533f4ad4f7409b4a8fbdaefbf972a070bd3976a4cf3d1abf0b0c2cbf00991", null ],
-      [ "ta_c_rsn_pin_nok", "reason_8h.html#ab10e533f4ad4f7409b4a8fbdaefbf972affec2db03b71651f0dbf60460977b15b", null ]
+      [ "ta_c_rsn_pin_nok", "reason_8h.html#ab10e533f4ad4f7409b4a8fbdaefbf972affec2db03b71651f0dbf60460977b15b", null ],
+      [ "ta_c_rsn_f1", "reason_8h.html#ab10e533f4ad4f7409b4a8fbdaefbf972af6dcb21c39e090eb97edd6e449f51d9e", null ],
+      [ "ta_c_rsn_f2", "reason_8h.html#ab10e533f4ad4f7409b4a8fbdaefbf972a42c138ed7ad5f946138712480499ccfe", null ],
+      [ "ta_c_rsn_other_key", "reason_8h.html#ab10e533f4ad4f7409b4a8fbdaefbf972a6ea98693fb09a95a935fbf08e0d5c21a", null ]
     ] ]
 ];

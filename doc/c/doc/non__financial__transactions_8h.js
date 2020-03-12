@@ -15,6 +15,7 @@ var non__financial__transactions_8h =
       [ "ta_c_nft_start_checkout", "non__financial__transactions_8h.html#a9519a57c1ef87f4cdf5937084bf4de93a4bc605f2d1165ef1023fa3ec3ad516e5", null ],
       [ "ta_c_nft_finish_checkout", "non__financial__transactions_8h.html#a9519a57c1ef87f4cdf5937084bf4de93ae703e8e09bf6500c012f7d6661f1576c", null ],
       [ "ta_c_nft_provide_loyalty_basket", "non__financial__transactions_8h.html#a9519a57c1ef87f4cdf5937084bf4de93a63c5e39869089ee5bfeed9e42a4de239", null ],
-      [ "ta_c_nft_provide_vas_result", "non__financial__transactions_8h.html#a9519a57c1ef87f4cdf5937084bf4de93a8f4a650938c37255efdae56bd2ec88e5", null ]
+      [ "ta_c_nft_provide_vas_result", "non__financial__transactions_8h.html#a9519a57c1ef87f4cdf5937084bf4de93a8f4a650938c37255efdae56bd2ec88e5", null ],
+      [ "ta_c_nft_account_verification", "non__financial__transactions_8h.html#a9519a57c1ef87f4cdf5937084bf4de93a5984076300fd5fd187291cc0b2e96c06", null ]
     ] ]
 ];

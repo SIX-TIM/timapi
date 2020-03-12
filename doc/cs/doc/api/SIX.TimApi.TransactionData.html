@@ -242,6 +242,9 @@
                             <a href="SIX.TimApi.SIXmlConstants.ResourceId.html" title="SIXmlConstants.ResourceId" class="">SIXmlConstants.ResourceId</a>
                           </li>
                           <li class="">
+                            <a href="SIX.TimApi.SubTransaction.html" title="SubTransaction" class="">SubTransaction</a>
+                          </li>
+                          <li class="">
                             <a href="SIX.TimApi.SystemInformationResponse.html" title="SystemInformationResponse" class="">SystemInformationResponse</a>
                           </li>
                           <li class="">
@@ -329,6 +332,9 @@
                             <a href="SIX.TimApi.Terminal.DeactivateCompletedEventHandler.html" title="Terminal.DeactivateCompletedEventHandler" class="">Terminal.DeactivateCompletedEventHandler</a>
                           </li>
                           <li class="">
+                            <a href="SIX.TimApi.Terminal.DeferredAuthHandler.html" title="Terminal.DeferredAuthHandler" class="">Terminal.DeferredAuthHandler</a>
+                          </li>
+                          <li class="">
                             <a href="SIX.TimApi.Terminal.DisconnectedHandler.html" title="Terminal.DisconnectedHandler" class="">Terminal.DisconnectedHandler</a>
                           </li>
                           <li class="">
@@ -336,6 +342,9 @@
                           </li>
                           <li class="">
                             <a href="SIX.TimApi.Terminal.EjectCardCompletedEventHandler.html" title="Terminal.EjectCardCompletedEventHandler" class="">Terminal.EjectCardCompletedEventHandler</a>
+                          </li>
+                          <li class="">
+                            <a href="SIX.TimApi.Terminal.ErrorNotificationHandler.html" title="Terminal.ErrorNotificationHandler" class="">Terminal.ErrorNotificationHandler</a>
                           </li>
                           <li class="">
                             <a href="SIX.TimApi.Terminal.FinishCheckoutCompletedEventArgs.html" title="Terminal.FinishCheckoutCompletedEventArgs" class="">Terminal.FinishCheckoutCompletedEventArgs</a>
@@ -551,6 +560,9 @@
                             <a href="SIX.TimApi.Constants.BrandMode.html" title="BrandMode" class="">BrandMode</a>
                           </li>
                           <li class="">
+                            <a href="SIX.TimApi.Constants.CardProductType.html" title="CardProductType" class="">CardProductType</a>
+                          </li>
+                          <li class="">
                             <a href="SIX.TimApi.Constants.CardReader.html" title="CardReader" class="">CardReader</a>
                           </li>
                           <li class="">
@@ -656,6 +668,9 @@
                             <a href="SIX.TimApi.Constants.Recipient.html" title="Recipient" class="">Recipient</a>
                           </li>
                           <li class="">
+                            <a href="SIX.TimApi.Constants.ReconciliationMode.html" title="ReconciliationMode" class="">ReconciliationMode</a>
+                          </li>
+                          <li class="">
                             <a href="SIX.TimApi.Constants.ResourceId.html" title="ResourceId" class="">ResourceId</a>
                           </li>
                           <li class="">
@@ -681,6 +696,9 @@
                           </li>
                           <li class="">
                             <a href="SIX.TimApi.Constants.Theme.html" title="Theme" class="">Theme</a>
+                          </li>
+                          <li class="">
+                            <a href="SIX.TimApi.Constants.TransactionReason.html" title="TransactionReason" class="">TransactionReason</a>
                           </li>
                           <li class="">
                             <a href="SIX.TimApi.Constants.TransactionStatus.html" title="TransactionStatus" class="">TransactionStatus</a>
@@ -781,32 +799,11 @@
     <div class="level0"><span class="xref">System.Object</span></div>
     <div class="level1"><span class="xref">TransactionData</span></div>
   </div>
-  <div class="inheritedMembers">
-    <h5>Inherited Members</h5>
-    <div>
-      <span class="xref">System.Object.Equals(System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.GetHashCode()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.GetType()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.MemberwiseClone()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
-    </div>
-  </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="SIX.TimApi.html">SIX.TimApi</a></h6>
   <h6><strong>Assembly</strong>: TimApi.dll</h6>
   <h5 id="SIX_TimApi_TransactionData_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class TransactionData</code></pre>
+    <pre><code class="lang-csharp hljs">public class TransactionData : object</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -876,7 +873,7 @@ Optional: Used for MPKE for non-PCI brands based transactions.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.DateTime</span>&gt;</td>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">DateTime</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -906,6 +903,114 @@ Optional: Used for MPKE for non-PCI brands.</p>
     <tbody>
       <tr>
         <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int64</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="SIX_TimApi_TransactionData_DeferredAuthInd" data-uid="SIX.TimApi.TransactionData.DeferredAuthInd">DeferredAuthInd</h4>
+  <div class="markdown level1 summary"><p>Indicates that the transaction shall be performed using deffered authorisation.
+The following values are valid:
+true: Deferred authorisation applies
+false: Standard authorisation scheme (default)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool? DeferredAuthInd</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="SIX_TimApi_TransactionData_InstallmentAllowed" data-uid="SIX.TimApi.TransactionData.InstallmentAllowed">InstallmentAllowed</h4>
+  <div class="markdown level1 summary"><p>Indicates if installment shall be allowed for a transaction.
+This tag can be set for each transaction separately to specifically allow or disallow
+installment feature during the corresponding transaction.
+As this is a boolean value is can be understood as follows:
+true: Installment is allowed for the transaction
+false: Installment is NOT allowed for the transaction</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool? InstallmentAllowed</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="SIX_TimApi_TransactionData_SubTransactions" data-uid="SIX.TimApi.TransactionData.SubTransactions">SubTransactions</h4>
+  <div class="markdown level1 summary"><p>Sub transactions.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;SubTransaction&gt; SubTransactions</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">List</span>&lt;<a class="xref" href="SIX.TimApi.SubTransaction.html">SubTransaction</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="SIX_TimApi_TransactionData_TransactionReason" data-uid="SIX.TimApi.TransactionData.TransactionReason">TransactionReason</h4>
+  <div class="markdown level1 summary"><p>Set the transaction reason to setup credential on file.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TransactionReason TransactionReason</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="SIX.TimApi.Constants.TransactionReason.html">TransactionReason</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -948,7 +1053,7 @@ Optional: Used for MPKE for non-PCI brands.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string AcqTransRef { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public String AcqTransRef { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -960,7 +1065,7 @@ Optional: Used for MPKE for non-PCI brands.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="xref">String</span></td>
         <td><p>The acq trans reference.</p>
 </td>
       </tr>
@@ -975,7 +1080,7 @@ Optional: Used for MPKE for non-PCI brands.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string CardRef { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public String CardRef { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -987,7 +1092,7 @@ Optional: Used for MPKE for non-PCI brands.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="xref">String</span></td>
         <td><p>The card reference.</p>
 </td>
       </tr>
@@ -1054,7 +1159,7 @@ Optional: Used for MPKE for non-PCI brands.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string Language { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public String Language { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1066,7 +1171,7 @@ Optional: Used for MPKE for non-PCI brands.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="xref">String</span></td>
         <td><p>The language.</p>
 </td>
       </tr>
@@ -1187,7 +1292,7 @@ Optional: Used for MPKE for non-PCI brands.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string PhoneAuthCode { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public String PhoneAuthCode { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1199,7 +1304,7 @@ Optional: Used for MPKE for non-PCI brands.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="xref">String</span></td>
         <td><p>The phone authentication code.</p>
 </td>
       </tr>
@@ -1214,7 +1319,7 @@ Optional: Used for MPKE for non-PCI brands.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string SaferpayAlias { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public String SaferpayAlias { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1226,7 +1331,7 @@ Optional: Used for MPKE for non-PCI brands.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="xref">String</span></td>
         <td><p>The Saferpay alias.</p>
 </td>
       </tr>
@@ -1266,7 +1371,7 @@ Optional: Used for MPKE for non-PCI brands.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string SixTrxRefNum { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public String SixTrxRefNum { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1278,7 +1383,7 @@ Optional: Used for MPKE for non-PCI brands.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="xref">String</span></td>
         <td><p>The SIX Transaction reference number.</p>
 </td>
       </tr>
@@ -1372,7 +1477,7 @@ Optional: Used for MPKE for non-PCI brands.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string TrmTransRef { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public String TrmTransRef { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1384,7 +1489,7 @@ Optional: Used for MPKE for non-PCI brands.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="xref">String</span></td>
         <td><p>The TRM trans reference.</p>
 </td>
       </tr>
@@ -1411,7 +1516,7 @@ Optional: Used for MPKE for non-PCI brands.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.DateTime</span></td>
+        <td><span class="xref">DateTime</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -1463,7 +1568,7 @@ Optional: Used for MPKE for non-PCI brands.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+    <pre><code class="lang-csharp hljs">public override String ToString()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1475,13 +1580,11 @@ Optional: Used for MPKE for non-PCI brands.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="xref">String</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  <h5 class="overrides">Overrides</h5>
-  <div><span class="xref">System.Object.ToString()</span></div>
 </article>
           </div>
           

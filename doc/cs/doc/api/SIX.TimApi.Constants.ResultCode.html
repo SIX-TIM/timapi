@@ -242,6 +242,9 @@
                             <a href="SIX.TimApi.SIXmlConstants.ResourceId.html" title="SIXmlConstants.ResourceId" class="">SIXmlConstants.ResourceId</a>
                           </li>
                           <li class="">
+                            <a href="SIX.TimApi.SubTransaction.html" title="SubTransaction" class="">SubTransaction</a>
+                          </li>
+                          <li class="">
                             <a href="SIX.TimApi.SystemInformationResponse.html" title="SystemInformationResponse" class="">SystemInformationResponse</a>
                           </li>
                           <li class="">
@@ -329,6 +332,9 @@
                             <a href="SIX.TimApi.Terminal.DeactivateCompletedEventHandler.html" title="Terminal.DeactivateCompletedEventHandler" class="">Terminal.DeactivateCompletedEventHandler</a>
                           </li>
                           <li class="">
+                            <a href="SIX.TimApi.Terminal.DeferredAuthHandler.html" title="Terminal.DeferredAuthHandler" class="">Terminal.DeferredAuthHandler</a>
+                          </li>
+                          <li class="">
                             <a href="SIX.TimApi.Terminal.DisconnectedHandler.html" title="Terminal.DisconnectedHandler" class="">Terminal.DisconnectedHandler</a>
                           </li>
                           <li class="">
@@ -336,6 +342,9 @@
                           </li>
                           <li class="">
                             <a href="SIX.TimApi.Terminal.EjectCardCompletedEventHandler.html" title="Terminal.EjectCardCompletedEventHandler" class="">Terminal.EjectCardCompletedEventHandler</a>
+                          </li>
+                          <li class="">
+                            <a href="SIX.TimApi.Terminal.ErrorNotificationHandler.html" title="Terminal.ErrorNotificationHandler" class="">Terminal.ErrorNotificationHandler</a>
                           </li>
                           <li class="">
                             <a href="SIX.TimApi.Terminal.FinishCheckoutCompletedEventArgs.html" title="Terminal.FinishCheckoutCompletedEventArgs" class="">Terminal.FinishCheckoutCompletedEventArgs</a>
@@ -551,6 +560,9 @@
                             <a href="SIX.TimApi.Constants.BrandMode.html" title="BrandMode" class="">BrandMode</a>
                           </li>
                           <li class="">
+                            <a href="SIX.TimApi.Constants.CardProductType.html" title="CardProductType" class="">CardProductType</a>
+                          </li>
+                          <li class="">
                             <a href="SIX.TimApi.Constants.CardReader.html" title="CardReader" class="">CardReader</a>
                           </li>
                           <li class="">
@@ -656,6 +668,9 @@
                             <a href="SIX.TimApi.Constants.Recipient.html" title="Recipient" class="">Recipient</a>
                           </li>
                           <li class="">
+                            <a href="SIX.TimApi.Constants.ReconciliationMode.html" title="ReconciliationMode" class="">ReconciliationMode</a>
+                          </li>
+                          <li class="">
                             <a href="SIX.TimApi.Constants.ResourceId.html" title="ResourceId" class="">ResourceId</a>
                           </li>
                           <li class="">
@@ -681,6 +696,9 @@
                           </li>
                           <li class="">
                             <a href="SIX.TimApi.Constants.Theme.html" title="Theme" class="">Theme</a>
+                          </li>
+                          <li class="">
+                            <a href="SIX.TimApi.Constants.TransactionReason.html" title="TransactionReason" class="">TransactionReason</a>
                           </li>
                           <li class="">
                             <a href="SIX.TimApi.Constants.TransactionStatus.html" title="TransactionStatus" class="">TransactionStatus</a>
@@ -847,7 +865,7 @@ The ECR received an invalid answer.<br>
       <tr>
         <td id="SIX_TimApi_Constants_ResultCode_ApiPersistencyProblem">ApiPersistencyProblem</td>
         <td><p>Category: TIM API related results - General<br>
-Persistent data damaged, out of space orstorage permission problem.</p>
+Persistent data damaged, out of space or storage permission problem.</p>
 </td>
       </tr>
       <tr>
@@ -1525,6 +1543,14 @@ RS232 device did not respond in time.<br>
 </td>
       </tr>
       <tr>
+        <td id="SIX_TimApi_Constants_ResultCode_TransactionMismatch">TransactionMismatch</td>
+        <td><p>Category: TIM API related results - Transaction<br>
+The InitTransaction <em>FunctionHint</em> is not compatible to the transaction function.
+No recovery possible.<br>
+<strong>Error message:</strong> Transaction mismatch</p>
+</td>
+      </tr>
+      <tr>
         <td id="SIX_TimApi_Constants_ResultCode_TrxCommitTimeout">TrxCommitTimeout</td>
         <td><p>Category: TIM API related results - Transaction<br>
 Commit request not sent in time.<br>
@@ -1589,6 +1615,14 @@ Current request contains unsupported characters.<br>
 Value out of range in this context, e.g. negative where only positive values are
 supported.<br>
 <strong>Error message:</strong> Value out of range in this context</p>
+</td>
+      </tr>
+      <tr>
+        <td id="SIX_TimApi_Constants_ResultCode_VoucherTypeNotAvailable">VoucherTypeNotAvailable</td>
+        <td><p>Category: TIM API related results - Transaction<br>
+The (mobile topup) voucher cannot be generated with this combination of issuer and
+value.<br>
+<strong>Error message:</strong> Requested voucher not available</p>
 </td>
       </tr>
     </tbody>

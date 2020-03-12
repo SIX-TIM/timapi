@@ -242,6 +242,9 @@
                             <a href="SIX.TimApi.SIXmlConstants.ResourceId.html" title="SIXmlConstants.ResourceId" class="">SIXmlConstants.ResourceId</a>
                           </li>
                           <li class="">
+                            <a href="SIX.TimApi.SubTransaction.html" title="SubTransaction" class="">SubTransaction</a>
+                          </li>
+                          <li class="">
                             <a href="SIX.TimApi.SystemInformationResponse.html" title="SystemInformationResponse" class="">SystemInformationResponse</a>
                           </li>
                           <li class="">
@@ -329,6 +332,9 @@
                             <a href="SIX.TimApi.Terminal.DeactivateCompletedEventHandler.html" title="Terminal.DeactivateCompletedEventHandler" class="">Terminal.DeactivateCompletedEventHandler</a>
                           </li>
                           <li class="">
+                            <a href="SIX.TimApi.Terminal.DeferredAuthHandler.html" title="Terminal.DeferredAuthHandler" class="">Terminal.DeferredAuthHandler</a>
+                          </li>
+                          <li class="">
                             <a href="SIX.TimApi.Terminal.DisconnectedHandler.html" title="Terminal.DisconnectedHandler" class="">Terminal.DisconnectedHandler</a>
                           </li>
                           <li class="">
@@ -336,6 +342,9 @@
                           </li>
                           <li class="">
                             <a href="SIX.TimApi.Terminal.EjectCardCompletedEventHandler.html" title="Terminal.EjectCardCompletedEventHandler" class="">Terminal.EjectCardCompletedEventHandler</a>
+                          </li>
+                          <li class="">
+                            <a href="SIX.TimApi.Terminal.ErrorNotificationHandler.html" title="Terminal.ErrorNotificationHandler" class="">Terminal.ErrorNotificationHandler</a>
                           </li>
                           <li class="">
                             <a href="SIX.TimApi.Terminal.FinishCheckoutCompletedEventArgs.html" title="Terminal.FinishCheckoutCompletedEventArgs" class="">Terminal.FinishCheckoutCompletedEventArgs</a>
@@ -551,6 +560,9 @@
                             <a href="SIX.TimApi.Constants.BrandMode.html" title="BrandMode" class="">BrandMode</a>
                           </li>
                           <li class="">
+                            <a href="SIX.TimApi.Constants.CardProductType.html" title="CardProductType" class="">CardProductType</a>
+                          </li>
+                          <li class="">
                             <a href="SIX.TimApi.Constants.CardReader.html" title="CardReader" class="">CardReader</a>
                           </li>
                           <li class="">
@@ -656,6 +668,9 @@
                             <a href="SIX.TimApi.Constants.Recipient.html" title="Recipient" class="">Recipient</a>
                           </li>
                           <li class="">
+                            <a href="SIX.TimApi.Constants.ReconciliationMode.html" title="ReconciliationMode" class="">ReconciliationMode</a>
+                          </li>
+                          <li class="">
                             <a href="SIX.TimApi.Constants.ResourceId.html" title="ResourceId" class="">ResourceId</a>
                           </li>
                           <li class="">
@@ -681,6 +696,9 @@
                           </li>
                           <li class="">
                             <a href="SIX.TimApi.Constants.Theme.html" title="Theme" class="">Theme</a>
+                          </li>
+                          <li class="">
+                            <a href="SIX.TimApi.Constants.TransactionReason.html" title="TransactionReason" class="">TransactionReason</a>
                           </li>
                           <li class="">
                             <a href="SIX.TimApi.Constants.TransactionStatus.html" title="TransactionStatus" class="">TransactionStatus</a>
@@ -805,24 +823,6 @@
     <div>
       <a class="xref" href="SIX.TimApi.Amount.html#SIX_TimApi_Amount_Exponent">Amount.Exponent</a>
     </div>
-    <div>
-      <span class="xref">System.Object.Equals(System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.GetHashCode()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.GetType()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.MemberwiseClone()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
-    </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="SIX.TimApi.html">SIX.TimApi</a></h6>
   <h6><strong>Assembly</strong>: TimApi.dll</h6>
@@ -835,13 +835,466 @@
   
   
   <a id="SIX_TimApi_AmountDcc__ctor_" data-uid="SIX.TimApi.AmountDcc.#ctor*"></a>
-  <h4 id="SIX_TimApi_AmountDcc__ctor" data-uid="SIX.TimApi.AmountDcc.#ctor">AmountDcc()</h4>
+  <h4 id="SIX_TimApi_AmountDcc__ctor_System_Decimal_System_String_" data-uid="SIX.TimApi.AmountDcc.#ctor(System.Decimal,System.String)">AmountDcc(Decimal, String)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected AmountDcc()</code></pre>
+    <pre><code class="lang-csharp hljs">public AmountDcc(decimal value, string currency)</code></pre>
   </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Decimal</span></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">currency</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SIX_TimApi_AmountDcc__ctor_" data-uid="SIX.TimApi.AmountDcc.#ctor*"></a>
+  <h4 id="SIX_TimApi_AmountDcc__ctor_System_Int32_System_String_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_" data-uid="SIX.TimApi.AmountDcc.#ctor(System.Int32,System.String,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)">AmountDcc(Int32, String, Int32, Int32, Int32, Int32, Int32, Int32, Int32, Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AmountDcc(int value, string currency, int rate, int rateExponent, int markup, int markupExponent, int rateRegulated, int rateExponentRegulated, int markupRegulated, int markupExponentRegulated)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">currency</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">rate</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">rateExponent</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">markup</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">markupExponent</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">rateRegulated</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">rateExponentRegulated</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">markupRegulated</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">markupExponentRegulated</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SIX_TimApi_AmountDcc__ctor_" data-uid="SIX.TimApi.AmountDcc.#ctor*"></a>
+  <h4 id="SIX_TimApi_AmountDcc__ctor_System_Int64_System_String_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_" data-uid="SIX.TimApi.AmountDcc.#ctor(System.Int64,System.String,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)">AmountDcc(Int64, String, Int32, Int32, Int32, Int32, Int32, Int32, Int32, Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AmountDcc(long value, string currency, int rate, int rateExponent, int markup, int markupExponent, int rateRegulated, int rateExponentRegulated, int markupRegulated, int markupExponentRegulated)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">currency</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">rate</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">rateExponent</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">markup</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">markupExponent</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">rateRegulated</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">rateExponentRegulated</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">markupRegulated</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">markupExponentRegulated</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SIX_TimApi_AmountDcc__ctor_" data-uid="SIX.TimApi.AmountDcc.#ctor*"></a>
+  <h4 id="SIX_TimApi_AmountDcc__ctor_System_Int64_System_String_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_" data-uid="SIX.TimApi.AmountDcc.#ctor(System.Int64,System.String,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)">AmountDcc(Int64, String, Int32, Int32, Int32, Int32, Int32, Int32, Int32, Int32, Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AmountDcc(long value, string currency, int exponent, int rate, int rateExponent, int markup, int markupExponent, int rateRegulated, int rateExponentRegulated, int markupRegulated, int markupExponentRegulated)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">currency</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">exponent</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">rate</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">rateExponent</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">markup</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">markupExponent</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">rateRegulated</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">rateExponentRegulated</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">markupRegulated</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">markupExponentRegulated</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  
+  
+  <h4 id="SIX_TimApi_AmountDcc_Markup" data-uid="SIX.TimApi.AmountDcc.Markup">Markup</h4>
+  <div class="markdown level1 summary"><p>Markup which is applied to the DCC rate provided by the DCC provider.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly int Markup</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>The markup.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="SIX_TimApi_AmountDcc_MarkupExponent" data-uid="SIX.TimApi.AmountDcc.MarkupExponent">MarkupExponent</h4>
+  <div class="markdown level1 summary"><p>Defines exponent of the markup.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly int MarkupExponent</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>The markup exponent.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="SIX_TimApi_AmountDcc_MarkupExponentRegulated" data-uid="SIX.TimApi.AmountDcc.MarkupExponentRegulated">MarkupExponentRegulated</h4>
+  <div class="markdown level1 summary"><p>Defines exponent of the markup.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly int MarkupExponentRegulated</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>The markup exponent.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="SIX_TimApi_AmountDcc_MarkupRegulated" data-uid="SIX.TimApi.AmountDcc.MarkupRegulated">MarkupRegulated</h4>
+  <div class="markdown level1 summary"><p>Markup which is applied to the DCC rate provided by the DCC provider.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly int MarkupRegulated</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>The markup.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="SIX_TimApi_AmountDcc_Rate" data-uid="SIX.TimApi.AmountDcc.Rate">Rate</h4>
+  <div class="markdown level1 summary"><p>Exchange rate of the specified amount.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly int Rate</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="SIX_TimApi_AmountDcc_RateExponent" data-uid="SIX.TimApi.AmountDcc.RateExponent">RateExponent</h4>
+  <div class="markdown level1 summary"><p>Exchange rate exponent of the specified amount
+(decimal places after point in the Currency)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly int RateExponent</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>The rate exponent.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="SIX_TimApi_AmountDcc_RateExponentRegulated" data-uid="SIX.TimApi.AmountDcc.RateExponentRegulated">RateExponentRegulated</h4>
+  <div class="markdown level1 summary"><p>Exchange rate exponent of the specified amount
+(decimal places after point in the Currency)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly int RateExponentRegulated</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>The rate exponent.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="SIX_TimApi_AmountDcc_RateRegulated" data-uid="SIX.TimApi.AmountDcc.RateRegulated">RateRegulated</h4>
+  <div class="markdown level1 summary"><p>Exchange rate of the specified amount.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly int RateRegulated</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="properties">Properties
   </h3>
   
@@ -854,6 +1307,33 @@
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public decimal DecMarkup { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Decimal</span></td>
+        <td><p>The decimal markup.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SIX_TimApi_AmountDcc_DecMarkupRegulated_" data-uid="SIX.TimApi.AmountDcc.DecMarkupRegulated*"></a>
+  <h4 id="SIX_TimApi_AmountDcc_DecMarkupRegulated" data-uid="SIX.TimApi.AmountDcc.DecMarkupRegulated">DecMarkupRegulated</h4>
+  <div class="markdown level1 summary"><p>Markup which is applied to the DCC rate provided by the DCC provider as decimal</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public decimal DecMarkupRegulated { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -900,14 +1380,14 @@
   </table>
   
   
-  <a id="SIX_TimApi_AmountDcc_Markup_" data-uid="SIX.TimApi.AmountDcc.Markup*"></a>
-  <h4 id="SIX_TimApi_AmountDcc_Markup" data-uid="SIX.TimApi.AmountDcc.Markup">Markup</h4>
-  <div class="markdown level1 summary"><p>Markup which is applied to the DCC rate provided by the DCC provider.</p>
+  <a id="SIX_TimApi_AmountDcc_DecRateRegulated_" data-uid="SIX.TimApi.AmountDcc.DecRateRegulated*"></a>
+  <h4 id="SIX_TimApi_AmountDcc_DecRateRegulated" data-uid="SIX.TimApi.AmountDcc.DecRateRegulated">DecRateRegulated</h4>
+  <div class="markdown level1 summary"><p>Exchange rate of the specified amount as decimal</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int Markup { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public decimal DecRateRegulated { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -919,90 +1399,8 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td><p>The markup.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="SIX_TimApi_AmountDcc_MarkupExponent_" data-uid="SIX.TimApi.AmountDcc.MarkupExponent*"></a>
-  <h4 id="SIX_TimApi_AmountDcc_MarkupExponent" data-uid="SIX.TimApi.AmountDcc.MarkupExponent">MarkupExponent</h4>
-  <div class="markdown level1 summary"><p>Defines exponent of the markup.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int MarkupExponent { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td><p>The markup exponent.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="SIX_TimApi_AmountDcc_Rate_" data-uid="SIX.TimApi.AmountDcc.Rate*"></a>
-  <h4 id="SIX_TimApi_AmountDcc_Rate" data-uid="SIX.TimApi.AmountDcc.Rate">Rate</h4>
-  <div class="markdown level1 summary"><p>Exchange rate of the specified amount.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int Rate { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td><p>The rate.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="SIX_TimApi_AmountDcc_RateExponent_" data-uid="SIX.TimApi.AmountDcc.RateExponent*"></a>
-  <h4 id="SIX_TimApi_AmountDcc_RateExponent" data-uid="SIX.TimApi.AmountDcc.RateExponent">RateExponent</h4>
-  <div class="markdown level1 summary"><p>Exchange rate exponent of the specified amount
-(decimal places after point in the Currency)</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int RateExponent { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td><p>The rate exponent.</p>
+        <td><span class="xref">System.Decimal</span></td>
+        <td><p>The decimal rate.</p>
 </td>
       </tr>
     </tbody>
@@ -1018,7 +1416,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+    <pre><code class="lang-csharp hljs">public override String ToString()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1030,7 +1428,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="xref">String</span></td>
         <td></td>
       </tr>
     </tbody>

@@ -88,6 +88,9 @@ $(document).ready(function(){initNavTree('tim__error_8h.html','');});
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:ad79d70d5b92e5cf36f34c574cf52eb18"><td class="memItemLeft" align="right" valign="top"><a class="el" href="result__code_8h.html#ae860ee870a289833a24a586ba0c24975">ta_e_result_code_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tim__error_8h.html#ad79d70d5b92e5cf36f34c574cf52eb18">ta_tim_error_get_result_code</a> (<a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a> response, <a class="el" href="result__code_8h.html#ae860ee870a289833a24a586ba0c24975">ta_e_result_code_t</a> *result_code)</td></tr>
+<tr class="memdesc:ad79d70d5b92e5cf36f34c574cf52eb18"><td class="mdescLeft">&#160;</td><td class="mdescRight">Result code.  <a href="#ad79d70d5b92e5cf36f34c574cf52eb18">More...</a><br /></td></tr>
+<tr class="separator:ad79d70d5b92e5cf36f34c574cf52eb18"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af33f67151222b2b8cc5062ae561090ef"><td class="memItemLeft" align="right" valign="top"><a class="el" href="result__code_8h.html#ae860ee870a289833a24a586ba0c24975">ta_e_result_code_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tim__error_8h.html#af33f67151222b2b8cc5062ae561090ef">ta_tim_error_get_error_message</a> (<a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a> response, <a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a> *error_message)</td></tr>
 <tr class="memdesc:af33f67151222b2b8cc5062ae561090ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Error message in the ECR language or <em>ta_invalid_object</em> if not present.  <a href="#af33f67151222b2b8cc5062ae561090ef">More...</a><br /></td></tr>
 <tr class="separator:af33f67151222b2b8cc5062ae561090ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -381,6 +384,52 @@ Functions</h2></td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>response</em> is <em>ta_invalid_object</em>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>response</em> is not of type <a class="el" href="tim__error_8h.html">tim_error</a>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>rejected_basket</em> is <em>null-pointer</em>. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ad79d70d5b92e5cf36f34c574cf52eb18"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad79d70d5b92e5cf36f34c574cf52eb18">&#9670;&nbsp;</a></span>ta_tim_error_get_result_code()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="result__code_8h.html#ae860ee870a289833a24a586ba0c24975">ta_e_result_code_t</a> ta_tim_error_get_result_code </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a>&#160;</td>
+          <td class="paramname"><em>response</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="result__code_8h.html#ae860ee870a289833a24a586ba0c24975">ta_e_result_code_t</a> *&#160;</td>
+          <td class="paramname"><em>result_code</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Result code. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">response</td><td>Object instance of type <a class="el" href="tim__error_8h.html">tim_error</a>. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">result_code</td><td>Pointer to variable to write result code to.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">ta_c_rc_ok</td><td>Object instance written to <em>error_message</em>. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>response</em> is <em>ta_invalid_object</em>. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>response</em> is not of type <a class="el" href="tim__error_8h.html">tim_error</a>. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>result_code</em> is <em>null-pointer</em>. </td></tr>
   </table>
   </dd>
 </dl>

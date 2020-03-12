@@ -310,6 +310,54 @@ $(document).ready(function(){initNavTree('search.html','');});
     <field name="text">DCC Markup in major units as double precision floating point value DCC markup exponent has been applied already to the value Returned value can be used as-is without the need to adjust for the exponent Double precision floating point values can not provide the same level of numerical accuracy as int64_t It is recommended to use the integer based methods amount Object instance of type amount_dcc markup Pointer to variable to write markup to ta_c_rc_ok Value written to markup ta_c_rc_invalid_argument amount is ta_invalid_object ta_c_rc_invalid_argument amount is not of type amount_dcc ta_c_rc_invalid_argument markup is null-pointer</field>
   </doc>
   <doc>
+    <field name="type">function</field>
+    <field name="name">ta_amount_dcc_get_rate_regulated</field>
+    <field name="args">(ta_object_t amount, int *rate)</field>
+    <field name="url">amount__dcc_8h.html#ac402a059ffb565263d0917397737cb14</field>
+    <field name="keywords">ta_amount_dcc_get_rate_regulated</field>
+    <field name="text">DCC Rate in minor units amount Object instance of type amount_dcc rate Pointer to variable to write rate to ta_c_rc_ok Value written to rate ta_c_rc_invalid_argument amount is ta_invalid_object ta_c_rc_invalid_argument amount is not of type amount_dcc ta_c_rc_invalid_argument rate is null-pointer</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">ta_amount_dcc_get_rate_exponent_regulated</field>
+    <field name="args">(ta_object_t amount, int *exponent)</field>
+    <field name="url">amount__dcc_8h.html#afd07d7755e3f5187b83704fe4bf5d4bf</field>
+    <field name="keywords">ta_amount_dcc_get_rate_exponent_regulated</field>
+    <field name="text">DCC rate exponent amount Object instance of type amount_dcc exponent Pointer to variable to write rate exponent to ta_c_rc_ok Value written to exponent ta_c_rc_invalid_argument amount is ta_invalid_object ta_c_rc_invalid_argument amount is not of type amount_dcc ta_c_rc_invalid_argument exponent is null-pointer</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">ta_amount_dcc_get_rate_decimal_regulated</field>
+    <field name="args">(ta_object_t amount, double *rate)</field>
+    <field name="url">amount__dcc_8h.html#a0dc7d2ab5fc42b7196d5b391c26920dc</field>
+    <field name="keywords">ta_amount_dcc_get_rate_decimal_regulated</field>
+    <field name="text">DCC Rate in major units as double precision floating point value DCC rate exponent has been applied already to the value Returned value can be used as-is without the need to adjust for the exponent Double precision floating point values can not provide the same level of numerical accuracy as int64_t It is recommended to use the integer based methods amount Object instance of type amount_dcc rate Pointer to variable to write rate to ta_c_rc_ok Value written to rate ta_c_rc_invalid_argument amount is ta_invalid_object ta_c_rc_invalid_argument amount is not of type amount_dcc ta_c_rc_invalid_argument rate is null-pointer</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">ta_amount_dcc_get_markup_regulated</field>
+    <field name="args">(ta_object_t amount, int *markup)</field>
+    <field name="url">amount__dcc_8h.html#a91a0babb1959c12d0bdce65db189a7ed</field>
+    <field name="keywords">ta_amount_dcc_get_markup_regulated</field>
+    <field name="text">DCC Markup in minor units amount Object instance of type amount_dcc markup Pointer to variable to write markup to ta_c_rc_ok Value written to markup ta_c_rc_invalid_argument amount is ta_invalid_object ta_c_rc_invalid_argument amount is not of type amount_dcc ta_c_rc_invalid_argument markup is null-pointer</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">ta_amount_dcc_get_markup_exponent_regulated</field>
+    <field name="args">(ta_object_t amount, int *exponent)</field>
+    <field name="url">amount__dcc_8h.html#a50f55f7244eefdbc514ed6d9b8d7fdbe</field>
+    <field name="keywords">ta_amount_dcc_get_markup_exponent_regulated</field>
+    <field name="text">DCC Markup exponent amount Object instance of type amount_dcc exponent Pointer to variable to write markup exponent to ta_c_rc_ok Value written to exponent ta_c_rc_invalid_argument amount is ta_invalid_object ta_c_rc_invalid_argument amount is not of type amount_dcc ta_c_rc_invalid_argument exponent is null-pointer</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">ta_amount_dcc_get_markup_decimal_regulated</field>
+    <field name="args">(ta_object_t amount, double *markup)</field>
+    <field name="url">amount__dcc_8h.html#aa7c17279a41b3ed06642e96b4cceac59</field>
+    <field name="keywords">ta_amount_dcc_get_markup_decimal_regulated</field>
+    <field name="text">DCC Markup in major units as double precision floating point value DCC markup exponent has been applied already to the value Returned value can be used as-is without the need to adjust for the exponent Double precision floating point values can not provide the same level of numerical accuracy as int64_t It is recommended to use the integer based methods amount Object instance of type amount_dcc markup Pointer to variable to write markup to ta_c_rc_ok Value written to markup ta_c_rc_invalid_argument amount is ta_invalid_object ta_c_rc_invalid_argument amount is not of type amount_dcc ta_c_rc_invalid_argument markup is null-pointer</field>
+  </doc>
+  <doc>
     <field name="type">file</field>
     <field name="name">amount_discount.h</field>
     <field name="url">amount__discount_8h.html</field>
@@ -1067,6 +1115,22 @@ $(document).ready(function(){initNavTree('search.html','');});
     <field name="url">card__data_8h.html#af401331c69ad29597c38642b24eff700</field>
     <field name="keywords">ta_card_data_get_uid</field>
     <field name="text">Uid of the contactless card card_data Object instance of type card_data uid Pointer to variable to write object instance to Object instance is of type string and is not retained Object instance is ta_invalid_object if value is not set in card_data ta_c_rc_ok Object instance written to uid ta_c_rc_invalid_argument card_data is ta_invalid_object ta_c_rc_invalid_argument card_data is not of type card_data ta_c_rc_invalid_argument uid is null-pointer</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">ta_card_data_get_asrpd</field>
+    <field name="args">(ta_object_t card_data, ta_object_t *asrpd)</field>
+    <field name="url">card__data_8h.html#a0345580a994785d02eaaa3fdfd1c29bf</field>
+    <field name="keywords">ta_card_data_get_asrpd</field>
+    <field name="text">Asrpd card_data Object instance of type card_data asrpd Pointer to variable to write object instance to Object instance is of type string and is not retained Object instance is ta_invalid_object if value is not set in card_data ta_c_rc_ok Object instance written to asrpd ta_c_rc_invalid_argument card_data is ta_invalid_object ta_c_rc_invalid_argument card_data is not of type card_data ta_c_rc_invalid_argument asrpd is null-pointer</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">ta_card_data_get_card_product_type</field>
+    <field name="args">(ta_object_t card_data, ta_e_card_product_type_t *card_product_type)</field>
+    <field name="url">card__data_8h.html#ad4ee11a152c0f17062781302ca09ed92</field>
+    <field name="keywords">ta_card_data_get_card_product_type</field>
+    <field name="text">Card product type card_data Object instance of type card_data card_product_type Pointer to variable to write object instance to ta_c_rc_ok Object instance written to card_product_type ta_c_rc_invalid_argument card_data is ta_invalid_object ta_c_rc_invalid_argument card_data is not of type card_data ta_c_rc_invalid_argument card_product_type is null-pointer</field>
   </doc>
   <doc>
     <field name="type">file</field>
@@ -1991,9 +2055,86 @@ $(document).ready(function(){initNavTree('search.html','');});
   </doc>
   <doc>
     <field name="type">enumvalue</field>
+    <field name="name">ta_c_bbb_aral_routex</field>
+    <field name="url">brand__bar__brand_8h.html#a065fb75dccd6ee5e82f29d4cce775549ae1fd689bb3a87d5dd59643a5e66c1d51</field>
+    <field name="keywords">ta_c_bbb_aral_routex</field>
+    <field name="text">Specification dialog</field>
+  </doc>
+  <doc>
+    <field name="type">enumvalue</field>
+    <field name="name">ta_c_bbb_aurora</field>
+    <field name="url">brand__bar__brand_8h.html#a065fb75dccd6ee5e82f29d4cce775549a5f3180fb9cf2db7007fba20b19ad7bf0</field>
+    <field name="keywords">ta_c_bbb_aurora</field>
+    <field name="text">Specification dialog</field>
+  </doc>
+  <doc>
+    <field name="type">enumvalue</field>
+    <field name="name">ta_c_bbb_austro_card</field>
+    <field name="url">brand__bar__brand_8h.html#a065fb75dccd6ee5e82f29d4cce775549a561d74e8b791916fa662843a3606817d</field>
+    <field name="keywords">ta_c_bbb_austro_card</field>
+    <field name="text">Specification dialog</field>
+  </doc>
+  <doc>
+    <field name="type">enumvalue</field>
+    <field name="name">ta_c_bbb_bancomat</field>
+    <field name="url">brand__bar__brand_8h.html#a065fb75dccd6ee5e82f29d4cce775549aa4781494e5d4bc2ee608710e26d77a6d</field>
+    <field name="keywords">ta_c_bbb_bancomat</field>
+    <field name="text">Specification dialog</field>
+  </doc>
+  <doc>
+    <field name="type">enumvalue</field>
+    <field name="name">ta_c_bbb_bcmc</field>
+    <field name="url">brand__bar__brand_8h.html#a065fb75dccd6ee5e82f29d4cce775549a71bb982e50b4495d48ead8ea19fd5f2c</field>
+    <field name="keywords">ta_c_bbb_bcmc</field>
+    <field name="text">Specification dialog</field>
+  </doc>
+  <doc>
+    <field name="type">enumvalue</field>
+    <field name="name">ta_c_bbb_boncard_pay</field>
+    <field name="url">brand__bar__brand_8h.html#a065fb75dccd6ee5e82f29d4cce775549a51af3ab3162ed68fd3aac71c1dec6470</field>
+    <field name="keywords">ta_c_bbb_boncard_pay</field>
+    <field name="text">Specification dialog</field>
+  </doc>
+  <doc>
+    <field name="type">enumvalue</field>
+    <field name="name">ta_c_bbb_boncard_points</field>
+    <field name="url">brand__bar__brand_8h.html#a065fb75dccd6ee5e82f29d4cce775549a9fb7a90cfdd5759a916e638118c32534</field>
+    <field name="keywords">ta_c_bbb_boncard_points</field>
+    <field name="text">Specification dialog</field>
+  </doc>
+  <doc>
+    <field name="type">enumvalue</field>
+    <field name="name">ta_c_bbb_bonus</field>
+    <field name="url">brand__bar__brand_8h.html#a065fb75dccd6ee5e82f29d4cce775549aae31d47746ab50ed79ef95136364c2ce</field>
+    <field name="keywords">ta_c_bbb_bonus</field>
+    <field name="text">Specification dialog</field>
+  </doc>
+  <doc>
+    <field name="type">enumvalue</field>
     <field name="name">ta_c_bbb_bonuscard</field>
     <field name="url">brand__bar__brand_8h.html#a065fb75dccd6ee5e82f29d4cce775549ae2aea3853f3ed8ef96c8fc8937ac6c9a</field>
     <field name="keywords">ta_c_bbb_bonuscard</field>
+    <field name="text">Specification dialog</field>
+  </doc>
+  <doc>
+    <field name="type">enumvalue</field>
+    <field name="name">ta_c_bbb_bp_routex</field>
+    <field name="url">brand__bar__brand_8h.html#a065fb75dccd6ee5e82f29d4cce775549acda4b1bb937fe8866b366391beadc368</field>
+    <field name="keywords">ta_c_bbb_bp_routex</field>
+    <field name="text">Specification dialog</field>
+  </doc>
+  <doc>
+    <field name="type">enumvalue</field>
+    <field name="name">ta_c_bbb_brunschwig</field>
+    <field name="url">brand__bar__brand_8h.html#a065fb75dccd6ee5e82f29d4cce775549a66c2123bfe2ff70c51c3d7ef097fc1f2</field>
+    <field name="keywords">ta_c_bbb_brunschwig</field>
+    <field name="text">Specification dialog</field>
+  </doc>
+  <doc>
+    <field name="type">enumvalue</field>
+    <field name="name">ta_c_bbb_business_card</field>
+    <field name="url">brand__bar__brand_8h.html#a065fb75dccd6ee5e82f29d4cce775549ae18b58dd4c75bb9dabe989b8bf7ef5fa</field>
+    <field name="keywords">ta_c_bbb_business_card</field>
     <field name="text">Specification dialog</field>
   </doc>
   <doc>
@@ -2005,6 +2146,13 @@ $(document).ready(function(){initNavTree('search.html','');});
   </doc>
   <doc>
     <field name="type">enumvalue</field>
+    <field name="name">ta_c_bbb_co2neutral_card</field>
+    <field name="url">brand__bar__brand_8h.html#a065fb75dccd6ee5e82f29d4cce775549a1acda10fa212c23db95ddd88897de870</field>
+    <field name="keywords">ta_c_bbb_co2neutral_card</field>
+    <field name="text">Specification dialog</field>
+  </doc>
+  <doc>
+    <field name="type">enumvalue</field>
     <field name="name">ta_c_bbb_conforama</field>
     <field name="url">brand__bar__brand_8h.html#a065fb75dccd6ee5e82f29d4cce775549ac2dc0d5708e461e819367435cf8a87a2</field>
     <field name="keywords">ta_c_bbb_conforama</field>
@@ -2012,9 +2160,30 @@ $(document).ready(function(){initNavTree('search.html','');});
   </doc>
   <doc>
     <field name="type">enumvalue</field>
+    <field name="name">ta_c_bbb_coop_ekz</field>
+    <field name="url">brand__bar__brand_8h.html#a065fb75dccd6ee5e82f29d4cce775549a6da8f4c27a97a57e1a529125662d8d4a</field>
+    <field name="keywords">ta_c_bbb_coop_ekz</field>
+    <field name="text">Specification dialog</field>
+  </doc>
+  <doc>
+    <field name="type">enumvalue</field>
     <field name="name">ta_c_bbb_coop_mobile</field>
     <field name="url">brand__bar__brand_8h.html#a065fb75dccd6ee5e82f29d4cce775549a02ea70be44df5ca50e32d4142ec90079</field>
     <field name="keywords">ta_c_bbb_coop_mobile</field>
+    <field name="text">Specification dialog</field>
+  </doc>
+  <doc>
+    <field name="type">enumvalue</field>
+    <field name="name">ta_c_bbb_coop_pronto_card</field>
+    <field name="url">brand__bar__brand_8h.html#a065fb75dccd6ee5e82f29d4cce775549ae10bee8e51ff9d9443c6ad43e3b214fc</field>
+    <field name="keywords">ta_c_bbb_coop_pronto_card</field>
+    <field name="text">Specification dialog</field>
+  </doc>
+  <doc>
+    <field name="type">enumvalue</field>
+    <field name="name">ta_c_bbb_cosy_card</field>
+    <field name="url">brand__bar__brand_8h.html#a065fb75dccd6ee5e82f29d4cce775549a13ebb8611b33c474a2be22cafb8bf094</field>
+    <field name="keywords">ta_c_bbb_cosy_card</field>
     <field name="text">Specification dialog</field>
   </doc>
   <doc>
@@ -2047,9 +2216,86 @@ $(document).ready(function(){initNavTree('search.html','');});
   </doc>
   <doc>
     <field name="type">enumvalue</field>
+    <field name="name">ta_c_bbb_dkv</field>
+    <field name="url">brand__bar__brand_8h.html#a065fb75dccd6ee5e82f29d4cce775549a474441f767ba83b5d6d25470df7e4e98</field>
+    <field name="keywords">ta_c_bbb_dkv</field>
+    <field name="text">Specification dialog</field>
+  </doc>
+  <doc>
+    <field name="type">enumvalue</field>
+    <field name="name">ta_c_bbb_eni_routex</field>
+    <field name="url">brand__bar__brand_8h.html#a065fb75dccd6ee5e82f29d4cce775549aad1d45a1a8696906fae25a8b346e18f7</field>
+    <field name="keywords">ta_c_bbb_eni_routex</field>
+    <field name="text">Specification dialog</field>
+  </doc>
+  <doc>
+    <field name="type">enumvalue</field>
+    <field name="name">ta_c_bbb_eshell_prepaid</field>
+    <field name="url">brand__bar__brand_8h.html#a065fb75dccd6ee5e82f29d4cce775549a9407115acdc38b02050b281087ae9cd6</field>
+    <field name="keywords">ta_c_bbb_eshell_prepaid</field>
+    <field name="text">Specification dialog</field>
+  </doc>
+  <doc>
+    <field name="type">enumvalue</field>
+    <field name="name">ta_c_bbb_esso</field>
+    <field name="url">brand__bar__brand_8h.html#a065fb75dccd6ee5e82f29d4cce775549a465d326133328c26b6f50c61d415e433</field>
+    <field name="keywords">ta_c_bbb_esso</field>
+    <field name="text">Specification dialog</field>
+  </doc>
+  <doc>
+    <field name="type">enumvalue</field>
+    <field name="name">ta_c_bbb_euro_shell</field>
+    <field name="url">brand__bar__brand_8h.html#a065fb75dccd6ee5e82f29d4cce775549a6f0d4e5f0e1d976b3caf026c507ef8a9</field>
+    <field name="keywords">ta_c_bbb_euro_shell</field>
+    <field name="text">Specification dialog</field>
+  </doc>
+  <doc>
+    <field name="type">enumvalue</field>
+    <field name="name">ta_c_bbb_fnac</field>
+    <field name="url">brand__bar__brand_8h.html#a065fb75dccd6ee5e82f29d4cce775549a7c37f4a68a9cf503de5d646e84f3bdfe</field>
+    <field name="keywords">ta_c_bbb_fnac</field>
+    <field name="text">Specification dialog</field>
+  </doc>
+  <doc>
+    <field name="type">enumvalue</field>
     <field name="name">ta_c_bbb_frei_und_flott</field>
     <field name="url">brand__bar__brand_8h.html#a065fb75dccd6ee5e82f29d4cce775549ae59c75bd7d9c165bee81598ac6d0fd6f</field>
     <field name="keywords">ta_c_bbb_frei_und_flott</field>
+    <field name="text">Specification dialog</field>
+  </doc>
+  <doc>
+    <field name="type">enumvalue</field>
+    <field name="name">ta_c_bbb_giftc</field>
+    <field name="url">brand__bar__brand_8h.html#a065fb75dccd6ee5e82f29d4cce775549a580ac45338a6b18b0edb9a8e88339e12</field>
+    <field name="keywords">ta_c_bbb_giftc</field>
+    <field name="text">Specification dialog</field>
+  </doc>
+  <doc>
+    <field name="type">enumvalue</field>
+    <field name="name">ta_c_bbb_gift_card</field>
+    <field name="url">brand__bar__brand_8h.html#a065fb75dccd6ee5e82f29d4cce775549ad222e82999f138a7fc901ecd466ecfac</field>
+    <field name="keywords">ta_c_bbb_gift_card</field>
+    <field name="text">Specification dialog</field>
+  </doc>
+  <doc>
+    <field name="type">enumvalue</field>
+    <field name="name">ta_c_bbb_group_card</field>
+    <field name="url">brand__bar__brand_8h.html#a065fb75dccd6ee5e82f29d4cce775549a83c011161f9c2f1942ed71d680f6bf14</field>
+    <field name="keywords">ta_c_bbb_group_card</field>
+    <field name="text">Specification dialog</field>
+  </doc>
+  <doc>
+    <field name="type">enumvalue</field>
+    <field name="name">ta_c_bbb_ip_routex</field>
+    <field name="url">brand__bar__brand_8h.html#a065fb75dccd6ee5e82f29d4cce775549a6c329f174f29f48cc015e38f1598df24</field>
+    <field name="keywords">ta_c_bbb_ip_routex</field>
+    <field name="text">Specification dialog</field>
+  </doc>
+  <doc>
+    <field name="type">enumvalue</field>
+    <field name="name">ta_c_bbb_iq</field>
+    <field name="url">brand__bar__brand_8h.html#a065fb75dccd6ee5e82f29d4cce775549ac71b05ce8de367185decc31403a9bbaa</field>
+    <field name="keywords">ta_c_bbb_iq</field>
     <field name="text">Specification dialog</field>
   </doc>
   <doc>
@@ -2061,9 +2307,58 @@ $(document).ready(function(){initNavTree('search.html','');});
   </doc>
   <doc>
     <field name="type">enumvalue</field>
+    <field name="name">ta_c_bbb_jelmoli_paycard</field>
+    <field name="url">brand__bar__brand_8h.html#a065fb75dccd6ee5e82f29d4cce775549af7ae873109476c22edcbd1fae0312007</field>
+    <field name="keywords">ta_c_bbb_jelmoli_paycard</field>
+    <field name="text">Specification dialog</field>
+  </doc>
+  <doc>
+    <field name="type">enumvalue</field>
+    <field name="name">ta_c_bbb_jet</field>
+    <field name="url">brand__bar__brand_8h.html#a065fb75dccd6ee5e82f29d4cce775549adb330d08adf4143104734696fc2afd5e</field>
+    <field name="keywords">ta_c_bbb_jet</field>
+    <field name="text">Specification dialog</field>
+  </doc>
+  <doc>
+    <field name="type">enumvalue</field>
+    <field name="name">ta_c_bbb_jgeschenkkarte</field>
+    <field name="url">brand__bar__brand_8h.html#a065fb75dccd6ee5e82f29d4cce775549a48c974994de9a9adcfc5cd04bf7421f4</field>
+    <field name="keywords">ta_c_bbb_jgeschenkkarte</field>
+    <field name="text">Specification dialog</field>
+  </doc>
+  <doc>
+    <field name="type">enumvalue</field>
+    <field name="name">ta_c_bbb_jubin_card_petrol</field>
+    <field name="url">brand__bar__brand_8h.html#a065fb75dccd6ee5e82f29d4cce775549a17bde28fcea33f3c6cd9b6bd7f93efad</field>
+    <field name="keywords">ta_c_bbb_jubin_card_petrol</field>
+    <field name="text">Specification dialog</field>
+  </doc>
+  <doc>
+    <field name="type">enumvalue</field>
     <field name="name">ta_c_bbb_lebara</field>
     <field name="url">brand__bar__brand_8h.html#a065fb75dccd6ee5e82f29d4cce775549a589eaec75382bab9f65fef626ddd7f63</field>
     <field name="keywords">ta_c_bbb_lebara</field>
+    <field name="text">Specification dialog</field>
+  </doc>
+  <doc>
+    <field name="type">enumvalue</field>
+    <field name="name">ta_c_bbb_loeb</field>
+    <field name="url">brand__bar__brand_8h.html#a065fb75dccd6ee5e82f29d4cce775549a8ff0de3028575e292efaccd15edde0af</field>
+    <field name="keywords">ta_c_bbb_loeb</field>
+    <field name="text">Specification dialog</field>
+  </doc>
+  <doc>
+    <field name="type">enumvalue</field>
+    <field name="name">ta_c_bbb_log_pay</field>
+    <field name="url">brand__bar__brand_8h.html#a065fb75dccd6ee5e82f29d4cce775549ade2e0e4947fd6768a958a6a88f48fe7d</field>
+    <field name="keywords">ta_c_bbb_log_pay</field>
+    <field name="text">Specification dialog</field>
+  </doc>
+  <doc>
+    <field name="type">enumvalue</field>
+    <field name="name">ta_c_bbb_lunch_check_card</field>
+    <field name="url">brand__bar__brand_8h.html#a065fb75dccd6ee5e82f29d4cce775549a284d54a3279d5a1bb99158106a3fdc9c</field>
+    <field name="keywords">ta_c_bbb_lunch_check_card</field>
     <field name="text">Specification dialog</field>
   </doc>
   <doc>
@@ -2078,6 +2373,13 @@ $(document).ready(function(){initNavTree('search.html','');});
     <field name="name">ta_c_bbb_maestro</field>
     <field name="url">brand__bar__brand_8h.html#a065fb75dccd6ee5e82f29d4cce775549a3b2948554eb901de52f76baab1d961bc</field>
     <field name="keywords">ta_c_bbb_maestro</field>
+    <field name="text">Specification dialog</field>
+  </doc>
+  <doc>
+    <field name="type">enumvalue</field>
+    <field name="name">ta_c_bbb_maestro_ch</field>
+    <field name="url">brand__bar__brand_8h.html#a065fb75dccd6ee5e82f29d4cce775549a354faea3933c6610aee84177f4ea59c7</field>
+    <field name="keywords">ta_c_bbb_maestro_ch</field>
     <field name="text">Specification dialog</field>
   </doc>
   <doc>
@@ -2110,6 +2412,41 @@ $(document).ready(function(){initNavTree('search.html','');});
   </doc>
   <doc>
     <field name="type">enumvalue</field>
+    <field name="name">ta_c_bbb_merger_card</field>
+    <field name="url">brand__bar__brand_8h.html#a065fb75dccd6ee5e82f29d4cce775549a6994a898081ec61495ceb19079a40894</field>
+    <field name="keywords">ta_c_bbb_merger_card</field>
+    <field name="text">Specification dialog</field>
+  </doc>
+  <doc>
+    <field name="type">enumvalue</field>
+    <field name="name">ta_c_bbb_migrolcard</field>
+    <field name="url">brand__bar__brand_8h.html#a065fb75dccd6ee5e82f29d4cce775549a6527aae37f0b67f4c16b90e356d34878</field>
+    <field name="keywords">ta_c_bbb_migrolcard</field>
+    <field name="text">Specification dialog</field>
+  </doc>
+  <doc>
+    <field name="type">enumvalue</field>
+    <field name="name">ta_c_bbb_migros</field>
+    <field name="url">brand__bar__brand_8h.html#a065fb75dccd6ee5e82f29d4cce775549a217f24d8ac3638e71f1ebdf630f80cf0</field>
+    <field name="keywords">ta_c_bbb_migros</field>
+    <field name="text">Specification dialog</field>
+  </doc>
+  <doc>
+    <field name="type">enumvalue</field>
+    <field name="name">ta_c_bbb_moveri</field>
+    <field name="url">brand__bar__brand_8h.html#a065fb75dccd6ee5e82f29d4cce775549ab7bc9d588d0c43dac5d5b66484c29c8d</field>
+    <field name="keywords">ta_c_bbb_moveri</field>
+    <field name="text">Specification dialog</field>
+  </doc>
+  <doc>
+    <field name="type">enumvalue</field>
+    <field name="name">ta_c_bbb_mscompany_card</field>
+    <field name="url">brand__bar__brand_8h.html#a065fb75dccd6ee5e82f29d4cce775549a9738af91f34f1bc87e32c030c98ddf99</field>
+    <field name="keywords">ta_c_bbb_mscompany_card</field>
+    <field name="text">Specification dialog</field>
+  </doc>
+  <doc>
+    <field name="type">enumvalue</field>
     <field name="name">ta_c_bbb_my_one</field>
     <field name="url">brand__bar__brand_8h.html#a065fb75dccd6ee5e82f29d4cce775549a564eb9b892fb229123e1fb68c76e6ec4</field>
     <field name="keywords">ta_c_bbb_my_one</field>
@@ -2117,9 +2454,44 @@ $(document).ready(function(){initNavTree('search.html','');});
   </doc>
   <doc>
     <field name="type">enumvalue</field>
-    <field name="name">ta_c_bbb_salt</field>
-    <field name="url">brand__bar__brand_8h.html#a065fb75dccd6ee5e82f29d4cce775549a8c6ee6a87dcebbacfa9d9073ccb1b3c3</field>
-    <field name="keywords">ta_c_bbb_salt</field>
+    <field name="name">ta_c_bbb_novofleet</field>
+    <field name="url">brand__bar__brand_8h.html#a065fb75dccd6ee5e82f29d4cce775549a06519b7e1aff37a60e9b1f5c46455a1b</field>
+    <field name="keywords">ta_c_bbb_novofleet</field>
+    <field name="text">Specification dialog</field>
+  </doc>
+  <doc>
+    <field name="type">enumvalue</field>
+    <field name="name">ta_c_bbb_omv_routex</field>
+    <field name="url">brand__bar__brand_8h.html#a065fb75dccd6ee5e82f29d4cce775549a224dc4ecdaff7864ad66fb048a8b7b61</field>
+    <field name="keywords">ta_c_bbb_omv_routex</field>
+    <field name="text">Specification dialog</field>
+  </doc>
+  <doc>
+    <field name="type">enumvalue</field>
+    <field name="name">ta_c_bbb_paycard</field>
+    <field name="url">brand__bar__brand_8h.html#a065fb75dccd6ee5e82f29d4cce775549a248f47d37a4aa84dcba3458ca75dd1d0</field>
+    <field name="keywords">ta_c_bbb_paycard</field>
+    <field name="text">Specification dialog</field>
+  </doc>
+  <doc>
+    <field name="type">enumvalue</field>
+    <field name="name">ta_c_bbb_paycard_f</field>
+    <field name="url">brand__bar__brand_8h.html#a065fb75dccd6ee5e82f29d4cce775549a86d9cf04b13b39cd0a1d793567983e9d</field>
+    <field name="keywords">ta_c_bbb_paycard_f</field>
+    <field name="text">Specification dialog</field>
+  </doc>
+  <doc>
+    <field name="type">enumvalue</field>
+    <field name="name">ta_c_bbb_paycard_app</field>
+    <field name="url">brand__bar__brand_8h.html#a065fb75dccd6ee5e82f29d4cce775549af3c9195461be5ae85f7e7d87ea4b7fe4</field>
+    <field name="keywords">ta_c_bbb_paycard_app</field>
+    <field name="text">Specification dialog</field>
+  </doc>
+  <doc>
+    <field name="type">enumvalue</field>
+    <field name="name">ta_c_bbb_pay_sys_giftcard</field>
+    <field name="url">brand__bar__brand_8h.html#a065fb75dccd6ee5e82f29d4cce775549ada79d46e4e258e8db2afaee92631c728</field>
+    <field name="keywords">ta_c_bbb_pay_sys_giftcard</field>
     <field name="text">Specification dialog</field>
   </doc>
   <doc>
@@ -2159,6 +2531,55 @@ $(document).ready(function(){initNavTree('search.html','');});
   </doc>
   <doc>
     <field name="type">enumvalue</field>
+    <field name="name">ta_c_bbb_reka_lunch</field>
+    <field name="url">brand__bar__brand_8h.html#a065fb75dccd6ee5e82f29d4cce775549a8606a403d77aa1af1cc78fccda277dd8</field>
+    <field name="keywords">ta_c_bbb_reka_lunch</field>
+    <field name="text">Specification dialog</field>
+  </doc>
+  <doc>
+    <field name="type">enumvalue</field>
+    <field name="name">ta_c_bbb_reka_rail</field>
+    <field name="url">brand__bar__brand_8h.html#a065fb75dccd6ee5e82f29d4cce775549ac22dec706a591c056a46e3aaed3796f8</field>
+    <field name="keywords">ta_c_bbb_reka_rail</field>
+    <field name="text">Specification dialog</field>
+  </doc>
+  <doc>
+    <field name="type">enumvalue</field>
+    <field name="name">ta_c_bbb_salt</field>
+    <field name="url">brand__bar__brand_8h.html#a065fb75dccd6ee5e82f29d4cce775549a8c6ee6a87dcebbacfa9d9073ccb1b3c3</field>
+    <field name="keywords">ta_c_bbb_salt</field>
+    <field name="text">Specification dialog</field>
+  </doc>
+  <doc>
+    <field name="type">enumvalue</field>
+    <field name="name">ta_c_bbb_sbbkarte</field>
+    <field name="url">brand__bar__brand_8h.html#a065fb75dccd6ee5e82f29d4cce775549aac44b7f6a8617d76fee9ba34becc7107</field>
+    <field name="keywords">ta_c_bbb_sbbkarte</field>
+    <field name="text">Specification dialog</field>
+  </doc>
+  <doc>
+    <field name="type">enumvalue</field>
+    <field name="name">ta_c_bbb_shell_mca</field>
+    <field name="url">brand__bar__brand_8h.html#a065fb75dccd6ee5e82f29d4cce775549adedb49e93bd81355e9543bd410c12007</field>
+    <field name="keywords">ta_c_bbb_shell_mca</field>
+    <field name="text">Specification dialog</field>
+  </doc>
+  <doc>
+    <field name="type">enumvalue</field>
+    <field name="name">ta_c_bbb_staedtekarte</field>
+    <field name="url">brand__bar__brand_8h.html#a065fb75dccd6ee5e82f29d4cce775549a58e148f201181c8abc9c563d94a46f69</field>
+    <field name="keywords">ta_c_bbb_staedtekarte</field>
+    <field name="text">Specification dialog</field>
+  </doc>
+  <doc>
+    <field name="type">enumvalue</field>
+    <field name="name">ta_c_bbb_statoil_routex</field>
+    <field name="url">brand__bar__brand_8h.html#a065fb75dccd6ee5e82f29d4cce775549a0620504811184ac9d1a1ec859807ca67</field>
+    <field name="keywords">ta_c_bbb_statoil_routex</field>
+    <field name="text">Specification dialog</field>
+  </doc>
+  <doc>
+    <field name="type">enumvalue</field>
     <field name="name">ta_c_bbb_sunrise</field>
     <field name="url">brand__bar__brand_8h.html#a065fb75dccd6ee5e82f29d4cce775549a34a5832165f93803c21b5e0f89d4d42a</field>
     <field name="keywords">ta_c_bbb_sunrise</field>
@@ -2173,9 +2594,51 @@ $(document).ready(function(){initNavTree('search.html','');});
   </doc>
   <doc>
     <field name="type">enumvalue</field>
+    <field name="name">ta_c_bbb_supercard_visa</field>
+    <field name="url">brand__bar__brand_8h.html#a065fb75dccd6ee5e82f29d4cce775549abded04796e3ba95f3f31df8e77fa1c7d</field>
+    <field name="keywords">ta_c_bbb_supercard_visa</field>
+    <field name="text">Specification dialog</field>
+  </doc>
+  <doc>
+    <field name="type">enumvalue</field>
+    <field name="name">ta_c_bbb_swiss_bonus_card</field>
+    <field name="url">brand__bar__brand_8h.html#a065fb75dccd6ee5e82f29d4cce775549a765170dfc9831b81d249c8a8720b9535</field>
+    <field name="keywords">ta_c_bbb_swiss_bonus_card</field>
+    <field name="text">Specification dialog</field>
+  </doc>
+  <doc>
+    <field name="type">enumvalue</field>
     <field name="name">ta_c_bbb_swisscom</field>
     <field name="url">brand__bar__brand_8h.html#a065fb75dccd6ee5e82f29d4cce775549afa71acbd988b166ca7a21ab7bbdb40d9</field>
     <field name="keywords">ta_c_bbb_swisscom</field>
+    <field name="text">Specification dialog</field>
+  </doc>
+  <doc>
+    <field name="type">enumvalue</field>
+    <field name="name">ta_c_bbb_twint</field>
+    <field name="url">brand__bar__brand_8h.html#a065fb75dccd6ee5e82f29d4cce775549a0e3918dc700bb339671e1a110c4d390c</field>
+    <field name="keywords">ta_c_bbb_twint</field>
+    <field name="text">Specification dialog</field>
+  </doc>
+  <doc>
+    <field name="type">enumvalue</field>
+    <field name="name">ta_c_bbb_uta_full_service</field>
+    <field name="url">brand__bar__brand_8h.html#a065fb75dccd6ee5e82f29d4cce775549a9f210bc63e2128beae8c9733df2335db</field>
+    <field name="keywords">ta_c_bbb_uta_full_service</field>
+    <field name="text">Specification dialog</field>
+  </doc>
+  <doc>
+    <field name="type">enumvalue</field>
+    <field name="name">ta_c_bbb_uta_select_card</field>
+    <field name="url">brand__bar__brand_8h.html#a065fb75dccd6ee5e82f29d4cce775549a68460140080ac96e4d172d5d3fbc076d</field>
+    <field name="keywords">ta_c_bbb_uta_select_card</field>
+    <field name="text">Specification dialog</field>
+  </doc>
+  <doc>
+    <field name="type">enumvalue</field>
+    <field name="name">ta_c_bbb_valuemaster</field>
+    <field name="url">brand__bar__brand_8h.html#a065fb75dccd6ee5e82f29d4cce775549a5ca861590357bec122c137d935021119</field>
+    <field name="keywords">ta_c_bbb_valuemaster</field>
     <field name="text">Specification dialog</field>
   </doc>
   <doc>
@@ -2190,6 +2653,13 @@ $(document).ready(function(){initNavTree('search.html','');});
     <field name="name">ta_c_bbb_visa_electron</field>
     <field name="url">brand__bar__brand_8h.html#a065fb75dccd6ee5e82f29d4cce775549a72a11d9294fadb99025fd98725459d51</field>
     <field name="keywords">ta_c_bbb_visa_electron</field>
+    <field name="text">Specification dialog</field>
+  </doc>
+  <doc>
+    <field name="type">enumvalue</field>
+    <field name="name">ta_c_bbb_vorteils_card</field>
+    <field name="url">brand__bar__brand_8h.html#a065fb75dccd6ee5e82f29d4cce775549a72e46f7338e39816f7d632a4558b5c18</field>
+    <field name="keywords">ta_c_bbb_vorteils_card</field>
     <field name="text">Specification dialog</field>
   </doc>
   <doc>
@@ -2297,6 +2767,77 @@ $(document).ready(function(){initNavTree('search.html','');});
     <field name="args">(ta_e_brand_mode_t value)</field>
     <field name="url">enum__string__maps_2brand__mode_8h.html#a63bd4c66e4ea6c7b0d50df1b716c2e96</field>
     <field name="keywords">ta_brand_mode_e2s</field>
+    <field name="text">Get String for Enum value value Enum value to get string for String value</field>
+  </doc>
+  <doc>
+    <field name="type">file</field>
+    <field name="name">card_product_type.h</field>
+    <field name="url">card__product__type_8h.html</field>
+    <field name="keywords">card_product_type.h</field>
+    <field name="text">Gives the type of card product if this can be determined e.g from ASRPD The following values are valid Copyright SIX Payment Services</field>
+  </doc>
+  <doc>
+    <field name="type">typedef</field>
+    <field name="name">ta_e_card_product_type_t</field>
+    <field name="url">card__product__type_8h.html#a857028005036aeb25f893226abf6e3f9</field>
+    <field name="keywords">ta_e_card_product_type_t</field>
+    <field name="text">Gives the type of card product if this can be determined e.g from ASRPD The following values are valid Specification retail</field>
+  </doc>
+  <doc>
+    <field name="type">enum</field>
+    <field name="name">ta_e_card_product_type</field>
+    <field name="url">card__product__type_8h.html#a2a43e9db05d4eb9cbe7466c62524c1c9</field>
+    <field name="keywords">ta_e_card_product_type</field>
+    <field name="text">Gives the type of card product if this can be determined e.g from ASRPD The following values are valid Specification retail</field>
+  </doc>
+  <doc>
+    <field name="type">enumvalue</field>
+    <field name="name">ta_c_cpt_undefined</field>
+    <field name="url">card__product__type_8h.html#a2a43e9db05d4eb9cbe7466c62524c1c9ad8450e7f1868fb35334882104a4c9474</field>
+    <field name="keywords">ta_c_cpt_undefined</field>
+    <field name="text">Undefined/invalid value</field>
+  </doc>
+  <doc>
+    <field name="type">enumvalue</field>
+    <field name="name">ta_c_cpt_debit</field>
+    <field name="url">card__product__type_8h.html#a2a43e9db05d4eb9cbe7466c62524c1c9a053d9200d46cc00f5d6dcc2d1f6328b4</field>
+    <field name="keywords">ta_c_cpt_debit</field>
+    <field name="text">The card is a debit product Specification retail</field>
+  </doc>
+  <doc>
+    <field name="type">enumvalue</field>
+    <field name="name">ta_c_cpt_credit</field>
+    <field name="url">card__product__type_8h.html#a2a43e9db05d4eb9cbe7466c62524c1c9a7dc3932127924d3d916bc716b8b19693</field>
+    <field name="keywords">ta_c_cpt_credit</field>
+    <field name="text">The card is a credit product Specification retail</field>
+  </doc>
+  <doc>
+    <field name="type">enumvalue</field>
+    <field name="name">ta_c_cpt_commercial</field>
+    <field name="url">card__product__type_8h.html#a2a43e9db05d4eb9cbe7466c62524c1c9a654771784922b73c8ea101d664896a44</field>
+    <field name="keywords">ta_c_cpt_commercial</field>
+    <field name="text">The card is a commercial product Specification retail</field>
+  </doc>
+  <doc>
+    <field name="type">enumvalue</field>
+    <field name="name">ta_c_cpt_prepaid</field>
+    <field name="url">card__product__type_8h.html#a2a43e9db05d4eb9cbe7466c62524c1c9ae0c8352073c0f0e77b0e51c28955c812</field>
+    <field name="keywords">ta_c_cpt_prepaid</field>
+    <field name="text">The card is a pre-paid product Specification retail</field>
+  </doc>
+  <doc>
+    <field name="type">file</field>
+    <field name="name">card_product_type.h</field>
+    <field name="url">enum__string__maps_2card__product__type_8h.html</field>
+    <field name="keywords">card_product_type.h</field>
+    <field name="text">This file is generated Do not edit Copyright SIX Payment Services</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">ta_card_product_type_e2s</field>
+    <field name="args">(ta_e_card_product_type_t value)</field>
+    <field name="url">enum__string__maps_2card__product__type_8h.html#a0dfa5625c3a2901cf0704c0c72a52740</field>
+    <field name="keywords">ta_card_product_type_e2s</field>
     <field name="text">Get String for Enum value value Enum value to get string for String value</field>
   </doc>
   <doc>
@@ -4560,6 +5101,48 @@ $(document).ready(function(){initNavTree('search.html','');});
     <field name="text">Purchase function mail ordered supported Specification retail</field>
   </doc>
   <doc>
+    <field name="type">enumvalue</field>
+    <field name="name">ta_c_ft_activate_card</field>
+    <field name="url">financial__transactions_8h.html#acb14a85df061e531e84d9409a28ead04aad1f6e14cadcef028e2c92856d6bd97c</field>
+    <field name="keywords">ta_c_ft_activate_card</field>
+    <field name="text">ActivateCard function supported Specification retail</field>
+  </doc>
+  <doc>
+    <field name="type">enumvalue</field>
+    <field name="name">ta_c_ft_load</field>
+    <field name="url">financial__transactions_8h.html#acb14a85df061e531e84d9409a28ead04a1740094d981c27a3bee0bf3e1bdb0def</field>
+    <field name="keywords">ta_c_ft_load</field>
+    <field name="text">Load function supported Specification retail</field>
+  </doc>
+  <doc>
+    <field name="type">enumvalue</field>
+    <field name="name">ta_c_ft_unload</field>
+    <field name="url">financial__transactions_8h.html#acb14a85df061e531e84d9409a28ead04afd651414509900e5a9a2f66ad0cc3a27</field>
+    <field name="keywords">ta_c_ft_unload</field>
+    <field name="text">Unload function supported Specification retail</field>
+  </doc>
+  <doc>
+    <field name="type">enumvalue</field>
+    <field name="name">ta_c_ft_funding</field>
+    <field name="url">financial__transactions_8h.html#acb14a85df061e531e84d9409a28ead04adac2836109e44a702bcf5f035a4ca7a1</field>
+    <field name="keywords">ta_c_ft_funding</field>
+    <field name="text">Funding function supported Specification retail</field>
+  </doc>
+  <doc>
+    <field name="type">enumvalue</field>
+    <field name="name">ta_c_ft_refunding</field>
+    <field name="url">financial__transactions_8h.html#acb14a85df061e531e84d9409a28ead04acc12d8a0d0f4f086bd63eba1acf256b0</field>
+    <field name="keywords">ta_c_ft_refunding</field>
+    <field name="text">Refunding function supported Specification retail</field>
+  </doc>
+  <doc>
+    <field name="type">enumvalue</field>
+    <field name="name">ta_c_ft_debt_recovery</field>
+    <field name="url">financial__transactions_8h.html#acb14a85df061e531e84d9409a28ead04ace67128f3046d1c60c74cfdd4ea1ae86</field>
+    <field name="keywords">ta_c_ft_debt_recovery</field>
+    <field name="text">DebtRecovery function supported Specification retail</field>
+  </doc>
+  <doc>
     <field name="type">file</field>
     <field name="name">function_hint.h</field>
     <field name="url">enum__string__maps_2function__hint_8h.html</field>
@@ -5074,6 +5657,13 @@ $(document).ready(function(){initNavTree('search.html','');});
     <field name="url">kernel__type_8h.html#a09c41b2ef45de74238a9f3897ce4e78aace20318f5187210cb354a656073f472b</field>
     <field name="keywords">ta_c_kt_undefined</field>
     <field name="text">Undefined/invalid value</field>
+  </doc>
+  <doc>
+    <field name="type">enumvalue</field>
+    <field name="name">ta_c_kt_kernel_pure</field>
+    <field name="url">kernel__type_8h.html#a09c41b2ef45de74238a9f3897ce4e78aa79b00006939760cdf1d6e22b7845b7c7</field>
+    <field name="keywords">ta_c_kt_kernel_pure</field>
+    <field name="text">Gemalto PURE Contactless Kernel</field>
   </doc>
   <doc>
     <field name="type">enumvalue</field>
@@ -5635,6 +6225,13 @@ $(document).ready(function(){initNavTree('search.html','');});
     <field name="text">Provide Vas Result to the terminal Specification retail</field>
   </doc>
   <doc>
+    <field name="type">enumvalue</field>
+    <field name="name">ta_c_nft_account_verification</field>
+    <field name="url">non__financial__transactions_8h.html#a9519a57c1ef87f4cdf5937084bf4de93a5984076300fd5fd187291cc0b2e96c06</field>
+    <field name="keywords">ta_c_nft_account_verification</field>
+    <field name="text">AccountVerification function supported Specification retail</field>
+  </doc>
+  <doc>
     <field name="type">file</field>
     <field name="name">payment_protocol.h</field>
     <field name="url">enum__string__maps_2payment__protocol_8h.html</field>
@@ -5951,6 +6548,13 @@ $(document).ready(function(){initNavTree('search.html','');});
     <field name="url">print__flag_8h.html#ab1b9ac091a5a6e1cf321f843094e0d34a5b4d30af42420a35c19683c3ce90a0a2</field>
     <field name="keywords">ta_c_pflag_suppress_eft_info</field>
     <field name="text">Do not print EFT terminal information Specification retail</field>
+  </doc>
+  <doc>
+    <field name="type">enumvalue</field>
+    <field name="name">ta_c_pflag_suppress_footer</field>
+    <field name="url">print__flag_8h.html#ab1b9ac091a5a6e1cf321f843094e0d34a04c21ecfb71485c02df9a3ddcdfcf4d7</field>
+    <field name="keywords">ta_c_pflag_suppress_footer</field>
+    <field name="text">Do not print footers e.g Additional Ticket Text Specification retail</field>
   </doc>
   <doc>
     <field name="type">file</field>
@@ -6292,6 +6896,27 @@ $(document).ready(function(){initNavTree('search.html','');});
     <field name="url">reason_8h.html#ab10e533f4ad4f7409b4a8fbdaefbf972affec2db03b71651f0dbf60460977b15b</field>
     <field name="keywords">ta_c_rsn_pin_nok</field>
     <field name="text">PIN Check failed Specification dialog</field>
+  </doc>
+  <doc>
+    <field name="type">enumvalue</field>
+    <field name="name">ta_c_rsn_f1</field>
+    <field name="url">reason_8h.html#ab10e533f4ad4f7409b4a8fbdaefbf972af6dcb21c39e090eb97edd6e449f51d9e</field>
+    <field name="keywords">ta_c_rsn_f1</field>
+    <field name="text">Function key 1 used to confirm dialog Specification dialog</field>
+  </doc>
+  <doc>
+    <field name="type">enumvalue</field>
+    <field name="name">ta_c_rsn_f2</field>
+    <field name="url">reason_8h.html#ab10e533f4ad4f7409b4a8fbdaefbf972a42c138ed7ad5f946138712480499ccfe</field>
+    <field name="keywords">ta_c_rsn_f2</field>
+    <field name="text">Function key 2 used to confirm dialog Specification dialog</field>
+  </doc>
+  <doc>
+    <field name="type">enumvalue</field>
+    <field name="name">ta_c_rsn_other_key</field>
+    <field name="url">reason_8h.html#ab10e533f4ad4f7409b4a8fbdaefbf972a6ea98693fb09a95a935fbf08e0d5c21a</field>
+    <field name="keywords">ta_c_rsn_other_key</field>
+    <field name="text">Any other key used not Ok Stop Corr F1 F2 to confirm the dialog Specification dialog</field>
   </doc>
   <doc>
     <field name="type">file</field>
@@ -6673,6 +7298,76 @@ $(document).ready(function(){initNavTree('search.html','');});
     <field name="text">Transaction reference number of the original transaction used for a follow on transaction Specification retail</field>
   </doc>
   <doc>
+    <field name="type">enumvalue</field>
+    <field name="name">ta_c_rit_amount_installment_fee</field>
+    <field name="url">receipt__item__type_8h.html#a3d3044dd871a9c7d630dbcf3d9b738bea9b421940ae87448444eac277565a2ad3</field>
+    <field name="keywords">ta_c_rit_amount_installment_fee</field>
+    <field name="text">Fee amount charged for the installment service Specification retail</field>
+  </doc>
+  <doc>
+    <field name="type">enumvalue</field>
+    <field name="name">ta_c_rit_amount_installment_total</field>
+    <field name="url">receipt__item__type_8h.html#a3d3044dd871a9c7d630dbcf3d9b738bea167bbf93ddb39eb967c34502ddd869c6</field>
+    <field name="keywords">ta_c_rit_amount_installment_total</field>
+    <field name="text">Total amount including including installment fees and interest rates Specification retail</field>
+  </doc>
+  <doc>
+    <field name="type">enumvalue</field>
+    <field name="name">ta_c_rit_amount_installment_first</field>
+    <field name="url">receipt__item__type_8h.html#a3d3044dd871a9c7d630dbcf3d9b738bea220d5db04653e1aac2a665467531e588</field>
+    <field name="keywords">ta_c_rit_amount_installment_first</field>
+    <field name="text">Amount of the first installment payment Specification retail</field>
+  </doc>
+  <doc>
+    <field name="type">enumvalue</field>
+    <field name="name">ta_c_rit_amount_installment_one</field>
+    <field name="url">receipt__item__type_8h.html#a3d3044dd871a9c7d630dbcf3d9b738bea1d7402e4ab54d1ca96d71df2764f7b6f</field>
+    <field name="keywords">ta_c_rit_amount_installment_one</field>
+    <field name="text">Amount of one installment payment Not the first if a first amount is present Specification retail</field>
+  </doc>
+  <doc>
+    <field name="type">enumvalue</field>
+    <field name="name">ta_c_rit_interest_installment</field>
+    <field name="url">receipt__item__type_8h.html#a3d3044dd871a9c7d630dbcf3d9b738bea0e48d5fcf1bf8ec719493efc9b65bb00</field>
+    <field name="keywords">ta_c_rit_interest_installment</field>
+    <field name="text">Interest rate of the installment option Specification retail</field>
+  </doc>
+  <doc>
+    <field name="type">enumvalue</field>
+    <field name="name">ta_c_rit_markup_dcc_regulated</field>
+    <field name="url">receipt__item__type_8h.html#a3d3044dd871a9c7d630dbcf3d9b738beab105b840fa3ff5c27b6f16ce8bcd1203</field>
+    <field name="keywords">ta_c_rit_markup_dcc_regulated</field>
+    <field name="text">DCC markup vs regulated ECB reference exchange rate Specification retail</field>
+  </doc>
+  <doc>
+    <field name="type">enumvalue</field>
+    <field name="name">ta_c_rit_markup_exponent_dcc_regulated</field>
+    <field name="url">receipt__item__type_8h.html#a3d3044dd871a9c7d630dbcf3d9b738bea4495f7cd3b3b5a754f5177b16c8d4849</field>
+    <field name="keywords">ta_c_rit_markup_exponent_dcc_regulated</field>
+    <field name="text">Exponent of regulated DCC markup Specification retail</field>
+  </doc>
+  <doc>
+    <field name="type">enumvalue</field>
+    <field name="name">ta_c_rit_rate_dcc_regulated</field>
+    <field name="url">receipt__item__type_8h.html#a3d3044dd871a9c7d630dbcf3d9b738beac81d5ced0f9ceecfd9e4156348a471f3</field>
+    <field name="keywords">ta_c_rit_rate_dcc_regulated</field>
+    <field name="text">DCC rate vs regulated ECB reference exchange rate Specification retail</field>
+  </doc>
+  <doc>
+    <field name="type">enumvalue</field>
+    <field name="name">ta_c_rit_rate_exponent_dcc_regulated</field>
+    <field name="url">receipt__item__type_8h.html#a3d3044dd871a9c7d630dbcf3d9b738bea76c4ac9d467d3fac0dd201c342fe3e8a</field>
+    <field name="keywords">ta_c_rit_rate_exponent_dcc_regulated</field>
+    <field name="text">Exponent of regulated DCC rate Specification retail</field>
+  </doc>
+  <doc>
+    <field name="type">enumvalue</field>
+    <field name="name">ta_c_rit_key_pan_receipt_index</field>
+    <field name="url">receipt__item__type_8h.html#a3d3044dd871a9c7d630dbcf3d9b738bea320ef905e84ecd59040036ebad846b2c</field>
+    <field name="keywords">ta_c_rit_key_pan_receipt_index</field>
+    <field name="text">Key Index of encrypted PAN on receipt Specification retail</field>
+  </doc>
+  <doc>
     <field name="type">file</field>
     <field name="name">receipt_request_type.h</field>
     <field name="url">enum__string__maps_2receipt__request__type_8h.html</field>
@@ -6971,6 +7666,77 @@ $(document).ready(function(){initNavTree('search.html','');});
   </doc>
   <doc>
     <field name="type">file</field>
+    <field name="name">reconciliation_mode.h</field>
+    <field name="url">enum__string__maps_2reconciliation__mode_8h.html</field>
+    <field name="keywords">reconciliation_mode.h</field>
+    <field name="text">This file is generated Do not edit Copyright SIX Payment Services</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">ta_reconciliation_mode_e2s</field>
+    <field name="args">(ta_e_reconciliation_mode_t value)</field>
+    <field name="url">enum__string__maps_2reconciliation__mode_8h.html#aa2f333f8fe943a0a797bb9b20f15a776</field>
+    <field name="keywords">ta_reconciliation_mode_e2s</field>
+    <field name="text">Get String for Enum value value Enum value to get string for String value</field>
+  </doc>
+  <doc>
+    <field name="type">file</field>
+    <field name="name">reconciliation_mode.h</field>
+    <field name="url">reconciliation__mode_8h.html</field>
+    <field name="keywords">reconciliation_mode.h</field>
+    <field name="text">Defines the type of the Reconciliation Request default can be omitted in this case for a full reconciliation performs reconciliation to the acquirer in EP2 terminology performs reconciliation to the POS Management System PMS in EP2 terminology The following values are valid Copyright SIX Payment Services</field>
+  </doc>
+  <doc>
+    <field name="type">typedef</field>
+    <field name="name">ta_e_reconciliation_mode_t</field>
+    <field name="url">reconciliation__mode_8h.html#a77062222410bd0dcb44add0de8418ee1</field>
+    <field name="keywords">ta_e_reconciliation_mode_t</field>
+    <field name="text">Defines the type of the Reconciliation Request default can be omitted in this case for a full reconciliation performs reconciliation to the acquirer in EP2 terminology performs reconciliation to the POS Management System PMS in EP2 terminology The following values are valid Specification retail</field>
+  </doc>
+  <doc>
+    <field name="type">enum</field>
+    <field name="name">ta_e_reconciliation_mode</field>
+    <field name="url">reconciliation__mode_8h.html#a8cfac41eec92fd37f38a22958cda10b3</field>
+    <field name="keywords">ta_e_reconciliation_mode</field>
+    <field name="text">Defines the type of the Reconciliation Request default can be omitted in this case for a full reconciliation performs reconciliation to the acquirer in EP2 terminology performs reconciliation to the POS Management System PMS in EP2 terminology The following values are valid Specification retail</field>
+  </doc>
+  <doc>
+    <field name="type">enumvalue</field>
+    <field name="name">ta_c_rm_undefined</field>
+    <field name="url">reconciliation__mode_8h.html#a8cfac41eec92fd37f38a22958cda10b3a373bae8e34c2f52d87963442e448ff72</field>
+    <field name="keywords">ta_c_rm_undefined</field>
+    <field name="text">Undefined/invalid value</field>
+  </doc>
+  <doc>
+    <field name="type">enumvalue</field>
+    <field name="name">ta_c_rm_full_reconciliation</field>
+    <field name="url">reconciliation__mode_8h.html#a8cfac41eec92fd37f38a22958cda10b3a25c604ef07946dc7c99184fe2d0fab61</field>
+    <field name="keywords">ta_c_rm_full_reconciliation</field>
+    <field name="text">Default can therefore be omitted Perform standard behaviour All types of reconciliation Specification retail</field>
+  </doc>
+  <doc>
+    <field name="type">enumvalue</field>
+    <field name="name">ta_c_rm_acq_submission</field>
+    <field name="url">reconciliation__mode_8h.html#a8cfac41eec92fd37f38a22958cda10b3ab7a8ba6259340592f888a86d5ca79b16</field>
+    <field name="keywords">ta_c_rm_acq_submission</field>
+    <field name="text">Perform an acquirer reconciliation EP2 Submission Specification retail</field>
+  </doc>
+  <doc>
+    <field name="type">enumvalue</field>
+    <field name="name">ta_c_rm_pms_transmission</field>
+    <field name="url">reconciliation__mode_8h.html#a8cfac41eec92fd37f38a22958cda10b3ad6d4f16f78b1f15bb4a7c326d8f61d98</field>
+    <field name="keywords">ta_c_rm_pms_transmission</field>
+    <field name="text">Perform a PMS reconciliation EP2 Transmission Specification retail</field>
+  </doc>
+  <doc>
+    <field name="type">enumvalue</field>
+    <field name="name">ta_c_rm_deferred_auth</field>
+    <field name="url">reconciliation__mode_8h.html#a8cfac41eec92fd37f38a22958cda10b3ae026680da94c25eecf0ea0a6d57e9c2e</field>
+    <field name="keywords">ta_c_rm_deferred_auth</field>
+    <field name="text">Process deferred authorisations Specification retail</field>
+  </doc>
+  <doc>
+    <field name="type">file</field>
     <field name="name">resource_id.h</field>
     <field name="url">enum__string__maps_2resource__id_8h.html</field>
     <field name="keywords">resource_id.h</field>
@@ -7017,196 +7783,196 @@ $(document).ready(function(){initNavTree('search.html','');});
     <field name="name">ta_c_rid_enter_mileage</field>
     <field name="url">resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9aecebd9c1adea50022db25fb7bbc0c5d9</field>
     <field name="keywords">ta_c_rid_enter_mileage</field>
-    <field name="text">Enter Mileage Petrol dialogs Input Mask dd ddd ddd</field>
+    <field name="text">Enter mileage OK i</field>
   </doc>
   <doc>
     <field name="type">enumvalue</field>
     <field name="name">ta_c_rid_enter_car_number</field>
     <field name="url">resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9af43686e51d33a9518d0d1646702d94d3</field>
     <field name="keywords">ta_c_rid_enter_car_number</field>
-    <field name="text">Enter Car Number Petrol dialogs Input Mask aaaaaaaa</field>
+    <field name="text">Enter your car number OK i</field>
   </doc>
   <doc>
     <field name="type">enumvalue</field>
     <field name="name">ta_c_rid_enter_driver_code</field>
     <field name="url">resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9a4e0433728afa94dd63c1e6320dd587b7</field>
     <field name="keywords">ta_c_rid_enter_driver_code</field>
-    <field name="text">Enter Driver Code Petrol dialogs Input Mask aaaaaaaa</field>
+    <field name="text">Enter drivercode OK i</field>
   </doc>
   <doc>
     <field name="type">enumvalue</field>
     <field name="name">ta_c_rid_enter_fleet_id</field>
     <field name="url">resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9a936ec6434ecf8c89d182aa99fc910417</field>
     <field name="keywords">ta_c_rid_enter_fleet_id</field>
-    <field name="text">Enter Fleet ID Petrol dialogs Input Mask aaaaaaaa</field>
+    <field name="text">Enter fleet ID OK i</field>
   </doc>
   <doc>
     <field name="type">enumvalue</field>
     <field name="name">ta_c_rid_select_pump</field>
     <field name="url">resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9a06e3f4f4248cb02aae5dea3c903cbb77</field>
     <field name="keywords">ta_c_rid_select_pump</field>
-    <field name="text">Select Pump Petrol dialogs Input Mask dd PlaceholderItems 0 Currency optional 1 Amount optional</field>
+    <field name="text">0 1 Please select pump i OK PlaceholderItems 0 Currency 1 Amount</field>
   </doc>
   <doc>
     <field name="type">enumvalue</field>
     <field name="name">ta_c_rid_select_washing_station</field>
     <field name="url">resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9a541df894383103d440077704c3af3d23</field>
     <field name="keywords">ta_c_rid_select_washing_station</field>
-    <field name="text">Select Washing Station Petrol dialogs Input Mask dd</field>
+    <field name="text">Please select washing station i OK</field>
   </doc>
   <doc>
     <field name="type">enumvalue</field>
     <field name="name">ta_c_rid_select_program</field>
     <field name="url">resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9a2b3a373dc530ae88cd3052d683a51487</field>
     <field name="keywords">ta_c_rid_select_program</field>
-    <field name="text">Select Program Petrol dialogs Input Mask dd</field>
+    <field name="text">Please select program i OK</field>
   </doc>
   <doc>
     <field name="type">enumvalue</field>
     <field name="name">ta_c_rid_select_product</field>
     <field name="url">resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9a215e92eb8c2b3d609e745ac8268eb68f</field>
     <field name="keywords">ta_c_rid_select_product</field>
-    <field name="text">Select Product Petrol dialogs Input Mask dd</field>
+    <field name="text">Please select product i OK</field>
   </doc>
   <doc>
     <field name="type">enumvalue</field>
     <field name="name">ta_c_rid_load_card</field>
     <field name="url">resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9a1f4ea98bbce814c2c131b5ccbe7b70bb</field>
     <field name="keywords">ta_c_rid_load_card</field>
-    <field name="text">Load Card Petrol dialogs Input Mask dddddddd PlaceholderItems 0 Currency default terminal base currency ResourceParameter Exponent default terminal base currency exponent</field>
+    <field name="text">Load card 0 i OK PlaceholderItems 0 Currency 1 Amount ResourceParameter Exponent</field>
   </doc>
   <doc>
     <field name="type">enumvalue</field>
     <field name="name">ta_c_rid_read_code</field>
     <field name="url">resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9a3ce9e9c06c924a6d51bb6e8333e4123f</field>
     <field name="keywords">ta_c_rid_read_code</field>
-    <field name="text">Read Code Petrol dialogs Input Mask hhhhhhhhhhhh</field>
+    <field name="text">Tankcode i</field>
   </doc>
   <doc>
     <field name="type">enumvalue</field>
     <field name="name">ta_c_rid_check_code</field>
     <field name="url">resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9a216c0579fcee2b9e8da3389f96c440ab</field>
     <field name="keywords">ta_c_rid_check_code</field>
-    <field name="text">Check Code Petrol dialogs Input Mask hhhhhhhhhhhh</field>
+    <field name="text">CODE OK i ResourceParameter CodeCheckType CodeCheckKeyId CodeCheckData PetrolCardData1 PetrolCardData2 PetrolCardData3</field>
   </doc>
   <doc>
     <field name="type">enumvalue</field>
     <field name="name">ta_c_rid_enter_additional_information</field>
     <field name="url">resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9aa473a98d00de75b36db76e7db64d6900</field>
     <field name="keywords">ta_c_rid_enter_additional_information</field>
-    <field name="text">Enter Additional Information Petrol dialogs Input Mask aaaaaaaaaaaaaaaaaaaa</field>
+    <field name="text">Enter additional information OK i</field>
   </doc>
   <doc>
     <field name="type">enumvalue</field>
     <field name="name">ta_c_rid_enter_cost_center</field>
     <field name="url">resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9a937134c524a9cf343c6e3392882befba</field>
     <field name="keywords">ta_c_rid_enter_cost_center</field>
-    <field name="text">Enter Cost Center Petrol dialogs Input Mask aaaaaaaaaaaaaaaaaaaa</field>
+    <field name="text">Enter cost center OK i</field>
   </doc>
   <doc>
     <field name="type">enumvalue</field>
     <field name="name">ta_c_rid_enter_employee_number</field>
     <field name="url">resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9a58a256c2468377c0fcd84ee11f9f74e9</field>
     <field name="keywords">ta_c_rid_enter_employee_number</field>
-    <field name="text">Enter Employee Number Petrol dialogs Input Mask aaaaaaaaaaaaaaaaaaaa</field>
+    <field name="text">Enter employee no OK i</field>
   </doc>
   <doc>
     <field name="type">enumvalue</field>
     <field name="name">ta_c_rid_enter_license_plate</field>
     <field name="url">resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9a8cc25cb0bac30395ab85975c72c7a2f6</field>
     <field name="keywords">ta_c_rid_enter_license_plate</field>
-    <field name="text">Enter License Plate Petrol dialogs Input Mask dddddddddddddddddddd</field>
+    <field name="text">Enter license plate OK i</field>
   </doc>
   <doc>
     <field name="type">enumvalue</field>
     <field name="name">ta_c_rid_enter_project_number</field>
     <field name="url">resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9ae72c8fd750b20657391c8cbb98674758</field>
     <field name="keywords">ta_c_rid_enter_project_number</field>
-    <field name="text">Enter Project Number Petrol dialogs Input Mask aaaaaaaaaaaaaaaaaaaa</field>
+    <field name="text">Enter project no OK i</field>
   </doc>
   <doc>
     <field name="type">enumvalue</field>
     <field name="name">ta_c_rid_petrol_print_receipt</field>
     <field name="url">resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9a76ef0151eeed080d0de5d0597ebf114e</field>
     <field name="keywords">ta_c_rid_petrol_print_receipt</field>
-    <field name="text">Banking Print Receipt Petrol dialogs</field>
+    <field name="text">Print receipt YES NO</field>
   </doc>
   <doc>
     <field name="type">enumvalue</field>
     <field name="name">ta_c_rid_petrol_remove_card</field>
     <field name="url">resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9a263dc21c636ea4ad0a1d3a3fd7a3d263</field>
     <field name="keywords">ta_c_rid_petrol_remove_card</field>
-    <field name="text">Petrol Remove Card Petrol dialogs</field>
+    <field name="text">Remove card</field>
   </doc>
   <doc>
     <field name="type">enumvalue</field>
     <field name="name">ta_c_rid_petrol_out_of_order</field>
     <field name="url">resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9a41ee9750e4164a312373dcab809a65fc</field>
     <field name="keywords">ta_c_rid_petrol_out_of_order</field>
-    <field name="text">Petrol Out of Order Petrol dialogs</field>
+    <field name="text">Out of order</field>
   </doc>
   <doc>
     <field name="type">enumvalue</field>
     <field name="name">ta_c_rid_petrol_invalid_entry</field>
     <field name="url">resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9a186432049d85671420996ecf4644f11b</field>
     <field name="keywords">ta_c_rid_petrol_invalid_entry</field>
-    <field name="text">Petrol Invalid Entry Petrol dialogs</field>
+    <field name="text">Invalid entry</field>
   </doc>
   <doc>
     <field name="type">enumvalue</field>
     <field name="name">ta_c_rid_petrol_refuel_at_pump</field>
     <field name="url">resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9aafa0457315a647f0eef6fecc7bc37fb2</field>
     <field name="keywords">ta_c_rid_petrol_refuel_at_pump</field>
-    <field name="text">Petrol Refuel At Pump Petrol dialogs</field>
+    <field name="text">Please refuel at dispenser 0 PlaceholderItems 0 Dispenser number</field>
   </doc>
   <doc>
     <field name="type">enumvalue</field>
     <field name="name">ta_c_rid_petrol_see_other_screen</field>
     <field name="url">resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9adbbca28f9354dfcfa4782ff0875a285c</field>
     <field name="keywords">ta_c_rid_petrol_see_other_screen</field>
-    <field name="text">Petrol See Other Screen Petrol dialogs</field>
+    <field name="text">Please consider main screen</field>
   </doc>
   <doc>
     <field name="type">enumvalue</field>
     <field name="name">ta_c_rid_petrol_please_refuel</field>
     <field name="url">resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9a1f395079c1a686eb8bdd1af7adf58ae3</field>
     <field name="keywords">ta_c_rid_petrol_please_refuel</field>
-    <field name="text">Petrol Please refuel Petrol dialogs</field>
+    <field name="text">Please refuel</field>
   </doc>
   <doc>
     <field name="type">enumvalue</field>
     <field name="name">ta_c_rid_petrol_please_refuel_for_amt</field>
     <field name="url">resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9ae554d04d8a9efcc0cb0eff06fb237893</field>
     <field name="keywords">ta_c_rid_petrol_please_refuel_for_amt</field>
-    <field name="text">Petrol Please refuel for amount Petrol dialogs PlaceholderItems 0 Currency 1 Amount</field>
+    <field name="text">Please refuel for 0 1 PlaceholderItems 0 Currency 1 Amount</field>
   </doc>
   <doc>
     <field name="type">enumvalue</field>
     <field name="name">ta_c_rid_petrol_insert_card</field>
     <field name="url">resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9ad143d6460f48eb658f25c829874cd6f9</field>
     <field name="keywords">ta_c_rid_petrol_insert_card</field>
-    <field name="text">Petrol Insert card Petrol dialogs</field>
+    <field name="text">Welcome card please</field>
   </doc>
   <doc>
     <field name="type">enumvalue</field>
     <field name="name">ta_c_rid_petrol_please_wait</field>
     <field name="url">resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9a596a6158601b006fd8034810cdad4001</field>
     <field name="keywords">ta_c_rid_petrol_please_wait</field>
-    <field name="text">Petrol Please wait Petrol dialogs</field>
+    <field name="text">Please wait</field>
   </doc>
   <doc>
     <field name="type">enumvalue</field>
     <field name="name">ta_c_rid_petrol_last_code_try</field>
     <field name="url">resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9a787681c99c849c890bb140b2c7c21823</field>
     <field name="keywords">ta_c_rid_petrol_last_code_try</field>
-    <field name="text">Last CODE try CODE OK i</field>
+    <field name="text">Last CODE try CODE OK i ResourceParameter CodeCheckType CodeCheckKeyId CodeCheckData PetrolCardData1 PetrolCardData2 PetrolCardData3</field>
   </doc>
   <doc>
     <field name="type">enumvalue</field>
     <field name="name">ta_c_rid_petrol_code_tries_left</field>
     <field name="url">resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9ac8dd4b5fb4e9992db8d51000c0622bcc</field>
     <field name="keywords">ta_c_rid_petrol_code_tries_left</field>
-    <field name="text">0 tries left CODE OK i</field>
+    <field name="text">0 tries left CODE OK i PlaceholderItems 0 Number of tries left ResourceParameter CodeCheckType CodeCheckKeyId CodeCheckData PetrolCardData1 PetrolCardData2 PetrolCardData3</field>
   </doc>
   <doc>
     <field name="type">enumvalue</field>
@@ -7234,7 +8000,7 @@ $(document).ready(function(){initNavTree('search.html','');});
     <field name="name">ta_c_rid_petrol_tankcode_tries_left</field>
     <field name="url">resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9abfd93ac544b73cb1c8bbf710dd640d3d</field>
     <field name="keywords">ta_c_rid_petrol_tankcode_tries_left</field>
-    <field name="text">0 tries left Tankcode OK i</field>
+    <field name="text">0 tries left Tankcode OK i PlaceholderItems 0 Number of tries left</field>
   </doc>
   <doc>
     <field name="type">enumvalue</field>
@@ -7305,13 +8071,6 @@ $(document).ready(function(){initNavTree('search.html','');});
     <field name="url">resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9ac6a3953034ba66acb89a75c9a2f8d62a</field>
     <field name="keywords">ta_c_rid_petrol_card_refused_by_host</field>
     <field name="text">Card refused by host</field>
-  </doc>
-  <doc>
-    <field name="type">enumvalue</field>
-    <field name="name">ta_c_rid_petrol_card_trx_in_progress</field>
-    <field name="url">resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9a7cfaf764ebbbf76c52ae8a57f634b09f</field>
-    <field name="keywords">ta_c_rid_petrol_card_trx_in_progress</field>
-    <field name="text">A transaction for this card is still in progress</field>
   </doc>
   <doc>
     <field name="type">enumvalue</field>
@@ -7437,7 +8196,7 @@ $(document).ready(function(){initNavTree('search.html','');});
     <field name="name">ta_c_rid_petrol_pump_press_ok</field>
     <field name="url">resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9ad49ce25c3b91d06354a069c15104a44c</field>
     <field name="keywords">ta_c_rid_petrol_pump_press_ok</field>
-    <field name="text">Press for pump</field>
+    <field name="text">Press OK for pump</field>
   </doc>
   <doc>
     <field name="type">enumvalue</field>
@@ -7469,10 +8228,10 @@ $(document).ready(function(){initNavTree('search.html','');});
   </doc>
   <doc>
     <field name="type">enumvalue</field>
-    <field name="name">ta_c_rid_petrol_banknote_credit_amount_payback</field>
-    <field name="url">resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9a5a3612d4487d2e72fa76786cedda8aa5</field>
-    <field name="keywords">ta_c_rid_petrol_banknote_credit_amount_payback</field>
-    <field name="text">Credit 0 1 for payback PlaceholderItems 0 Currency 1 Amount</field>
+    <field name="name">ta_c_rid_petrol_banknote_credit_amount</field>
+    <field name="url">resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9a33c1b186155a0cb9ff34c00c9c8759f0</field>
+    <field name="keywords">ta_c_rid_petrol_banknote_credit_amount</field>
+    <field name="text">Credit 0 1 STOP for payback PlaceholderItems 0 Currency 1 Amount</field>
   </doc>
   <doc>
     <field name="type">enumvalue</field>
@@ -7514,7 +8273,7 @@ $(document).ready(function(){initNavTree('search.html','');});
     <field name="name">ta_c_rid_petrol_banknote_credit_amount_pump_press_ok</field>
     <field name="url">resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9aaaca18a4d57c72d869e0ffd3ec2558af</field>
     <field name="keywords">ta_c_rid_petrol_banknote_credit_amount_pump_press_ok</field>
-    <field name="text">Credit 0 1 Press for pump PlaceholderItems 0 Currency 1 Amount</field>
+    <field name="text">Credit 0 1 Press OK for pump PlaceholderItems 0 Currency 1 Amount</field>
   </doc>
   <doc>
     <field name="type">enumvalue</field>
@@ -7528,20 +8287,20 @@ $(document).ready(function(){initNavTree('search.html','');});
     <field name="name">ta_c_rid_petrol_payment_in_shop_press_btn</field>
     <field name="url">resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9aa92a3a19995686b00d76ac024480dcb2</field>
     <field name="keywords">ta_c_rid_petrol_payment_in_shop_press_btn</field>
-    <field name="text">Pay in the shop Press button</field>
+    <field name="text">Pay in the shop Press OK</field>
   </doc>
   <doc>
     <field name="type">enumvalue</field>
     <field name="name">ta_c_rid_petrol_payment_at_pump_press_btn</field>
     <field name="url">resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9afab1ac90c73aa320b690360e452946d7</field>
     <field name="keywords">ta_c_rid_petrol_payment_at_pump_press_btn</field>
-    <field name="text">Pay at the pump Press button</field>
+    <field name="text">Pay at the pump Press OK</field>
   </doc>
   <doc>
     <field name="type">enumvalue</field>
-    <field name="name">ta_c_rid_petrol_paymen_select_shop_pumpt</field>
-    <field name="url">resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9ab29eeb94c65a440aaedab10893ff2c58</field>
-    <field name="keywords">ta_c_rid_petrol_paymen_select_shop_pumpt</field>
+    <field name="name">ta_c_rid_petrol_paymen_select_shop_pump</field>
+    <field name="url">resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9aefe5f6d1ea6f2a1e65692b980192fda5</field>
+    <field name="keywords">ta_c_rid_petrol_paymen_select_shop_pump</field>
     <field name="text">Select shop/pump</field>
   </doc>
   <doc>
@@ -7714,213 +8473,220 @@ $(document).ready(function(){initNavTree('search.html','');});
   </doc>
   <doc>
     <field name="type">enumvalue</field>
-    <field name="name">ta_c_rid_no_recharge_card</field>
-    <field name="url">resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9a4f4bc41f35d20046ac5e8e9c8524209f</field>
-    <field name="keywords">ta_c_rid_no_recharge_card</field>
-    <field name="text">No Recharge Card Postal dialogs</field>
+    <field name="name">ta_c_rid_post_no_recharge_card</field>
+    <field name="url">resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9adb45f5adc352d5b553519caf3dbe77c8</field>
+    <field name="keywords">ta_c_rid_post_no_recharge_card</field>
+    <field name="text">Keine Recharge Karte</field>
   </doc>
   <doc>
     <field name="type">enumvalue</field>
-    <field name="name">ta_c_rid_show_phone_number_with_amount</field>
-    <field name="url">resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9aac2116966faf8dda47068df0e227c94f</field>
-    <field name="keywords">ta_c_rid_show_phone_number_with_amount</field>
-    <field name="text">Show Phone Number With Amount Postal dialogs PlaceholderItems 0 Phone number 1 Currency 2 Amount</field>
+    <field name="name">ta_c_rid_post_show_phone_number_with_amount</field>
+    <field name="url">resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9a1ba9a448dab6e73e0dbb91c6064d9844</field>
+    <field name="keywords">ta_c_rid_post_show_phone_number_with_amount</field>
+    <field name="text">0 1 2 PlaceholderItems 0 Phone Number 1 Currency 2 Amount</field>
   </doc>
   <doc>
     <field name="type">enumvalue</field>
-    <field name="name">ta_c_rid_enter_phone_or_prepaid_number</field>
-    <field name="url">resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9a9d32ea00f1973160359dc58597804576</field>
-    <field name="keywords">ta_c_rid_enter_phone_or_prepaid_number</field>
-    <field name="text">Enter Phone Or Prepaid Number Postal dialogs Input Mask ddd ddd dd dd</field>
+    <field name="name">ta_c_rid_post_enter_phone_or_prepaid_number</field>
+    <field name="url">resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9a00d8a5bb76cec31935a919319eb4db67</field>
+    <field name="keywords">ta_c_rid_post_enter_phone_or_prepaid_number</field>
+    <field name="text">Bitte Tel Nummer oder PrePaid-Karte i</field>
   </doc>
   <doc>
     <field name="type">enumvalue</field>
-    <field name="name">ta_c_rid_phone_number_too_long</field>
-    <field name="url">resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9aa17f6d94454001037b539d0ba4d3ed13</field>
-    <field name="keywords">ta_c_rid_phone_number_too_long</field>
-    <field name="text">Phone Number Too Long Postal dialogs</field>
+    <field name="name">ta_c_rid_post_phone_number_too_long</field>
+    <field name="url">resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9a52962d5c4eb5c18cc01dc5fbd41d9b42</field>
+    <field name="keywords">ta_c_rid_post_phone_number_too_long</field>
+    <field name="text">Tel Nummer zu lang</field>
   </doc>
   <doc>
     <field name="type">enumvalue</field>
-    <field name="name">ta_c_rid_phone_number_too_short</field>
-    <field name="url">resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9a94a8a9b721daf14478f2ccfd74d51b43</field>
-    <field name="keywords">ta_c_rid_phone_number_too_short</field>
-    <field name="text">Phone Number Too Short Postal dialogs</field>
+    <field name="name">ta_c_rid_post_phone_number_too_short</field>
+    <field name="url">resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9a6685fb18bff74deb2f2694d74f85a22e</field>
+    <field name="keywords">ta_c_rid_post_phone_number_too_short</field>
+    <field name="text">Tel Nummer zu kurz</field>
   </doc>
   <doc>
     <field name="type">enumvalue</field>
-    <field name="name">ta_c_rid_enter_phone_number</field>
-    <field name="url">resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9a33bdbfe0bab29a82ccd2894c95907832</field>
-    <field name="keywords">ta_c_rid_enter_phone_number</field>
-    <field name="text">Enter Phone Number Postal dialogs Input Mask ddd ddd dd dd</field>
+    <field name="name">ta_c_rid_post_enter_phone_number</field>
+    <field name="url">resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9ae5a812dda62d6754e5dd29008ba8a7af</field>
+    <field name="keywords">ta_c_rid_post_enter_phone_number</field>
+    <field name="text">Bitte Telefonnummer eingeben i</field>
   </doc>
   <doc>
     <field name="type">enumvalue</field>
-    <field name="name">ta_c_rid_please_wait</field>
-    <field name="url">resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9afadbc7151280c0b80d5b08b7fb0f07b6</field>
-    <field name="keywords">ta_c_rid_please_wait</field>
-    <field name="text">Please Wait Postal dialogs</field>
+    <field name="name">ta_c_rid_post_please_wait</field>
+    <field name="url">resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9a4297c97eee35044666518bd39b6090db</field>
+    <field name="keywords">ta_c_rid_post_please_wait</field>
+    <field name="text">Bitte warten</field>
   </doc>
   <doc>
     <field name="type">enumvalue</field>
-    <field name="name">ta_c_rid_processing_declined</field>
-    <field name="url">resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9a393ccd9507aacac54c1ed0463dbc2458</field>
-    <field name="keywords">ta_c_rid_processing_declined</field>
-    <field name="text">Processing Declined Postal dialogs</field>
+    <field name="name">ta_c_rid_post_processing_declined</field>
+    <field name="url">resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9a231b88e94c55960ec2bb215a97b5bea9</field>
+    <field name="keywords">ta_c_rid_post_processing_declined</field>
+    <field name="text">Verarbeitung fehlgeschlagen</field>
   </doc>
   <doc>
     <field name="type">enumvalue</field>
-    <field name="name">ta_c_rid_processing_ok</field>
-    <field name="url">resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9a8c24b403087aa61cfbb54bfcea0de7a7</field>
-    <field name="keywords">ta_c_rid_processing_ok</field>
-    <field name="text">Processing Ok Postal dialogs</field>
+    <field name="name">ta_c_rid_post_processing_ok</field>
+    <field name="url">resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9aa5bd70fbff4f174b2d8e1f6fcd2139be</field>
+    <field name="keywords">ta_c_rid_post_processing_ok</field>
+    <field name="text">Verarbeitung OK</field>
   </doc>
   <doc>
     <field name="type">enumvalue</field>
-    <field name="name">ta_c_rid_register_card</field>
-    <field name="url">resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9a8b15740048c2cb489b5271cf438a342d</field>
-    <field name="keywords">ta_c_rid_register_card</field>
-    <field name="text">Register Card Postal dialogs</field>
+    <field name="name">ta_c_rid_post_register_card</field>
+    <field name="url">resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9ab4e0809f9561b57cb2a6ac988602734f</field>
+    <field name="keywords">ta_c_rid_post_register_card</field>
+    <field name="text">Karte anmelden</field>
   </doc>
   <doc>
     <field name="type">enumvalue</field>
-    <field name="name">ta_c_rid_welcome_card</field>
-    <field name="url">resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9a4ffb9ede77cb9f2101e6279d4aa6aa0b</field>
-    <field name="keywords">ta_c_rid_welcome_card</field>
-    <field name="text">Welcome Card Postal dialogs</field>
+    <field name="name">ta_c_rid_post_welcome_card</field>
+    <field name="url">resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9ab3e10ac276b27caf2c46d72060ce211c</field>
+    <field name="keywords">ta_c_rid_post_welcome_card</field>
+    <field name="text">Willkommen Karte bitte</field>
   </doc>
   <doc>
     <field name="type">enumvalue</field>
-    <field name="name">ta_c_rid_show_phone_number</field>
-    <field name="url">resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9ac5e1d78f671967e7f0f3d258aa3e490f</field>
-    <field name="keywords">ta_c_rid_show_phone_number</field>
-    <field name="text">Show Phone Number Postal dialogs PlaceholderItems 0 Phone number</field>
+    <field name="name">ta_c_rid_post_show_phone_number</field>
+    <field name="url">resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9a4676fff78baa5de8b9d45021fc105a8b</field>
+    <field name="keywords">ta_c_rid_post_show_phone_number</field>
+    <field name="text">Ihre Telefonnummer lautet 0 PlaceholderItems 0 Phone Number</field>
   </doc>
   <doc>
     <field name="type">enumvalue</field>
-    <field name="name">ta_c_rid_inter_account_transfer</field>
-    <field name="url">resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9a17ac14dec614e6edd6b08646bd59a0d0</field>
-    <field name="keywords">ta_c_rid_inter_account_transfer</field>
-    <field name="text">Inter Account Transfer Postal dialogs PlaceholderItems 0 LastKonto 1 LastKontoTyp 2 Currency LastKonto 3 LastKonto Bezeichnung 4 GutsKonto 5 GutsKontoTyp 6 Currency GutsKonto 7 GutsKonto Bezeichnung 8 Currency 9 Amount</field>
+    <field name="name">ta_c_rid_post_inter_account_transfer</field>
+    <field name="url">resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9a7a0701665d780fc81d35d0620f37cb8d</field>
+    <field name="keywords">ta_c_rid_post_inter_account_transfer</field>
+    <field name="text">Von 0 1 2 3 auf 4 5 6 7 8 9 PlaceholderItems 0 LastKonto 1 LastKontoTyp 2 Currency LastKonto 3 LastKonto-Bezeichnung 4 GutsKonto 5 GutsKontoTyp 6 Currency Gutskonto 7 GutsKonto-Bezeichnung 8 Currency 9 Amount</field>
   </doc>
   <doc>
     <field name="type">enumvalue</field>
-    <field name="name">ta_c_rid_inter_account_transfer_confirmation</field>
-    <field name="url">resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9a39bf0fcd50864fef68a947745d3a21d0</field>
-    <field name="keywords">ta_c_rid_inter_account_transfer_confirmation</field>
-    <field name="text">Inter Account Transfer Confirmation Postal dialogs PlaceholderItems 0 LastKonto 1 LastKontoTyp 2 Currency LastKonto 3 Currency 4 AmountSaldo 5 GutsKonto 6 GutsKontoTyp 7 Currency GutsKonto 8 Currency 9 AmountSaldo</field>
+    <field name="name">ta_c_rid_post_inter_account_transfer_confirmation</field>
+    <field name="url">resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9a2bdd04251f7df75fd7d8a10dcb4da3a6</field>
+    <field name="keywords">ta_c_rid_post_inter_account_transfer_confirmation</field>
+    <field name="text">0 1 2 3 4 5 6 7 8 9 PlaceholderItems 0 LastKonto 1 LastKontoTyp 2 Currency LastKonto 3 Currency 4 AmountSaldo 5 GutsKonto 6 GutsKontoTyp 7 Currency GutsKonto 8 Currency 9 AmountSaldo</field>
   </doc>
   <doc>
     <field name="type">enumvalue</field>
-    <field name="name">ta_c_rid_disbursement_from_account</field>
-    <field name="url">resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9afbfed90228edef47d64fd9b4b4b2bc2a</field>
-    <field name="keywords">ta_c_rid_disbursement_from_account</field>
-    <field name="text">Disbursement From Account Postal dialogs PlaceholderItems 0 Debit Account 1 Debit Currency 2 Amount</field>
+    <field name="name">ta_c_rid_post_disbursement_from_account</field>
+    <field name="url">resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9a299808b3e27852927b39c383e2d8f8ad</field>
+    <field name="keywords">ta_c_rid_post_disbursement_from_account</field>
+    <field name="text">Bezug ab Konto 0 1 2 OK</field>
   </doc>
   <doc>
     <field name="type">enumvalue</field>
-    <field name="name">ta_c_rid_deposit_own_account</field>
-    <field name="url">resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9a678d5b72d182e02c4cfe020b3b05a22f</field>
-    <field name="keywords">ta_c_rid_deposit_own_account</field>
-    <field name="text">Deposit Own Account Postal dialogs PlaceholderItems 0 Currency 1 Amount</field>
+    <field name="name">ta_c_rid_post_deposit_own_account</field>
+    <field name="url">resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9aac64ae84d894c3d64096f13eb210b2f0</field>
+    <field name="keywords">ta_c_rid_post_deposit_own_account</field>
+    <field name="text">Einz auf eigenes Kto Autorisierung 0 1 OK PlaceholderItems 0 Currency 1 Amount</field>
   </doc>
   <doc>
     <field name="type">enumvalue</field>
-    <field name="name">ta_c_rid_empty_dialog</field>
-    <field name="url">resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9a1c39c66992ab578336780b0fe6411406</field>
-    <field name="keywords">ta_c_rid_empty_dialog</field>
-    <field name="text">Empty Dialog Postal dialogs</field>
+    <field name="name">ta_c_rid_post_packet_acknowledgement</field>
+    <field name="url">resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9a20fba294780639ca8961078478cbc4c2</field>
+    <field name="keywords">ta_c_rid_post_packet_acknowledgement</field>
+    <field name="text">Ich habe die Sendungen und die darauf aufgeführten Inhalte erhalten</field>
   </doc>
   <doc>
     <field name="type">enumvalue</field>
-    <field name="name">ta_c_rid_packet_acknowledgement</field>
-    <field name="url">resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9ab96171d3599c3f5d80a47677e0ea11aa</field>
-    <field name="keywords">ta_c_rid_packet_acknowledgement</field>
-    <field name="text">Packet Acknowledgement Postal dialogs</field>
-  </doc>
-  <doc>
-    <field name="type">enumvalue</field>
-    <field name="name">ta_c_rid_pin_entry</field>
-    <field name="url">resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9a8a85f50c77c47532b356121d13cabbf0</field>
-    <field name="keywords">ta_c_rid_pin_entry</field>
-    <field name="text">Pin Entry Postal dialogs Input Mask hhhhhh</field>
+    <field name="name">ta_c_rid_post_pin_entry</field>
+    <field name="url">resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9ad911ca91349c1c99d0e73a9f8635d28f</field>
+    <field name="keywords">ta_c_rid_post_pin_entry</field>
+    <field name="text">Bitte PIN eingeben i</field>
   </doc>
   <doc>
     <field name="type">enumvalue</field>
     <field name="name">ta_c_rid_banking_insert_card</field>
     <field name="url">resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9ad55032f46f2c0e7e1f865c224e15fa54</field>
     <field name="keywords">ta_c_rid_banking_insert_card</field>
-    <field name="text">Banking Insert Card Banking dialogs</field>
+    <field name="text">Welcome card please</field>
   </doc>
   <doc>
     <field name="type">enumvalue</field>
     <field name="name">ta_c_rid_banking_pin_check</field>
     <field name="url">resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9a93af25ad0d4ba3dd903cfcd483238121</field>
     <field name="keywords">ta_c_rid_banking_pin_check</field>
-    <field name="text">Banking Pin Check Banking dialogs Input Mask hhhhhh</field>
+    <field name="text">PIN OK i</field>
   </doc>
   <doc>
     <field name="type">enumvalue</field>
     <field name="name">ta_c_rid_banking_show_saldo</field>
     <field name="url">resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9ac7b49d46f65ca6e69cec8835ae1a8812</field>
     <field name="keywords">ta_c_rid_banking_show_saldo</field>
-    <field name="text">Banking Show Saldo Banking dialogs Placeho| style 04.2018lderItems 0 Currency 1 Amount</field>
+    <field name="text">Press key to show saldo</field>
   </doc>
   <doc>
     <field name="type">enumvalue</field>
     <field name="name">ta_c_rid_banking_confirm_amount</field>
     <field name="url">resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9abe1cf027de125b0092cf52cae9facff9</field>
     <field name="keywords">ta_c_rid_banking_confirm_amount</field>
-    <field name="text">Banking Confirm Amount Banking dialogs PlaceholderItems 0 Currency 1 Amount</field>
+    <field name="text">Confirm amount 2 0 1 PlaceholderItems 0 Currency 1 Amount 2 Time and Date</field>
   </doc>
   <doc>
     <field name="type">enumvalue</field>
     <field name="name">ta_c_rid_banking_remove_card</field>
     <field name="url">resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9ab5f0ab1515a469e3e62bfffe0a3317f8</field>
     <field name="keywords">ta_c_rid_banking_remove_card</field>
-    <field name="text">Banking Remove Card Banking dialogs</field>
+    <field name="text">Remove card</field>
   </doc>
   <doc>
     <field name="type">enumvalue</field>
     <field name="name">ta_c_rid_banking_welcome</field>
     <field name="url">resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9ad30bbbc02e1f2997d19c5f4fc4b915c8</field>
     <field name="keywords">ta_c_rid_banking_welcome</field>
-    <field name="text">Banking Welcome Banking dialogs</field>
+    <field name="text">Welcome card please</field>
   </doc>
   <doc>
     <field name="type">enumvalue</field>
     <field name="name">ta_c_rid_common_regular</field>
     <field name="url">resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9a8072ba0f056e46e66a573418b2d3c080</field>
     <field name="keywords">ta_c_rid_common_regular</field>
-    <field name="text">Common Regular AT dialogs</field>
+    <field name="text">Stammkundenabfrage</field>
   </doc>
   <doc>
     <field name="type">enumvalue</field>
     <field name="name">ta_c_rid_common_please_wait</field>
     <field name="url">resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9af4e8bd1be5cea5e2945240f5d74de4ef</field>
     <field name="keywords">ta_c_rid_common_please_wait</field>
-    <field name="text">Common Please Wait AT dialogs</field>
+    <field name="text">Bitte warten</field>
   </doc>
   <doc>
     <field name="type">enumvalue</field>
     <field name="name">ta_c_rid_common_data_saved</field>
     <field name="url">resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9a529a809dd2e8d0d7504abb06ff12ca11</field>
     <field name="keywords">ta_c_rid_common_data_saved</field>
-    <field name="text">Common Data Saved AT dialogs</field>
+    <field name="text">Daten geschrieben</field>
   </doc>
   <doc>
     <field name="type">enumvalue</field>
     <field name="name">ta_c_rid_common_card_initialized</field>
     <field name="url">resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9a57f9e567db9a3d59cd3671014ad2f4b5</field>
     <field name="keywords">ta_c_rid_common_card_initialized</field>
-    <field name="text">Common Card Initialized AT dialogs</field>
+    <field name="text">Karte initialisiert</field>
+  </doc>
+  <doc>
+    <field name="type">enumvalue</field>
+    <field name="name">ta_c_rid_common_card_deinitialized</field>
+    <field name="url">resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9a94a71eb2f3f71d1ea4b70742e979a5be</field>
+    <field name="keywords">ta_c_rid_common_card_deinitialized</field>
+    <field name="text">Karte deinitialisiert</field>
   </doc>
   <doc>
     <field name="type">enumvalue</field>
     <field name="name">ta_c_rid_common_remove_card</field>
     <field name="url">resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9a03fc4a4af9b03a8fdf3085d646df48fe</field>
     <field name="keywords">ta_c_rid_common_remove_card</field>
-    <field name="text">Common Remove Card AT dialogs</field>
+    <field name="text">Karte entnehmen</field>
+  </doc>
+  <doc>
+    <field name="type">enumvalue</field>
+    <field name="name">ta_c_rid_migros_gkkpin_check</field>
+    <field name="url">resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9a324676b355911a0964597ce36792c44f</field>
+    <field name="keywords">ta_c_rid_migros_gkkpin_check</field>
+    <field name="text">Migros GKK Passcode i</field>
   </doc>
   <doc>
     <field name="type">file</field>
@@ -7970,14 +8736,14 @@ $(document).ready(function(){initNavTree('search.html','');});
     <field name="name">ta_c_rpt_code_check_type</field>
     <field name="url">resource__parameter__type_8h.html#a24c84814e0ce6a320ff3bd3826a297fba55b588e95ee792144c265d2109f05e49</field>
     <field name="keywords">ta_c_rpt_code_check_type</field>
-    <field name="text">Type of code check to perform 0 EMV Check using EMV PIN check 1 SwissPost SwissPost Card algorithm 2 Avia Use Aviacard algorithm 3 SB Use Scheit Bachmann algorithm 4 Tokheim Use Tokheim algorithm 5 Agrola Use Agrola algorithm 6 Bica Use Bica algorithm 7 CTAC Use CTAC algorithm 8 DASAG Use DASAG algorithm 9 DKV Use DKV algorithm 10 Esso Use Esso algorithm 11 Migrol Use Migrol algorithm 12 Oelpool Use Oelpool algorithm 13 Pronto Use Pronto algorithm 14 Shell Use Shell algorithm 15 WLDC Use WLDC algorithm 16 Hectronic Use HecPAC algorithm 17 Diplomatkarte Use Diplomatkarten algorithm This value is to be encoded as a ascii number i.e using characters in the range 30h to 39h Specification dialog</field>
+    <field name="text">Type of code check to perform 0 EMV Check using EMV PIN check 1 SwissPost SwissPost Card algorithm 2 Avia Use Aviacard algorithm 3 SB Use Scheit Bachmann algorithm 4 Tokheim Use Tokheim algorithm 5 Agrola Use Agrola algorithm 6 Bica Use Bica algorithm 7 CTAC Use CTAC algorithm 8 DASAG Use DASAG algorithm 9 DKV Use DKV algorithm 10 Esso Use Esso algorithm 11 Migrol Use Migrol algorithm 12 Oelpool Use Oelpool algorithm 13 Pronto Use Pronto algorithm 14 Shell Use Shell algorithm 15 WLDC Use WLDC algorithm 16 Hectronic Use HecPAC algorithm 17 Diplomatkarte Use Diplomatkarten algorithm 18 Micrelec Use the Micrelec algorithm This value is to be encoded as a ascii number i.e using characters in the range 30h to 39h Specification dialog</field>
   </doc>
   <doc>
     <field name="type">enumvalue</field>
     <field name="name">ta_c_rpt_code_check_key_id</field>
     <field name="url">resource__parameter__type_8h.html#a24c84814e0ce6a320ff3bd3826a297fba3b7a5d33b2f2980caffb84a5c52ffd03</field>
     <field name="keywords">ta_c_rpt_code_check_key_id</field>
-    <field name="text">GKLP key id of the key to use for the selected CodeCheckType 0 Tokheim key id 1 HecPAC key id 2 DASAG key id 3 Diplomatkarten key id 5000 Start of test key range 5002 DASAG test key id This value is to be encoded as a ascii number i.e using characters in the range 30h to 39h Specification dialog</field>
+    <field name="text">Key id of the key to use for the selected CodeCheckType 0 Tokheim key id 1 HecPAC key id 2 DASAG key id 3 Diplomatkarten key id 4 Micrelec key id 5000 Start of test key range 5002 DASAG test key id This value is to be encoded as a ascii number i.e using characters in the range 30h to 39h Specification dialog</field>
   </doc>
   <doc>
     <field name="type">enumvalue</field>
@@ -8189,7 +8955,7 @@ $(document).ready(function(){initNavTree('search.html','');});
     <field name="name">ta_c_rc_api_persistency_problem</field>
     <field name="url">result__code_8h.html#aebaf00d1ceef4b827866ca9de0bd3320ab2d79bb6cdaed1e15d361980bb978ab4</field>
     <field name="keywords">ta_c_rc_api_persistency_problem</field>
-    <field name="text">Persistent data damaged out of space orstorage permission problem Specification retail</field>
+    <field name="text">Persistent data damaged out of space or storage permission problem Specification retail</field>
   </doc>
   <doc>
     <field name="type">enumvalue</field>
@@ -8970,6 +9736,20 @@ $(document).ready(function(){initNavTree('search.html','');});
   </doc>
   <doc>
     <field name="type">enumvalue</field>
+    <field name="name">ta_c_rc_voucher_type_not_available</field>
+    <field name="url">result__code_8h.html#aebaf00d1ceef4b827866ca9de0bd3320ac378020e201b4fadecfccfd7caa352fd</field>
+    <field name="keywords">ta_c_rc_voucher_type_not_available</field>
+    <field name="text">The mobile topup voucher cannot be generated with this combination of issuer and value Error message Requested voucher not available Specification retail</field>
+  </doc>
+  <doc>
+    <field name="type">enumvalue</field>
+    <field name="name">ta_c_rc_transaction_mismatch</field>
+    <field name="url">result__code_8h.html#aebaf00d1ceef4b827866ca9de0bd3320a02e174c4be1439584ba85c38f33fd9a8</field>
+    <field name="keywords">ta_c_rc_transaction_mismatch</field>
+    <field name="text">The InitTransaction FunctionHint is not compatible to the transaction function No recovery possible Error message Transaction mismatch Specification retail</field>
+  </doc>
+  <doc>
+    <field name="type">enumvalue</field>
     <field name="name">ta_c_rc_invalid_argument</field>
     <field name="url">result__code_8h.html#aebaf00d1ceef4b827866ca9de0bd3320a306acc157474b36c57faa559c710d8c3</field>
     <field name="keywords">ta_c_rc_invalid_argument</field>
@@ -9346,6 +10126,70 @@ $(document).ready(function(){initNavTree('search.html','');});
   </doc>
   <doc>
     <field name="type">file</field>
+    <field name="name">transaction_reason.h</field>
+    <field name="url">enum__string__maps_2transaction__reason_8h.html</field>
+    <field name="keywords">transaction_reason.h</field>
+    <field name="text">This file is generated Do not edit Copyright SIX Payment Services</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">ta_transaction_reason_e2s</field>
+    <field name="args">(ta_e_transaction_reason_t value)</field>
+    <field name="url">enum__string__maps_2transaction__reason_8h.html#abfdac9b21597d37c2de002d960dbe7dd</field>
+    <field name="keywords">ta_transaction_reason_e2s</field>
+    <field name="text">Get String for Enum value value Enum value to get string for String value</field>
+  </doc>
+  <doc>
+    <field name="type">file</field>
+    <field name="name">transaction_reason.h</field>
+    <field name="url">transaction__reason_8h.html</field>
+    <field name="keywords">transaction_reason.h</field>
+    <field name="text">Copyright SIX Payment Services</field>
+  </doc>
+  <doc>
+    <field name="type">typedef</field>
+    <field name="name">ta_e_transaction_reason_t</field>
+    <field name="url">transaction__reason_8h.html#a5dd8825cc21c09df0738cad5339dab36</field>
+    <field name="keywords">ta_e_transaction_reason_t</field>
+    <field name="text">Specification retail</field>
+  </doc>
+  <doc>
+    <field name="type">enum</field>
+    <field name="name">ta_e_transaction_reason</field>
+    <field name="url">transaction__reason_8h.html#a8b789089b0e1fb7bdf642e5dcf140621</field>
+    <field name="keywords">ta_e_transaction_reason</field>
+    <field name="text">Specification retail</field>
+  </doc>
+  <doc>
+    <field name="type">enumvalue</field>
+    <field name="name">ta_c_tr_undefined</field>
+    <field name="url">transaction__reason_8h.html#a8b789089b0e1fb7bdf642e5dcf140621a13865610fcbe2344263321c7eb943f82</field>
+    <field name="keywords">ta_c_tr_undefined</field>
+    <field name="text">Undefined/invalid value</field>
+  </doc>
+  <doc>
+    <field name="type">enumvalue</field>
+    <field name="name">ta_c_tr_installment</field>
+    <field name="url">transaction__reason_8h.html#a8b789089b0e1fb7bdf642e5dcf140621a2ec7cb6fbf263d7f2b2509d11a3746e9</field>
+    <field name="keywords">ta_c_tr_installment</field>
+    <field name="text">Establish credentials on file for installment payment Specification retail</field>
+  </doc>
+  <doc>
+    <field name="type">enumvalue</field>
+    <field name="name">ta_c_tr_recurring</field>
+    <field name="url">transaction__reason_8h.html#a8b789089b0e1fb7bdf642e5dcf140621ad41df561de976a085e88df2339345c39</field>
+    <field name="keywords">ta_c_tr_recurring</field>
+    <field name="text">Establish credentials on file for recurring payment Specification retail</field>
+  </doc>
+  <doc>
+    <field name="type">enumvalue</field>
+    <field name="name">ta_c_tr_unscheduled</field>
+    <field name="url">transaction__reason_8h.html#a8b789089b0e1fb7bdf642e5dcf140621a679a45b3cec74a10ed4d80ecbea74c05</field>
+    <field name="keywords">ta_c_tr_unscheduled</field>
+    <field name="text">Establish credentials on file for unscheduled payment Specification retail</field>
+  </doc>
+  <doc>
+    <field name="type">file</field>
     <field name="name">transaction_status.h</field>
     <field name="url">enum__string__maps_2transaction__status_8h.html</field>
     <field name="keywords">transaction_status.h</field>
@@ -9498,14 +10342,14 @@ $(document).ready(function(){initNavTree('search.html','');});
     <field name="name">ta_e_transaction_type_t</field>
     <field name="url">transaction__type_8h.html#ab6ee5e4d83de5d339ec03b569082c238</field>
     <field name="keywords">ta_e_transaction_type_t</field>
-    <field name="text">Defines the type of transaction Used as attribute to classify the transaction in the sixml TrxDetail field The following values are valid Specifications retail petrol advancedRetail banking hospitality valueAddedServices</field>
+    <field name="text">Defines the type of transaction Used as attribute to classify the transaction in the sixml TrxDetail field The following values are valid Specifications retail petrol unattended advancedRetail banking hospitality valueAddedServices</field>
   </doc>
   <doc>
     <field name="type">enum</field>
     <field name="name">ta_e_transaction_type</field>
     <field name="url">transaction__type_8h.html#a08f07046806962db06121bebefd306d1</field>
     <field name="keywords">ta_e_transaction_type</field>
-    <field name="text">Defines the type of transaction Used as attribute to classify the transaction in the sixml TrxDetail field The following values are valid Specifications retail petrol advancedRetail banking hospitality valueAddedServices</field>
+    <field name="text">Defines the type of transaction Used as attribute to classify the transaction in the sixml TrxDetail field The following values are valid Specifications retail petrol unattended advancedRetail banking hospitality valueAddedServices</field>
   </doc>
   <doc>
     <field name="type">enumvalue</field>
@@ -9551,6 +10395,13 @@ $(document).ready(function(){initNavTree('search.html','');});
   </doc>
   <doc>
     <field name="type">enumvalue</field>
+    <field name="name">ta_c_tt_debt_recovery</field>
+    <field name="url">transaction__type_8h.html#a08f07046806962db06121bebefd306d1ae634cfe9cc59be25cc5c57f7305a92e5</field>
+    <field name="keywords">ta_c_tt_debt_recovery</field>
+    <field name="text">Debt recovery Specification unattended</field>
+  </doc>
+  <doc>
+    <field name="type">enumvalue</field>
     <field name="name">ta_c_tt_cash_advance</field>
     <field name="url">transaction__type_8h.html#a08f07046806962db06121bebefd306d1a1acdd9c7235c6a9f57ab3f32bacbfffa</field>
     <field name="keywords">ta_c_tt_cash_advance</field>
@@ -9590,6 +10441,13 @@ $(document).ready(function(){initNavTree('search.html','');});
     <field name="url">transaction__type_8h.html#a08f07046806962db06121bebefd306d1ab1d5cc4bc4690f73b44f961890ba4794</field>
     <field name="keywords">ta_c_tt_purchase_mail_ordered</field>
     <field name="text">Purchase function mail ordered Specification advancedRetail</field>
+  </doc>
+  <doc>
+    <field name="type">enumvalue</field>
+    <field name="name">ta_c_tt_account_verification</field>
+    <field name="url">transaction__type_8h.html#a08f07046806962db06121bebefd306d1ad737580d5210d9261c43ac80bb857b7f</field>
+    <field name="keywords">ta_c_tt_account_verification</field>
+    <field name="text">Account verification Specification advancedRetail</field>
   </doc>
   <doc>
     <field name="type">enumvalue</field>
@@ -9667,6 +10525,41 @@ $(document).ready(function(){initNavTree('search.html','');});
     <field name="url">transaction__type_8h.html#a08f07046806962db06121bebefd306d1a1ba813f22e10637a1b54af6538a44181</field>
     <field name="keywords">ta_c_tt_collect_points</field>
     <field name="text">Collect Points Specification valueAddedServices</field>
+  </doc>
+  <doc>
+    <field name="type">enumvalue</field>
+    <field name="name">ta_c_tt_funding</field>
+    <field name="url">transaction__type_8h.html#a08f07046806962db06121bebefd306d1a5288fd0470bdf57e50e99fe221f69b87</field>
+    <field name="keywords">ta_c_tt_funding</field>
+    <field name="text">Funding Specification valueAddedServices</field>
+  </doc>
+  <doc>
+    <field name="type">enumvalue</field>
+    <field name="name">ta_c_tt_refunding</field>
+    <field name="url">transaction__type_8h.html#a08f07046806962db06121bebefd306d1a7f06d5c149c7924375e20572faa84a58</field>
+    <field name="keywords">ta_c_tt_refunding</field>
+    <field name="text">Renfunding Specification valueAddedServices</field>
+  </doc>
+  <doc>
+    <field name="type">enumvalue</field>
+    <field name="name">ta_c_tt_load</field>
+    <field name="url">transaction__type_8h.html#a08f07046806962db06121bebefd306d1a0b457600c42f797f402033d27a9731cd</field>
+    <field name="keywords">ta_c_tt_load</field>
+    <field name="text">Load Specification valueAddedServices</field>
+  </doc>
+  <doc>
+    <field name="type">enumvalue</field>
+    <field name="name">ta_c_tt_unload</field>
+    <field name="url">transaction__type_8h.html#a08f07046806962db06121bebefd306d1af5095de6f7d4cfe098ec6f75339fe70b</field>
+    <field name="keywords">ta_c_tt_unload</field>
+    <field name="text">Unload Specification valueAddedServices</field>
+  </doc>
+  <doc>
+    <field name="type">enumvalue</field>
+    <field name="name">ta_c_tt_activate_card</field>
+    <field name="url">transaction__type_8h.html#a08f07046806962db06121bebefd306d1a865c953fa31f1367b882ae9a8da2911e</field>
+    <field name="keywords">ta_c_tt_activate_card</field>
+    <field name="text">Activate card Specification valueAddedServices</field>
   </doc>
   <doc>
     <field name="type">file</field>
@@ -10774,6 +11667,34 @@ $(document).ready(function(){initNavTree('search.html','');});
     <field name="url">custom__receipt__formatter_8h.html#a883a5ff78a5d2ad805f9f6af32a8d2afad43888d763918246abb892151bb13e83</field>
     <field name="keywords">ta_c_crftt_field_tender_or_brand_name</field>
     <field name="text">ReceiptItemType.TENDER_NAME or ReceiptItemType.BRAND_NAME</field>
+  </doc>
+  <doc>
+    <field name="type">enumvalue</field>
+    <field name="name">ta_c_crftt_field_markup_dcc_regulated</field>
+    <field name="url">custom__receipt__formatter_8h.html#a883a5ff78a5d2ad805f9f6af32a8d2afaabb8660a88066e68960c38f692c17ec7</field>
+    <field name="keywords">ta_c_crftt_field_markup_dcc_regulated</field>
+    <field name="text">ReceiptItemType.MARKUP_DCC</field>
+  </doc>
+  <doc>
+    <field name="type">enumvalue</field>
+    <field name="name">ta_c_crftt_field_markup_exponent_dcc_regulated</field>
+    <field name="url">custom__receipt__formatter_8h.html#a883a5ff78a5d2ad805f9f6af32a8d2afa38b95aa9760db3eff6910a4bdc2f59ce</field>
+    <field name="keywords">ta_c_crftt_field_markup_exponent_dcc_regulated</field>
+    <field name="text">ReceiptItemType.MARKUP_EXPONENT_DCC</field>
+  </doc>
+  <doc>
+    <field name="type">enumvalue</field>
+    <field name="name">ta_c_crftt_field_rate_dcc_regulated</field>
+    <field name="url">custom__receipt__formatter_8h.html#a883a5ff78a5d2ad805f9f6af32a8d2afa87e79aa8975930c2ee1857b67b7e227d</field>
+    <field name="keywords">ta_c_crftt_field_rate_dcc_regulated</field>
+    <field name="text">ReceiptItemType.RATE_DCC</field>
+  </doc>
+  <doc>
+    <field name="type">enumvalue</field>
+    <field name="name">ta_c_crftt_field_rate_exponent_dcc_regulated</field>
+    <field name="url">custom__receipt__formatter_8h.html#a883a5ff78a5d2ad805f9f6af32a8d2afa7e0ac76db3a9c6b8adf947919181bfd0</field>
+    <field name="keywords">ta_c_crftt_field_rate_exponent_dcc_regulated</field>
+    <field name="text">ReceiptItemType.RATE_EXPONENT_DCC</field>
   </doc>
   <doc>
     <field name="type">enum</field>
@@ -12650,6 +13571,93 @@ $(document).ready(function(){initNavTree('search.html','');});
   </doc>
   <doc>
     <field name="type">file</field>
+    <field name="name">sub_transaction.h</field>
+    <field name="url">sub__transaction_8h.html</field>
+    <field name="keywords">sub_transaction.h</field>
+    <field name="text">Object type sub_transaction</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">ta_sub_transaction_create</field>
+    <field name="args">(ta_object_t *sub_transaction)</field>
+    <field name="url">sub__transaction_8h.html#ad31e9d713cab13f40ad7c862d54ca740</field>
+    <field name="keywords">ta_sub_transaction_create</field>
+    <field name="text">Create sub transaction sub_transaction Pointer to variable to write created object instance to Created object instance is retained ta_c_rc_ok Object instance has been created and written to sub_transaction ta_c_rc_invalid_argument sub_transaction is null-pointer ta_c_rc_out_of_memory Failed allocating memory</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">ta_sub_transaction_copy</field>
+    <field name="args">(ta_object_t *sub_transaction, const ta_object_t *source_sub_transaction)</field>
+    <field name="url">sub__transaction_8h.html#a7c7cbd1b303e74c9753241ee6586aa4e</field>
+    <field name="keywords">ta_sub_transaction_copy</field>
+    <field name="text">Create copy of sub transaction sub_transaction Pointer to variable to write created object instance to Created object instance is retained source_sub_transaction Object of type sub_transaction to create copy of ta_c_rc_ok Object instance has been created and written to sub_transaction ta_c_rc_invalid_argument sub_transaction is null-pointer ta_c_rc_invalid_argument source_sub_transaction is ta_invalid_object ta_c_rc_invalid_argument source_sub_transaction is not of type sub_transaction ta_c_rc_out_of_memory Failed allocating memory</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">ta_sub_transaction_get_function</field>
+    <field name="args">(ta_object_t sub_transaction, ta_e_transaction_type_t *function)</field>
+    <field name="url">sub__transaction_8h.html#a04bbc82acfac5e4036181169b56806d0</field>
+    <field name="keywords">ta_sub_transaction_get_function</field>
+    <field name="text">Transaction function Allowed are purchase giro cash_advance Available if Banking guide is enabled sub_transaction Object instance of type sub_transaction function Pointer to variable to write value to Value is ta_c_tt_undefined if value is not set in sub_transaction ta_c_rc_ok Value written to function ta_c_rc_invalid_argument sub_transaction is ta_invalid_object ta_c_rc_invalid_argument sub_transaction is not of type sub_transaction ta_c_rc_invalid_argument function is null-pointer</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">ta_sub_transaction_set_function</field>
+    <field name="args">(ta_object_t sub_transaction, ta_e_transaction_type_t function)</field>
+    <field name="url">sub__transaction_8h.html#a4624ac13167172b9729648de202053a8</field>
+    <field name="keywords">ta_sub_transaction_set_function</field>
+    <field name="text">Transaction function Allowed are purchase giro cash_advance Available if Banking guide is enabled sub_transaction Object instance of type sub_transaction function Value to set Value can be ta_c_tt_undefined to clear the value in sub_transaction ta_c_rc_ok Value assigned to sub_transaction ta_c_rc_invalid_argument sub_transaction is ta_invalid_object ta_c_rc_invalid_argument sub_transaction is not of type sub_transaction ta_c_rc_invalid_argument function is null-pointer ta_c_rc_invalid_argument function is not purchase giro or cash_advance</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">ta_sub_transaction_get_amount</field>
+    <field name="args">(ta_object_t sub_transaction, ta_object_t *amount)</field>
+    <field name="url">sub__transaction_8h.html#a981fdd9390d904a9350e73928ca173c3</field>
+    <field name="keywords">ta_sub_transaction_get_amount</field>
+    <field name="text">Amount In a request defines the original amount for the transaction given by ECR in response the final authorized amount given by host in minor units In a transaction request this field defines the amount in minor units that shall be authorized for this transaction In a transcation response this field defines the amount in minor units that has actually been authorized If the full amount has been authorized as sent in the transaction request the value of the sixml Amount field in the request and the response is equal PartialApproval If the transaction has been approved only partially by the aquiring host the terminal must return on SIXml the actual authorized amount that has been returned from host to terminal in the authorization response Example for ep2 The ECR sends an sixml Amount 10000 Amount field on SIXml to the terminal in the transaction request and the terminal sends this amount as ep2 AmtAuth 10000 AmtAuth 100 CHF in the authorization request to the ep2 aquiring host The host then only can partially approve the transaction and returns the partial approval amount ep2 AmtAuth 8000 AmtAuth 80 CHF in the authorization response to the terminal The terminal then must return the actually approved amount back to the ECR sixml Amount Currency CHF Exponent 2 8000 Amount The amount is additionally defined by the corresponding sixml Currency and sixml Exponent attributes An amount can have a negative value e.g in case of returning a gas canister Example sixml Amount Currency CHF Exponent 2 10000 Amount This is CHF 100.00 Example sixml Amount Currency CHF Exponent 2 Amount This is CHF Specification banking sub_transaction Object instance of type sub_transaction amount Pointer to variable to write object instance to Object instance is of type amount and is not retained Object instance is ta_invalid_object if value is not set in sub_transaction ta_c_rc_ok Object instance written to amount ta_c_rc_invalid_argument sub_transaction is ta_invalid_object ta_c_rc_invalid_argument sub_transaction is not of type sub_transaction ta_c_rc_invalid_argument amount is null-pointer</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">ta_sub_transaction_set_amount</field>
+    <field name="args">(ta_object_t sub_transaction, ta_object_t amount)</field>
+    <field name="url">sub__transaction_8h.html#a450bbbc169973476b6145c54eab8175d</field>
+    <field name="keywords">ta_sub_transaction_set_amount</field>
+    <field name="text">Amount In a request defines the original amount for the transaction given by ECR in response the final authorized amount given by host in minor units In a transaction request this field defines the amount in minor units that shall be authorized for this transaction In a transcation response this field defines the amount in minor units that has actually been authorized If the full amount has been authorized as sent in the transaction request the value of the sixml Amount field in the request and the response is equal PartialApproval If the transaction has been approved only partially by the aquiring host the terminal must return on SIXml the actual authorized amount that has been returned from host to terminal in the authorization response Example for ep2 The ECR sends an sixml Amount 10000 Amount field on SIXml to the terminal in the transaction request and the terminal sends this amount as ep2 AmtAuth 10000 AmtAuth 100 CHF in the authorization request to the ep2 aquiring host The host then only can partially approve the transaction and returns the partial approval amount ep2 AmtAuth 8000 AmtAuth 80 CHF in the authorization response to the terminal The terminal then must return the actually approved amount back to the ECR sixml Amount Currency CHF Exponent 2 8000 Amount The amount is additionally defined by the corresponding sixml Currency and sixml Exponent attributes An amount can have a negative value e.g in case of returning a gas canister Example sixml Amount Currency CHF Exponent 2 10000 Amount This is CHF 100.00 Example sixml Amount Currency CHF Exponent 2 Amount This is CHF Specification banking sub_transaction Object instance of type sub_transaction amount Object instance to set Object instance can be ta_invalid_object to clear the value in sub_transaction If object instance is not ta_invalid_object is has to be of type amount ta_c_rc_ok Object instance assigned to sub_transaction ta_c_rc_invalid_argument sub_transaction is ta_invalid_object ta_c_rc_invalid_argument sub_transaction is not of type sub_transaction ta_c_rc_invalid_argument amount is not ta_invalid_object and is not of type amount</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">ta_sub_transaction_get_rate</field>
+    <field name="args">(ta_object_t sub_transaction, int *rate)</field>
+    <field name="url">sub__transaction_8h.html#a997aabeb4c32581d498fab1c61fbaa09</field>
+    <field name="keywords">ta_sub_transaction_get_rate</field>
+    <field name="text">DCC excange rate The DCC amount sixml AmuntDcc will be calculated as follows transaction amount sixml Amount DCC rate sixml Rate Example sixml Amount Currency Exponent 2000 Amount and the DCC currency is the sixml Rate and sixml RateExponent 20.00 EUR 0.8623328 23.19 CHF Optional Only in multi currency situations Specification banking sub_transaction Object instance of type sub_transaction rate Pointer to variable to write value to ta_c_rc_ok Object instance written to rate ta_c_rc_invalid_argument sub_transaction is ta_invalid_object ta_c_rc_invalid_argument sub_transaction is not of type sub_transaction ta_c_rc_invalid_argument rate is null-pointer</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">ta_sub_transaction_set_rate</field>
+    <field name="args">(ta_object_t sub_transaction, int rate)</field>
+    <field name="url">sub__transaction_8h.html#a3169d1996c2268601a6b13ffad069378</field>
+    <field name="keywords">ta_sub_transaction_set_rate</field>
+    <field name="text">DCC excange rate The DCC amount sixml AmuntDcc will be calculated as follows transaction amount sixml Amount DCC rate sixml Rate Example sixml Amount Currency Exponent 2000 Amount and the DCC currency is the sixml Rate and sixml RateExponent 20.00 EUR 0.8623328 23.19 CHF Optional Only in multi currency situations Specification banking sub_transaction Object instance of type sub_transaction rate Value to set ta_c_rc_ok Object instance assigned to sub_transaction ta_c_rc_invalid_argument sub_transaction is ta_invalid_object ta_c_rc_invalid_argument sub_transaction is not of type sub_transaction</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">ta_sub_transaction_get_rate_exponent</field>
+    <field name="args">(ta_object_t sub_transaction, int *rate_exponent)</field>
+    <field name="url">sub__transaction_8h.html#aefa21b75e2f8d781071880a0ceee4212</field>
+    <field name="keywords">ta_sub_transaction_get_rate_exponent</field>
+    <field name="text">DCC excange rate exponent sub_transaction Object instance of type sub_transaction rate_exponent Pointer to variable to write value to ta_c_rc_ok Object instance written to rate ta_c_rc_invalid_argument sub_transaction is ta_invalid_object ta_c_rc_invalid_argument sub_transaction is not of type sub_transaction ta_c_rc_invalid_argument rate_exponent is null-pointer</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">ta_sub_transaction_set_rate_exponent</field>
+    <field name="args">(ta_object_t sub_transaction, int rate_exponent)</field>
+    <field name="url">sub__transaction_8h.html#aa6e54bc26f9fd66586b26622fb858397</field>
+    <field name="keywords">ta_sub_transaction_set_rate_exponent</field>
+    <field name="text">DCC excange rate exponent sub_transaction Object instance of type sub_transaction rate_exponent Value to set ta_c_rc_ok Object instance assigned to sub_transaction ta_c_rc_invalid_argument sub_transaction is ta_invalid_object ta_c_rc_invalid_argument sub_transaction is not of type sub_transaction</field>
+  </doc>
+  <doc>
+    <field name="type">file</field>
     <field name="name">system_information_response.h</field>
     <field name="url">system__information__response_8h.html</field>
     <field name="keywords">system_information_response.h</field>
@@ -13188,6 +14196,22 @@ $(document).ready(function(){initNavTree('search.html','');});
     <field name="args">(ta_object_t terminal)</field>
     <field name="url">terminal_8h.html#a027527f1631d2e0f383e1d4103f4679f</field>
     <field name="keywords">ta_terminal_reconciliation_async</field>
+    <field name="text">Force the EFT Terminal to transmit all financial transactions to the host system Asynchronous version of ta_terminal_reconciliation Callback function is ta_cb_terminal_reconciliation_completed terminal Object instance of type terminal ta_c_rc_ok Request started successfully ta_c_rc_invalid_argument terminal is ta_invalid_object ta_c_rc_invalid_argument terminal is not of type terminal ta_c_rc_invalid_argument terminal has been disposed</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">ta_terminal_reconciliation2</field>
+    <field name="args">(ta_object_t terminal, ta_e_reconciliation_mode_t reconciliation_mode, ta_object_t *response)</field>
+    <field name="url">terminal_8h.html#aa2e4949704bcd73221cd12687c748c06</field>
+    <field name="keywords">ta_terminal_reconciliation2</field>
+    <field name="text">Force the EFT Terminal to transmit all financial transactions to the host system terminal Object instance of type terminal response Pointer to variable to write object instance to Object instance is of type reconciliation_response Object instance is retained ta_c_rc_ok Request finished successfully Object instance written to response Object instance has been retained ta_c_rc_invalid_argument terminal is ta_invalid_object ta_c_rc_invalid_argument terminal is not of type terminal ta_c_rc_invalid_argument terminal has been disposed ta_c_rc_invalid_argument response is null-pointer</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">ta_terminal_reconciliation2_async</field>
+    <field name="args">(ta_object_t terminal, ta_e_reconciliation_mode_t reconciliation_mode)</field>
+    <field name="url">terminal_8h.html#a08dd262385c7fc8a81d2027d7ed13bc4</field>
+    <field name="keywords">ta_terminal_reconciliation2_async</field>
     <field name="text">Force the EFT Terminal to transmit all financial transactions to the host system Asynchronous version of ta_terminal_reconciliation Callback function is ta_cb_terminal_reconciliation_completed terminal Object instance of type terminal ta_c_rc_ok Request started successfully ta_c_rc_invalid_argument terminal is ta_invalid_object ta_c_rc_invalid_argument terminal is not of type terminal ta_c_rc_invalid_argument terminal has been disposed</field>
   </doc>
   <doc>
@@ -13926,6 +14950,22 @@ $(document).ready(function(){initNavTree('search.html','');});
   </doc>
   <doc>
     <field name="type">typedef</field>
+    <field name="name">ta_cb_terminal_deferred_auth</field>
+    <field name="args">)(ta_object_t terminal, ta_object_t response, void *user_pointer)</field>
+    <field name="url">terminal__listener_8h.html#aeb918381c327092bea7333f1182a6157</field>
+    <field name="keywords">ta_cb_terminal_deferred_auth</field>
+    <field name="text">Called if deferred authorization has been received from the terminal terminal Object instance of type terminal Object instance is not retained response Object instance of type transaction_response Object instance is not retained user_pointer User pointer value used while creating the listener</field>
+  </doc>
+  <doc>
+    <field name="type">typedef</field>
+    <field name="name">ta_cb_terminal_error_notification</field>
+    <field name="args">)(ta_object_t terminal, ta_object_t tim_error, void *user_pointer)</field>
+    <field name="url">terminal__listener_8h.html#a8c2e944cbc609df4276710919f7ff72c</field>
+    <field name="keywords">ta_cb_terminal_error_notification</field>
+    <field name="text">Called if error notification has been received from the terminal terminal Object instance of type terminal Object instance is not retained response Object instance of type tim_error Object instance is not retained user_pointer User pointer value used while creating the listener</field>
+  </doc>
+  <doc>
+    <field name="type">typedef</field>
     <field name="name">ta_cb_terminal_close_reader_completed</field>
     <field name="args">)(const ta_s_event_t *event, void *user_pointer)</field>
     <field name="url">terminal__listener_8h.html#a7664fed628bcdd45f81694856b54a13e</field>
@@ -14596,6 +15636,22 @@ $(document).ready(function(){initNavTree('search.html','');});
   </doc>
   <doc>
     <field name="type">function</field>
+    <field name="name">ta_terminal_settings_get_persistent_state</field>
+    <field name="args">(ta_object_t settings, ta_e_boolean_t *persistent_state)</field>
+    <field name="url">terminal__settings_8h.html#a871463efaa1371c527ce90440e306f3c</field>
+    <field name="keywords">ta_terminal_settings_get_persistent_state</field>
+    <field name="text">Enable persistent state if supported Default is false settings Object instance of type terminal_settings persistent_state Pointer to variable to write value to ta_c_rc_ok Object instance written to persistent_state ta_c_rc_invalid_argument settings is ta_invalid_object ta_c_rc_invalid_argument settings is not of type terminal_settings ta_c_rc_invalid_argument persistent_state is null-pointer</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">ta_terminal_settings_set_persistent_state</field>
+    <field name="args">(ta_object_t settings, ta_e_boolean_t persistent_state)</field>
+    <field name="url">terminal__settings_8h.html#a5c185ec6a7e22d062039969cadb4bc4e</field>
+    <field name="keywords">ta_terminal_settings_set_persistent_state</field>
+    <field name="text">Set Enable persistent state if supported Default is false settings Object instance of type terminal_settings persistent_state Value to set ta_c_rc_ok Value assigned to settings ta_c_rc_invalid_argument settings is ta_invalid_object ta_c_rc_invalid_argument settings is not of type terminal_settings ta_c_rc_invalid_argument persistent_state is less than 0</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
     <field name="name">ta_terminal_settings_get_saferpay_terminal_id</field>
     <field name="args">(ta_object_t settings, ta_object_t *terminal_id)</field>
     <field name="url">terminal__settings_8h.html#a5f5fc21f0881bed8a33475583afb1187</field>
@@ -14751,6 +15807,14 @@ $(document).ready(function(){initNavTree('search.html','');});
     <field name="url">tim__error_8h.html</field>
     <field name="keywords">tim_error.h</field>
     <field name="text">Object type tim_error</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">ta_tim_error_get_result_code</field>
+    <field name="args">(ta_object_t response, ta_e_result_code_t *result_code)</field>
+    <field name="url">tim__error_8h.html#ad79d70d5b92e5cf36f34c574cf52eb18</field>
+    <field name="keywords">ta_tim_error_get_result_code</field>
+    <field name="text">Result code response Object instance of type tim_error result_code Pointer to variable to write result code to ta_c_rc_ok Object instance written to error_message ta_c_rc_invalid_argument response is ta_invalid_object ta_c_rc_invalid_argument response is not of type tim_error ta_c_rc_invalid_argument result_code is null-pointer</field>
   </doc>
   <doc>
     <field name="type">function</field>
@@ -15228,6 +16292,70 @@ $(document).ready(function(){initNavTree('search.html','');});
     <field name="url">transaction__data_8h.html#ab9d288a8c2ba5eed69d4f53974f665f1</field>
     <field name="keywords">ta_transaction_data_set_saferpay_recurring</field>
     <field name="text">Set saferpay recurring enabled trx_data Object instance of type transaction_data saferpay_recurring Value to set Value can be ta_c_b_undefined to clear the value in trx_data ta_c_rc_ok Value assigned to trx_data ta_c_rc_invalid_argument trx_data is ta_invalid_object ta_c_rc_invalid_argument trx_data is not of type transaction_data ta_c_rc_invalid_argument saferpay_recurring is null-pointer</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">ta_transaction_data_get_installment_allowed</field>
+    <field name="args">(ta_object_t trx_data, ta_e_boolean_t *installment_allowed)</field>
+    <field name="url">transaction__data_8h.html#a2d718cf5a8699bbbe2c3ab5dad0c00b5</field>
+    <field name="keywords">ta_transaction_data_get_installment_allowed</field>
+    <field name="text">Indicates if installment shall be allowed for a transaction This tag can be set for each transaction separately to specifically allow or disallow installment feature during the corresponding transaction As this is a boolean value is can be understood as follows true Installment is allowed for the transaction false Installment is NOT allowed for the transaction trx_data Object instance of type transaction_data installment_allowed Pointer to variable to write value to ta_c_rc_ok Object instance written to installment_allowed ta_c_rc_invalid_argument trx_data is ta_invalid_object ta_c_rc_invalid_argument trx_data is not of type transaction_data ta_c_rc_invalid_argument installment_allowed is null-pointer</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">ta_transaction_data_set_installment_allowed</field>
+    <field name="args">(ta_object_t trx_data, ta_e_boolean_t installment_allowed)</field>
+    <field name="url">transaction__data_8h.html#a348b4be6a7f9649d14f047a664acdf31</field>
+    <field name="keywords">ta_transaction_data_set_installment_allowed</field>
+    <field name="text">Set application expiration date Each application on a card has a corresponding expiration date and can be read from the card Example The format of an Expiration Date is defined as MMyy 2 digits for the month and 2 digits for the year So January 2018 will have the following format as Expiration Date 0118 trx_data Object instance of type transaction_data installment_allowed Value to set ta_c_rc_ok Object instance assigned to trx_data ta_c_rc_invalid_argument trx_data is ta_invalid_object ta_c_rc_invalid_argument trx_data is not of type transaction_data ta_c_rc_invalid_argument app_expiration_date is not ta_invalid_object and is not of type timedate</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">ta_transaction_data_get_deferred_auth_ind</field>
+    <field name="args">(ta_object_t trx_data, ta_e_boolean_t *deferred_auth_ind)</field>
+    <field name="url">transaction__data_8h.html#a1bb9dbe38ecbaad09450c19308dbbf9c</field>
+    <field name="keywords">ta_transaction_data_get_deferred_auth_ind</field>
+    <field name="text">Indicates that the transaction shall be performed using deffered authorisation The following values are valid true Deferred authorisation applies false Standard authorisation scheme default trx_data Object instance of type transaction_data deferred_auth_ind Pointer to variable to write value to ta_c_rc_ok Object instance written to deferred_auth_ind ta_c_rc_invalid_argument trx_data is ta_invalid_object ta_c_rc_invalid_argument trx_data is not of type transaction_data ta_c_rc_invalid_argument deferred_auth_ind is null-pointer</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">ta_transaction_data_set_deferred_auth_ind</field>
+    <field name="args">(ta_object_t trx_data, ta_e_boolean_t installment_allowed)</field>
+    <field name="url">transaction__data_8h.html#a05852554be1c801dea8a26ac0f5ef06d</field>
+    <field name="keywords">ta_transaction_data_set_deferred_auth_ind</field>
+    <field name="text">Set indicates that the transaction shall be performed using deffered authorisation The following values are valid true Deferred authorisation applies false Standard authorisation scheme default trx_data Object instance of type transaction_data deferred_auth_ind Value to set ta_c_rc_ok Object instance assigned to trx_data ta_c_rc_invalid_argument trx_data is ta_invalid_object ta_c_rc_invalid_argument trx_data is not of type transaction_data ta_c_rc_invalid_argument app_expiration_date is not ta_invalid_object and is not of type timedate</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">ta_transaction_data_get_transaction_reason</field>
+    <field name="args">(ta_object_t trx_data, ta_e_transaction_reason_t *transaction_reason)</field>
+    <field name="url">transaction__data_8h.html#a69666c11097a518a6b20aa632736f14a</field>
+    <field name="keywords">ta_transaction_data_get_transaction_reason</field>
+    <field name="text">Set the transaction reason to setup credential on file Available if AdvancedRetail guide is enabled trx_data Object instance of type transaction_data transaction_reason Pointer to variable to write value to Value is ta_c_ngvm_undefined if value is not set in trx_data ta_c_rc_ok Value written to transaction_reason ta_c_rc_invalid_argument trx_data is ta_invalid_object ta_c_rc_invalid_argument trx_data is not of type transaction_data ta_c_rc_invalid_argument transaction_reason is null-pointer</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">ta_transaction_data_set_transaction_reason</field>
+    <field name="args">(ta_object_t trx_data, ta_e_transaction_reason_t transaction_reason)</field>
+    <field name="url">transaction__data_8h.html#a4c0e5d00a62da2ed015f29845c2cf9c4</field>
+    <field name="keywords">ta_transaction_data_set_transaction_reason</field>
+    <field name="text">Set the transaction reason to setup credential on file Available if AdvancedRetail guide is enabled trx_data Object instance of type transaction_data transaction_reason Value to set Value can be ta_c_ngvm_undefined to clear the value in trx_data ta_c_rc_ok Value assigned to trx_data ta_c_rc_invalid_argument trx_data is ta_invalid_object ta_c_rc_invalid_argument trx_data is not of type transaction_data ta_c_rc_invalid_argument transaction_reason is null-pointer</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">ta_transaction_data_get_sub_transactions</field>
+    <field name="args">(ta_object_t trx_data, ta_object_t *sub_transactions)</field>
+    <field name="url">transaction__data_8h.html#aa0a6c543fa4a4c0f1bcaa477a66a8a4c</field>
+    <field name="keywords">ta_transaction_data_get_sub_transactions</field>
+    <field name="text">Sub transactions trx_data Object instance of type transaction_data sub_transactions Pointer to variable to write object instance to Object instance is of type list with elements of type sub_transaction Object instance is not retained Object instance is ta_invalid_object if value is not set in trx_data ta_c_rc_ok Object instance written to sub_transactions ta_c_rc_invalid_argument trx_data is ta_invalid_object ta_c_rc_invalid_argument trx_data is not of type transaction_data ta_c_rc_invalid_argument sub_transactions is null-pointer</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">ta_transaction_data_set_sub_transactions</field>
+    <field name="args">(ta_object_t trx_data, ta_object_t sub_transactions)</field>
+    <field name="url">transaction__data_8h.html#a4d46ee17fcea2b686f616c3e1bcd5464</field>
+    <field name="keywords">ta_transaction_data_set_sub_transactions</field>
+    <field name="text">Set sub transactions trx_data Object instance of type transaction_data sub_transactions Object instance to set Object instance can be ta_invalid_object to clear the value in trx_data If object instance is not ta_invalid_object is has to be of type list with elements of type sub_transaction ta_c_rc_ok Object instance assigned to trx_data ta_c_rc_invalid_argument trx_data is ta_invalid_object ta_c_rc_invalid_argument trx_data is not of type transaction_data ta_c_rc_invalid_argument sub_transactions is not ta_invalid_object and is not of type timedate</field>
   </doc>
   <doc>
     <field name="type">file</field>
@@ -16308,6 +17436,13 @@ $(document).ready(function(){initNavTree('search.html','');});
   </doc>
   <doc>
     <field name="type">variable</field>
+    <field name="name">ta_s_features_payment::partial_commit</field>
+    <field name="url">structta__s__features__payment.html#a9127f6f2e9621f883ff046dfba15f3f7</field>
+    <field name="keywords">partial_commit ta_s_features_payment::partial_commit ta_s_features_payment</field>
+    <field name="text">Support for</field>
+  </doc>
+  <doc>
+    <field name="type">variable</field>
     <field name="name">ta_s_features_payment::ep2_available</field>
     <field name="url">structta__s__features__payment.html#ab613af99bb54542b0e3c1af8148b604c</field>
     <field name="keywords">ep2_available ta_s_features_payment::ep2_available ta_s_features_payment</field>
@@ -16452,6 +17587,41 @@ $(document).ready(function(){initNavTree('search.html','');});
     <field name="url">structta__s__features__sixml.html#a349e51cdcc85c77ba165f9d6447573eb</field>
     <field name="keywords">persistent_state ta_s_features_sixml::persistent_state ta_s_features_sixml</field>
     <field name="text">Support if the SIXml session should start in the default Closed management state or the last known management state e.g before a reboot should be used For the latter option the terminal shall indicate the state in the login response</field>
+  </doc>
+  <doc>
+    <field name="type">variable</field>
+    <field name="name">ta_s_features_sixml::ep2_referenced_transaction</field>
+    <field name="url">structta__s__features__sixml.html#aebe072ddf571f3b71484e3eba3e86ffc</field>
+    <field name="keywords">ep2_referenced_transaction ta_s_features_sixml::ep2_referenced_transaction ta_s_features_sixml</field>
+    <field name="text">EP2 referenced transaction supported</field>
+  </doc>
+  <doc>
+    <field name="type">variable</field>
+    <field name="name">ta_s_features_sixml::ep2_deferred_authorisation</field>
+    <field name="url">structta__s__features__sixml.html#aeb2287eccc5ea3f707748ad8e4bd9b9c</field>
+    <field name="keywords">ep2_deferred_authorisation ta_s_features_sixml::ep2_deferred_authorisation ta_s_features_sixml</field>
+    <field name="text">Payment Protocol EP2 Deferred Authorisation Feature</field>
+  </doc>
+  <doc>
+    <field name="type">variable</field>
+    <field name="name">ta_s_features_sixml::deferred_authorisation</field>
+    <field name="url">structta__s__features__sixml.html#a2eeeacc8722719f1d3d1cb2d99214cad</field>
+    <field name="keywords">deferred_authorisation ta_s_features_sixml::deferred_authorisation ta_s_features_sixml</field>
+    <field name="text">Payment Deferred Authorisation Feature</field>
+  </doc>
+  <doc>
+    <field name="type">variable</field>
+    <field name="name">ta_s_features_sixml::ep2_credential_on_file</field>
+    <field name="url">structta__s__features__sixml.html#a5e0c190ac88ac296a9b73601a340dfb9</field>
+    <field name="keywords">ep2_credential_on_file ta_s_features_sixml::ep2_credential_on_file ta_s_features_sixml</field>
+    <field name="text">EP2 Payment Credential on File Feature</field>
+  </doc>
+  <doc>
+    <field name="type">variable</field>
+    <field name="name">ta_s_features_sixml::credential_on_file</field>
+    <field name="url">structta__s__features__sixml.html#a796f0a7a57830214685418114399a5f1</field>
+    <field name="keywords">credential_on_file ta_s_features_sixml::credential_on_file ta_s_features_sixml</field>
+    <field name="text">Payment Credential on File Feature</field>
   </doc>
   <doc>
     <field name="type">struct</field>
@@ -16760,6 +17930,20 @@ $(document).ready(function(){initNavTree('search.html','');});
     <field name="url">structta__s__terminal__listener.html#a842878cdef7ca860685257305cc65052</field>
     <field name="keywords">vas_info ta_s_terminal_listener::vas_info ta_s_terminal_listener</field>
     <field name="text">VAS information received</field>
+  </doc>
+  <doc>
+    <field name="type">variable</field>
+    <field name="name">ta_s_terminal_listener::deferred_auth</field>
+    <field name="url">structta__s__terminal__listener.html#a0db8c3e0e3605fb83135af7c354435ce</field>
+    <field name="keywords">deferred_auth ta_s_terminal_listener::deferred_auth ta_s_terminal_listener</field>
+    <field name="text">Deferred auth received</field>
+  </doc>
+  <doc>
+    <field name="type">variable</field>
+    <field name="name">ta_s_terminal_listener::error_notification</field>
+    <field name="url">structta__s__terminal__listener.html#aff2b2a5157f6986b01cbcfb3396d7da7</field>
+    <field name="keywords">error_notification ta_s_terminal_listener::error_notification ta_s_terminal_listener</field>
+    <field name="text">Error notification received</field>
   </doc>
   <doc>
     <field name="type">variable</field>

@@ -7,5 +7,6 @@ var structta__s__features__payment =
     [ "ep2_declined_receipts", "structta__s__features__payment.html#a5b5231527b2410dcf57254a26a138ab5", null ],
     [ "ep2_multi_account_selection", "structta__s__features__payment.html#afb7b06ec637783a19d327f35a6372b4d", null ],
     [ "ep2_multi_contract_selection", "structta__s__features__payment.html#a9b5fcb1140ecde7d849e29960408c574", null ],
-    [ "partial_approval", "structta__s__features__payment.html#ac9b4b0081fb192bf22ede0ef036405cc", null ]
+    [ "partial_approval", "structta__s__features__payment.html#ac9b4b0081fb192bf22ede0ef036405cc", null ],
+    [ "partial_commit", "structta__s__features__payment.html#a9127f6f2e9621f883ff046dfba15f3f7", null ]
 ];

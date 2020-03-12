@@ -242,6 +242,9 @@
                             <a href="SIX.TimApi.SIXmlConstants.ResourceId.html" title="SIXmlConstants.ResourceId" class="">SIXmlConstants.ResourceId</a>
                           </li>
                           <li class="">
+                            <a href="SIX.TimApi.SubTransaction.html" title="SubTransaction" class="">SubTransaction</a>
+                          </li>
+                          <li class="">
                             <a href="SIX.TimApi.SystemInformationResponse.html" title="SystemInformationResponse" class="">SystemInformationResponse</a>
                           </li>
                           <li class="active">
@@ -329,6 +332,9 @@
                             <a href="SIX.TimApi.Terminal.DeactivateCompletedEventHandler.html" title="Terminal.DeactivateCompletedEventHandler" class="">Terminal.DeactivateCompletedEventHandler</a>
                           </li>
                           <li class="">
+                            <a href="SIX.TimApi.Terminal.DeferredAuthHandler.html" title="Terminal.DeferredAuthHandler" class="">Terminal.DeferredAuthHandler</a>
+                          </li>
+                          <li class="">
                             <a href="SIX.TimApi.Terminal.DisconnectedHandler.html" title="Terminal.DisconnectedHandler" class="">Terminal.DisconnectedHandler</a>
                           </li>
                           <li class="">
@@ -336,6 +342,9 @@
                           </li>
                           <li class="">
                             <a href="SIX.TimApi.Terminal.EjectCardCompletedEventHandler.html" title="Terminal.EjectCardCompletedEventHandler" class="">Terminal.EjectCardCompletedEventHandler</a>
+                          </li>
+                          <li class="">
+                            <a href="SIX.TimApi.Terminal.ErrorNotificationHandler.html" title="Terminal.ErrorNotificationHandler" class="">Terminal.ErrorNotificationHandler</a>
                           </li>
                           <li class="">
                             <a href="SIX.TimApi.Terminal.FinishCheckoutCompletedEventArgs.html" title="Terminal.FinishCheckoutCompletedEventArgs" class="">Terminal.FinishCheckoutCompletedEventArgs</a>
@@ -551,6 +560,9 @@
                             <a href="SIX.TimApi.Constants.BrandMode.html" title="BrandMode" class="">BrandMode</a>
                           </li>
                           <li class="">
+                            <a href="SIX.TimApi.Constants.CardProductType.html" title="CardProductType" class="">CardProductType</a>
+                          </li>
+                          <li class="">
                             <a href="SIX.TimApi.Constants.CardReader.html" title="CardReader" class="">CardReader</a>
                           </li>
                           <li class="">
@@ -656,6 +668,9 @@
                             <a href="SIX.TimApi.Constants.Recipient.html" title="Recipient" class="">Recipient</a>
                           </li>
                           <li class="">
+                            <a href="SIX.TimApi.Constants.ReconciliationMode.html" title="ReconciliationMode" class="">ReconciliationMode</a>
+                          </li>
+                          <li class="">
                             <a href="SIX.TimApi.Constants.ResourceId.html" title="ResourceId" class="">ResourceId</a>
                           </li>
                           <li class="">
@@ -681,6 +696,9 @@
                           </li>
                           <li class="">
                             <a href="SIX.TimApi.Constants.Theme.html" title="Theme" class="">Theme</a>
+                          </li>
+                          <li class="">
+                            <a href="SIX.TimApi.Constants.TransactionReason.html" title="TransactionReason" class="">TransactionReason</a>
                           </li>
                           <li class="">
                             <a href="SIX.TimApi.Constants.TransactionStatus.html" title="TransactionStatus" class="">TransactionStatus</a>
@@ -1462,7 +1480,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="SIX.TimApi.TransactionData.html">TransactionData</a></td>
+        <td><span class="xref">TransactionData</span></td>
         <td><p>The transaction data.</p>
 </td>
       </tr>
@@ -2823,7 +2841,7 @@ The response is available in the <a class="xref" href="SIX.TimApi.Terminal.Hardw
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="SIX.TimApi.CardData.html">CardData</a></td>
+        <td><span class="xref">CardData</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -2891,7 +2909,7 @@ The response is available in the <a class="xref" href="SIX.TimApi.Terminal.Hardw
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="SIX.TimApi.CardData.html">CardData</a></td>
+        <td><span class="xref">CardData</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -3118,7 +3136,7 @@ Your application must handle this event to receive notification.</p>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="SIX.TimApi.CardData.html">CardData</a></td>
+        <td><span class="xref">CardData</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -3720,9 +3738,51 @@ The response is available in the <a class="xref" href="SIX.TimApi.Terminal.Recei
   </table>
   
   
+  <a id="SIX_TimApi_Terminal_Reconciliation_" data-uid="SIX.TimApi.Terminal.Reconciliation*"></a>
+  <h4 id="SIX_TimApi_Terminal_Reconciliation_ReconciliationMode_" data-uid="SIX.TimApi.Terminal.Reconciliation(ReconciliationMode)">Reconciliation(ReconciliationMode)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ReconciliationResponse Reconciliation(ReconciliationMode reconciliationMode)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ReconciliationMode</span></td>
+        <td><span class="parametername">reconciliationMode</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="SIX.TimApi.ReconciliationResponse.html">ReconciliationResponse</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="SIX_TimApi_Terminal_ReconciliationAsync_" data-uid="SIX.TimApi.Terminal.ReconciliationAsync*"></a>
   <h4 id="SIX_TimApi_Terminal_ReconciliationAsync" data-uid="SIX.TimApi.Terminal.ReconciliationAsync">ReconciliationAsync()</h4>
-  <div class="markdown level1 summary"><p>Asynchronously forces the EFT Terminal to transmit all financial transactions to the host system..</p>
+  <div class="markdown level1 summary"><p>Asynchronously forces the EFT Terminal to transmit all financial transactions to the host system.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -3733,8 +3793,36 @@ The response is available in the <a class="xref" href="SIX.TimApi.Terminal.Recei
   <div class="markdown level1 remarks"><p>This method does not block the calling thread during the reconciliation operation and uses the Event-based Asynchronous Pattern (EAP).
 When the transaction completes, the <a class="xref" href="SIX.TimApi.Terminal.html#SIX_TimApi_Terminal_ReconciliationCompleted">ReconciliationCompleted</a> event is raised.
 Your application must handle this event to receive notification.
-The response is available in the <a class="xref" href="SIX.TimApi.Terminal.ReconciliationCompletedEventArgs.html">Terminal.ReconciliationCompletedEventArgs</a> as <a class="xref" href="SIX.TimApi.Terminal.ReconciliationCompletedEventArgs.html#SIX_TimApi_Terminal_ReconciliationCompletedEventArgs_ReconciliationResponse">ReconciliationResponse</a>.</p>
+The response is available in the <a class="xref" href="SIX.TimApi.Terminal.ReconciliationCompletedEventArgs.html">Terminal.ReconciliationCompletedEventArgs</a>
+as <a class="xref" href="SIX.TimApi.Terminal.ReconciliationCompletedEventArgs.html#SIX_TimApi_Terminal_ReconciliationCompletedEventArgs_ReconciliationResponse">ReconciliationResponse</a>.</p>
 </div>
+  
+  
+  <a id="SIX_TimApi_Terminal_ReconciliationAsync_" data-uid="SIX.TimApi.Terminal.ReconciliationAsync*"></a>
+  <h4 id="SIX_TimApi_Terminal_ReconciliationAsync_ReconciliationMode_" data-uid="SIX.TimApi.Terminal.ReconciliationAsync(ReconciliationMode)">ReconciliationAsync(ReconciliationMode)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ReconciliationAsync(ReconciliationMode reconciliationMode)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ReconciliationMode</span></td>
+        <td><span class="parametername">reconciliationMode</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   
   
   <a id="SIX_TimApi_Terminal_Reconfig_" data-uid="SIX.TimApi.Terminal.Reconfig*"></a>
@@ -5289,6 +5377,34 @@ The <a class="xref" href="SIX.TimApi.Terminal.DeactivateCompletedEventArgs.html"
 </div>
   
   
+  <h4 id="SIX_TimApi_Terminal_DeferredAuth" data-uid="SIX.TimApi.Terminal.DeferredAuth">DeferredAuth</h4>
+  <div class="markdown level1 summary"><p>Occurs when DeferredAuth is available.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event Terminal.DeferredAuthHandler DeferredAuth</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="SIX.TimApi.Terminal.DeferredAuthHandler.html">Terminal.DeferredAuthHandler</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="SIX_TimApi_Terminal_DeferredAuth_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This event is raised when deferred authorization information is send.</p>
+</div>
+  
+  
   <h4 id="SIX_TimApi_Terminal_Disconnected" data-uid="SIX.TimApi.Terminal.Disconnected">Disconnected</h4>
   <div class="markdown level1 summary"><p>Connection to terminal closed.</p>
 </div>
@@ -5347,6 +5463,34 @@ Asynchronous operations are started by calling the <a class="xref" href="SIX.Tim
 <br>
 The  <a class="xref" href="SIX.TimApi.Terminal.EjectCardCompletedEventHandler.html">Terminal.EjectCardCompletedEventHandler</a>  is the delegate for this event.
 The <a class="xref" href="SIX.TimApi.Terminal.EjectCardCompletedEventArgs.html">Terminal.EjectCardCompletedEventArgs</a> class provides the event handler with event data.</p>
+</div>
+  
+  
+  <h4 id="SIX_TimApi_Terminal_ErrorNotification" data-uid="SIX.TimApi.Terminal.ErrorNotification">ErrorNotification</h4>
+  <div class="markdown level1 summary"><p>Occurs when ErrorNotification is received.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event Terminal.ErrorNotificationHandler ErrorNotification</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="SIX.TimApi.Terminal.ErrorNotificationHandler.html">Terminal.ErrorNotificationHandler</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="SIX_TimApi_Terminal_ErrorNotification_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This event is raised when terminal encounters errors outside pending request.</p>
 </div>
   
   

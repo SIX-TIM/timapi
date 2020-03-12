@@ -242,6 +242,9 @@
                             <a href="SIX.TimApi.SIXmlConstants.ResourceId.html" title="SIXmlConstants.ResourceId" class="">SIXmlConstants.ResourceId</a>
                           </li>
                           <li class="">
+                            <a href="SIX.TimApi.SubTransaction.html" title="SubTransaction" class="">SubTransaction</a>
+                          </li>
+                          <li class="">
                             <a href="SIX.TimApi.SystemInformationResponse.html" title="SystemInformationResponse" class="">SystemInformationResponse</a>
                           </li>
                           <li class="">
@@ -329,6 +332,9 @@
                             <a href="SIX.TimApi.Terminal.DeactivateCompletedEventHandler.html" title="Terminal.DeactivateCompletedEventHandler" class="">Terminal.DeactivateCompletedEventHandler</a>
                           </li>
                           <li class="">
+                            <a href="SIX.TimApi.Terminal.DeferredAuthHandler.html" title="Terminal.DeferredAuthHandler" class="">Terminal.DeferredAuthHandler</a>
+                          </li>
+                          <li class="">
                             <a href="SIX.TimApi.Terminal.DisconnectedHandler.html" title="Terminal.DisconnectedHandler" class="">Terminal.DisconnectedHandler</a>
                           </li>
                           <li class="">
@@ -336,6 +342,9 @@
                           </li>
                           <li class="">
                             <a href="SIX.TimApi.Terminal.EjectCardCompletedEventHandler.html" title="Terminal.EjectCardCompletedEventHandler" class="">Terminal.EjectCardCompletedEventHandler</a>
+                          </li>
+                          <li class="">
+                            <a href="SIX.TimApi.Terminal.ErrorNotificationHandler.html" title="Terminal.ErrorNotificationHandler" class="">Terminal.ErrorNotificationHandler</a>
                           </li>
                           <li class="">
                             <a href="SIX.TimApi.Terminal.FinishCheckoutCompletedEventArgs.html" title="Terminal.FinishCheckoutCompletedEventArgs" class="">Terminal.FinishCheckoutCompletedEventArgs</a>
@@ -551,6 +560,9 @@
                             <a href="SIX.TimApi.Constants.BrandMode.html" title="BrandMode" class="">BrandMode</a>
                           </li>
                           <li class="">
+                            <a href="SIX.TimApi.Constants.CardProductType.html" title="CardProductType" class="">CardProductType</a>
+                          </li>
+                          <li class="">
                             <a href="SIX.TimApi.Constants.CardReader.html" title="CardReader" class="">CardReader</a>
                           </li>
                           <li class="">
@@ -656,6 +668,9 @@
                             <a href="SIX.TimApi.Constants.Recipient.html" title="Recipient" class="">Recipient</a>
                           </li>
                           <li class="">
+                            <a href="SIX.TimApi.Constants.ReconciliationMode.html" title="ReconciliationMode" class="">ReconciliationMode</a>
+                          </li>
+                          <li class="">
                             <a href="SIX.TimApi.Constants.ResourceId.html" title="ResourceId" class="">ResourceId</a>
                           </li>
                           <li class="">
@@ -681,6 +696,9 @@
                           </li>
                           <li class="">
                             <a href="SIX.TimApi.Constants.Theme.html" title="Theme" class="">Theme</a>
+                          </li>
+                          <li class="">
+                            <a href="SIX.TimApi.Constants.TransactionReason.html" title="TransactionReason" class="">TransactionReason</a>
                           </li>
                           <li class="">
                             <a href="SIX.TimApi.Constants.TransactionStatus.html" title="TransactionStatus" class="">TransactionStatus</a>
@@ -781,45 +799,24 @@
     <div class="level0"><span class="xref">System.Object</span></div>
     <div class="level1"><span class="xref">CardData</span></div>
   </div>
-  <div class="inheritedMembers">
-    <h5>Inherited Members</h5>
-    <div>
-      <span class="xref">System.Object.Equals(System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.GetHashCode()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.GetType()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.MemberwiseClone()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
-    </div>
-  </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="SIX.TimApi.html">SIX.TimApi</a></h6>
   <h6><strong>Assembly</strong>: TimApi.dll</h6>
   <h5 id="SIX_TimApi_CardData_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class CardData</code></pre>
+    <pre><code class="lang-csharp hljs">public class CardData : object</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
   
   
   <a id="SIX_TimApi_CardData__ctor_" data-uid="SIX.TimApi.CardData.#ctor*"></a>
-  <h4 id="SIX_TimApi_CardData__ctor_SIX_TimApi_Constants_PosEntryMode_System_String_System_String_System_String_System_String_System_String_System_Byte___System_Int32_System_Nullable_System_DateTime__System_String_System_String_System_Collections_Generic_List_SIX_TimApi_CardTrackData__System_Collections_Generic_Dictionary_System_String_System_Byte____System_String_SIX_TimApi_Constants_ProcessingDisposition_System_String_System_Int32_System_Int32_System_String_" data-uid="SIX.TimApi.CardData.#ctor(SIX.TimApi.Constants.PosEntryMode,System.String,System.String,System.String,System.String,System.String,System.Byte[],System.Int32,System.Nullable{System.DateTime},System.String,System.String,System.Collections.Generic.List{SIX.TimApi.CardTrackData},System.Collections.Generic.Dictionary{System.String,System.Byte[]},System.String,SIX.TimApi.Constants.ProcessingDisposition,System.String,System.Int32,System.Int32,System.String)">CardData(PosEntryMode, String, String, String, String, String, Byte[], Int32, Nullable&lt;DateTime&gt;, String, String, List&lt;CardTrackData&gt;, Dictionary&lt;String, Byte[]&gt;, String, ProcessingDisposition, String, Int32, Int32, String)</h4>
+  <h4 id="SIX_TimApi_CardData__ctor_SIX_TimApi_Constants_PosEntryMode_String_String_String_String_String_System_Byte___System_Int32_System_Nullable_DateTime__String_String_List_SIX_TimApi_CardTrackData__Dictionary_String_System_Byte____String_SIX_TimApi_Constants_ProcessingDisposition_String_Int32_Int32_String_System_Byte___SIX_TimApi_Constants_CardProductType_" data-uid="SIX.TimApi.CardData.#ctor(SIX.TimApi.Constants.PosEntryMode,String,String,String,String,String,System.Byte[],System.Int32,System.Nullable{DateTime},String,String,List{SIX.TimApi.CardTrackData},Dictionary{String,System.Byte[]},String,SIX.TimApi.Constants.ProcessingDisposition,String,Int32,Int32,String,System.Byte[],SIX.TimApi.Constants.CardProductType)">CardData(PosEntryMode, String, String, String, String, String, Byte[], Int32, Nullable&lt;DateTime&gt;, String, String, List&lt;CardTrackData&gt;, Dictionary&lt;String, Byte[]&gt;, String, ProcessingDisposition, String, Int32, Int32, String, Byte[], CardProductType)</h4>
   <div class="markdown level1 summary"><p>Create card data information.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public CardData(PosEntryMode posEntryMode, string aid, string acc, string cardNumber, string cardNumberPrintable, string cardNumberPrintableCardholder, byte[] cardNumberEnc, int cardNumberEncKeyIndex, DateTime? cardExpiryDate, string brandName, string tenderName, List&lt;CardTrackData&gt; cardTrackDatas, Dictionary&lt;string, byte[]&gt; loyaltyInformation, string cardRef, ProcessingDisposition processingDisposition, string language, int cardCountryCode, int terminalCountryCode, string uid)</code></pre>
+    <pre><code class="lang-csharp hljs">public CardData(PosEntryMode posEntryMode, String aid, String acc, String cardNumber, String cardNumberPrintable, String cardNumberPrintableCardholder, byte[] cardNumberEnc, int cardNumberEncKeyIndex, DateTime? cardExpiryDate, String brandName, String tenderName, List&lt;CardTrackData&gt; cardTrackDatas, Dictionary&lt;String, byte[]&gt; loyaltyInformation, String cardRef, ProcessingDisposition processingDisposition, String language, Int32 cardCountryCode, Int32 terminalCountryCode, String uid, byte[] asrpd, CardProductType cardProductType)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -837,27 +834,27 @@
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="xref">String</span></td>
         <td><span class="parametername">aid</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="xref">String</span></td>
         <td><span class="parametername">acc</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="xref">String</span></td>
         <td><span class="parametername">cardNumber</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="xref">String</span></td>
         <td><span class="parametername">cardNumberPrintable</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="xref">String</span></td>
         <td><span class="parametername">cardNumberPrintableCardholder</span></td>
         <td></td>
       </tr>
@@ -872,32 +869,32 @@
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.DateTime</span>&gt;</td>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">DateTime</span>&gt;</td>
         <td><span class="parametername">cardExpiryDate</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="xref">String</span></td>
         <td><span class="parametername">brandName</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="xref">String</span></td>
         <td><span class="parametername">tenderName</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="SIX.TimApi.CardTrackData.html">CardTrackData</a>&gt;</td>
+        <td><span class="xref">List</span>&lt;<a class="xref" href="SIX.TimApi.CardTrackData.html">CardTrackData</a>&gt;</td>
         <td><span class="parametername">cardTrackDatas</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.Byte</span>[]&gt;</td>
+        <td><span class="xref">Dictionary</span>&lt;<span class="xref">String</span>, <span class="xref">System.Byte</span>[]&gt;</td>
         <td><span class="parametername">loyaltyInformation</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="xref">String</span></td>
         <td><span class="parametername">cardRef</span></td>
         <td></td>
       </tr>
@@ -907,41 +904,50 @@
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="xref">String</span></td>
         <td><span class="parametername">language</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">System.Int32</span></td>
+        <td><span class="xref">Int32</span></td>
         <td><span class="parametername">cardCountryCode</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">System.Int32</span></td>
+        <td><span class="xref">Int32</span></td>
         <td><span class="parametername">terminalCountryCode</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="xref">String</span></td>
         <td><span class="parametername">uid</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td><span class="parametername">asrpd</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="SIX.TimApi.Constants.CardProductType.html">CardProductType</a></td>
+        <td><span class="parametername">cardProductType</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  <h3 id="properties">Properties
+  <h3 id="fields">Fields
   </h3>
   
   
-  <a id="SIX_TimApi_CardData_Acc_" data-uid="SIX.TimApi.CardData.Acc*"></a>
   <h4 id="SIX_TimApi_CardData_Acc" data-uid="SIX.TimApi.CardData.Acc">Acc</h4>
   <div class="markdown level1 summary"><p>Gets the application currency code.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string Acc { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public readonly string Acc</code></pre>
   </div>
-  <h5 class="propertyValue">Property Value</h5>
+  <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
@@ -959,16 +965,15 @@
   </table>
   
   
-  <a id="SIX_TimApi_CardData_Aid_" data-uid="SIX.TimApi.CardData.Aid*"></a>
   <h4 id="SIX_TimApi_CardData_Aid" data-uid="SIX.TimApi.CardData.Aid">Aid</h4>
   <div class="markdown level1 summary"><p>Gets the aid.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string Aid { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public readonly string Aid</code></pre>
   </div>
-  <h5 class="propertyValue">Property Value</h5>
+  <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
@@ -986,16 +991,40 @@
   </table>
   
   
-  <a id="SIX_TimApi_CardData_BrandName_" data-uid="SIX.TimApi.CardData.BrandName*"></a>
+  <h4 id="SIX_TimApi_CardData_Asrpd" data-uid="SIX.TimApi.CardData.Asrpd">Asrpd</h4>
+  <div class="markdown level1 summary"><p>Asrpd.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly byte[] Asrpd</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <h4 id="SIX_TimApi_CardData_BrandName" data-uid="SIX.TimApi.CardData.BrandName">BrandName</h4>
   <div class="markdown level1 summary"><p>The name of the brand. Null if not available.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string BrandName { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public readonly string BrandName</code></pre>
   </div>
-  <h5 class="propertyValue">Property Value</h5>
+  <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
@@ -1013,15 +1042,15 @@
   </table>
   
   
-  <a id="SIX_TimApi_CardData_CardCountryCode_" data-uid="SIX.TimApi.CardData.CardCountryCode*"></a>
   <h4 id="SIX_TimApi_CardData_CardCountryCode" data-uid="SIX.TimApi.CardData.CardCountryCode">CardCountryCode</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Card country code.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int CardCountryCode { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public readonly Int32 CardCountryCode</code></pre>
   </div>
-  <h5 class="propertyValue">Property Value</h5>
+  <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
@@ -1031,23 +1060,22 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Int32</span></td>
+        <td><span class="xref">Int32</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   
   
-  <a id="SIX_TimApi_CardData_CardExpiryDate_" data-uid="SIX.TimApi.CardData.CardExpiryDate*"></a>
   <h4 id="SIX_TimApi_CardData_CardExpiryDate" data-uid="SIX.TimApi.CardData.CardExpiryDate">CardExpiryDate</h4>
   <div class="markdown level1 summary"><p>Card expiration date.  null if not available</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public DateTime? CardExpiryDate { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public readonly DateTime? CardExpiryDate</code></pre>
   </div>
-  <h5 class="propertyValue">Property Value</h5>
+  <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
@@ -1057,7 +1085,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.DateTime</span>&gt;</td>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">DateTime</span>&gt;</td>
         <td><p>The card expiry date. or null</p>
 </td>
       </tr>
@@ -1065,16 +1093,15 @@
   </table>
   
   
-  <a id="SIX_TimApi_CardData_CardNumber_" data-uid="SIX.TimApi.CardData.CardNumber*"></a>
   <h4 id="SIX_TimApi_CardData_CardNumber" data-uid="SIX.TimApi.CardData.CardNumber">CardNumber</h4>
   <div class="markdown level1 summary"><p>Card number. Only for Non-PCI applications and if available to the terminal. null if not available.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string CardNumber { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public readonly string CardNumber</code></pre>
   </div>
-  <h5 class="propertyValue">Property Value</h5>
+  <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
@@ -1092,16 +1119,15 @@
   </table>
   
   
-  <a id="SIX_TimApi_CardData_CardNumberEnc_" data-uid="SIX.TimApi.CardData.CardNumberEnc*"></a>
   <h4 id="SIX_TimApi_CardData_CardNumberEnc" data-uid="SIX.TimApi.CardData.CardNumberEnc">CardNumberEnc</h4>
   <div class="markdown level1 summary"><p>Encrypted card number. null if not available</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public byte[] CardNumberEnc { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public readonly byte[] CardNumberEnc</code></pre>
   </div>
-  <h5 class="propertyValue">Property Value</h5>
+  <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
@@ -1119,16 +1145,15 @@
   </table>
   
   
-  <a id="SIX_TimApi_CardData_CardNumberEncKeyIndex_" data-uid="SIX.TimApi.CardData.CardNumberEncKeyIndex*"></a>
   <h4 id="SIX_TimApi_CardData_CardNumberEncKeyIndex" data-uid="SIX.TimApi.CardData.CardNumberEncKeyIndex">CardNumberEncKeyIndex</h4>
   <div class="markdown level1 summary"><p>Card number encryption key index.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int CardNumberEncKeyIndex { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public readonly int CardNumberEncKeyIndex</code></pre>
   </div>
-  <h5 class="propertyValue">Property Value</h5>
+  <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
@@ -1146,16 +1171,15 @@
   </table>
   
   
-  <a id="SIX_TimApi_CardData_CardNumberPrintable_" data-uid="SIX.TimApi.CardData.CardNumberPrintable*"></a>
   <h4 id="SIX_TimApi_CardData_CardNumberPrintable" data-uid="SIX.TimApi.CardData.CardNumberPrintable">CardNumberPrintable</h4>
   <div class="markdown level1 summary"><p>Card number that should be printed on a merchant receipt. null if not available.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string CardNumberPrintable { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public readonly string CardNumberPrintable</code></pre>
   </div>
-  <h5 class="propertyValue">Property Value</h5>
+  <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
@@ -1173,16 +1197,15 @@
   </table>
   
   
-  <a id="SIX_TimApi_CardData_CardNumberPrintableCh_" data-uid="SIX.TimApi.CardData.CardNumberPrintableCh*"></a>
   <h4 id="SIX_TimApi_CardData_CardNumberPrintableCh" data-uid="SIX.TimApi.CardData.CardNumberPrintableCh">CardNumberPrintableCh</h4>
   <div class="markdown level1 summary"><p>Card number that should be printed on a cardholder receipt. null if not available.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string CardNumberPrintableCh { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public readonly string CardNumberPrintableCh</code></pre>
   </div>
-  <h5 class="propertyValue">Property Value</h5>
+  <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
@@ -1200,16 +1223,15 @@
   </table>
   
   
-  <a id="SIX_TimApi_CardData_CardRef_" data-uid="SIX.TimApi.CardData.CardRef*"></a>
-  <h4 id="SIX_TimApi_CardData_CardRef" data-uid="SIX.TimApi.CardData.CardRef">CardRef</h4>
-  <div class="markdown level1 summary"><p>Petrol: Reference from the card.</p>
+  <h4 id="SIX_TimApi_CardData_CardProductType" data-uid="SIX.TimApi.CardData.CardProductType">CardProductType</h4>
+  <div class="markdown level1 summary"><p>CardProductType.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string CardRef { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public readonly CardProductType CardProductType</code></pre>
   </div>
-  <h5 class="propertyValue">Property Value</h5>
+  <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
@@ -1219,50 +1241,21 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><p>The card reference.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="SIX_TimApi_CardData_CardTrackDatas_" data-uid="SIX.TimApi.CardData.CardTrackDatas*"></a>
-  <h4 id="SIX_TimApi_CardData_CardTrackDatas" data-uid="SIX.TimApi.CardData.CardTrackDatas">CardTrackDatas</h4>
-  <div class="markdown level1 summary"><p>List of CardTrackDatas as <see cref="!:SIXmlCardTrackData"></see></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public List&lt;CardTrackData&gt; CardTrackDatas { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="SIX.TimApi.CardTrackData.html">CardTrackData</a>&gt;</td>
+        <td><a class="xref" href="SIX.TimApi.Constants.CardProductType.html">CardProductType</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   
   
-  <a id="SIX_TimApi_CardData_Language_" data-uid="SIX.TimApi.CardData.Language*"></a>
-  <h4 id="SIX_TimApi_CardData_Language" data-uid="SIX.TimApi.CardData.Language">Language</h4>
-  <div class="markdown level1 summary"><p>Card language.</p>
-</div>
+  <h4 id="SIX_TimApi_CardData_CardRef" data-uid="SIX.TimApi.CardData.CardRef">CardRef</h4>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string Language { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public readonly String CardRef</code></pre>
   </div>
-  <h5 class="propertyValue">Property Value</h5>
+  <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
@@ -1272,7 +1265,57 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="xref">String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="SIX_TimApi_CardData_CardTrackDatas" data-uid="SIX.TimApi.CardData.CardTrackDatas">CardTrackDatas</h4>
+  <div class="markdown level1 summary"><p>List of CardTrackDatas as <see cref="!:SIXmlCardTrackData"></see></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly List&lt;CardTrackData&gt; CardTrackDatas</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">List</span>&lt;<a class="xref" href="SIX.TimApi.CardTrackData.html">CardTrackData</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="SIX_TimApi_CardData_Language" data-uid="SIX.TimApi.CardData.Language">Language</h4>
+  <div class="markdown level1 summary"><p>Card language.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly String Language</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">String</span></td>
         <td><p>The language.</p>
 </td>
       </tr>
@@ -1280,16 +1323,15 @@
   </table>
   
   
-  <a id="SIX_TimApi_CardData_LoyaltyInformation_" data-uid="SIX.TimApi.CardData.LoyaltyInformation*"></a>
   <h4 id="SIX_TimApi_CardData_LoyaltyInformation" data-uid="SIX.TimApi.CardData.LoyaltyInformation">LoyaltyInformation</h4>
   <div class="markdown level1 summary"><p>List of Loyalty Infos as <a class="xref" href="SIX.TimApi.CurrencyItem.html">CurrencyItem</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Dictionary&lt;string, byte[]&gt; LoyaltyInformation { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public readonly Dictionary&lt;String, byte[]&gt; LoyaltyInformation</code></pre>
   </div>
-  <h5 class="propertyValue">Property Value</h5>
+  <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
@@ -1299,14 +1341,13 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.Byte</span>[]&gt;</td>
+        <td><span class="xref">Dictionary</span>&lt;<span class="xref">String</span>, <span class="xref">System.Byte</span>[]&gt;</td>
         <td></td>
       </tr>
     </tbody>
   </table>
   
   
-  <a id="SIX_TimApi_CardData_LoyaltyInformations_" data-uid="SIX.TimApi.CardData.LoyaltyInformations*"></a>
   <h4 id="SIX_TimApi_CardData_LoyaltyInformations" data-uid="SIX.TimApi.CardData.LoyaltyInformations">LoyaltyInformations</h4>
   <div class="markdown level1 summary"><p>List of Loyalty Infos as <a class="xref" href="SIX.TimApi.CurrencyItem.html">CurrencyItem</a><br>
 @deprecated</p>
@@ -1314,9 +1355,9 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Dictionary&lt;string, byte[]&gt; LoyaltyInformations { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public readonly Dictionary&lt;String, byte[]&gt; LoyaltyInformations</code></pre>
   </div>
-  <h5 class="propertyValue">Property Value</h5>
+  <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
@@ -1326,23 +1367,22 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.Byte</span>[]&gt;</td>
+        <td><span class="xref">Dictionary</span>&lt;<span class="xref">String</span>, <span class="xref">System.Byte</span>[]&gt;</td>
         <td></td>
       </tr>
     </tbody>
   </table>
   
   
-  <a id="SIX_TimApi_CardData_PosEntryMode_" data-uid="SIX.TimApi.CardData.PosEntryMode*"></a>
   <h4 id="SIX_TimApi_CardData_PosEntryMode" data-uid="SIX.TimApi.CardData.PosEntryMode">PosEntryMode</h4>
   <div class="markdown level1 summary"><p>Gets the pos entry mode.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public PosEntryMode PosEntryMode { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public readonly PosEntryMode PosEntryMode</code></pre>
   </div>
-  <h5 class="propertyValue">Property Value</h5>
+  <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
@@ -1360,16 +1400,15 @@
   </table>
   
   
-  <a id="SIX_TimApi_CardData_ProcessingDisposition_" data-uid="SIX.TimApi.CardData.ProcessingDisposition*"></a>
   <h4 id="SIX_TimApi_CardData_ProcessingDisposition" data-uid="SIX.TimApi.CardData.ProcessingDisposition">ProcessingDisposition</h4>
   <div class="markdown level1 summary"><p>etrol: Defines if the ECR or EFT is responsible for further trx handling.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ProcessingDisposition ProcessingDisposition { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public readonly ProcessingDisposition ProcessingDisposition</code></pre>
   </div>
-  <h5 class="propertyValue">Property Value</h5>
+  <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
@@ -1387,16 +1426,15 @@
   </table>
   
   
-  <a id="SIX_TimApi_CardData_TenderName_" data-uid="SIX.TimApi.CardData.TenderName*"></a>
   <h4 id="SIX_TimApi_CardData_TenderName" data-uid="SIX.TimApi.CardData.TenderName">TenderName</h4>
   <div class="markdown level1 summary"><p>the tender name. Null if not available.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string TenderName { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public readonly string TenderName</code></pre>
   </div>
-  <h5 class="propertyValue">Property Value</h5>
+  <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
@@ -1414,15 +1452,15 @@
   </table>
   
   
-  <a id="SIX_TimApi_CardData_TerminalCountryCode_" data-uid="SIX.TimApi.CardData.TerminalCountryCode*"></a>
   <h4 id="SIX_TimApi_CardData_TerminalCountryCode" data-uid="SIX.TimApi.CardData.TerminalCountryCode">TerminalCountryCode</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Terminal country code.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int TerminalCountryCode { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public readonly Int32 TerminalCountryCode</code></pre>
   </div>
-  <h5 class="propertyValue">Property Value</h5>
+  <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
@@ -1432,22 +1470,22 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Int32</span></td>
+        <td><span class="xref">Int32</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   
   
-  <a id="SIX_TimApi_CardData_Uid_" data-uid="SIX.TimApi.CardData.Uid*"></a>
   <h4 id="SIX_TimApi_CardData_Uid" data-uid="SIX.TimApi.CardData.Uid">Uid</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Contains the uid of the contactless card.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string Uid { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public readonly String Uid</code></pre>
   </div>
-  <h5 class="propertyValue">Property Value</h5>
+  <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
@@ -1457,7 +1495,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="xref">String</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -1473,7 +1511,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+    <pre><code class="lang-csharp hljs">public override String ToString()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1485,13 +1523,11 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="xref">String</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  <h5 class="overrides">Overrides</h5>
-  <div><span class="xref">System.Object.ToString()</span></div>
 </article>
           </div>
           
