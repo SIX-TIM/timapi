@@ -145,14 +145,14 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">list</td><td>Object instance of type <a class="el" href="list_8h.html">list</a>. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">element</td><td>Object instance to add. Object instance can be <em>ta_invalid_object</em>.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">element</td><td>Object instance to add. Object instance can be <em>ta_object_invalid</em>.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">ta_c_rc_ok</td><td>Object instance added to <em>list</em>. </td></tr>
-    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>list</em> is <em>ta_invalid_object</em>. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>list</em> is <em>ta_object_invalid</em>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>list</em> is not of type <a class="el" href="list_8h.html">list</a>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>list</em> is read-only. </td></tr>
   </table>
@@ -235,14 +235,14 @@ Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">list</td><td>Object instance of type <a class="el" href="list_8h.html">list</a>. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">index</td><td>Index of element to get. </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">element</td><td>Pointer to variable to write object instance to. Written object instance can be <em>ta_invalid_object</em>. Written object instance is not retained.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">element</td><td>Pointer to variable to write object instance to. Written object instance can be <em>ta_object_invalid</em>. Written object instance is not retained.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">ta_c_rc_ok</td><td>Object instance written to to <em>element</em>. </td></tr>
-    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>list</em> is <em>ta_invalid_object</em>. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>list</em> is <em>ta_object_invalid</em>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>list</em> is not of type <a class="el" href="list_8h.html">list</a>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>element</em> is <em>null-pointer</em>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>index</em> is less than 0. </td></tr>
@@ -290,7 +290,7 @@ Functions</h2></td></tr>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">ta_c_rc_ok</td><td>Count written to to <em>count</em>. </td></tr>
-    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>list</em> is <em>ta_invalid_object</em>. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>list</em> is <em>ta_object_invalid</em>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>list</em> is not of type <a class="el" href="list_8h.html">list</a>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>is_present</em> is <em>null-pointer</em>. </td></tr>
   </table>
@@ -335,7 +335,7 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">list</td><td>Object instance of type <a class="el" href="list_8h.html">list</a>. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">element</td><td>Object instance to find. Object instance can be <em>ta_invalid_object</em>. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">element</td><td>Object instance to find. Object instance can be <em>ta_object_invalid</em>. </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">is_present</td><td>Pointer to variable to write result to. Set to <em>ta_c_b_true</em> if element is present in list. Set to <em>ta_c_b_false</em> if element is absent from list.</td></tr>
   </table>
   </dd>
@@ -343,7 +343,7 @@ Functions</h2></td></tr>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">ta_c_rc_ok</td><td>Result written to to <em>is_present</em>. </td></tr>
-    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>list</em> is <em>ta_invalid_object</em>. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>list</em> is <em>ta_object_invalid</em>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>list</em> is not of type <a class="el" href="list_8h.html">list</a>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>is_present</em> is <em>null-pointer</em>. </td></tr>
   </table>
@@ -388,7 +388,7 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">list</td><td>Object instance of type <a class="el" href="list_8h.html">list</a>. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">element</td><td>Object instance to search for. Object instance can be <em>ta_invalid_object</em>. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">element</td><td>Object instance to search for. Object instance can be <em>ta_object_invalid</em>. </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">index</td><td>Pointer to variable to write index to. Index is -1 if element is absent.</td></tr>
   </table>
   </dd>
@@ -396,7 +396,7 @@ Functions</h2></td></tr>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">ta_c_rc_ok</td><td>Object instance written to to <em>element</em>. </td></tr>
-    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>list</em> is <em>ta_invalid_object</em>. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>list</em> is <em>ta_object_invalid</em>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>list</em> is not of type <a class="el" href="list_8h.html">list</a>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>index</em> is <em>null-pointer</em>. </td></tr>
   </table>
@@ -443,7 +443,7 @@ Functions</h2></td></tr>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">ta_c_rc_ok</td><td>Object instance removed from <em>list</em>. </td></tr>
-    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>list</em> is <em>ta_invalid_object</em>. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>list</em> is <em>ta_object_invalid</em>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>list</em> is not of type <a class="el" href="list_8h.html">list</a>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>list</em> is read-only. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>index</em> is less than 0. </td></tr>
@@ -481,7 +481,7 @@ Functions</h2></td></tr>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">ta_c_rc_ok</td><td>All object instances removed from <em>list</em>. </td></tr>
-    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>list</em> is <em>ta_invalid_object</em>. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>list</em> is <em>ta_object_invalid</em>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>list</em> is not of type <a class="el" href="list_8h.html">list</a>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>list</em> is read-only. </td></tr>
   </table>

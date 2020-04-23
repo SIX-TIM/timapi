@@ -191,14 +191,14 @@ Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">map</td><td>Object instance of type <a class="el" href="map_8h.html">map</a>. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td>Key object instance to get value object instance for. </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">value</td><td>Pointer to variable to write value object instance to. Written object instance can be <em>ta_invalid_object</em>. Written object instance is not retained.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">value</td><td>Pointer to variable to write value object instance to. Written object instance can be <em>ta_object_invalid</em>. Written object instance is not retained.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">ta_c_rc_ok</td><td>Object instance written to to <em>value</em>. </td></tr>
-    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>map</em> is <em>ta_invalid_object</em>. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>map</em> is <em>ta_object_invalid</em>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>map</em> is not of type <a class="el" href="map_8h.html">map</a>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>key</em> is not present in the map. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>value</em> is <em>null-pointer</em>. </td></tr>
@@ -254,14 +254,14 @@ Functions</h2></td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">map</td><td>Object instance of type <a class="el" href="map_8h.html">map</a>. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">index</td><td>Index of entry to retrieve. </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">key</td><td>Pointer to variable to write key object instance to. Written object instance is not retained. </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">value</td><td>Pointer to variable to write value object instance to. Written object instance can be <em>ta_invalid_object</em>. Written object instance is not retained.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">value</td><td>Pointer to variable to write value object instance to. Written object instance can be <em>ta_object_invalid</em>. Written object instance is not retained.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">ta_c_rc_ok</td><td>Object instance written to to <em>value</em>. </td></tr>
-    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>map</em> is <em>ta_invalid_object</em>. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>map</em> is <em>ta_object_invalid</em>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>map</em> is not of type <a class="el" href="map_8h.html">map</a>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>index</em> is less than 0 or greater than or equal to ta_map_count. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>key</em> is <em>null-pointer</em>. </td></tr>
@@ -309,7 +309,7 @@ Functions</h2></td></tr>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">ta_c_rc_ok</td><td>Count written to to <em>count</em>. </td></tr>
-    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>map</em> is <em>ta_invalid_object</em>. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>map</em> is <em>ta_object_invalid</em>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>map</em> is not of type <a class="el" href="map_8h.html">map</a>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>is_present</em> is <em>null-pointer</em>. </td></tr>
   </table>
@@ -362,15 +362,15 @@ Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">map</td><td>Object instance of type <a class="el" href="map_8h.html">map</a>. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td>Key object instance to get value object instance for. </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">value</td><td>Pointer to variable to write value object instance to. Written object instance can be <em>ta_invalid_object</em>. Written object instance is not retained. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">default_value</td><td>Default object instance to use if key object instance is absent from map. Object instance can be <em>ta_invalid_object</em>.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">value</td><td>Pointer to variable to write value object instance to. Written object instance can be <em>ta_object_invalid</em>. Written object instance is not retained. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">default_value</td><td>Default object instance to use if key object instance is absent from map. Object instance can be <em>ta_object_invalid</em>.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">ta_c_rc_ok</td><td>Object instance written to to <em>value</em>. </td></tr>
-    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>map</em> is <em>ta_invalid_object</em>. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>map</em> is <em>ta_object_invalid</em>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>map</em> is not of type <a class="el" href="map_8h.html">map</a>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>value</em> is <em>null-pointer</em>. </td></tr>
   </table>
@@ -423,7 +423,7 @@ Functions</h2></td></tr>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">ta_c_rc_ok</td><td>Result written to to <em>is_present</em>. </td></tr>
-    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>map</em> is <em>ta_invalid_object</em>. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>map</em> is <em>ta_object_invalid</em>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>map</em> is not of type <a class="el" href="map_8h.html">map</a>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>is_present</em> is <em>null-pointer</em>. </td></tr>
   </table>
@@ -469,8 +469,8 @@ Functions</h2></td></tr>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">ta_c_rc_ok</td><td>Entry with key object instance removed from <em>map</em>. Key object instance has been released. If value object instance is not ta_invalid_object value object instance has been released. </td></tr>
-    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>map</em> is <em>ta_invalid_object</em>. </td></tr>
+    <tr><td class="paramname">ta_c_rc_ok</td><td>Entry with key object instance removed from <em>map</em>. Key object instance has been released. If value object instance is not ta_object_invalid value object instance has been released. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>map</em> is <em>ta_object_invalid</em>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>map</em> is not of type <a class="el" href="map_8h.html">map</a>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>map</em> is read-only. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>key</em> is not present in the map. </td></tr>
@@ -506,8 +506,8 @@ Functions</h2></td></tr>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">ta_c_rc_ok</td><td>All entries removed from <em>map</em>. All key object instance have been released. All value object instance that are not ta_invalid_object have been released. </td></tr>
-    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>map</em> is <em>ta_invalid_object</em>. </td></tr>
+    <tr><td class="paramname">ta_c_rc_ok</td><td>All entries removed from <em>map</em>. All key object instance have been released. All value object instance that are not ta_object_invalid have been released. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>map</em> is <em>ta_object_invalid</em>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>map</em> is not of type <a class="el" href="map_8h.html">map</a>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>map</em> is read-only. </td></tr>
   </table>
@@ -554,17 +554,17 @@ Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">map</td><td>Object instance of type <a class="el" href="map_8h.html">map</a>. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td>Object instance to use as key. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">value</td><td>Object instance to use as value. Object instance can be <em>ta_invalid_object</em>.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">value</td><td>Object instance to use as value. Object instance can be <em>ta_object_invalid</em>.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">ta_c_rc_ok</td><td>Entry with key and value object instance added to <em>map</em>. </td></tr>
-    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>map</em> is <em>ta_invalid_object</em>. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>map</em> is <em>ta_object_invalid</em>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>map</em> is not of type <a class="el" href="map_8h.html">map</a>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>map</em> is read-only. </td></tr>
-    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>key</em> is <em>ta_invalid_object</em>. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>key</em> is <em>ta_object_invalid</em>. </td></tr>
   </table>
   </dd>
 </dl>

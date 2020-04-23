@@ -156,14 +156,14 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">hardware</td><td>Object instance of type <a class="el" href="hardware_8h.html">hardware</a>. </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">firmware_version</td><td>Pointer to variable to write object instance to. Object instance is of type <a class="el" href="string_8h.html">string</a> and is not retained. Object instance is <em>ta_invalid_object</em> if value is not set in <em>hardware</em>.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">firmware_version</td><td>Pointer to variable to write object instance to. Object instance is of type <a class="el" href="string_8h.html">string</a> and is not retained. Object instance is <em>ta_object_invalid</em> if value is not set in <em>hardware</em>.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">ta_c_rc_ok</td><td>Object instance written to <em>firmware_version</em>. </td></tr>
-    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>hardware</em> is <em>ta_invalid_object</em>. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>hardware</em> is <em>ta_object_invalid</em>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>hardware</em> is not of type <a class="el" href="hardware_8h.html">hardware</a>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>firmware_version</em> is <em>null-pointer</em>. </td></tr>
   </table>
@@ -202,14 +202,14 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">hardware</td><td>Object instance of type <a class="el" href="hardware_8h.html">hardware</a>. </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">hardware_address</td><td>Pointer to variable to write object instance to. Object instance is of type <a class="el" href="string_8h.html">string</a> and is not retained. Object instance is <em>ta_invalid_object</em> if value is not set in <em>hardware</em>.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">hardware_address</td><td>Pointer to variable to write object instance to. Object instance is of type <a class="el" href="string_8h.html">string</a> and is not retained. Object instance is <em>ta_object_invalid</em> if value is not set in <em>hardware</em>.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">ta_c_rc_ok</td><td>Object instance written to <em>last_cleaning_date</em>. </td></tr>
-    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>hardware</em> is <em>ta_invalid_object</em>. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>hardware</em> is <em>ta_object_invalid</em>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>hardware</em> is not of type <a class="el" href="hardware_8h.html">hardware</a>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>hardware_address</em> is <em>null-pointer</em>. </td></tr>
   </table>
@@ -248,14 +248,14 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">hardware</td><td>Object instance of type <a class="el" href="hardware_8h.html">hardware</a>. </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">hardware_description</td><td>Pointer to variable to write object instance to. Object instance is of type <a class="el" href="string_8h.html">string</a> and is not retained. Object instance is <em>ta_invalid_object</em> if value is not set in <em>hardware</em>.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">hardware_description</td><td>Pointer to variable to write object instance to. Object instance is of type <a class="el" href="string_8h.html">string</a> and is not retained. Object instance is <em>ta_object_invalid</em> if value is not set in <em>hardware</em>.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">ta_c_rc_ok</td><td>Object instance written to <em>last_cleaning_date</em>. </td></tr>
-    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>hardware</em> is <em>ta_invalid_object</em>. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>hardware</em> is <em>ta_object_invalid</em>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>hardware</em> is not of type <a class="el" href="hardware_8h.html">hardware</a>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>hardware_description</em> is <em>null-pointer</em>. </td></tr>
   </table>
@@ -301,7 +301,7 @@ Functions</h2></td></tr>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">ta_c_rc_ok</td><td>Object instance written to <em>hardware_type</em>. </td></tr>
-    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>hardware</em> is <em>ta_invalid_object</em>. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>hardware</em> is <em>ta_object_invalid</em>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>hardware</em> is not of type <a class="el" href="hardware_8h.html">hardware</a>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>hardware_type</em> is <em>null-pointer</em>. </td></tr>
   </table>
@@ -340,14 +340,14 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">hardware</td><td>Object instance of type <a class="el" href="hardware_8h.html">hardware</a>. </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">iccid</td><td>Pointer to variable to write object instance to. Object instance is of type <a class="el" href="string_8h.html">string</a> and is not retained. Object instance is <em>ta_invalid_object</em> if value is not set in <em>hardware</em>.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">iccid</td><td>Pointer to variable to write object instance to. Object instance is of type <a class="el" href="string_8h.html">string</a> and is not retained. Object instance is <em>ta_object_invalid</em> if value is not set in <em>hardware</em>.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">ta_c_rc_ok</td><td>Object instance written to <em>last_cleaning_date</em>. </td></tr>
-    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>hardware</em> is <em>ta_invalid_object</em>. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>hardware</em> is <em>ta_object_invalid</em>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>hardware</em> is not of type <a class="el" href="hardware_8h.html">hardware</a>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>iccid</em> is <em>null-pointer</em>. </td></tr>
   </table>
@@ -386,14 +386,14 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">hardware</td><td>Object instance of type <a class="el" href="hardware_8h.html">hardware</a>. </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">imei</td><td>Pointer to variable to write object instance to. Object instance is of type <a class="el" href="string_8h.html">string</a> and is not retained. Object instance is <em>ta_invalid_object</em> if value is not set in <em>hardware</em>.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">imei</td><td>Pointer to variable to write object instance to. Object instance is of type <a class="el" href="string_8h.html">string</a> and is not retained. Object instance is <em>ta_object_invalid</em> if value is not set in <em>hardware</em>.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">ta_c_rc_ok</td><td>Object instance written to <em>last_cleaning_date</em>. </td></tr>
-    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>hardware</em> is <em>ta_invalid_object</em>. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>hardware</em> is <em>ta_object_invalid</em>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>hardware</em> is not of type <a class="el" href="hardware_8h.html">hardware</a>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>imei</em> is <em>null-pointer</em>. </td></tr>
   </table>
@@ -432,14 +432,14 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">hardware</td><td>Object instance of type <a class="el" href="hardware_8h.html">hardware</a>. </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">imsi</td><td>Pointer to variable to write object instance to. Object instance is of type <a class="el" href="string_8h.html">string</a> and is not retained. Object instance is <em>ta_invalid_object</em> if value is not set in <em>hardware</em>.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">imsi</td><td>Pointer to variable to write object instance to. Object instance is of type <a class="el" href="string_8h.html">string</a> and is not retained. Object instance is <em>ta_object_invalid</em> if value is not set in <em>hardware</em>.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">ta_c_rc_ok</td><td>Object instance written to <em>last_cleaning_date</em>. </td></tr>
-    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>hardware</em> is <em>ta_invalid_object</em>. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>hardware</em> is <em>ta_object_invalid</em>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>hardware</em> is not of type <a class="el" href="hardware_8h.html">hardware</a>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>imsi</em> is <em>null-pointer</em>. </td></tr>
   </table>
@@ -478,14 +478,14 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">hardware</td><td>Object instance of type <a class="el" href="hardware_8h.html">hardware</a>. </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">last_cleaning_date</td><td>Pointer to variable to write object instance to. Object instance is of type <a class="el" href="timedate_8h.html">timedate</a> and is not retained. Object instance is <em>ta_invalid_object</em> if value is not set in <em>hardware</em>.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">last_cleaning_date</td><td>Pointer to variable to write object instance to. Object instance is of type <a class="el" href="timedate_8h.html">timedate</a> and is not retained. Object instance is <em>ta_object_invalid</em> if value is not set in <em>hardware</em>.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">ta_c_rc_ok</td><td>Object instance written to <em>last_cleaning_date</em>. </td></tr>
-    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>hardware</em> is <em>ta_invalid_object</em>. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>hardware</em> is <em>ta_object_invalid</em>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>hardware</em> is not of type <a class="el" href="hardware_8h.html">hardware</a>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>last_cleaning_date</em> is <em>null-pointer</em>. </td></tr>
   </table>
@@ -524,14 +524,14 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">hardware</td><td>Object instance of type <a class="el" href="hardware_8h.html">hardware</a>. </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">product_version</td><td>Pointer to variable to write object instance to. Object instance is of type <a class="el" href="string_8h.html">string</a> and is not retained. Object instance is <em>ta_invalid_object</em> if value is not set in <em>hardware</em>.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">product_version</td><td>Pointer to variable to write object instance to. Object instance is of type <a class="el" href="string_8h.html">string</a> and is not retained. Object instance is <em>ta_object_invalid</em> if value is not set in <em>hardware</em>.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">ta_c_rc_ok</td><td>Object instance written to <em>product_version</em>. </td></tr>
-    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>hardware</em> is <em>ta_invalid_object</em>. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>hardware</em> is <em>ta_object_invalid</em>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>hardware</em> is not of type <a class="el" href="hardware_8h.html">hardware</a>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>product_version</em> is <em>null-pointer</em>. </td></tr>
   </table>
@@ -570,14 +570,14 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">hardware</td><td>Object instance of type <a class="el" href="hardware_8h.html">hardware</a>. </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">production_date</td><td>Pointer to variable to write object instance to. Object instance is of type <a class="el" href="timedate_8h.html">timedate</a> and is not retained. Object instance is <em>ta_invalid_object</em> if value is not set in <em>hardware</em>.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">production_date</td><td>Pointer to variable to write object instance to. Object instance is of type <a class="el" href="timedate_8h.html">timedate</a> and is not retained. Object instance is <em>ta_object_invalid</em> if value is not set in <em>hardware</em>.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">ta_c_rc_ok</td><td>Object instance written to <em>production_date</em>. </td></tr>
-    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>hardware</em> is <em>ta_invalid_object</em>. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>hardware</em> is <em>ta_object_invalid</em>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>hardware</em> is not of type <a class="el" href="hardware_8h.html">hardware</a>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>production_date</em> is <em>null-pointer</em>. </td></tr>
   </table>
@@ -623,7 +623,7 @@ Functions</h2></td></tr>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">ta_c_rc_ok</td><td>Object instance written to <em>security_status</em>. </td></tr>
-    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>hardware</em> is <em>ta_invalid_object</em>. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>hardware</em> is <em>ta_object_invalid</em>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>hardware</em> is not of type <a class="el" href="hardware_8h.html">hardware</a>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>security_status</em> is <em>null-pointer</em>. </td></tr>
   </table>
@@ -662,14 +662,14 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">hardware</td><td>Object instance of type <a class="el" href="hardware_8h.html">hardware</a>. </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">serial_number</td><td>Pointer to variable to write object instance to. Object instance is of type <a class="el" href="string_8h.html">string</a> and is not retained. Object instance is <em>ta_invalid_object</em> if value is not set in <em>hardware</em>.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">serial_number</td><td>Pointer to variable to write object instance to. Object instance is of type <a class="el" href="string_8h.html">string</a> and is not retained. Object instance is <em>ta_object_invalid</em> if value is not set in <em>hardware</em>.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">ta_c_rc_ok</td><td>Object instance written to <em>serial_number</em>. </td></tr>
-    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>hardware</em> is <em>ta_invalid_object</em>. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>hardware</em> is <em>ta_object_invalid</em>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>hardware</em> is not of type <a class="el" href="hardware_8h.html">hardware</a>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>serial_number</em> is <em>null-pointer</em>. </td></tr>
   </table>

@@ -218,6 +218,9 @@
                             <a href="SIX.TimApi.RequestTypes.html" title="RequestTypes" class="">RequestTypes</a>
                           </li>
                           <li class="">
+                            <a href="SIX.TimApi.ScreenshotInformation.html" title="ScreenshotInformation" class="">ScreenshotInformation</a>
+                          </li>
+                          <li class="">
                             <a href="SIX.TimApi.Setting.html" title="Setting" class="">Setting</a>
                           </li>
                           <li class="">
@@ -332,7 +335,13 @@
                             <a href="SIX.TimApi.Terminal.DeactivateCompletedEventHandler.html" title="Terminal.DeactivateCompletedEventHandler" class="">Terminal.DeactivateCompletedEventHandler</a>
                           </li>
                           <li class="">
-                            <a href="SIX.TimApi.Terminal.DeferredAuthHandler.html" title="Terminal.DeferredAuthHandler" class="">Terminal.DeferredAuthHandler</a>
+                            <a href="SIX.TimApi.Terminal.DeferredAuthEventHandler.html" title="Terminal.DeferredAuthEventHandler" class="">Terminal.DeferredAuthEventHandler</a>
+                          </li>
+                          <li class="">
+                            <a href="SIX.TimApi.Terminal.DeviceMaintenanceCompletedEventArgs.html" title="Terminal.DeviceMaintenanceCompletedEventArgs" class="">Terminal.DeviceMaintenanceCompletedEventArgs</a>
+                          </li>
+                          <li class="">
+                            <a href="SIX.TimApi.Terminal.DeviceMaintenanceCompletedEventHandler.html" title="Terminal.DeviceMaintenanceCompletedEventHandler" class="">Terminal.DeviceMaintenanceCompletedEventHandler</a>
                           </li>
                           <li class="">
                             <a href="SIX.TimApi.Terminal.DisconnectedHandler.html" title="Terminal.DisconnectedHandler" class="">Terminal.DisconnectedHandler</a>
@@ -363,6 +372,9 @@
                           </li>
                           <li class="">
                             <a href="SIX.TimApi.Terminal.InitTransactionCompletedEventHandler.html" title="Terminal.InitTransactionCompletedEventHandler" class="">Terminal.InitTransactionCompletedEventHandler</a>
+                          </li>
+                          <li class="">
+                            <a href="SIX.TimApi.Terminal.LicenseChangedEventHandler.html" title="Terminal.LicenseChangedEventHandler" class="">Terminal.LicenseChangedEventHandler</a>
                           </li>
                           <li class="">
                             <a href="SIX.TimApi.Terminal.LoginCompletedEventArgs.html" title="Terminal.LoginCompletedEventArgs" class="">Terminal.LoginCompletedEventArgs</a>
@@ -456,6 +468,9 @@
                           </li>
                           <li class="">
                             <a href="SIX.TimApi.Terminal.RollbackCompletedEventHandler.html" title="Terminal.RollbackCompletedEventHandler" class="">Terminal.RollbackCompletedEventHandler</a>
+                          </li>
+                          <li class="">
+                            <a href="SIX.TimApi.Terminal.ScreenshotHandler.html" title="Terminal.ScreenshotHandler" class="">Terminal.ScreenshotHandler</a>
                           </li>
                           <li class="">
                             <a href="SIX.TimApi.Terminal.SendCardCommandCompletedEventArgs.html" title="Terminal.SendCardCommandCompletedEventArgs" class="">Terminal.SendCardCommandCompletedEventArgs</a>
@@ -617,6 +632,9 @@
                             <a href="SIX.TimApi.Constants.LoyaltyFunctionType.html" title="LoyaltyFunctionType" class="">LoyaltyFunctionType</a>
                           </li>
                           <li class="">
+                            <a href="SIX.TimApi.Constants.MaintenanceType.html" title="MaintenanceType" class="">MaintenanceType</a>
+                          </li>
+                          <li class="">
                             <a href="SIX.TimApi.Constants.ManagementStatus.html" title="ManagementStatus" class="">ManagementStatus</a>
                           </li>
                           <li class="">
@@ -668,7 +686,7 @@
                             <a href="SIX.TimApi.Constants.Recipient.html" title="Recipient" class="">Recipient</a>
                           </li>
                           <li class="">
-                            <a href="SIX.TimApi.Constants.ReconciliationMode.html" title="ReconciliationMode" class="">ReconciliationMode</a>
+                            <a href="SIX.TimApi.Constants.RemoteFunctions.html" title="RemoteFunctions" class="">RemoteFunctions</a>
                           </li>
                           <li class="">
                             <a href="SIX.TimApi.Constants.ResourceId.html" title="ResourceId" class="">ResourceId</a>
@@ -800,45 +818,24 @@ Immutable class.</p>
     <div class="level0"><span class="xref">System.Object</span></div>
     <div class="level1"><span class="xref">FeaturesSixml</span></div>
   </div>
-  <div class="inheritedMembers">
-    <h5>Inherited Members</h5>
-    <div>
-      <span class="xref">System.Object.Equals(System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.GetHashCode()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.GetType()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.MemberwiseClone()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
-    </div>
-  </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="SIX.TimApi.html">SIX.TimApi</a></h6>
   <h6><strong>Assembly</strong>: TimApi.dll</h6>
   <h5 id="SIX_TimApi_FeaturesSixml_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class FeaturesSixml</code></pre>
+    <pre><code class="lang-csharp hljs">public class FeaturesSixml : object</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
   
   
   <a id="SIX_TimApi_FeaturesSixml__ctor_" data-uid="SIX.TimApi.FeaturesSixml.#ctor*"></a>
-  <h4 id="SIX_TimApi_FeaturesSixml__ctor_System_Collections_Generic_List_SIX_TimApi_Constants_AdminFunctions__SIX_TimApi_FeaturesSixml_Support_SIX_TimApi_FeaturesSixml_Support_SIX_TimApi_FeaturesSixml_Support_System_Boolean_System_Collections_Generic_List_SIX_TimApi_Constants_FinancialTransactions__System_Collections_Generic_List_SIX_TimApi_Constants_Guides__System_Collections_Generic_List_SIX_TimApi_Constants_NonFinancialTransactions__System_Collections_Generic_List_SIX_TimApi_Constants_ProtocolLevel__System_Boolean_System_Collections_Generic_List_SIX_TimApi_Constants_StatusFunctions__System_Collections_Generic_List_SIX_TimApi_Constants_DialogFunctions__System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_" data-uid="SIX.TimApi.FeaturesSixml.#ctor(System.Collections.Generic.List{SIX.TimApi.Constants.AdminFunctions},SIX.TimApi.FeaturesSixml.Support,SIX.TimApi.FeaturesSixml.Support,SIX.TimApi.FeaturesSixml.Support,System.Boolean,System.Collections.Generic.List{SIX.TimApi.Constants.FinancialTransactions},System.Collections.Generic.List{SIX.TimApi.Constants.Guides},System.Collections.Generic.List{SIX.TimApi.Constants.NonFinancialTransactions},System.Collections.Generic.List{SIX.TimApi.Constants.ProtocolLevel},System.Boolean,System.Collections.Generic.List{SIX.TimApi.Constants.StatusFunctions},System.Collections.Generic.List{SIX.TimApi.Constants.DialogFunctions},System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean)">FeaturesSixml(List&lt;AdminFunctions&gt;, FeaturesSixml.Support, FeaturesSixml.Support, FeaturesSixml.Support, Boolean, List&lt;FinancialTransactions&gt;, List&lt;Guides&gt;, List&lt;NonFinancialTransactions&gt;, List&lt;ProtocolLevel&gt;, Boolean, List&lt;StatusFunctions&gt;, List&lt;DialogFunctions&gt;, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean)</h4>
+  <h4 id="SIX_TimApi_FeaturesSixml__ctor_List_SIX_TimApi_Constants_AdminFunctions__SIX_TimApi_FeaturesSixml_Support_SIX_TimApi_FeaturesSixml_Support_SIX_TimApi_FeaturesSixml_Support_System_Boolean_List_SIX_TimApi_Constants_FinancialTransactions__List_SIX_TimApi_Constants_Guides__List_SIX_TimApi_Constants_NonFinancialTransactions__List_SIX_TimApi_Constants_ProtocolLevel__System_Boolean_List_SIX_TimApi_Constants_StatusFunctions__List_SIX_TimApi_Constants_DialogFunctions__System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_List_SIX_TimApi_Constants_RemoteFunctions__" data-uid="SIX.TimApi.FeaturesSixml.#ctor(List{SIX.TimApi.Constants.AdminFunctions},SIX.TimApi.FeaturesSixml.Support,SIX.TimApi.FeaturesSixml.Support,SIX.TimApi.FeaturesSixml.Support,System.Boolean,List{SIX.TimApi.Constants.FinancialTransactions},List{SIX.TimApi.Constants.Guides},List{SIX.TimApi.Constants.NonFinancialTransactions},List{SIX.TimApi.Constants.ProtocolLevel},System.Boolean,List{SIX.TimApi.Constants.StatusFunctions},List{SIX.TimApi.Constants.DialogFunctions},System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,List{SIX.TimApi.Constants.RemoteFunctions})">FeaturesSixml(List&lt;AdminFunctions&gt;, FeaturesSixml.Support, FeaturesSixml.Support, FeaturesSixml.Support, Boolean, List&lt;FinancialTransactions&gt;, List&lt;Guides&gt;, List&lt;NonFinancialTransactions&gt;, List&lt;ProtocolLevel&gt;, Boolean, List&lt;StatusFunctions&gt;, List&lt;DialogFunctions&gt;, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, List&lt;RemoteFunctions&gt;)</h4>
   <div class="markdown level1 summary"><p>Create hardware features.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public FeaturesSixml(List&lt;AdminFunctions&gt; adminFunctions, FeaturesSixml.Support autoCommit, FeaturesSixml.Support autoShiftManagement, FeaturesSixml.Support autoShutterManagement, bool requestRepetition, List&lt;FinancialTransactions&gt; financialFunctions, List&lt;Guides&gt; guides, List&lt;NonFinancialTransactions&gt; nonFinancialFunctions, List&lt;ProtocolLevel&gt; protocolLevels, bool sleepTimer, List&lt;StatusFunctions&gt; statusFunctions, List&lt;DialogFunctions&gt; dialogFunctions, bool allowClosedCardInsertion, bool fastNtfMode, bool persistentState, bool ep2ReferencedTransaction, bool ep2DeferredAuthorisation, bool deferredAuthorisation, bool ep2CredentialOnFile, bool credentialOnFile)</code></pre>
+    <pre><code class="lang-csharp hljs">public FeaturesSixml(List&lt;AdminFunctions&gt; adminFunctions, FeaturesSixml.Support autoCommit, FeaturesSixml.Support autoShiftManagement, FeaturesSixml.Support autoShutterManagement, bool requestRepetition, List&lt;FinancialTransactions&gt; financialFunctions, List&lt;Guides&gt; guides, List&lt;NonFinancialTransactions&gt; nonFinancialFunctions, List&lt;ProtocolLevel&gt; protocolLevels, bool sleepTimer, List&lt;StatusFunctions&gt; statusFunctions, List&lt;DialogFunctions&gt; dialogFunctions, bool allowClosedCardInsertion, bool fastNtfMode, bool persistentState, bool ep2ReferencedTransaction, bool ep2DeferredAuthorisation, bool deferredAuthorisation, bool ep2CredentialOnFile, bool credentialOnFile, List&lt;RemoteFunctions&gt; remoteFunctions)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -851,7 +848,7 @@ Immutable class.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="SIX.TimApi.Constants.AdminFunctions.html">AdminFunctions</a>&gt;</td>
+        <td><span class="xref">List</span>&lt;<a class="xref" href="SIX.TimApi.Constants.AdminFunctions.html">AdminFunctions</a>&gt;</td>
         <td><span class="parametername">adminFunctions</span></td>
         <td></td>
       </tr>
@@ -876,22 +873,22 @@ Immutable class.</p>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="SIX.TimApi.Constants.FinancialTransactions.html">FinancialTransactions</a>&gt;</td>
+        <td><span class="xref">List</span>&lt;<a class="xref" href="SIX.TimApi.Constants.FinancialTransactions.html">FinancialTransactions</a>&gt;</td>
         <td><span class="parametername">financialFunctions</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="SIX.TimApi.Constants.Guides.html">Guides</a>&gt;</td>
+        <td><span class="xref">List</span>&lt;<a class="xref" href="SIX.TimApi.Constants.Guides.html">Guides</a>&gt;</td>
         <td><span class="parametername">guides</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="SIX.TimApi.Constants.NonFinancialTransactions.html">NonFinancialTransactions</a>&gt;</td>
+        <td><span class="xref">List</span>&lt;<a class="xref" href="SIX.TimApi.Constants.NonFinancialTransactions.html">NonFinancialTransactions</a>&gt;</td>
         <td><span class="parametername">nonFinancialFunctions</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="SIX.TimApi.Constants.ProtocolLevel.html">ProtocolLevel</a>&gt;</td>
+        <td><span class="xref">List</span>&lt;<a class="xref" href="SIX.TimApi.Constants.ProtocolLevel.html">ProtocolLevel</a>&gt;</td>
         <td><span class="parametername">protocolLevels</span></td>
         <td></td>
       </tr>
@@ -901,12 +898,12 @@ Immutable class.</p>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="SIX.TimApi.Constants.StatusFunctions.html">StatusFunctions</a>&gt;</td>
+        <td><span class="xref">List</span>&lt;<a class="xref" href="SIX.TimApi.Constants.StatusFunctions.html">StatusFunctions</a>&gt;</td>
         <td><span class="parametername">statusFunctions</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="SIX.TimApi.Constants.DialogFunctions.html">DialogFunctions</a>&gt;</td>
+        <td><span class="xref">List</span>&lt;<a class="xref" href="SIX.TimApi.Constants.DialogFunctions.html">DialogFunctions</a>&gt;</td>
         <td><span class="parametername">dialogFunctions</span></td>
         <td></td>
       </tr>
@@ -950,14 +947,145 @@ Immutable class.</p>
         <td><span class="parametername">credentialOnFile</span></td>
         <td></td>
       </tr>
+      <tr>
+        <td><span class="xref">List</span>&lt;<a class="xref" href="SIX.TimApi.Constants.RemoteFunctions.html">RemoteFunctions</a>&gt;</td>
+        <td><span class="parametername">remoteFunctions</span></td>
+        <td></td>
+      </tr>
     </tbody>
   </table>
   <h3 id="fields">Fields
   </h3>
   
   
+  <h4 id="SIX_TimApi_FeaturesSixml_AdminFunctions" data-uid="SIX.TimApi.FeaturesSixml.AdminFunctions">AdminFunctions</h4>
+  <div class="markdown level1 summary"><p>Supported SIXml administrative functions.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly List&lt;AdminFunctions&gt; AdminFunctions</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">List</span>&lt;<a class="xref" href="SIX.TimApi.Constants.AdminFunctions.html">AdminFunctions</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="SIX_TimApi_FeaturesSixml_AllowClosedCardInsertion" data-uid="SIX.TimApi.FeaturesSixml.AllowClosedCardInsertion">AllowClosedCardInsertion</h4>
+  <div class="markdown level1 summary"><p>Supports allow closed card insertion.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly bool AllowClosedCardInsertion</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="SIX_TimApi_FeaturesSixml_AutoCommit" data-uid="SIX.TimApi.FeaturesSixml.AutoCommit">AutoCommit</h4>
+  <div class="markdown level1 summary"><p>AutoCommit support.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly FeaturesSixml.Support AutoCommit</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="SIX.TimApi.FeaturesSixml.Support.html">FeaturesSixml.Support</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="SIX_TimApi_FeaturesSixml_AutoShiftManagement" data-uid="SIX.TimApi.FeaturesSixml.AutoShiftManagement">AutoShiftManagement</h4>
+  <div class="markdown level1 summary"><p>AutoShiftManagement support.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly FeaturesSixml.Support AutoShiftManagement</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="SIX.TimApi.FeaturesSixml.Support.html">FeaturesSixml.Support</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="SIX_TimApi_FeaturesSixml_AutoShutterManagement" data-uid="SIX.TimApi.FeaturesSixml.AutoShutterManagement">AutoShutterManagement</h4>
+  <div class="markdown level1 summary"><p>AutoShutterManagement support.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly FeaturesSixml.Support AutoShutterManagement</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="SIX.TimApi.FeaturesSixml.Support.html">FeaturesSixml.Support</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <h4 id="SIX_TimApi_FeaturesSixml_CredentialOnFile" data-uid="SIX.TimApi.FeaturesSixml.CredentialOnFile">CredentialOnFile</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Payment Credential on File Feature.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -981,7 +1109,8 @@ Immutable class.</p>
   
   
   <h4 id="SIX_TimApi_FeaturesSixml_DeferredAuthorisation" data-uid="SIX.TimApi.FeaturesSixml.DeferredAuthorisation">DeferredAuthorisation</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Payment Deferred Authorisation Feature.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1004,8 +1133,34 @@ Immutable class.</p>
   </table>
   
   
+  <h4 id="SIX_TimApi_FeaturesSixml_DialogFunctions" data-uid="SIX.TimApi.FeaturesSixml.DialogFunctions">DialogFunctions</h4>
+  <div class="markdown level1 summary"><p>Supported SIXml dialog functions.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly List&lt;DialogFunctions&gt; DialogFunctions</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">List</span>&lt;<a class="xref" href="SIX.TimApi.Constants.DialogFunctions.html">DialogFunctions</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <h4 id="SIX_TimApi_FeaturesSixml_Ep2CredentialOnFile" data-uid="SIX.TimApi.FeaturesSixml.Ep2CredentialOnFile">Ep2CredentialOnFile</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>EP2 Payment Credential on File Feature.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1029,7 +1184,8 @@ Immutable class.</p>
   
   
   <h4 id="SIX_TimApi_FeaturesSixml_Ep2DeferredAuthorisation" data-uid="SIX.TimApi.FeaturesSixml.Ep2DeferredAuthorisation">Ep2DeferredAuthorisation</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Payment Protocol EP2 Deferred Authorisation Feature.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1053,7 +1209,8 @@ Immutable class.</p>
   
   
   <h4 id="SIX_TimApi_FeaturesSixml_Ep2ReferencedTransaction" data-uid="SIX.TimApi.FeaturesSixml.Ep2ReferencedTransaction">Ep2ReferencedTransaction</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>EP2 referenced transaction supported.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1070,6 +1227,106 @@ Immutable class.</p>
     <tbody>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="SIX_TimApi_FeaturesSixml_FastNtfMode" data-uid="SIX.TimApi.FeaturesSixml.FastNtfMode">FastNtfMode</h4>
+  <div class="markdown level1 summary"><p>Supportsfast notification mode.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly bool FastNtfMode</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="SIX_TimApi_FeaturesSixml_FinancialFunctions" data-uid="SIX.TimApi.FeaturesSixml.FinancialFunctions">FinancialFunctions</h4>
+  <div class="markdown level1 summary"><p>Supported SIXml financial transaction functions.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly List&lt;FinancialTransactions&gt; FinancialFunctions</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">List</span>&lt;<a class="xref" href="SIX.TimApi.Constants.FinancialTransactions.html">FinancialTransactions</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="SIX_TimApi_FeaturesSixml_Guides" data-uid="SIX.TimApi.FeaturesSixml.Guides">Guides</h4>
+  <div class="markdown level1 summary"><p>Supported SIXml guides.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly List&lt;Guides&gt; Guides</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">List</span>&lt;<a class="xref" href="SIX.TimApi.Constants.Guides.html">Guides</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="SIX_TimApi_FeaturesSixml_NonFinancialFunctions" data-uid="SIX.TimApi.FeaturesSixml.NonFinancialFunctions">NonFinancialFunctions</h4>
+  <div class="markdown level1 summary"><p>Supported SIXml non-financial transaction functions.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly List&lt;NonFinancialTransactions&gt; NonFinancialFunctions</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">List</span>&lt;<a class="xref" href="SIX.TimApi.Constants.NonFinancialTransactions.html">NonFinancialTransactions</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -1101,280 +1358,17 @@ latter option the terminal shall indicate the state in the login response.</p>
       </tr>
     </tbody>
   </table>
-  <h3 id="properties">Properties
-  </h3>
   
   
-  <a id="SIX_TimApi_FeaturesSixml_AdminFunctions_" data-uid="SIX.TimApi.FeaturesSixml.AdminFunctions*"></a>
-  <h4 id="SIX_TimApi_FeaturesSixml_AdminFunctions" data-uid="SIX.TimApi.FeaturesSixml.AdminFunctions">AdminFunctions</h4>
-  <div class="markdown level1 summary"><p>Supported SIXml administrative functions.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public List&lt;AdminFunctions&gt; AdminFunctions { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="SIX.TimApi.Constants.AdminFunctions.html">AdminFunctions</a>&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="SIX_TimApi_FeaturesSixml_AllowClosedCardInsertion_" data-uid="SIX.TimApi.FeaturesSixml.AllowClosedCardInsertion*"></a>
-  <h4 id="SIX_TimApi_FeaturesSixml_AllowClosedCardInsertion" data-uid="SIX.TimApi.FeaturesSixml.AllowClosedCardInsertion">AllowClosedCardInsertion</h4>
-  <div class="markdown level1 summary"><p>Supports allow closed card insertion.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool AllowClosedCardInsertion { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="SIX_TimApi_FeaturesSixml_AutoCommit_" data-uid="SIX.TimApi.FeaturesSixml.AutoCommit*"></a>
-  <h4 id="SIX_TimApi_FeaturesSixml_AutoCommit" data-uid="SIX.TimApi.FeaturesSixml.AutoCommit">AutoCommit</h4>
-  <div class="markdown level1 summary"><p>AutoCommit support.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public FeaturesSixml.Support AutoCommit { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="SIX.TimApi.FeaturesSixml.Support.html">FeaturesSixml.Support</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="SIX_TimApi_FeaturesSixml_AutoShiftManagement_" data-uid="SIX.TimApi.FeaturesSixml.AutoShiftManagement*"></a>
-  <h4 id="SIX_TimApi_FeaturesSixml_AutoShiftManagement" data-uid="SIX.TimApi.FeaturesSixml.AutoShiftManagement">AutoShiftManagement</h4>
-  <div class="markdown level1 summary"><p>AutoShiftManagement support.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public FeaturesSixml.Support AutoShiftManagement { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="SIX.TimApi.FeaturesSixml.Support.html">FeaturesSixml.Support</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="SIX_TimApi_FeaturesSixml_AutoShutterManagement_" data-uid="SIX.TimApi.FeaturesSixml.AutoShutterManagement*"></a>
-  <h4 id="SIX_TimApi_FeaturesSixml_AutoShutterManagement" data-uid="SIX.TimApi.FeaturesSixml.AutoShutterManagement">AutoShutterManagement</h4>
-  <div class="markdown level1 summary"><p>AutoShutterManagement support.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public FeaturesSixml.Support AutoShutterManagement { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="SIX.TimApi.FeaturesSixml.Support.html">FeaturesSixml.Support</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="SIX_TimApi_FeaturesSixml_DialogFunctions_" data-uid="SIX.TimApi.FeaturesSixml.DialogFunctions*"></a>
-  <h4 id="SIX_TimApi_FeaturesSixml_DialogFunctions" data-uid="SIX.TimApi.FeaturesSixml.DialogFunctions">DialogFunctions</h4>
-  <div class="markdown level1 summary"><p>Supported SIXml dialog functions.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public List&lt;DialogFunctions&gt; DialogFunctions { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="SIX.TimApi.Constants.DialogFunctions.html">DialogFunctions</a>&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="SIX_TimApi_FeaturesSixml_FastNtfMode_" data-uid="SIX.TimApi.FeaturesSixml.FastNtfMode*"></a>
-  <h4 id="SIX_TimApi_FeaturesSixml_FastNtfMode" data-uid="SIX.TimApi.FeaturesSixml.FastNtfMode">FastNtfMode</h4>
-  <div class="markdown level1 summary"><p>Supportsfast notification mode.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool FastNtfMode { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="SIX_TimApi_FeaturesSixml_FinancialFunctions_" data-uid="SIX.TimApi.FeaturesSixml.FinancialFunctions*"></a>
-  <h4 id="SIX_TimApi_FeaturesSixml_FinancialFunctions" data-uid="SIX.TimApi.FeaturesSixml.FinancialFunctions">FinancialFunctions</h4>
-  <div class="markdown level1 summary"><p>Supported SIXml financial transaction functions.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public List&lt;FinancialTransactions&gt; FinancialFunctions { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="SIX.TimApi.Constants.FinancialTransactions.html">FinancialTransactions</a>&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="SIX_TimApi_FeaturesSixml_Guides_" data-uid="SIX.TimApi.FeaturesSixml.Guides*"></a>
-  <h4 id="SIX_TimApi_FeaturesSixml_Guides" data-uid="SIX.TimApi.FeaturesSixml.Guides">Guides</h4>
-  <div class="markdown level1 summary"><p>Supported SIXml guides.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public List&lt;Guides&gt; Guides { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="SIX.TimApi.Constants.Guides.html">Guides</a>&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="SIX_TimApi_FeaturesSixml_NonFinancialFunctions_" data-uid="SIX.TimApi.FeaturesSixml.NonFinancialFunctions*"></a>
-  <h4 id="SIX_TimApi_FeaturesSixml_NonFinancialFunctions" data-uid="SIX.TimApi.FeaturesSixml.NonFinancialFunctions">NonFinancialFunctions</h4>
-  <div class="markdown level1 summary"><p>Supported SIXml non-financial transaction functions.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public List&lt;NonFinancialTransactions&gt; NonFinancialFunctions { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="SIX.TimApi.Constants.NonFinancialTransactions.html">NonFinancialTransactions</a>&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="SIX_TimApi_FeaturesSixml_ProtocolLevels_" data-uid="SIX.TimApi.FeaturesSixml.ProtocolLevels*"></a>
   <h4 id="SIX_TimApi_FeaturesSixml_ProtocolLevels" data-uid="SIX.TimApi.FeaturesSixml.ProtocolLevels">ProtocolLevels</h4>
   <div class="markdown level1 summary"><p>Supported protocol level.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public List&lt;ProtocolLevel&gt; ProtocolLevels { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public readonly List&lt;ProtocolLevel&gt; ProtocolLevels</code></pre>
   </div>
-  <h5 class="propertyValue">Property Value</h5>
+  <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
@@ -1384,23 +1378,47 @@ latter option the terminal shall indicate the state in the login response.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="SIX.TimApi.Constants.ProtocolLevel.html">ProtocolLevel</a>&gt;</td>
+        <td><span class="xref">List</span>&lt;<a class="xref" href="SIX.TimApi.Constants.ProtocolLevel.html">ProtocolLevel</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
   </table>
   
   
-  <a id="SIX_TimApi_FeaturesSixml_RequestRepetition_" data-uid="SIX.TimApi.FeaturesSixml.RequestRepetition*"></a>
+  <h4 id="SIX_TimApi_FeaturesSixml_RemoteFunctions" data-uid="SIX.TimApi.FeaturesSixml.RemoteFunctions">RemoteFunctions</h4>
+  <div class="markdown level1 summary"><p>Supported SIXml remote functions.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly List&lt;RemoteFunctions&gt; RemoteFunctions</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">List</span>&lt;<a class="xref" href="SIX.TimApi.Constants.RemoteFunctions.html">RemoteFunctions</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <h4 id="SIX_TimApi_FeaturesSixml_RequestRepetition" data-uid="SIX.TimApi.FeaturesSixml.RequestRepetition">RequestRepetition</h4>
   <div class="markdown level1 summary"><p>Request repetition support.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool RequestRepetition { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public readonly bool RequestRepetition</code></pre>
   </div>
-  <h5 class="propertyValue">Property Value</h5>
+  <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
@@ -1417,16 +1435,15 @@ latter option the terminal shall indicate the state in the login response.</p>
   </table>
   
   
-  <a id="SIX_TimApi_FeaturesSixml_SleepTimer_" data-uid="SIX.TimApi.FeaturesSixml.SleepTimer*"></a>
   <h4 id="SIX_TimApi_FeaturesSixml_SleepTimer" data-uid="SIX.TimApi.FeaturesSixml.SleepTimer">SleepTimer</h4>
   <div class="markdown level1 summary"><p>SleepTimer support.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool SleepTimer { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public readonly bool SleepTimer</code></pre>
   </div>
-  <h5 class="propertyValue">Property Value</h5>
+  <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
@@ -1443,16 +1460,15 @@ latter option the terminal shall indicate the state in the login response.</p>
   </table>
   
   
-  <a id="SIX_TimApi_FeaturesSixml_StatusFunctions_" data-uid="SIX.TimApi.FeaturesSixml.StatusFunctions*"></a>
   <h4 id="SIX_TimApi_FeaturesSixml_StatusFunctions" data-uid="SIX.TimApi.FeaturesSixml.StatusFunctions">StatusFunctions</h4>
   <div class="markdown level1 summary"><p>Supported SIXml status functions.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public List&lt;StatusFunctions&gt; StatusFunctions { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public readonly List&lt;StatusFunctions&gt; StatusFunctions</code></pre>
   </div>
-  <h5 class="propertyValue">Property Value</h5>
+  <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
@@ -1462,7 +1478,7 @@ latter option the terminal shall indicate the state in the login response.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="SIX.TimApi.Constants.StatusFunctions.html">StatusFunctions</a>&gt;</td>
+        <td><span class="xref">List</span>&lt;<a class="xref" href="SIX.TimApi.Constants.StatusFunctions.html">StatusFunctions</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -1478,7 +1494,7 @@ latter option the terminal shall indicate the state in the login response.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+    <pre><code class="lang-csharp hljs">public override String ToString()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1490,13 +1506,11 @@ latter option the terminal shall indicate the state in the login response.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="xref">String</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  <h5 class="overrides">Overrides</h5>
-  <div><span class="xref">System.Object.ToString()</span></div>
 </article>
           </div>
           

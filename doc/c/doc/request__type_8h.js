@@ -42,6 +42,7 @@ var request__type_8h =
       [ "ta_c_req_provide_loyalty_basket", "request__type_8h.html#a38268da75c7795fd3a4f057bc6a7fcd2a19fa69870c83b85bc90c8fd7c7cc225c", null ],
       [ "ta_c_req_provide_vas_result", "request__type_8h.html#a38268da75c7795fd3a4f057bc6a7fcd2aa12c99a3e91e309b88c00019f1e0e830", null ],
       [ "ta_c_req_balance_inquiry", "request__type_8h.html#a38268da75c7795fd3a4f057bc6a7fcd2ab440ebcbc62d0eb28b58332db3a92eb5", null ],
-      [ "ta_c_req_request_alias", "request__type_8h.html#a38268da75c7795fd3a4f057bc6a7fcd2af5919105790a5cb23420a3cb70e87529", null ]
+      [ "ta_c_req_request_alias", "request__type_8h.html#a38268da75c7795fd3a4f057bc6a7fcd2af5919105790a5cb23420a3cb70e87529", null ],
+      [ "ta_c_req_device_maintenance", "request__type_8h.html#a38268da75c7795fd3a4f057bc6a7fcd2aea2f339596878ddb0940004cb889d6d4", null ]
     ] ]
 ];

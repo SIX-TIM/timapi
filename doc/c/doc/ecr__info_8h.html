@@ -205,14 +205,14 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">ecr_info</td><td>Object instance of type <a class="el" href="ecr__info_8h.html">ecr_info</a>. </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">architecture</td><td>Pointer to variable to write object instance to. Object instance is of type <a class="el" href="string_8h.html">string</a> and is not retained. Object instance is <em>ta_invalid_object</em> if value is not set in <em>ecr_info</em>.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">architecture</td><td>Pointer to variable to write object instance to. Object instance is of type <a class="el" href="string_8h.html">string</a> and is not retained. Object instance is <em>ta_object_invalid</em> if value is not set in <em>ecr_info</em>.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">ta_c_rc_ok</td><td>Object instance written to <em>architecture</em>. </td></tr>
-    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>ecr_info</em> is <em>ta_invalid_object</em>. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>ecr_info</em> is <em>ta_object_invalid</em>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>ecr_info</em> is not of type <a class="el" href="ecr__info_8h.html">ecr_info</a>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>architecture</em> is <em>null-pointer</em>. </td></tr>
   </table>
@@ -251,14 +251,14 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">ecr_info</td><td>Object instance of type <a class="el" href="ecr__info_8h.html">ecr_info</a>. </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">integrator_solution</td><td>Pointer to variable to write object instance to. Object instance is of type <a class="el" href="string_8h.html">string</a> and is not retained. Object instance is <em>ta_invalid_object</em> if value is not set in <em>ecr_info</em>.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">integrator_solution</td><td>Pointer to variable to write object instance to. Object instance is of type <a class="el" href="string_8h.html">string</a> and is not retained. Object instance is <em>ta_object_invalid</em> if value is not set in <em>ecr_info</em>.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">ta_c_rc_ok</td><td>Object instance written to <em>integrator_solution</em>. </td></tr>
-    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>ecr_info</em> is <em>ta_invalid_object</em>. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>ecr_info</em> is <em>ta_object_invalid</em>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>ecr_info</em> is not of type <a class="el" href="ecr__info_8h.html">ecr_info</a>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>integrator_solution</em> is <em>null-pointer</em>. </td></tr>
   </table>
@@ -297,14 +297,14 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">ecr_info</td><td>Object instance of type <a class="el" href="ecr__info_8h.html">ecr_info</a>. </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">manufacturer_name</td><td>Pointer to variable to write object instance to. Object instance is of type <a class="el" href="string_8h.html">string</a> and is not retained. Object instance is <em>ta_invalid_object</em> if value is not set in <em>ecr_info</em>.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">manufacturer_name</td><td>Pointer to variable to write object instance to. Object instance is of type <a class="el" href="string_8h.html">string</a> and is not retained. Object instance is <em>ta_object_invalid</em> if value is not set in <em>ecr_info</em>.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">ta_c_rc_ok</td><td>Object instance written to <em>manufacturer_name</em>. </td></tr>
-    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>ecr_info</em> is <em>ta_invalid_object</em>. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>ecr_info</em> is <em>ta_object_invalid</em>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>ecr_info</em> is not of type <a class="el" href="ecr__info_8h.html">ecr_info</a>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>manufacturer_name</em> is <em>null-pointer</em>. </td></tr>
   </table>
@@ -343,14 +343,14 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">ecr_info</td><td>Object instance of type <a class="el" href="ecr__info_8h.html">ecr_info</a>. </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">name</td><td>Pointer to variable to write object instance to. Object instance is of type <em>string</em> and is not retained. Object instance is <em>ta_invalid_object</em> if value is not set in <em>ecr_info</em>.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">name</td><td>Pointer to variable to write object instance to. Object instance is of type <em>string</em> and is not retained. Object instance is <em>ta_object_invalid</em> if value is not set in <em>ecr_info</em>.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">ta_c_rc_ok</td><td>Object instance written to <em>name</em>. </td></tr>
-    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>ecr_info</em> is <em>ta_invalid_object</em>. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>ecr_info</em> is <em>ta_object_invalid</em>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>ecr_info</em> is not of type <a class="el" href="ecr__info_8h.html">ecr_info</a>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>name</em> is <em>null-pointer</em>. </td></tr>
   </table>
@@ -389,14 +389,14 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">ecr_info</td><td>Object instance of type <a class="el" href="ecr__info_8h.html">ecr_info</a>. </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">remote_ip</td><td>Pointer to variable to write object instance to. Object instance is of type <a class="el" href="string_8h.html">string</a> and is not retained. Object instance is <em>ta_invalid_object</em> if value is not set in <em>ecr_info</em>.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">remote_ip</td><td>Pointer to variable to write object instance to. Object instance is of type <a class="el" href="string_8h.html">string</a> and is not retained. Object instance is <em>ta_object_invalid</em> if value is not set in <em>ecr_info</em>.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">ta_c_rc_ok</td><td>Object instance written to <em>remote_ip</em>. </td></tr>
-    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>ecr_info</em> is <em>ta_invalid_object</em>. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>ecr_info</em> is <em>ta_object_invalid</em>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>ecr_info</em> is not of type <a class="el" href="ecr__info_8h.html">ecr_info</a>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>remote_ip</em> is <em>null-pointer</em>. </td></tr>
   </table>
@@ -435,14 +435,14 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">ecr_info</td><td>Object instance of type <a class="el" href="ecr__info_8h.html">ecr_info</a>. </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">serial_number</td><td>Pointer to variable to write object instance to. Object instance is of type <a class="el" href="string_8h.html">string</a> and is not retained. Object instance is <em>ta_invalid_object</em> if value is not set in <em>ecr_info</em>.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">serial_number</td><td>Pointer to variable to write object instance to. Object instance is of type <a class="el" href="string_8h.html">string</a> and is not retained. Object instance is <em>ta_object_invalid</em> if value is not set in <em>ecr_info</em>.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">ta_c_rc_ok</td><td>Object instance written to <em>serial_number</em>. </td></tr>
-    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>ecr_info</em> is <em>ta_invalid_object</em>. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>ecr_info</em> is <em>ta_object_invalid</em>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>ecr_info</em> is not of type <a class="el" href="ecr__info_8h.html">ecr_info</a>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>serial_number</em> is <em>null-pointer</em>. </td></tr>
   </table>
@@ -488,7 +488,7 @@ Functions</h2></td></tr>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">ta_c_rc_ok</td><td>Object instance written to <em>type</em>. </td></tr>
-    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>ecr_info</em> is <em>ta_invalid_object</em>. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>ecr_info</em> is <em>ta_object_invalid</em>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>ecr_info</em> is not of type <a class="el" href="ecr__info_8h.html">ecr_info</a>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>type</em> is <em>null-pointer</em>. </td></tr>
   </table>
@@ -527,14 +527,14 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">ecr_info</td><td>Object instance of type <a class="el" href="ecr__info_8h.html">ecr_info</a>. </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">version</td><td>Pointer to variable to write object instance to. Object instance is of type <a class="el" href="string_8h.html">string</a> and is not retained. Object instance is <em>ta_invalid_object</em> if value is not set in <em>ecr_info</em>.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">version</td><td>Pointer to variable to write object instance to. Object instance is of type <a class="el" href="string_8h.html">string</a> and is not retained. Object instance is <em>ta_object_invalid</em> if value is not set in <em>ecr_info</em>.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">ta_c_rc_ok</td><td>Object instance written to <em>version</em>. </td></tr>
-    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>ecr_info</em> is <em>ta_invalid_object</em>. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>ecr_info</em> is <em>ta_object_invalid</em>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>ecr_info</em> is not of type <a class="el" href="ecr__info_8h.html">ecr_info</a>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>version</em> is <em>null-pointer</em>. </td></tr>
   </table>
@@ -573,16 +573,16 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">ecr_info</td><td>Object instance of type <a class="el" href="ecr__info_8h.html">ecr_info</a>. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">architecture</td><td>Object instance to set. Object instance can be <em>ta_invalid_object</em> to clear the value in <em>ecr_info</em>. If object instance is not ta_invalid_object is has to be of type <em>string</em>.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">architecture</td><td>Object instance to set. Object instance can be <em>ta_object_invalid</em> to clear the value in <em>ecr_info</em>. If object instance is not ta_object_invalid is has to be of type <em>string</em>.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">ta_c_rc_ok</td><td>Object instance assigned to <em>ecr_info</em>. </td></tr>
-    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>ecr_info</em> is <em>ta_invalid_object</em>. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>ecr_info</em> is <em>ta_object_invalid</em>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>ecr_info</em> is not of type <a class="el" href="ecr__info_8h.html">ecr_info</a>. </td></tr>
-    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>architecture</em> is not <em>ta_invalid_object</em> and is not of type <a class="el" href="string_8h.html">string</a>. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>architecture</em> is not <em>ta_object_invalid</em> and is not of type <a class="el" href="string_8h.html">string</a>. </td></tr>
   </table>
   </dd>
 </dl>
@@ -619,16 +619,16 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">ecr_info</td><td>Object instance of type <a class="el" href="ecr__info_8h.html">ecr_info</a>. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">integrator_solution</td><td>Object instance to set. Object instance can be <em>ta_invalid_object</em> to clear the value in <em>ecr_info</em>. If object instance is not ta_invalid_object is has to be of type <em>string</em>.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">integrator_solution</td><td>Object instance to set. Object instance can be <em>ta_object_invalid</em> to clear the value in <em>ecr_info</em>. If object instance is not ta_object_invalid is has to be of type <em>string</em>.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">ta_c_rc_ok</td><td>Object instance assigned to <em>ecr_info</em>. </td></tr>
-    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>ecr_info</em> is <em>ta_invalid_object</em>. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>ecr_info</em> is <em>ta_object_invalid</em>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>ecr_info</em> is not of type <a class="el" href="ecr__info_8h.html">ecr_info</a>. </td></tr>
-    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>integrator_solution</em> is not <em>ta_invalid_object</em> and is not of type <a class="el" href="string_8h.html">string</a>. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>integrator_solution</em> is not <em>ta_object_invalid</em> and is not of type <a class="el" href="string_8h.html">string</a>. </td></tr>
   </table>
   </dd>
 </dl>
@@ -665,16 +665,16 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">ecr_info</td><td>Object instance of type <a class="el" href="ecr__info_8h.html">ecr_info</a>. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">manufacturer_name</td><td>Object instance to set. Object instance can be <em>ta_invalid_object</em> to clear the value in <em>ecr_info</em>. If object instance is not ta_invalid_object is has to be of type <em>string</em>.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">manufacturer_name</td><td>Object instance to set. Object instance can be <em>ta_object_invalid</em> to clear the value in <em>ecr_info</em>. If object instance is not ta_object_invalid is has to be of type <em>string</em>.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">ta_c_rc_ok</td><td>Object instance assigned to <em>ecr_info</em>. </td></tr>
-    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>ecr_info</em> is <em>ta_invalid_object</em>. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>ecr_info</em> is <em>ta_object_invalid</em>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>ecr_info</em> is not of type <a class="el" href="ecr__info_8h.html">ecr_info</a>. </td></tr>
-    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>manufacturer_name</em> is not <em>ta_invalid_object</em> and is not of type <em>string</em>. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>manufacturer_name</em> is not <em>ta_object_invalid</em> and is not of type <em>string</em>. </td></tr>
   </table>
   </dd>
 </dl>
@@ -711,16 +711,16 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">ecr_info</td><td>Object instance of type <a class="el" href="ecr__info_8h.html">ecr_info</a>. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">name</td><td>Object instance to set. Object instance can be <em>ta_invalid_object</em> to clear the value in <em>ecr_info</em>. If object instance is not ta_invalid_object is has to be of type <a class="el" href="string_8h.html">string</a>.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">name</td><td>Object instance to set. Object instance can be <em>ta_object_invalid</em> to clear the value in <em>ecr_info</em>. If object instance is not ta_object_invalid is has to be of type <a class="el" href="string_8h.html">string</a>.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">ta_c_rc_ok</td><td>Object instance assigned to <em>ecr_info</em>. </td></tr>
-    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>ecr_info</em> is <em>ta_invalid_object</em>. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>ecr_info</em> is <em>ta_object_invalid</em>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>ecr_info</em> is not of type <a class="el" href="ecr__info_8h.html">ecr_info</a>. </td></tr>
-    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>name</em> is not <em>ta_invalid_object</em> and is not of type <em>string</em>. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>name</em> is not <em>ta_object_invalid</em> and is not of type <em>string</em>. </td></tr>
   </table>
   </dd>
 </dl>
@@ -757,16 +757,16 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">ecr_info</td><td>Object instance of type <a class="el" href="ecr__info_8h.html">ecr_info</a>. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">remote_ip</td><td>Object instance to set. Object instance can be <em>ta_invalid_object</em> to clear the value in <em>ecr_info</em>. If object instance is not ta_invalid_object is has to be of type <em>string</em>.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">remote_ip</td><td>Object instance to set. Object instance can be <em>ta_object_invalid</em> to clear the value in <em>ecr_info</em>. If object instance is not ta_object_invalid is has to be of type <em>string</em>.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">ta_c_rc_ok</td><td>Object instance assigned to <em>ecr_info</em>. </td></tr>
-    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>ecr_info</em> is <em>ta_invalid_object</em>. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>ecr_info</em> is <em>ta_object_invalid</em>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>ecr_info</em> is not of type <a class="el" href="ecr__info_8h.html">ecr_info</a>. </td></tr>
-    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>remote_ip</em> is not <em>ta_invalid_object</em> and is not of type <a class="el" href="string_8h.html">string</a>. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>remote_ip</em> is not <em>ta_object_invalid</em> and is not of type <a class="el" href="string_8h.html">string</a>. </td></tr>
   </table>
   </dd>
 </dl>
@@ -803,16 +803,16 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">ecr_info</td><td>Object instance of type <a class="el" href="ecr__info_8h.html">ecr_info</a>. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">serial_number</td><td>Object instance to set. Object instance can be <em>ta_invalid_object</em> to clear the value in <em>ecr_info</em>. If object instance is not ta_invalid_object is has to be of type <em>string</em>.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">serial_number</td><td>Object instance to set. Object instance can be <em>ta_object_invalid</em> to clear the value in <em>ecr_info</em>. If object instance is not ta_object_invalid is has to be of type <em>string</em>.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">ta_c_rc_ok</td><td>Object instance assigned to <em>ecr_info</em>. </td></tr>
-    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>ecr_info</em> is <em>ta_invalid_object</em>. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>ecr_info</em> is <em>ta_object_invalid</em>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>ecr_info</em> is not of type <a class="el" href="ecr__info_8h.html">ecr_info</a>. </td></tr>
-    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>serial_number</em> is not <em>ta_invalid_object</em> and is not of type <a class="el" href="string_8h.html">string</a>. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>serial_number</em> is not <em>ta_object_invalid</em> and is not of type <a class="el" href="string_8h.html">string</a>. </td></tr>
   </table>
   </dd>
 </dl>
@@ -856,7 +856,7 @@ Functions</h2></td></tr>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">ta_c_rc_ok</td><td>Value assigned to <em>ecr_info</em>. </td></tr>
-    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>ecr_info</em> is <em>ta_invalid_object</em>. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>ecr_info</em> is <em>ta_object_invalid</em>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>ecr_info</em> is not of type <a class="el" href="ecr__info_8h.html">ecr_info</a>. </td></tr>
   </table>
   </dd>
@@ -894,16 +894,16 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">ecr_info</td><td>Object instance of type <a class="el" href="ecr__info_8h.html">ecr_info</a>. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">version</td><td>Object instance to set. Object instance can be <em>ta_invalid_object</em> to clear the value in <em>ecr_info</em>. If object instance is not ta_invalid_object is has to be of type <a class="el" href="string_8h.html">string</a>.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">version</td><td>Object instance to set. Object instance can be <em>ta_object_invalid</em> to clear the value in <em>ecr_info</em>. If object instance is not ta_object_invalid is has to be of type <a class="el" href="string_8h.html">string</a>.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">ta_c_rc_ok</td><td>Object instance assigned to <em>ecr_info</em>. </td></tr>
-    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>ecr_info</em> is <em>ta_invalid_object</em>. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>ecr_info</em> is <em>ta_object_invalid</em>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>ecr_info</em> is not of type <a class="el" href="ecr__info_8h.html">ecr_info</a>. </td></tr>
-    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>version</em> is not <em>ta_invalid_object</em> and is not of type <em>string</em>. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>version</em> is not <em>ta_object_invalid</em> and is not of type <em>string</em>. </td></tr>
   </table>
   </dd>
 </dl>

@@ -206,7 +206,7 @@ Functions</h2></td></tr>
   <table class="retval">
     <tr><td class="paramname">ta_c_rc_ok</td><td>Object instance has been created and written to <em>item</em>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>item</em> is <em>null-pointer</em>. </td></tr>
-    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>source_item</em> is <em>ta_invalid_object</em>. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>source_item</em> is <em>ta_object_invalid</em>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>source_item</em> is not of type <a class="el" href="basket__item_8h.html">basket_item</a>. </td></tr>
     <tr><td class="paramname">ta_c_rc_out_of_memory</td><td>Failed allocating memory. </td></tr>
   </table>
@@ -279,14 +279,14 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">item</td><td>Object instance of type <a class="el" href="basket__item_8h.html">basket_item</a>. </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">amount</td><td>Pointer to variable to write object instance to. Object instance is of type <a class="el" href="amount_8h.html">amount</a> and is not retained. Object instance is <em>ta_invalid_object</em> if value is not set in <em>item</em>.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">amount</td><td>Pointer to variable to write object instance to. Object instance is of type <a class="el" href="amount_8h.html">amount</a> and is not retained. Object instance is <em>ta_object_invalid</em> if value is not set in <em>item</em>.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">ta_c_rc_ok</td><td>Object instance written to <em>amount</em>. </td></tr>
-    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>item</em> is <em>ta_invalid_object</em>. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>item</em> is <em>ta_object_invalid</em>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>item</em> is not of type <a class="el" href="basket__item_8h.html">basket_item</a>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>amount</em> is not <em>null-pointer</em>. </td></tr>
   </table>
@@ -325,14 +325,14 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">item</td><td>Object instance of type <a class="el" href="basket__item_8h.html">basket_item</a>. </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">amount_discount</td><td>Pointer to variable to write object instance to. Object instance is of type <a class="el" href="amount__discount_8h.html">amount_discount</a> and is not retained. Object instance is <em>ta_invalid_object</em> if value is not set in <em>item</em>.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">amount_discount</td><td>Pointer to variable to write object instance to. Object instance is of type <a class="el" href="amount__discount_8h.html">amount_discount</a> and is not retained. Object instance is <em>ta_object_invalid</em> if value is not set in <em>item</em>.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">ta_c_rc_ok</td><td>Object instance written to <em>amount_discount</em>. </td></tr>
-    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>item</em> is <em>ta_invalid_object</em>. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>item</em> is <em>ta_object_invalid</em>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>item</em> is not of type <a class="el" href="basket__item_8h.html">basket_item</a>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>amount_discount</em> is not <em>null-pointer</em>. </td></tr>
   </table>
@@ -371,14 +371,14 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">item</td><td>Object instance of type <a class="el" href="basket__item_8h.html">basket_item</a>. </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">amount_gross</td><td>Pointer to variable to write object instance to. Object instance is of type <a class="el" href="amount_8h.html">amount</a> and is not retained. Object instance is <em>ta_invalid_object</em> if value is not set in <em>item</em>.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">amount_gross</td><td>Pointer to variable to write object instance to. Object instance is of type <a class="el" href="amount_8h.html">amount</a> and is not retained. Object instance is <em>ta_object_invalid</em> if value is not set in <em>item</em>.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">ta_c_rc_ok</td><td>Object instance written to <em>amount_gross</em>. </td></tr>
-    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>item</em> is <em>ta_invalid_object</em>. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>item</em> is <em>ta_object_invalid</em>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>item</em> is not of type <a class="el" href="basket__item_8h.html">basket_item</a>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>amount_gross</em> is not <em>null-pointer</em>. </td></tr>
   </table>
@@ -417,14 +417,14 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">item</td><td>Object instance of type <a class="el" href="basket__item_8h.html">basket_item</a>. </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">amount_tax</td><td>Pointer to variable to write object instance to. Object instance is of type <a class="el" href="amount_8h.html">amount</a> and is not retained. Object instance is <em>ta_invalid_object</em> if value is not set in <em>item</em>.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">amount_tax</td><td>Pointer to variable to write object instance to. Object instance is of type <a class="el" href="amount_8h.html">amount</a> and is not retained. Object instance is <em>ta_object_invalid</em> if value is not set in <em>item</em>.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">ta_c_rc_ok</td><td>Object instance written to <em>amount_tax</em>. </td></tr>
-    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>item</em> is <em>ta_invalid_object</em>. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>item</em> is <em>ta_object_invalid</em>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>item</em> is not of type <a class="el" href="basket__item_8h.html">basket_item</a>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>amount_tax</em> is not <em>null-pointer</em>. </td></tr>
   </table>
@@ -463,14 +463,14 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">item</td><td>Object instance of type <a class="el" href="basket__item_8h.html">basket_item</a>. </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">amount_total</td><td>Pointer to variable to write object instance to. Object instance is of type <a class="el" href="amount_8h.html">amount</a> and is not retained. Object instance is <em>ta_invalid_object</em> if value is not set in <em>item</em>.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">amount_total</td><td>Pointer to variable to write object instance to. Object instance is of type <a class="el" href="amount_8h.html">amount</a> and is not retained. Object instance is <em>ta_object_invalid</em> if value is not set in <em>item</em>.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">ta_c_rc_ok</td><td>Object instance written to <em>amount_total</em>. </td></tr>
-    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>item</em> is <em>ta_invalid_object</em>. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>item</em> is <em>ta_object_invalid</em>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>item</em> is not of type <a class="el" href="basket__item_8h.html">basket_item</a>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>amount_total</em> is not <em>null-pointer</em>. </td></tr>
   </table>
@@ -509,14 +509,14 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">item</td><td>Object instance of type <a class="el" href="basket__item_8h.html">basket_item</a>. </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">auth_result</td><td>Pointer to variable to write object instance to. Object instance is of type <a class="el" href="integer_8h.html">integer</a> and is not retained. Object instance is <em>ta_invalid_object</em> if value is not set in <em>basket_item</em>.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">auth_result</td><td>Pointer to variable to write object instance to. Object instance is of type <a class="el" href="integer_8h.html">integer</a> and is not retained. Object instance is <em>ta_object_invalid</em> if value is not set in <em>basket_item</em>.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">ta_c_rc_ok</td><td>Object instance written to <em>auth_result</em>. </td></tr>
-    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>item</em> is <em>ta_invalid_object</em>. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>item</em> is <em>ta_object_invalid</em>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>item</em> is not of type <a class="el" href="basket__item_8h.html">basket_item</a>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>auth_result</em> is not <em>null-pointer</em>. </td></tr>
   </table>
@@ -555,14 +555,14 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">item</td><td>Object instance of type <a class="el" href="basket__item_8h.html">basket_item</a>. </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">id</td><td>Pointer to variable to write object instance to. Object instance is of type <a class="el" href="string_8h.html">string</a> and is not retained. Object instance is <em>ta_invalid_object</em> if value is not set in <em>item</em>.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">id</td><td>Pointer to variable to write object instance to. Object instance is of type <a class="el" href="string_8h.html">string</a> and is not retained. Object instance is <em>ta_object_invalid</em> if value is not set in <em>item</em>.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">ta_c_rc_ok</td><td>Object instance written to <em>id</em>. </td></tr>
-    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>item</em> is <em>ta_invalid_object</em>. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>item</em> is <em>ta_object_invalid</em>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>item</em> is not of type <a class="el" href="basket__item_8h.html">basket_item</a>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>id</em> is not <em>null-pointer</em>. </td></tr>
   </table>
@@ -601,14 +601,14 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">item</td><td>Object instance of type <a class="el" href="basket__item_8h.html">basket_item</a>. </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">item_quantity</td><td>Pointer to variable to write object instance to. Object instance is of type <a class="el" href="item__quantity_8h.html">item_quantity</a> and is not retained. Object instance is <em>ta_invalid_object</em> if value is not set in <em>item</em>.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">item_quantity</td><td>Pointer to variable to write object instance to. Object instance is of type <a class="el" href="item__quantity_8h.html">item_quantity</a> and is not retained. Object instance is <em>ta_object_invalid</em> if value is not set in <em>item</em>.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">ta_c_rc_ok</td><td>Object instance written to <em>item_quantity</em>. </td></tr>
-    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>item</em> is <em>ta_invalid_object</em>. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>item</em> is <em>ta_object_invalid</em>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>item</em> is not of type <a class="el" href="basket__item_8h.html">basket_item</a>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>item_quantity</em> is not <em>null-pointer</em>. </td></tr>
   </table>
@@ -647,14 +647,14 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">item</td><td>Object instance of type <a class="el" href="basket__item_8h.html">basket_item</a>. </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">loyalty_id</td><td>Pointer to variable to write object instance to. Object instance is of type <a class="el" href="string_8h.html">string</a> and is not retained. Object instance is <em>ta_invalid_object</em> if value is not set in <em>item</em>.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">loyalty_id</td><td>Pointer to variable to write object instance to. Object instance is of type <a class="el" href="string_8h.html">string</a> and is not retained. Object instance is <em>ta_object_invalid</em> if value is not set in <em>item</em>.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">ta_c_rc_ok</td><td>Object instance written to <em>loyalty_id</em>. </td></tr>
-    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>item</em> is <em>ta_invalid_object</em>. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>item</em> is <em>ta_object_invalid</em>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>item</em> is not of type <a class="el" href="basket__item_8h.html">basket_item</a>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>loyalty_id</em> is not <em>null-pointer</em>. </td></tr>
   </table>
@@ -693,14 +693,14 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">item</td><td>Object instance of type <a class="el" href="basket__item_8h.html">basket_item</a>. </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">prod_description</td><td>Pointer to variable to write object instance to. Object instance is of type <a class="el" href="string_8h.html">string</a> and is not retained. Object instance is <em>ta_invalid_object</em> if value is not set in <em>item</em>.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">prod_description</td><td>Pointer to variable to write object instance to. Object instance is of type <a class="el" href="string_8h.html">string</a> and is not retained. Object instance is <em>ta_object_invalid</em> if value is not set in <em>item</em>.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">ta_c_rc_ok</td><td>Object instance written to <em>prod_description</em>. </td></tr>
-    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>item</em> is <em>ta_invalid_object</em>. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>item</em> is <em>ta_object_invalid</em>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>item</em> is not of type <a class="el" href="basket__item_8h.html">basket_item</a>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>prod_description</em> is not <em>null-pointer</em>. </td></tr>
   </table>
@@ -739,14 +739,14 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">item</td><td>Object instance of type <a class="el" href="basket__item_8h.html">basket_item</a>. </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">unit_amount_discount</td><td>Pointer to variable to write object instance to. Object instance is of type <a class="el" href="amount_8h.html">amount</a> and is not retained. Object instance is <em>ta_invalid_object</em> if value is not set in <em>item</em>.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">unit_amount_discount</td><td>Pointer to variable to write object instance to. Object instance is of type <a class="el" href="amount_8h.html">amount</a> and is not retained. Object instance is <em>ta_object_invalid</em> if value is not set in <em>item</em>.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">ta_c_rc_ok</td><td>Object instance written to <em>unit_amount_discount</em>. </td></tr>
-    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>item</em> is <em>ta_invalid_object</em>. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>item</em> is <em>ta_object_invalid</em>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>item</em> is not of type <a class="el" href="basket__item_8h.html">basket_item</a>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>unit_amount_discount</em> is not <em>null-pointer</em>. </td></tr>
   </table>
@@ -785,14 +785,14 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">item</td><td>Object instance of type <a class="el" href="basket__item_8h.html">basket_item</a>. </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">unit_amount_gross</td><td>Pointer to variable to write object instance to. Object instance is of type <a class="el" href="amount_8h.html">amount</a> and is not retained. Object instance is <em>ta_invalid_object</em> if value is not set in <em>item</em>.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">unit_amount_gross</td><td>Pointer to variable to write object instance to. Object instance is of type <a class="el" href="amount_8h.html">amount</a> and is not retained. Object instance is <em>ta_object_invalid</em> if value is not set in <em>item</em>.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">ta_c_rc_ok</td><td>Object instance written to <em>unit_amount_gross</em>. </td></tr>
-    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>item</em> is <em>ta_invalid_object</em>. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>item</em> is <em>ta_object_invalid</em>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>item</em> is not of type <a class="el" href="basket__item_8h.html">basket_item</a>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>unit_amount_gross</em> is not <em>null-pointer</em>. </td></tr>
   </table>
@@ -831,16 +831,16 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">item</td><td>Object instance of type <a class="el" href="basket__item_8h.html">basket_item</a>. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">amount</td><td>Object instance to set. Object instance can be <em>ta_invalid_object</em> to clear the value in <em>item</em>. If object instance is not ta_invalid_object is has to be of type <a class="el" href="amount_8h.html">amount</a>.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">amount</td><td>Object instance to set. Object instance can be <em>ta_object_invalid</em> to clear the value in <em>item</em>. If object instance is not ta_object_invalid is has to be of type <a class="el" href="amount_8h.html">amount</a>.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">ta_c_rc_ok</td><td>Object instance assigned to <em>item</em>. </td></tr>
-    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>item</em> is <em>ta_invalid_object</em>. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>item</em> is <em>ta_object_invalid</em>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>item</em> is not of type <a class="el" href="basket__item_8h.html">basket_item</a>. </td></tr>
-    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>amount</em> is not <em>ta_invalid_object</em> and is not of type <em>amount</em>. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>amount</em> is not <em>ta_object_invalid</em> and is not of type <em>amount</em>. </td></tr>
   </table>
   </dd>
 </dl>
@@ -877,16 +877,16 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">item</td><td>Object instance of type <a class="el" href="basket__item_8h.html">basket_item</a>. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">amount_discount</td><td>Object instance to set. Object instance can be <em>ta_invalid_object</em> to clear the value in <em>item</em>. If object instance is not ta_invalid_object is has to be of type <a class="el" href="amount__discount_8h.html">amount_discount</a>.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">amount_discount</td><td>Object instance to set. Object instance can be <em>ta_object_invalid</em> to clear the value in <em>item</em>. If object instance is not ta_object_invalid is has to be of type <a class="el" href="amount__discount_8h.html">amount_discount</a>.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">ta_c_rc_ok</td><td>Object instance assigned to <em>item</em>. </td></tr>
-    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>item</em> is <em>ta_invalid_object</em>. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>item</em> is <em>ta_object_invalid</em>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>item</em> is not of type <a class="el" href="basket__item_8h.html">basket_item</a>. </td></tr>
-    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>amount_discount</em> is not <em>ta_invalid_object</em> and is not of type <a class="el" href="amount__discount_8h.html">amount_discount</a>. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>amount_discount</em> is not <em>ta_object_invalid</em> and is not of type <a class="el" href="amount__discount_8h.html">amount_discount</a>. </td></tr>
   </table>
   </dd>
 </dl>
@@ -923,16 +923,16 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">item</td><td>Object instance of type <a class="el" href="basket__item_8h.html">basket_item</a>. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">amount_gross</td><td>Object instance to set. Object instance can be <em>ta_invalid_object</em> to clear the value in <em>item</em>. If object instance is not ta_invalid_object is has to be of type <a class="el" href="amount_8h.html">amount</a>.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">amount_gross</td><td>Object instance to set. Object instance can be <em>ta_object_invalid</em> to clear the value in <em>item</em>. If object instance is not ta_object_invalid is has to be of type <a class="el" href="amount_8h.html">amount</a>.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">ta_c_rc_ok</td><td>Object instance assigned to <em>item</em>. </td></tr>
-    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>item</em> is <em>ta_invalid_object</em>. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>item</em> is <em>ta_object_invalid</em>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>item</em> is not of type <a class="el" href="basket__item_8h.html">basket_item</a>. </td></tr>
-    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>amount_gross</em> is not <em>ta_invalid_object</em> and is not of type <em>amount</em>. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>amount_gross</em> is not <em>ta_object_invalid</em> and is not of type <em>amount</em>. </td></tr>
   </table>
   </dd>
 </dl>
@@ -969,16 +969,16 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">item</td><td>Object instance of type <a class="el" href="basket__item_8h.html">basket_item</a>. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">amount_tax</td><td>Object instance to set. Object instance can be <em>ta_invalid_object</em> to clear the value in <em>item</em>. If object instance is not ta_invalid_object is has to be of type <a class="el" href="amount_8h.html">amount</a>.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">amount_tax</td><td>Object instance to set. Object instance can be <em>ta_object_invalid</em> to clear the value in <em>item</em>. If object instance is not ta_object_invalid is has to be of type <a class="el" href="amount_8h.html">amount</a>.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">ta_c_rc_ok</td><td>Object instance assigned to <em>item</em>. </td></tr>
-    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>item</em> is <em>ta_invalid_object</em>. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>item</em> is <em>ta_object_invalid</em>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>item</em> is not of type <a class="el" href="basket__item_8h.html">basket_item</a>. </td></tr>
-    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>amount_tax</em> is not <em>ta_invalid_object</em> and is not of type <em>amount</em>. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>amount_tax</em> is not <em>ta_object_invalid</em> and is not of type <em>amount</em>. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1015,16 +1015,16 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">item</td><td>Object instance of type <a class="el" href="basket__item_8h.html">basket_item</a>. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">amount_total</td><td>Object instance to set. Object instance can be <em>ta_invalid_object</em> to clear the value in <em>item</em>. If object instance is not ta_invalid_object is has to be of type <a class="el" href="amount_8h.html">amount</a>.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">amount_total</td><td>Object instance to set. Object instance can be <em>ta_object_invalid</em> to clear the value in <em>item</em>. If object instance is not ta_object_invalid is has to be of type <a class="el" href="amount_8h.html">amount</a>.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">ta_c_rc_ok</td><td>Object instance assigned to <em>item</em>. </td></tr>
-    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>item</em> is <em>ta_invalid_object</em>. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>item</em> is <em>ta_object_invalid</em>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>item</em> is not of type <a class="el" href="basket__item_8h.html">basket_item</a>. </td></tr>
-    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>amount_total</em> is not <em>ta_invalid_object</em> and is not of type <em>amount</em>. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>amount_total</em> is not <em>ta_object_invalid</em> and is not of type <em>amount</em>. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1061,16 +1061,16 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">item</td><td>Object instance of type <a class="el" href="basket__item_8h.html">basket_item</a>. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">auth_result</td><td>Object instance to set. Object instance can be <em>ta_invalid_object</em> to clear the value in <em>item</em>. If object instance is not ta_invalid_object is has to be of type <a class="el" href="integer_8h.html">integer</a>.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">auth_result</td><td>Object instance to set. Object instance can be <em>ta_object_invalid</em> to clear the value in <em>item</em>. If object instance is not ta_object_invalid is has to be of type <a class="el" href="integer_8h.html">integer</a>.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">ta_c_rc_ok</td><td>Object instance assigned to <em>item</em>. </td></tr>
-    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>item</em> is <em>ta_invalid_object</em>. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>item</em> is <em>ta_object_invalid</em>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>item</em> is not of type <a class="el" href="basket__item_8h.html">basket_item</a>. </td></tr>
-    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>auth_result</em> is not <em>ta_invalid_object</em> and is not of type <a class="el" href="integer_8h.html">integer</a>. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>auth_result</em> is not <em>ta_object_invalid</em> and is not of type <a class="el" href="integer_8h.html">integer</a>. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1107,16 +1107,16 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">item</td><td>Object instance of type <a class="el" href="basket__item_8h.html">basket_item</a>. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">id</td><td>Object instance to set. Object instance can be <em>ta_invalid_object</em> to clear the value in <em>item</em>. If object instance is not ta_invalid_object is has to be of type <a class="el" href="string_8h.html">string</a>.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">id</td><td>Object instance to set. Object instance can be <em>ta_object_invalid</em> to clear the value in <em>item</em>. If object instance is not ta_object_invalid is has to be of type <a class="el" href="string_8h.html">string</a>.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">ta_c_rc_ok</td><td>Object instance assigned to <em>item</em>. </td></tr>
-    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>item</em> is <em>ta_invalid_object</em>. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>item</em> is <em>ta_object_invalid</em>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>item</em> is not of type <a class="el" href="basket__item_8h.html">basket_item</a>. </td></tr>
-    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>id</em> is not <em>ta_invalid_object</em> and is not of type <em>string</em>. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>id</em> is not <em>ta_object_invalid</em> and is not of type <em>string</em>. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1153,16 +1153,16 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">item</td><td>Object instance of type <a class="el" href="basket__item_8h.html">basket_item</a>. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">item_quantity</td><td>Object instance to set. Object instance can be <em>ta_invalid_object</em> to clear the value in <em>item</em>. If object instance is not ta_invalid_object is has to be of type <a class="el" href="item__quantity_8h.html">item_quantity</a>.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">item_quantity</td><td>Object instance to set. Object instance can be <em>ta_object_invalid</em> to clear the value in <em>item</em>. If object instance is not ta_object_invalid is has to be of type <a class="el" href="item__quantity_8h.html">item_quantity</a>.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">ta_c_rc_ok</td><td>Object instance assigned to <em>item</em>. </td></tr>
-    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>item</em> is <em>ta_invalid_object</em>. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>item</em> is <em>ta_object_invalid</em>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>item</em> is not of type <a class="el" href="basket__item_8h.html">basket_item</a>. </td></tr>
-    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>item_quantity</em> is not <em>ta_invalid_object</em> and is not of type <em>item_quantity</em>. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>item_quantity</em> is not <em>ta_object_invalid</em> and is not of type <em>item_quantity</em>. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1199,16 +1199,16 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">item</td><td>Object instance of type <a class="el" href="basket__item_8h.html">basket_item</a>. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">loyalty_id</td><td>Object instance to set. Object instance can be <em>ta_invalid_object</em> to clear the value in <em>item</em>. If object instance is not ta_invalid_object is has to be of type <a class="el" href="string_8h.html">string</a>.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">loyalty_id</td><td>Object instance to set. Object instance can be <em>ta_object_invalid</em> to clear the value in <em>item</em>. If object instance is not ta_object_invalid is has to be of type <a class="el" href="string_8h.html">string</a>.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">ta_c_rc_ok</td><td>Object instance assigned to <em>item</em>. </td></tr>
-    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>item</em> is <em>ta_invalid_object</em>. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>item</em> is <em>ta_object_invalid</em>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>item</em> is not of type <a class="el" href="basket__item_8h.html">basket_item</a>. </td></tr>
-    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>loyalty_id</em> is not <em>ta_invalid_object</em> and is not of type <em>string</em>. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>loyalty_id</em> is not <em>ta_object_invalid</em> and is not of type <em>string</em>. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1245,16 +1245,16 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">item</td><td>Object instance of type <a class="el" href="basket__item_8h.html">basket_item</a>. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">prod_description</td><td>Object instance to set. Object instance can be <em>ta_invalid_object</em> to clear the value in <em>item</em>. If object instance is not ta_invalid_object is has to be of type <a class="el" href="string_8h.html">string</a>.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">prod_description</td><td>Object instance to set. Object instance can be <em>ta_object_invalid</em> to clear the value in <em>item</em>. If object instance is not ta_object_invalid is has to be of type <a class="el" href="string_8h.html">string</a>.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">ta_c_rc_ok</td><td>Object instance assigned to <em>item</em>. </td></tr>
-    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>item</em> is <em>ta_invalid_object</em>. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>item</em> is <em>ta_object_invalid</em>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>item</em> is not of type <a class="el" href="basket__item_8h.html">basket_item</a>. </td></tr>
-    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>prod_description</em> is not <em>ta_invalid_object</em> and is not of type <a class="el" href="string_8h.html">string</a>. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>prod_description</em> is not <em>ta_object_invalid</em> and is not of type <a class="el" href="string_8h.html">string</a>. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1291,16 +1291,16 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">item</td><td>Object instance of type <a class="el" href="basket__item_8h.html">basket_item</a>. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">unit_amount_discount</td><td>Object instance to set. Object instance can be <em>ta_invalid_object</em> to clear the value in <em>item</em>. If object instance is not ta_invalid_object is has to be of type <a class="el" href="amount_8h.html">amount</a>.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">unit_amount_discount</td><td>Object instance to set. Object instance can be <em>ta_object_invalid</em> to clear the value in <em>item</em>. If object instance is not ta_object_invalid is has to be of type <a class="el" href="amount_8h.html">amount</a>.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">ta_c_rc_ok</td><td>Object instance assigned to <em>item</em>. </td></tr>
-    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>item</em> is <em>ta_invalid_object</em>. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>item</em> is <em>ta_object_invalid</em>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>item</em> is not of type <a class="el" href="basket__item_8h.html">basket_item</a>. </td></tr>
-    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>unit_amount_discount</em> is not <em>ta_invalid_object</em> and is not of type <em>amount</em>. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>unit_amount_discount</em> is not <em>ta_object_invalid</em> and is not of type <em>amount</em>. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1337,16 +1337,16 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">item</td><td>Object instance of type <a class="el" href="basket__item_8h.html">basket_item</a>. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">unit_amount_gross</td><td>Object instance to set. Object instance can be <em>ta_invalid_object</em> to clear the value in <em>item</em>. If object instance is not ta_invalid_object is has to be of type <a class="el" href="amount_8h.html">amount</a>.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">unit_amount_gross</td><td>Object instance to set. Object instance can be <em>ta_object_invalid</em> to clear the value in <em>item</em>. If object instance is not ta_object_invalid is has to be of type <a class="el" href="amount_8h.html">amount</a>.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">ta_c_rc_ok</td><td>Object instance assigned to <em>item</em>. </td></tr>
-    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>item</em> is <em>ta_invalid_object</em>. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>item</em> is <em>ta_object_invalid</em>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>item</em> is not of type <a class="el" href="basket__item_8h.html">basket_item</a>. </td></tr>
-    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>unit_amount_gross</em> is not <em>ta_invalid_object</em> and is not of type <em>amount</em>. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>unit_amount_gross</em> is not <em>ta_object_invalid</em> and is not of type <em>amount</em>. </td></tr>
   </table>
   </dd>
 </dl>

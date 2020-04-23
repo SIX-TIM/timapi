@@ -218,6 +218,9 @@
                             <a href="SIX.TimApi.RequestTypes.html" title="RequestTypes" class="">RequestTypes</a>
                           </li>
                           <li class="">
+                            <a href="SIX.TimApi.ScreenshotInformation.html" title="ScreenshotInformation" class="">ScreenshotInformation</a>
+                          </li>
+                          <li class="">
                             <a href="SIX.TimApi.Setting.html" title="Setting" class="">Setting</a>
                           </li>
                           <li class="">
@@ -332,7 +335,13 @@
                             <a href="SIX.TimApi.Terminal.DeactivateCompletedEventHandler.html" title="Terminal.DeactivateCompletedEventHandler" class="">Terminal.DeactivateCompletedEventHandler</a>
                           </li>
                           <li class="">
-                            <a href="SIX.TimApi.Terminal.DeferredAuthHandler.html" title="Terminal.DeferredAuthHandler" class="">Terminal.DeferredAuthHandler</a>
+                            <a href="SIX.TimApi.Terminal.DeferredAuthEventHandler.html" title="Terminal.DeferredAuthEventHandler" class="">Terminal.DeferredAuthEventHandler</a>
+                          </li>
+                          <li class="">
+                            <a href="SIX.TimApi.Terminal.DeviceMaintenanceCompletedEventArgs.html" title="Terminal.DeviceMaintenanceCompletedEventArgs" class="">Terminal.DeviceMaintenanceCompletedEventArgs</a>
+                          </li>
+                          <li class="">
+                            <a href="SIX.TimApi.Terminal.DeviceMaintenanceCompletedEventHandler.html" title="Terminal.DeviceMaintenanceCompletedEventHandler" class="">Terminal.DeviceMaintenanceCompletedEventHandler</a>
                           </li>
                           <li class="">
                             <a href="SIX.TimApi.Terminal.DisconnectedHandler.html" title="Terminal.DisconnectedHandler" class="">Terminal.DisconnectedHandler</a>
@@ -363,6 +372,9 @@
                           </li>
                           <li class="">
                             <a href="SIX.TimApi.Terminal.InitTransactionCompletedEventHandler.html" title="Terminal.InitTransactionCompletedEventHandler" class="">Terminal.InitTransactionCompletedEventHandler</a>
+                          </li>
+                          <li class="">
+                            <a href="SIX.TimApi.Terminal.LicenseChangedEventHandler.html" title="Terminal.LicenseChangedEventHandler" class="">Terminal.LicenseChangedEventHandler</a>
                           </li>
                           <li class="">
                             <a href="SIX.TimApi.Terminal.LoginCompletedEventArgs.html" title="Terminal.LoginCompletedEventArgs" class="">Terminal.LoginCompletedEventArgs</a>
@@ -456,6 +468,9 @@
                           </li>
                           <li class="">
                             <a href="SIX.TimApi.Terminal.RollbackCompletedEventHandler.html" title="Terminal.RollbackCompletedEventHandler" class="">Terminal.RollbackCompletedEventHandler</a>
+                          </li>
+                          <li class="">
+                            <a href="SIX.TimApi.Terminal.ScreenshotHandler.html" title="Terminal.ScreenshotHandler" class="">Terminal.ScreenshotHandler</a>
                           </li>
                           <li class="">
                             <a href="SIX.TimApi.Terminal.SendCardCommandCompletedEventArgs.html" title="Terminal.SendCardCommandCompletedEventArgs" class="">Terminal.SendCardCommandCompletedEventArgs</a>
@@ -617,6 +632,9 @@
                             <a href="SIX.TimApi.Constants.LoyaltyFunctionType.html" title="LoyaltyFunctionType" class="">LoyaltyFunctionType</a>
                           </li>
                           <li class="">
+                            <a href="SIX.TimApi.Constants.MaintenanceType.html" title="MaintenanceType" class="">MaintenanceType</a>
+                          </li>
+                          <li class="">
                             <a href="SIX.TimApi.Constants.ManagementStatus.html" title="ManagementStatus" class="">ManagementStatus</a>
                           </li>
                           <li class="">
@@ -668,7 +686,7 @@
                             <a href="SIX.TimApi.Constants.Recipient.html" title="Recipient" class="">Recipient</a>
                           </li>
                           <li class="">
-                            <a href="SIX.TimApi.Constants.ReconciliationMode.html" title="ReconciliationMode" class="">ReconciliationMode</a>
+                            <a href="SIX.TimApi.Constants.RemoteFunctions.html" title="RemoteFunctions" class="">RemoteFunctions</a>
                           </li>
                           <li class="">
                             <a href="SIX.TimApi.Constants.ResourceId.html" title="ResourceId" class="">ResourceId</a>
@@ -800,45 +818,24 @@ Immutable class.</p>
     <div class="level0"><span class="xref">System.Object</span></div>
     <div class="level1"><span class="xref">Features</span></div>
   </div>
-  <div class="inheritedMembers">
-    <h5>Inherited Members</h5>
-    <div>
-      <span class="xref">System.Object.Equals(System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.GetHashCode()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.GetType()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.MemberwiseClone()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
-    </div>
-  </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="SIX.TimApi.html">SIX.TimApi</a></h6>
   <h6><strong>Assembly</strong>: TimApi.dll</h6>
   <h5 id="SIX_TimApi_Features_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class Features</code></pre>
+    <pre><code class="lang-csharp hljs">public class Features : object</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
   
   
   <a id="SIX_TimApi_Features__ctor_" data-uid="SIX.TimApi.Features.#ctor*"></a>
-  <h4 id="SIX_TimApi_Features__ctor_SIX_TimApi_FeaturesHardware_SIX_TimApi_FeaturesPayment_SIX_TimApi_FeaturesSixml_System_String_" data-uid="SIX.TimApi.Features.#ctor(SIX.TimApi.FeaturesHardware,SIX.TimApi.FeaturesPayment,SIX.TimApi.FeaturesSixml,System.String)">Features(FeaturesHardware, FeaturesPayment, FeaturesSixml, String)</h4>
+  <h4 id="SIX_TimApi_Features__ctor_SIX_TimApi_FeaturesHardware_SIX_TimApi_FeaturesPayment_SIX_TimApi_FeaturesSixml_String_" data-uid="SIX.TimApi.Features.#ctor(SIX.TimApi.FeaturesHardware,SIX.TimApi.FeaturesPayment,SIX.TimApi.FeaturesSixml,String)">Features(FeaturesHardware, FeaturesPayment, FeaturesSixml, String)</h4>
   <div class="markdown level1 summary"><p>Create features.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Features(FeaturesHardware hardware, FeaturesPayment payment, FeaturesSixml sixml, string terminalId)</code></pre>
+    <pre><code class="lang-csharp hljs">public Features(FeaturesHardware hardware, FeaturesPayment payment, FeaturesSixml sixml, String terminalId)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -866,26 +863,25 @@ Immutable class.</p>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="xref">String</span></td>
         <td><span class="parametername">terminalId</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  <h3 id="properties">Properties
+  <h3 id="fields">Fields
   </h3>
   
   
-  <a id="SIX_TimApi_Features_Hardware_" data-uid="SIX.TimApi.Features.Hardware*"></a>
   <h4 id="SIX_TimApi_Features_Hardware" data-uid="SIX.TimApi.Features.Hardware">Hardware</h4>
   <div class="markdown level1 summary"><p>Hardware features.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public FeaturesHardware Hardware { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public readonly FeaturesHardware Hardware</code></pre>
   </div>
-  <h5 class="propertyValue">Property Value</h5>
+  <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
@@ -902,16 +898,15 @@ Immutable class.</p>
   </table>
   
   
-  <a id="SIX_TimApi_Features_Payment_" data-uid="SIX.TimApi.Features.Payment*"></a>
   <h4 id="SIX_TimApi_Features_Payment" data-uid="SIX.TimApi.Features.Payment">Payment</h4>
   <div class="markdown level1 summary"><p>Payment features.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public FeaturesPayment Payment { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public readonly FeaturesPayment Payment</code></pre>
   </div>
-  <h5 class="propertyValue">Property Value</h5>
+  <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
@@ -928,16 +923,15 @@ Immutable class.</p>
   </table>
   
   
-  <a id="SIX_TimApi_Features_Sixml_" data-uid="SIX.TimApi.Features.Sixml*"></a>
   <h4 id="SIX_TimApi_Features_Sixml" data-uid="SIX.TimApi.Features.Sixml">Sixml</h4>
   <div class="markdown level1 summary"><p>SIXml features.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public FeaturesSixml Sixml { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public readonly FeaturesSixml Sixml</code></pre>
   </div>
-  <h5 class="propertyValue">Property Value</h5>
+  <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
@@ -954,16 +948,15 @@ Immutable class.</p>
   </table>
   
   
-  <a id="SIX_TimApi_Features_TerminalId_" data-uid="SIX.TimApi.Features.TerminalId*"></a>
   <h4 id="SIX_TimApi_Features_TerminalId" data-uid="SIX.TimApi.Features.TerminalId">TerminalId</h4>
   <div class="markdown level1 summary"><p>Gets the terminal id.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string TerminalId { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public readonly String TerminalId</code></pre>
   </div>
-  <h5 class="propertyValue">Property Value</h5>
+  <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
@@ -973,7 +966,7 @@ Immutable class.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="xref">String</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -989,7 +982,7 @@ Immutable class.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+    <pre><code class="lang-csharp hljs">public override String ToString()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1001,13 +994,11 @@ Immutable class.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="xref">String</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  <h5 class="overrides">Overrides</h5>
-  <div><span class="xref">System.Object.ToString()</span></div>
 </article>
           </div>
           
