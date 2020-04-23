@@ -14,6 +14,8 @@ var card__data_8h =
     [ "ta_card_data_get_card_product_type", "card__data_8h.html#ad4ee11a152c0f17062781302ca09ed92", null ],
     [ "ta_card_data_get_card_ref", "card__data_8h.html#aa6038e2097976f9f01e78b67e19c1a33", null ],
     [ "ta_card_data_get_card_track_datas", "card__data_8h.html#a1a7e3960582593e1304ab098ac9f4ef8", null ],
+    [ "ta_card_data_get_card_type", "card__data_8h.html#af853326221d031fabe02aaa2fcb327c2", null ],
+    [ "ta_card_data_get_cardholder", "card__data_8h.html#a6c3f633f3fd7372806ec583ad8429209", null ],
     [ "ta_card_data_get_language", "card__data_8h.html#a500f5ed08722d8584edb6e76c70c405c", null ],
     [ "ta_card_data_get_loyalty_information", "card__data_8h.html#aaf77a503e29f15db3c490cf582e64227", null ],
     [ "ta_card_data_get_pos_entry_mode", "card__data_8h.html#ae92aad88b989faa10b755a3d1fbb7771", null ],

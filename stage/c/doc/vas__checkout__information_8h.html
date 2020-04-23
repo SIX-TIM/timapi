@@ -135,14 +135,14 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">vas_checkout_information</td><td>Object instance of type <a class="el" href="vas__checkout__information_8h.html">vas_checkout_information</a>. </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">loyalty_coupons</td><td>Pointer to variable to write object instance to. Object instance is of type <a class="el" href="list_8h.html">list</a> and is not retained. The list contains elements of type <a class="el" href="loyalty__coupon_8h.html">loyalty_coupon</a>. If list is not present <em>ta_invalid_object</em> is written.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">loyalty_coupons</td><td>Pointer to variable to write object instance to. Object instance is of type <a class="el" href="list_8h.html">list</a> and is not retained. The list contains elements of type <a class="el" href="loyalty__coupon_8h.html">loyalty_coupon</a>. If list is not present <em>ta_object_invalid</em> is written.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">ta_c_rc_ok</td><td>Object instance written to <em>loyalty_coupons</em>. </td></tr>
-    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>vas_checkout_information</em> is <em>ta_invalid_object</em>. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>vas_checkout_information</em> is <em>ta_object_invalid</em>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>vas_checkout_information</em> is not of type <a class="el" href="vas__checkout__information_8h.html">vas_checkout_information</a>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>loyalty_coupons</em> is <em>null-pointer</em>. </td></tr>
   </table>
@@ -181,14 +181,14 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">vas_checkout_information</td><td>Object instance of type <a class="el" href="vas__checkout__information_8h.html">vas_checkout_information</a>. </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">loyalty_information</td><td>Pointer to variable to write object instance to. Object instance is of type <a class="el" href="list_8h.html">list</a> and is not retained. The list contains elements of type <a class="el" href="loyalty__information_8h.html">loyalty_information</a>. If list is not present <em>ta_invalid_object</em> is written.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">loyalty_information</td><td>Pointer to variable to write object instance to. Object instance is of type <a class="el" href="list_8h.html">list</a> and is not retained. The list contains elements of type <a class="el" href="loyalty__information_8h.html">loyalty_information</a>. If list is not present <em>ta_object_invalid</em> is written.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">ta_c_rc_ok</td><td>Object instance written to <em>loyalty_information</em>. </td></tr>
-    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>vas_checkout_information</em> is <em>ta_invalid_object</em>. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>vas_checkout_information</em> is <em>ta_object_invalid</em>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>vas_checkout_information</em> is not of type <a class="el" href="vas__checkout__information_8h.html">vas_checkout_information</a>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>loyalty_information</em> is <em>null-pointer</em>. </td></tr>
   </table>
@@ -234,7 +234,7 @@ Functions</h2></td></tr>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">ta_c_rc_ok</td><td>Object instance written to <em>dcc_flag</em>. </td></tr>
-    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>vas_checkout_information</em> is <em>ta_invalid_object</em>. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>vas_checkout_information</em> is <em>ta_object_invalid</em>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>vas_checkout_information</em> is not of type <a class="el" href="vas__checkout__information_8h.html">vas_checkout_information</a>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>provide_basket</em> is <em>null-pointer</em>. </td></tr>
   </table>
@@ -273,14 +273,14 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">vas_checkout_information</td><td>Object instance of type <a class="el" href="vas__checkout__information_8h.html">vas_checkout_information</a>. </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">vas_information</td><td>Pointer to variable to write object instance to. Object instance is of type <a class="el" href="map_8h.html">map</a> and is not retained. The map contains keys of type <a class="el" href="integer_8h.html">integer</a> and values of type <a class="el" href="string_8h.html">string</a> (binary data). If list is not present <em>ta_invalid_object</em> is written.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">vas_information</td><td>Pointer to variable to write object instance to. Object instance is of type <a class="el" href="map_8h.html">map</a> and is not retained. The map contains keys of type <a class="el" href="integer_8h.html">integer</a> and values of type <a class="el" href="string_8h.html">string</a> (binary data). If list is not present <em>ta_object_invalid</em> is written.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">ta_c_rc_ok</td><td>Object instance written to <em>vas_informations</em>. </td></tr>
-    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>vas_checkout_information</em> is <em>ta_invalid_object</em>. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>vas_checkout_information</em> is <em>ta_object_invalid</em>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>vas_checkout_information</em> is not of type <a class="el" href="vas__checkout__information_8h.html">vas_checkout_information</a>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>vas_information</em> is <em>null-pointer</em>. </td></tr>
   </table>
@@ -326,7 +326,7 @@ Functions</h2></td></tr>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">ta_c_rc_ok</td><td>Object instance written to <em>vas_informations</em>. </td></tr>
-    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>vas_checkout_information</em> is <em>ta_invalid_object</em>. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>vas_checkout_information</em> is <em>ta_object_invalid</em>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>vas_checkout_information</em> is not of type <a class="el" href="vas__checkout__information_8h.html">vas_checkout_information</a>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>type</em> is <em>null-pointer</em>. </td></tr>
   </table>

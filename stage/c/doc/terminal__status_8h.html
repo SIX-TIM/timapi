@@ -150,14 +150,14 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">terminal_status</td><td>Object instance of type <a class="el" href="terminal__status_8h.html">terminal_status</a>. </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">card_data</td><td>Pointer to variable to write object instance to. Object instance is of type <a class="el" href="card__data_8h.html">card_data</a> and is not retained. Object instance is <em>ta_invalid_object</em> if value is not set in <em>terminal_status</em>.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">card_data</td><td>Pointer to variable to write object instance to. Object instance is of type <a class="el" href="card__data_8h.html">card_data</a> and is not retained. Object instance is <em>ta_object_invalid</em> if value is not set in <em>terminal_status</em>.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">ta_c_rc_ok</td><td>Object instance written to <em>card_data</em>. </td></tr>
-    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>terminal_status</em> is <em>ta_invalid_object</em>. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>terminal_status</em> is <em>ta_object_invalid</em>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>terminal_status</em> is not of type <a class="el" href="terminal__status_8h.html">terminal_status</a>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>card_data</em> is <em>null-pointer</em>. </td></tr>
   </table>
@@ -203,7 +203,7 @@ Functions</h2></td></tr>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">ta_c_rc_ok</td><td>Value written to <em>card_reader_status</em>. </td></tr>
-    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>terminal_status</em> is <em>ta_invalid_object</em>. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>terminal_status</em> is <em>ta_object_invalid</em>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>terminal_status</em> is not of type <a class="el" href="terminal__status_8h.html">terminal_status</a>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>card_reader_status</em> is <em>null-pointer</em>. </td></tr>
   </table>
@@ -249,7 +249,7 @@ Functions</h2></td></tr>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">ta_c_rc_ok</td><td>Value written to <em>connection_status</em>. </td></tr>
-    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>terminal_status</em> is <em>ta_invalid_object</em>. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>terminal_status</em> is <em>ta_object_invalid</em>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>terminal_status</em> is not of type <a class="el" href="terminal__status_8h.html">terminal_status</a>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>connection_status</em> is <em>null-pointer</em>. </td></tr>
   </table>
@@ -295,7 +295,7 @@ Functions</h2></td></tr>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">ta_c_rc_ok</td><td>Object instance written to <em>display_content</em>. </td></tr>
-    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>terminal_status</em> is <em>ta_invalid_object</em>. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>terminal_status</em> is <em>ta_object_invalid</em>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>terminal_status</em> is not of type <a class="el" href="terminal__status_8h.html">terminal_status</a>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>display_content</em> is <em>null-pointer</em>. </td></tr>
   </table>
@@ -334,14 +334,14 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">terminal_status</td><td>Object instance of type <a class="el" href="terminal__status_8h.html">terminal_status</a>. </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">amount</td><td>Pointer to variable to write object instance to. Object instance is of type <a class="el" href="amount__final_8h.html">amount_final</a> and is not retained. Object instance is <em>ta_invalid_object</em> if value is not set in <em>terminal_status</em>.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">amount</td><td>Pointer to variable to write object instance to. Object instance is of type <a class="el" href="amount__final_8h.html">amount_final</a> and is not retained. Object instance is <em>ta_object_invalid</em> if value is not set in <em>terminal_status</em>.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">ta_c_rc_ok</td><td>Object instance written to <em>card_data</em>. </td></tr>
-    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>terminal_status</em> is <em>ta_invalid_object</em>. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>terminal_status</em> is <em>ta_object_invalid</em>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>terminal_status</em> is not of type <a class="el" href="terminal__status_8h.html">terminal_status</a>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>amount</em> is <em>null-pointer</em>. </td></tr>
   </table>
@@ -387,7 +387,7 @@ Functions</h2></td></tr>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">ta_c_rc_ok</td><td>Value written to <em>management_status</em>. </td></tr>
-    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>terminal_status</em> is <em>ta_invalid_object</em>. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>terminal_status</em> is <em>ta_object_invalid</em>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>terminal_status</em> is not of type <a class="el" href="terminal__status_8h.html">terminal_status</a>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>management_status</em> is <em>null-pointer</em>. </td></tr>
   </table>
@@ -434,7 +434,7 @@ Functions</h2></td></tr>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">ta_c_rc_ok</td><td>Value written to <em>receipt_information</em>. </td></tr>
-    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>terminal_status</em> is <em>ta_invalid_object</em>. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>terminal_status</em> is <em>ta_object_invalid</em>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>terminal_status</em> is not of type <a class="el" href="terminal__status_8h.html">terminal_status</a>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>receipt_information</em> is <em>null-pointer</em>. </td></tr>
   </table>
@@ -480,7 +480,7 @@ Functions</h2></td></tr>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">ta_c_rc_ok</td><td>Value written to <em>sleep_mode_status</em>. </td></tr>
-    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>terminal_status</em> is <em>ta_invalid_object</em>. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>terminal_status</em> is <em>ta_object_invalid</em>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>terminal_status</em> is not of type <a class="el" href="terminal__status_8h.html">terminal_status</a>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>sleep_mode_status</em> is <em>null-pointer</em>. </td></tr>
   </table>
@@ -526,7 +526,7 @@ Functions</h2></td></tr>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">ta_c_rc_ok</td><td>Value written to <em>sw_update_available</em>. </td></tr>
-    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>terminal_status</em> is <em>ta_invalid_object</em>. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>terminal_status</em> is <em>ta_object_invalid</em>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>terminal_status</em> is not of type <a class="el" href="terminal__status_8h.html">terminal_status</a>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>sw_update_available</em> is <em>null-pointer</em>. </td></tr>
   </table>
@@ -572,7 +572,7 @@ Functions</h2></td></tr>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">ta_c_rc_ok</td><td>Value written to <em>transaction_status</em>. </td></tr>
-    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>terminal_status</em> is <em>ta_invalid_object</em>. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>terminal_status</em> is <em>ta_object_invalid</em>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>terminal_status</em> is not of type <a class="el" href="terminal__status_8h.html">terminal_status</a>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>transaction_status</em> is <em>null-pointer</em>. </td></tr>
   </table>

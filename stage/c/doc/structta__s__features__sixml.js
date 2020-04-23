@@ -17,6 +17,7 @@ var structta__s__features__sixml =
     [ "non_financial_functions", "structta__s__features__sixml.html#abe1ab6448744b372a46cdc59c255b606", null ],
     [ "persistent_state", "structta__s__features__sixml.html#a349e51cdcc85c77ba165f9d6447573eb", null ],
     [ "protocol_level", "structta__s__features__sixml.html#a8bbf9cbb7667ae0bd3ccb705d530d47e", null ],
+    [ "remote_functions", "structta__s__features__sixml.html#a4f79f3448fd174dc4baef4d62cfc0a2b", null ],
     [ "request_repetitition", "structta__s__features__sixml.html#aa15d93b2d8324b51bc34437f8a6153e8", null ],
     [ "sleep_timer", "structta__s__features__sixml.html#a9e50f8e05771e78f8f8d2e328aa84ec7", null ],
     [ "status_functions", "structta__s__features__sixml.html#ab0b778e5893b0886e442ba2708570124", null ]

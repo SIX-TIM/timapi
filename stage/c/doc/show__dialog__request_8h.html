@@ -182,7 +182,7 @@ Functions</h2></td></tr>
   <table class="retval">
     <tr><td class="paramname">ta_c_rc_ok</td><td>Object instance has been created and written to <em>request</em>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>request</em> is <em>null-pointer</em>. </td></tr>
-    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>source_request</em> is <em>ta_invalid_object</em>. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>source_request</em> is <em>ta_object_invalid</em>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>source_request</em> is not of type <a class="el" href="show__dialog__request_8h.html">show_dialog_request</a>. </td></tr>
     <tr><td class="paramname">ta_c_rc_out_of_memory</td><td>Failed allocating memory. </td></tr>
   </table>
@@ -263,7 +263,7 @@ Functions</h2></td></tr>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">ta_c_rc_ok</td><td>Object instance written to <em>brand_bar</em>. </td></tr>
-    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>request</em> is <em>ta_invalid_object</em>. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>request</em> is <em>ta_object_invalid</em>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>request</em> is not of type <a class="el" href="show__dialog__request_8h.html">show_dialog_request</a>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>brand_bar</em> is <em>null-pointer</em>. </td></tr>
   </table>
@@ -309,7 +309,7 @@ Functions</h2></td></tr>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">ta_c_rc_ok</td><td>Value written to <em>brand_mode</em>. </td></tr>
-    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>request</em> is <em>ta_invalid_object</em>. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>request</em> is <em>ta_object_invalid</em>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>request</em> is not of type <a class="el" href="show__dialog__request_8h.html">show_dialog_request</a>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>brand_mode</em> is <em>null-pointer</em>. </td></tr>
   </table>
@@ -348,14 +348,14 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">request</td><td>Object instance of type <a class="el" href="show__dialog__request_8h.html">show_dialog_request</a>. </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">language</td><td>Pointer to variable to write object instance to. Object instance is of type <a class="el" href="string_8h.html">string</a> and is not retained. Object instance is <em>ta_invalid_object</em> if value is not set in <em>request</em>.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">language</td><td>Pointer to variable to write object instance to. Object instance is of type <a class="el" href="string_8h.html">string</a> and is not retained. Object instance is <em>ta_object_invalid</em> if value is not set in <em>request</em>.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">ta_c_rc_ok</td><td>Object instance written to <em>language</em>. </td></tr>
-    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>request</em> is <em>ta_invalid_object</em>. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>request</em> is <em>ta_object_invalid</em>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>request</em> is not of type <a class="el" href="show__dialog__request_8h.html">show_dialog_request</a>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>language</em> is <em>null-pointer</em>. </td></tr>
   </table>
@@ -401,7 +401,7 @@ Functions</h2></td></tr>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">ta_c_rc_ok</td><td>Object instance written to <em>placeholder_items</em>. </td></tr>
-    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>request</em> is <em>ta_invalid_object</em>. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>request</em> is <em>ta_object_invalid</em>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>request</em> is not of type <a class="el" href="show__dialog__request_8h.html">show_dialog_request</a>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>placeholder_items</em> is <em>null-pointer</em>. </td></tr>
   </table>
@@ -447,7 +447,7 @@ Functions</h2></td></tr>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">ta_c_rc_ok</td><td>Value written to <em>resource_id</em>. </td></tr>
-    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>request</em> is <em>ta_invalid_object</em>. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>request</em> is <em>ta_object_invalid</em>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>request</em> is not of type <a class="el" href="show__dialog__request_8h.html">show_dialog_request</a>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>resource_id</em> is <em>null-pointer</em>. </td></tr>
   </table>
@@ -493,7 +493,7 @@ Functions</h2></td></tr>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">ta_c_rc_ok</td><td>Value written to <em>theme</em>. </td></tr>
-    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>request</em> is <em>ta_invalid_object</em>. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>request</em> is <em>ta_object_invalid</em>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>request</em> is not of type <a class="el" href="show__dialog__request_8h.html">show_dialog_request</a>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>theme</em> is <em>null-pointer</em>. </td></tr>
   </table>
@@ -539,7 +539,7 @@ Functions</h2></td></tr>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">ta_c_rc_ok</td><td>Value written to <em>timeout</em>. </td></tr>
-    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>request</em> is <em>ta_invalid_object</em>. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>request</em> is <em>ta_object_invalid</em>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>request</em> is not of type <a class="el" href="show__dialog__request_8h.html">show_dialog_request</a>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>timeout</em> is <em>null-pointer</em>. </td></tr>
   </table>
@@ -585,7 +585,7 @@ Functions</h2></td></tr>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">ta_c_rc_ok</td><td>Object instance written to <em>parameters</em>. </td></tr>
-    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>request</em> is <em>ta_invalid_object</em>. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>request</em> is <em>ta_object_invalid</em>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>request</em> is not of type <a class="el" href="show__dialog__request_8h.html">show_dialog_request</a>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>parameters</em> is <em>null-pointer</em>. </td></tr>
   </table>
@@ -632,11 +632,11 @@ Functions</h2></td></tr>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">ta_c_rc_ok</td><td>Object instance assigned to <em>brand_bar</em>. </td></tr>
-    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>request</em> is <em>ta_invalid_object</em>. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>request</em> is <em>ta_object_invalid</em>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>request</em> is not of type <a class="el" href="show__dialog__request_8h.html">show_dialog_request</a>. </td></tr>
-    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>brand_bar</em> is <em>ta_invalid_object</em>. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>brand_bar</em> is <em>ta_object_invalid</em>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>brand_bar</em> is not of type <a class="el" href="list_8h.html">list</a>. </td></tr>
-    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td>Element in <em>brand_bar</em> is <em>ta_invalid_object</em>. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td>Element in <em>brand_bar</em> is <em>ta_object_invalid</em>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td>Element in <em>brand_bar</em> is not of type <a class="el" href="integer_8h.html">integer</a>. </td></tr>
   </table>
   </dd>
@@ -681,7 +681,7 @@ Functions</h2></td></tr>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">ta_c_rc_ok</td><td>Value assigned to <em>brand_mode</em>. </td></tr>
-    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>request</em> is <em>ta_invalid_object</em>. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>request</em> is <em>ta_object_invalid</em>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>request</em> is not of type <a class="el" href="show__dialog__request_8h.html">show_dialog_request</a>. </td></tr>
   </table>
   </dd>
@@ -719,16 +719,16 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">request</td><td>Object instance of type <a class="el" href="show__dialog__request_8h.html">show_dialog_request</a>. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">language</td><td>Object instance to set. Object instance can be <em>ta_invalid_object</em> to clear the value in <em>request</em>. If object instance is not ta_invalid_object is has to be of type <a class="el" href="string_8h.html">string</a>.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">language</td><td>Object instance to set. Object instance can be <em>ta_object_invalid</em> to clear the value in <em>request</em>. If object instance is not ta_object_invalid is has to be of type <a class="el" href="string_8h.html">string</a>.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">ta_c_rc_ok</td><td>Object instance assigned to <em>language</em>. </td></tr>
-    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>request</em> is <em>ta_invalid_object</em>. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>request</em> is <em>ta_object_invalid</em>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>request</em> is not of type <a class="el" href="show__dialog__request_8h.html">show_dialog_request</a>. </td></tr>
-    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>language</em> is not <em>ta_invalid_object</em> and is not of type <a class="el" href="string_8h.html">string</a>. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>language</em> is not <em>ta_object_invalid</em> and is not of type <a class="el" href="string_8h.html">string</a>. </td></tr>
   </table>
   </dd>
 </dl>
@@ -772,13 +772,13 @@ Functions</h2></td></tr>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">ta_c_rc_ok</td><td>Object instance assigned to <em>placeholder_items</em>. </td></tr>
-    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>request</em> is <em>ta_invalid_object</em>. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>request</em> is <em>ta_object_invalid</em>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>request</em> is not of type <a class="el" href="show__dialog__request_8h.html">show_dialog_request</a>. </td></tr>
-    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>placeholder_items</em> is <em>ta_invalid_object</em>. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>placeholder_items</em> is <em>ta_object_invalid</em>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>placeholder_items</em> is not of type <a class="el" href="map_8h.html">map</a>. </td></tr>
-    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td>Key in <em>placeholder_items</em> is <em>ta_invalid_object</em>. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td>Key in <em>placeholder_items</em> is <em>ta_object_invalid</em>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td>Key in <em>placeholder_items</em> is not of type <a class="el" href="integer_8h.html">integer</a>. </td></tr>
-    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td>Value in <em>placeholder_items</em> is <em>ta_invalid_object</em>. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td>Value in <em>placeholder_items</em> is <em>ta_object_invalid</em>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td>Value in <em>placeholder_items</em> is not of type <a class="el" href="string_8h.html">string</a>. </td></tr>
   </table>
   </dd>
@@ -823,7 +823,7 @@ Functions</h2></td></tr>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">ta_c_rc_ok</td><td>Value assigned to <em>resource_id</em>. </td></tr>
-    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>request</em> is <em>ta_invalid_object</em>. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>request</em> is <em>ta_object_invalid</em>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>request</em> is not of type <a class="el" href="show__dialog__request_8h.html">show_dialog_request</a>. </td></tr>
   </table>
   </dd>
@@ -868,13 +868,13 @@ Functions</h2></td></tr>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">ta_c_rc_ok</td><td>Object instance assigned to <em>parameters</em>. </td></tr>
-    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>request</em> is <em>ta_invalid_object</em>. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>request</em> is <em>ta_object_invalid</em>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>request</em> is not of type <a class="el" href="show__dialog__request_8h.html">show_dialog_request</a>. </td></tr>
-    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>parameters</em> is <em>ta_invalid_object</em>. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>parameters</em> is <em>ta_object_invalid</em>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>parameters</em> is not of type <a class="el" href="map_8h.html">map</a>. </td></tr>
-    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td>Key in <em>parameters</em> is <em>ta_invalid_object</em>. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td>Key in <em>parameters</em> is <em>ta_object_invalid</em>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td>Key in <em>parameters</em> is not of type <a class="el" href="integer_8h.html">integer</a>. </td></tr>
-    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td>Value in <em>parameters</em> is <em>ta_invalid_object</em>. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td>Value in <em>parameters</em> is <em>ta_object_invalid</em>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td>Value in <em>parameters</em> is not of type <a class="el" href="string_8h.html">string</a>. </td></tr>
   </table>
   </dd>
@@ -919,7 +919,7 @@ Functions</h2></td></tr>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">ta_c_rc_ok</td><td>Value assigned to <em>resource_id</em>. </td></tr>
-    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>request</em> is <em>ta_invalid_object</em>. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>request</em> is <em>ta_object_invalid</em>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>request</em> is not of type <a class="el" href="show__dialog__request_8h.html">show_dialog_request</a>. </td></tr>
   </table>
   </dd>
@@ -964,7 +964,7 @@ Functions</h2></td></tr>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">ta_c_rc_ok</td><td>Value assigned to <em>timeout</em>. </td></tr>
-    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>request</em> is <em>ta_invalid_object</em>. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>request</em> is <em>ta_object_invalid</em>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>request</em> is not of type <a class="el" href="show__dialog__request_8h.html">show_dialog_request</a>. </td></tr>
   </table>
   </dd>

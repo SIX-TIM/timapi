@@ -129,14 +129,14 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">response</td><td>Object instance of type <a class="el" href="show__dialog__response_8h.html">show_dialog_response</a>. </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">card_data</td><td>Pointer to variable to write object instance to. Object instance is of type <a class="el" href="card__data_8h.html">card_data</a> and is not retained. Object instance is <em>ta_invalid_object</em> if value is not set in <em>response</em>.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">card_data</td><td>Pointer to variable to write object instance to. Object instance is of type <a class="el" href="card__data_8h.html">card_data</a> and is not retained. Object instance is <em>ta_object_invalid</em> if value is not set in <em>response</em>.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">ta_c_rc_ok</td><td>Object instance written to <em>card_data</em>. </td></tr>
-    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>response</em> is <em>ta_invalid_object</em>. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>response</em> is <em>ta_object_invalid</em>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>response</em> is not of type <a class="el" href="show__dialog__response_8h.html">show_dialog_response</a>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>card_data</em> is <em>null-pointer</em>. </td></tr>
   </table>
@@ -182,7 +182,7 @@ Functions</h2></td></tr>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">ta_c_rc_ok</td><td>Object instance written to <em>reason</em>. </td></tr>
-    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>response</em> is <em>ta_invalid_object</em>. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>response</em> is <em>ta_object_invalid</em>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>response</em> is not of type <a class="el" href="show__dialog__response_8h.html">show_dialog_response</a>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>reason</em> is <em>null-pointer</em>. </td></tr>
   </table>
@@ -221,14 +221,14 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">response</td><td>Object instance of type <a class="el" href="show__dialog__response_8h.html">show_dialog_response</a>. </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">user_input</td><td>Pointer to variable to write object instance to. Object instance is of type <a class="el" href="string_8h.html">string</a> and is not retained. Object instance is <em>ta_invalid_object</em> if value is not set in <em>response</em>.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">user_input</td><td>Pointer to variable to write object instance to. Object instance is of type <a class="el" href="string_8h.html">string</a> and is not retained. Object instance is <em>ta_object_invalid</em> if value is not set in <em>response</em>.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">ta_c_rc_ok</td><td>Object instance written to <em>user_input</em>. </td></tr>
-    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>response</em> is <em>ta_invalid_object</em>. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>response</em> is <em>ta_object_invalid</em>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>response</em> is not of type <a class="el" href="show__dialog__response_8h.html">show_dialog_response</a>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>user_input</em> is <em>null-pointer</em>. </td></tr>
   </table>
