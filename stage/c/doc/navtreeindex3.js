@@ -1,5 +1,6 @@
 var NAVTREEINDEX3 =
 {
+"enum__string__maps_2financial__transactions_8h.html":[1,1,0,1,0,15],
 "enum__string__maps_2financial__transactions_8h.html#a61470327556c543fe0131fde2a211d67":[1,1,0,1,0,15,0],
 "enum__string__maps_2function__hint_8h.html":[1,1,0,1,0,16],
 "enum__string__maps_2function__hint_8h.html#ab096adf71db063fbbb7b5244b0dce487":[1,1,0,1,0,16,0],
@@ -98,6 +99,7 @@ var NAVTREEINDEX3 =
 "files.html":[1,1],
 "financial__transactions_8h.html":[1,1,0,1,19],
 "financial__transactions_8h.html#acb14a85df061e531e84d9409a28ead04":[1,1,0,1,19,1],
+"financial__transactions_8h.html#acb14a85df061e531e84d9409a28ead04a0285ddf16037a61a27e71bc038fb4237":[1,1,0,1,19,1,30],
 "financial__transactions_8h.html#acb14a85df061e531e84d9409a28ead04a055988eb3604e61351c81bbcf6bb64bb":[1,1,0,1,19,1,16],
 "financial__transactions_8h.html#acb14a85df061e531e84d9409a28ead04a0c5187119534bf5b27683d7b16cb641e":[1,1,0,1,19,1,21],
 "financial__transactions_8h.html#acb14a85df061e531e84d9409a28ead04a10053136de6f959973f59623e5b8efb5":[1,1,0,1,19,1,23],
@@ -124,6 +126,7 @@ var NAVTREEINDEX3 =
 "financial__transactions_8h.html#acb14a85df061e531e84d9409a28ead04ace67128f3046d1c60c74cfdd4ea1ae86":[1,1,0,1,19,1,29],
 "financial__transactions_8h.html#acb14a85df061e531e84d9409a28ead04acf97e5593fe75ecd077da0dd20c51f2c":[1,1,0,1,19,1,0],
 "financial__transactions_8h.html#acb14a85df061e531e84d9409a28ead04ad4057d5f82d5a3ba1fe6ca45e867d822":[1,1,0,1,19,1,4],
+"financial__transactions_8h.html#acb14a85df061e531e84d9409a28ead04ada25a475da2ba9bb982c317b09baa69d":[1,1,0,1,19,1,31],
 "financial__transactions_8h.html#acb14a85df061e531e84d9409a28ead04adac2836109e44a702bcf5f035a4ca7a1":[1,1,0,1,19,1,27],
 "financial__transactions_8h.html#acb14a85df061e531e84d9409a28ead04aed0caf8424b31a321fc010c027e340c6":[1,1,0,1,19,1,7],
 "financial__transactions_8h.html#acb14a85df061e531e84d9409a28ead04afba9c6a192f219f0d86b44c78ac246f3":[1,1,0,1,19,1,18],
@@ -246,8 +249,5 @@ var NAVTREEINDEX3 =
 "list_8h.html#ae91c835f44eb10573e16bb60f579ef94":[1,1,0,0,2,4],
 "logging_8h.html":[1,1,0,31],
 "logging_8h.html#a0fca5add0db207bba174a8d19b65ea22":[1,1,0,31,2],
-"logging_8h.html#a659ba7131eee51412df901a88092c313":[1,1,0,31,5],
-"logging_8h.html#a776cfef723204867967febe7597b3bca":[1,1,0,31,6],
-"logging_8h.html#a776cfef723204867967febe7597b3bcaa125200a696e69eeaecc61225f31c01c1":[1,1,0,31,6,3],
-"logging_8h.html#a776cfef723204867967febe7597b3bcaa277ec78bcb860265ce946cdc33e3ef78":[1,1,0,31,6,0]
+"logging_8h.html#a659ba7131eee51412df901a88092c313":[1,1,0,31,5]
 };

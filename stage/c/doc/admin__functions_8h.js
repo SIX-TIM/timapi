@@ -25,6 +25,7 @@ var admin__functions_8h =
       [ "ta_c_af_eject_card", "admin__functions_8h.html#a13a0ca82db086bbda34502410724552fadfc607cc5fa68636e52f1644f4980c13", null ],
       [ "ta_c_af_open_maintenance_window", "admin__functions_8h.html#a13a0ca82db086bbda34502410724552fa8de647bad46e0ab5de1f4e682dbf1077", null ],
       [ "ta_c_af_close_maintenance_window", "admin__functions_8h.html#a13a0ca82db086bbda34502410724552fa0447a32813c5a41fa28768d784fc8255", null ],
-      [ "ta_c_af_activate_service_menu", "admin__functions_8h.html#a13a0ca82db086bbda34502410724552faeffe4e3eccbaf9f08edb7541a817560e", null ]
+      [ "ta_c_af_activate_service_menu", "admin__functions_8h.html#a13a0ca82db086bbda34502410724552faeffe4e3eccbaf9f08edb7541a817560e", null ],
+      [ "ta_c_af_mobile_topup_issuer_info", "admin__functions_8h.html#a13a0ca82db086bbda34502410724552fa3f0c03b72b14970f3cd54c845af5d69c", null ]
     ] ]
 ];

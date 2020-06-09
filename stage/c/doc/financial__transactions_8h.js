@@ -31,6 +31,8 @@ var financial__transactions_8h =
       [ "ta_c_ft_unload", "financial__transactions_8h.html#acb14a85df061e531e84d9409a28ead04afd651414509900e5a9a2f66ad0cc3a27", null ],
       [ "ta_c_ft_funding", "financial__transactions_8h.html#acb14a85df061e531e84d9409a28ead04adac2836109e44a702bcf5f035a4ca7a1", null ],
       [ "ta_c_ft_refunding", "financial__transactions_8h.html#acb14a85df061e531e84d9409a28ead04acc12d8a0d0f4f086bd63eba1acf256b0", null ],
-      [ "ta_c_ft_debt_recovery", "financial__transactions_8h.html#acb14a85df061e531e84d9409a28ead04ace67128f3046d1c60c74cfdd4ea1ae86", null ]
+      [ "ta_c_ft_debt_recovery", "financial__transactions_8h.html#acb14a85df061e531e84d9409a28ead04ace67128f3046d1c60c74cfdd4ea1ae86", null ],
+      [ "ta_c_ft_mobile_topup_purchase", "financial__transactions_8h.html#acb14a85df061e531e84d9409a28ead04a0285ddf16037a61a27e71bc038fb4237", null ],
+      [ "ta_c_ft_mobile_topup_reversal", "financial__transactions_8h.html#acb14a85df061e531e84d9409a28ead04ada25a475da2ba9bb982c317b09baa69d", null ]
     ] ]
 ];

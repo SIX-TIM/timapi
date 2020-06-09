@@ -1,5 +1,6 @@
 var NAVTREEINDEX1 =
 {
+"brand__mode_8h.html#a0b46da6b8e7529349f12aaf94894c5e5":[1,1,0,1,4,0],
 "brand__mode_8h.html#a5581ba8d4256d05c15ccc9cfd474eeb4":[1,1,0,1,4,1],
 "brand__mode_8h.html#a5581ba8d4256d05c15ccc9cfd474eeb4a48c2145557ec433531c817491851ac3c":[1,1,0,1,4,1,1],
 "brand__mode_8h.html#a5581ba8d4256d05c15ccc9cfd474eeb4a986d2de616c4e4bfb7089ce2f44f8104":[1,1,0,1,4,1,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX1 =
 "currency_8h.html#ad375db379bcf5a792280a2735f80f7d9a88b37b13381803cb2b1aea2f11d93fb6":[1,1,0,1,12,3,77],
 "currency_8h.html#ad375db379bcf5a792280a2735f80f7d9a88bd3fc7cec48c56ad11f8ca3bd0676a":[1,1,0,1,12,3,39],
 "currency_8h.html#ad375db379bcf5a792280a2735f80f7d9a8a23eeb48101a938e17318c423832a8c":[1,1,0,1,12,3,177],
-"currency_8h.html#ad375db379bcf5a792280a2735f80f7d9a8a6ac97ecaddd60f29ffdfb9ca4ac1f2":[1,1,0,1,12,3,153],
-"currency_8h.html#ad375db379bcf5a792280a2735f80f7d9a8ceba108bc1a4689e84935651e7bf3c3":[1,1,0,1,12,3,82]
+"currency_8h.html#ad375db379bcf5a792280a2735f80f7d9a8a6ac97ecaddd60f29ffdfb9ca4ac1f2":[1,1,0,1,12,3,153]
 };

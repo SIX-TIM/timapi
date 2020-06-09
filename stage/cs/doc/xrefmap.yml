@@ -1852,6 +1852,12 @@ references:
   commentId: F:SIX.TimApi.Constants.AdminFunctions.Logout
   fullName: SIX.TimApi.Constants.AdminFunctions.Logout
   nameWithType: AdminFunctions.Logout
+- uid: SIX.TimApi.Constants.AdminFunctions.MobileTopupIssuerInfo
+  name: MobileTopupIssuerInfo
+  href: api/SIX.TimApi.Constants.AdminFunctions.html#SIX_TimApi_Constants_AdminFunctions_MobileTopupIssuerInfo
+  commentId: F:SIX.TimApi.Constants.AdminFunctions.MobileTopupIssuerInfo
+  fullName: SIX.TimApi.Constants.AdminFunctions.MobileTopupIssuerInfo
+  nameWithType: AdminFunctions.MobileTopupIssuerInfo
 - uid: SIX.TimApi.Constants.AdminFunctions.OpenDialogMode
   name: OpenDialogMode
   href: api/SIX.TimApi.Constants.AdminFunctions.html#SIX_TimApi_Constants_AdminFunctions_OpenDialogMode
@@ -3034,6 +3040,18 @@ references:
   commentId: F:SIX.TimApi.Constants.FinancialTransactions.LoadVoucher
   fullName: SIX.TimApi.Constants.FinancialTransactions.LoadVoucher
   nameWithType: FinancialTransactions.LoadVoucher
+- uid: SIX.TimApi.Constants.FinancialTransactions.MobileTopupPurchase
+  name: MobileTopupPurchase
+  href: api/SIX.TimApi.Constants.FinancialTransactions.html#SIX_TimApi_Constants_FinancialTransactions_MobileTopupPurchase
+  commentId: F:SIX.TimApi.Constants.FinancialTransactions.MobileTopupPurchase
+  fullName: SIX.TimApi.Constants.FinancialTransactions.MobileTopupPurchase
+  nameWithType: FinancialTransactions.MobileTopupPurchase
+- uid: SIX.TimApi.Constants.FinancialTransactions.MobileTopupReversal
+  name: MobileTopupReversal
+  href: api/SIX.TimApi.Constants.FinancialTransactions.html#SIX_TimApi_Constants_FinancialTransactions_MobileTopupReversal
+  commentId: F:SIX.TimApi.Constants.FinancialTransactions.MobileTopupReversal
+  fullName: SIX.TimApi.Constants.FinancialTransactions.MobileTopupReversal
+  nameWithType: FinancialTransactions.MobileTopupReversal
 - uid: SIX.TimApi.Constants.FinancialTransactions.PreAuthorization
   name: PreAuthorization
   href: api/SIX.TimApi.Constants.FinancialTransactions.html#SIX_TimApi_Constants_FinancialTransactions_PreAuthorization
@@ -4918,6 +4936,24 @@ references:
   commentId: F:SIX.TimApi.Constants.ResourceId.MigrosGkkpinCheck
   fullName: SIX.TimApi.Constants.ResourceId.MigrosGkkpinCheck
   nameWithType: ResourceId.MigrosGkkpinCheck
+- uid: SIX.TimApi.Constants.ResourceId.PaybackReadCode
+  name: PaybackReadCode
+  href: api/SIX.TimApi.Constants.ResourceId.html#SIX_TimApi_Constants_ResourceId_PaybackReadCode
+  commentId: F:SIX.TimApi.Constants.ResourceId.PaybackReadCode
+  fullName: SIX.TimApi.Constants.ResourceId.PaybackReadCode
+  nameWithType: ResourceId.PaybackReadCode
+- uid: SIX.TimApi.Constants.ResourceId.PaybackShowBalance
+  name: PaybackShowBalance
+  href: api/SIX.TimApi.Constants.ResourceId.html#SIX_TimApi_Constants_ResourceId_PaybackShowBalance
+  commentId: F:SIX.TimApi.Constants.ResourceId.PaybackShowBalance
+  fullName: SIX.TimApi.Constants.ResourceId.PaybackShowBalance
+  nameWithType: ResourceId.PaybackShowBalance
+- uid: SIX.TimApi.Constants.ResourceId.PaybackSpendPoints
+  name: PaybackSpendPoints
+  href: api/SIX.TimApi.Constants.ResourceId.html#SIX_TimApi_Constants_ResourceId_PaybackSpendPoints
+  commentId: F:SIX.TimApi.Constants.ResourceId.PaybackSpendPoints
+  fullName: SIX.TimApi.Constants.ResourceId.PaybackSpendPoints
+  nameWithType: ResourceId.PaybackSpendPoints
 - uid: SIX.TimApi.Constants.ResourceId.PetrolBanknoteCardsOnly
   name: PetrolBanknoteCardsOnly
   href: api/SIX.TimApi.Constants.ResourceId.html#SIX_TimApi_Constants_ResourceId_PetrolBanknoteCardsOnly
@@ -6394,6 +6430,12 @@ references:
   commentId: F:SIX.TimApi.Constants.ResultCode.ValueOutOfRangeInThisContext
   fullName: SIX.TimApi.Constants.ResultCode.ValueOutOfRangeInThisContext
   nameWithType: ResultCode.ValueOutOfRangeInThisContext
+- uid: SIX.TimApi.Constants.ResultCode.VoucherCannotBeReversed_
+  name: VoucherCannotBeReversed_
+  href: api/SIX.TimApi.Constants.ResultCode.html#SIX_TimApi_Constants_ResultCode_VoucherCannotBeReversed_
+  commentId: F:SIX.TimApi.Constants.ResultCode.VoucherCannotBeReversed_
+  fullName: SIX.TimApi.Constants.ResultCode.VoucherCannotBeReversed_
+  nameWithType: ResultCode.VoucherCannotBeReversed_
 - uid: SIX.TimApi.Constants.ResultCode.VoucherTypeNotAvailable
   name: VoucherTypeNotAvailable
   href: api/SIX.TimApi.Constants.ResultCode.html#SIX_TimApi_Constants_ResultCode_VoucherTypeNotAvailable

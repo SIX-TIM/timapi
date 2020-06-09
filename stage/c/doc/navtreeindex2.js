@@ -1,5 +1,6 @@
 var NAVTREEINDEX2 =
 {
+"currency_8h.html#ad375db379bcf5a792280a2735f80f7d9a8ceba108bc1a4689e84935651e7bf3c3":[1,1,0,1,12,3,82],
 "currency_8h.html#ad375db379bcf5a792280a2735f80f7d9a8e265feb9ec57d939af6492cff1d9033":[1,1,0,1,12,3,89],
 "currency_8h.html#ad375db379bcf5a792280a2735f80f7d9a8fc94544a6c961d650c030f24a955cfc":[1,1,0,1,12,3,6],
 "currency_8h.html#ad375db379bcf5a792280a2735f80f7d9a90eca3bd433ed86ef68949fa68e8d599":[1,1,0,1,12,3,68],
@@ -248,6 +249,5 @@ var NAVTREEINDEX2 =
 "enum__string__maps_2dialog__functions_8h.html":[1,1,0,1,0,13],
 "enum__string__maps_2dialog__functions_8h.html#a01fa7ed42a3718998b40576249f4c567":[1,1,0,1,0,13,0],
 "enum__string__maps_2ecr__info__type_8h.html":[1,1,0,1,0,14],
-"enum__string__maps_2ecr__info__type_8h.html#a329a02049893615c97f031ba0495d653":[1,1,0,1,0,14,0],
-"enum__string__maps_2financial__transactions_8h.html":[1,1,0,1,0,15]
+"enum__string__maps_2ecr__info__type_8h.html#a329a02049893615c97f031ba0495d653":[1,1,0,1,0,14,0]
 };
