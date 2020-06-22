@@ -30,6 +30,7 @@ var dir_68267d1309a1af8e8297ef4c3efbcdba =
     [ "features.h", "features_8h.html", "features_8h" ],
     [ "hardware.h", "hardware_8h.html", "hardware_8h" ],
     [ "hardware_information_response.h", "hardware__information__response_8h.html", "hardware__information__response_8h" ],
+    [ "init_transaction_response.h", "init__transaction__response_8h.html", "init__transaction__response_8h" ],
     [ "item_quantity.h", "item__quantity_8h.html", "item__quantity_8h" ],
     [ "logging.h", "logging_8h.html", "logging_8h" ],
     [ "loyalty_coupon.h", "loyalty__coupon_8h.html", "loyalty__coupon_8h" ],

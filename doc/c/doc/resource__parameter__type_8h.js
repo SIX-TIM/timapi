@@ -12,6 +12,9 @@ var resource__parameter__type_8h =
       [ "ta_c_rpt_petrol_card_data2", "resource__parameter__type_8h.html#a24c84814e0ce6a320ff3bd3826a297fbafb7b8c6713d6a3cea383a849f3988b47", null ],
       [ "ta_c_rpt_petrol_card_data3", "resource__parameter__type_8h.html#a24c84814e0ce6a320ff3bd3826a297fbacf33b6be20714c5e787ba88d5c3bef55", null ],
       [ "ta_c_rpt_active_readers", "resource__parameter__type_8h.html#a24c84814e0ce6a320ff3bd3826a297fba66d3c65752825af467f4441cf27ede3a", null ],
-      [ "ta_c_rpt_exponent", "resource__parameter__type_8h.html#a24c84814e0ce6a320ff3bd3826a297fba69768b4250a06886e8b79098988d3406", null ]
+      [ "ta_c_rpt_exponent", "resource__parameter__type_8h.html#a24c84814e0ce6a320ff3bd3826a297fba69768b4250a06886e8b79098988d3406", null ],
+      [ "ta_c_rpt_key_mode_f1", "resource__parameter__type_8h.html#a24c84814e0ce6a320ff3bd3826a297fbaacf600ea2081d9e6b9877fdb303a229f", null ],
+      [ "ta_c_rpt_key_mode_f2", "resource__parameter__type_8h.html#a24c84814e0ce6a320ff3bd3826a297fba0fb2962e53991b9f0b9a0ab964e77317", null ],
+      [ "ta_c_rpt_key_mode_f3", "resource__parameter__type_8h.html#a24c84814e0ce6a320ff3bd3826a297fba9b60ecc9dc494e7fed5ead022a439b5a", null ]
     ] ]
 ];

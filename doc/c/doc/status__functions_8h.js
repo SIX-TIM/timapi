@@ -9,6 +9,10 @@ var status__functions_8h =
       [ "ta_c_sf_application_information", "status__functions_8h.html#abf752dbd5ab3b758d2c21f390d8ef248a78ecfc074b9b670212b7fc8bfc9c7413", null ],
       [ "ta_c_sf_hardware_information", "status__functions_8h.html#abf752dbd5ab3b758d2c21f390d8ef248a362d610ca552cf4e52e83874159b3e51", null ],
       [ "ta_c_sf_keep_alive", "status__functions_8h.html#abf752dbd5ab3b758d2c21f390d8ef248a9ee5819bfc0fc41f440dfa92745dd1dd", null ],
-      [ "ta_c_sf_license_changed", "status__functions_8h.html#abf752dbd5ab3b758d2c21f390d8ef248acd2ecc9add0259ff123aca4916a576bf", null ]
+      [ "ta_c_sf_license_changed", "status__functions_8h.html#abf752dbd5ab3b758d2c21f390d8ef248acd2ecc9add0259ff123aca4916a576bf", null ],
+      [ "ta_c_sf_vas_info", "status__functions_8h.html#abf752dbd5ab3b758d2c21f390d8ef248acf4d90472f014b8d736d5e334f7a37bf", null ],
+      [ "ta_c_sf_error", "status__functions_8h.html#abf752dbd5ab3b758d2c21f390d8ef248afc6ba2530c414d38f804be55b2c03fb5", null ],
+      [ "ta_c_sf_change_language", "status__functions_8h.html#abf752dbd5ab3b758d2c21f390d8ef248a555e4a051fea0f6b90876cddacc52403", null ],
+      [ "ta_c_sf_key_press", "status__functions_8h.html#abf752dbd5ab3b758d2c21f390d8ef248aa8b2a739ed137a8b8995ad89c617cb99", null ]
     ] ]
 ];

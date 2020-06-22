@@ -74,6 +74,8 @@ var resource__id_8h =
       [ "ta_c_rid_petrol_banknote_only", "resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9aa81e61b1baeeb86a8d6e23faaf35929e", null ],
       [ "ta_c_rid_petrol_banknote_cards_only", "resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9abeb4c35794d64b439eb55d2cad22d77b", null ],
       [ "ta_c_rid_petrol_banknote_credit_amount_pump_press_ok", "resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9aaaca18a4d57c72d869e0ffd3ec2558af", null ],
+      [ "ta_c_rid_petrol_trx_banknote_receipt_language", "resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9a7afae6eafe3fb6e83713f190db728076", null ],
+      [ "ta_c_rid_petrol_trx_receipt_language", "resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9a0a3ac7f23fba771533a3e27a22ee0f25", null ],
       [ "ta_c_rid_petrol_payment_in_shop", "resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9af816a42ac0d66c11a1ec3fa9c149b08b", null ],
       [ "ta_c_rid_petrol_payment_in_shop_press_btn", "resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9aa92a3a19995686b00d76ac024480dcb2", null ],
       [ "ta_c_rid_petrol_payment_at_pump_press_btn", "resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9afab1ac90c73aa320b690360e452946d7", null ],
@@ -133,6 +135,9 @@ var resource__id_8h =
       [ "ta_c_rid_common_card_initialized", "resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9a57f9e567db9a3d59cd3671014ad2f4b5", null ],
       [ "ta_c_rid_common_card_deinitialized", "resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9a94a71eb2f3f71d1ea4b70742e979a5be", null ],
       [ "ta_c_rid_common_remove_card", "resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9a03fc4a4af9b03a8fdf3085d646df48fe", null ],
-      [ "ta_c_rid_migros_gkkpin_check", "resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9a324676b355911a0964597ce36792c44f", null ]
+      [ "ta_c_rid_migros_gkkpin_check", "resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9a324676b355911a0964597ce36792c44f", null ],
+      [ "ta_c_rid_payback_read_code", "resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9ade7d0766d46c58189275b5f5fd42d228", null ],
+      [ "ta_c_rid_payback_show_balance", "resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9ae37978504cceb9b6f5168c2754611437", null ],
+      [ "ta_c_rid_payback_spend_points", "resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9aa2117d8076f9de7854208754630e8c63", null ]
     ] ]
 ];

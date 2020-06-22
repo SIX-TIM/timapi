@@ -15,6 +15,7 @@ var reason_8h =
       [ "ta_c_rsn_pin_nok", "reason_8h.html#ab10e533f4ad4f7409b4a8fbdaefbf972affec2db03b71651f0dbf60460977b15b", null ],
       [ "ta_c_rsn_f1", "reason_8h.html#ab10e533f4ad4f7409b4a8fbdaefbf972af6dcb21c39e090eb97edd6e449f51d9e", null ],
       [ "ta_c_rsn_f2", "reason_8h.html#ab10e533f4ad4f7409b4a8fbdaefbf972a42c138ed7ad5f946138712480499ccfe", null ],
+      [ "ta_c_rsn_f3", "reason_8h.html#ab10e533f4ad4f7409b4a8fbdaefbf972aad36d9fe5df80e4f66d56e788defd1e4", null ],
       [ "ta_c_rsn_other_key", "reason_8h.html#ab10e533f4ad4f7409b4a8fbdaefbf972a6ea98693fb09a95a935fbf08e0d5c21a", null ]
     ] ]
 ];

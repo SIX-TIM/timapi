@@ -136,6 +136,9 @@ typedef struct <a class="el" href="structta__s__event.html">ta_s_event</a>&#160;
 <tr class="memitem:a9019e87bacfce04a6ddf5f4be5f1ca4a"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="terminal__listener_8h.html#a9019e87bacfce04a6ddf5f4be5f1ca4a">ta_cb_terminal_init_transaction_completed</a>) (const <a class="el" href="terminal__listener_8h.html#aca8b2685a1635d99cb135134b2de1521">ta_s_event_t</a> *event, <a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a> data, void *user_pointer)</td></tr>
 <tr class="memdesc:a9019e87bacfce04a6ddf5f4be5f1ca4a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called if an ta_terminal_init_transaction_async started request finished.  <a href="#a9019e87bacfce04a6ddf5f4be5f1ca4a">More...</a><br /></td></tr>
 <tr class="separator:a9019e87bacfce04a6ddf5f4be5f1ca4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36667f068fd1ab505e48f15856211508"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="terminal__listener_8h.html#a36667f068fd1ab505e48f15856211508">ta_cb_terminal_init_transaction_with_dialog_completed</a>) (const <a class="el" href="terminal__listener_8h.html#aca8b2685a1635d99cb135134b2de1521">ta_s_event_t</a> *event, <a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a> data, void *user_pointer)</td></tr>
+<tr class="memdesc:a36667f068fd1ab505e48f15856211508"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called if an ta_terminal_init_transaction_with_dialog_async started request finished.  <a href="#a36667f068fd1ab505e48f15856211508">More...</a><br /></td></tr>
+<tr class="separator:a36667f068fd1ab505e48f15856211508"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a466f9d64fe6dc475e92d7cce5da9e360"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="terminal__listener_8h.html#a466f9d64fe6dc475e92d7cce5da9e360">ta_cb_terminal_login_completed</a>) (const <a class="el" href="terminal__listener_8h.html#aca8b2685a1635d99cb135134b2de1521">ta_s_event_t</a> *event, void *user_pointer)</td></tr>
 <tr class="memdesc:a466f9d64fe6dc475e92d7cce5da9e360"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called if an ta_terminal_login_async started request finished.  <a href="#a466f9d64fe6dc475e92d7cce5da9e360">More...</a><br /></td></tr>
 <tr class="separator:a466f9d64fe6dc475e92d7cce5da9e360"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -178,6 +181,9 @@ typedef struct <a class="el" href="structta__s__event.html">ta_s_event</a>&#160;
 <tr class="memitem:aeb918381c327092bea7333f1182a6157"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="terminal__listener_8h.html#aeb918381c327092bea7333f1182a6157">ta_cb_terminal_deferred_auth</a>) (<a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a> terminal, <a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a> response, void *user_pointer)</td></tr>
 <tr class="memdesc:aeb918381c327092bea7333f1182a6157"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called if deferred authorization has been received from the terminal.  <a href="#aeb918381c327092bea7333f1182a6157">More...</a><br /></td></tr>
 <tr class="separator:aeb918381c327092bea7333f1182a6157"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18ad1468826151b0eb858cfea631b3e7"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="terminal__listener_8h.html#a18ad1468826151b0eb858cfea631b3e7">ta_cb_terminal_key_pressed</a>) (<a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a> terminal, <a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a> reason, void *user_pointer)</td></tr>
+<tr class="memdesc:a18ad1468826151b0eb858cfea631b3e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called if key pressed has been received from the terminal.  <a href="#a18ad1468826151b0eb858cfea631b3e7">More...</a><br /></td></tr>
+<tr class="separator:a18ad1468826151b0eb858cfea631b3e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab9cf1d60bf5d80fb569316a9ccac0997"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="terminal__listener_8h.html#ab9cf1d60bf5d80fb569316a9ccac0997">ta_cb_terminal_license_changed</a>) (<a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a> terminal, void *user_pointer)</td></tr>
 <tr class="memdesc:ab9cf1d60bf5d80fb569316a9ccac0997"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called if license changed notification has been received from the terminal.  <a href="#ab9cf1d60bf5d80fb569316a9ccac0997">More...</a><br /></td></tr>
 <tr class="separator:ab9cf1d60bf5d80fb569316a9ccac0997"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -787,6 +793,54 @@ Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">event</td><td>Pointer to struct containing information about the event. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>Object instance of type <a class="el" href="card__data_8h.html">card_data</a>. Object instance is <em>ta_object_invalid</em> if request failed or finished request does not contain card data. Object instance is not retained. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">user_pointer</td><td>User pointer value used while creating the listener. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a36667f068fd1ab505e48f15856211508"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a36667f068fd1ab505e48f15856211508">&#9670;&nbsp;</a></span>ta_cb_terminal_init_transaction_with_dialog_completed</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef void( * ta_cb_terminal_init_transaction_with_dialog_completed) (const <a class="el" href="terminal__listener_8h.html#aca8b2685a1635d99cb135134b2de1521">ta_s_event_t</a> *event, <a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a> data, void *user_pointer)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Called if an ta_terminal_init_transaction_with_dialog_async started request finished. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">event</td><td>Pointer to struct containing information about the event. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>Object instance of type <a class="el" href="init__transaction__response_8h.html">init_transaction_response</a>. Object instance is <em>ta_object_invalid</em> if request failed or finished request does not contain response data. Object instance is not retained. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">user_pointer</td><td>User pointer value used while creating the listener. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a18ad1468826151b0eb858cfea631b3e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a18ad1468826151b0eb858cfea631b3e7">&#9670;&nbsp;</a></span>ta_cb_terminal_key_pressed</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef void( * ta_cb_terminal_key_pressed) (<a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a> terminal, <a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a> reason, void *user_pointer)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Called if key pressed has been received from the terminal. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">terminal</td><td>Object instance of type <a class="el" href="terminal_8h.html">terminal</a>. Object instance is not retained. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">response</td><td>Object instance of type <a class="el" href="integer_8h.html">integer</a> containing pressed key from enumeration <a class="el" href="reason_8h.html#a34308cc5ebc7e6ba84e25f1fcd47040a">ta_e_reason_t</a>. Object instance is not retained. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">user_pointer</td><td>User pointer value used while creating the listener. </td></tr>
   </table>
   </dd>

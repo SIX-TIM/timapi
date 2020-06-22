@@ -109,7 +109,11 @@ Enumerations</h2></td></tr>
 <br />
 &#160;&#160;<a class="el" href="resource__parameter__type_8h.html#a24c84814e0ce6a320ff3bd3826a297fbacf33b6be20714c5e787ba88d5c3bef55">ta_c_rpt_petrol_card_data3</a>, 
 <a class="el" href="resource__parameter__type_8h.html#a24c84814e0ce6a320ff3bd3826a297fba66d3c65752825af467f4441cf27ede3a">ta_c_rpt_active_readers</a>, 
-<a class="el" href="resource__parameter__type_8h.html#a24c84814e0ce6a320ff3bd3826a297fba69768b4250a06886e8b79098988d3406">ta_c_rpt_exponent</a>
+<a class="el" href="resource__parameter__type_8h.html#a24c84814e0ce6a320ff3bd3826a297fba69768b4250a06886e8b79098988d3406">ta_c_rpt_exponent</a>, 
+<a class="el" href="resource__parameter__type_8h.html#a24c84814e0ce6a320ff3bd3826a297fbaacf600ea2081d9e6b9877fdb303a229f">ta_c_rpt_key_mode_f1</a>, 
+<br />
+&#160;&#160;<a class="el" href="resource__parameter__type_8h.html#a24c84814e0ce6a320ff3bd3826a297fba0fb2962e53991b9f0b9a0ab964e77317">ta_c_rpt_key_mode_f2</a>, 
+<a class="el" href="resource__parameter__type_8h.html#a24c84814e0ce6a320ff3bd3826a297fba9b60ecc9dc494e7fed5ead022a439b5a">ta_c_rpt_key_mode_f3</a>
 <br />
  }</td></tr>
 <tr class="separator:a24c84814e0ce6a320ff3bd3826a297fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -129,7 +133,7 @@ Enumerations</h2></td></tr>
 <p>Parameter type</p>
 <p>Classifies the value of the &lt;sixml:ResourceParameter&gt; tag.</p>
 <p>The following values are valid:</p>
-<p>Specification: dialog.</p>
+<p>Specifications: petrol, dialog.</p>
 
 </div>
 </div>
@@ -148,7 +152,7 @@ Enumerations</h2></td></tr>
 <p>Parameter type</p>
 <p>Classifies the value of the &lt;sixml:ResourceParameter&gt; tag.</p>
 <p>The following values are valid:</p>
-<p>Specification: dialog.</p>
+<p>Specifications: petrol, dialog.</p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a24c84814e0ce6a320ff3bd3826a297fba3fe4cf6f89fde28ced047494f229829a"></a>ta_c_rpt_undefined&#160;</td><td class="fielddoc"><p>Undefined/invalid value. </p>
 </td></tr>
@@ -193,7 +197,7 @@ Enumerations</h2></td></tr>
 18: Micrelec - Use the Micrelec algorithm </li>
 </ul>
 <p>This value is to be encoded as a ascii number i.e. using characters in the range 30h to 39h.</p>
-<p>Specification: dialog.</p>
+<p>Specification: petrol.</p>
 </td></tr>
 <tr><td class="fieldname"><a id="a24c84814e0ce6a320ff3bd3826a297fba3b7a5d33b2f2980caffb84a5c52ffd03"></a>ta_c_rpt_code_check_key_id&#160;</td><td class="fielddoc"><p>Key id of the key to use for the selected <em>CodeCheckType</em> . </p><ul>
 <li>
@@ -212,10 +216,10 @@ Enumerations</h2></td></tr>
 5002: DASAG test key id. </li>
 </ul>
 <p>This value is to be encoded as a ascii number i.e. using characters in the range 30h to 39h.</p>
-<p>Specification: dialog.</p>
+<p>Specification: petrol.</p>
 </td></tr>
 <tr><td class="fieldname"><a id="a24c84814e0ce6a320ff3bd3826a297fba944a95dccce98df5b1a87c4ed95abe1e"></a>ta_c_rpt_code_check_data&#160;</td><td class="fielddoc"><p>Data used in the calculation of some <em>CodeCheckType</em> s. This value is to be encoded as hex string.</p>
-<p>Specification: dialog.</p>
+<p>Specification: petrol.</p>
 </td></tr>
 <tr><td class="fieldname"><a id="a24c84814e0ce6a320ff3bd3826a297fbaa413530ab9111c95f3745e85b3df2ef1"></a>ta_c_rpt_regular_data_query_type&#160;</td><td class="fielddoc"><p>Type of query to receive data about regulars. </p><ul>
 <li>
@@ -224,19 +228,19 @@ StfkV1: Version 1 regular data query type in Austria. </li>
 StfkV4: Version 4 regular data query type in Austria. </li>
 </ul>
 <p>This value is to be encoded as a ascii string.</p>
-<p>Specification: dialog.</p>
+<p>Specification: petrol.</p>
 </td></tr>
 <tr><td class="fieldname"><a id="a24c84814e0ce6a320ff3bd3826a297fba14f5935cae2f3ea5e9849ba084df986d"></a>ta_c_rpt_regular_data&#160;</td><td class="fielddoc"><p>Customer data of the regular.</p>
-<p>Specification: dialog.</p>
+<p>Specification: petrol.</p>
 </td></tr>
 <tr><td class="fieldname"><a id="a24c84814e0ce6a320ff3bd3826a297fbaa7e56aed5c3a8b464b3485a6fd8cc05e"></a>ta_c_rpt_petrol_card_data1&#160;</td><td class="fielddoc"><p>Track 1 of a petrol card. This value is to be encoded as a ascii string.</p>
-<p>Specification: dialog.</p>
+<p>Specification: petrol.</p>
 </td></tr>
 <tr><td class="fieldname"><a id="a24c84814e0ce6a320ff3bd3826a297fbafb7b8c6713d6a3cea383a849f3988b47"></a>ta_c_rpt_petrol_card_data2&#160;</td><td class="fielddoc"><p>Track 2 of a petrol card. This value is to be encoded as a ascii string.</p>
-<p>Specification: dialog.</p>
+<p>Specification: petrol.</p>
 </td></tr>
 <tr><td class="fieldname"><a id="a24c84814e0ce6a320ff3bd3826a297fbacf33b6be20714c5e787ba88d5c3bef55"></a>ta_c_rpt_petrol_card_data3&#160;</td><td class="fielddoc"><p>Track 3 of a petrol card. This value is to be encoded as a ascii string.</p>
-<p>Specification: dialog.</p>
+<p>Specification: petrol.</p>
 </td></tr>
 <tr><td class="fieldname"><a id="a24c84814e0ce6a320ff3bd3826a297fba66d3c65752825af467f4441cf27ede3a"></a>ta_c_rpt_active_readers&#160;</td><td class="fielddoc"><p>Defines which card readers are active during the dialog. This is a bitmap. Value 0 = reader not active, 1 = reader active.<br />
  Example 1: Only magstripe reader active = 00000001 = 01 hex<br />
@@ -260,12 +264,42 @@ Bit 7: RFU </li>
 Bit 8: RFU </li>
 </ul>
 <p>This value is to be transmitted hex encoded. Example: For a value of 00000111 (Magstripe, Chip and Ctless active), the value '07' hex must be transmitted.</p>
-<p>Specification: dialog.</p>
+<p>Specification: petrol.</p>
 </td></tr>
 <tr><td class="fieldname"><a id="a24c84814e0ce6a320ff3bd3826a297fba69768b4250a06886e8b79098988d3406"></a>ta_c_rpt_exponent&#160;</td><td class="fielddoc"><p>Currency Exponent e.g. to define input mask for Amount entry. n2 value<br />
  Example 1: Exponent = 2 will result in an input mask of XXXX.XX with 2 positions after decimal point.<br />
  Example 2: Exponent = 3 will result in an input mask of XXX.XXX with 3 positions after decimal point.</p>
-<p>Specification: dialog.</p>
+<p>Specification: petrol.</p>
+</td></tr>
+<tr><td class="fieldname"><a id="a24c84814e0ce6a320ff3bd3826a297fbaacf600ea2081d9e6b9877fdb303a229f"></a>ta_c_rpt_key_mode_f1&#160;</td><td class="fielddoc"><p>Mode for left / top most function key. Valid values: </p><ul>
+<li>
+<pre>DISABLED</pre> : Do not show the function key </li>
+<li>
+<pre>INTERRUPT</pre> : Default. The key interrupts the InitTransaction process. The press is reported through the ReasonCode. </li>
+<li>
+<pre>NOTIFY</pre> : The key does not interrupt the InitTransaction process. The press is reported through a KeyPressEvent. </li>
+</ul>
+<p>Specification: petrol.</p>
+</td></tr>
+<tr><td class="fieldname"><a id="a24c84814e0ce6a320ff3bd3826a297fba0fb2962e53991b9f0b9a0ab964e77317"></a>ta_c_rpt_key_mode_f2&#160;</td><td class="fielddoc"><p>Mode for right / bottom most function key. Valid values: </p><ul>
+<li>
+<pre>DISABLED</pre> : Do not show the function key </li>
+<li>
+<pre>INTERRUPT</pre> : Default. The key interrupts the InitTransaction process. The press is reported through the ReasonCode. </li>
+<li>
+<pre>NOTIFY</pre> : The key does not interrupt the InitTransaction process. The press is reported through a KeyPressEvent. </li>
+</ul>
+<p>Specification: petrol.</p>
+</td></tr>
+<tr><td class="fieldname"><a id="a24c84814e0ce6a320ff3bd3826a297fba9b60ecc9dc494e7fed5ead022a439b5a"></a>ta_c_rpt_key_mode_f3&#160;</td><td class="fielddoc"><p>Mode for central function key. Valid values: </p><ul>
+<li>
+<pre>DISABLED</pre> : Do not show the function key </li>
+<li>
+<pre>INTERRUPT</pre> : Default. The key interrupts the InitTransaction process. The press is reported through the ReasonCode. </li>
+<li>
+<pre>NOTIFY</pre> : The key does not interrupt the InitTransaction process. The press is reported through a KeyPressEvent. </li>
+</ul>
+<p>Specification: petrol.</p>
 </td></tr>
 </table>
 
