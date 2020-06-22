@@ -14,6 +14,7 @@ var request__type_8h =
       [ "ta_c_req_dcc_rates", "request__type_8h.html#a38268da75c7795fd3a4f057bc6a7fcd2ae16cfd41c03f918667bb9285f213e06f", null ],
       [ "ta_c_req_hardware_information", "request__type_8h.html#a38268da75c7795fd3a4f057bc6a7fcd2a51ff157f2a8d83781c4b0e4248c4b498", null ],
       [ "ta_c_req_init_transaction", "request__type_8h.html#a38268da75c7795fd3a4f057bc6a7fcd2ae627d0090d288bb9cec93ef53a6f9b7e", null ],
+      [ "ta_c_req_init_transaction_with_dialog", "request__type_8h.html#a38268da75c7795fd3a4f057bc6a7fcd2ae69eba6e00ba3b4c5faec66f142b37da", null ],
       [ "ta_c_req_login", "request__type_8h.html#a38268da75c7795fd3a4f057bc6a7fcd2a5345c8a273da5f772c20db2d79594fb2", null ],
       [ "ta_c_req_logout", "request__type_8h.html#a38268da75c7795fd3a4f057bc6a7fcd2affc68050f717ca536ae599b7400b8f10", null ],
       [ "ta_c_req_reboot", "request__type_8h.html#a38268da75c7795fd3a4f057bc6a7fcd2ac3769d3cd12f4ffe151f02b3a62285ec", null ],

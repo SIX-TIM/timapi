@@ -60,6 +60,15 @@ var receipt__item__type_8h =
       [ "ta_c_rit_markup_exponent_dcc_regulated", "receipt__item__type_8h.html#a3d3044dd871a9c7d630dbcf3d9b738bea4495f7cd3b3b5a754f5177b16c8d4849", null ],
       [ "ta_c_rit_rate_dcc_regulated", "receipt__item__type_8h.html#a3d3044dd871a9c7d630dbcf3d9b738beac81d5ced0f9ceecfd9e4156348a471f3", null ],
       [ "ta_c_rit_rate_exponent_dcc_regulated", "receipt__item__type_8h.html#a3d3044dd871a9c7d630dbcf3d9b738bea76c4ac9d467d3fac0dd201c342fe3e8a", null ],
-      [ "ta_c_rit_key_pan_receipt_index", "receipt__item__type_8h.html#a3d3044dd871a9c7d630dbcf3d9b738bea320ef905e84ecd59040036ebad846b2c", null ]
+      [ "ta_c_rit_key_pan_receipt_index", "receipt__item__type_8h.html#a3d3044dd871a9c7d630dbcf3d9b738bea320ef905e84ecd59040036ebad846b2c", null ],
+      [ "ta_c_rit_additional_merchant_data", "receipt__item__type_8h.html#a3d3044dd871a9c7d630dbcf3d9b738bead3c047b731b65443b3174e20e5e2b555", null ],
+      [ "ta_c_rit_multi_account_index", "receipt__item__type_8h.html#a3d3044dd871a9c7d630dbcf3d9b738beafc2508e89ee142bcdb1c68d2921582dc", null ],
+      [ "ta_c_rit_multi_contract_index", "receipt__item__type_8h.html#a3d3044dd871a9c7d630dbcf3d9b738beac96fd394aebbc4644bd18155546c7249", null ],
+      [ "ta_c_rit_merchant_tid", "receipt__item__type_8h.html#a3d3044dd871a9c7d630dbcf3d9b738beaaa00671d1faf3a6ce9b5eab651cb5c67", null ],
+      [ "ta_c_rit_clerk_identifier", "receipt__item__type_8h.html#a3d3044dd871a9c7d630dbcf3d9b738beae8b231c7d51e2120b2cf51449ddfaf5c", null ],
+      [ "ta_c_rit_fuel_dispenser_number", "receipt__item__type_8h.html#a3d3044dd871a9c7d630dbcf3d9b738bea2a2ca8fb913a6a6acb38e46f961d866a", null ],
+      [ "ta_c_rit_posdnumber", "receipt__item__type_8h.html#a3d3044dd871a9c7d630dbcf3d9b738bea228b12dab7178f0c97bd5425eb6dfccb", null ],
+      [ "ta_c_rit_receipt_number", "receipt__item__type_8h.html#a3d3044dd871a9c7d630dbcf3d9b738bead22f1d15d8ce90716335ffd5861657d4", null ],
+      [ "ta_c_rit_shift_number", "receipt__item__type_8h.html#a3d3044dd871a9c7d630dbcf3d9b738bea3ff52d4f5ed4ef3be22ea292f4fc9bf4", null ]
     ] ]
 ];

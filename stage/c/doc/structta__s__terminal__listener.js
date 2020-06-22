@@ -22,6 +22,8 @@ var structta__s__terminal__listener =
     [ "finish_checkout_completed", "structta__s__terminal__listener.html#ad8227ea1abdffe880a9bdfe352fe2b99", null ],
     [ "hardware_information_completed", "structta__s__terminal__listener.html#af02ce7f1dc2e701cc6737c950c17515f", null ],
     [ "init_transaction_completed", "structta__s__terminal__listener.html#a5a60d8aad1a357e6b91bc93026a71212", null ],
+    [ "init_transaction_with_dialog_completed", "structta__s__terminal__listener.html#a5f943f0245eb31ddd6b57ddf8694c0de", null ],
+    [ "key_pressed", "structta__s__terminal__listener.html#a8eef6f697ed60ded5030001f70cbc504", null ],
     [ "license_changed", "structta__s__terminal__listener.html#a72033ac6d9abb5e9b0de121cf5055247", null ],
     [ "login_completed", "structta__s__terminal__listener.html#a183e35defdc870fbf77bdb3755886daf", null ],
     [ "logout_completed", "structta__s__terminal__listener.html#a560b563332d498eef5126ba07777e6fe", null ],

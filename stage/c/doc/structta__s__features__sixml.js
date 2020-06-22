@@ -6,6 +6,7 @@ var structta__s__features__sixml =
     [ "auto_shift_management", "structta__s__features__sixml.html#a69835ac604143f2ef2243f6a1368d018", null ],
     [ "auto_shutter_management", "structta__s__features__sixml.html#ab34c2b04cb5ff2b5ff7b32dc924fda94", null ],
     [ "credential_on_file", "structta__s__features__sixml.html#a796f0a7a57830214685418114399a5f1", null ],
+    [ "custom_init_trx_screen", "structta__s__features__sixml.html#a7913405de7bb720675aa950bd05c7208", null ],
     [ "deferred_authorisation", "structta__s__features__sixml.html#a2eeeacc8722719f1d3d1cb2d99214cad", null ],
     [ "dialog_functions", "structta__s__features__sixml.html#a05e44ad6eed65546ddc5f7446bb6602d", null ],
     [ "ep2_credential_on_file", "structta__s__features__sixml.html#a5e0c190ac88ac296a9b73601a340dfb9", null ],

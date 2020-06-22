@@ -24,6 +24,8 @@ var terminal__listener_8h =
     [ "ta_cb_terminal_finish_checkout_completed", "terminal__listener_8h.html#a0fcd4adf868965d614974ad09f5c6de1", null ],
     [ "ta_cb_terminal_hardware_information_completed", "terminal__listener_8h.html#a24085b1a97376c5f5b81220495ef65b4", null ],
     [ "ta_cb_terminal_init_transaction_completed", "terminal__listener_8h.html#a9019e87bacfce04a6ddf5f4be5f1ca4a", null ],
+    [ "ta_cb_terminal_init_transaction_with_dialog_completed", "terminal__listener_8h.html#a36667f068fd1ab505e48f15856211508", null ],
+    [ "ta_cb_terminal_key_pressed", "terminal__listener_8h.html#a18ad1468826151b0eb858cfea631b3e7", null ],
     [ "ta_cb_terminal_license_changed", "terminal__listener_8h.html#ab9cf1d60bf5d80fb569316a9ccac0997", null ],
     [ "ta_cb_terminal_login_completed", "terminal__listener_8h.html#a466f9d64fe6dc475e92d7cce5da9e360", null ],
     [ "ta_cb_terminal_logout_completed", "terminal__listener_8h.html#ac92b3442702ad01db62a5aa4ba629b77", null ],
