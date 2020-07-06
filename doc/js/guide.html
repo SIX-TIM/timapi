@@ -51,7 +51,7 @@
           </div>
           <div id="docTitle">Detailed Implementation Guide</div>
           <ul class="nav">
-          <li><a href="#intro">Introduction</a></li><li><a href="#sysreq">System Requirements</a></li><li><a href="#setup">Setup Configuration</a><ul class="nav"><li><a href="#network">Network Configuration</a></li><li><a href="#guides">Guides Configuration</a></li></ul></li><li><a href="#operation">Operation Overview</a></li><li><a href="#automatisms">Automatisms</a></li><li><a href="#useCase">Use Cases</a><ul class="nav"><li><a href="#retailManualPanKeyEntry">Manual Pan Key Entry</a></li><li class="filterGuides guideAustria"><a href="#austrianUseCase">Guide Austrian Use Cases</a><ul class="nav"><li class="filterGuides guideAustria"><a href="#austrianUseCaseNGV">Austrian Use Case: NGV</a></li><li class="filterGuides guideAustria"><a href="#austrianUseCaseDelayedPayment">Austrian Use Case: Delayed Payment</a></li></ul></li></ul></li><li><a href="#methods">Terminal methods overview</a><ul class="nav"><li><a href="#mainFunc">Main / guide Retail terminal functions</a></li><li class="filterGuides guideBanking"><a href="#bankingFunc">Banking terminal functions</a></li><li><a href="#addMethods">Additional terminal listener-events</a></li></ul></li><li><a href="#flows">Flows</a><ul class="nav"><li class="filterGuides guideAustria"><a href="#austrianFlows">Guide Austrian Additional Flows</a><ul class="nav"><li><a href="#austrianFlowNGVWithoutDelay">Austrian Flow: NGV Purchase without delay</a></li><li><a href="#austrianFlowNGVWithDelay">Austrian Flow: NGV Purchase with delay</a></li><li><a href="#austrianFlowNGVFallback">Austrian Flow: NGV Purchase fallback with Non-NGV card</a></li><li><a href="#austrianFlowNGVMandatoryError">Austrian Flow: NGV Purchase mandatory with error</a></li></ul></li></ul></li><li><a href="#logging">Logging</a><ul class="nav"></ul></li><li><a href="#MigrationJStoWASM">Migration from old TIM API JS to TIM API JS with WebAssembly</a><ul class="nav"><li><a href="#MigrationJSInit">Ready Initialization</a></li><li><a href="#MigrationJSNames">Class Variable Names</a></li><li><a href="#MigrationJSListenerDeclaration">Listener Declaration</a></li><li><a href="#MigrationJSLogging">Logging</a></li></ul></li></ul>
+          <li><a href="#intro">Introduction</a></li><li><a href="#setup">Setup Configuration</a><ul class="nav"><li><a href="#network">Network Configuration</a></li><li><a href="#guides">Guides Configuration</a></li></ul></li><li><a href="#operation">Operation Overview</a></li><li><a href="#automatisms">Automatisms</a></li><li><a href="#useCase">Use Cases</a><ul class="nav"><li><a href="#retailManualPanKeyEntry">Manual Pan Key Entry</a></li><li class="filterGuides guideAustria"><a href="#austrianUseCase">Guide Austrian Use Cases</a><ul class="nav"><li class="filterGuides guideAustria"><a href="#austrianUseCaseNGV">Austrian Use Case: NGV</a></li><li class="filterGuides guideAustria"><a href="#austrianUseCaseDelayedPayment">Austrian Use Case: Delayed Payment</a></li></ul></li></ul></li><li><a href="#methods">Terminal methods overview</a><ul class="nav"><li><a href="#mainFunc">Main / guide Retail terminal functions</a></li><li class="filterGuides guideBanking"><a href="#bankingFunc">Banking terminal functions</a></li><li><a href="#addMethods">Additional terminal listener-events</a></li></ul></li><li><a href="#flows">Flows</a><ul class="nav"><li class="filterGuides guideAustria"><a href="#austrianFlows">Guide Austrian Additional Flows</a><ul class="nav"><li><a href="#austrianFlowNGVWithoutDelay">Austrian Flow: NGV Purchase without delay</a></li><li><a href="#austrianFlowNGVWithDelay">Austrian Flow: NGV Purchase with delay</a></li><li><a href="#austrianFlowNGVFallback">Austrian Flow: NGV Purchase fallback with Non-NGV card</a></li><li><a href="#austrianFlowNGVMandatoryError">Austrian Flow: NGV Purchase mandatory with error</a></li></ul></li></ul></li><li><a href="#logging">Logging</a><ul class="nav"></ul></li><li><a href="#MigrationJStoWASM">Migration from old TIM API JS to TIM API JS with WebAssembly</a><ul class="nav"><li><a href="#MigrationJSInit">Ready Initialization</a></li><li><a href="#MigrationJSNames">Class Variable Names</a></li><li><a href="#MigrationJSListenerDeclaration">Listener Declaration</a></li><li><a href="#MigrationJSLogging">Logging</a></li></ul></li></ul>
           <div class="seperator">&#160;</div>
           <div id="docLinks">
           <div class="linkDiv"><a href="simple.html">Simple Implementation Guide</a></div><div class="linkDiv"><a href="appendix.html">Appendix</a></div><div class="linkDiv"><a href="doc/index.html">API Documentation</a></div><div class="linkDiv"><a href="../../version/version-history.html">Version History</a></div></div>
@@ -78,22 +78,6 @@
             function or data element is authoritative, not the examples.</p>
         <p lang="Java JS">Before starting with the detailed implementation guide, make sure that you read the 
         <a href="simple.html">Simple Implementation Guide</a> first.</p>
-        <hr>
-    </div></div></section>
-    <section><h1><a id="sysreq" name="sysreq">&#160;</a>System Requirements</h1><div class="row"><div class="col-md-6"><p>The TIM API is available for multiple platforms. Due to such diversity the support for the TIM API is limited to certain standards. Those are the minimal system requirements:</p>
-        <div lang="js" style="margin-left: 10px;">
-          <span>Minimal browser version:</span>
-          <ul>
-              <li>Firefox 56</li>
-              <li>Chrome 59</li>
-              <li>Edge 41</li>
-              <li>Safari 11</li>
-          </ul>
-          <span>If run in Node.js environment, minimal version:</span>
-          <ul>
-              <li>Node.js 9</li>
-          </ul>
-        </div>
         <hr>
     </div></div></section>
     <section><h1><a id="setup" name="setup">&#160;</a>Setup Configuration</h1><div class="row"><div class="col-md-6"><p lang="JS">Before starting using the TIM API, make sure that onTimApiReady() has been called as described in
