@@ -12,7 +12,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class Terminal
    ">
-    <meta name="generator" content="docfx 2.43.3.0">
+    <meta name="generator" content="docfx 2.51.0.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -93,6 +93,9 @@
                           </li>
                           <li class="">
                             <a href="SIX.TimApi.CardTrackData.html" title="CardTrackData" class="">CardTrackData</a>
+                          </li>
+                          <li class="">
+                            <a href="SIX.TimApi.ClientIdentificationResponse.html" title="ClientIdentificationResponse" class="">ClientIdentificationResponse</a>
                           </li>
                           <li class="">
                             <a href="SIX.TimApi.CommandRequest.html" title="CommandRequest" class="">CommandRequest</a>
@@ -291,6 +294,12 @@
                           </li>
                           <li class="">
                             <a href="SIX.TimApi.Terminal.ChangeSettingsCompletedEventHandler.html" title="Terminal.ChangeSettingsCompletedEventHandler" class="">Terminal.ChangeSettingsCompletedEventHandler</a>
+                          </li>
+                          <li class="">
+                            <a href="SIX.TimApi.Terminal.ClientIdentificationCompletedEventArgs.html" title="Terminal.ClientIdentificationCompletedEventArgs" class="">Terminal.ClientIdentificationCompletedEventArgs</a>
+                          </li>
+                          <li class="">
+                            <a href="SIX.TimApi.Terminal.ClientIdentificationCompletedEventHandler.html" title="Terminal.ClientIdentificationCompletedEventHandler" class="">Terminal.ClientIdentificationCompletedEventHandler</a>
                           </li>
                           <li class="">
                             <a href="SIX.TimApi.Terminal.CloseDialogModeCompletedEventArgs.html" title="Terminal.CloseDialogModeCompletedEventArgs" class="">Terminal.CloseDialogModeCompletedEventArgs</a>
@@ -811,6 +820,9 @@
                           <li class="">
                             <a href="SIX.TimApi.Utility.Logger.Logger.CodeBlock-1.html" title="Logger.CodeBlock&lt;T&gt;" class="">Logger.CodeBlock&lt;T&gt;</a>
                           </li>
+                          <li class="">
+                            <a href="SIX.TimApi.Utility.Logger.LogRecord.html" title="LogRecord" class="">LogRecord</a>
+                          </li>
                         </ul>  </li>
                   </ul>        </div>
               </div>
@@ -922,6 +934,30 @@
   </table>
   
   
+  <h4 id="SIX_TimApi_Terminal_logger" data-uid="SIX.TimApi.Terminal.logger">logger</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly Logger logger</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="SIX.TimApi.Utility.Logger.Logger.html">Logger</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <h4 id="SIX_TimApi_Terminal_LOGGER_NAME" data-uid="SIX.TimApi.Terminal.LOGGER_NAME">LOGGER_NAME</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
@@ -988,30 +1024,6 @@
     <tbody>
       <tr>
         <td><span class="xref">System.ComponentModel.AsyncOperation</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <h4 id="SIX_TimApi_Terminal_UseAsyncOperationInSyncContext" data-uid="SIX.TimApi.Terminal.UseAsyncOperationInSyncContext">UseAsyncOperationInSyncContext</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool UseAsyncOperationInSyncContext</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -1143,7 +1155,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.List</span>&lt;<span class="xref">EcrInfo</span>&gt;</td>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="SIX.TimApi.EcrInfo.html">EcrInfo</a>&gt;</td>
         <td><p>The ecr data.</p>
 </td>
       </tr>
@@ -1170,7 +1182,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Features</span></td>
+        <td><a class="xref" href="SIX.TimApi.Features.html">Features</a></td>
         <td><p>The features.</p>
 </td>
       </tr>
@@ -1538,9 +1550,34 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">TransactionData</span></td>
+        <td><a class="xref" href="SIX.TimApi.TransactionData.html">TransactionData</a></td>
         <td><p>The transaction data.</p>
 </td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SIX_TimApi_Terminal_UseAsyncOperationInSyncContext_" data-uid="SIX.TimApi.Terminal.UseAsyncOperationInSyncContext*"></a>
+  <h4 id="SIX_TimApi_Terminal_UseAsyncOperationInSyncContext" data-uid="SIX.TimApi.Terminal.UseAsyncOperationInSyncContext">UseAsyncOperationInSyncContext</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool UseAsyncOperationInSyncContext { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -1681,7 +1718,7 @@ one or multiple reboot processes.</p>
   
   
   <a id="SIX_TimApi_Terminal_AddEcrData_" data-uid="SIX.TimApi.Terminal.AddEcrData*"></a>
-  <h4 id="SIX_TimApi_Terminal_AddEcrData_EcrInfo_" data-uid="SIX.TimApi.Terminal.AddEcrData(EcrInfo)">AddEcrData(EcrInfo)</h4>
+  <h4 id="SIX_TimApi_Terminal_AddEcrData_SIX_TimApi_EcrInfo_" data-uid="SIX.TimApi.Terminal.AddEcrData(SIX.TimApi.EcrInfo)">AddEcrData(EcrInfo)</h4>
   <div class="markdown level1 summary"><p>Add ECR data replacing existing one if present.
 To remove elements use setEcrData instead.</p>
 </div>
@@ -1701,7 +1738,7 @@ To remove elements use setEcrData instead.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">EcrInfo</span></td>
+        <td><a class="xref" href="SIX.TimApi.EcrInfo.html">EcrInfo</a></td>
         <td><span class="parametername">ecrInfo</span></td>
         <td><p>The ecr information.</p>
 </td>
@@ -2149,6 +2186,49 @@ to the default language.</p>
   <h5 id="SIX_TimApi_Terminal_ChangeSettingsAsync_System_Collections_Generic_List_SIX_TimApi_Setting___remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>This method does not block the calling thread during the change settings operation and uses the Event-based Asynchronous Pattern (EAP).
 When the transaction completes, the <a class="xref" href="SIX.TimApi.Terminal.html#SIX_TimApi_Terminal_ChangeSettingsCompleted">ChangeSettingsCompleted</a> event is raised.
+Your application must handle this event to receive notification.</p>
+</div>
+  
+  
+  <a id="SIX_TimApi_Terminal_ClientIdentification_" data-uid="SIX.TimApi.Terminal.ClientIdentification*"></a>
+  <h4 id="SIX_TimApi_Terminal_ClientIdentification" data-uid="SIX.TimApi.Terminal.ClientIdentification">ClientIdentification()</h4>
+  <div class="markdown level1 summary"><p>Request client identification.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ClientIdentificationResponse ClientIdentification()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="SIX.TimApi.ClientIdentificationResponse.html">ClientIdentificationResponse</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SIX_TimApi_Terminal_ClientIdentificationAsync_" data-uid="SIX.TimApi.Terminal.ClientIdentificationAsync*"></a>
+  <h4 id="SIX_TimApi_Terminal_ClientIdentificationAsync" data-uid="SIX.TimApi.Terminal.ClientIdentificationAsync">ClientIdentificationAsync()</h4>
+  <div class="markdown level1 summary"><p>Request client identification.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ClientIdentificationAsync()</code></pre>
+  </div>
+  <h5 id="SIX_TimApi_Terminal_ClientIdentificationAsync_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method does not block the calling thread during the ClientIdentification operation and uses
+the Event-based Asynchronous Pattern (EAP). When the transaction completes, the
+<a class="xref" href="SIX.TimApi.Terminal.html#SIX_TimApi_Terminal_ClientIdentificationCompleted">ClientIdentificationCompleted</a> event is raised.
 Your application must handle this event to receive notification.</p>
 </div>
   
@@ -2684,7 +2764,7 @@ The response is available in the <a class="xref" href="SIX.TimApi.Terminal.Deact
   
   
   <a id="SIX_TimApi_Terminal_DeviceMaintenance_" data-uid="SIX.TimApi.Terminal.DeviceMaintenance*"></a>
-  <h4 id="SIX_TimApi_Terminal_DeviceMaintenance_MaintenanceType_" data-uid="SIX.TimApi.Terminal.DeviceMaintenance(MaintenanceType)">DeviceMaintenance(MaintenanceType)</h4>
+  <h4 id="SIX_TimApi_Terminal_DeviceMaintenance_SIX_TimApi_Constants_MaintenanceType_" data-uid="SIX.TimApi.Terminal.DeviceMaintenance(SIX.TimApi.Constants.MaintenanceType)">DeviceMaintenance(MaintenanceType)</h4>
   <div class="markdown level1 summary"><p>Perform device maintenance.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -2703,7 +2783,7 @@ The response is available in the <a class="xref" href="SIX.TimApi.Terminal.Deact
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">MaintenanceType</span></td>
+        <td><a class="xref" href="SIX.TimApi.Constants.MaintenanceType.html">MaintenanceType</a></td>
         <td><span class="parametername">type</span></td>
         <td></td>
       </tr>
@@ -2728,7 +2808,7 @@ The response is available in the <a class="xref" href="SIX.TimApi.Terminal.Deact
   
   
   <a id="SIX_TimApi_Terminal_DeviceMaintenanceAsync_" data-uid="SIX.TimApi.Terminal.DeviceMaintenanceAsync*"></a>
-  <h4 id="SIX_TimApi_Terminal_DeviceMaintenanceAsync_MaintenanceType_" data-uid="SIX.TimApi.Terminal.DeviceMaintenanceAsync(MaintenanceType)">DeviceMaintenanceAsync(MaintenanceType)</h4>
+  <h4 id="SIX_TimApi_Terminal_DeviceMaintenanceAsync_SIX_TimApi_Constants_MaintenanceType_" data-uid="SIX.TimApi.Terminal.DeviceMaintenanceAsync(SIX.TimApi.Constants.MaintenanceType)">DeviceMaintenanceAsync(MaintenanceType)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -2746,7 +2826,7 @@ The response is available in the <a class="xref" href="SIX.TimApi.Terminal.Deact
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">MaintenanceType</span></td>
+        <td><a class="xref" href="SIX.TimApi.Constants.MaintenanceType.html">MaintenanceType</a></td>
         <td><span class="parametername">type</span></td>
         <td></td>
       </tr>
@@ -3007,7 +3087,7 @@ The response is available in the <a class="xref" href="SIX.TimApi.Terminal.Hardw
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">CardData</span></td>
+        <td><a class="xref" href="SIX.TimApi.CardData.html">CardData</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -3031,7 +3111,7 @@ The response is available in the <a class="xref" href="SIX.TimApi.Terminal.Hardw
   
   
   <a id="SIX_TimApi_Terminal_InitTransaction_" data-uid="SIX.TimApi.Terminal.InitTransaction*"></a>
-  <h4 id="SIX_TimApi_Terminal_InitTransaction_System_Boolean_SIX_TimApi_Amount_FunctionHint_" data-uid="SIX.TimApi.Terminal.InitTransaction(System.Boolean,SIX.TimApi.Amount,FunctionHint)">InitTransaction(Boolean, Amount, FunctionHint)</h4>
+  <h4 id="SIX_TimApi_Terminal_InitTransaction_System_Boolean_SIX_TimApi_Amount_SIX_TimApi_Constants_FunctionHint_" data-uid="SIX.TimApi.Terminal.InitTransaction(System.Boolean,SIX.TimApi.Amount,SIX.TimApi.Constants.FunctionHint)">InitTransaction(Boolean, Amount, FunctionHint)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -3059,7 +3139,7 @@ The response is available in the <a class="xref" href="SIX.TimApi.Terminal.Hardw
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">FunctionHint</span></td>
+        <td><a class="xref" href="SIX.TimApi.Constants.FunctionHint.html">FunctionHint</a></td>
         <td><span class="parametername">functionHint</span></td>
         <td></td>
       </tr>
@@ -3075,7 +3155,7 @@ The response is available in the <a class="xref" href="SIX.TimApi.Terminal.Hardw
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">CardData</span></td>
+        <td><a class="xref" href="SIX.TimApi.CardData.html">CardData</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -3121,7 +3201,7 @@ Your application must handle this event to receive notification.</p>
   
   
   <a id="SIX_TimApi_Terminal_InitTransactionAsync_" data-uid="SIX.TimApi.Terminal.InitTransactionAsync*"></a>
-  <h4 id="SIX_TimApi_Terminal_InitTransactionAsync_System_Boolean_SIX_TimApi_Amount_FunctionHint_" data-uid="SIX.TimApi.Terminal.InitTransactionAsync(System.Boolean,SIX.TimApi.Amount,FunctionHint)">InitTransactionAsync(Boolean, Amount, FunctionHint)</h4>
+  <h4 id="SIX_TimApi_Terminal_InitTransactionAsync_System_Boolean_SIX_TimApi_Amount_SIX_TimApi_Constants_FunctionHint_" data-uid="SIX.TimApi.Terminal.InitTransactionAsync(System.Boolean,SIX.TimApi.Amount,SIX.TimApi.Constants.FunctionHint)">InitTransactionAsync(Boolean, Amount, FunctionHint)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -3149,7 +3229,7 @@ Your application must handle this event to receive notification.</p>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">FunctionHint</span></td>
+        <td><a class="xref" href="SIX.TimApi.Constants.FunctionHint.html">FunctionHint</a></td>
         <td><span class="parametername">functionHint</span></td>
         <td></td>
       </tr>
@@ -3158,7 +3238,7 @@ Your application must handle this event to receive notification.</p>
   
   
   <a id="SIX_TimApi_Terminal_InitTransactionWithDialog_" data-uid="SIX.TimApi.Terminal.InitTransactionWithDialog*"></a>
-  <h4 id="SIX_TimApi_Terminal_InitTransactionWithDialog_SIX_TimApi_Amount_System_Nullable_FunctionHint__SIX_TimApi_ShowDialogRequest_" data-uid="SIX.TimApi.Terminal.InitTransactionWithDialog(SIX.TimApi.Amount,System.Nullable{FunctionHint},SIX.TimApi.ShowDialogRequest)">InitTransactionWithDialog(Amount, Nullable&lt;FunctionHint&gt;, ShowDialogRequest)</h4>
+  <h4 id="SIX_TimApi_Terminal_InitTransactionWithDialog_SIX_TimApi_Amount_System_Nullable_SIX_TimApi_Constants_FunctionHint__SIX_TimApi_ShowDialogRequest_" data-uid="SIX.TimApi.Terminal.InitTransactionWithDialog(SIX.TimApi.Amount,System.Nullable{SIX.TimApi.Constants.FunctionHint},SIX.TimApi.ShowDialogRequest)">InitTransactionWithDialog(Amount, Nullable&lt;FunctionHint&gt;, ShowDialogRequest)</h4>
   <div class="markdown level1 summary"><p>Initialize a transaction knowing the amount or the card type.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -3182,7 +3262,7 @@ Your application must handle this event to receive notification.</p>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">FunctionHint</span>&gt;</td>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="SIX.TimApi.Constants.FunctionHint.html">FunctionHint</a>&gt;</td>
         <td><span class="parametername">functionHint</span></td>
         <td></td>
       </tr>
@@ -3227,7 +3307,7 @@ Your application must handle this event to receive notification.</p>
   
   
   <a id="SIX_TimApi_Terminal_InitTransactionWithDialogAsync_" data-uid="SIX.TimApi.Terminal.InitTransactionWithDialogAsync*"></a>
-  <h4 id="SIX_TimApi_Terminal_InitTransactionWithDialogAsync_SIX_TimApi_Amount_System_Nullable_FunctionHint__SIX_TimApi_ShowDialogRequest_" data-uid="SIX.TimApi.Terminal.InitTransactionWithDialogAsync(SIX.TimApi.Amount,System.Nullable{FunctionHint},SIX.TimApi.ShowDialogRequest)">InitTransactionWithDialogAsync(Amount, Nullable&lt;FunctionHint&gt;, ShowDialogRequest)</h4>
+  <h4 id="SIX_TimApi_Terminal_InitTransactionWithDialogAsync_SIX_TimApi_Amount_System_Nullable_SIX_TimApi_Constants_FunctionHint__SIX_TimApi_ShowDialogRequest_" data-uid="SIX.TimApi.Terminal.InitTransactionWithDialogAsync(SIX.TimApi.Amount,System.Nullable{SIX.TimApi.Constants.FunctionHint},SIX.TimApi.ShowDialogRequest)">InitTransactionWithDialogAsync(Amount, Nullable&lt;FunctionHint&gt;, ShowDialogRequest)</h4>
   <div class="markdown level1 summary"><p>Initialize a transaction asynchronously, knowing the amount or the card type .</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -3251,7 +3331,7 @@ Your application must handle this event to receive notification.</p>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">FunctionHint</span>&gt;</td>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="SIX.TimApi.Constants.FunctionHint.html">FunctionHint</a>&gt;</td>
         <td><span class="parametername">functionHint</span></td>
         <td></td>
       </tr>
@@ -3262,7 +3342,7 @@ Your application must handle this event to receive notification.</p>
       </tr>
     </tbody>
   </table>
-  <h5 id="SIX_TimApi_Terminal_InitTransactionWithDialogAsync_SIX_TimApi_Amount_System_Nullable_FunctionHint__SIX_TimApi_ShowDialogRequest__remarks">Remarks</h5>
+  <h5 id="SIX_TimApi_Terminal_InitTransactionWithDialogAsync_SIX_TimApi_Amount_System_Nullable_SIX_TimApi_Constants_FunctionHint__SIX_TimApi_ShowDialogRequest__remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>This method does not block the calling thread during the InitTransaction operation and uses the Event-based Asynchronous Pattern (EAP).
 When the transaction completes, the <a class="xref" href="SIX.TimApi.Terminal.html#SIX_TimApi_Terminal_InitTransactionWithDialogCompleted">InitTransactionWithDialogCompleted</a> event is raised.
 Your application must handle this event to receive notification.</p>
@@ -3414,7 +3494,7 @@ Your application must handle this event to receive notification.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">CardData</span></td>
+        <td><a class="xref" href="SIX.TimApi.CardData.html">CardData</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -4248,6 +4328,21 @@ supporting the function a declined receipt may be generated.</p>
 When the transaction completes, the <a class="xref" href="SIX.TimApi.Terminal.html#SIX_TimApi_Terminal_RollbackCompleted">RollbackCompleted</a> event is raised.
 Your application must handle this event to receive notification.
 The response is available in the <a class="xref" href="SIX.TimApi.Terminal.RollbackCompletedEventArgs.html">Terminal.RollbackCompletedEventArgs</a> as <a class="xref" href="SIX.TimApi.Terminal.RollbackCompletedEventArgs.html#SIX_TimApi_Terminal_RollbackCompletedEventArgs_PrintData">PrintData</a>.</p>
+</div>
+  
+  
+  <a id="SIX_TimApi_Terminal_Screenshot_" data-uid="SIX.TimApi.Terminal.Screenshot*"></a>
+  <h4 id="SIX_TimApi_Terminal_Screenshot" data-uid="SIX.TimApi.Terminal.Screenshot">Screenshot()</h4>
+  <div class="markdown level1 summary"><p>Send notification to request EFT make a screenshot.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Screenshot()</code></pre>
+  </div>
+  <h5 id="SIX_TimApi_Terminal_Screenshot_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This is a &quot;best effort&quot; function.</p>
+<p>Note: This method is only available if guide remote is enabled.</p>
 </div>
   
   
@@ -5334,6 +5429,38 @@ The <a class="xref" href="SIX.TimApi.Terminal.ChangeSettingsCompletedEventArgs.h
 </div>
   
   
+  <h4 id="SIX_TimApi_Terminal_ClientIdentificationCompleted" data-uid="SIX.TimApi.Terminal.ClientIdentificationCompleted">ClientIdentificationCompleted</h4>
+  <div class="markdown level1 summary"><p>Occurs when an asynchronous ClientIdentification completes.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event Terminal.ClientIdentificationCompletedEventHandler ClientIdentificationCompleted</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="SIX.TimApi.Terminal.ClientIdentificationCompletedEventHandler.html">Terminal.ClientIdentificationCompletedEventHandler</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="SIX_TimApi_Terminal_ClientIdentificationCompleted_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This event is raised each time an asynchronous ClientIdentification completes.<br>
+Asynchronous transactions are started by calling the <a class="xref" href="SIX.TimApi.Terminal.html#SIX_TimApi_Terminal_ClientIdentificationAsync">ClientIdentificationAsync()</a> methods.
+<br>
+The  <a class="xref" href="SIX.TimApi.Terminal.ClientIdentificationCompletedEventHandler.html">Terminal.ClientIdentificationCompletedEventHandler</a>  is the delegate for this event.
+The <a class="xref" href="SIX.TimApi.Terminal.ClientIdentificationCompletedEventArgs.html">Terminal.ClientIdentificationCompletedEventArgs</a> class provides the event handler with event data.</p>
+</div>
+  
+  
   <h4 id="SIX_TimApi_Terminal_CloseDialogModeCompleted" data-uid="SIX.TimApi.Terminal.CloseDialogModeCompleted">CloseDialogModeCompleted</h4>
   <div class="markdown level1 summary"><p>Occurs when an asynchronous CloseDialogMode completes.</p>
 </div>
@@ -5639,7 +5766,7 @@ The <a class="xref" href="SIX.TimApi.Terminal.DeactivateCompletedEventArgs.html"
   </table>
   <h5 id="SIX_TimApi_Terminal_DeviceMaintenanceCompleted_remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>This event is raised each time an asynchronous device maintenance completes.<br>
-Asynchronous transactions are started by calling the <a class="xref" href="SIX.TimApi.Terminal.html#SIX_TimApi_Terminal_DeviceMaintenanceAsync_MaintenanceType_">DeviceMaintenanceAsync(MaintenanceType)</a> methods.
+Asynchronous transactions are started by calling the <a class="xref" href="SIX.TimApi.Terminal.html#SIX_TimApi_Terminal_DeviceMaintenanceAsync_SIX_TimApi_Constants_MaintenanceType_">DeviceMaintenanceAsync(MaintenanceType)</a> methods.
 <br>
 The <a class="xref" href="SIX.TimApi.Terminal.DeviceMaintenanceCompletedEventHandler.html">Terminal.DeviceMaintenanceCompletedEventHandler</a>  is the delegate for this event.
 The <a class="xref" href="SIX.TimApi.Terminal.DeviceMaintenanceCompletedEventArgs.html">Terminal.DeviceMaintenanceCompletedEventArgs</a> class provides the event handler with event data.</p>
@@ -5856,7 +5983,7 @@ The <a class="xref" href="SIX.TimApi.Terminal.InitTransactionCompletedEventArgs.
   </table>
   <h5 id="SIX_TimApi_Terminal_InitTransactionWithDialogCompleted_remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>This event is raised each time an asynchronous InitTransactionWithDialog completes.<br>
-Asynchronous transactions are started by calling the <a class="xref" href="SIX.TimApi.Terminal.html#SIX_TimApi_Terminal_InitTransactionWithDialogAsync_SIX_TimApi_Amount_System_Nullable_FunctionHint__SIX_TimApi_ShowDialogRequest_">InitTransactionWithDialogAsync(Amount, Nullable&lt;FunctionHint&gt;, ShowDialogRequest)</a> methods.
+Asynchronous transactions are started by calling the <a class="xref" href="SIX.TimApi.Terminal.html#SIX_TimApi_Terminal_InitTransactionWithDialogAsync_SIX_TimApi_Amount_System_Nullable_SIX_TimApi_Constants_FunctionHint__SIX_TimApi_ShowDialogRequest_">InitTransactionWithDialogAsync(Amount, Nullable&lt;FunctionHint&gt;, ShowDialogRequest)</a> methods.
 <br>
 The  <a class="xref" href="SIX.TimApi.Terminal.InitTransactionWithDialogCompletedEventHandler.html">Terminal.InitTransactionWithDialogCompletedEventHandler</a>  is the delegate for this event.
 The <a class="xref" href="SIX.TimApi.Terminal.InitTransactionWithDialogCompletedEventArgs.html">Terminal.InitTransactionWithDialogCompletedEventArgs</a> class provides the event handler with event data.</p>
@@ -6395,13 +6522,13 @@ The <a class="xref" href="SIX.TimApi.Terminal.RollbackCompletedEventArgs.html">T
 </div>
   
   
-  <h4 id="SIX_TimApi_Terminal_Screenshot" data-uid="SIX.TimApi.Terminal.Screenshot">Screenshot</h4>
+  <h4 id="SIX_TimApi_Terminal_ScreenshotEvent" data-uid="SIX.TimApi.Terminal.ScreenshotEvent">ScreenshotEvent</h4>
   <div class="markdown level1 summary"><p>Occurs when ScreenshotInformation is received.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public event Terminal.ScreenshotHandler Screenshot</code></pre>
+    <pre><code class="lang-csharp hljs">public event Terminal.ScreenshotHandler ScreenshotEvent</code></pre>
   </div>
   <h5 class="eventType">Event Type</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -6418,7 +6545,7 @@ The <a class="xref" href="SIX.TimApi.Terminal.RollbackCompletedEventArgs.html">T
       </tr>
     </tbody>
   </table>
-  <h5 id="SIX_TimApi_Terminal_Screenshot_remarks">Remarks</h5>
+  <h5 id="SIX_TimApi_Terminal_ScreenshotEvent_remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>This event is raised when terminal encounters errors outside pending request.</p>
 </div>
   

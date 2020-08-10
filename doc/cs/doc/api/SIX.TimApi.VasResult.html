@@ -12,7 +12,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class VasResult
    ">
-    <meta name="generator" content="docfx 2.43.3.0">
+    <meta name="generator" content="docfx 2.51.0.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -93,6 +93,9 @@
                           </li>
                           <li class="">
                             <a href="SIX.TimApi.CardTrackData.html" title="CardTrackData" class="">CardTrackData</a>
+                          </li>
+                          <li class="">
+                            <a href="SIX.TimApi.ClientIdentificationResponse.html" title="ClientIdentificationResponse" class="">ClientIdentificationResponse</a>
                           </li>
                           <li class="">
                             <a href="SIX.TimApi.CommandRequest.html" title="CommandRequest" class="">CommandRequest</a>
@@ -291,6 +294,12 @@
                           </li>
                           <li class="">
                             <a href="SIX.TimApi.Terminal.ChangeSettingsCompletedEventHandler.html" title="Terminal.ChangeSettingsCompletedEventHandler" class="">Terminal.ChangeSettingsCompletedEventHandler</a>
+                          </li>
+                          <li class="">
+                            <a href="SIX.TimApi.Terminal.ClientIdentificationCompletedEventArgs.html" title="Terminal.ClientIdentificationCompletedEventArgs" class="">Terminal.ClientIdentificationCompletedEventArgs</a>
+                          </li>
+                          <li class="">
+                            <a href="SIX.TimApi.Terminal.ClientIdentificationCompletedEventHandler.html" title="Terminal.ClientIdentificationCompletedEventHandler" class="">Terminal.ClientIdentificationCompletedEventHandler</a>
                           </li>
                           <li class="">
                             <a href="SIX.TimApi.Terminal.CloseDialogModeCompletedEventArgs.html" title="Terminal.CloseDialogModeCompletedEventArgs" class="">Terminal.CloseDialogModeCompletedEventArgs</a>
@@ -811,6 +820,9 @@
                           <li class="">
                             <a href="SIX.TimApi.Utility.Logger.Logger.CodeBlock-1.html" title="Logger.CodeBlock&lt;T&gt;" class="">Logger.CodeBlock&lt;T&gt;</a>
                           </li>
+                          <li class="">
+                            <a href="SIX.TimApi.Utility.Logger.LogRecord.html" title="LogRecord" class="">LogRecord</a>
+                          </li>
                         </ul>  </li>
                   </ul>        </div>
               </div>
@@ -864,13 +876,13 @@
   
   
   <a id="SIX_TimApi_VasResult__ctor_" data-uid="SIX.TimApi.VasResult.#ctor*"></a>
-  <h4 id="SIX_TimApi_VasResult__ctor_SIX_TimApi_Constants_VasInfoListType_System_Collections_Generic_Dictionary_SIX_TimApi_Constants_VasInfoType_System_Byte____" data-uid="SIX.TimApi.VasResult.#ctor(SIX.TimApi.Constants.VasInfoListType,System.Collections.Generic.Dictionary{SIX.TimApi.Constants.VasInfoType,System.Byte[]})">VasResult(VasInfoListType, Dictionary&lt;VasInfoType, Byte[]&gt;)</h4>
+  <h4 id="SIX_TimApi_VasResult__ctor_SIX_TimApi_Constants_VasInfoListType_System_Collections_Generic_Dictionary_SIX_TimApi_Constants_VasInfoType_System_String__" data-uid="SIX.TimApi.VasResult.#ctor(SIX.TimApi.Constants.VasInfoListType,System.Collections.Generic.Dictionary{SIX.TimApi.Constants.VasInfoType,System.String})">VasResult(VasInfoListType, Dictionary&lt;VasInfoType, String&gt;)</h4>
   <div class="markdown level1 summary"><p>Create VAS result.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public VasResult(VasInfoListType vasInfoListType, Dictionary&lt;VasInfoType, byte[]&gt; vasInformation)</code></pre>
+    <pre><code class="lang-csharp hljs">public VasResult(VasInfoListType vasInfoListType, Dictionary&lt;VasInfoType, string&gt; vasInformation)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -888,25 +900,26 @@
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;<a class="xref" href="SIX.TimApi.Constants.VasInfoType.html">VasInfoType</a>, <span class="xref">System.Byte</span>[]&gt;</td>
+        <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;<a class="xref" href="SIX.TimApi.Constants.VasInfoType.html">VasInfoType</a>, <span class="xref">System.String</span>&gt;</td>
         <td><span class="parametername">vasInformation</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  <h3 id="fields">Fields
+  <h3 id="properties">Properties
   </h3>
   
   
+  <a id="SIX_TimApi_VasResult_VasInfoListType_" data-uid="SIX.TimApi.VasResult.VasInfoListType*"></a>
   <h4 id="SIX_TimApi_VasResult_VasInfoListType" data-uid="SIX.TimApi.VasResult.VasInfoListType">VasInfoListType</h4>
   <div class="markdown level1 summary"><p>VAS information list type.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public readonly VasInfoListType VasInfoListType</code></pre>
+    <pre><code class="lang-csharp hljs">public VasInfoListType VasInfoListType { get; }</code></pre>
   </div>
-  <h5 class="fieldValue">Field Value</h5>
+  <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
@@ -923,15 +936,16 @@
   </table>
   
   
+  <a id="SIX_TimApi_VasResult_VasInformation_" data-uid="SIX.TimApi.VasResult.VasInformation*"></a>
   <h4 id="SIX_TimApi_VasResult_VasInformation" data-uid="SIX.TimApi.VasResult.VasInformation">VasInformation</h4>
   <div class="markdown level1 summary"><p>VAS information.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public readonly Dictionary&lt;VasInfoType, byte[]&gt; VasInformation</code></pre>
+    <pre><code class="lang-csharp hljs">public Dictionary&lt;VasInfoType, string&gt; VasInformation { get; }</code></pre>
   </div>
-  <h5 class="fieldValue">Field Value</h5>
+  <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
@@ -941,7 +955,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;<a class="xref" href="SIX.TimApi.Constants.VasInfoType.html">VasInfoType</a>, <span class="xref">System.Byte</span>[]&gt;</td>
+        <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;<a class="xref" href="SIX.TimApi.Constants.VasInfoType.html">VasInfoType</a>, <span class="xref">System.String</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>

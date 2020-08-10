@@ -12,7 +12,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class ConversionHelper
    ">
-    <meta name="generator" content="docfx 2.43.3.0">
+    <meta name="generator" content="docfx 2.51.0.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -93,6 +93,9 @@
                           </li>
                           <li class="">
                             <a href="SIX.TimApi.CardTrackData.html" title="CardTrackData" class="">CardTrackData</a>
+                          </li>
+                          <li class="">
+                            <a href="SIX.TimApi.ClientIdentificationResponse.html" title="ClientIdentificationResponse" class="">ClientIdentificationResponse</a>
                           </li>
                           <li class="">
                             <a href="SIX.TimApi.CommandRequest.html" title="CommandRequest" class="">CommandRequest</a>
@@ -291,6 +294,12 @@
                           </li>
                           <li class="">
                             <a href="SIX.TimApi.Terminal.ChangeSettingsCompletedEventHandler.html" title="Terminal.ChangeSettingsCompletedEventHandler" class="">Terminal.ChangeSettingsCompletedEventHandler</a>
+                          </li>
+                          <li class="">
+                            <a href="SIX.TimApi.Terminal.ClientIdentificationCompletedEventArgs.html" title="Terminal.ClientIdentificationCompletedEventArgs" class="">Terminal.ClientIdentificationCompletedEventArgs</a>
+                          </li>
+                          <li class="">
+                            <a href="SIX.TimApi.Terminal.ClientIdentificationCompletedEventHandler.html" title="Terminal.ClientIdentificationCompletedEventHandler" class="">Terminal.ClientIdentificationCompletedEventHandler</a>
                           </li>
                           <li class="">
                             <a href="SIX.TimApi.Terminal.CloseDialogModeCompletedEventArgs.html" title="Terminal.CloseDialogModeCompletedEventArgs" class="">Terminal.CloseDialogModeCompletedEventArgs</a>
@@ -811,6 +820,9 @@
                           <li class="">
                             <a href="SIX.TimApi.Utility.Logger.Logger.CodeBlock-1.html" title="Logger.CodeBlock&lt;T&gt;" class="">Logger.CodeBlock&lt;T&gt;</a>
                           </li>
+                          <li class="">
+                            <a href="SIX.TimApi.Utility.Logger.LogRecord.html" title="LogRecord" class="">LogRecord</a>
+                          </li>
                         </ul>  </li>
                   </ul>        </div>
               </div>
@@ -865,6 +877,90 @@
   </h3>
   
   
+  <a id="SIX_TimApi_ConversionHelper_base64StringToByte_" data-uid="SIX.TimApi.ConversionHelper.base64StringToByte*"></a>
+  <h4 id="SIX_TimApi_ConversionHelper_base64StringToByte_System_String_" data-uid="SIX.TimApi.ConversionHelper.base64StringToByte(System.String)">base64StringToByte(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static byte[] base64StringToByte(string s)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">s</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SIX_TimApi_ConversionHelper_byteOrNullToBase64String_" data-uid="SIX.TimApi.ConversionHelper.byteOrNullToBase64String*"></a>
+  <h4 id="SIX_TimApi_ConversionHelper_byteOrNullToBase64String_System_Byte___" data-uid="SIX.TimApi.ConversionHelper.byteOrNullToBase64String(System.Byte[])">byteOrNullToBase64String(Byte[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string byteOrNullToBase64String(byte[] bytes)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td><span class="parametername">bytes</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="SIX_TimApi_ConversionHelper_byteOrNullToHexString_" data-uid="SIX.TimApi.ConversionHelper.byteOrNullToHexString*"></a>
   <h4 id="SIX_TimApi_ConversionHelper_byteOrNullToHexString_System_Byte___" data-uid="SIX.TimApi.ConversionHelper.byteOrNullToHexString(System.Byte[])">byteOrNullToHexString(Byte[])</h4>
   <div class="markdown level1 summary"></div>
@@ -872,6 +968,48 @@
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static string byteOrNullToHexString(byte[] bytes)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td><span class="parametername">bytes</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SIX_TimApi_ConversionHelper_byteToBase64String_" data-uid="SIX.TimApi.ConversionHelper.byteToBase64String*"></a>
+  <h4 id="SIX_TimApi_ConversionHelper_byteToBase64String_System_Byte___" data-uid="SIX.TimApi.ConversionHelper.byteToBase64String(System.Byte[])">byteToBase64String(Byte[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string byteToBase64String(byte[] bytes)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">

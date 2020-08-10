@@ -12,7 +12,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class Hardware
    ">
-    <meta name="generator" content="docfx 2.43.3.0">
+    <meta name="generator" content="docfx 2.51.0.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -93,6 +93,9 @@
                           </li>
                           <li class="">
                             <a href="SIX.TimApi.CardTrackData.html" title="CardTrackData" class="">CardTrackData</a>
+                          </li>
+                          <li class="">
+                            <a href="SIX.TimApi.ClientIdentificationResponse.html" title="ClientIdentificationResponse" class="">ClientIdentificationResponse</a>
                           </li>
                           <li class="">
                             <a href="SIX.TimApi.CommandRequest.html" title="CommandRequest" class="">CommandRequest</a>
@@ -291,6 +294,12 @@
                           </li>
                           <li class="">
                             <a href="SIX.TimApi.Terminal.ChangeSettingsCompletedEventHandler.html" title="Terminal.ChangeSettingsCompletedEventHandler" class="">Terminal.ChangeSettingsCompletedEventHandler</a>
+                          </li>
+                          <li class="">
+                            <a href="SIX.TimApi.Terminal.ClientIdentificationCompletedEventArgs.html" title="Terminal.ClientIdentificationCompletedEventArgs" class="">Terminal.ClientIdentificationCompletedEventArgs</a>
+                          </li>
+                          <li class="">
+                            <a href="SIX.TimApi.Terminal.ClientIdentificationCompletedEventHandler.html" title="Terminal.ClientIdentificationCompletedEventHandler" class="">Terminal.ClientIdentificationCompletedEventHandler</a>
                           </li>
                           <li class="">
                             <a href="SIX.TimApi.Terminal.CloseDialogModeCompletedEventArgs.html" title="Terminal.CloseDialogModeCompletedEventArgs" class="">Terminal.CloseDialogModeCompletedEventArgs</a>
@@ -811,6 +820,9 @@
                           <li class="">
                             <a href="SIX.TimApi.Utility.Logger.Logger.CodeBlock-1.html" title="Logger.CodeBlock&lt;T&gt;" class="">Logger.CodeBlock&lt;T&gt;</a>
                           </li>
+                          <li class="">
+                            <a href="SIX.TimApi.Utility.Logger.LogRecord.html" title="LogRecord" class="">LogRecord</a>
+                          </li>
                         </ul>  </li>
                   </ul>        </div>
               </div>
@@ -865,13 +877,13 @@ Immutable class.</p>
   
   
   <a id="SIX_TimApi_Hardware__ctor_" data-uid="SIX.TimApi.Hardware.#ctor*"></a>
-  <h4 id="SIX_TimApi_Hardware__ctor_SIX_TimApi_Constants_HardwareType_System_String_System_DateTime_System_String_System_String_SIX_TimApi_Constants_SecurityStatus_System_DateTime_System_String_System_String_System_String_System_String_System_String_" data-uid="SIX.TimApi.Hardware.#ctor(SIX.TimApi.Constants.HardwareType,System.String,System.DateTime,System.String,System.String,SIX.TimApi.Constants.SecurityStatus,System.DateTime,System.String,System.String,System.String,System.String,System.String)">Hardware(HardwareType, String, DateTime, String, String, SecurityStatus, DateTime, String, String, String, String, String)</h4>
+  <h4 id="SIX_TimApi_Hardware__ctor_SIX_TimApi_Constants_HardwareType_System_String_System_Nullable_System_DateTime__System_String_System_String_SIX_TimApi_Constants_SecurityStatus_System_Nullable_System_DateTime__System_String_System_String_System_String_System_String_System_String_" data-uid="SIX.TimApi.Hardware.#ctor(SIX.TimApi.Constants.HardwareType,System.String,System.Nullable{System.DateTime},System.String,System.String,SIX.TimApi.Constants.SecurityStatus,System.Nullable{System.DateTime},System.String,System.String,System.String,System.String,System.String)">Hardware(HardwareType, String, Nullable&lt;DateTime&gt;, String, String, SecurityStatus, Nullable&lt;DateTime&gt;, String, String, String, String, String)</h4>
   <div class="markdown level1 summary"><p>Create hardware information.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Hardware(HardwareType hardwareType, string serialNumber, DateTime productionDate, string productVersion, string firmwareVersion, SecurityStatus securityStatus, DateTime lastCleaningDate, string imsi, string imei, string iccid, string hardwareAddress, string hardwareDescription)</code></pre>
+    <pre><code class="lang-csharp hljs">public Hardware(HardwareType hardwareType, string serialNumber, DateTime? productionDate, string productVersion, string firmwareVersion, SecurityStatus securityStatus, DateTime? lastCleaningDate, string imsi, string imei, string iccid, string hardwareAddress, string hardwareDescription)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -894,7 +906,7 @@ Immutable class.</p>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">System.DateTime</span></td>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.DateTime</span>&gt;</td>
         <td><span class="parametername">productionDate</span></td>
         <td></td>
       </tr>
@@ -914,7 +926,7 @@ Immutable class.</p>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">System.DateTime</span></td>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.DateTime</span>&gt;</td>
         <td><span class="parametername">lastCleaningDate</span></td>
         <td></td>
       </tr>
@@ -945,128 +957,6 @@ Immutable class.</p>
       </tr>
     </tbody>
   </table>
-  <h3 id="fields">Fields
-  </h3>
-  
-  
-  <h4 id="SIX_TimApi_Hardware_HardwareAddress" data-uid="SIX.TimApi.Hardware.HardwareAddress">HardwareAddress</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string HardwareAddress</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <h4 id="SIX_TimApi_Hardware_HardwareDescription" data-uid="SIX.TimApi.Hardware.HardwareDescription">HardwareDescription</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string HardwareDescription</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <h4 id="SIX_TimApi_Hardware_Iccid" data-uid="SIX.TimApi.Hardware.Iccid">Iccid</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string Iccid</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <h4 id="SIX_TimApi_Hardware_Imei" data-uid="SIX.TimApi.Hardware.Imei">Imei</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string Imei</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <h4 id="SIX_TimApi_Hardware_Imsi" data-uid="SIX.TimApi.Hardware.Imsi">Imsi</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string Imsi</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
   <h3 id="properties">Properties
   </h3>
   
@@ -1079,6 +969,58 @@ Immutable class.</p>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public string FirmwareVersion { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SIX_TimApi_Hardware_HardwareAddress_" data-uid="SIX.TimApi.Hardware.HardwareAddress*"></a>
+  <h4 id="SIX_TimApi_Hardware_HardwareAddress" data-uid="SIX.TimApi.Hardware.HardwareAddress">HardwareAddress</h4>
+  <div class="markdown level1 summary"><p>Hardware address.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string HardwareAddress { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SIX_TimApi_Hardware_HardwareDescription_" data-uid="SIX.TimApi.Hardware.HardwareDescription*"></a>
+  <h4 id="SIX_TimApi_Hardware_HardwareDescription" data-uid="SIX.TimApi.Hardware.HardwareDescription">HardwareDescription</h4>
+  <div class="markdown level1 summary"><p>Hardware description.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string HardwareDescription { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1123,15 +1065,96 @@ Immutable class.</p>
   </table>
   
   
-  <a id="SIX_TimApi_Hardware_LastCleaningDate_" data-uid="SIX.TimApi.Hardware.LastCleaningDate*"></a>
-  <h4 id="SIX_TimApi_Hardware_LastCleaningDate" data-uid="SIX.TimApi.Hardware.LastCleaningDate">LastCleaningDate</h4>
-  <div class="markdown level1 summary"><p>Last Cleaning Date of the specified hardware.
-Available if HardwareType = ContactReader, MagStripeReader.</p>
+  <a id="SIX_TimApi_Hardware_Iccid_" data-uid="SIX.TimApi.Hardware.Iccid*"></a>
+  <h4 id="SIX_TimApi_Hardware_Iccid" data-uid="SIX.TimApi.Hardware.Iccid">Iccid</h4>
+  <div class="markdown level1 summary"><p>Iccid.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public DateTime LastCleaningDate { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public string Iccid { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SIX_TimApi_Hardware_Imei_" data-uid="SIX.TimApi.Hardware.Imei*"></a>
+  <h4 id="SIX_TimApi_Hardware_Imei" data-uid="SIX.TimApi.Hardware.Imei">Imei</h4>
+  <div class="markdown level1 summary"><p>Imei.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Imei { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SIX_TimApi_Hardware_Imsi_" data-uid="SIX.TimApi.Hardware.Imsi*"></a>
+  <h4 id="SIX_TimApi_Hardware_Imsi" data-uid="SIX.TimApi.Hardware.Imsi">Imsi</h4>
+  <div class="markdown level1 summary"><p>Imsi.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Imsi { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SIX_TimApi_Hardware_LastCleaningDate_" data-uid="SIX.TimApi.Hardware.LastCleaningDate*"></a>
+  <h4 id="SIX_TimApi_Hardware_LastCleaningDate" data-uid="SIX.TimApi.Hardware.LastCleaningDate">LastCleaningDate</h4>
+  <div class="markdown level1 summary"><p>Last Cleaning Date of the specified hardware.
+Available if HardwareType = ContactReader, MagStripeReader.</p>
+<p>Note: Value can be not send by the EFT. In thise case DateTime.MinValue is returned.
+Deprecated! Use LastCleaningDateNullable instead since this property can return null value if not set.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use LastCleaningDateNullable instead since this property can return null value if not set.&quot;)]
+public DateTime LastCleaningDate { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1150,14 +1173,44 @@ Available if HardwareType = ContactReader, MagStripeReader.</p>
   </table>
   
   
-  <a id="SIX_TimApi_Hardware_ProductionDate_" data-uid="SIX.TimApi.Hardware.ProductionDate*"></a>
-  <h4 id="SIX_TimApi_Hardware_ProductionDate" data-uid="SIX.TimApi.Hardware.ProductionDate">ProductionDate</h4>
-  <div class="markdown level1 summary"><p>Production date of the specified hardware.</p>
+  <a id="SIX_TimApi_Hardware_LastCleaningDateNullable_" data-uid="SIX.TimApi.Hardware.LastCleaningDateNullable*"></a>
+  <h4 id="SIX_TimApi_Hardware_LastCleaningDateNullable" data-uid="SIX.TimApi.Hardware.LastCleaningDateNullable">LastCleaningDateNullable</h4>
+  <div class="markdown level1 summary"><p>Last Cleaning Date of the specified hardware.
+Available if HardwareType = ContactReader, MagStripeReader.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public DateTime ProductionDate { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public DateTime? LastCleaningDateNullable { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.DateTime</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SIX_TimApi_Hardware_ProductionDate_" data-uid="SIX.TimApi.Hardware.ProductionDate*"></a>
+  <h4 id="SIX_TimApi_Hardware_ProductionDate" data-uid="SIX.TimApi.Hardware.ProductionDate">ProductionDate</h4>
+  <div class="markdown level1 summary"><p>Production date of the specified hardware.</p>
+<p>Note: Value can be not send by the EFT. In thise case DateTime.MinValue is returned.
+Deprecated! Use ProductionDateNullable instead since this property can return null value if not set.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use ProductionDateNullable instead since this property can return null value if not set.&quot;)]
+public DateTime ProductionDate { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1170,6 +1223,32 @@ Available if HardwareType = ContactReader, MagStripeReader.</p>
     <tbody>
       <tr>
         <td><span class="xref">System.DateTime</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SIX_TimApi_Hardware_ProductionDateNullable_" data-uid="SIX.TimApi.Hardware.ProductionDateNullable*"></a>
+  <h4 id="SIX_TimApi_Hardware_ProductionDateNullable" data-uid="SIX.TimApi.Hardware.ProductionDateNullable">ProductionDateNullable</h4>
+  <div class="markdown level1 summary"><p>Production date of the specified hardware.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DateTime? ProductionDateNullable { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.DateTime</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>

@@ -12,7 +12,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class Logger
    ">
-    <meta name="generator" content="docfx 2.43.3.0">
+    <meta name="generator" content="docfx 2.51.0.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -93,6 +93,9 @@
                           </li>
                           <li class="">
                             <a href="SIX.TimApi.CardTrackData.html" title="CardTrackData" class="">CardTrackData</a>
+                          </li>
+                          <li class="">
+                            <a href="SIX.TimApi.ClientIdentificationResponse.html" title="ClientIdentificationResponse" class="">ClientIdentificationResponse</a>
                           </li>
                           <li class="">
                             <a href="SIX.TimApi.CommandRequest.html" title="CommandRequest" class="">CommandRequest</a>
@@ -291,6 +294,12 @@
                           </li>
                           <li class="">
                             <a href="SIX.TimApi.Terminal.ChangeSettingsCompletedEventHandler.html" title="Terminal.ChangeSettingsCompletedEventHandler" class="">Terminal.ChangeSettingsCompletedEventHandler</a>
+                          </li>
+                          <li class="">
+                            <a href="SIX.TimApi.Terminal.ClientIdentificationCompletedEventArgs.html" title="Terminal.ClientIdentificationCompletedEventArgs" class="">Terminal.ClientIdentificationCompletedEventArgs</a>
+                          </li>
+                          <li class="">
+                            <a href="SIX.TimApi.Terminal.ClientIdentificationCompletedEventHandler.html" title="Terminal.ClientIdentificationCompletedEventHandler" class="">Terminal.ClientIdentificationCompletedEventHandler</a>
                           </li>
                           <li class="">
                             <a href="SIX.TimApi.Terminal.CloseDialogModeCompletedEventArgs.html" title="Terminal.CloseDialogModeCompletedEventArgs" class="">Terminal.CloseDialogModeCompletedEventArgs</a>
@@ -811,6 +820,9 @@
                           <li class="">
                             <a href="SIX.TimApi.Utility.Logger.Logger.CodeBlock-1.html" title="Logger.CodeBlock&lt;T&gt;" class="">Logger.CodeBlock&lt;T&gt;</a>
                           </li>
+                          <li class="">
+                            <a href="SIX.TimApi.Utility.Logger.LogRecord.html" title="LogRecord" class="">LogRecord</a>
+                          </li>
                         </ul>  </li>
                   </ul>        </div>
               </div>
@@ -861,6 +873,152 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public class Logger</code></pre>
   </div>
+  <h3 id="fields">Fields
+  </h3>
+  
+  
+  <h4 id="SIX_TimApi_Utility_Logger_Logger_LoggerLogDir" data-uid="SIX.TimApi.Utility.Logger.Logger.LoggerLogDir">LoggerLogDir</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly string LoggerLogDir</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="SIX_TimApi_Utility_Logger_Logger_LoggerLogFileCountPerArchive" data-uid="SIX.TimApi.Utility.Logger.Logger.LoggerLogFileCountPerArchive">LoggerLogFileCountPerArchive</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly int LoggerLogFileCountPerArchive</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="SIX_TimApi_Utility_Logger_Logger_LoggerLogLevel" data-uid="SIX.TimApi.Utility.Logger.Logger.LoggerLogLevel">LoggerLogLevel</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Level LoggerLogLevel</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="SIX.TimApi.Utility.Logger.Level.html">Level</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="SIX_TimApi_Utility_Logger_Logger_LoggerLogRetainArchiveCount" data-uid="SIX.TimApi.Utility.Logger.Logger.LoggerLogRetainArchiveCount">LoggerLogRetainArchiveCount</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly int LoggerLogRetainArchiveCount</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="SIX_TimApi_Utility_Logger_Logger_LoggerLogRetainFileCount" data-uid="SIX.TimApi.Utility.Logger.Logger.LoggerLogRetainFileCount">LoggerLogRetainFileCount</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly int LoggerLogRetainFileCount</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="SIX_TimApi_Utility_Logger_Logger_Name" data-uid="SIX.TimApi.Utility.Logger.Logger.Name">Name</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly string Name</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="properties">Properties
   </h3>
   
@@ -871,7 +1029,8 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static string LogDir { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use terminal settings to set this parameter per terminal instance.&quot;)]
+public static string LogDir { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -892,12 +1051,12 @@
   
   <a id="SIX_TimApi_Utility_Logger_Logger_LogRetainArchiveCount_" data-uid="SIX.TimApi.Utility.Logger.Logger.LogRetainArchiveCount*"></a>
   <h4 id="SIX_TimApi_Utility_Logger_Logger_LogRetainArchiveCount" data-uid="SIX.TimApi.Utility.Logger.Logger.LogRetainArchiveCount">LogRetainArchiveCount</h4>
-  <div class="markdown level1 summary"><p>Number of log file archives to keep before deleting them. Use 0 to disable delete</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int LogRetainArchiveCount { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use terminal settings to set this parameter per terminal instance.&quot;)]
+public static int LogRetainArchiveCount { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -924,7 +1083,8 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool ArchiveLogsInZip(Logger.ArchiveMode am)</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use terminal settings to set this parameter per terminal instance.&quot;)]
+public static bool ArchiveLogsInZip(Logger.ArchiveMode am)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -966,7 +1126,8 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void Dispose()</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;No longer supported!&quot;)]
+public static void Dispose()</code></pre>
   </div>
   
   
@@ -1108,23 +1269,14 @@
   </table>
   
   
-  <a id="SIX_TimApi_Utility_Logger_Logger_flush_" data-uid="SIX.TimApi.Utility.Logger.Logger.flush*"></a>
-  <h4 id="SIX_TimApi_Utility_Logger_Logger_flush" data-uid="SIX.TimApi.Utility.Logger.Logger.flush">flush()</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void flush()</code></pre>
-  </div>
-  
-  
   <a id="SIX_TimApi_Utility_Logger_Logger_Flush_" data-uid="SIX.TimApi.Utility.Logger.Logger.Flush*"></a>
   <h4 id="SIX_TimApi_Utility_Logger_Logger_Flush" data-uid="SIX.TimApi.Utility.Logger.Logger.Flush">Flush()</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void Flush()</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;No longer supported!&quot;)]
+public static void Flush()</code></pre>
   </div>
   
   
@@ -1134,7 +1286,8 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void FlushLogs()</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;No longer supported!&quot;)]
+public static void FlushLogs()</code></pre>
   </div>
   
   
@@ -1144,7 +1297,8 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static Logger getLogger(string name)</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;No longer supported!&quot;)]
+public static Logger getLogger(string name)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1186,7 +1340,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void info(string msg)</code></pre>
+    <pre><code class="lang-csharp hljs">public void info(string message)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1200,7 +1354,7 @@
     <tbody>
       <tr>
         <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">msg</span></td>
+        <td><span class="parametername">message</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -1213,7 +1367,8 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void Init()</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;No longer supported!&quot;)]
+public static void Init()</code></pre>
   </div>
   
   
@@ -1302,7 +1457,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void log(Level level, string msg)</code></pre>
+    <pre><code class="lang-csharp hljs">public void log(Level level, string message)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1321,7 +1476,7 @@
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">msg</span></td>
+        <td><span class="parametername">message</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -1376,7 +1531,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void log(Level level, string msg, Exception thrown)</code></pre>
+    <pre><code class="lang-csharp hljs">public void log(Level level, string message, Exception thrown)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1395,7 +1550,7 @@
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">msg</span></td>
+        <td><span class="parametername">message</span></td>
         <td></td>
       </tr>
       <tr>
@@ -1413,7 +1568,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void log(Level level, string msg, string msg1)</code></pre>
+    <pre><code class="lang-csharp hljs">public void log(Level level, string message, string message1)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1432,12 +1587,12 @@
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">msg</span></td>
+        <td><span class="parametername">message</span></td>
         <td></td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">msg1</span></td>
+        <td><span class="parametername">message1</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -1450,7 +1605,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void log(Level level, string msg, string[] parameters)</code></pre>
+    <pre><code class="lang-csharp hljs">public void log(Level level, string message, string[] parameters)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1469,7 +1624,7 @@
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">msg</span></td>
+        <td><span class="parametername">message</span></td>
         <td></td>
       </tr>
       <tr>
@@ -1601,7 +1756,8 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void PrintThreadProc()</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;No longer supported!&quot;)]
+public static void PrintThreadProc()</code></pre>
   </div>
   
   
@@ -1611,7 +1767,8 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void PrintToFile(string s)</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;No longer supported!&quot;)]
+public static void PrintToFile(string s)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1632,40 +1789,14 @@
   </table>
   
   
-  <a id="SIX_TimApi_Utility_Logger_Logger_setLevel_" data-uid="SIX.TimApi.Utility.Logger.Logger.setLevel*"></a>
-  <h4 id="SIX_TimApi_Utility_Logger_Logger_setLevel_SIX_TimApi_Utility_Logger_Level_" data-uid="SIX.TimApi.Utility.Logger.Logger.setLevel(SIX.TimApi.Utility.Logger.Level)">setLevel(Level)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void setLevel(Level newLevel)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="SIX.TimApi.Utility.Logger.Level.html">Level</a></td>
-        <td><span class="parametername">newLevel</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
   <a id="SIX_TimApi_Utility_Logger_Logger_SetLevel_" data-uid="SIX.TimApi.Utility.Logger.Logger.SetLevel*"></a>
   <h4 id="SIX_TimApi_Utility_Logger_Logger_SetLevel_System_String_System_String_" data-uid="SIX.TimApi.Utility.Logger.Logger.SetLevel(System.String,System.String)">SetLevel(String, String)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void SetLevel(string module, string sNewLevel)</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use terminal settings to set this parameter per terminal instance.&quot;)]
+public static void SetLevel(string module, string sNewLevel)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1685,38 +1816,6 @@
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">sNewLevel</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="SIX_TimApi_Utility_Logger_Logger_throwexit_" data-uid="SIX.TimApi.Utility.Logger.Logger.throwexit*"></a>
-  <h4 id="SIX_TimApi_Utility_Logger_Logger_throwexit_System_String_System_String_" data-uid="SIX.TimApi.Utility.Logger.Logger.throwexit(System.String,System.String)">throwexit(String, String)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void throwexit(string sourceClass, string sourceMethod)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">sourceClass</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">sourceMethod</span></td>
         <td></td>
       </tr>
     </tbody>

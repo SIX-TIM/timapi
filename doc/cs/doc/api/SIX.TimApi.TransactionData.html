@@ -12,7 +12,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class TransactionData
    ">
-    <meta name="generator" content="docfx 2.43.3.0">
+    <meta name="generator" content="docfx 2.51.0.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -93,6 +93,9 @@
                           </li>
                           <li class="">
                             <a href="SIX.TimApi.CardTrackData.html" title="CardTrackData" class="">CardTrackData</a>
+                          </li>
+                          <li class="">
+                            <a href="SIX.TimApi.ClientIdentificationResponse.html" title="ClientIdentificationResponse" class="">ClientIdentificationResponse</a>
                           </li>
                           <li class="">
                             <a href="SIX.TimApi.CommandRequest.html" title="CommandRequest" class="">CommandRequest</a>
@@ -291,6 +294,12 @@
                           </li>
                           <li class="">
                             <a href="SIX.TimApi.Terminal.ChangeSettingsCompletedEventHandler.html" title="Terminal.ChangeSettingsCompletedEventHandler" class="">Terminal.ChangeSettingsCompletedEventHandler</a>
+                          </li>
+                          <li class="">
+                            <a href="SIX.TimApi.Terminal.ClientIdentificationCompletedEventArgs.html" title="Terminal.ClientIdentificationCompletedEventArgs" class="">Terminal.ClientIdentificationCompletedEventArgs</a>
+                          </li>
+                          <li class="">
+                            <a href="SIX.TimApi.Terminal.ClientIdentificationCompletedEventHandler.html" title="Terminal.ClientIdentificationCompletedEventHandler" class="">Terminal.ClientIdentificationCompletedEventHandler</a>
                           </li>
                           <li class="">
                             <a href="SIX.TimApi.Terminal.CloseDialogModeCompletedEventArgs.html" title="Terminal.CloseDialogModeCompletedEventArgs" class="">Terminal.CloseDialogModeCompletedEventArgs</a>
@@ -811,6 +820,9 @@
                           <li class="">
                             <a href="SIX.TimApi.Utility.Logger.Logger.CodeBlock-1.html" title="Logger.CodeBlock&lt;T&gt;" class="">Logger.CodeBlock&lt;T&gt;</a>
                           </li>
+                          <li class="">
+                            <a href="SIX.TimApi.Utility.Logger.LogRecord.html" title="LogRecord" class="">LogRecord</a>
+                          </li>
                         </ul>  </li>
                   </ul>        </div>
               </div>
@@ -832,11 +844,32 @@
     <div class="level0"><span class="xref">System.Object</span></div>
     <div class="level1"><span class="xref">TransactionData</span></div>
   </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+  </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="SIX.TimApi.html">SIX.TimApi</a></h6>
   <h6><strong>Assembly</strong>: TimApi.dll</h6>
   <h5 id="SIX_TimApi_TransactionData_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class TransactionData : object</code></pre>
+    <pre><code class="lang-csharp hljs">public class TransactionData</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -880,174 +913,6 @@
       </tr>
     </tbody>
   </table>
-  <h3 id="fields">Fields
-  </h3>
-  
-  
-  <h4 id="SIX_TimApi_TransactionData_AppExpirationDate" data-uid="SIX.TimApi.TransactionData.AppExpirationDate">AppExpirationDate</h4>
-  <div class="markdown level1 summary"><p>Application expiration date.
-Each application on a card has a corresponding expiration date and can be read from the card.
-Example: The format of an 'Expiration Date' is defined as MMyy, 2 digits for the month and
-2 digits for the year. So January 2018 will have the following format as 'Expiration Date': 0118
-Optional: Used for MPKE for non-PCI brands based transactions.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public DateTime? AppExpirationDate</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">DateTime</span>&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <h4 id="SIX_TimApi_TransactionData_Cvc2" data-uid="SIX.TimApi.TransactionData.Cvc2">Cvc2</h4>
-  <div class="markdown level1 summary"><p>Card verification code 2.
-The card verification code 2 is used for transactions with MPKE as an additional security
-element that has to be provided.
-It has an n3 value: Numeric 3 digits: 012
-Optional: Used for MPKE for non-PCI brands.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public long? Cvc2</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int64</span>&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <h4 id="SIX_TimApi_TransactionData_DeferredAuthInd" data-uid="SIX.TimApi.TransactionData.DeferredAuthInd">DeferredAuthInd</h4>
-  <div class="markdown level1 summary"><p>Indicates that the transaction shall be performed using deffered authorisation.
-The following values are valid:
-true: Deferred authorisation applies
-false: Standard authorisation scheme (default)</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool? DeferredAuthInd</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <h4 id="SIX_TimApi_TransactionData_InstallmentAllowed" data-uid="SIX.TimApi.TransactionData.InstallmentAllowed">InstallmentAllowed</h4>
-  <div class="markdown level1 summary"><p>Indicates if installment shall be allowed for a transaction.
-This tag can be set for each transaction separately to specifically allow or disallow
-installment feature during the corresponding transaction.
-As this is a boolean value is can be understood as follows:
-true: Installment is allowed for the transaction
-false: Installment is NOT allowed for the transaction</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool? InstallmentAllowed</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <h4 id="SIX_TimApi_TransactionData_SubTransactions" data-uid="SIX.TimApi.TransactionData.SubTransactions">SubTransactions</h4>
-  <div class="markdown level1 summary"><p>Sub transactions.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public List&lt;SubTransaction&gt; SubTransactions</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">List</span>&lt;<a class="xref" href="SIX.TimApi.SubTransaction.html">SubTransaction</a>&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <h4 id="SIX_TimApi_TransactionData_TransactionReason" data-uid="SIX.TimApi.TransactionData.TransactionReason">TransactionReason</h4>
-  <div class="markdown level1 summary"><p>Set the transaction reason to setup credential on file.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public TransactionReason TransactionReason</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="SIX.TimApi.Constants.TransactionReason.html">TransactionReason</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
   <h3 id="properties">Properties
   </h3>
   
@@ -1072,8 +937,7 @@ false: Installment is NOT allowed for the transaction</p>
     <tbody>
       <tr>
         <td><span class="xref">System.Int64</span></td>
-        <td><p>The acq identifier.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -1086,7 +950,7 @@ false: Installment is NOT allowed for the transaction</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public String AcqTransRef { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public string AcqTransRef { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1098,9 +962,38 @@ false: Installment is NOT allowed for the transaction</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">String</span></td>
-        <td><p>The acq trans reference.</p>
-</td>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SIX_TimApi_TransactionData_AppExpirationDate_" data-uid="SIX.TimApi.TransactionData.AppExpirationDate*"></a>
+  <h4 id="SIX_TimApi_TransactionData_AppExpirationDate" data-uid="SIX.TimApi.TransactionData.AppExpirationDate">AppExpirationDate</h4>
+  <div class="markdown level1 summary"><p>Application expiration date.
+Each application on a card has a corresponding expiration date and can be read from the card.
+Example: The format of an 'Expiration Date' is defined as MMyy, 2 digits for the month and
+2 digits for the year. So January 2018 will have the following format as 'Expiration Date': 0118
+Optional: Used for MPKE for non-PCI brands based transactions.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DateTime? AppExpirationDate { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.DateTime</span>&gt;</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -1113,7 +1006,7 @@ false: Installment is NOT allowed for the transaction</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public String CardRef { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public string CardRef { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1125,9 +1018,38 @@ false: Installment is NOT allowed for the transaction</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">String</span></td>
-        <td><p>The card reference.</p>
-</td>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SIX_TimApi_TransactionData_Cvc2_" data-uid="SIX.TimApi.TransactionData.Cvc2*"></a>
+  <h4 id="SIX_TimApi_TransactionData_Cvc2" data-uid="SIX.TimApi.TransactionData.Cvc2">Cvc2</h4>
+  <div class="markdown level1 summary"><p>Card verification code 2.
+The card verification code 2 is used for transactions with MPKE as an additional security
+element that has to be provided.
+It has an n3 value: Numeric 3 digits: 012
+Optional: Used for MPKE for non-PCI brands.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public long? Cvc2 { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int64</span>&gt;</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -1136,11 +1058,14 @@ false: Installment is NOT allowed for the transaction</p>
   <a id="SIX_TimApi_TransactionData_DccAllowed_" data-uid="SIX.TimApi.TransactionData.DccAllowed*"></a>
   <h4 id="SIX_TimApi_TransactionData_DccAllowed" data-uid="SIX.TimApi.TransactionData.DccAllowed">DccAllowed</h4>
   <div class="markdown level1 summary"><p>Set or read if the EFT Terminal is allowed to enable DCC function.</p>
+<p>If not specified by the EFT false is returned.
+Deprecated! Use DccAllowedNullable instead since this property can return null value if not set.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool DccAllowed { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use DccAllowedNullable instead since this property can return null value if not set.&quot;)]
+public bool DccAllowed { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1153,6 +1078,61 @@ false: Installment is NOT allowed for the transaction</p>
     <tbody>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SIX_TimApi_TransactionData_DccAllowedNullable_" data-uid="SIX.TimApi.TransactionData.DccAllowedNullable*"></a>
+  <h4 id="SIX_TimApi_TransactionData_DccAllowedNullable" data-uid="SIX.TimApi.TransactionData.DccAllowedNullable">DccAllowedNullable</h4>
+  <div class="markdown level1 summary"><p>Set or read if the EFT Terminal is allowed to enable DCC function.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool? DccAllowedNullable { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SIX_TimApi_TransactionData_DeferredAuthInd_" data-uid="SIX.TimApi.TransactionData.DeferredAuthInd*"></a>
+  <h4 id="SIX_TimApi_TransactionData_DeferredAuthInd" data-uid="SIX.TimApi.TransactionData.DeferredAuthInd">DeferredAuthInd</h4>
+  <div class="markdown level1 summary"><p>Indicates that the transaction shall be performed using deffered authorisation.
+The following values are valid:
+true: Deferred authorisation applies
+false: Standard authorisation scheme (default)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool? DeferredAuthInd { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -1185,14 +1165,19 @@ false: Installment is NOT allowed for the transaction</p>
   </table>
   
   
-  <a id="SIX_TimApi_TransactionData_Language_" data-uid="SIX.TimApi.TransactionData.Language*"></a>
-  <h4 id="SIX_TimApi_TransactionData_Language" data-uid="SIX.TimApi.TransactionData.Language">Language</h4>
-  <div class="markdown level1 summary"><p>the language. (Petrol, Unattended)</p>
+  <a id="SIX_TimApi_TransactionData_InstallmentAllowed_" data-uid="SIX.TimApi.TransactionData.InstallmentAllowed*"></a>
+  <h4 id="SIX_TimApi_TransactionData_InstallmentAllowed" data-uid="SIX.TimApi.TransactionData.InstallmentAllowed">InstallmentAllowed</h4>
+  <div class="markdown level1 summary"><p>Indicates if installment shall be allowed for a transaction.
+This tag can be set for each transaction separately to specifically allow or disallow
+installment feature during the corresponding transaction.
+As this is a boolean value is can be understood as follows:
+true: Installment is allowed for the transaction
+false: Installment is NOT allowed for the transaction</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public String Language { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public bool? InstallmentAllowed { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1204,9 +1189,34 @@ false: Installment is NOT allowed for the transaction</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">String</span></td>
-        <td><p>The language.</p>
-</td>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SIX_TimApi_TransactionData_Language_" data-uid="SIX.TimApi.TransactionData.Language*"></a>
+  <h4 id="SIX_TimApi_TransactionData_Language" data-uid="SIX.TimApi.TransactionData.Language">Language</h4>
+  <div class="markdown level1 summary"><p>the language. (Petrol, Unattended)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Language { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -1242,7 +1252,25 @@ false: Installment is NOT allowed for the transaction</p>
   
   <a id="SIX_TimApi_TransactionData_NGVClearingDelay_" data-uid="SIX.TimApi.TransactionData.NGVClearingDelay*"></a>
   <h4 id="SIX_TimApi_TransactionData_NGVClearingDelay" data-uid="SIX.TimApi.TransactionData.NGVClearingDelay">NGVClearingDelay</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Defines the clearing delay of the PurchaseNGV transaction.</p>
+<p>The following values are currently defined:</p>
+<table>
+<tr>
+<th>Value</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>0</td>
+<td>no delay</td>
+</tr>
+<tr>
+<td>1-99</td>
+<td>delay in days</td>
+</tr>
+</table>
+<p>Not used if getNgvMode() is null.</p>
+<p>Available if {@link Guides#AUSTRIAN_USE_CASES} is enabled.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1295,11 +1323,15 @@ false: Installment is NOT allowed for the transaction</p>
   
   <a id="SIX_TimApi_TransactionData_PartialApprovalAllowed_" data-uid="SIX.TimApi.TransactionData.PartialApprovalAllowed*"></a>
   <h4 id="SIX_TimApi_TransactionData_PartialApprovalAllowed" data-uid="SIX.TimApi.TransactionData.PartialApprovalAllowed">PartialApprovalAllowed</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Partial approval is allowed.</p>
+<p>If not specified by the EFT false is returned.
+Deprecated! Use PartialApprovalAllowedNullable instead since this property can return null value if not set.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool PartialApprovalAllowed { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use PartialApprovalAllowedNullable instead since this property can return null value if not set.&quot;)]
+public bool PartialApprovalAllowed { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1318,14 +1350,14 @@ false: Installment is NOT allowed for the transaction</p>
   </table>
   
   
-  <a id="SIX_TimApi_TransactionData_PhoneAuthCode_" data-uid="SIX.TimApi.TransactionData.PhoneAuthCode*"></a>
-  <h4 id="SIX_TimApi_TransactionData_PhoneAuthCode" data-uid="SIX.TimApi.TransactionData.PhoneAuthCode">PhoneAuthCode</h4>
-  <div class="markdown level1 summary"><p>Phone authorization code.</p>
+  <a id="SIX_TimApi_TransactionData_PartialApprovalAllowedNullable_" data-uid="SIX.TimApi.TransactionData.PartialApprovalAllowedNullable*"></a>
+  <h4 id="SIX_TimApi_TransactionData_PartialApprovalAllowedNullable" data-uid="SIX.TimApi.TransactionData.PartialApprovalAllowedNullable">PartialApprovalAllowedNullable</h4>
+  <div class="markdown level1 summary"><p>Partial approval is allowed.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public String PhoneAuthCode { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public bool? PartialApprovalAllowedNullable { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1337,9 +1369,34 @@ false: Installment is NOT allowed for the transaction</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">String</span></td>
-        <td><p>The phone authentication code.</p>
-</td>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SIX_TimApi_TransactionData_PhoneAuthCode_" data-uid="SIX.TimApi.TransactionData.PhoneAuthCode*"></a>
+  <h4 id="SIX_TimApi_TransactionData_PhoneAuthCode" data-uid="SIX.TimApi.TransactionData.PhoneAuthCode">PhoneAuthCode</h4>
+  <div class="markdown level1 summary"><p>Phone authorization code.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string PhoneAuthCode { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -1352,7 +1409,7 @@ false: Installment is NOT allowed for the transaction</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public String SaferpayAlias { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public string SaferpayAlias { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1364,9 +1421,8 @@ false: Installment is NOT allowed for the transaction</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">String</span></td>
-        <td><p>The Saferpay alias.</p>
-</td>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -1374,7 +1430,8 @@ false: Installment is NOT allowed for the transaction</p>
   
   <a id="SIX_TimApi_TransactionData_SaferpayRecurring_" data-uid="SIX.TimApi.TransactionData.SaferpayRecurring*"></a>
   <h4 id="SIX_TimApi_TransactionData_SaferpayRecurring" data-uid="SIX.TimApi.TransactionData.SaferpayRecurring">SaferpayRecurring</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Saferpay recurring enabled.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1404,7 +1461,7 @@ false: Installment is NOT allowed for the transaction</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public String SixTrxRefNum { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public string SixTrxRefNum { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1416,9 +1473,34 @@ false: Installment is NOT allowed for the transaction</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">String</span></td>
-        <td><p>The SIX Transaction reference number.</p>
-</td>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SIX_TimApi_TransactionData_SubTransactions_" data-uid="SIX.TimApi.TransactionData.SubTransactions*"></a>
+  <h4 id="SIX_TimApi_TransactionData_SubTransactions" data-uid="SIX.TimApi.TransactionData.SubTransactions">SubTransactions</h4>
+  <div class="markdown level1 summary"><p>Sub transactions.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;SubTransaction&gt; SubTransactions { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="SIX.TimApi.SubTransaction.html">SubTransaction</a>&gt;</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -1427,11 +1509,15 @@ false: Installment is NOT allowed for the transaction</p>
   <a id="SIX_TimApi_TransactionData_TipAllowed_" data-uid="SIX.TimApi.TransactionData.TipAllowed*"></a>
   <h4 id="SIX_TimApi_TransactionData_TipAllowed" data-uid="SIX.TimApi.TransactionData.TipAllowed">TipAllowed</h4>
   <div class="markdown level1 summary"><p>Tip is allowed for purchase transactions. Use null to not use this parameter.</p>
+<p>This parameter is only used if {@link com.six.timapi.constants.Guides#GASTRO} is enabled.</p>
+<p>If not specified by the EFT false is returned.
+Deprecated! Use TipAllowedNullable instead since this property can return null value if not set.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool TipAllowed { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use TipAllowedNullable instead since this property can return null value if not set.&quot;)]
+public bool TipAllowed { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1444,8 +1530,60 @@ false: Installment is NOT allowed for the transaction</p>
     <tbody>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
-        <td><p><code>true</code> if [tip allowed]; otherwise, <code>false</code>.</p>
-</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SIX_TimApi_TransactionData_TipAllowedNullable_" data-uid="SIX.TimApi.TransactionData.TipAllowedNullable*"></a>
+  <h4 id="SIX_TimApi_TransactionData_TipAllowedNullable" data-uid="SIX.TimApi.TransactionData.TipAllowedNullable">TipAllowedNullable</h4>
+  <div class="markdown level1 summary"><p>Tip is allowed for purchase transactions. Use null to not use this parameter.</p>
+<p>This parameter is only used if {@link com.six.timapi.constants.Guides#GASTRO} is enabled.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool? TipAllowedNullable { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SIX_TimApi_TransactionData_TransactionReason_" data-uid="SIX.TimApi.TransactionData.TransactionReason*"></a>
+  <h4 id="SIX_TimApi_TransactionData_TransactionReason" data-uid="SIX.TimApi.TransactionData.TransactionReason">TransactionReason</h4>
+  <div class="markdown level1 summary"><p>Set the transaction reason to setup credential on file.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TransactionReason TransactionReason { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="SIX.TimApi.Constants.TransactionReason.html">TransactionReason</a></td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -1510,7 +1648,7 @@ false: Installment is NOT allowed for the transaction</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public String TrmTransRef { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public string TrmTransRef { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1522,9 +1660,8 @@ false: Installment is NOT allowed for the transaction</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">String</span></td>
-        <td><p>The TRM trans reference.</p>
-</td>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -1533,11 +1670,14 @@ false: Installment is NOT allowed for the transaction</p>
   <a id="SIX_TimApi_TransactionData_TrxOriginalDate_" data-uid="SIX.TimApi.TransactionData.TrxOriginalDate*"></a>
   <h4 id="SIX_TimApi_TransactionData_TrxOriginalDate" data-uid="SIX.TimApi.TransactionData.TrxOriginalDate">TrxOriginalDate</h4>
   <div class="markdown level1 summary"><p>Timestamp of the original transaction.</p>
+<p>If not specified by the EFT DateTime.MinValue is returned.
+Deprecated! Use TrxOriginalDateNullable instead since this property can return null value if not set.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public DateTime TrxOriginalDate { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use TrxOriginalDateNullable instead since this property can return null value if not set.&quot;)]
+public DateTime TrxOriginalDate { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1549,7 +1689,33 @@ false: Installment is NOT allowed for the transaction</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">DateTime</span></td>
+        <td><span class="xref">System.DateTime</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SIX_TimApi_TransactionData_TrxOriginalDateNullable_" data-uid="SIX.TimApi.TransactionData.TrxOriginalDateNullable*"></a>
+  <h4 id="SIX_TimApi_TransactionData_TrxOriginalDateNullable" data-uid="SIX.TimApi.TransactionData.TrxOriginalDateNullable">TrxOriginalDateNullable</h4>
+  <div class="markdown level1 summary"><p>Timestamp of the original transaction.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DateTime? TrxOriginalDateNullable { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.DateTime</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -1601,7 +1767,7 @@ false: Installment is NOT allowed for the transaction</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override String ToString()</code></pre>
+    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1613,11 +1779,13 @@ false: Installment is NOT allowed for the transaction</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">String</span></td>
+        <td><span class="xref">System.String</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.Object.ToString()</span></div>
 </article>
           </div>
           

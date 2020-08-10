@@ -12,7 +12,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class Features
    ">
-    <meta name="generator" content="docfx 2.43.3.0">
+    <meta name="generator" content="docfx 2.51.0.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -93,6 +93,9 @@
                           </li>
                           <li class="">
                             <a href="SIX.TimApi.CardTrackData.html" title="CardTrackData" class="">CardTrackData</a>
+                          </li>
+                          <li class="">
+                            <a href="SIX.TimApi.ClientIdentificationResponse.html" title="ClientIdentificationResponse" class="">ClientIdentificationResponse</a>
                           </li>
                           <li class="">
                             <a href="SIX.TimApi.CommandRequest.html" title="CommandRequest" class="">CommandRequest</a>
@@ -291,6 +294,12 @@
                           </li>
                           <li class="">
                             <a href="SIX.TimApi.Terminal.ChangeSettingsCompletedEventHandler.html" title="Terminal.ChangeSettingsCompletedEventHandler" class="">Terminal.ChangeSettingsCompletedEventHandler</a>
+                          </li>
+                          <li class="">
+                            <a href="SIX.TimApi.Terminal.ClientIdentificationCompletedEventArgs.html" title="Terminal.ClientIdentificationCompletedEventArgs" class="">Terminal.ClientIdentificationCompletedEventArgs</a>
+                          </li>
+                          <li class="">
+                            <a href="SIX.TimApi.Terminal.ClientIdentificationCompletedEventHandler.html" title="Terminal.ClientIdentificationCompletedEventHandler" class="">Terminal.ClientIdentificationCompletedEventHandler</a>
                           </li>
                           <li class="">
                             <a href="SIX.TimApi.Terminal.CloseDialogModeCompletedEventArgs.html" title="Terminal.CloseDialogModeCompletedEventArgs" class="">Terminal.CloseDialogModeCompletedEventArgs</a>
@@ -811,6 +820,9 @@
                           <li class="">
                             <a href="SIX.TimApi.Utility.Logger.Logger.CodeBlock-1.html" title="Logger.CodeBlock&lt;T&gt;" class="">Logger.CodeBlock&lt;T&gt;</a>
                           </li>
+                          <li class="">
+                            <a href="SIX.TimApi.Utility.Logger.LogRecord.html" title="LogRecord" class="">LogRecord</a>
+                          </li>
                         </ul>  </li>
                   </ul>        </div>
               </div>
@@ -833,24 +845,45 @@ Immutable class.</p>
     <div class="level0"><span class="xref">System.Object</span></div>
     <div class="level1"><span class="xref">Features</span></div>
   </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+  </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="SIX.TimApi.html">SIX.TimApi</a></h6>
   <h6><strong>Assembly</strong>: TimApi.dll</h6>
   <h5 id="SIX_TimApi_Features_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class Features : object</code></pre>
+    <pre><code class="lang-csharp hljs">public class Features</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
   
   
   <a id="SIX_TimApi_Features__ctor_" data-uid="SIX.TimApi.Features.#ctor*"></a>
-  <h4 id="SIX_TimApi_Features__ctor_SIX_TimApi_FeaturesHardware_SIX_TimApi_FeaturesPayment_SIX_TimApi_FeaturesSixml_String_" data-uid="SIX.TimApi.Features.#ctor(SIX.TimApi.FeaturesHardware,SIX.TimApi.FeaturesPayment,SIX.TimApi.FeaturesSixml,String)">Features(FeaturesHardware, FeaturesPayment, FeaturesSixml, String)</h4>
+  <h4 id="SIX_TimApi_Features__ctor_SIX_TimApi_FeaturesHardware_SIX_TimApi_FeaturesPayment_SIX_TimApi_FeaturesSixml_System_String_" data-uid="SIX.TimApi.Features.#ctor(SIX.TimApi.FeaturesHardware,SIX.TimApi.FeaturesPayment,SIX.TimApi.FeaturesSixml,System.String)">Features(FeaturesHardware, FeaturesPayment, FeaturesSixml, String)</h4>
   <div class="markdown level1 summary"><p>Create features.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Features(FeaturesHardware hardware, FeaturesPayment payment, FeaturesSixml sixml, String terminalId)</code></pre>
+    <pre><code class="lang-csharp hljs">public Features(FeaturesHardware hardware, FeaturesPayment payment, FeaturesSixml sixml, string terminalId)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -878,25 +911,26 @@ Immutable class.</p>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">String</span></td>
+        <td><span class="xref">System.String</span></td>
         <td><span class="parametername">terminalId</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  <h3 id="fields">Fields
+  <h3 id="properties">Properties
   </h3>
   
   
+  <a id="SIX_TimApi_Features_Hardware_" data-uid="SIX.TimApi.Features.Hardware*"></a>
   <h4 id="SIX_TimApi_Features_Hardware" data-uid="SIX.TimApi.Features.Hardware">Hardware</h4>
   <div class="markdown level1 summary"><p>Hardware features.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public readonly FeaturesHardware Hardware</code></pre>
+    <pre><code class="lang-csharp hljs">public FeaturesHardware Hardware { get; }</code></pre>
   </div>
-  <h5 class="fieldValue">Field Value</h5>
+  <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
@@ -913,15 +947,16 @@ Immutable class.</p>
   </table>
   
   
+  <a id="SIX_TimApi_Features_Payment_" data-uid="SIX.TimApi.Features.Payment*"></a>
   <h4 id="SIX_TimApi_Features_Payment" data-uid="SIX.TimApi.Features.Payment">Payment</h4>
   <div class="markdown level1 summary"><p>Payment features.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public readonly FeaturesPayment Payment</code></pre>
+    <pre><code class="lang-csharp hljs">public FeaturesPayment Payment { get; }</code></pre>
   </div>
-  <h5 class="fieldValue">Field Value</h5>
+  <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
@@ -938,15 +973,16 @@ Immutable class.</p>
   </table>
   
   
+  <a id="SIX_TimApi_Features_Sixml_" data-uid="SIX.TimApi.Features.Sixml*"></a>
   <h4 id="SIX_TimApi_Features_Sixml" data-uid="SIX.TimApi.Features.Sixml">Sixml</h4>
   <div class="markdown level1 summary"><p>SIXml features.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public readonly FeaturesSixml Sixml</code></pre>
+    <pre><code class="lang-csharp hljs">public FeaturesSixml Sixml { get; }</code></pre>
   </div>
-  <h5 class="fieldValue">Field Value</h5>
+  <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
@@ -963,15 +999,16 @@ Immutable class.</p>
   </table>
   
   
+  <a id="SIX_TimApi_Features_TerminalId_" data-uid="SIX.TimApi.Features.TerminalId*"></a>
   <h4 id="SIX_TimApi_Features_TerminalId" data-uid="SIX.TimApi.Features.TerminalId">TerminalId</h4>
   <div class="markdown level1 summary"><p>Gets the terminal id.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public readonly String TerminalId</code></pre>
+    <pre><code class="lang-csharp hljs">public string TerminalId { get; }</code></pre>
   </div>
-  <h5 class="fieldValue">Field Value</h5>
+  <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
@@ -981,7 +1018,7 @@ Immutable class.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">String</span></td>
+        <td><span class="xref">System.String</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -997,7 +1034,7 @@ Immutable class.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override String ToString()</code></pre>
+    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1009,11 +1046,13 @@ Immutable class.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">String</span></td>
+        <td><span class="xref">System.String</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.Object.ToString()</span></div>
 </article>
           </div>
           

@@ -12,7 +12,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class Terminal.RequestCompletedEventArgs
    ">
-    <meta name="generator" content="docfx 2.43.3.0">
+    <meta name="generator" content="docfx 2.51.0.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -93,6 +93,9 @@
                           </li>
                           <li class="">
                             <a href="SIX.TimApi.CardTrackData.html" title="CardTrackData" class="">CardTrackData</a>
+                          </li>
+                          <li class="">
+                            <a href="SIX.TimApi.ClientIdentificationResponse.html" title="ClientIdentificationResponse" class="">ClientIdentificationResponse</a>
                           </li>
                           <li class="">
                             <a href="SIX.TimApi.CommandRequest.html" title="CommandRequest" class="">CommandRequest</a>
@@ -291,6 +294,12 @@
                           </li>
                           <li class="">
                             <a href="SIX.TimApi.Terminal.ChangeSettingsCompletedEventHandler.html" title="Terminal.ChangeSettingsCompletedEventHandler" class="">Terminal.ChangeSettingsCompletedEventHandler</a>
+                          </li>
+                          <li class="">
+                            <a href="SIX.TimApi.Terminal.ClientIdentificationCompletedEventArgs.html" title="Terminal.ClientIdentificationCompletedEventArgs" class="">Terminal.ClientIdentificationCompletedEventArgs</a>
+                          </li>
+                          <li class="">
+                            <a href="SIX.TimApi.Terminal.ClientIdentificationCompletedEventHandler.html" title="Terminal.ClientIdentificationCompletedEventHandler" class="">Terminal.ClientIdentificationCompletedEventHandler</a>
                           </li>
                           <li class="">
                             <a href="SIX.TimApi.Terminal.CloseDialogModeCompletedEventArgs.html" title="Terminal.CloseDialogModeCompletedEventArgs" class="">Terminal.CloseDialogModeCompletedEventArgs</a>
@@ -811,6 +820,9 @@
                           <li class="">
                             <a href="SIX.TimApi.Utility.Logger.Logger.CodeBlock-1.html" title="Logger.CodeBlock&lt;T&gt;" class="">Logger.CodeBlock&lt;T&gt;</a>
                           </li>
+                          <li class="">
+                            <a href="SIX.TimApi.Utility.Logger.LogRecord.html" title="LogRecord" class="">LogRecord</a>
+                          </li>
                         </ul>  </li>
                   </ul>        </div>
               </div>
@@ -838,6 +850,7 @@
       <div class="level4"><a class="xref" href="SIX.TimApi.Terminal.BalanceCompletedEventArgs.html">Terminal.BalanceCompletedEventArgs</a></div>
       <div class="level4"><a class="xref" href="SIX.TimApi.Terminal.BalanceInquiryCompletedEventArgs.html">Terminal.BalanceInquiryCompletedEventArgs</a></div>
       <div class="level4"><a class="xref" href="SIX.TimApi.Terminal.ChangeSettingsCompletedEventArgs.html">Terminal.ChangeSettingsCompletedEventArgs</a></div>
+      <div class="level4"><a class="xref" href="SIX.TimApi.Terminal.ClientIdentificationCompletedEventArgs.html">Terminal.ClientIdentificationCompletedEventArgs</a></div>
       <div class="level4"><a class="xref" href="SIX.TimApi.Terminal.CloseDialogModeCompletedEventArgs.html">Terminal.CloseDialogModeCompletedEventArgs</a></div>
       <div class="level4"><a class="xref" href="SIX.TimApi.Terminal.CloseMaintenanceWindowCompletedEventArgs.html">Terminal.CloseMaintenanceWindowCompletedEventArgs</a></div>
       <div class="level4"><a class="xref" href="SIX.TimApi.Terminal.CloseReaderCompletedEventArgs.html">Terminal.CloseReaderCompletedEventArgs</a></div>
@@ -977,19 +990,20 @@
       </tr>
     </tbody>
   </table>
-  <h3 id="fields">Fields
+  <h3 id="properties">Properties
   </h3>
   
   
+  <a id="SIX_TimApi_Terminal_RequestCompletedEventArgs_RequestType_" data-uid="SIX.TimApi.Terminal.RequestCompletedEventArgs.RequestType*"></a>
   <h4 id="SIX_TimApi_Terminal_RequestCompletedEventArgs_RequestType" data-uid="SIX.TimApi.Terminal.RequestCompletedEventArgs.RequestType">RequestType</h4>
   <div class="markdown level1 summary"><p>the type of the completed request.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public readonly RequestTypes RequestType</code></pre>
+    <pre><code class="lang-csharp hljs">public RequestTypes RequestType { get; }</code></pre>
   </div>
-  <h5 class="fieldValue">Field Value</h5>
+  <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
@@ -1007,15 +1021,16 @@
   </table>
   
   
+  <a id="SIX_TimApi_Terminal_RequestCompletedEventArgs_TimError_" data-uid="SIX.TimApi.Terminal.RequestCompletedEventArgs.TimError*"></a>
   <h4 id="SIX_TimApi_Terminal_RequestCompletedEventArgs_TimError" data-uid="SIX.TimApi.Terminal.RequestCompletedEventArgs.TimError">TimError</h4>
   <div class="markdown level1 summary"><p>An Exception instance, if an error occurred during an asynchronous operation; otherwise null.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public readonly TimException TimError</code></pre>
+    <pre><code class="lang-csharp hljs">public TimException TimError { get; }</code></pre>
   </div>
-  <h5 class="fieldValue">Field Value</h5>
+  <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>

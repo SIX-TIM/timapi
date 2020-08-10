@@ -12,7 +12,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class VasCheckoutInformation
    ">
-    <meta name="generator" content="docfx 2.43.3.0">
+    <meta name="generator" content="docfx 2.51.0.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -93,6 +93,9 @@
                           </li>
                           <li class="">
                             <a href="SIX.TimApi.CardTrackData.html" title="CardTrackData" class="">CardTrackData</a>
+                          </li>
+                          <li class="">
+                            <a href="SIX.TimApi.ClientIdentificationResponse.html" title="ClientIdentificationResponse" class="">ClientIdentificationResponse</a>
                           </li>
                           <li class="">
                             <a href="SIX.TimApi.CommandRequest.html" title="CommandRequest" class="">CommandRequest</a>
@@ -291,6 +294,12 @@
                           </li>
                           <li class="">
                             <a href="SIX.TimApi.Terminal.ChangeSettingsCompletedEventHandler.html" title="Terminal.ChangeSettingsCompletedEventHandler" class="">Terminal.ChangeSettingsCompletedEventHandler</a>
+                          </li>
+                          <li class="">
+                            <a href="SIX.TimApi.Terminal.ClientIdentificationCompletedEventArgs.html" title="Terminal.ClientIdentificationCompletedEventArgs" class="">Terminal.ClientIdentificationCompletedEventArgs</a>
+                          </li>
+                          <li class="">
+                            <a href="SIX.TimApi.Terminal.ClientIdentificationCompletedEventHandler.html" title="Terminal.ClientIdentificationCompletedEventHandler" class="">Terminal.ClientIdentificationCompletedEventHandler</a>
                           </li>
                           <li class="">
                             <a href="SIX.TimApi.Terminal.CloseDialogModeCompletedEventArgs.html" title="Terminal.CloseDialogModeCompletedEventArgs" class="">Terminal.CloseDialogModeCompletedEventArgs</a>
@@ -811,6 +820,9 @@
                           <li class="">
                             <a href="SIX.TimApi.Utility.Logger.Logger.CodeBlock-1.html" title="Logger.CodeBlock&lt;T&gt;" class="">Logger.CodeBlock&lt;T&gt;</a>
                           </li>
+                          <li class="">
+                            <a href="SIX.TimApi.Utility.Logger.LogRecord.html" title="LogRecord" class="">LogRecord</a>
+                          </li>
                         </ul>  </li>
                   </ul>        </div>
               </div>
@@ -866,12 +878,13 @@
   
   
   <a id="SIX_TimApi_VasCheckoutInformation__ctor_" data-uid="SIX.TimApi.VasCheckoutInformation.#ctor*"></a>
-  <h4 id="SIX_TimApi_VasCheckoutInformation__ctor_System_Collections_Generic_List_SIX_TimApi_LoyaltyCoupon__System_Collections_Generic_List_SIX_TimApi_LoyaltyInformation__System_Boolean_System_Collections_Generic_Dictionary_System_String_System_Byte____" data-uid="SIX.TimApi.VasCheckoutInformation.#ctor(System.Collections.Generic.List{SIX.TimApi.LoyaltyCoupon},System.Collections.Generic.List{SIX.TimApi.LoyaltyInformation},System.Boolean,System.Collections.Generic.Dictionary{System.String,System.Byte[]})">VasCheckoutInformation(List&lt;LoyaltyCoupon&gt;, List&lt;LoyaltyInformation&gt;, Boolean, Dictionary&lt;String, Byte[]&gt;)</h4>
-  <div class="markdown level1 summary"></div>
+  <h4 id="SIX_TimApi_VasCheckoutInformation__ctor_System_Collections_Generic_List_SIX_TimApi_LoyaltyCoupon__System_Collections_Generic_List_SIX_TimApi_LoyaltyInformation__System_Boolean_System_Collections_Generic_Dictionary_System_String_System_String__" data-uid="SIX.TimApi.VasCheckoutInformation.#ctor(System.Collections.Generic.List{SIX.TimApi.LoyaltyCoupon},System.Collections.Generic.List{SIX.TimApi.LoyaltyInformation},System.Boolean,System.Collections.Generic.Dictionary{System.String,System.String})">VasCheckoutInformation(List&lt;LoyaltyCoupon&gt;, List&lt;LoyaltyInformation&gt;, Boolean, Dictionary&lt;String, String&gt;)</h4>
+  <div class="markdown level1 summary"><p>Create VAS checkout information.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public VasCheckoutInformation(List&lt;LoyaltyCoupon&gt; loyaltyCoupons, List&lt;LoyaltyInformation&gt; loyaltyInformation, bool provideBasket, Dictionary&lt;string, byte[]&gt; vasInformation)</code></pre>
+    <pre><code class="lang-csharp hljs">public VasCheckoutInformation(List&lt;LoyaltyCoupon&gt; loyaltyCoupons, List&lt;LoyaltyInformation&gt; loyaltyInformation, bool provideBasket, Dictionary&lt;string, string&gt; vasInformation)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -899,7 +912,7 @@
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.Byte</span>[]&gt;</td>
+        <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.String</span>&gt;</td>
         <td><span class="parametername">vasInformation</span></td>
         <td></td>
       </tr>
@@ -911,7 +924,8 @@
   
   <a id="SIX_TimApi_VasCheckoutInformation_LoyaltyCoupons_" data-uid="SIX.TimApi.VasCheckoutInformation.LoyaltyCoupons*"></a>
   <h4 id="SIX_TimApi_VasCheckoutInformation_LoyaltyCoupons" data-uid="SIX.TimApi.VasCheckoutInformation.LoyaltyCoupons">LoyaltyCoupons</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Loyalty coupons.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -936,7 +950,8 @@
   
   <a id="SIX_TimApi_VasCheckoutInformation_LoyaltyInformation_" data-uid="SIX.TimApi.VasCheckoutInformation.LoyaltyInformation*"></a>
   <h4 id="SIX_TimApi_VasCheckoutInformation_LoyaltyInformation" data-uid="SIX.TimApi.VasCheckoutInformation.LoyaltyInformation">LoyaltyInformation</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Loyalty information.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -961,7 +976,8 @@
   
   <a id="SIX_TimApi_VasCheckoutInformation_ProvideBasket_" data-uid="SIX.TimApi.VasCheckoutInformation.ProvideBasket*"></a>
   <h4 id="SIX_TimApi_VasCheckoutInformation_ProvideBasket" data-uid="SIX.TimApi.VasCheckoutInformation.ProvideBasket">ProvideBasket</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Provide basket flag.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -986,11 +1002,12 @@
   
   <a id="SIX_TimApi_VasCheckoutInformation_VasInformation_" data-uid="SIX.TimApi.VasCheckoutInformation.VasInformation*"></a>
   <h4 id="SIX_TimApi_VasCheckoutInformation_VasInformation" data-uid="SIX.TimApi.VasCheckoutInformation.VasInformation">VasInformation</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>VAS information. Map between VAS Information Type (integer) and VAS Information (String).</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Dictionary&lt;string, byte[]&gt; VasInformation { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public Dictionary&lt;string, string&gt; VasInformation { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1002,7 +1019,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.Byte</span>[]&gt;</td>
+        <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.String</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>
