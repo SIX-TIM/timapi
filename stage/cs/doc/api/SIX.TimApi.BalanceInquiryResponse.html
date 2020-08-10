@@ -12,7 +12,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class BalanceInquiryResponse
    ">
-    <meta name="generator" content="docfx 2.43.3.0">
+    <meta name="generator" content="docfx 2.51.0.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -93,6 +93,9 @@
                           </li>
                           <li class="">
                             <a href="SIX.TimApi.CardTrackData.html" title="CardTrackData" class="">CardTrackData</a>
+                          </li>
+                          <li class="">
+                            <a href="SIX.TimApi.ClientIdentificationResponse.html" title="ClientIdentificationResponse" class="">ClientIdentificationResponse</a>
                           </li>
                           <li class="">
                             <a href="SIX.TimApi.CommandRequest.html" title="CommandRequest" class="">CommandRequest</a>
@@ -291,6 +294,12 @@
                           </li>
                           <li class="">
                             <a href="SIX.TimApi.Terminal.ChangeSettingsCompletedEventHandler.html" title="Terminal.ChangeSettingsCompletedEventHandler" class="">Terminal.ChangeSettingsCompletedEventHandler</a>
+                          </li>
+                          <li class="">
+                            <a href="SIX.TimApi.Terminal.ClientIdentificationCompletedEventArgs.html" title="Terminal.ClientIdentificationCompletedEventArgs" class="">Terminal.ClientIdentificationCompletedEventArgs</a>
+                          </li>
+                          <li class="">
+                            <a href="SIX.TimApi.Terminal.ClientIdentificationCompletedEventHandler.html" title="Terminal.ClientIdentificationCompletedEventHandler" class="">Terminal.ClientIdentificationCompletedEventHandler</a>
                           </li>
                           <li class="">
                             <a href="SIX.TimApi.Terminal.CloseDialogModeCompletedEventArgs.html" title="Terminal.CloseDialogModeCompletedEventArgs" class="">Terminal.CloseDialogModeCompletedEventArgs</a>
@@ -811,6 +820,9 @@
                           <li class="">
                             <a href="SIX.TimApi.Utility.Logger.Logger.CodeBlock-1.html" title="Logger.CodeBlock&lt;T&gt;" class="">Logger.CodeBlock&lt;T&gt;</a>
                           </li>
+                          <li class="">
+                            <a href="SIX.TimApi.Utility.Logger.LogRecord.html" title="LogRecord" class="">LogRecord</a>
+                          </li>
                         </ul>  </li>
                   </ul>        </div>
               </div>
@@ -824,7 +836,8 @@
   
   <h1 id="SIX_TimApi_BalanceInquiryResponse" data-uid="SIX.TimApi.BalanceInquiryResponse" class="text-break">Class BalanceInquiryResponse
   </h1>
-  <div class="markdown level0 summary"><p>Contains the result of a balance inquiry after calling <a class="xref" href="SIX.TimApi.Terminal.html#SIX_TimApi_Terminal_BalanceInquiry">BalanceInquiry()</a> or <a class="xref" href="SIX.TimApi.Terminal.html#SIX_TimApi_Terminal_BalanceInquiryAsync">BalanceInquiryAsync()</a>.
+  <div class="markdown level0 summary"><p>Contains the result of a balance inquiry after calling
+<a class="xref" href="SIX.TimApi.Terminal.html#SIX_TimApi_Terminal_BalanceInquiry">BalanceInquiry()</a> or <a class="xref" href="SIX.TimApi.Terminal.html#SIX_TimApi_Terminal_BalanceInquiryAsync">BalanceInquiryAsync()</a>.
 Immutable class.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
@@ -865,7 +878,7 @@ Immutable class.</p>
   
   
   <a id="SIX_TimApi_BalanceInquiryResponse__ctor_" data-uid="SIX.TimApi.BalanceInquiryResponse.#ctor*"></a>
-  <h4 id="SIX_TimApi_BalanceInquiryResponse__ctor_SIX_TimApi_Amount_SIX_TimApi_PrintData_CardData_System_String_SIX_TimApi_TransactionInformation_" data-uid="SIX.TimApi.BalanceInquiryResponse.#ctor(SIX.TimApi.Amount,SIX.TimApi.PrintData,CardData,System.String,SIX.TimApi.TransactionInformation)">BalanceInquiryResponse(Amount, PrintData, CardData, String, TransactionInformation)</h4>
+  <h4 id="SIX_TimApi_BalanceInquiryResponse__ctor_SIX_TimApi_Amount_SIX_TimApi_PrintData_SIX_TimApi_CardData_System_String_SIX_TimApi_TransactionInformation_" data-uid="SIX.TimApi.BalanceInquiryResponse.#ctor(SIX.TimApi.Amount,SIX.TimApi.PrintData,SIX.TimApi.CardData,System.String,SIX.TimApi.TransactionInformation)">BalanceInquiryResponse(Amount, PrintData, CardData, String, TransactionInformation)</h4>
   <div class="markdown level1 summary"><p>Create transaction response.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -894,7 +907,7 @@ Immutable class.</p>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">CardData</span></td>
+        <td><a class="xref" href="SIX.TimApi.CardData.html">CardData</a></td>
         <td><span class="parametername">cardData</span></td>
         <td></td>
       </tr>
@@ -916,12 +929,12 @@ Immutable class.</p>
   
   <a id="SIX_TimApi_BalanceInquiryResponse_Amount_" data-uid="SIX.TimApi.BalanceInquiryResponse.Amount*"></a>
   <h4 id="SIX_TimApi_BalanceInquiryResponse_Amount" data-uid="SIX.TimApi.BalanceInquiryResponse.Amount">Amount</h4>
-  <div class="markdown level1 summary"><p>Amount authorized by the transaction.</p>
+  <div class="markdown level1 summary"><p>Amount authorized by the transaction or null if provided by EFT.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Amount Amount { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public Amount Amount { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -934,8 +947,7 @@ Immutable class.</p>
     <tbody>
       <tr>
         <td><a class="xref" href="SIX.TimApi.Amount.html">Amount</a></td>
-        <td><p>The amount.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -943,11 +955,12 @@ Immutable class.</p>
   
   <a id="SIX_TimApi_BalanceInquiryResponse_CardData_" data-uid="SIX.TimApi.BalanceInquiryResponse.CardData*"></a>
   <h4 id="SIX_TimApi_BalanceInquiryResponse_CardData" data-uid="SIX.TimApi.BalanceInquiryResponse.CardData">CardData</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Card data.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public CardData CardData { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public CardData CardData { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -959,7 +972,7 @@ Immutable class.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">CardData</span></td>
+        <td><a class="xref" href="SIX.TimApi.CardData.html">CardData</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -968,11 +981,12 @@ Immutable class.</p>
   
   <a id="SIX_TimApi_BalanceInquiryResponse_Disclaimer_" data-uid="SIX.TimApi.BalanceInquiryResponse.Disclaimer*"></a>
   <h4 id="SIX_TimApi_BalanceInquiryResponse_Disclaimer" data-uid="SIX.TimApi.BalanceInquiryResponse.Disclaimer">Disclaimer</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Disclaimer.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string Disclaimer { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public string Disclaimer { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -998,7 +1012,7 @@ Immutable class.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public PrintData PrintData { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public PrintData PrintData { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1011,8 +1025,7 @@ Immutable class.</p>
     <tbody>
       <tr>
         <td><a class="xref" href="SIX.TimApi.PrintData.html">PrintData</a></td>
-        <td><p>The print data.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -1020,11 +1033,12 @@ Immutable class.</p>
   
   <a id="SIX_TimApi_BalanceInquiryResponse_TransactionInformation_" data-uid="SIX.TimApi.BalanceInquiryResponse.TransactionInformation*"></a>
   <h4 id="SIX_TimApi_BalanceInquiryResponse_TransactionInformation" data-uid="SIX.TimApi.BalanceInquiryResponse.TransactionInformation">TransactionInformation</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Transaction information.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public TransactionInformation TransactionInformation { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public TransactionInformation TransactionInformation { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1047,7 +1061,8 @@ Immutable class.</p>
   
   <a id="SIX_TimApi_BalanceInquiryResponse_ToString_" data-uid="SIX.TimApi.BalanceInquiryResponse.ToString*"></a>
   <h4 id="SIX_TimApi_BalanceInquiryResponse_ToString" data-uid="SIX.TimApi.BalanceInquiryResponse.ToString">ToString()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>String representation for debugging.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">

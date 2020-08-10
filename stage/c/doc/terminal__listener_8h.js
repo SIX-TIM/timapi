@@ -8,6 +8,7 @@ var terminal__listener_8h =
     [ "ta_cb_terminal_balance_completed", "terminal__listener_8h.html#a1834394fe87abd900fd82c659d213159", null ],
     [ "ta_cb_terminal_balance_inquiry_completed", "terminal__listener_8h.html#aee3b197131cd0666da2ad08fa23cc2a7", null ],
     [ "ta_cb_terminal_change_settings_completed", "terminal__listener_8h.html#a6c4a142eadf34bd6cb78592f93e976c0", null ],
+    [ "ta_cb_terminal_client_identification_completed", "terminal__listener_8h.html#ad694da86978bc7c26dc092f35783a7f9", null ],
     [ "ta_cb_terminal_close_dialog_mode_completed", "terminal__listener_8h.html#a93540e1f08eacde636cab8ca4d10e64c", null ],
     [ "ta_cb_terminal_close_maintenance_window_completed", "terminal__listener_8h.html#aea9de19f2d240d7dc93772004ebbb9a2", null ],
     [ "ta_cb_terminal_close_reader_completed", "terminal__listener_8h.html#a7664fed628bcdd45f81694856b54a13e", null ],

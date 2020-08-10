@@ -15,6 +15,7 @@ var dir_68267d1309a1af8e8297ef4c3efbcdba =
     [ "brand.h", "brand_8h.html", "brand_8h" ],
     [ "card_data.h", "card__data_8h.html", "card__data_8h" ],
     [ "card_track_data.h", "card__track__data_8h.html", "card__track__data_8h" ],
+    [ "client_identification_response.h", "client__identification__response_8h.html", "client__identification__response_8h" ],
     [ "color.h", "color_8h.html", "color_8h" ],
     [ "command_request.h", "command__request_8h.html", "command__request_8h" ],
     [ "command_response.h", "command__response_8h.html", "command__response_8h" ],

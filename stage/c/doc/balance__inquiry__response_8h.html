@@ -89,7 +89,7 @@ $(document).ready(function(){initNavTree('balance__inquiry__response_8h.html',''
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a12c792c0bd17d7cbf68229d2ded6a73f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="result__code_8h.html#ae860ee870a289833a24a586ba0c24975">ta_e_result_code_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="balance__inquiry__response_8h.html#a12c792c0bd17d7cbf68229d2ded6a73f">ta_balance_inquiry_response_get_amount</a> (<a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a> response, <a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a> *amount)</td></tr>
-<tr class="memdesc:a12c792c0bd17d7cbf68229d2ded6a73f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Amount authorized by the transaction.  <a href="#a12c792c0bd17d7cbf68229d2ded6a73f">More...</a><br /></td></tr>
+<tr class="memdesc:a12c792c0bd17d7cbf68229d2ded6a73f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Amount authorized by the transaction or ta_object_invalid if not provided by EFT.  <a href="#a12c792c0bd17d7cbf68229d2ded6a73f">More...</a><br /></td></tr>
 <tr class="separator:a12c792c0bd17d7cbf68229d2ded6a73f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a85efc5fe6480ce6f7af6ee3bccb2ecf0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="result__code_8h.html#ae860ee870a289833a24a586ba0c24975">ta_e_result_code_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="balance__inquiry__response_8h.html#a85efc5fe6480ce6f7af6ee3bccb2ecf0">ta_balance_inquiry_response_get_print_data</a> (<a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a> response, <a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a> *print_data)</td></tr>
 <tr class="memdesc:a85efc5fe6480ce6f7af6ee3bccb2ecf0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Print information for merchant and cardholder receipts.  <a href="#a85efc5fe6480ce6f7af6ee3bccb2ecf0">More...</a><br /></td></tr>
@@ -131,11 +131,11 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Amount authorized by the transaction. </p>
+<p>Amount authorized by the transaction or ta_object_invalid if not provided by EFT. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">response</td><td>Object instance of type <a class="el" href="balance__inquiry__response_8h.html">balance_inquiry_response</a>. </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">amount</td><td>Pointer to variable to write object instance to. Object instance is of type <a class="el" href="amount_8h.html">amount</a> and is not retained.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">amount</td><td>Pointer to variable to write object instance to. If provided by EFT object instance is of type <a class="el" href="amount_8h.html">amount</a> and is not retained. If not provided by EFT ta_object_invalid is written to pointer.</td></tr>
   </table>
   </dd>
 </dl>

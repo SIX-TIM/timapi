@@ -6,6 +6,7 @@ var structta__s__terminal__listener =
     [ "balance_completed", "structta__s__terminal__listener.html#a46f3508934cee083eacae78b24991712", null ],
     [ "balance_inquiry_completed", "structta__s__terminal__listener.html#a2e7b8b49e2d81666734133f48ab48e8e", null ],
     [ "change_settings_completed", "structta__s__terminal__listener.html#a4a52ad333b9ec139cd3030cc9bed9052", null ],
+    [ "client_identification_completed", "structta__s__terminal__listener.html#af62866286890d8fed75b95b78bcb4c8b", null ],
     [ "close_dialog_mode_completed", "structta__s__terminal__listener.html#a2db69d3b37838ad764c095d7becb9d18", null ],
     [ "close_maintenance_window_completed", "structta__s__terminal__listener.html#a2fe51022498ab0a3d2adebaeb1167755", null ],
     [ "close_reader_completed", "structta__s__terminal__listener.html#a2d25c7e9faf066d1d6f0a5208ad23586", null ],

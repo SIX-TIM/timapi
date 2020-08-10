@@ -559,7 +559,7 @@ $(document).ready(function(){initNavTree('search.html','');});
     <field name="args">(ta_object_t response, ta_object_t *amount)</field>
     <field name="url">balance__inquiry__response_8h.html#a12c792c0bd17d7cbf68229d2ded6a73f</field>
     <field name="keywords">ta_balance_inquiry_response_get_amount</field>
-    <field name="text">Amount authorized by the transaction response Object instance of type balance_inquiry_response amount Pointer to variable to write object instance to Object instance is of type amount and is not retained ta_c_rc_ok Object instance written to amount ta_c_rc_invalid_argument response is ta_object_invalid ta_c_rc_invalid_argument response is not of type balance_inquiry_response ta_c_rc_invalid_argument amount is null-pointer</field>
+    <field name="text">Amount authorized by the transaction or ta_object_invalid if not provided by EFT response Object instance of type balance_inquiry_response amount Pointer to variable to write object instance to If provided by EFT object instance is of type amount and is not retained If not provided by EFT ta_object_invalid is written to pointer ta_c_rc_ok Object instance written to amount ta_c_rc_invalid_argument response is ta_object_invalid ta_c_rc_invalid_argument response is not of type balance_inquiry_response ta_c_rc_invalid_argument amount is null-pointer</field>
   </doc>
   <doc>
     <field name="type">function</field>
@@ -1170,6 +1170,37 @@ $(document).ready(function(){initNavTree('search.html','');});
     <field name="url">card__track__data_8h.html#a0d45bddda9bffd346147093fca9d2981</field>
     <field name="keywords">ta_card_track_data_get_data</field>
     <field name="text">Track data track_data Object instance of type card_track_data data Pointer to variable to write object instance to Object instance is of type string and is not retained ta_c_rc_ok Object instance written to data ta_c_rc_invalid_argument track_data is ta_object_invalid ta_c_rc_invalid_argument track_data is not of type card_track_data ta_c_rc_invalid_argument data is null-pointer</field>
+  </doc>
+  <doc>
+    <field name="type">file</field>
+    <field name="name">client_identification_response.h</field>
+    <field name="url">client__identification__response_8h.html</field>
+    <field name="keywords">client_identification_response.h</field>
+    <field name="text">Object type client_identification_response</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">ta_client_identification_response_get_amount_saldo</field>
+    <field name="args">(ta_object_t response, ta_object_t *amount_saldo)</field>
+    <field name="url">client__identification__response_8h.html#a86d8e8633ee15ab6c1ce8a20d6f7a5a0</field>
+    <field name="keywords">ta_client_identification_response_get_amount_saldo</field>
+    <field name="text">Saldo amount if present response Object instance of type client_identification_response amount_saldo Pointer to variable to write object instance to Object instance is of type amount and is not retained Object instance is ta_object_invalid if value is not set in response ta_c_rc_ok Object instance written to amount_saldo ta_c_rc_invalid_argument response is ta_object_invalid ta_c_rc_invalid_argument response is not of type client_identification_response ta_c_rc_invalid_argument amount_saldo is null-pointer</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">ta_client_identification_response_get_transaction_information</field>
+    <field name="args">(ta_object_t response, ta_object_t *transaction_information)</field>
+    <field name="url">client__identification__response_8h.html#a15779bf9b362001bf88ac7ea9b6f5f01</field>
+    <field name="keywords">ta_client_identification_response_get_transaction_information</field>
+    <field name="text">Information about completed transaction response Object instance of type client_identification_response transaction_information Pointer to variable to write object instance to Object instance is of type transaction_information and is not retained Object instance is ta_object_invalid if value is not set in response ta_c_rc_ok Object instance written to transaction_information ta_c_rc_invalid_argument response is ta_object_invalid ta_c_rc_invalid_argument response is not of type client_identification_response ta_c_rc_invalid_argument transaction_information is null-pointer</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">ta_client_identification_response_get_card_data</field>
+    <field name="args">(ta_object_t response, ta_object_t *card_data)</field>
+    <field name="url">client__identification__response_8h.html#a7b97b088749a0516a97875f6cde30e16</field>
+    <field name="keywords">ta_client_identification_response_get_card_data</field>
+    <field name="text">Information about payment card used by the cardholder if present response Object instance of type client_identification_response card_data Pointer to variable to write object instance to Object instance is of type card_data and is not retained Object instance is ta_object_invalid if value is not set in response ta_c_rc_ok Object instance written to card_data ta_c_rc_invalid_argument response is ta_object_invalid ta_c_rc_invalid_argument response is not of type client_identification_response ta_c_rc_invalid_argument card_data is null-pointer</field>
   </doc>
   <doc>
     <field name="type">file</field>
@@ -5856,21 +5887,21 @@ $(document).ready(function(){initNavTree('search.html','');});
     <field name="name">maintenance_type.h</field>
     <field name="url">maintenance__type_8h.html</field>
     <field name="keywords">maintenance_type.h</field>
-    <field name="text">Constants for different maintenance types Copyright SIX Payment Services</field>
+    <field name="text">Type of maintenance process to perform Copyright SIX Payment Services</field>
   </doc>
   <doc>
     <field name="type">typedef</field>
     <field name="name">ta_e_maintenance_type_t</field>
     <field name="url">maintenance__type_8h.html#aef98bfd0284f0c4dcae8f6e3b258204e</field>
     <field name="keywords">ta_e_maintenance_type_t</field>
-    <field name="text">Constants for different maintenance types Specification remote</field>
+    <field name="text">Type of maintenance process to perform Specification remote</field>
   </doc>
   <doc>
     <field name="type">enum</field>
     <field name="name">ta_e_maintenance_type</field>
     <field name="url">maintenance__type_8h.html#aa9e87d418a211a43ea0ac2276a9b3669</field>
     <field name="keywords">ta_e_maintenance_type</field>
-    <field name="text">Constants for different maintenance types Specification remote</field>
+    <field name="text">Type of maintenance process to perform Specification remote</field>
   </doc>
   <doc>
     <field name="type">enumvalue</field>
@@ -8812,17 +8843,24 @@ $(document).ready(function(){initNavTree('search.html','');});
   </doc>
   <doc>
     <field name="type">enumvalue</field>
-    <field name="name">ta_c_rid_common_regular</field>
-    <field name="url">resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9a8072ba0f056e46e66a573418b2d3c080</field>
-    <field name="keywords">ta_c_rid_common_regular</field>
-    <field name="text">Stammkundenabfrage</field>
-  </doc>
-  <doc>
-    <field name="type">enumvalue</field>
     <field name="name">ta_c_rid_common_please_wait</field>
     <field name="url">resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9af4e8bd1be5cea5e2945240f5d74de4ef</field>
     <field name="keywords">ta_c_rid_common_please_wait</field>
     <field name="text">Bitte warten</field>
+  </doc>
+  <doc>
+    <field name="type">enumvalue</field>
+    <field name="name">ta_c_rid_common_remove_card</field>
+    <field name="url">resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9a03fc4a4af9b03a8fdf3085d646df48fe</field>
+    <field name="keywords">ta_c_rid_common_remove_card</field>
+    <field name="text">Karte entnehmen</field>
+  </doc>
+  <doc>
+    <field name="type">enumvalue</field>
+    <field name="name">ta_c_rid_common_regular</field>
+    <field name="url">resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9a8072ba0f056e46e66a573418b2d3c080</field>
+    <field name="keywords">ta_c_rid_common_regular</field>
+    <field name="text">Stammkundenabfrage ResourceParameter RegularDataQueryType</field>
   </doc>
   <doc>
     <field name="type">enumvalue</field>
@@ -8844,13 +8882,6 @@ $(document).ready(function(){initNavTree('search.html','');});
     <field name="url">resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9a94a71eb2f3f71d1ea4b70742e979a5be</field>
     <field name="keywords">ta_c_rid_common_card_deinitialized</field>
     <field name="text">Karte deinitialisiert</field>
-  </doc>
-  <doc>
-    <field name="type">enumvalue</field>
-    <field name="name">ta_c_rid_common_remove_card</field>
-    <field name="url">resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9a03fc4a4af9b03a8fdf3085d646df48fe</field>
-    <field name="keywords">ta_c_rid_common_remove_card</field>
-    <field name="text">Karte entnehmen</field>
   </doc>
   <doc>
     <field name="type">enumvalue</field>
@@ -11483,6 +11514,13 @@ $(document).ready(function(){initNavTree('search.html','');});
     <field name="url">request__type_8h.html#a38268da75c7795fd3a4f057bc6a7fcd2aea2f339596878ddb0940004cb889d6d4</field>
     <field name="keywords">ta_c_req_device_maintenance</field>
     <field name="text">Operation started by terminal_device_maintenance</field>
+  </doc>
+  <doc>
+    <field name="type">enumvalue</field>
+    <field name="name">ta_c_req_client_identification</field>
+    <field name="url">request__type_8h.html#a38268da75c7795fd3a4f057bc6a7fcd2a09a49e60a0cfed9a478beb7f9241f356</field>
+    <field name="keywords">ta_c_req_client_identification</field>
+    <field name="text">Operation started by terminal_client_identification</field>
   </doc>
   <doc>
     <field name="type">file</field>
@@ -14504,6 +14542,22 @@ $(document).ready(function(){initNavTree('search.html','');});
   </doc>
   <doc>
     <field name="type">function</field>
+    <field name="name">ta_terminal_client_identification</field>
+    <field name="args">(ta_object_t terminal, ta_object_t *response)</field>
+    <field name="url">terminal_8h.html#a0253b4680eeb95c599ba7a5f96125516</field>
+    <field name="keywords">ta_terminal_client_identification</field>
+    <field name="text">Starts an EFT Client Identification terminal Object instance of type terminal response Pointer to variable to write object instance to Object instance is ta_object_invalid if not contained in the response Otherwise object instance is of type client_identification_response Object instance is retained ta_c_rc_ok Request finished successfully Object instance written to response If object instance is not ta_object_invalid object instance has been retained ta_c_rc_invalid_argument terminal is ta_object_invalid ta_c_rc_invalid_argument terminal is not of type terminal ta_c_rc_invalid_argument terminal has been disposed ta_c_rc_invalid_argument response is null-pointer</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">ta_terminal_client_identification_async</field>
+    <field name="args">(ta_object_t terminal)</field>
+    <field name="url">terminal_8h.html#a395350a04d359acbc199cccf17005a8e</field>
+    <field name="keywords">ta_terminal_client_identification_async</field>
+    <field name="text">Starts an EFT Client Identification Asynchronous version of ta_terminal_client_identification Callback function is ta_cb_terminal_client_identification_completed terminal Object instance of type terminal ta_c_rc_ok Request started successfully ta_c_rc_invalid_argument terminal is ta_object_invalid ta_c_rc_invalid_argument terminal is not of type terminal ta_c_rc_invalid_argument terminal has been disposed</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
     <field name="name">ta_terminal_init_transaction_with_dialog</field>
     <field name="args">(ta_object_t terminal, ta_object_t amount, ta_e_function_hint_t function_hint, ta_object_t dialog, ta_object_t *response)</field>
     <field name="url">terminal_8h.html#a888d587b1d9a47a4fd1259cf48bc5f68</field>
@@ -15072,6 +15126,14 @@ $(document).ready(function(){initNavTree('search.html','');});
   </doc>
   <doc>
     <field name="type">function</field>
+    <field name="name">ta_terminal_screenshot</field>
+    <field name="args">(ta_object_t terminal)</field>
+    <field name="url">terminal_8h.html#a7da93ed92e1aa5f0017842e23f30a8e3</field>
+    <field name="keywords">ta_terminal_screenshot</field>
+    <field name="text">Send notification to request EFT make a screenshot This is a function This method is only available if guide remote is enabled terminal Object instance of type terminal ta_c_rc_ok Hold commit send to terminal ta_c_rc_invalid_argument terminal is ta_object_invalid ta_c_rc_invalid_argument terminal is not of type terminal ta_c_rc_invalid_argument terminal has been disposed</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
     <field name="name">ta_terminal_change_language_for_request</field>
     <field name="args">(ta_object_t terminal, ta_object_t language)</field>
     <field name="url">terminal_8h.html#a9e04ff14a831084729e1a9c7115942bb</field>
@@ -15243,6 +15305,14 @@ $(document).ready(function(){initNavTree('search.html','');});
     <field name="url">terminal__listener_8h.html#a36667f068fd1ab505e48f15856211508</field>
     <field name="keywords">ta_cb_terminal_init_transaction_with_dialog_completed</field>
     <field name="text">Called if an ta_terminal_init_transaction_with_dialog_async started request finished event Pointer to struct containing information about the event data Object instance of type init_transaction_response Object instance is ta_object_invalid if request failed or finished request does not contain response data Object instance is not retained user_pointer User pointer value used while creating the listener</field>
+  </doc>
+  <doc>
+    <field name="type">typedef</field>
+    <field name="name">ta_cb_terminal_client_identification_completed</field>
+    <field name="args">)(const ta_s_event_t *event, ta_object_t data, void *user_pointer)</field>
+    <field name="url">terminal__listener_8h.html#ad694da86978bc7c26dc092f35783a7f9</field>
+    <field name="keywords">ta_cb_terminal_client_identification_completed</field>
+    <field name="text">Called if an ta_terminal_client_identification_async started request finished event Pointer to struct containing information about the event data Object instance of type client_identification_response Object instance is ta_object_invalid if request failed or finished request does not contain client identification data Object instance is not retained user_pointer User pointer value used while creating the listener</field>
   </doc>
   <doc>
     <field name="type">typedef</field>
@@ -16898,7 +16968,7 @@ $(document).ready(function(){initNavTree('search.html','');});
     <field name="args">(ta_object_t trx_info, ta_object_t *cardholder_name)</field>
     <field name="url">transaction__information_8h.html#ab6251947120a4b1fc85f1b1247b84f36</field>
     <field name="keywords">ta_transaction_information_get_cardholder_name</field>
-    <field name="text">Cardholder name Optional Mandatory if requested by acquirer Specifications Banking AustrianUseCases trx_info Object instance of type transaction_information cardholder_name Pointer to variable to write object instance to Object instance is of type string and is not retained Object instance is ta_object_invalid if value is not set in trx_info ta_c_rc_ok Object instance written to cardholder_name ta_c_rc_invalid_argument trx_info is ta_object_invalid ta_c_rc_invalid_argument trx_info is not of type transaction_information ta_c_rc_invalid_argument cardholder_name is null-pointer</field>
+    <field name="text">Cardholder name Use ta_card_data_get_cardholder instead on card_data object returned by ta_transaction_response_get_card_data Optional Mandatory if requested by acquirer Specifications Banking AustrianUseCases trx_info Object instance of type transaction_information cardholder_name Pointer to variable to write object instance to Object instance is of type string and is not retained Object instance is ta_object_invalid if value is not set in trx_info ta_c_rc_ok Object instance written to cardholder_name ta_c_rc_invalid_argument trx_info is ta_object_invalid ta_c_rc_invalid_argument trx_info is not of type transaction_information ta_c_rc_invalid_argument cardholder_name is null-pointer</field>
   </doc>
   <doc>
     <field name="type">function</field>
@@ -17535,7 +17605,7 @@ $(document).ready(function(){initNavTree('search.html','');});
     <field name="name">deprecated</field>
     <field name="url">deprecated.html</field>
     <field name="keywords"></field>
-    <field name="text">Deprecated List Global ta_terminal_settings_get_log_dir ta_object_t settings ta_object_t Can not be used Global ta_terminal_settings_get_log_file_count_per_archive ta_object_t settings int Can not be used Global ta_terminal_settings_get_log_retain_archive_count ta_object_t settings int Can not be used Global ta_terminal_settings_get_log_retain_file_count ta_object_t settings int Can not be used Global ta_terminal_settings_set_log_dir ta_object_t settings ta_object_t log_dir Can not be used Global ta_terminal_settings_set_log_file_count_per_archive ta_object_t settings int log_file_count_per_archive Can not be used Global ta_terminal_settings_set_log_retain_archive_count ta_object_t settings int log_retain_archive_count Can not be used Global ta_terminal_settings_set_log_retain_file_count ta_object_t settings int retain_file_count Can not be used</field>
+    <field name="text">Deprecated List Global ta_terminal_settings_get_log_dir ta_object_t settings ta_object_t Can not be used Global ta_terminal_settings_get_log_file_count_per_archive ta_object_t settings int Can not be used Global ta_terminal_settings_get_log_retain_archive_count ta_object_t settings int Can not be used Global ta_terminal_settings_get_log_retain_file_count ta_object_t settings int Can not be used Global ta_terminal_settings_set_log_dir ta_object_t settings ta_object_t log_dir Can not be used Global ta_terminal_settings_set_log_file_count_per_archive ta_object_t settings int log_file_count_per_archive Can not be used Global ta_terminal_settings_set_log_retain_archive_count ta_object_t settings int log_retain_archive_count Can not be used Global ta_terminal_settings_set_log_retain_file_count ta_object_t settings int retain_file_count Can not be used Global ta_transaction_information_get_cardholder_name ta_object_t trx_info ta_object_t Use ta_card_data_get_cardholder instead on card_data object returned by ta_transaction_response_get_card_data</field>
   </doc>
   <doc>
     <field name="type">struct</field>
@@ -18299,6 +18369,13 @@ $(document).ready(function(){initNavTree('search.html','');});
     <field name="url">structta__s__terminal__listener.html#a5f943f0245eb31ddd6b57ddf8694c0de</field>
     <field name="keywords">init_transaction_with_dialog_completed ta_s_terminal_listener::init_transaction_with_dialog_completed ta_s_terminal_listener</field>
     <field name="text">Init transaction with dialog completed</field>
+  </doc>
+  <doc>
+    <field name="type">variable</field>
+    <field name="name">ta_s_terminal_listener::client_identification_completed</field>
+    <field name="url">structta__s__terminal__listener.html#af62866286890d8fed75b95b78bcb4c8b</field>
+    <field name="keywords">client_identification_completed ta_s_terminal_listener::client_identification_completed ta_s_terminal_listener</field>
+    <field name="text">Client identification completed</field>
   </doc>
   <doc>
     <field name="type">variable</field>
