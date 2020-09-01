@@ -70,7 +70,8 @@ var custom__receipt__formatter_8h =
       [ "ta_c_crftt_field_rate_dcc_regulated", "custom__receipt__formatter_8h.html#a883a5ff78a5d2ad805f9f6af32a8d2afa87e79aa8975930c2ee1857b67b7e227d", null ],
       [ "ta_c_crftt_field_rate_exponent_dcc_regulated", "custom__receipt__formatter_8h.html#a883a5ff78a5d2ad805f9f6af32a8d2afa7e0ac76db3a9c6b8adf947919181bfd0", null ],
       [ "ta_c_crftt_field_original_trans_ref", "custom__receipt__formatter_8h.html#a883a5ff78a5d2ad805f9f6af32a8d2afa37ef53aeda98cac3fa71fa34cef35dc5", null ],
-      [ "ta_c_crftt_field_key_pan_receipt_index", "custom__receipt__formatter_8h.html#a883a5ff78a5d2ad805f9f6af32a8d2afadc6dced3146570cc295a6ead03176596", null ]
+      [ "ta_c_crftt_field_key_pan_receipt_index", "custom__receipt__formatter_8h.html#a883a5ff78a5d2ad805f9f6af32a8d2afadc6dced3146570cc295a6ead03176596", null ],
+      [ "ta_c_crftt_field_pan_receipt_dol_index", "custom__receipt__formatter_8h.html#a883a5ff78a5d2ad805f9f6af32a8d2afaab3733dd556a8bdf0f56af317f58beb4", null ]
     ] ],
     [ "ta_compact_receipt_formatter_create", "custom__receipt__formatter_8h.html#a6311c7d24700b6ea029784f0274c1cf4", null ],
     [ "ta_custom_receipt_formatter_create", "custom__receipt__formatter_8h.html#abd4853cf2f499a6612d2974eb72df9bf", null ],
