@@ -11755,15 +11755,15 @@ references:
   isSpec: "True"
   fullName: SIX.TimApi.Receipts.CustomReceiptFormatter.LineFormat.getPadding
   nameWithType: CustomReceiptFormatter.LineFormat.getPadding
-- uid: SIX.TimApi.Receipts.CustomReceiptFormatter.resolveField(System.Collections.Generic.List{SIX.TimApi.ReceiptItem},SIX.TimApi.Constants.ReceiptItemType,SIX.TimApi.Receipts.CustomReceiptFormatter.DynamicBoolean)
-  name: resolveField(List<ReceiptItem>, ReceiptItemType, CustomReceiptFormatter.DynamicBoolean)
-  href: api/SIX.TimApi.Receipts.CustomReceiptFormatter.html#SIX_TimApi_Receipts_CustomReceiptFormatter_resolveField_System_Collections_Generic_List_SIX_TimApi_ReceiptItem__SIX_TimApi_Constants_ReceiptItemType_SIX_TimApi_Receipts_CustomReceiptFormatter_DynamicBoolean_
-  commentId: M:SIX.TimApi.Receipts.CustomReceiptFormatter.resolveField(System.Collections.Generic.List{SIX.TimApi.ReceiptItem},SIX.TimApi.Constants.ReceiptItemType,SIX.TimApi.Receipts.CustomReceiptFormatter.DynamicBoolean)
-  name.vb: resolveField(List(Of ReceiptItem), ReceiptItemType, CustomReceiptFormatter.DynamicBoolean)
-  fullName: SIX.TimApi.Receipts.CustomReceiptFormatter.resolveField(System.Collections.Generic.List<SIX.TimApi.ReceiptItem>, SIX.TimApi.Constants.ReceiptItemType, SIX.TimApi.Receipts.CustomReceiptFormatter.DynamicBoolean)
-  fullName.vb: SIX.TimApi.Receipts.CustomReceiptFormatter.resolveField(System.Collections.Generic.List(Of SIX.TimApi.ReceiptItem), SIX.TimApi.Constants.ReceiptItemType, SIX.TimApi.Receipts.CustomReceiptFormatter.DynamicBoolean)
-  nameWithType: CustomReceiptFormatter.resolveField(List<ReceiptItem>, ReceiptItemType, CustomReceiptFormatter.DynamicBoolean)
-  nameWithType.vb: CustomReceiptFormatter.resolveField(List(Of ReceiptItem), ReceiptItemType, CustomReceiptFormatter.DynamicBoolean)
+- uid: SIX.TimApi.Receipts.CustomReceiptFormatter.resolveField(System.Collections.Generic.List{SIX.TimApi.ReceiptItem},SIX.TimApi.Constants.ReceiptItemType,SIX.TimApi.Receipts.CustomReceiptFormatter.DynamicBoolean,System.Int32,System.Char)
+  name: resolveField(List<ReceiptItem>, ReceiptItemType, CustomReceiptFormatter.DynamicBoolean, Int32, Char)
+  href: api/SIX.TimApi.Receipts.CustomReceiptFormatter.html#SIX_TimApi_Receipts_CustomReceiptFormatter_resolveField_System_Collections_Generic_List_SIX_TimApi_ReceiptItem__SIX_TimApi_Constants_ReceiptItemType_SIX_TimApi_Receipts_CustomReceiptFormatter_DynamicBoolean_System_Int32_System_Char_
+  commentId: M:SIX.TimApi.Receipts.CustomReceiptFormatter.resolveField(System.Collections.Generic.List{SIX.TimApi.ReceiptItem},SIX.TimApi.Constants.ReceiptItemType,SIX.TimApi.Receipts.CustomReceiptFormatter.DynamicBoolean,System.Int32,System.Char)
+  name.vb: resolveField(List(Of ReceiptItem), ReceiptItemType, CustomReceiptFormatter.DynamicBoolean, Int32, Char)
+  fullName: SIX.TimApi.Receipts.CustomReceiptFormatter.resolveField(System.Collections.Generic.List<SIX.TimApi.ReceiptItem>, SIX.TimApi.Constants.ReceiptItemType, SIX.TimApi.Receipts.CustomReceiptFormatter.DynamicBoolean, System.Int32, System.Char)
+  fullName.vb: SIX.TimApi.Receipts.CustomReceiptFormatter.resolveField(System.Collections.Generic.List(Of SIX.TimApi.ReceiptItem), SIX.TimApi.Constants.ReceiptItemType, SIX.TimApi.Receipts.CustomReceiptFormatter.DynamicBoolean, System.Int32, System.Char)
+  nameWithType: CustomReceiptFormatter.resolveField(List<ReceiptItem>, ReceiptItemType, CustomReceiptFormatter.DynamicBoolean, Int32, Char)
+  nameWithType.vb: CustomReceiptFormatter.resolveField(List(Of ReceiptItem), ReceiptItemType, CustomReceiptFormatter.DynamicBoolean, Int32, Char)
 - uid: SIX.TimApi.Receipts.CustomReceiptFormatter.resolveField*
   name: resolveField
   href: api/SIX.TimApi.Receipts.CustomReceiptFormatter.html#SIX_TimApi_Receipts_CustomReceiptFormatter_resolveField_
@@ -12118,6 +12118,12 @@ references:
   commentId: F:SIX.TimApi.Receipts.CustomReceiptFormatter.TextType.FIELD_ORIGINAL_TRANS_REF
   fullName: SIX.TimApi.Receipts.CustomReceiptFormatter.TextType.FIELD_ORIGINAL_TRANS_REF
   nameWithType: CustomReceiptFormatter.TextType.FIELD_ORIGINAL_TRANS_REF
+- uid: SIX.TimApi.Receipts.CustomReceiptFormatter.TextType.FIELD_PAN_RECEIPT_DOL_INDEX
+  name: FIELD_PAN_RECEIPT_DOL_INDEX
+  href: api/SIX.TimApi.Receipts.CustomReceiptFormatter.TextType.html#SIX_TimApi_Receipts_CustomReceiptFormatter_TextType_FIELD_PAN_RECEIPT_DOL_INDEX
+  commentId: F:SIX.TimApi.Receipts.CustomReceiptFormatter.TextType.FIELD_PAN_RECEIPT_DOL_INDEX
+  fullName: SIX.TimApi.Receipts.CustomReceiptFormatter.TextType.FIELD_PAN_RECEIPT_DOL_INDEX
+  nameWithType: CustomReceiptFormatter.TextType.FIELD_PAN_RECEIPT_DOL_INDEX
 - uid: SIX.TimApi.Receipts.CustomReceiptFormatter.TextType.FIELD_POS_ENTRY_MODE
   name: FIELD_POS_ENTRY_MODE
   href: api/SIX.TimApi.Receipts.CustomReceiptFormatter.TextType.html#SIX_TimApi_Receipts_CustomReceiptFormatter_TextType_FIELD_POS_ENTRY_MODE

@@ -1313,12 +1313,12 @@
   
   
   <a id="SIX_TimApi_Receipts_CustomReceiptFormatter_resolveField_" data-uid="SIX.TimApi.Receipts.CustomReceiptFormatter.resolveField*"></a>
-  <h4 id="SIX_TimApi_Receipts_CustomReceiptFormatter_resolveField_System_Collections_Generic_List_SIX_TimApi_ReceiptItem__SIX_TimApi_Constants_ReceiptItemType_SIX_TimApi_Receipts_CustomReceiptFormatter_DynamicBoolean_" data-uid="SIX.TimApi.Receipts.CustomReceiptFormatter.resolveField(System.Collections.Generic.List{SIX.TimApi.ReceiptItem},SIX.TimApi.Constants.ReceiptItemType,SIX.TimApi.Receipts.CustomReceiptFormatter.DynamicBoolean)">resolveField(List&lt;ReceiptItem&gt;, ReceiptItemType, CustomReceiptFormatter.DynamicBoolean)</h4>
+  <h4 id="SIX_TimApi_Receipts_CustomReceiptFormatter_resolveField_System_Collections_Generic_List_SIX_TimApi_ReceiptItem__SIX_TimApi_Constants_ReceiptItemType_SIX_TimApi_Receipts_CustomReceiptFormatter_DynamicBoolean_System_Int32_System_Char_" data-uid="SIX.TimApi.Receipts.CustomReceiptFormatter.resolveField(System.Collections.Generic.List{SIX.TimApi.ReceiptItem},SIX.TimApi.Constants.ReceiptItemType,SIX.TimApi.Receipts.CustomReceiptFormatter.DynamicBoolean,System.Int32,System.Char)">resolveField(List&lt;ReceiptItem&gt;, ReceiptItemType, CustomReceiptFormatter.DynamicBoolean, Int32, Char)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected string resolveField(List&lt;ReceiptItem&gt; receiptItems, ReceiptItemType field, CustomReceiptFormatter.DynamicBoolean hasValue)</code></pre>
+    <pre><code class="lang-csharp hljs">protected string resolveField(List&lt;ReceiptItem&gt; receiptItems, ReceiptItemType field, CustomReceiptFormatter.DynamicBoolean hasValue, int padLen = 0, char padChar = ' ')</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1343,6 +1343,16 @@
       <tr>
         <td><a class="xref" href="SIX.TimApi.Receipts.CustomReceiptFormatter.DynamicBoolean.html">CustomReceiptFormatter.DynamicBoolean</a></td>
         <td><span class="parametername">hasValue</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">padLen</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Char</span></td>
+        <td><span class="parametername">padChar</span></td>
         <td></td>
       </tr>
     </tbody>
