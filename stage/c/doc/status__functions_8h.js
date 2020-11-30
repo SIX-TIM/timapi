@@ -13,6 +13,7 @@ var status__functions_8h =
       [ "ta_c_sf_vas_info", "status__functions_8h.html#abf752dbd5ab3b758d2c21f390d8ef248acf4d90472f014b8d736d5e334f7a37bf", null ],
       [ "ta_c_sf_error", "status__functions_8h.html#abf752dbd5ab3b758d2c21f390d8ef248afc6ba2530c414d38f804be55b2c03fb5", null ],
       [ "ta_c_sf_change_language", "status__functions_8h.html#abf752dbd5ab3b758d2c21f390d8ef248a555e4a051fea0f6b90876cddacc52403", null ],
-      [ "ta_c_sf_key_press", "status__functions_8h.html#abf752dbd5ab3b758d2c21f390d8ef248aa8b2a739ed137a8b8995ad89c617cb99", null ]
+      [ "ta_c_sf_key_press", "status__functions_8h.html#abf752dbd5ab3b758d2c21f390d8ef248aa8b2a739ed137a8b8995ad89c617cb99", null ],
+      [ "ta_c_sf_configuration_changed", "status__functions_8h.html#abf752dbd5ab3b758d2c21f390d8ef248af7cc7f4320c65688f8e6b8836a85c3a9", null ]
     ] ]
 ];

@@ -188,6 +188,12 @@
                             <a href="SIX.TimApi.MerchantOption.html" title="MerchantOption" class="">MerchantOption</a>
                           </li>
                           <li class="">
+                            <a href="SIX.TimApi.MobileTopupData.html" title="MobileTopupData" class="">MobileTopupData</a>
+                          </li>
+                          <li class="">
+                            <a href="SIX.TimApi.MobileTopupValue.html" title="MobileTopupValue" class="">MobileTopupValue</a>
+                          </li>
+                          <li class="">
                             <a href="SIX.TimApi.NativeError.html" title="NativeError" class="">NativeError</a>
                           </li>
                           <li class="">
@@ -419,6 +425,18 @@
                             <a href="SIX.TimApi.Terminal.LoyaltyDataCompletedEventHandler.html" title="Terminal.LoyaltyDataCompletedEventHandler" class="">Terminal.LoyaltyDataCompletedEventHandler</a>
                           </li>
                           <li class="">
+                            <a href="SIX.TimApi.Terminal.MobileTopupCompletedEventArgs.html" title="Terminal.MobileTopupCompletedEventArgs" class="">Terminal.MobileTopupCompletedEventArgs</a>
+                          </li>
+                          <li class="">
+                            <a href="SIX.TimApi.Terminal.MobileTopupCompletedEventHandler.html" title="Terminal.MobileTopupCompletedEventHandler" class="">Terminal.MobileTopupCompletedEventHandler</a>
+                          </li>
+                          <li class="">
+                            <a href="SIX.TimApi.Terminal.MobileTopupIssuerInfoCompletedEventArgs.html" title="Terminal.MobileTopupIssuerInfoCompletedEventArgs" class="">Terminal.MobileTopupIssuerInfoCompletedEventArgs</a>
+                          </li>
+                          <li class="">
+                            <a href="SIX.TimApi.Terminal.MobileTopupIssuerInfoCompletedEventHandler.html" title="Terminal.MobileTopupIssuerInfoCompletedEventHandler" class="">Terminal.MobileTopupIssuerInfoCompletedEventHandler</a>
+                          </li>
+                          <li class="">
                             <a href="SIX.TimApi.Terminal.OpenDialogModeCompletedEventArgs.html" title="Terminal.OpenDialogModeCompletedEventArgs" class="">Terminal.OpenDialogModeCompletedEventArgs</a>
                           </li>
                           <li class="">
@@ -578,6 +596,9 @@
                             <a href="SIX.TimApi.VasCheckoutInformation.html" title="VasCheckoutInformation" class="">VasCheckoutInformation</a>
                           </li>
                           <li class="">
+                            <a href="SIX.TimApi.VasInformationList.html" title="VasInformationList" class="">VasInformationList</a>
+                          </li>
+                          <li class="">
                             <a href="SIX.TimApi.VasResult.html" title="VasResult" class="">VasResult</a>
                           </li>
                         </ul>  </li>
@@ -666,6 +687,9 @@
                           </li>
                           <li class="">
                             <a href="SIX.TimApi.Constants.MerchantOptionType.html" title="MerchantOptionType" class="">MerchantOptionType</a>
+                          </li>
+                          <li class="">
+                            <a href="SIX.TimApi.Constants.MobileTopupType.html" title="MobileTopupType" class="">MobileTopupType</a>
                           </li>
                           <li class="">
                             <a href="SIX.TimApi.Constants.NgvMode.html" title="NgvMode" class="">NgvMode</a>
@@ -786,6 +810,9 @@
                           </li>
                           <li class="">
                             <a href="SIX.TimApi.Receipts.CustomReceiptFormatter.TextType.html" title="CustomReceiptFormatter.TextType" class="">CustomReceiptFormatter.TextType</a>
+                          </li>
+                          <li class="">
+                            <a href="SIX.TimApi.Receipts.CustomReceiptFormatter.TranslatedText.html" title="CustomReceiptFormatter.TranslatedText" class="">CustomReceiptFormatter.TranslatedText</a>
                           </li>
                           <li class="">
                             <a href="SIX.TimApi.Receipts.NormalReceiptFormatter.html" title="NormalReceiptFormatter" class="">NormalReceiptFormatter</a>
@@ -1219,11 +1246,13 @@
   
   <a id="SIX_TimApi_Terminal_License_" data-uid="SIX.TimApi.Terminal.License*"></a>
   <h4 id="SIX_TimApi_Terminal_License" data-uid="SIX.TimApi.Terminal.License">License</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Supported licensed features as 8 bytes hex encoded bitmap.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public byte[] License { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Functionality removed.&quot;, false)]
+public byte[] License { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2949,7 +2978,7 @@ The response is available in the <a class="xref" href="SIX.TimApi.Terminal.Deact
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="SIX.TimApi.VasCheckoutInformation.html">VasCheckoutInformation</a></td>
+        <td><span class="xref">VasCheckoutInformation</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -3553,30 +3582,305 @@ Your application must handle this event to receive notification.</p>
 </div>
   
   
+  <a id="SIX_TimApi_Terminal_MobileTopup_" data-uid="SIX.TimApi.Terminal.MobileTopup*"></a>
+  <h4 id="SIX_TimApi_Terminal_MobileTopup_MobileTopupType_MobileTopupValue_" data-uid="SIX.TimApi.Terminal.MobileTopup(MobileTopupType,MobileTopupValue)">MobileTopup(MobileTopupType, MobileTopupValue)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MobileTopupData MobileTopup(MobileTopupType type, MobileTopupValue value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">MobileTopupType</span></td>
+        <td><span class="parametername">type</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">MobileTopupValue</span></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">MobileTopupData</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SIX_TimApi_Terminal_MobileTopup_" data-uid="SIX.TimApi.Terminal.MobileTopup*"></a>
+  <h4 id="SIX_TimApi_Terminal_MobileTopup_MobileTopupType_System_String_SIX_TimApi_Amount_" data-uid="SIX.TimApi.Terminal.MobileTopup(MobileTopupType,System.String,SIX.TimApi.Amount)">MobileTopup(MobileTopupType, String, Amount)</h4>
+  <div class="markdown level1 summary"><p>Mobile topup.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MobileTopupData MobileTopup(MobileTopupType type, string issuerName, Amount amount)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">MobileTopupType</span></td>
+        <td><span class="parametername">type</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">issuerName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="SIX.TimApi.Amount.html">Amount</a></td>
+        <td><span class="parametername">amount</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">MobileTopupData</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="SIX.TimApi.TimException.html">TimException</a></td>
+        <td><p>an error occurred during the device maintenance</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SIX_TimApi_Terminal_MobileTopupAsync_" data-uid="SIX.TimApi.Terminal.MobileTopupAsync*"></a>
+  <h4 id="SIX_TimApi_Terminal_MobileTopupAsync_MobileTopupType_MobileTopupValue_" data-uid="SIX.TimApi.Terminal.MobileTopupAsync(MobileTopupType,MobileTopupValue)">MobileTopupAsync(MobileTopupType, MobileTopupValue)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void MobileTopupAsync(MobileTopupType type, MobileTopupValue value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">MobileTopupType</span></td>
+        <td><span class="parametername">type</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">MobileTopupValue</span></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SIX_TimApi_Terminal_MobileTopupAsync_" data-uid="SIX.TimApi.Terminal.MobileTopupAsync*"></a>
+  <h4 id="SIX_TimApi_Terminal_MobileTopupAsync_MobileTopupType_System_String_SIX_TimApi_Amount_" data-uid="SIX.TimApi.Terminal.MobileTopupAsync(MobileTopupType,System.String,SIX.TimApi.Amount)">MobileTopupAsync(MobileTopupType, String, Amount)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void MobileTopupAsync(MobileTopupType type, string issuerName, Amount amount)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">MobileTopupType</span></td>
+        <td><span class="parametername">type</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">issuerName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="SIX.TimApi.Amount.html">Amount</a></td>
+        <td><span class="parametername">amount</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SIX_TimApi_Terminal_MobileTopupIssuerInfo_" data-uid="SIX.TimApi.Terminal.MobileTopupIssuerInfo*"></a>
+  <h4 id="SIX_TimApi_Terminal_MobileTopupIssuerInfo" data-uid="SIX.TimApi.Terminal.MobileTopupIssuerInfo">MobileTopupIssuerInfo()</h4>
+  <div class="markdown level1 summary"><p>Get mobile topup issuer information.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;MobileTopupValue&gt; MobileTopupIssuerInfo()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<span class="xref">MobileTopupValue</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="SIX.TimApi.TimException.html">TimException</a></td>
+        <td><p>an error occurred during the device maintenance</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SIX_TimApi_Terminal_MobileTopupIssuerInfoAsync_" data-uid="SIX.TimApi.Terminal.MobileTopupIssuerInfoAsync*"></a>
+  <h4 id="SIX_TimApi_Terminal_MobileTopupIssuerInfoAsync" data-uid="SIX.TimApi.Terminal.MobileTopupIssuerInfoAsync">MobileTopupIssuerInfoAsync()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void MobileTopupIssuerInfoAsync()</code></pre>
+  </div>
+  
+  
   <a id="SIX_TimApi_Terminal_OpenDialogMode_" data-uid="SIX.TimApi.Terminal.OpenDialogMode*"></a>
-  <h4 id="SIX_TimApi_Terminal_OpenDialogMode" data-uid="SIX.TimApi.Terminal.OpenDialogMode">OpenDialogMode()</h4>
+  <h4 id="SIX_TimApi_Terminal_OpenDialogMode_System_Boolean_" data-uid="SIX.TimApi.Terminal.OpenDialogMode(System.Boolean)">OpenDialogMode(Boolean)</h4>
   <div class="markdown level1 summary"><p>Open dialog mode on the terminal.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void OpenDialogMode()</code></pre>
+    <pre><code class="lang-csharp hljs">public void OpenDialogMode(bool silent = false)</code></pre>
   </div>
-  <h5 id="SIX_TimApi_Terminal_OpenDialogMode_remarks">Remarks</h5>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">silent</span></td>
+        <td><p>After opening the Dialog Mode the last screen content
+is retained until the the first ShowDialog is received</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="SIX_TimApi_Terminal_OpenDialogMode_System_Boolean__remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p><strong>Note:</strong>  This method is only available if {@link com.six.timapi.constants.Guides#DIALOG} is enabled.</p>
 </div>
   
   
   <a id="SIX_TimApi_Terminal_OpenDialogModeAsync_" data-uid="SIX.TimApi.Terminal.OpenDialogModeAsync*"></a>
-  <h4 id="SIX_TimApi_Terminal_OpenDialogModeAsync" data-uid="SIX.TimApi.Terminal.OpenDialogModeAsync">OpenDialogModeAsync()</h4>
+  <h4 id="SIX_TimApi_Terminal_OpenDialogModeAsync_System_Boolean_" data-uid="SIX.TimApi.Terminal.OpenDialogModeAsync(System.Boolean)">OpenDialogModeAsync(Boolean)</h4>
   <div class="markdown level1 summary"><p>Open dialog mode on the terminal.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void OpenDialogModeAsync()</code></pre>
+    <pre><code class="lang-csharp hljs">public void OpenDialogModeAsync(bool silent = false)</code></pre>
   </div>
-  <h5 id="SIX_TimApi_Terminal_OpenDialogModeAsync_remarks">Remarks</h5>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">silent</span></td>
+        <td><p>After opening the Dialog Mode the last screen content
+is retained until the the first ShowDialog is received</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="SIX_TimApi_Terminal_OpenDialogModeAsync_System_Boolean__remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p><strong>Note:</strong>  This method is only available if Guides DIALOG is enabled.</p>
 <p>This method does not block the calling thread during the application information operation and uses the Event-based Asynchronous Pattern (EAP).
  When the transaction completes, the <a class="xref" href="SIX.TimApi.Terminal.html#SIX_TimApi_Terminal_OpenDialogModeCompleted">OpenDialogModeCompleted</a> event is raised.
@@ -5863,7 +6167,7 @@ The <a class="xref" href="SIX.TimApi.Terminal.EjectCardCompletedEventArgs.html">
   
   
   <h4 id="SIX_TimApi_Terminal_FinishCheckoutCompleted" data-uid="SIX.TimApi.Terminal.FinishCheckoutCompleted">FinishCheckoutCompleted</h4>
-  <div class="markdown level1 summary"><p>Occurs when an asynchronous OpenDialogMode completes.</p>
+  <div class="markdown level1 summary"><p>Occurs when an asynchronous FinishCheckout completes.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -6023,7 +6327,8 @@ The <a class="xref" href="SIX.TimApi.Terminal.InitTransactionWithDialogCompleted
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public event Terminal.LicenseChangedEventHandler LicenseChanged</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Functionality removed.&quot;, false)]
+public event Terminal.LicenseChangedEventHandler LicenseChanged</code></pre>
   </div>
   <h5 class="eventType">Event Type</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -6138,6 +6443,70 @@ The <see cref="!:Terminal.LoyaltyDataEventArgs"></see> class provides the event 
 </div>
   
   
+  <h4 id="SIX_TimApi_Terminal_MobileTopupCompleted" data-uid="SIX.TimApi.Terminal.MobileTopupCompleted">MobileTopupCompleted</h4>
+  <div class="markdown level1 summary"><p>Occurs when an asynchronous device maintenance completes.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event Terminal.MobileTopupCompletedEventHandler MobileTopupCompleted</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="SIX.TimApi.Terminal.MobileTopupCompletedEventHandler.html">Terminal.MobileTopupCompletedEventHandler</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="SIX_TimApi_Terminal_MobileTopupCompleted_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This event is raised each time an asynchronous device maintenance completes.<br>
+Asynchronous transactions are started by calling the <a class="xref" href="SIX.TimApi.Terminal.html#SIX_TimApi_Terminal_MobileTopupAsync_MobileTopupType_System_String_SIX_TimApi_Amount_">MobileTopupAsync(MobileTopupType, String, Amount)</a> methods.
+<br>
+The <a class="xref" href="SIX.TimApi.Terminal.MobileTopupCompletedEventHandler.html">Terminal.MobileTopupCompletedEventHandler</a>  is the delegate for this event.
+The <a class="xref" href="SIX.TimApi.Terminal.MobileTopupCompletedEventArgs.html">Terminal.MobileTopupCompletedEventArgs</a> class provides the event handler with event data.</p>
+</div>
+  
+  
+  <h4 id="SIX_TimApi_Terminal_MobileTopupIssuerInfoCompleted" data-uid="SIX.TimApi.Terminal.MobileTopupIssuerInfoCompleted">MobileTopupIssuerInfoCompleted</h4>
+  <div class="markdown level1 summary"><p>Occurs when an asynchronous device maintenance completes.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event Terminal.MobileTopupIssuerInfoCompletedEventHandler MobileTopupIssuerInfoCompleted</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="SIX.TimApi.Terminal.MobileTopupIssuerInfoCompletedEventHandler.html">Terminal.MobileTopupIssuerInfoCompletedEventHandler</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="SIX_TimApi_Terminal_MobileTopupIssuerInfoCompleted_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This event is raised each time an asynchronous device maintenance completes.<br>
+Asynchronous transactions are started by calling the <a class="xref" href="SIX.TimApi.Terminal.html#SIX_TimApi_Terminal_MobileTopupIssuerInfoAsync">MobileTopupIssuerInfoAsync()</a> methods.
+<br>
+The <a class="xref" href="SIX.TimApi.Terminal.MobileTopupIssuerInfoCompletedEventHandler.html">Terminal.MobileTopupIssuerInfoCompletedEventHandler</a>  is the delegate for this event.
+The <a class="xref" href="SIX.TimApi.Terminal.MobileTopupIssuerInfoCompletedEventArgs.html">Terminal.MobileTopupIssuerInfoCompletedEventArgs</a> class provides the event handler with event data.</p>
+</div>
+  
+  
   <h4 id="SIX_TimApi_Terminal_OpenDialogModeCompleted" data-uid="SIX.TimApi.Terminal.OpenDialogModeCompleted">OpenDialogModeCompleted</h4>
   <div class="markdown level1 summary"><p>Occurs when an asynchronous OpenDialogMode completes.</p>
 </div>
@@ -6163,7 +6532,7 @@ The <see cref="!:Terminal.LoyaltyDataEventArgs"></see> class provides the event 
   </table>
   <h5 id="SIX_TimApi_Terminal_OpenDialogModeCompleted_remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>This event is raised each time an asynchronous OpenDialogMode completes.<br>
-Asynchronous operations are started by calling the <a class="xref" href="SIX.TimApi.Terminal.html#SIX_TimApi_Terminal_OpenDialogModeAsync">OpenDialogModeAsync()</a> methods.
+Asynchronous operations are started by calling the <a class="xref" href="SIX.TimApi.Terminal.html#SIX_TimApi_Terminal_OpenDialogModeAsync_System_Boolean_">OpenDialogModeAsync(Boolean)</a> methods.
 <br>
 The  <a class="xref" href="SIX.TimApi.Terminal.OpenDialogModeCompletedEventHandler.html">Terminal.OpenDialogModeCompletedEventHandler</a>  is the delegate for this event.
 The <a class="xref" href="SIX.TimApi.Terminal.OpenDialogModeCompletedEventArgs.html">Terminal.OpenDialogModeCompletedEventArgs</a> class provides the event handler with event data.</p>
@@ -6267,7 +6636,7 @@ The <a class="xref" href="SIX.TimApi.Terminal.PrintOnTerminalCompletedEventArgs.
   
   
   <h4 id="SIX_TimApi_Terminal_ProvideLoyaltyBasketCompleted" data-uid="SIX.TimApi.Terminal.ProvideLoyaltyBasketCompleted">ProvideLoyaltyBasketCompleted</h4>
-  <div class="markdown level1 summary"><p>Occurs when an asynchronous OpenDialogMode completes.</p>
+  <div class="markdown level1 summary"><p>Occurs when an asynchronous ProvideLoyaltyBasketAsync completes.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -6290,11 +6659,11 @@ The <a class="xref" href="SIX.TimApi.Terminal.PrintOnTerminalCompletedEventArgs.
     </tbody>
   </table>
   <h5 id="SIX_TimApi_Terminal_ProvideLoyaltyBasketCompleted_remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>This event is raised each time an asynchronous OpenDialogMode completes.<br>
-Asynchronous operations are started by calling the <a class="xref" href="SIX.TimApi.Terminal.html#SIX_TimApi_Terminal_OpenDialogModeAsync">OpenDialogModeAsync()</a> methods.
+  <div class="markdown level1 remarks"><p>This event is raised each time an asynchronous ProvideLoyaltyBasketAsync completes.<br>
+Asynchronous operations are started by calling the <a class="xref" href="SIX.TimApi.Terminal.html#SIX_TimApi_Terminal_ProvideLoyaltyBasketAsync_System_Collections_Generic_List_SIX_TimApi_LoyaltyItem__">ProvideLoyaltyBasketAsync(List&lt;LoyaltyItem&gt;)</a> methods.
 <br>
-The  <a class="xref" href="SIX.TimApi.Terminal.OpenDialogModeCompletedEventHandler.html">Terminal.OpenDialogModeCompletedEventHandler</a>  is the delegate for this event.
-The <a class="xref" href="SIX.TimApi.Terminal.OpenDialogModeCompletedEventArgs.html">Terminal.OpenDialogModeCompletedEventArgs</a> class provides the event handler with event data.</p>
+The  <a class="xref" href="SIX.TimApi.Terminal.ProvideLoyaltyBasketCompletedEventHandler.html">Terminal.ProvideLoyaltyBasketCompletedEventHandler</a>  is the delegate for this event.
+The <a class="xref" href="SIX.TimApi.Terminal.ProvideLoyaltyBasketCompletedEventArgs.html">Terminal.ProvideLoyaltyBasketCompletedEventArgs</a> class provides the event handler with event data.</p>
 </div>
   
   
@@ -6703,7 +7072,7 @@ The <a class="xref" href="SIX.TimApi.Terminal.SoftwareUpdateCompletedEventArgs.h
   </table>
   <h5 id="SIX_TimApi_Terminal_StartCheckoutCompleted_remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>This event is raised each time an asynchronous StartCheckout completes.<br>
-Asynchronous operations are started by calling the <a class="xref" href="SIX.TimApi.Terminal.html#SIX_TimApi_Terminal_OpenDialogModeAsync">OpenDialogModeAsync()</a> methods.
+Asynchronous operations are started by calling the <a class="xref" href="SIX.TimApi.Terminal.html#SIX_TimApi_Terminal_StartCheckoutAsync">StartCheckoutAsync()</a> methods.
 <br>
 The  <a class="xref" href="SIX.TimApi.Terminal.StartCheckoutCompletedEventHandler.html">Terminal.StartCheckoutCompletedEventHandler</a>  is the delegate for this event.
 The <a class="xref" href="SIX.TimApi.Terminal.StartCheckoutCompletedEventArgs.html">Terminal.StartCheckoutCompletedEventArgs</a> class provides the event handler with event data.</p>

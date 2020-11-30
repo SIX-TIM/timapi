@@ -188,6 +188,12 @@
                             <a href="SIX.TimApi.MerchantOption.html" title="MerchantOption" class="">MerchantOption</a>
                           </li>
                           <li class="">
+                            <a href="SIX.TimApi.MobileTopupData.html" title="MobileTopupData" class="">MobileTopupData</a>
+                          </li>
+                          <li class="">
+                            <a href="SIX.TimApi.MobileTopupValue.html" title="MobileTopupValue" class="">MobileTopupValue</a>
+                          </li>
+                          <li class="">
                             <a href="SIX.TimApi.NativeError.html" title="NativeError" class="">NativeError</a>
                           </li>
                           <li class="">
@@ -419,6 +425,18 @@
                             <a href="SIX.TimApi.Terminal.LoyaltyDataCompletedEventHandler.html" title="Terminal.LoyaltyDataCompletedEventHandler" class="">Terminal.LoyaltyDataCompletedEventHandler</a>
                           </li>
                           <li class="">
+                            <a href="SIX.TimApi.Terminal.MobileTopupCompletedEventArgs.html" title="Terminal.MobileTopupCompletedEventArgs" class="">Terminal.MobileTopupCompletedEventArgs</a>
+                          </li>
+                          <li class="">
+                            <a href="SIX.TimApi.Terminal.MobileTopupCompletedEventHandler.html" title="Terminal.MobileTopupCompletedEventHandler" class="">Terminal.MobileTopupCompletedEventHandler</a>
+                          </li>
+                          <li class="">
+                            <a href="SIX.TimApi.Terminal.MobileTopupIssuerInfoCompletedEventArgs.html" title="Terminal.MobileTopupIssuerInfoCompletedEventArgs" class="">Terminal.MobileTopupIssuerInfoCompletedEventArgs</a>
+                          </li>
+                          <li class="">
+                            <a href="SIX.TimApi.Terminal.MobileTopupIssuerInfoCompletedEventHandler.html" title="Terminal.MobileTopupIssuerInfoCompletedEventHandler" class="">Terminal.MobileTopupIssuerInfoCompletedEventHandler</a>
+                          </li>
+                          <li class="">
                             <a href="SIX.TimApi.Terminal.OpenDialogModeCompletedEventArgs.html" title="Terminal.OpenDialogModeCompletedEventArgs" class="">Terminal.OpenDialogModeCompletedEventArgs</a>
                           </li>
                           <li class="">
@@ -578,6 +596,9 @@
                             <a href="SIX.TimApi.VasCheckoutInformation.html" title="VasCheckoutInformation" class="">VasCheckoutInformation</a>
                           </li>
                           <li class="">
+                            <a href="SIX.TimApi.VasInformationList.html" title="VasInformationList" class="">VasInformationList</a>
+                          </li>
+                          <li class="">
                             <a href="SIX.TimApi.VasResult.html" title="VasResult" class="">VasResult</a>
                           </li>
                         </ul>  </li>
@@ -666,6 +687,9 @@
                           </li>
                           <li class="">
                             <a href="SIX.TimApi.Constants.MerchantOptionType.html" title="MerchantOptionType" class="">MerchantOptionType</a>
+                          </li>
+                          <li class="">
+                            <a href="SIX.TimApi.Constants.MobileTopupType.html" title="MobileTopupType" class="">MobileTopupType</a>
                           </li>
                           <li class="">
                             <a href="SIX.TimApi.Constants.NgvMode.html" title="NgvMode" class="">NgvMode</a>
@@ -788,6 +812,9 @@
                             <a href="SIX.TimApi.Receipts.CustomReceiptFormatter.TextType.html" title="CustomReceiptFormatter.TextType" class="">CustomReceiptFormatter.TextType</a>
                           </li>
                           <li class="">
+                            <a href="SIX.TimApi.Receipts.CustomReceiptFormatter.TranslatedText.html" title="CustomReceiptFormatter.TranslatedText" class="">CustomReceiptFormatter.TranslatedText</a>
+                          </li>
+                          <li class="">
                             <a href="SIX.TimApi.Receipts.NormalReceiptFormatter.html" title="NormalReceiptFormatter" class="">NormalReceiptFormatter</a>
                           </li>
                           <li class="">
@@ -906,7 +933,11 @@
   
   <a id="SIX_TimApi_ErrorMessages_GetErrorMessage_" data-uid="SIX.TimApi.ErrorMessages.GetErrorMessage*"></a>
   <h4 id="SIX_TimApi_ErrorMessages_GetErrorMessage_SIX_TimApi_Constants_ResultCode_SIX_TimApi_Terminal_" data-uid="SIX.TimApi.ErrorMessages.GetErrorMessage(SIX.TimApi.Constants.ResultCode,SIX.TimApi.Terminal)">GetErrorMessage(ResultCode, Terminal)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Returns the error message matching the supplied ResultCode in the
+terminal merchant language.</p>
+<p>The message will be in the merchant language of the terminal provided
+systemInformation() has been executed (English otherwise).</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -953,7 +984,13 @@
   
   <a id="SIX_TimApi_ErrorMessages_GetErrorMessage_" data-uid="SIX.TimApi.ErrorMessages.GetErrorMessage*"></a>
   <h4 id="SIX_TimApi_ErrorMessages_GetErrorMessage_SIX_TimApi_Constants_ResultCode_System_String_" data-uid="SIX.TimApi.ErrorMessages.GetErrorMessage(SIX.TimApi.Constants.ResultCode,System.String)">GetErrorMessage(ResultCode, String)</h4>
-  <div class="markdown level1 summary"><p>Gets the error message.</p>
+  <div class="markdown level1 summary"><p>Returns the error message matching the supplied ResultCode in the supplied language.</p>
+<p>Valid language strings are currently: &quot;en&quot;,&quot;de&quot;,&quot;de-AT&quot;,&quot;de-CH&quot;,&quot;fr&quot;,&quot;fr-BE&quot;,
+&quot;fr-CH&quot;,&quot;it&quot;,&quot;bg&quot;,&quot;hr&quot;,&quot;cs&quot;,&quot;nl&quot;,&quot;nl-BE&quot;,&quot;nl-NL&quot;,&quot;el&quot;,&quot;hu&quot;,&quot;lt&quot;,&quot;pl&quot;,&quot;pt&quot;,
+&quot;ro&quot;,&quot;sk&quot;,&quot;sl&quot;,&quot;es&quot;,&quot;sv&quot;,&quot;fi&quot;,&quot;no&quot;,&quot;da&quot;</p>
+<p>&quot;de&quot; defaults to &quot;de-CH&quot;
+&quot;fr&quot; defaults to &quot;fr-CH&quot;
+&quot;nl&quot; defaults to &quot;nl-BE&quot;</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -973,14 +1010,12 @@
       <tr>
         <td><a class="xref" href="SIX.TimApi.Constants.ResultCode.html">ResultCode</a></td>
         <td><span class="parametername">resultCode</span></td>
-        <td><p>resultCode Result code to get error message for.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">language</span></td>
-        <td><p>Language code to get error message for. If no entry for language is found the default error message is returned.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -995,8 +1030,7 @@
     <tbody>
       <tr>
         <td><span class="xref">System.String</span></td>
-        <td><p>System.String.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>

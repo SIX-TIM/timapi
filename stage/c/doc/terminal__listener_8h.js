@@ -31,6 +31,8 @@ var terminal__listener_8h =
     [ "ta_cb_terminal_login_completed", "terminal__listener_8h.html#a466f9d64fe6dc475e92d7cce5da9e360", null ],
     [ "ta_cb_terminal_logout_completed", "terminal__listener_8h.html#ac92b3442702ad01db62a5aa4ba629b77", null ],
     [ "ta_cb_terminal_loyalty_data_completed", "terminal__listener_8h.html#a854386a428da81afc168284fe0923146", null ],
+    [ "ta_cb_terminal_mobile_topup_completed", "terminal__listener_8h.html#abeed55c1375532566223da7c8fed78a7", null ],
+    [ "ta_cb_terminal_mobile_topup_issuer_info_completed", "terminal__listener_8h.html#a7a57910450c6910dc11f4ac46c1c537b", null ],
     [ "ta_cb_terminal_open_dialog_mode_completed", "terminal__listener_8h.html#a54782f0100eb05fb5233ddd161550d2d", null ],
     [ "ta_cb_terminal_open_maintenance_window_completed", "terminal__listener_8h.html#a70b3a473d8e606b3fcd59054d8f1e8b6", null ],
     [ "ta_cb_terminal_open_reader_completed", "terminal__listener_8h.html#a4b858b839bcbe394c139b644a8d385fd", null ],
