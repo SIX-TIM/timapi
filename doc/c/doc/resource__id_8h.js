@@ -136,6 +136,10 @@ var resource__id_8h =
       [ "ta_c_rid_common_card_initialized", "resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9a57f9e567db9a3d59cd3671014ad2f4b5", null ],
       [ "ta_c_rid_common_card_deinitialized", "resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9a94a71eb2f3f71d1ea4b70742e979a5be", null ],
       [ "ta_c_rid_migros_gkkpin_check", "resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9a324676b355911a0964597ce36792c44f", null ],
+      [ "ta_c_rid_migros_passcode_incorrect_retry", "resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9a7944e7b1092d990ca4116e363d43ba0c", null ],
+      [ "ta_c_rid_migros_passcode_incorrect_last_try", "resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9ab361c89408f11b9e8b459fd3eededeb7", null ],
+      [ "ta_c_rid_migros_passcode_incorrect_abort", "resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9a970d2379b2c8010049fef4c28845c095", null ],
+      [ "ta_c_rid_migros_passode_ok", "resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9a62b044cf5977fb78550a919215292935", null ],
       [ "ta_c_rid_payback_read_code", "resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9ade7d0766d46c58189275b5f5fd42d228", null ],
       [ "ta_c_rid_payback_show_balance", "resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9ae37978504cceb9b6f5168c2754611437", null ],
       [ "ta_c_rid_payback_spend_points", "resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9aa2117d8076f9de7854208754630e8c63", null ]

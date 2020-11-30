@@ -262,6 +262,11 @@ Enumerations</h2></td></tr>
 <br />
 &#160;&#160;<a class="el" href="resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9a94a71eb2f3f71d1ea4b70742e979a5be">ta_c_rid_common_card_deinitialized</a>, 
 <a class="el" href="resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9a324676b355911a0964597ce36792c44f">ta_c_rid_migros_gkkpin_check</a>, 
+<a class="el" href="resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9a7944e7b1092d990ca4116e363d43ba0c">ta_c_rid_migros_passcode_incorrect_retry</a>, 
+<a class="el" href="resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9ab361c89408f11b9e8b459fd3eededeb7">ta_c_rid_migros_passcode_incorrect_last_try</a>, 
+<br />
+&#160;&#160;<a class="el" href="resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9a970d2379b2c8010049fef4c28845c095">ta_c_rid_migros_passcode_incorrect_abort</a>, 
+<a class="el" href="resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9a62b044cf5977fb78550a919215292935">ta_c_rid_migros_passode_ok</a>, 
 <a class="el" href="resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9ade7d0766d46c58189275b5f5fd42d228">ta_c_rid_payback_read_code</a>, 
 <a class="el" href="resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9ae37978504cceb9b6f5168c2754611437">ta_c_rid_payback_show_balance</a>, 
 <br />
@@ -590,8 +595,13 @@ Enumerations</h2></td></tr>
 <tr><td class="fieldname"><a id="a334bce2189c86641d9e5b8aa2dbceec9a0340b43138b35a158d28a5e9b09f1bb0"></a>ta_c_rid_petrol_banknote_or_cards&#160;</td><td class="fielddoc"><p>Banknotes and<br />
  Cards available </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a334bce2189c86641d9e5b8aa2dbceec9aa81e61b1baeeb86a8d6e23faaf35929e"></a>ta_c_rid_petrol_banknote_only&#160;</td><td class="fielddoc"><p>Banknotes available<br />
- Cards out of order </p>
+<tr><td class="fieldname"><a id="a334bce2189c86641d9e5b8aa2dbceec9aa81e61b1baeeb86a8d6e23faaf35929e"></a>ta_c_rid_petrol_banknote_only&#160;</td><td class="fielddoc"><p>Insert Banknotes<br />
+ Cards out of order Function Keys:<br />
+</p><ul>
+<li>F1: Language<br />
+</li>
+<li>F2: Receipt </li>
+</ul>
 </td></tr>
 <tr><td class="fieldname"><a id="a334bce2189c86641d9e5b8aa2dbceec9abeb4c35794d64b439eb55d2cad22d77b"></a>ta_c_rid_petrol_banknote_cards_only&#160;</td><td class="fielddoc"><p>Banknotes<br />
  out of order<br />
@@ -617,8 +627,9 @@ Enumerations</h2></td></tr>
 <li>F2: Receipt </li>
 </ul>
 </td></tr>
-<tr><td class="fieldname"><a id="a334bce2189c86641d9e5b8aa2dbceec9a0a3ac7f23fba771533a3e27a22ee0f25"></a>ta_c_rid_petrol_trx_receipt_language&#160;</td><td class="fielddoc"><p>Welcome<br />
- Insert Card<br />
+<tr><td class="fieldname"><a id="a334bce2189c86641d9e5b8aa2dbceec9a0a3ac7f23fba771533a3e27a22ee0f25"></a>ta_c_rid_petrol_trx_receipt_language&#160;</td><td class="fielddoc"><p>Insert Card.<br />
+ Banknotes out<br />
+ of order<br />
  Function Keys:<br />
 </p><ul>
 <li>F1: Language<br />
@@ -881,8 +892,27 @@ Enumerations</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a id="a334bce2189c86641d9e5b8aa2dbceec9a94a71eb2f3f71d1ea4b70742e979a5be"></a>ta_c_rid_common_card_deinitialized&#160;</td><td class="fielddoc"><p>Karte deinitialisiert </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a334bce2189c86641d9e5b8aa2dbceec9a324676b355911a0964597ce36792c44f"></a>ta_c_rid_migros_gkkpin_check&#160;</td><td class="fielddoc"><p>Migros GKK Passcode<br />
- i </p>
+<tr><td class="fieldname"><a id="a334bce2189c86641d9e5b8aa2dbceec9a324676b355911a0964597ce36792c44f"></a>ta_c_rid_migros_gkkpin_check&#160;</td><td class="fielddoc"><p>%0 %1<br />
+ Migros GKK Passcode<br />
+ i<br />
+ PlaceholderItems:<br />
+</p><ul>
+<li>0: Currency<br />
+</li>
+<li>1: Amount<br />
+ </li>
+</ul>
+</td></tr>
+<tr><td class="fieldname"><a id="a334bce2189c86641d9e5b8aa2dbceec9a7944e7b1092d990ca4116e363d43ba0c"></a>ta_c_rid_migros_passcode_incorrect_retry&#160;</td><td class="fielddoc"><p>Passcode incorrect<br />
+ Try again </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a334bce2189c86641d9e5b8aa2dbceec9ab361c89408f11b9e8b459fd3eededeb7"></a>ta_c_rid_migros_passcode_incorrect_last_try&#160;</td><td class="fielddoc"><p>Passcode incorrect<br />
+ Last try </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a334bce2189c86641d9e5b8aa2dbceec9a970d2379b2c8010049fef4c28845c095"></a>ta_c_rid_migros_passcode_incorrect_abort&#160;</td><td class="fielddoc"><p>Passcode incorrect<br />
+ Abort </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a334bce2189c86641d9e5b8aa2dbceec9a62b044cf5977fb78550a919215292935"></a>ta_c_rid_migros_passode_ok&#160;</td><td class="fielddoc"><p>Passcode OK </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a334bce2189c86641d9e5b8aa2dbceec9ade7d0766d46c58189275b5f5fd42d228"></a>ta_c_rid_payback_read_code&#160;</td><td class="fielddoc"><p>Payback Code?{br/}i </p>
 </td></tr>

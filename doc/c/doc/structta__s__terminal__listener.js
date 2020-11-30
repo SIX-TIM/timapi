@@ -29,6 +29,8 @@ var structta__s__terminal__listener =
     [ "login_completed", "structta__s__terminal__listener.html#a183e35defdc870fbf77bdb3755886daf", null ],
     [ "logout_completed", "structta__s__terminal__listener.html#a560b563332d498eef5126ba07777e6fe", null ],
     [ "loyalty_data_completed", "structta__s__terminal__listener.html#a28e0696e7fa5cd419f6af3deab8f3f92", null ],
+    [ "mobile_topup_completed", "structta__s__terminal__listener.html#ae9d29fb198e6b427af1013de9ec5bff6", null ],
+    [ "mobile_topup_issuer_info_completed", "structta__s__terminal__listener.html#ac35b9b9669351873ac4a0cf34a778d4e", null ],
     [ "open_dialog_mode_completed", "structta__s__terminal__listener.html#a5de426b734a0a337cc99f95daa4237ac", null ],
     [ "open_maintenance_window_completed", "structta__s__terminal__listener.html#a37d0ede5028904d64bc12ee1f5599a7b", null ],
     [ "open_reader_completed", "structta__s__terminal__listener.html#a6dda934ee284d13c70daf5067242a81f", null ],

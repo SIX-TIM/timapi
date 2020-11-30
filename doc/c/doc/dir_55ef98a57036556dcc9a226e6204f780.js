@@ -30,6 +30,7 @@ var dir_55ef98a57036556dcc9a226e6204f780 =
     [ "management_status.h", "management__status_8h.html", "management__status_8h" ],
     [ "merchant_action.h", "merchant__action_8h.html", "merchant__action_8h" ],
     [ "merchant_option_type.h", "merchant__option__type_8h.html", "merchant__option__type_8h" ],
+    [ "mobile_topup_type.h", "mobile__topup__type_8h.html", "mobile__topup__type_8h" ],
     [ "ngv_mode.h", "ngv__mode_8h.html", "ngv__mode_8h" ],
     [ "non_financial_transactions.h", "non__financial__transactions_8h.html", "non__financial__transactions_8h" ],
     [ "payment_protocol.h", "payment__protocol_8h.html", "payment__protocol_8h" ],

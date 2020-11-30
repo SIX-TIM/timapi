@@ -92,8 +92,14 @@ Functions</h2></td></tr>
 <tr class="memdesc:ad79d70d5b92e5cf36f34c574cf52eb18"><td class="mdescLeft">&#160;</td><td class="mdescRight">Result code.  <a href="#ad79d70d5b92e5cf36f34c574cf52eb18">More...</a><br /></td></tr>
 <tr class="separator:ad79d70d5b92e5cf36f34c574cf52eb18"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af33f67151222b2b8cc5062ae561090ef"><td class="memItemLeft" align="right" valign="top"><a class="el" href="result__code_8h.html#ae860ee870a289833a24a586ba0c24975">ta_e_result_code_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tim__error_8h.html#af33f67151222b2b8cc5062ae561090ef">ta_tim_error_get_error_message</a> (<a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a> response, <a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a> *error_message)</td></tr>
-<tr class="memdesc:af33f67151222b2b8cc5062ae561090ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Error message in the ECR language or <em>ta_object_invalid</em> if not present.  <a href="#af33f67151222b2b8cc5062ae561090ef">More...</a><br /></td></tr>
+<tr class="memdesc:af33f67151222b2b8cc5062ae561090ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the error message as transmitted from the terminal.  <a href="#af33f67151222b2b8cc5062ae561090ef">More...</a><br /></td></tr>
 <tr class="separator:af33f67151222b2b8cc5062ae561090ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0553a258d05900849f21f596e03cf93"><td class="memItemLeft" align="right" valign="top"><a class="el" href="result__code_8h.html#ae860ee870a289833a24a586ba0c24975">ta_e_result_code_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tim__error_8h.html#ad0553a258d05900849f21f596e03cf93">ta_tim_error_get_localized_message</a> (<a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a> response, <a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a> *localized_message)</td></tr>
+<tr class="memdesc:ad0553a258d05900849f21f596e03cf93"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the localised error message in human readable form derived from the error code sent by the terminal.  <a href="#ad0553a258d05900849f21f596e03cf93">More...</a><br /></td></tr>
+<tr class="separator:ad0553a258d05900849f21f596e03cf93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad27f349d0651d4f08bbae5831fa5f23a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="result__code_8h.html#ae860ee870a289833a24a586ba0c24975">ta_e_result_code_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tim__error_8h.html#ad27f349d0651d4f08bbae5831fa5f23a">ta_tim_error_get_localized_message2</a> (<a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a> response, const char *language, <a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a> *localized_message)</td></tr>
+<tr class="memdesc:ad27f349d0651d4f08bbae5831fa5f23a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the localised error message in human readable form derived from the error code sent by the terminal.  <a href="#ad27f349d0651d4f08bbae5831fa5f23a">More...</a><br /></td></tr>
+<tr class="separator:ad27f349d0651d4f08bbae5831fa5f23a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a17e0e823a6fd8f4c9a1d518f71331999"><td class="memItemLeft" align="right" valign="top"><a class="el" href="result__code_8h.html#ae860ee870a289833a24a586ba0c24975">ta_e_result_code_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tim__error_8h.html#a17e0e823a6fd8f4c9a1d518f71331999">ta_tim_error_get_native_error</a> (<a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a> response, <a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a> *native_error)</td></tr>
 <tr class="memdesc:a17e0e823a6fd8f4c9a1d518f71331999"><td class="mdescLeft">&#160;</td><td class="mdescRight">Native error if present or <em>ta_object_invalid</em> if not present.  <a href="#a17e0e823a6fd8f4c9a1d518f71331999">More...</a><br /></td></tr>
 <tr class="separator:a17e0e823a6fd8f4c9a1d518f71331999"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -184,7 +190,9 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Error message in the ECR language or <em>ta_object_invalid</em> if not present. </p>
+<p>Returns the error message as transmitted from the terminal. </p>
+<p>The message language depends on the terminal but will generally be in English.</p>
+<p>An empty string is returned if the terminal does not send a message.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">response</td><td>Object instance of type <a class="el" href="tim__error_8h.html">tim_error</a>. </td></tr>
@@ -197,6 +205,110 @@ Functions</h2></td></tr>
     <tr><td class="paramname">ta_c_rc_ok</td><td>Object instance written to <em>error_message</em>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>response</em> is <em>ta_object_invalid</em>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>response</em> is not of type <a class="el" href="tim__error_8h.html">tim_error</a>. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>error_message</em> is <em>null-pointer</em>. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ad0553a258d05900849f21f596e03cf93"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad0553a258d05900849f21f596e03cf93">&#9670;&nbsp;</a></span>ta_tim_error_get_localized_message()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="result__code_8h.html#ae860ee870a289833a24a586ba0c24975">ta_e_result_code_t</a> ta_tim_error_get_localized_message </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a>&#160;</td>
+          <td class="paramname"><em>response</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a> *&#160;</td>
+          <td class="paramname"><em>localized_message</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the localised error message in human readable form derived from the error code sent by the terminal. </p>
+<p>The message will be in the merchant language of the terminal provided systemInformation() has been executed (English otherwise).</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">response</td><td>Object instance of type <a class="el" href="tim__error_8h.html">tim_error</a>. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">error_message</td><td>Pointer to variable to write object instance to. Object instance is of type <a class="el" href="string_8h.html">string</a> and is not retained. Object instance is <em>ta_object_invalid</em> if value is not set in <em>response</em>.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">ta_c_rc_ok</td><td>Object instance written to <em>error_message</em>. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>response</em> is <em>ta_object_invalid</em>. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>response</em> is not of type <a class="el" href="tim__error_8h.html">tim_error</a>. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>error_message</em> is <em>null-pointer</em>. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ad27f349d0651d4f08bbae5831fa5f23a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad27f349d0651d4f08bbae5831fa5f23a">&#9670;&nbsp;</a></span>ta_tim_error_get_localized_message2()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="result__code_8h.html#ae860ee870a289833a24a586ba0c24975">ta_e_result_code_t</a> ta_tim_error_get_localized_message2 </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a>&#160;</td>
+          <td class="paramname"><em>response</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>language</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a> *&#160;</td>
+          <td class="paramname"><em>localized_message</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the localised error message in human readable form derived from the error code sent by the terminal. </p>
+<p>The message will be in the language supplied in the parameter.</p>
+<p>Valid language strings are currently: "en","de","de-AT","de-CH","fr","fr-BE", "fr-CH","it","bg","hr","cs","nl","nl-BE","nl-NL","el","hu","lt","pl","pt", "ro","sk","sl","es","sv","fi","no","da"</p>
+<p>"de" defaults to "de-CH" "fr" defaults to "fr-CH" "nl" defaults to "nl-BE"</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">response</td><td>Object instance of type <a class="el" href="tim__error_8h.html">tim_error</a>. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">language</td><td>Language. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">error_message</td><td>Pointer to variable to write object instance to. Object instance is of type <a class="el" href="string_8h.html">string</a> and is not retained. Object instance is <em>ta_object_invalid</em> if value is not set in <em>response</em>.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">ta_c_rc_ok</td><td>Object instance written to <em>error_message</em>. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>response</em> is <em>ta_object_invalid</em>. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>response</em> is not of type <a class="el" href="tim__error_8h.html">tim_error</a>. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>language</em> is <em>0</em>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>error_message</em> is <em>null-pointer</em>. </td></tr>
   </table>
   </dd>

@@ -113,7 +113,8 @@ Enumerations</h2></td></tr>
 <a class="el" href="resource__parameter__type_8h.html#a24c84814e0ce6a320ff3bd3826a297fbaacf600ea2081d9e6b9877fdb303a229f">ta_c_rpt_key_mode_f1</a>, 
 <br />
 &#160;&#160;<a class="el" href="resource__parameter__type_8h.html#a24c84814e0ce6a320ff3bd3826a297fba0fb2962e53991b9f0b9a0ab964e77317">ta_c_rpt_key_mode_f2</a>, 
-<a class="el" href="resource__parameter__type_8h.html#a24c84814e0ce6a320ff3bd3826a297fba9b60ecc9dc494e7fed5ead022a439b5a">ta_c_rpt_key_mode_f3</a>
+<a class="el" href="resource__parameter__type_8h.html#a24c84814e0ce6a320ff3bd3826a297fba9b60ecc9dc494e7fed5ead022a439b5a">ta_c_rpt_key_mode_f3</a>, 
+<a class="el" href="resource__parameter__type_8h.html#a24c84814e0ce6a320ff3bd3826a297fba18a59fd58ad83e29e5ee89ec446ee7b0">ta_c_rpt_pin_retry_counter</a>
 <br />
  }</td></tr>
 <tr class="separator:a24c84814e0ce6a320ff3bd3826a297fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -195,6 +196,8 @@ Enumerations</h2></td></tr>
 17: Diplomatkarte - Use Diplomatkarten algorithm </li>
 <li>
 18: Micrelec - Use the Micrelec algorithm </li>
+<li>
+19: Schenk - Use the Schenk algorithm </li>
 </ul>
 <p>This value is to be encoded as a ascii number i.e. using characters in the range 30h to 39h.</p>
 <p>Specification: petrol.</p>
@@ -299,6 +302,10 @@ Bit 8: RFU </li>
 <li>
 <pre>NOTIFY</pre> : The key does not interrupt the InitTransaction process. The press is reported through a KeyPressEvent. </li>
 </ul>
+<p>Specification: petrol.</p>
+</td></tr>
+<tr><td class="fieldname"><a id="a24c84814e0ce6a320ff3bd3826a297fba18a59fd58ad83e29e5ee89ec446ee7b0"></a>ta_c_rpt_pin_retry_counter&#160;</td><td class="fielddoc"><p>Defines how many times a PIN or other code entry can be done before failing the dialog.<br />
+ Example: PinRetryCounter = 3, the PIN (or other code) can be entered 3 times in total before the dialog fails.</p>
 <p>Specification: petrol.</p>
 </td></tr>
 </table>

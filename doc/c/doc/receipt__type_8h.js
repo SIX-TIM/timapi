@@ -21,6 +21,12 @@ var receipt__type_8h =
       [ "ta_c_rt_purchase_reservation", "receipt__type_8h.html#a74be600736ad05d66a867681226384f1a800dbd419b8cb441b5905cd61b0f5403", null ],
       [ "ta_c_rt_purchase_with_cashback", "receipt__type_8h.html#a74be600736ad05d66a867681226384f1acf2d6175e71ad69346bb7cf8dfe458be", null ],
       [ "ta_c_rt_reservation", "receipt__type_8h.html#a74be600736ad05d66a867681226384f1a1c321544448a1a3a258d97c7c60e5a23", null ],
-      [ "ta_c_rt_reversal", "receipt__type_8h.html#a74be600736ad05d66a867681226384f1a6ef94d65b8c7397c655eb060c203de24", null ]
+      [ "ta_c_rt_reversal", "receipt__type_8h.html#a74be600736ad05d66a867681226384f1a6ef94d65b8c7397c655eb060c203de24", null ],
+      [ "ta_c_rt_giro", "receipt__type_8h.html#a74be600736ad05d66a867681226384f1abdfceaffbe5a99d41ca8d582533474a6", null ],
+      [ "ta_c_rt_combined", "receipt__type_8h.html#a74be600736ad05d66a867681226384f1ad6d124f0b87622649ff2affe417da4ea", null ],
+      [ "ta_c_rt_authorize_credit", "receipt__type_8h.html#a74be600736ad05d66a867681226384f1acc65aeaadf0518d17f544252339c8101", null ],
+      [ "ta_c_rt_authorize_deposit", "receipt__type_8h.html#a74be600736ad05d66a867681226384f1ad891afd1fffe713f09edd45873089bf8", null ],
+      [ "ta_c_rt_client_id_request", "receipt__type_8h.html#a74be600736ad05d66a867681226384f1a818cfe0e749262cbe630ac942a7a008d", null ],
+      [ "ta_c_rt_account_verification", "receipt__type_8h.html#a74be600736ad05d66a867681226384f1ad7d118545d5bf658f071a1182d9f5bc9", null ]
     ] ]
 ];

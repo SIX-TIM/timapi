@@ -107,9 +107,8 @@ const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structta__s__log__record.html#aa30d43ffe02970d8e98532d3380f077b">line</a></td></tr>
 <tr class="memdesc:aa30d43ffe02970d8e98532d3380f077b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Line number. <br /></td></tr>
 <tr class="separator:aa30d43ffe02970d8e98532d3380f077b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abd209f97435e3f79b5c1d4ba0900b179"><td class="memItemLeft" align="right" valign="top"><a id="abd209f97435e3f79b5c1d4ba0900b179"></a>
-const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structta__s__log__record.html#abd209f97435e3f79b5c1d4ba0900b179">message</a></td></tr>
-<tr class="memdesc:abd209f97435e3f79b5c1d4ba0900b179"><td class="mdescLeft">&#160;</td><td class="mdescRight">Message text. <br /></td></tr>
+<tr class="memitem:abd209f97435e3f79b5c1d4ba0900b179"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structta__s__log__record.html#abd209f97435e3f79b5c1d4ba0900b179">message</a></td></tr>
+<tr class="memdesc:abd209f97435e3f79b5c1d4ba0900b179"><td class="mdescLeft">&#160;</td><td class="mdescRight">Message text.  <a href="#abd209f97435e3f79b5c1d4ba0900b179">More...</a><br /></td></tr>
 <tr class="separator:abd209f97435e3f79b5c1d4ba0900b179"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7f343cccdd0f0e41342bbbfe2f5c1fd3"><td class="memItemLeft" align="right" valign="top"><a id="a7f343cccdd0f0e41342bbbfe2f5c1fd3"></a>
 const char **&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structta__s__log__record.html#a7f343cccdd0f0e41342bbbfe2f5c1fd3">parameters</a></td></tr>
@@ -132,6 +131,24 @@ time_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="st
 <tr class="memdesc:a8d8b1f3ba960dee304f2bf3405e62ffa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Timestamp. <br /></td></tr>
 <tr class="separator:a8d8b1f3ba960dee304f2bf3405e62ffa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Field Documentation</h2>
+<a id="abd209f97435e3f79b5c1d4ba0900b179"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd209f97435e3f79b5c1d4ba0900b179">&#9670;&nbsp;</a></span>message</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* ta_s_log_record::message</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Message text. </p>
+<dl class="section warning"><dt>Warning</dt><dd>Message text is potentially very long for example for SIXml logging. Using *printf family of functions runs the risk of buffer overflow causing segmentation faults. To avoid problems use the *nprintf family of functions. These take a buffer size parameter and avoid writing past the buffer size in all situations. </dd></dl>
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li>src/<a class="el" href="logging_8h.html">logging.h</a></li>
 </ul>

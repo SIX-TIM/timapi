@@ -39,6 +39,8 @@ var dir_68267d1309a1af8e8297ef4c3efbcdba =
     [ "loyalty_information.h", "loyalty__information_8h.html", "loyalty__information_8h" ],
     [ "loyalty_item.h", "loyalty__item_8h.html", "loyalty__item_8h" ],
     [ "merchant_option.h", "merchant__option_8h.html", "merchant__option_8h" ],
+    [ "mobile_topup_data.h", "mobile__topup__data_8h.html", "mobile__topup__data_8h" ],
+    [ "mobile_topup_value.h", "mobile__topup__value_8h.html", "mobile__topup__value_8h" ],
     [ "native_error.h", "native__error_8h.html", "native__error_8h" ],
     [ "network_information.h", "network__information_8h.html", "network__information_8h" ],
     [ "ppinfo.h", "ppinfo_8h.html", "ppinfo_8h" ],
@@ -71,5 +73,6 @@ var dir_68267d1309a1af8e8297ef4c3efbcdba =
     [ "transaction_response.h", "transaction__response_8h.html", "transaction__response_8h" ],
     [ "trx_detail.h", "trx__detail_8h.html", "trx__detail_8h" ],
     [ "vas_checkout_information.h", "vas__checkout__information_8h.html", "vas__checkout__information_8h" ],
+    [ "vas_information_list.h", "vas__information__list_8h.html", "vas__information__list_8h" ],
     [ "vas_result.h", "vas__result_8h.html", "vas__result_8h" ]
 ];

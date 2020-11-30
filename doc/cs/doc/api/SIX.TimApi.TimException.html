@@ -188,6 +188,12 @@
                             <a href="SIX.TimApi.MerchantOption.html" title="MerchantOption" class="">MerchantOption</a>
                           </li>
                           <li class="">
+                            <a href="SIX.TimApi.MobileTopupData.html" title="MobileTopupData" class="">MobileTopupData</a>
+                          </li>
+                          <li class="">
+                            <a href="SIX.TimApi.MobileTopupValue.html" title="MobileTopupValue" class="">MobileTopupValue</a>
+                          </li>
+                          <li class="">
                             <a href="SIX.TimApi.NativeError.html" title="NativeError" class="">NativeError</a>
                           </li>
                           <li class="">
@@ -419,6 +425,18 @@
                             <a href="SIX.TimApi.Terminal.LoyaltyDataCompletedEventHandler.html" title="Terminal.LoyaltyDataCompletedEventHandler" class="">Terminal.LoyaltyDataCompletedEventHandler</a>
                           </li>
                           <li class="">
+                            <a href="SIX.TimApi.Terminal.MobileTopupCompletedEventArgs.html" title="Terminal.MobileTopupCompletedEventArgs" class="">Terminal.MobileTopupCompletedEventArgs</a>
+                          </li>
+                          <li class="">
+                            <a href="SIX.TimApi.Terminal.MobileTopupCompletedEventHandler.html" title="Terminal.MobileTopupCompletedEventHandler" class="">Terminal.MobileTopupCompletedEventHandler</a>
+                          </li>
+                          <li class="">
+                            <a href="SIX.TimApi.Terminal.MobileTopupIssuerInfoCompletedEventArgs.html" title="Terminal.MobileTopupIssuerInfoCompletedEventArgs" class="">Terminal.MobileTopupIssuerInfoCompletedEventArgs</a>
+                          </li>
+                          <li class="">
+                            <a href="SIX.TimApi.Terminal.MobileTopupIssuerInfoCompletedEventHandler.html" title="Terminal.MobileTopupIssuerInfoCompletedEventHandler" class="">Terminal.MobileTopupIssuerInfoCompletedEventHandler</a>
+                          </li>
+                          <li class="">
                             <a href="SIX.TimApi.Terminal.OpenDialogModeCompletedEventArgs.html" title="Terminal.OpenDialogModeCompletedEventArgs" class="">Terminal.OpenDialogModeCompletedEventArgs</a>
                           </li>
                           <li class="">
@@ -578,6 +596,9 @@
                             <a href="SIX.TimApi.VasCheckoutInformation.html" title="VasCheckoutInformation" class="">VasCheckoutInformation</a>
                           </li>
                           <li class="">
+                            <a href="SIX.TimApi.VasInformationList.html" title="VasInformationList" class="">VasInformationList</a>
+                          </li>
+                          <li class="">
                             <a href="SIX.TimApi.VasResult.html" title="VasResult" class="">VasResult</a>
                           </li>
                         </ul>  </li>
@@ -666,6 +687,9 @@
                           </li>
                           <li class="">
                             <a href="SIX.TimApi.Constants.MerchantOptionType.html" title="MerchantOptionType" class="">MerchantOptionType</a>
+                          </li>
+                          <li class="">
+                            <a href="SIX.TimApi.Constants.MobileTopupType.html" title="MobileTopupType" class="">MobileTopupType</a>
                           </li>
                           <li class="">
                             <a href="SIX.TimApi.Constants.NgvMode.html" title="NgvMode" class="">NgvMode</a>
@@ -786,6 +810,9 @@
                           </li>
                           <li class="">
                             <a href="SIX.TimApi.Receipts.CustomReceiptFormatter.TextType.html" title="CustomReceiptFormatter.TextType" class="">CustomReceiptFormatter.TextType</a>
+                          </li>
+                          <li class="">
+                            <a href="SIX.TimApi.Receipts.CustomReceiptFormatter.TranslatedText.html" title="CustomReceiptFormatter.TranslatedText" class="">CustomReceiptFormatter.TranslatedText</a>
                           </li>
                           <li class="">
                             <a href="SIX.TimApi.Receipts.NormalReceiptFormatter.html" title="NormalReceiptFormatter" class="">NormalReceiptFormatter</a>
@@ -993,6 +1020,96 @@
       </tr>
     </tbody>
   </table>
+  
+  
+  <a id="SIX_TimApi_TimException__ctor_" data-uid="SIX.TimApi.TimException.#ctor*"></a>
+  <h4 id="SIX_TimApi_TimException__ctor_SIX_TimApi_Constants_ResultCode_System_String_System_String_SIX_TimApi_NativeError_SIX_TimApi_PpInfo_System_Collections_Generic_Dictionary_System_String_System_String__SIX_TimApi_PrintData_SIX_TimApi_Basket_" data-uid="SIX.TimApi.TimException.#ctor(SIX.TimApi.Constants.ResultCode,System.String,System.String,SIX.TimApi.NativeError,SIX.TimApi.PpInfo,System.Collections.Generic.Dictionary{System.String,System.String},SIX.TimApi.PrintData,SIX.TimApi.Basket)">TimException(ResultCode, String, String, NativeError, PpInfo, Dictionary&lt;String, String&gt;, PrintData, Basket)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TimException(ResultCode resultCode, string errorMessage, string localizedMessage, NativeError nativeError, PpInfo ppInfo, Dictionary&lt;string, string&gt; additionalErrorInfo, PrintData printData, Basket rejectedBasket)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="SIX.TimApi.Constants.ResultCode.html">ResultCode</a></td>
+        <td><span class="parametername">resultCode</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">errorMessage</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">localizedMessage</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="SIX.TimApi.NativeError.html">NativeError</a></td>
+        <td><span class="parametername">nativeError</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="SIX.TimApi.PpInfo.html">PpInfo</a></td>
+        <td><span class="parametername">ppInfo</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.String</span>&gt;</td>
+        <td><span class="parametername">additionalErrorInfo</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="SIX.TimApi.PrintData.html">PrintData</a></td>
+        <td><span class="parametername">printData</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="SIX.TimApi.Basket.html">Basket</a></td>
+        <td><span class="parametername">rejectedBasket</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  
+  
+  <h4 id="SIX_TimApi_TimException_PrintData" data-uid="SIX.TimApi.TimException.PrintData">PrintData</h4>
+  <div class="markdown level1 summary"><p>Gets the print data.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PrintData PrintData</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="SIX.TimApi.PrintData.html">PrintData</a></td>
+        <td><p>The print data.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="properties">Properties
   </h3>
   
@@ -1026,12 +1143,41 @@
   
   <a id="SIX_TimApi_TimException_ErrorMessage_" data-uid="SIX.TimApi.TimException.ErrorMessage*"></a>
   <h4 id="SIX_TimApi_TimException_ErrorMessage" data-uid="SIX.TimApi.TimException.ErrorMessage">ErrorMessage</h4>
-  <div class="markdown level1 summary"><p>Gets the error messagein the ECR language.</p>
+  <div class="markdown level1 summary"><p>Returns the error message as transmitted from the terminal.</p>
+<p>The message language depends on the terminal but will generally be in English.</p>
+<p>An empty string is returned if the terminal does not send a message.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public string ErrorMessage { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SIX_TimApi_TimException_LocalizedMessage_" data-uid="SIX.TimApi.TimException.LocalizedMessage*"></a>
+  <h4 id="SIX_TimApi_TimException_LocalizedMessage" data-uid="SIX.TimApi.TimException.LocalizedMessage">LocalizedMessage</h4>
+  <div class="markdown level1 summary"><p>Returns the localised error message in human readable form derived from the error code sent by the terminal.</p>
+<p>The message will be in the merchant language of the terminal provided systemInformation() has been executed (English otherwise).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string LocalizedMessage { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1103,36 +1249,9 @@
   </table>
   
   
-  <a id="SIX_TimApi_TimException_PrintData_" data-uid="SIX.TimApi.TimException.PrintData*"></a>
-  <h4 id="SIX_TimApi_TimException_PrintData" data-uid="SIX.TimApi.TimException.PrintData">PrintData</h4>
-  <div class="markdown level1 summary"><p>Gets the print data.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public PrintData PrintData { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="SIX.TimApi.PrintData.html">PrintData</a></td>
-        <td><p>The print data.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
   <a id="SIX_TimApi_TimException_RejectedBasket_" data-uid="SIX.TimApi.TimException.RejectedBasket*"></a>
   <h4 id="SIX_TimApi_TimException_RejectedBasket" data-uid="SIX.TimApi.TimException.RejectedBasket">RejectedBasket</h4>
-  <div class="markdown level1 summary"><p>Getsthe rejected basket.or null if absent</p>
+  <div class="markdown level1 summary"><p>Rejected basket as modified by host or null if absent. Used for {@link Guides#PETROL} only.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1150,8 +1269,7 @@
     <tbody>
       <tr>
         <td><a class="xref" href="SIX.TimApi.Basket.html">Basket</a></td>
-        <td><p>The rejected basket.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -1183,6 +1301,56 @@
   </table>
   <h3 id="methods">Methods
   </h3>
+  
+  
+  <a id="SIX_TimApi_TimException_LocalizeMessage_" data-uid="SIX.TimApi.TimException.LocalizeMessage*"></a>
+  <h4 id="SIX_TimApi_TimException_LocalizeMessage_System_String_" data-uid="SIX.TimApi.TimException.LocalizeMessage(System.String)">LocalizeMessage(String)</h4>
+  <div class="markdown level1 summary"><p>Returns the localised error message in human readable form derived from the error code sent by the terminal.</p>
+<p>The message will be in the language supplied in the parameter.</p>
+<p>Valid language strings are currently: &quot;en&quot;,&quot;de&quot;,&quot;de-AT&quot;,&quot;de-CH&quot;,&quot;fr&quot;,
+&quot;fr-BE&quot;,&quot;fr-CH&quot;,&quot;it&quot;,&quot;bg&quot;,&quot;hr&quot;,&quot;cs&quot;,&quot;nl&quot;,&quot;nl-BE&quot;,&quot;nl-NL&quot;,&quot;el&quot;,&quot;hu&quot;,
+&quot;lt&quot;,&quot;pl&quot;,&quot;pt&quot;,&quot;ro&quot;,&quot;sk&quot;,&quot;sl&quot;,&quot;es&quot;,&quot;sv&quot;,&quot;fi&quot;,&quot;no&quot;,&quot;da&quot;</p>
+<p>&quot;de&quot; defaults to &quot;de-CH&quot;
+&quot;fr&quot; defaults to &quot;fr-CH&quot;
+&quot;nl&quot; defaults to &quot;nl-BE&quot;</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string LocalizeMessage(string language)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">language</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   
   
   <a id="SIX_TimApi_TimException_ToString_" data-uid="SIX.TimApi.TimException.ToString*"></a>

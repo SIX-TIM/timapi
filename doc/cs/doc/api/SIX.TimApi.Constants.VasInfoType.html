@@ -188,6 +188,12 @@
                             <a href="SIX.TimApi.MerchantOption.html" title="MerchantOption" class="">MerchantOption</a>
                           </li>
                           <li class="">
+                            <a href="SIX.TimApi.MobileTopupData.html" title="MobileTopupData" class="">MobileTopupData</a>
+                          </li>
+                          <li class="">
+                            <a href="SIX.TimApi.MobileTopupValue.html" title="MobileTopupValue" class="">MobileTopupValue</a>
+                          </li>
+                          <li class="">
                             <a href="SIX.TimApi.NativeError.html" title="NativeError" class="">NativeError</a>
                           </li>
                           <li class="">
@@ -419,6 +425,18 @@
                             <a href="SIX.TimApi.Terminal.LoyaltyDataCompletedEventHandler.html" title="Terminal.LoyaltyDataCompletedEventHandler" class="">Terminal.LoyaltyDataCompletedEventHandler</a>
                           </li>
                           <li class="">
+                            <a href="SIX.TimApi.Terminal.MobileTopupCompletedEventArgs.html" title="Terminal.MobileTopupCompletedEventArgs" class="">Terminal.MobileTopupCompletedEventArgs</a>
+                          </li>
+                          <li class="">
+                            <a href="SIX.TimApi.Terminal.MobileTopupCompletedEventHandler.html" title="Terminal.MobileTopupCompletedEventHandler" class="">Terminal.MobileTopupCompletedEventHandler</a>
+                          </li>
+                          <li class="">
+                            <a href="SIX.TimApi.Terminal.MobileTopupIssuerInfoCompletedEventArgs.html" title="Terminal.MobileTopupIssuerInfoCompletedEventArgs" class="">Terminal.MobileTopupIssuerInfoCompletedEventArgs</a>
+                          </li>
+                          <li class="">
+                            <a href="SIX.TimApi.Terminal.MobileTopupIssuerInfoCompletedEventHandler.html" title="Terminal.MobileTopupIssuerInfoCompletedEventHandler" class="">Terminal.MobileTopupIssuerInfoCompletedEventHandler</a>
+                          </li>
+                          <li class="">
                             <a href="SIX.TimApi.Terminal.OpenDialogModeCompletedEventArgs.html" title="Terminal.OpenDialogModeCompletedEventArgs" class="">Terminal.OpenDialogModeCompletedEventArgs</a>
                           </li>
                           <li class="">
@@ -578,6 +596,9 @@
                             <a href="SIX.TimApi.VasCheckoutInformation.html" title="VasCheckoutInformation" class="">VasCheckoutInformation</a>
                           </li>
                           <li class="">
+                            <a href="SIX.TimApi.VasInformationList.html" title="VasInformationList" class="">VasInformationList</a>
+                          </li>
+                          <li class="">
                             <a href="SIX.TimApi.VasResult.html" title="VasResult" class="">VasResult</a>
                           </li>
                         </ul>  </li>
@@ -666,6 +687,9 @@
                           </li>
                           <li class="">
                             <a href="SIX.TimApi.Constants.MerchantOptionType.html" title="MerchantOptionType" class="">MerchantOptionType</a>
+                          </li>
+                          <li class="">
+                            <a href="SIX.TimApi.Constants.MobileTopupType.html" title="MobileTopupType" class="">MobileTopupType</a>
                           </li>
                           <li class="">
                             <a href="SIX.TimApi.Constants.NgvMode.html" title="NgvMode" class="">NgvMode</a>
@@ -788,6 +812,9 @@
                             <a href="SIX.TimApi.Receipts.CustomReceiptFormatter.TextType.html" title="CustomReceiptFormatter.TextType" class="">CustomReceiptFormatter.TextType</a>
                           </li>
                           <li class="">
+                            <a href="SIX.TimApi.Receipts.CustomReceiptFormatter.TranslatedText.html" title="CustomReceiptFormatter.TranslatedText" class="">CustomReceiptFormatter.TranslatedText</a>
+                          </li>
+                          <li class="">
                             <a href="SIX.TimApi.Receipts.NormalReceiptFormatter.html" title="NormalReceiptFormatter" class="">NormalReceiptFormatter</a>
                           </li>
                           <li class="">
@@ -855,145 +882,147 @@
     <thead>
     <tbody>
       <tr>
-        <td id="SIX_TimApi_Constants_VasInfoType_Unknown">Unknown</td>
-        <td><p>Invalid/unknown constant value.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="SIX_TimApi_Constants_VasInfoType_WoladdVasdata">WoladdVasdata</td>
-        <td><p>WOL Additional VAS Data. Free to use container for VAS specific data, max. 1500 chars.</p>
+        <td id="SIX_TimApi_Constants_VasInfoType_AddVasdata">AddVasdata</td>
+        <td><p>Additional VAS Data. Free to use container for VAS specific data, max. 3000 chars. E.g.
+TWINT extended reference description.</p>
 <p>Specification: valueAddedServices.</p>
 </td>
       </tr>
       <tr>
-        <td id="SIX_TimApi_Constants_VasInfoType_WoladdVasdataComMd">WoladdVasdataComMd</td>
-        <td><p>WOL Additional VAS Data Communication Mode. Indicates how the WOL advanced data should
-be transmitted between WOL enabled terminal and VAS provider. Allowed values: 0: no
+        <td id="SIX_TimApi_Constants_VasInfoType_AddVasdataComMd">AddVasdataComMd</td>
+        <td><p>Additional VAS Data Communication Mode. Indicates how the VAS advanced data should be
+transmitted between VAS enabled terminal and VAS provider. Allowed values: 0: no
 communication required, 1: ep2 request/response, 2: out-of-band</p>
 <p>Specification: valueAddedServices.</p>
 </td>
       </tr>
       <tr>
-        <td id="SIX_TimApi_Constants_VasInfoType_WolagrDataToEcrindicator">WolagrDataToEcrindicator</td>
-        <td><p>WOL Aggregated Forward Data To ECR Indicator. Flag indicating wether at least one
-included WOL program requires to forward the data from the WOL enabled terminal to the
-ECR.</p>
+        <td id="SIX_TimApi_Constants_VasInfoType_AgrDataToEcrindicator">AgrDataToEcrindicator</td>
+        <td><p>Aggregated Forward Data To ECR Indicator. Flag indicating wether at least one included
+VAS program requires to forward the data from e.g the VAS enabled terminal to the ECR.</p>
 <p>Specification: valueAddedServices.</p>
 </td>
       </tr>
       <tr>
-        <td id="SIX_TimApi_Constants_VasInfoType_WolagrReqAddVasdataIndicator">WolagrReqAddVasdataIndicator</td>
-        <td><p>WOL Aggregated Request Additional VAS Data Indicator. Flag indicating wether at least
-one included WOL program requires to request additional the data from a VAS provider.</p>
+        <td id="SIX_TimApi_Constants_VasInfoType_AgrReqAddVasdataIndicator">AgrReqAddVasdataIndicator</td>
+        <td><p>Aggregated Request Additional VAS Data Indicator. Flag indicating wether at least one
+included VAS program requires to request additional the data from a VAS provider.</p>
 <p>Specification: valueAddedServices.</p>
 </td>
       </tr>
       <tr>
-        <td id="SIX_TimApi_Constants_VasInfoType_WolagrResDataToHstIndicator">WolagrResDataToHstIndicator</td>
-        <td><p>WOL Aggregated Forward Result Data To Host Indicator. Flag indicating wether at least
-one included WOL program requires to forward the result data to the WOL Host.</p>
+        <td id="SIX_TimApi_Constants_VasInfoType_AgrResDataToHstIndicator">AgrResDataToHstIndicator</td>
+        <td><p>Aggregated Forward Result Data To Host Indicator. Flag indicating wether at least one
+included VAS program requires to forward the result data e.g. to the WOL Host.</p>
 <p>Specification: valueAddedServices.</p>
 </td>
       </tr>
       <tr>
-        <td id="SIX_TimApi_Constants_VasInfoType_WolaltId">WolaltId</td>
-        <td><p>WOL Altenative Identifier. Alternative Identifier for the transaction given by the ECR
-or terminal</p>
+        <td id="SIX_TimApi_Constants_VasInfoType_AltId">AltId</td>
+        <td><p>VAS Alternative Identifier, e.g. for WOL. Alternative Identifier for the transaction
+given by the ECR or terminal</p>
 <p>Specification: valueAddedServices.</p>
 </td>
       </tr>
       <tr>
-        <td id="SIX_TimApi_Constants_VasInfoType_WolamtVasprg">WolamtVasprg</td>
-        <td><p>WOL Amount Matching VAS Program. Indicates how many WOL program matches the processed
-WOL transaction.</p>
+        <td id="SIX_TimApi_Constants_VasInfoType_AmtVasprg">AmtVasprg</td>
+        <td><p>Amount Matching VAS Program. Indicates how many e.g. WOL program matches the processed
+transaction.</p>
 <p>Specification: valueAddedServices.</p>
 </td>
       </tr>
       <tr>
-        <td id="SIX_TimApi_Constants_VasInfoType_WolcardAlias">WolcardAlias</td>
-        <td><p>WOL Card Alias. WOL specific Alias of the used card.</p>
+        <td id="SIX_TimApi_Constants_VasInfoType_CardAlias">CardAlias</td>
+        <td><p>VAS Card Alias. E.g. WOL specific Alias of the used card.</p>
 <p>Specification: valueAddedServices.</p>
 </td>
       </tr>
       <tr>
-        <td id="SIX_TimApi_Constants_VasInfoType_WoldataToEcrind">WoldataToEcrind</td>
-        <td><p>WOL Forward Data To ECR Indicator. Flag indicating wether for this specific WOL program
-it is required to send additional data to ECR.</p>
+        <td id="SIX_TimApi_Constants_VasInfoType_DataToEcrind">DataToEcrind</td>
+        <td><p>Forward Data To ECR Indicator. Flag indicating wether for this specific VAS program it
+is required to send additional data to ECR.</p>
 <p>Specification: valueAddedServices.</p>
 </td>
       </tr>
       <tr>
-        <td id="SIX_TimApi_Constants_VasInfoType_WolreqAddVasdataInd">WolreqAddVasdataInd</td>
-        <td><p>WOL Request Additional VAS Data Indicator. Flag indicating wether for this specific WOL
+        <td id="SIX_TimApi_Constants_VasInfoType_ReqAddVasdataInd">ReqAddVasdataInd</td>
+        <td><p>Request Additional VAS Data Indicator. Flag indicating wether for this specific VAS
 program it is required to request additional data from a VAS provider.</p>
 <p>Specification: valueAddedServices.</p>
 </td>
       </tr>
       <tr>
-        <td id="SIX_TimApi_Constants_VasInfoType_WolresDataToHstInd">WolresDataToHstInd</td>
-        <td><p>WOL Forward Result Data To Host Indicator. Flag indicating wether for this specific WOL
-program will forward the result data to the WOL Host.</p>
+        <td id="SIX_TimApi_Constants_VasInfoType_ResDataToHstInd">ResDataToHstInd</td>
+        <td><p>Forward Result Data To Host Indicator. Flag indicating wether for this specific VAS
+program will forward the result data to the VAS Host.</p>
 <p>Specification: valueAddedServices.</p>
 </td>
       </tr>
       <tr>
-        <td id="SIX_TimApi_Constants_VasInfoType_WolsupportVer">WolsupportVer</td>
-        <td><p>WOL Supported Version. Supported WOL version by the terminal software, has to be set by
-the terminal software based on the implemented WOL version.</p>
+        <td id="SIX_TimApi_Constants_VasInfoType_SupportVer">SupportVer</td>
+        <td><p>VAS Supported Version. Supported VAS specification version (e.g. WOL version) by the
+terminal software, has to be set by the terminal software based on the implemented VAS
+specification version.</p>
 <p>Specification: valueAddedServices.</p>
 </td>
       </tr>
       <tr>
-        <td id="SIX_TimApi_Constants_VasInfoType_WoltrxId">WoltrxId</td>
-        <td><p>WOL Transaction Identification. WOL specific ID for this transaction.</p>
+        <td id="SIX_TimApi_Constants_VasInfoType_TrxId">TrxId</td>
+        <td><p>VAS Transaction Identification. VAS specific ID for this transaction, e.g. used for WOL.</p>
 <p>Specification: valueAddedServices.</p>
 </td>
       </tr>
       <tr>
-        <td id="SIX_TimApi_Constants_VasInfoType_WoltrxIdentTime">WoltrxIdentTime</td>
-        <td><p>WOL Identification Timestamp. Timestamp of the WOL identification.</p>
+        <td id="SIX_TimApi_Constants_VasInfoType_TrxIdentTime">TrxIdentTime</td>
+        <td><p>VAS Identification Timestamp. Timestamp of the VAS identification.</p>
 <p>Specification: valueAddedServices.</p>
 </td>
       </tr>
       <tr>
-        <td id="SIX_TimApi_Constants_VasInfoType_WoltrxMatch">WoltrxMatch</td>
-        <td><p>WOL Transaction Match. Indication if PAN is available in WOL: 0=no, 1=yes</p>
+        <td id="SIX_TimApi_Constants_VasInfoType_TrxMatch">TrxMatch</td>
+        <td><p>VAS Transaction Match. Indication if PAN is available on VAS host: 0=no, 1=yes</p>
 <p>Specification: valueAddedServices.</p>
 </td>
       </tr>
       <tr>
-        <td id="SIX_TimApi_Constants_VasInfoType_WoluserAlias">WoluserAlias</td>
-        <td><p>WOL User Alias. WOL specific Alias of the WOL User linked with the used card.</p>
+        <td id="SIX_TimApi_Constants_VasInfoType_Unknown">Unknown</td>
+        <td><p>Invalid/unknown constant value.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="SIX_TimApi_Constants_VasInfoType_UserAlias">UserAlias</td>
+        <td><p>VAS User Alias. E.g. WOL specific Alias of the WOL User linked with the used card.</p>
 <p>Specification: valueAddedServices.</p>
 </td>
       </tr>
       <tr>
-        <td id="SIX_TimApi_Constants_VasInfoType_WolvasprgCtnr">WolvasprgCtnr</td>
-        <td><p>WOL Matching VAS Program Container. Containing VAS Programs with specific data.</p>
+        <td id="SIX_TimApi_Constants_VasInfoType_VasprgCtnr">VasprgCtnr</td>
+        <td><p>Matching VAS Program Container. Containing VAS Programs with specific data.</p>
 <p>Specification: valueAddedServices.</p>
 </td>
       </tr>
       <tr>
-        <td id="SIX_TimApi_Constants_VasInfoType_WolvasprgId">WolvasprgId</td>
-        <td><p>WOL VAS Program ID. WOL program specific identifier z.B. 123</p>
+        <td id="SIX_TimApi_Constants_VasInfoType_VasprgId">VasprgId</td>
+        <td><p>VAS Program ID. E.g. WOL program specific identifier like 123</p>
 <p>Specification: valueAddedServices.</p>
 </td>
       </tr>
       <tr>
-        <td id="SIX_TimApi_Constants_VasInfoType_WolvasprgMtchId">WolvasprgMtchId</td>
-        <td><p>WOL VAS Program Match ID. WOL specific match ID for this specific transaction.</p>
+        <td id="SIX_TimApi_Constants_VasInfoType_VasprgMtchId">VasprgMtchId</td>
+        <td><p>VAS Program Match ID. E.g. WOL specific match ID for this specific transaction.</p>
 <p>Specification: valueAddedServices.</p>
 </td>
       </tr>
       <tr>
-        <td id="SIX_TimApi_Constants_VasInfoType_WolvasprgName">WolvasprgName</td>
-        <td><p>WOL VAS Program Name. WOL program name z.B. &quot;Miles and More collect points&quot;.</p>
+        <td id="SIX_TimApi_Constants_VasInfoType_VasprgName">VasprgName</td>
+        <td><p>VAS Program Name. E.g. WOL program name like &quot;Miles and More collect points&quot;.</p>
 <p>Specification: valueAddedServices.</p>
 </td>
       </tr>
       <tr>
-        <td id="SIX_TimApi_Constants_VasInfoType_WolvasspecId">WolvasspecId</td>
-        <td><p>WOL VAS Specific ID. WOL program VAS identification number, e.g. M and M ID</p>
+        <td id="SIX_TimApi_Constants_VasInfoType_VasspecId">VasspecId</td>
+        <td><p>VAS Specific ID. E.g. WOL program VAS identification number, e.g. M and M ID or loyalty
+reference for TWINT.</p>
 <p>Specification: valueAddedServices.</p>
 </td>
       </tr>

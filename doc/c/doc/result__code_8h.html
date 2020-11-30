@@ -245,10 +245,12 @@ Enumerations</h2></td></tr>
 <a class="el" href="result__code_8h.html#aebaf00d1ceef4b827866ca9de0bd3320ac378020e201b4fadecfccfd7caa352fd">ta_c_rc_voucher_type_not_available</a>, 
 <a class="el" href="result__code_8h.html#aebaf00d1ceef4b827866ca9de0bd3320a02e174c4be1439584ba85c38f33fd9a8">ta_c_rc_transaction_mismatch</a>, 
 <br />
-&#160;&#160;<a class="el" href="result__code_8h.html#aebaf00d1ceef4b827866ca9de0bd3320ab7fc1a94ac7186abbd3c7a92314fb21b">ta_c_rc_voucher_cannot_be_reversed_</a>, 
+&#160;&#160;<a class="el" href="result__code_8h.html#aebaf00d1ceef4b827866ca9de0bd3320a8e0a20eb1b59bca11af409dc45b7174e">ta_c_rc_voucher_cannot_be_reversed</a>, 
+<a class="el" href="result__code_8h.html#aebaf00d1ceef4b827866ca9de0bd3320ad420a6fe09471fd18a6ba1a532c296fb">ta_c_rc_declined_amount_invalid</a>, 
 <a class="el" href="result__code_8h.html#aebaf00d1ceef4b827866ca9de0bd3320a306acc157474b36c57faa559c710d8c3">ta_c_rc_invalid_argument</a>, 
 <a class="el" href="result__code_8h.html#aebaf00d1ceef4b827866ca9de0bd3320a1895fe80e9772f70ef54177746bfed4a">ta_c_rc_out_of_memory</a>, 
-<a class="el" href="result__code_8h.html#aebaf00d1ceef4b827866ca9de0bd3320a58db8236054739cfd49c849b0c16e1be">ta_c_rc_system_error</a>
+<br />
+&#160;&#160;<a class="el" href="result__code_8h.html#aebaf00d1ceef4b827866ca9de0bd3320a58db8236054739cfd49c849b0c16e1be">ta_c_rc_system_error</a>
 <br />
  }</td></tr>
 <tr class="separator:aebaf00d1ceef4b827866ca9de0bd3320"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -762,8 +764,12 @@ Enumerations</h2></td></tr>
  <b>Error message:</b> Transaction mismatch</p>
 <p>Specification: retail.</p>
 </td></tr>
-<tr><td class="fieldname"><a id="aebaf00d1ceef4b827866ca9de0bd3320ab7fc1a94ac7186abbd3c7a92314fb21b"></a>ta_c_rc_voucher_cannot_be_reversed_&#160;</td><td class="fielddoc"><p>The (mobile topup) voucher cannot be reversed.<br />
+<tr><td class="fieldname"><a id="aebaf00d1ceef4b827866ca9de0bd3320a8e0a20eb1b59bca11af409dc45b7174e"></a>ta_c_rc_voucher_cannot_be_reversed&#160;</td><td class="fielddoc"><p>The (mobile topup) voucher cannot be reversed.<br />
  <b>Error message:</b> Voucher reversal failed</p>
+<p>Specification: retail.</p>
+</td></tr>
+<tr><td class="fieldname"><a id="aebaf00d1ceef4b827866ca9de0bd3320ad420a6fe09471fd18a6ba1a532c296fb"></a>ta_c_rc_declined_amount_invalid&#160;</td><td class="fielddoc"><p>Authorization failed, amount invalid.<br />
+ <b>Error message:</b> Authorization declined - Amount invalid</p>
 <p>Specification: retail.</p>
 </td></tr>
 <tr><td class="fieldname"><a id="aebaf00d1ceef4b827866ca9de0bd3320a306acc157474b36c57faa559c710d8c3"></a>ta_c_rc_invalid_argument&#160;</td><td class="fielddoc"><p>Invalid argument. </p>
