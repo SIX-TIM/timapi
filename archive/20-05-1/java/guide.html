@@ -247,18 +247,6 @@ terminal.dispose();</code></pre>
                             </tr>
                             <tr>
                                 <td>
-                                    <strong>SerialPort</strong>
-                                </td>
-                                <td>Serial port to be used for serial connection in case of ConnectionMode Serial.</td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <strong>SerialBaudrate</strong>
-                                </td>
-                                <td>Baudrate used in case of ConnectionMode Serial.</td>
-                            </tr>
-                            <tr>
-                                <td>
                                     <strong>ProtocolType</strong>
                                 </td>
                                 <td>Protocol type. For detailed values see
@@ -299,15 +287,6 @@ terminal.dispose();</code></pre>
                                     &#8220;On&#8221; or &#8220;Off&#8221;).
                                 </td>
                             </tr>
-                            <tr>
-                                <td>
-                                    <strong>SecuredConnection</strong>
-                                </td>
-                                <td>Defines if the TCP/IP or Websocket connection shall be secured using TLS. Default is
-                                    off (value &#8220;On&#8221;
-                                    or &#8220;Off&#8221;).
-                                </td>
-                            </tr>
                         </tbody>
                     </table>
                 </div><div class="col-md-6">
@@ -334,14 +313,6 @@ ConnectionIPString = 192.168.1.13
 RequestRepetition = 2
 
 [MyThirdDeviceId]
-ProtocolType = SIXml
-TerminalId = 18000001
-LogDir = var/yetAnotherLog
-ConnectionMode = Serial
-SerialPort = COM1
-SerialBaudrate = 115200
-
-[MyFourthDeviceId]
 ProtocolType = SIXml
 TerminalId = 18000004
 LogDir = var/yetAnotherLog
