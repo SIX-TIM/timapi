@@ -57,8 +57,8 @@ var terminal__listener_8h =
     [ "ta_cb_terminal_terminal_status_changed", "terminal__listener_8h.html#a8383e2be0f809fc382f307c0180bd783", null ],
     [ "ta_cb_terminal_transaction_completed", "terminal__listener_8h.html#acb4d8efc06602d461d8c634e92cca491", null ],
     [ "ta_cb_terminal_vas_info", "terminal__listener_8h.html#ae2b2230010970a7bc7d3db11c3eaf7ba", null ],
-    [ "ta_s_event_t", "terminal__listener_8h.html#aca8b2685a1635d99cb135134b2de1521", null ],
-    [ "ta_s_terminal_listener_t", "terminal__listener_8h.html#adc06e0cca24d3fbb6c241224c4d959bf", null ],
+    [ "ta_s_event_t", "terminal__listener_8h.html#a8c82d4a43c82433ef948451772ba0629", null ],
+    [ "ta_s_terminal_listener_t", "terminal__listener_8h.html#ab2ea03f5a1a58f6348bf82df674a43af", null ],
     [ "ta_process_print_receipts", "terminal__listener_8h.html#ad06f2909df66cdab4b14d08ae225bbeb", null ],
     [ "ta_terminal_listener_create", "terminal__listener_8h.html#ab7f5aab7a96d0f77d93e30ea0bbd6d63", null ]
 ];

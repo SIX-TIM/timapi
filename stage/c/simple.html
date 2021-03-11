@@ -3,9 +3,9 @@
 <head>
   <meta charset="utf-8">
 
-  <link href="../assets/css/vendors.css" rel="stylesheet">
-  <link href="../assets/css/helppage.css" rel="stylesheet">
-  <link href="res/css/lang_specific.css" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/vendors.css">
+  <link rel="stylesheet" href="../assets/css/helppage.css">
+  <link rel="stylesheet" href="res/css/lang_specific.css">
 
   <title>TIM API documentation</title>
   <script src="../assets/js/vendors.js"></script>
@@ -16,37 +16,37 @@
   <script src="../assets/js/config.js"></script>
   <script src="doc/api_version.js"></script>
 </head>
-<body class="simple" data-spy="scroll" data-target="#navScrollspy">
-  <div class="container-fluid" id="content">
+<body data-spy="scroll" data-target="#navScrollspy" class="simple">
+  <div id="content" class="container-fluid">
     <div>
       <nav id="navScrollspy">
         <div id="stageBanner">STAGING VERSION!</div>
-        <div id="archiveBanner">ARCHIVED VERSION!<br><a href="../../../doc/index.html" id="currentLink">-&gt; link to current version</a></div>
-        <div class="affix" data-spy="affix" id="navbar">
+        <div id="archiveBanner">ARCHIVED VERSION!<br><a id="currentLink" href="../../../doc/index.html">-&gt; link to current version</a></div>
+        <div data-spy="affix" class="affix" id="navbar">
           <div id="projectname">TIM SDK</div>
           <div id="projectbrief">TIM API</div>
           <div id="vSep">&#160;</div>
           <div id="langSel">
             <ul class="langList">
               <li>
-                <a class="lang_java" href="../java/simple.html">Java</a>
+                <a href="../java/simple.html" class="lang_java">Java</a>
               </li>
               <li>
-                <a class="lang_cs" href="../cs/guide.html">.NET</a>
+                <a href="../cs/guide.html" class="lang_cs">.NET</a>
               </li>
               <li>
-                <a class="lang_swift" href="../swift/guide.html">Swift</a>
+                <a href="../swift/guide.html" class="lang_swift">Swift</a>
               </li>
               <li>
-                <a class="lang_js" href="../js/simple.html">JavaScript</a>
+                <a href="../js/simple.html" class="lang_js">JavaScript</a>
               </li>
               <li>
-                <a class="lang_c" href="../c/guide.html">C</a>
+                <a href="../c/guide.html" class="lang_c">C</a>
               </li>
             </ul>
           </div>
           <div id="guideDiv">
-            <div id="guideTitle">Guide Selection<div class="close_icon" id="closeGuideSel"></div></div>
+            <div id="guideTitle">Guide Selection<div id="closeGuideSel" class="close_icon"></div></div>
             <div id="guideSel"></div>
           </div>
           <div id="docTitle">Simple Implementation Guide</div>
@@ -66,18 +66,18 @@
       <span class="print-page-break"></span>
 
       <main>
-      <section><h1><a id="simpleIntro" name="simpleIntro">&#160;</a>Introduction</h1><div class="row"><div class="col-md-6"><p>The following sections give a simple overview how to make a simple TIM API integration
+      <section><h1><a name="simpleIntro" id="simpleIntro">&#160;</a>Introduction</h1><div class="row"><div class="col-md-6"><p>The following sections give a simple overview how to make a simple TIM API integration
       without any special configurations. Therefore default values are used as often as possible to keep it simple.
       If special features are required, visit the section <a href="guide.html">Integration in Detail</a>
       for a more sophisticated overview.
     </p>
   </div></div></section>
-  <section><h1><a id="usageLibrary" name="usageLibrary">&#160;</a>Library usage</h1><div class="row"><div class="col-md-6"><p>As the TIM SDK offers the TIM API in multiple languages you can chose the one that is suitable for your platform.
+  <section><h1><a name="usageLibrary" id="usageLibrary">&#160;</a>Library usage</h1><div class="row"><div class="col-md-6"><p>As the TIM SDK offers the TIM API in multiple languages you can chose the one that is suitable for your platform.
       To use the TIM API <span lang="C">C you have to import the <b>Header-Files and LIB-File/DLL-File (on Windows) or so-File (on Unix)</b></span>
       <span lang="C Java Swift">into your project in the programming environment you are using. The file include path may have to be adjusted accordingly,
         depending where you place the TIM API.</span> </p>
           </div></div></section>
-          <section><h1><a id="usageSettings" name="usageSettings">&#160;</a>Minimal Settings</h1><div class="row"><div class="col-md-6"><p>To start right away only a minimal set of settings has to be given:
+          <section><h1><a name="usageSettings" id="usageSettings">&#160;</a>Minimal Settings</h1><div class="row"><div class="col-md-6"><p>To start right away only a minimal set of settings has to be given:
               <ul> <li lang="Java Swift C">Terminal ID: The ID of the terminal that shall be used afterwards. Used for broadcast connection (Default).</li>
                 <li>Terminal IP: The IP of the terminal that shall be used afterwards. Used if direct connection is used: ConnectionMode = OnFixIp</li>
                 <li lang="Java Swift C">ConnectionMode: Only if "OnFixIp" with set Terminal IP shall be used. (Default: ConnectionMode = Broadcast)
@@ -95,7 +95,7 @@
                   </div><div class="col-md-6">
                     </div></div>
               <div class="row"><div class="col-md-6"></div></div></section>
-              <section><h1><a id="simpleTransaction" name="simpleTransaction">&#160;</a>Simple Transaction</h1><div class="row"><div class="col-md-6">
+              <section><h1><a name="simpleTransaction" id="simpleTransaction">&#160;</a>Simple Transaction</h1><div class="row"><div class="col-md-6">
                     <p>
                       The flow on the right shows a simple transaction flow and which steps are done by which participant.
                       Note that for a simple use the integrator only needs to follow 4 simple steps, steps 1 to 4. Steps 1-4 can be performed multiple times (loop) if wished.
@@ -148,7 +148,7 @@
   <figure><img src="../assets/img/QuickTrxFlow_v6.png"><figcaption>Simple Transaction Flow</figcaption></figure>
 </div></div>
 <div class="row"><div class="col-md-6"></div></div></section>
-<section><h1><a id="simpleResponse" name="simpleResponse">&#160;</a>Simple Response Handling</h1><div class="row"><div class="col-md-6">
+<section><h1><a name="simpleResponse" id="simpleResponse">&#160;</a>Simple Response Handling</h1><div class="row"><div class="col-md-6">
       <p>The following section explains how to easily retrieve response data from the which is available after a transaction as described above.</p>
         <p>The first step is to implement your own terminal listener class wherein you overwrite the functions you want to use.
           If you are mainly interested in the transaction response you can use the following code:</p>

@@ -3,9 +3,9 @@
 <head>
   <meta charset="utf-8">
 
-  <link href="../assets/css/vendors.css" rel="stylesheet">
-  <link href="../assets/css/helppage.css" rel="stylesheet">
-  <link href="res/css/lang_specific.css" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/vendors.css">
+  <link rel="stylesheet" href="../assets/css/helppage.css">
+  <link rel="stylesheet" href="res/css/lang_specific.css">
 
   <title>TIM API documentation</title>
   <script src="../assets/js/vendors.js"></script>
@@ -16,37 +16,37 @@
   <script src="../assets/js/config.js"></script>
   <script src="doc/api_version.js"></script>
 </head>
-<body class="appendix" data-spy="scroll" data-target="#navScrollspy">
-  <div class="container-fluid" id="content">
+<body data-spy="scroll" data-target="#navScrollspy" class="appendix">
+  <div id="content" class="container-fluid">
     <div>
       <nav id="navScrollspy">
         <div id="stageBanner">STAGING VERSION!</div>
-        <div id="archiveBanner">ARCHIVED VERSION!<br><a href="../../../doc/index.html" id="currentLink">-&gt; link to current version</a></div>
-        <div class="affix" data-spy="affix" id="navbar">
+        <div id="archiveBanner">ARCHIVED VERSION!<br><a id="currentLink" href="../../../doc/index.html">-&gt; link to current version</a></div>
+        <div data-spy="affix" class="affix" id="navbar">
           <div id="projectname">TIM SDK</div>
           <div id="projectbrief">TIM API</div>
           <div id="vSep">&#160;</div>
           <div id="langSel">
             <ul class="langList">
               <li>
-                <a class="lang_java" href="../java/appendix.html">Java</a>
+                <a href="../java/appendix.html" class="lang_java">Java</a>
               </li>
               <li>
-                <a class="lang_cs" href="../cs/appendix.html">.NET</a>
+                <a href="../cs/appendix.html" class="lang_cs">.NET</a>
               </li>
               <li>
-                <a class="lang_swift" href="../swift/appendix.html">Swift</a>
+                <a href="../swift/appendix.html" class="lang_swift">Swift</a>
               </li>
               <li>
-                <a class="lang_js" href="../js/appendix.html">JavaScript</a>
+                <a href="../js/appendix.html" class="lang_js">JavaScript</a>
               </li>
               <li>
-                <a class="lang_c" href="../c/appendix.html">C</a>
+                <a href="../c/appendix.html" class="lang_c">C</a>
               </li>
             </ul>
           </div>
           <div id="guideDiv">
-            <div id="guideTitle">Guide Selection<div class="close_icon" id="closeGuideSel"></div></div>
+            <div id="guideTitle">Guide Selection<div id="closeGuideSel" class="close_icon"></div></div>
             <div id="guideSel"></div>
           </div>
           <div id="docTitle">Appendix</div>
@@ -66,7 +66,7 @@
       <span class="print-page-break"></span>
 
       <main>
-      <section><h1><a id="appendixResultCode" name="appendixResultCode">&#160;</a>ResultCodes</h1><div class="row"><div class="col-md-6"><p>The following section gives an overview how the ResultCodes on SIXml protocol side and on TIM API side clearly have to be differentiated.
+      <section><h1><a name="appendixResultCode" id="appendixResultCode">&#160;</a>ResultCodes</h1><div class="row"><div class="col-md-6"><p>The following section gives an overview how the ResultCodes on SIXml protocol side and on TIM API side clearly have to be differentiated.
         It is essential to know that on SIXml protocol side each ResultCode is returned as a numeric value while on TIM API side only enumerations are used,
         no numeric values. An integrator must never use the numeric integer value of a TIM API ResultCode enumeration, but only the enum value. This is due
         to the fact that the TIM API ResultCodes are fully generated and are internally mapped to the SIXml ResultCodes. The numeric int values of the TIM API enumeration
@@ -762,7 +762,7 @@ must not be used, but only directly the enum value "API_CANCEL_ECR".</code></pre
             </table>
         </p>
     </div></div></section>
-    <section><h1><a id="functionStateMatrix" name="functionStateMatrix">&#160;</a>Function-State-Matrix</h1><div class="row"><div class="col-md-6"><p>Legend:
+    <section><h1><a name="functionStateMatrix" id="functionStateMatrix">&#160;</a>Function-State-Matrix</h1><div class="row"><div class="col-md-6"><p>Legend:
         <ul>
           <li>B1-Retail</li>
           <li>B2-Petrol</li>
@@ -971,7 +971,7 @@ must not be used, but only directly the enum value "API_CANCEL_ECR".</code></pre
                 <th>CounterRequest</th>
                 <td>-</td>
                 <td>-</td>
-                <td>o</td>
+                <td>-</td>
                 <td>o</td>
                 <td>-</td>
                 <td>B1</td>

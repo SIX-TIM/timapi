@@ -957,6 +957,34 @@ automatic behaviors are enabled.</p>
       </tr>
     </tbody>
   </table>
+  <h3 id="fields">Fields
+  </h3>
+  
+  
+  <h4 id="SIX_TimApi_TerminalSettings_PathTimApiCfg" data-uid="SIX.TimApi.TerminalSettings.PathTimApiCfg">PathTimApiCfg</h4>
+  <div class="markdown level1 summary"><p>Path to configuration file to load. Default value is &quot;TimApi.cfg&quot;.
+Set this value before constructing a TerminalSettings instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string PathTimApiCfg</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="properties">Properties
   </h3>
   
@@ -1221,6 +1249,86 @@ reset in case client enters information in the terminal.</p>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><p>The connection ip string.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SIX_TimApi_TerminalSettings_ConnectionListen_" data-uid="SIX.TimApi.TerminalSettings.ConnectionListen*"></a>
+  <h4 id="SIX_TimApi_TerminalSettings_ConnectionListen" data-uid="SIX.TimApi.TerminalSettings.ConnectionListen">ConnectionListen</h4>
+  <div class="markdown level1 summary"><p>EFT connects to ECR instead of ECR connecting to EFT, which is the default way to connect.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ConnectionListen { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SIX_TimApi_TerminalSettings_ConnectionListenIPPort_" data-uid="SIX.TimApi.TerminalSettings.ConnectionListenIPPort*"></a>
+  <h4 id="SIX_TimApi_TerminalSettings_ConnectionListenIPPort" data-uid="SIX.TimApi.TerminalSettings.ConnectionListenIPPort">ConnectionListenIPPort</h4>
+  <div class="markdown level1 summary"><p>Listening Port of the ECR if listening.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int ConnectionListenIPPort { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>The connection listen ip port.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SIX_TimApi_TerminalSettings_ConnectionListenIPString_" data-uid="SIX.TimApi.TerminalSettings.ConnectionListenIPString*"></a>
+  <h4 id="SIX_TimApi_TerminalSettings_ConnectionListenIPString" data-uid="SIX.TimApi.TerminalSettings.ConnectionListenIPString">ConnectionListenIPString</h4>
+  <div class="markdown level1 summary"><p>IP address of the ECR if listening.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ConnectionListenIPString { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>The connection listen ip string.</p>
 </td>
       </tr>
     </tbody>

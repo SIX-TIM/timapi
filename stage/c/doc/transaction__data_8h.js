@@ -45,6 +45,7 @@ var transaction__data_8h =
     [ "ta_transaction_data_set_saferpay_alias", "transaction__data_8h.html#a194a70f01cb74a2cfbb132779a4ece72", null ],
     [ "ta_transaction_data_set_saferpay_recurring", "transaction__data_8h.html#ab9d288a8c2ba5eed69d4f53974f665f1", null ],
     [ "ta_transaction_data_set_six_trx_ref_num", "transaction__data_8h.html#aa83e18b9e389c85a84c3e7c2866ced87", null ],
+    [ "ta_transaction_data_set_six_trx_ref_num_mpd", "transaction__data_8h.html#ab6273becc251a3bc7c6065b076a78d0a", null ],
     [ "ta_transaction_data_set_sub_transactions", "transaction__data_8h.html#a4d46ee17fcea2b686f616c3e1bcd5464", null ],
     [ "ta_transaction_data_set_tip_allowed", "transaction__data_8h.html#a86e0b0efa79a17f414c6c92b4c95e646", null ],
     [ "ta_transaction_data_set_trans_ref", "transaction__data_8h.html#a54f522ef21e2ca52a13295c78ca9b0ed", null ],
