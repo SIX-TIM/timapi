@@ -1,6 +1,6 @@
 var result__code_8h =
 [
-    [ "ta_e_result_code_t", "result__code_8h.html#ae860ee870a289833a24a586ba0c24975", null ],
+    [ "ta_e_result_code_t", "result__code_8h.html#ab4ec13ca136d8c8377f07b334c5c431e", null ],
     [ "ta_e_result_code", "result__code_8h.html#aebaf00d1ceef4b827866ca9de0bd3320", [
       [ "ta_c_rc_undefined", "result__code_8h.html#aebaf00d1ceef4b827866ca9de0bd3320a5dbf0e984606a812164fb25f5863da59", null ],
       [ "ta_c_rc_ok", "result__code_8h.html#aebaf00d1ceef4b827866ca9de0bd3320a84e50ee40f863c70c7b2b65b08f2377f", null ],
@@ -124,6 +124,17 @@ var result__code_8h =
       [ "ta_c_rc_transaction_mismatch", "result__code_8h.html#aebaf00d1ceef4b827866ca9de0bd3320a02e174c4be1439584ba85c38f33fd9a8", null ],
       [ "ta_c_rc_voucher_cannot_be_reversed", "result__code_8h.html#aebaf00d1ceef4b827866ca9de0bd3320a8e0a20eb1b59bca11af409dc45b7174e", null ],
       [ "ta_c_rc_declined_amount_invalid", "result__code_8h.html#aebaf00d1ceef4b827866ca9de0bd3320ad420a6fe09471fd18a6ba1a532c296fb", null ],
+      [ "ta_c_rc_moc_products_not_allowed", "result__code_8h.html#aebaf00d1ceef4b827866ca9de0bd3320a1f934f67f6eaedbc8c60c51f80cf8694", null ],
+      [ "ta_c_rc_moc_incorrect_mileage", "result__code_8h.html#aebaf00d1ceef4b827866ca9de0bd3320ae2c58dc3941e438bbb75ead85da761da", null ],
+      [ "ta_c_rc_moc_incorrect_car_number", "result__code_8h.html#aebaf00d1ceef4b827866ca9de0bd3320a987f028c6e8592d519f0cefa9303b357", null ],
+      [ "ta_c_rc_moc_incorrect_driver_code", "result__code_8h.html#aebaf00d1ceef4b827866ca9de0bd3320a9d3bdeabdd5721ab16dd001560448c53", null ],
+      [ "ta_c_rc_moc_incorrect_fleet_id", "result__code_8h.html#aebaf00d1ceef4b827866ca9de0bd3320ad6960cdff7284052f814e3d92b02b082", null ],
+      [ "ta_c_rc_moc_incorrect_additional_info", "result__code_8h.html#aebaf00d1ceef4b827866ca9de0bd3320a51b1708e4bd16c55d8cba1ff7db75f86", null ],
+      [ "ta_c_rc_moc_incorrect_employee_number", "result__code_8h.html#aebaf00d1ceef4b827866ca9de0bd3320ac865fd27f182264cf4a4002e95662395", null ],
+      [ "ta_c_rc_moc_incorrect_cost_centre", "result__code_8h.html#aebaf00d1ceef4b827866ca9de0bd3320ae3ef2c8a90093c68ed18a5fd472af078", null ],
+      [ "ta_c_rc_moc_incorrect_project_number", "result__code_8h.html#aebaf00d1ceef4b827866ca9de0bd3320afb565d97fb5b0ad372d49772556652f8", null ],
+      [ "ta_c_rc_moc_incorrect_license_plate", "result__code_8h.html#aebaf00d1ceef4b827866ca9de0bd3320a294cc94164077d4b26a1c51b7c0820ef", null ],
+      [ "ta_c_rc_moc_incorrect_reference", "result__code_8h.html#aebaf00d1ceef4b827866ca9de0bd3320a01c8aca411db61883bfc71519a15da75", null ],
       [ "ta_c_rc_invalid_argument", "result__code_8h.html#aebaf00d1ceef4b827866ca9de0bd3320a306acc157474b36c57faa559c710d8c3", null ],
       [ "ta_c_rc_out_of_memory", "result__code_8h.html#aebaf00d1ceef4b827866ca9de0bd3320a1895fe80e9772f70ef54177746bfed4a", null ],
       [ "ta_c_rc_system_error", "result__code_8h.html#aebaf00d1ceef4b827866ca9de0bd3320a58db8236054739cfd49c849b0c16e1be", null ]

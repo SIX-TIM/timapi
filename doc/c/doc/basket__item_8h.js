@@ -8,6 +8,7 @@ var basket__item_8h =
     [ "ta_basket_item_get_amount_tax", "basket__item_8h.html#a78c5ba287a3d3eaceed0b30e172caff2", null ],
     [ "ta_basket_item_get_amount_total", "basket__item_8h.html#a60af6f285606c3c5725701d79df9204b", null ],
     [ "ta_basket_item_get_auth_result", "basket__item_8h.html#a5a0cdfa89065317cc3cae7d0aa999d02", null ],
+    [ "ta_basket_item_get_discount_id", "basket__item_8h.html#a779188dfc311a6d73ce7660b91a56c58", null ],
     [ "ta_basket_item_get_item_id", "basket__item_8h.html#afb96cfae52bce773ddcd3218d29f9034", null ],
     [ "ta_basket_item_get_item_quantity", "basket__item_8h.html#ac6165c6c2fcfec7a28d0d72ec2d23235", null ],
     [ "ta_basket_item_get_loyalty_id", "basket__item_8h.html#a54d6f5ffeebe8747b7c1e312588fe3e6", null ],
