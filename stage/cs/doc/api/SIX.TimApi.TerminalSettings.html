@@ -128,6 +128,9 @@
                             <a href="SIX.TimApi.DeactivateResponse.html" title="DeactivateResponse" class="">DeactivateResponse</a>
                           </li>
                           <li class="">
+                            <a href="SIX.TimApi.DefaultTerminalListener.html" title="DefaultTerminalListener" class="">DefaultTerminalListener</a>
+                          </li>
+                          <li class="">
                             <a href="SIX.TimApi.DisplayProductInfo.html" title="DisplayProductInfo" class="">DisplayProductInfo</a>
                           </li>
                           <li class="">
@@ -562,11 +565,17 @@
                           <li class="">
                             <a href="SIX.TimApi.Terminal.VasInfoHandler.html" title="Terminal.VasInfoHandler" class="">Terminal.VasInfoHandler</a>
                           </li>
+                          <li class="">
+                            <a href="SIX.TimApi.TerminalListener.html" title="TerminalListener" class="">TerminalListener</a>
+                          </li>
                           <li class="active">
                             <a href="SIX.TimApi.TerminalSettings.html" title="TerminalSettings" class="active">TerminalSettings</a>
                           </li>
                           <li class="">
                             <a href="SIX.TimApi.TerminalStatus.html" title="TerminalStatus" class="">TerminalStatus</a>
+                          </li>
+                          <li class="">
+                            <a href="SIX.TimApi.TimEvent.html" title="TimEvent" class="">TimEvent</a>
                           </li>
                           <li class="">
                             <a href="SIX.TimApi.TimException.html" title="TimException" class="">TimException</a>
@@ -2164,6 +2173,36 @@ This parameter is only used if {@link com.six.timapi.constants.Guides#GASTRO} is
         <td><span class="xref">System.Boolean</span></td>
         <td><p><code>true</code> if [tip allowed]; otherwise, <code>false</code>.</p>
 </td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SIX_TimApi_TerminalSettings_WakeupTimeout_" data-uid="SIX.TimApi.TerminalSettings.WakeupTimeout*"></a>
+  <h4 id="SIX_TimApi_TerminalSettings_WakeupTimeout" data-uid="SIX.TimApi.TerminalSettings.WakeupTimeout">WakeupTimeout</h4>
+  <div class="markdown level1 summary"><p>Returns the timeout for terminal wake-up operations.</p>
+<p>Wake up is only possible on terminals that support wake-up via ECR interface.
+The wake-up process is transparent to the user and is triggered by calling a
+function that needs the terminal.</p>
+<p>Default timeout is 20s.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int WakeupTimeout { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
       </tr>
     </tbody>
   </table>

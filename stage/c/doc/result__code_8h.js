@@ -74,6 +74,7 @@ var result__code_8h =
       [ "ta_c_rc_busy_maintenance", "result__code_8h.html#aebaf00d1ceef4b827866ca9de0bd3320a7f0d4eb443ea5dda12e7a8bcf0ad8e08", null ],
       [ "ta_c_rc_request_pending", "result__code_8h.html#aebaf00d1ceef4b827866ca9de0bd3320a2f5296fc10f58fbac7109640bc97bdbf", null ],
       [ "ta_c_rc_sixml_unsupported_request", "result__code_8h.html#aebaf00d1ceef4b827866ca9de0bd3320a3a16cd1001bc1108ed60694d3db4fb4f", null ],
+      [ "ta_c_rc_terminal_wakeup_failure", "result__code_8h.html#aebaf00d1ceef4b827866ca9de0bd3320a581214e90f02957b4ec4941657c8fedb", null ],
       [ "ta_c_rc_trx_no_common_applications", "result__code_8h.html#aebaf00d1ceef4b827866ca9de0bd3320a473e095cfb5890f88a80ecf3cb57b31f", null ],
       [ "ta_c_rc_trx_limit_exceeded", "result__code_8h.html#aebaf00d1ceef4b827866ca9de0bd3320a5cd1e6430fe8d550fb12b62de5b8c0c7", null ],
       [ "ta_c_rc_trx_no_common_cvm", "result__code_8h.html#aebaf00d1ceef4b827866ca9de0bd3320aebb7d8eb280d133422c7bb1ad51f98b4", null ],
