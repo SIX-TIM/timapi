@@ -9753,6 +9753,13 @@ $(document).ready(function(){initNavTree('search.html',''); initResizable(); });
   </doc>
   <doc>
     <field name="type">enumvalue</field>
+    <field name="name">ta_c_rc_terminal_wakeup_failure</field>
+    <field name="url">result__code_8h.html#aebaf00d1ceef4b827866ca9de0bd3320a581214e90f02957b4ec4941657c8fedb</field>
+    <field name="keywords">ta_c_rc_terminal_wakeup_failure</field>
+    <field name="text">Failure to wake the terminal from sleep Request cannot be processed Error message Terminal does not wake up Specification retail</field>
+  </doc>
+  <doc>
+    <field name="type">enumvalue</field>
     <field name="name">ta_c_rc_trx_no_common_applications</field>
     <field name="url">result__code_8h.html#aebaf00d1ceef4b827866ca9de0bd3320a473e095cfb5890f88a80ecf3cb57b31f</field>
     <field name="keywords">ta_c_rc_trx_no_common_applications</field>
@@ -10531,6 +10538,13 @@ $(document).ready(function(){initNavTree('search.html',''); initResizable(); });
     <field name="url">status__functions_8h.html#abf752dbd5ab3b758d2c21f390d8ef248af7cc7f4320c65688f8e6b8836a85c3a9</field>
     <field name="keywords">ta_c_sf_configuration_changed</field>
     <field name="text">Configuration changed function supported Specification retail</field>
+  </doc>
+  <doc>
+    <field name="type">enumvalue</field>
+    <field name="name">ta_c_sf_wake_up</field>
+    <field name="url">status__functions_8h.html#abf752dbd5ab3b758d2c21f390d8ef248a0c51b563c6a303d027a807c6f473b182</field>
+    <field name="keywords">ta_c_sf_wake_up</field>
+    <field name="text">WakeUp function supported Specification retail</field>
   </doc>
   <doc>
     <field name="type">file</field>
@@ -16694,6 +16708,22 @@ $(document).ready(function(){initNavTree('search.html',''); initResizable(); });
   </doc>
   <doc>
     <field name="type">function</field>
+    <field name="name">ta_terminal_settings_get_wakeup_timeout</field>
+    <field name="args">(ta_object_t settings, int *wakeup_timeout)</field>
+    <field name="url">terminal__settings_8h.html#a374feb4bd51e42e45ac495da6d9bf6fc</field>
+    <field name="keywords">ta_terminal_settings_get_wakeup_timeout</field>
+    <field name="text">Returns the timeout for terminal wake-up operations Wake up is only possible on terminals that support wake-up via ECR interface The wake-up process is transparent to the user and is triggered by calling a function that needs the terminal Default timeout is 2 0 s settings Object instance of type terminal_settings wakeup_timeout Pointer to variable to write value to ta_c_rc_ok Object instance written to wakeup_timeout ta_c_rc_invalid_argument settings is ta_object_invalid ta_c_rc_invalid_argument settings is not of type terminal_settings ta_c_rc_invalid_argument wakeup_timeout is null-pointer</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">ta_terminal_settings_set_wakeup_timeout</field>
+    <field name="args">(ta_object_t settings, int wakeup_timeout)</field>
+    <field name="url">terminal__settings_8h.html#a9ee4c4704df8b4fb926deec4520ea8a4</field>
+    <field name="keywords">ta_terminal_settings_set_wakeup_timeout</field>
+    <field name="text">Sets the timeout for terminal wake-up operations Wake up is only possible on terminals that support wake-up via ECR interface The wake-up process is transparent to the user and is triggered by calling a function that needs the terminal Default timeout is 2 0 s settings Object instance of type terminal_settings wakeup_timeout Value to set ta_c_rc_ok Value assigned to settings ta_c_rc_invalid_argument settings is ta_object_invalid ta_c_rc_invalid_argument settings is not of type terminal_settings ta_c_rc_invalid_argument wakeup_timeout is less than 0</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
     <field name="name">ta_terminal_settings_get_saferpay_terminal_id</field>
     <field name="args">(ta_object_t settings, ta_object_t *terminal_id)</field>
     <field name="url">terminal__settings_8h.html#a5f5fc21f0881bed8a33475583afb1187</field>
@@ -16872,7 +16902,7 @@ $(document).ready(function(){initNavTree('search.html',''); initResizable(); });
     <field name="args">(ta_object_t response, ta_object_t *localized_message)</field>
     <field name="url">tim__error_8h.html#ad0553a258d05900849f21f596e03cf93</field>
     <field name="keywords">ta_tim_error_get_localized_message</field>
-    <field name="text">Returns the localised error message in human readable form derived from the error code sent by the terminal The message will be in the merchant language of the terminal provided systemInformation() has been executed English otherwise response Object instance of type tim_error error_message Pointer to variable to write object instance to Object instance is of type string and is not retained Object instance is ta_object_invalid if value is not set in response ta_c_rc_ok Object instance written to error_message ta_c_rc_invalid_argument response is ta_object_invalid ta_c_rc_invalid_argument response is not of type tim_error ta_c_rc_invalid_argument error_message is null-pointer</field>
+    <field name="text">Returns the localised error message in human readable form derived from the error code sent by the terminal The message will be in the merchant language of the terminal provided systemInformation() has been executed English otherwise In contrary to ta_tim_error_get_error_message the string written to error_message retained This is due to this method generating an error message if no appropriate error message is present response Object instance of type tim_error error_message Pointer to variable to write object instance to Object instance is of type string and is retained Object instance is ta_object_invalid if value is not set in response ta_c_rc_ok Object instance written to error_message ta_c_rc_invalid_argument response is ta_object_invalid ta_c_rc_invalid_argument response is not of type tim_error ta_c_rc_invalid_argument error_message is null-pointer</field>
   </doc>
   <doc>
     <field name="type">function</field>
@@ -16880,7 +16910,7 @@ $(document).ready(function(){initNavTree('search.html',''); initResizable(); });
     <field name="args">(ta_object_t response, const char *language, ta_object_t *localized_message)</field>
     <field name="url">tim__error_8h.html#ad27f349d0651d4f08bbae5831fa5f23a</field>
     <field name="keywords">ta_tim_error_get_localized_message2</field>
-    <field name="text">Returns the localised error message in human readable form derived from the error code sent by the terminal The message will be in the language supplied in the parameter Valid language strings are currently defaults to defaults to defaults to response Object instance of type tim_error language Language error_message Pointer to variable to write object instance to Object instance is of type string and is not retained Object instance is ta_object_invalid if value is not set in response ta_c_rc_ok Object instance written to error_message ta_c_rc_invalid_argument response is ta_object_invalid ta_c_rc_invalid_argument response is not of type tim_error ta_c_rc_invalid_argument language is 0 ta_c_rc_invalid_argument error_message is null-pointer</field>
+    <field name="text">Returns the localised error message in human readable form derived from the error code sent by the terminal The message will be in the language supplied in the parameter Valid language strings are currently defaults to defaults to defaults to In contrary to ta_tim_error_get_error_message the string written to error_message retained This is due to this method generating an error message if no appropriate error message is present response Object instance of type tim_error language Language error_message Pointer to variable to write object instance to Object instance is of type string and is retained Object instance is ta_object_invalid if value is not set in response ta_c_rc_ok Object instance written to error_message ta_c_rc_invalid_argument response is ta_object_invalid ta_c_rc_invalid_argument response is not of type tim_error ta_c_rc_invalid_argument language is 0 ta_c_rc_invalid_argument error_message is null-pointer</field>
   </doc>
   <doc>
     <field name="type">function</field>
@@ -18731,6 +18761,13 @@ $(document).ready(function(){initNavTree('search.html',''); initResizable(); });
     <field name="url">structta__s__features__sixml.html#a7913405de7bb720675aa950bd05c7208</field>
     <field name="keywords">custom_init_trx_screen ta_s_features_sixml::custom_init_trx_screen ta_s_features_sixml</field>
     <field name="text">Custom init transaction screen supported</field>
+  </doc>
+  <doc>
+    <field name="type">variable</field>
+    <field name="name">ta_s_features_sixml::wake_up</field>
+    <field name="url">structta__s__features__sixml.html#afaa2f036b784215b0da9e8cd6aac60a1</field>
+    <field name="keywords">wake_up ta_s_features_sixml::wake_up ta_s_features_sixml</field>
+    <field name="text">Wake up support</field>
   </doc>
   <doc>
     <field name="type">struct</field>

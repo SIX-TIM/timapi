@@ -6786,6 +6786,12 @@ references:
   commentId: F:SIX.TimApi.Constants.ResultCode.SwVersionNotSuitable
   fullName: SIX.TimApi.Constants.ResultCode.SwVersionNotSuitable
   nameWithType: ResultCode.SwVersionNotSuitable
+- uid: SIX.TimApi.Constants.ResultCode.TerminalWakeupFailure
+  name: TerminalWakeupFailure
+  href: api/SIX.TimApi.Constants.ResultCode.html#SIX_TimApi_Constants_ResultCode_TerminalWakeupFailure
+  commentId: F:SIX.TimApi.Constants.ResultCode.TerminalWakeupFailure
+  fullName: SIX.TimApi.Constants.ResultCode.TerminalWakeupFailure
+  nameWithType: ResultCode.TerminalWakeupFailure
 - uid: SIX.TimApi.Constants.ResultCode.TimCommunicationFailure
   name: TimCommunicationFailure
   href: api/SIX.TimApi.Constants.ResultCode.html#SIX_TimApi_Constants_ResultCode_TimCommunicationFailure
@@ -7092,6 +7098,12 @@ references:
   commentId: F:SIX.TimApi.Constants.StatusFunctions.VasInfo
   fullName: SIX.TimApi.Constants.StatusFunctions.VasInfo
   nameWithType: StatusFunctions.VasInfo
+- uid: SIX.TimApi.Constants.StatusFunctions.WakeUp
+  name: WakeUp
+  href: api/SIX.TimApi.Constants.StatusFunctions.html#SIX_TimApi_Constants_StatusFunctions_WakeUp
+  commentId: F:SIX.TimApi.Constants.StatusFunctions.WakeUp
+  fullName: SIX.TimApi.Constants.StatusFunctions.WakeUp
+  nameWithType: StatusFunctions.WakeUp
 - uid: SIX.TimApi.Constants.Theme
   name: Theme
   href: api/SIX.TimApi.Constants.Theme.html
@@ -8166,6 +8178,736 @@ references:
   isSpec: "True"
   fullName: SIX.TimApi.DeactivateResponse.ToString
   nameWithType: DeactivateResponse.ToString
+- uid: SIX.TimApi.DefaultTerminalListener
+  name: DefaultTerminalListener
+  href: api/SIX.TimApi.DefaultTerminalListener.html
+  commentId: T:SIX.TimApi.DefaultTerminalListener
+  fullName: SIX.TimApi.DefaultTerminalListener
+  nameWithType: DefaultTerminalListener
+- uid: SIX.TimApi.DefaultTerminalListener.#ctor
+  name: DefaultTerminalListener()
+  href: api/SIX.TimApi.DefaultTerminalListener.html#SIX_TimApi_DefaultTerminalListener__ctor
+  commentId: M:SIX.TimApi.DefaultTerminalListener.#ctor
+  fullName: SIX.TimApi.DefaultTerminalListener.DefaultTerminalListener()
+  nameWithType: DefaultTerminalListener.DefaultTerminalListener()
+- uid: SIX.TimApi.DefaultTerminalListener.#ctor*
+  name: DefaultTerminalListener
+  href: api/SIX.TimApi.DefaultTerminalListener.html#SIX_TimApi_DefaultTerminalListener__ctor_
+  commentId: Overload:SIX.TimApi.DefaultTerminalListener.#ctor
+  isSpec: "True"
+  fullName: SIX.TimApi.DefaultTerminalListener.DefaultTerminalListener
+  nameWithType: DefaultTerminalListener.DefaultTerminalListener
+- uid: SIX.TimApi.DefaultTerminalListener.ActivateCompleted(SIX.TimApi.TimEvent,SIX.TimApi.ActivateResponse)
+  name: ActivateCompleted(TimEvent, ActivateResponse)
+  href: api/SIX.TimApi.DefaultTerminalListener.html#SIX_TimApi_DefaultTerminalListener_ActivateCompleted_SIX_TimApi_TimEvent_SIX_TimApi_ActivateResponse_
+  commentId: M:SIX.TimApi.DefaultTerminalListener.ActivateCompleted(SIX.TimApi.TimEvent,SIX.TimApi.ActivateResponse)
+  fullName: SIX.TimApi.DefaultTerminalListener.ActivateCompleted(SIX.TimApi.TimEvent, SIX.TimApi.ActivateResponse)
+  nameWithType: DefaultTerminalListener.ActivateCompleted(TimEvent, ActivateResponse)
+- uid: SIX.TimApi.DefaultTerminalListener.ActivateCompleted*
+  name: ActivateCompleted
+  href: api/SIX.TimApi.DefaultTerminalListener.html#SIX_TimApi_DefaultTerminalListener_ActivateCompleted_
+  commentId: Overload:SIX.TimApi.DefaultTerminalListener.ActivateCompleted
+  isSpec: "True"
+  fullName: SIX.TimApi.DefaultTerminalListener.ActivateCompleted
+  nameWithType: DefaultTerminalListener.ActivateCompleted
+- uid: SIX.TimApi.DefaultTerminalListener.ActivateServiceMenuCompleted(SIX.TimApi.TimEvent)
+  name: ActivateServiceMenuCompleted(TimEvent)
+  href: api/SIX.TimApi.DefaultTerminalListener.html#SIX_TimApi_DefaultTerminalListener_ActivateServiceMenuCompleted_SIX_TimApi_TimEvent_
+  commentId: M:SIX.TimApi.DefaultTerminalListener.ActivateServiceMenuCompleted(SIX.TimApi.TimEvent)
+  fullName: SIX.TimApi.DefaultTerminalListener.ActivateServiceMenuCompleted(SIX.TimApi.TimEvent)
+  nameWithType: DefaultTerminalListener.ActivateServiceMenuCompleted(TimEvent)
+- uid: SIX.TimApi.DefaultTerminalListener.ActivateServiceMenuCompleted*
+  name: ActivateServiceMenuCompleted
+  href: api/SIX.TimApi.DefaultTerminalListener.html#SIX_TimApi_DefaultTerminalListener_ActivateServiceMenuCompleted_
+  commentId: Overload:SIX.TimApi.DefaultTerminalListener.ActivateServiceMenuCompleted
+  isSpec: "True"
+  fullName: SIX.TimApi.DefaultTerminalListener.ActivateServiceMenuCompleted
+  nameWithType: DefaultTerminalListener.ActivateServiceMenuCompleted
+- uid: SIX.TimApi.DefaultTerminalListener.ApplicationInformationCompleted(SIX.TimApi.TimEvent)
+  name: ApplicationInformationCompleted(TimEvent)
+  href: api/SIX.TimApi.DefaultTerminalListener.html#SIX_TimApi_DefaultTerminalListener_ApplicationInformationCompleted_SIX_TimApi_TimEvent_
+  commentId: M:SIX.TimApi.DefaultTerminalListener.ApplicationInformationCompleted(SIX.TimApi.TimEvent)
+  fullName: SIX.TimApi.DefaultTerminalListener.ApplicationInformationCompleted(SIX.TimApi.TimEvent)
+  nameWithType: DefaultTerminalListener.ApplicationInformationCompleted(TimEvent)
+- uid: SIX.TimApi.DefaultTerminalListener.ApplicationInformationCompleted*
+  name: ApplicationInformationCompleted
+  href: api/SIX.TimApi.DefaultTerminalListener.html#SIX_TimApi_DefaultTerminalListener_ApplicationInformationCompleted_
+  commentId: Overload:SIX.TimApi.DefaultTerminalListener.ApplicationInformationCompleted
+  isSpec: "True"
+  fullName: SIX.TimApi.DefaultTerminalListener.ApplicationInformationCompleted
+  nameWithType: DefaultTerminalListener.ApplicationInformationCompleted
+- uid: SIX.TimApi.DefaultTerminalListener.BalanceCompleted(SIX.TimApi.TimEvent,SIX.TimApi.BalanceResponse)
+  name: BalanceCompleted(TimEvent, BalanceResponse)
+  href: api/SIX.TimApi.DefaultTerminalListener.html#SIX_TimApi_DefaultTerminalListener_BalanceCompleted_SIX_TimApi_TimEvent_SIX_TimApi_BalanceResponse_
+  commentId: M:SIX.TimApi.DefaultTerminalListener.BalanceCompleted(SIX.TimApi.TimEvent,SIX.TimApi.BalanceResponse)
+  fullName: SIX.TimApi.DefaultTerminalListener.BalanceCompleted(SIX.TimApi.TimEvent, SIX.TimApi.BalanceResponse)
+  nameWithType: DefaultTerminalListener.BalanceCompleted(TimEvent, BalanceResponse)
+- uid: SIX.TimApi.DefaultTerminalListener.BalanceCompleted*
+  name: BalanceCompleted
+  href: api/SIX.TimApi.DefaultTerminalListener.html#SIX_TimApi_DefaultTerminalListener_BalanceCompleted_
+  commentId: Overload:SIX.TimApi.DefaultTerminalListener.BalanceCompleted
+  isSpec: "True"
+  fullName: SIX.TimApi.DefaultTerminalListener.BalanceCompleted
+  nameWithType: DefaultTerminalListener.BalanceCompleted
+- uid: SIX.TimApi.DefaultTerminalListener.BalanceInquiryCompleted(SIX.TimApi.TimEvent,SIX.TimApi.BalanceInquiryResponse)
+  name: BalanceInquiryCompleted(TimEvent, BalanceInquiryResponse)
+  href: api/SIX.TimApi.DefaultTerminalListener.html#SIX_TimApi_DefaultTerminalListener_BalanceInquiryCompleted_SIX_TimApi_TimEvent_SIX_TimApi_BalanceInquiryResponse_
+  commentId: M:SIX.TimApi.DefaultTerminalListener.BalanceInquiryCompleted(SIX.TimApi.TimEvent,SIX.TimApi.BalanceInquiryResponse)
+  fullName: SIX.TimApi.DefaultTerminalListener.BalanceInquiryCompleted(SIX.TimApi.TimEvent, SIX.TimApi.BalanceInquiryResponse)
+  nameWithType: DefaultTerminalListener.BalanceInquiryCompleted(TimEvent, BalanceInquiryResponse)
+- uid: SIX.TimApi.DefaultTerminalListener.BalanceInquiryCompleted*
+  name: BalanceInquiryCompleted
+  href: api/SIX.TimApi.DefaultTerminalListener.html#SIX_TimApi_DefaultTerminalListener_BalanceInquiryCompleted_
+  commentId: Overload:SIX.TimApi.DefaultTerminalListener.BalanceInquiryCompleted
+  isSpec: "True"
+  fullName: SIX.TimApi.DefaultTerminalListener.BalanceInquiryCompleted
+  nameWithType: DefaultTerminalListener.BalanceInquiryCompleted
+- uid: SIX.TimApi.DefaultTerminalListener.ChangeSettingsCompleted(SIX.TimApi.TimEvent)
+  name: ChangeSettingsCompleted(TimEvent)
+  href: api/SIX.TimApi.DefaultTerminalListener.html#SIX_TimApi_DefaultTerminalListener_ChangeSettingsCompleted_SIX_TimApi_TimEvent_
+  commentId: M:SIX.TimApi.DefaultTerminalListener.ChangeSettingsCompleted(SIX.TimApi.TimEvent)
+  fullName: SIX.TimApi.DefaultTerminalListener.ChangeSettingsCompleted(SIX.TimApi.TimEvent)
+  nameWithType: DefaultTerminalListener.ChangeSettingsCompleted(TimEvent)
+- uid: SIX.TimApi.DefaultTerminalListener.ChangeSettingsCompleted*
+  name: ChangeSettingsCompleted
+  href: api/SIX.TimApi.DefaultTerminalListener.html#SIX_TimApi_DefaultTerminalListener_ChangeSettingsCompleted_
+  commentId: Overload:SIX.TimApi.DefaultTerminalListener.ChangeSettingsCompleted
+  isSpec: "True"
+  fullName: SIX.TimApi.DefaultTerminalListener.ChangeSettingsCompleted
+  nameWithType: DefaultTerminalListener.ChangeSettingsCompleted
+- uid: SIX.TimApi.DefaultTerminalListener.ClientIdentificationCompleted(SIX.TimApi.TimEvent,SIX.TimApi.ClientIdentificationResponse)
+  name: ClientIdentificationCompleted(TimEvent, ClientIdentificationResponse)
+  href: api/SIX.TimApi.DefaultTerminalListener.html#SIX_TimApi_DefaultTerminalListener_ClientIdentificationCompleted_SIX_TimApi_TimEvent_SIX_TimApi_ClientIdentificationResponse_
+  commentId: M:SIX.TimApi.DefaultTerminalListener.ClientIdentificationCompleted(SIX.TimApi.TimEvent,SIX.TimApi.ClientIdentificationResponse)
+  fullName: SIX.TimApi.DefaultTerminalListener.ClientIdentificationCompleted(SIX.TimApi.TimEvent, SIX.TimApi.ClientIdentificationResponse)
+  nameWithType: DefaultTerminalListener.ClientIdentificationCompleted(TimEvent, ClientIdentificationResponse)
+- uid: SIX.TimApi.DefaultTerminalListener.ClientIdentificationCompleted*
+  name: ClientIdentificationCompleted
+  href: api/SIX.TimApi.DefaultTerminalListener.html#SIX_TimApi_DefaultTerminalListener_ClientIdentificationCompleted_
+  commentId: Overload:SIX.TimApi.DefaultTerminalListener.ClientIdentificationCompleted
+  isSpec: "True"
+  fullName: SIX.TimApi.DefaultTerminalListener.ClientIdentificationCompleted
+  nameWithType: DefaultTerminalListener.ClientIdentificationCompleted
+- uid: SIX.TimApi.DefaultTerminalListener.CloseDialogModeCompleted(SIX.TimApi.TimEvent)
+  name: CloseDialogModeCompleted(TimEvent)
+  href: api/SIX.TimApi.DefaultTerminalListener.html#SIX_TimApi_DefaultTerminalListener_CloseDialogModeCompleted_SIX_TimApi_TimEvent_
+  commentId: M:SIX.TimApi.DefaultTerminalListener.CloseDialogModeCompleted(SIX.TimApi.TimEvent)
+  fullName: SIX.TimApi.DefaultTerminalListener.CloseDialogModeCompleted(SIX.TimApi.TimEvent)
+  nameWithType: DefaultTerminalListener.CloseDialogModeCompleted(TimEvent)
+- uid: SIX.TimApi.DefaultTerminalListener.CloseDialogModeCompleted*
+  name: CloseDialogModeCompleted
+  href: api/SIX.TimApi.DefaultTerminalListener.html#SIX_TimApi_DefaultTerminalListener_CloseDialogModeCompleted_
+  commentId: Overload:SIX.TimApi.DefaultTerminalListener.CloseDialogModeCompleted
+  isSpec: "True"
+  fullName: SIX.TimApi.DefaultTerminalListener.CloseDialogModeCompleted
+  nameWithType: DefaultTerminalListener.CloseDialogModeCompleted
+- uid: SIX.TimApi.DefaultTerminalListener.CloseMaintenanceWindowCompleted(SIX.TimApi.TimEvent)
+  name: CloseMaintenanceWindowCompleted(TimEvent)
+  href: api/SIX.TimApi.DefaultTerminalListener.html#SIX_TimApi_DefaultTerminalListener_CloseMaintenanceWindowCompleted_SIX_TimApi_TimEvent_
+  commentId: M:SIX.TimApi.DefaultTerminalListener.CloseMaintenanceWindowCompleted(SIX.TimApi.TimEvent)
+  fullName: SIX.TimApi.DefaultTerminalListener.CloseMaintenanceWindowCompleted(SIX.TimApi.TimEvent)
+  nameWithType: DefaultTerminalListener.CloseMaintenanceWindowCompleted(TimEvent)
+- uid: SIX.TimApi.DefaultTerminalListener.CloseMaintenanceWindowCompleted*
+  name: CloseMaintenanceWindowCompleted
+  href: api/SIX.TimApi.DefaultTerminalListener.html#SIX_TimApi_DefaultTerminalListener_CloseMaintenanceWindowCompleted_
+  commentId: Overload:SIX.TimApi.DefaultTerminalListener.CloseMaintenanceWindowCompleted
+  isSpec: "True"
+  fullName: SIX.TimApi.DefaultTerminalListener.CloseMaintenanceWindowCompleted
+  nameWithType: DefaultTerminalListener.CloseMaintenanceWindowCompleted
+- uid: SIX.TimApi.DefaultTerminalListener.CloseReaderCompleted(SIX.TimApi.TimEvent)
+  name: CloseReaderCompleted(TimEvent)
+  href: api/SIX.TimApi.DefaultTerminalListener.html#SIX_TimApi_DefaultTerminalListener_CloseReaderCompleted_SIX_TimApi_TimEvent_
+  commentId: M:SIX.TimApi.DefaultTerminalListener.CloseReaderCompleted(SIX.TimApi.TimEvent)
+  fullName: SIX.TimApi.DefaultTerminalListener.CloseReaderCompleted(SIX.TimApi.TimEvent)
+  nameWithType: DefaultTerminalListener.CloseReaderCompleted(TimEvent)
+- uid: SIX.TimApi.DefaultTerminalListener.CloseReaderCompleted*
+  name: CloseReaderCompleted
+  href: api/SIX.TimApi.DefaultTerminalListener.html#SIX_TimApi_DefaultTerminalListener_CloseReaderCompleted_
+  commentId: Overload:SIX.TimApi.DefaultTerminalListener.CloseReaderCompleted
+  isSpec: "True"
+  fullName: SIX.TimApi.DefaultTerminalListener.CloseReaderCompleted
+  nameWithType: DefaultTerminalListener.CloseReaderCompleted
+- uid: SIX.TimApi.DefaultTerminalListener.CommitCompleted(SIX.TimApi.TimEvent,SIX.TimApi.PrintData)
+  name: CommitCompleted(TimEvent, PrintData)
+  href: api/SIX.TimApi.DefaultTerminalListener.html#SIX_TimApi_DefaultTerminalListener_CommitCompleted_SIX_TimApi_TimEvent_SIX_TimApi_PrintData_
+  commentId: M:SIX.TimApi.DefaultTerminalListener.CommitCompleted(SIX.TimApi.TimEvent,SIX.TimApi.PrintData)
+  fullName: SIX.TimApi.DefaultTerminalListener.CommitCompleted(SIX.TimApi.TimEvent, SIX.TimApi.PrintData)
+  nameWithType: DefaultTerminalListener.CommitCompleted(TimEvent, PrintData)
+- uid: SIX.TimApi.DefaultTerminalListener.CommitCompleted*
+  name: CommitCompleted
+  href: api/SIX.TimApi.DefaultTerminalListener.html#SIX_TimApi_DefaultTerminalListener_CommitCompleted_
+  commentId: Overload:SIX.TimApi.DefaultTerminalListener.CommitCompleted
+  isSpec: "True"
+  fullName: SIX.TimApi.DefaultTerminalListener.CommitCompleted
+  nameWithType: DefaultTerminalListener.CommitCompleted
+- uid: SIX.TimApi.DefaultTerminalListener.ConnectCompleted(SIX.TimApi.TimEvent)
+  name: ConnectCompleted(TimEvent)
+  href: api/SIX.TimApi.DefaultTerminalListener.html#SIX_TimApi_DefaultTerminalListener_ConnectCompleted_SIX_TimApi_TimEvent_
+  commentId: M:SIX.TimApi.DefaultTerminalListener.ConnectCompleted(SIX.TimApi.TimEvent)
+  fullName: SIX.TimApi.DefaultTerminalListener.ConnectCompleted(SIX.TimApi.TimEvent)
+  nameWithType: DefaultTerminalListener.ConnectCompleted(TimEvent)
+- uid: SIX.TimApi.DefaultTerminalListener.ConnectCompleted*
+  name: ConnectCompleted
+  href: api/SIX.TimApi.DefaultTerminalListener.html#SIX_TimApi_DefaultTerminalListener_ConnectCompleted_
+  commentId: Overload:SIX.TimApi.DefaultTerminalListener.ConnectCompleted
+  isSpec: "True"
+  fullName: SIX.TimApi.DefaultTerminalListener.ConnectCompleted
+  nameWithType: DefaultTerminalListener.ConnectCompleted
+- uid: SIX.TimApi.DefaultTerminalListener.CounterRequestCompleted(SIX.TimApi.TimEvent,SIX.TimApi.CounterList)
+  name: CounterRequestCompleted(TimEvent, CounterList)
+  href: api/SIX.TimApi.DefaultTerminalListener.html#SIX_TimApi_DefaultTerminalListener_CounterRequestCompleted_SIX_TimApi_TimEvent_SIX_TimApi_CounterList_
+  commentId: M:SIX.TimApi.DefaultTerminalListener.CounterRequestCompleted(SIX.TimApi.TimEvent,SIX.TimApi.CounterList)
+  fullName: SIX.TimApi.DefaultTerminalListener.CounterRequestCompleted(SIX.TimApi.TimEvent, SIX.TimApi.CounterList)
+  nameWithType: DefaultTerminalListener.CounterRequestCompleted(TimEvent, CounterList)
+- uid: SIX.TimApi.DefaultTerminalListener.CounterRequestCompleted*
+  name: CounterRequestCompleted
+  href: api/SIX.TimApi.DefaultTerminalListener.html#SIX_TimApi_DefaultTerminalListener_CounterRequestCompleted_
+  commentId: Overload:SIX.TimApi.DefaultTerminalListener.CounterRequestCompleted
+  isSpec: "True"
+  fullName: SIX.TimApi.DefaultTerminalListener.CounterRequestCompleted
+  nameWithType: DefaultTerminalListener.CounterRequestCompleted
+- uid: SIX.TimApi.DefaultTerminalListener.DccRatesCompleted(SIX.TimApi.TimEvent,SIX.TimApi.PrintData)
+  name: DccRatesCompleted(TimEvent, PrintData)
+  href: api/SIX.TimApi.DefaultTerminalListener.html#SIX_TimApi_DefaultTerminalListener_DccRatesCompleted_SIX_TimApi_TimEvent_SIX_TimApi_PrintData_
+  commentId: M:SIX.TimApi.DefaultTerminalListener.DccRatesCompleted(SIX.TimApi.TimEvent,SIX.TimApi.PrintData)
+  fullName: SIX.TimApi.DefaultTerminalListener.DccRatesCompleted(SIX.TimApi.TimEvent, SIX.TimApi.PrintData)
+  nameWithType: DefaultTerminalListener.DccRatesCompleted(TimEvent, PrintData)
+- uid: SIX.TimApi.DefaultTerminalListener.DccRatesCompleted*
+  name: DccRatesCompleted
+  href: api/SIX.TimApi.DefaultTerminalListener.html#SIX_TimApi_DefaultTerminalListener_DccRatesCompleted_
+  commentId: Overload:SIX.TimApi.DefaultTerminalListener.DccRatesCompleted
+  isSpec: "True"
+  fullName: SIX.TimApi.DefaultTerminalListener.DccRatesCompleted
+  nameWithType: DefaultTerminalListener.DccRatesCompleted
+- uid: SIX.TimApi.DefaultTerminalListener.DeactivateCompleted(SIX.TimApi.TimEvent,SIX.TimApi.DeactivateResponse)
+  name: DeactivateCompleted(TimEvent, DeactivateResponse)
+  href: api/SIX.TimApi.DefaultTerminalListener.html#SIX_TimApi_DefaultTerminalListener_DeactivateCompleted_SIX_TimApi_TimEvent_SIX_TimApi_DeactivateResponse_
+  commentId: M:SIX.TimApi.DefaultTerminalListener.DeactivateCompleted(SIX.TimApi.TimEvent,SIX.TimApi.DeactivateResponse)
+  fullName: SIX.TimApi.DefaultTerminalListener.DeactivateCompleted(SIX.TimApi.TimEvent, SIX.TimApi.DeactivateResponse)
+  nameWithType: DefaultTerminalListener.DeactivateCompleted(TimEvent, DeactivateResponse)
+- uid: SIX.TimApi.DefaultTerminalListener.DeactivateCompleted*
+  name: DeactivateCompleted
+  href: api/SIX.TimApi.DefaultTerminalListener.html#SIX_TimApi_DefaultTerminalListener_DeactivateCompleted_
+  commentId: Overload:SIX.TimApi.DefaultTerminalListener.DeactivateCompleted
+  isSpec: "True"
+  fullName: SIX.TimApi.DefaultTerminalListener.DeactivateCompleted
+  nameWithType: DefaultTerminalListener.DeactivateCompleted
+- uid: SIX.TimApi.DefaultTerminalListener.DeferredAuth(SIX.TimApi.Terminal,SIX.TimApi.TransactionResponse)
+  name: DeferredAuth(Terminal, TransactionResponse)
+  href: api/SIX.TimApi.DefaultTerminalListener.html#SIX_TimApi_DefaultTerminalListener_DeferredAuth_SIX_TimApi_Terminal_SIX_TimApi_TransactionResponse_
+  commentId: M:SIX.TimApi.DefaultTerminalListener.DeferredAuth(SIX.TimApi.Terminal,SIX.TimApi.TransactionResponse)
+  fullName: SIX.TimApi.DefaultTerminalListener.DeferredAuth(SIX.TimApi.Terminal, SIX.TimApi.TransactionResponse)
+  nameWithType: DefaultTerminalListener.DeferredAuth(Terminal, TransactionResponse)
+- uid: SIX.TimApi.DefaultTerminalListener.DeferredAuth*
+  name: DeferredAuth
+  href: api/SIX.TimApi.DefaultTerminalListener.html#SIX_TimApi_DefaultTerminalListener_DeferredAuth_
+  commentId: Overload:SIX.TimApi.DefaultTerminalListener.DeferredAuth
+  isSpec: "True"
+  fullName: SIX.TimApi.DefaultTerminalListener.DeferredAuth
+  nameWithType: DefaultTerminalListener.DeferredAuth
+- uid: SIX.TimApi.DefaultTerminalListener.DeviceMaintenanceCompleted(SIX.TimApi.TimEvent)
+  name: DeviceMaintenanceCompleted(TimEvent)
+  href: api/SIX.TimApi.DefaultTerminalListener.html#SIX_TimApi_DefaultTerminalListener_DeviceMaintenanceCompleted_SIX_TimApi_TimEvent_
+  commentId: M:SIX.TimApi.DefaultTerminalListener.DeviceMaintenanceCompleted(SIX.TimApi.TimEvent)
+  fullName: SIX.TimApi.DefaultTerminalListener.DeviceMaintenanceCompleted(SIX.TimApi.TimEvent)
+  nameWithType: DefaultTerminalListener.DeviceMaintenanceCompleted(TimEvent)
+- uid: SIX.TimApi.DefaultTerminalListener.DeviceMaintenanceCompleted*
+  name: DeviceMaintenanceCompleted
+  href: api/SIX.TimApi.DefaultTerminalListener.html#SIX_TimApi_DefaultTerminalListener_DeviceMaintenanceCompleted_
+  commentId: Overload:SIX.TimApi.DefaultTerminalListener.DeviceMaintenanceCompleted
+  isSpec: "True"
+  fullName: SIX.TimApi.DefaultTerminalListener.DeviceMaintenanceCompleted
+  nameWithType: DefaultTerminalListener.DeviceMaintenanceCompleted
+- uid: SIX.TimApi.DefaultTerminalListener.Disconnected(SIX.TimApi.Terminal,SIX.TimApi.TimException)
+  name: Disconnected(Terminal, TimException)
+  href: api/SIX.TimApi.DefaultTerminalListener.html#SIX_TimApi_DefaultTerminalListener_Disconnected_SIX_TimApi_Terminal_SIX_TimApi_TimException_
+  commentId: M:SIX.TimApi.DefaultTerminalListener.Disconnected(SIX.TimApi.Terminal,SIX.TimApi.TimException)
+  fullName: SIX.TimApi.DefaultTerminalListener.Disconnected(SIX.TimApi.Terminal, SIX.TimApi.TimException)
+  nameWithType: DefaultTerminalListener.Disconnected(Terminal, TimException)
+- uid: SIX.TimApi.DefaultTerminalListener.Disconnected*
+  name: Disconnected
+  href: api/SIX.TimApi.DefaultTerminalListener.html#SIX_TimApi_DefaultTerminalListener_Disconnected_
+  commentId: Overload:SIX.TimApi.DefaultTerminalListener.Disconnected
+  isSpec: "True"
+  fullName: SIX.TimApi.DefaultTerminalListener.Disconnected
+  nameWithType: DefaultTerminalListener.Disconnected
+- uid: SIX.TimApi.DefaultTerminalListener.EjectCardCompleted(SIX.TimApi.TimEvent)
+  name: EjectCardCompleted(TimEvent)
+  href: api/SIX.TimApi.DefaultTerminalListener.html#SIX_TimApi_DefaultTerminalListener_EjectCardCompleted_SIX_TimApi_TimEvent_
+  commentId: M:SIX.TimApi.DefaultTerminalListener.EjectCardCompleted(SIX.TimApi.TimEvent)
+  fullName: SIX.TimApi.DefaultTerminalListener.EjectCardCompleted(SIX.TimApi.TimEvent)
+  nameWithType: DefaultTerminalListener.EjectCardCompleted(TimEvent)
+- uid: SIX.TimApi.DefaultTerminalListener.EjectCardCompleted*
+  name: EjectCardCompleted
+  href: api/SIX.TimApi.DefaultTerminalListener.html#SIX_TimApi_DefaultTerminalListener_EjectCardCompleted_
+  commentId: Overload:SIX.TimApi.DefaultTerminalListener.EjectCardCompleted
+  isSpec: "True"
+  fullName: SIX.TimApi.DefaultTerminalListener.EjectCardCompleted
+  nameWithType: DefaultTerminalListener.EjectCardCompleted
+- uid: SIX.TimApi.DefaultTerminalListener.ErrorNotification(SIX.TimApi.Terminal,SIX.TimApi.TimException)
+  name: ErrorNotification(Terminal, TimException)
+  href: api/SIX.TimApi.DefaultTerminalListener.html#SIX_TimApi_DefaultTerminalListener_ErrorNotification_SIX_TimApi_Terminal_SIX_TimApi_TimException_
+  commentId: M:SIX.TimApi.DefaultTerminalListener.ErrorNotification(SIX.TimApi.Terminal,SIX.TimApi.TimException)
+  fullName: SIX.TimApi.DefaultTerminalListener.ErrorNotification(SIX.TimApi.Terminal, SIX.TimApi.TimException)
+  nameWithType: DefaultTerminalListener.ErrorNotification(Terminal, TimException)
+- uid: SIX.TimApi.DefaultTerminalListener.ErrorNotification*
+  name: ErrorNotification
+  href: api/SIX.TimApi.DefaultTerminalListener.html#SIX_TimApi_DefaultTerminalListener_ErrorNotification_
+  commentId: Overload:SIX.TimApi.DefaultTerminalListener.ErrorNotification
+  isSpec: "True"
+  fullName: SIX.TimApi.DefaultTerminalListener.ErrorNotification
+  nameWithType: DefaultTerminalListener.ErrorNotification
+- uid: SIX.TimApi.DefaultTerminalListener.FinishCheckoutCompleted(SIX.TimApi.TimEvent,SIX.TimApi.VasCheckoutInformation)
+  name: FinishCheckoutCompleted(TimEvent, VasCheckoutInformation)
+  href: api/SIX.TimApi.DefaultTerminalListener.html#SIX_TimApi_DefaultTerminalListener_FinishCheckoutCompleted_SIX_TimApi_TimEvent_SIX_TimApi_VasCheckoutInformation_
+  commentId: M:SIX.TimApi.DefaultTerminalListener.FinishCheckoutCompleted(SIX.TimApi.TimEvent,SIX.TimApi.VasCheckoutInformation)
+  fullName: SIX.TimApi.DefaultTerminalListener.FinishCheckoutCompleted(SIX.TimApi.TimEvent, SIX.TimApi.VasCheckoutInformation)
+  nameWithType: DefaultTerminalListener.FinishCheckoutCompleted(TimEvent, VasCheckoutInformation)
+- uid: SIX.TimApi.DefaultTerminalListener.FinishCheckoutCompleted*
+  name: FinishCheckoutCompleted
+  href: api/SIX.TimApi.DefaultTerminalListener.html#SIX_TimApi_DefaultTerminalListener_FinishCheckoutCompleted_
+  commentId: Overload:SIX.TimApi.DefaultTerminalListener.FinishCheckoutCompleted
+  isSpec: "True"
+  fullName: SIX.TimApi.DefaultTerminalListener.FinishCheckoutCompleted
+  nameWithType: DefaultTerminalListener.FinishCheckoutCompleted
+- uid: SIX.TimApi.DefaultTerminalListener.HardwareInformationCompleted(SIX.TimApi.TimEvent,SIX.TimApi.HardwareInformationResponse)
+  name: HardwareInformationCompleted(TimEvent, HardwareInformationResponse)
+  href: api/SIX.TimApi.DefaultTerminalListener.html#SIX_TimApi_DefaultTerminalListener_HardwareInformationCompleted_SIX_TimApi_TimEvent_SIX_TimApi_HardwareInformationResponse_
+  commentId: M:SIX.TimApi.DefaultTerminalListener.HardwareInformationCompleted(SIX.TimApi.TimEvent,SIX.TimApi.HardwareInformationResponse)
+  fullName: SIX.TimApi.DefaultTerminalListener.HardwareInformationCompleted(SIX.TimApi.TimEvent, SIX.TimApi.HardwareInformationResponse)
+  nameWithType: DefaultTerminalListener.HardwareInformationCompleted(TimEvent, HardwareInformationResponse)
+- uid: SIX.TimApi.DefaultTerminalListener.HardwareInformationCompleted*
+  name: HardwareInformationCompleted
+  href: api/SIX.TimApi.DefaultTerminalListener.html#SIX_TimApi_DefaultTerminalListener_HardwareInformationCompleted_
+  commentId: Overload:SIX.TimApi.DefaultTerminalListener.HardwareInformationCompleted
+  isSpec: "True"
+  fullName: SIX.TimApi.DefaultTerminalListener.HardwareInformationCompleted
+  nameWithType: DefaultTerminalListener.HardwareInformationCompleted
+- uid: SIX.TimApi.DefaultTerminalListener.InitTransactionCompleted(SIX.TimApi.TimEvent,SIX.TimApi.CardData)
+  name: InitTransactionCompleted(TimEvent, CardData)
+  href: api/SIX.TimApi.DefaultTerminalListener.html#SIX_TimApi_DefaultTerminalListener_InitTransactionCompleted_SIX_TimApi_TimEvent_SIX_TimApi_CardData_
+  commentId: M:SIX.TimApi.DefaultTerminalListener.InitTransactionCompleted(SIX.TimApi.TimEvent,SIX.TimApi.CardData)
+  fullName: SIX.TimApi.DefaultTerminalListener.InitTransactionCompleted(SIX.TimApi.TimEvent, SIX.TimApi.CardData)
+  nameWithType: DefaultTerminalListener.InitTransactionCompleted(TimEvent, CardData)
+- uid: SIX.TimApi.DefaultTerminalListener.InitTransactionCompleted*
+  name: InitTransactionCompleted
+  href: api/SIX.TimApi.DefaultTerminalListener.html#SIX_TimApi_DefaultTerminalListener_InitTransactionCompleted_
+  commentId: Overload:SIX.TimApi.DefaultTerminalListener.InitTransactionCompleted
+  isSpec: "True"
+  fullName: SIX.TimApi.DefaultTerminalListener.InitTransactionCompleted
+  nameWithType: DefaultTerminalListener.InitTransactionCompleted
+- uid: SIX.TimApi.DefaultTerminalListener.InitTransactionWithDialogCompleted(SIX.TimApi.TimEvent,SIX.TimApi.InitTransactionResponse)
+  name: InitTransactionWithDialogCompleted(TimEvent, InitTransactionResponse)
+  href: api/SIX.TimApi.DefaultTerminalListener.html#SIX_TimApi_DefaultTerminalListener_InitTransactionWithDialogCompleted_SIX_TimApi_TimEvent_SIX_TimApi_InitTransactionResponse_
+  commentId: M:SIX.TimApi.DefaultTerminalListener.InitTransactionWithDialogCompleted(SIX.TimApi.TimEvent,SIX.TimApi.InitTransactionResponse)
+  fullName: SIX.TimApi.DefaultTerminalListener.InitTransactionWithDialogCompleted(SIX.TimApi.TimEvent, SIX.TimApi.InitTransactionResponse)
+  nameWithType: DefaultTerminalListener.InitTransactionWithDialogCompleted(TimEvent, InitTransactionResponse)
+- uid: SIX.TimApi.DefaultTerminalListener.InitTransactionWithDialogCompleted*
+  name: InitTransactionWithDialogCompleted
+  href: api/SIX.TimApi.DefaultTerminalListener.html#SIX_TimApi_DefaultTerminalListener_InitTransactionWithDialogCompleted_
+  commentId: Overload:SIX.TimApi.DefaultTerminalListener.InitTransactionWithDialogCompleted
+  isSpec: "True"
+  fullName: SIX.TimApi.DefaultTerminalListener.InitTransactionWithDialogCompleted
+  nameWithType: DefaultTerminalListener.InitTransactionWithDialogCompleted
+- uid: SIX.TimApi.DefaultTerminalListener.KeyPressed(SIX.TimApi.Terminal,SIX.TimApi.Constants.Reason)
+  name: KeyPressed(Terminal, Reason)
+  href: api/SIX.TimApi.DefaultTerminalListener.html#SIX_TimApi_DefaultTerminalListener_KeyPressed_SIX_TimApi_Terminal_SIX_TimApi_Constants_Reason_
+  commentId: M:SIX.TimApi.DefaultTerminalListener.KeyPressed(SIX.TimApi.Terminal,SIX.TimApi.Constants.Reason)
+  fullName: SIX.TimApi.DefaultTerminalListener.KeyPressed(SIX.TimApi.Terminal, SIX.TimApi.Constants.Reason)
+  nameWithType: DefaultTerminalListener.KeyPressed(Terminal, Reason)
+- uid: SIX.TimApi.DefaultTerminalListener.KeyPressed*
+  name: KeyPressed
+  href: api/SIX.TimApi.DefaultTerminalListener.html#SIX_TimApi_DefaultTerminalListener_KeyPressed_
+  commentId: Overload:SIX.TimApi.DefaultTerminalListener.KeyPressed
+  isSpec: "True"
+  fullName: SIX.TimApi.DefaultTerminalListener.KeyPressed
+  nameWithType: DefaultTerminalListener.KeyPressed
+- uid: SIX.TimApi.DefaultTerminalListener.LoginCompleted(SIX.TimApi.TimEvent)
+  name: LoginCompleted(TimEvent)
+  href: api/SIX.TimApi.DefaultTerminalListener.html#SIX_TimApi_DefaultTerminalListener_LoginCompleted_SIX_TimApi_TimEvent_
+  commentId: M:SIX.TimApi.DefaultTerminalListener.LoginCompleted(SIX.TimApi.TimEvent)
+  fullName: SIX.TimApi.DefaultTerminalListener.LoginCompleted(SIX.TimApi.TimEvent)
+  nameWithType: DefaultTerminalListener.LoginCompleted(TimEvent)
+- uid: SIX.TimApi.DefaultTerminalListener.LoginCompleted*
+  name: LoginCompleted
+  href: api/SIX.TimApi.DefaultTerminalListener.html#SIX_TimApi_DefaultTerminalListener_LoginCompleted_
+  commentId: Overload:SIX.TimApi.DefaultTerminalListener.LoginCompleted
+  isSpec: "True"
+  fullName: SIX.TimApi.DefaultTerminalListener.LoginCompleted
+  nameWithType: DefaultTerminalListener.LoginCompleted
+- uid: SIX.TimApi.DefaultTerminalListener.LogoutCompleted(SIX.TimApi.TimEvent)
+  name: LogoutCompleted(TimEvent)
+  href: api/SIX.TimApi.DefaultTerminalListener.html#SIX_TimApi_DefaultTerminalListener_LogoutCompleted_SIX_TimApi_TimEvent_
+  commentId: M:SIX.TimApi.DefaultTerminalListener.LogoutCompleted(SIX.TimApi.TimEvent)
+  fullName: SIX.TimApi.DefaultTerminalListener.LogoutCompleted(SIX.TimApi.TimEvent)
+  nameWithType: DefaultTerminalListener.LogoutCompleted(TimEvent)
+- uid: SIX.TimApi.DefaultTerminalListener.LogoutCompleted*
+  name: LogoutCompleted
+  href: api/SIX.TimApi.DefaultTerminalListener.html#SIX_TimApi_DefaultTerminalListener_LogoutCompleted_
+  commentId: Overload:SIX.TimApi.DefaultTerminalListener.LogoutCompleted
+  isSpec: "True"
+  fullName: SIX.TimApi.DefaultTerminalListener.LogoutCompleted
+  nameWithType: DefaultTerminalListener.LogoutCompleted
+- uid: SIX.TimApi.DefaultTerminalListener.LoyaltyDataCompleted(SIX.TimApi.TimEvent,SIX.TimApi.CardData)
+  name: LoyaltyDataCompleted(TimEvent, CardData)
+  href: api/SIX.TimApi.DefaultTerminalListener.html#SIX_TimApi_DefaultTerminalListener_LoyaltyDataCompleted_SIX_TimApi_TimEvent_SIX_TimApi_CardData_
+  commentId: M:SIX.TimApi.DefaultTerminalListener.LoyaltyDataCompleted(SIX.TimApi.TimEvent,SIX.TimApi.CardData)
+  fullName: SIX.TimApi.DefaultTerminalListener.LoyaltyDataCompleted(SIX.TimApi.TimEvent, SIX.TimApi.CardData)
+  nameWithType: DefaultTerminalListener.LoyaltyDataCompleted(TimEvent, CardData)
+- uid: SIX.TimApi.DefaultTerminalListener.LoyaltyDataCompleted*
+  name: LoyaltyDataCompleted
+  href: api/SIX.TimApi.DefaultTerminalListener.html#SIX_TimApi_DefaultTerminalListener_LoyaltyDataCompleted_
+  commentId: Overload:SIX.TimApi.DefaultTerminalListener.LoyaltyDataCompleted
+  isSpec: "True"
+  fullName: SIX.TimApi.DefaultTerminalListener.LoyaltyDataCompleted
+  nameWithType: DefaultTerminalListener.LoyaltyDataCompleted
+- uid: SIX.TimApi.DefaultTerminalListener.MobileTopupCompleted(SIX.TimApi.TimEvent,SIX.TimApi.MobileTopupData)
+  name: MobileTopupCompleted(TimEvent, MobileTopupData)
+  href: api/SIX.TimApi.DefaultTerminalListener.html#SIX_TimApi_DefaultTerminalListener_MobileTopupCompleted_SIX_TimApi_TimEvent_SIX_TimApi_MobileTopupData_
+  commentId: M:SIX.TimApi.DefaultTerminalListener.MobileTopupCompleted(SIX.TimApi.TimEvent,SIX.TimApi.MobileTopupData)
+  fullName: SIX.TimApi.DefaultTerminalListener.MobileTopupCompleted(SIX.TimApi.TimEvent, SIX.TimApi.MobileTopupData)
+  nameWithType: DefaultTerminalListener.MobileTopupCompleted(TimEvent, MobileTopupData)
+- uid: SIX.TimApi.DefaultTerminalListener.MobileTopupCompleted*
+  name: MobileTopupCompleted
+  href: api/SIX.TimApi.DefaultTerminalListener.html#SIX_TimApi_DefaultTerminalListener_MobileTopupCompleted_
+  commentId: Overload:SIX.TimApi.DefaultTerminalListener.MobileTopupCompleted
+  isSpec: "True"
+  fullName: SIX.TimApi.DefaultTerminalListener.MobileTopupCompleted
+  nameWithType: DefaultTerminalListener.MobileTopupCompleted
+- uid: SIX.TimApi.DefaultTerminalListener.MobileTopupIssuerInfoCompleted(SIX.TimApi.TimEvent,List{SIX.TimApi.MobileTopupValue})
+  name: MobileTopupIssuerInfoCompleted(TimEvent, List<MobileTopupValue>)
+  href: api/SIX.TimApi.DefaultTerminalListener.html#SIX_TimApi_DefaultTerminalListener_MobileTopupIssuerInfoCompleted_SIX_TimApi_TimEvent_List_SIX_TimApi_MobileTopupValue__
+  commentId: M:SIX.TimApi.DefaultTerminalListener.MobileTopupIssuerInfoCompleted(SIX.TimApi.TimEvent,List{SIX.TimApi.MobileTopupValue})
+  name.vb: MobileTopupIssuerInfoCompleted(TimEvent, List(Of MobileTopupValue))
+  fullName: SIX.TimApi.DefaultTerminalListener.MobileTopupIssuerInfoCompleted(SIX.TimApi.TimEvent, List<SIX.TimApi.MobileTopupValue>)
+  fullName.vb: SIX.TimApi.DefaultTerminalListener.MobileTopupIssuerInfoCompleted(SIX.TimApi.TimEvent, List(Of SIX.TimApi.MobileTopupValue))
+  nameWithType: DefaultTerminalListener.MobileTopupIssuerInfoCompleted(TimEvent, List<MobileTopupValue>)
+  nameWithType.vb: DefaultTerminalListener.MobileTopupIssuerInfoCompleted(TimEvent, List(Of MobileTopupValue))
+- uid: SIX.TimApi.DefaultTerminalListener.MobileTopupIssuerInfoCompleted*
+  name: MobileTopupIssuerInfoCompleted
+  href: api/SIX.TimApi.DefaultTerminalListener.html#SIX_TimApi_DefaultTerminalListener_MobileTopupIssuerInfoCompleted_
+  commentId: Overload:SIX.TimApi.DefaultTerminalListener.MobileTopupIssuerInfoCompleted
+  isSpec: "True"
+  fullName: SIX.TimApi.DefaultTerminalListener.MobileTopupIssuerInfoCompleted
+  nameWithType: DefaultTerminalListener.MobileTopupIssuerInfoCompleted
+- uid: SIX.TimApi.DefaultTerminalListener.OpenDialogModeCompleted(SIX.TimApi.TimEvent)
+  name: OpenDialogModeCompleted(TimEvent)
+  href: api/SIX.TimApi.DefaultTerminalListener.html#SIX_TimApi_DefaultTerminalListener_OpenDialogModeCompleted_SIX_TimApi_TimEvent_
+  commentId: M:SIX.TimApi.DefaultTerminalListener.OpenDialogModeCompleted(SIX.TimApi.TimEvent)
+  fullName: SIX.TimApi.DefaultTerminalListener.OpenDialogModeCompleted(SIX.TimApi.TimEvent)
+  nameWithType: DefaultTerminalListener.OpenDialogModeCompleted(TimEvent)
+- uid: SIX.TimApi.DefaultTerminalListener.OpenDialogModeCompleted*
+  name: OpenDialogModeCompleted
+  href: api/SIX.TimApi.DefaultTerminalListener.html#SIX_TimApi_DefaultTerminalListener_OpenDialogModeCompleted_
+  commentId: Overload:SIX.TimApi.DefaultTerminalListener.OpenDialogModeCompleted
+  isSpec: "True"
+  fullName: SIX.TimApi.DefaultTerminalListener.OpenDialogModeCompleted
+  nameWithType: DefaultTerminalListener.OpenDialogModeCompleted
+- uid: SIX.TimApi.DefaultTerminalListener.OpenMaintenanceWindowCompleted(SIX.TimApi.TimEvent)
+  name: OpenMaintenanceWindowCompleted(TimEvent)
+  href: api/SIX.TimApi.DefaultTerminalListener.html#SIX_TimApi_DefaultTerminalListener_OpenMaintenanceWindowCompleted_SIX_TimApi_TimEvent_
+  commentId: M:SIX.TimApi.DefaultTerminalListener.OpenMaintenanceWindowCompleted(SIX.TimApi.TimEvent)
+  fullName: SIX.TimApi.DefaultTerminalListener.OpenMaintenanceWindowCompleted(SIX.TimApi.TimEvent)
+  nameWithType: DefaultTerminalListener.OpenMaintenanceWindowCompleted(TimEvent)
+- uid: SIX.TimApi.DefaultTerminalListener.OpenMaintenanceWindowCompleted*
+  name: OpenMaintenanceWindowCompleted
+  href: api/SIX.TimApi.DefaultTerminalListener.html#SIX_TimApi_DefaultTerminalListener_OpenMaintenanceWindowCompleted_
+  commentId: Overload:SIX.TimApi.DefaultTerminalListener.OpenMaintenanceWindowCompleted
+  isSpec: "True"
+  fullName: SIX.TimApi.DefaultTerminalListener.OpenMaintenanceWindowCompleted
+  nameWithType: DefaultTerminalListener.OpenMaintenanceWindowCompleted
+- uid: SIX.TimApi.DefaultTerminalListener.OpenReaderCompleted(SIX.TimApi.TimEvent)
+  name: OpenReaderCompleted(TimEvent)
+  href: api/SIX.TimApi.DefaultTerminalListener.html#SIX_TimApi_DefaultTerminalListener_OpenReaderCompleted_SIX_TimApi_TimEvent_
+  commentId: M:SIX.TimApi.DefaultTerminalListener.OpenReaderCompleted(SIX.TimApi.TimEvent)
+  fullName: SIX.TimApi.DefaultTerminalListener.OpenReaderCompleted(SIX.TimApi.TimEvent)
+  nameWithType: DefaultTerminalListener.OpenReaderCompleted(TimEvent)
+- uid: SIX.TimApi.DefaultTerminalListener.OpenReaderCompleted*
+  name: OpenReaderCompleted
+  href: api/SIX.TimApi.DefaultTerminalListener.html#SIX_TimApi_DefaultTerminalListener_OpenReaderCompleted_
+  commentId: Overload:SIX.TimApi.DefaultTerminalListener.OpenReaderCompleted
+  isSpec: "True"
+  fullName: SIX.TimApi.DefaultTerminalListener.OpenReaderCompleted
+  nameWithType: DefaultTerminalListener.OpenReaderCompleted
+- uid: SIX.TimApi.DefaultTerminalListener.PrintOnTerminalCompleted(SIX.TimApi.TimEvent)
+  name: PrintOnTerminalCompleted(TimEvent)
+  href: api/SIX.TimApi.DefaultTerminalListener.html#SIX_TimApi_DefaultTerminalListener_PrintOnTerminalCompleted_SIX_TimApi_TimEvent_
+  commentId: M:SIX.TimApi.DefaultTerminalListener.PrintOnTerminalCompleted(SIX.TimApi.TimEvent)
+  fullName: SIX.TimApi.DefaultTerminalListener.PrintOnTerminalCompleted(SIX.TimApi.TimEvent)
+  nameWithType: DefaultTerminalListener.PrintOnTerminalCompleted(TimEvent)
+- uid: SIX.TimApi.DefaultTerminalListener.PrintOnTerminalCompleted*
+  name: PrintOnTerminalCompleted
+  href: api/SIX.TimApi.DefaultTerminalListener.html#SIX_TimApi_DefaultTerminalListener_PrintOnTerminalCompleted_
+  commentId: Overload:SIX.TimApi.DefaultTerminalListener.PrintOnTerminalCompleted
+  isSpec: "True"
+  fullName: SIX.TimApi.DefaultTerminalListener.PrintOnTerminalCompleted
+  nameWithType: DefaultTerminalListener.PrintOnTerminalCompleted
+- uid: SIX.TimApi.DefaultTerminalListener.PrintReceipts(SIX.TimApi.Terminal,SIX.TimApi.PrintData)
+  name: PrintReceipts(Terminal, PrintData)
+  href: api/SIX.TimApi.DefaultTerminalListener.html#SIX_TimApi_DefaultTerminalListener_PrintReceipts_SIX_TimApi_Terminal_SIX_TimApi_PrintData_
+  commentId: M:SIX.TimApi.DefaultTerminalListener.PrintReceipts(SIX.TimApi.Terminal,SIX.TimApi.PrintData)
+  fullName: SIX.TimApi.DefaultTerminalListener.PrintReceipts(SIX.TimApi.Terminal, SIX.TimApi.PrintData)
+  nameWithType: DefaultTerminalListener.PrintReceipts(Terminal, PrintData)
+- uid: SIX.TimApi.DefaultTerminalListener.PrintReceipts*
+  name: PrintReceipts
+  href: api/SIX.TimApi.DefaultTerminalListener.html#SIX_TimApi_DefaultTerminalListener_PrintReceipts_
+  commentId: Overload:SIX.TimApi.DefaultTerminalListener.PrintReceipts
+  isSpec: "True"
+  fullName: SIX.TimApi.DefaultTerminalListener.PrintReceipts
+  nameWithType: DefaultTerminalListener.PrintReceipts
+- uid: SIX.TimApi.DefaultTerminalListener.ProvideLoyaltyBasketCompleted(SIX.TimApi.TimEvent,List{SIX.TimApi.LoyaltyItem})
+  name: ProvideLoyaltyBasketCompleted(TimEvent, List<LoyaltyItem>)
+  href: api/SIX.TimApi.DefaultTerminalListener.html#SIX_TimApi_DefaultTerminalListener_ProvideLoyaltyBasketCompleted_SIX_TimApi_TimEvent_List_SIX_TimApi_LoyaltyItem__
+  commentId: M:SIX.TimApi.DefaultTerminalListener.ProvideLoyaltyBasketCompleted(SIX.TimApi.TimEvent,List{SIX.TimApi.LoyaltyItem})
+  name.vb: ProvideLoyaltyBasketCompleted(TimEvent, List(Of LoyaltyItem))
+  fullName: SIX.TimApi.DefaultTerminalListener.ProvideLoyaltyBasketCompleted(SIX.TimApi.TimEvent, List<SIX.TimApi.LoyaltyItem>)
+  fullName.vb: SIX.TimApi.DefaultTerminalListener.ProvideLoyaltyBasketCompleted(SIX.TimApi.TimEvent, List(Of SIX.TimApi.LoyaltyItem))
+  nameWithType: DefaultTerminalListener.ProvideLoyaltyBasketCompleted(TimEvent, List<LoyaltyItem>)
+  nameWithType.vb: DefaultTerminalListener.ProvideLoyaltyBasketCompleted(TimEvent, List(Of LoyaltyItem))
+- uid: SIX.TimApi.DefaultTerminalListener.ProvideLoyaltyBasketCompleted*
+  name: ProvideLoyaltyBasketCompleted
+  href: api/SIX.TimApi.DefaultTerminalListener.html#SIX_TimApi_DefaultTerminalListener_ProvideLoyaltyBasketCompleted_
+  commentId: Overload:SIX.TimApi.DefaultTerminalListener.ProvideLoyaltyBasketCompleted
+  isSpec: "True"
+  fullName: SIX.TimApi.DefaultTerminalListener.ProvideLoyaltyBasketCompleted
+  nameWithType: DefaultTerminalListener.ProvideLoyaltyBasketCompleted
+- uid: SIX.TimApi.DefaultTerminalListener.ProvideVasResultCompleted(SIX.TimApi.TimEvent,SIX.TimApi.VasResult)
+  name: ProvideVasResultCompleted(TimEvent, VasResult)
+  href: api/SIX.TimApi.DefaultTerminalListener.html#SIX_TimApi_DefaultTerminalListener_ProvideVasResultCompleted_SIX_TimApi_TimEvent_SIX_TimApi_VasResult_
+  commentId: M:SIX.TimApi.DefaultTerminalListener.ProvideVasResultCompleted(SIX.TimApi.TimEvent,SIX.TimApi.VasResult)
+  fullName: SIX.TimApi.DefaultTerminalListener.ProvideVasResultCompleted(SIX.TimApi.TimEvent, SIX.TimApi.VasResult)
+  nameWithType: DefaultTerminalListener.ProvideVasResultCompleted(TimEvent, VasResult)
+- uid: SIX.TimApi.DefaultTerminalListener.ProvideVasResultCompleted*
+  name: ProvideVasResultCompleted
+  href: api/SIX.TimApi.DefaultTerminalListener.html#SIX_TimApi_DefaultTerminalListener_ProvideVasResultCompleted_
+  commentId: Overload:SIX.TimApi.DefaultTerminalListener.ProvideVasResultCompleted
+  isSpec: "True"
+  fullName: SIX.TimApi.DefaultTerminalListener.ProvideVasResultCompleted
+  nameWithType: DefaultTerminalListener.ProvideVasResultCompleted
+- uid: SIX.TimApi.DefaultTerminalListener.RebootCompleted(SIX.TimApi.TimEvent)
+  name: RebootCompleted(TimEvent)
+  href: api/SIX.TimApi.DefaultTerminalListener.html#SIX_TimApi_DefaultTerminalListener_RebootCompleted_SIX_TimApi_TimEvent_
+  commentId: M:SIX.TimApi.DefaultTerminalListener.RebootCompleted(SIX.TimApi.TimEvent)
+  fullName: SIX.TimApi.DefaultTerminalListener.RebootCompleted(SIX.TimApi.TimEvent)
+  nameWithType: DefaultTerminalListener.RebootCompleted(TimEvent)
+- uid: SIX.TimApi.DefaultTerminalListener.RebootCompleted*
+  name: RebootCompleted
+  href: api/SIX.TimApi.DefaultTerminalListener.html#SIX_TimApi_DefaultTerminalListener_RebootCompleted_
+  commentId: Overload:SIX.TimApi.DefaultTerminalListener.RebootCompleted
+  isSpec: "True"
+  fullName: SIX.TimApi.DefaultTerminalListener.RebootCompleted
+  nameWithType: DefaultTerminalListener.RebootCompleted
+- uid: SIX.TimApi.DefaultTerminalListener.ReceiptRequestCompleted(SIX.TimApi.TimEvent,SIX.TimApi.ReceiptRequestResponse)
+  name: ReceiptRequestCompleted(TimEvent, ReceiptRequestResponse)
+  href: api/SIX.TimApi.DefaultTerminalListener.html#SIX_TimApi_DefaultTerminalListener_ReceiptRequestCompleted_SIX_TimApi_TimEvent_SIX_TimApi_ReceiptRequestResponse_
+  commentId: M:SIX.TimApi.DefaultTerminalListener.ReceiptRequestCompleted(SIX.TimApi.TimEvent,SIX.TimApi.ReceiptRequestResponse)
+  fullName: SIX.TimApi.DefaultTerminalListener.ReceiptRequestCompleted(SIX.TimApi.TimEvent, SIX.TimApi.ReceiptRequestResponse)
+  nameWithType: DefaultTerminalListener.ReceiptRequestCompleted(TimEvent, ReceiptRequestResponse)
+- uid: SIX.TimApi.DefaultTerminalListener.ReceiptRequestCompleted*
+  name: ReceiptRequestCompleted
+  href: api/SIX.TimApi.DefaultTerminalListener.html#SIX_TimApi_DefaultTerminalListener_ReceiptRequestCompleted_
+  commentId: Overload:SIX.TimApi.DefaultTerminalListener.ReceiptRequestCompleted
+  isSpec: "True"
+  fullName: SIX.TimApi.DefaultTerminalListener.ReceiptRequestCompleted
+  nameWithType: DefaultTerminalListener.ReceiptRequestCompleted
+- uid: SIX.TimApi.DefaultTerminalListener.ReconciliationCompleted(SIX.TimApi.TimEvent,SIX.TimApi.ReconciliationResponse)
+  name: ReconciliationCompleted(TimEvent, ReconciliationResponse)
+  href: api/SIX.TimApi.DefaultTerminalListener.html#SIX_TimApi_DefaultTerminalListener_ReconciliationCompleted_SIX_TimApi_TimEvent_SIX_TimApi_ReconciliationResponse_
+  commentId: M:SIX.TimApi.DefaultTerminalListener.ReconciliationCompleted(SIX.TimApi.TimEvent,SIX.TimApi.ReconciliationResponse)
+  fullName: SIX.TimApi.DefaultTerminalListener.ReconciliationCompleted(SIX.TimApi.TimEvent, SIX.TimApi.ReconciliationResponse)
+  nameWithType: DefaultTerminalListener.ReconciliationCompleted(TimEvent, ReconciliationResponse)
+- uid: SIX.TimApi.DefaultTerminalListener.ReconciliationCompleted*
+  name: ReconciliationCompleted
+  href: api/SIX.TimApi.DefaultTerminalListener.html#SIX_TimApi_DefaultTerminalListener_ReconciliationCompleted_
+  commentId: Overload:SIX.TimApi.DefaultTerminalListener.ReconciliationCompleted
+  isSpec: "True"
+  fullName: SIX.TimApi.DefaultTerminalListener.ReconciliationCompleted
+  nameWithType: DefaultTerminalListener.ReconciliationCompleted
+- uid: SIX.TimApi.DefaultTerminalListener.ReconfigCompleted(SIX.TimApi.TimEvent,SIX.TimApi.PrintData)
+  name: ReconfigCompleted(TimEvent, PrintData)
+  href: api/SIX.TimApi.DefaultTerminalListener.html#SIX_TimApi_DefaultTerminalListener_ReconfigCompleted_SIX_TimApi_TimEvent_SIX_TimApi_PrintData_
+  commentId: M:SIX.TimApi.DefaultTerminalListener.ReconfigCompleted(SIX.TimApi.TimEvent,SIX.TimApi.PrintData)
+  fullName: SIX.TimApi.DefaultTerminalListener.ReconfigCompleted(SIX.TimApi.TimEvent, SIX.TimApi.PrintData)
+  nameWithType: DefaultTerminalListener.ReconfigCompleted(TimEvent, PrintData)
+- uid: SIX.TimApi.DefaultTerminalListener.ReconfigCompleted*
+  name: ReconfigCompleted
+  href: api/SIX.TimApi.DefaultTerminalListener.html#SIX_TimApi_DefaultTerminalListener_ReconfigCompleted_
+  commentId: Overload:SIX.TimApi.DefaultTerminalListener.ReconfigCompleted
+  isSpec: "True"
+  fullName: SIX.TimApi.DefaultTerminalListener.ReconfigCompleted
+  nameWithType: DefaultTerminalListener.ReconfigCompleted
+- uid: SIX.TimApi.DefaultTerminalListener.RequestAliasCompleted(SIX.TimApi.TimEvent,System.String)
+  name: RequestAliasCompleted(TimEvent, String)
+  href: api/SIX.TimApi.DefaultTerminalListener.html#SIX_TimApi_DefaultTerminalListener_RequestAliasCompleted_SIX_TimApi_TimEvent_System_String_
+  commentId: M:SIX.TimApi.DefaultTerminalListener.RequestAliasCompleted(SIX.TimApi.TimEvent,System.String)
+  fullName: SIX.TimApi.DefaultTerminalListener.RequestAliasCompleted(SIX.TimApi.TimEvent, System.String)
+  nameWithType: DefaultTerminalListener.RequestAliasCompleted(TimEvent, String)
+- uid: SIX.TimApi.DefaultTerminalListener.RequestAliasCompleted*
+  name: RequestAliasCompleted
+  href: api/SIX.TimApi.DefaultTerminalListener.html#SIX_TimApi_DefaultTerminalListener_RequestAliasCompleted_
+  commentId: Overload:SIX.TimApi.DefaultTerminalListener.RequestAliasCompleted
+  isSpec: "True"
+  fullName: SIX.TimApi.DefaultTerminalListener.RequestAliasCompleted
+  nameWithType: DefaultTerminalListener.RequestAliasCompleted
+- uid: SIX.TimApi.DefaultTerminalListener.RequestCompleted(SIX.TimApi.TimEvent,Object)
+  name: RequestCompleted(TimEvent, Object)
+  href: api/SIX.TimApi.DefaultTerminalListener.html#SIX_TimApi_DefaultTerminalListener_RequestCompleted_SIX_TimApi_TimEvent_Object_
+  commentId: M:SIX.TimApi.DefaultTerminalListener.RequestCompleted(SIX.TimApi.TimEvent,Object)
+  fullName: SIX.TimApi.DefaultTerminalListener.RequestCompleted(SIX.TimApi.TimEvent, Object)
+  nameWithType: DefaultTerminalListener.RequestCompleted(TimEvent, Object)
+- uid: SIX.TimApi.DefaultTerminalListener.RequestCompleted*
+  name: RequestCompleted
+  href: api/SIX.TimApi.DefaultTerminalListener.html#SIX_TimApi_DefaultTerminalListener_RequestCompleted_
+  commentId: Overload:SIX.TimApi.DefaultTerminalListener.RequestCompleted
+  isSpec: "True"
+  fullName: SIX.TimApi.DefaultTerminalListener.RequestCompleted
+  nameWithType: DefaultTerminalListener.RequestCompleted
+- uid: SIX.TimApi.DefaultTerminalListener.RollbackCompleted(SIX.TimApi.TimEvent,SIX.TimApi.PrintData)
+  name: RollbackCompleted(TimEvent, PrintData)
+  href: api/SIX.TimApi.DefaultTerminalListener.html#SIX_TimApi_DefaultTerminalListener_RollbackCompleted_SIX_TimApi_TimEvent_SIX_TimApi_PrintData_
+  commentId: M:SIX.TimApi.DefaultTerminalListener.RollbackCompleted(SIX.TimApi.TimEvent,SIX.TimApi.PrintData)
+  fullName: SIX.TimApi.DefaultTerminalListener.RollbackCompleted(SIX.TimApi.TimEvent, SIX.TimApi.PrintData)
+  nameWithType: DefaultTerminalListener.RollbackCompleted(TimEvent, PrintData)
+- uid: SIX.TimApi.DefaultTerminalListener.RollbackCompleted*
+  name: RollbackCompleted
+  href: api/SIX.TimApi.DefaultTerminalListener.html#SIX_TimApi_DefaultTerminalListener_RollbackCompleted_
+  commentId: Overload:SIX.TimApi.DefaultTerminalListener.RollbackCompleted
+  isSpec: "True"
+  fullName: SIX.TimApi.DefaultTerminalListener.RollbackCompleted
+  nameWithType: DefaultTerminalListener.RollbackCompleted
+- uid: SIX.TimApi.DefaultTerminalListener.Screenshot(SIX.TimApi.Terminal,SIX.TimApi.ScreenshotInformation)
+  name: Screenshot(Terminal, ScreenshotInformation)
+  href: api/SIX.TimApi.DefaultTerminalListener.html#SIX_TimApi_DefaultTerminalListener_Screenshot_SIX_TimApi_Terminal_SIX_TimApi_ScreenshotInformation_
+  commentId: M:SIX.TimApi.DefaultTerminalListener.Screenshot(SIX.TimApi.Terminal,SIX.TimApi.ScreenshotInformation)
+  fullName: SIX.TimApi.DefaultTerminalListener.Screenshot(SIX.TimApi.Terminal, SIX.TimApi.ScreenshotInformation)
+  nameWithType: DefaultTerminalListener.Screenshot(Terminal, ScreenshotInformation)
+- uid: SIX.TimApi.DefaultTerminalListener.Screenshot*
+  name: Screenshot
+  href: api/SIX.TimApi.DefaultTerminalListener.html#SIX_TimApi_DefaultTerminalListener_Screenshot_
+  commentId: Overload:SIX.TimApi.DefaultTerminalListener.Screenshot
+  isSpec: "True"
+  fullName: SIX.TimApi.DefaultTerminalListener.Screenshot
+  nameWithType: DefaultTerminalListener.Screenshot
+- uid: SIX.TimApi.DefaultTerminalListener.SendCardCommandCompleted(SIX.TimApi.TimEvent,List{SIX.TimApi.CommandResponse})
+  name: SendCardCommandCompleted(TimEvent, List<CommandResponse>)
+  href: api/SIX.TimApi.DefaultTerminalListener.html#SIX_TimApi_DefaultTerminalListener_SendCardCommandCompleted_SIX_TimApi_TimEvent_List_SIX_TimApi_CommandResponse__
+  commentId: M:SIX.TimApi.DefaultTerminalListener.SendCardCommandCompleted(SIX.TimApi.TimEvent,List{SIX.TimApi.CommandResponse})
+  name.vb: SendCardCommandCompleted(TimEvent, List(Of CommandResponse))
+  fullName: SIX.TimApi.DefaultTerminalListener.SendCardCommandCompleted(SIX.TimApi.TimEvent, List<SIX.TimApi.CommandResponse>)
+  fullName.vb: SIX.TimApi.DefaultTerminalListener.SendCardCommandCompleted(SIX.TimApi.TimEvent, List(Of SIX.TimApi.CommandResponse))
+  nameWithType: DefaultTerminalListener.SendCardCommandCompleted(TimEvent, List<CommandResponse>)
+  nameWithType.vb: DefaultTerminalListener.SendCardCommandCompleted(TimEvent, List(Of CommandResponse))
+- uid: SIX.TimApi.DefaultTerminalListener.SendCardCommandCompleted*
+  name: SendCardCommandCompleted
+  href: api/SIX.TimApi.DefaultTerminalListener.html#SIX_TimApi_DefaultTerminalListener_SendCardCommandCompleted_
+  commentId: Overload:SIX.TimApi.DefaultTerminalListener.SendCardCommandCompleted
+  isSpec: "True"
+  fullName: SIX.TimApi.DefaultTerminalListener.SendCardCommandCompleted
+  nameWithType: DefaultTerminalListener.SendCardCommandCompleted
+- uid: SIX.TimApi.DefaultTerminalListener.ShowDialogCompleted(SIX.TimApi.TimEvent,SIX.TimApi.ShowDialogResponse)
+  name: ShowDialogCompleted(TimEvent, ShowDialogResponse)
+  href: api/SIX.TimApi.DefaultTerminalListener.html#SIX_TimApi_DefaultTerminalListener_ShowDialogCompleted_SIX_TimApi_TimEvent_SIX_TimApi_ShowDialogResponse_
+  commentId: M:SIX.TimApi.DefaultTerminalListener.ShowDialogCompleted(SIX.TimApi.TimEvent,SIX.TimApi.ShowDialogResponse)
+  fullName: SIX.TimApi.DefaultTerminalListener.ShowDialogCompleted(SIX.TimApi.TimEvent, SIX.TimApi.ShowDialogResponse)
+  nameWithType: DefaultTerminalListener.ShowDialogCompleted(TimEvent, ShowDialogResponse)
+- uid: SIX.TimApi.DefaultTerminalListener.ShowDialogCompleted*
+  name: ShowDialogCompleted
+  href: api/SIX.TimApi.DefaultTerminalListener.html#SIX_TimApi_DefaultTerminalListener_ShowDialogCompleted_
+  commentId: Overload:SIX.TimApi.DefaultTerminalListener.ShowDialogCompleted
+  isSpec: "True"
+  fullName: SIX.TimApi.DefaultTerminalListener.ShowDialogCompleted
+  nameWithType: DefaultTerminalListener.ShowDialogCompleted
+- uid: SIX.TimApi.DefaultTerminalListener.ShowSignatureCaptureCompleted(SIX.TimApi.TimEvent,SIX.TimApi.ShowSignatureCaptureResponse)
+  name: ShowSignatureCaptureCompleted(TimEvent, ShowSignatureCaptureResponse)
+  href: api/SIX.TimApi.DefaultTerminalListener.html#SIX_TimApi_DefaultTerminalListener_ShowSignatureCaptureCompleted_SIX_TimApi_TimEvent_SIX_TimApi_ShowSignatureCaptureResponse_
+  commentId: M:SIX.TimApi.DefaultTerminalListener.ShowSignatureCaptureCompleted(SIX.TimApi.TimEvent,SIX.TimApi.ShowSignatureCaptureResponse)
+  fullName: SIX.TimApi.DefaultTerminalListener.ShowSignatureCaptureCompleted(SIX.TimApi.TimEvent, SIX.TimApi.ShowSignatureCaptureResponse)
+  nameWithType: DefaultTerminalListener.ShowSignatureCaptureCompleted(TimEvent, ShowSignatureCaptureResponse)
+- uid: SIX.TimApi.DefaultTerminalListener.ShowSignatureCaptureCompleted*
+  name: ShowSignatureCaptureCompleted
+  href: api/SIX.TimApi.DefaultTerminalListener.html#SIX_TimApi_DefaultTerminalListener_ShowSignatureCaptureCompleted_
+  commentId: Overload:SIX.TimApi.DefaultTerminalListener.ShowSignatureCaptureCompleted
+  isSpec: "True"
+  fullName: SIX.TimApi.DefaultTerminalListener.ShowSignatureCaptureCompleted
+  nameWithType: DefaultTerminalListener.ShowSignatureCaptureCompleted
+- uid: SIX.TimApi.DefaultTerminalListener.SoftwareUpdateCompleted(SIX.TimApi.TimEvent,SIX.TimApi.Constants.UpdateStatus)
+  name: SoftwareUpdateCompleted(TimEvent, UpdateStatus)
+  href: api/SIX.TimApi.DefaultTerminalListener.html#SIX_TimApi_DefaultTerminalListener_SoftwareUpdateCompleted_SIX_TimApi_TimEvent_SIX_TimApi_Constants_UpdateStatus_
+  commentId: M:SIX.TimApi.DefaultTerminalListener.SoftwareUpdateCompleted(SIX.TimApi.TimEvent,SIX.TimApi.Constants.UpdateStatus)
+  fullName: SIX.TimApi.DefaultTerminalListener.SoftwareUpdateCompleted(SIX.TimApi.TimEvent, SIX.TimApi.Constants.UpdateStatus)
+  nameWithType: DefaultTerminalListener.SoftwareUpdateCompleted(TimEvent, UpdateStatus)
+- uid: SIX.TimApi.DefaultTerminalListener.SoftwareUpdateCompleted*
+  name: SoftwareUpdateCompleted
+  href: api/SIX.TimApi.DefaultTerminalListener.html#SIX_TimApi_DefaultTerminalListener_SoftwareUpdateCompleted_
+  commentId: Overload:SIX.TimApi.DefaultTerminalListener.SoftwareUpdateCompleted
+  isSpec: "True"
+  fullName: SIX.TimApi.DefaultTerminalListener.SoftwareUpdateCompleted
+  nameWithType: DefaultTerminalListener.SoftwareUpdateCompleted
+- uid: SIX.TimApi.DefaultTerminalListener.StartCheckoutCompleted(SIX.TimApi.TimEvent)
+  name: StartCheckoutCompleted(TimEvent)
+  href: api/SIX.TimApi.DefaultTerminalListener.html#SIX_TimApi_DefaultTerminalListener_StartCheckoutCompleted_SIX_TimApi_TimEvent_
+  commentId: M:SIX.TimApi.DefaultTerminalListener.StartCheckoutCompleted(SIX.TimApi.TimEvent)
+  fullName: SIX.TimApi.DefaultTerminalListener.StartCheckoutCompleted(SIX.TimApi.TimEvent)
+  nameWithType: DefaultTerminalListener.StartCheckoutCompleted(TimEvent)
+- uid: SIX.TimApi.DefaultTerminalListener.StartCheckoutCompleted*
+  name: StartCheckoutCompleted
+  href: api/SIX.TimApi.DefaultTerminalListener.html#SIX_TimApi_DefaultTerminalListener_StartCheckoutCompleted_
+  commentId: Overload:SIX.TimApi.DefaultTerminalListener.StartCheckoutCompleted
+  isSpec: "True"
+  fullName: SIX.TimApi.DefaultTerminalListener.StartCheckoutCompleted
+  nameWithType: DefaultTerminalListener.StartCheckoutCompleted
+- uid: SIX.TimApi.DefaultTerminalListener.SystemInformationCompleted(SIX.TimApi.TimEvent,SIX.TimApi.SystemInformationResponse)
+  name: SystemInformationCompleted(TimEvent, SystemInformationResponse)
+  href: api/SIX.TimApi.DefaultTerminalListener.html#SIX_TimApi_DefaultTerminalListener_SystemInformationCompleted_SIX_TimApi_TimEvent_SIX_TimApi_SystemInformationResponse_
+  commentId: M:SIX.TimApi.DefaultTerminalListener.SystemInformationCompleted(SIX.TimApi.TimEvent,SIX.TimApi.SystemInformationResponse)
+  fullName: SIX.TimApi.DefaultTerminalListener.SystemInformationCompleted(SIX.TimApi.TimEvent, SIX.TimApi.SystemInformationResponse)
+  nameWithType: DefaultTerminalListener.SystemInformationCompleted(TimEvent, SystemInformationResponse)
+- uid: SIX.TimApi.DefaultTerminalListener.SystemInformationCompleted*
+  name: SystemInformationCompleted
+  href: api/SIX.TimApi.DefaultTerminalListener.html#SIX_TimApi_DefaultTerminalListener_SystemInformationCompleted_
+  commentId: Overload:SIX.TimApi.DefaultTerminalListener.SystemInformationCompleted
+  isSpec: "True"
+  fullName: SIX.TimApi.DefaultTerminalListener.SystemInformationCompleted
+  nameWithType: DefaultTerminalListener.SystemInformationCompleted
+- uid: SIX.TimApi.DefaultTerminalListener.TerminalStatusChanged(SIX.TimApi.Terminal)
+  name: TerminalStatusChanged(Terminal)
+  href: api/SIX.TimApi.DefaultTerminalListener.html#SIX_TimApi_DefaultTerminalListener_TerminalStatusChanged_SIX_TimApi_Terminal_
+  commentId: M:SIX.TimApi.DefaultTerminalListener.TerminalStatusChanged(SIX.TimApi.Terminal)
+  fullName: SIX.TimApi.DefaultTerminalListener.TerminalStatusChanged(SIX.TimApi.Terminal)
+  nameWithType: DefaultTerminalListener.TerminalStatusChanged(Terminal)
+- uid: SIX.TimApi.DefaultTerminalListener.TerminalStatusChanged*
+  name: TerminalStatusChanged
+  href: api/SIX.TimApi.DefaultTerminalListener.html#SIX_TimApi_DefaultTerminalListener_TerminalStatusChanged_
+  commentId: Overload:SIX.TimApi.DefaultTerminalListener.TerminalStatusChanged
+  isSpec: "True"
+  fullName: SIX.TimApi.DefaultTerminalListener.TerminalStatusChanged
+  nameWithType: DefaultTerminalListener.TerminalStatusChanged
+- uid: SIX.TimApi.DefaultTerminalListener.TransactionCompleted(SIX.TimApi.TimEvent,SIX.TimApi.TransactionResponse)
+  name: TransactionCompleted(TimEvent, TransactionResponse)
+  href: api/SIX.TimApi.DefaultTerminalListener.html#SIX_TimApi_DefaultTerminalListener_TransactionCompleted_SIX_TimApi_TimEvent_SIX_TimApi_TransactionResponse_
+  commentId: M:SIX.TimApi.DefaultTerminalListener.TransactionCompleted(SIX.TimApi.TimEvent,SIX.TimApi.TransactionResponse)
+  fullName: SIX.TimApi.DefaultTerminalListener.TransactionCompleted(SIX.TimApi.TimEvent, SIX.TimApi.TransactionResponse)
+  nameWithType: DefaultTerminalListener.TransactionCompleted(TimEvent, TransactionResponse)
+- uid: SIX.TimApi.DefaultTerminalListener.TransactionCompleted*
+  name: TransactionCompleted
+  href: api/SIX.TimApi.DefaultTerminalListener.html#SIX_TimApi_DefaultTerminalListener_TransactionCompleted_
+  commentId: Overload:SIX.TimApi.DefaultTerminalListener.TransactionCompleted
+  isSpec: "True"
+  fullName: SIX.TimApi.DefaultTerminalListener.TransactionCompleted
+  nameWithType: DefaultTerminalListener.TransactionCompleted
+- uid: SIX.TimApi.DefaultTerminalListener.VasInfo(SIX.TimApi.Terminal,SIX.TimApi.VasCheckoutInformation)
+  name: VasInfo(Terminal, VasCheckoutInformation)
+  href: api/SIX.TimApi.DefaultTerminalListener.html#SIX_TimApi_DefaultTerminalListener_VasInfo_SIX_TimApi_Terminal_SIX_TimApi_VasCheckoutInformation_
+  commentId: M:SIX.TimApi.DefaultTerminalListener.VasInfo(SIX.TimApi.Terminal,SIX.TimApi.VasCheckoutInformation)
+  fullName: SIX.TimApi.DefaultTerminalListener.VasInfo(SIX.TimApi.Terminal, SIX.TimApi.VasCheckoutInformation)
+  nameWithType: DefaultTerminalListener.VasInfo(Terminal, VasCheckoutInformation)
+- uid: SIX.TimApi.DefaultTerminalListener.VasInfo*
+  name: VasInfo
+  href: api/SIX.TimApi.DefaultTerminalListener.html#SIX_TimApi_DefaultTerminalListener_VasInfo_
+  commentId: Overload:SIX.TimApi.DefaultTerminalListener.VasInfo
+  isSpec: "True"
+  fullName: SIX.TimApi.DefaultTerminalListener.VasInfo
+  nameWithType: DefaultTerminalListener.VasInfo
 - uid: SIX.TimApi.DisplayProductInfo
   name: DisplayProductInfo
   href: api/SIX.TimApi.DisplayProductInfo.html
@@ -8846,15 +9588,15 @@ references:
   commentId: T:SIX.TimApi.FeaturesSixml
   fullName: SIX.TimApi.FeaturesSixml
   nameWithType: FeaturesSixml
-- uid: SIX.TimApi.FeaturesSixml.#ctor(System.Collections.Generic.List{SIX.TimApi.Constants.AdminFunctions},SIX.TimApi.FeaturesSixml.Support,SIX.TimApi.FeaturesSixml.Support,SIX.TimApi.FeaturesSixml.Support,System.Boolean,System.Collections.Generic.List{SIX.TimApi.Constants.FinancialTransactions},System.Collections.Generic.List{SIX.TimApi.Constants.Guides},System.Collections.Generic.List{SIX.TimApi.Constants.NonFinancialTransactions},System.Collections.Generic.List{SIX.TimApi.Constants.ProtocolLevel},System.Boolean,System.Collections.Generic.List{SIX.TimApi.Constants.StatusFunctions},System.Collections.Generic.List{SIX.TimApi.Constants.DialogFunctions},System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Collections.Generic.List{SIX.TimApi.Constants.RemoteFunctions},System.Boolean)
-  name: FeaturesSixml(List<AdminFunctions>, FeaturesSixml.Support, FeaturesSixml.Support, FeaturesSixml.Support, Boolean, List<FinancialTransactions>, List<Guides>, List<NonFinancialTransactions>, List<ProtocolLevel>, Boolean, List<StatusFunctions>, List<DialogFunctions>, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, List<RemoteFunctions>, Boolean)
-  href: api/SIX.TimApi.FeaturesSixml.html#SIX_TimApi_FeaturesSixml__ctor_System_Collections_Generic_List_SIX_TimApi_Constants_AdminFunctions__SIX_TimApi_FeaturesSixml_Support_SIX_TimApi_FeaturesSixml_Support_SIX_TimApi_FeaturesSixml_Support_System_Boolean_System_Collections_Generic_List_SIX_TimApi_Constants_FinancialTransactions__System_Collections_Generic_List_SIX_TimApi_Constants_Guides__System_Collections_Generic_List_SIX_TimApi_Constants_NonFinancialTransactions__System_Collections_Generic_List_SIX_TimApi_Constants_ProtocolLevel__System_Boolean_System_Collections_Generic_List_SIX_TimApi_Constants_StatusFunctions__System_Collections_Generic_List_SIX_TimApi_Constants_DialogFunctions__System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Collections_Generic_List_SIX_TimApi_Constants_RemoteFunctions__System_Boolean_
-  commentId: M:SIX.TimApi.FeaturesSixml.#ctor(System.Collections.Generic.List{SIX.TimApi.Constants.AdminFunctions},SIX.TimApi.FeaturesSixml.Support,SIX.TimApi.FeaturesSixml.Support,SIX.TimApi.FeaturesSixml.Support,System.Boolean,System.Collections.Generic.List{SIX.TimApi.Constants.FinancialTransactions},System.Collections.Generic.List{SIX.TimApi.Constants.Guides},System.Collections.Generic.List{SIX.TimApi.Constants.NonFinancialTransactions},System.Collections.Generic.List{SIX.TimApi.Constants.ProtocolLevel},System.Boolean,System.Collections.Generic.List{SIX.TimApi.Constants.StatusFunctions},System.Collections.Generic.List{SIX.TimApi.Constants.DialogFunctions},System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Collections.Generic.List{SIX.TimApi.Constants.RemoteFunctions},System.Boolean)
-  name.vb: FeaturesSixml(List(Of AdminFunctions), FeaturesSixml.Support, FeaturesSixml.Support, FeaturesSixml.Support, Boolean, List(Of FinancialTransactions), List(Of Guides), List(Of NonFinancialTransactions), List(Of ProtocolLevel), Boolean, List(Of StatusFunctions), List(Of DialogFunctions), Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, List(Of RemoteFunctions), Boolean)
-  fullName: SIX.TimApi.FeaturesSixml.FeaturesSixml(System.Collections.Generic.List<SIX.TimApi.Constants.AdminFunctions>, SIX.TimApi.FeaturesSixml.Support, SIX.TimApi.FeaturesSixml.Support, SIX.TimApi.FeaturesSixml.Support, System.Boolean, System.Collections.Generic.List<SIX.TimApi.Constants.FinancialTransactions>, System.Collections.Generic.List<SIX.TimApi.Constants.Guides>, System.Collections.Generic.List<SIX.TimApi.Constants.NonFinancialTransactions>, System.Collections.Generic.List<SIX.TimApi.Constants.ProtocolLevel>, System.Boolean, System.Collections.Generic.List<SIX.TimApi.Constants.StatusFunctions>, System.Collections.Generic.List<SIX.TimApi.Constants.DialogFunctions>, System.Boolean, System.Boolean, System.Boolean, System.Boolean, System.Boolean, System.Boolean, System.Boolean, System.Boolean, System.Collections.Generic.List<SIX.TimApi.Constants.RemoteFunctions>, System.Boolean)
-  fullName.vb: SIX.TimApi.FeaturesSixml.FeaturesSixml(System.Collections.Generic.List(Of SIX.TimApi.Constants.AdminFunctions), SIX.TimApi.FeaturesSixml.Support, SIX.TimApi.FeaturesSixml.Support, SIX.TimApi.FeaturesSixml.Support, System.Boolean, System.Collections.Generic.List(Of SIX.TimApi.Constants.FinancialTransactions), System.Collections.Generic.List(Of SIX.TimApi.Constants.Guides), System.Collections.Generic.List(Of SIX.TimApi.Constants.NonFinancialTransactions), System.Collections.Generic.List(Of SIX.TimApi.Constants.ProtocolLevel), System.Boolean, System.Collections.Generic.List(Of SIX.TimApi.Constants.StatusFunctions), System.Collections.Generic.List(Of SIX.TimApi.Constants.DialogFunctions), System.Boolean, System.Boolean, System.Boolean, System.Boolean, System.Boolean, System.Boolean, System.Boolean, System.Boolean, System.Collections.Generic.List(Of SIX.TimApi.Constants.RemoteFunctions), System.Boolean)
-  nameWithType: FeaturesSixml.FeaturesSixml(List<AdminFunctions>, FeaturesSixml.Support, FeaturesSixml.Support, FeaturesSixml.Support, Boolean, List<FinancialTransactions>, List<Guides>, List<NonFinancialTransactions>, List<ProtocolLevel>, Boolean, List<StatusFunctions>, List<DialogFunctions>, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, List<RemoteFunctions>, Boolean)
-  nameWithType.vb: FeaturesSixml.FeaturesSixml(List(Of AdminFunctions), FeaturesSixml.Support, FeaturesSixml.Support, FeaturesSixml.Support, Boolean, List(Of FinancialTransactions), List(Of Guides), List(Of NonFinancialTransactions), List(Of ProtocolLevel), Boolean, List(Of StatusFunctions), List(Of DialogFunctions), Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, List(Of RemoteFunctions), Boolean)
+- uid: SIX.TimApi.FeaturesSixml.#ctor(System.Collections.Generic.List{SIX.TimApi.Constants.AdminFunctions},SIX.TimApi.FeaturesSixml.Support,SIX.TimApi.FeaturesSixml.Support,SIX.TimApi.FeaturesSixml.Support,System.Boolean,System.Collections.Generic.List{SIX.TimApi.Constants.FinancialTransactions},System.Collections.Generic.List{SIX.TimApi.Constants.Guides},System.Collections.Generic.List{SIX.TimApi.Constants.NonFinancialTransactions},System.Collections.Generic.List{SIX.TimApi.Constants.ProtocolLevel},System.Boolean,System.Collections.Generic.List{SIX.TimApi.Constants.StatusFunctions},System.Collections.Generic.List{SIX.TimApi.Constants.DialogFunctions},System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Collections.Generic.List{SIX.TimApi.Constants.RemoteFunctions},System.Boolean,System.Boolean)
+  name: FeaturesSixml(List<AdminFunctions>, FeaturesSixml.Support, FeaturesSixml.Support, FeaturesSixml.Support, Boolean, List<FinancialTransactions>, List<Guides>, List<NonFinancialTransactions>, List<ProtocolLevel>, Boolean, List<StatusFunctions>, List<DialogFunctions>, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, List<RemoteFunctions>, Boolean, Boolean)
+  href: api/SIX.TimApi.FeaturesSixml.html#SIX_TimApi_FeaturesSixml__ctor_System_Collections_Generic_List_SIX_TimApi_Constants_AdminFunctions__SIX_TimApi_FeaturesSixml_Support_SIX_TimApi_FeaturesSixml_Support_SIX_TimApi_FeaturesSixml_Support_System_Boolean_System_Collections_Generic_List_SIX_TimApi_Constants_FinancialTransactions__System_Collections_Generic_List_SIX_TimApi_Constants_Guides__System_Collections_Generic_List_SIX_TimApi_Constants_NonFinancialTransactions__System_Collections_Generic_List_SIX_TimApi_Constants_ProtocolLevel__System_Boolean_System_Collections_Generic_List_SIX_TimApi_Constants_StatusFunctions__System_Collections_Generic_List_SIX_TimApi_Constants_DialogFunctions__System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Collections_Generic_List_SIX_TimApi_Constants_RemoteFunctions__System_Boolean_System_Boolean_
+  commentId: M:SIX.TimApi.FeaturesSixml.#ctor(System.Collections.Generic.List{SIX.TimApi.Constants.AdminFunctions},SIX.TimApi.FeaturesSixml.Support,SIX.TimApi.FeaturesSixml.Support,SIX.TimApi.FeaturesSixml.Support,System.Boolean,System.Collections.Generic.List{SIX.TimApi.Constants.FinancialTransactions},System.Collections.Generic.List{SIX.TimApi.Constants.Guides},System.Collections.Generic.List{SIX.TimApi.Constants.NonFinancialTransactions},System.Collections.Generic.List{SIX.TimApi.Constants.ProtocolLevel},System.Boolean,System.Collections.Generic.List{SIX.TimApi.Constants.StatusFunctions},System.Collections.Generic.List{SIX.TimApi.Constants.DialogFunctions},System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Collections.Generic.List{SIX.TimApi.Constants.RemoteFunctions},System.Boolean,System.Boolean)
+  name.vb: FeaturesSixml(List(Of AdminFunctions), FeaturesSixml.Support, FeaturesSixml.Support, FeaturesSixml.Support, Boolean, List(Of FinancialTransactions), List(Of Guides), List(Of NonFinancialTransactions), List(Of ProtocolLevel), Boolean, List(Of StatusFunctions), List(Of DialogFunctions), Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, List(Of RemoteFunctions), Boolean, Boolean)
+  fullName: SIX.TimApi.FeaturesSixml.FeaturesSixml(System.Collections.Generic.List<SIX.TimApi.Constants.AdminFunctions>, SIX.TimApi.FeaturesSixml.Support, SIX.TimApi.FeaturesSixml.Support, SIX.TimApi.FeaturesSixml.Support, System.Boolean, System.Collections.Generic.List<SIX.TimApi.Constants.FinancialTransactions>, System.Collections.Generic.List<SIX.TimApi.Constants.Guides>, System.Collections.Generic.List<SIX.TimApi.Constants.NonFinancialTransactions>, System.Collections.Generic.List<SIX.TimApi.Constants.ProtocolLevel>, System.Boolean, System.Collections.Generic.List<SIX.TimApi.Constants.StatusFunctions>, System.Collections.Generic.List<SIX.TimApi.Constants.DialogFunctions>, System.Boolean, System.Boolean, System.Boolean, System.Boolean, System.Boolean, System.Boolean, System.Boolean, System.Boolean, System.Collections.Generic.List<SIX.TimApi.Constants.RemoteFunctions>, System.Boolean, System.Boolean)
+  fullName.vb: SIX.TimApi.FeaturesSixml.FeaturesSixml(System.Collections.Generic.List(Of SIX.TimApi.Constants.AdminFunctions), SIX.TimApi.FeaturesSixml.Support, SIX.TimApi.FeaturesSixml.Support, SIX.TimApi.FeaturesSixml.Support, System.Boolean, System.Collections.Generic.List(Of SIX.TimApi.Constants.FinancialTransactions), System.Collections.Generic.List(Of SIX.TimApi.Constants.Guides), System.Collections.Generic.List(Of SIX.TimApi.Constants.NonFinancialTransactions), System.Collections.Generic.List(Of SIX.TimApi.Constants.ProtocolLevel), System.Boolean, System.Collections.Generic.List(Of SIX.TimApi.Constants.StatusFunctions), System.Collections.Generic.List(Of SIX.TimApi.Constants.DialogFunctions), System.Boolean, System.Boolean, System.Boolean, System.Boolean, System.Boolean, System.Boolean, System.Boolean, System.Boolean, System.Collections.Generic.List(Of SIX.TimApi.Constants.RemoteFunctions), System.Boolean, System.Boolean)
+  nameWithType: FeaturesSixml.FeaturesSixml(List<AdminFunctions>, FeaturesSixml.Support, FeaturesSixml.Support, FeaturesSixml.Support, Boolean, List<FinancialTransactions>, List<Guides>, List<NonFinancialTransactions>, List<ProtocolLevel>, Boolean, List<StatusFunctions>, List<DialogFunctions>, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, List<RemoteFunctions>, Boolean, Boolean)
+  nameWithType.vb: FeaturesSixml.FeaturesSixml(List(Of AdminFunctions), FeaturesSixml.Support, FeaturesSixml.Support, FeaturesSixml.Support, Boolean, List(Of FinancialTransactions), List(Of Guides), List(Of NonFinancialTransactions), List(Of ProtocolLevel), Boolean, List(Of StatusFunctions), List(Of DialogFunctions), Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, List(Of RemoteFunctions), Boolean, Boolean)
 - uid: SIX.TimApi.FeaturesSixml.#ctor*
   name: FeaturesSixml
   href: api/SIX.TimApi.FeaturesSixml.html#SIX_TimApi_FeaturesSixml__ctor_
@@ -9185,6 +9927,19 @@ references:
   isSpec: "True"
   fullName: SIX.TimApi.FeaturesSixml.ToString
   nameWithType: FeaturesSixml.ToString
+- uid: SIX.TimApi.FeaturesSixml.WakeUp
+  name: WakeUp
+  href: api/SIX.TimApi.FeaturesSixml.html#SIX_TimApi_FeaturesSixml_WakeUp
+  commentId: P:SIX.TimApi.FeaturesSixml.WakeUp
+  fullName: SIX.TimApi.FeaturesSixml.WakeUp
+  nameWithType: FeaturesSixml.WakeUp
+- uid: SIX.TimApi.FeaturesSixml.WakeUp*
+  name: WakeUp
+  href: api/SIX.TimApi.FeaturesSixml.html#SIX_TimApi_FeaturesSixml_WakeUp_
+  commentId: Overload:SIX.TimApi.FeaturesSixml.WakeUp
+  isSpec: "True"
+  fullName: SIX.TimApi.FeaturesSixml.WakeUp
+  nameWithType: FeaturesSixml.WakeUp
 - uid: SIX.TimApi.Hardware
   name: Hardware
   href: api/SIX.TimApi.Hardware.html
@@ -10183,6 +10938,19 @@ references:
   isSpec: "True"
   fullName: SIX.TimApi.ImmutableTerminalSettings.ToString
   nameWithType: ImmutableTerminalSettings.ToString
+- uid: SIX.TimApi.ImmutableTerminalSettings.WakeupTimeout
+  name: WakeupTimeout
+  href: api/SIX.TimApi.ImmutableTerminalSettings.html#SIX_TimApi_ImmutableTerminalSettings_WakeupTimeout
+  commentId: P:SIX.TimApi.ImmutableTerminalSettings.WakeupTimeout
+  fullName: SIX.TimApi.ImmutableTerminalSettings.WakeupTimeout
+  nameWithType: ImmutableTerminalSettings.WakeupTimeout
+- uid: SIX.TimApi.ImmutableTerminalSettings.WakeupTimeout*
+  name: WakeupTimeout
+  href: api/SIX.TimApi.ImmutableTerminalSettings.html#SIX_TimApi_ImmutableTerminalSettings_WakeupTimeout_
+  commentId: Overload:SIX.TimApi.ImmutableTerminalSettings.WakeupTimeout
+  isSpec: "True"
+  fullName: SIX.TimApi.ImmutableTerminalSettings.WakeupTimeout
+  nameWithType: ImmutableTerminalSettings.WakeupTimeout
 - uid: SIX.TimApi.InitTransactionResponse
   name: InitTransactionResponse
   href: api/SIX.TimApi.InitTransactionResponse.html
@@ -14463,6 +15231,19 @@ references:
   isSpec: "True"
   fullName: SIX.TimApi.Terminal.AddEcrData
   nameWithType: Terminal.AddEcrData
+- uid: SIX.TimApi.Terminal.AddListener(TerminalListener)
+  name: AddListener(TerminalListener)
+  href: api/SIX.TimApi.Terminal.html#SIX_TimApi_Terminal_AddListener_TerminalListener_
+  commentId: M:SIX.TimApi.Terminal.AddListener(TerminalListener)
+  fullName: SIX.TimApi.Terminal.AddListener(TerminalListener)
+  nameWithType: Terminal.AddListener(TerminalListener)
+- uid: SIX.TimApi.Terminal.AddListener*
+  name: AddListener
+  href: api/SIX.TimApi.Terminal.html#SIX_TimApi_Terminal_AddListener_
+  commentId: Overload:SIX.TimApi.Terminal.AddListener
+  isSpec: "True"
+  fullName: SIX.TimApi.Terminal.AddListener
+  nameWithType: Terminal.AddListener
 - uid: SIX.TimApi.Terminal.AmtAdjustment(SIX.TimApi.Amount)
   name: AmtAdjustment(Amount)
   href: api/SIX.TimApi.Terminal.html#SIX_TimApi_Terminal_AmtAdjustment_SIX_TimApi_Amount_
@@ -16965,6 +17746,19 @@ references:
   commentId: T:SIX.TimApi.Terminal.ReconfigCompletedEventHandler
   fullName: SIX.TimApi.Terminal.ReconfigCompletedEventHandler
   nameWithType: Terminal.ReconfigCompletedEventHandler
+- uid: SIX.TimApi.Terminal.RemoveListener(TerminalListener)
+  name: RemoveListener(TerminalListener)
+  href: api/SIX.TimApi.Terminal.html#SIX_TimApi_Terminal_RemoveListener_TerminalListener_
+  commentId: M:SIX.TimApi.Terminal.RemoveListener(TerminalListener)
+  fullName: SIX.TimApi.Terminal.RemoveListener(TerminalListener)
+  nameWithType: Terminal.RemoveListener(TerminalListener)
+- uid: SIX.TimApi.Terminal.RemoveListener*
+  name: RemoveListener
+  href: api/SIX.TimApi.Terminal.html#SIX_TimApi_Terminal_RemoveListener_
+  commentId: Overload:SIX.TimApi.Terminal.RemoveListener
+  isSpec: "True"
+  fullName: SIX.TimApi.Terminal.RemoveListener
+  nameWithType: Terminal.RemoveListener
 - uid: SIX.TimApi.Terminal.RequestAlias(System.String)
   name: RequestAlias(String)
   href: api/SIX.TimApi.Terminal.html#SIX_TimApi_Terminal_RequestAlias_System_String_
@@ -17855,6 +18649,697 @@ references:
   isSpec: "True"
   fullName: SIX.TimApi.Terminal.WaitCommandComplete
   nameWithType: Terminal.WaitCommandComplete
+- uid: SIX.TimApi.TerminalListener
+  name: TerminalListener
+  href: api/SIX.TimApi.TerminalListener.html
+  commentId: T:SIX.TimApi.TerminalListener
+  fullName: SIX.TimApi.TerminalListener
+  nameWithType: TerminalListener
+- uid: SIX.TimApi.TerminalListener.ActivateCompleted(SIX.TimApi.TimEvent,SIX.TimApi.ActivateResponse)
+  name: ActivateCompleted(TimEvent, ActivateResponse)
+  href: api/SIX.TimApi.TerminalListener.html#SIX_TimApi_TerminalListener_ActivateCompleted_SIX_TimApi_TimEvent_SIX_TimApi_ActivateResponse_
+  commentId: M:SIX.TimApi.TerminalListener.ActivateCompleted(SIX.TimApi.TimEvent,SIX.TimApi.ActivateResponse)
+  fullName: SIX.TimApi.TerminalListener.ActivateCompleted(SIX.TimApi.TimEvent, SIX.TimApi.ActivateResponse)
+  nameWithType: TerminalListener.ActivateCompleted(TimEvent, ActivateResponse)
+- uid: SIX.TimApi.TerminalListener.ActivateCompleted*
+  name: ActivateCompleted
+  href: api/SIX.TimApi.TerminalListener.html#SIX_TimApi_TerminalListener_ActivateCompleted_
+  commentId: Overload:SIX.TimApi.TerminalListener.ActivateCompleted
+  isSpec: "True"
+  fullName: SIX.TimApi.TerminalListener.ActivateCompleted
+  nameWithType: TerminalListener.ActivateCompleted
+- uid: SIX.TimApi.TerminalListener.ActivateServiceMenuCompleted(SIX.TimApi.TimEvent)
+  name: ActivateServiceMenuCompleted(TimEvent)
+  href: api/SIX.TimApi.TerminalListener.html#SIX_TimApi_TerminalListener_ActivateServiceMenuCompleted_SIX_TimApi_TimEvent_
+  commentId: M:SIX.TimApi.TerminalListener.ActivateServiceMenuCompleted(SIX.TimApi.TimEvent)
+  fullName: SIX.TimApi.TerminalListener.ActivateServiceMenuCompleted(SIX.TimApi.TimEvent)
+  nameWithType: TerminalListener.ActivateServiceMenuCompleted(TimEvent)
+- uid: SIX.TimApi.TerminalListener.ActivateServiceMenuCompleted*
+  name: ActivateServiceMenuCompleted
+  href: api/SIX.TimApi.TerminalListener.html#SIX_TimApi_TerminalListener_ActivateServiceMenuCompleted_
+  commentId: Overload:SIX.TimApi.TerminalListener.ActivateServiceMenuCompleted
+  isSpec: "True"
+  fullName: SIX.TimApi.TerminalListener.ActivateServiceMenuCompleted
+  nameWithType: TerminalListener.ActivateServiceMenuCompleted
+- uid: SIX.TimApi.TerminalListener.ApplicationInformationCompleted(SIX.TimApi.TimEvent)
+  name: ApplicationInformationCompleted(TimEvent)
+  href: api/SIX.TimApi.TerminalListener.html#SIX_TimApi_TerminalListener_ApplicationInformationCompleted_SIX_TimApi_TimEvent_
+  commentId: M:SIX.TimApi.TerminalListener.ApplicationInformationCompleted(SIX.TimApi.TimEvent)
+  fullName: SIX.TimApi.TerminalListener.ApplicationInformationCompleted(SIX.TimApi.TimEvent)
+  nameWithType: TerminalListener.ApplicationInformationCompleted(TimEvent)
+- uid: SIX.TimApi.TerminalListener.ApplicationInformationCompleted*
+  name: ApplicationInformationCompleted
+  href: api/SIX.TimApi.TerminalListener.html#SIX_TimApi_TerminalListener_ApplicationInformationCompleted_
+  commentId: Overload:SIX.TimApi.TerminalListener.ApplicationInformationCompleted
+  isSpec: "True"
+  fullName: SIX.TimApi.TerminalListener.ApplicationInformationCompleted
+  nameWithType: TerminalListener.ApplicationInformationCompleted
+- uid: SIX.TimApi.TerminalListener.BalanceCompleted(SIX.TimApi.TimEvent,SIX.TimApi.BalanceResponse)
+  name: BalanceCompleted(TimEvent, BalanceResponse)
+  href: api/SIX.TimApi.TerminalListener.html#SIX_TimApi_TerminalListener_BalanceCompleted_SIX_TimApi_TimEvent_SIX_TimApi_BalanceResponse_
+  commentId: M:SIX.TimApi.TerminalListener.BalanceCompleted(SIX.TimApi.TimEvent,SIX.TimApi.BalanceResponse)
+  fullName: SIX.TimApi.TerminalListener.BalanceCompleted(SIX.TimApi.TimEvent, SIX.TimApi.BalanceResponse)
+  nameWithType: TerminalListener.BalanceCompleted(TimEvent, BalanceResponse)
+- uid: SIX.TimApi.TerminalListener.BalanceCompleted*
+  name: BalanceCompleted
+  href: api/SIX.TimApi.TerminalListener.html#SIX_TimApi_TerminalListener_BalanceCompleted_
+  commentId: Overload:SIX.TimApi.TerminalListener.BalanceCompleted
+  isSpec: "True"
+  fullName: SIX.TimApi.TerminalListener.BalanceCompleted
+  nameWithType: TerminalListener.BalanceCompleted
+- uid: SIX.TimApi.TerminalListener.BalanceInquiryCompleted(SIX.TimApi.TimEvent,SIX.TimApi.BalanceInquiryResponse)
+  name: BalanceInquiryCompleted(TimEvent, BalanceInquiryResponse)
+  href: api/SIX.TimApi.TerminalListener.html#SIX_TimApi_TerminalListener_BalanceInquiryCompleted_SIX_TimApi_TimEvent_SIX_TimApi_BalanceInquiryResponse_
+  commentId: M:SIX.TimApi.TerminalListener.BalanceInquiryCompleted(SIX.TimApi.TimEvent,SIX.TimApi.BalanceInquiryResponse)
+  fullName: SIX.TimApi.TerminalListener.BalanceInquiryCompleted(SIX.TimApi.TimEvent, SIX.TimApi.BalanceInquiryResponse)
+  nameWithType: TerminalListener.BalanceInquiryCompleted(TimEvent, BalanceInquiryResponse)
+- uid: SIX.TimApi.TerminalListener.BalanceInquiryCompleted*
+  name: BalanceInquiryCompleted
+  href: api/SIX.TimApi.TerminalListener.html#SIX_TimApi_TerminalListener_BalanceInquiryCompleted_
+  commentId: Overload:SIX.TimApi.TerminalListener.BalanceInquiryCompleted
+  isSpec: "True"
+  fullName: SIX.TimApi.TerminalListener.BalanceInquiryCompleted
+  nameWithType: TerminalListener.BalanceInquiryCompleted
+- uid: SIX.TimApi.TerminalListener.ChangeSettingsCompleted(SIX.TimApi.TimEvent)
+  name: ChangeSettingsCompleted(TimEvent)
+  href: api/SIX.TimApi.TerminalListener.html#SIX_TimApi_TerminalListener_ChangeSettingsCompleted_SIX_TimApi_TimEvent_
+  commentId: M:SIX.TimApi.TerminalListener.ChangeSettingsCompleted(SIX.TimApi.TimEvent)
+  fullName: SIX.TimApi.TerminalListener.ChangeSettingsCompleted(SIX.TimApi.TimEvent)
+  nameWithType: TerminalListener.ChangeSettingsCompleted(TimEvent)
+- uid: SIX.TimApi.TerminalListener.ChangeSettingsCompleted*
+  name: ChangeSettingsCompleted
+  href: api/SIX.TimApi.TerminalListener.html#SIX_TimApi_TerminalListener_ChangeSettingsCompleted_
+  commentId: Overload:SIX.TimApi.TerminalListener.ChangeSettingsCompleted
+  isSpec: "True"
+  fullName: SIX.TimApi.TerminalListener.ChangeSettingsCompleted
+  nameWithType: TerminalListener.ChangeSettingsCompleted
+- uid: SIX.TimApi.TerminalListener.ClientIdentificationCompleted(SIX.TimApi.TimEvent,SIX.TimApi.ClientIdentificationResponse)
+  name: ClientIdentificationCompleted(TimEvent, ClientIdentificationResponse)
+  href: api/SIX.TimApi.TerminalListener.html#SIX_TimApi_TerminalListener_ClientIdentificationCompleted_SIX_TimApi_TimEvent_SIX_TimApi_ClientIdentificationResponse_
+  commentId: M:SIX.TimApi.TerminalListener.ClientIdentificationCompleted(SIX.TimApi.TimEvent,SIX.TimApi.ClientIdentificationResponse)
+  fullName: SIX.TimApi.TerminalListener.ClientIdentificationCompleted(SIX.TimApi.TimEvent, SIX.TimApi.ClientIdentificationResponse)
+  nameWithType: TerminalListener.ClientIdentificationCompleted(TimEvent, ClientIdentificationResponse)
+- uid: SIX.TimApi.TerminalListener.ClientIdentificationCompleted*
+  name: ClientIdentificationCompleted
+  href: api/SIX.TimApi.TerminalListener.html#SIX_TimApi_TerminalListener_ClientIdentificationCompleted_
+  commentId: Overload:SIX.TimApi.TerminalListener.ClientIdentificationCompleted
+  isSpec: "True"
+  fullName: SIX.TimApi.TerminalListener.ClientIdentificationCompleted
+  nameWithType: TerminalListener.ClientIdentificationCompleted
+- uid: SIX.TimApi.TerminalListener.CloseDialogModeCompleted(SIX.TimApi.TimEvent)
+  name: CloseDialogModeCompleted(TimEvent)
+  href: api/SIX.TimApi.TerminalListener.html#SIX_TimApi_TerminalListener_CloseDialogModeCompleted_SIX_TimApi_TimEvent_
+  commentId: M:SIX.TimApi.TerminalListener.CloseDialogModeCompleted(SIX.TimApi.TimEvent)
+  fullName: SIX.TimApi.TerminalListener.CloseDialogModeCompleted(SIX.TimApi.TimEvent)
+  nameWithType: TerminalListener.CloseDialogModeCompleted(TimEvent)
+- uid: SIX.TimApi.TerminalListener.CloseDialogModeCompleted*
+  name: CloseDialogModeCompleted
+  href: api/SIX.TimApi.TerminalListener.html#SIX_TimApi_TerminalListener_CloseDialogModeCompleted_
+  commentId: Overload:SIX.TimApi.TerminalListener.CloseDialogModeCompleted
+  isSpec: "True"
+  fullName: SIX.TimApi.TerminalListener.CloseDialogModeCompleted
+  nameWithType: TerminalListener.CloseDialogModeCompleted
+- uid: SIX.TimApi.TerminalListener.CloseMaintenanceWindowCompleted(SIX.TimApi.TimEvent)
+  name: CloseMaintenanceWindowCompleted(TimEvent)
+  href: api/SIX.TimApi.TerminalListener.html#SIX_TimApi_TerminalListener_CloseMaintenanceWindowCompleted_SIX_TimApi_TimEvent_
+  commentId: M:SIX.TimApi.TerminalListener.CloseMaintenanceWindowCompleted(SIX.TimApi.TimEvent)
+  fullName: SIX.TimApi.TerminalListener.CloseMaintenanceWindowCompleted(SIX.TimApi.TimEvent)
+  nameWithType: TerminalListener.CloseMaintenanceWindowCompleted(TimEvent)
+- uid: SIX.TimApi.TerminalListener.CloseMaintenanceWindowCompleted*
+  name: CloseMaintenanceWindowCompleted
+  href: api/SIX.TimApi.TerminalListener.html#SIX_TimApi_TerminalListener_CloseMaintenanceWindowCompleted_
+  commentId: Overload:SIX.TimApi.TerminalListener.CloseMaintenanceWindowCompleted
+  isSpec: "True"
+  fullName: SIX.TimApi.TerminalListener.CloseMaintenanceWindowCompleted
+  nameWithType: TerminalListener.CloseMaintenanceWindowCompleted
+- uid: SIX.TimApi.TerminalListener.CloseReaderCompleted(SIX.TimApi.TimEvent)
+  name: CloseReaderCompleted(TimEvent)
+  href: api/SIX.TimApi.TerminalListener.html#SIX_TimApi_TerminalListener_CloseReaderCompleted_SIX_TimApi_TimEvent_
+  commentId: M:SIX.TimApi.TerminalListener.CloseReaderCompleted(SIX.TimApi.TimEvent)
+  fullName: SIX.TimApi.TerminalListener.CloseReaderCompleted(SIX.TimApi.TimEvent)
+  nameWithType: TerminalListener.CloseReaderCompleted(TimEvent)
+- uid: SIX.TimApi.TerminalListener.CloseReaderCompleted*
+  name: CloseReaderCompleted
+  href: api/SIX.TimApi.TerminalListener.html#SIX_TimApi_TerminalListener_CloseReaderCompleted_
+  commentId: Overload:SIX.TimApi.TerminalListener.CloseReaderCompleted
+  isSpec: "True"
+  fullName: SIX.TimApi.TerminalListener.CloseReaderCompleted
+  nameWithType: TerminalListener.CloseReaderCompleted
+- uid: SIX.TimApi.TerminalListener.CommitCompleted(SIX.TimApi.TimEvent,SIX.TimApi.PrintData)
+  name: CommitCompleted(TimEvent, PrintData)
+  href: api/SIX.TimApi.TerminalListener.html#SIX_TimApi_TerminalListener_CommitCompleted_SIX_TimApi_TimEvent_SIX_TimApi_PrintData_
+  commentId: M:SIX.TimApi.TerminalListener.CommitCompleted(SIX.TimApi.TimEvent,SIX.TimApi.PrintData)
+  fullName: SIX.TimApi.TerminalListener.CommitCompleted(SIX.TimApi.TimEvent, SIX.TimApi.PrintData)
+  nameWithType: TerminalListener.CommitCompleted(TimEvent, PrintData)
+- uid: SIX.TimApi.TerminalListener.CommitCompleted*
+  name: CommitCompleted
+  href: api/SIX.TimApi.TerminalListener.html#SIX_TimApi_TerminalListener_CommitCompleted_
+  commentId: Overload:SIX.TimApi.TerminalListener.CommitCompleted
+  isSpec: "True"
+  fullName: SIX.TimApi.TerminalListener.CommitCompleted
+  nameWithType: TerminalListener.CommitCompleted
+- uid: SIX.TimApi.TerminalListener.ConnectCompleted(SIX.TimApi.TimEvent)
+  name: ConnectCompleted(TimEvent)
+  href: api/SIX.TimApi.TerminalListener.html#SIX_TimApi_TerminalListener_ConnectCompleted_SIX_TimApi_TimEvent_
+  commentId: M:SIX.TimApi.TerminalListener.ConnectCompleted(SIX.TimApi.TimEvent)
+  fullName: SIX.TimApi.TerminalListener.ConnectCompleted(SIX.TimApi.TimEvent)
+  nameWithType: TerminalListener.ConnectCompleted(TimEvent)
+- uid: SIX.TimApi.TerminalListener.ConnectCompleted*
+  name: ConnectCompleted
+  href: api/SIX.TimApi.TerminalListener.html#SIX_TimApi_TerminalListener_ConnectCompleted_
+  commentId: Overload:SIX.TimApi.TerminalListener.ConnectCompleted
+  isSpec: "True"
+  fullName: SIX.TimApi.TerminalListener.ConnectCompleted
+  nameWithType: TerminalListener.ConnectCompleted
+- uid: SIX.TimApi.TerminalListener.CounterRequestCompleted(SIX.TimApi.TimEvent,SIX.TimApi.CounterList)
+  name: CounterRequestCompleted(TimEvent, CounterList)
+  href: api/SIX.TimApi.TerminalListener.html#SIX_TimApi_TerminalListener_CounterRequestCompleted_SIX_TimApi_TimEvent_SIX_TimApi_CounterList_
+  commentId: M:SIX.TimApi.TerminalListener.CounterRequestCompleted(SIX.TimApi.TimEvent,SIX.TimApi.CounterList)
+  fullName: SIX.TimApi.TerminalListener.CounterRequestCompleted(SIX.TimApi.TimEvent, SIX.TimApi.CounterList)
+  nameWithType: TerminalListener.CounterRequestCompleted(TimEvent, CounterList)
+- uid: SIX.TimApi.TerminalListener.CounterRequestCompleted*
+  name: CounterRequestCompleted
+  href: api/SIX.TimApi.TerminalListener.html#SIX_TimApi_TerminalListener_CounterRequestCompleted_
+  commentId: Overload:SIX.TimApi.TerminalListener.CounterRequestCompleted
+  isSpec: "True"
+  fullName: SIX.TimApi.TerminalListener.CounterRequestCompleted
+  nameWithType: TerminalListener.CounterRequestCompleted
+- uid: SIX.TimApi.TerminalListener.DccRatesCompleted(SIX.TimApi.TimEvent,SIX.TimApi.PrintData)
+  name: DccRatesCompleted(TimEvent, PrintData)
+  href: api/SIX.TimApi.TerminalListener.html#SIX_TimApi_TerminalListener_DccRatesCompleted_SIX_TimApi_TimEvent_SIX_TimApi_PrintData_
+  commentId: M:SIX.TimApi.TerminalListener.DccRatesCompleted(SIX.TimApi.TimEvent,SIX.TimApi.PrintData)
+  fullName: SIX.TimApi.TerminalListener.DccRatesCompleted(SIX.TimApi.TimEvent, SIX.TimApi.PrintData)
+  nameWithType: TerminalListener.DccRatesCompleted(TimEvent, PrintData)
+- uid: SIX.TimApi.TerminalListener.DccRatesCompleted*
+  name: DccRatesCompleted
+  href: api/SIX.TimApi.TerminalListener.html#SIX_TimApi_TerminalListener_DccRatesCompleted_
+  commentId: Overload:SIX.TimApi.TerminalListener.DccRatesCompleted
+  isSpec: "True"
+  fullName: SIX.TimApi.TerminalListener.DccRatesCompleted
+  nameWithType: TerminalListener.DccRatesCompleted
+- uid: SIX.TimApi.TerminalListener.DeactivateCompleted(SIX.TimApi.TimEvent,SIX.TimApi.DeactivateResponse)
+  name: DeactivateCompleted(TimEvent, DeactivateResponse)
+  href: api/SIX.TimApi.TerminalListener.html#SIX_TimApi_TerminalListener_DeactivateCompleted_SIX_TimApi_TimEvent_SIX_TimApi_DeactivateResponse_
+  commentId: M:SIX.TimApi.TerminalListener.DeactivateCompleted(SIX.TimApi.TimEvent,SIX.TimApi.DeactivateResponse)
+  fullName: SIX.TimApi.TerminalListener.DeactivateCompleted(SIX.TimApi.TimEvent, SIX.TimApi.DeactivateResponse)
+  nameWithType: TerminalListener.DeactivateCompleted(TimEvent, DeactivateResponse)
+- uid: SIX.TimApi.TerminalListener.DeactivateCompleted*
+  name: DeactivateCompleted
+  href: api/SIX.TimApi.TerminalListener.html#SIX_TimApi_TerminalListener_DeactivateCompleted_
+  commentId: Overload:SIX.TimApi.TerminalListener.DeactivateCompleted
+  isSpec: "True"
+  fullName: SIX.TimApi.TerminalListener.DeactivateCompleted
+  nameWithType: TerminalListener.DeactivateCompleted
+- uid: SIX.TimApi.TerminalListener.DeferredAuth(SIX.TimApi.Terminal,SIX.TimApi.TransactionResponse)
+  name: DeferredAuth(Terminal, TransactionResponse)
+  href: api/SIX.TimApi.TerminalListener.html#SIX_TimApi_TerminalListener_DeferredAuth_SIX_TimApi_Terminal_SIX_TimApi_TransactionResponse_
+  commentId: M:SIX.TimApi.TerminalListener.DeferredAuth(SIX.TimApi.Terminal,SIX.TimApi.TransactionResponse)
+  fullName: SIX.TimApi.TerminalListener.DeferredAuth(SIX.TimApi.Terminal, SIX.TimApi.TransactionResponse)
+  nameWithType: TerminalListener.DeferredAuth(Terminal, TransactionResponse)
+- uid: SIX.TimApi.TerminalListener.DeferredAuth*
+  name: DeferredAuth
+  href: api/SIX.TimApi.TerminalListener.html#SIX_TimApi_TerminalListener_DeferredAuth_
+  commentId: Overload:SIX.TimApi.TerminalListener.DeferredAuth
+  isSpec: "True"
+  fullName: SIX.TimApi.TerminalListener.DeferredAuth
+  nameWithType: TerminalListener.DeferredAuth
+- uid: SIX.TimApi.TerminalListener.DeviceMaintenanceCompleted(SIX.TimApi.TimEvent)
+  name: DeviceMaintenanceCompleted(TimEvent)
+  href: api/SIX.TimApi.TerminalListener.html#SIX_TimApi_TerminalListener_DeviceMaintenanceCompleted_SIX_TimApi_TimEvent_
+  commentId: M:SIX.TimApi.TerminalListener.DeviceMaintenanceCompleted(SIX.TimApi.TimEvent)
+  fullName: SIX.TimApi.TerminalListener.DeviceMaintenanceCompleted(SIX.TimApi.TimEvent)
+  nameWithType: TerminalListener.DeviceMaintenanceCompleted(TimEvent)
+- uid: SIX.TimApi.TerminalListener.DeviceMaintenanceCompleted*
+  name: DeviceMaintenanceCompleted
+  href: api/SIX.TimApi.TerminalListener.html#SIX_TimApi_TerminalListener_DeviceMaintenanceCompleted_
+  commentId: Overload:SIX.TimApi.TerminalListener.DeviceMaintenanceCompleted
+  isSpec: "True"
+  fullName: SIX.TimApi.TerminalListener.DeviceMaintenanceCompleted
+  nameWithType: TerminalListener.DeviceMaintenanceCompleted
+- uid: SIX.TimApi.TerminalListener.Disconnected(SIX.TimApi.Terminal,SIX.TimApi.TimException)
+  name: Disconnected(Terminal, TimException)
+  href: api/SIX.TimApi.TerminalListener.html#SIX_TimApi_TerminalListener_Disconnected_SIX_TimApi_Terminal_SIX_TimApi_TimException_
+  commentId: M:SIX.TimApi.TerminalListener.Disconnected(SIX.TimApi.Terminal,SIX.TimApi.TimException)
+  fullName: SIX.TimApi.TerminalListener.Disconnected(SIX.TimApi.Terminal, SIX.TimApi.TimException)
+  nameWithType: TerminalListener.Disconnected(Terminal, TimException)
+- uid: SIX.TimApi.TerminalListener.Disconnected*
+  name: Disconnected
+  href: api/SIX.TimApi.TerminalListener.html#SIX_TimApi_TerminalListener_Disconnected_
+  commentId: Overload:SIX.TimApi.TerminalListener.Disconnected
+  isSpec: "True"
+  fullName: SIX.TimApi.TerminalListener.Disconnected
+  nameWithType: TerminalListener.Disconnected
+- uid: SIX.TimApi.TerminalListener.EjectCardCompleted(SIX.TimApi.TimEvent)
+  name: EjectCardCompleted(TimEvent)
+  href: api/SIX.TimApi.TerminalListener.html#SIX_TimApi_TerminalListener_EjectCardCompleted_SIX_TimApi_TimEvent_
+  commentId: M:SIX.TimApi.TerminalListener.EjectCardCompleted(SIX.TimApi.TimEvent)
+  fullName: SIX.TimApi.TerminalListener.EjectCardCompleted(SIX.TimApi.TimEvent)
+  nameWithType: TerminalListener.EjectCardCompleted(TimEvent)
+- uid: SIX.TimApi.TerminalListener.EjectCardCompleted*
+  name: EjectCardCompleted
+  href: api/SIX.TimApi.TerminalListener.html#SIX_TimApi_TerminalListener_EjectCardCompleted_
+  commentId: Overload:SIX.TimApi.TerminalListener.EjectCardCompleted
+  isSpec: "True"
+  fullName: SIX.TimApi.TerminalListener.EjectCardCompleted
+  nameWithType: TerminalListener.EjectCardCompleted
+- uid: SIX.TimApi.TerminalListener.ErrorNotification(SIX.TimApi.Terminal,SIX.TimApi.TimException)
+  name: ErrorNotification(Terminal, TimException)
+  href: api/SIX.TimApi.TerminalListener.html#SIX_TimApi_TerminalListener_ErrorNotification_SIX_TimApi_Terminal_SIX_TimApi_TimException_
+  commentId: M:SIX.TimApi.TerminalListener.ErrorNotification(SIX.TimApi.Terminal,SIX.TimApi.TimException)
+  fullName: SIX.TimApi.TerminalListener.ErrorNotification(SIX.TimApi.Terminal, SIX.TimApi.TimException)
+  nameWithType: TerminalListener.ErrorNotification(Terminal, TimException)
+- uid: SIX.TimApi.TerminalListener.ErrorNotification*
+  name: ErrorNotification
+  href: api/SIX.TimApi.TerminalListener.html#SIX_TimApi_TerminalListener_ErrorNotification_
+  commentId: Overload:SIX.TimApi.TerminalListener.ErrorNotification
+  isSpec: "True"
+  fullName: SIX.TimApi.TerminalListener.ErrorNotification
+  nameWithType: TerminalListener.ErrorNotification
+- uid: SIX.TimApi.TerminalListener.FinishCheckoutCompleted(SIX.TimApi.TimEvent,SIX.TimApi.VasCheckoutInformation)
+  name: FinishCheckoutCompleted(TimEvent, VasCheckoutInformation)
+  href: api/SIX.TimApi.TerminalListener.html#SIX_TimApi_TerminalListener_FinishCheckoutCompleted_SIX_TimApi_TimEvent_SIX_TimApi_VasCheckoutInformation_
+  commentId: M:SIX.TimApi.TerminalListener.FinishCheckoutCompleted(SIX.TimApi.TimEvent,SIX.TimApi.VasCheckoutInformation)
+  fullName: SIX.TimApi.TerminalListener.FinishCheckoutCompleted(SIX.TimApi.TimEvent, SIX.TimApi.VasCheckoutInformation)
+  nameWithType: TerminalListener.FinishCheckoutCompleted(TimEvent, VasCheckoutInformation)
+- uid: SIX.TimApi.TerminalListener.FinishCheckoutCompleted*
+  name: FinishCheckoutCompleted
+  href: api/SIX.TimApi.TerminalListener.html#SIX_TimApi_TerminalListener_FinishCheckoutCompleted_
+  commentId: Overload:SIX.TimApi.TerminalListener.FinishCheckoutCompleted
+  isSpec: "True"
+  fullName: SIX.TimApi.TerminalListener.FinishCheckoutCompleted
+  nameWithType: TerminalListener.FinishCheckoutCompleted
+- uid: SIX.TimApi.TerminalListener.HardwareInformationCompleted(SIX.TimApi.TimEvent,SIX.TimApi.HardwareInformationResponse)
+  name: HardwareInformationCompleted(TimEvent, HardwareInformationResponse)
+  href: api/SIX.TimApi.TerminalListener.html#SIX_TimApi_TerminalListener_HardwareInformationCompleted_SIX_TimApi_TimEvent_SIX_TimApi_HardwareInformationResponse_
+  commentId: M:SIX.TimApi.TerminalListener.HardwareInformationCompleted(SIX.TimApi.TimEvent,SIX.TimApi.HardwareInformationResponse)
+  fullName: SIX.TimApi.TerminalListener.HardwareInformationCompleted(SIX.TimApi.TimEvent, SIX.TimApi.HardwareInformationResponse)
+  nameWithType: TerminalListener.HardwareInformationCompleted(TimEvent, HardwareInformationResponse)
+- uid: SIX.TimApi.TerminalListener.HardwareInformationCompleted*
+  name: HardwareInformationCompleted
+  href: api/SIX.TimApi.TerminalListener.html#SIX_TimApi_TerminalListener_HardwareInformationCompleted_
+  commentId: Overload:SIX.TimApi.TerminalListener.HardwareInformationCompleted
+  isSpec: "True"
+  fullName: SIX.TimApi.TerminalListener.HardwareInformationCompleted
+  nameWithType: TerminalListener.HardwareInformationCompleted
+- uid: SIX.TimApi.TerminalListener.InitTransactionCompleted(SIX.TimApi.TimEvent,SIX.TimApi.CardData)
+  name: InitTransactionCompleted(TimEvent, CardData)
+  href: api/SIX.TimApi.TerminalListener.html#SIX_TimApi_TerminalListener_InitTransactionCompleted_SIX_TimApi_TimEvent_SIX_TimApi_CardData_
+  commentId: M:SIX.TimApi.TerminalListener.InitTransactionCompleted(SIX.TimApi.TimEvent,SIX.TimApi.CardData)
+  fullName: SIX.TimApi.TerminalListener.InitTransactionCompleted(SIX.TimApi.TimEvent, SIX.TimApi.CardData)
+  nameWithType: TerminalListener.InitTransactionCompleted(TimEvent, CardData)
+- uid: SIX.TimApi.TerminalListener.InitTransactionCompleted*
+  name: InitTransactionCompleted
+  href: api/SIX.TimApi.TerminalListener.html#SIX_TimApi_TerminalListener_InitTransactionCompleted_
+  commentId: Overload:SIX.TimApi.TerminalListener.InitTransactionCompleted
+  isSpec: "True"
+  fullName: SIX.TimApi.TerminalListener.InitTransactionCompleted
+  nameWithType: TerminalListener.InitTransactionCompleted
+- uid: SIX.TimApi.TerminalListener.InitTransactionWithDialogCompleted(SIX.TimApi.TimEvent,SIX.TimApi.InitTransactionResponse)
+  name: InitTransactionWithDialogCompleted(TimEvent, InitTransactionResponse)
+  href: api/SIX.TimApi.TerminalListener.html#SIX_TimApi_TerminalListener_InitTransactionWithDialogCompleted_SIX_TimApi_TimEvent_SIX_TimApi_InitTransactionResponse_
+  commentId: M:SIX.TimApi.TerminalListener.InitTransactionWithDialogCompleted(SIX.TimApi.TimEvent,SIX.TimApi.InitTransactionResponse)
+  fullName: SIX.TimApi.TerminalListener.InitTransactionWithDialogCompleted(SIX.TimApi.TimEvent, SIX.TimApi.InitTransactionResponse)
+  nameWithType: TerminalListener.InitTransactionWithDialogCompleted(TimEvent, InitTransactionResponse)
+- uid: SIX.TimApi.TerminalListener.InitTransactionWithDialogCompleted*
+  name: InitTransactionWithDialogCompleted
+  href: api/SIX.TimApi.TerminalListener.html#SIX_TimApi_TerminalListener_InitTransactionWithDialogCompleted_
+  commentId: Overload:SIX.TimApi.TerminalListener.InitTransactionWithDialogCompleted
+  isSpec: "True"
+  fullName: SIX.TimApi.TerminalListener.InitTransactionWithDialogCompleted
+  nameWithType: TerminalListener.InitTransactionWithDialogCompleted
+- uid: SIX.TimApi.TerminalListener.KeyPressed(SIX.TimApi.Terminal,SIX.TimApi.Constants.Reason)
+  name: KeyPressed(Terminal, Reason)
+  href: api/SIX.TimApi.TerminalListener.html#SIX_TimApi_TerminalListener_KeyPressed_SIX_TimApi_Terminal_SIX_TimApi_Constants_Reason_
+  commentId: M:SIX.TimApi.TerminalListener.KeyPressed(SIX.TimApi.Terminal,SIX.TimApi.Constants.Reason)
+  fullName: SIX.TimApi.TerminalListener.KeyPressed(SIX.TimApi.Terminal, SIX.TimApi.Constants.Reason)
+  nameWithType: TerminalListener.KeyPressed(Terminal, Reason)
+- uid: SIX.TimApi.TerminalListener.KeyPressed*
+  name: KeyPressed
+  href: api/SIX.TimApi.TerminalListener.html#SIX_TimApi_TerminalListener_KeyPressed_
+  commentId: Overload:SIX.TimApi.TerminalListener.KeyPressed
+  isSpec: "True"
+  fullName: SIX.TimApi.TerminalListener.KeyPressed
+  nameWithType: TerminalListener.KeyPressed
+- uid: SIX.TimApi.TerminalListener.LoginCompleted(SIX.TimApi.TimEvent)
+  name: LoginCompleted(TimEvent)
+  href: api/SIX.TimApi.TerminalListener.html#SIX_TimApi_TerminalListener_LoginCompleted_SIX_TimApi_TimEvent_
+  commentId: M:SIX.TimApi.TerminalListener.LoginCompleted(SIX.TimApi.TimEvent)
+  fullName: SIX.TimApi.TerminalListener.LoginCompleted(SIX.TimApi.TimEvent)
+  nameWithType: TerminalListener.LoginCompleted(TimEvent)
+- uid: SIX.TimApi.TerminalListener.LoginCompleted*
+  name: LoginCompleted
+  href: api/SIX.TimApi.TerminalListener.html#SIX_TimApi_TerminalListener_LoginCompleted_
+  commentId: Overload:SIX.TimApi.TerminalListener.LoginCompleted
+  isSpec: "True"
+  fullName: SIX.TimApi.TerminalListener.LoginCompleted
+  nameWithType: TerminalListener.LoginCompleted
+- uid: SIX.TimApi.TerminalListener.LogoutCompleted(SIX.TimApi.TimEvent)
+  name: LogoutCompleted(TimEvent)
+  href: api/SIX.TimApi.TerminalListener.html#SIX_TimApi_TerminalListener_LogoutCompleted_SIX_TimApi_TimEvent_
+  commentId: M:SIX.TimApi.TerminalListener.LogoutCompleted(SIX.TimApi.TimEvent)
+  fullName: SIX.TimApi.TerminalListener.LogoutCompleted(SIX.TimApi.TimEvent)
+  nameWithType: TerminalListener.LogoutCompleted(TimEvent)
+- uid: SIX.TimApi.TerminalListener.LogoutCompleted*
+  name: LogoutCompleted
+  href: api/SIX.TimApi.TerminalListener.html#SIX_TimApi_TerminalListener_LogoutCompleted_
+  commentId: Overload:SIX.TimApi.TerminalListener.LogoutCompleted
+  isSpec: "True"
+  fullName: SIX.TimApi.TerminalListener.LogoutCompleted
+  nameWithType: TerminalListener.LogoutCompleted
+- uid: SIX.TimApi.TerminalListener.LoyaltyDataCompleted(SIX.TimApi.TimEvent,SIX.TimApi.CardData)
+  name: LoyaltyDataCompleted(TimEvent, CardData)
+  href: api/SIX.TimApi.TerminalListener.html#SIX_TimApi_TerminalListener_LoyaltyDataCompleted_SIX_TimApi_TimEvent_SIX_TimApi_CardData_
+  commentId: M:SIX.TimApi.TerminalListener.LoyaltyDataCompleted(SIX.TimApi.TimEvent,SIX.TimApi.CardData)
+  fullName: SIX.TimApi.TerminalListener.LoyaltyDataCompleted(SIX.TimApi.TimEvent, SIX.TimApi.CardData)
+  nameWithType: TerminalListener.LoyaltyDataCompleted(TimEvent, CardData)
+- uid: SIX.TimApi.TerminalListener.LoyaltyDataCompleted*
+  name: LoyaltyDataCompleted
+  href: api/SIX.TimApi.TerminalListener.html#SIX_TimApi_TerminalListener_LoyaltyDataCompleted_
+  commentId: Overload:SIX.TimApi.TerminalListener.LoyaltyDataCompleted
+  isSpec: "True"
+  fullName: SIX.TimApi.TerminalListener.LoyaltyDataCompleted
+  nameWithType: TerminalListener.LoyaltyDataCompleted
+- uid: SIX.TimApi.TerminalListener.MobileTopupCompleted(SIX.TimApi.TimEvent,SIX.TimApi.MobileTopupData)
+  name: MobileTopupCompleted(TimEvent, MobileTopupData)
+  href: api/SIX.TimApi.TerminalListener.html#SIX_TimApi_TerminalListener_MobileTopupCompleted_SIX_TimApi_TimEvent_SIX_TimApi_MobileTopupData_
+  commentId: M:SIX.TimApi.TerminalListener.MobileTopupCompleted(SIX.TimApi.TimEvent,SIX.TimApi.MobileTopupData)
+  fullName: SIX.TimApi.TerminalListener.MobileTopupCompleted(SIX.TimApi.TimEvent, SIX.TimApi.MobileTopupData)
+  nameWithType: TerminalListener.MobileTopupCompleted(TimEvent, MobileTopupData)
+- uid: SIX.TimApi.TerminalListener.MobileTopupCompleted*
+  name: MobileTopupCompleted
+  href: api/SIX.TimApi.TerminalListener.html#SIX_TimApi_TerminalListener_MobileTopupCompleted_
+  commentId: Overload:SIX.TimApi.TerminalListener.MobileTopupCompleted
+  isSpec: "True"
+  fullName: SIX.TimApi.TerminalListener.MobileTopupCompleted
+  nameWithType: TerminalListener.MobileTopupCompleted
+- uid: SIX.TimApi.TerminalListener.MobileTopupIssuerInfoCompleted(SIX.TimApi.TimEvent,List{SIX.TimApi.MobileTopupValue})
+  name: MobileTopupIssuerInfoCompleted(TimEvent, List<MobileTopupValue>)
+  href: api/SIX.TimApi.TerminalListener.html#SIX_TimApi_TerminalListener_MobileTopupIssuerInfoCompleted_SIX_TimApi_TimEvent_List_SIX_TimApi_MobileTopupValue__
+  commentId: M:SIX.TimApi.TerminalListener.MobileTopupIssuerInfoCompleted(SIX.TimApi.TimEvent,List{SIX.TimApi.MobileTopupValue})
+  name.vb: MobileTopupIssuerInfoCompleted(TimEvent, List(Of MobileTopupValue))
+  fullName: SIX.TimApi.TerminalListener.MobileTopupIssuerInfoCompleted(SIX.TimApi.TimEvent, List<SIX.TimApi.MobileTopupValue>)
+  fullName.vb: SIX.TimApi.TerminalListener.MobileTopupIssuerInfoCompleted(SIX.TimApi.TimEvent, List(Of SIX.TimApi.MobileTopupValue))
+  nameWithType: TerminalListener.MobileTopupIssuerInfoCompleted(TimEvent, List<MobileTopupValue>)
+  nameWithType.vb: TerminalListener.MobileTopupIssuerInfoCompleted(TimEvent, List(Of MobileTopupValue))
+- uid: SIX.TimApi.TerminalListener.MobileTopupIssuerInfoCompleted*
+  name: MobileTopupIssuerInfoCompleted
+  href: api/SIX.TimApi.TerminalListener.html#SIX_TimApi_TerminalListener_MobileTopupIssuerInfoCompleted_
+  commentId: Overload:SIX.TimApi.TerminalListener.MobileTopupIssuerInfoCompleted
+  isSpec: "True"
+  fullName: SIX.TimApi.TerminalListener.MobileTopupIssuerInfoCompleted
+  nameWithType: TerminalListener.MobileTopupIssuerInfoCompleted
+- uid: SIX.TimApi.TerminalListener.OpenDialogModeCompleted(SIX.TimApi.TimEvent)
+  name: OpenDialogModeCompleted(TimEvent)
+  href: api/SIX.TimApi.TerminalListener.html#SIX_TimApi_TerminalListener_OpenDialogModeCompleted_SIX_TimApi_TimEvent_
+  commentId: M:SIX.TimApi.TerminalListener.OpenDialogModeCompleted(SIX.TimApi.TimEvent)
+  fullName: SIX.TimApi.TerminalListener.OpenDialogModeCompleted(SIX.TimApi.TimEvent)
+  nameWithType: TerminalListener.OpenDialogModeCompleted(TimEvent)
+- uid: SIX.TimApi.TerminalListener.OpenDialogModeCompleted*
+  name: OpenDialogModeCompleted
+  href: api/SIX.TimApi.TerminalListener.html#SIX_TimApi_TerminalListener_OpenDialogModeCompleted_
+  commentId: Overload:SIX.TimApi.TerminalListener.OpenDialogModeCompleted
+  isSpec: "True"
+  fullName: SIX.TimApi.TerminalListener.OpenDialogModeCompleted
+  nameWithType: TerminalListener.OpenDialogModeCompleted
+- uid: SIX.TimApi.TerminalListener.OpenMaintenanceWindowCompleted(SIX.TimApi.TimEvent)
+  name: OpenMaintenanceWindowCompleted(TimEvent)
+  href: api/SIX.TimApi.TerminalListener.html#SIX_TimApi_TerminalListener_OpenMaintenanceWindowCompleted_SIX_TimApi_TimEvent_
+  commentId: M:SIX.TimApi.TerminalListener.OpenMaintenanceWindowCompleted(SIX.TimApi.TimEvent)
+  fullName: SIX.TimApi.TerminalListener.OpenMaintenanceWindowCompleted(SIX.TimApi.TimEvent)
+  nameWithType: TerminalListener.OpenMaintenanceWindowCompleted(TimEvent)
+- uid: SIX.TimApi.TerminalListener.OpenMaintenanceWindowCompleted*
+  name: OpenMaintenanceWindowCompleted
+  href: api/SIX.TimApi.TerminalListener.html#SIX_TimApi_TerminalListener_OpenMaintenanceWindowCompleted_
+  commentId: Overload:SIX.TimApi.TerminalListener.OpenMaintenanceWindowCompleted
+  isSpec: "True"
+  fullName: SIX.TimApi.TerminalListener.OpenMaintenanceWindowCompleted
+  nameWithType: TerminalListener.OpenMaintenanceWindowCompleted
+- uid: SIX.TimApi.TerminalListener.OpenReaderCompleted(SIX.TimApi.TimEvent)
+  name: OpenReaderCompleted(TimEvent)
+  href: api/SIX.TimApi.TerminalListener.html#SIX_TimApi_TerminalListener_OpenReaderCompleted_SIX_TimApi_TimEvent_
+  commentId: M:SIX.TimApi.TerminalListener.OpenReaderCompleted(SIX.TimApi.TimEvent)
+  fullName: SIX.TimApi.TerminalListener.OpenReaderCompleted(SIX.TimApi.TimEvent)
+  nameWithType: TerminalListener.OpenReaderCompleted(TimEvent)
+- uid: SIX.TimApi.TerminalListener.OpenReaderCompleted*
+  name: OpenReaderCompleted
+  href: api/SIX.TimApi.TerminalListener.html#SIX_TimApi_TerminalListener_OpenReaderCompleted_
+  commentId: Overload:SIX.TimApi.TerminalListener.OpenReaderCompleted
+  isSpec: "True"
+  fullName: SIX.TimApi.TerminalListener.OpenReaderCompleted
+  nameWithType: TerminalListener.OpenReaderCompleted
+- uid: SIX.TimApi.TerminalListener.PrintOnTerminalCompleted(SIX.TimApi.TimEvent)
+  name: PrintOnTerminalCompleted(TimEvent)
+  href: api/SIX.TimApi.TerminalListener.html#SIX_TimApi_TerminalListener_PrintOnTerminalCompleted_SIX_TimApi_TimEvent_
+  commentId: M:SIX.TimApi.TerminalListener.PrintOnTerminalCompleted(SIX.TimApi.TimEvent)
+  fullName: SIX.TimApi.TerminalListener.PrintOnTerminalCompleted(SIX.TimApi.TimEvent)
+  nameWithType: TerminalListener.PrintOnTerminalCompleted(TimEvent)
+- uid: SIX.TimApi.TerminalListener.PrintOnTerminalCompleted*
+  name: PrintOnTerminalCompleted
+  href: api/SIX.TimApi.TerminalListener.html#SIX_TimApi_TerminalListener_PrintOnTerminalCompleted_
+  commentId: Overload:SIX.TimApi.TerminalListener.PrintOnTerminalCompleted
+  isSpec: "True"
+  fullName: SIX.TimApi.TerminalListener.PrintOnTerminalCompleted
+  nameWithType: TerminalListener.PrintOnTerminalCompleted
+- uid: SIX.TimApi.TerminalListener.ProvideLoyaltyBasketCompleted(SIX.TimApi.TimEvent,List{SIX.TimApi.LoyaltyItem})
+  name: ProvideLoyaltyBasketCompleted(TimEvent, List<LoyaltyItem>)
+  href: api/SIX.TimApi.TerminalListener.html#SIX_TimApi_TerminalListener_ProvideLoyaltyBasketCompleted_SIX_TimApi_TimEvent_List_SIX_TimApi_LoyaltyItem__
+  commentId: M:SIX.TimApi.TerminalListener.ProvideLoyaltyBasketCompleted(SIX.TimApi.TimEvent,List{SIX.TimApi.LoyaltyItem})
+  name.vb: ProvideLoyaltyBasketCompleted(TimEvent, List(Of LoyaltyItem))
+  fullName: SIX.TimApi.TerminalListener.ProvideLoyaltyBasketCompleted(SIX.TimApi.TimEvent, List<SIX.TimApi.LoyaltyItem>)
+  fullName.vb: SIX.TimApi.TerminalListener.ProvideLoyaltyBasketCompleted(SIX.TimApi.TimEvent, List(Of SIX.TimApi.LoyaltyItem))
+  nameWithType: TerminalListener.ProvideLoyaltyBasketCompleted(TimEvent, List<LoyaltyItem>)
+  nameWithType.vb: TerminalListener.ProvideLoyaltyBasketCompleted(TimEvent, List(Of LoyaltyItem))
+- uid: SIX.TimApi.TerminalListener.ProvideLoyaltyBasketCompleted*
+  name: ProvideLoyaltyBasketCompleted
+  href: api/SIX.TimApi.TerminalListener.html#SIX_TimApi_TerminalListener_ProvideLoyaltyBasketCompleted_
+  commentId: Overload:SIX.TimApi.TerminalListener.ProvideLoyaltyBasketCompleted
+  isSpec: "True"
+  fullName: SIX.TimApi.TerminalListener.ProvideLoyaltyBasketCompleted
+  nameWithType: TerminalListener.ProvideLoyaltyBasketCompleted
+- uid: SIX.TimApi.TerminalListener.ProvideVasResultCompleted(SIX.TimApi.TimEvent,SIX.TimApi.VasResult)
+  name: ProvideVasResultCompleted(TimEvent, VasResult)
+  href: api/SIX.TimApi.TerminalListener.html#SIX_TimApi_TerminalListener_ProvideVasResultCompleted_SIX_TimApi_TimEvent_SIX_TimApi_VasResult_
+  commentId: M:SIX.TimApi.TerminalListener.ProvideVasResultCompleted(SIX.TimApi.TimEvent,SIX.TimApi.VasResult)
+  fullName: SIX.TimApi.TerminalListener.ProvideVasResultCompleted(SIX.TimApi.TimEvent, SIX.TimApi.VasResult)
+  nameWithType: TerminalListener.ProvideVasResultCompleted(TimEvent, VasResult)
+- uid: SIX.TimApi.TerminalListener.ProvideVasResultCompleted*
+  name: ProvideVasResultCompleted
+  href: api/SIX.TimApi.TerminalListener.html#SIX_TimApi_TerminalListener_ProvideVasResultCompleted_
+  commentId: Overload:SIX.TimApi.TerminalListener.ProvideVasResultCompleted
+  isSpec: "True"
+  fullName: SIX.TimApi.TerminalListener.ProvideVasResultCompleted
+  nameWithType: TerminalListener.ProvideVasResultCompleted
+- uid: SIX.TimApi.TerminalListener.RebootCompleted(SIX.TimApi.TimEvent)
+  name: RebootCompleted(TimEvent)
+  href: api/SIX.TimApi.TerminalListener.html#SIX_TimApi_TerminalListener_RebootCompleted_SIX_TimApi_TimEvent_
+  commentId: M:SIX.TimApi.TerminalListener.RebootCompleted(SIX.TimApi.TimEvent)
+  fullName: SIX.TimApi.TerminalListener.RebootCompleted(SIX.TimApi.TimEvent)
+  nameWithType: TerminalListener.RebootCompleted(TimEvent)
+- uid: SIX.TimApi.TerminalListener.RebootCompleted*
+  name: RebootCompleted
+  href: api/SIX.TimApi.TerminalListener.html#SIX_TimApi_TerminalListener_RebootCompleted_
+  commentId: Overload:SIX.TimApi.TerminalListener.RebootCompleted
+  isSpec: "True"
+  fullName: SIX.TimApi.TerminalListener.RebootCompleted
+  nameWithType: TerminalListener.RebootCompleted
+- uid: SIX.TimApi.TerminalListener.ReceiptRequestCompleted(SIX.TimApi.TimEvent,SIX.TimApi.ReceiptRequestResponse)
+  name: ReceiptRequestCompleted(TimEvent, ReceiptRequestResponse)
+  href: api/SIX.TimApi.TerminalListener.html#SIX_TimApi_TerminalListener_ReceiptRequestCompleted_SIX_TimApi_TimEvent_SIX_TimApi_ReceiptRequestResponse_
+  commentId: M:SIX.TimApi.TerminalListener.ReceiptRequestCompleted(SIX.TimApi.TimEvent,SIX.TimApi.ReceiptRequestResponse)
+  fullName: SIX.TimApi.TerminalListener.ReceiptRequestCompleted(SIX.TimApi.TimEvent, SIX.TimApi.ReceiptRequestResponse)
+  nameWithType: TerminalListener.ReceiptRequestCompleted(TimEvent, ReceiptRequestResponse)
+- uid: SIX.TimApi.TerminalListener.ReceiptRequestCompleted*
+  name: ReceiptRequestCompleted
+  href: api/SIX.TimApi.TerminalListener.html#SIX_TimApi_TerminalListener_ReceiptRequestCompleted_
+  commentId: Overload:SIX.TimApi.TerminalListener.ReceiptRequestCompleted
+  isSpec: "True"
+  fullName: SIX.TimApi.TerminalListener.ReceiptRequestCompleted
+  nameWithType: TerminalListener.ReceiptRequestCompleted
+- uid: SIX.TimApi.TerminalListener.ReconciliationCompleted(SIX.TimApi.TimEvent,SIX.TimApi.ReconciliationResponse)
+  name: ReconciliationCompleted(TimEvent, ReconciliationResponse)
+  href: api/SIX.TimApi.TerminalListener.html#SIX_TimApi_TerminalListener_ReconciliationCompleted_SIX_TimApi_TimEvent_SIX_TimApi_ReconciliationResponse_
+  commentId: M:SIX.TimApi.TerminalListener.ReconciliationCompleted(SIX.TimApi.TimEvent,SIX.TimApi.ReconciliationResponse)
+  fullName: SIX.TimApi.TerminalListener.ReconciliationCompleted(SIX.TimApi.TimEvent, SIX.TimApi.ReconciliationResponse)
+  nameWithType: TerminalListener.ReconciliationCompleted(TimEvent, ReconciliationResponse)
+- uid: SIX.TimApi.TerminalListener.ReconciliationCompleted*
+  name: ReconciliationCompleted
+  href: api/SIX.TimApi.TerminalListener.html#SIX_TimApi_TerminalListener_ReconciliationCompleted_
+  commentId: Overload:SIX.TimApi.TerminalListener.ReconciliationCompleted
+  isSpec: "True"
+  fullName: SIX.TimApi.TerminalListener.ReconciliationCompleted
+  nameWithType: TerminalListener.ReconciliationCompleted
+- uid: SIX.TimApi.TerminalListener.ReconfigCompleted(SIX.TimApi.TimEvent,SIX.TimApi.PrintData)
+  name: ReconfigCompleted(TimEvent, PrintData)
+  href: api/SIX.TimApi.TerminalListener.html#SIX_TimApi_TerminalListener_ReconfigCompleted_SIX_TimApi_TimEvent_SIX_TimApi_PrintData_
+  commentId: M:SIX.TimApi.TerminalListener.ReconfigCompleted(SIX.TimApi.TimEvent,SIX.TimApi.PrintData)
+  fullName: SIX.TimApi.TerminalListener.ReconfigCompleted(SIX.TimApi.TimEvent, SIX.TimApi.PrintData)
+  nameWithType: TerminalListener.ReconfigCompleted(TimEvent, PrintData)
+- uid: SIX.TimApi.TerminalListener.ReconfigCompleted*
+  name: ReconfigCompleted
+  href: api/SIX.TimApi.TerminalListener.html#SIX_TimApi_TerminalListener_ReconfigCompleted_
+  commentId: Overload:SIX.TimApi.TerminalListener.ReconfigCompleted
+  isSpec: "True"
+  fullName: SIX.TimApi.TerminalListener.ReconfigCompleted
+  nameWithType: TerminalListener.ReconfigCompleted
+- uid: SIX.TimApi.TerminalListener.RequestAliasCompleted(SIX.TimApi.TimEvent,System.String)
+  name: RequestAliasCompleted(TimEvent, String)
+  href: api/SIX.TimApi.TerminalListener.html#SIX_TimApi_TerminalListener_RequestAliasCompleted_SIX_TimApi_TimEvent_System_String_
+  commentId: M:SIX.TimApi.TerminalListener.RequestAliasCompleted(SIX.TimApi.TimEvent,System.String)
+  fullName: SIX.TimApi.TerminalListener.RequestAliasCompleted(SIX.TimApi.TimEvent, System.String)
+  nameWithType: TerminalListener.RequestAliasCompleted(TimEvent, String)
+- uid: SIX.TimApi.TerminalListener.RequestAliasCompleted*
+  name: RequestAliasCompleted
+  href: api/SIX.TimApi.TerminalListener.html#SIX_TimApi_TerminalListener_RequestAliasCompleted_
+  commentId: Overload:SIX.TimApi.TerminalListener.RequestAliasCompleted
+  isSpec: "True"
+  fullName: SIX.TimApi.TerminalListener.RequestAliasCompleted
+  nameWithType: TerminalListener.RequestAliasCompleted
+- uid: SIX.TimApi.TerminalListener.RollbackCompleted(SIX.TimApi.TimEvent,SIX.TimApi.PrintData)
+  name: RollbackCompleted(TimEvent, PrintData)
+  href: api/SIX.TimApi.TerminalListener.html#SIX_TimApi_TerminalListener_RollbackCompleted_SIX_TimApi_TimEvent_SIX_TimApi_PrintData_
+  commentId: M:SIX.TimApi.TerminalListener.RollbackCompleted(SIX.TimApi.TimEvent,SIX.TimApi.PrintData)
+  fullName: SIX.TimApi.TerminalListener.RollbackCompleted(SIX.TimApi.TimEvent, SIX.TimApi.PrintData)
+  nameWithType: TerminalListener.RollbackCompleted(TimEvent, PrintData)
+- uid: SIX.TimApi.TerminalListener.RollbackCompleted*
+  name: RollbackCompleted
+  href: api/SIX.TimApi.TerminalListener.html#SIX_TimApi_TerminalListener_RollbackCompleted_
+  commentId: Overload:SIX.TimApi.TerminalListener.RollbackCompleted
+  isSpec: "True"
+  fullName: SIX.TimApi.TerminalListener.RollbackCompleted
+  nameWithType: TerminalListener.RollbackCompleted
+- uid: SIX.TimApi.TerminalListener.Screenshot(SIX.TimApi.Terminal,SIX.TimApi.ScreenshotInformation)
+  name: Screenshot(Terminal, ScreenshotInformation)
+  href: api/SIX.TimApi.TerminalListener.html#SIX_TimApi_TerminalListener_Screenshot_SIX_TimApi_Terminal_SIX_TimApi_ScreenshotInformation_
+  commentId: M:SIX.TimApi.TerminalListener.Screenshot(SIX.TimApi.Terminal,SIX.TimApi.ScreenshotInformation)
+  fullName: SIX.TimApi.TerminalListener.Screenshot(SIX.TimApi.Terminal, SIX.TimApi.ScreenshotInformation)
+  nameWithType: TerminalListener.Screenshot(Terminal, ScreenshotInformation)
+- uid: SIX.TimApi.TerminalListener.Screenshot*
+  name: Screenshot
+  href: api/SIX.TimApi.TerminalListener.html#SIX_TimApi_TerminalListener_Screenshot_
+  commentId: Overload:SIX.TimApi.TerminalListener.Screenshot
+  isSpec: "True"
+  fullName: SIX.TimApi.TerminalListener.Screenshot
+  nameWithType: TerminalListener.Screenshot
+- uid: SIX.TimApi.TerminalListener.SendCardCommandCompleted(SIX.TimApi.TimEvent,List{SIX.TimApi.CommandResponse})
+  name: SendCardCommandCompleted(TimEvent, List<CommandResponse>)
+  href: api/SIX.TimApi.TerminalListener.html#SIX_TimApi_TerminalListener_SendCardCommandCompleted_SIX_TimApi_TimEvent_List_SIX_TimApi_CommandResponse__
+  commentId: M:SIX.TimApi.TerminalListener.SendCardCommandCompleted(SIX.TimApi.TimEvent,List{SIX.TimApi.CommandResponse})
+  name.vb: SendCardCommandCompleted(TimEvent, List(Of CommandResponse))
+  fullName: SIX.TimApi.TerminalListener.SendCardCommandCompleted(SIX.TimApi.TimEvent, List<SIX.TimApi.CommandResponse>)
+  fullName.vb: SIX.TimApi.TerminalListener.SendCardCommandCompleted(SIX.TimApi.TimEvent, List(Of SIX.TimApi.CommandResponse))
+  nameWithType: TerminalListener.SendCardCommandCompleted(TimEvent, List<CommandResponse>)
+  nameWithType.vb: TerminalListener.SendCardCommandCompleted(TimEvent, List(Of CommandResponse))
+- uid: SIX.TimApi.TerminalListener.SendCardCommandCompleted*
+  name: SendCardCommandCompleted
+  href: api/SIX.TimApi.TerminalListener.html#SIX_TimApi_TerminalListener_SendCardCommandCompleted_
+  commentId: Overload:SIX.TimApi.TerminalListener.SendCardCommandCompleted
+  isSpec: "True"
+  fullName: SIX.TimApi.TerminalListener.SendCardCommandCompleted
+  nameWithType: TerminalListener.SendCardCommandCompleted
+- uid: SIX.TimApi.TerminalListener.ShowDialogCompleted(SIX.TimApi.TimEvent,SIX.TimApi.ShowDialogResponse)
+  name: ShowDialogCompleted(TimEvent, ShowDialogResponse)
+  href: api/SIX.TimApi.TerminalListener.html#SIX_TimApi_TerminalListener_ShowDialogCompleted_SIX_TimApi_TimEvent_SIX_TimApi_ShowDialogResponse_
+  commentId: M:SIX.TimApi.TerminalListener.ShowDialogCompleted(SIX.TimApi.TimEvent,SIX.TimApi.ShowDialogResponse)
+  fullName: SIX.TimApi.TerminalListener.ShowDialogCompleted(SIX.TimApi.TimEvent, SIX.TimApi.ShowDialogResponse)
+  nameWithType: TerminalListener.ShowDialogCompleted(TimEvent, ShowDialogResponse)
+- uid: SIX.TimApi.TerminalListener.ShowDialogCompleted*
+  name: ShowDialogCompleted
+  href: api/SIX.TimApi.TerminalListener.html#SIX_TimApi_TerminalListener_ShowDialogCompleted_
+  commentId: Overload:SIX.TimApi.TerminalListener.ShowDialogCompleted
+  isSpec: "True"
+  fullName: SIX.TimApi.TerminalListener.ShowDialogCompleted
+  nameWithType: TerminalListener.ShowDialogCompleted
+- uid: SIX.TimApi.TerminalListener.ShowSignatureCaptureCompleted(SIX.TimApi.TimEvent,SIX.TimApi.ShowSignatureCaptureResponse)
+  name: ShowSignatureCaptureCompleted(TimEvent, ShowSignatureCaptureResponse)
+  href: api/SIX.TimApi.TerminalListener.html#SIX_TimApi_TerminalListener_ShowSignatureCaptureCompleted_SIX_TimApi_TimEvent_SIX_TimApi_ShowSignatureCaptureResponse_
+  commentId: M:SIX.TimApi.TerminalListener.ShowSignatureCaptureCompleted(SIX.TimApi.TimEvent,SIX.TimApi.ShowSignatureCaptureResponse)
+  fullName: SIX.TimApi.TerminalListener.ShowSignatureCaptureCompleted(SIX.TimApi.TimEvent, SIX.TimApi.ShowSignatureCaptureResponse)
+  nameWithType: TerminalListener.ShowSignatureCaptureCompleted(TimEvent, ShowSignatureCaptureResponse)
+- uid: SIX.TimApi.TerminalListener.ShowSignatureCaptureCompleted*
+  name: ShowSignatureCaptureCompleted
+  href: api/SIX.TimApi.TerminalListener.html#SIX_TimApi_TerminalListener_ShowSignatureCaptureCompleted_
+  commentId: Overload:SIX.TimApi.TerminalListener.ShowSignatureCaptureCompleted
+  isSpec: "True"
+  fullName: SIX.TimApi.TerminalListener.ShowSignatureCaptureCompleted
+  nameWithType: TerminalListener.ShowSignatureCaptureCompleted
+- uid: SIX.TimApi.TerminalListener.SoftwareUpdateCompleted(SIX.TimApi.TimEvent,SIX.TimApi.Constants.UpdateStatus)
+  name: SoftwareUpdateCompleted(TimEvent, UpdateStatus)
+  href: api/SIX.TimApi.TerminalListener.html#SIX_TimApi_TerminalListener_SoftwareUpdateCompleted_SIX_TimApi_TimEvent_SIX_TimApi_Constants_UpdateStatus_
+  commentId: M:SIX.TimApi.TerminalListener.SoftwareUpdateCompleted(SIX.TimApi.TimEvent,SIX.TimApi.Constants.UpdateStatus)
+  fullName: SIX.TimApi.TerminalListener.SoftwareUpdateCompleted(SIX.TimApi.TimEvent, SIX.TimApi.Constants.UpdateStatus)
+  nameWithType: TerminalListener.SoftwareUpdateCompleted(TimEvent, UpdateStatus)
+- uid: SIX.TimApi.TerminalListener.SoftwareUpdateCompleted*
+  name: SoftwareUpdateCompleted
+  href: api/SIX.TimApi.TerminalListener.html#SIX_TimApi_TerminalListener_SoftwareUpdateCompleted_
+  commentId: Overload:SIX.TimApi.TerminalListener.SoftwareUpdateCompleted
+  isSpec: "True"
+  fullName: SIX.TimApi.TerminalListener.SoftwareUpdateCompleted
+  nameWithType: TerminalListener.SoftwareUpdateCompleted
+- uid: SIX.TimApi.TerminalListener.StartCheckoutCompleted(SIX.TimApi.TimEvent)
+  name: StartCheckoutCompleted(TimEvent)
+  href: api/SIX.TimApi.TerminalListener.html#SIX_TimApi_TerminalListener_StartCheckoutCompleted_SIX_TimApi_TimEvent_
+  commentId: M:SIX.TimApi.TerminalListener.StartCheckoutCompleted(SIX.TimApi.TimEvent)
+  fullName: SIX.TimApi.TerminalListener.StartCheckoutCompleted(SIX.TimApi.TimEvent)
+  nameWithType: TerminalListener.StartCheckoutCompleted(TimEvent)
+- uid: SIX.TimApi.TerminalListener.StartCheckoutCompleted*
+  name: StartCheckoutCompleted
+  href: api/SIX.TimApi.TerminalListener.html#SIX_TimApi_TerminalListener_StartCheckoutCompleted_
+  commentId: Overload:SIX.TimApi.TerminalListener.StartCheckoutCompleted
+  isSpec: "True"
+  fullName: SIX.TimApi.TerminalListener.StartCheckoutCompleted
+  nameWithType: TerminalListener.StartCheckoutCompleted
+- uid: SIX.TimApi.TerminalListener.SystemInformationCompleted(SIX.TimApi.TimEvent,SIX.TimApi.SystemInformationResponse)
+  name: SystemInformationCompleted(TimEvent, SystemInformationResponse)
+  href: api/SIX.TimApi.TerminalListener.html#SIX_TimApi_TerminalListener_SystemInformationCompleted_SIX_TimApi_TimEvent_SIX_TimApi_SystemInformationResponse_
+  commentId: M:SIX.TimApi.TerminalListener.SystemInformationCompleted(SIX.TimApi.TimEvent,SIX.TimApi.SystemInformationResponse)
+  fullName: SIX.TimApi.TerminalListener.SystemInformationCompleted(SIX.TimApi.TimEvent, SIX.TimApi.SystemInformationResponse)
+  nameWithType: TerminalListener.SystemInformationCompleted(TimEvent, SystemInformationResponse)
+- uid: SIX.TimApi.TerminalListener.SystemInformationCompleted*
+  name: SystemInformationCompleted
+  href: api/SIX.TimApi.TerminalListener.html#SIX_TimApi_TerminalListener_SystemInformationCompleted_
+  commentId: Overload:SIX.TimApi.TerminalListener.SystemInformationCompleted
+  isSpec: "True"
+  fullName: SIX.TimApi.TerminalListener.SystemInformationCompleted
+  nameWithType: TerminalListener.SystemInformationCompleted
+- uid: SIX.TimApi.TerminalListener.TerminalStatusChanged(SIX.TimApi.Terminal)
+  name: TerminalStatusChanged(Terminal)
+  href: api/SIX.TimApi.TerminalListener.html#SIX_TimApi_TerminalListener_TerminalStatusChanged_SIX_TimApi_Terminal_
+  commentId: M:SIX.TimApi.TerminalListener.TerminalStatusChanged(SIX.TimApi.Terminal)
+  fullName: SIX.TimApi.TerminalListener.TerminalStatusChanged(SIX.TimApi.Terminal)
+  nameWithType: TerminalListener.TerminalStatusChanged(Terminal)
+- uid: SIX.TimApi.TerminalListener.TerminalStatusChanged*
+  name: TerminalStatusChanged
+  href: api/SIX.TimApi.TerminalListener.html#SIX_TimApi_TerminalListener_TerminalStatusChanged_
+  commentId: Overload:SIX.TimApi.TerminalListener.TerminalStatusChanged
+  isSpec: "True"
+  fullName: SIX.TimApi.TerminalListener.TerminalStatusChanged
+  nameWithType: TerminalListener.TerminalStatusChanged
+- uid: SIX.TimApi.TerminalListener.TransactionCompleted(SIX.TimApi.TimEvent,SIX.TimApi.TransactionResponse)
+  name: TransactionCompleted(TimEvent, TransactionResponse)
+  href: api/SIX.TimApi.TerminalListener.html#SIX_TimApi_TerminalListener_TransactionCompleted_SIX_TimApi_TimEvent_SIX_TimApi_TransactionResponse_
+  commentId: M:SIX.TimApi.TerminalListener.TransactionCompleted(SIX.TimApi.TimEvent,SIX.TimApi.TransactionResponse)
+  fullName: SIX.TimApi.TerminalListener.TransactionCompleted(SIX.TimApi.TimEvent, SIX.TimApi.TransactionResponse)
+  nameWithType: TerminalListener.TransactionCompleted(TimEvent, TransactionResponse)
+- uid: SIX.TimApi.TerminalListener.TransactionCompleted*
+  name: TransactionCompleted
+  href: api/SIX.TimApi.TerminalListener.html#SIX_TimApi_TerminalListener_TransactionCompleted_
+  commentId: Overload:SIX.TimApi.TerminalListener.TransactionCompleted
+  isSpec: "True"
+  fullName: SIX.TimApi.TerminalListener.TransactionCompleted
+  nameWithType: TerminalListener.TransactionCompleted
+- uid: SIX.TimApi.TerminalListener.VasInfo(SIX.TimApi.Terminal,SIX.TimApi.VasCheckoutInformation)
+  name: VasInfo(Terminal, VasCheckoutInformation)
+  href: api/SIX.TimApi.TerminalListener.html#SIX_TimApi_TerminalListener_VasInfo_SIX_TimApi_Terminal_SIX_TimApi_VasCheckoutInformation_
+  commentId: M:SIX.TimApi.TerminalListener.VasInfo(SIX.TimApi.Terminal,SIX.TimApi.VasCheckoutInformation)
+  fullName: SIX.TimApi.TerminalListener.VasInfo(SIX.TimApi.Terminal, SIX.TimApi.VasCheckoutInformation)
+  nameWithType: TerminalListener.VasInfo(Terminal, VasCheckoutInformation)
+- uid: SIX.TimApi.TerminalListener.VasInfo*
+  name: VasInfo
+  href: api/SIX.TimApi.TerminalListener.html#SIX_TimApi_TerminalListener_VasInfo_
+  commentId: Overload:SIX.TimApi.TerminalListener.VasInfo
+  isSpec: "True"
+  fullName: SIX.TimApi.TerminalListener.VasInfo
+  nameWithType: TerminalListener.VasInfo
 - uid: SIX.TimApi.TerminalSettings
   name: TerminalSettings
   href: api/SIX.TimApi.TerminalSettings.html
@@ -18471,6 +19956,19 @@ references:
   isSpec: "True"
   fullName: SIX.TimApi.TerminalSettings.ToString
   nameWithType: TerminalSettings.ToString
+- uid: SIX.TimApi.TerminalSettings.WakeupTimeout
+  name: WakeupTimeout
+  href: api/SIX.TimApi.TerminalSettings.html#SIX_TimApi_TerminalSettings_WakeupTimeout
+  commentId: P:SIX.TimApi.TerminalSettings.WakeupTimeout
+  fullName: SIX.TimApi.TerminalSettings.WakeupTimeout
+  nameWithType: TerminalSettings.WakeupTimeout
+- uid: SIX.TimApi.TerminalSettings.WakeupTimeout*
+  name: WakeupTimeout
+  href: api/SIX.TimApi.TerminalSettings.html#SIX_TimApi_TerminalSettings_WakeupTimeout_
+  commentId: Overload:SIX.TimApi.TerminalSettings.WakeupTimeout
+  isSpec: "True"
+  fullName: SIX.TimApi.TerminalSettings.WakeupTimeout
+  nameWithType: TerminalSettings.WakeupTimeout
 - uid: SIX.TimApi.TerminalStatus
   name: TerminalStatus
   href: api/SIX.TimApi.TerminalStatus.html
@@ -18649,6 +20147,64 @@ references:
   isSpec: "True"
   fullName: SIX.TimApi.TerminalStatus.TransactionStatus
   nameWithType: TerminalStatus.TransactionStatus
+- uid: SIX.TimApi.TimEvent
+  name: TimEvent
+  href: api/SIX.TimApi.TimEvent.html
+  commentId: T:SIX.TimApi.TimEvent
+  fullName: SIX.TimApi.TimEvent
+  nameWithType: TimEvent
+- uid: SIX.TimApi.TimEvent.#ctor(SIX.TimApi.Terminal,SIX.TimApi.TimException,SIX.TimApi.RequestTypes)
+  name: TimEvent(Terminal, TimException, RequestTypes)
+  href: api/SIX.TimApi.TimEvent.html#SIX_TimApi_TimEvent__ctor_SIX_TimApi_Terminal_SIX_TimApi_TimException_SIX_TimApi_RequestTypes_
+  commentId: M:SIX.TimApi.TimEvent.#ctor(SIX.TimApi.Terminal,SIX.TimApi.TimException,SIX.TimApi.RequestTypes)
+  fullName: SIX.TimApi.TimEvent.TimEvent(SIX.TimApi.Terminal, SIX.TimApi.TimException, SIX.TimApi.RequestTypes)
+  nameWithType: TimEvent.TimEvent(Terminal, TimException, RequestTypes)
+- uid: SIX.TimApi.TimEvent.#ctor*
+  name: TimEvent
+  href: api/SIX.TimApi.TimEvent.html#SIX_TimApi_TimEvent__ctor_
+  commentId: Overload:SIX.TimApi.TimEvent.#ctor
+  isSpec: "True"
+  fullName: SIX.TimApi.TimEvent.TimEvent
+  nameWithType: TimEvent.TimEvent
+- uid: SIX.TimApi.TimEvent.Exception
+  name: Exception
+  href: api/SIX.TimApi.TimEvent.html#SIX_TimApi_TimEvent_Exception
+  commentId: P:SIX.TimApi.TimEvent.Exception
+  fullName: SIX.TimApi.TimEvent.Exception
+  nameWithType: TimEvent.Exception
+- uid: SIX.TimApi.TimEvent.Exception*
+  name: Exception
+  href: api/SIX.TimApi.TimEvent.html#SIX_TimApi_TimEvent_Exception_
+  commentId: Overload:SIX.TimApi.TimEvent.Exception
+  isSpec: "True"
+  fullName: SIX.TimApi.TimEvent.Exception
+  nameWithType: TimEvent.Exception
+- uid: SIX.TimApi.TimEvent.RequestType
+  name: RequestType
+  href: api/SIX.TimApi.TimEvent.html#SIX_TimApi_TimEvent_RequestType
+  commentId: P:SIX.TimApi.TimEvent.RequestType
+  fullName: SIX.TimApi.TimEvent.RequestType
+  nameWithType: TimEvent.RequestType
+- uid: SIX.TimApi.TimEvent.RequestType*
+  name: RequestType
+  href: api/SIX.TimApi.TimEvent.html#SIX_TimApi_TimEvent_RequestType_
+  commentId: Overload:SIX.TimApi.TimEvent.RequestType
+  isSpec: "True"
+  fullName: SIX.TimApi.TimEvent.RequestType
+  nameWithType: TimEvent.RequestType
+- uid: SIX.TimApi.TimEvent.Terminal
+  name: Terminal
+  href: api/SIX.TimApi.TimEvent.html#SIX_TimApi_TimEvent_Terminal
+  commentId: P:SIX.TimApi.TimEvent.Terminal
+  fullName: SIX.TimApi.TimEvent.Terminal
+  nameWithType: TimEvent.Terminal
+- uid: SIX.TimApi.TimEvent.Terminal*
+  name: Terminal
+  href: api/SIX.TimApi.TimEvent.html#SIX_TimApi_TimEvent_Terminal_
+  commentId: Overload:SIX.TimApi.TimEvent.Terminal
+  isSpec: "True"
+  fullName: SIX.TimApi.TimEvent.Terminal
+  nameWithType: TimEvent.Terminal
 - uid: SIX.TimApi.TimException
   name: TimException
   href: api/SIX.TimApi.TimException.html

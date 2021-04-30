@@ -243,10 +243,11 @@ Functions</h2></td></tr>
 
 <p>Returns the localised error message in human readable form derived from the error code sent by the terminal. </p>
 <p>The message will be in the merchant language of the terminal provided systemInformation() has been executed (English otherwise).</p>
+<dl class="section note"><dt>Note</dt><dd>In contrary to <em>ta_tim_error_get_error_message</em> the string written to <em>error_message</em> "is" retained. This is due to this method generating an error message if no appropriate error message is present.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">response</td><td>Object instance of type <a class="el" href="tim__error_8h.html">tim_error</a>. </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">error_message</td><td>Pointer to variable to write object instance to. Object instance is of type <a class="el" href="string_8h.html">string</a> and is not retained. Object instance is <em>ta_object_invalid</em> if value is not set in <em>response</em>.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">error_message</td><td>Pointer to variable to write object instance to. Object instance is of type <a class="el" href="string_8h.html">string</a> and is retained. Object instance is <em>ta_object_invalid</em> if value is not set in <em>response</em>.</td></tr>
   </table>
   </dd>
 </dl>
@@ -298,11 +299,12 @@ Functions</h2></td></tr>
 <p>The message will be in the language supplied in the parameter.</p>
 <p>Valid language strings are currently: "en","de","de-AT","de-CH","fr","fr-BE", "fr-CH","it","bg","hr","cs","nl","nl-BE","nl-NL","el","hu","lt","pl","pt", "ro","sk","sl","es","sv","fi","no","da"</p>
 <p>"de" defaults to "de-CH" "fr" defaults to "fr-CH" "nl" defaults to "nl-BE"</p>
+<dl class="section note"><dt>Note</dt><dd>In contrary to <em>ta_tim_error_get_error_message</em> the string written to <em>error_message</em> "is" retained. This is due to this method generating an error message if no appropriate error message is present.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">response</td><td>Object instance of type <a class="el" href="tim__error_8h.html">tim_error</a>. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">language</td><td>Language. </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">error_message</td><td>Pointer to variable to write object instance to. Object instance is of type <a class="el" href="string_8h.html">string</a> and is not retained. Object instance is <em>ta_object_invalid</em> if value is not set in <em>response</em>.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">error_message</td><td>Pointer to variable to write object instance to. Object instance is of type <a class="el" href="string_8h.html">string</a> and is retained. Object instance is <em>ta_object_invalid</em> if value is not set in <em>response</em>.</td></tr>
   </table>
   </dd>
 </dl>

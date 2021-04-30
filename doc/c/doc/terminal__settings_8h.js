@@ -27,6 +27,7 @@ var terminal__settings_8h =
     [ "ta_terminal_settings_get_saferpay_customer_id", "terminal__settings_8h.html#ac36b7150280a4dbff9011b54b4fdb4e0", null ],
     [ "ta_terminal_settings_get_saferpay_terminal_id", "terminal__settings_8h.html#a5f5fc21f0881bed8a33475583afb1187", null ],
     [ "ta_terminal_settings_get_terminal_id", "terminal__settings_8h.html#a73f2947a07fc9f8cefbfa7a3b0f17dfc", null ],
+    [ "ta_terminal_settings_get_wakeup_timeout", "terminal__settings_8h.html#a374feb4bd51e42e45ac495da6d9bf6fc", null ],
     [ "ta_terminal_settings_is_allow_closed_card_insert", "terminal__settings_8h.html#a0563899e7c5d633f93de20a48af260c5", null ],
     [ "ta_terminal_settings_is_auto_commit", "terminal__settings_8h.html#a410988117456af3b9627822de31519ed", null ],
     [ "ta_terminal_settings_is_auto_shift_management", "terminal__settings_8h.html#a43b28bde3c06dce0a83fe59006d9e13c", null ],
@@ -74,5 +75,6 @@ var terminal__settings_8h =
     [ "ta_terminal_settings_set_saferpay_customer_id", "terminal__settings_8h.html#a3dd5398cb60e24d4433d05fb22d135ba", null ],
     [ "ta_terminal_settings_set_saferpay_terminal_id", "terminal__settings_8h.html#aa44a5bdae05a44b494e6e0526f2dbc65", null ],
     [ "ta_terminal_settings_set_terminal_id", "terminal__settings_8h.html#aec22a355084237f12b9a230bcdc9cc53", null ],
-    [ "ta_terminal_settings_set_tip_allowed", "terminal__settings_8h.html#ac9d6ddab8cba4a5b3d3c3d3bad7d5e21", null ]
+    [ "ta_terminal_settings_set_tip_allowed", "terminal__settings_8h.html#ac9d6ddab8cba4a5b3d3c3d3bad7d5e21", null ],
+    [ "ta_terminal_settings_set_wakeup_timeout", "terminal__settings_8h.html#a9ee4c4704df8b4fb926deec4520ea8a4", null ]
 ];
