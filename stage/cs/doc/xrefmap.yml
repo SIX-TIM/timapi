@@ -1071,15 +1071,15 @@ references:
   commentId: M:SIX.TimApi.Brand.#ctor
   fullName: SIX.TimApi.Brand.Brand()
   nameWithType: Brand.Brand()
-- uid: SIX.TimApi.Brand.#ctor(System.String,System.Boolean,SIX.TimApi.Constants.PaymentProtocol,System.Int32,System.Nullable{System.DateTime},System.Collections.Generic.List{SIX.TimApi.Application},System.Collections.Generic.List{SIX.TimApi.CurrencyItem})
-  name: Brand(String, Boolean, PaymentProtocol, Int32, Nullable<DateTime>, List<Application>, List<CurrencyItem>)
-  href: api/SIX.TimApi.Brand.html#SIX_TimApi_Brand__ctor_System_String_System_Boolean_SIX_TimApi_Constants_PaymentProtocol_System_Int32_System_Nullable_System_DateTime__System_Collections_Generic_List_SIX_TimApi_Application__System_Collections_Generic_List_SIX_TimApi_CurrencyItem__
-  commentId: M:SIX.TimApi.Brand.#ctor(System.String,System.Boolean,SIX.TimApi.Constants.PaymentProtocol,System.Int32,System.Nullable{System.DateTime},System.Collections.Generic.List{SIX.TimApi.Application},System.Collections.Generic.List{SIX.TimApi.CurrencyItem})
-  name.vb: Brand(String, Boolean, PaymentProtocol, Int32, Nullable(Of DateTime), List(Of Application), List(Of CurrencyItem))
-  fullName: SIX.TimApi.Brand.Brand(System.String, System.Boolean, SIX.TimApi.Constants.PaymentProtocol, System.Int32, System.Nullable<System.DateTime>, System.Collections.Generic.List<SIX.TimApi.Application>, System.Collections.Generic.List<SIX.TimApi.CurrencyItem>)
-  fullName.vb: SIX.TimApi.Brand.Brand(System.String, System.Boolean, SIX.TimApi.Constants.PaymentProtocol, System.Int32, System.Nullable(Of System.DateTime), System.Collections.Generic.List(Of SIX.TimApi.Application), System.Collections.Generic.List(Of SIX.TimApi.CurrencyItem))
-  nameWithType: Brand.Brand(String, Boolean, PaymentProtocol, Int32, Nullable<DateTime>, List<Application>, List<CurrencyItem>)
-  nameWithType.vb: Brand.Brand(String, Boolean, PaymentProtocol, Int32, Nullable(Of DateTime), List(Of Application), List(Of CurrencyItem))
+- uid: SIX.TimApi.Brand.#ctor(System.String,System.Boolean,SIX.TimApi.Constants.PaymentProtocol,System.Int64,System.Nullable{System.DateTime},System.Collections.Generic.List{SIX.TimApi.Application},System.Collections.Generic.List{SIX.TimApi.CurrencyItem})
+  name: Brand(String, Boolean, PaymentProtocol, Int64, Nullable<DateTime>, List<Application>, List<CurrencyItem>)
+  href: api/SIX.TimApi.Brand.html#SIX_TimApi_Brand__ctor_System_String_System_Boolean_SIX_TimApi_Constants_PaymentProtocol_System_Int64_System_Nullable_System_DateTime__System_Collections_Generic_List_SIX_TimApi_Application__System_Collections_Generic_List_SIX_TimApi_CurrencyItem__
+  commentId: M:SIX.TimApi.Brand.#ctor(System.String,System.Boolean,SIX.TimApi.Constants.PaymentProtocol,System.Int64,System.Nullable{System.DateTime},System.Collections.Generic.List{SIX.TimApi.Application},System.Collections.Generic.List{SIX.TimApi.CurrencyItem})
+  name.vb: Brand(String, Boolean, PaymentProtocol, Int64, Nullable(Of DateTime), List(Of Application), List(Of CurrencyItem))
+  fullName: SIX.TimApi.Brand.Brand(System.String, System.Boolean, SIX.TimApi.Constants.PaymentProtocol, System.Int64, System.Nullable<System.DateTime>, System.Collections.Generic.List<SIX.TimApi.Application>, System.Collections.Generic.List<SIX.TimApi.CurrencyItem>)
+  fullName.vb: SIX.TimApi.Brand.Brand(System.String, System.Boolean, SIX.TimApi.Constants.PaymentProtocol, System.Int64, System.Nullable(Of System.DateTime), System.Collections.Generic.List(Of SIX.TimApi.Application), System.Collections.Generic.List(Of SIX.TimApi.CurrencyItem))
+  nameWithType: Brand.Brand(String, Boolean, PaymentProtocol, Int64, Nullable<DateTime>, List<Application>, List<CurrencyItem>)
+  nameWithType.vb: Brand.Brand(String, Boolean, PaymentProtocol, Int64, Nullable(Of DateTime), List(Of Application), List(Of CurrencyItem))
 - uid: SIX.TimApi.Brand.#ctor*
   name: Brand
   href: api/SIX.TimApi.Brand.html#SIX_TimApi_Brand__ctor_
@@ -5544,12 +5544,12 @@ references:
   commentId: F:SIX.TimApi.Constants.ResourceId.PetrolNoCodeTriesLeft
   fullName: SIX.TimApi.Constants.ResourceId.PetrolNoCodeTriesLeft
   nameWithType: ResourceId.PetrolNoCodeTriesLeft
-- uid: SIX.TimApi.Constants.ResourceId.PetrolNoTankcodeTriesLeft
-  name: PetrolNoTankcodeTriesLeft
-  href: api/SIX.TimApi.Constants.ResourceId.html#SIX_TimApi_Constants_ResourceId_PetrolNoTankcodeTriesLeft
-  commentId: F:SIX.TimApi.Constants.ResourceId.PetrolNoTankcodeTriesLeft
-  fullName: SIX.TimApi.Constants.ResourceId.PetrolNoTankcodeTriesLeft
-  nameWithType: ResourceId.PetrolNoTankcodeTriesLeft
+- uid: SIX.TimApi.Constants.ResourceId.PetrolNoMoreTankcodeTriesLeft
+  name: PetrolNoMoreTankcodeTriesLeft
+  href: api/SIX.TimApi.Constants.ResourceId.html#SIX_TimApi_Constants_ResourceId_PetrolNoMoreTankcodeTriesLeft
+  commentId: F:SIX.TimApi.Constants.ResourceId.PetrolNoMoreTankcodeTriesLeft
+  fullName: SIX.TimApi.Constants.ResourceId.PetrolNoMoreTankcodeTriesLeft
+  nameWithType: ResourceId.PetrolNoMoreTankcodeTriesLeft
 - uid: SIX.TimApi.Constants.ResourceId.PetrolOutOfOrder
   name: PetrolOutOfOrder
   href: api/SIX.TimApi.Constants.ResourceId.html#SIX_TimApi_Constants_ResourceId_PetrolOutOfOrder
@@ -6192,6 +6192,12 @@ references:
   commentId: F:SIX.TimApi.Constants.ResultCode.BusyOtherController
   fullName: SIX.TimApi.Constants.ResultCode.BusyOtherController
   nameWithType: ResultCode.BusyOtherController
+- uid: SIX.TimApi.Constants.ResultCode.CardBlacklisted
+  name: CardBlacklisted
+  href: api/SIX.TimApi.Constants.ResultCode.html#SIX_TimApi_Constants_ResultCode_CardBlacklisted
+  commentId: F:SIX.TimApi.Constants.ResultCode.CardBlacklisted
+  fullName: SIX.TimApi.Constants.ResultCode.CardBlacklisted
+  nameWithType: ResultCode.CardBlacklisted
 - uid: SIX.TimApi.Constants.ResultCode.CardErrorCcr
   name: CardErrorCcr
   href: api/SIX.TimApi.Constants.ResultCode.html#SIX_TimApi_Constants_ResultCode_CardErrorCcr
@@ -7728,15 +7734,15 @@ references:
   commentId: T:SIX.TimApi.Counter
   fullName: SIX.TimApi.Counter
   nameWithType: Counter
-- uid: SIX.TimApi.Counter.#ctor(System.String,SIX.TimApi.Constants.PaymentProtocol,System.Int32,System.Int32,System.Int32,System.Int32,System.Collections.Generic.List{SIX.TimApi.Total})
-  name: Counter(String, PaymentProtocol, Int32, Int32, Int32, Int32, List<Total>)
-  href: api/SIX.TimApi.Counter.html#SIX_TimApi_Counter__ctor_System_String_SIX_TimApi_Constants_PaymentProtocol_System_Int32_System_Int32_System_Int32_System_Int32_System_Collections_Generic_List_SIX_TimApi_Total__
-  commentId: M:SIX.TimApi.Counter.#ctor(System.String,SIX.TimApi.Constants.PaymentProtocol,System.Int32,System.Int32,System.Int32,System.Int32,System.Collections.Generic.List{SIX.TimApi.Total})
-  name.vb: Counter(String, PaymentProtocol, Int32, Int32, Int32, Int32, List(Of Total))
-  fullName: SIX.TimApi.Counter.Counter(System.String, SIX.TimApi.Constants.PaymentProtocol, System.Int32, System.Int32, System.Int32, System.Int32, System.Collections.Generic.List<SIX.TimApi.Total>)
-  fullName.vb: SIX.TimApi.Counter.Counter(System.String, SIX.TimApi.Constants.PaymentProtocol, System.Int32, System.Int32, System.Int32, System.Int32, System.Collections.Generic.List(Of SIX.TimApi.Total))
-  nameWithType: Counter.Counter(String, PaymentProtocol, Int32, Int32, Int32, Int32, List<Total>)
-  nameWithType.vb: Counter.Counter(String, PaymentProtocol, Int32, Int32, Int32, Int32, List(Of Total))
+- uid: SIX.TimApi.Counter.#ctor(System.String,SIX.TimApi.Constants.PaymentProtocol,System.Int64,System.Int32,System.Int32,System.Int32,System.Collections.Generic.List{SIX.TimApi.Total})
+  name: Counter(String, PaymentProtocol, Int64, Int32, Int32, Int32, List<Total>)
+  href: api/SIX.TimApi.Counter.html#SIX_TimApi_Counter__ctor_System_String_SIX_TimApi_Constants_PaymentProtocol_System_Int64_System_Int32_System_Int32_System_Int32_System_Collections_Generic_List_SIX_TimApi_Total__
+  commentId: M:SIX.TimApi.Counter.#ctor(System.String,SIX.TimApi.Constants.PaymentProtocol,System.Int64,System.Int32,System.Int32,System.Int32,System.Collections.Generic.List{SIX.TimApi.Total})
+  name.vb: Counter(String, PaymentProtocol, Int64, Int32, Int32, Int32, List(Of Total))
+  fullName: SIX.TimApi.Counter.Counter(System.String, SIX.TimApi.Constants.PaymentProtocol, System.Int64, System.Int32, System.Int32, System.Int32, System.Collections.Generic.List<SIX.TimApi.Total>)
+  fullName.vb: SIX.TimApi.Counter.Counter(System.String, SIX.TimApi.Constants.PaymentProtocol, System.Int64, System.Int32, System.Int32, System.Int32, System.Collections.Generic.List(Of SIX.TimApi.Total))
+  nameWithType: Counter.Counter(String, PaymentProtocol, Int64, Int32, Int32, Int32, List<Total>)
+  nameWithType.vb: Counter.Counter(String, PaymentProtocol, Int64, Int32, Int32, Int32, List(Of Total))
 - uid: SIX.TimApi.Counter.#ctor*
   name: Counter
   href: api/SIX.TimApi.Counter.html#SIX_TimApi_Counter__ctor_
@@ -9588,15 +9594,15 @@ references:
   commentId: T:SIX.TimApi.FeaturesSixml
   fullName: SIX.TimApi.FeaturesSixml
   nameWithType: FeaturesSixml
-- uid: SIX.TimApi.FeaturesSixml.#ctor(System.Collections.Generic.List{SIX.TimApi.Constants.AdminFunctions},SIX.TimApi.FeaturesSixml.Support,SIX.TimApi.FeaturesSixml.Support,SIX.TimApi.FeaturesSixml.Support,System.Boolean,System.Collections.Generic.List{SIX.TimApi.Constants.FinancialTransactions},System.Collections.Generic.List{SIX.TimApi.Constants.Guides},System.Collections.Generic.List{SIX.TimApi.Constants.NonFinancialTransactions},System.Collections.Generic.List{SIX.TimApi.Constants.ProtocolLevel},System.Boolean,System.Collections.Generic.List{SIX.TimApi.Constants.StatusFunctions},System.Collections.Generic.List{SIX.TimApi.Constants.DialogFunctions},System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Collections.Generic.List{SIX.TimApi.Constants.RemoteFunctions},System.Boolean,System.Boolean)
-  name: FeaturesSixml(List<AdminFunctions>, FeaturesSixml.Support, FeaturesSixml.Support, FeaturesSixml.Support, Boolean, List<FinancialTransactions>, List<Guides>, List<NonFinancialTransactions>, List<ProtocolLevel>, Boolean, List<StatusFunctions>, List<DialogFunctions>, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, List<RemoteFunctions>, Boolean, Boolean)
-  href: api/SIX.TimApi.FeaturesSixml.html#SIX_TimApi_FeaturesSixml__ctor_System_Collections_Generic_List_SIX_TimApi_Constants_AdminFunctions__SIX_TimApi_FeaturesSixml_Support_SIX_TimApi_FeaturesSixml_Support_SIX_TimApi_FeaturesSixml_Support_System_Boolean_System_Collections_Generic_List_SIX_TimApi_Constants_FinancialTransactions__System_Collections_Generic_List_SIX_TimApi_Constants_Guides__System_Collections_Generic_List_SIX_TimApi_Constants_NonFinancialTransactions__System_Collections_Generic_List_SIX_TimApi_Constants_ProtocolLevel__System_Boolean_System_Collections_Generic_List_SIX_TimApi_Constants_StatusFunctions__System_Collections_Generic_List_SIX_TimApi_Constants_DialogFunctions__System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Collections_Generic_List_SIX_TimApi_Constants_RemoteFunctions__System_Boolean_System_Boolean_
-  commentId: M:SIX.TimApi.FeaturesSixml.#ctor(System.Collections.Generic.List{SIX.TimApi.Constants.AdminFunctions},SIX.TimApi.FeaturesSixml.Support,SIX.TimApi.FeaturesSixml.Support,SIX.TimApi.FeaturesSixml.Support,System.Boolean,System.Collections.Generic.List{SIX.TimApi.Constants.FinancialTransactions},System.Collections.Generic.List{SIX.TimApi.Constants.Guides},System.Collections.Generic.List{SIX.TimApi.Constants.NonFinancialTransactions},System.Collections.Generic.List{SIX.TimApi.Constants.ProtocolLevel},System.Boolean,System.Collections.Generic.List{SIX.TimApi.Constants.StatusFunctions},System.Collections.Generic.List{SIX.TimApi.Constants.DialogFunctions},System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Collections.Generic.List{SIX.TimApi.Constants.RemoteFunctions},System.Boolean,System.Boolean)
-  name.vb: FeaturesSixml(List(Of AdminFunctions), FeaturesSixml.Support, FeaturesSixml.Support, FeaturesSixml.Support, Boolean, List(Of FinancialTransactions), List(Of Guides), List(Of NonFinancialTransactions), List(Of ProtocolLevel), Boolean, List(Of StatusFunctions), List(Of DialogFunctions), Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, List(Of RemoteFunctions), Boolean, Boolean)
-  fullName: SIX.TimApi.FeaturesSixml.FeaturesSixml(System.Collections.Generic.List<SIX.TimApi.Constants.AdminFunctions>, SIX.TimApi.FeaturesSixml.Support, SIX.TimApi.FeaturesSixml.Support, SIX.TimApi.FeaturesSixml.Support, System.Boolean, System.Collections.Generic.List<SIX.TimApi.Constants.FinancialTransactions>, System.Collections.Generic.List<SIX.TimApi.Constants.Guides>, System.Collections.Generic.List<SIX.TimApi.Constants.NonFinancialTransactions>, System.Collections.Generic.List<SIX.TimApi.Constants.ProtocolLevel>, System.Boolean, System.Collections.Generic.List<SIX.TimApi.Constants.StatusFunctions>, System.Collections.Generic.List<SIX.TimApi.Constants.DialogFunctions>, System.Boolean, System.Boolean, System.Boolean, System.Boolean, System.Boolean, System.Boolean, System.Boolean, System.Boolean, System.Collections.Generic.List<SIX.TimApi.Constants.RemoteFunctions>, System.Boolean, System.Boolean)
-  fullName.vb: SIX.TimApi.FeaturesSixml.FeaturesSixml(System.Collections.Generic.List(Of SIX.TimApi.Constants.AdminFunctions), SIX.TimApi.FeaturesSixml.Support, SIX.TimApi.FeaturesSixml.Support, SIX.TimApi.FeaturesSixml.Support, System.Boolean, System.Collections.Generic.List(Of SIX.TimApi.Constants.FinancialTransactions), System.Collections.Generic.List(Of SIX.TimApi.Constants.Guides), System.Collections.Generic.List(Of SIX.TimApi.Constants.NonFinancialTransactions), System.Collections.Generic.List(Of SIX.TimApi.Constants.ProtocolLevel), System.Boolean, System.Collections.Generic.List(Of SIX.TimApi.Constants.StatusFunctions), System.Collections.Generic.List(Of SIX.TimApi.Constants.DialogFunctions), System.Boolean, System.Boolean, System.Boolean, System.Boolean, System.Boolean, System.Boolean, System.Boolean, System.Boolean, System.Collections.Generic.List(Of SIX.TimApi.Constants.RemoteFunctions), System.Boolean, System.Boolean)
-  nameWithType: FeaturesSixml.FeaturesSixml(List<AdminFunctions>, FeaturesSixml.Support, FeaturesSixml.Support, FeaturesSixml.Support, Boolean, List<FinancialTransactions>, List<Guides>, List<NonFinancialTransactions>, List<ProtocolLevel>, Boolean, List<StatusFunctions>, List<DialogFunctions>, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, List<RemoteFunctions>, Boolean, Boolean)
-  nameWithType.vb: FeaturesSixml.FeaturesSixml(List(Of AdminFunctions), FeaturesSixml.Support, FeaturesSixml.Support, FeaturesSixml.Support, Boolean, List(Of FinancialTransactions), List(Of Guides), List(Of NonFinancialTransactions), List(Of ProtocolLevel), Boolean, List(Of StatusFunctions), List(Of DialogFunctions), Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, List(Of RemoteFunctions), Boolean, Boolean)
+- uid: SIX.TimApi.FeaturesSixml.#ctor(System.Collections.Generic.List{SIX.TimApi.Constants.AdminFunctions},SIX.TimApi.FeaturesSixml.Support,SIX.TimApi.FeaturesSixml.Support,SIX.TimApi.FeaturesSixml.Support,System.Boolean,System.Collections.Generic.List{SIX.TimApi.Constants.FinancialTransactions},System.Collections.Generic.List{SIX.TimApi.Constants.Guides},System.Collections.Generic.List{SIX.TimApi.Constants.NonFinancialTransactions},System.Collections.Generic.List{SIX.TimApi.Constants.ProtocolLevel},System.Boolean,System.Collections.Generic.List{SIX.TimApi.Constants.StatusFunctions},System.Collections.Generic.List{SIX.TimApi.Constants.DialogFunctions},System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Collections.Generic.List{SIX.TimApi.Constants.RemoteFunctions},System.Boolean,System.Boolean,System.Boolean)
+  name: FeaturesSixml(List<AdminFunctions>, FeaturesSixml.Support, FeaturesSixml.Support, FeaturesSixml.Support, Boolean, List<FinancialTransactions>, List<Guides>, List<NonFinancialTransactions>, List<ProtocolLevel>, Boolean, List<StatusFunctions>, List<DialogFunctions>, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, List<RemoteFunctions>, Boolean, Boolean, Boolean)
+  href: api/SIX.TimApi.FeaturesSixml.html#SIX_TimApi_FeaturesSixml__ctor_System_Collections_Generic_List_SIX_TimApi_Constants_AdminFunctions__SIX_TimApi_FeaturesSixml_Support_SIX_TimApi_FeaturesSixml_Support_SIX_TimApi_FeaturesSixml_Support_System_Boolean_System_Collections_Generic_List_SIX_TimApi_Constants_FinancialTransactions__System_Collections_Generic_List_SIX_TimApi_Constants_Guides__System_Collections_Generic_List_SIX_TimApi_Constants_NonFinancialTransactions__System_Collections_Generic_List_SIX_TimApi_Constants_ProtocolLevel__System_Boolean_System_Collections_Generic_List_SIX_TimApi_Constants_StatusFunctions__System_Collections_Generic_List_SIX_TimApi_Constants_DialogFunctions__System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Collections_Generic_List_SIX_TimApi_Constants_RemoteFunctions__System_Boolean_System_Boolean_System_Boolean_
+  commentId: M:SIX.TimApi.FeaturesSixml.#ctor(System.Collections.Generic.List{SIX.TimApi.Constants.AdminFunctions},SIX.TimApi.FeaturesSixml.Support,SIX.TimApi.FeaturesSixml.Support,SIX.TimApi.FeaturesSixml.Support,System.Boolean,System.Collections.Generic.List{SIX.TimApi.Constants.FinancialTransactions},System.Collections.Generic.List{SIX.TimApi.Constants.Guides},System.Collections.Generic.List{SIX.TimApi.Constants.NonFinancialTransactions},System.Collections.Generic.List{SIX.TimApi.Constants.ProtocolLevel},System.Boolean,System.Collections.Generic.List{SIX.TimApi.Constants.StatusFunctions},System.Collections.Generic.List{SIX.TimApi.Constants.DialogFunctions},System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Collections.Generic.List{SIX.TimApi.Constants.RemoteFunctions},System.Boolean,System.Boolean,System.Boolean)
+  name.vb: FeaturesSixml(List(Of AdminFunctions), FeaturesSixml.Support, FeaturesSixml.Support, FeaturesSixml.Support, Boolean, List(Of FinancialTransactions), List(Of Guides), List(Of NonFinancialTransactions), List(Of ProtocolLevel), Boolean, List(Of StatusFunctions), List(Of DialogFunctions), Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, List(Of RemoteFunctions), Boolean, Boolean, Boolean)
+  fullName: SIX.TimApi.FeaturesSixml.FeaturesSixml(System.Collections.Generic.List<SIX.TimApi.Constants.AdminFunctions>, SIX.TimApi.FeaturesSixml.Support, SIX.TimApi.FeaturesSixml.Support, SIX.TimApi.FeaturesSixml.Support, System.Boolean, System.Collections.Generic.List<SIX.TimApi.Constants.FinancialTransactions>, System.Collections.Generic.List<SIX.TimApi.Constants.Guides>, System.Collections.Generic.List<SIX.TimApi.Constants.NonFinancialTransactions>, System.Collections.Generic.List<SIX.TimApi.Constants.ProtocolLevel>, System.Boolean, System.Collections.Generic.List<SIX.TimApi.Constants.StatusFunctions>, System.Collections.Generic.List<SIX.TimApi.Constants.DialogFunctions>, System.Boolean, System.Boolean, System.Boolean, System.Boolean, System.Boolean, System.Boolean, System.Boolean, System.Boolean, System.Collections.Generic.List<SIX.TimApi.Constants.RemoteFunctions>, System.Boolean, System.Boolean, System.Boolean)
+  fullName.vb: SIX.TimApi.FeaturesSixml.FeaturesSixml(System.Collections.Generic.List(Of SIX.TimApi.Constants.AdminFunctions), SIX.TimApi.FeaturesSixml.Support, SIX.TimApi.FeaturesSixml.Support, SIX.TimApi.FeaturesSixml.Support, System.Boolean, System.Collections.Generic.List(Of SIX.TimApi.Constants.FinancialTransactions), System.Collections.Generic.List(Of SIX.TimApi.Constants.Guides), System.Collections.Generic.List(Of SIX.TimApi.Constants.NonFinancialTransactions), System.Collections.Generic.List(Of SIX.TimApi.Constants.ProtocolLevel), System.Boolean, System.Collections.Generic.List(Of SIX.TimApi.Constants.StatusFunctions), System.Collections.Generic.List(Of SIX.TimApi.Constants.DialogFunctions), System.Boolean, System.Boolean, System.Boolean, System.Boolean, System.Boolean, System.Boolean, System.Boolean, System.Boolean, System.Collections.Generic.List(Of SIX.TimApi.Constants.RemoteFunctions), System.Boolean, System.Boolean, System.Boolean)
+  nameWithType: FeaturesSixml.FeaturesSixml(List<AdminFunctions>, FeaturesSixml.Support, FeaturesSixml.Support, FeaturesSixml.Support, Boolean, List<FinancialTransactions>, List<Guides>, List<NonFinancialTransactions>, List<ProtocolLevel>, Boolean, List<StatusFunctions>, List<DialogFunctions>, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, List<RemoteFunctions>, Boolean, Boolean, Boolean)
+  nameWithType.vb: FeaturesSixml.FeaturesSixml(List(Of AdminFunctions), FeaturesSixml.Support, FeaturesSixml.Support, FeaturesSixml.Support, Boolean, List(Of FinancialTransactions), List(Of Guides), List(Of NonFinancialTransactions), List(Of ProtocolLevel), Boolean, List(Of StatusFunctions), List(Of DialogFunctions), Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, List(Of RemoteFunctions), Boolean, Boolean, Boolean)
 - uid: SIX.TimApi.FeaturesSixml.#ctor*
   name: FeaturesSixml
   href: api/SIX.TimApi.FeaturesSixml.html#SIX_TimApi_FeaturesSixml__ctor_
@@ -9799,6 +9805,19 @@ references:
   isSpec: "True"
   fullName: SIX.TimApi.FeaturesSixml.Guides
   nameWithType: FeaturesSixml.Guides
+- uid: SIX.TimApi.FeaturesSixml.LongEcrInfoSupported
+  name: LongEcrInfoSupported
+  href: api/SIX.TimApi.FeaturesSixml.html#SIX_TimApi_FeaturesSixml_LongEcrInfoSupported
+  commentId: P:SIX.TimApi.FeaturesSixml.LongEcrInfoSupported
+  fullName: SIX.TimApi.FeaturesSixml.LongEcrInfoSupported
+  nameWithType: FeaturesSixml.LongEcrInfoSupported
+- uid: SIX.TimApi.FeaturesSixml.LongEcrInfoSupported*
+  name: LongEcrInfoSupported
+  href: api/SIX.TimApi.FeaturesSixml.html#SIX_TimApi_FeaturesSixml_LongEcrInfoSupported_
+  commentId: Overload:SIX.TimApi.FeaturesSixml.LongEcrInfoSupported
+  isSpec: "True"
+  fullName: SIX.TimApi.FeaturesSixml.LongEcrInfoSupported
+  nameWithType: FeaturesSixml.LongEcrInfoSupported
 - uid: SIX.TimApi.FeaturesSixml.NonFinancialFunctions
   name: NonFinancialFunctions
   href: api/SIX.TimApi.FeaturesSixml.html#SIX_TimApi_FeaturesSixml_NonFinancialFunctions
@@ -10405,6 +10424,19 @@ references:
   isSpec: "True"
   fullName: SIX.TimApi.ImmutableTerminalSettings.AutoShutterManagement
   nameWithType: ImmutableTerminalSettings.AutoShutterManagement
+- uid: SIX.TimApi.ImmutableTerminalSettings.AutoSysInfo
+  name: AutoSysInfo
+  href: api/SIX.TimApi.ImmutableTerminalSettings.html#SIX_TimApi_ImmutableTerminalSettings_AutoSysInfo
+  commentId: P:SIX.TimApi.ImmutableTerminalSettings.AutoSysInfo
+  fullName: SIX.TimApi.ImmutableTerminalSettings.AutoSysInfo
+  nameWithType: ImmutableTerminalSettings.AutoSysInfo
+- uid: SIX.TimApi.ImmutableTerminalSettings.AutoSysInfo*
+  name: AutoSysInfo
+  href: api/SIX.TimApi.ImmutableTerminalSettings.html#SIX_TimApi_ImmutableTerminalSettings_AutoSysInfo_
+  commentId: Overload:SIX.TimApi.ImmutableTerminalSettings.AutoSysInfo
+  isSpec: "True"
+  fullName: SIX.TimApi.ImmutableTerminalSettings.AutoSysInfo
+  nameWithType: ImmutableTerminalSettings.AutoSysInfo
 - uid: SIX.TimApi.ImmutableTerminalSettings.BroadcastInterface
   name: BroadcastInterface
   href: api/SIX.TimApi.ImmutableTerminalSettings.html#SIX_TimApi_ImmutableTerminalSettings_BroadcastInterface
@@ -10782,6 +10814,19 @@ references:
   isSpec: "True"
   fullName: SIX.TimApi.ImmutableTerminalSettings.PersistentState
   nameWithType: ImmutableTerminalSettings.PersistentState
+- uid: SIX.TimApi.ImmutableTerminalSettings.PreferOmniChannel
+  name: PreferOmniChannel
+  href: api/SIX.TimApi.ImmutableTerminalSettings.html#SIX_TimApi_ImmutableTerminalSettings_PreferOmniChannel
+  commentId: P:SIX.TimApi.ImmutableTerminalSettings.PreferOmniChannel
+  fullName: SIX.TimApi.ImmutableTerminalSettings.PreferOmniChannel
+  nameWithType: ImmutableTerminalSettings.PreferOmniChannel
+- uid: SIX.TimApi.ImmutableTerminalSettings.PreferOmniChannel*
+  name: PreferOmniChannel
+  href: api/SIX.TimApi.ImmutableTerminalSettings.html#SIX_TimApi_ImmutableTerminalSettings_PreferOmniChannel_
+  commentId: Overload:SIX.TimApi.ImmutableTerminalSettings.PreferOmniChannel
+  isSpec: "True"
+  fullName: SIX.TimApi.ImmutableTerminalSettings.PreferOmniChannel
+  nameWithType: ImmutableTerminalSettings.PreferOmniChannel
 - uid: SIX.TimApi.ImmutableTerminalSettings.ProceedTimeout
   name: ProceedTimeout
   href: api/SIX.TimApi.ImmutableTerminalSettings.html#SIX_TimApi_ImmutableTerminalSettings_ProceedTimeout
@@ -10808,6 +10853,19 @@ references:
   isSpec: "True"
   fullName: SIX.TimApi.ImmutableTerminalSettings.ProtocolType
   nameWithType: ImmutableTerminalSettings.ProtocolType
+- uid: SIX.TimApi.ImmutableTerminalSettings.QRCTimeout
+  name: QRCTimeout
+  href: api/SIX.TimApi.ImmutableTerminalSettings.html#SIX_TimApi_ImmutableTerminalSettings_QRCTimeout
+  commentId: P:SIX.TimApi.ImmutableTerminalSettings.QRCTimeout
+  fullName: SIX.TimApi.ImmutableTerminalSettings.QRCTimeout
+  nameWithType: ImmutableTerminalSettings.QRCTimeout
+- uid: SIX.TimApi.ImmutableTerminalSettings.QRCTimeout*
+  name: QRCTimeout
+  href: api/SIX.TimApi.ImmutableTerminalSettings.html#SIX_TimApi_ImmutableTerminalSettings_QRCTimeout_
+  commentId: Overload:SIX.TimApi.ImmutableTerminalSettings.QRCTimeout
+  isSpec: "True"
+  fullName: SIX.TimApi.ImmutableTerminalSettings.QRCTimeout
+  nameWithType: ImmutableTerminalSettings.QRCTimeout
 - uid: SIX.TimApi.ImmutableTerminalSettings.RequestRepetition
   name: RequestRepetition
   href: api/SIX.TimApi.ImmutableTerminalSettings.html#SIX_TimApi_ImmutableTerminalSettings_RequestRepetition
@@ -15797,19 +15855,6 @@ references:
   commentId: T:SIX.TimApi.Terminal.CloseReaderCompletedEventHandler
   fullName: SIX.TimApi.Terminal.CloseReaderCompletedEventHandler
   nameWithType: Terminal.CloseReaderCompletedEventHandler
-- uid: SIX.TimApi.Terminal.CommandCompleted
-  name: CommandCompleted()
-  href: api/SIX.TimApi.Terminal.html#SIX_TimApi_Terminal_CommandCompleted
-  commentId: M:SIX.TimApi.Terminal.CommandCompleted
-  fullName: SIX.TimApi.Terminal.CommandCompleted()
-  nameWithType: Terminal.CommandCompleted()
-- uid: SIX.TimApi.Terminal.CommandCompleted*
-  name: CommandCompleted
-  href: api/SIX.TimApi.Terminal.html#SIX_TimApi_Terminal_CommandCompleted_
-  commentId: Overload:SIX.TimApi.Terminal.CommandCompleted
-  isSpec: "True"
-  fullName: SIX.TimApi.Terminal.CommandCompleted
-  nameWithType: Terminal.CommandCompleted
 - uid: SIX.TimApi.Terminal.Commit
   name: Commit()
   href: api/SIX.TimApi.Terminal.html#SIX_TimApi_Terminal_Commit
@@ -16906,18 +16951,6 @@ references:
   commentId: T:SIX.TimApi.Terminal.LoyaltyDataCompletedEventHandler
   fullName: SIX.TimApi.Terminal.LoyaltyDataCompletedEventHandler
   nameWithType: Terminal.LoyaltyDataCompletedEventHandler
-- uid: SIX.TimApi.Terminal.m_AsyncOp
-  name: m_AsyncOp
-  href: api/SIX.TimApi.Terminal.html#SIX_TimApi_Terminal_m_AsyncOp
-  commentId: F:SIX.TimApi.Terminal.m_AsyncOp
-  fullName: SIX.TimApi.Terminal.m_AsyncOp
-  nameWithType: Terminal.m_AsyncOp
-- uid: SIX.TimApi.Terminal.m_AsyncOpStatus
-  name: m_AsyncOpStatus
-  href: api/SIX.TimApi.Terminal.html#SIX_TimApi_Terminal_m_AsyncOpStatus
-  commentId: F:SIX.TimApi.Terminal.m_AsyncOpStatus
-  fullName: SIX.TimApi.Terminal.m_AsyncOpStatus
-  nameWithType: Terminal.m_AsyncOpStatus
 - uid: SIX.TimApi.Terminal.ManufacturerFlags
   name: ManufacturerFlags
   href: api/SIX.TimApi.Terminal.html#SIX_TimApi_Terminal_ManufacturerFlags
@@ -17339,19 +17372,6 @@ references:
   isSpec: "True"
   fullName: SIX.TimApi.Terminal.PrintOptions
   nameWithType: Terminal.PrintOptions
-- uid: SIX.TimApi.Terminal.processPrintReceipts(SIX.TimApi.PrintData)
-  name: processPrintReceipts(PrintData)
-  href: api/SIX.TimApi.Terminal.html#SIX_TimApi_Terminal_processPrintReceipts_SIX_TimApi_PrintData_
-  commentId: M:SIX.TimApi.Terminal.processPrintReceipts(SIX.TimApi.PrintData)
-  fullName: SIX.TimApi.Terminal.processPrintReceipts(SIX.TimApi.PrintData)
-  nameWithType: Terminal.processPrintReceipts(PrintData)
-- uid: SIX.TimApi.Terminal.processPrintReceipts*
-  name: processPrintReceipts
-  href: api/SIX.TimApi.Terminal.html#SIX_TimApi_Terminal_processPrintReceipts_
-  commentId: Overload:SIX.TimApi.Terminal.processPrintReceipts
-  isSpec: "True"
-  fullName: SIX.TimApi.Terminal.processPrintReceipts
-  nameWithType: Terminal.processPrintReceipts
 - uid: SIX.TimApi.Terminal.ProvideLoyaltyBasket(System.Collections.Generic.List{SIX.TimApi.LoyaltyItem})
   name: ProvideLoyaltyBasket(List<LoyaltyItem>)
   href: api/SIX.TimApi.Terminal.html#SIX_TimApi_Terminal_ProvideLoyaltyBasket_System_Collections_Generic_List_SIX_TimApi_LoyaltyItem__
@@ -17949,32 +17969,6 @@ references:
   commentId: T:SIX.TimApi.Terminal.RollbackCompletedEventHandler
   fullName: SIX.TimApi.Terminal.RollbackCompletedEventHandler
   nameWithType: Terminal.RollbackCompletedEventHandler
-- uid: SIX.TimApi.Terminal.RunningRequest
-  name: RunningRequest
-  href: api/SIX.TimApi.Terminal.html#SIX_TimApi_Terminal_RunningRequest
-  commentId: P:SIX.TimApi.Terminal.RunningRequest
-  fullName: SIX.TimApi.Terminal.RunningRequest
-  nameWithType: Terminal.RunningRequest
-- uid: SIX.TimApi.Terminal.RunningRequest*
-  name: RunningRequest
-  href: api/SIX.TimApi.Terminal.html#SIX_TimApi_Terminal_RunningRequest_
-  commentId: Overload:SIX.TimApi.Terminal.RunningRequest
-  isSpec: "True"
-  fullName: SIX.TimApi.Terminal.RunningRequest
-  nameWithType: Terminal.RunningRequest
-- uid: SIX.TimApi.Terminal.RunningSyncRequest
-  name: RunningSyncRequest
-  href: api/SIX.TimApi.Terminal.html#SIX_TimApi_Terminal_RunningSyncRequest
-  commentId: P:SIX.TimApi.Terminal.RunningSyncRequest
-  fullName: SIX.TimApi.Terminal.RunningSyncRequest
-  nameWithType: Terminal.RunningSyncRequest
-- uid: SIX.TimApi.Terminal.RunningSyncRequest*
-  name: RunningSyncRequest
-  href: api/SIX.TimApi.Terminal.html#SIX_TimApi_Terminal_RunningSyncRequest_
-  commentId: Overload:SIX.TimApi.Terminal.RunningSyncRequest
-  isSpec: "True"
-  fullName: SIX.TimApi.Terminal.RunningSyncRequest
-  nameWithType: Terminal.RunningSyncRequest
 - uid: SIX.TimApi.Terminal.Screenshot
   name: Screenshot()
   href: api/SIX.TimApi.Terminal.html#SIX_TimApi_Terminal_Screenshot
@@ -18636,19 +18630,6 @@ references:
   commentId: T:SIX.TimApi.Terminal.VasInfoHandler
   fullName: SIX.TimApi.Terminal.VasInfoHandler
   nameWithType: Terminal.VasInfoHandler
-- uid: SIX.TimApi.Terminal.WaitCommandComplete(System.Int32)
-  name: WaitCommandComplete(Int32)
-  href: api/SIX.TimApi.Terminal.html#SIX_TimApi_Terminal_WaitCommandComplete_System_Int32_
-  commentId: M:SIX.TimApi.Terminal.WaitCommandComplete(System.Int32)
-  fullName: SIX.TimApi.Terminal.WaitCommandComplete(System.Int32)
-  nameWithType: Terminal.WaitCommandComplete(Int32)
-- uid: SIX.TimApi.Terminal.WaitCommandComplete*
-  name: WaitCommandComplete
-  href: api/SIX.TimApi.Terminal.html#SIX_TimApi_Terminal_WaitCommandComplete_
-  commentId: Overload:SIX.TimApi.Terminal.WaitCommandComplete
-  isSpec: "True"
-  fullName: SIX.TimApi.Terminal.WaitCommandComplete
-  nameWithType: Terminal.WaitCommandComplete
 - uid: SIX.TimApi.TerminalListener
   name: TerminalListener
   href: api/SIX.TimApi.TerminalListener.html
@@ -19417,6 +19398,19 @@ references:
   isSpec: "True"
   fullName: SIX.TimApi.TerminalSettings.AutoShutterManagement
   nameWithType: TerminalSettings.AutoShutterManagement
+- uid: SIX.TimApi.TerminalSettings.AutoSysInfo
+  name: AutoSysInfo
+  href: api/SIX.TimApi.TerminalSettings.html#SIX_TimApi_TerminalSettings_AutoSysInfo
+  commentId: P:SIX.TimApi.TerminalSettings.AutoSysInfo
+  fullName: SIX.TimApi.TerminalSettings.AutoSysInfo
+  nameWithType: TerminalSettings.AutoSysInfo
+- uid: SIX.TimApi.TerminalSettings.AutoSysInfo*
+  name: AutoSysInfo
+  href: api/SIX.TimApi.TerminalSettings.html#SIX_TimApi_TerminalSettings_AutoSysInfo_
+  commentId: Overload:SIX.TimApi.TerminalSettings.AutoSysInfo
+  isSpec: "True"
+  fullName: SIX.TimApi.TerminalSettings.AutoSysInfo
+  nameWithType: TerminalSettings.AutoSysInfo
 - uid: SIX.TimApi.TerminalSettings.BroadcastInterface
   name: BroadcastInterface
   href: api/SIX.TimApi.TerminalSettings.html#SIX_TimApi_TerminalSettings_BroadcastInterface
@@ -19800,6 +19794,19 @@ references:
   isSpec: "True"
   fullName: SIX.TimApi.TerminalSettings.PersistentState
   nameWithType: TerminalSettings.PersistentState
+- uid: SIX.TimApi.TerminalSettings.PreferOmniChannel
+  name: PreferOmniChannel
+  href: api/SIX.TimApi.TerminalSettings.html#SIX_TimApi_TerminalSettings_PreferOmniChannel
+  commentId: P:SIX.TimApi.TerminalSettings.PreferOmniChannel
+  fullName: SIX.TimApi.TerminalSettings.PreferOmniChannel
+  nameWithType: TerminalSettings.PreferOmniChannel
+- uid: SIX.TimApi.TerminalSettings.PreferOmniChannel*
+  name: PreferOmniChannel
+  href: api/SIX.TimApi.TerminalSettings.html#SIX_TimApi_TerminalSettings_PreferOmniChannel_
+  commentId: Overload:SIX.TimApi.TerminalSettings.PreferOmniChannel
+  isSpec: "True"
+  fullName: SIX.TimApi.TerminalSettings.PreferOmniChannel
+  nameWithType: TerminalSettings.PreferOmniChannel
 - uid: SIX.TimApi.TerminalSettings.ProceedTimeout
   name: ProceedTimeout
   href: api/SIX.TimApi.TerminalSettings.html#SIX_TimApi_TerminalSettings_ProceedTimeout
@@ -19826,6 +19833,19 @@ references:
   isSpec: "True"
   fullName: SIX.TimApi.TerminalSettings.ProtocolType
   nameWithType: TerminalSettings.ProtocolType
+- uid: SIX.TimApi.TerminalSettings.QRCTimeout
+  name: QRCTimeout
+  href: api/SIX.TimApi.TerminalSettings.html#SIX_TimApi_TerminalSettings_QRCTimeout
+  commentId: P:SIX.TimApi.TerminalSettings.QRCTimeout
+  fullName: SIX.TimApi.TerminalSettings.QRCTimeout
+  nameWithType: TerminalSettings.QRCTimeout
+- uid: SIX.TimApi.TerminalSettings.QRCTimeout*
+  name: QRCTimeout
+  href: api/SIX.TimApi.TerminalSettings.html#SIX_TimApi_TerminalSettings_QRCTimeout_
+  commentId: Overload:SIX.TimApi.TerminalSettings.QRCTimeout
+  isSpec: "True"
+  fullName: SIX.TimApi.TerminalSettings.QRCTimeout
+  nameWithType: TerminalSettings.QRCTimeout
 - uid: SIX.TimApi.TerminalSettings.RequestRepetition
   name: RequestRepetition
   href: api/SIX.TimApi.TerminalSettings.html#SIX_TimApi_TerminalSettings_RequestRepetition
@@ -20763,12 +20783,12 @@ references:
   isSpec: "True"
   fullName: SIX.TimApi.TransactionData.SaferpayRecurring
   nameWithType: TransactionData.SaferpayRecurring
-- uid: SIX.TimApi.TransactionData.setAcqTransRef(System.Int32,System.Int32)
-  name: setAcqTransRef(Int32, Int32)
-  href: api/SIX.TimApi.TransactionData.html#SIX_TimApi_TransactionData_setAcqTransRef_System_Int32_System_Int32_
-  commentId: M:SIX.TimApi.TransactionData.setAcqTransRef(System.Int32,System.Int32)
-  fullName: SIX.TimApi.TransactionData.setAcqTransRef(System.Int32, System.Int32)
-  nameWithType: TransactionData.setAcqTransRef(Int32, Int32)
+- uid: SIX.TimApi.TransactionData.setAcqTransRef(System.Int64,System.Int32)
+  name: setAcqTransRef(Int64, Int32)
+  href: api/SIX.TimApi.TransactionData.html#SIX_TimApi_TransactionData_setAcqTransRef_System_Int64_System_Int32_
+  commentId: M:SIX.TimApi.TransactionData.setAcqTransRef(System.Int64,System.Int32)
+  fullName: SIX.TimApi.TransactionData.setAcqTransRef(System.Int64, System.Int32)
+  nameWithType: TransactionData.setAcqTransRef(Int64, Int32)
 - uid: SIX.TimApi.TransactionData.setAcqTransRef*
   name: setAcqTransRef
   href: api/SIX.TimApi.TransactionData.html#SIX_TimApi_TransactionData_setAcqTransRef_
@@ -20776,12 +20796,12 @@ references:
   isSpec: "True"
   fullName: SIX.TimApi.TransactionData.setAcqTransRef
   nameWithType: TransactionData.setAcqTransRef
-- uid: SIX.TimApi.TransactionData.setSixTrxRefNum(System.Int32,System.String)
-  name: setSixTrxRefNum(Int32, String)
-  href: api/SIX.TimApi.TransactionData.html#SIX_TimApi_TransactionData_setSixTrxRefNum_System_Int32_System_String_
-  commentId: M:SIX.TimApi.TransactionData.setSixTrxRefNum(System.Int32,System.String)
-  fullName: SIX.TimApi.TransactionData.setSixTrxRefNum(System.Int32, System.String)
-  nameWithType: TransactionData.setSixTrxRefNum(Int32, String)
+- uid: SIX.TimApi.TransactionData.setSixTrxRefNum(System.Int64,System.String)
+  name: setSixTrxRefNum(Int64, String)
+  href: api/SIX.TimApi.TransactionData.html#SIX_TimApi_TransactionData_setSixTrxRefNum_System_Int64_System_String_
+  commentId: M:SIX.TimApi.TransactionData.setSixTrxRefNum(System.Int64,System.String)
+  fullName: SIX.TimApi.TransactionData.setSixTrxRefNum(System.Int64, System.String)
+  nameWithType: TransactionData.setSixTrxRefNum(Int64, String)
 - uid: SIX.TimApi.TransactionData.setSixTrxRefNum*
   name: setSixTrxRefNum
   href: api/SIX.TimApi.TransactionData.html#SIX_TimApi_TransactionData_setSixTrxRefNum_
@@ -22237,6 +22257,15 @@ references:
   commentId: F:SIX.TimApi.Utility.Logger.Logger.LoggerLogRetainFileCount
   fullName: SIX.TimApi.Utility.Logger.Logger.LoggerLogRetainFileCount
   nameWithType: Logger.LoggerLogRetainFileCount
+- uid: SIX.TimApi.Utility.Logger.Logger.LogMethod(System.String,System.String,SIX.TimApi.Utility.Logger.Level,SIX.TimApi.Utility.Logger.Logger.CodeBlock,System.Object[])
+  name: LogMethod(String, String, Level, Logger.CodeBlock, Object[])
+  href: api/SIX.TimApi.Utility.Logger.Logger.html#SIX_TimApi_Utility_Logger_Logger_LogMethod_System_String_System_String_SIX_TimApi_Utility_Logger_Level_SIX_TimApi_Utility_Logger_Logger_CodeBlock_System_Object___
+  commentId: M:SIX.TimApi.Utility.Logger.Logger.LogMethod(System.String,System.String,SIX.TimApi.Utility.Logger.Level,SIX.TimApi.Utility.Logger.Logger.CodeBlock,System.Object[])
+  name.vb: LogMethod(String, String, Level, Logger.CodeBlock, Object())
+  fullName: SIX.TimApi.Utility.Logger.Logger.LogMethod(System.String, System.String, SIX.TimApi.Utility.Logger.Level, SIX.TimApi.Utility.Logger.Logger.CodeBlock, System.Object[])
+  fullName.vb: SIX.TimApi.Utility.Logger.Logger.LogMethod(System.String, System.String, SIX.TimApi.Utility.Logger.Level, SIX.TimApi.Utility.Logger.Logger.CodeBlock, System.Object())
+  nameWithType: Logger.LogMethod(String, String, Level, Logger.CodeBlock, Object[])
+  nameWithType.vb: Logger.LogMethod(String, String, Level, Logger.CodeBlock, Object())
 - uid: SIX.TimApi.Utility.Logger.Logger.LogMethod(System.String,System.String,SIX.TimApi.Utility.Logger.Logger.CodeBlock,System.Object[])
   name: LogMethod(String, String, Logger.CodeBlock, Object[])
   href: api/SIX.TimApi.Utility.Logger.Logger.html#SIX_TimApi_Utility_Logger_Logger_LogMethod_System_String_System_String_SIX_TimApi_Utility_Logger_Logger_CodeBlock_System_Object___
@@ -22253,6 +22282,15 @@ references:
   isSpec: "True"
   fullName: SIX.TimApi.Utility.Logger.Logger.LogMethod
   nameWithType: Logger.LogMethod
+- uid: SIX.TimApi.Utility.Logger.Logger.LogMethod``1(System.String,System.String,SIX.TimApi.Utility.Logger.Level,SIX.TimApi.Utility.Logger.Logger.CodeBlock{``0},System.Object[])
+  name: LogMethod<T>(String, String, Level, Logger.CodeBlock<T>, Object[])
+  href: api/SIX.TimApi.Utility.Logger.Logger.html#SIX_TimApi_Utility_Logger_Logger_LogMethod__1_System_String_System_String_SIX_TimApi_Utility_Logger_Level_SIX_TimApi_Utility_Logger_Logger_CodeBlock___0__System_Object___
+  commentId: M:SIX.TimApi.Utility.Logger.Logger.LogMethod``1(System.String,System.String,SIX.TimApi.Utility.Logger.Level,SIX.TimApi.Utility.Logger.Logger.CodeBlock{``0},System.Object[])
+  name.vb: LogMethod(Of T)(String, String, Level, Logger.CodeBlock(Of T), Object())
+  fullName: SIX.TimApi.Utility.Logger.Logger.LogMethod<T>(System.String, System.String, SIX.TimApi.Utility.Logger.Level, SIX.TimApi.Utility.Logger.Logger.CodeBlock<T>, System.Object[])
+  fullName.vb: SIX.TimApi.Utility.Logger.Logger.LogMethod(Of T)(System.String, System.String, SIX.TimApi.Utility.Logger.Level, SIX.TimApi.Utility.Logger.Logger.CodeBlock(Of T), System.Object())
+  nameWithType: Logger.LogMethod<T>(String, String, Level, Logger.CodeBlock<T>, Object[])
+  nameWithType.vb: Logger.LogMethod(Of T)(String, String, Level, Logger.CodeBlock(Of T), Object())
 - uid: SIX.TimApi.Utility.Logger.Logger.LogMethod``1(System.String,System.String,SIX.TimApi.Utility.Logger.Logger.CodeBlock{``0},System.Object[])
   name: LogMethod<T>(String, String, Logger.CodeBlock<T>, Object[])
   href: api/SIX.TimApi.Utility.Logger.Logger.html#SIX_TimApi_Utility_Logger_Logger_LogMethod__1_System_String_System_String_SIX_TimApi_Utility_Logger_Logger_CodeBlock___0__System_Object___

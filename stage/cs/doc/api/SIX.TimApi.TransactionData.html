@@ -1761,7 +1761,7 @@ public DateTime TrxOriginalDate { get; set; }</code></pre>
   
   
   <a id="SIX_TimApi_TransactionData_setAcqTransRef_" data-uid="SIX.TimApi.TransactionData.setAcqTransRef*"></a>
-  <h4 id="SIX_TimApi_TransactionData_setAcqTransRef_System_Int32_System_Int32_" data-uid="SIX.TimApi.TransactionData.setAcqTransRef(System.Int32,System.Int32)">setAcqTransRef(Int32, Int32)</h4>
+  <h4 id="SIX_TimApi_TransactionData_setAcqTransRef_System_Int64_System_Int32_" data-uid="SIX.TimApi.TransactionData.setAcqTransRef(System.Int64,System.Int32)">setAcqTransRef(Int64, Int32)</h4>
   <div class="markdown level1 summary"><p>Set transaction reference from the acquirer.</p>
 <p>This method is to be used only for manual entry by clerks for EP2 hospitality transactions only.</p>
 <param name="acqId">Acquirer ID as printed on receipt.
@@ -1770,7 +1770,7 @@ public DateTime TrxOriginalDate { get; set; }</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void setAcqTransRef(int acqId, int trxRefNo)</code></pre>
+    <pre><code class="lang-csharp hljs">public void setAcqTransRef(long acqId, int trxRefNo)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1783,7 +1783,7 @@ public DateTime TrxOriginalDate { get; set; }</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Int32</span></td>
+        <td><span class="xref">System.Int64</span></td>
         <td><span class="parametername">acqId</span></td>
         <td></td>
       </tr>
@@ -1797,13 +1797,13 @@ public DateTime TrxOriginalDate { get; set; }</code></pre>
   
   
   <a id="SIX_TimApi_TransactionData_setSixTrxRefNum_" data-uid="SIX.TimApi.TransactionData.setSixTrxRefNum*"></a>
-  <h4 id="SIX_TimApi_TransactionData_setSixTrxRefNum_System_Int32_System_String_" data-uid="SIX.TimApi.TransactionData.setSixTrxRefNum(System.Int32,System.String)">setSixTrxRefNum(Int32, String)</h4>
+  <h4 id="SIX_TimApi_TransactionData_setSixTrxRefNum_System_Int64_System_String_" data-uid="SIX.TimApi.TransactionData.setSixTrxRefNum(System.Int64,System.String)">setSixTrxRefNum(Int64, String)</h4>
   <div class="markdown level1 summary"><p>Set SIX Transaction Reference Number for integrators using MPD Client.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void setSixTrxRefNum(int acqId, string trxRefNum)</code></pre>
+    <pre><code class="lang-csharp hljs">public void setSixTrxRefNum(long acqId, string trxRefNum)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1816,7 +1816,7 @@ public DateTime TrxOriginalDate { get; set; }</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Int32</span></td>
+        <td><span class="xref">System.Int64</span></td>
         <td><span class="parametername">acqId</span></td>
         <td></td>
       </tr>

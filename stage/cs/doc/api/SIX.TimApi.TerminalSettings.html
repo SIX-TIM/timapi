@@ -1099,6 +1099,31 @@ Set this value before constructing a TerminalSettings instance.</p>
   </table>
   
   
+  <a id="SIX_TimApi_TerminalSettings_AutoSysInfo_" data-uid="SIX.TimApi.TerminalSettings.AutoSysInfo*"></a>
+  <h4 id="SIX_TimApi_TerminalSettings_AutoSysInfo" data-uid="SIX.TimApi.TerminalSettings.AutoSysInfo">AutoSysInfo</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool AutoSysInfo { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="SIX_TimApi_TerminalSettings_BroadcastInterface_" data-uid="SIX.TimApi.TerminalSettings.BroadcastInterface*"></a>
   <h4 id="SIX_TimApi_TerminalSettings_BroadcastInterface" data-uid="SIX.TimApi.TerminalSettings.BroadcastInterface">BroadcastInterface</h4>
   <div class="markdown level1 summary"><p>Gets or sets the broadcast interface.</p>
@@ -1879,6 +1904,32 @@ Use empty string to disable logging.</p>
   </table>
   
   
+  <a id="SIX_TimApi_TerminalSettings_PreferOmniChannel_" data-uid="SIX.TimApi.TerminalSettings.PreferOmniChannel*"></a>
+  <h4 id="SIX_TimApi_TerminalSettings_PreferOmniChannel" data-uid="SIX.TimApi.TerminalSettings.PreferOmniChannel">PreferOmniChannel</h4>
+  <div class="markdown level1 summary"><p>Prefer OmniChannel for these functions</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;TransactionType&gt; PreferOmniChannel { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="SIX.TimApi.Constants.TransactionType.html">TransactionType</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="SIX_TimApi_TerminalSettings_ProceedTimeout_" data-uid="SIX.TimApi.TerminalSettings.ProceedTimeout*"></a>
   <h4 id="SIX_TimApi_TerminalSettings_ProceedTimeout" data-uid="SIX.TimApi.TerminalSettings.ProceedTimeout">ProceedTimeout</h4>
   <div class="markdown level1 summary"><p>Timeout in seconds the terminal waits in WaitForProceed state for an
@@ -1929,6 +1980,34 @@ additional function until an error is returned.</p>
         <td><a class="xref" href="SIX.TimApi.Constants.ProtocolType.html">ProtocolType</a></td>
         <td><p>Protocol type.</p>
 </td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SIX_TimApi_TerminalSettings_QRCTimeout_" data-uid="SIX.TimApi.TerminalSettings.QRCTimeout*"></a>
+  <h4 id="SIX_TimApi_TerminalSettings_QRCTimeout" data-uid="SIX.TimApi.TerminalSettings.QRCTimeout">QRCTimeout</h4>
+  <div class="markdown level1 summary"><p>Timeout in seconds the terminal displays the loyalty QR code after a &quot;StartCheckout&quot; call
+before returning to its &quot;Idle&quot; screen. Numeric number that specifies the QRCTimeout in
+seconds.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int QRCTimeout { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
       </tr>
     </tbody>
   </table>

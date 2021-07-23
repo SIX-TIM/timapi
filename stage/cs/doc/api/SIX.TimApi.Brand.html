@@ -929,13 +929,13 @@ or brands have been manually retrieved by <a class="xref" href="SIX.TimApi.Termi
   
   
   <a id="SIX_TimApi_Brand__ctor_" data-uid="SIX.TimApi.Brand.#ctor*"></a>
-  <h4 id="SIX_TimApi_Brand__ctor_System_String_System_Boolean_SIX_TimApi_Constants_PaymentProtocol_System_Int32_System_Nullable_System_DateTime__System_Collections_Generic_List_SIX_TimApi_Application__System_Collections_Generic_List_SIX_TimApi_CurrencyItem__" data-uid="SIX.TimApi.Brand.#ctor(System.String,System.Boolean,SIX.TimApi.Constants.PaymentProtocol,System.Int32,System.Nullable{System.DateTime},System.Collections.Generic.List{SIX.TimApi.Application},System.Collections.Generic.List{SIX.TimApi.CurrencyItem})">Brand(String, Boolean, PaymentProtocol, Int32, Nullable&lt;DateTime&gt;, List&lt;Application&gt;, List&lt;CurrencyItem&gt;)</h4>
+  <h4 id="SIX_TimApi_Brand__ctor_System_String_System_Boolean_SIX_TimApi_Constants_PaymentProtocol_System_Int64_System_Nullable_System_DateTime__System_Collections_Generic_List_SIX_TimApi_Application__System_Collections_Generic_List_SIX_TimApi_CurrencyItem__" data-uid="SIX.TimApi.Brand.#ctor(System.String,System.Boolean,SIX.TimApi.Constants.PaymentProtocol,System.Int64,System.Nullable{System.DateTime},System.Collections.Generic.List{SIX.TimApi.Application},System.Collections.Generic.List{SIX.TimApi.CurrencyItem})">Brand(String, Boolean, PaymentProtocol, Int64, Nullable&lt;DateTime&gt;, List&lt;Application&gt;, List&lt;CurrencyItem&gt;)</h4>
   <div class="markdown level1 summary"><p>Create brand.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Brand(string name, bool dccAvailable, PaymentProtocol paymentProtocol, int acqId, DateTime? lastInitDate, List&lt;Application&gt; applications, List&lt;CurrencyItem&gt; currencies)</code></pre>
+    <pre><code class="lang-csharp hljs">public Brand(string name, bool dccAvailable, PaymentProtocol paymentProtocol, long acqId, DateTime? lastInitDate, List&lt;Application&gt; applications, List&lt;CurrencyItem&gt; currencies)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -963,7 +963,7 @@ or brands have been manually retrieved by <a class="xref" href="SIX.TimApi.Termi
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">System.Int32</span></td>
+        <td><span class="xref">System.Int64</span></td>
         <td><span class="parametername">acqId</span></td>
         <td></td>
       </tr>
@@ -995,7 +995,7 @@ or brands have been manually retrieved by <a class="xref" href="SIX.TimApi.Termi
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int AcqId { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public long AcqId { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1007,7 +1007,7 @@ or brands have been manually retrieved by <a class="xref" href="SIX.TimApi.Termi
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Int32</span></td>
+        <td><span class="xref">System.Int64</span></td>
         <td></td>
       </tr>
     </tbody>

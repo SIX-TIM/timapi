@@ -136,6 +136,7 @@ var result__code_8h =
       [ "ta_c_rc_moc_incorrect_project_number", "result__code_8h.html#aebaf00d1ceef4b827866ca9de0bd3320afb565d97fb5b0ad372d49772556652f8", null ],
       [ "ta_c_rc_moc_incorrect_license_plate", "result__code_8h.html#aebaf00d1ceef4b827866ca9de0bd3320a294cc94164077d4b26a1c51b7c0820ef", null ],
       [ "ta_c_rc_moc_incorrect_reference", "result__code_8h.html#aebaf00d1ceef4b827866ca9de0bd3320a01c8aca411db61883bfc71519a15da75", null ],
+      [ "ta_c_rc_card_blacklisted", "result__code_8h.html#aebaf00d1ceef4b827866ca9de0bd3320a48b0b5cd18e64a2e4c12e2b45b44afa5", null ],
       [ "ta_c_rc_invalid_argument", "result__code_8h.html#aebaf00d1ceef4b827866ca9de0bd3320a306acc157474b36c57faa559c710d8c3", null ],
       [ "ta_c_rc_out_of_memory", "result__code_8h.html#aebaf00d1ceef4b827866ca9de0bd3320a1895fe80e9772f70ef54177746bfed4a", null ],
       [ "ta_c_rc_system_error", "result__code_8h.html#aebaf00d1ceef4b827866ca9de0bd3320a58db8236054739cfd49c849b0c16e1be", null ]
