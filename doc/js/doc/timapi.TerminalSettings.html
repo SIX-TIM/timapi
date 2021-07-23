@@ -186,6 +186,15 @@
             
                 <tr>
                     <td>
+                        <li><a href="timapi.TerminalSettings.html#autoSysInfo">autoSysInfo</a></li>
+                    </td>
+                    <td>
+                        <span class="type-signature"> :Boolean</span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
                         <li><a href="timapi.TerminalSettings.html#cardInsertionTimeout">cardInsertionTimeout</a></li>
                     </td>
                     <td>
@@ -285,6 +294,15 @@
             
                 <tr>
                     <td>
+                        <li><a href="timapi.TerminalSettings.html#lateCheckinTimeout">lateCheckinTimeout</a></li>
+                    </td>
+                    <td>
+                        <span class="type-signature"> :Number</span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
                         <li><a href="timapi.TerminalSettings.html#manufacturerFlags">manufacturerFlags</a></li>
                     </td>
                     <td>
@@ -325,6 +343,15 @@
                     </td>
                     <td>
                         <span class="type-signature"> :<a href="timapi.constants.ProtocolType.html">timapi.constants.ProtocolType</a></span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        <li><a href="timapi.TerminalSettings.html#qrcTimeout">qrcTimeout</a></li>
+                    </td>
+                    <td>
+                        <span class="type-signature"> :Number</span>
                     </td>
                 </tr>
             
@@ -707,6 +734,84 @@ support Activate and Deactivate functions.
 
 <div class="description">
     Shutter management is handled automatically.
+</div>
+
+
+<!-- not needed, since it's in the signature 
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type">Boolean</span>
+
+
+        </li>
+    </ul>
+
+-->
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-default">Default Value:</dt>
+    <dd class="tag-default"><ul class="dummy">
+            <li>true</li>
+        </ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+            </div>
+        
+            <div class="member">
+                
+<h4 class="name" id="autoSysInfo">
+    <a href="timapi.TerminalSettings.html#autoSysInfo">autoSysInfo</a> <span class="type-signature"></span><span class="type-signature"> :Boolean</span>
+</h4>
+
+
+
+
+<div class="description">
+    Automatically retrieves system information during logging in.
 </div>
 
 
@@ -1630,6 +1735,85 @@ all requested guides.
         
             <div class="member">
                 
+<h4 class="name" id="lateCheckinTimeout">
+    <a href="timapi.TerminalSettings.html#lateCheckinTimeout">lateCheckinTimeout</a> <span class="type-signature"></span><span class="type-signature"> :Number</span>
+</h4>
+
+
+
+
+<div class="description">
+    This timeout indicates how long a terminal shall wait in seconds for an
+AmtAdjustment notification from the ECR in case of a late-checkin.
+</div>
+
+
+<!-- not needed, since it's in the signature 
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type">Number</span>
+
+
+        </li>
+    </ul>
+
+-->
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-default">Default Value:</dt>
+    <dd class="tag-default"><ul class="dummy">
+            <li>0</li>
+        </ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+            </div>
+        
+            <div class="member">
+                
 <h4 class="name" id="manufacturerFlags">
     <a href="timapi.TerminalSettings.html#manufacturerFlags">manufacturerFlags</a> <span class="type-signature"></span><span class="type-signature"> :Number</span>
 </h4>
@@ -1995,6 +2179,86 @@ additional function until an error is returned.
     <dt class="tag-default">Default Value:</dt>
     <dd class="tag-default"><ul class="dummy">
             <li><a href="timapi.constants.ProtocolType.html#.sixml">sixml</a></li>
+        </ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+            </div>
+        
+            <div class="member">
+                
+<h4 class="name" id="qrcTimeout">
+    <a href="timapi.TerminalSettings.html#qrcTimeout">qrcTimeout</a> <span class="type-signature"></span><span class="type-signature"> :Number</span>
+</h4>
+
+
+
+
+<div class="description">
+    Timeout in seconds the terminal displays the loyalty QR code after a "StartCheckout" call
+before returning to its "Idle" screen. Numeric number that specifies the QRCTimeout in
+seconds.
+</div>
+
+
+<!-- not needed, since it's in the signature 
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type">Number</span>
+
+
+        </li>
+    </ul>
+
+-->
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-default">Default Value:</dt>
+    <dd class="tag-default"><ul class="dummy">
+            <li>0</li>
         </ul></dd>
     
 

@@ -1697,6 +1697,53 @@ public static void Init()</code></pre>
   
   
   <a id="SIX_TimApi_Utility_Logger_Logger_LogMethod_" data-uid="SIX.TimApi.Utility.Logger.Logger.LogMethod*"></a>
+  <h4 id="SIX_TimApi_Utility_Logger_Logger_LogMethod_System_String_System_String_SIX_TimApi_Utility_Logger_Level_SIX_TimApi_Utility_Logger_Logger_CodeBlock_System_Object___" data-uid="SIX.TimApi.Utility.Logger.Logger.LogMethod(System.String,System.String,SIX.TimApi.Utility.Logger.Level,SIX.TimApi.Utility.Logger.Logger.CodeBlock,System.Object[])">LogMethod(String, String, Level, Logger.CodeBlock, Object[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void LogMethod(string classname, string methodname, Level levelException, Logger.CodeBlock code, params object[] parameters)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">classname</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">methodname</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="SIX.TimApi.Utility.Logger.Level.html">Level</a></td>
+        <td><span class="parametername">levelException</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="SIX.TimApi.Utility.Logger.Logger.CodeBlock.html">Logger.CodeBlock</a></td>
+        <td><span class="parametername">code</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span>[]</td>
+        <td><span class="parametername">parameters</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SIX_TimApi_Utility_Logger_Logger_LogMethod_" data-uid="SIX.TimApi.Utility.Logger.Logger.LogMethod*"></a>
   <h4 id="SIX_TimApi_Utility_Logger_Logger_LogMethod_System_String_System_String_SIX_TimApi_Utility_Logger_Logger_CodeBlock_System_Object___" data-uid="SIX.TimApi.Utility.Logger.Logger.LogMethod(System.String,System.String,SIX.TimApi.Utility.Logger.Logger.CodeBlock,System.Object[])">LogMethod(String, String, Logger.CodeBlock, Object[])</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
@@ -1732,6 +1779,83 @@ public static void Init()</code></pre>
       <tr>
         <td><span class="xref">System.Object</span>[]</td>
         <td><span class="parametername">parameters</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SIX_TimApi_Utility_Logger_Logger_LogMethod_" data-uid="SIX.TimApi.Utility.Logger.Logger.LogMethod*"></a>
+  <h4 id="SIX_TimApi_Utility_Logger_Logger_LogMethod__1_System_String_System_String_SIX_TimApi_Utility_Logger_Level_SIX_TimApi_Utility_Logger_Logger_CodeBlock___0__System_Object___" data-uid="SIX.TimApi.Utility.Logger.Logger.LogMethod``1(System.String,System.String,SIX.TimApi.Utility.Logger.Level,SIX.TimApi.Utility.Logger.Logger.CodeBlock{``0},System.Object[])">LogMethod&lt;T&gt;(String, String, Level, Logger.CodeBlock&lt;T&gt;, Object[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public T LogMethod&lt;T&gt;(string classname, string methodname, Level levelException, Logger.CodeBlock&lt;T&gt; code, params object[] parameters)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">classname</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">methodname</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="SIX.TimApi.Utility.Logger.Level.html">Level</a></td>
+        <td><span class="parametername">levelException</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="SIX.TimApi.Utility.Logger.Logger.CodeBlock-1.html">Logger.CodeBlock</a>&lt;T&gt;</td>
+        <td><span class="parametername">code</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span>[]</td>
+        <td><span class="parametername">parameters</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
         <td></td>
       </tr>
     </tbody>

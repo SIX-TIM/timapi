@@ -939,8 +939,8 @@ $(document).ready(function(){initNavTree('search.html',''); initResizable(); });
   <doc>
     <field name="type">function</field>
     <field name="name">ta_brand_get_acq_id</field>
-    <field name="args">(ta_object_t brand, int *acq_id)</field>
-    <field name="url">brand_8h.html#a561001af91c0f4f2d9358bf8a503584e</field>
+    <field name="args">(ta_object_t brand, int64_t *acq_id)</field>
+    <field name="url">brand_8h.html#ad1aeb336ff85cfa4119c0d33987d057e</field>
     <field name="keywords">ta_brand_get_acq_id</field>
     <field name="text">Acquirer identifier Uniquely identifies the acquirer brand Object instance of type brand acq_id Pointer to variable to write value to ta_c_rc_ok Object instance written to acq_id ta_c_rc_invalid_argument brand is ta_object_invalid ta_c_rc_invalid_argument brand is not of type brand ta_c_rc_invalid_argument acq_id is null-pointer</field>
   </doc>
@@ -8080,7 +8080,7 @@ $(document).ready(function(){initNavTree('search.html',''); initResizable(); });
     <field name="name">ta_c_rid_load_card</field>
     <field name="url">resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9a1f4ea98bbce814c2c131b5ccbe7b70bb</field>
     <field name="keywords">ta_c_rid_load_card</field>
-    <field name="text">Load card 0 i OK PlaceholderItems 0 Currency 1 Amount ResourceParameter Exponent</field>
+    <field name="text">Load card OK 0 i PlaceholderItems 0 Currency ResourceParameter Exponent</field>
   </doc>
   <doc>
     <field name="type">enumvalue</field>
@@ -8245,9 +8245,9 @@ $(document).ready(function(){initNavTree('search.html',''); initResizable(); });
   </doc>
   <doc>
     <field name="type">enumvalue</field>
-    <field name="name">ta_c_rid_petrol_no_tankcode_tries_left</field>
-    <field name="url">resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9ac13a31cbff4d4d0f7d7793f2c9a80655</field>
-    <field name="keywords">ta_c_rid_petrol_no_tankcode_tries_left</field>
+    <field name="name">ta_c_rid_petrol_no_more_tankcode_tries_left</field>
+    <field name="url">resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9a1d33b49c023802b512f9834b25879ba0</field>
+    <field name="keywords">ta_c_rid_petrol_no_more_tankcode_tries_left</field>
     <field name="text">No more Tankcode tries left</field>
   </doc>
   <doc>
@@ -8500,7 +8500,7 @@ $(document).ready(function(){initNavTree('search.html',''); initResizable(); });
     <field name="name">ta_c_rid_petrol_banknote_only</field>
     <field name="url">resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9aa81e61b1baeeb86a8d6e23faaf35929e</field>
     <field name="keywords">ta_c_rid_petrol_banknote_only</field>
-    <field name="text">Insert Banknotes Cards out of order Function Keys F1 Language F2 Receipt</field>
+    <field name="text">Banknotes available Cards out of order</field>
   </doc>
   <doc>
     <field name="type">enumvalue</field>
@@ -8528,7 +8528,7 @@ $(document).ready(function(){initNavTree('search.html',''); initResizable(); });
     <field name="name">ta_c_rid_petrol_trx_receipt_language</field>
     <field name="url">resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9a0a3ac7f23fba771533a3e27a22ee0f25</field>
     <field name="keywords">ta_c_rid_petrol_trx_receipt_language</field>
-    <field name="text">Insert Card Banknotes out of order Function Keys F1 Language F2 Receipt</field>
+    <field name="text">Welcome Insert Card Function Keys F1 Language F2 Receipt</field>
   </doc>
   <doc>
     <field name="type">enumvalue</field>
@@ -8584,7 +8584,7 @@ $(document).ready(function(){initNavTree('search.html',''); initResizable(); });
     <field name="name">ta_c_rid_petrol_print_out_of_order</field>
     <field name="url">resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9a747b340d6f0141d452b9d0fb01f133dc</field>
     <field name="keywords">ta_c_rid_petrol_print_out_of_order</field>
-    <field name="text">Receipt printer out of order</field>
+    <field name="text">Receipt printer out of order Continue OK or STOP</field>
   </doc>
   <doc>
     <field name="type">enumvalue</field>
@@ -9047,7 +9047,7 @@ $(document).ready(function(){initNavTree('search.html',''); initResizable(); });
     <field name="name">ta_c_rpt_code_check_type</field>
     <field name="url">resource__parameter__type_8h.html#a24c84814e0ce6a320ff3bd3826a297fba55b588e95ee792144c265d2109f05e49</field>
     <field name="keywords">ta_c_rpt_code_check_type</field>
-    <field name="text">Type of code check to perform 0 EMV Check using EMV PIN check 1 SwissPost SwissPost Card algorithm 2 Avia Use Aviacard algorithm 3 SB Use Scheidt Bachmann algorithm 4 Tokheim Use Tokheim algorithm 5 Agrola Use Agrola algorithm 6 Bica Use Bica algorithm 7 CTAC Use CTAC algorithm 8 DASAG Use DASAG algorithm 9 DKV Use DKV algorithm 1 0 Esso Use Esso algorithm 1 1 Migrol Use Migrol algorithm 1 2 Oelpool Use Oelpool algorithm 1 3 Pronto Use Pronto algorithm 1 4 Shell Use Shell algorithm 1 5 WLDC Use WLDC algorithm 1 6 Hectronic Use HecPAC algorithm 1 7 Diplomatkarte Use Diplomatkarten algorithm 1 8 Micrelec Use the Micrelec algorithm 1 9 Schenk Use the Schenk algorithm This value is to be encoded as a ascii number i.e using characters in the range 3 0 h to 3 9 h Specification petrol</field>
+    <field name="text">Type of code check to perform 0 EMV Check using EMV PIN check 1 SwissPost SwissPost Card algorithm 2 Avia Use Aviacard algorithm 3 SB Use Scheit Bachmann algorithm 4 ProEDA/Tokheim Use ProEDA Tokheim algorithm 5 Agrola Use Agrola algorithm 6 Bica Use Bica algorithm 7 CTAC Use CTAC algorithm 8 DASAG Use DASAG algorithm 9 DKV Use DKV algorithm 1 0 Esso Use Esso algorithm 1 1 Migrol Use Migrol algorithm 1 2 Oelpool Use Oelpool algorithm 1 3 Pronto Use Pronto algorithm 1 4 Shell Use Shell algorithm 1 5 WLDC Use WLDC algorithm 1 6 Hectronic Use HecPAC algorithm 1 7 Diplomatkarte Use Diplomatkarten algorithm 1 8 Micrelec Use the Micrelec algorithm 1 9 Schenk Use the Schenk algorithm 2 0 BeBeCo Use the BeBeCo Postbetriebe algorithm This value is to be encoded as a ascii number i.e using characters in the range 3 0 h to 3 9 h Specification petrol</field>
   </doc>
   <doc>
     <field name="type">enumvalue</field>
@@ -10184,6 +10184,13 @@ $(document).ready(function(){initNavTree('search.html',''); initResizable(); });
     <field name="url">result__code_8h.html#aebaf00d1ceef4b827866ca9de0bd3320a01c8aca411db61883bfc71519a15da75</field>
     <field name="keywords">ta_c_rc_moc_incorrect_reference</field>
     <field name="text">Reference entered is not correct Transaction declined Error message Incorrect Reference Specification retail</field>
+  </doc>
+  <doc>
+    <field name="type">enumvalue</field>
+    <field name="name">ta_c_rc_card_blacklisted</field>
+    <field name="url">result__code_8h.html#aebaf00d1ceef4b827866ca9de0bd3320a48b0b5cd18e64a2e4c12e2b45b44afa5</field>
+    <field name="keywords">ta_c_rc_card_blacklisted</field>
+    <field name="text">The card is blacklisted Transaction declined Error message Card Blacklisted Specification retail</field>
   </doc>
   <doc>
     <field name="type">enumvalue</field>
@@ -11811,8 +11818,8 @@ $(document).ready(function(){initNavTree('search.html',''); initResizable(); });
   <doc>
     <field name="type">function</field>
     <field name="name">ta_counter_get_acq_id</field>
-    <field name="args">(ta_object_t counter, int *acq_id)</field>
-    <field name="url">counter_8h.html#a0d4980ee15e2695ce634e9b531f22b67</field>
+    <field name="args">(ta_object_t counter, int64_t *acq_id)</field>
+    <field name="url">counter_8h.html#a52311be84878476191156d87e2773967</field>
     <field name="keywords">ta_counter_get_acq_id</field>
     <field name="text">Acquirer identifier Uniquely identifies the acquirer counter Object instance of type counter acq_id Pointer to variable to write value to ta_c_rc_ok Object instance written to acq_id ta_c_rc_invalid_argument counter is ta_object_invalid ta_c_rc_invalid_argument counter is not of type counter ta_c_rc_invalid_argument acq_id is null-pointer</field>
   </doc>
@@ -16500,6 +16507,22 @@ $(document).ready(function(){initNavTree('search.html',''); initResizable(); });
   </doc>
   <doc>
     <field name="type">function</field>
+    <field name="name">ta_terminal_settings_is_auto_sys_info</field>
+    <field name="args">(ta_object_t settings, ta_e_boolean_t *is_auto_sys_info)</field>
+    <field name="url">terminal__settings_8h.html#a5581a67edfdceff6fa35b3d332f5caf5</field>
+    <field name="keywords">ta_terminal_settings_is_auto_sys_info</field>
+    <field name="text">Automatically retrieves system information during logging in settings Object instance of type terminal_settings is_auto_sys_info Pointer to variable to write value to ta_c_rc_ok Object instance written to is_auto_sys_info ta_c_rc_invalid_argument settings is ta_object_invalid ta_c_rc_invalid_argument settings is not of type terminal_settings ta_c_rc_invalid_argument is_auto_shutter_management is null-pointer</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">ta_terminal_settings_set_auto_sys_info</field>
+    <field name="args">(ta_object_t settings, ta_e_boolean_t auto_sys_info)</field>
+    <field name="url">terminal__settings_8h.html#a119bfa535f1f278db94f444cc19cd31c</field>
+    <field name="keywords">ta_terminal_settings_set_auto_sys_info</field>
+    <field name="text">Automatically retrieves system information during logging in settings Object instance of type terminal_settings auto_sys_info Value to set ta_c_rc_ok Value assigned to settings ta_c_rc_invalid_argument settings is ta_object_invalid ta_c_rc_invalid_argument settings is not of type terminal_settings</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
     <field name="name">ta_terminal_settings_get_card_insertion_timeout</field>
     <field name="args">(ta_object_t settings, int *card_insertion_timeout)</field>
     <field name="url">terminal__settings_8h.html#a987e4573b465b0a0a18a26259049bd8a</field>
@@ -16644,10 +16667,26 @@ $(document).ready(function(){initNavTree('search.html',''); initResizable(); });
   </doc>
   <doc>
     <field name="type">function</field>
-    <field name="name">ta_terminal_settings_late_checkin_timeout</field>
+    <field name="name">ta_terminal_settings_get_qrctimeout</field>
     <field name="args">(ta_object_t settings, int *timeout)</field>
-    <field name="url">terminal__settings_8h.html#ad8d4a217cce6dc2a9023112b11cf953d</field>
-    <field name="keywords">ta_terminal_settings_late_checkin_timeout</field>
+    <field name="url">terminal__settings_8h.html#a2f8d117b817675dbadef810f70e1dbfe</field>
+    <field name="keywords">ta_terminal_settings_get_qrctimeout</field>
+    <field name="text">Timeout in seconds the terminal displays the loyalty QR code after a call before returning to its screen Numeric number that specifies the QRCTimeout in seconds This parameter is only used if value added services guide is enabled settings Object instance of type terminal_settings timeout Pointer to variable to write value to ta_c_rc_ok Object instance written to timeout ta_c_rc_invalid_argument settings is ta_object_invalid ta_c_rc_invalid_argument settings is not of type terminal_settings ta_c_rc_invalid_argument timeout is null-pointer</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">ta_terminal_settings_set_qrctimeout</field>
+    <field name="args">(ta_object_t settings, int timeout)</field>
+    <field name="url">terminal__settings_8h.html#a6c1b21e8a22524aa90bfaf6c1d0f641c</field>
+    <field name="keywords">ta_terminal_settings_set_qrctimeout</field>
+    <field name="text">Timeout in seconds the terminal displays the loyalty QR code after a call before returning to its screen Numeric number that specifies the QRCTimeout in seconds This parameter is only used if value added services guide is enabled settings Object instance of type terminal_settings timeout Value to set ta_c_rc_ok Value assigned to settings ta_c_rc_invalid_argument settings is ta_object_invalid ta_c_rc_invalid_argument settings is not of type terminal_settings</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">ta_terminal_settings_get_late_checkin_timeout</field>
+    <field name="args">(ta_object_t settings, int *timeout)</field>
+    <field name="url">terminal__settings_8h.html#aff796d29a3fc125dfcdb7899b0ade121</field>
+    <field name="keywords">ta_terminal_settings_get_late_checkin_timeout</field>
     <field name="text">This timeout indicates how long a terminal shall wait in seconds for an AmtAdjustment notification from the ECR in case of a late-checkin This parameter is only used if value added services guide is enabled settings Object instance of type terminal_settings timeout Pointer to variable to write value to ta_c_rc_ok Object instance written to is_fast_ntf_mode ta_c_rc_invalid_argument settings is ta_object_invalid ta_c_rc_invalid_argument settings is not of type terminal_settings ta_c_rc_invalid_argument is_fast_ntf_mode is null-pointer</field>
   </doc>
   <doc>
@@ -16785,6 +16824,22 @@ $(document).ready(function(){initNavTree('search.html',''); initResizable(); });
     <field name="url">terminal__settings_8h.html#a333ac47d50dbcf440a72fbd48f0790a2</field>
     <field name="keywords">ta_terminal_settings_set_saferpay_base_url</field>
     <field name="text">Saferpay Base URL settings Object instance of type terminal_settings base_url Object instance to set.Object instance can be ta_object_invalid to clear the value in settings If object instance is not ta_object_invalid is has to be of type string ta_c_rc_ok Object instance assigned to settings ta_c_rc_invalid_argument settings is ta_object_invalid ta_c_rc_invalid_argument settings is not of type terminal_settings ta_c_rc_invalid_argument base_url is ta_object_invalid ta_c_rc_invalid_argument base_url is not ta_object_invalid and is not of type string</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">ta_terminal_settings_get_prefer_omni_channel</field>
+    <field name="args">(ta_object_t settings, int *trx_types)</field>
+    <field name="url">terminal__settings_8h.html#a19285e4f65605ac800dde9646a498d2e</field>
+    <field name="keywords">ta_terminal_settings_get_prefer_omni_channel</field>
+    <field name="text">Prefer OmniChannel for these functions settings Object instance of type terminal_settings trx_types Pointer to variable to write value to OR combination of values from ta_e_transaction_type_t ta_c_rc_ok Object instance written to trx_types ta_c_rc_invalid_argument settings is ta_object_invalid ta_c_rc_invalid_argument settings is not of type terminal_settings ta_c_rc_invalid_argument trx_types is null-pointer</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">ta_terminal_settings_set_prefer_omni_channel</field>
+    <field name="args">(ta_object_t settings, int trx_types)</field>
+    <field name="url">terminal__settings_8h.html#ad8741129f9866a4e00aa42c23b9c622c</field>
+    <field name="keywords">ta_terminal_settings_set_prefer_omni_channel</field>
+    <field name="text">Prefer OmniChannel for these functions settings Object instance of type terminal_settings trx_types Value to set OR combination of values from ta_e_transaction_type_t ta_c_rc_ok Value assigned to settings ta_c_rc_invalid_argument settings is ta_object_invalid ta_c_rc_invalid_argument settings is not of type terminal_settings</field>
   </doc>
   <doc>
     <field name="type">file</field>
@@ -17352,8 +17407,8 @@ $(document).ready(function(){initNavTree('search.html',''); initResizable(); });
   <doc>
     <field name="type">function</field>
     <field name="name">ta_transaction_data_set_six_trx_ref_num_mpd</field>
-    <field name="args">(ta_object_t trx_data, int acq_id, ta_object_t trx_ref_num)</field>
-    <field name="url">transaction__data_8h.html#ab6273becc251a3bc7c6065b076a78d0a</field>
+    <field name="args">(ta_object_t trx_data, int64_t acq_id, ta_object_t trx_ref_num)</field>
+    <field name="url">transaction__data_8h.html#aeb89939a38d0ceddf86e11eaead02430</field>
     <field name="keywords">ta_transaction_data_set_six_trx_ref_num_mpd</field>
     <field name="text">SIX Transaction Reference Number for integrators using MPD Client trx_data Object instance of type transaction_data acq_id AcqID as provided by MPD trx_ref_num Transaction reference as provided by MPD Object instance has to be of type string ta_c_rc_ok Object instance assigned to trx_data ta_c_rc_invalid_argument trx_data is ta_object_invalid ta_c_rc_invalid_argument trx_data is not of type transaction_data ta_c_rc_invalid_argument trx_ref_num is not of type string</field>
   </doc>
@@ -17519,8 +17574,8 @@ $(document).ready(function(){initNavTree('search.html',''); initResizable(); });
   <doc>
     <field name="type">function</field>
     <field name="name">ta_transaction_information_get_acq</field>
-    <field name="args">(ta_object_t trx_info, int *acq)</field>
-    <field name="url">transaction__information_8h.html#a74227adbcd84291bdd298e3a83891a72</field>
+    <field name="args">(ta_object_t trx_info, int64_t *acq)</field>
+    <field name="url">transaction__information_8h.html#ae4cba84c86e9f14eb273cbe634fbea07</field>
     <field name="keywords">ta_transaction_information_get_acq</field>
     <field name="text">TransactionAcquirer identifier trx_info Value written of type transaction_information acq Pointer to variable to write value to Value is 0 if value is not set in trx_info ta_c_rc_ok Object instance written to acq ta_c_rc_invalid_argument trx_info is ta_object_invalid ta_c_rc_invalid_argument trx_info is not of type transaction_information ta_c_rc_invalid_argument acq is null-pointer</field>
   </doc>
@@ -18768,6 +18823,13 @@ $(document).ready(function(){initNavTree('search.html',''); initResizable(); });
     <field name="url">structta__s__features__sixml.html#afaa2f036b784215b0da9e8cd6aac60a1</field>
     <field name="keywords">wake_up ta_s_features_sixml::wake_up ta_s_features_sixml</field>
     <field name="text">Wake up support</field>
+  </doc>
+  <doc>
+    <field name="type">variable</field>
+    <field name="name">ta_s_features_sixml::long_ecr_info_supported</field>
+    <field name="url">structta__s__features__sixml.html#a51b9d589137b37d6ec89ac20d7dfb278</field>
+    <field name="keywords">long_ecr_info_supported ta_s_features_sixml::long_ecr_info_supported ta_s_features_sixml</field>
+    <field name="text">The device supports long 9 0 char EcrInfo values</field>
   </doc>
   <doc>
     <field name="type">struct</field>

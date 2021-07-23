@@ -46,10 +46,10 @@ var NAVTREEINDEX =
 "hardware__information__response_8h.html#a9a0701dbb125b0036ee270a423acd51a",
 "pos__entry__mode_8h.html#abcd49dcaa026c564bba0a40e0779c198a141bf6fd743de5b8ff002405918e2912",
 "request__type_8h.html#a38268da75c7795fd3a4f057bc6a7fcd2aa12c99a3e91e309b88c00019f1e0e830",
-"result__code_8h.html#aebaf00d1ceef4b827866ca9de0bd3320a5dbf0e984606a812164fb25f5863da59",
-"terminal_8h.html#a395350a04d359acbc199cccf17005a8e",
-"terminal__status_8h.html",
-"vas__info__list__type_8h.html#a76f59d6e11912abeedcd4e1b307577b9a2b6d14ede5adbe7acc235270ec53ab60"
+"result__code_8h.html#aebaf00d1ceef4b827866ca9de0bd3320a5cd1e6430fe8d550fb12b62de5b8c0c7",
+"terminal_8h.html#a38d376c1e92c155a6dbd5ad458caaefd",
+"terminal__settings_8h.html#aea1ea3bd5dcb6f703be3719590163b0a",
+"vas__checkout__information_8h.html#a0af017748996aba7db5110b8e19080b9"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

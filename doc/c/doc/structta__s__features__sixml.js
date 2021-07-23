@@ -15,6 +15,7 @@ var structta__s__features__sixml =
     [ "fast_ntf_mode", "structta__s__features__sixml.html#a0feb1638035fb0a354351b2d81901bf0", null ],
     [ "financial_functions", "structta__s__features__sixml.html#a11cfa525c0f61ab18bf2b4d94419b483", null ],
     [ "guides", "structta__s__features__sixml.html#aec97c760f84e1c2746f971028fc16da6", null ],
+    [ "long_ecr_info_supported", "structta__s__features__sixml.html#a51b9d589137b37d6ec89ac20d7dfb278", null ],
     [ "non_financial_functions", "structta__s__features__sixml.html#abe1ab6448744b372a46cdc59c255b606", null ],
     [ "persistent_state", "structta__s__features__sixml.html#a349e51cdcc85c77ba165f9d6447573eb", null ],
     [ "protocol_level", "structta__s__features__sixml.html#a8bbf9cbb7667ae0bd3ccb705d530d47e", null ],

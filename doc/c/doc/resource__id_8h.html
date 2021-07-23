@@ -139,7 +139,7 @@ Enumerations</h2></td></tr>
 <a class="el" href="resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9a3018faeee28536be1d08e3d63c021a11">ta_c_rid_petrol_last_tankcode_try</a>, 
 <br />
 &#160;&#160;<a class="el" href="resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9abfd93ac544b73cb1c8bbf710dd640d3d">ta_c_rid_petrol_tankcode_tries_left</a>, 
-<a class="el" href="resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9ac13a31cbff4d4d0f7d7793f2c9a80655">ta_c_rid_petrol_no_tankcode_tries_left</a>, 
+<a class="el" href="resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9a1d33b49c023802b512f9834b25879ba0">ta_c_rid_petrol_no_more_tankcode_tries_left</a>, 
 <a class="el" href="resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9a90e03d24f75e333f0ce5570080a2f0a0">ta_c_rid_petrol_tankcode_incorrect</a>, 
 <a class="el" href="resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9aa07adc9d6378aa0b31e850df5f38bba8">ta_c_rid_petrol_card_inverted</a>, 
 <br />
@@ -346,13 +346,11 @@ Enumerations</h2></td></tr>
 <tr><td class="fieldname"><a id="a334bce2189c86641d9e5b8aa2dbceec9a215e92eb8c2b3d609e745ac8268eb68f"></a>ta_c_rid_select_product&#160;</td><td class="fielddoc"><p>Please select product:<br  />
  i + OK </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a334bce2189c86641d9e5b8aa2dbceec9a1f4ea98bbce814c2c131b5ccbe7b70bb"></a>ta_c_rid_load_card&#160;</td><td class="fielddoc"><p>Load card<br  />
- %0 i + OK<br  />
+<tr><td class="fieldname"><a id="a334bce2189c86641d9e5b8aa2dbceec9a1f4ea98bbce814c2c131b5ccbe7b70bb"></a>ta_c_rid_load_card&#160;</td><td class="fielddoc"><p>Load card + OK<br  />
+ %0 i<br  />
  PlaceholderItems:<br  />
 </p><ul>
 <li>0: Currency<br  />
-</li>
-<li>1: Amount<br  />
  <br  />
  ResourceParameter:<br  />
 </li>
@@ -397,7 +395,7 @@ Enumerations</h2></td></tr>
  i </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a334bce2189c86641d9e5b8aa2dbceec9a76ef0151eeed080d0de5d0597ebf114e"></a>ta_c_rid_petrol_print_receipt&#160;</td><td class="fielddoc"><p>Print receipt?<br  />
- YES / NO </p>
+ [YES] / [NO] </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a334bce2189c86641d9e5b8aa2dbceec9a263dc21c636ea4ad0a1d3a3fd7a3d263"></a>ta_c_rid_petrol_remove_card&#160;</td><td class="fielddoc"><p>Remove card </p>
 </td></tr>
@@ -493,7 +491,7 @@ Enumerations</h2></td></tr>
  </li>
 </ul>
 </td></tr>
-<tr><td class="fieldname"><a id="a334bce2189c86641d9e5b8aa2dbceec9ac13a31cbff4d4d0f7d7793f2c9a80655"></a>ta_c_rid_petrol_no_tankcode_tries_left&#160;</td><td class="fielddoc"><p>No more Tankcode<br  />
+<tr><td class="fieldname"><a id="a334bce2189c86641d9e5b8aa2dbceec9a1d33b49c023802b512f9834b25879ba0"></a>ta_c_rid_petrol_no_more_tankcode_tries_left&#160;</td><td class="fielddoc"><p>No more Tankcode<br  />
  tries left<br  />
  </p>
 </td></tr>
@@ -562,7 +560,7 @@ Enumerations</h2></td></tr>
  please put the<br  />
  nozzle back </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a334bce2189c86641d9e5b8aa2dbceec9ad49ce25c3b91d06354a069c15104a44c"></a>ta_c_rid_petrol_pump_press_ok&#160;</td><td class="fielddoc"><p>Press [OK]for pump </p>
+<tr><td class="fieldname"><a id="a334bce2189c86641d9e5b8aa2dbceec9ad49ce25c3b91d06354a069c15104a44c"></a>ta_c_rid_petrol_pump_press_ok&#160;</td><td class="fielddoc"><p>Press [OK] for pump </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a334bce2189c86641d9e5b8aa2dbceec9af5bdce178ba7b133fb1fef0d32ee0968"></a>ta_c_rid_petrol_welcome_closed&#160;</td><td class="fielddoc"><p>Closed </p>
 </td></tr>
@@ -599,13 +597,8 @@ Enumerations</h2></td></tr>
 <tr><td class="fieldname"><a id="a334bce2189c86641d9e5b8aa2dbceec9a0340b43138b35a158d28a5e9b09f1bb0"></a>ta_c_rid_petrol_banknote_or_cards&#160;</td><td class="fielddoc"><p>Banknotes and<br  />
  Cards available </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a334bce2189c86641d9e5b8aa2dbceec9aa81e61b1baeeb86a8d6e23faaf35929e"></a>ta_c_rid_petrol_banknote_only&#160;</td><td class="fielddoc"><p>Insert Banknotes<br  />
- Cards out of order Function Keys:<br  />
-</p><ul>
-<li>F1: Language<br  />
-</li>
-<li>F2: Receipt </li>
-</ul>
+<tr><td class="fieldname"><a id="a334bce2189c86641d9e5b8aa2dbceec9aa81e61b1baeeb86a8d6e23faaf35929e"></a>ta_c_rid_petrol_banknote_only&#160;</td><td class="fielddoc"><p>Banknotes available<br  />
+ Cards out of order </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a334bce2189c86641d9e5b8aa2dbceec9abeb4c35794d64b439eb55d2cad22d77b"></a>ta_c_rid_petrol_banknote_cards_only&#160;</td><td class="fielddoc"><p>Banknotes<br  />
  out of order<br  />
@@ -631,9 +624,8 @@ Enumerations</h2></td></tr>
 <li>F2: Receipt </li>
 </ul>
 </td></tr>
-<tr><td class="fieldname"><a id="a334bce2189c86641d9e5b8aa2dbceec9a0a3ac7f23fba771533a3e27a22ee0f25"></a>ta_c_rid_petrol_trx_receipt_language&#160;</td><td class="fielddoc"><p>Insert Card.<br  />
- Banknotes out<br  />
- of order<br  />
+<tr><td class="fieldname"><a id="a334bce2189c86641d9e5b8aa2dbceec9a0a3ac7f23fba771533a3e27a22ee0f25"></a>ta_c_rid_petrol_trx_receipt_language&#160;</td><td class="fielddoc"><p>Welcome<br  />
+ Insert Card<br  />
  Function Keys:<br  />
 </p><ul>
 <li>F1: Language<br  />
@@ -659,8 +651,9 @@ Enumerations</h2></td></tr>
 <tr><td class="fieldname"><a id="a334bce2189c86641d9e5b8aa2dbceec9a6e10d77d114b410f8ffd827c1993247d"></a>ta_c_rid_petrol_print_press_key_for_safe_receipt&#160;</td><td class="fielddoc"><p>Press receipt key<br  />
  for safe-receipt </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a334bce2189c86641d9e5b8aa2dbceec9a747b340d6f0141d452b9d0fb01f133dc"></a>ta_c_rid_petrol_print_out_of_order&#160;</td><td class="fielddoc"><p>Receipt printer<br  />
- out of order </p>
+<tr><td class="fieldname"><a id="a334bce2189c86641d9e5b8aa2dbceec9a747b340d6f0141d452b9d0fb01f133dc"></a>ta_c_rid_petrol_print_out_of_order&#160;</td><td class="fielddoc"><p>Receipt printer out<br  />
+ of order. Continue?<br  />
+ [OK] or [STOP] </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a334bce2189c86641d9e5b8aa2dbceec9a110b7de593a8a0ababbf9f1b5c99b3b1"></a>ta_c_rid_petrol_print_receipt_in_print&#160;</td><td class="fielddoc"><p>Your receipt is<br  />
  being printed </p>
