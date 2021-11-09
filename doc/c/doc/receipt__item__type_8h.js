@@ -69,6 +69,7 @@ var receipt__item__type_8h =
       [ "ta_c_rit_fuel_dispenser_number", "receipt__item__type_8h.html#a3d3044dd871a9c7d630dbcf3d9b738bea2a2ca8fb913a6a6acb38e46f961d866a", null ],
       [ "ta_c_rit_posdnumber", "receipt__item__type_8h.html#a3d3044dd871a9c7d630dbcf3d9b738bea228b12dab7178f0c97bd5425eb6dfccb", null ],
       [ "ta_c_rit_receipt_number", "receipt__item__type_8h.html#a3d3044dd871a9c7d630dbcf3d9b738bead22f1d15d8ce90716335ffd5861657d4", null ],
-      [ "ta_c_rit_shift_number", "receipt__item__type_8h.html#a3d3044dd871a9c7d630dbcf3d9b738bea3ff52d4f5ed4ef3be22ea292f4fc9bf4", null ]
+      [ "ta_c_rit_shift_number", "receipt__item__type_8h.html#a3d3044dd871a9c7d630dbcf3d9b738bea3ff52d4f5ed4ef3be22ea292f4fc9bf4", null ],
+      [ "ta_c_rit_card_product_type", "receipt__item__type_8h.html#a3d3044dd871a9c7d630dbcf3d9b738bea807b50edc27d28da7028d75805afe1f5", null ]
     ] ]
 ];

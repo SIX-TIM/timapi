@@ -918,6 +918,18 @@ Immutable class.</p>
   <div class="markdown level1 summary"><p>Account number of the card used.
 Optional: Mandatory if requested by acquirer.
 Specifications: banking, austrianUseCases.</p>
+<p>Conditional for (can be null):</p>
+<ul>
+<li>SIX.TimApi.Constants.TransactionType.AuthorizeCredit</li>
+<li>SIX.TimApi.Constants.TransactionType.AuthorizeDeposit</li>
+<li>SIX.TimApi.Constants.TransactionType.CashAdvance</li>
+<li>SIX.TimApi.Constants.TransactionType.Combined</li>
+<li>SIX.TimApi.Constants.TransactionType.Credit</li>
+<li>SIX.TimApi.Constants.TransactionType.Giro</li>
+<li>SIX.TimApi.Constants.TransactionType.Purchase</li>
+<li>SIX.TimApi.Constants.TransactionType.Reversal</li>
+</ul>
+<p>Otherwise Forbidden (always null)</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -944,6 +956,40 @@ Specifications: banking, austrianUseCases.</p>
   <a id="SIX_TimApi_TransactionInformation_AcqId_" data-uid="SIX.TimApi.TransactionInformation.AcqId*"></a>
   <h4 id="SIX_TimApi_TransactionInformation_AcqId" data-uid="SIX.TimApi.TransactionInformation.AcqId">AcqId</h4>
   <div class="markdown level1 summary"><p>Gets the acqurer id.</p>
+<p>Conditional for (can be null):</p>
+<ul>
+<li>SIX.TimApi.Constants.TransactionType.ActivateCard</li>
+<li>SIX.TimApi.Constants.TransactionType.AuthorizeCredit</li>
+<li>SIX.TimApi.Constants.TransactionType.AuthorizeDeposit</li>
+<li>SIX.TimApi.Constants.TransactionType.CashAdvance</li>
+<li>SIX.TimApi.Constants.TransactionType.Combined</li>
+<li>SIX.TimApi.Constants.TransactionType.Credit</li>
+<li>SIX.TimApi.Constants.TransactionType.DebtRecovery</li>
+<li>SIX.TimApi.Constants.TransactionType.FinalizezPurchase</li>
+<li>SIX.TimApi.Constants.TransactionType.Funding</li>
+<li>SIX.TimApi.Constants.TransactionType.Giro</li>
+<li>SIX.TimApi.Constants.TransactionType.Load</li>
+<li>SIX.TimApi.Constants.TransactionType.PreAuthorization</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchaseForcedAcceptance</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchaseMailOrdered</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchasePhoneAuthorized</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchaseWithCashback</li>
+<li>SIX.TimApi.Constants.TransactionType.Purchase</li>
+<li>SIX.TimApi.Constants.TransactionType.Refunding</li>
+<li>SIX.TimApi.Constants.TransactionType.Reversal</li>
+<li>SIX.TimApi.Constants.TransactionType.Unload</li>
+</ul>
+<p>Forbidden (always null):</p>
+<ul>
+<li>SIX.TimApi.Constants.TransactionType.AcountVerification</li>
+<li>SIX.TimApi.Constants.TransactionType.AdjustReservation</li>
+<li>SIX.TimApi.Constants.TransactionType.CancelReservation</li>
+<li>SIX.TimApi.Constants.TransactionType.CollectPoints</li>
+<li>SIX.TimApi.Constants.TransactionType.LoadVoucher</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchaseReservationPhoneAuthorized</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchaseReservation</li>
+<li>SIX.TimApi.Constants.TransactionType.Reservation</li>
+</ul>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -971,6 +1017,44 @@ Specifications: banking, austrianUseCases.</p>
   <a id="SIX_TimApi_TransactionInformation_AcqTransRef_" data-uid="SIX.TimApi.TransactionInformation.AcqTransRef*"></a>
   <h4 id="SIX_TimApi_TransactionInformation_AcqTransRef" data-uid="SIX.TimApi.TransactionInformation.AcqTransRef">AcqTransRef</h4>
   <div class="markdown level1 summary"><p>Transaction reference from the acquirer.</p>
+<p>Mandatory for:</p>
+<ul>
+<li>SIX.TimApi.Constants.TransactionType.AdjustReservation</li>
+<li>SIX.TimApi.Constants.TransactionType.CancelReservation</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchaseReservationPhoneAuthorized</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchaseReservation</li>
+<li>SIX.TimApi.Constants.TransactionType.Reservation</li>
+</ul>
+<p>Conditional for (can be null):</p>
+<ul>
+<li>SIX.TimApi.Constants.TransactionType.ActivateCard</li>
+<li>SIX.TimApi.Constants.TransactionType.AuthorizeCredit</li>
+<li>SIX.TimApi.Constants.TransactionType.AuthorizeDeposit</li>
+<li>SIX.TimApi.Constants.TransactionType.CashAdvance</li>
+<li>SIX.TimApi.Constants.TransactionType.CollectPoints</li>
+<li>SIX.TimApi.Constants.TransactionType.Combined</li>
+<li>SIX.TimApi.Constants.TransactionType.Credit</li>
+<li>SIX.TimApi.Constants.TransactionType.DebtRecovery</li>
+<li>SIX.TimApi.Constants.TransactionType.FinalizezPurchase</li>
+<li>SIX.TimApi.Constants.TransactionType.Funding</li>
+<li>SIX.TimApi.Constants.TransactionType.Giro</li>
+<li>SIX.TimApi.Constants.TransactionType.LoadVoucher</li>
+<li>SIX.TimApi.Constants.TransactionType.Load</li>
+<li>SIX.TimApi.Constants.TransactionType.PreAuthorization</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchaseForcedAcceptance</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchaseMailOrdered</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchasePhoneAuthorized</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchasePhoneOrdered</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchaseWithCashback</li>
+<li>SIX.TimApi.Constants.TransactionType.Purchase</li>
+<li>SIX.TimApi.Constants.TransactionType.Refunding</li>
+<li>SIX.TimApi.Constants.TransactionType.Unload</li>
+</ul>
+<p>Forbidden (always null):</p>
+<ul>
+<li>SIX.TimApi.Constants.TransactionType.AcountVerification</li>
+<li>SIX.TimApi.Constants.TransactionType.Reversal</li>
+</ul>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -997,6 +1081,41 @@ Specifications: banking, austrianUseCases.</p>
   <a id="SIX_TimApi_TransactionInformation_AuthCode_" data-uid="SIX.TimApi.TransactionInformation.AuthCode*"></a>
   <h4 id="SIX_TimApi_TransactionInformation_AuthCode" data-uid="SIX.TimApi.TransactionInformation.AuthCode">AuthCode</h4>
   <div class="markdown level1 summary"><p>Authorization code received from the acquirer.</p>
+<p>Conditional for (can be null):</p>
+<ul>
+<li>SIX.TimApi.Constants.TransactionType.ActivateCard</li>
+<li>SIX.TimApi.Constants.TransactionType.AdjustReservation</li>
+<li>SIX.TimApi.Constants.TransactionType.AuthorizeCredit</li>
+<li>SIX.TimApi.Constants.TransactionType.AuthorizeDeposit</li>
+<li>SIX.TimApi.Constants.TransactionType.CashAdvance</li>
+<li>SIX.TimApi.Constants.TransactionType.CollectPoints</li>
+<li>SIX.TimApi.Constants.TransactionType.Combined</li>
+<li>SIX.TimApi.Constants.TransactionType.Credit</li>
+<li>SIX.TimApi.Constants.TransactionType.DebtRecovery</li>
+<li>SIX.TimApi.Constants.TransactionType.FinalizezPurchase</li>
+<li>SIX.TimApi.Constants.TransactionType.Funding</li>
+<li>SIX.TimApi.Constants.TransactionType.Giro</li>
+<li>SIX.TimApi.Constants.TransactionType.LoadVoucher</li>
+<li>SIX.TimApi.Constants.TransactionType.Load</li>
+<li>SIX.TimApi.Constants.TransactionType.PreAuthorization</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchaseForcedAcceptance</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchaseMailOrdered</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchasePhoneAuthorized</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchasePhoneOrdered</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchaseReservationPhoneAuthorized</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchaseReservation</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchaseWithCashback</li>
+<li>SIX.TimApi.Constants.TransactionType.Purchase</li>
+<li>SIX.TimApi.Constants.TransactionType.Refunding</li>
+<li>SIX.TimApi.Constants.TransactionType.Reservation</li>
+<li>SIX.TimApi.Constants.TransactionType.Unload</li>
+</ul>
+<p>Forbidden (always null):</p>
+<ul>
+<li>SIX.TimApi.Constants.TransactionType.AcountVerification</li>
+<li>SIX.TimApi.Constants.TransactionType.CancelReservation</li>
+<li>SIX.TimApi.Constants.TransactionType.Reversal</li>
+</ul>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1083,6 +1202,18 @@ Specifications: banking, austrianUseCases.</p>
   <div class="markdown level1 summary"><p>Cardholder ID- or Passport number.
 Optional: Mandatory if requested by acquirer.
 Specifications: banking, austrianUseCases.</p>
+<p>Conditional for (can be null):</p>
+<ul>
+<li>SIX.TimApi.Constants.TransactionType.AuthorizeCredit</li>
+<li>SIX.TimApi.Constants.TransactionType.AuthorizeDeposit</li>
+<li>SIX.TimApi.Constants.TransactionType.CashAdvance</li>
+<li>SIX.TimApi.Constants.TransactionType.Combined</li>
+<li>SIX.TimApi.Constants.TransactionType.Credit</li>
+<li>SIX.TimApi.Constants.TransactionType.Giro</li>
+<li>SIX.TimApi.Constants.TransactionType.Purchase</li>
+<li>SIX.TimApi.Constants.TransactionType.Reversal</li>
+</ul>
+<p>Otherwise Forbidden (always null)</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1109,6 +1240,41 @@ Specifications: banking, austrianUseCases.</p>
   <a id="SIX_TimApi_TransactionInformation_Cvm_" data-uid="SIX.TimApi.TransactionInformation.Cvm*"></a>
   <h4 id="SIX_TimApi_TransactionInformation_Cvm" data-uid="SIX.TimApi.TransactionInformation.Cvm">Cvm</h4>
   <div class="markdown level1 summary"><p>Cardholder verification method.</p>
+<p>Conditional for (can be null):</p>
+<ul>
+<li>SIX.TimApi.Constants.TransactionType.ActivateCard</li>
+<li>SIX.TimApi.Constants.TransactionType.AdjustReservation</li>
+<li>SIX.TimApi.Constants.TransactionType.AuthorizeDeposit</li>
+<li>SIX.TimApi.Constants.TransactionType.CancelReservation</li>
+<li>SIX.TimApi.Constants.TransactionType.CashAdvance</li>
+<li>SIX.TimApi.Constants.TransactionType.CollectPoints</li>
+<li>SIX.TimApi.Constants.TransactionType.Combined</li>
+<li>SIX.TimApi.Constants.TransactionType.DebtRecovery</li>
+<li>SIX.TimApi.Constants.TransactionType.FinalizezPurchase</li>
+<li>SIX.TimApi.Constants.TransactionType.Funding</li>
+<li>SIX.TimApi.Constants.TransactionType.Giro</li>
+<li>SIX.TimApi.Constants.TransactionType.LoadVoucher</li>
+<li>SIX.TimApi.Constants.TransactionType.PreAuthorization</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchaseForcedAcceptance</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchaseMailOrdered</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchasePhoneAuthorized</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchasePhoneOrdered</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchaseReservationPhoneAuthorized</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchaseReservation</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchaseWithCashback</li>
+<li>SIX.TimApi.Constants.TransactionType.Purchase</li>
+<li>SIX.TimApi.Constants.TransactionType.Reservation</li>
+<li>SIX.TimApi.Constants.TransactionType.Unload</li>
+</ul>
+<p>Forbidden (always null):</p>
+<ul>
+<li>SIX.TimApi.Constants.TransactionType.AcountVerification</li>
+<li>SIX.TimApi.Constants.TransactionType.AuthorizeCredit</li>
+<li>SIX.TimApi.Constants.TransactionType.Credit</li>
+<li>SIX.TimApi.Constants.TransactionType.Load</li>
+<li>SIX.TimApi.Constants.TransactionType.Refunding</li>
+<li>SIX.TimApi.Constants.TransactionType.Reversal</li>
+</ul>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1135,6 +1301,41 @@ Specifications: banking, austrianUseCases.</p>
   <a id="SIX_TimApi_TransactionInformation_MerchantAction_" data-uid="SIX.TimApi.TransactionInformation.MerchantAction*"></a>
   <h4 id="SIX_TimApi_TransactionInformation_MerchantAction" data-uid="SIX.TimApi.TransactionInformation.MerchantAction">MerchantAction</h4>
   <div class="markdown level1 summary"><p>Feedback to know which merchant action has to be performed.</p>
+<p>Mandatory for:</p>
+<ul>
+<li>SIX.TimApi.Constants.TransactionType.ActivateCard</li>
+<li>SIX.TimApi.Constants.TransactionType.AdjustReservation</li>
+<li>SIX.TimApi.Constants.TransactionType.AuthorizeCredit</li>
+<li>SIX.TimApi.Constants.TransactionType.AuthorizeDeposit</li>
+<li>SIX.TimApi.Constants.TransactionType.CancelReservation</li>
+<li>SIX.TimApi.Constants.TransactionType.CashAdvance</li>
+<li>SIX.TimApi.Constants.TransactionType.CollectPoints</li>
+<li>SIX.TimApi.Constants.TransactionType.Combined</li>
+<li>SIX.TimApi.Constants.TransactionType.Credit</li>
+<li>SIX.TimApi.Constants.TransactionType.DebtRecovery</li>
+<li>SIX.TimApi.Constants.TransactionType.FinalizezPurchase</li>
+<li>SIX.TimApi.Constants.TransactionType.Funding</li>
+<li>SIX.TimApi.Constants.TransactionType.Giro</li>
+<li>SIX.TimApi.Constants.TransactionType.LoadVoucher</li>
+<li>SIX.TimApi.Constants.TransactionType.Load</li>
+<li>SIX.TimApi.Constants.TransactionType.PreAuthorization</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchaseForcedAcceptance</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchaseMailOrdered</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchasePhoneAuthorized</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchasePhoneOrdered</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchaseReservationPhoneAuthorized</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchaseReservation</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchaseWithCashback</li>
+<li>SIX.TimApi.Constants.TransactionType.Purchase</li>
+<li>SIX.TimApi.Constants.TransactionType.Refunding</li>
+<li>SIX.TimApi.Constants.TransactionType.Reservation</li>
+<li>SIX.TimApi.Constants.TransactionType.Reversal</li>
+<li>SIX.TimApi.Constants.TransactionType.Unload</li>
+</ul>
+<p>Forbidden (always null):</p>
+<ul>
+<li>SIX.TimApi.Constants.TransactionType.AcountVerification</li>
+</ul>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1190,6 +1391,18 @@ Available if {@link Guides#AUSTRIAN_USE_CASES} is enabled.</p>
   <div class="markdown level1 summary"><p>Person OID.
 Optional: Mandatory if requested by acquirer.
 Specifications: banking, austrianUseCases.</p>
+<p>Conditional for (can be null):</p>
+<ul>
+<li>SIX.TimApi.Constants.TransactionType.AuthorizeCredit</li>
+<li>SIX.TimApi.Constants.TransactionType.AuthorizeDeposit</li>
+<li>SIX.TimApi.Constants.TransactionType.CashAdvance</li>
+<li>SIX.TimApi.Constants.TransactionType.Combined</li>
+<li>SIX.TimApi.Constants.TransactionType.Credit</li>
+<li>SIX.TimApi.Constants.TransactionType.Giro</li>
+<li>SIX.TimApi.Constants.TransactionType.Purchase</li>
+<li>SIX.TimApi.Constants.TransactionType.Reversal</li>
+</ul>
+<p>Otherwise Forbidden (always null)</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1216,6 +1429,44 @@ Specifications: banking, austrianUseCases.</p>
   <a id="SIX_TimApi_TransactionInformation_PosEntryMode_" data-uid="SIX.TimApi.TransactionInformation.PosEntryMode*"></a>
   <h4 id="SIX_TimApi_TransactionInformation_PosEntryMode" data-uid="SIX.TimApi.TransactionInformation.PosEntryMode">PosEntryMode</h4>
   <div class="markdown level1 summary"><p>According to EMV definition.</p>
+<p>Mandatory for:</p>
+<ul>
+<li>SIX.TimApi.Constants.TransactionType.ActivateCard</li>
+<li>SIX.TimApi.Constants.TransactionType.AuthorizeCredit</li>
+<li>SIX.TimApi.Constants.TransactionType.AuthorizeDeposit</li>
+<li>SIX.TimApi.Constants.TransactionType.CashAdvance</li>
+<li>SIX.TimApi.Constants.TransactionType.CollectPoints</li>
+<li>SIX.TimApi.Constants.TransactionType.Combined</li>
+<li>SIX.TimApi.Constants.TransactionType.Credit</li>
+<li>SIX.TimApi.Constants.TransactionType.DebtRecovery</li>
+<li>SIX.TimApi.Constants.TransactionType.Funding</li>
+<li>SIX.TimApi.Constants.TransactionType.Giro</li>
+<li>SIX.TimApi.Constants.TransactionType.Load</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchaseForcedAcceptance</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchaseMailOrdered</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchasePhoneAuthorized</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchasePhoneOrdered</li>
+<li>SIX.TimApi.Constants.TransactionType.Purchase</li>
+<li>SIX.TimApi.Constants.TransactionType.Refunding</li>
+<li>SIX.TimApi.Constants.TransactionType.Unload</li>
+</ul>
+<p>Conditional for (can be null):</p>
+<ul>
+<li>SIX.TimApi.Constants.TransactionType.AdjustReservation</li>
+<li>SIX.TimApi.Constants.TransactionType.FinalizezPurchase</li>
+<li>SIX.TimApi.Constants.TransactionType.LoadVoucher</li>
+<li>SIX.TimApi.Constants.TransactionType.PreAuthorization</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchaseReservationPhoneAuthorized</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchaseReservation</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchaseWithCashback</li>
+<li>SIX.TimApi.Constants.TransactionType.Reservation</li>
+</ul>
+<p>Forbidden (always null):</p>
+<ul>
+<li>SIX.TimApi.Constants.TransactionType.AcountVerification</li>
+<li>SIX.TimApi.Constants.TransactionType.CancelReservation</li>
+<li>SIX.TimApi.Constants.TransactionType.Reversal</li>
+</ul>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1242,6 +1493,44 @@ Specifications: banking, austrianUseCases.</p>
   <a id="SIX_TimApi_TransactionInformation_SignatureInformation_" data-uid="SIX.TimApi.TransactionInformation.SignatureInformation*"></a>
   <h4 id="SIX_TimApi_TransactionInformation_SignatureInformation" data-uid="SIX.TimApi.TransactionInformation.SignatureInformation">SignatureInformation</h4>
   <div class="markdown level1 summary"><p>Signature captured by EFT Terminal if present.</p>
+<p>Mandatory for:</p>
+<ul>
+<li>SIX.TimApi.Constants.TransactionType.LoadVoucher</li>
+</ul>
+<p>Conditional for (can be null):</p>
+<ul>
+<li>SIX.TimApi.Constants.TransactionType.ActivateCard</li>
+<li>SIX.TimApi.Constants.TransactionType.AdjustReservation</li>
+<li>SIX.TimApi.Constants.TransactionType.AuthorizeDeposit</li>
+<li>SIX.TimApi.Constants.TransactionType.CancelReservation</li>
+<li>SIX.TimApi.Constants.TransactionType.CashAdvance</li>
+<li>SIX.TimApi.Constants.TransactionType.Combined</li>
+<li>SIX.TimApi.Constants.TransactionType.Credit</li>
+<li>SIX.TimApi.Constants.TransactionType.DebtRecovery</li>
+<li>SIX.TimApi.Constants.TransactionType.FinalizezPurchase</li>
+<li>SIX.TimApi.Constants.TransactionType.Funding</li>
+<li>SIX.TimApi.Constants.TransactionType.Giro</li>
+<li>SIX.TimApi.Constants.TransactionType.Load</li>
+<li>SIX.TimApi.Constants.TransactionType.PreAuthorization</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchaseForcedAcceptance</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchaseMailOrdered</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchasePhoneAuthorized</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchasePhoneOrdered</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchaseReservationPhoneAuthorized</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchaseReservation</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchaseWithCashback</li>
+<li>SIX.TimApi.Constants.TransactionType.Purchase</li>
+<li>SIX.TimApi.Constants.TransactionType.Refunding</li>
+<li>SIX.TimApi.Constants.TransactionType.Reservation</li>
+<li>SIX.TimApi.Constants.TransactionType.Reversal</li>
+<li>SIX.TimApi.Constants.TransactionType.Unload</li>
+</ul>
+<p>Forbidden (always null):</p>
+<ul>
+<li>SIX.TimApi.Constants.TransactionType.AcountVerification</li>
+<li>SIX.TimApi.Constants.TransactionType.AuthorizeCredit</li>
+<li>SIX.TimApi.Constants.TransactionType.CollectPoints</li>
+</ul>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1295,6 +1584,41 @@ Specifications: banking, austrianUseCases.</p>
   <h4 id="SIX_TimApi_TransactionInformation_TimeStamp" data-uid="SIX.TimApi.TransactionInformation.TimeStamp">TimeStamp</h4>
   <div class="markdown level1 summary"><p>Local time of the transaction.</p>
 <p>Note: Value can be not send by the EFT. In thise case DateTime() is returned.</p>
+<p>Mandatory for:</p>
+<ul>
+<li>SIX.TimApi.Constants.TransactionType.ActivateCard</li>
+<li>SIX.TimApi.Constants.TransactionType.AdjustReservation</li>
+<li>SIX.TimApi.Constants.TransactionType.AuthorizeCredit</li>
+<li>SIX.TimApi.Constants.TransactionType.AuthorizeDeposit</li>
+<li>SIX.TimApi.Constants.TransactionType.CancelReservation</li>
+<li>SIX.TimApi.Constants.TransactionType.CashAdvance</li>
+<li>SIX.TimApi.Constants.TransactionType.CollectPoints</li>
+<li>SIX.TimApi.Constants.TransactionType.Combined</li>
+<li>SIX.TimApi.Constants.TransactionType.Credit</li>
+<li>SIX.TimApi.Constants.TransactionType.DebtRecovery</li>
+<li>SIX.TimApi.Constants.TransactionType.FinalizezPurchase</li>
+<li>SIX.TimApi.Constants.TransactionType.Funding</li>
+<li>SIX.TimApi.Constants.TransactionType.Giro</li>
+<li>SIX.TimApi.Constants.TransactionType.LoadVoucher</li>
+<li>SIX.TimApi.Constants.TransactionType.Load</li>
+<li>SIX.TimApi.Constants.TransactionType.PreAuthorization</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchaseForcedAcceptance</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchaseMailOrdered</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchasePhoneAuthorized</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchasePhoneOrdered</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchaseReservationPhoneAuthorized</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchaseReservation</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchaseWithCashback</li>
+<li>SIX.TimApi.Constants.TransactionType.Purchase</li>
+<li>SIX.TimApi.Constants.TransactionType.Refunding</li>
+<li>SIX.TimApi.Constants.TransactionType.Reservation</li>
+<li>SIX.TimApi.Constants.TransactionType.Reversal</li>
+<li>SIX.TimApi.Constants.TransactionType.Unload</li>
+</ul>
+<p>Forbidden (always null):</p>
+<ul>
+<li>SIX.TimApi.Constants.TransactionType.AcountVerification</li>
+</ul>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1321,6 +1645,41 @@ Specifications: banking, austrianUseCases.</p>
   <a id="SIX_TimApi_TransactionInformation_TransRef_" data-uid="SIX.TimApi.TransactionInformation.TransRef*"></a>
   <h4 id="SIX_TimApi_TransactionInformation_TransRef" data-uid="SIX.TimApi.TransactionInformation.TransRef">TransRef</h4>
   <div class="markdown level1 summary"><p>Transaction reference defined by the terminal.</p>
+<p>Conditional for (can be null):</p>
+<ul>
+<li>SIX.TimApi.Constants.TransactionType.ActivateCard</li>
+<li>SIX.TimApi.Constants.TransactionType.AuthorizeCredit</li>
+<li>SIX.TimApi.Constants.TransactionType.AuthorizeDeposit</li>
+<li>SIX.TimApi.Constants.TransactionType.CashAdvance</li>
+<li>SIX.TimApi.Constants.TransactionType.Combined</li>
+<li>SIX.TimApi.Constants.TransactionType.Credit</li>
+<li>SIX.TimApi.Constants.TransactionType.DebtRecovery</li>
+<li>SIX.TimApi.Constants.TransactionType.FinalizezPurchase</li>
+<li>SIX.TimApi.Constants.TransactionType.Funding</li>
+<li>SIX.TimApi.Constants.TransactionType.Giro</li>
+<li>SIX.TimApi.Constants.TransactionType.Load</li>
+<li>SIX.TimApi.Constants.TransactionType.PreAuthorization</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchaseForcedAcceptance</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchaseMailOrdered</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchasePhoneAuthorized</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchasePhoneOrdered</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchaseWithCashback</li>
+<li>SIX.TimApi.Constants.TransactionType.Purchase</li>
+<li>SIX.TimApi.Constants.TransactionType.Refunding</li>
+<li>SIX.TimApi.Constants.TransactionType.Reversal</li>
+<li>SIX.TimApi.Constants.TransactionType.Unload</li>
+</ul>
+<p>Forbidden (always null):</p>
+<ul>
+<li>SIX.TimApi.Constants.TransactionType.AcountVerification</li>
+<li>SIX.TimApi.Constants.TransactionType.AdjustReservation</li>
+<li>SIX.TimApi.Constants.TransactionType.CancelReservation</li>
+<li>SIX.TimApi.Constants.TransactionType.CollectPoints</li>
+<li>SIX.TimApi.Constants.TransactionType.LoadVoucher</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchaseReservationPhoneAuthorized</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchaseReservation</li>
+<li>SIX.TimApi.Constants.TransactionType.Reservation</li>
+</ul>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1346,7 +1705,43 @@ Specifications: banking, austrianUseCases.</p>
   
   <a id="SIX_TimApi_TransactionInformation_TransSeq_" data-uid="SIX.TimApi.TransactionInformation.TransSeq*"></a>
   <h4 id="SIX_TimApi_TransactionInformation_TransSeq" data-uid="SIX.TimApi.TransactionInformation.TransSeq">TransSeq</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Transaction sequence number defined by the terminal.</p>
+<p>Conditional for (can be null):</p>
+<ul>
+<li>SIX.TimApi.Constants.TransactionType.ActivateCard</li>
+<li>SIX.TimApi.Constants.TransactionType.AuthorizeCredit</li>
+<li>SIX.TimApi.Constants.TransactionType.AuthorizeDeposit</li>
+<li>SIX.TimApi.Constants.TransactionType.CashAdvance</li>
+<li>SIX.TimApi.Constants.TransactionType.Combined</li>
+<li>SIX.TimApi.Constants.TransactionType.Credit</li>
+<li>SIX.TimApi.Constants.TransactionType.DebtRecovery</li>
+<li>SIX.TimApi.Constants.TransactionType.FinalizezPurchase</li>
+<li>SIX.TimApi.Constants.TransactionType.Funding</li>
+<li>SIX.TimApi.Constants.TransactionType.Giro</li>
+<li>SIX.TimApi.Constants.TransactionType.Load</li>
+<li>SIX.TimApi.Constants.TransactionType.PreAuthorization</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchaseForcedAcceptance</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchaseMailOrdered</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchasePhoneAuthorized</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchasePhoneOrdered</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchaseWithCashback</li>
+<li>SIX.TimApi.Constants.TransactionType.Purchase</li>
+<li>SIX.TimApi.Constants.TransactionType.Refunding</li>
+<li>SIX.TimApi.Constants.TransactionType.Reversal</li>
+<li>SIX.TimApi.Constants.TransactionType.Unload</li>
+</ul>
+<p>Forbidden (always null):</p>
+<ul>
+<li>SIX.TimApi.Constants.TransactionType.AcountVerification</li>
+<li>SIX.TimApi.Constants.TransactionType.AdjustReservation</li>
+<li>SIX.TimApi.Constants.TransactionType.CancelReservation</li>
+<li>SIX.TimApi.Constants.TransactionType.CollectPoints</li>
+<li>SIX.TimApi.Constants.TransactionType.LoadVoucher</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchaseReservationPhoneAuthorized</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchaseReservation</li>
+<li>SIX.TimApi.Constants.TransactionType.Reservation</li>
+</ul>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1363,7 +1758,8 @@ Specifications: banking, austrianUseCases.</p>
     <tbody>
       <tr>
         <td><span class="xref">System.String</span></td>
-        <td></td>
+        <td><p>The acq identifier.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1372,6 +1768,44 @@ Specifications: banking, austrianUseCases.</p>
   <a id="SIX_TimApi_TransactionInformation_TrmTransRef_" data-uid="SIX.TimApi.TransactionInformation.TrmTransRef*"></a>
   <h4 id="SIX_TimApi_TransactionInformation_TrmTransRef" data-uid="SIX.TimApi.TransactionInformation.TrmTransRef">TrmTransRef</h4>
   <div class="markdown level1 summary"><p>Transaction reference from the terminal.</p>
+<p>Mandatory for:</p>
+<ul>
+<li>SIX.TimApi.Constants.TransactionType.AdjustReservation</li>
+<li>SIX.TimApi.Constants.TransactionType.CancelReservation</li>
+<li>SIX.TimApi.Constants.TransactionType.CollectPoints</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchaseReservationPhoneAuthorized</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchaseReservation</li>
+<li>SIX.TimApi.Constants.TransactionType.Reservation</li>
+</ul>
+<p>Conditional for (can be null):</p>
+<ul>
+<li>SIX.TimApi.Constants.TransactionType.ActivateCard</li>
+<li>SIX.TimApi.Constants.TransactionType.AuthorizeCredit</li>
+<li>SIX.TimApi.Constants.TransactionType.AuthorizeDeposit</li>
+<li>SIX.TimApi.Constants.TransactionType.CashAdvance</li>
+<li>SIX.TimApi.Constants.TransactionType.Combined</li>
+<li>SIX.TimApi.Constants.TransactionType.Credit</li>
+<li>SIX.TimApi.Constants.TransactionType.DebtRecovery</li>
+<li>SIX.TimApi.Constants.TransactionType.FinalizezPurchase</li>
+<li>SIX.TimApi.Constants.TransactionType.Funding</li>
+<li>SIX.TimApi.Constants.TransactionType.Giro</li>
+<li>SIX.TimApi.Constants.TransactionType.LoadVoucher</li>
+<li>SIX.TimApi.Constants.TransactionType.Load</li>
+<li>SIX.TimApi.Constants.TransactionType.PreAuthorization</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchaseForcedAcceptance</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchaseMailOrdered</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchasePhoneAuthorized</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchasePhoneOrdered</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchaseWithCashback</li>
+<li>SIX.TimApi.Constants.TransactionType.Purchase</li>
+<li>SIX.TimApi.Constants.TransactionType.Refunding</li>
+<li>SIX.TimApi.Constants.TransactionType.Reversal</li>
+<li>SIX.TimApi.Constants.TransactionType.Unload</li>
+</ul>
+<p>Forbidden (always null):</p>
+<ul>
+<li>SIX.TimApi.Constants.TransactionType.AcountVerification</li>
+</ul>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1473,7 +1907,7 @@ Specifications: banking, austrianUseCases.</p>
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
-            SIX Payment Services AG
+            Worldline AG
             
           </div>
         </div>

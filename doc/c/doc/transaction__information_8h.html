@@ -175,6 +175,17 @@ Functions</h2></td></tr>
 
 <p>Account number of the card used. </p>
 <p>Optional: Mandatory if requested by acquirer. Specifications: <em>Banking</em>, <em>AustrianUseCases</em>.</p>
+<p>Conditional for (can be ta_object_invalid):</p><ul>
+<li>ta_c_tt_authorize_credit</li>
+<li>ta_c_tt_authorize_deposit</li>
+<li>ta_c_tt_cash_advance</li>
+<li>ta_c_tt_combined</li>
+<li>ta_c_tt_credit</li>
+<li>ta_c_tt_giro</li>
+<li>ta_c_tt_purchase</li>
+<li>ta_c_tt_reversal</li>
+</ul>
+<p>Otherwise Forbidden (always ta_object_invalid)</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">trx_info</td><td>Object instance of type <a class="el" href="transaction__information_8h.html">transaction_information</a>. </td></tr>
@@ -221,6 +232,38 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>TransactionAcquirer identifier. </p>
+<p>Conditional for (can be ta_object_invalid):</p><ul>
+<li>ta_c_tt_activate_card</li>
+<li>ta_c_tt_authorize_credit</li>
+<li>ta_c_tt_authorize_deposit</li>
+<li>ta_c_tt_cash_advance</li>
+<li>ta_c_tt_combined</li>
+<li>ta_c_tt_credit</li>
+<li>ta_c_tt_debt_recovery</li>
+<li>ta_c_tt_finalize_purchase</li>
+<li>ta_c_tt_funding</li>
+<li>ta_c_tt_giro</li>
+<li>ta_c_tt_load</li>
+<li>ta_c_tt_pre_authorization</li>
+<li>ta_c_tt_purchase_forced_acceptance</li>
+<li>ta_c_tt_purchase_mail_ordered</li>
+<li>ta_c_tt_purchase_phone_authorized</li>
+<li>ta_c_tt_purchase_with_cashback</li>
+<li>ta_c_tt_purchase</li>
+<li>ta_c_tt_refunding</li>
+<li>ta_c_tt_reversal</li>
+<li>ta_c_tt_unload</li>
+</ul>
+<p>Forbidden (always ta_object_invalid):</p><ul>
+<li>ta_c_tt_account_verification</li>
+<li>ta_c_tt_adjust_reservation</li>
+<li>ta_c_tt_cancel_reservation</li>
+<li>ta_c_tt_collect_points</li>
+<li>ta_c_tt_load_voucher</li>
+<li>ta_c_tt_purchase_reservation_phone_authorized</li>
+<li>ta_c_tt_purchase_reservation</li>
+<li>ta_c_tt_reservation</li>
+</ul>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">trx_info</td><td>Value written of type <a class="el" href="transaction__information_8h.html">transaction_information</a>. </td></tr>
@@ -267,6 +310,41 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Transaction reference from the acquirer. </p>
+<p>Mandatory for:</p><ul>
+<li>ta_c_tt_adjust_reservation</li>
+<li>ta_c_tt_cancel_reservation</li>
+<li>ta_c_tt_purchase_reservation_phone_authorized</li>
+<li>ta_c_tt_purchase_reservation</li>
+<li>ta_c_tt_reservation</li>
+</ul>
+<p>Conditional for (can be ta_object_invalid):</p><ul>
+<li>ta_c_tt_activate_card</li>
+<li>ta_c_tt_authorize_credit</li>
+<li>ta_c_tt_authorize_deposit</li>
+<li>ta_c_tt_cash_advance</li>
+<li>ta_c_tt_collect_points</li>
+<li>ta_c_tt_combined</li>
+<li>ta_c_tt_credit</li>
+<li>ta_c_tt_debt_recovery</li>
+<li>ta_c_tt_finalize_purchase</li>
+<li>ta_c_tt_funding</li>
+<li>ta_c_tt_giro</li>
+<li>ta_c_tt_load_voucher</li>
+<li>ta_c_tt_load</li>
+<li>ta_c_tt_pre_authorization</li>
+<li>ta_c_tt_purchase_forced_acceptance</li>
+<li>ta_c_tt_purchase_mail_ordered</li>
+<li>ta_c_tt_purchase_phone_authorized</li>
+<li>ta_c_tt_purchase_phone_ordered</li>
+<li>ta_c_tt_purchase_with_cashback</li>
+<li>ta_c_tt_purchase</li>
+<li>ta_c_tt_refunding</li>
+<li>ta_c_tt_unload</li>
+</ul>
+<p>Forbidden (always ta_object_invalid):</p><ul>
+<li>ta_c_tt_account_verification</li>
+<li>ta_c_tt_reversal</li>
+</ul>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">trx_info</td><td>Object instance of type <a class="el" href="transaction__information_8h.html">transaction_information</a>. </td></tr>
@@ -313,6 +391,39 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Authorization code received from the acquirer. </p>
+<p>Conditional for (can be ta_object_invalid):</p><ul>
+<li>ta_c_tt_activate_card</li>
+<li>ta_c_tt_adjust_reservation</li>
+<li>ta_c_tt_authorize_credit</li>
+<li>ta_c_tt_authorize_deposit</li>
+<li>ta_c_tt_cash_advance</li>
+<li>ta_c_tt_collect_points</li>
+<li>ta_c_tt_combined</li>
+<li>ta_c_tt_credit</li>
+<li>ta_c_tt_debt_recovery</li>
+<li>ta_c_tt_finalize_purchase</li>
+<li>ta_c_tt_funding</li>
+<li>ta_c_tt_giro</li>
+<li>ta_c_tt_load_voucher</li>
+<li>ta_c_tt_load</li>
+<li>ta_c_tt_pre_authorization</li>
+<li>ta_c_tt_purchase_forced_acceptance</li>
+<li>ta_c_tt_purchase_mail_ordered</li>
+<li>ta_c_tt_purchase_phone_authorized</li>
+<li>ta_c_tt_purchase_phone_ordered</li>
+<li>ta_c_tt_purchase_reservation_phone_authorized</li>
+<li>ta_c_tt_purchase_reservation</li>
+<li>ta_c_tt_purchase_with_cashback</li>
+<li>ta_c_tt_purchase</li>
+<li>ta_c_tt_refunding</li>
+<li>ta_c_tt_reservation</li>
+<li>ta_c_tt_unload</li>
+</ul>
+<p>Forbidden (always ta_object_invalid):</p><ul>
+<li>ta_c_tt_account_verification</li>
+<li>ta_c_tt_cancel_reservation</li>
+<li>ta_c_tt_reversal</li>
+</ul>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">trx_info</td><td>Object instance of type <a class="el" href="transaction__information_8h.html">transaction_information</a>. </td></tr>
@@ -455,6 +566,17 @@ Functions</h2></td></tr>
 
 <p>Cardholder ID- or Passport number. </p>
 <p>Optional: Mandatory if requested by acquirer. Specifications: <em>Banking</em>, <em>AustrianUseCases</em>.</p>
+<p>Conditional for (can be ta_object_invalid):</p><ul>
+<li>ta_c_tt_authorize_credit</li>
+<li>ta_c_tt_authorize_deposit</li>
+<li>ta_c_tt_cash_advance</li>
+<li>ta_c_tt_combined</li>
+<li>ta_c_tt_credit</li>
+<li>ta_c_tt_giro</li>
+<li>ta_c_tt_purchase</li>
+<li>ta_c_tt_reversal</li>
+</ul>
+<p>Otherwise Forbidden (always ta_object_invalid)</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">trx_info</td><td>Object instance of type <a class="el" href="transaction__information_8h.html">transaction_information</a>. </td></tr>
@@ -501,6 +623,39 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Cardholder verification method. </p>
+<p>Conditional for (can be ta_object_invalid):</p><ul>
+<li>ta_c_tt_activate_card</li>
+<li>ta_c_tt_adjust_reservation</li>
+<li>ta_c_tt_authorize_deposit</li>
+<li>ta_c_tt_cancel_reservation</li>
+<li>ta_c_tt_cash_advance</li>
+<li>ta_c_tt_collect_points</li>
+<li>ta_c_tt_combined</li>
+<li>ta_c_tt_debt_recovery</li>
+<li>ta_c_tt_finalize_purchase</li>
+<li>ta_c_tt_funding</li>
+<li>ta_c_tt_giro</li>
+<li>ta_c_tt_load_voucher</li>
+<li>ta_c_tt_pre_authorization</li>
+<li>ta_c_tt_purchase_forced_acceptance</li>
+<li>ta_c_tt_purchase_mail_ordered</li>
+<li>ta_c_tt_purchase_phone_authorized</li>
+<li>ta_c_tt_purchase_phone_ordered</li>
+<li>ta_c_tt_purchase_reservation_phone_authorized</li>
+<li>ta_c_tt_purchase_reservation</li>
+<li>ta_c_tt_purchase_with_cashback</li>
+<li>ta_c_tt_purchase</li>
+<li>ta_c_tt_reservation</li>
+<li>ta_c_tt_unload</li>
+</ul>
+<p>Forbidden (always ta_object_invalid):</p><ul>
+<li>ta_c_tt_account_verification</li>
+<li>ta_c_tt_authorize_credit</li>
+<li>ta_c_tt_credit</li>
+<li>ta_c_tt_load</li>
+<li>ta_c_tt_refunding</li>
+<li>ta_c_tt_reversal</li>
+</ul>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">trx_info</td><td>Value written of type <a class="el" href="transaction__information_8h.html">transaction_information</a>. </td></tr>
@@ -547,6 +702,39 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Feedback to know which merchant action has to be performed. </p>
+<p>Mandatory for:</p><ul>
+<li>ta_c_tt_activate_card</li>
+<li>ta_c_tt_adjust_reservation</li>
+<li>ta_c_tt_authorize_credit</li>
+<li>ta_c_tt_authorize_deposit</li>
+<li>ta_c_tt_cancel_reservation</li>
+<li>ta_c_tt_cash_advance</li>
+<li>ta_c_tt_collect_points</li>
+<li>ta_c_tt_combined</li>
+<li>ta_c_tt_credit</li>
+<li>ta_c_tt_debt_recovery</li>
+<li>ta_c_tt_finalize_purchase</li>
+<li>ta_c_tt_funding</li>
+<li>ta_c_tt_giro</li>
+<li>ta_c_tt_load_voucher</li>
+<li>ta_c_tt_load</li>
+<li>ta_c_tt_pre_authorization</li>
+<li>ta_c_tt_purchase_forced_acceptance</li>
+<li>ta_c_tt_purchase_mail_ordered</li>
+<li>ta_c_tt_purchase_phone_authorized</li>
+<li>ta_c_tt_purchase_phone_ordered</li>
+<li>ta_c_tt_purchase_reservation_phone_authorized</li>
+<li>ta_c_tt_purchase_reservation</li>
+<li>ta_c_tt_purchase_with_cashback</li>
+<li>ta_c_tt_purchase</li>
+<li>ta_c_tt_refunding</li>
+<li>ta_c_tt_reservation</li>
+<li>ta_c_tt_reversal</li>
+<li>ta_c_tt_unload</li>
+</ul>
+<p>Forbidden (always ta_object_invalid):</p><ul>
+<li>ta_c_tt_account_verification</li>
+</ul>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">trx_info</td><td>Object instance of type <a class="el" href="transaction__information_8h.html">transaction_information</a>. </td></tr>
@@ -641,6 +829,17 @@ Functions</h2></td></tr>
 
 <p>Person OID. </p>
 <p>Optional: Mandatory if requested by acquirer. Specifications: <em>Banking</em>, <em>AustrianUseCases</em>.</p>
+<p>Conditional for (can be ta_object_invalid):</p><ul>
+<li>ta_c_tt_authorize_credit</li>
+<li>ta_c_tt_authorize_deposit</li>
+<li>ta_c_tt_cash_advance</li>
+<li>ta_c_tt_combined</li>
+<li>ta_c_tt_credit</li>
+<li>ta_c_tt_giro</li>
+<li>ta_c_tt_purchase</li>
+<li>ta_c_tt_reversal</li>
+</ul>
+<p>Otherwise Forbidden (always ta_object_invalid)</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">trx_info</td><td>Object instance of type <a class="el" href="transaction__information_8h.html">transaction_information</a>. </td></tr>
@@ -687,6 +886,41 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>According to EMV definition. </p>
+<p>Mandatory for:</p><ul>
+<li>ta_c_tt_activate_card</li>
+<li>ta_c_tt_authorize_credit</li>
+<li>ta_c_tt_authorize_deposit</li>
+<li>ta_c_tt_cash_advance</li>
+<li>ta_c_tt_collect_points</li>
+<li>ta_c_tt_combined</li>
+<li>ta_c_tt_credit</li>
+<li>ta_c_tt_debt_recovery</li>
+<li>ta_c_tt_funding</li>
+<li>ta_c_tt_giro</li>
+<li>ta_c_tt_load</li>
+<li>ta_c_tt_purchase_forced_acceptance</li>
+<li>ta_c_tt_purchase_mail_ordered</li>
+<li>ta_c_tt_purchase_phone_authorized</li>
+<li>ta_c_tt_purchase_phone_ordered</li>
+<li>ta_c_tt_purchase</li>
+<li>ta_c_tt_refunding</li>
+<li>ta_c_tt_unload</li>
+</ul>
+<p>Conditional for (can be ta_object_invalid):</p><ul>
+<li>ta_c_tt_adjust_reservation</li>
+<li>ta_c_tt_finalize_purchase</li>
+<li>ta_c_tt_load_voucher</li>
+<li>ta_c_tt_pre_authorization</li>
+<li>ta_c_tt_purchase_reservation_phone_authorized</li>
+<li>ta_c_tt_purchase_reservation</li>
+<li>ta_c_tt_purchase_with_cashback</li>
+<li>ta_c_tt_reservation</li>
+</ul>
+<p>Forbidden (always ta_object_invalid):</p><ul>
+<li>ta_c_tt_account_verification</li>
+<li>ta_c_tt_cancel_reservation</li>
+<li>ta_c_tt_reversal</li>
+</ul>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">trx_info</td><td>Object instance of type <a class="el" href="transaction__information_8h.html">transaction_information</a>. </td></tr>
@@ -733,6 +967,42 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Signature captured by EFT Terminal if present. </p>
+<p>Mandatory for:</p><ul>
+<li>ta_c_tt_load_voucher</li>
+</ul>
+<p>Conditional for (can be ta_object_invalid):</p><ul>
+<li>ta_c_tt_activate_card</li>
+<li>ta_c_tt_adjust_reservation</li>
+<li>ta_c_tt_authorize_deposit</li>
+<li>ta_c_tt_cancel_reservation</li>
+<li>ta_c_tt_cash_advance</li>
+<li>ta_c_tt_combined</li>
+<li>ta_c_tt_credit</li>
+<li>ta_c_tt_debt_recovery</li>
+<li>ta_c_tt_finalize_purchase</li>
+<li>ta_c_tt_funding</li>
+<li>ta_c_tt_giro</li>
+<li>ta_c_tt_load</li>
+<li>ta_c_tt_pre_authorization</li>
+<li>ta_c_tt_purchase_forced_acceptance</li>
+<li>ta_c_tt_purchase_mail_ordered</li>
+<li>ta_c_tt_purchase_phone_authorized</li>
+<li>ta_c_tt_purchase_phone_ordered</li>
+<li>ta_c_tt_purchase_phone_ordered</li>
+<li>ta_c_tt_purchase_reservation_phone_authorized</li>
+<li>ta_c_tt_purchase_reservation</li>
+<li>ta_c_tt_purchase_with_cashback</li>
+<li>ta_c_tt_purchase</li>
+<li>ta_c_tt_refunding</li>
+<li>ta_c_tt_reservation</li>
+<li>ta_c_tt_reversal</li>
+<li>ta_c_tt_unload</li>
+</ul>
+<p>Forbidden (always ta_object_invalid):</p><ul>
+<li>ta_c_tt_account_verification</li>
+<li>ta_c_tt_authorize_credit</li>
+<li>ta_c_tt_collect_points</li>
+</ul>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">trx_info</td><td>Object instance of type <a class="el" href="transaction__information_8h.html">transaction_information</a>. </td></tr>
@@ -825,6 +1095,39 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Local time of the transaction. </p>
+<p>Mandatory for:</p><ul>
+<li>ta_c_tt_activate_card</li>
+<li>ta_c_tt_adjust_reservation</li>
+<li>ta_c_tt_authorize_credit</li>
+<li>ta_c_tt_authorize_deposit</li>
+<li>ta_c_tt_cancel_reservation</li>
+<li>ta_c_tt_cash_advance</li>
+<li>ta_c_tt_collect_points</li>
+<li>ta_c_tt_combined</li>
+<li>ta_c_tt_credit</li>
+<li>ta_c_tt_debt_recovery</li>
+<li>ta_c_tt_finalize_purchase</li>
+<li>ta_c_tt_funding</li>
+<li>ta_c_tt_giro</li>
+<li>ta_c_tt_load_voucher</li>
+<li>ta_c_tt_load</li>
+<li>ta_c_tt_pre_authorization</li>
+<li>ta_c_tt_purchase_forced_acceptance</li>
+<li>ta_c_tt_purchase_mail_ordered</li>
+<li>ta_c_tt_purchase_phone_authorized</li>
+<li>ta_c_tt_purchase_phone_ordered</li>
+<li>ta_c_tt_purchase_reservation_phone_authorized</li>
+<li>ta_c_tt_purchase_reservation</li>
+<li>ta_c_tt_purchase_with_cashback</li>
+<li>ta_c_tt_purchase</li>
+<li>ta_c_tt_refunding</li>
+<li>ta_c_tt_reservation</li>
+<li>ta_c_tt_reversal</li>
+<li>ta_c_tt_unload</li>
+</ul>
+<p>Forbidden (always ta_object_invalid):</p><ul>
+<li>ta_c_tt_account_verification</li>
+</ul>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">trx_info</td><td>Object instance of type <a class="el" href="transaction__information_8h.html">transaction_information</a>. </td></tr>
@@ -871,6 +1174,39 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Transaction reference defined by the terminal. </p>
+<p>Conditional for (can be ta_object_invalid):</p><ul>
+<li>ta_c_tt_activate_card</li>
+<li>ta_c_tt_authorize_credit</li>
+<li>ta_c_tt_authorize_deposit</li>
+<li>ta_c_tt_cash_advance</li>
+<li>ta_c_tt_combined</li>
+<li>ta_c_tt_credit</li>
+<li>ta_c_tt_debt_recovery</li>
+<li>ta_c_tt_finalize_purchase</li>
+<li>ta_c_tt_funding</li>
+<li>ta_c_tt_giro</li>
+<li>ta_c_tt_load</li>
+<li>ta_c_tt_pre_authorization</li>
+<li>ta_c_tt_purchase_forced_acceptance</li>
+<li>ta_c_tt_purchase_mail_ordered</li>
+<li>ta_c_tt_purchase_phone_authorized</li>
+<li>ta_c_tt_purchase_phone_ordered</li>
+<li>ta_c_tt_purchase_with_cashback</li>
+<li>ta_c_tt_purchase</li>
+<li>ta_c_tt_refunding</li>
+<li>ta_c_tt_reversal</li>
+<li>ta_c_tt_unload</li>
+</ul>
+<p>Forbidden (always ta_object_invalid):</p><ul>
+<li>ta_c_tt_account_verification</li>
+<li>ta_c_tt_adjust_reservation</li>
+<li>ta_c_tt_cancel_reservation</li>
+<li>ta_c_tt_collect_points</li>
+<li>ta_c_tt_load_voucher</li>
+<li>ta_c_tt_purchase_reservation_phone_authorized</li>
+<li>ta_c_tt_purchase_reservation</li>
+<li>ta_c_tt_reservation</li>
+</ul>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">trx_info</td><td>Object instance of type <a class="el" href="transaction__information_8h.html">transaction_information</a>. </td></tr>
@@ -917,6 +1253,39 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Transaction sequence number defined by the terminal. </p>
+<p>Conditional for (can be ta_object_invalid):</p><ul>
+<li>ta_c_tt_activate_card</li>
+<li>ta_c_tt_authorize_credit</li>
+<li>ta_c_tt_authorize_deposit</li>
+<li>ta_c_tt_cash_advance</li>
+<li>ta_c_tt_combined</li>
+<li>ta_c_tt_credit</li>
+<li>ta_c_tt_debt_recovery</li>
+<li>ta_c_tt_finalize_purchase</li>
+<li>ta_c_tt_funding</li>
+<li>ta_c_tt_giro</li>
+<li>ta_c_tt_load</li>
+<li>ta_c_tt_pre_authorization</li>
+<li>ta_c_tt_purchase_forced_acceptance</li>
+<li>ta_c_tt_purchase_mail_ordered</li>
+<li>ta_c_tt_purchase_phone_authorized</li>
+<li>ta_c_tt_purchase_phone_ordered</li>
+<li>ta_c_tt_purchase_with_cashback</li>
+<li>ta_c_tt_purchase</li>
+<li>ta_c_tt_refunding</li>
+<li>ta_c_tt_reversal</li>
+<li>ta_c_tt_unload</li>
+</ul>
+<p>Forbidden (always ta_object_invalid):</p><ul>
+<li>ta_c_tt_account_verification</li>
+<li>ta_c_tt_adjust_reservation</li>
+<li>ta_c_tt_cancel_reservation</li>
+<li>ta_c_tt_collect_points</li>
+<li>ta_c_tt_load_voucher</li>
+<li>ta_c_tt_purchase_reservation_phone_authorized</li>
+<li>ta_c_tt_purchase_reservation</li>
+<li>ta_c_tt_reservation</li>
+</ul>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">trx_info</td><td>Object instance of type <a class="el" href="transaction__information_8h.html">transaction_information</a>. </td></tr>
@@ -963,6 +1332,41 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Transaction reference from the terminal. </p>
+<p>Mandatory for:</p><ul>
+<li>ta_c_tt_adjust_reservation</li>
+<li>ta_c_tt_cancel_reservation</li>
+<li>ta_c_tt_collect_points</li>
+<li>ta_c_tt_purchase_reservation_phone_authorized</li>
+<li>ta_c_tt_purchase_reservation</li>
+<li>ta_c_tt_reservation</li>
+</ul>
+<p>Conditional for (can be ta_object_invalid):</p><ul>
+<li>ta_c_tt_activate_card</li>
+<li>ta_c_tt_authorize_credit</li>
+<li>ta_c_tt_authorize_deposit</li>
+<li>ta_c_tt_cash_advance</li>
+<li>ta_c_tt_combined</li>
+<li>ta_c_tt_credit</li>
+<li>ta_c_tt_debt_recovery</li>
+<li>ta_c_tt_finalize_purchase</li>
+<li>ta_c_tt_funding</li>
+<li>ta_c_tt_giro</li>
+<li>ta_c_tt_load_voucher</li>
+<li>ta_c_tt_load</li>
+<li>ta_c_tt_pre_authorization</li>
+<li>ta_c_tt_purchase_forced_acceptance</li>
+<li>ta_c_tt_purchase_mail_ordered</li>
+<li>ta_c_tt_purchase_phone_authorized</li>
+<li>ta_c_tt_purchase_phone_ordered</li>
+<li>ta_c_tt_purchase_with_cashback</li>
+<li>ta_c_tt_purchase</li>
+<li>ta_c_tt_refunding</li>
+<li>ta_c_tt_reversal</li>
+<li>ta_c_tt_unload</li>
+</ul>
+<p>Forbidden (always ta_object_invalid):</p><ul>
+<li>ta_c_tt_account_verification</li>
+</ul>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">trx_info</td><td>Object instance of type <a class="el" href="transaction__information_8h.html">transaction_information</a>. </td></tr>

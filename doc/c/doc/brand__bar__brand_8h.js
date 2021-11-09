@@ -67,6 +67,7 @@ var brand__bar__brand_8h =
       [ "ta_c_bbb_paycard", "brand__bar__brand_8h.html#a065fb75dccd6ee5e82f29d4cce775549a248f47d37a4aa84dcba3458ca75dd1d0", null ],
       [ "ta_c_bbb_paycard_f", "brand__bar__brand_8h.html#a065fb75dccd6ee5e82f29d4cce775549a86d9cf04b13b39cd0a1d793567983e9d", null ],
       [ "ta_c_bbb_paycard_app", "brand__bar__brand_8h.html#a065fb75dccd6ee5e82f29d4cce775549af3c9195461be5ae85f7e7d87ea4b7fe4", null ],
+      [ "ta_c_bbb_pay_pal", "brand__bar__brand_8h.html#a065fb75dccd6ee5e82f29d4cce775549a5bbf97e418d4c2216c05af5b5cbca993", null ],
       [ "ta_c_bbb_pay_sys_giftcard", "brand__bar__brand_8h.html#a065fb75dccd6ee5e82f29d4cce775549ada79d46e4e258e8db2afaee92631c728", null ],
       [ "ta_c_bbb_pharmacard", "brand__bar__brand_8h.html#a065fb75dccd6ee5e82f29d4cce775549a56de725a3053a27284aa78486b02348d", null ],
       [ "ta_c_bbb_phonecard", "brand__bar__brand_8h.html#a065fb75dccd6ee5e82f29d4cce775549a4584a0f2eb71f8dde4b29a1177ff26fc", null ],

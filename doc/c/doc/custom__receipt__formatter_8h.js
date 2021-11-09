@@ -97,7 +97,8 @@ var custom__receipt__formatter_8h =
       [ "ta_c_crftt_field_pan_receipt_dol", "custom__receipt__formatter_8h.html#a883a5ff78a5d2ad805f9f6af32a8d2afabc01dc8ce2614adf1fd722429514d90e", null ],
       [ "ta_c_crftt_field_pre_authorization_exp_date", "custom__receipt__formatter_8h.html#a883a5ff78a5d2ad805f9f6af32a8d2afa6d1e699ec05141232679f1cf52b9a394", null ],
       [ "ta_c_crftt_field_receipt_number", "custom__receipt__formatter_8h.html#a883a5ff78a5d2ad805f9f6af32a8d2afa3704e9471a99734593d5e48858313634", null ],
-      [ "ta_c_crftt_field_shift_number", "custom__receipt__formatter_8h.html#a883a5ff78a5d2ad805f9f6af32a8d2afadefe33602c4b1cea5831b1ac44ebd931", null ]
+      [ "ta_c_crftt_field_shift_number", "custom__receipt__formatter_8h.html#a883a5ff78a5d2ad805f9f6af32a8d2afadefe33602c4b1cea5831b1ac44ebd931", null ],
+      [ "ta_c_crftt_field_card_product_type", "custom__receipt__formatter_8h.html#a883a5ff78a5d2ad805f9f6af32a8d2afa61d5b0959f499751e55a5ea16cace043", null ]
     ] ],
     [ "ta_e_custom_receipt_formatter_translated_text", "custom__receipt__formatter_8h.html#aa2ad96ca8f3d24cc69d417eaa70dd2e3", [
       [ "ta_crftt_undefined", "custom__receipt__formatter_8h.html#aa2ad96ca8f3d24cc69d417eaa70dd2e3abec63d7f72efde2f9542a976110459dd", null ],
