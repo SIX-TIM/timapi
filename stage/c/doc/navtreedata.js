@@ -40,16 +40,16 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "activate__response_8h.html",
-"brand__mode_8h.html",
-"currency_8h.html#ad375db379bcf5a792280a2735f80f7d9a87a7fedf3ec9d3882b7a04f16a6e85a5",
-"display__product__info_8h.html#a6a79e400009ecf79c899e9e2c8178c99",
-"hardware__information__response_8h.html#a9a0701dbb125b0036ee270a423acd51a",
-"pos__entry__mode_8h.html#abcd49dcaa026c564bba0a40e0779c198a141bf6fd743de5b8ff002405918e2912",
-"request__type_8h.html#a38268da75c7795fd3a4f057bc6a7fcd2aa12c99a3e91e309b88c00019f1e0e830",
-"result__code_8h.html#aebaf00d1ceef4b827866ca9de0bd3320a5cd1e6430fe8d550fb12b62de5b8c0c7",
-"terminal_8h.html#a38d376c1e92c155a6dbd5ad458caaefd",
-"terminal__settings_8h.html#aea1ea3bd5dcb6f703be3719590163b0a",
-"vas__checkout__information_8h.html#a0af017748996aba7db5110b8e19080b9"
+"brand__bar__brand_8h.html#ab1dd424a28eed62a4223dd7bb0bee77d",
+"currency_8h.html#ad375db379bcf5a792280a2735f80f7d9a86bca16443790d6bd4bb0023addc382c",
+"display__product__info_8h.html#a535c9d2fe68b944c77da68b7b8df82dd",
+"hardware__information__response_8h.html#a01d2c066c3f08d00082015f345d2b54b",
+"pos__entry__mode_8h.html#abcd49dcaa026c564bba0a40e0779c198a09cc413c9c6a25277d28df1cfca0411a",
+"request__type_8h.html#a38268da75c7795fd3a4f057bc6a7fcd2a7ebb879440ef61cc6ef1b860bfaaadec",
+"result__code_8h.html#aebaf00d1ceef4b827866ca9de0bd3320a581214e90f02957b4ec4941657c8fedb",
+"terminal_8h.html#a2a81346192a321325d37dd80284ea9c9",
+"terminal__settings_8h.html#add34826ffa95e20a380fbe95714ba9e5",
+"update__status_8h.html#a7286df411d42cd12307b6c8b4e9a7210a003ebcd25d152e9b64692379dde32b8b"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

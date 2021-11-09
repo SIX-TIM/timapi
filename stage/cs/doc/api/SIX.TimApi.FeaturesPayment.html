@@ -913,13 +913,13 @@ Immutable class.</p>
   
   
   <a id="SIX_TimApi_FeaturesPayment__ctor_" data-uid="SIX.TimApi.FeaturesPayment.#ctor*"></a>
-  <h4 id="SIX_TimApi_FeaturesPayment__ctor_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_" data-uid="SIX.TimApi.FeaturesPayment.#ctor(System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean)">FeaturesPayment(Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean)</h4>
+  <h4 id="SIX_TimApi_FeaturesPayment__ctor_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_" data-uid="SIX.TimApi.FeaturesPayment.#ctor(System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean)">FeaturesPayment(Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean)</h4>
   <div class="markdown level1 summary"><p>Create hardware features.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public FeaturesPayment(bool dcc, bool declinedReceipts, bool partialApproval, bool partialCommit, bool ep2Available, bool ep2Dcc, bool ep2DeclinedReceipts, bool ep2MultiAccountSelection, bool ep2MultiContractSelection)</code></pre>
+    <pre><code class="lang-csharp hljs">public FeaturesPayment(bool dcc, bool declinedReceipts, bool partialApproval, bool partialCommit, bool ep2Available, bool ep2Dcc, bool ep2DeclinedReceipts, bool ep2MultiAccountSelection, bool ep2MultiContractSelection, bool ep2Installment, bool ep2Giftcard)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -974,6 +974,16 @@ Immutable class.</p>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
         <td><span class="parametername">ep2MultiContractSelection</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">ep2Installment</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">ep2Giftcard</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -1068,6 +1078,58 @@ Immutable class.</p>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public bool canEp2DeclinedReceipts()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SIX_TimApi_FeaturesPayment_canEp2Giftcard_" data-uid="SIX.TimApi.FeaturesPayment.canEp2Giftcard*"></a>
+  <h4 id="SIX_TimApi_FeaturesPayment_canEp2Giftcard" data-uid="SIX.TimApi.FeaturesPayment.canEp2Giftcard">canEp2Giftcard()</h4>
+  <div class="markdown level1 summary"><p>Support for giftcard functions.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool canEp2Giftcard()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SIX_TimApi_FeaturesPayment_canEp2Installment_" data-uid="SIX.TimApi.FeaturesPayment.canEp2Installment*"></a>
+  <h4 id="SIX_TimApi_FeaturesPayment_canEp2Installment" data-uid="SIX.TimApi.FeaturesPayment.canEp2Installment">canEp2Installment()</h4>
+  <div class="markdown level1 summary"><p>Support for installment.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool canEp2Installment()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1266,7 +1328,7 @@ Immutable class.</p>
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
-            SIX Payment Services AG
+            Worldline AG
             
           </div>
         </div>

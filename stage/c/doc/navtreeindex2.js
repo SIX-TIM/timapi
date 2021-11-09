@@ -1,5 +1,7 @@
 var NAVTREEINDEX2 =
 {
+"currency_8h.html#ad375db379bcf5a792280a2735f80f7d9a86bca16443790d6bd4bb0023addc382c":[1,1,0,1,12,3,146],
+"currency_8h.html#ad375db379bcf5a792280a2735f80f7d9a86e279654edff7fa954c524e514d2ffc":[1,1,0,1,12,3,138],
 "currency_8h.html#ad375db379bcf5a792280a2735f80f7d9a87a7fedf3ec9d3882b7a04f16a6e85a5":[1,1,0,1,12,3,64],
 "currency_8h.html#ad375db379bcf5a792280a2735f80f7d9a88b37b13381803cb2b1aea2f11d93fb6":[1,1,0,1,12,3,77],
 "currency_8h.html#ad375db379bcf5a792280a2735f80f7d9a88bd3fc7cec48c56ad11f8ca3bd0676a":[1,1,0,1,12,3,39],
@@ -124,6 +126,7 @@ var NAVTREEINDEX2 =
 "custom__receipt__formatter_8h.html#a883a5ff78a5d2ad805f9f6af32a8d2afa5acfdbb4fffe4f0029f4cade29ae945a":[1,1,0,23,12,54],
 "custom__receipt__formatter_8h.html#a883a5ff78a5d2ad805f9f6af32a8d2afa5b1f301fa3fcaf56d628ffd3a010a1a2":[1,1,0,23,12,21],
 "custom__receipt__formatter_8h.html#a883a5ff78a5d2ad805f9f6af32a8d2afa6064aa8113f63d6bd2dbbe764a9fc550":[1,1,0,23,12,60],
+"custom__receipt__formatter_8h.html#a883a5ff78a5d2ad805f9f6af32a8d2afa61d5b0959f499751e55a5ea16cace043":[1,1,0,23,12,73],
 "custom__receipt__formatter_8h.html#a883a5ff78a5d2ad805f9f6af32a8d2afa6bb16e249a2dcbd80f317a96ef73d97b":[1,1,0,23,12,19],
 "custom__receipt__formatter_8h.html#a883a5ff78a5d2ad805f9f6af32a8d2afa6d1e699ec05141232679f1cf52b9a394":[1,1,0,23,12,70],
 "custom__receipt__formatter_8h.html#a883a5ff78a5d2ad805f9f6af32a8d2afa721e22f2eab13747d61451e76945d673":[1,1,0,23,12,13],
@@ -246,8 +249,5 @@ var NAVTREEINDEX2 =
 "display__product__info_8h.html#a21f768d34aa2e5e1759202aa3257a07c":[1,1,0,25,6],
 "display__product__info_8h.html#a31e9f9fc51fa025f2a0f2f94d56ba78e":[1,1,0,25,9],
 "display__product__info_8h.html#a3ec4f1f6e570a942c7326f6612fb55a3":[1,1,0,25,1],
-"display__product__info_8h.html#a52949447869707ae82be13457dc036c8":[1,1,0,25,7],
-"display__product__info_8h.html#a535c9d2fe68b944c77da68b7b8df82dd":[1,1,0,25,5],
-"display__product__info_8h.html#a5e23bfe8786117620e889ba208e23416":[1,1,0,25,2],
-"display__product__info_8h.html#a60c652a28917266a58f914ebf9fa5b58":[1,1,0,25,11]
+"display__product__info_8h.html#a52949447869707ae82be13457dc036c8":[1,1,0,25,7]
 };

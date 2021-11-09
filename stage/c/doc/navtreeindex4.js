@@ -1,5 +1,8 @@
 var NAVTREEINDEX4 =
 {
+"hardware__information__response_8h.html#a01d2c066c3f08d00082015f345d2b54b":[1,1,0,30,3],
+"hardware__information__response_8h.html#a3114114d9f9951b383d72982c93af48f":[1,1,0,30,4],
+"hardware__information__response_8h.html#a53ebddc5d5de2ecee4b2688ffb487c44":[1,1,0,30,0],
 "hardware__information__response_8h.html#a9a0701dbb125b0036ee270a423acd51a":[1,1,0,30,5],
 "hardware__information__response_8h.html#ab95d31fcb87c395fd56616bdfab632a7":[1,1,0,30,2],
 "hardware__information__response_8h.html#ae4eeafe0aa906e91cd8480c225041f81":[1,1,0,30,1],
@@ -226,8 +229,8 @@ var NAVTREEINDEX4 =
 "non__financial__transactions_8h.html#a9519a57c1ef87f4cdf5937084bf4de93ae703e8e09bf6500c012f7d6661f1576c":[1,1,0,1,32,1,11],
 "non__financial__transactions_8h.html#a9519a57c1ef87f4cdf5937084bf4de93ae8d6fee64efe62ceac0064c0d8776ac2":[1,1,0,1,32,1,5],
 "non__financial__transactions_8h.html#aeed3b90f135e394d23e56db2381d3dc6":[1,1,0,1,32,0],
-"object_8h.html":[1,0,2],
 "object_8h.html":[1,1,0,0,4],
+"object_8h.html":[1,0,2],
 "object_8h.html#a1b45218b189961e595c29a2411dddb2c":[1,1,0,0,4,5],
 "object_8h.html#a77ea729cdac2e3d19442db4d60590f7a":[1,1,0,0,4,3],
 "object_8h.html#a90487f9ada73238718e830f430d6f280":[1,1,0,0,4,0],
@@ -246,8 +249,5 @@ var NAVTREEINDEX4 =
 "pos__entry__mode_8h.html":[1,1,0,1,34],
 "pos__entry__mode_8h.html#abcd49dcaa026c564bba0a40e0779c198":[1,1,0,1,34,1],
 "pos__entry__mode_8h.html#abcd49dcaa026c564bba0a40e0779c198a00ee2ccc99f6a686ab2031f2f8f3aca7":[1,1,0,1,34,1,6],
-"pos__entry__mode_8h.html#abcd49dcaa026c564bba0a40e0779c198a03f3ef8f25c6aee337a387f2beb67280":[1,1,0,1,34,1,7],
-"pos__entry__mode_8h.html#abcd49dcaa026c564bba0a40e0779c198a09cc413c9c6a25277d28df1cfca0411a":[1,1,0,1,34,1,16],
-"pos__entry__mode_8h.html#abcd49dcaa026c564bba0a40e0779c198a0cc1a839984bac1b56d98714007b67ce":[1,1,0,1,34,1,9],
-"pos__entry__mode_8h.html#abcd49dcaa026c564bba0a40e0779c198a12b05c4ef6d3506b3357ab32a54783f7":[1,1,0,1,34,1,5]
+"pos__entry__mode_8h.html#abcd49dcaa026c564bba0a40e0779c198a03f3ef8f25c6aee337a387f2beb67280":[1,1,0,1,34,1,7]
 };

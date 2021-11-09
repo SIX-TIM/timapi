@@ -1544,15 +1544,12 @@ references:
   commentId: T:SIX.TimApi.CardTrackData
   fullName: SIX.TimApi.CardTrackData
   nameWithType: CardTrackData
-- uid: SIX.TimApi.CardTrackData.#ctor(System.Int32,System.Byte[])
-  name: CardTrackData(Int32, Byte[])
-  href: api/SIX.TimApi.CardTrackData.html#SIX_TimApi_CardTrackData__ctor_System_Int32_System_Byte___
-  commentId: M:SIX.TimApi.CardTrackData.#ctor(System.Int32,System.Byte[])
-  name.vb: CardTrackData(Int32, Byte())
-  fullName: SIX.TimApi.CardTrackData.CardTrackData(System.Int32, System.Byte[])
-  fullName.vb: SIX.TimApi.CardTrackData.CardTrackData(System.Int32, System.Byte())
-  nameWithType: CardTrackData.CardTrackData(Int32, Byte[])
-  nameWithType.vb: CardTrackData.CardTrackData(Int32, Byte())
+- uid: SIX.TimApi.CardTrackData.#ctor(System.Int32,System.String)
+  name: CardTrackData(Int32, String)
+  href: api/SIX.TimApi.CardTrackData.html#SIX_TimApi_CardTrackData__ctor_System_Int32_System_String_
+  commentId: M:SIX.TimApi.CardTrackData.#ctor(System.Int32,System.String)
+  fullName: SIX.TimApi.CardTrackData.CardTrackData(System.Int32, System.String)
+  nameWithType: CardTrackData.CardTrackData(Int32, String)
 - uid: SIX.TimApi.CardTrackData.#ctor*
   name: CardTrackData
   href: api/SIX.TimApi.CardTrackData.html#SIX_TimApi_CardTrackData__ctor_
@@ -1586,6 +1583,19 @@ references:
   isSpec: "True"
   fullName: SIX.TimApi.CardTrackData.TrackData
   nameWithType: CardTrackData.TrackData
+- uid: SIX.TimApi.CardTrackData.TrackDataString
+  name: TrackDataString
+  href: api/SIX.TimApi.CardTrackData.html#SIX_TimApi_CardTrackData_TrackDataString
+  commentId: P:SIX.TimApi.CardTrackData.TrackDataString
+  fullName: SIX.TimApi.CardTrackData.TrackDataString
+  nameWithType: CardTrackData.TrackDataString
+- uid: SIX.TimApi.CardTrackData.TrackDataString*
+  name: TrackDataString
+  href: api/SIX.TimApi.CardTrackData.html#SIX_TimApi_CardTrackData_TrackDataString_
+  commentId: Overload:SIX.TimApi.CardTrackData.TrackDataString
+  isSpec: "True"
+  fullName: SIX.TimApi.CardTrackData.TrackDataString
+  nameWithType: CardTrackData.TrackDataString
 - uid: SIX.TimApi.CardTrackData.TrackNum
   name: TrackNum
   href: api/SIX.TimApi.CardTrackData.html#SIX_TimApi_CardTrackData_TrackNum
@@ -2526,6 +2536,12 @@ references:
   commentId: F:SIX.TimApi.Constants.BrandBarBrand.PaycardF
   fullName: SIX.TimApi.Constants.BrandBarBrand.PaycardF
   nameWithType: BrandBarBrand.PaycardF
+- uid: SIX.TimApi.Constants.BrandBarBrand.PayPal
+  name: PayPal
+  href: api/SIX.TimApi.Constants.BrandBarBrand.html#SIX_TimApi_Constants_BrandBarBrand_PayPal
+  commentId: F:SIX.TimApi.Constants.BrandBarBrand.PayPal
+  fullName: SIX.TimApi.Constants.BrandBarBrand.PayPal
+  nameWithType: BrandBarBrand.PayPal
 - uid: SIX.TimApi.Constants.BrandBarBrand.PaySysGiftcard
   name: PaySysGiftcard
   href: api/SIX.TimApi.Constants.BrandBarBrand.html#SIX_TimApi_Constants_BrandBarBrand_PaySysGiftcard
@@ -2874,6 +2890,12 @@ references:
   commentId: F:SIX.TimApi.Constants.ConnectionMode.BROADCAST
   fullName: SIX.TimApi.Constants.ConnectionMode.BROADCAST
   nameWithType: ConnectionMode.BROADCAST
+- uid: SIX.TimApi.Constants.ConnectionMode.NONE
+  name: NONE
+  href: api/SIX.TimApi.Constants.ConnectionMode.html#SIX_TimApi_Constants_ConnectionMode_NONE
+  commentId: F:SIX.TimApi.Constants.ConnectionMode.NONE
+  fullName: SIX.TimApi.Constants.ConnectionMode.NONE
+  nameWithType: ConnectionMode.NONE
 - uid: SIX.TimApi.Constants.ConnectionMode.ON_FIX_IP
   name: ON_FIX_IP
   href: api/SIX.TimApi.Constants.ConnectionMode.html#SIX_TimApi_Constants_ConnectionMode_ON_FIX_IP
@@ -4608,6 +4630,12 @@ references:
   commentId: F:SIX.TimApi.Constants.ReceiptItemType.CardNumberPrintableMerchant
   fullName: SIX.TimApi.Constants.ReceiptItemType.CardNumberPrintableMerchant
   nameWithType: ReceiptItemType.CardNumberPrintableMerchant
+- uid: SIX.TimApi.Constants.ReceiptItemType.CardProductType
+  name: CardProductType
+  href: api/SIX.TimApi.Constants.ReceiptItemType.html#SIX_TimApi_Constants_ReceiptItemType_CardProductType
+  commentId: F:SIX.TimApi.Constants.ReceiptItemType.CardProductType
+  fullName: SIX.TimApi.Constants.ReceiptItemType.CardProductType
+  nameWithType: ReceiptItemType.CardProductType
 - uid: SIX.TimApi.Constants.ReceiptItemType.ClerkIdentifier
   name: ClerkIdentifier
   href: api/SIX.TimApi.Constants.ReceiptItemType.html#SIX_TimApi_Constants_ReceiptItemType_ClerkIdentifier
@@ -5490,6 +5518,12 @@ references:
   commentId: F:SIX.TimApi.Constants.ResourceId.PetrolInsertCard
   fullName: SIX.TimApi.Constants.ResourceId.PetrolInsertCard
   nameWithType: ResourceId.PetrolInsertCard
+- uid: SIX.TimApi.Constants.ResourceId.PetrolInsertCardReceiptLanguage
+  name: PetrolInsertCardReceiptLanguage
+  href: api/SIX.TimApi.Constants.ResourceId.html#SIX_TimApi_Constants_ResourceId_PetrolInsertCardReceiptLanguage
+  commentId: F:SIX.TimApi.Constants.ResourceId.PetrolInsertCardReceiptLanguage
+  fullName: SIX.TimApi.Constants.ResourceId.PetrolInsertCardReceiptLanguage
+  nameWithType: ResourceId.PetrolInsertCardReceiptLanguage
 - uid: SIX.TimApi.Constants.ResourceId.PetrolInvalidEntry
   name: PetrolInvalidEntry
   href: api/SIX.TimApi.Constants.ResourceId.html#SIX_TimApi_Constants_ResourceId_PetrolInvalidEntry
@@ -6666,6 +6700,12 @@ references:
   commentId: F:SIX.TimApi.Constants.ResultCode.PinPadUnavailable
   fullName: SIX.TimApi.Constants.ResultCode.PinPadUnavailable
   nameWithType: ResultCode.PinPadUnavailable
+- uid: SIX.TimApi.Constants.ResultCode.ProductNotSupported
+  name: ProductNotSupported
+  href: api/SIX.TimApi.Constants.ResultCode.html#SIX_TimApi_Constants_ResultCode_ProductNotSupported
+  commentId: F:SIX.TimApi.Constants.ResultCode.ProductNotSupported
+  fullName: SIX.TimApi.Constants.ResultCode.ProductNotSupported
+  nameWithType: ResultCode.ProductNotSupported
 - uid: SIX.TimApi.Constants.ResultCode.RequestPending
   name: RequestPending
   href: api/SIX.TimApi.Constants.ResultCode.html#SIX_TimApi_Constants_ResultCode_RequestPending
@@ -7728,6 +7768,78 @@ references:
   isSpec: "True"
   fullName: SIX.TimApi.ConversionHelper.hexStringToByte
   nameWithType: ConversionHelper.hexStringToByte
+- uid: SIX.TimApi.ConversionHelper.QuotedOrNull(System.String)
+  name: QuotedOrNull(String)
+  href: api/SIX.TimApi.ConversionHelper.html#SIX_TimApi_ConversionHelper_QuotedOrNull_System_String_
+  commentId: M:SIX.TimApi.ConversionHelper.QuotedOrNull(System.String)
+  fullName: SIX.TimApi.ConversionHelper.QuotedOrNull(System.String)
+  nameWithType: ConversionHelper.QuotedOrNull(String)
+- uid: SIX.TimApi.ConversionHelper.QuotedOrNull*
+  name: QuotedOrNull
+  href: api/SIX.TimApi.ConversionHelper.html#SIX_TimApi_ConversionHelper_QuotedOrNull_
+  commentId: Overload:SIX.TimApi.ConversionHelper.QuotedOrNull
+  isSpec: "True"
+  fullName: SIX.TimApi.ConversionHelper.QuotedOrNull
+  nameWithType: ConversionHelper.QuotedOrNull
+- uid: SIX.TimApi.ConversionHelper.ToString*
+  name: ToString
+  href: api/SIX.TimApi.ConversionHelper.html#SIX_TimApi_ConversionHelper_ToString_
+  commentId: Overload:SIX.TimApi.ConversionHelper.ToString
+  isSpec: "True"
+  fullName: SIX.TimApi.ConversionHelper.ToString
+  nameWithType: ConversionHelper.ToString
+- uid: SIX.TimApi.ConversionHelper.ToString``1(``0)
+  name: ToString<T>(T)
+  href: api/SIX.TimApi.ConversionHelper.html#SIX_TimApi_ConversionHelper_ToString__1___0_
+  commentId: M:SIX.TimApi.ConversionHelper.ToString``1(``0)
+  name.vb: ToString(Of T)(T)
+  fullName: SIX.TimApi.ConversionHelper.ToString<T>(T)
+  fullName.vb: SIX.TimApi.ConversionHelper.ToString(Of T)(T)
+  nameWithType: ConversionHelper.ToString<T>(T)
+  nameWithType.vb: ConversionHelper.ToString(Of T)(T)
+- uid: SIX.TimApi.ConversionHelper.ToString``1(System.Collections.Generic.List{``0})
+  name: ToString<T>(List<T>)
+  href: api/SIX.TimApi.ConversionHelper.html#SIX_TimApi_ConversionHelper_ToString__1_System_Collections_Generic_List___0__
+  commentId: M:SIX.TimApi.ConversionHelper.ToString``1(System.Collections.Generic.List{``0})
+  name.vb: ToString(Of T)(List(Of T))
+  fullName: SIX.TimApi.ConversionHelper.ToString<T>(System.Collections.Generic.List<T>)
+  fullName.vb: SIX.TimApi.ConversionHelper.ToString(Of T)(System.Collections.Generic.List(Of T))
+  nameWithType: ConversionHelper.ToString<T>(List<T>)
+  nameWithType.vb: ConversionHelper.ToString(Of T)(List(Of T))
+- uid: SIX.TimApi.ConversionHelper.ToString``2(System.Collections.Generic.Dictionary{``0,``1})
+  name: ToString<T1, T2>(Dictionary<T1, T2>)
+  href: api/SIX.TimApi.ConversionHelper.html#SIX_TimApi_ConversionHelper_ToString__2_System_Collections_Generic_Dictionary___0___1__
+  commentId: M:SIX.TimApi.ConversionHelper.ToString``2(System.Collections.Generic.Dictionary{``0,``1})
+  name.vb: ToString(Of T1, T2)(Dictionary(Of T1, T2))
+  fullName: SIX.TimApi.ConversionHelper.ToString<T1, T2>(System.Collections.Generic.Dictionary<T1, T2>)
+  fullName.vb: SIX.TimApi.ConversionHelper.ToString(Of T1, T2)(System.Collections.Generic.Dictionary(Of T1, T2))
+  nameWithType: ConversionHelper.ToString<T1, T2>(Dictionary<T1, T2>)
+  nameWithType.vb: ConversionHelper.ToString(Of T1, T2)(Dictionary(Of T1, T2))
+- uid: SIX.TimApi.ConversionHelper.ToStringOrNull*
+  name: ToStringOrNull
+  href: api/SIX.TimApi.ConversionHelper.html#SIX_TimApi_ConversionHelper_ToStringOrNull_
+  commentId: Overload:SIX.TimApi.ConversionHelper.ToStringOrNull
+  isSpec: "True"
+  fullName: SIX.TimApi.ConversionHelper.ToStringOrNull
+  nameWithType: ConversionHelper.ToStringOrNull
+- uid: SIX.TimApi.ConversionHelper.ToStringOrNull``1(System.Collections.Generic.List{``0})
+  name: ToStringOrNull<T>(List<T>)
+  href: api/SIX.TimApi.ConversionHelper.html#SIX_TimApi_ConversionHelper_ToStringOrNull__1_System_Collections_Generic_List___0__
+  commentId: M:SIX.TimApi.ConversionHelper.ToStringOrNull``1(System.Collections.Generic.List{``0})
+  name.vb: ToStringOrNull(Of T)(List(Of T))
+  fullName: SIX.TimApi.ConversionHelper.ToStringOrNull<T>(System.Collections.Generic.List<T>)
+  fullName.vb: SIX.TimApi.ConversionHelper.ToStringOrNull(Of T)(System.Collections.Generic.List(Of T))
+  nameWithType: ConversionHelper.ToStringOrNull<T>(List<T>)
+  nameWithType.vb: ConversionHelper.ToStringOrNull(Of T)(List(Of T))
+- uid: SIX.TimApi.ConversionHelper.ToStringOrNull``2(System.Collections.Generic.Dictionary{``0,``1})
+  name: ToStringOrNull<T1, T2>(Dictionary<T1, T2>)
+  href: api/SIX.TimApi.ConversionHelper.html#SIX_TimApi_ConversionHelper_ToStringOrNull__2_System_Collections_Generic_Dictionary___0___1__
+  commentId: M:SIX.TimApi.ConversionHelper.ToStringOrNull``2(System.Collections.Generic.Dictionary{``0,``1})
+  name.vb: ToStringOrNull(Of T1, T2)(Dictionary(Of T1, T2))
+  fullName: SIX.TimApi.ConversionHelper.ToStringOrNull<T1, T2>(System.Collections.Generic.Dictionary<T1, T2>)
+  fullName.vb: SIX.TimApi.ConversionHelper.ToStringOrNull(Of T1, T2)(System.Collections.Generic.Dictionary(Of T1, T2))
+  nameWithType: ConversionHelper.ToStringOrNull<T1, T2>(Dictionary<T1, T2>)
+  nameWithType.vb: ConversionHelper.ToStringOrNull(Of T1, T2)(Dictionary(Of T1, T2))
 - uid: SIX.TimApi.Counter
   name: Counter
   href: api/SIX.TimApi.Counter.html
@@ -8580,13 +8692,13 @@ references:
   isSpec: "True"
   fullName: SIX.TimApi.DefaultTerminalListener.MobileTopupCompleted
   nameWithType: DefaultTerminalListener.MobileTopupCompleted
-- uid: SIX.TimApi.DefaultTerminalListener.MobileTopupIssuerInfoCompleted(SIX.TimApi.TimEvent,List{SIX.TimApi.MobileTopupValue})
+- uid: SIX.TimApi.DefaultTerminalListener.MobileTopupIssuerInfoCompleted(SIX.TimApi.TimEvent,System.Collections.Generic.List{SIX.TimApi.MobileTopupValue})
   name: MobileTopupIssuerInfoCompleted(TimEvent, List<MobileTopupValue>)
-  href: api/SIX.TimApi.DefaultTerminalListener.html#SIX_TimApi_DefaultTerminalListener_MobileTopupIssuerInfoCompleted_SIX_TimApi_TimEvent_List_SIX_TimApi_MobileTopupValue__
-  commentId: M:SIX.TimApi.DefaultTerminalListener.MobileTopupIssuerInfoCompleted(SIX.TimApi.TimEvent,List{SIX.TimApi.MobileTopupValue})
+  href: api/SIX.TimApi.DefaultTerminalListener.html#SIX_TimApi_DefaultTerminalListener_MobileTopupIssuerInfoCompleted_SIX_TimApi_TimEvent_System_Collections_Generic_List_SIX_TimApi_MobileTopupValue__
+  commentId: M:SIX.TimApi.DefaultTerminalListener.MobileTopupIssuerInfoCompleted(SIX.TimApi.TimEvent,System.Collections.Generic.List{SIX.TimApi.MobileTopupValue})
   name.vb: MobileTopupIssuerInfoCompleted(TimEvent, List(Of MobileTopupValue))
-  fullName: SIX.TimApi.DefaultTerminalListener.MobileTopupIssuerInfoCompleted(SIX.TimApi.TimEvent, List<SIX.TimApi.MobileTopupValue>)
-  fullName.vb: SIX.TimApi.DefaultTerminalListener.MobileTopupIssuerInfoCompleted(SIX.TimApi.TimEvent, List(Of SIX.TimApi.MobileTopupValue))
+  fullName: SIX.TimApi.DefaultTerminalListener.MobileTopupIssuerInfoCompleted(SIX.TimApi.TimEvent, System.Collections.Generic.List<SIX.TimApi.MobileTopupValue>)
+  fullName.vb: SIX.TimApi.DefaultTerminalListener.MobileTopupIssuerInfoCompleted(SIX.TimApi.TimEvent, System.Collections.Generic.List(Of SIX.TimApi.MobileTopupValue))
   nameWithType: DefaultTerminalListener.MobileTopupIssuerInfoCompleted(TimEvent, List<MobileTopupValue>)
   nameWithType.vb: DefaultTerminalListener.MobileTopupIssuerInfoCompleted(TimEvent, List(Of MobileTopupValue))
 - uid: SIX.TimApi.DefaultTerminalListener.MobileTopupIssuerInfoCompleted*
@@ -8661,13 +8773,13 @@ references:
   isSpec: "True"
   fullName: SIX.TimApi.DefaultTerminalListener.PrintReceipts
   nameWithType: DefaultTerminalListener.PrintReceipts
-- uid: SIX.TimApi.DefaultTerminalListener.ProvideLoyaltyBasketCompleted(SIX.TimApi.TimEvent,List{SIX.TimApi.LoyaltyItem})
+- uid: SIX.TimApi.DefaultTerminalListener.ProvideLoyaltyBasketCompleted(SIX.TimApi.TimEvent,System.Collections.Generic.List{SIX.TimApi.LoyaltyItem})
   name: ProvideLoyaltyBasketCompleted(TimEvent, List<LoyaltyItem>)
-  href: api/SIX.TimApi.DefaultTerminalListener.html#SIX_TimApi_DefaultTerminalListener_ProvideLoyaltyBasketCompleted_SIX_TimApi_TimEvent_List_SIX_TimApi_LoyaltyItem__
-  commentId: M:SIX.TimApi.DefaultTerminalListener.ProvideLoyaltyBasketCompleted(SIX.TimApi.TimEvent,List{SIX.TimApi.LoyaltyItem})
+  href: api/SIX.TimApi.DefaultTerminalListener.html#SIX_TimApi_DefaultTerminalListener_ProvideLoyaltyBasketCompleted_SIX_TimApi_TimEvent_System_Collections_Generic_List_SIX_TimApi_LoyaltyItem__
+  commentId: M:SIX.TimApi.DefaultTerminalListener.ProvideLoyaltyBasketCompleted(SIX.TimApi.TimEvent,System.Collections.Generic.List{SIX.TimApi.LoyaltyItem})
   name.vb: ProvideLoyaltyBasketCompleted(TimEvent, List(Of LoyaltyItem))
-  fullName: SIX.TimApi.DefaultTerminalListener.ProvideLoyaltyBasketCompleted(SIX.TimApi.TimEvent, List<SIX.TimApi.LoyaltyItem>)
-  fullName.vb: SIX.TimApi.DefaultTerminalListener.ProvideLoyaltyBasketCompleted(SIX.TimApi.TimEvent, List(Of SIX.TimApi.LoyaltyItem))
+  fullName: SIX.TimApi.DefaultTerminalListener.ProvideLoyaltyBasketCompleted(SIX.TimApi.TimEvent, System.Collections.Generic.List<SIX.TimApi.LoyaltyItem>)
+  fullName.vb: SIX.TimApi.DefaultTerminalListener.ProvideLoyaltyBasketCompleted(SIX.TimApi.TimEvent, System.Collections.Generic.List(Of SIX.TimApi.LoyaltyItem))
   nameWithType: DefaultTerminalListener.ProvideLoyaltyBasketCompleted(TimEvent, List<LoyaltyItem>)
   nameWithType.vb: DefaultTerminalListener.ProvideLoyaltyBasketCompleted(TimEvent, List(Of LoyaltyItem))
 - uid: SIX.TimApi.DefaultTerminalListener.ProvideLoyaltyBasketCompleted*
@@ -8755,11 +8867,11 @@ references:
   isSpec: "True"
   fullName: SIX.TimApi.DefaultTerminalListener.RequestAliasCompleted
   nameWithType: DefaultTerminalListener.RequestAliasCompleted
-- uid: SIX.TimApi.DefaultTerminalListener.RequestCompleted(SIX.TimApi.TimEvent,Object)
+- uid: SIX.TimApi.DefaultTerminalListener.RequestCompleted(SIX.TimApi.TimEvent,System.Object)
   name: RequestCompleted(TimEvent, Object)
-  href: api/SIX.TimApi.DefaultTerminalListener.html#SIX_TimApi_DefaultTerminalListener_RequestCompleted_SIX_TimApi_TimEvent_Object_
-  commentId: M:SIX.TimApi.DefaultTerminalListener.RequestCompleted(SIX.TimApi.TimEvent,Object)
-  fullName: SIX.TimApi.DefaultTerminalListener.RequestCompleted(SIX.TimApi.TimEvent, Object)
+  href: api/SIX.TimApi.DefaultTerminalListener.html#SIX_TimApi_DefaultTerminalListener_RequestCompleted_SIX_TimApi_TimEvent_System_Object_
+  commentId: M:SIX.TimApi.DefaultTerminalListener.RequestCompleted(SIX.TimApi.TimEvent,System.Object)
+  fullName: SIX.TimApi.DefaultTerminalListener.RequestCompleted(SIX.TimApi.TimEvent, System.Object)
   nameWithType: DefaultTerminalListener.RequestCompleted(TimEvent, Object)
 - uid: SIX.TimApi.DefaultTerminalListener.RequestCompleted*
   name: RequestCompleted
@@ -8794,13 +8906,13 @@ references:
   isSpec: "True"
   fullName: SIX.TimApi.DefaultTerminalListener.Screenshot
   nameWithType: DefaultTerminalListener.Screenshot
-- uid: SIX.TimApi.DefaultTerminalListener.SendCardCommandCompleted(SIX.TimApi.TimEvent,List{SIX.TimApi.CommandResponse})
+- uid: SIX.TimApi.DefaultTerminalListener.SendCardCommandCompleted(SIX.TimApi.TimEvent,System.Collections.Generic.List{SIX.TimApi.CommandResponse})
   name: SendCardCommandCompleted(TimEvent, List<CommandResponse>)
-  href: api/SIX.TimApi.DefaultTerminalListener.html#SIX_TimApi_DefaultTerminalListener_SendCardCommandCompleted_SIX_TimApi_TimEvent_List_SIX_TimApi_CommandResponse__
-  commentId: M:SIX.TimApi.DefaultTerminalListener.SendCardCommandCompleted(SIX.TimApi.TimEvent,List{SIX.TimApi.CommandResponse})
+  href: api/SIX.TimApi.DefaultTerminalListener.html#SIX_TimApi_DefaultTerminalListener_SendCardCommandCompleted_SIX_TimApi_TimEvent_System_Collections_Generic_List_SIX_TimApi_CommandResponse__
+  commentId: M:SIX.TimApi.DefaultTerminalListener.SendCardCommandCompleted(SIX.TimApi.TimEvent,System.Collections.Generic.List{SIX.TimApi.CommandResponse})
   name.vb: SendCardCommandCompleted(TimEvent, List(Of CommandResponse))
-  fullName: SIX.TimApi.DefaultTerminalListener.SendCardCommandCompleted(SIX.TimApi.TimEvent, List<SIX.TimApi.CommandResponse>)
-  fullName.vb: SIX.TimApi.DefaultTerminalListener.SendCardCommandCompleted(SIX.TimApi.TimEvent, List(Of SIX.TimApi.CommandResponse))
+  fullName: SIX.TimApi.DefaultTerminalListener.SendCardCommandCompleted(SIX.TimApi.TimEvent, System.Collections.Generic.List<SIX.TimApi.CommandResponse>)
+  fullName.vb: SIX.TimApi.DefaultTerminalListener.SendCardCommandCompleted(SIX.TimApi.TimEvent, System.Collections.Generic.List(Of SIX.TimApi.CommandResponse))
   nameWithType: DefaultTerminalListener.SendCardCommandCompleted(TimEvent, List<CommandResponse>)
   nameWithType.vb: DefaultTerminalListener.SendCardCommandCompleted(TimEvent, List(Of CommandResponse))
 - uid: SIX.TimApi.DefaultTerminalListener.SendCardCommandCompleted*
@@ -9445,12 +9557,12 @@ references:
   commentId: T:SIX.TimApi.FeaturesPayment
   fullName: SIX.TimApi.FeaturesPayment
   nameWithType: FeaturesPayment
-- uid: SIX.TimApi.FeaturesPayment.#ctor(System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean)
-  name: FeaturesPayment(Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean)
-  href: api/SIX.TimApi.FeaturesPayment.html#SIX_TimApi_FeaturesPayment__ctor_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_
-  commentId: M:SIX.TimApi.FeaturesPayment.#ctor(System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean)
-  fullName: SIX.TimApi.FeaturesPayment.FeaturesPayment(System.Boolean, System.Boolean, System.Boolean, System.Boolean, System.Boolean, System.Boolean, System.Boolean, System.Boolean, System.Boolean)
-  nameWithType: FeaturesPayment.FeaturesPayment(Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean)
+- uid: SIX.TimApi.FeaturesPayment.#ctor(System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean)
+  name: FeaturesPayment(Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean)
+  href: api/SIX.TimApi.FeaturesPayment.html#SIX_TimApi_FeaturesPayment__ctor_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_
+  commentId: M:SIX.TimApi.FeaturesPayment.#ctor(System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean)
+  fullName: SIX.TimApi.FeaturesPayment.FeaturesPayment(System.Boolean, System.Boolean, System.Boolean, System.Boolean, System.Boolean, System.Boolean, System.Boolean, System.Boolean, System.Boolean, System.Boolean, System.Boolean)
+  nameWithType: FeaturesPayment.FeaturesPayment(Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean)
 - uid: SIX.TimApi.FeaturesPayment.#ctor*
   name: FeaturesPayment
   href: api/SIX.TimApi.FeaturesPayment.html#SIX_TimApi_FeaturesPayment__ctor_
@@ -9510,6 +9622,32 @@ references:
   isSpec: "True"
   fullName: SIX.TimApi.FeaturesPayment.canEp2DeclinedReceipts
   nameWithType: FeaturesPayment.canEp2DeclinedReceipts
+- uid: SIX.TimApi.FeaturesPayment.canEp2Giftcard
+  name: canEp2Giftcard()
+  href: api/SIX.TimApi.FeaturesPayment.html#SIX_TimApi_FeaturesPayment_canEp2Giftcard
+  commentId: M:SIX.TimApi.FeaturesPayment.canEp2Giftcard
+  fullName: SIX.TimApi.FeaturesPayment.canEp2Giftcard()
+  nameWithType: FeaturesPayment.canEp2Giftcard()
+- uid: SIX.TimApi.FeaturesPayment.canEp2Giftcard*
+  name: canEp2Giftcard
+  href: api/SIX.TimApi.FeaturesPayment.html#SIX_TimApi_FeaturesPayment_canEp2Giftcard_
+  commentId: Overload:SIX.TimApi.FeaturesPayment.canEp2Giftcard
+  isSpec: "True"
+  fullName: SIX.TimApi.FeaturesPayment.canEp2Giftcard
+  nameWithType: FeaturesPayment.canEp2Giftcard
+- uid: SIX.TimApi.FeaturesPayment.canEp2Installment
+  name: canEp2Installment()
+  href: api/SIX.TimApi.FeaturesPayment.html#SIX_TimApi_FeaturesPayment_canEp2Installment
+  commentId: M:SIX.TimApi.FeaturesPayment.canEp2Installment
+  fullName: SIX.TimApi.FeaturesPayment.canEp2Installment()
+  nameWithType: FeaturesPayment.canEp2Installment()
+- uid: SIX.TimApi.FeaturesPayment.canEp2Installment*
+  name: canEp2Installment
+  href: api/SIX.TimApi.FeaturesPayment.html#SIX_TimApi_FeaturesPayment_canEp2Installment_
+  commentId: Overload:SIX.TimApi.FeaturesPayment.canEp2Installment
+  isSpec: "True"
+  fullName: SIX.TimApi.FeaturesPayment.canEp2Installment
+  nameWithType: FeaturesPayment.canEp2Installment
 - uid: SIX.TimApi.FeaturesPayment.canEp2MultiAccountSelection
   name: canEp2MultiAccountSelection()
   href: api/SIX.TimApi.FeaturesPayment.html#SIX_TimApi_FeaturesPayment_canEp2MultiAccountSelection
@@ -11501,6 +11639,19 @@ references:
   isSpec: "True"
   fullName: SIX.TimApi.LoyaltyInformation.LoyaltyNumber
   nameWithType: LoyaltyInformation.LoyaltyNumber
+- uid: SIX.TimApi.LoyaltyInformation.ToString
+  name: ToString()
+  href: api/SIX.TimApi.LoyaltyInformation.html#SIX_TimApi_LoyaltyInformation_ToString
+  commentId: M:SIX.TimApi.LoyaltyInformation.ToString
+  fullName: SIX.TimApi.LoyaltyInformation.ToString()
+  nameWithType: LoyaltyInformation.ToString()
+- uid: SIX.TimApi.LoyaltyInformation.ToString*
+  name: ToString
+  href: api/SIX.TimApi.LoyaltyInformation.html#SIX_TimApi_LoyaltyInformation_ToString_
+  commentId: Overload:SIX.TimApi.LoyaltyInformation.ToString
+  isSpec: "True"
+  fullName: SIX.TimApi.LoyaltyInformation.ToString
+  nameWithType: LoyaltyInformation.ToString
 - uid: SIX.TimApi.LoyaltyInformation.Value
   name: Value
   href: api/SIX.TimApi.LoyaltyInformation.html#SIX_TimApi_LoyaltyInformation_Value
@@ -13193,6 +13344,12 @@ references:
   commentId: F:SIX.TimApi.Receipts.CustomReceiptFormatter.TextType.FIELD_CARD_NUMBER_PRINTABLE_MERCHANT
   fullName: SIX.TimApi.Receipts.CustomReceiptFormatter.TextType.FIELD_CARD_NUMBER_PRINTABLE_MERCHANT
   nameWithType: CustomReceiptFormatter.TextType.FIELD_CARD_NUMBER_PRINTABLE_MERCHANT
+- uid: SIX.TimApi.Receipts.CustomReceiptFormatter.TextType.FIELD_CARD_PRODUCT_TYPE
+  name: FIELD_CARD_PRODUCT_TYPE
+  href: api/SIX.TimApi.Receipts.CustomReceiptFormatter.TextType.html#SIX_TimApi_Receipts_CustomReceiptFormatter_TextType_FIELD_CARD_PRODUCT_TYPE
+  commentId: F:SIX.TimApi.Receipts.CustomReceiptFormatter.TextType.FIELD_CARD_PRODUCT_TYPE
+  fullName: SIX.TimApi.Receipts.CustomReceiptFormatter.TextType.FIELD_CARD_PRODUCT_TYPE
+  nameWithType: CustomReceiptFormatter.TextType.FIELD_CARD_PRODUCT_TYPE
 - uid: SIX.TimApi.Receipts.CustomReceiptFormatter.TextType.FIELD_CLERK_IDENTIFIER
   name: FIELD_CLERK_IDENTIFIER
   href: api/SIX.TimApi.Receipts.CustomReceiptFormatter.TextType.html#SIX_TimApi_Receipts_CustomReceiptFormatter_TextType_FIELD_CLERK_IDENTIFIER
@@ -15289,11 +15446,11 @@ references:
   isSpec: "True"
   fullName: SIX.TimApi.Terminal.AddEcrData
   nameWithType: Terminal.AddEcrData
-- uid: SIX.TimApi.Terminal.AddListener(TerminalListener)
+- uid: SIX.TimApi.Terminal.AddListener(SIX.TimApi.TerminalListener)
   name: AddListener(TerminalListener)
-  href: api/SIX.TimApi.Terminal.html#SIX_TimApi_Terminal_AddListener_TerminalListener_
-  commentId: M:SIX.TimApi.Terminal.AddListener(TerminalListener)
-  fullName: SIX.TimApi.Terminal.AddListener(TerminalListener)
+  href: api/SIX.TimApi.Terminal.html#SIX_TimApi_Terminal_AddListener_SIX_TimApi_TerminalListener_
+  commentId: M:SIX.TimApi.Terminal.AddListener(SIX.TimApi.TerminalListener)
+  fullName: SIX.TimApi.Terminal.AddListener(SIX.TimApi.TerminalListener)
   nameWithType: Terminal.AddListener(TerminalListener)
 - uid: SIX.TimApi.Terminal.AddListener*
   name: AddListener
@@ -17766,11 +17923,11 @@ references:
   commentId: T:SIX.TimApi.Terminal.ReconfigCompletedEventHandler
   fullName: SIX.TimApi.Terminal.ReconfigCompletedEventHandler
   nameWithType: Terminal.ReconfigCompletedEventHandler
-- uid: SIX.TimApi.Terminal.RemoveListener(TerminalListener)
+- uid: SIX.TimApi.Terminal.RemoveListener(SIX.TimApi.TerminalListener)
   name: RemoveListener(TerminalListener)
-  href: api/SIX.TimApi.Terminal.html#SIX_TimApi_Terminal_RemoveListener_TerminalListener_
-  commentId: M:SIX.TimApi.Terminal.RemoveListener(TerminalListener)
-  fullName: SIX.TimApi.Terminal.RemoveListener(TerminalListener)
+  href: api/SIX.TimApi.Terminal.html#SIX_TimApi_Terminal_RemoveListener_SIX_TimApi_TerminalListener_
+  commentId: M:SIX.TimApi.Terminal.RemoveListener(SIX.TimApi.TerminalListener)
+  fullName: SIX.TimApi.Terminal.RemoveListener(SIX.TimApi.TerminalListener)
   nameWithType: Terminal.RemoveListener(TerminalListener)
 - uid: SIX.TimApi.Terminal.RemoveListener*
   name: RemoveListener
@@ -19013,13 +19170,13 @@ references:
   isSpec: "True"
   fullName: SIX.TimApi.TerminalListener.MobileTopupCompleted
   nameWithType: TerminalListener.MobileTopupCompleted
-- uid: SIX.TimApi.TerminalListener.MobileTopupIssuerInfoCompleted(SIX.TimApi.TimEvent,List{SIX.TimApi.MobileTopupValue})
+- uid: SIX.TimApi.TerminalListener.MobileTopupIssuerInfoCompleted(SIX.TimApi.TimEvent,System.Collections.Generic.List{SIX.TimApi.MobileTopupValue})
   name: MobileTopupIssuerInfoCompleted(TimEvent, List<MobileTopupValue>)
-  href: api/SIX.TimApi.TerminalListener.html#SIX_TimApi_TerminalListener_MobileTopupIssuerInfoCompleted_SIX_TimApi_TimEvent_List_SIX_TimApi_MobileTopupValue__
-  commentId: M:SIX.TimApi.TerminalListener.MobileTopupIssuerInfoCompleted(SIX.TimApi.TimEvent,List{SIX.TimApi.MobileTopupValue})
+  href: api/SIX.TimApi.TerminalListener.html#SIX_TimApi_TerminalListener_MobileTopupIssuerInfoCompleted_SIX_TimApi_TimEvent_System_Collections_Generic_List_SIX_TimApi_MobileTopupValue__
+  commentId: M:SIX.TimApi.TerminalListener.MobileTopupIssuerInfoCompleted(SIX.TimApi.TimEvent,System.Collections.Generic.List{SIX.TimApi.MobileTopupValue})
   name.vb: MobileTopupIssuerInfoCompleted(TimEvent, List(Of MobileTopupValue))
-  fullName: SIX.TimApi.TerminalListener.MobileTopupIssuerInfoCompleted(SIX.TimApi.TimEvent, List<SIX.TimApi.MobileTopupValue>)
-  fullName.vb: SIX.TimApi.TerminalListener.MobileTopupIssuerInfoCompleted(SIX.TimApi.TimEvent, List(Of SIX.TimApi.MobileTopupValue))
+  fullName: SIX.TimApi.TerminalListener.MobileTopupIssuerInfoCompleted(SIX.TimApi.TimEvent, System.Collections.Generic.List<SIX.TimApi.MobileTopupValue>)
+  fullName.vb: SIX.TimApi.TerminalListener.MobileTopupIssuerInfoCompleted(SIX.TimApi.TimEvent, System.Collections.Generic.List(Of SIX.TimApi.MobileTopupValue))
   nameWithType: TerminalListener.MobileTopupIssuerInfoCompleted(TimEvent, List<MobileTopupValue>)
   nameWithType.vb: TerminalListener.MobileTopupIssuerInfoCompleted(TimEvent, List(Of MobileTopupValue))
 - uid: SIX.TimApi.TerminalListener.MobileTopupIssuerInfoCompleted*
@@ -19081,13 +19238,13 @@ references:
   isSpec: "True"
   fullName: SIX.TimApi.TerminalListener.PrintOnTerminalCompleted
   nameWithType: TerminalListener.PrintOnTerminalCompleted
-- uid: SIX.TimApi.TerminalListener.ProvideLoyaltyBasketCompleted(SIX.TimApi.TimEvent,List{SIX.TimApi.LoyaltyItem})
+- uid: SIX.TimApi.TerminalListener.ProvideLoyaltyBasketCompleted(SIX.TimApi.TimEvent,System.Collections.Generic.List{SIX.TimApi.LoyaltyItem})
   name: ProvideLoyaltyBasketCompleted(TimEvent, List<LoyaltyItem>)
-  href: api/SIX.TimApi.TerminalListener.html#SIX_TimApi_TerminalListener_ProvideLoyaltyBasketCompleted_SIX_TimApi_TimEvent_List_SIX_TimApi_LoyaltyItem__
-  commentId: M:SIX.TimApi.TerminalListener.ProvideLoyaltyBasketCompleted(SIX.TimApi.TimEvent,List{SIX.TimApi.LoyaltyItem})
+  href: api/SIX.TimApi.TerminalListener.html#SIX_TimApi_TerminalListener_ProvideLoyaltyBasketCompleted_SIX_TimApi_TimEvent_System_Collections_Generic_List_SIX_TimApi_LoyaltyItem__
+  commentId: M:SIX.TimApi.TerminalListener.ProvideLoyaltyBasketCompleted(SIX.TimApi.TimEvent,System.Collections.Generic.List{SIX.TimApi.LoyaltyItem})
   name.vb: ProvideLoyaltyBasketCompleted(TimEvent, List(Of LoyaltyItem))
-  fullName: SIX.TimApi.TerminalListener.ProvideLoyaltyBasketCompleted(SIX.TimApi.TimEvent, List<SIX.TimApi.LoyaltyItem>)
-  fullName.vb: SIX.TimApi.TerminalListener.ProvideLoyaltyBasketCompleted(SIX.TimApi.TimEvent, List(Of SIX.TimApi.LoyaltyItem))
+  fullName: SIX.TimApi.TerminalListener.ProvideLoyaltyBasketCompleted(SIX.TimApi.TimEvent, System.Collections.Generic.List<SIX.TimApi.LoyaltyItem>)
+  fullName.vb: SIX.TimApi.TerminalListener.ProvideLoyaltyBasketCompleted(SIX.TimApi.TimEvent, System.Collections.Generic.List(Of SIX.TimApi.LoyaltyItem))
   nameWithType: TerminalListener.ProvideLoyaltyBasketCompleted(TimEvent, List<LoyaltyItem>)
   nameWithType.vb: TerminalListener.ProvideLoyaltyBasketCompleted(TimEvent, List(Of LoyaltyItem))
 - uid: SIX.TimApi.TerminalListener.ProvideLoyaltyBasketCompleted*
@@ -19201,13 +19358,13 @@ references:
   isSpec: "True"
   fullName: SIX.TimApi.TerminalListener.Screenshot
   nameWithType: TerminalListener.Screenshot
-- uid: SIX.TimApi.TerminalListener.SendCardCommandCompleted(SIX.TimApi.TimEvent,List{SIX.TimApi.CommandResponse})
+- uid: SIX.TimApi.TerminalListener.SendCardCommandCompleted(SIX.TimApi.TimEvent,System.Collections.Generic.List{SIX.TimApi.CommandResponse})
   name: SendCardCommandCompleted(TimEvent, List<CommandResponse>)
-  href: api/SIX.TimApi.TerminalListener.html#SIX_TimApi_TerminalListener_SendCardCommandCompleted_SIX_TimApi_TimEvent_List_SIX_TimApi_CommandResponse__
-  commentId: M:SIX.TimApi.TerminalListener.SendCardCommandCompleted(SIX.TimApi.TimEvent,List{SIX.TimApi.CommandResponse})
+  href: api/SIX.TimApi.TerminalListener.html#SIX_TimApi_TerminalListener_SendCardCommandCompleted_SIX_TimApi_TimEvent_System_Collections_Generic_List_SIX_TimApi_CommandResponse__
+  commentId: M:SIX.TimApi.TerminalListener.SendCardCommandCompleted(SIX.TimApi.TimEvent,System.Collections.Generic.List{SIX.TimApi.CommandResponse})
   name.vb: SendCardCommandCompleted(TimEvent, List(Of CommandResponse))
-  fullName: SIX.TimApi.TerminalListener.SendCardCommandCompleted(SIX.TimApi.TimEvent, List<SIX.TimApi.CommandResponse>)
-  fullName.vb: SIX.TimApi.TerminalListener.SendCardCommandCompleted(SIX.TimApi.TimEvent, List(Of SIX.TimApi.CommandResponse))
+  fullName: SIX.TimApi.TerminalListener.SendCardCommandCompleted(SIX.TimApi.TimEvent, System.Collections.Generic.List<SIX.TimApi.CommandResponse>)
+  fullName.vb: SIX.TimApi.TerminalListener.SendCardCommandCompleted(SIX.TimApi.TimEvent, System.Collections.Generic.List(Of SIX.TimApi.CommandResponse))
   nameWithType: TerminalListener.SendCardCommandCompleted(TimEvent, List<CommandResponse>)
   nameWithType.vb: TerminalListener.SendCardCommandCompleted(TimEvent, List(Of CommandResponse))
 - uid: SIX.TimApi.TerminalListener.SendCardCommandCompleted*
@@ -20653,6 +20810,19 @@ references:
   isSpec: "True"
   fullName: SIX.TimApi.TransactionData.EcrSeqCounter
   nameWithType: TransactionData.EcrSeqCounter
+- uid: SIX.TimApi.TransactionData.EcrSeqCounterNullable
+  name: EcrSeqCounterNullable
+  href: api/SIX.TimApi.TransactionData.html#SIX_TimApi_TransactionData_EcrSeqCounterNullable
+  commentId: P:SIX.TimApi.TransactionData.EcrSeqCounterNullable
+  fullName: SIX.TimApi.TransactionData.EcrSeqCounterNullable
+  nameWithType: TransactionData.EcrSeqCounterNullable
+- uid: SIX.TimApi.TransactionData.EcrSeqCounterNullable*
+  name: EcrSeqCounterNullable
+  href: api/SIX.TimApi.TransactionData.html#SIX_TimApi_TransactionData_EcrSeqCounterNullable_
+  commentId: Overload:SIX.TimApi.TransactionData.EcrSeqCounterNullable
+  isSpec: "True"
+  fullName: SIX.TimApi.TransactionData.EcrSeqCounterNullable
+  nameWithType: TransactionData.EcrSeqCounterNullable
 - uid: SIX.TimApi.TransactionData.InstallmentAllowed
   name: InstallmentAllowed
   href: api/SIX.TimApi.TransactionData.html#SIX_TimApi_TransactionData_InstallmentAllowed
