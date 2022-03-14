@@ -58,6 +58,8 @@ var terminal_8h =
     [ "ta_terminal_get_customer_data", "terminal_8h.html#a66dc7444c1ed5335c79f5f7a7c198f47", null ],
     [ "ta_terminal_get_ecr_data", "terminal_8h.html#a1910dfc8531b666df50282ccdc5cf77c", null ],
     [ "ta_terminal_get_features", "terminal_8h.html#a931b1e9f66e7a4a93d00711ee19b9b16", null ],
+    [ "ta_terminal_get_item_textcode", "terminal_8h.html#ad6d8b409ee9ff76584b51a6480c6d73f", null ],
+    [ "ta_terminal_get_item_textcode_description", "terminal_8h.html#a5f94e6b7c9ee42835e46a038b35e9207", null ],
     [ "ta_terminal_get_license", "terminal_8h.html#a82991dab20dcd7d668dcabe991aee125", null ],
     [ "ta_terminal_get_merchant_options", "terminal_8h.html#ae7ec02911febaf4b2608becbcf1bf244", null ],
     [ "ta_terminal_get_pos_id", "terminal_8h.html#accd533c2cb0555f69d38d5f650384251", null ],
@@ -147,6 +149,8 @@ var terminal_8h =
     [ "ta_terminal_transaction_async", "terminal_8h.html#a1989dbd83629a0d617e76d3e79b42735", null ],
     [ "ta_terminal_transaction_cashback", "terminal_8h.html#a93b2ac765e7fb0b3887933063c02e168", null ],
     [ "ta_terminal_transaction_cashback_async", "terminal_8h.html#aa6db7246cc286df37bc52794fdc3fb6c", null ],
+    [ "ta_terminal_transaction_info_request", "terminal_8h.html#ab31f1534a28e2762a49f711238920fcd", null ],
+    [ "ta_terminal_transaction_info_request_async", "terminal_8h.html#af8b571e78dbcccad8cd560a1032f1b0f", null ],
     [ "ta_terminal_transaction_tip", "terminal_8h.html#a775b0f277fe0f861989096e767e8b246", null ],
     [ "ta_terminal_transaction_tip_async", "terminal_8h.html#af3716007c375e99037183861eadcf942", null ]
 ];

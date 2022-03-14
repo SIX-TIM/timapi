@@ -66,6 +66,7 @@ var resource__id_8h =
       [ "ta_c_rid_petrol_welcome_closed", "resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9af5bdce178ba7b133fb1fef0d32ee0968", null ],
       [ "ta_c_rid_petrol_welcome", "resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9a647a09135ad0002aa4897a2c196eb2e5", null ],
       [ "ta_c_rid_petrol_welcome_shop_open", "resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9a20dee852c80dc3c1b17fbce9e19f1304", null ],
+      [ "ta_c_rid_petrol_welcome_insert_card_receipt_not_available", "resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9a1ed28b1b2e24d8beb5a79cca15f110c7", null ],
       [ "ta_c_rid_petrol_banknote_insert_banknote", "resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9ae045490428aaa7f8a4718797e0539afb", null ],
       [ "ta_c_rid_petrol_banknote_credit_amount", "resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9a33c1b186155a0cb9ff34c00c9c8759f0", null ],
       [ "ta_c_rid_petrol_banknote_credit_amount_insert_banknote", "resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9accea8bd51a301811c46d98c2de0c3135", null ],

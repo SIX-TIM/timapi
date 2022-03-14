@@ -906,6 +906,22 @@ $(document).ready(function(){initNavTree('search.html',''); initResizable(); });
     <field name="text">Discount ID if AmountDiscount item Object instance of type basket_item discount_id Pointer to variable to write object instance to Object instance is of type string and is not retained Object instance is ta_object_invalid if amount discount is not set or discount item in amount discount is not set ta_c_rc_ok Object instance written to prod_description ta_c_rc_invalid_argument item is ta_object_invalid ta_c_rc_invalid_argument item is not of type basket_item ta_c_rc_invalid_argument discount_id is null-pointer</field>
   </doc>
   <doc>
+    <field name="type">function</field>
+    <field name="name">ta_basket_item_get_petrol_pump_number</field>
+    <field name="args">(ta_object_t item, ta_object_t *petrol_pump_number)</field>
+    <field name="url">basket__item_8h.html#ab6f19240e69c2702f860717cc297ebc5</field>
+    <field name="keywords">ta_basket_item_get_petrol_pump_number</field>
+    <field name="text">Specifies the used petrol pump number used in a sixml Item as part of a sixml Basket item Object instance of type basket_item petrol_pump_number Pointer to variable to write object instance to Object instance is of type integer and is not retained Object instance is ta_object_invalid if value is not set in item ta_c_rc_ok Object instance written to petrol_pump_number ta_c_rc_invalid_argument item is ta_object_invalid ta_c_rc_invalid_argument item is not of type basket_item ta_c_rc_invalid_argument petrol_pump_number is null-pointer</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">ta_basket_item_set_petrol_pump_number</field>
+    <field name="args">(ta_object_t item, ta_object_t petrol_pump_number)</field>
+    <field name="url">basket__item_8h.html#a10cad8a02e98dc4886ae7e825240bf83</field>
+    <field name="keywords">ta_basket_item_set_petrol_pump_number</field>
+    <field name="text">Specifies the used petrol pump number used in a sixml Item as part of a sixml Basket item Object instance of type basket_item petrol_pump_number Object instance to set Object instance can be ta_object_invalid to clear the value in item If object instance is not ta_object_invalid is has to be of type integer ta_c_rc_ok Object instance assigned to item ta_c_rc_invalid_argument item is ta_object_invalid ta_c_rc_invalid_argument item is not of type basket_item ta_c_rc_invalid_argument petrol_pump_number is not ta_object_invalid and is not of type integer</field>
+  </doc>
+  <doc>
     <field name="type">file</field>
     <field name="name">brand.h</field>
     <field name="url">brand_8h.html</field>
@@ -1158,6 +1174,38 @@ $(document).ready(function(){initNavTree('search.html',''); initResizable(); });
     <field name="url">card__data_8h.html#a6c3f633f3fd7372806ec583ad8429209</field>
     <field name="keywords">ta_card_data_get_cardholder</field>
     <field name="text">Petrol Cardholder card_data Object instance of type card_data cardholder Pointer to variable to write object instance to Object instance is of type string and is not retained Object instance is ta_object_invalid if value is not set in card_data ta_c_rc_ok Object instance written to asrpd ta_c_rc_invalid_argument card_data is ta_object_invalid ta_c_rc_invalid_argument card_data is not of type card_data ta_c_rc_invalid_argument cardholder is null-pointer</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">ta_card_data_get_account_type</field>
+    <field name="args">(ta_object_t card_data, ta_e_account_type_t *account_type)</field>
+    <field name="url">card__data_8h.html#a93cdc0faec7b446f5bacfc585cf49e67</field>
+    <field name="keywords">ta_card_data_get_account_type</field>
+    <field name="text">Account card_data Object instance of type card_data account_type Pointer to variable to write object instance to ta_c_rc_ok Object instance written to card_product_type ta_c_rc_invalid_argument card_data is ta_object_invalid ta_c_rc_invalid_argument card_data is not of type card_data ta_c_rc_invalid_argument account_type is null-pointer</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">ta_card_data_get_emv_par</field>
+    <field name="args">(ta_object_t card_data, ta_object_t *emv_par)</field>
+    <field name="url">card__data_8h.html#a65b90441770a47d2ca198f9b3a0468db</field>
+    <field name="keywords">ta_card_data_get_emv_par</field>
+    <field name="text">EMV PAR The EMV PAR which can be used in a transaction response to be able the identify if the transaction e.g with a used token PAN is related to a previous transaction performed with the underlying PAN If so both transaction responses will contain the same value in the EmvPar field card_data Object instance of type card_data emv_par Pointer to variable to write object instance to Object instance is of type string and is not retained Object instance is ta_object_invalid if value is not set in card_data ta_c_rc_ok Object instance written to asrpd ta_c_rc_invalid_argument card_data is ta_object_invalid ta_c_rc_invalid_argument card_data is not of type card_data ta_c_rc_invalid_argument emv_par is null-pointer</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">ta_card_data_get_token_pan</field>
+    <field name="args">(ta_object_t card_data, ta_object_t *token_pan)</field>
+    <field name="url">card__data_8h.html#a2732158fb4ea3f721ed3ca8842033c6c</field>
+    <field name="keywords">ta_card_data_get_token_pan</field>
+    <field name="text">Token PAN The token PAN is a tokenized version for an underlaying card PAN If the underlaying payment protocol supports it a payment transaction can be initiated with the token PAN instead of using a card A token PAN is normally generated by a tokenization service either form the acquirer host or the issuer host The TokenPan field is used in a SIXml request message as part of the sixml TransactionData container to trigger a token-based transaction and in a SIXml response message as part of the sixml CardData container for returning token PANs to the ECR The TokenPan field always must be accompanied by a corresponding TokenPanType field card_data Object instance of type card_data token_pan Pointer to variable to write object instance to Object instance is of type string and is not retained Object instance is ta_object_invalid if value is not set in card_data ta_c_rc_ok Object instance written to asrpd ta_c_rc_invalid_argument card_data is ta_object_invalid ta_c_rc_invalid_argument card_data is not of type card_data ta_c_rc_invalid_argument token_pan is null-pointer</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">ta_card_data_get_token_pan_type</field>
+    <field name="args">(ta_object_t card_data, ta_e_token_pan_type_t *token_pan_type)</field>
+    <field name="url">card__data_8h.html#a2778a0f2ca1053b579f0f16bf8bd1163</field>
+    <field name="keywords">ta_card_data_get_token_pan_type</field>
+    <field name="text">Token PAN type To differ the source of a token PAN the TokenPanType field is used in a SIXml request message as part of the sixml TransactionData container and in a SIXml response message as part of the sixml CardData container The TokenPanType field always is transmitted if a TokenPan field is transmitted but must not be transmitted alone card_data Object instance of type card_data token_pan_type Pointer to variable to write object instance to ta_c_rc_ok Object instance written to card_product_type ta_c_rc_invalid_argument card_data is ta_object_invalid ta_c_rc_invalid_argument card_data is not of type card_data ta_c_rc_invalid_argument token_pan_type is null-pointer</field>
   </doc>
   <doc>
     <field name="type">file</field>
@@ -1803,6 +1851,91 @@ $(document).ready(function(){initNavTree('search.html',''); initResizable(); });
   </doc>
   <doc>
     <field name="type">file</field>
+    <field name="name">account_type.h</field>
+    <field name="url">account__type_8h.html</field>
+    <field name="keywords">account_type.h</field>
+    <field name="text">Identifies the selected account If Account Selection is enabled the transaction responses should contain this field Default value is Credit Copyright Worldline</field>
+  </doc>
+  <doc>
+    <field name="type">typedef</field>
+    <field name="name">ta_e_account_type_t</field>
+    <field name="url">account__type_8h.html#a9795d3e48495ced5ffbaee84b8e63d89</field>
+    <field name="keywords">ta_e_account_type_t</field>
+    <field name="text">Identifies the selected account If Account Selection is enabled the transaction responses should contain this field Default value is Credit Specification retail</field>
+  </doc>
+  <doc>
+    <field name="type">enum</field>
+    <field name="name">ta_e_account_type</field>
+    <field name="url">account__type_8h.html#a8137910ca49db2f8b839187d43d39949</field>
+    <field name="keywords">ta_e_account_type</field>
+    <field name="text">Identifies the selected account If Account Selection is enabled the transaction responses should contain this field Default value is Credit Specification retail</field>
+  </doc>
+  <doc>
+    <field name="type">enumvalue</field>
+    <field name="name">ta_c_at_undefined</field>
+    <field name="url">account__type_8h.html#a8137910ca49db2f8b839187d43d39949a2ad2f12abbe86c1ccae0b07d4fc9de36</field>
+    <field name="keywords">ta_c_at_undefined</field>
+    <field name="text">Undefined/invalid value</field>
+  </doc>
+  <doc>
+    <field name="type">enumvalue</field>
+    <field name="name">ta_c_at_cheque</field>
+    <field name="url">account__type_8h.html#a8137910ca49db2f8b839187d43d39949adea399cc44b7dc3a2ecec62d2049cd24</field>
+    <field name="keywords">ta_c_at_cheque</field>
+    <field name="text">Cheque Debit account selected Specification retail</field>
+  </doc>
+  <doc>
+    <field name="type">enumvalue</field>
+    <field name="name">ta_c_at_savings</field>
+    <field name="url">account__type_8h.html#a8137910ca49db2f8b839187d43d39949a36f9ec13a37229cc07fc4f9e782425db</field>
+    <field name="keywords">ta_c_at_savings</field>
+    <field name="text">Savings account selected Specification retail</field>
+  </doc>
+  <doc>
+    <field name="type">enumvalue</field>
+    <field name="name">ta_c_at_credit</field>
+    <field name="url">account__type_8h.html#a8137910ca49db2f8b839187d43d39949acd77dc8fb6cd69f161f826d52b2539d8</field>
+    <field name="keywords">ta_c_at_credit</field>
+    <field name="text">Credit account selected default e.g for non-domestic brands Specification retail</field>
+  </doc>
+  <doc>
+    <field name="type">file</field>
+    <field name="name">account_type.h</field>
+    <field name="url">enum__string__maps_2account__type_8h.html</field>
+    <field name="keywords">account_type.h</field>
+    <field name="text">This file is generated Do not edit Copyright Worldline</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">ta_account_type_e2s</field>
+    <field name="args">(ta_e_account_type_t value)</field>
+    <field name="url">enum__string__maps_2account__type_8h.html#a6664f115ef2a9a64702f639b88758bd1</field>
+    <field name="keywords">ta_account_type_e2s</field>
+    <field name="text">Get String for Enum value value Enum value to get string for String value</field>
+  </doc>
+  <doc>
+    <field name="type">file</field>
+    <field name="name">additional_info_item.h</field>
+    <field name="url">additional__info__item_8h.html</field>
+    <field name="keywords">additional_info_item.h</field>
+    <field name="text"></field>
+  </doc>
+  <doc>
+    <field name="type">typedef</field>
+    <field name="name">ta_e_additional_info_item_t</field>
+    <field name="url">additional__info__item_8h.html#a9d6cdb568e142d26d0df2af62b386e02</field>
+    <field name="keywords">ta_e_additional_info_item_t</field>
+    <field name="text">Additional info item</field>
+  </doc>
+  <doc>
+    <field name="type">enum</field>
+    <field name="name">ta_e_additional_info_item</field>
+    <field name="url">additional__info__item_8h.html#aac5494ba6460fa4c7ac9d54689567f65</field>
+    <field name="keywords">ta_e_additional_info_item</field>
+    <field name="text">Additional info item</field>
+  </doc>
+  <doc>
+    <field name="type">file</field>
     <field name="name">adjustment_result.h</field>
     <field name="url">adjustment__result_8h.html</field>
     <field name="keywords">adjustment_result.h</field>
@@ -2074,6 +2207,70 @@ $(document).ready(function(){initNavTree('search.html',''); initResizable(); });
     <field name="args">(int value)</field>
     <field name="url">enum__string__maps_2admin__functions_8h.html#a7e2a673b0216cb5fb337ddda7f419cc6</field>
     <field name="keywords">ta_admin_functions_e2s</field>
+    <field name="text">Get String for Enum value value Enum value to get string for String value</field>
+  </doc>
+  <doc>
+    <field name="type">file</field>
+    <field name="name">allowed_accounts.h</field>
+    <field name="url">allowed__accounts_8h.html</field>
+    <field name="keywords">allowed_accounts.h</field>
+    <field name="text">Constants for AllowedAccounts tag or ed together Not set flags are restricted Copyright Worldline</field>
+  </doc>
+  <doc>
+    <field name="type">typedef</field>
+    <field name="name">ta_e_allowed_accounts_t</field>
+    <field name="url">allowed__accounts_8h.html#aad265166f36c77006bea102be339477c</field>
+    <field name="keywords">ta_e_allowed_accounts_t</field>
+    <field name="text">Constants for AllowedAccounts tag or ed together Not set flags are restricted Specification retail</field>
+  </doc>
+  <doc>
+    <field name="type">enum</field>
+    <field name="name">ta_e_allowed_accounts</field>
+    <field name="url">allowed__accounts_8h.html#a472aed6ee830887098e17481e7b08ef4</field>
+    <field name="keywords">ta_e_allowed_accounts</field>
+    <field name="text">Constants for AllowedAccounts tag or ed together Not set flags are restricted Specification retail</field>
+  </doc>
+  <doc>
+    <field name="type">enumvalue</field>
+    <field name="name">ta_c_aa_undefined</field>
+    <field name="url">allowed__accounts_8h.html#a472aed6ee830887098e17481e7b08ef4a606140e7d5582d29aab3daf0530e11a0</field>
+    <field name="keywords">ta_c_aa_undefined</field>
+    <field name="text">Undefined/invalid value</field>
+  </doc>
+  <doc>
+    <field name="type">enumvalue</field>
+    <field name="name">ta_c_aa_cheque</field>
+    <field name="url">allowed__accounts_8h.html#a472aed6ee830887098e17481e7b08ef4ae4aa18174facabd5874b269a4c8873ce</field>
+    <field name="keywords">ta_c_aa_cheque</field>
+    <field name="text">Allow account Cheque during Account Selection Specification retail</field>
+  </doc>
+  <doc>
+    <field name="type">enumvalue</field>
+    <field name="name">ta_c_aa_savings</field>
+    <field name="url">allowed__accounts_8h.html#a472aed6ee830887098e17481e7b08ef4ad86ea9d954bd36d504355c4dabb4f64f</field>
+    <field name="keywords">ta_c_aa_savings</field>
+    <field name="text">Allow account Savings during Account Selection Specification retail</field>
+  </doc>
+  <doc>
+    <field name="type">enumvalue</field>
+    <field name="name">ta_c_aa_credit</field>
+    <field name="url">allowed__accounts_8h.html#a472aed6ee830887098e17481e7b08ef4af5aa611f36e1e3755d48534c8e8daf3f</field>
+    <field name="keywords">ta_c_aa_credit</field>
+    <field name="text">Allow account Credit during Account Selection Specification retail</field>
+  </doc>
+  <doc>
+    <field name="type">file</field>
+    <field name="name">allowed_accounts.h</field>
+    <field name="url">enum__string__maps_2allowed__accounts_8h.html</field>
+    <field name="keywords">allowed_accounts.h</field>
+    <field name="text">This file is generated Do not edit Copyright Worldline</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">ta_allowed_accounts_e2s</field>
+    <field name="args">(int value)</field>
+    <field name="url">enum__string__maps_2allowed__accounts_8h.html#ace7a8294e3662f0238b4596123802af4</field>
+    <field name="keywords">ta_allowed_accounts_e2s</field>
     <field name="text">Get String for Enum value value Enum value to get string for String value</field>
   </doc>
   <doc>
@@ -6390,6 +6587,70 @@ $(document).ready(function(){initNavTree('search.html',''); initResizable(); });
   </doc>
   <doc>
     <field name="type">file</field>
+    <field name="name">outcome.h</field>
+    <field name="url">enum__string__maps_2outcome_8h.html</field>
+    <field name="keywords">outcome.h</field>
+    <field name="text">This file is generated Do not edit Copyright Worldline</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">ta_outcome_e2s</field>
+    <field name="args">(ta_e_outcome_t value)</field>
+    <field name="url">enum__string__maps_2outcome_8h.html#a21c9d05ed629fc35716f000748fa7a69</field>
+    <field name="keywords">ta_outcome_e2s</field>
+    <field name="text">Get String for Enum value value Enum value to get string for String value</field>
+  </doc>
+  <doc>
+    <field name="type">file</field>
+    <field name="name">outcome.h</field>
+    <field name="url">outcome_8h.html</field>
+    <field name="keywords">outcome.h</field>
+    <field name="text">Identifies the outcome of the previous transaction in the TransactionInfoRequest response Copyright Worldline</field>
+  </doc>
+  <doc>
+    <field name="type">typedef</field>
+    <field name="name">ta_e_outcome_t</field>
+    <field name="url">outcome_8h.html#a45799246e6970de83609ee7103d7594f</field>
+    <field name="keywords">ta_e_outcome_t</field>
+    <field name="text">Identifies the outcome of the previous transaction in the TransactionInfoRequest response Specification retail</field>
+  </doc>
+  <doc>
+    <field name="type">enum</field>
+    <field name="name">ta_e_outcome</field>
+    <field name="url">outcome_8h.html#a7cf34c3ae9fea38567f49a1c433b9979</field>
+    <field name="keywords">ta_e_outcome</field>
+    <field name="text">Identifies the outcome of the previous transaction in the TransactionInfoRequest response Specification retail</field>
+  </doc>
+  <doc>
+    <field name="type">enumvalue</field>
+    <field name="name">ta_c_o_undefined</field>
+    <field name="url">outcome_8h.html#a7cf34c3ae9fea38567f49a1c433b9979a798a88a03b2a0b8596cc0c53a41c96ca</field>
+    <field name="keywords">ta_c_o_undefined</field>
+    <field name="text">Undefined/invalid value</field>
+  </doc>
+  <doc>
+    <field name="type">enumvalue</field>
+    <field name="name">ta_c_o_successful</field>
+    <field name="url">outcome_8h.html#a7cf34c3ae9fea38567f49a1c433b9979a4a16c4825b38a13557ff0d4cdc6acc46</field>
+    <field name="keywords">ta_c_o_successful</field>
+    <field name="text">If transaction was successful This does not necessarily mean the transaction is committed as for example Reservation does not need a commit But if there was a rollback the transaction must NOT be indicated as Successful but as Failed Specification retail</field>
+  </doc>
+  <doc>
+    <field name="type">enumvalue</field>
+    <field name="name">ta_c_o_failed</field>
+    <field name="url">outcome_8h.html#a7cf34c3ae9fea38567f49a1c433b9979a5cacde8b0f6a2ae82398d40ac9538a5e</field>
+    <field name="keywords">ta_c_o_failed</field>
+    <field name="text">Indicates that the transaction failed was aborted or rollbacked Specification retail</field>
+  </doc>
+  <doc>
+    <field name="type">enumvalue</field>
+    <field name="name">ta_c_o_partial</field>
+    <field name="url">outcome_8h.html#a7cf34c3ae9fea38567f49a1c433b9979ab36a29d699510b9019a6cf0eda61d549</field>
+    <field name="keywords">ta_c_o_partial</field>
+    <field name="text">Indicates that the transaction has only partially succeeded partial commit Specification retail</field>
+  </doc>
+  <doc>
+    <field name="type">file</field>
     <field name="name">payment_protocol.h</field>
     <field name="url">enum__string__maps_2payment__protocol_8h.html</field>
     <field name="keywords">payment_protocol.h</field>
@@ -7602,6 +7863,20 @@ $(document).ready(function(){initNavTree('search.html',''); initResizable(); });
     <field name="text">ASRPD/Product entry of the card Credit Debit Commercial Pre-Paid Specification retail</field>
   </doc>
   <doc>
+    <field name="type">enumvalue</field>
+    <field name="name">ta_c_rit_account_type</field>
+    <field name="url">receipt__item__type_8h.html#a3d3044dd871a9c7d630dbcf3d9b738bea6d4acdbaa45309c58a6cc1959ecdee91</field>
+    <field name="keywords">ta_c_rit_account_type</field>
+    <field name="text">The selected account type during Account Selection Specification retail</field>
+  </doc>
+  <doc>
+    <field name="type">enumvalue</field>
+    <field name="name">ta_c_rit_surcharge_amount</field>
+    <field name="url">receipt__item__type_8h.html#a3d3044dd871a9c7d630dbcf3d9b738bead4ea346298cda1b451c68562e37b8aec</field>
+    <field name="keywords">ta_c_rit_surcharge_amount</field>
+    <field name="text">Surcharge amount that has been added Specification retail</field>
+  </doc>
+  <doc>
     <field name="type">file</field>
     <field name="name">receipt_request_type.h</field>
     <field name="url">enum__string__maps_2receipt__request__type_8h.html</field>
@@ -8483,6 +8758,13 @@ $(document).ready(function(){initNavTree('search.html',''); initResizable(); });
   </doc>
   <doc>
     <field name="type">enumvalue</field>
+    <field name="name">ta_c_rid_petrol_welcome_insert_card_receipt_not_available</field>
+    <field name="url">resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9a1ed28b1b2e24d8beb5a79cca15f110c7</field>
+    <field name="keywords">ta_c_rid_petrol_welcome_insert_card_receipt_not_available</field>
+    <field name="text">Please insert card Printer not available</field>
+  </doc>
+  <doc>
+    <field name="type">enumvalue</field>
     <field name="name">ta_c_rid_petrol_banknote_insert_banknote</field>
     <field name="url">resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9ae045490428aaa7f8a4718797e0539afb</field>
     <field name="keywords">ta_c_rid_petrol_banknote_insert_banknote</field>
@@ -9145,21 +9427,21 @@ $(document).ready(function(){initNavTree('search.html',''); initResizable(); });
     <field name="name">ta_c_rpt_key_mode_f1</field>
     <field name="url">resource__parameter__type_8h.html#a24c84814e0ce6a320ff3bd3826a297fbaacf600ea2081d9e6b9877fdb303a229f</field>
     <field name="keywords">ta_c_rpt_key_mode_f1</field>
-    <field name="text">Mode for left top most function key Valid values DISABLED Do not show the function key INTERRUPT Default The key interrupts the InitTransaction process The press is reported through the ReasonCode NOTIFY The key does not interrupt the InitTransaction process The press is reported through a KeyPressEvent Specification petrol</field>
+    <field name="text">Mode of function key 1 Determines how the terminal handles the key pressed event of function key 1 Valid values are DISABLED Do not show the function key No action if the key is pressed INTERRUPT Default The key interrupts the InitTransaction process The press is reported through the ReasonCode NOTIFY The key does not interrupt the InitTransaction process The press is reported through a KeyPress Notification Specification petrol</field>
   </doc>
   <doc>
     <field name="type">enumvalue</field>
     <field name="name">ta_c_rpt_key_mode_f2</field>
     <field name="url">resource__parameter__type_8h.html#a24c84814e0ce6a320ff3bd3826a297fba0fb2962e53991b9f0b9a0ab964e77317</field>
     <field name="keywords">ta_c_rpt_key_mode_f2</field>
-    <field name="text">Mode for right bottom most function key Valid values DISABLED Do not show the function key INTERRUPT Default The key interrupts the InitTransaction process The press is reported through the ReasonCode NOTIFY The key does not interrupt the InitTransaction process The press is reported through a KeyPressEvent Specification petrol</field>
+    <field name="text">Mode of function key 2 Determines how the terminal handles the key pressed event of function key 2 Valid values are DISABLED Do not show the function key No action if the key is pressed INTERRUPT Default The key interrupts the InitTransaction process The press is reported through the ReasonCode NOTIFY The key does not interrupt the InitTransaction process The press is reported through a KeyPress Notification Specification petrol</field>
   </doc>
   <doc>
     <field name="type">enumvalue</field>
     <field name="name">ta_c_rpt_key_mode_f3</field>
     <field name="url">resource__parameter__type_8h.html#a24c84814e0ce6a320ff3bd3826a297fba9b60ecc9dc494e7fed5ead022a439b5a</field>
     <field name="keywords">ta_c_rpt_key_mode_f3</field>
-    <field name="text">Mode for central function key Valid values DISABLED Do not show the function key INTERRUPT Default The key interrupts the InitTransaction process The press is reported through the ReasonCode NOTIFY The key does not interrupt the InitTransaction process The press is reported through a KeyPressEvent Specification petrol</field>
+    <field name="text">Mode of function key 3 Determines how the terminal handles the key pressed event of function key 3 Valid values are DISABLED Do not show the function key No action if the key is pressed INTERRUPT Default The key interrupts the InitTransaction process The press is reported through the ReasonCode NOTIFY The key does not interrupt the InitTransaction process The press is reported through a KeyPress Notification Specification petrol</field>
   </doc>
   <doc>
     <field name="type">enumvalue</field>
@@ -9638,6 +9920,13 @@ $(document).ready(function(){initNavTree('search.html',''); initResizable(); });
     <field name="url">result__code_8h.html#aebaf00d1ceef4b827866ca9de0bd3320a11e63c67e9ab926319e5df8dd8fc521a</field>
     <field name="keywords">ta_c_rc_pin_pad_keys_lost</field>
     <field name="text">Keys lost for secure communication Error message Keys lost PinPad Specification retail</field>
+  </doc>
+  <doc>
+    <field name="type">enumvalue</field>
+    <field name="name">ta_c_rc_serial_number_mismatch</field>
+    <field name="url">result__code_8h.html#aebaf00d1ceef4b827866ca9de0bd3320a282878b67c178b6563fe3d621dda5ed1</field>
+    <field name="keywords">ta_c_rc_serial_number_mismatch</field>
+    <field name="text">Terminal serial number mismatch in TMS Error message Serial number already in use Terminal is out of order Please call hotline Specification retail</field>
   </doc>
   <doc>
     <field name="type">enumvalue</field>
@@ -10229,6 +10518,20 @@ $(document).ready(function(){initNavTree('search.html',''); initResizable(); });
   </doc>
   <doc>
     <field name="type">enumvalue</field>
+    <field name="name">ta_c_rc_no_account_selectable_with_given_restrictions</field>
+    <field name="url">result__code_8h.html#aebaf00d1ceef4b827866ca9de0bd3320adae95386cb32e9b1d5034c58198140be</field>
+    <field name="keywords">ta_c_rc_no_account_selectable_with_given_restrictions</field>
+    <field name="text">No card account selectable with given account restrictions Error message No card account selectable with given account restrictions Specification retail</field>
+  </doc>
+  <doc>
+    <field name="type">enumvalue</field>
+    <field name="name">ta_c_rc_transaction_type_not_allowed_for_selected_account</field>
+    <field name="url">result__code_8h.html#aebaf00d1ceef4b827866ca9de0bd3320ac5f180a43fac9ebeacc58d3cc4dac03a</field>
+    <field name="keywords">ta_c_rc_transaction_type_not_allowed_for_selected_account</field>
+    <field name="text">Transaction type not allowed for selected account Error message Transaction type not allowed for selected account Specification retail</field>
+  </doc>
+  <doc>
+    <field name="type">enumvalue</field>
     <field name="name">ta_c_rc_invalid_argument</field>
     <field name="url">result__code_8h.html#aebaf00d1ceef4b827866ca9de0bd3320a306acc157474b36c57faa559c710d8c3</field>
     <field name="keywords">ta_c_rc_invalid_argument</field>
@@ -10589,6 +10892,13 @@ $(document).ready(function(){initNavTree('search.html',''); initResizable(); });
     <field name="text">WakeUp function supported Specification retail</field>
   </doc>
   <doc>
+    <field name="type">enumvalue</field>
+    <field name="name">ta_c_sf_transaction_info_request</field>
+    <field name="url">status__functions_8h.html#abf752dbd5ab3b758d2c21f390d8ef248a30c9794fed54dcf0dd60567c476ec954</field>
+    <field name="keywords">ta_c_sf_transaction_info_request</field>
+    <field name="text">Transaction information function supported Specification retail</field>
+  </doc>
+  <doc>
     <field name="type">file</field>
     <field name="name">theme.h</field>
     <field name="url">enum__string__maps_2theme_8h.html</field>
@@ -10644,6 +10954,63 @@ $(document).ready(function(){initNavTree('search.html',''); initResizable(); });
     <field name="url">theme_8h.html#a81d8bf8c36b2734ce46060c5ede9dad2a6d20f053eba2c0c94fe32ac90e52456c</field>
     <field name="keywords">ta_c_theme_swiss_post</field>
     <field name="text">Swiss Post appearance Specification dialog</field>
+  </doc>
+  <doc>
+    <field name="type">file</field>
+    <field name="name">token_pan_type.h</field>
+    <field name="url">enum__string__maps_2token__pan__type_8h.html</field>
+    <field name="keywords">token_pan_type.h</field>
+    <field name="text">This file is generated Do not edit Copyright Worldline</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">ta_token_pan_type_e2s</field>
+    <field name="args">(ta_e_token_pan_type_t value)</field>
+    <field name="url">enum__string__maps_2token__pan__type_8h.html#ab6a176bb738258230959321282159469</field>
+    <field name="keywords">ta_token_pan_type_e2s</field>
+    <field name="text">Get String for Enum value value Enum value to get string for String value</field>
+  </doc>
+  <doc>
+    <field name="type">file</field>
+    <field name="name">token_pan_type.h</field>
+    <field name="url">token__pan__type_8h.html</field>
+    <field name="keywords">token_pan_type.h</field>
+    <field name="text">To differ the source of a token PAN the TokenPanType field is used in a SIXml request message as part of the sixml TransactionData container and in a SIXml response message as part of the sixml CardData container The TokenPanType field always is transmitted if a TokenPan field is transmitted but must not be transmitted alone Copyright Worldline</field>
+  </doc>
+  <doc>
+    <field name="type">typedef</field>
+    <field name="name">ta_e_token_pan_type_t</field>
+    <field name="url">token__pan__type_8h.html#a74d1bfbbfd3e890f5745042a842e2b71</field>
+    <field name="keywords">ta_e_token_pan_type_t</field>
+    <field name="text">To differ the source of a token PAN the TokenPanType field is used in a SIXml request message as part of the sixml TransactionData container and in a SIXml response message as part of the sixml CardData container The TokenPanType field always is transmitted if a TokenPan field is transmitted but must not be transmitted alone Specification retail</field>
+  </doc>
+  <doc>
+    <field name="type">enum</field>
+    <field name="name">ta_e_token_pan_type</field>
+    <field name="url">token__pan__type_8h.html#aca18a36b488d583faa4f6f227ee841ee</field>
+    <field name="keywords">ta_e_token_pan_type</field>
+    <field name="text">To differ the source of a token PAN the TokenPanType field is used in a SIXml request message as part of the sixml TransactionData container and in a SIXml response message as part of the sixml CardData container The TokenPanType field always is transmitted if a TokenPan field is transmitted but must not be transmitted alone Specification retail</field>
+  </doc>
+  <doc>
+    <field name="type">enumvalue</field>
+    <field name="name">ta_c_tpt_undefined</field>
+    <field name="url">token__pan__type_8h.html#aca18a36b488d583faa4f6f227ee841eea74e3c5db0cb6c3227ab97b113748623a</field>
+    <field name="keywords">ta_c_tpt_undefined</field>
+    <field name="text">Undefined/invalid value</field>
+  </doc>
+  <doc>
+    <field name="type">enumvalue</field>
+    <field name="name">ta_c_tpt_gts</field>
+    <field name="url">token__pan__type_8h.html#aca18a36b488d583faa4f6f227ee841eead419a3c0fd4d2ecd1fc5716b32057de2</field>
+    <field name="keywords">ta_c_tpt_gts</field>
+    <field name="text">Worldline Global Tokenization Service Specification retail</field>
+  </doc>
+  <doc>
+    <field name="type">enumvalue</field>
+    <field name="name">ta_c_tpt_bnr2</field>
+    <field name="url">token__pan__type_8h.html#aca18a36b488d583faa4f6f227ee841eea55fe755ba46bd31816594b2b11d60285</field>
+    <field name="keywords">ta_c_tpt_bnr2</field>
+    <field name="text">SIX BNR2 Specification retail</field>
   </doc>
   <doc>
     <field name="type">file</field>
@@ -10835,6 +11202,13 @@ $(document).ready(function(){initNavTree('search.html',''); initResizable(); });
     <field name="url">transaction__status_8h.html#a71a1d6fb385eb7008599dba8d7347567a78afeb45bbe2dcbdfa8eeb49c694bbcf</field>
     <field name="keywords">ta_c_ts_wait_for_commit</field>
     <field name="text">AutoCommit is disabled Waiting for Commit from ECR Specification retail</field>
+  </doc>
+  <doc>
+    <field name="type">enumvalue</field>
+    <field name="name">ta_c_ts_account_selection</field>
+    <field name="url">transaction__status_8h.html#a71a1d6fb385eb7008599dba8d7347567ae2edc30ce534caf3c7714dae6178fa27</field>
+    <field name="keywords">ta_c_ts_account_selection</field>
+    <field name="text">Account selection is ongoing May require cardholder interaction Specification retail</field>
   </doc>
   <doc>
     <field name="type">file</field>
@@ -11828,6 +12202,13 @@ $(document).ready(function(){initNavTree('search.html',''); initResizable(); });
     <field name="text">Operation started by terminal_client_identification</field>
   </doc>
   <doc>
+    <field name="type">enumvalue</field>
+    <field name="name">ta_c_req_transaction_info_request</field>
+    <field name="url">request__type_8h.html#a38268da75c7795fd3a4f057bc6a7fcd2a8bb0292172f3ec80ea4d655c85fa7053</field>
+    <field name="keywords">ta_c_req_transaction_info_request</field>
+    <field name="text">Operation started by transaction_info_request_async</field>
+  </doc>
+  <doc>
     <field name="type">file</field>
     <field name="name">counter.h</field>
     <field name="url">counter_8h.html</field>
@@ -11849,6 +12230,14 @@ $(document).ready(function(){initNavTree('search.html',''); initResizable(); });
     <field name="url">counter_8h.html#aa4309f98a8a27186142c595f5ecd6819</field>
     <field name="keywords">ta_counter_get_payment_protocol</field>
     <field name="text">Payment protocol linked to the brand counter Object instance of type counter payment_protocol Pointer to variable to write value to ta_c_rc_ok Object instance written to payment_protocol ta_c_rc_invalid_argument counter is ta_object_invalid ta_c_rc_invalid_argument counter is not of type counter ta_c_rc_invalid_argument payment_protocol is null-pointer</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">ta_counter_get_card_product_type</field>
+    <field name="args">(ta_object_t counter, ta_e_card_product_type_t *card_product_type)</field>
+    <field name="url">counter_8h.html#a9bcefaf3afefc954854964037b592c14</field>
+    <field name="keywords">ta_counter_get_card_product_type</field>
+    <field name="text">Card product type or ta_c_cpt_undefined counter Object instance of type counter card_product_type Pointer to variable to write value to ta_c_rc_ok Object instance written to card_product_type ta_c_rc_invalid_argument counter is ta_object_invalid ta_c_rc_invalid_argument counter is not of type counter ta_c_rc_invalid_argument card_product_type is null-pointer</field>
   </doc>
   <doc>
     <field name="type">function</field>
@@ -15122,6 +15511,22 @@ $(document).ready(function(){initNavTree('search.html',''); initResizable(); });
   </doc>
   <doc>
     <field name="type">function</field>
+    <field name="name">ta_terminal_transaction_info_request</field>
+    <field name="args">(ta_object_t terminal, ta_object_t *response)</field>
+    <field name="url">terminal_8h.html#ab31f1534a28e2762a49f711238920fcd</field>
+    <field name="keywords">ta_terminal_transaction_info_request</field>
+    <field name="text">Receive the latest transaction information terminal Object instance of type terminal response Pointer to variable to write object instance to Object instance is of type transaction_info_request_response Object instance is retained ta_c_rc_ok Request finished successfully Object instance written to response Object instance has been retained ta_c_rc_invalid_argument terminal is ta_object_invalid ta_c_rc_invalid_argument terminal is not of type terminal ta_c_rc_invalid_argument terminal has been disposed ta_c_rc_invalid_argument response is null-pointer</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">ta_terminal_transaction_info_request_async</field>
+    <field name="args">(ta_object_t terminal)</field>
+    <field name="url">terminal_8h.html#af8b571e78dbcccad8cd560a1032f1b0f</field>
+    <field name="keywords">ta_terminal_transaction_info_request_async</field>
+    <field name="text">Receive the latest transaction information Asynchronous version of ta_terminal_transaction_info_request Callback function is ta_cb_terminal_transaction_info_request_completed terminal Object instance of type terminal ta_c_rc_ok Request started successfully ta_c_rc_invalid_argument terminal is ta_object_invalid ta_c_rc_invalid_argument terminal is not of type terminal ta_c_rc_invalid_argument terminal has been disposed</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
     <field name="name">ta_terminal_reconfig</field>
     <field name="args">(ta_object_t terminal, ta_object_t *response)</field>
     <field name="url">terminal_8h.html#abff257f57485515a6a2e1b3067e5f9bb</field>
@@ -15706,6 +16111,22 @@ $(document).ready(function(){initNavTree('search.html',''); initResizable(); });
   </doc>
   <doc>
     <field name="type">function</field>
+    <field name="name">ta_terminal_get_item_textcode</field>
+    <field name="args">(ta_object_t terminal, int item_text_code, ta_e_additional_info_item_t *result)</field>
+    <field name="url">terminal_8h.html#ad6d8b409ee9ff76584b51a6480c6d73f</field>
+    <field name="keywords">ta_terminal_get_item_textcode</field>
+    <field name="text">Convert item text code to AdditionalInfoItem value result Pointer to variable to write result to ta_c_rc_ok Result written to result ta_c_rc_invalid_argument terminal is ta_object_invalid ta_c_rc_invalid_argument terminal is not of type terminal ta_c_rc_invalid_argument terminal has been disposed ta_c_rc_invalid_argument result is null-pointer</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">ta_terminal_get_item_textcode_description</field>
+    <field name="args">(ta_object_t terminal, ta_e_additional_info_item_t item, const char **result)</field>
+    <field name="url">terminal_8h.html#a5f94e6b7c9ee42835e46a038b35e9207</field>
+    <field name="keywords">ta_terminal_get_item_textcode_description</field>
+    <field name="text">Get text description of AdditionalInfoItem result Pointer to variable to write result to ta_c_rc_ok Result written to result ta_c_rc_invalid_argument terminal is ta_object_invalid ta_c_rc_invalid_argument terminal is not of type terminal ta_c_rc_invalid_argument terminal has been disposed ta_c_rc_invalid_argument result is null-pointer</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
     <field name="name">ta_terminal_add_listener</field>
     <field name="args">(ta_object_t terminal, ta_object_t listener)</field>
     <field name="url">terminal_8h.html#a818466e97be59b5d4ecf9799d74b8074</field>
@@ -15885,6 +16306,14 @@ $(document).ready(function(){initNavTree('search.html',''); initResizable(); });
     <field name="url">terminal__listener_8h.html#a2a444f5d6eb1a3ea1816577d9dbc25e1</field>
     <field name="keywords">ta_cb_terminal_receipt_request_completed</field>
     <field name="text">Called if an ta_terminal_receipt_request_async started request finished event Pointer to struct containing information about the event data Object instance of type receipt_request_response Object instance is ta_object_invalid if request failed Object instance is not retained user_pointer User pointer value used while creating the listener</field>
+  </doc>
+  <doc>
+    <field name="type">typedef</field>
+    <field name="name">ta_cb_terminal_transaction_info_request_completed</field>
+    <field name="args">)(const ta_s_event_t *event, ta_object_t data, void *user_pointer)</field>
+    <field name="url">terminal__listener_8h.html#ad9c433be1e322c491e6c4d1ebaab44bf</field>
+    <field name="keywords">ta_cb_terminal_transaction_info_request_completed</field>
+    <field name="text">Called if an ta_terminal_transaction_info_request_async started request finished event Pointer to struct containing information about the event data Object instance of type transaction_info_request_response Object instance is ta_object_invalid if request failed Object instance is not retained user_pointer User pointer value used while creating the listener</field>
   </doc>
   <doc>
     <field name="type">typedef</field>
@@ -17544,6 +17973,101 @@ $(document).ready(function(){initNavTree('search.html',''); initResizable(); });
     <field name="text">Set sub transactions trx_data Object instance of type transaction_data sub_transactions Object instance to set Object instance can be ta_object_invalid to clear the value in trx_data If object instance is not ta_object_invalid is has to be of type list with elements of type sub_transaction ta_c_rc_ok Object instance assigned to trx_data ta_c_rc_invalid_argument trx_data is ta_object_invalid ta_c_rc_invalid_argument trx_data is not of type transaction_data ta_c_rc_invalid_argument sub_transactions is not ta_object_invalid and is not of type timedate</field>
   </doc>
   <doc>
+    <field name="type">function</field>
+    <field name="name">ta_transaction_data_get_allowed_accounts</field>
+    <field name="args">(ta_object_t trx_data, ta_object_t *allowed_accounts)</field>
+    <field name="url">transaction__data_8h.html#a568dfdd22be765c781623818a31dca7b</field>
+    <field name="keywords">ta_transaction_data_get_allowed_accounts</field>
+    <field name="text">Allowed accounts flags trx_data Object instance of type transaction_data allowed_accounts Pointer to variable to write object instance to Object instance is of type integer with value OR-combined from constant allowed_accounts Object instance is not retained Object instance is ta_object_invalid if value is not set in trx_data ta_c_rc_ok Object instance written to allowed_accounts ta_c_rc_invalid_argument trx_data is ta_object_invalid ta_c_rc_invalid_argument trx_data is not of type transaction_data ta_c_rc_invalid_argument allowed_accounts is null-pointer</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">ta_transaction_data_set_allowed_accounts</field>
+    <field name="args">(ta_object_t trx_data, ta_object_t allowed_accounts)</field>
+    <field name="url">transaction__data_8h.html#a7ec49012cc67133292ddf21dabcc6ba1</field>
+    <field name="keywords">ta_transaction_data_set_allowed_accounts</field>
+    <field name="text">Set allowed accounts flags trx_data Object instance of type transaction_data allowed_accounts Object instance to set Object instance can be ta_object_invalid to clear the value in trx_data If object instance is not ta_object_invalid is has to be of type integer with value OR-combined from constant allowed_accounts ta_c_rc_ok Object instance assigned to trx_data ta_c_rc_invalid_argument trx_data is ta_object_invalid ta_c_rc_invalid_argument trx_data is not of type transaction_data ta_c_rc_invalid_argument allowed_accounts is not ta_object_invalid and is not of type list</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">ta_transaction_data_get_token_pan</field>
+    <field name="args">(ta_object_t trx_data, ta_object_t *token_pan)</field>
+    <field name="url">transaction__data_8h.html#a50c4b7a8e6fe5ee33328904cb6bffdbc</field>
+    <field name="keywords">ta_transaction_data_get_token_pan</field>
+    <field name="text">Token PAN The token PAN is a tokenized version for an underlaying card PAN If the underlaying payment protocol supports it a payment transaction can be initiated with the token PAN instead of using a card A token PAN is normally generated by a tokenization service either form the acquirer host or the issuer host The TokenPan field is used in a SIXml request message as part of the sixml TransactionData container to trigger a token-based transaction and in a SIXml response message as part of the sixml CardData container for returning token PANs to the ECR The TokenPan field always must be accompanied by a corresponding TokenPanType field trx_data Object instance of type transaction_data token_pan Pointer to variable to write object instance to Object instance is of type string and is not retained Object instance is ta_object_invalid if value is not set in card_data ta_c_rc_ok Object instance written to token_pan ta_c_rc_invalid_argument trx_data is ta_object_invalid ta_c_rc_invalid_argument trx_data is not of type transaction_data ta_c_rc_invalid_argument token_pan is null-pointer</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">ta_transaction_data_set_token_pan</field>
+    <field name="args">(ta_object_t trx_data, ta_object_t token_pan)</field>
+    <field name="url">transaction__data_8h.html#a4a505d42275c7835cd105688add3e062</field>
+    <field name="keywords">ta_transaction_data_set_token_pan</field>
+    <field name="text">Set token PAN The token PAN is a tokenized version for an underlaying card PAN If the underlaying payment protocol supports it a payment transaction can be initiated with the token PAN instead of using a card A token PAN is normally generated by a tokenization service either form the acquirer host or the issuer host The TokenPan field is used in a SIXml request message as part of the sixml TransactionData container to trigger a token-based transaction and in a SIXml response message as part of the sixml CardData container for returning token PANs to the ECR The TokenPan field always must be accompanied by a corresponding TokenPanType field trx_data Object instance of type transaction_data token_pan Object instance to set Object instance can be ta_object_invalid to clear the value in trx_data If object instance is not ta_object_invalid is has to be of type string ta_c_rc_ok Object instance assigned to trx_data ta_c_rc_invalid_argument trx_data is ta_object_invalid ta_c_rc_invalid_argument trx_data is not of type transaction_data ta_c_rc_invalid_argument token_pan is not ta_object_invalid and is not of type string</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">ta_transaction_data_get_token_pan_type</field>
+    <field name="args">(ta_object_t trx_data, ta_e_token_pan_type_t *token_pan_type)</field>
+    <field name="url">transaction__data_8h.html#ae4a902ae8c8e380d7461ef1dbeffd515</field>
+    <field name="keywords">ta_transaction_data_get_token_pan_type</field>
+    <field name="text">Token PAN type To differ the source of a token PAN the TokenPanType field is used in a SIXml request message as part of the sixml TransactionData container and in a SIXml response message as part of the sixml CardData container The TokenPanType field always is transmitted if a TokenPan field is transmitted but must not be transmitted alone trx_data Object instance of type transaction_data token_pan_type Pointer to variable to write value to Value is ta_c_ngvm_undefined if value is not set in trx_data ta_c_rc_ok Value written to token_pan_type ta_c_rc_invalid_argument trx_data is ta_object_invalid ta_c_rc_invalid_argument trx_data is not of type transaction_data ta_c_rc_invalid_argument token_pan_type is null-pointer</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">ta_transaction_data_set_token_pan_type</field>
+    <field name="args">(ta_object_t trx_data, ta_e_token_pan_type_t token_pan_type)</field>
+    <field name="url">transaction__data_8h.html#af4faa8206feac6f2205b63f36c1b98ec</field>
+    <field name="keywords">ta_transaction_data_set_token_pan_type</field>
+    <field name="text">Set token PAN type To differ the source of a token PAN the TokenPanType field is used in a SIXml request message as part of the sixml TransactionData container and in a SIXml response message as part of the sixml CardData container The TokenPanType field always is transmitted if a TokenPan field is transmitted but must not be transmitted alone trx_data Object instance of type transaction_data token_pan_type Value to set Value can be ta_c_ngvm_undefined to clear the value in trx_data ta_c_rc_ok Value assigned to trx_data ta_c_rc_invalid_argument trx_data is ta_object_invalid ta_c_rc_invalid_argument trx_data is not of type transaction_data ta_c_rc_invalid_argument token_pan_type is null-pointer</field>
+  </doc>
+  <doc>
+    <field name="type">file</field>
+    <field name="name">transaction_info_request_response.h</field>
+    <field name="url">transaction__info__request__response_8h.html</field>
+    <field name="keywords">transaction_info_request_response.h</field>
+    <field name="text">Object type transaction_info_request_response</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">ta_transaction_info_request_response_get_transaction_type</field>
+    <field name="args">(ta_object_t response, ta_e_transaction_type_t *transaction_type)</field>
+    <field name="url">transaction__info__request__response_8h.html#ac63b36f616b06278a200899aed524ec7</field>
+    <field name="keywords">ta_transaction_info_request_response_get_transaction_type</field>
+    <field name="text">Transaction type response Object instance of type transaction_info_request_response function Pointer to variable to write object instance to Object instance is of type string and is not retained Object instance is ta_object_invalid if value is not set in response ta_c_rc_ok Object instance written to function ta_c_rc_invalid_argument response is ta_object_invalid ta_c_rc_invalid_argument response is not of type transaction_info_request_response ta_c_rc_invalid_argument function is null-pointer</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">ta_transaction_info_request_response_get_outcome</field>
+    <field name="args">(ta_object_t response, ta_e_outcome_t *outcome)</field>
+    <field name="url">transaction__info__request__response_8h.html#a62152ba8207b96b6441e18173314d7dc</field>
+    <field name="keywords">ta_transaction_info_request_response_get_outcome</field>
+    <field name="text">Outcome response Object instance of type transaction_info_request_response outcome Pointer to variable to write result code to Variable is set to ta_c_o_undefined if value is not set in response ta_c_rc_ok Value written to outcome ta_c_rc_invalid_argument response is ta_object_invalid ta_c_rc_invalid_argument response is not of type transaction_info_request_response ta_c_rc_invalid_argument outcome is null-pointer</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">ta_transaction_info_request_response_get_transaction_response</field>
+    <field name="args">(ta_object_t response, ta_object_t *transaction_response)</field>
+    <field name="url">transaction__info__request__response_8h.html#a307d2e981b836049c0a9745910f51f39</field>
+    <field name="keywords">ta_transaction_info_request_response_get_transaction_response</field>
+    <field name="text">Transaction response response Object instance of type transaction_info_request_response transaction_response Pointer to variable to write object instance to Object instance is of type transaction_response and is not retained Object instance is ta_object_invalid if value is not set in response ta_c_rc_ok Object instance written to print_data ta_c_rc_invalid_argument response is ta_object_invalid ta_c_rc_invalid_argument response is not of type transaction_info_request_response ta_c_rc_invalid_argument transaction_response is null-pointer</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">ta_transaction_info_request_response_get_error</field>
+    <field name="args">(ta_object_t response, ta_object_t *error)</field>
+    <field name="url">transaction__info__request__response_8h.html#a6bf3a72a62aa0446b6a6f225594d9e9d</field>
+    <field name="keywords">ta_transaction_info_request_response_get_error</field>
+    <field name="text">Error response Object instance of type transaction_info_request_response error Pointer to variable to write object instance to Object instance is of type tim_error and is not retained Object instance is ta_object_invalid if value is not set in response ta_c_rc_ok Object instance written to print_data ta_c_rc_invalid_argument response is ta_object_invalid ta_c_rc_invalid_argument response is not of type transaction_info_request_response ta_c_rc_invalid_argument error is null-pointer</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">ta_transaction_info_request_response_get_last_status_receipt</field>
+    <field name="args">(ta_object_t response, ta_object_t *last_status_receipt)</field>
+    <field name="url">transaction__info__request__response_8h.html#a940de617e4fc1523d52d546e10a867ae</field>
+    <field name="keywords">ta_transaction_info_request_response_get_last_status_receipt</field>
+    <field name="text">Last status receipt response Object instance of type transaction_info_request_response last_status_receipt Pointer to variable to write object instance to Object instance is of type print_data and is not retained Object instance is ta_object_invalid if value is not set in response ta_c_rc_ok Object instance written to print_data ta_c_rc_invalid_argument response is ta_object_invalid ta_c_rc_invalid_argument response is not of type transaction_info_request_response ta_c_rc_invalid_argument last_status_receipt is null-pointer</field>
+  </doc>
+  <doc>
     <field name="type">file</field>
     <field name="name">transaction_information.h</field>
     <field name="url">transaction__information_8h.html</field>
@@ -17608,11 +18132,19 @@ $(document).ready(function(){initNavTree('search.html',''); initResizable(); });
   </doc>
   <doc>
     <field name="type">function</field>
+    <field name="name">ta_transaction_information_get_acq_id</field>
+    <field name="args">(ta_object_t trx_info, int64_t *acq)</field>
+    <field name="url">transaction__information_8h.html#a17398a7c75990e27d0a9ed6716909e8e</field>
+    <field name="keywords">ta_transaction_information_get_acq_id</field>
+    <field name="text">TransactionAcquirer identifier Conditional for can be ta_object_invalid ta_c_tt_activate_card ta_c_tt_authorize_credit ta_c_tt_authorize_deposit ta_c_tt_cash_advance ta_c_tt_combined ta_c_tt_credit ta_c_tt_debt_recovery ta_c_tt_finalize_purchase ta_c_tt_funding ta_c_tt_giro ta_c_tt_load ta_c_tt_pre_authorization ta_c_tt_purchase_forced_acceptance ta_c_tt_purchase_mail_ordered ta_c_tt_purchase_phone_authorized ta_c_tt_purchase_with_cashback ta_c_tt_purchase ta_c_tt_refunding ta_c_tt_reversal ta_c_tt_unload Forbidden always ta_object_invalid ta_c_tt_account_verification ta_c_tt_adjust_reservation ta_c_tt_cancel_reservation ta_c_tt_collect_points ta_c_tt_load_voucher ta_c_tt_purchase_reservation_phone_authorized ta_c_tt_purchase_reservation ta_c_tt_reservation trx_info Value written of type transaction_information acq Pointer to variable to write value to Value is 0 if value is not set in trx_info ta_c_rc_ok Object instance written to acq ta_c_rc_invalid_argument trx_info is ta_object_invalid ta_c_rc_invalid_argument trx_info is not of type transaction_information ta_c_rc_invalid_argument acq is null-pointer</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
     <field name="name">ta_transaction_information_get_acq</field>
     <field name="args">(ta_object_t trx_info, int64_t *acq)</field>
     <field name="url">transaction__information_8h.html#ae4cba84c86e9f14eb273cbe634fbea07</field>
     <field name="keywords">ta_transaction_information_get_acq</field>
-    <field name="text">TransactionAcquirer identifier Conditional for can be ta_object_invalid ta_c_tt_activate_card ta_c_tt_authorize_credit ta_c_tt_authorize_deposit ta_c_tt_cash_advance ta_c_tt_combined ta_c_tt_credit ta_c_tt_debt_recovery ta_c_tt_finalize_purchase ta_c_tt_funding ta_c_tt_giro ta_c_tt_load ta_c_tt_pre_authorization ta_c_tt_purchase_forced_acceptance ta_c_tt_purchase_mail_ordered ta_c_tt_purchase_phone_authorized ta_c_tt_purchase_with_cashback ta_c_tt_purchase ta_c_tt_refunding ta_c_tt_reversal ta_c_tt_unload Forbidden always ta_object_invalid ta_c_tt_account_verification ta_c_tt_adjust_reservation ta_c_tt_cancel_reservation ta_c_tt_collect_points ta_c_tt_load_voucher ta_c_tt_purchase_reservation_phone_authorized ta_c_tt_purchase_reservation ta_c_tt_reservation trx_info Value written of type transaction_information acq Pointer to variable to write value to Value is 0 if value is not set in trx_info ta_c_rc_ok Object instance written to acq ta_c_rc_invalid_argument trx_info is ta_object_invalid ta_c_rc_invalid_argument trx_info is not of type transaction_information ta_c_rc_invalid_argument acq is null-pointer</field>
+    <field name="text">Use ta_transaction_information_get_acq_id</field>
   </doc>
   <doc>
     <field name="type">function</field>
@@ -17693,6 +18225,22 @@ $(document).ready(function(){initNavTree('search.html',''); initResizable(); });
     <field name="url">transaction__information_8h.html#a4c494ca8e0c4e19e05be8d09c8e077e6</field>
     <field name="keywords">ta_transaction_information_get_ngv_used_flag</field>
     <field name="text">Indicates if a transaction was performed as non guaranteed payment NGV Available if AustrianUseCases is enabled trx_info Object instance of type transaction_information ngv_used_flag Pointer to variable to write value to Value is ta_c_b_undefined if value is not set in trx_info ta_c_rc_ok Value written to ngv_used_flag ta_c_rc_invalid_argument trx_info is ta_object_invalid ta_c_rc_invalid_argument trx_info is not of type transaction_information ta_c_rc_invalid_argument ngv_used_flag is null-pointer</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">ta_transaction_information_get_omnichannel_payment_id</field>
+    <field name="args">(ta_object_t trx_info, ta_object_t *omnichannel_payment_id)</field>
+    <field name="url">transaction__information_8h.html#a4d0e99f0970c19995e7781bbaae31a9f</field>
+    <field name="keywords">ta_transaction_information_get_omnichannel_payment_id</field>
+    <field name="text">Omnichannel payment transaction identifier Optional Mandatory if available to terminal Specifications retail banking austrianUseCases trx_info Object instance of type transaction_information omnichannel_payment_id Pointer to variable to write object instance to Object instance is of type string and is not retained Object instance is ta_object_invalid if value is not set in trx_info ta_c_rc_ok Object instance written to card_id ta_c_rc_invalid_argument trx_info is ta_object_invalid ta_c_rc_invalid_argument trx_info is not of type transaction_information ta_c_rc_invalid_argument omnichannel_payment_id is null-pointer</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">ta_transaction_information_get_scheme_trx_id</field>
+    <field name="args">(ta_object_t trx_info, ta_object_t *scheme_trx_id)</field>
+    <field name="url">transaction__information_8h.html#ada53182831904d8cce6ca40e0eb74b83</field>
+    <field name="keywords">ta_transaction_information_get_scheme_trx_id</field>
+    <field name="text">Used for and the Merchant-Initiated-Transaction MIT frameworks Card scheme data element that links original authorisation requests to subsequent messages Used also for Initial recurring and omnichannel use cases Optional Mandatory if available to terminal Specifications retail banking austrianUseCases trx_info Object instance of type transaction_information scheme_trx_id Pointer to variable to write object instance to Object instance is of type integer and is not retained Object instance is ta_object_invalid if value is not set in trx_info ta_c_rc_ok Object instance written to card_id ta_c_rc_invalid_argument trx_info is ta_object_invalid ta_c_rc_invalid_argument trx_info is not of type transaction_information ta_c_rc_invalid_argument scheme_trx_id is null-pointer</field>
   </doc>
   <doc>
     <field name="type">file</field>
@@ -18120,6 +18668,14 @@ $(document).ready(function(){initNavTree('search.html',''); initResizable(); });
     <field name="text">Determines if transaction has been domestic response Object instance of type transaction_response is_domestic Pointer to variable to write value to Set to ta_c_b_true if card country code and terminal country code are both set in response and are have equal value ta_c_rc_ok Value written to is_domestic ta_c_rc_invalid_argument response is ta_object_invalid ta_c_rc_invalid_argument response is not of type transaction_response ta_c_rc_invalid_argument is_domestic is null-pointer</field>
   </doc>
   <doc>
+    <field name="type">function</field>
+    <field name="name">ta_transaction_response_get_amount_surcharge</field>
+    <field name="args">(ta_object_t response, ta_object_t *amount)</field>
+    <field name="url">transaction__response_8h.html#a85e341dc75d5d6089cbd8f98f6e39b8c</field>
+    <field name="keywords">ta_transaction_response_get_amount_surcharge</field>
+    <field name="text">Surcharge amount in the transaction response Object instance of type transaction_response amount Pointer to variable to write object instance to Object instance is of type amount and is not retained Object instance is ta_object_invalid if value is not set in response ta_c_rc_ok Object instance written to amount_due ta_c_rc_invalid_argument response is ta_object_invalid ta_c_rc_invalid_argument response is not of type transaction_response ta_c_rc_invalid_argument amount is null-pointer</field>
+  </doc>
+  <doc>
     <field name="type">file</field>
     <field name="name">trx_detail.h</field>
     <field name="url">trx__detail_8h.html</field>
@@ -18304,7 +18860,7 @@ $(document).ready(function(){initNavTree('search.html',''); initResizable(); });
     <field name="name">deprecated</field>
     <field name="url">deprecated.html</field>
     <field name="keywords"></field>
-    <field name="text">Deprecated List Deprecated List Global ta_cb_terminal_license_changed ta_object_t terminal void Functionality removed Global ta_process_print_receipts ta_object_t terminal ta_object_t data PrintData receipts are formatted by TIM API before send to the listeners Returns print data unmodified Global ta_s_terminal_listener license_changed Functionality removed Global ta_terminal_get_license ta_object_t terminal ta_object_t Functionality removed Global ta_terminal_settings_get_log_dir ta_object_t settings ta_object_t Can not be used Global ta_terminal_settings_get_log_file_count_per_archive ta_object_t settings int Can not be used Global ta_terminal_settings_get_log_retain_archive_count ta_object_t settings int Can not be used Global ta_terminal_settings_get_log_retain_file_count ta_object_t settings int Can not be used Global ta_terminal_settings_set_log_dir ta_object_t settings ta_object_t log_dir Can not be used Global ta_terminal_settings_set_log_file_count_per_archive ta_object_t settings int log_file_count_per_archive Can not be used Global ta_terminal_settings_set_log_retain_archive_count ta_object_t settings int log_retain_archive_count Can not be used Global ta_terminal_settings_set_log_retain_file_count ta_object_t settings int retain_file_count Can not be used Global ta_transaction_information_get_cardholder_name ta_object_t trx_info ta_object_t Use ta_card_data_get_cardholder instead on card_data object returned by ta_transaction_response_get_card_data</field>
+    <field name="text">Deprecated List Deprecated List Global ta_cb_terminal_license_changed ta_object_t terminal void Functionality removed Global ta_process_print_receipts ta_object_t terminal ta_object_t data PrintData receipts are formatted by TIM API before send to the listeners Returns print data unmodified Global ta_s_terminal_listener license_changed Functionality removed Global ta_terminal_get_license ta_object_t terminal ta_object_t Functionality removed Global ta_terminal_settings_get_log_dir ta_object_t settings ta_object_t Can not be used Global ta_terminal_settings_get_log_file_count_per_archive ta_object_t settings int Can not be used Global ta_terminal_settings_get_log_retain_archive_count ta_object_t settings int Can not be used Global ta_terminal_settings_get_log_retain_file_count ta_object_t settings int Can not be used Global ta_terminal_settings_set_log_dir ta_object_t settings ta_object_t log_dir Can not be used Global ta_terminal_settings_set_log_file_count_per_archive ta_object_t settings int log_file_count_per_archive Can not be used Global ta_terminal_settings_set_log_retain_archive_count ta_object_t settings int log_retain_archive_count Can not be used Global ta_terminal_settings_set_log_retain_file_count ta_object_t settings int retain_file_count Can not be used Global ta_transaction_information_get_acq ta_object_t trx_info int64_t Use ta_transaction_information_get_acq_id Global ta_transaction_information_get_cardholder_name ta_object_t trx_info ta_object_t Use ta_card_data_get_cardholder instead on card_data object returned by ta_transaction_response_get_card_data</field>
   </doc>
   <doc>
     <field name="type">struct</field>
@@ -18706,6 +19262,27 @@ $(document).ready(function(){initNavTree('search.html',''); initResizable(); });
     <field name="text">Support for giftcard functions</field>
   </doc>
   <doc>
+    <field name="type">variable</field>
+    <field name="name">ta_s_features_payment::account_selection</field>
+    <field name="url">structta__s__features__payment.html#a7405300d60b9ccfda2ef69591f2727bd</field>
+    <field name="keywords">account_selection ta_s_features_payment::account_selection ta_s_features_payment</field>
+    <field name="text">Account selection</field>
+  </doc>
+  <doc>
+    <field name="type">variable</field>
+    <field name="name">ta_s_features_payment::mcr</field>
+    <field name="url">structta__s__features__payment.html#a149240457b190d3c22b3c3d005543752</field>
+    <field name="keywords">mcr ta_s_features_payment::mcr ta_s_features_payment</field>
+    <field name="text">Support merchant choice routing</field>
+  </doc>
+  <doc>
+    <field name="type">variable</field>
+    <field name="name">ta_s_features_payment::surcharge</field>
+    <field name="url">structta__s__features__payment.html#ada4ce7e737b90f92ea7a57c56e5532d4</field>
+    <field name="keywords">surcharge ta_s_features_payment::surcharge ta_s_features_payment</field>
+    <field name="text">Support surcharge</field>
+  </doc>
+  <doc>
     <field name="type">struct</field>
     <field name="name">ta_s_features_sixml</field>
     <field name="url">structta__s__features__sixml.html</field>
@@ -18879,6 +19456,13 @@ $(document).ready(function(){initNavTree('search.html',''); initResizable(); });
     <field name="url">structta__s__features__sixml.html#a51b9d589137b37d6ec89ac20d7dfb278</field>
     <field name="keywords">long_ecr_info_supported ta_s_features_sixml::long_ecr_info_supported ta_s_features_sixml</field>
     <field name="text">The device supports long 9 0 char EcrInfo values</field>
+  </doc>
+  <doc>
+    <field name="type">variable</field>
+    <field name="name">ta_s_features_sixml::sw_update_information</field>
+    <field name="url">structta__s__features__sixml.html#a4444e6a4052d360214a8e155f4090d97</field>
+    <field name="keywords">sw_update_information ta_s_features_sixml::sw_update_information ta_s_features_sixml</field>
+    <field name="text">The device supports software update information</field>
   </doc>
   <doc>
     <field name="type">struct</field>
@@ -19145,6 +19729,13 @@ $(document).ready(function(){initNavTree('search.html',''); initResizable(); });
     <field name="url">structta__s__terminal__listener.html#a306aba871e75e557cc8c4043a0b316ff</field>
     <field name="keywords">receipt_request_completed ta_s_terminal_listener::receipt_request_completed ta_s_terminal_listener</field>
     <field name="text">Receipt request completed</field>
+  </doc>
+  <doc>
+    <field name="type">variable</field>
+    <field name="name">ta_s_terminal_listener::transaction_info_request_completed</field>
+    <field name="url">structta__s__terminal__listener.html#aee8acd0a29ada71c7f171554a530b511</field>
+    <field name="keywords">transaction_info_request_completed ta_s_terminal_listener::transaction_info_request_completed ta_s_terminal_listener</field>
+    <field name="text">Transaction info request completed</field>
   </doc>
   <doc>
     <field name="type">variable</field>

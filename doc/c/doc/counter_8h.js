@@ -2,6 +2,7 @@ var counter_8h =
 [
     [ "ta_counter_get_acq_id", "counter_8h.html#a52311be84878476191156d87e2773967", null ],
     [ "ta_counter_get_brand_name", "counter_8h.html#a369ca551baf1a48bf4517c3f7d0965ae", null ],
+    [ "ta_counter_get_card_product_type", "counter_8h.html#a9bcefaf3afefc954854964037b592c14", null ],
     [ "ta_counter_get_count", "counter_8h.html#a7ddd09af57ef6f1b3fc5f9ca133d5fb9", null ],
     [ "ta_counter_get_count_dcc", "counter_8h.html#a1f5aa34615313cea4481f39e5764c3cf", null ],
     [ "ta_counter_get_count_foreign", "counter_8h.html#a514d4622868143f58e77a765a1ecc9f9", null ],

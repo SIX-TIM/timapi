@@ -563,6 +563,12 @@
                             <a href="SIX.TimApi.Terminal.TransactionCompletedEventHandler.html" title="Terminal.TransactionCompletedEventHandler" class="">Terminal.TransactionCompletedEventHandler</a>
                           </li>
                           <li class="">
+                            <a href="SIX.TimApi.Terminal.TransactionInfoRequestCompletedEventArgs.html" title="Terminal.TransactionInfoRequestCompletedEventArgs" class="">Terminal.TransactionInfoRequestCompletedEventArgs</a>
+                          </li>
+                          <li class="">
+                            <a href="SIX.TimApi.Terminal.TransactionInfoRequestCompletedEventHandler.html" title="Terminal.TransactionInfoRequestCompletedEventHandler" class="">Terminal.TransactionInfoRequestCompletedEventHandler</a>
+                          </li>
+                          <li class="">
                             <a href="SIX.TimApi.Terminal.VasInfoHandler.html" title="Terminal.VasInfoHandler" class="">Terminal.VasInfoHandler</a>
                           </li>
                           <li class="">
@@ -585,6 +591,9 @@
                           </li>
                           <li class="">
                             <a href="SIX.TimApi.TransactionData.html" title="TransactionData" class="">TransactionData</a>
+                          </li>
+                          <li class="">
+                            <a href="SIX.TimApi.TransactionInfoRequestResponse.html" title="TransactionInfoRequestResponse" class="">TransactionInfoRequestResponse</a>
                           </li>
                           <li class="">
                             <a href="SIX.TimApi.TransactionInformation.html" title="TransactionInformation" class="">TransactionInformation</a>
@@ -617,10 +626,19 @@
                         
                         <ul class="nav level2">
                           <li class="">
+                            <a href="SIX.TimApi.Constants.AccountType.html" title="AccountType" class="">AccountType</a>
+                          </li>
+                          <li class="">
+                            <a href="SIX.TimApi.Constants.AdditionalInfoItem.html" title="AdditionalInfoItem" class="">AdditionalInfoItem</a>
+                          </li>
+                          <li class="">
                             <a href="SIX.TimApi.Constants.AdjustmentResult.html" title="AdjustmentResult" class="">AdjustmentResult</a>
                           </li>
                           <li class="">
                             <a href="SIX.TimApi.Constants.AdminFunctions.html" title="AdminFunctions" class="">AdminFunctions</a>
+                          </li>
+                          <li class="">
+                            <a href="SIX.TimApi.Constants.AllowedAccounts.html" title="AllowedAccounts" class="">AllowedAccounts</a>
                           </li>
                           <li class="">
                             <a href="SIX.TimApi.Constants.BrandBarBrand.html" title="BrandBarBrand" class="">BrandBarBrand</a>
@@ -648,6 +666,9 @@
                           </li>
                           <li class="">
                             <a href="SIX.TimApi.Constants.CouponRejectionReason.html" title="CouponRejectionReason" class="">CouponRejectionReason</a>
+                          </li>
+                          <li class="">
+                            <a href="SIX.TimApi.Constants.Currency.html" title="Currency" class="">Currency</a>
                           </li>
                           <li class="">
                             <a href="SIX.TimApi.Constants.CurrencyType.html" title="CurrencyType" class="">CurrencyType</a>
@@ -705,6 +726,9 @@
                           </li>
                           <li class="">
                             <a href="SIX.TimApi.Constants.NonFinancialTransactions.html" title="NonFinancialTransactions" class="">NonFinancialTransactions</a>
+                          </li>
+                          <li class="">
+                            <a href="SIX.TimApi.Constants.Outcome.html" title="Outcome" class="">Outcome</a>
                           </li>
                           <li class="">
                             <a href="SIX.TimApi.Constants.PaymentProtocol.html" title="PaymentProtocol" class="">PaymentProtocol</a>
@@ -773,6 +797,9 @@
                             <a href="SIX.TimApi.Constants.Theme.html" title="Theme" class="">Theme</a>
                           </li>
                           <li class="">
+                            <a href="SIX.TimApi.Constants.TokenPanType.html" title="TokenPanType" class="">TokenPanType</a>
+                          </li>
+                          <li class="">
                             <a href="SIX.TimApi.Constants.TransactionReason.html" title="TransactionReason" class="">TransactionReason</a>
                           </li>
                           <li class="">
@@ -806,7 +833,7 @@
                             <a href="SIX.TimApi.Receipts.CustomReceiptFormatter.Condition.html" title="CustomReceiptFormatter.Condition" class="">CustomReceiptFormatter.Condition</a>
                           </li>
                           <li class="">
-                            <a href="SIX.TimApi.Receipts.CustomReceiptFormatter.DynamicBoolean.html" title="CustomReceiptFormatter.DynamicBoolean" class="">CustomReceiptFormatter.DynamicBoolean</a>
+                            <a href="SIX.TimApi.Receipts.CustomReceiptFormatter.Counters.html" title="CustomReceiptFormatter.Counters" class="">CustomReceiptFormatter.Counters</a>
                           </li>
                           <li class="">
                             <a href="SIX.TimApi.Receipts.CustomReceiptFormatter.LineFormat.html" title="CustomReceiptFormatter.LineFormat" class="">CustomReceiptFormatter.LineFormat</a>
@@ -872,8 +899,7 @@
   
   <h1 id="SIX_TimApi_TransactionResponse" data-uid="SIX.TimApi.TransactionResponse" class="text-break">Class TransactionResponse
   </h1>
-  <div class="markdown level0 summary"><p>Contains the result of a transaction finished after calling <a class="xref" href="SIX.TimApi.Terminal.html#SIX_TimApi_Terminal_Transaction_SIX_TimApi_Constants_TransactionType_SIX_TimApi_Amount_">Transaction(TransactionType, Amount)</a> or <a class="xref" href="SIX.TimApi.Terminal.html#SIX_TimApi_Terminal_TransactionAsync_SIX_TimApi_Constants_TransactionType_SIX_TimApi_Amount_">TransactionAsync(TransactionType, Amount)</a>.
-Immutable class.</p>
+  <div class="markdown level0 summary"><p>Command request to send to card.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
@@ -881,45 +907,24 @@ Immutable class.</p>
     <div class="level0"><span class="xref">System.Object</span></div>
     <div class="level1"><span class="xref">TransactionResponse</span></div>
   </div>
-  <div class="inheritedMembers">
-    <h5>Inherited Members</h5>
-    <div>
-      <span class="xref">System.Object.Equals(System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.GetHashCode()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.GetType()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.MemberwiseClone()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
-    </div>
-  </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="SIX.TimApi.html">SIX.TimApi</a></h6>
   <h6><strong>Assembly</strong>: TimApi.dll</h6>
   <h5 id="SIX_TimApi_TransactionResponse_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class TransactionResponse</code></pre>
+    <pre><code class="lang-csharp hljs">public class TransactionResponse : object</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
   
   
   <a id="SIX_TimApi_TransactionResponse__ctor_" data-uid="SIX.TimApi.TransactionResponse.#ctor*"></a>
-  <h4 id="SIX_TimApi_TransactionResponse__ctor_SIX_TimApi_Constants_TransactionType_SIX_TimApi_Amount_SIX_TimApi_Amount_SIX_TimApi_Amount_SIX_TimApi_AmountDcc_SIX_TimApi_Amount_SIX_TimApi_TransactionInformation_System_String_SIX_TimApi_CardData_SIX_TimApi_PrintData_SIX_TimApi_Amount_System_Collections_Generic_Dictionary_System_Int64_System_String__SIX_TimApi_Basket_SIX_TimApi_Amount_" data-uid="SIX.TimApi.TransactionResponse.#ctor(SIX.TimApi.Constants.TransactionType,SIX.TimApi.Amount,SIX.TimApi.Amount,SIX.TimApi.Amount,SIX.TimApi.AmountDcc,SIX.TimApi.Amount,SIX.TimApi.TransactionInformation,System.String,SIX.TimApi.CardData,SIX.TimApi.PrintData,SIX.TimApi.Amount,System.Collections.Generic.Dictionary{System.Int64,System.String},SIX.TimApi.Basket,SIX.TimApi.Amount)">TransactionResponse(TransactionType, Amount, Amount, Amount, AmountDcc, Amount, TransactionInformation, String, CardData, PrintData, Amount, Dictionary&lt;Int64, String&gt;, Basket, Amount)</h4>
+  <h4 id="SIX_TimApi_TransactionResponse__ctor_SIX_TimApi_Constants_TransactionType_SIX_TimApi_Amount_SIX_TimApi_Amount_SIX_TimApi_Amount_SIX_TimApi_AmountDcc_SIX_TimApi_Amount_SIX_TimApi_TransactionInformation_String_SIX_TimApi_CardData_SIX_TimApi_PrintData_SIX_TimApi_Amount_Dictionary_System_Int64_String__SIX_TimApi_Basket_SIX_TimApi_Amount_SIX_TimApi_Amount_" data-uid="SIX.TimApi.TransactionResponse.#ctor(SIX.TimApi.Constants.TransactionType,SIX.TimApi.Amount,SIX.TimApi.Amount,SIX.TimApi.Amount,SIX.TimApi.AmountDcc,SIX.TimApi.Amount,SIX.TimApi.TransactionInformation,String,SIX.TimApi.CardData,SIX.TimApi.PrintData,SIX.TimApi.Amount,Dictionary{System.Int64,String},SIX.TimApi.Basket,SIX.TimApi.Amount,SIX.TimApi.Amount)">TransactionResponse(TransactionType, Amount, Amount, Amount, AmountDcc, Amount, TransactionInformation, String, CardData, PrintData, Amount, Dictionary&lt;Int64, String&gt;, Basket, Amount, Amount)</h4>
   <div class="markdown level1 summary"><p>Create transaction response.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public TransactionResponse(TransactionType transactionType, Amount amount, Amount amountOther, Amount amountDue, AmountDcc amountDcc, Amount amountSaldo, TransactionInformation transactionInformation, string dccDisclaimer, CardData cardData, PrintData printData, Amount tipAmount, Dictionary&lt;long, string&gt; additionalInfo, Basket basket, Amount amountLoyaltyCashback)</code></pre>
+    <pre><code class="lang-csharp hljs">public TransactionResponse(TransactionType transactionType, Amount amount, Amount amountOther, Amount amountDue, AmountDcc amountDcc, Amount amountSaldo, TransactionInformation transactionInformation, String dccDisclaimer, CardData cardData, PrintData printData, Amount tipAmount, Dictionary&lt;long, String&gt; additionalInfo, Basket basket, Amount amountLoyaltyCashback, Amount amountSurcharge)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -967,7 +972,7 @@ Immutable class.</p>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="xref">String</span></td>
         <td><span class="parametername">dccDisclaimer</span></td>
         <td></td>
       </tr>
@@ -987,7 +992,7 @@ Immutable class.</p>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;<span class="xref">System.Int64</span>, <span class="xref">System.String</span>&gt;</td>
+        <td><span class="xref">Dictionary</span>&lt;<span class="xref">System.Int64</span>, <span class="xref">String</span>&gt;</td>
         <td><span class="parametername">additionalInfo</span></td>
         <td></td>
       </tr>
@@ -999,6 +1004,38 @@ Immutable class.</p>
       <tr>
         <td><a class="xref" href="SIX.TimApi.Amount.html">Amount</a></td>
         <td><span class="parametername">amountLoyaltyCashback</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="SIX.TimApi.Amount.html">Amount</a></td>
+        <td><span class="parametername">amountSurcharge</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  
+  
+  <h4 id="SIX_TimApi_TransactionResponse_AmountSurcharge" data-uid="SIX.TimApi.TransactionResponse.AmountSurcharge">AmountSurcharge</h4>
+  <div class="markdown level1 summary"><p>Surcharge amount or null.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Amount AmountSurcharge</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="SIX.TimApi.Amount.html">Amount</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -1025,7 +1062,7 @@ Immutable class.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;<span class="xref">System.Int64</span>, <span class="xref">System.String</span>&gt;</td>
+        <td><span class="xref">Dictionary</span>&lt;<span class="xref">System.Int64</span>, <span class="xref">System.String</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -1274,7 +1311,7 @@ Immutable class.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string DccDisclaimer { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public String DccDisclaimer { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1286,7 +1323,7 @@ Immutable class.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="xref">String</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -1380,7 +1417,7 @@ Immutable class.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int cardCountryCode()</code></pre>
+    <pre><code class="lang-csharp hljs">public Int32 cardCountryCode()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1392,7 +1429,7 @@ Immutable class.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Int32</span></td>
+        <td><span class="xref">Int32</span></td>
         <td><p>int?</p>
 </td>
       </tr>
@@ -1462,7 +1499,7 @@ and terminal country code are both set and are equal.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int terminalCountryCode()</code></pre>
+    <pre><code class="lang-csharp hljs">public Int32 terminalCountryCode()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1474,7 +1511,7 @@ and terminal country code are both set and are equal.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Int32</span></td>
+        <td><span class="xref">Int32</span></td>
         <td><p>Int32</p>
 </td>
       </tr>
@@ -1489,7 +1526,7 @@ and terminal country code are both set and are equal.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+    <pre><code class="lang-csharp hljs">public override String ToString()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1501,13 +1538,11 @@ and terminal country code are both set and are equal.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="xref">String</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  <h5 class="overrides">Overrides</h5>
-  <div><span class="xref">System.Object.ToString()</span></div>
   
   
   <a id="SIX_TimApi_TransactionResponse_wasDcc_" data-uid="SIX.TimApi.TransactionResponse.wasDcc*"></a>

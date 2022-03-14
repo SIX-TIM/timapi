@@ -14,6 +14,7 @@ var transaction__status_8h =
       [ "ta_c_ts_pin_entry", "transaction__status_8h.html#a71a1d6fb385eb7008599dba8d7347567a8c7fe4842e95db72a623dc2b2b421bd5", null ],
       [ "ta_c_ts_signature_capture", "transaction__status_8h.html#a71a1d6fb385eb7008599dba8d7347567a6c77eee03c2232808f90449d97da551c", null ],
       [ "ta_c_ts_processing", "transaction__status_8h.html#a71a1d6fb385eb7008599dba8d7347567a5d8026449fa77ce2a2ae416cbfa4b876", null ],
-      [ "ta_c_ts_wait_for_commit", "transaction__status_8h.html#a71a1d6fb385eb7008599dba8d7347567a78afeb45bbe2dcbdfa8eeb49c694bbcf", null ]
+      [ "ta_c_ts_wait_for_commit", "transaction__status_8h.html#a71a1d6fb385eb7008599dba8d7347567a78afeb45bbe2dcbdfa8eeb49c694bbcf", null ],
+      [ "ta_c_ts_account_selection", "transaction__status_8h.html#a71a1d6fb385eb7008599dba8d7347567ae2edc30ce534caf3c7714dae6178fa27", null ]
     ] ]
 ];

@@ -14,6 +14,7 @@ var transaction__response_8h =
     [ "ta_transaction_response_get_amount_loyalty_cashback", "transaction__response_8h.html#a02a8d9d6e413af019115905ca39422ad", null ],
     [ "ta_transaction_response_get_amount_other", "transaction__response_8h.html#af880d37ab240c6bba47d50b219d3eaf5", null ],
     [ "ta_transaction_response_get_amount_saldo", "transaction__response_8h.html#a69650eb05df37c15d94e7defa899cd3d", null ],
+    [ "ta_transaction_response_get_amount_surcharge", "transaction__response_8h.html#a85e341dc75d5d6089cbd8f98f6e39b8c", null ],
     [ "ta_transaction_response_get_amount_tip", "transaction__response_8h.html#ac479cbadc4b4512d3e899b12f25d2d99", null ],
     [ "ta_transaction_response_get_basket", "transaction__response_8h.html#a5767b9bd6df78e08793b378549085628", null ],
     [ "ta_transaction_response_get_card_data", "transaction__response_8h.html#a7ab97c3099f827fb402917663079b6eb", null ],

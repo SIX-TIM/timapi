@@ -172,6 +172,12 @@ Functions</h2></td></tr>
 <tr class="memitem:a779188dfc311a6d73ce7660b91a56c58"><td class="memItemLeft" align="right" valign="top"><a class="el" href="result__code_8h.html#ab4ec13ca136d8c8377f07b334c5c431e">ta_e_result_code_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="basket__item_8h.html#a779188dfc311a6d73ce7660b91a56c58">ta_basket_item_get_discount_id</a> (<a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a> item, <a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a> *discount_id)</td></tr>
 <tr class="memdesc:a779188dfc311a6d73ce7660b91a56c58"><td class="mdescLeft">&#160;</td><td class="mdescRight">Discount ID if AmountDiscount.  <a href="basket__item_8h.html#a779188dfc311a6d73ce7660b91a56c58">More...</a><br /></td></tr>
 <tr class="separator:a779188dfc311a6d73ce7660b91a56c58"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6f19240e69c2702f860717cc297ebc5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="result__code_8h.html#ab4ec13ca136d8c8377f07b334c5c431e">ta_e_result_code_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="basket__item_8h.html#ab6f19240e69c2702f860717cc297ebc5">ta_basket_item_get_petrol_pump_number</a> (<a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a> item, <a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a> *petrol_pump_number)</td></tr>
+<tr class="memdesc:ab6f19240e69c2702f860717cc297ebc5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specifies the used petrol pump number used in a sixml:Item as part of a sixml:Basket.  <a href="basket__item_8h.html#ab6f19240e69c2702f860717cc297ebc5">More...</a><br /></td></tr>
+<tr class="separator:ab6f19240e69c2702f860717cc297ebc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10cad8a02e98dc4886ae7e825240bf83"><td class="memItemLeft" align="right" valign="top"><a class="el" href="result__code_8h.html#ab4ec13ca136d8c8377f07b334c5c431e">ta_e_result_code_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="basket__item_8h.html#a10cad8a02e98dc4886ae7e825240bf83">ta_basket_item_set_petrol_pump_number</a> (<a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a> item, <a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a> petrol_pump_number)</td></tr>
+<tr class="memdesc:a10cad8a02e98dc4886ae7e825240bf83"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specifies the used petrol pump number used in a sixml:Item as part of a sixml:Basket.  <a href="basket__item_8h.html#a10cad8a02e98dc4886ae7e825240bf83">More...</a><br /></td></tr>
+<tr class="separator:a10cad8a02e98dc4886ae7e825240bf83"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="aeb177283a929efac9741c71cf51f9d39"></a>
@@ -709,6 +715,52 @@ Functions</h2></td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>item</em> is <em>ta_object_invalid</em>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>item</em> is not of type <a class="el" href="basket__item_8h.html">basket_item</a>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>loyalty_id</em> is <em>null-pointer</em>. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ab6f19240e69c2702f860717cc297ebc5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab6f19240e69c2702f860717cc297ebc5">&#9670;&nbsp;</a></span>ta_basket_item_get_petrol_pump_number()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="result__code_8h.html#ab4ec13ca136d8c8377f07b334c5c431e">ta_e_result_code_t</a> ta_basket_item_get_petrol_pump_number </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a>&#160;</td>
+          <td class="paramname"><em>item</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a> *&#160;</td>
+          <td class="paramname"><em>petrol_pump_number</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Specifies the used petrol pump number used in a sixml:Item as part of a sixml:Basket. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">item</td><td>Object instance of type <a class="el" href="basket__item_8h.html">basket_item</a>. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">petrol_pump_number</td><td>Pointer to variable to write object instance to. Object instance is of type <a class="el" href="integer_8h.html">integer</a> and is not retained. Object instance is <em>ta_object_invalid</em> if value is not set in <em>item</em>.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">ta_c_rc_ok</td><td>Object instance written to <em>petrol_pump_number</em>. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>item</em> is <em>ta_object_invalid</em>. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>item</em> is not of type <a class="el" href="basket__item_8h.html">basket_item</a>. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>petrol_pump_number</em> is <em>null-pointer</em>. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1261,6 +1313,52 @@ Functions</h2></td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>item</em> is <em>ta_object_invalid</em>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>item</em> is not of type <a class="el" href="basket__item_8h.html">basket_item</a>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>loyalty_id</em> is not <em>ta_object_invalid</em> and is not of type <em>string</em>. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a10cad8a02e98dc4886ae7e825240bf83"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a10cad8a02e98dc4886ae7e825240bf83">&#9670;&nbsp;</a></span>ta_basket_item_set_petrol_pump_number()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="result__code_8h.html#ab4ec13ca136d8c8377f07b334c5c431e">ta_e_result_code_t</a> ta_basket_item_set_petrol_pump_number </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a>&#160;</td>
+          <td class="paramname"><em>item</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a>&#160;</td>
+          <td class="paramname"><em>petrol_pump_number</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Specifies the used petrol pump number used in a sixml:Item as part of a sixml:Basket. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">item</td><td>Object instance of type <a class="el" href="basket__item_8h.html">basket_item</a>. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">petrol_pump_number</td><td>Object instance to set. Object instance can be <em>ta_object_invalid</em> to clear the value in <em>item</em>. If object instance is not ta_object_invalid is has to be of type <a class="el" href="integer_8h.html">integer</a>.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">ta_c_rc_ok</td><td>Object instance assigned to <em>item</em>. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>item</em> is <em>ta_object_invalid</em>. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>item</em> is not of type <a class="el" href="basket__item_8h.html">basket_item</a>. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>petrol_pump_number</em> is not <em>ta_object_invalid</em> and is not of type <em>integer</em>. </td></tr>
   </table>
   </dd>
 </dl>

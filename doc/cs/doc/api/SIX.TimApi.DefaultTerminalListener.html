@@ -563,6 +563,12 @@
                             <a href="SIX.TimApi.Terminal.TransactionCompletedEventHandler.html" title="Terminal.TransactionCompletedEventHandler" class="">Terminal.TransactionCompletedEventHandler</a>
                           </li>
                           <li class="">
+                            <a href="SIX.TimApi.Terminal.TransactionInfoRequestCompletedEventArgs.html" title="Terminal.TransactionInfoRequestCompletedEventArgs" class="">Terminal.TransactionInfoRequestCompletedEventArgs</a>
+                          </li>
+                          <li class="">
+                            <a href="SIX.TimApi.Terminal.TransactionInfoRequestCompletedEventHandler.html" title="Terminal.TransactionInfoRequestCompletedEventHandler" class="">Terminal.TransactionInfoRequestCompletedEventHandler</a>
+                          </li>
+                          <li class="">
                             <a href="SIX.TimApi.Terminal.VasInfoHandler.html" title="Terminal.VasInfoHandler" class="">Terminal.VasInfoHandler</a>
                           </li>
                           <li class="">
@@ -585,6 +591,9 @@
                           </li>
                           <li class="">
                             <a href="SIX.TimApi.TransactionData.html" title="TransactionData" class="">TransactionData</a>
+                          </li>
+                          <li class="">
+                            <a href="SIX.TimApi.TransactionInfoRequestResponse.html" title="TransactionInfoRequestResponse" class="">TransactionInfoRequestResponse</a>
                           </li>
                           <li class="">
                             <a href="SIX.TimApi.TransactionInformation.html" title="TransactionInformation" class="">TransactionInformation</a>
@@ -617,10 +626,19 @@
                         
                         <ul class="nav level2">
                           <li class="">
+                            <a href="SIX.TimApi.Constants.AccountType.html" title="AccountType" class="">AccountType</a>
+                          </li>
+                          <li class="">
+                            <a href="SIX.TimApi.Constants.AdditionalInfoItem.html" title="AdditionalInfoItem" class="">AdditionalInfoItem</a>
+                          </li>
+                          <li class="">
                             <a href="SIX.TimApi.Constants.AdjustmentResult.html" title="AdjustmentResult" class="">AdjustmentResult</a>
                           </li>
                           <li class="">
                             <a href="SIX.TimApi.Constants.AdminFunctions.html" title="AdminFunctions" class="">AdminFunctions</a>
+                          </li>
+                          <li class="">
+                            <a href="SIX.TimApi.Constants.AllowedAccounts.html" title="AllowedAccounts" class="">AllowedAccounts</a>
                           </li>
                           <li class="">
                             <a href="SIX.TimApi.Constants.BrandBarBrand.html" title="BrandBarBrand" class="">BrandBarBrand</a>
@@ -648,6 +666,9 @@
                           </li>
                           <li class="">
                             <a href="SIX.TimApi.Constants.CouponRejectionReason.html" title="CouponRejectionReason" class="">CouponRejectionReason</a>
+                          </li>
+                          <li class="">
+                            <a href="SIX.TimApi.Constants.Currency.html" title="Currency" class="">Currency</a>
                           </li>
                           <li class="">
                             <a href="SIX.TimApi.Constants.CurrencyType.html" title="CurrencyType" class="">CurrencyType</a>
@@ -705,6 +726,9 @@
                           </li>
                           <li class="">
                             <a href="SIX.TimApi.Constants.NonFinancialTransactions.html" title="NonFinancialTransactions" class="">NonFinancialTransactions</a>
+                          </li>
+                          <li class="">
+                            <a href="SIX.TimApi.Constants.Outcome.html" title="Outcome" class="">Outcome</a>
                           </li>
                           <li class="">
                             <a href="SIX.TimApi.Constants.PaymentProtocol.html" title="PaymentProtocol" class="">PaymentProtocol</a>
@@ -773,6 +797,9 @@
                             <a href="SIX.TimApi.Constants.Theme.html" title="Theme" class="">Theme</a>
                           </li>
                           <li class="">
+                            <a href="SIX.TimApi.Constants.TokenPanType.html" title="TokenPanType" class="">TokenPanType</a>
+                          </li>
+                          <li class="">
                             <a href="SIX.TimApi.Constants.TransactionReason.html" title="TransactionReason" class="">TransactionReason</a>
                           </li>
                           <li class="">
@@ -806,7 +833,7 @@
                             <a href="SIX.TimApi.Receipts.CustomReceiptFormatter.Condition.html" title="CustomReceiptFormatter.Condition" class="">CustomReceiptFormatter.Condition</a>
                           </li>
                           <li class="">
-                            <a href="SIX.TimApi.Receipts.CustomReceiptFormatter.DynamicBoolean.html" title="CustomReceiptFormatter.DynamicBoolean" class="">CustomReceiptFormatter.DynamicBoolean</a>
+                            <a href="SIX.TimApi.Receipts.CustomReceiptFormatter.Counters.html" title="CustomReceiptFormatter.Counters" class="">CustomReceiptFormatter.Counters</a>
                           </li>
                           <li class="">
                             <a href="SIX.TimApi.Receipts.CustomReceiptFormatter.LineFormat.html" title="CustomReceiptFormatter.LineFormat" class="">CustomReceiptFormatter.LineFormat</a>
@@ -1425,7 +1452,7 @@ started request finished.</p>
   
   
   <a id="SIX_TimApi_DefaultTerminalListener_DeferredAuth_" data-uid="SIX.TimApi.DefaultTerminalListener.DeferredAuth*"></a>
-  <h4 id="SIX_TimApi_DefaultTerminalListener_DeferredAuth_SIX_TimApi_Terminal_SIX_TimApi_TransactionResponse_" data-uid="SIX.TimApi.DefaultTerminalListener.DeferredAuth(SIX.TimApi.Terminal,SIX.TimApi.TransactionResponse)">DeferredAuth(Terminal, TransactionResponse)</h4>
+  <h4 id="SIX_TimApi_DefaultTerminalListener_DeferredAuth_SIX_TimApi_Terminal_TransactionResponse_" data-uid="SIX.TimApi.DefaultTerminalListener.DeferredAuth(SIX.TimApi.Terminal,TransactionResponse)">DeferredAuth(Terminal, TransactionResponse)</h4>
   <div class="markdown level1 summary"><p>Called if a Deferred Authorization Notification has been received.</p>
 <p>Supported only if  Guides.UNATTENDED is enabled.</p>
 </div>
@@ -1450,7 +1477,7 @@ started request finished.</p>
         <td></td>
       </tr>
       <tr>
-        <td><a class="xref" href="SIX.TimApi.TransactionResponse.html">TransactionResponse</a></td>
+        <td><span class="xref">TransactionResponse</span></td>
         <td><span class="parametername">response</span></td>
         <td></td>
       </tr>
@@ -2676,7 +2703,7 @@ event.getTerminal().getTerminalState().</p>
   
   
   <a id="SIX_TimApi_DefaultTerminalListener_TransactionCompleted_" data-uid="SIX.TimApi.DefaultTerminalListener.TransactionCompleted*"></a>
-  <h4 id="SIX_TimApi_DefaultTerminalListener_TransactionCompleted_SIX_TimApi_TimEvent_SIX_TimApi_TransactionResponse_" data-uid="SIX.TimApi.DefaultTerminalListener.TransactionCompleted(SIX.TimApi.TimEvent,SIX.TimApi.TransactionResponse)">TransactionCompleted(TimEvent, TransactionResponse)</h4>
+  <h4 id="SIX_TimApi_DefaultTerminalListener_TransactionCompleted_SIX_TimApi_TimEvent_TransactionResponse_" data-uid="SIX.TimApi.DefaultTerminalListener.TransactionCompleted(SIX.TimApi.TimEvent,TransactionResponse)">TransactionCompleted(TimEvent, TransactionResponse)</h4>
   <div class="markdown level1 summary"><p>Called if an Terminal.transactionAsync(com.six.timapi.constants.TransactionType, Amount)
 or Terminal.transactionAsync(com.six.timapi.constants.TransactionType, TransactionRequest)
 started request finished.</p>
@@ -2703,9 +2730,46 @@ started request finished.</p>
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="SIX.TimApi.TransactionResponse.html">TransactionResponse</a></td>
+        <td><span class="xref">TransactionResponse</span></td>
         <td><span class="parametername">data</span></td>
         <td><p>Contains transaction result information and print information for the merchant and cardholder.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SIX_TimApi_DefaultTerminalListener_TransactionInfoRequestCompleted_" data-uid="SIX.TimApi.DefaultTerminalListener.TransactionInfoRequestCompleted*"></a>
+  <h4 id="SIX_TimApi_DefaultTerminalListener_TransactionInfoRequestCompleted_SIX_TimApi_TimEvent_TransactionInfoRequestResponse_" data-uid="SIX.TimApi.DefaultTerminalListener.TransactionInfoRequestCompleted(SIX.TimApi.TimEvent,TransactionInfoRequestResponse)">TransactionInfoRequestCompleted(TimEvent, TransactionInfoRequestResponse)</h4>
+  <div class="markdown level1 summary"><p>Called if an Terminal.TransactionInfoRequestAsync() started request finished.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void TransactionInfoRequestCompleted(TimEvent tevent, TransactionInfoRequestResponse data)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="SIX.TimApi.TimEvent.html">TimEvent</a></td>
+        <td><span class="parametername">tevent</span></td>
+        <td><p>Contains the terminal sending the event and error information if the request failed.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">TransactionInfoRequestResponse</span></td>
+        <td><span class="parametername">data</span></td>
+        <td><p>Contains all requested receipts up to a maximum number of receipts the EFT Terminal
+can send. if HasMoreReceipts is True not all receipts could be send by the EFT
+Terminal. call TransactionInfoRequest again to obtain more receipts.</p>
 </td>
       </tr>
     </tbody>

@@ -12,6 +12,7 @@ var basket__item_8h =
     [ "ta_basket_item_get_item_id", "basket__item_8h.html#afb96cfae52bce773ddcd3218d29f9034", null ],
     [ "ta_basket_item_get_item_quantity", "basket__item_8h.html#ac6165c6c2fcfec7a28d0d72ec2d23235", null ],
     [ "ta_basket_item_get_loyalty_id", "basket__item_8h.html#a54d6f5ffeebe8747b7c1e312588fe3e6", null ],
+    [ "ta_basket_item_get_petrol_pump_number", "basket__item_8h.html#ab6f19240e69c2702f860717cc297ebc5", null ],
     [ "ta_basket_item_get_prod_description", "basket__item_8h.html#a065a8c1c6d105c458c09887e5c009c4f", null ],
     [ "ta_basket_item_get_unit_amount_discount", "basket__item_8h.html#a1fc5057a4b009a8cd01c40c862e677fc", null ],
     [ "ta_basket_item_get_unit_amount_gross", "basket__item_8h.html#a0b49d0835802f5c1dd8676535198610a", null ],
@@ -24,6 +25,7 @@ var basket__item_8h =
     [ "ta_basket_item_set_item_id", "basket__item_8h.html#a29f10b50657e890618d5ed0775677362", null ],
     [ "ta_basket_item_set_item_quantity", "basket__item_8h.html#a26b7dd8d1fcac834904ed026f2ccb9e0", null ],
     [ "ta_basket_item_set_loyalty_id", "basket__item_8h.html#a3b8849380394fdeb6bca6342de83f8d6", null ],
+    [ "ta_basket_item_set_petrol_pump_number", "basket__item_8h.html#a10cad8a02e98dc4886ae7e825240bf83", null ],
     [ "ta_basket_item_set_prod_description", "basket__item_8h.html#abe79d0391beac72f533f3fa7c1b289b2", null ],
     [ "ta_basket_item_set_unit_amount_discount", "basket__item_8h.html#aee0178b2f40812a1233852b38dc66476", null ],
     [ "ta_basket_item_set_unit_amount_gross", "basket__item_8h.html#a7696dc43ab9e2645529ea61708563eed", null ]
