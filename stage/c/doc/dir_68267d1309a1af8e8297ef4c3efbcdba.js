@@ -68,6 +68,7 @@ var dir_68267d1309a1af8e8297ef4c3efbcdba =
     [ "timapi.h", "timapi_8h.html", null ],
     [ "total.h", "total_8h.html", "total_8h" ],
     [ "transaction_data.h", "transaction__data_8h.html", "transaction__data_8h" ],
+    [ "transaction_info_request_response.h", "transaction__info__request__response_8h.html", "transaction__info__request__response_8h" ],
     [ "transaction_information.h", "transaction__information_8h.html", "transaction__information_8h" ],
     [ "transaction_request.h", "transaction__request_8h.html", "transaction__request_8h" ],
     [ "transaction_response.h", "transaction__response_8h.html", "transaction__response_8h" ],

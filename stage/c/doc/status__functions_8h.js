@@ -15,6 +15,7 @@ var status__functions_8h =
       [ "ta_c_sf_change_language", "status__functions_8h.html#abf752dbd5ab3b758d2c21f390d8ef248a555e4a051fea0f6b90876cddacc52403", null ],
       [ "ta_c_sf_key_press", "status__functions_8h.html#abf752dbd5ab3b758d2c21f390d8ef248aa8b2a739ed137a8b8995ad89c617cb99", null ],
       [ "ta_c_sf_configuration_changed", "status__functions_8h.html#abf752dbd5ab3b758d2c21f390d8ef248af7cc7f4320c65688f8e6b8836a85c3a9", null ],
-      [ "ta_c_sf_wake_up", "status__functions_8h.html#abf752dbd5ab3b758d2c21f390d8ef248a0c51b563c6a303d027a807c6f473b182", null ]
+      [ "ta_c_sf_wake_up", "status__functions_8h.html#abf752dbd5ab3b758d2c21f390d8ef248a0c51b563c6a303d027a807c6f473b182", null ],
+      [ "ta_c_sf_transaction_info_request", "status__functions_8h.html#abf752dbd5ab3b758d2c21f390d8ef248a30c9794fed54dcf0dd60567c476ec954", null ]
     ] ]
 ];

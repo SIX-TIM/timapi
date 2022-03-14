@@ -23,5 +23,6 @@ var structta__s__features__sixml =
     [ "request_repetitition", "structta__s__features__sixml.html#aa15d93b2d8324b51bc34437f8a6153e8", null ],
     [ "sleep_timer", "structta__s__features__sixml.html#a9e50f8e05771e78f8f8d2e328aa84ec7", null ],
     [ "status_functions", "structta__s__features__sixml.html#ab0b778e5893b0886e442ba2708570124", null ],
+    [ "sw_update_information", "structta__s__features__sixml.html#a4444e6a4052d360214a8e155f4090d97", null ],
     [ "wake_up", "structta__s__features__sixml.html#afaa2f036b784215b0da9e8cd6aac60a1", null ]
 ];

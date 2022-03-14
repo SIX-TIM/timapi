@@ -2,6 +2,7 @@ var transaction__information_8h =
 [
     [ "ta_transaction_information_get_account_number", "transaction__information_8h.html#a792464715f1ececa80ce28923c3fc0b2", null ],
     [ "ta_transaction_information_get_acq", "transaction__information_8h.html#ae4cba84c86e9f14eb273cbe634fbea07", null ],
+    [ "ta_transaction_information_get_acq_id", "transaction__information_8h.html#a17398a7c75990e27d0a9ed6716909e8e", null ],
     [ "ta_transaction_information_get_acq_trans_ref", "transaction__information_8h.html#abc1909d7cf496cda810138b564da0b82", null ],
     [ "ta_transaction_information_get_auth_code", "transaction__information_8h.html#a40d5355d750f73743256828962fc4f35", null ],
     [ "ta_transaction_information_get_card_id", "transaction__information_8h.html#a141aa3b3030fb7241e95d32cb877255c", null ],
@@ -10,8 +11,10 @@ var transaction__information_8h =
     [ "ta_transaction_information_get_cvm", "transaction__information_8h.html#aa95eca6e1067b07b1d3abdf4582bb505", null ],
     [ "ta_transaction_information_get_merchant_action", "transaction__information_8h.html#ac16195f79e5e5e3c551079014e8ad9b7", null ],
     [ "ta_transaction_information_get_ngv_used_flag", "transaction__information_8h.html#a4c494ca8e0c4e19e05be8d09c8e077e6", null ],
+    [ "ta_transaction_information_get_omnichannel_payment_id", "transaction__information_8h.html#a4d0e99f0970c19995e7781bbaae31a9f", null ],
     [ "ta_transaction_information_get_person_oid", "transaction__information_8h.html#a423f7ad130e1724e949c89921e3a052a", null ],
     [ "ta_transaction_information_get_pos_entry_mode", "transaction__information_8h.html#a88bc69975934778ad5620ef6fb5ce97f", null ],
+    [ "ta_transaction_information_get_scheme_trx_id", "transaction__information_8h.html#ada53182831904d8cce6ca40e0eb74b83", null ],
     [ "ta_transaction_information_get_signature_information", "transaction__information_8h.html#ac5a13e357c847ce620bc6ca6ddbe81dc", null ],
     [ "ta_transaction_information_get_six_trx_ref_num", "transaction__information_8h.html#ab4c0c19189c25daf58120cf52dd3996d", null ],
     [ "ta_transaction_information_get_time_stamp", "transaction__information_8h.html#abb40fa80db14c91e88c37d20051750db", null ],

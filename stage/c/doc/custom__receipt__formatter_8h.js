@@ -17,7 +17,8 @@ var custom__receipt__formatter_8h =
       [ "ta_crfc_signature", "custom__receipt__formatter_8h.html#a07c5b9d0b4ce2c471dd995fbae1716b0a933a969b2ba4cecc04ae23de9dcfe573", null ],
       [ "ta_crfc_has_values", "custom__receipt__formatter_8h.html#a07c5b9d0b4ce2c471dd995fbae1716b0a0826e5fed0af3c978f47c1874b593749", null ],
       [ "ta_crfc_has_installment", "custom__receipt__formatter_8h.html#a07c5b9d0b4ce2c471dd995fbae1716b0a708af4aa24a8c1f76955f69957f40544", null ],
-      [ "ta_crfc_dcc", "custom__receipt__formatter_8h.html#a07c5b9d0b4ce2c471dd995fbae1716b0a72eb653b151a26ac6b1abc6916a6f464", null ]
+      [ "ta_crfc_dcc", "custom__receipt__formatter_8h.html#a07c5b9d0b4ce2c471dd995fbae1716b0a72eb653b151a26ac6b1abc6916a6f464", null ],
+      [ "ta_crfc_has_values_no_invalid_fields", "custom__receipt__formatter_8h.html#a07c5b9d0b4ce2c471dd995fbae1716b0a64ce1f27a3e0cb48b2c818e68f4bd76c", null ]
     ] ],
     [ "ta_e_custom_receipt_formatter_text_alignment", "custom__receipt__formatter_8h.html#a089412c826d5c6d0e523915d07b4036f", [
       [ "ta_c_crfta_left", "custom__receipt__formatter_8h.html#a089412c826d5c6d0e523915d07b4036faadb264cda357ac503e4e8d6ffd73c5cd", null ],
@@ -98,7 +99,9 @@ var custom__receipt__formatter_8h =
       [ "ta_c_crftt_field_pre_authorization_exp_date", "custom__receipt__formatter_8h.html#a883a5ff78a5d2ad805f9f6af32a8d2afa6d1e699ec05141232679f1cf52b9a394", null ],
       [ "ta_c_crftt_field_receipt_number", "custom__receipt__formatter_8h.html#a883a5ff78a5d2ad805f9f6af32a8d2afa3704e9471a99734593d5e48858313634", null ],
       [ "ta_c_crftt_field_shift_number", "custom__receipt__formatter_8h.html#a883a5ff78a5d2ad805f9f6af32a8d2afadefe33602c4b1cea5831b1ac44ebd931", null ],
-      [ "ta_c_crftt_field_card_product_type", "custom__receipt__formatter_8h.html#a883a5ff78a5d2ad805f9f6af32a8d2afa61d5b0959f499751e55a5ea16cace043", null ]
+      [ "ta_c_crftt_field_card_product_type", "custom__receipt__formatter_8h.html#a883a5ff78a5d2ad805f9f6af32a8d2afa61d5b0959f499751e55a5ea16cace043", null ],
+      [ "ta_c_crftt_field_account_type", "custom__receipt__formatter_8h.html#a883a5ff78a5d2ad805f9f6af32a8d2afa32f3a3e6b534548e013d083f70608d93", null ],
+      [ "ta_c_crftt_field_surcharge_amount", "custom__receipt__formatter_8h.html#a883a5ff78a5d2ad805f9f6af32a8d2afafede2ceb81bd8e222d43ed651e5c518e", null ]
     ] ],
     [ "ta_e_custom_receipt_formatter_translated_text", "custom__receipt__formatter_8h.html#aa2ad96ca8f3d24cc69d417eaa70dd2e3", [
       [ "ta_crftt_undefined", "custom__receipt__formatter_8h.html#aa2ad96ca8f3d24cc69d417eaa70dd2e3abec63d7f72efde2f9542a976110459dd", null ],
@@ -130,7 +133,10 @@ var custom__receipt__formatter_8h =
       [ "ta_crftt_trm_act_id", "custom__receipt__formatter_8h.html#aa2ad96ca8f3d24cc69d417eaa70dd2e3a302a627fda951a91b769c20abbc81ae8", null ],
       [ "ta_crftt_seq_ref_auth", "custom__receipt__formatter_8h.html#aa2ad96ca8f3d24cc69d417eaa70dd2e3a29a3298ad95034fc88a031e0a8cba98b", null ],
       [ "ta_crftt_epf", "custom__receipt__formatter_8h.html#aa2ad96ca8f3d24cc69d417eaa70dd2e3a0891ca2639be9b798e9cc76a5bffab33", null ],
-      [ "ta_crftt_seq_aut", "custom__receipt__formatter_8h.html#aa2ad96ca8f3d24cc69d417eaa70dd2e3a473f0b9b1649bdac569b654050e847a2", null ]
+      [ "ta_crftt_seq_aut", "custom__receipt__formatter_8h.html#aa2ad96ca8f3d24cc69d417eaa70dd2e3a473f0b9b1649bdac569b654050e847a2", null ],
+      [ "ta_crftt_account_type", "custom__receipt__formatter_8h.html#aa2ad96ca8f3d24cc69d417eaa70dd2e3ad64da92a143a4612f00bf293aca92988", null ],
+      [ "ta_crftt_surcharge_amount", "custom__receipt__formatter_8h.html#aa2ad96ca8f3d24cc69d417eaa70dd2e3a5023f40c7601f8e3efa6452374004baa", null ],
+      [ "ta_crftt_acq_id", "custom__receipt__formatter_8h.html#aa2ad96ca8f3d24cc69d417eaa70dd2e3a80e354988e8d646dc1f3bfcf68c48e9f", null ]
     ] ],
     [ "ta_compact_receipt_formatter_create", "custom__receipt__formatter_8h.html#a6311c7d24700b6ea029784f0274c1cf4", null ],
     [ "ta_custom_receipt_formatter_create", "custom__receipt__formatter_8h.html#abd4853cf2f499a6612d2974eb72df9bf", null ],

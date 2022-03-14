@@ -97,6 +97,9 @@ Functions</h2></td></tr>
 <tr class="memitem:aa4309f98a8a27186142c595f5ecd6819"><td class="memItemLeft" align="right" valign="top"><a class="el" href="result__code_8h.html#ab4ec13ca136d8c8377f07b334c5c431e">ta_e_result_code_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="counter_8h.html#aa4309f98a8a27186142c595f5ecd6819">ta_counter_get_payment_protocol</a> (<a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a> counter, <a class="el" href="payment__protocol_8h.html#a0f93e1fac4a5125e863383513ef6a0df">ta_e_payment_protocol_t</a> *payment_protocol)</td></tr>
 <tr class="memdesc:aa4309f98a8a27186142c595f5ecd6819"><td class="mdescLeft">&#160;</td><td class="mdescRight">Payment protocol linked to the brand.  <a href="counter_8h.html#aa4309f98a8a27186142c595f5ecd6819">More...</a><br /></td></tr>
 <tr class="separator:aa4309f98a8a27186142c595f5ecd6819"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9bcefaf3afefc954854964037b592c14"><td class="memItemLeft" align="right" valign="top"><a class="el" href="result__code_8h.html#ab4ec13ca136d8c8377f07b334c5c431e">ta_e_result_code_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="counter_8h.html#a9bcefaf3afefc954854964037b592c14">ta_counter_get_card_product_type</a> (<a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a> counter, <a class="el" href="card__product__type_8h.html#a685b299c15ab58b6c6df652016431f13">ta_e_card_product_type_t</a> *card_product_type)</td></tr>
+<tr class="memdesc:a9bcefaf3afefc954854964037b592c14"><td class="mdescLeft">&#160;</td><td class="mdescRight">Card product type or ta_c_cpt_undefined.  <a href="counter_8h.html#a9bcefaf3afefc954854964037b592c14">More...</a><br /></td></tr>
+<tr class="separator:a9bcefaf3afefc954854964037b592c14"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a52311be84878476191156d87e2773967"><td class="memItemLeft" align="right" valign="top"><a class="el" href="result__code_8h.html#ab4ec13ca136d8c8377f07b334c5c431e">ta_e_result_code_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="counter_8h.html#a52311be84878476191156d87e2773967">ta_counter_get_acq_id</a> (<a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a> counter, int64_t *acq_id)</td></tr>
 <tr class="memdesc:a52311be84878476191156d87e2773967"><td class="mdescLeft">&#160;</td><td class="mdescRight">Acquirer identifier. Uniquely identifies the acquirer.  <a href="counter_8h.html#a52311be84878476191156d87e2773967">More...</a><br /></td></tr>
 <tr class="separator:a52311be84878476191156d87e2773967"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -200,6 +203,52 @@ Functions</h2></td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>counter</em> is <em>ta_object_invalid</em>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>counter</em> is not of type <a class="el" href="counter_8h.html">counter</a>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>brand_name</em> is <em>null-pointer</em>. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a9bcefaf3afefc954854964037b592c14"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9bcefaf3afefc954854964037b592c14">&#9670;&nbsp;</a></span>ta_counter_get_card_product_type()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="result__code_8h.html#ab4ec13ca136d8c8377f07b334c5c431e">ta_e_result_code_t</a> ta_counter_get_card_product_type </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a>&#160;</td>
+          <td class="paramname"><em>counter</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="card__product__type_8h.html#a685b299c15ab58b6c6df652016431f13">ta_e_card_product_type_t</a> *&#160;</td>
+          <td class="paramname"><em>card_product_type</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Card product type or ta_c_cpt_undefined. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">counter</td><td>Object instance of type <a class="el" href="counter_8h.html">counter</a>. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">card_product_type</td><td>Pointer to variable to write value to.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">ta_c_rc_ok</td><td>Object instance written to <em>card_product_type</em>. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>counter</em> is <em>ta_object_invalid</em>. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>counter</em> is not of type <a class="el" href="counter_8h.html">counter</a>. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>card_product_type</em> is <em>null-pointer</em>. </td></tr>
   </table>
   </dd>
 </dl>

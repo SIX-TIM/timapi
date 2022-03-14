@@ -563,6 +563,12 @@
                             <a href="SIX.TimApi.Terminal.TransactionCompletedEventHandler.html" title="Terminal.TransactionCompletedEventHandler" class="">Terminal.TransactionCompletedEventHandler</a>
                           </li>
                           <li class="">
+                            <a href="SIX.TimApi.Terminal.TransactionInfoRequestCompletedEventArgs.html" title="Terminal.TransactionInfoRequestCompletedEventArgs" class="">Terminal.TransactionInfoRequestCompletedEventArgs</a>
+                          </li>
+                          <li class="">
+                            <a href="SIX.TimApi.Terminal.TransactionInfoRequestCompletedEventHandler.html" title="Terminal.TransactionInfoRequestCompletedEventHandler" class="">Terminal.TransactionInfoRequestCompletedEventHandler</a>
+                          </li>
+                          <li class="">
                             <a href="SIX.TimApi.Terminal.VasInfoHandler.html" title="Terminal.VasInfoHandler" class="">Terminal.VasInfoHandler</a>
                           </li>
                           <li class="">
@@ -585,6 +591,9 @@
                           </li>
                           <li class="">
                             <a href="SIX.TimApi.TransactionData.html" title="TransactionData" class="">TransactionData</a>
+                          </li>
+                          <li class="">
+                            <a href="SIX.TimApi.TransactionInfoRequestResponse.html" title="TransactionInfoRequestResponse" class="">TransactionInfoRequestResponse</a>
                           </li>
                           <li class="">
                             <a href="SIX.TimApi.TransactionInformation.html" title="TransactionInformation" class="">TransactionInformation</a>
@@ -617,10 +626,19 @@
                         
                         <ul class="nav level2">
                           <li class="">
+                            <a href="SIX.TimApi.Constants.AccountType.html" title="AccountType" class="">AccountType</a>
+                          </li>
+                          <li class="">
+                            <a href="SIX.TimApi.Constants.AdditionalInfoItem.html" title="AdditionalInfoItem" class="">AdditionalInfoItem</a>
+                          </li>
+                          <li class="">
                             <a href="SIX.TimApi.Constants.AdjustmentResult.html" title="AdjustmentResult" class="">AdjustmentResult</a>
                           </li>
                           <li class="">
                             <a href="SIX.TimApi.Constants.AdminFunctions.html" title="AdminFunctions" class="">AdminFunctions</a>
+                          </li>
+                          <li class="">
+                            <a href="SIX.TimApi.Constants.AllowedAccounts.html" title="AllowedAccounts" class="">AllowedAccounts</a>
                           </li>
                           <li class="">
                             <a href="SIX.TimApi.Constants.BrandBarBrand.html" title="BrandBarBrand" class="">BrandBarBrand</a>
@@ -648,6 +666,9 @@
                           </li>
                           <li class="">
                             <a href="SIX.TimApi.Constants.CouponRejectionReason.html" title="CouponRejectionReason" class="">CouponRejectionReason</a>
+                          </li>
+                          <li class="">
+                            <a href="SIX.TimApi.Constants.Currency.html" title="Currency" class="">Currency</a>
                           </li>
                           <li class="">
                             <a href="SIX.TimApi.Constants.CurrencyType.html" title="CurrencyType" class="">CurrencyType</a>
@@ -705,6 +726,9 @@
                           </li>
                           <li class="">
                             <a href="SIX.TimApi.Constants.NonFinancialTransactions.html" title="NonFinancialTransactions" class="">NonFinancialTransactions</a>
+                          </li>
+                          <li class="">
+                            <a href="SIX.TimApi.Constants.Outcome.html" title="Outcome" class="">Outcome</a>
                           </li>
                           <li class="">
                             <a href="SIX.TimApi.Constants.PaymentProtocol.html" title="PaymentProtocol" class="">PaymentProtocol</a>
@@ -773,6 +797,9 @@
                             <a href="SIX.TimApi.Constants.Theme.html" title="Theme" class="">Theme</a>
                           </li>
                           <li class="">
+                            <a href="SIX.TimApi.Constants.TokenPanType.html" title="TokenPanType" class="">TokenPanType</a>
+                          </li>
+                          <li class="">
                             <a href="SIX.TimApi.Constants.TransactionReason.html" title="TransactionReason" class="">TransactionReason</a>
                           </li>
                           <li class="">
@@ -806,7 +833,7 @@
                             <a href="SIX.TimApi.Receipts.CustomReceiptFormatter.Condition.html" title="CustomReceiptFormatter.Condition" class="">CustomReceiptFormatter.Condition</a>
                           </li>
                           <li class="">
-                            <a href="SIX.TimApi.Receipts.CustomReceiptFormatter.DynamicBoolean.html" title="CustomReceiptFormatter.DynamicBoolean" class="">CustomReceiptFormatter.DynamicBoolean</a>
+                            <a href="SIX.TimApi.Receipts.CustomReceiptFormatter.Counters.html" title="CustomReceiptFormatter.Counters" class="">CustomReceiptFormatter.Counters</a>
                           </li>
                           <li class="">
                             <a href="SIX.TimApi.Receipts.CustomReceiptFormatter.LineFormat.html" title="CustomReceiptFormatter.LineFormat" class="">CustomReceiptFormatter.LineFormat</a>
@@ -874,8 +901,20 @@
   <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
   <div class="markdown level0 remarks"></div>
+    <h3 id="classes">Classes
+  </h3>
+      <h4><a class="xref" href="SIX.TimApi.Constants.Currency.html">Currency</a></h4>
+      <section><p>Currency codes.</p>
+</section>
     <h3 id="enums">Enums
   </h3>
+      <h4><a class="xref" href="SIX.TimApi.Constants.AccountType.html">AccountType</a></h4>
+      <section><p>Identifies the selected account. If Account Selection is enabled, the transaction responses
+should contain this field. Default value is Credit.</p>
+</section>
+      <h4><a class="xref" href="SIX.TimApi.Constants.AdditionalInfoItem.html">AdditionalInfoItem</a></h4>
+      <section><p>AdditionalInfoItem enumeration.</p>
+</section>
       <h4><a class="xref" href="SIX.TimApi.Constants.AdjustmentResult.html">AdjustmentResult</a></h4>
       <section><p><p>Specifies if an amount adjustment notification was handled correctly. 0 for success.</p>
 <p>This field is returned in a standard TerminalStatus notification from terminal to ECR in
@@ -885,6 +924,9 @@ case an AmtAdjustment notification as been sent from ECR to terminal.</p>
 </section>
       <h4><a class="xref" href="SIX.TimApi.Constants.AdminFunctions.html">AdminFunctions</a></h4>
       <section><p>Flag constants for FeatureType and OptionType sixml:AdminFunctions value.</p>
+</section>
+      <h4><a class="xref" href="SIX.TimApi.Constants.AllowedAccounts.html">AllowedAccounts</a></h4>
+      <section><p>Constants for AllowedAccounts tag or&amp;ed together. Not set flags are restricted.</p>
 </section>
       <h4><a class="xref" href="SIX.TimApi.Constants.BrandBarBrand.html">BrandBarBrand</a></h4>
       <section><p>Brands that can be used in the BrandBar tag.</p>
@@ -1005,6 +1047,9 @@ response.</p>
       <h4><a class="xref" href="SIX.TimApi.Constants.NonFinancialTransactions.html">NonFinancialTransactions</a></h4>
       <section><p>Flag constants for FeatureType and OptionType sixml:NonFinancialTransactions value.</p>
 </section>
+      <h4><a class="xref" href="SIX.TimApi.Constants.Outcome.html">Outcome</a></h4>
+      <section><p>Identifies the outcome of the previous transaction (in the TransactionInfoRequest response).</p>
+</section>
       <h4><a class="xref" href="SIX.TimApi.Constants.PaymentProtocol.html">PaymentProtocol</a></h4>
       <section><p>Specifies the payment protocol used.</p>
 <p>The following values are valid:</p>
@@ -1083,6 +1128,13 @@ multiple groups containing dialogs similar operational area.</p>
       <section><p><p>Defines the appearance of the dialog.</p>
 <p>The following values are valid:</p></p>
 <p>Specification: dialog.</p>
+</section>
+      <h4><a class="xref" href="SIX.TimApi.Constants.TokenPanType.html">TokenPanType</a></h4>
+      <section><p>To differ the source of a token PAN, the TokenPanType field is used in a SIXml request
+message as part of the sixml:TransactionData container and in a SIXml response message as
+part of the sixml:CardData container.</p>
+<p>The TokenPanType field always is transmitted if a TokenPan field is transmitted but must
+not be transmitted alone.</p>
 </section>
       <h4><a class="xref" href="SIX.TimApi.Constants.TransactionReason.html">TransactionReason</a></h4>
       <section><p>Contains information on the purpose of the transaction and the credential on file

@@ -563,6 +563,12 @@
                             <a href="SIX.TimApi.Terminal.TransactionCompletedEventHandler.html" title="Terminal.TransactionCompletedEventHandler" class="">Terminal.TransactionCompletedEventHandler</a>
                           </li>
                           <li class="">
+                            <a href="SIX.TimApi.Terminal.TransactionInfoRequestCompletedEventArgs.html" title="Terminal.TransactionInfoRequestCompletedEventArgs" class="">Terminal.TransactionInfoRequestCompletedEventArgs</a>
+                          </li>
+                          <li class="">
+                            <a href="SIX.TimApi.Terminal.TransactionInfoRequestCompletedEventHandler.html" title="Terminal.TransactionInfoRequestCompletedEventHandler" class="">Terminal.TransactionInfoRequestCompletedEventHandler</a>
+                          </li>
+                          <li class="">
                             <a href="SIX.TimApi.Terminal.VasInfoHandler.html" title="Terminal.VasInfoHandler" class="">Terminal.VasInfoHandler</a>
                           </li>
                           <li class="">
@@ -585,6 +591,9 @@
                           </li>
                           <li class="">
                             <a href="SIX.TimApi.TransactionData.html" title="TransactionData" class="">TransactionData</a>
+                          </li>
+                          <li class="">
+                            <a href="SIX.TimApi.TransactionInfoRequestResponse.html" title="TransactionInfoRequestResponse" class="">TransactionInfoRequestResponse</a>
                           </li>
                           <li class="active">
                             <a href="SIX.TimApi.TransactionInformation.html" title="TransactionInformation" class="active">TransactionInformation</a>
@@ -617,10 +626,19 @@
                         
                         <ul class="nav level2">
                           <li class="">
+                            <a href="SIX.TimApi.Constants.AccountType.html" title="AccountType" class="">AccountType</a>
+                          </li>
+                          <li class="">
+                            <a href="SIX.TimApi.Constants.AdditionalInfoItem.html" title="AdditionalInfoItem" class="">AdditionalInfoItem</a>
+                          </li>
+                          <li class="">
                             <a href="SIX.TimApi.Constants.AdjustmentResult.html" title="AdjustmentResult" class="">AdjustmentResult</a>
                           </li>
                           <li class="">
                             <a href="SIX.TimApi.Constants.AdminFunctions.html" title="AdminFunctions" class="">AdminFunctions</a>
+                          </li>
+                          <li class="">
+                            <a href="SIX.TimApi.Constants.AllowedAccounts.html" title="AllowedAccounts" class="">AllowedAccounts</a>
                           </li>
                           <li class="">
                             <a href="SIX.TimApi.Constants.BrandBarBrand.html" title="BrandBarBrand" class="">BrandBarBrand</a>
@@ -648,6 +666,9 @@
                           </li>
                           <li class="">
                             <a href="SIX.TimApi.Constants.CouponRejectionReason.html" title="CouponRejectionReason" class="">CouponRejectionReason</a>
+                          </li>
+                          <li class="">
+                            <a href="SIX.TimApi.Constants.Currency.html" title="Currency" class="">Currency</a>
                           </li>
                           <li class="">
                             <a href="SIX.TimApi.Constants.CurrencyType.html" title="CurrencyType" class="">CurrencyType</a>
@@ -705,6 +726,9 @@
                           </li>
                           <li class="">
                             <a href="SIX.TimApi.Constants.NonFinancialTransactions.html" title="NonFinancialTransactions" class="">NonFinancialTransactions</a>
+                          </li>
+                          <li class="">
+                            <a href="SIX.TimApi.Constants.Outcome.html" title="Outcome" class="">Outcome</a>
                           </li>
                           <li class="">
                             <a href="SIX.TimApi.Constants.PaymentProtocol.html" title="PaymentProtocol" class="">PaymentProtocol</a>
@@ -773,6 +797,9 @@
                             <a href="SIX.TimApi.Constants.Theme.html" title="Theme" class="">Theme</a>
                           </li>
                           <li class="">
+                            <a href="SIX.TimApi.Constants.TokenPanType.html" title="TokenPanType" class="">TokenPanType</a>
+                          </li>
+                          <li class="">
                             <a href="SIX.TimApi.Constants.TransactionReason.html" title="TransactionReason" class="">TransactionReason</a>
                           </li>
                           <li class="">
@@ -806,7 +833,7 @@
                             <a href="SIX.TimApi.Receipts.CustomReceiptFormatter.Condition.html" title="CustomReceiptFormatter.Condition" class="">CustomReceiptFormatter.Condition</a>
                           </li>
                           <li class="">
-                            <a href="SIX.TimApi.Receipts.CustomReceiptFormatter.DynamicBoolean.html" title="CustomReceiptFormatter.DynamicBoolean" class="">CustomReceiptFormatter.DynamicBoolean</a>
+                            <a href="SIX.TimApi.Receipts.CustomReceiptFormatter.Counters.html" title="CustomReceiptFormatter.Counters" class="">CustomReceiptFormatter.Counters</a>
                           </li>
                           <li class="">
                             <a href="SIX.TimApi.Receipts.CustomReceiptFormatter.LineFormat.html" title="CustomReceiptFormatter.LineFormat" class="">CustomReceiptFormatter.LineFormat</a>
@@ -1386,6 +1413,34 @@ Available if {@link Guides#AUSTRIAN_USE_CASES} is enabled.</p>
   </table>
   
   
+  <a id="SIX_TimApi_TransactionInformation_OmnichannelPaymentId_" data-uid="SIX.TimApi.TransactionInformation.OmnichannelPaymentId*"></a>
+  <h4 id="SIX_TimApi_TransactionInformation_OmnichannelPaymentId" data-uid="SIX.TimApi.TransactionInformation.OmnichannelPaymentId">OmnichannelPaymentId</h4>
+  <div class="markdown level1 summary"><p>Omnichannel payment / transaction identifier.</p>
+<p>Optional: Mandatory if available to terminal.</p>
+<p>Specifications: <em>retail</em>, <em>banking</em>, <em>austrianUseCases</em>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string OmnichannelPaymentId { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="SIX_TimApi_TransactionInformation_PersonOid_" data-uid="SIX.TimApi.TransactionInformation.PersonOid*"></a>
   <h4 id="SIX_TimApi_TransactionInformation_PersonOid" data-uid="SIX.TimApi.TransactionInformation.PersonOid">PersonOid</h4>
   <div class="markdown level1 summary"><p>Person OID.
@@ -1484,6 +1539,37 @@ Specifications: banking, austrianUseCases.</p>
     <tbody>
       <tr>
         <td><a class="xref" href="SIX.TimApi.Constants.PosEntryMode.html">PosEntryMode</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SIX_TimApi_TransactionInformation_SchemeTrxId_" data-uid="SIX.TimApi.TransactionInformation.SchemeTrxId*"></a>
+  <h4 id="SIX_TimApi_TransactionInformation_SchemeTrxId" data-uid="SIX.TimApi.TransactionInformation.SchemeTrxId">SchemeTrxId</h4>
+  <div class="markdown level1 summary"><p><p>Used for &quot;Stored Credential&quot; and the &quot;Merchant-Initiated-Transaction (MIT) frameworks.
+Card scheme data element that links original authorisation requests to subsequent
+messages.</p>
+<p>Used also for Initial recurring and omnichannel use cases.</p></p>
+<p>Optional: Mandatory if available to terminal.</p>
+<p>Specifications: <em>retail</em>, <em>banking</em>, <em>austrianUseCases</em>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string SchemeTrxId { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
         <td></td>
       </tr>
     </tbody>
