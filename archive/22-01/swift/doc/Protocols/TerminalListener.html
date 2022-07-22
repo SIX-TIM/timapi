@@ -1,0 +1,1762 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>TerminalListener Protocol Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../sdk_version.js"></script><script src="../../../assets/js/sdk_version.js"></script>
+<script src="../api_version.js"></script>
+<script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Protocol/TerminalListener" class="dashAnchor"></a>
+    <a title="TerminalListener Protocol Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html"> Docs</a> (96% documented)</p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html"> Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        TerminalListener Protocol Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups"><li class="nav-group-name" id="titlearea"><td id="projectalign"><div id="projectname">TIM SDK</div><div id="projectbrief">TIM API Swift</div></td><div id="guidelink"><a href="../guide.html">Implementation Guide</a></div></li>
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/ActivateResponse.html">ActivateResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Amount.html">Amount</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/AmountDcc.html">AmountDcc</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/AmountDiscount.html">AmountDiscount</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/AmountFinal.html">AmountFinal</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Application.html">Application</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BalanceInquiryResponse.html">BalanceInquiryResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BalanceResponse.html">BalanceResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Basket.html">Basket</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BasketItem.html">BasketItem</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Brands.html">Brands</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CardData.html">CardData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CardTrackData.html">CardTrackData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CommandRequest.html">CommandRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CommandResponse.html">CommandResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CompactReceiptFormatter.html">CompactReceiptFormatter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ConfigData.html">ConfigData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ConnectionManager.html">ConnectionManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/s:6TimApi11ConvenienceC">Convenience</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ConversionHelper.html">ConversionHelper</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Counter.html">Counter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Counters.html">Counters</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CurrencyItem.html">CurrencyItem</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CustomReceiptFormatter.html">CustomReceiptFormatter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CustomReceiptFormatter/TextType.html">– TextType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CustomReceiptFormatter/TextAlignment.html">– TextAlignment</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CustomReceiptFormatter/Condition.html">– Condition</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CustomReceiptFormatter/TextElement.html">– TextElement</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CustomReceiptFormatter/LineFormat.html">– LineFormat</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DeactivateResponse.html">DeactivateResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DefaultTerminalListener.html">DefaultTerminalListener</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EcrInfo.html">EcrInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ErrorMessages.html">ErrorMessages</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Features.html">Features</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/FeaturesHardware.html">FeaturesHardware</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/FeaturesPayment.html">FeaturesPayment</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/FeaturesSixml.html">FeaturesSixml</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/FeaturesSixml/Support.html">– Support</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/GlobalSettings.html">GlobalSettings</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Hardware.html">Hardware</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/HardwareInformationResponse.html">HardwareInformationResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ItemQuantity.html">ItemQuantity</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/LogHandlerConsole.html">LogHandlerConsole</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/LogHandlerFile.html">LogHandlerFile</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Logger.html">Logger</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Logger/Level.html">– Level</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Logger/LogRecord.html">– LogRecord</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/LoyaltyCoupon.html">LoyaltyCoupon</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/LoyaltyDiscount.html">LoyaltyDiscount</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/LoyaltyInformation.html">LoyaltyInformation</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/LoyaltyItem.html">LoyaltyItem</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/NativeError.html">NativeError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/NetworkInformation.html">NetworkInformation</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/NormalReceiptFormatter.html">NormalReceiptFormatter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/PingResponse.html">PingResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/PpInfo.html">PpInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/PrintData.html">PrintData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/PrintOption.html">PrintOption</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Receipt.html">Receipt</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ReceiptItem.html">ReceiptItem</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ReceiptItems.html">ReceiptItems</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ReceiptRequestResponse.html">ReceiptRequestResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ReconciliationResponse.html">ReconciliationResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ShowDialogRequest.html">ShowDialogRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ShowDialogResponse.html">ShowDialogResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ShowSignatureCaptureRequest.html">ShowSignatureCaptureRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ShowSignatureCaptureResponse.html">ShowSignatureCaptureResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SignatureInformation.html">SignatureInformation</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SuperCompactReceiptFormatter.html">SuperCompactReceiptFormatter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SwiftyPing.html">SwiftyPing</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SynchronousTerminalListener.html">SynchronousTerminalListener</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SystemInformationResponse.html">SystemInformationResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Terminal.html">Terminal</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TerminalSettings.html">TerminalSettings</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TerminalSettingsImmutable.html">TerminalSettingsImmutable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TerminalStatus.html">TerminalStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TimEvent.html">TimEvent</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TimException.html">TimException</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Total.html">Total</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TransactionData.html">TransactionData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TransactionInformation.html">TransactionInformation</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TransactionRequest.html">TransactionRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TransactionResponse.html">TransactionResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TransactionResponse/Action.html">– Action</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TrxDetail.html">TrxDetail</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/UltraCompactReceiptFormatter.html">UltraCompactReceiptFormatter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/VasCheckoutInformation.html">VasCheckoutInformation</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/CAdjustmentResult.html">CAdjustmentResult</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CAdminFunctions.html">CAdminFunctions</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CBrandBarBrand.html">CBrandBarBrand</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CBrandMode.html">CBrandMode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CCardReader.html">CCardReader</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CCardReaderStatus.html">CCardReaderStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CConnectionMode.html">CConnectionMode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CConnectionStatus.html">CConnectionStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CCounterType.html">CCounterType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CCouponRejectionReason.html">CCouponRejectionReason</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CCurrency.html">CCurrency</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CCurrencyType.html">CCurrencyType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CCustomerDataType.html">CCustomerDataType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CCvm.html">CCvm</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CDialogFunctions.html">CDialogFunctions</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CEcrInfoType.html">CEcrInfoType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CFinancialTransactions.html">CFinancialTransactions</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CGuides.html">CGuides</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CHardwareType.html">CHardwareType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CImageFileFormat.html">CImageFileFormat</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CKernelType.html">CKernelType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CLoyaltyFunctionType.html">CLoyaltyFunctionType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CManagementStatus.html">CManagementStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CMerchantAction.html">CMerchantAction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CMerchantOptionType.html">CMerchantOptionType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CNgvMode.html">CNgvMode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CNonFinancialTransactions.html">CNonFinancialTransactions</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CPaymentProtocol.html">CPaymentProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CPosEntryMode.html">CPosEntryMode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CPrintFlag.html">CPrintFlag</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CPrintFormat.html">CPrintFormat</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CProcessingDisposition.html">CProcessingDisposition</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CProtocolLevel.html">CProtocolLevel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CProtocolType.html">CProtocolType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CReason.html">CReason</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CReceiptItemType.html">CReceiptItemType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CReceiptRequestType.html">CReceiptRequestType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CReceiptType.html">CReceiptType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CRecipient.html">CRecipient</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CRequestType.html">CRequestType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CResourceId.html">CResourceId</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CResourceParameterType.html">CResourceParameterType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CResponseType.html">CResponseType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CResultCode.html">CResultCode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CSecurityStatus.html">CSecurityStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CSettingType.html">CSettingType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CSleepModeStatus.html">CSleepModeStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CStatusFunctions.html">CStatusFunctions</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CTheme.html">CTheme</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CTransactionStatus.html">CTransactionStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CTransactionType.html">CTransactionType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CUpdateStatus.html">CUpdateStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Errors.html">Errors</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Extensions/Data.html">Data</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Functions.html">Functions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:6TimApi6unwrapyxxSgKlF">unwrap(_:)</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/CommEndpoint.html">CommEndpoint</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/CommListener.html">CommListener</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/ConnectionManagerDelegate.html">ConnectionManagerDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/LogHandler.html">LogHandler</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/ReceiptFormatter.html">ReceiptFormatter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/TerminalListener.html">TerminalListener</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/PingConfiguration.html">PingConfiguration</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/TimeDate.html">TimeDate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/TimeDate/Errors.html">– Errors</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Typealiases.html">Type Aliases</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:6TimApi12ErrorClosurea">ErrorClosure</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:6TimApi8Observera">Observer</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>TerminalListener</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">TerminalListener</span> <span class="p">:</span> <span class="kt">AnyObject</span></code></pre>
+
+                </div>
+              </div>
+            <p>Listener for asynchronous terminal events.</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6TimApi16TerminalListenerP16connectCompleted5eventyAA0A5EventC_tF"></a>
+                    <a name="//apple_ref/swift/Method/connectCompleted(event:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TimApi16TerminalListenerP16connectCompleted5eventyAA0A5EventC_tF">connectCompleted(event:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Called if a {@link Terminal#connect()} started request finished.
+@param event Contains the terminal sending the event and error information if the request failed.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">connectCompleted</span><span class="p">(</span><span class="nv">event</span><span class="p">:</span> <span class="kt"><a href="../Classes/TimEvent.html">TimEvent</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6TimApi16TerminalListenerP19disconnectCompleted5eventyAA0A5EventC_tF"></a>
+                    <a name="//apple_ref/swift/Method/disconnectCompleted(event:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TimApi16TerminalListenerP19disconnectCompleted5eventyAA0A5EventC_tF">disconnectCompleted(event:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Called if a {@link Terminal#disconnect()} started request finished.
+@param event Contains the terminal sending the event and error information if the request failed.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">disconnectCompleted</span><span class="p">(</span><span class="nv">event</span><span class="p">:</span> <span class="kt"><a href="../Classes/TimEvent.html">TimEvent</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6TimApi16TerminalListenerP17activateCompleted5event4datayAA0A5EventC_AA16ActivateResponseCSgtF"></a>
+                    <a name="//apple_ref/swift/Method/activateCompleted(event:data:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TimApi16TerminalListenerP17activateCompleted5event4datayAA0A5EventC_AA16ActivateResponseCSgtF">activateCompleted(event:data:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Called if an {@link Terminal#activateAsync} started request finished.
+@param event Contains the terminal sending the event and error information if the request failed.
+@param data Contains activation sequence counter and print information for the merchant.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">activateCompleted</span><span class="p">(</span><span class="nv">event</span><span class="p">:</span> <span class="kt"><a href="../Classes/TimEvent.html">TimEvent</a></span><span class="p">,</span> <span class="nv">data</span><span class="p">:</span> <span class="kt"><a href="../Classes/ActivateResponse.html">ActivateResponse</a></span><span class="p">?)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6TimApi16TerminalListenerP31applicationInformationCompleted5eventyAA0A5EventC_tF"></a>
+                    <a name="//apple_ref/swift/Method/applicationInformationCompleted(event:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TimApi16TerminalListenerP31applicationInformationCompleted5eventyAA0A5EventC_tF">applicationInformationCompleted(event:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Called if an {@link Terminal#applicationInformationAsync} started request finished.
+@param event Contains the terminal sending the event and error information if the request failed.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">applicationInformationCompleted</span><span class="p">(</span><span class="nv">event</span><span class="p">:</span> <span class="kt"><a href="../Classes/TimEvent.html">TimEvent</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6TimApi16TerminalListenerP16balanceCompleted5event4datayAA0A5EventC_AA15BalanceResponseCSgtF"></a>
+                    <a name="//apple_ref/swift/Method/balanceCompleted(event:data:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TimApi16TerminalListenerP16balanceCompleted5event4datayAA0A5EventC_AA15BalanceResponseCSgtF">balanceCompleted(event:data:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Called if an {@link Terminal#balanceAsync} started request finished.
+@param event Contains the terminal sending the event and error information if the request failed.
+@param data Contains counters and print information for the merchant.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">balanceCompleted</span><span class="p">(</span><span class="nv">event</span><span class="p">:</span> <span class="kt"><a href="../Classes/TimEvent.html">TimEvent</a></span><span class="p">,</span> <span class="nv">data</span><span class="p">:</span> <span class="kt"><a href="../Classes/BalanceResponse.html">BalanceResponse</a></span><span class="p">?)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6TimApi16TerminalListenerP23changeSettingsCompleted5eventyAA0A5EventC_tF"></a>
+                    <a name="//apple_ref/swift/Method/changeSettingsCompleted(event:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TimApi16TerminalListenerP23changeSettingsCompleted5eventyAA0A5EventC_tF">changeSettingsCompleted(event:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Called if an {@link Terminal#changeSettingsAsync} started request finished.
+@param event Contains the terminal sending the event and error information if the request failed.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">changeSettingsCompleted</span><span class="p">(</span><span class="nv">event</span><span class="p">:</span> <span class="kt"><a href="../Classes/TimEvent.html">TimEvent</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6TimApi16TerminalListenerP15commitCompleted5event4datayAA0A5EventC_AA9PrintDataCSgtF"></a>
+                    <a name="//apple_ref/swift/Method/commitCompleted(event:data:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TimApi16TerminalListenerP15commitCompleted5event4datayAA0A5EventC_AA9PrintDataCSgtF">commitCompleted(event:data:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Called if an {@link Terminal#commitAsync} started request finished.
+@param event Contains the terminal sending the event and error information if the request failed.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">commitCompleted</span><span class="p">(</span><span class="nv">event</span><span class="p">:</span> <span class="kt"><a href="../Classes/TimEvent.html">TimEvent</a></span><span class="p">,</span> <span class="nv">data</span><span class="p">:</span> <span class="kt"><a href="../Classes/PrintData.html">PrintData</a></span><span class="p">?)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6TimApi16TerminalListenerP23counterRequestCompleted5event4datayAA0A5EventC_AA8CountersCSgtF"></a>
+                    <a name="//apple_ref/swift/Method/counterRequestCompleted(event:data:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TimApi16TerminalListenerP23counterRequestCompleted5event4datayAA0A5EventC_AA8CountersCSgtF">counterRequestCompleted(event:data:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Called if an {@link Terminal#counterRequestAsync} started request finished.
+@param event Contains the terminal sending the event and error information if the request failed.
+@param data Contains counters.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">counterRequestCompleted</span><span class="p">(</span><span class="nv">event</span><span class="p">:</span> <span class="kt"><a href="../Classes/TimEvent.html">TimEvent</a></span><span class="p">,</span> <span class="nv">data</span><span class="p">:</span> <span class="kt"><a href="../Classes/Counters.html">Counters</a></span><span class="p">?)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6TimApi16TerminalListenerP19deactivateCompleted5event4datayAA0A5EventC_AA18DeactivateResponseCSgtF"></a>
+                    <a name="//apple_ref/swift/Method/deactivateCompleted(event:data:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TimApi16TerminalListenerP19deactivateCompleted5event4datayAA0A5EventC_AA18DeactivateResponseCSgtF">deactivateCompleted(event:data:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Called if an {@link Terminal#deactivateAsync} started request finished.
+@param event Contains the terminal sending the event and error information if the request failed.
+@param data Contains counters and print information for the merchant.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">deactivateCompleted</span><span class="p">(</span><span class="nv">event</span><span class="p">:</span> <span class="kt"><a href="../Classes/TimEvent.html">TimEvent</a></span><span class="p">,</span> <span class="nv">data</span><span class="p">:</span> <span class="kt"><a href="../Classes/DeactivateResponse.html">DeactivateResponse</a></span><span class="p">?)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6TimApi16TerminalListenerP17dccRatesCompleted5event4datayAA0A5EventC_AA9PrintDataCSgtF"></a>
+                    <a name="//apple_ref/swift/Method/dccRatesCompleted(event:data:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TimApi16TerminalListenerP17dccRatesCompleted5event4datayAA0A5EventC_AA9PrintDataCSgtF">dccRatesCompleted(event:data:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Called if an {@link Terminal#dccRatesAsync} started request finished.
+@param event Contains the terminal sending the event and error information if the request failed.
+@param data Contains print information for merchant.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">dccRatesCompleted</span><span class="p">(</span><span class="nv">event</span><span class="p">:</span> <span class="kt"><a href="../Classes/TimEvent.html">TimEvent</a></span><span class="p">,</span> <span class="nv">data</span><span class="p">:</span> <span class="kt"><a href="../Classes/PrintData.html">PrintData</a></span><span class="p">?)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6TimApi16TerminalListenerP28hardwareInformationCompleted5event4datayAA0A5EventC_AA08HardwareF8ResponseCSgtF"></a>
+                    <a name="//apple_ref/swift/Method/hardwareInformationCompleted(event:data:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TimApi16TerminalListenerP28hardwareInformationCompleted5event4datayAA0A5EventC_AA08HardwareF8ResponseCSgtF">hardwareInformationCompleted(event:data:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Called if an {@link Terminal#hardwareInformationAsync} started request finished.
+@param event Contains the terminal sending the event and error information if the request failed.
+@param data Contains information about EFT Terminal hardware and EMV kernels and configuration
+            parameters supported by the EFT Terminal.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">hardwareInformationCompleted</span><span class="p">(</span><span class="nv">event</span><span class="p">:</span> <span class="kt"><a href="../Classes/TimEvent.html">TimEvent</a></span><span class="p">,</span> <span class="nv">data</span><span class="p">:</span> <span class="kt"><a href="../Classes/HardwareInformationResponse.html">HardwareInformationResponse</a></span><span class="p">?)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6TimApi16TerminalListenerP24initTransactionCompleted5event4datayAA0A5EventC_AA8CardDataCSgtF"></a>
+                    <a name="//apple_ref/swift/Method/initTransactionCompleted(event:data:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TimApi16TerminalListenerP24initTransactionCompleted5event4datayAA0A5EventC_AA8CardDataCSgtF">initTransactionCompleted(event:data:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Called if an {@link Terminal#initTransactionAsync} started request finished.
+@param event Contains the terminal sending the event and error information if the request failed.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">initTransactionCompleted</span><span class="p">(</span><span class="nv">event</span><span class="p">:</span> <span class="kt"><a href="../Classes/TimEvent.html">TimEvent</a></span><span class="p">,</span> <span class="nv">data</span><span class="p">:</span> <span class="kt"><a href="../Classes/CardData.html">CardData</a></span><span class="p">?)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6TimApi16TerminalListenerP14loginCompleted5eventyAA0A5EventC_tF"></a>
+                    <a name="//apple_ref/swift/Method/loginCompleted(event:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TimApi16TerminalListenerP14loginCompleted5eventyAA0A5EventC_tF">loginCompleted(event:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Called if an {@link Terminal#loginAsync} started request finished.
+@param event Contains the terminal sending the event and error information if the request failed.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">loginCompleted</span><span class="p">(</span><span class="nv">event</span><span class="p">:</span> <span class="kt"><a href="../Classes/TimEvent.html">TimEvent</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6TimApi16TerminalListenerP15logoutCompleted5eventyAA0A5EventC_tF"></a>
+                    <a name="//apple_ref/swift/Method/logoutCompleted(event:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TimApi16TerminalListenerP15logoutCompleted5eventyAA0A5EventC_tF">logoutCompleted(event:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Called if an {@link Terminal#logoutAsync} started request finished.
+@param event Contains the terminal sending the event and error information if the request failed.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">logoutCompleted</span><span class="p">(</span><span class="nv">event</span><span class="p">:</span> <span class="kt"><a href="../Classes/TimEvent.html">TimEvent</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6TimApi16TerminalListenerP15rebootCompleted5eventyAA0A5EventC_tF"></a>
+                    <a name="//apple_ref/swift/Method/rebootCompleted(event:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TimApi16TerminalListenerP15rebootCompleted5eventyAA0A5EventC_tF">rebootCompleted(event:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Called if an {@link Terminal#rebootAsync} started request finished.
+@param event Contains the terminal sending the event and error information if the request failed.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">rebootCompleted</span><span class="p">(</span><span class="nv">event</span><span class="p">:</span> <span class="kt"><a href="../Classes/TimEvent.html">TimEvent</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6TimApi16TerminalListenerP23reconciliationCompleted5event4datayAA0A5EventC_AA22ReconciliationResponseCSgtF"></a>
+                    <a name="//apple_ref/swift/Method/reconciliationCompleted(event:data:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TimApi16TerminalListenerP23reconciliationCompleted5event4datayAA0A5EventC_AA22ReconciliationResponseCSgtF">reconciliationCompleted(event:data:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Called if an {@link Terminal#reconciliationAsync} started request finished.
+@param event Contains the terminal sending the event and error information if the request failed.
+@param data Contains counters and print information for the merchant.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">reconciliationCompleted</span><span class="p">(</span><span class="nv">event</span><span class="p">:</span> <span class="kt"><a href="../Classes/TimEvent.html">TimEvent</a></span><span class="p">,</span> <span class="nv">data</span><span class="p">:</span> <span class="kt"><a href="../Classes/ReconciliationResponse.html">ReconciliationResponse</a></span><span class="p">?)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6TimApi16TerminalListenerP23receiptRequestCompleted5event4datayAA0A5EventC_AA07ReceiptF8ResponseCSgtF"></a>
+                    <a name="//apple_ref/swift/Method/receiptRequestCompleted(event:data:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TimApi16TerminalListenerP23receiptRequestCompleted5event4datayAA0A5EventC_AA07ReceiptF8ResponseCSgtF">receiptRequestCompleted(event:data:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Called if an {@link Terminal#receiptRequestAsync} started request finished.
+@param event Contains the terminal sending the event and error information if the request failed.
+@param data Contains all requested receipts up to a maximum number of receipts the EFT Terminal
+            can send. if HasMoreReceipts is True not all receipts could be send by the EFT
+            Terminal. call ReceiptRequest again to obtain more receipts.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">receiptRequestCompleted</span><span class="p">(</span><span class="nv">event</span><span class="p">:</span> <span class="kt"><a href="../Classes/TimEvent.html">TimEvent</a></span><span class="p">,</span> <span class="nv">data</span><span class="p">:</span> <span class="kt"><a href="../Classes/ReceiptRequestResponse.html">ReceiptRequestResponse</a></span><span class="p">?)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6TimApi16TerminalListenerP17reconfigCompleted5event4datayAA0A5EventC_AA9PrintDataCSgtF"></a>
+                    <a name="//apple_ref/swift/Method/reconfigCompleted(event:data:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TimApi16TerminalListenerP17reconfigCompleted5event4datayAA0A5EventC_AA9PrintDataCSgtF">reconfigCompleted(event:data:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Called if an {@link Terminal#reconfigAsync} started request finished.
+@param event Contains the terminal sending the event and error information if the request failed.
+@param data Contains print information for the merchant.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">reconfigCompleted</span><span class="p">(</span><span class="nv">event</span><span class="p">:</span> <span class="kt"><a href="../Classes/TimEvent.html">TimEvent</a></span><span class="p">,</span> <span class="nv">data</span><span class="p">:</span> <span class="kt"><a href="../Classes/PrintData.html">PrintData</a></span><span class="p">?)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6TimApi16TerminalListenerP17rollbackCompleted5event4datayAA0A5EventC_AA9PrintDataCSgtF"></a>
+                    <a name="//apple_ref/swift/Method/rollbackCompleted(event:data:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TimApi16TerminalListenerP17rollbackCompleted5event4datayAA0A5EventC_AA9PrintDataCSgtF">rollbackCompleted(event:data:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Called if an {@link Terminal#rollbackAsync} started request finished.
+@param event Contains the terminal sending the event and error information if the request failed.
+@param data Contains print information for the merchant and cardholder.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">rollbackCompleted</span><span class="p">(</span><span class="nv">event</span><span class="p">:</span> <span class="kt"><a href="../Classes/TimEvent.html">TimEvent</a></span><span class="p">,</span> <span class="nv">data</span><span class="p">:</span> <span class="kt"><a href="../Classes/PrintData.html">PrintData</a></span><span class="p">?)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6TimApi16TerminalListenerP23softwareUpdateCompleted5event4datayAA0A5EventC_AA13CUpdateStatusOSgtF"></a>
+                    <a name="//apple_ref/swift/Method/softwareUpdateCompleted(event:data:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TimApi16TerminalListenerP23softwareUpdateCompleted5event4datayAA0A5EventC_AA13CUpdateStatusOSgtF">softwareUpdateCompleted(event:data:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Called if an {@link Terminal#softwareUpdateAsync} started request finished.
+@param event Contains the terminal sending the event and error information if the request failed.
+@param data Contains update status.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">softwareUpdateCompleted</span><span class="p">(</span><span class="nv">event</span><span class="p">:</span> <span class="kt"><a href="../Classes/TimEvent.html">TimEvent</a></span><span class="p">,</span> <span class="nv">data</span><span class="p">:</span> <span class="kt"><a href="../Enums/CUpdateStatus.html">CUpdateStatus</a></span><span class="p">?)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6TimApi16TerminalListenerP26systemInformationCompleted5event4datayAA0A5EventC_AA06SystemF8ResponseCSgtF"></a>
+                    <a name="//apple_ref/swift/Method/systemInformationCompleted(event:data:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TimApi16TerminalListenerP26systemInformationCompleted5event4datayAA0A5EventC_AA06SystemF8ResponseCSgtF">systemInformationCompleted(event:data:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Called if an {@link Terminal#systemInformationAsync} started request finished.
+@param event Contains the terminal sending the event and error information if the request failed.
+@param data Contains configuration and network information of the terminal.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">systemInformationCompleted</span><span class="p">(</span><span class="nv">event</span><span class="p">:</span> <span class="kt"><a href="../Classes/TimEvent.html">TimEvent</a></span><span class="p">,</span> <span class="nv">data</span><span class="p">:</span> <span class="kt"><a href="../Classes/SystemInformationResponse.html">SystemInformationResponse</a></span><span class="p">?)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6TimApi16TerminalListenerP20transactionCompleted5event4datayAA0A5EventC_AA19TransactionResponseCSgtF"></a>
+                    <a name="//apple_ref/swift/Method/transactionCompleted(event:data:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TimApi16TerminalListenerP20transactionCompleted5event4datayAA0A5EventC_AA19TransactionResponseCSgtF">transactionCompleted(event:data:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Called if an {@link Terminal#transactionAsync} started request finished.
+@param event Contains the terminal sending the event and error information if the request failed.
+@param data Contains transaction result information and print information for the merchant and cardholder.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">transactionCompleted</span><span class="p">(</span><span class="nv">event</span><span class="p">:</span> <span class="kt"><a href="../Classes/TimEvent.html">TimEvent</a></span><span class="p">,</span> <span class="nv">data</span><span class="p">:</span> <span class="kt"><a href="../Classes/TransactionResponse.html">TransactionResponse</a></span><span class="p">?)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6TimApi16TerminalListenerP21terminalStatusChanged0E0yAA0C0C_tF"></a>
+                    <a name="//apple_ref/swift/Method/terminalStatusChanged(terminal:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TimApi16TerminalListenerP21terminalStatusChanged0E0yAA0C0C_tF">terminalStatusChanged(terminal:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Called if the state of the terminal changed. Retrieve the state using
+event.getTerminal().getTerminalState().
+@param terminal Terminal sending the notification.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">terminalStatusChanged</span><span class="p">(</span><span class="nv">terminal</span><span class="p">:</span> <span class="kt"><a href="../Classes/Terminal.html">Terminal</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6TimApi16TerminalListenerP20closeReaderCompleted5eventyAA0A5EventC_tF"></a>
+                    <a name="//apple_ref/swift/Method/closeReaderCompleted(event:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TimApi16TerminalListenerP20closeReaderCompleted5eventyAA0A5EventC_tF">closeReaderCompleted(event:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Called if an {@link Terminal#closeReaderAsync} started request finished.</p>
+
+<p>Supported only if {@link com.six.timapi.constants.Guides#UNATTENDED} is enabled.
+ @param event Contains the terminal sending the event and error information if the request failed.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">closeReaderCompleted</span><span class="p">(</span><span class="nv">event</span><span class="p">:</span> <span class="kt"><a href="../Classes/TimEvent.html">TimEvent</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6TimApi16TerminalListenerP19openReaderCompleted5eventyAA0A5EventC_tF"></a>
+                    <a name="//apple_ref/swift/Method/openReaderCompleted(event:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TimApi16TerminalListenerP19openReaderCompleted5eventyAA0A5EventC_tF">openReaderCompleted(event:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Called if an {@link Terminal#openReaderAsync} started request finished.</p>
+
+<p>Supported only if {@link com.six.timapi.constants.Guides#UNATTENDED} is enabled.
+ @param event Contains the terminal sending the event and error information if the request failed.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">openReaderCompleted</span><span class="p">(</span><span class="nv">event</span><span class="p">:</span> <span class="kt"><a href="../Classes/TimEvent.html">TimEvent</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6TimApi16TerminalListenerP18ejectCardCompleted5eventyAA0A5EventC_tF"></a>
+                    <a name="//apple_ref/swift/Method/ejectCardCompleted(event:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TimApi16TerminalListenerP18ejectCardCompleted5eventyAA0A5EventC_tF">ejectCardCompleted(event:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Called if an {@link Terminal#ejectCardAsync} started request finished.</p>
+
+<p>Supported only if {@link com.six.timapi.constants.Guides#UNATTENDED} is enabled.
+ @param event Contains the terminal sending the event and error information if the request failed.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">ejectCardCompleted</span><span class="p">(</span><span class="nv">event</span><span class="p">:</span> <span class="kt"><a href="../Classes/TimEvent.html">TimEvent</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6TimApi16TerminalListenerP30openMaintenanceWindowCompleted5eventyAA0A5EventC_tF"></a>
+                    <a name="//apple_ref/swift/Method/openMaintenanceWindowCompleted(event:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TimApi16TerminalListenerP30openMaintenanceWindowCompleted5eventyAA0A5EventC_tF">openMaintenanceWindowCompleted(event:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Called if an {@link Terminal#openMaintenanceWindowAsync} started request finished.</p>
+
+<p>Supported only if {@link com.six.timapi.constants.Guides#UNATTENDED} is enabled.
+@param event Contains the terminal sending the event and error information if the request failed.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">openMaintenanceWindowCompleted</span><span class="p">(</span><span class="nv">event</span><span class="p">:</span> <span class="kt"><a href="../Classes/TimEvent.html">TimEvent</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6TimApi16TerminalListenerP31closeMaintenanceWindowCompleted5eventyAA0A5EventC_tF"></a>
+                    <a name="//apple_ref/swift/Method/closeMaintenanceWindowCompleted(event:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TimApi16TerminalListenerP31closeMaintenanceWindowCompleted5eventyAA0A5EventC_tF">closeMaintenanceWindowCompleted(event:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Called if an {@link Terminal#closeMaintenanceWindowAsync} started request finished.</p>
+
+<p>Supported only if {@link com.six.timapi.constants.Guides#UNATTENDED} is enabled.
+@param event Contains the terminal sending the event and error information if the request failed.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">closeMaintenanceWindowCompleted</span><span class="p">(</span><span class="nv">event</span><span class="p">:</span> <span class="kt"><a href="../Classes/TimEvent.html">TimEvent</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6TimApi16TerminalListenerP28activateServiceMenuCompleted5eventyAA0A5EventC_tF"></a>
+                    <a name="//apple_ref/swift/Method/activateServiceMenuCompleted(event:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TimApi16TerminalListenerP28activateServiceMenuCompleted5eventyAA0A5EventC_tF">activateServiceMenuCompleted(event:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Called if an {@link Terminal#activateServiceMenuAsync} started request finished.</p>
+
+<p>Supported only if {@link com.six.timapi.constants.Guides#UNATTENDED} is enabled.
+@param event Contains the terminal sending the event and error information if the request failed.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">activateServiceMenuCompleted</span><span class="p">(</span><span class="nv">event</span><span class="p">:</span> <span class="kt"><a href="../Classes/TimEvent.html">TimEvent</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Dialog"></a>
+                <a name="//apple_ref/swift/Section/Dialog" class="dashAnchor"></a>
+                <a href="#/Dialog">
+                  <h3 class="section-name">Dialog</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6TimApi16TerminalListenerP23openDialogModeCompleted5eventyAA0A5EventC_tF"></a>
+                    <a name="//apple_ref/swift/Method/openDialogModeCompleted(event:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TimApi16TerminalListenerP23openDialogModeCompleted5eventyAA0A5EventC_tF">openDialogModeCompleted(event:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Called if an {@link Terminal#openDialogModeAsync} started request finished.</p>
+
+<p>Supported only if {@link com.six.timapi.constants.Guides#DIALOG} is enabled.
+ @param event Contains the terminal sending the event and error information if the request failed.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">openDialogModeCompleted</span><span class="p">(</span><span class="nv">event</span><span class="p">:</span> <span class="kt"><a href="../Classes/TimEvent.html">TimEvent</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6TimApi16TerminalListenerP24closeDialogModeCompleted5eventyAA0A5EventC_tF"></a>
+                    <a name="//apple_ref/swift/Method/closeDialogModeCompleted(event:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TimApi16TerminalListenerP24closeDialogModeCompleted5eventyAA0A5EventC_tF">closeDialogModeCompleted(event:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Called if an {@link Terminal#closeDialogModeAsync} started request finished.</p>
+
+<p>Supported only if {@link com.six.timapi.constants.Guides#DIALOG} is enabled.
+ @param event Contains the terminal sending the event and error information if the request failed.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">closeDialogModeCompleted</span><span class="p">(</span><span class="nv">event</span><span class="p">:</span> <span class="kt"><a href="../Classes/TimEvent.html">TimEvent</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6TimApi16TerminalListenerP29showSignatureCaptureCompleted5event4datayAA0A5EventC_AA04ShowfG8ResponseCSgtF"></a>
+                    <a name="//apple_ref/swift/Method/showSignatureCaptureCompleted(event:data:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TimApi16TerminalListenerP29showSignatureCaptureCompleted5event4datayAA0A5EventC_AA04ShowfG8ResponseCSgtF">showSignatureCaptureCompleted(event:data:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Called if an {@link Terminal#showSignatureCaptureAsync} started request finished.</p>
+
+<p>Supported only if {@link com.six.timapi.constants.Guides#DIALOG} is enabled.
+ @param event Contains the terminal sending the event and error information if the request failed.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">showSignatureCaptureCompleted</span><span class="p">(</span><span class="nv">event</span><span class="p">:</span> <span class="kt"><a href="../Classes/TimEvent.html">TimEvent</a></span><span class="p">,</span> <span class="nv">data</span><span class="p">:</span> <span class="kt"><a href="../Classes/ShowSignatureCaptureResponse.html">ShowSignatureCaptureResponse</a></span><span class="p">?)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6TimApi16TerminalListenerP19showDialogCompleted5event4datayAA0A5EventC_AA04ShowF8ResponseCSgtF"></a>
+                    <a name="//apple_ref/swift/Method/showDialogCompleted(event:data:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TimApi16TerminalListenerP19showDialogCompleted5event4datayAA0A5EventC_AA04ShowF8ResponseCSgtF">showDialogCompleted(event:data:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Called if an {@link Terminal#showDialogAsync} started request finished.</p>
+
+<p>Supported only if {@link com.six.timapi.constants.Guides#DIALOG} is enabled.
+ @param event Contains the terminal sending the event and error information if the request failed.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">showDialogCompleted</span><span class="p">(</span><span class="nv">event</span><span class="p">:</span> <span class="kt"><a href="../Classes/TimEvent.html">TimEvent</a></span><span class="p">,</span> <span class="nv">data</span><span class="p">:</span> <span class="kt"><a href="../Classes/ShowDialogResponse.html">ShowDialogResponse</a></span><span class="p">?)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6TimApi16TerminalListenerP24sendCardCommandCompleted5event4datayAA0A5EventC_SayAA0G8ResponseCGSgtF"></a>
+                    <a name="//apple_ref/swift/Method/sendCardCommandCompleted(event:data:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TimApi16TerminalListenerP24sendCardCommandCompleted5event4datayAA0A5EventC_SayAA0G8ResponseCGSgtF">sendCardCommandCompleted(event:data:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Called if an {@link Terminal#sendCardCommandAsync} started request finished.</p>
+
+<p>Supported only if {@link com.six.timapi.constants.Guides#DIALOG} is enabled.
+ @param event Contains the terminal sending the event and error information if the request failed.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">sendCardCommandCompleted</span><span class="p">(</span><span class="nv">event</span><span class="p">:</span> <span class="kt"><a href="../Classes/TimEvent.html">TimEvent</a></span><span class="p">,</span> <span class="nv">data</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Classes/CommandResponse.html">CommandResponse</a></span><span class="p">]?)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6TimApi16TerminalListenerP23balanceInquiryCompleted5event4datayAA0A5EventC_AA07BalanceF8ResponseCSgtF"></a>
+                    <a name="//apple_ref/swift/Method/balanceInquiryCompleted(event:data:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TimApi16TerminalListenerP23balanceInquiryCompleted5event4datayAA0A5EventC_AA07BalanceF8ResponseCSgtF">balanceInquiryCompleted(event:data:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Called if an {@link Terminal#balanceInquiryAsync()} started request finished.</p>
+
+<p>Supported only if {@link com.six.timapi.constants.Guides#ADVANCED_RETAIL} is enabled.
+ @param event Contains the terminal sending the event and error information if the request failed.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">balanceInquiryCompleted</span><span class="p">(</span><span class="nv">event</span><span class="p">:</span> <span class="kt"><a href="../Classes/TimEvent.html">TimEvent</a></span><span class="p">,</span> <span class="nv">data</span><span class="p">:</span> <span class="kt"><a href="../Classes/BalanceInquiryResponse.html">BalanceInquiryResponse</a></span><span class="p">?)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6TimApi16TerminalListenerP7vasInfo8terminalADyAA0C0C_AA22VasCheckoutInformationCtF"></a>
+                    <a name="//apple_ref/swift/Method/vasInfo(terminal:vasInfo:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TimApi16TerminalListenerP7vasInfo8terminalADyAA0C0C_AA22VasCheckoutInformationCtF">vasInfo(terminal:vasInfo:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Called if an VAS Information notification has been received.</p>
+
+<p>Supported only if .valueAddedServices guid is enabled.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">vasInfo</span><span class="p">(</span><span class="nv">terminal</span><span class="p">:</span> <span class="kt"><a href="../Classes/Terminal.html">Terminal</a></span><span class="p">,</span> <span class="nv">vasInfo</span><span class="p">:</span> <span class="kt"><a href="../Classes/VasCheckoutInformation.html">VasCheckoutInformation</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6TimApi16TerminalListenerP20loyaltyDataCompleted5event4datayAA0A5EventC_AA04CardF0CSgtF"></a>
+                    <a name="//apple_ref/swift/Method/loyaltyDataCompleted(event:data:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TimApi16TerminalListenerP20loyaltyDataCompleted5event4datayAA0A5EventC_AA04CardF0CSgtF">loyaltyDataCompleted(event:data:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Called if an loyaltyDataAsync() started request finished.</p>
+
+<p>Supported only if .valueAddedServices guid is enabled.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">loyaltyDataCompleted</span><span class="p">(</span><span class="nv">event</span><span class="p">:</span> <span class="kt"><a href="../Classes/TimEvent.html">TimEvent</a></span><span class="p">,</span> <span class="nv">data</span><span class="p">:</span> <span class="kt"><a href="../Classes/CardData.html">CardData</a></span><span class="p">?)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6TimApi16TerminalListenerP22startCheckoutCompleted5eventyAA0A5EventC_tF"></a>
+                    <a name="//apple_ref/swift/Method/startCheckoutCompleted(event:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TimApi16TerminalListenerP22startCheckoutCompleted5eventyAA0A5EventC_tF">startCheckoutCompleted(event:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Called if an Terminal.startCheckoutAsync() started request finished.</p>
+
+<p>Supported only if .valueAddedServices guid is enabled.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">startCheckoutCompleted</span><span class="p">(</span><span class="nv">event</span><span class="p">:</span> <span class="kt"><a href="../Classes/TimEvent.html">TimEvent</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6TimApi16TerminalListenerP23finishCheckoutCompleted5event4datayAA0A5EventC_AA03VasF11InformationCSgtF"></a>
+                    <a name="//apple_ref/swift/Method/finishCheckoutCompleted(event:data:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TimApi16TerminalListenerP23finishCheckoutCompleted5event4datayAA0A5EventC_AA03VasF11InformationCSgtF">finishCheckoutCompleted(event:data:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Called if an Terminal.finishCheckoutAsync() started request finished.</p>
+
+<p>Supported only if .valueAddedServices guid is enabled.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">finishCheckoutCompleted</span><span class="p">(</span><span class="nv">event</span><span class="p">:</span> <span class="kt"><a href="../Classes/TimEvent.html">TimEvent</a></span><span class="p">,</span> <span class="nv">data</span><span class="p">:</span> <span class="kt"><a href="../Classes/VasCheckoutInformation.html">VasCheckoutInformation</a></span><span class="p">?)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6TimApi16TerminalListenerP29provideLoyaltyBasketCompleted5event4datayAA0A5EventC_SayAA0F4ItemCGSgtF"></a>
+                    <a name="//apple_ref/swift/Method/provideLoyaltyBasketCompleted(event:data:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TimApi16TerminalListenerP29provideLoyaltyBasketCompleted5event4datayAA0A5EventC_SayAA0F4ItemCGSgtF">provideLoyaltyBasketCompleted(event:data:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Called if an Terminal.provideLoyaltyBasketAsync() started request finished.</p>
+
+<p>Supported only if .valueAddedServices guid is enabled.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">provideLoyaltyBasketCompleted</span><span class="p">(</span><span class="nv">event</span><span class="p">:</span> <span class="kt"><a href="../Classes/TimEvent.html">TimEvent</a></span><span class="p">,</span> <span class="nv">data</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Classes/LoyaltyItem.html">LoyaltyItem</a></span><span class="p">]?)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6TimApi16TerminalListenerP21requestAliasCompleted5event4datayAA0A5EventC_SSSgtF"></a>
+                    <a name="//apple_ref/swift/Method/requestAliasCompleted(event:data:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TimApi16TerminalListenerP21requestAliasCompleted5event4datayAA0A5EventC_SSSgtF">requestAliasCompleted(event:data:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Called if an {@link Terminal#requestAlias()} started request finished.</p>
+
+<p>@param event Contains the terminal sending the event and error information if the request failed.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">requestAliasCompleted</span><span class="p">(</span><span class="nv">event</span><span class="p">:</span> <span class="kt"><a href="../Classes/TimEvent.html">TimEvent</a></span><span class="p">,</span> <span class="nv">data</span><span class="p">:</span> <span class="kt">String</span><span class="p">?)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2019 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2019-06-04)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>
