@@ -557,6 +557,9 @@
                             <a href="SIX.TimApi.Terminal.TerminalStatusChangedHandler.html" title="Terminal.TerminalStatusChangedHandler" class="">Terminal.TerminalStatusChangedHandler</a>
                           </li>
                           <li class="">
+                            <a href="SIX.TimApi.Terminal.ThirdPartyAppDataHandler.html" title="Terminal.ThirdPartyAppDataHandler" class="">Terminal.ThirdPartyAppDataHandler</a>
+                          </li>
+                          <li class="">
                             <a href="SIX.TimApi.Terminal.TransactionCompletedEventArgs.html" title="Terminal.TransactionCompletedEventArgs" class="">Terminal.TransactionCompletedEventArgs</a>
                           </li>
                           <li class="">
@@ -579,6 +582,9 @@
                           </li>
                           <li class="">
                             <a href="SIX.TimApi.TerminalStatus.html" title="TerminalStatus" class="">TerminalStatus</a>
+                          </li>
+                          <li class="">
+                            <a href="SIX.TimApi.ThirdPartyAppPayload.html" title="ThirdPartyAppPayload" class="">ThirdPartyAppPayload</a>
                           </li>
                           <li class="">
                             <a href="SIX.TimApi.TimEvent.html" title="TimEvent" class="">TimEvent</a>
@@ -797,6 +803,12 @@
                             <a href="SIX.TimApi.Constants.Theme.html" title="Theme" class="">Theme</a>
                           </li>
                           <li class="">
+                            <a href="SIX.TimApi.Constants.ThirdPartyAppId.html" title="ThirdPartyAppId" class="">ThirdPartyAppId</a>
+                          </li>
+                          <li class="">
+                            <a href="SIX.TimApi.Constants.ThirdPartyApps.html" title="ThirdPartyApps" class="">ThirdPartyApps</a>
+                          </li>
+                          <li class="">
                             <a href="SIX.TimApi.Constants.TokenPanType.html" title="TokenPanType" class="">TokenPanType</a>
                           </li>
                           <li class="">
@@ -907,35 +919,11 @@
     <div class="level0"><span class="xref">System.Object</span></div>
     <div class="level1"><span class="xref">Currency</span></div>
   </div>
-  <div class="inheritedMembers">
-    <h5>Inherited Members</h5>
-    <div>
-      <span class="xref">System.Object.Equals(System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.GetHashCode()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.GetType()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.MemberwiseClone()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.ToString()</span>
-    </div>
-  </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="SIX.TimApi.Constants.html">SIX.TimApi.Constants</a></h6>
   <h6><strong>Assembly</strong>: TimApi.dll</h6>
   <h5 id="SIX_TimApi_Constants_Currency_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class Currency</code></pre>
+    <pre><code class="lang-csharp hljs">public class Currency : object</code></pre>
   </div>
   <h3 id="fields">Fields
   </h3>
@@ -1822,7 +1810,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public readonly string code</code></pre>
+    <pre><code class="lang-csharp hljs">public readonly String code</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1834,7 +1822,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="xref">String</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -3622,7 +3610,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public readonly string name</code></pre>
+    <pre><code class="lang-csharp hljs">public readonly String name</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -3634,7 +3622,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="xref">String</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -5519,13 +5507,13 @@
   
   
   <a id="SIX_TimApi_Constants_Currency_withCode_" data-uid="SIX.TimApi.Constants.Currency.withCode*"></a>
-  <h4 id="SIX_TimApi_Constants_Currency_withCode_System_String_" data-uid="SIX.TimApi.Constants.Currency.withCode(System.String)">withCode(String)</h4>
+  <h4 id="SIX_TimApi_Constants_Currency_withCode_String_" data-uid="SIX.TimApi.Constants.Currency.withCode(String)">withCode(String)</h4>
   <div class="markdown level1 summary"><p>Get enumeration value matching code.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static Currency withCode(string code)</code></pre>
+    <pre><code class="lang-csharp hljs">public static Currency withCode(String code)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -5538,7 +5526,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="xref">String</span></td>
         <td><span class="parametername">code</span></td>
         <td></td>
       </tr>

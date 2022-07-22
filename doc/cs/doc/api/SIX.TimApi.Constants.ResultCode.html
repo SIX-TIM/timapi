@@ -557,6 +557,9 @@
                             <a href="SIX.TimApi.Terminal.TerminalStatusChangedHandler.html" title="Terminal.TerminalStatusChangedHandler" class="">Terminal.TerminalStatusChangedHandler</a>
                           </li>
                           <li class="">
+                            <a href="SIX.TimApi.Terminal.ThirdPartyAppDataHandler.html" title="Terminal.ThirdPartyAppDataHandler" class="">Terminal.ThirdPartyAppDataHandler</a>
+                          </li>
+                          <li class="">
                             <a href="SIX.TimApi.Terminal.TransactionCompletedEventArgs.html" title="Terminal.TransactionCompletedEventArgs" class="">Terminal.TransactionCompletedEventArgs</a>
                           </li>
                           <li class="">
@@ -579,6 +582,9 @@
                           </li>
                           <li class="">
                             <a href="SIX.TimApi.TerminalStatus.html" title="TerminalStatus" class="">TerminalStatus</a>
+                          </li>
+                          <li class="">
+                            <a href="SIX.TimApi.ThirdPartyAppPayload.html" title="ThirdPartyAppPayload" class="">ThirdPartyAppPayload</a>
                           </li>
                           <li class="">
                             <a href="SIX.TimApi.TimEvent.html" title="TimEvent" class="">TimEvent</a>
@@ -797,6 +803,12 @@
                             <a href="SIX.TimApi.Constants.Theme.html" title="Theme" class="">Theme</a>
                           </li>
                           <li class="">
+                            <a href="SIX.TimApi.Constants.ThirdPartyAppId.html" title="ThirdPartyAppId" class="">ThirdPartyAppId</a>
+                          </li>
+                          <li class="">
+                            <a href="SIX.TimApi.Constants.ThirdPartyApps.html" title="ThirdPartyApps" class="">ThirdPartyApps</a>
+                          </li>
+                          <li class="">
                             <a href="SIX.TimApi.Constants.TokenPanType.html" title="TokenPanType" class="">TokenPanType</a>
                           </li>
                           <li class="">
@@ -900,6 +912,7 @@
   <h1 id="SIX_TimApi_Constants_ResultCode" data-uid="SIX.TimApi.Constants.ResultCode" class="text-break">Enum ResultCode
   </h1>
   <div class="markdown level0 summary"><p>Result codes.</p>
+<p>Guides: retail, valueAddedServices.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <h6><strong>Namespace</strong>: <a class="xref" href="SIX.TimApi.Constants.html">SIX.TimApi.Constants</a></h6>
@@ -919,6 +932,14 @@
     <thead>
     <tbody>
       <tr>
+        <td id="SIX_TimApi_Constants_ResultCode_ActionNotAllowedOnTheTransaction">ActionNotAllowedOnTheTransaction</td>
+        <td><p>Category: TIM API related results - Transaction<br></p>
+<p>Action not allowed on the transaction. E.g. do a refund on a not captured purchase. /
+Do a refund with higher amount than the original purchase amount.</p>
+<p> <strong>Error message:</strong> Action not allowed on the transaction</p>
+</td>
+      </tr>
+      <tr>
         <td id="SIX_TimApi_Constants_ResultCode_ApiCancelEcr">ApiCancelEcr</td>
         <td><p>TIM API related results - General.</p>
 </td>
@@ -926,6 +947,7 @@
       <tr>
         <td id="SIX_TimApi_Constants_ResultCode_ApiConnectFailServer">ApiConnectFailServer</td>
         <td><p>TIM API related results - Communication.</p>
+<p>Guides: retail, valueAddedServices.</p>
 </td>
       </tr>
       <tr>
@@ -1419,6 +1441,14 @@ No ethernet cable has been connected.<br>
 </td>
       </tr>
       <tr>
+        <td id="SIX_TimApi_Constants_ResultCode_HostTimeoutOutcomeUnknown">HostTimeoutOutcomeUnknown</td>
+        <td><p>Category: TIM API related results - Communication<br>
+Connection to host timed out. The transaction outcome is unknown. The user must use
+another channel to verify the outcome.<br>
+<strong>Error message:</strong> Host Timeout - Outcome unknown - Use another channel to verify outcome</p>
+</td>
+      </tr>
+      <tr>
         <td id="SIX_TimApi_Constants_ResultCode_LoyaltyCheckInPending">LoyaltyCheckInPending</td>
         <td><p>Category: TIM API related results - Transaction<br>
 So far no loyalty data is available, check-in pending.<br>
@@ -1723,6 +1753,10 @@ message:</strong> Terminal does not wake up</p>
 </td>
       </tr>
       <tr>
+        <td id="SIX_TimApi_Constants_ResultCode_ThirdPartyAppNotAvailable">ThirdPartyAppNotAvailable</td>
+        <td></td>
+      </tr>
+      <tr>
         <td id="SIX_TimApi_Constants_ResultCode_TimCommunicationFailure">TimCommunicationFailure</td>
         <td><p>Category: TIM API related results - Communication<br>
 Communication failed.<br>
@@ -1766,7 +1800,9 @@ RS232 device did not respond in time.<br>
       </tr>
       <tr>
         <td id="SIX_TimApi_Constants_ResultCode_TimTimeoutEcr">TimTimeoutEcr</td>
-        <td><p>TIM API related results - Communication.</p>
+        <td><p>Category: TIM API related results - Communication<br>
+ECR did not respond in time.<br>
+<strong>Error message:</strong> Timeout - ECR</p>
 </td>
       </tr>
       <tr>

@@ -557,6 +557,9 @@
                             <a href="SIX.TimApi.Terminal.TerminalStatusChangedHandler.html" title="Terminal.TerminalStatusChangedHandler" class="">Terminal.TerminalStatusChangedHandler</a>
                           </li>
                           <li class="">
+                            <a href="SIX.TimApi.Terminal.ThirdPartyAppDataHandler.html" title="Terminal.ThirdPartyAppDataHandler" class="">Terminal.ThirdPartyAppDataHandler</a>
+                          </li>
+                          <li class="">
                             <a href="SIX.TimApi.Terminal.TransactionCompletedEventArgs.html" title="Terminal.TransactionCompletedEventArgs" class="">Terminal.TransactionCompletedEventArgs</a>
                           </li>
                           <li class="">
@@ -579,6 +582,9 @@
                           </li>
                           <li class="">
                             <a href="SIX.TimApi.TerminalStatus.html" title="TerminalStatus" class="">TerminalStatus</a>
+                          </li>
+                          <li class="">
+                            <a href="SIX.TimApi.ThirdPartyAppPayload.html" title="ThirdPartyAppPayload" class="">ThirdPartyAppPayload</a>
                           </li>
                           <li class="">
                             <a href="SIX.TimApi.TimEvent.html" title="TimEvent" class="">TimEvent</a>
@@ -797,6 +803,12 @@
                             <a href="SIX.TimApi.Constants.Theme.html" title="Theme" class="">Theme</a>
                           </li>
                           <li class="">
+                            <a href="SIX.TimApi.Constants.ThirdPartyAppId.html" title="ThirdPartyAppId" class="">ThirdPartyAppId</a>
+                          </li>
+                          <li class="">
+                            <a href="SIX.TimApi.Constants.ThirdPartyApps.html" title="ThirdPartyApps" class="">ThirdPartyApps</a>
+                          </li>
+                          <li class="">
                             <a href="SIX.TimApi.Constants.TokenPanType.html" title="TokenPanType" class="">TokenPanType</a>
                           </li>
                           <li class="">
@@ -899,7 +911,7 @@
   
   <h1 id="SIX_TimApi_CounterList" data-uid="SIX.TimApi.CounterList" class="text-break">Class CounterList
   </h1>
-  <div class="markdown level0 summary"><p>Contains all counters as <see cref="!:Counter"></see> for a specific counter type.
+  <div class="markdown level0 summary"><p>Contains all counters as <a class="xref" href="SIX.TimApi.Counter.html">Counter</a> for a specific counter type.
 <remarks>Instances of this class are returned by various calls:<p>
 <p><a class="xref" href="SIX.TimApi.Terminal.html#SIX_TimApi_Terminal_Balance">Balance()</a> </p>
 <p><a class="xref" href="SIX.TimApi.Terminal.html#SIX_TimApi_Terminal_BalanceAsync">BalanceAsync()</a> </p>
@@ -949,7 +961,7 @@
   
   
   <a id="SIX_TimApi_CounterList__ctor_" data-uid="SIX.TimApi.CounterList.#ctor*"></a>
-  <h4 id="SIX_TimApi_CounterList__ctor_SIX_TimApi_Constants_CounterType_System_Int32_System_Collections_Generic_List_Counter__" data-uid="SIX.TimApi.CounterList.#ctor(SIX.TimApi.Constants.CounterType,System.Int32,System.Collections.Generic.List{Counter})">CounterList(CounterType, Int32, List&lt;Counter&gt;)</h4>
+  <h4 id="SIX_TimApi_CounterList__ctor_SIX_TimApi_Constants_CounterType_System_Int32_System_Collections_Generic_List_SIX_TimApi_Counter__" data-uid="SIX.TimApi.CounterList.#ctor(SIX.TimApi.Constants.CounterType,System.Int32,System.Collections.Generic.List{SIX.TimApi.Counter})">CounterList(CounterType, Int32, List&lt;Counter&gt;)</h4>
   <div class="markdown level1 summary"><p>Create counters.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -978,8 +990,78 @@
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">System.Collections.Generic.List</span>&lt;<span class="xref">Counter</span>&gt;</td>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="SIX.TimApi.Counter.html">Counter</a>&gt;</td>
         <td><span class="parametername">counters</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SIX_TimApi_CounterList__ctor_" data-uid="SIX.TimApi.CounterList.#ctor*"></a>
+  <h4 id="SIX_TimApi_CounterList__ctor_SIX_TimApi_Constants_CounterType_System_Int32_System_Collections_Generic_List_SIX_TimApi_Counter__SIX_TimApi_PrintData_" data-uid="SIX.TimApi.CounterList.#ctor(SIX.TimApi.Constants.CounterType,System.Int32,System.Collections.Generic.List{SIX.TimApi.Counter},SIX.TimApi.PrintData)">CounterList(CounterType, Int32, List&lt;Counter&gt;, PrintData)</h4>
+  <div class="markdown level1 summary"><p>Create counters.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CounterList(CounterType counterType, int seqCounter, List&lt;Counter&gt; counters, PrintData printData)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="SIX.TimApi.Constants.CounterType.html">CounterType</a></td>
+        <td><span class="parametername">counterType</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">seqCounter</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="SIX.TimApi.Counter.html">Counter</a>&gt;</td>
+        <td><span class="parametername">counters</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="SIX.TimApi.PrintData.html">PrintData</a></td>
+        <td><span class="parametername">printData</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  
+  
+  <h4 id="SIX_TimApi_CounterList_PrintData" data-uid="SIX.TimApi.CounterList.PrintData">PrintData</h4>
+  <div class="markdown level1 summary"><p>Optional print data. Present only in RequestType.CounterRequest.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly PrintData PrintData</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="SIX.TimApi.PrintData.html">PrintData</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -990,7 +1072,7 @@
   
   <a id="SIX_TimApi_CounterList_Counters_" data-uid="SIX.TimApi.CounterList.Counters*"></a>
   <h4 id="SIX_TimApi_CounterList_Counters" data-uid="SIX.TimApi.CounterList.Counters">Counters</h4>
-  <div class="markdown level1 summary"><p>List of Counters as <see cref="!:Counter"></see>.</p>
+  <div class="markdown level1 summary"><p>List of Counters as <a class="xref" href="SIX.TimApi.Counter.html">Counter</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1007,7 +1089,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.List</span>&lt;<span class="xref">Counter</span>&gt;</td>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="SIX.TimApi.Counter.html">Counter</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>

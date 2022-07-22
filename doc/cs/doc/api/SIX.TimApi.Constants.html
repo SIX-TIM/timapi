@@ -557,6 +557,9 @@
                             <a href="SIX.TimApi.Terminal.TerminalStatusChangedHandler.html" title="Terminal.TerminalStatusChangedHandler" class="">Terminal.TerminalStatusChangedHandler</a>
                           </li>
                           <li class="">
+                            <a href="SIX.TimApi.Terminal.ThirdPartyAppDataHandler.html" title="Terminal.ThirdPartyAppDataHandler" class="">Terminal.ThirdPartyAppDataHandler</a>
+                          </li>
+                          <li class="">
                             <a href="SIX.TimApi.Terminal.TransactionCompletedEventArgs.html" title="Terminal.TransactionCompletedEventArgs" class="">Terminal.TransactionCompletedEventArgs</a>
                           </li>
                           <li class="">
@@ -579,6 +582,9 @@
                           </li>
                           <li class="">
                             <a href="SIX.TimApi.TerminalStatus.html" title="TerminalStatus" class="">TerminalStatus</a>
+                          </li>
+                          <li class="">
+                            <a href="SIX.TimApi.ThirdPartyAppPayload.html" title="ThirdPartyAppPayload" class="">ThirdPartyAppPayload</a>
                           </li>
                           <li class="">
                             <a href="SIX.TimApi.TimEvent.html" title="TimEvent" class="">TimEvent</a>
@@ -797,6 +803,12 @@
                             <a href="SIX.TimApi.Constants.Theme.html" title="Theme" class="">Theme</a>
                           </li>
                           <li class="">
+                            <a href="SIX.TimApi.Constants.ThirdPartyAppId.html" title="ThirdPartyAppId" class="">ThirdPartyAppId</a>
+                          </li>
+                          <li class="">
+                            <a href="SIX.TimApi.Constants.ThirdPartyApps.html" title="ThirdPartyApps" class="">ThirdPartyApps</a>
+                          </li>
+                          <li class="">
                             <a href="SIX.TimApi.Constants.TokenPanType.html" title="TokenPanType" class="">TokenPanType</a>
                           </li>
                           <li class="">
@@ -997,6 +1009,8 @@ sixml:EcrInfo tag.</p>
 </section>
       <h4><a class="xref" href="SIX.TimApi.Constants.FinancialTransactions.html">FinancialTransactions</a></h4>
       <section><p>Flag constants for FeatureType and OptionType sixml:FinancialTransactions value.</p>
+<p>Guides: retail, petrol, unattended, advancedRetail, banking, hospitality,
+valueAddedServices.</p>
 </section>
       <h4><a class="xref" href="SIX.TimApi.Constants.FunctionHint.html">FunctionHint</a></h4>
       <section><p><p>Hint to the subsequent Finacial Transaction Function that will be called in the
@@ -1006,7 +1020,7 @@ certain POS entry mode is even possible. The ECR is allowed to not follow this i
 and send another transaction type. This may lead the terminal application to do require a
 double tap or even terminate the transaction.</p>
 <p>The following values area valid:</p></p>
-<p>Specifications: petrol, advancedRetail, banking, hospitality, valueAddedServices.</p>
+<p>Guides: petrol, advancedRetail, banking, hospitality, valueAddedServices.</p>
 </section>
       <h4><a class="xref" href="SIX.TimApi.Constants.Guides.html">Guides</a></h4>
       <section><p>Flag constants for FeatureType and OptionType sixml:Guides value.</p>
@@ -1046,6 +1060,7 @@ response.</p>
       <section></section>
       <h4><a class="xref" href="SIX.TimApi.Constants.NonFinancialTransactions.html">NonFinancialTransactions</a></h4>
       <section><p>Flag constants for FeatureType and OptionType sixml:NonFinancialTransactions value.</p>
+<p>Guides: retail, valueAddedServices.</p>
 </section>
       <h4><a class="xref" href="SIX.TimApi.Constants.Outcome.html">Outcome</a></h4>
       <section><p>Identifies the outcome of the previous transaction (in the TransactionInfoRequest response).</p>
@@ -1111,6 +1126,7 @@ multiple groups containing dialogs similar operational area.</p>
 </section>
       <h4><a class="xref" href="SIX.TimApi.Constants.ResultCode.html">ResultCode</a></h4>
       <section><p>Result codes.</p>
+<p>Guides: retail, valueAddedServices.</p>
 </section>
       <h4><a class="xref" href="SIX.TimApi.Constants.SecurityStatus.html">SecurityStatus</a></h4>
       <section><p>Constants for SecurityStatus tag.</p>
@@ -1128,6 +1144,14 @@ multiple groups containing dialogs similar operational area.</p>
       <section><p><p>Defines the appearance of the dialog.</p>
 <p>The following values are valid:</p></p>
 <p>Specification: dialog.</p>
+</section>
+      <h4><a class="xref" href="SIX.TimApi.Constants.ThirdPartyAppId.html">ThirdPartyAppId</a></h4>
+      <section><p>Identifier of a third party application.</p>
+<p>Specification: valueAddedServices.</p>
+</section>
+      <h4><a class="xref" href="SIX.TimApi.Constants.ThirdPartyApps.html">ThirdPartyApps</a></h4>
+      <section><p>Flag constants for FeatureType and OptionType ThirdPartyApps value.</p>
+<p>Specification: valueAddedServices.</p>
 </section>
       <h4><a class="xref" href="SIX.TimApi.Constants.TokenPanType.html">TokenPanType</a></h4>
       <section><p>To differ the source of a token PAN, the TokenPanType field is used in a SIXml request

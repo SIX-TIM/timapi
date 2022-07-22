@@ -53,6 +53,8 @@ var dir_2b8e89bb36cb38816e6fe595fb71ec42 =
     [ "sleep_mode_status.h", "enum__string__maps_2sleep__mode__status_8h.html", "enum__string__maps_2sleep__mode__status_8h" ],
     [ "status_functions.h", "enum__string__maps_2status__functions_8h.html", "enum__string__maps_2status__functions_8h" ],
     [ "theme.h", "enum__string__maps_2theme_8h.html", "enum__string__maps_2theme_8h" ],
+    [ "third_party_app_id.h", "enum__string__maps_2third__party__app__id_8h.html", "enum__string__maps_2third__party__app__id_8h" ],
+    [ "third_party_apps.h", "enum__string__maps_2third__party__apps_8h.html", "enum__string__maps_2third__party__apps_8h" ],
     [ "token_pan_type.h", "enum__string__maps_2token__pan__type_8h.html", "enum__string__maps_2token__pan__type_8h" ],
     [ "transaction_reason.h", "enum__string__maps_2transaction__reason_8h.html", "enum__string__maps_2transaction__reason_8h" ],
     [ "transaction_status.h", "enum__string__maps_2transaction__status_8h.html", "enum__string__maps_2transaction__status_8h" ],

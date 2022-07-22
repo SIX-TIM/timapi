@@ -557,6 +557,9 @@
                             <a href="SIX.TimApi.Terminal.TerminalStatusChangedHandler.html" title="Terminal.TerminalStatusChangedHandler" class="">Terminal.TerminalStatusChangedHandler</a>
                           </li>
                           <li class="">
+                            <a href="SIX.TimApi.Terminal.ThirdPartyAppDataHandler.html" title="Terminal.ThirdPartyAppDataHandler" class="">Terminal.ThirdPartyAppDataHandler</a>
+                          </li>
+                          <li class="">
                             <a href="SIX.TimApi.Terminal.TransactionCompletedEventArgs.html" title="Terminal.TransactionCompletedEventArgs" class="">Terminal.TransactionCompletedEventArgs</a>
                           </li>
                           <li class="">
@@ -579,6 +582,9 @@
                           </li>
                           <li class="">
                             <a href="SIX.TimApi.TerminalStatus.html" title="TerminalStatus" class="">TerminalStatus</a>
+                          </li>
+                          <li class="">
+                            <a href="SIX.TimApi.ThirdPartyAppPayload.html" title="ThirdPartyAppPayload" class="">ThirdPartyAppPayload</a>
                           </li>
                           <li class="">
                             <a href="SIX.TimApi.TimEvent.html" title="TimEvent" class="">TimEvent</a>
@@ -795,6 +801,12 @@
                           </li>
                           <li class="">
                             <a href="SIX.TimApi.Constants.Theme.html" title="Theme" class="">Theme</a>
+                          </li>
+                          <li class="">
+                            <a href="SIX.TimApi.Constants.ThirdPartyAppId.html" title="ThirdPartyAppId" class="">ThirdPartyAppId</a>
+                          </li>
+                          <li class="">
+                            <a href="SIX.TimApi.Constants.ThirdPartyApps.html" title="ThirdPartyApps" class="">ThirdPartyApps</a>
                           </li>
                           <li class="">
                             <a href="SIX.TimApi.Constants.TokenPanType.html" title="TokenPanType" class="">TokenPanType</a>
@@ -1069,6 +1081,32 @@
         <td><span class="xref">System.Int32</span></td>
         <td><p>The act seq counter.</p>
 </td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SIX_TimApi_Terminal_AllowedThirdPartyApps_" data-uid="SIX.TimApi.Terminal.AllowedThirdPartyApps*"></a>
+  <h4 id="SIX_TimApi_Terminal_AllowedThirdPartyApps" data-uid="SIX.TimApi.Terminal.AllowedThirdPartyApps">AllowedThirdPartyApps</h4>
+  <div class="markdown level1 summary"><p>Allowed Third Party Apps.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;ThirdPartyApps&gt; AllowedThirdPartyApps { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="SIX.TimApi.Constants.ThirdPartyApps.html">ThirdPartyApps</a>&gt;</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -2997,7 +3035,7 @@ The response is available in the <a class="xref" href="SIX.TimApi.Terminal.Deact
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">AdditionalInfoItem</span>&gt;</td>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="SIX.TimApi.Constants.AdditionalInfoItem.html">AdditionalInfoItem</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -3005,7 +3043,7 @@ The response is available in the <a class="xref" href="SIX.TimApi.Terminal.Deact
   
   
   <a id="SIX_TimApi_Terminal_GetItemTextcodeDescription_" data-uid="SIX.TimApi.Terminal.GetItemTextcodeDescription*"></a>
-  <h4 id="SIX_TimApi_Terminal_GetItemTextcodeDescription_System_Nullable_AdditionalInfoItem__" data-uid="SIX.TimApi.Terminal.GetItemTextcodeDescription(System.Nullable{AdditionalInfoItem})">GetItemTextcodeDescription(Nullable&lt;AdditionalInfoItem&gt;)</h4>
+  <h4 id="SIX_TimApi_Terminal_GetItemTextcodeDescription_System_Nullable_SIX_TimApi_Constants_AdditionalInfoItem__" data-uid="SIX.TimApi.Terminal.GetItemTextcodeDescription(System.Nullable{SIX.TimApi.Constants.AdditionalInfoItem})">GetItemTextcodeDescription(Nullable&lt;AdditionalInfoItem&gt;)</h4>
   <div class="markdown level1 summary"><p>Get text description of AdditionalInfoItem.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -3024,7 +3062,7 @@ The response is available in the <a class="xref" href="SIX.TimApi.Terminal.Deact
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">AdditionalInfoItem</span>&gt;</td>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="SIX.TimApi.Constants.AdditionalInfoItem.html">AdditionalInfoItem</a>&gt;</td>
         <td><span class="parametername">item</span></td>
         <td></td>
       </tr>
@@ -5073,6 +5111,38 @@ The response is available in the <a class="xref" href="SIX.TimApi.Terminal.Syste
 </div>
   
   
+  <a id="SIX_TimApi_Terminal_ThirdPartyAppData_" data-uid="SIX.TimApi.Terminal.ThirdPartyAppData*"></a>
+  <h4 id="SIX_TimApi_Terminal_ThirdPartyAppData_SIX_TimApi_ThirdPartyAppPayload_" data-uid="SIX.TimApi.Terminal.ThirdPartyAppData(SIX.TimApi.ThirdPartyAppPayload)">ThirdPartyAppData(ThirdPartyAppPayload)</h4>
+  <div class="markdown level1 summary"><p>Send ThirdPartyAppData notification to EFT.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ThirdPartyAppData(ThirdPartyAppPayload payload)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="SIX.TimApi.ThirdPartyAppPayload.html">ThirdPartyAppPayload</a></td>
+        <td><span class="parametername">payload</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="SIX_TimApi_Terminal_ThirdPartyAppData_SIX_TimApi_ThirdPartyAppPayload__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This is a &quot;best effort&quot; function.</p>
+<p>Note: This method is only available if guide value added services is enabled.</p>
+</div>
+  
+  
   <a id="SIX_TimApi_Terminal_TimApiDispose_" data-uid="SIX.TimApi.Terminal.TimApiDispose*"></a>
   <h4 id="SIX_TimApi_Terminal_TimApiDispose" data-uid="SIX.TimApi.Terminal.TimApiDispose">TimApiDispose()</h4>
   <div class="markdown level1 summary"><p>dispose of TimApi to release all resources.</p>
@@ -5127,7 +5197,7 @@ The response is available in the <a class="xref" href="SIX.TimApi.Terminal.Syste
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">TransactionResponse</span></td>
+        <td><a class="xref" href="SIX.TimApi.TransactionResponse.html">TransactionResponse</a></td>
         <td><p>the TransactionResponse</p>
 </td>
       </tr>
@@ -5198,7 +5268,7 @@ terminal property since those do not change often if at all (default parameters)
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">TransactionResponse</span></td>
+        <td><a class="xref" href="SIX.TimApi.TransactionResponse.html">TransactionResponse</a></td>
         <td><p>The TransactionResponse.</p>
 </td>
       </tr>
@@ -5357,7 +5427,7 @@ The response is available in the <a class="xref" href="SIX.TimApi.Terminal.Trans
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">TransactionResponse</span></td>
+        <td><a class="xref" href="SIX.TimApi.TransactionResponse.html">TransactionResponse</a></td>
         <td><p>The TransactionResponse.</p>
 </td>
       </tr>
@@ -5436,7 +5506,7 @@ The response is available in the <a class="xref" href="SIX.TimApi.Terminal.Trans
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">TransactionInfoRequestResponse</span></td>
+        <td><a class="xref" href="SIX.TimApi.TransactionInfoRequestResponse.html">TransactionInfoRequestResponse</a></td>
         <td><p>the TransactionInfoRequestResponse</p>
 </td>
       </tr>
@@ -5526,7 +5596,7 @@ The response is available in the <a class="xref" href="SIX.TimApi.Terminal.Trans
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">TransactionResponse</span></td>
+        <td><a class="xref" href="SIX.TimApi.TransactionResponse.html">TransactionResponse</a></td>
         <td><p>The TransactionResponse.</p>
 </td>
       </tr>
@@ -7183,6 +7253,31 @@ The <a class="xref" href="SIX.TimApi.Terminal.SystemInformationCompletedEventArg
   <h5 id="SIX_TimApi_Terminal_TerminalStatusChanged_remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>This event is raised each timethe status changes on the terminal.</p>
 </div>
+  
+  
+  <h4 id="SIX_TimApi_Terminal_ThirdPartyAppDataEvent" data-uid="SIX.TimApi.Terminal.ThirdPartyAppDataEvent">ThirdPartyAppDataEvent</h4>
+  <div class="markdown level1 summary"><p>Occurs when ThirdPartyAppData is received.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event Terminal.ThirdPartyAppDataHandler ThirdPartyAppDataEvent</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="SIX.TimApi.Terminal.ThirdPartyAppDataHandler.html">Terminal.ThirdPartyAppDataHandler</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   
   
   <h4 id="SIX_TimApi_Terminal_TransactionCompleted" data-uid="SIX.TimApi.Terminal.TransactionCompleted">TransactionCompleted</h4>

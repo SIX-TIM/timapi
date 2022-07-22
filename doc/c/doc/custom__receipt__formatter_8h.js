@@ -121,6 +121,7 @@ var custom__receipt__formatter_8h =
       [ "ta_crftt_installment_payment", "custom__receipt__formatter_8h.html#aa2ad96ca8f3d24cc69d417eaa70dd2e3a08c159919e4bc5a45ff3de655347a80f", null ],
       [ "ta_crftt_no_installments", "custom__receipt__formatter_8h.html#aa2ad96ca8f3d24cc69d417eaa70dd2e3a8d712f162257dd0f15f346f5d6eb5d9c", null ],
       [ "ta_crftt_trx_ref_no", "custom__receipt__formatter_8h.html#aa2ad96ca8f3d24cc69d417eaa70dd2e3ae69c05ba41a07fdcdfa52b9ac513fecc", null ],
+      [ "ta_crftt_original_trans_ref", "custom__receipt__formatter_8h.html#aa2ad96ca8f3d24cc69d417eaa70dd2e3a4a9149ac9cd5d7bd717652dd9490174a", null ],
       [ "ta_crftt_auth_code", "custom__receipt__formatter_8h.html#aa2ad96ca8f3d24cc69d417eaa70dd2e3a430d4c8fd6e7b7548e8b5e667ff99ae1", null ],
       [ "ta_crftt_total_eft", "custom__receipt__formatter_8h.html#aa2ad96ca8f3d24cc69d417eaa70dd2e3a058ed914e2eb13924fe10ca7b6aeeaee", null ],
       [ "ta_crftt_cardholder", "custom__receipt__formatter_8h.html#aa2ad96ca8f3d24cc69d417eaa70dd2e3afcaecdffcb43a6e57681c81acd36e71e", null ],

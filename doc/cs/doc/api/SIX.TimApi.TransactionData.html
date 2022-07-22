@@ -557,6 +557,9 @@
                             <a href="SIX.TimApi.Terminal.TerminalStatusChangedHandler.html" title="Terminal.TerminalStatusChangedHandler" class="">Terminal.TerminalStatusChangedHandler</a>
                           </li>
                           <li class="">
+                            <a href="SIX.TimApi.Terminal.ThirdPartyAppDataHandler.html" title="Terminal.ThirdPartyAppDataHandler" class="">Terminal.ThirdPartyAppDataHandler</a>
+                          </li>
+                          <li class="">
                             <a href="SIX.TimApi.Terminal.TransactionCompletedEventArgs.html" title="Terminal.TransactionCompletedEventArgs" class="">Terminal.TransactionCompletedEventArgs</a>
                           </li>
                           <li class="">
@@ -579,6 +582,9 @@
                           </li>
                           <li class="">
                             <a href="SIX.TimApi.TerminalStatus.html" title="TerminalStatus" class="">TerminalStatus</a>
+                          </li>
+                          <li class="">
+                            <a href="SIX.TimApi.ThirdPartyAppPayload.html" title="ThirdPartyAppPayload" class="">ThirdPartyAppPayload</a>
                           </li>
                           <li class="">
                             <a href="SIX.TimApi.TimEvent.html" title="TimEvent" class="">TimEvent</a>
@@ -797,6 +803,12 @@
                             <a href="SIX.TimApi.Constants.Theme.html" title="Theme" class="">Theme</a>
                           </li>
                           <li class="">
+                            <a href="SIX.TimApi.Constants.ThirdPartyAppId.html" title="ThirdPartyAppId" class="">ThirdPartyAppId</a>
+                          </li>
+                          <li class="">
+                            <a href="SIX.TimApi.Constants.ThirdPartyApps.html" title="ThirdPartyApps" class="">ThirdPartyApps</a>
+                          </li>
+                          <li class="">
                             <a href="SIX.TimApi.Constants.TokenPanType.html" title="TokenPanType" class="">TokenPanType</a>
                           </li>
                           <li class="">
@@ -983,6 +995,46 @@
   <a id="SIX_TimApi_TransactionData_AcqId_" data-uid="SIX.TimApi.TransactionData.AcqId*"></a>
   <h4 id="SIX_TimApi_TransactionData_AcqId" data-uid="SIX.TimApi.TransactionData.AcqId">AcqId</h4>
   <div class="markdown level1 summary"><p>Acquirer identifier. Uniquely identifies the acquirer.</p>
+<p>Mandatory for (can not be null):</p>
+<ul>
+</ul>
+<p>Conditional for (can be null):</p>
+<ul>
+<li>SIX.TimApi.Constants.TransactionType.AccountVerification</li>
+<li>SIX.TimApi.Constants.TransactionType.AdjustReservation</li>
+<li>SIX.TimApi.Constants.TransactionType.AuthorizeCredit</li>
+<li>SIX.TimApi.Constants.TransactionType.AuthorizeDeposit</li>
+<li>SIX.TimApi.Constants.TransactionType.CancelReservation</li>
+<li>SIX.TimApi.Constants.TransactionType.CashAdvance</li>
+<li>SIX.TimApi.Constants.TransactionType.Combined</li>
+<li>SIX.TimApi.Constants.TransactionType.Credit</li>
+<li>SIX.TimApi.Constants.TransactionType.DebtRecovery</li>
+<li>SIX.TimApi.Constants.TransactionType.FinalizePurchase</li>
+<li>SIX.TimApi.Constants.TransactionType.Giro</li>
+<li>SIX.TimApi.Constants.TransactionType.Load</li>
+<li>SIX.TimApi.Constants.TransactionType.PreAuthorization</li>
+<li>SIX.TimApi.Constants.TransactionType.Purchase</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchaseForcedAcceptance</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchaseMailOrdered</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchasePhoneAuthorized</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchasePhoneOrdered</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchaseReservation</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchaseWithCashback</li>
+<li>SIX.TimApi.Constants.TransactionType.Refunding</li>
+<li>SIX.TimApi.Constants.TransactionType.Reservation</li>
+<li>SIX.TimApi.Constants.TransactionType.Reversal</li>
+</ul>
+<p>Forbidden (has to be always null):</p>
+<ul>
+<li>SIX.TimApi.Constants.TransactionType.ActivateCard</li>
+<li>SIX.TimApi.Constants.TransactionType.CollectPoints</li>
+<li>SIX.TimApi.Constants.TransactionType.Funding</li>
+<li>SIX.TimApi.Constants.TransactionType.InitTransaction</li>
+<li>SIX.TimApi.Constants.TransactionType.LoadVoucher</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchaseReservationPhoneAuthorized</li>
+<li>SIX.TimApi.Constants.TransactionType.Unload</li>
+</ul>
+<p>Transactions will fail if one of the above mentioned restrictions are violated.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1009,6 +1061,46 @@
   <a id="SIX_TimApi_TransactionData_AcqTransRef_" data-uid="SIX.TimApi.TransactionData.AcqTransRef*"></a>
   <h4 id="SIX_TimApi_TransactionData_AcqTransRef" data-uid="SIX.TimApi.TransactionData.AcqTransRef">AcqTransRef</h4>
   <div class="markdown level1 summary"><p>Contains the transaction reference from the acquirer.</p>
+<p>Mandatory for (can not be null):</p>
+<ul>
+<li>SIX.TimApi.Constants.TransactionType.AdjustReservation</li>
+<li>SIX.TimApi.Constants.TransactionType.CancelReservation</li>
+<li>SIX.TimApi.Constants.TransactionType.DebtRecovery</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchaseReservation</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchaseReservationPhoneAuthorized</li>
+<li>SIX.TimApi.Constants.TransactionType.Refunding</li>
+<li>SIX.TimApi.Constants.TransactionType.Unload</li>
+</ul>
+<p>Conditional for (can be null):</p>
+<ul>
+<li>SIX.TimApi.Constants.TransactionType.AccountVerification</li>
+<li>SIX.TimApi.Constants.TransactionType.ActivateCard</li>
+<li>SIX.TimApi.Constants.TransactionType.AuthorizeCredit</li>
+<li>SIX.TimApi.Constants.TransactionType.AuthorizeDeposit</li>
+<li>SIX.TimApi.Constants.TransactionType.CashAdvance</li>
+<li>SIX.TimApi.Constants.TransactionType.CollectPoints</li>
+<li>SIX.TimApi.Constants.TransactionType.Combined</li>
+<li>SIX.TimApi.Constants.TransactionType.Credit</li>
+<li>SIX.TimApi.Constants.TransactionType.FinalizePurchase</li>
+<li>SIX.TimApi.Constants.TransactionType.Funding</li>
+<li>SIX.TimApi.Constants.TransactionType.Giro</li>
+<li>SIX.TimApi.Constants.TransactionType.Load</li>
+<li>SIX.TimApi.Constants.TransactionType.LoadVoucher</li>
+<li>SIX.TimApi.Constants.TransactionType.PreAuthorization</li>
+<li>SIX.TimApi.Constants.TransactionType.Purchase</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchaseForcedAcceptance</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchaseMailOrdered</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchasePhoneAuthorized</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchasePhoneOrdered</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchaseWithCashback</li>
+<li>SIX.TimApi.Constants.TransactionType.Reservation</li>
+<li>SIX.TimApi.Constants.TransactionType.Reversal</li>
+</ul>
+<p>Forbidden (has to be always null):</p>
+<ul>
+<li>SIX.TimApi.Constants.TransactionType.InitTransaction</li>
+</ul>
+<p>Transactions will fail if one of the above mentioned restrictions are violated.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1035,6 +1127,46 @@
   <a id="SIX_TimApi_TransactionData_AllowedAccounts_" data-uid="SIX.TimApi.TransactionData.AllowedAccounts*"></a>
   <h4 id="SIX_TimApi_TransactionData_AllowedAccounts" data-uid="SIX.TimApi.TransactionData.AllowedAccounts">AllowedAccounts</h4>
   <div class="markdown level1 summary"><p>Allowed accounts.</p>
+<p>Mandatory for (can not be null):</p>
+<ul>
+</ul>
+<p>Conditional for (can be null):</p>
+<ul>
+<li>SIX.TimApi.Constants.TransactionType.Credit</li>
+<li>SIX.TimApi.Constants.TransactionType.Purchase</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchaseForcedAcceptance</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchaseMailOrdered</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchasePhoneAuthorized</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchasePhoneOrdered</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchaseWithCashback</li>
+</ul>
+<p>Forbidden (has to be always null):</p>
+<ul>
+<li>SIX.TimApi.Constants.TransactionType.AccountVerification</li>
+<li>SIX.TimApi.Constants.TransactionType.ActivateCard</li>
+<li>SIX.TimApi.Constants.TransactionType.AdjustReservation</li>
+<li>SIX.TimApi.Constants.TransactionType.AuthorizeCredit</li>
+<li>SIX.TimApi.Constants.TransactionType.AuthorizeDeposit</li>
+<li>SIX.TimApi.Constants.TransactionType.BalanceInquiry</li>
+<li>SIX.TimApi.Constants.TransactionType.CancelReservation</li>
+<li>SIX.TimApi.Constants.TransactionType.CashAdvance</li>
+<li>SIX.TimApi.Constants.TransactionType.CollectPoints</li>
+<li>SIX.TimApi.Constants.TransactionType.Combined</li>
+<li>SIX.TimApi.Constants.TransactionType.DebtRecovery</li>
+<li>SIX.TimApi.Constants.TransactionType.FinalizePurchase</li>
+<li>SIX.TimApi.Constants.TransactionType.Funding</li>
+<li>SIX.TimApi.Constants.TransactionType.Giro</li>
+<li>SIX.TimApi.Constants.TransactionType.Load</li>
+<li>SIX.TimApi.Constants.TransactionType.LoadVoucher</li>
+<li>SIX.TimApi.Constants.TransactionType.PreAuthorization</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchaseReservation</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchaseReservationPhoneAuthorized</li>
+<li>SIX.TimApi.Constants.TransactionType.Refunding</li>
+<li>SIX.TimApi.Constants.TransactionType.Reservation</li>
+<li>SIX.TimApi.Constants.TransactionType.Reversal</li>
+<li>SIX.TimApi.Constants.TransactionType.Unload</li>
+</ul>
+<p>Transactions will fail if one of the above mentioned restrictions are violated.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1051,7 +1183,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.List</span>&lt;<span class="xref">AllowedAccounts</span>&gt;</td>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="SIX.TimApi.Constants.AllowedAccounts.html">AllowedAccounts</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -1065,6 +1197,45 @@ Each application on a card has a corresponding expiration date and can be read f
 Example: The format of an 'Expiration Date' is defined as MMyy, 2 digits for the month and
 2 digits for the year. So January 2018 will have the following format as 'Expiration Date': 0118
 Optional: Used for MPKE for non-PCI brands based transactions.</p>
+<p>Mandatory for (can not be null):</p>
+<ul>
+</ul>
+<p>Conditional for (can be null):</p>
+<ul>
+<li>SIX.TimApi.Constants.TransactionType.AccountVerification</li>
+<li>SIX.TimApi.Constants.TransactionType.ActivateCard</li>
+<li>SIX.TimApi.Constants.TransactionType.AuthorizeCredit</li>
+<li>SIX.TimApi.Constants.TransactionType.AuthorizeDeposit</li>
+<li>SIX.TimApi.Constants.TransactionType.CashAdvance</li>
+<li>SIX.TimApi.Constants.TransactionType.CollectPoints</li>
+<li>SIX.TimApi.Constants.TransactionType.Combined</li>
+<li>SIX.TimApi.Constants.TransactionType.Credit</li>
+<li>SIX.TimApi.Constants.TransactionType.DebtRecovery</li>
+<li>SIX.TimApi.Constants.TransactionType.FinalizePurchase</li>
+<li>SIX.TimApi.Constants.TransactionType.Funding</li>
+<li>SIX.TimApi.Constants.TransactionType.Giro</li>
+<li>SIX.TimApi.Constants.TransactionType.Load</li>
+<li>SIX.TimApi.Constants.TransactionType.LoadVoucher</li>
+<li>SIX.TimApi.Constants.TransactionType.PreAuthorization</li>
+<li>SIX.TimApi.Constants.TransactionType.Purchase</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchaseForcedAcceptance</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchaseMailOrdered</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchasePhoneAuthorized</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchasePhoneOrdered</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchaseReservationPhoneAuthorized</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchaseWithCashback</li>
+<li>SIX.TimApi.Constants.TransactionType.Refunding</li>
+<li>SIX.TimApi.Constants.TransactionType.Reservation</li>
+<li>SIX.TimApi.Constants.TransactionType.Reversal</li>
+<li>SIX.TimApi.Constants.TransactionType.Unload</li>
+</ul>
+<p>Forbidden (has to be always null):</p>
+<ul>
+<li>SIX.TimApi.Constants.TransactionType.AdjustReservation</li>
+<li>SIX.TimApi.Constants.TransactionType.CancelReservation</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchaseReservation</li>
+</ul>
+<p>Transactions will fail if one of the above mentioned restrictions are violated.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1091,6 +1262,45 @@ Optional: Used for MPKE for non-PCI brands based transactions.</p>
   <a id="SIX_TimApi_TransactionData_CardRef_" data-uid="SIX.TimApi.TransactionData.CardRef*"></a>
   <h4 id="SIX_TimApi_TransactionData_CardRef" data-uid="SIX.TimApi.TransactionData.CardRef">CardRef</h4>
   <div class="markdown level1 summary"><p>Petrol: Reference from the card.</p>
+<p>Mandatory for (can not be null):</p>
+<ul>
+</ul>
+<p>Conditional for (can be null):</p>
+<ul>
+<li>SIX.TimApi.Constants.TransactionType.AccountVerification</li>
+<li>SIX.TimApi.Constants.TransactionType.ActivateCard</li>
+<li>SIX.TimApi.Constants.TransactionType.AuthorizeCredit</li>
+<li>SIX.TimApi.Constants.TransactionType.AuthorizeDeposit</li>
+<li>SIX.TimApi.Constants.TransactionType.CashAdvance</li>
+<li>SIX.TimApi.Constants.TransactionType.CollectPoints</li>
+<li>SIX.TimApi.Constants.TransactionType.Combined</li>
+<li>SIX.TimApi.Constants.TransactionType.Credit</li>
+<li>SIX.TimApi.Constants.TransactionType.DebtRecovery</li>
+<li>SIX.TimApi.Constants.TransactionType.FinalizePurchase</li>
+<li>SIX.TimApi.Constants.TransactionType.Funding</li>
+<li>SIX.TimApi.Constants.TransactionType.Giro</li>
+<li>SIX.TimApi.Constants.TransactionType.Load</li>
+<li>SIX.TimApi.Constants.TransactionType.LoadVoucher</li>
+<li>SIX.TimApi.Constants.TransactionType.Purchase</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchaseForcedAcceptance</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchaseMailOrdered</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchasePhoneAuthorized</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchasePhoneOrdered</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchaseReservation</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchaseReservationPhoneAuthorized</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchaseWithCashback</li>
+<li>SIX.TimApi.Constants.TransactionType.Refunding</li>
+<li>SIX.TimApi.Constants.TransactionType.Reservation</li>
+<li>SIX.TimApi.Constants.TransactionType.Reversal</li>
+<li>SIX.TimApi.Constants.TransactionType.Unload</li>
+</ul>
+<p>Forbidden (has to be always null):</p>
+<ul>
+<li>SIX.TimApi.Constants.TransactionType.AdjustReservation</li>
+<li>SIX.TimApi.Constants.TransactionType.CancelReservation</li>
+<li>SIX.TimApi.Constants.TransactionType.PreAuthorization</li>
+</ul>
+<p>Transactions will fail if one of the above mentioned restrictions are violated.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1121,6 +1331,46 @@ The card verification code 2 is used for transactions with MPKE as an additional
 element that has to be provided.
 It has an n3 value: Numeric 3 digits: 012
 Optional: Used for MPKE for non-PCI brands.</p>
+<p>Mandatory for (can not be null):</p>
+<ul>
+</ul>
+<p>Conditional for (can be null):</p>
+<ul>
+<li>SIX.TimApi.Constants.TransactionType.AccountVerification</li>
+<li>SIX.TimApi.Constants.TransactionType.ActivateCard</li>
+<li>SIX.TimApi.Constants.TransactionType.AuthorizeCredit</li>
+<li>SIX.TimApi.Constants.TransactionType.AuthorizeDeposit</li>
+<li>SIX.TimApi.Constants.TransactionType.CashAdvance</li>
+<li>SIX.TimApi.Constants.TransactionType.CollectPoints</li>
+<li>SIX.TimApi.Constants.TransactionType.Combined</li>
+<li>SIX.TimApi.Constants.TransactionType.Credit</li>
+<li>SIX.TimApi.Constants.TransactionType.DebtRecovery</li>
+<li>SIX.TimApi.Constants.TransactionType.FinalizePurchase</li>
+<li>SIX.TimApi.Constants.TransactionType.Funding</li>
+<li>SIX.TimApi.Constants.TransactionType.Giro</li>
+<li>SIX.TimApi.Constants.TransactionType.Load</li>
+<li>SIX.TimApi.Constants.TransactionType.LoadVoucher</li>
+<li>SIX.TimApi.Constants.TransactionType.PreAuthorization</li>
+<li>SIX.TimApi.Constants.TransactionType.Purchase</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchaseForcedAcceptance</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchaseMailOrdered</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchasePhoneAuthorized</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchasePhoneOrdered</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchaseReservationPhoneAuthorized</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchaseWithCashback</li>
+<li>SIX.TimApi.Constants.TransactionType.Refunding</li>
+<li>SIX.TimApi.Constants.TransactionType.Reservation</li>
+<li>SIX.TimApi.Constants.TransactionType.Reversal</li>
+<li>SIX.TimApi.Constants.TransactionType.Unload</li>
+</ul>
+<p>Forbidden (has to be always null):</p>
+<ul>
+<li>SIX.TimApi.Constants.TransactionType.AdjustReservation</li>
+<li>SIX.TimApi.Constants.TransactionType.CancelReservation</li>
+<li>SIX.TimApi.Constants.TransactionType.InitTransaction</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchaseReservation</li>
+</ul>
+<p>Transactions will fail if one of the above mentioned restrictions are violated.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1176,6 +1426,46 @@ public bool DccAllowed { get; set; }</code></pre>
   <a id="SIX_TimApi_TransactionData_DccAllowedNullable_" data-uid="SIX.TimApi.TransactionData.DccAllowedNullable*"></a>
   <h4 id="SIX_TimApi_TransactionData_DccAllowedNullable" data-uid="SIX.TimApi.TransactionData.DccAllowedNullable">DccAllowedNullable</h4>
   <div class="markdown level1 summary"><p>Set or read if the EFT Terminal is allowed to enable DCC function.</p>
+<p>Mandatory for (can not be null):</p>
+<ul>
+</ul>
+<p>Conditional for (can be null):</p>
+<ul>
+<li>SIX.TimApi.Constants.TransactionType.AccountVerification</li>
+<li>SIX.TimApi.Constants.TransactionType.AdjustReservation</li>
+<li>SIX.TimApi.Constants.TransactionType.CashAdvance</li>
+<li>SIX.TimApi.Constants.TransactionType.DebtRecovery</li>
+<li>SIX.TimApi.Constants.TransactionType.PreAuthorization</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchaseForcedAcceptance</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchaseMailOrdered</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchasePhoneAuthorized</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchasePhoneOrdered</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchaseReservation</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchaseReservationPhoneAuthorized</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchaseWithCashback</li>
+<li>SIX.TimApi.Constants.TransactionType.Reservation</li>
+</ul>
+<p>Forbidden (has to be always null):</p>
+<ul>
+<li>SIX.TimApi.Constants.TransactionType.ActivateCard</li>
+<li>SIX.TimApi.Constants.TransactionType.AuthorizeCredit</li>
+<li>SIX.TimApi.Constants.TransactionType.AuthorizeDeposit</li>
+<li>SIX.TimApi.Constants.TransactionType.CancelReservation</li>
+<li>SIX.TimApi.Constants.TransactionType.CollectPoints</li>
+<li>SIX.TimApi.Constants.TransactionType.Combined</li>
+<li>SIX.TimApi.Constants.TransactionType.Credit</li>
+<li>SIX.TimApi.Constants.TransactionType.FinalizePurchase</li>
+<li>SIX.TimApi.Constants.TransactionType.Funding</li>
+<li>SIX.TimApi.Constants.TransactionType.Giro</li>
+<li>SIX.TimApi.Constants.TransactionType.InitTransaction</li>
+<li>SIX.TimApi.Constants.TransactionType.Load</li>
+<li>SIX.TimApi.Constants.TransactionType.LoadVoucher</li>
+<li>SIX.TimApi.Constants.TransactionType.Purchase</li>
+<li>SIX.TimApi.Constants.TransactionType.Refunding</li>
+<li>SIX.TimApi.Constants.TransactionType.Reversal</li>
+<li>SIX.TimApi.Constants.TransactionType.Unload</li>
+</ul>
+<p>Transactions will fail if one of the above mentioned restrictions are violated.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1205,6 +1495,45 @@ public bool DccAllowed { get; set; }</code></pre>
 The following values are valid:
 true: Deferred authorisation applies
 false: Standard authorisation scheme (default)</p>
+<p>Mandatory for (can not be null):</p>
+<ul>
+</ul>
+<p>Conditional for (can be null):</p>
+<ul>
+<li>SIX.TimApi.Constants.TransactionType.AccountVerification</li>
+<li>SIX.TimApi.Constants.TransactionType.ActivateCard</li>
+<li>SIX.TimApi.Constants.TransactionType.AdjustReservation</li>
+<li>SIX.TimApi.Constants.TransactionType.AuthorizeCredit</li>
+<li>SIX.TimApi.Constants.TransactionType.AuthorizeDeposit</li>
+<li>SIX.TimApi.Constants.TransactionType.CancelReservation</li>
+<li>SIX.TimApi.Constants.TransactionType.CashAdvance</li>
+<li>SIX.TimApi.Constants.TransactionType.CollectPoints</li>
+<li>SIX.TimApi.Constants.TransactionType.Combined</li>
+<li>SIX.TimApi.Constants.TransactionType.Credit</li>
+<li>SIX.TimApi.Constants.TransactionType.DebtRecovery</li>
+<li>SIX.TimApi.Constants.TransactionType.FinalizePurchase</li>
+<li>SIX.TimApi.Constants.TransactionType.Funding</li>
+<li>SIX.TimApi.Constants.TransactionType.Giro</li>
+<li>SIX.TimApi.Constants.TransactionType.Load</li>
+<li>SIX.TimApi.Constants.TransactionType.LoadVoucher</li>
+<li>SIX.TimApi.Constants.TransactionType.PreAuthorization</li>
+<li>SIX.TimApi.Constants.TransactionType.Purchase</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchaseForcedAcceptance</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchaseMailOrdered</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchasePhoneAuthorized</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchasePhoneOrdered</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchaseReservation</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchaseReservationPhoneAuthorized</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchaseWithCashback</li>
+<li>SIX.TimApi.Constants.TransactionType.Refunding</li>
+<li>SIX.TimApi.Constants.TransactionType.Reservation</li>
+<li>SIX.TimApi.Constants.TransactionType.Reversal</li>
+<li>SIX.TimApi.Constants.TransactionType.Unload</li>
+</ul>
+<p>Forbidden (has to be always null):</p>
+<ul>
+</ul>
+<p>Transactions will fail if one of the above mentioned restrictions are violated.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1257,6 +1586,46 @@ public int EcrSeqCounter { get; set; }</code></pre>
   <a id="SIX_TimApi_TransactionData_EcrSeqCounterNullable_" data-uid="SIX.TimApi.TransactionData.EcrSeqCounterNullable*"></a>
   <h4 id="SIX_TimApi_TransactionData_EcrSeqCounterNullable" data-uid="SIX.TimApi.TransactionData.EcrSeqCounterNullable">EcrSeqCounterNullable</h4>
   <div class="markdown level1 summary"><p>ECR sequence counter or  null if not set.</p>
+<p>Mandatory for (can not be null):</p>
+<ul>
+</ul>
+<p>Conditional for (can be null):</p>
+<ul>
+<li>SIX.TimApi.Constants.TransactionType.AccountVerification</li>
+<li>SIX.TimApi.Constants.TransactionType.ActivateCard</li>
+<li>SIX.TimApi.Constants.TransactionType.AdjustReservation</li>
+<li>SIX.TimApi.Constants.TransactionType.AuthorizeCredit</li>
+<li>SIX.TimApi.Constants.TransactionType.AuthorizeDeposit</li>
+<li>SIX.TimApi.Constants.TransactionType.CancelReservation</li>
+<li>SIX.TimApi.Constants.TransactionType.CashAdvance</li>
+<li>SIX.TimApi.Constants.TransactionType.CollectPoints</li>
+<li>SIX.TimApi.Constants.TransactionType.Combined</li>
+<li>SIX.TimApi.Constants.TransactionType.Credit</li>
+<li>SIX.TimApi.Constants.TransactionType.DebtRecovery</li>
+<li>SIX.TimApi.Constants.TransactionType.FinalizePurchase</li>
+<li>SIX.TimApi.Constants.TransactionType.Funding</li>
+<li>SIX.TimApi.Constants.TransactionType.Giro</li>
+<li>SIX.TimApi.Constants.TransactionType.Load</li>
+<li>SIX.TimApi.Constants.TransactionType.LoadVoucher</li>
+<li>SIX.TimApi.Constants.TransactionType.PreAuthorization</li>
+<li>SIX.TimApi.Constants.TransactionType.Purchase</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchaseForcedAcceptance</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchaseMailOrdered</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchasePhoneAuthorized</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchasePhoneOrdered</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchaseReservation</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchaseReservationPhoneAuthorized</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchaseWithCashback</li>
+<li>SIX.TimApi.Constants.TransactionType.Refunding</li>
+<li>SIX.TimApi.Constants.TransactionType.Reservation</li>
+<li>SIX.TimApi.Constants.TransactionType.Reversal</li>
+<li>SIX.TimApi.Constants.TransactionType.Unload</li>
+</ul>
+<p>Forbidden (has to be always null):</p>
+<ul>
+<li>SIX.TimApi.Constants.TransactionType.InitTransaction</li>
+</ul>
+<p>Transactions will fail if one of the above mentioned restrictions are violated.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1288,6 +1657,46 @@ installment feature during the corresponding transaction.
 As this is a boolean value is can be understood as follows:
 true: Installment is allowed for the transaction
 false: Installment is NOT allowed for the transaction</p>
+<p>Mandatory for (can not be null):</p>
+<ul>
+</ul>
+<p>Conditional for (can be null):</p>
+<ul>
+<li>SIX.TimApi.Constants.TransactionType.AccountVerification</li>
+<li>SIX.TimApi.Constants.TransactionType.ActivateCard</li>
+<li>SIX.TimApi.Constants.TransactionType.AdjustReservation</li>
+<li>SIX.TimApi.Constants.TransactionType.AuthorizeCredit</li>
+<li>SIX.TimApi.Constants.TransactionType.AuthorizeDeposit</li>
+<li>SIX.TimApi.Constants.TransactionType.CancelReservation</li>
+<li>SIX.TimApi.Constants.TransactionType.CashAdvance</li>
+<li>SIX.TimApi.Constants.TransactionType.CollectPoints</li>
+<li>SIX.TimApi.Constants.TransactionType.Combined</li>
+<li>SIX.TimApi.Constants.TransactionType.Credit</li>
+<li>SIX.TimApi.Constants.TransactionType.DebtRecovery</li>
+<li>SIX.TimApi.Constants.TransactionType.FinalizePurchase</li>
+<li>SIX.TimApi.Constants.TransactionType.Funding</li>
+<li>SIX.TimApi.Constants.TransactionType.Giro</li>
+<li>SIX.TimApi.Constants.TransactionType.Load</li>
+<li>SIX.TimApi.Constants.TransactionType.LoadVoucher</li>
+<li>SIX.TimApi.Constants.TransactionType.PreAuthorization</li>
+<li>SIX.TimApi.Constants.TransactionType.Purchase</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchaseForcedAcceptance</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchaseMailOrdered</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchasePhoneAuthorized</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchasePhoneOrdered</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchaseReservation</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchaseReservationPhoneAuthorized</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchaseWithCashback</li>
+<li>SIX.TimApi.Constants.TransactionType.Refunding</li>
+<li>SIX.TimApi.Constants.TransactionType.Reservation</li>
+<li>SIX.TimApi.Constants.TransactionType.Reversal</li>
+<li>SIX.TimApi.Constants.TransactionType.Unload</li>
+</ul>
+<p>Forbidden (has to be always null):</p>
+<ul>
+<li>SIX.TimApi.Constants.TransactionType.InitTransaction</li>
+</ul>
+<p>Transactions will fail if one of the above mentioned restrictions are violated.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1314,6 +1723,50 @@ false: Installment is NOT allowed for the transaction</p>
   <a id="SIX_TimApi_TransactionData_Language_" data-uid="SIX.TimApi.TransactionData.Language*"></a>
   <h4 id="SIX_TimApi_TransactionData_Language" data-uid="SIX.TimApi.TransactionData.Language">Language</h4>
   <div class="markdown level1 summary"><p>the language. (Petrol, Unattended)</p>
+<p>Mandatory for (can not be null):</p>
+<ul>
+</ul>
+<p>Conditional for (can be null):</p>
+<ul>
+<li>SIX.TimApi.Constants.TransactionType.ActivateCard</li>
+<li>SIX.TimApi.Constants.TransactionType.AdjustReservation</li>
+<li>SIX.TimApi.Constants.TransactionType.AuthorizeCredit</li>
+<li>SIX.TimApi.Constants.TransactionType.AuthorizeDeposit</li>
+<li>SIX.TimApi.Constants.TransactionType.BalanceInquiry</li>
+<li>SIX.TimApi.Constants.TransactionType.CancelReservation</li>
+<li>SIX.TimApi.Constants.TransactionType.CashAdvance</li>
+<li>SIX.TimApi.Constants.TransactionType.ClientIdentification</li>
+<li>SIX.TimApi.Constants.TransactionType.CollectPoints</li>
+<li>SIX.TimApi.Constants.TransactionType.Combined</li>
+<li>SIX.TimApi.Constants.TransactionType.Credit</li>
+<li>SIX.TimApi.Constants.TransactionType.DebtRecovery</li>
+<li>SIX.TimApi.Constants.TransactionType.Funding</li>
+<li>SIX.TimApi.Constants.TransactionType.Giro</li>
+<li>SIX.TimApi.Constants.TransactionType.InitTransaction</li>
+<li>SIX.TimApi.Constants.TransactionType.Load</li>
+<li>SIX.TimApi.Constants.TransactionType.LoadVoucher</li>
+<li>SIX.TimApi.Constants.TransactionType.PreAuthorization</li>
+<li>SIX.TimApi.Constants.TransactionType.Purchase</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchaseForcedAcceptance</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchaseMailOrdered</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchasePhoneAuthorized</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchasePhoneOrdered</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchaseReservation</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchaseReservationPhoneAuthorized</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchaseWithCashback</li>
+<li>SIX.TimApi.Constants.TransactionType.Refunding</li>
+<li>SIX.TimApi.Constants.TransactionType.Reservation</li>
+<li>SIX.TimApi.Constants.TransactionType.SendCardCommand</li>
+<li>SIX.TimApi.Constants.TransactionType.StartCheckout</li>
+<li>SIX.TimApi.Constants.TransactionType.Unload</li>
+</ul>
+<p>Forbidden (has to be always null):</p>
+<ul>
+<li>SIX.TimApi.Constants.TransactionType.AccountVerification</li>
+<li>SIX.TimApi.Constants.TransactionType.FinalizePurchase</li>
+<li>SIX.TimApi.Constants.TransactionType.Reversal</li>
+</ul>
+<p>Transactions will fail if one of the above mentioned restrictions are violated.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1342,6 +1795,45 @@ false: Installment is NOT allowed for the transaction</p>
   <div class="markdown level1 summary"><p>Indicates if the transaction uses multiple currencies.</p>
 <p>Optional: Indicates that the transaction uses multiple currencies.</p>
 <p>Specifications: <em>banking</em>, <em>gastro</em>, <em>hospitality</em>,<em>austrianUseCases</em>.</p> 
+<p>Mandatory for (can not be null):</p>
+<ul>
+</ul>
+<p>Conditional for (can be null):</p>
+<ul>
+<li>SIX.TimApi.Constants.TransactionType.AccountVerification</li>
+<li>SIX.TimApi.Constants.TransactionType.ActivateCard</li>
+<li>SIX.TimApi.Constants.TransactionType.AdjustReservation</li>
+<li>SIX.TimApi.Constants.TransactionType.AuthorizeCredit</li>
+<li>SIX.TimApi.Constants.TransactionType.AuthorizeDeposit</li>
+<li>SIX.TimApi.Constants.TransactionType.CancelReservation</li>
+<li>SIX.TimApi.Constants.TransactionType.CashAdvance</li>
+<li>SIX.TimApi.Constants.TransactionType.CollectPoints</li>
+<li>SIX.TimApi.Constants.TransactionType.Combined</li>
+<li>SIX.TimApi.Constants.TransactionType.Credit</li>
+<li>SIX.TimApi.Constants.TransactionType.DebtRecovery</li>
+<li>SIX.TimApi.Constants.TransactionType.FinalizePurchase</li>
+<li>SIX.TimApi.Constants.TransactionType.Funding</li>
+<li>SIX.TimApi.Constants.TransactionType.Giro</li>
+<li>SIX.TimApi.Constants.TransactionType.Load</li>
+<li>SIX.TimApi.Constants.TransactionType.LoadVoucher</li>
+<li>SIX.TimApi.Constants.TransactionType.PreAuthorization</li>
+<li>SIX.TimApi.Constants.TransactionType.Purchase</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchaseForcedAcceptance</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchaseMailOrdered</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchasePhoneAuthorized</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchasePhoneOrdered</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchaseReservation</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchaseReservationPhoneAuthorized</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchaseWithCashback</li>
+<li>SIX.TimApi.Constants.TransactionType.Refunding</li>
+<li>SIX.TimApi.Constants.TransactionType.Reservation</li>
+<li>SIX.TimApi.Constants.TransactionType.Reversal</li>
+<li>SIX.TimApi.Constants.TransactionType.Unload</li>
+</ul>
+<p>Forbidden (has to be always null):</p>
+<ul>
+</ul>
+<p>Transactions will fail if one of the above mentioned restrictions are violated.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1385,6 +1877,45 @@ false: Installment is NOT allowed for the transaction</p>
 </table>
 <p>Not used if getNgvMode() is null.</p>
 <p>Available if {@link Guides#AUSTRIAN_USE_CASES} is enabled.</p>
+<p>Mandatory for (can not be null):</p>
+<ul>
+</ul>
+<p>Conditional for (can be null):</p>
+<ul>
+<li>SIX.TimApi.Constants.TransactionType.AccountVerification</li>
+<li>SIX.TimApi.Constants.TransactionType.ActivateCard</li>
+<li>SIX.TimApi.Constants.TransactionType.AdjustReservation</li>
+<li>SIX.TimApi.Constants.TransactionType.AuthorizeCredit</li>
+<li>SIX.TimApi.Constants.TransactionType.AuthorizeDeposit</li>
+<li>SIX.TimApi.Constants.TransactionType.CancelReservation</li>
+<li>SIX.TimApi.Constants.TransactionType.CashAdvance</li>
+<li>SIX.TimApi.Constants.TransactionType.CollectPoints</li>
+<li>SIX.TimApi.Constants.TransactionType.Combined</li>
+<li>SIX.TimApi.Constants.TransactionType.Credit</li>
+<li>SIX.TimApi.Constants.TransactionType.DebtRecovery</li>
+<li>SIX.TimApi.Constants.TransactionType.FinalizePurchase</li>
+<li>SIX.TimApi.Constants.TransactionType.Funding</li>
+<li>SIX.TimApi.Constants.TransactionType.Giro</li>
+<li>SIX.TimApi.Constants.TransactionType.Load</li>
+<li>SIX.TimApi.Constants.TransactionType.LoadVoucher</li>
+<li>SIX.TimApi.Constants.TransactionType.PreAuthorization</li>
+<li>SIX.TimApi.Constants.TransactionType.Purchase</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchaseForcedAcceptance</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchaseMailOrdered</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchasePhoneAuthorized</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchasePhoneOrdered</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchaseReservation</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchaseReservationPhoneAuthorized</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchaseWithCashback</li>
+<li>SIX.TimApi.Constants.TransactionType.Refunding</li>
+<li>SIX.TimApi.Constants.TransactionType.Reservation</li>
+<li>SIX.TimApi.Constants.TransactionType.Reversal</li>
+<li>SIX.TimApi.Constants.TransactionType.Unload</li>
+</ul>
+<p>Forbidden (has to be always null):</p>
+<ul>
+</ul>
+<p>Transactions will fail if one of the above mentioned restrictions are violated.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1413,6 +1944,45 @@ false: Installment is NOT allowed for the transaction</p>
   <div class="markdown level1 summary"><p>Defines if NGV usage is mandatory or optional if card supports it.</p>
 <p>Set to null if not used.</p>
 <p>Available if {@link Guides#AUSTRIAN_USE_CASES} is enabled.</p>
+<p>Mandatory for (can not be null):</p>
+<ul>
+</ul>
+<p>Conditional for (can be null):</p>
+<ul>
+<li>SIX.TimApi.Constants.TransactionType.AccountVerification</li>
+<li>SIX.TimApi.Constants.TransactionType.ActivateCard</li>
+<li>SIX.TimApi.Constants.TransactionType.AdjustReservation</li>
+<li>SIX.TimApi.Constants.TransactionType.AuthorizeCredit</li>
+<li>SIX.TimApi.Constants.TransactionType.AuthorizeDeposit</li>
+<li>SIX.TimApi.Constants.TransactionType.CancelReservation</li>
+<li>SIX.TimApi.Constants.TransactionType.CashAdvance</li>
+<li>SIX.TimApi.Constants.TransactionType.CollectPoints</li>
+<li>SIX.TimApi.Constants.TransactionType.Combined</li>
+<li>SIX.TimApi.Constants.TransactionType.Credit</li>
+<li>SIX.TimApi.Constants.TransactionType.DebtRecovery</li>
+<li>SIX.TimApi.Constants.TransactionType.FinalizePurchase</li>
+<li>SIX.TimApi.Constants.TransactionType.Funding</li>
+<li>SIX.TimApi.Constants.TransactionType.Giro</li>
+<li>SIX.TimApi.Constants.TransactionType.Load</li>
+<li>SIX.TimApi.Constants.TransactionType.LoadVoucher</li>
+<li>SIX.TimApi.Constants.TransactionType.PreAuthorization</li>
+<li>SIX.TimApi.Constants.TransactionType.Purchase</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchaseForcedAcceptance</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchaseMailOrdered</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchasePhoneAuthorized</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchasePhoneOrdered</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchaseReservation</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchaseReservationPhoneAuthorized</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchaseWithCashback</li>
+<li>SIX.TimApi.Constants.TransactionType.Refunding</li>
+<li>SIX.TimApi.Constants.TransactionType.Reservation</li>
+<li>SIX.TimApi.Constants.TransactionType.Reversal</li>
+<li>SIX.TimApi.Constants.TransactionType.Unload</li>
+</ul>
+<p>Forbidden (has to be always null):</p>
+<ul>
+</ul>
+<p>Transactions will fail if one of the above mentioned restrictions are violated.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1430,6 +2000,141 @@ false: Installment is NOT allowed for the transaction</p>
     <tbody>
       <tr>
         <td><a class="xref" href="SIX.TimApi.Constants.NgvMode.html">NgvMode</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SIX_TimApi_TransactionData_OmnichannelMerchantId_" data-uid="SIX.TimApi.TransactionData.OmnichannelMerchantId*"></a>
+  <h4 id="SIX_TimApi_TransactionData_OmnichannelMerchantId" data-uid="SIX.TimApi.TransactionData.OmnichannelMerchantId">OmnichannelMerchantId</h4>
+  <div class="markdown level1 summary"><p>The OmnichannelMerchantId is used to identify the merchant on a Omnichannel host.
+This field is not used for Saferpay, but is for example for Ogone.</p>
+<p>Mandatory for (can not be null):</p>
+<ul>
+</ul>
+<p>Conditional for (can be null):</p>
+<ul>
+<li>SIX.TimApi.Constants.TransactionType.Credit</li>
+</ul>
+<p>Forbidden (has to be always null):</p>
+<ul>
+<li>SIX.TimApi.Constants.TransactionType.AdjustReservation</li>
+<li>SIX.TimApi.Constants.TransactionType.CancelReservation</li>
+<li>SIX.TimApi.Constants.TransactionType.DebtRecovery</li>
+<li>SIX.TimApi.Constants.TransactionType.FinalizePurchase</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchasePhoneAuthorized</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchaseReservation</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchaseReservationPhoneAuthorized</li>
+<li>SIX.TimApi.Constants.TransactionType.Reversal</li>
+<li>SIX.TimApi.Constants.TransactionType.AccountVerification</li>
+<li>SIX.TimApi.Constants.TransactionType.ActivateCard</li>
+<li>SIX.TimApi.Constants.TransactionType.AuthorizeCredit</li>
+<li>SIX.TimApi.Constants.TransactionType.AuthorizeDeposit</li>
+<li>SIX.TimApi.Constants.TransactionType.CashAdvance</li>
+<li>SIX.TimApi.Constants.TransactionType.CollectPoints</li>
+<li>SIX.TimApi.Constants.TransactionType.Combined</li>
+<li>SIX.TimApi.Constants.TransactionType.Funding</li>
+<li>SIX.TimApi.Constants.TransactionType.Giro</li>
+<li>SIX.TimApi.Constants.TransactionType.Load</li>
+<li>SIX.TimApi.Constants.TransactionType.LoadVoucher</li>
+<li>SIX.TimApi.Constants.TransactionType.PreAuthorization</li>
+<li>SIX.TimApi.Constants.TransactionType.Purchase</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchaseForcedAcceptance</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchaseMailOrdered</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchasePhoneOrdered</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchaseWithCashback</li>
+<li>SIX.TimApi.Constants.TransactionType.Refunding</li>
+<li>SIX.TimApi.Constants.TransactionType.Reservation</li>
+<li>SIX.TimApi.Constants.TransactionType.Unload</li>
+</ul>
+<p>Transactions will fail if one of the above mentioned restrictions are violated.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string OmnichannelMerchantId { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SIX_TimApi_TransactionData_OmnichannelPaymentId_" data-uid="SIX.TimApi.TransactionData.OmnichannelPaymentId*"></a>
+  <h4 id="SIX_TimApi_TransactionData_OmnichannelPaymentId" data-uid="SIX.TimApi.TransactionData.OmnichannelPaymentId">OmnichannelPaymentId</h4>
+  <div class="markdown level1 summary"><p>Reference to an Omnichannel transaction. Can be used for example for the use case
+&quot;click and return&quot;, where a transaction originating in the e-commerce channel (e.g. Ogone)
+can be refunded via TIM API, by setting the e-commerce payment-id as OmnichannelPaymentId.
+(Note: This does not apply for Saferpay, for Saferpay use &quot;SixTrxRefNum&quot;)</p>
+<p>Mandatory for (can not be null):</p>
+<ul>
+</ul>
+<p>Conditional for (can be null):</p>
+<ul>
+<li>SIX.TimApi.Constants.TransactionType.Credit</li>
+</ul>
+<p>Forbidden (has to be always null):</p>
+<ul>
+<li>SIX.TimApi.Constants.TransactionType.AdjustReservation</li>
+<li>SIX.TimApi.Constants.TransactionType.CancelReservation</li>
+<li>SIX.TimApi.Constants.TransactionType.DebtRecovery</li>
+<li>SIX.TimApi.Constants.TransactionType.FinalizePurchase</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchasePhoneAuthorized</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchaseReservation</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchaseReservationPhoneAuthorized</li>
+<li>SIX.TimApi.Constants.TransactionType.Reversal</li>
+<li>SIX.TimApi.Constants.TransactionType.AccountVerification</li>
+<li>SIX.TimApi.Constants.TransactionType.ActivateCard</li>
+<li>SIX.TimApi.Constants.TransactionType.AuthorizeCredit</li>
+<li>SIX.TimApi.Constants.TransactionType.AuthorizeDeposit</li>
+<li>SIX.TimApi.Constants.TransactionType.CashAdvance</li>
+<li>SIX.TimApi.Constants.TransactionType.CollectPoints</li>
+<li>SIX.TimApi.Constants.TransactionType.Combined</li>
+<li>SIX.TimApi.Constants.TransactionType.Credit</li>
+<li>SIX.TimApi.Constants.TransactionType.Funding</li>
+<li>SIX.TimApi.Constants.TransactionType.Giro</li>
+<li>SIX.TimApi.Constants.TransactionType.Load</li>
+<li>SIX.TimApi.Constants.TransactionType.LoadVoucher</li>
+<li>SIX.TimApi.Constants.TransactionType.PreAuthorization</li>
+<li>SIX.TimApi.Constants.TransactionType.Purchase</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchaseForcedAcceptance</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchaseMailOrdered</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchasePhoneOrdered</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchaseWithCashback</li>
+<li>SIX.TimApi.Constants.TransactionType.Refunding</li>
+<li>SIX.TimApi.Constants.TransactionType.Reservation</li>
+<li>SIX.TimApi.Constants.TransactionType.Unload</li>
+</ul>
+<p>Transactions will fail if one of the above mentioned restrictions are violated.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string OmnichannelPaymentId { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -1468,6 +2173,46 @@ public bool PartialApprovalAllowed { get; set; }</code></pre>
   <a id="SIX_TimApi_TransactionData_PartialApprovalAllowedNullable_" data-uid="SIX.TimApi.TransactionData.PartialApprovalAllowedNullable*"></a>
   <h4 id="SIX_TimApi_TransactionData_PartialApprovalAllowedNullable" data-uid="SIX.TimApi.TransactionData.PartialApprovalAllowedNullable">PartialApprovalAllowedNullable</h4>
   <div class="markdown level1 summary"><p>Partial approval is allowed.</p>
+<p>Mandatory for (can not be null):</p>
+<ul>
+</ul>
+<p>Conditional for (can be null):</p>
+<ul>
+<li>SIX.TimApi.Constants.TransactionType.AccountVerification</li>
+<li>SIX.TimApi.Constants.TransactionType.AdjustReservation</li>
+<li>SIX.TimApi.Constants.TransactionType.CashAdvance</li>
+<li>SIX.TimApi.Constants.TransactionType.Combined</li>
+<li>SIX.TimApi.Constants.TransactionType.DebtRecovery</li>
+<li>SIX.TimApi.Constants.TransactionType.Giro</li>
+<li>SIX.TimApi.Constants.TransactionType.PreAuthorization</li>
+<li>SIX.TimApi.Constants.TransactionType.Purchase</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchaseForcedAcceptance</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchaseMailOrdered</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchasePhoneAuthorized</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchasePhoneOrdered</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchaseWithCashback</li>
+<li>SIX.TimApi.Constants.TransactionType.Reservation</li>
+</ul>
+<p>Forbidden (has to be always null):</p>
+<ul>
+<li>SIX.TimApi.Constants.TransactionType.ActivateCard</li>
+<li>SIX.TimApi.Constants.TransactionType.AuthorizeCredit</li>
+<li>SIX.TimApi.Constants.TransactionType.AuthorizeDeposit</li>
+<li>SIX.TimApi.Constants.TransactionType.CancelReservation</li>
+<li>SIX.TimApi.Constants.TransactionType.CollectPoints</li>
+<li>SIX.TimApi.Constants.TransactionType.Credit</li>
+<li>SIX.TimApi.Constants.TransactionType.FinalizePurchase</li>
+<li>SIX.TimApi.Constants.TransactionType.Funding</li>
+<li>SIX.TimApi.Constants.TransactionType.InitTransaction</li>
+<li>SIX.TimApi.Constants.TransactionType.Load</li>
+<li>SIX.TimApi.Constants.TransactionType.LoadVoucher</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchaseReservation</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchaseReservationPhoneAuthorized</li>
+<li>SIX.TimApi.Constants.TransactionType.Refunding</li>
+<li>SIX.TimApi.Constants.TransactionType.Reversal</li>
+<li>SIX.TimApi.Constants.TransactionType.Unload</li>
+</ul>
+<p>Transactions will fail if one of the above mentioned restrictions are violated.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1494,6 +2239,45 @@ public bool PartialApprovalAllowed { get; set; }</code></pre>
   <a id="SIX_TimApi_TransactionData_PhoneAuthCode_" data-uid="SIX.TimApi.TransactionData.PhoneAuthCode*"></a>
   <h4 id="SIX_TimApi_TransactionData_PhoneAuthCode" data-uid="SIX.TimApi.TransactionData.PhoneAuthCode">PhoneAuthCode</h4>
   <div class="markdown level1 summary"><p>Phone authorization code.</p>
+<p>Mandatory for (can not be null):</p>
+<ul>
+<li>SIX.TimApi.Constants.TransactionType.PurchasePhoneAuthorized</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchaseReservationPhoneAuthorized</li>
+</ul>
+<p>Conditional for (can be null):</p>
+<ul>
+<li>SIX.TimApi.Constants.TransactionType.AccountVerification</li>
+<li>SIX.TimApi.Constants.TransactionType.ActivateCard</li>
+<li>SIX.TimApi.Constants.TransactionType.CollectPoints</li>
+<li>SIX.TimApi.Constants.TransactionType.DebtRecovery</li>
+<li>SIX.TimApi.Constants.TransactionType.FinalizePurchase</li>
+<li>SIX.TimApi.Constants.TransactionType.Funding</li>
+<li>SIX.TimApi.Constants.TransactionType.Load</li>
+<li>SIX.TimApi.Constants.TransactionType.LoadVoucher</li>
+<li>SIX.TimApi.Constants.TransactionType.PreAuthorization</li>
+<li>SIX.TimApi.Constants.TransactionType.Refunding</li>
+<li>SIX.TimApi.Constants.TransactionType.Reversal</li>
+<li>SIX.TimApi.Constants.TransactionType.Unload</li>
+</ul>
+<p>Forbidden (has to be always null):</p>
+<ul>
+<li>SIX.TimApi.Constants.TransactionType.AdjustReservation</li>
+<li>SIX.TimApi.Constants.TransactionType.AuthorizeCredit</li>
+<li>SIX.TimApi.Constants.TransactionType.AuthorizeDeposit</li>
+<li>SIX.TimApi.Constants.TransactionType.CancelReservation</li>
+<li>SIX.TimApi.Constants.TransactionType.CashAdvance</li>
+<li>SIX.TimApi.Constants.TransactionType.Combined</li>
+<li>SIX.TimApi.Constants.TransactionType.Credit</li>
+<li>SIX.TimApi.Constants.TransactionType.Giro</li>
+<li>SIX.TimApi.Constants.TransactionType.Purchase</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchaseForcedAcceptance</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchaseMailOrdered</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchasePhoneOrdered</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchaseReservation</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchaseWithCashback</li>
+<li>SIX.TimApi.Constants.TransactionType.Reservation</li>
+</ul>
+<p>Transactions will fail if one of the above mentioned restrictions are violated.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1598,6 +2382,45 @@ public bool PartialApprovalAllowed { get; set; }</code></pre>
   <a id="SIX_TimApi_TransactionData_SubTransactions_" data-uid="SIX.TimApi.TransactionData.SubTransactions*"></a>
   <h4 id="SIX_TimApi_TransactionData_SubTransactions" data-uid="SIX.TimApi.TransactionData.SubTransactions">SubTransactions</h4>
   <div class="markdown level1 summary"><p>Sub transactions.</p>
+<p>Mandatory for (can not be null):</p>
+<ul>
+</ul>
+<p>Conditional for (can be null):</p>
+<ul>
+<li>SIX.TimApi.Constants.TransactionType.Combined</li>
+</ul>
+<p>Forbidden (has to be always null):</p>
+<ul>
+<li>SIX.TimApi.Constants.TransactionType.AccountVerification</li>
+<li>SIX.TimApi.Constants.TransactionType.ActivateCard</li>
+<li>SIX.TimApi.Constants.TransactionType.AdjustReservation</li>
+<li>SIX.TimApi.Constants.TransactionType.AuthorizeCredit</li>
+<li>SIX.TimApi.Constants.TransactionType.AuthorizeDeposit</li>
+<li>SIX.TimApi.Constants.TransactionType.CancelReservation</li>
+<li>SIX.TimApi.Constants.TransactionType.CashAdvance</li>
+<li>SIX.TimApi.Constants.TransactionType.CollectPoints</li>
+<li>SIX.TimApi.Constants.TransactionType.Credit</li>
+<li>SIX.TimApi.Constants.TransactionType.DebtRecovery</li>
+<li>SIX.TimApi.Constants.TransactionType.FinalizePurchase</li>
+<li>SIX.TimApi.Constants.TransactionType.Funding</li>
+<li>SIX.TimApi.Constants.TransactionType.Giro</li>
+<li>SIX.TimApi.Constants.TransactionType.Load</li>
+<li>SIX.TimApi.Constants.TransactionType.LoadVoucher</li>
+<li>SIX.TimApi.Constants.TransactionType.PreAuthorization</li>
+<li>SIX.TimApi.Constants.TransactionType.Purchase</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchaseForcedAcceptance</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchaseMailOrdered</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchasePhoneAuthorized</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchasePhoneOrdered</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchaseReservation</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchaseReservationPhoneAuthorized</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchaseWithCashback</li>
+<li>SIX.TimApi.Constants.TransactionType.Refunding</li>
+<li>SIX.TimApi.Constants.TransactionType.Reservation</li>
+<li>SIX.TimApi.Constants.TransactionType.Reversal</li>
+<li>SIX.TimApi.Constants.TransactionType.Unload</li>
+</ul>
+<p>Transactions will fail if one of the above mentioned restrictions are violated.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1655,6 +2478,45 @@ public bool TipAllowed { get; set; }</code></pre>
   <h4 id="SIX_TimApi_TransactionData_TipAllowedNullable" data-uid="SIX.TimApi.TransactionData.TipAllowedNullable">TipAllowedNullable</h4>
   <div class="markdown level1 summary"><p>Tip is allowed for purchase transactions. Use null to not use this parameter.</p>
 <p>This parameter is only used if {@link com.six.timapi.constants.Guides#GASTRO} is enabled.</p>
+<p>Mandatory for (can not be null):</p>
+<ul>
+</ul>
+<p>Conditional for (can be null):</p>
+<ul>
+<li>SIX.TimApi.Constants.TransactionType.AccountVerification</li>
+<li>SIX.TimApi.Constants.TransactionType.ActivateCard</li>
+<li>SIX.TimApi.Constants.TransactionType.AuthorizeCredit</li>
+<li>SIX.TimApi.Constants.TransactionType.AuthorizeDeposit</li>
+<li>SIX.TimApi.Constants.TransactionType.CashAdvance</li>
+<li>SIX.TimApi.Constants.TransactionType.CollectPoints</li>
+<li>SIX.TimApi.Constants.TransactionType.Combined</li>
+<li>SIX.TimApi.Constants.TransactionType.Credit</li>
+<li>SIX.TimApi.Constants.TransactionType.DebtRecovery</li>
+<li>SIX.TimApi.Constants.TransactionType.FinalizePurchase</li>
+<li>SIX.TimApi.Constants.TransactionType.Funding</li>
+<li>SIX.TimApi.Constants.TransactionType.Giro</li>
+<li>SIX.TimApi.Constants.TransactionType.Load</li>
+<li>SIX.TimApi.Constants.TransactionType.LoadVoucher</li>
+<li>SIX.TimApi.Constants.TransactionType.PreAuthorization</li>
+<li>SIX.TimApi.Constants.TransactionType.Purchase</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchaseForcedAcceptance</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchaseMailOrdered</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchasePhoneAuthorized</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchasePhoneOrdered</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchaseReservation</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchaseReservationPhoneAuthorized</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchaseWithCashback</li>
+<li>SIX.TimApi.Constants.TransactionType.Refunding</li>
+<li>SIX.TimApi.Constants.TransactionType.Reversal</li>
+<li>SIX.TimApi.Constants.TransactionType.Unload</li>
+</ul>
+<p>Forbidden (has to be always null):</p>
+<ul>
+<li>SIX.TimApi.Constants.TransactionType.AdjustReservation</li>
+<li>SIX.TimApi.Constants.TransactionType.CancelReservation</li>
+<li>SIX.TimApi.Constants.TransactionType.Reservation</li>
+</ul>
+<p>Transactions will fail if one of the above mentioned restrictions are violated.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1680,15 +2542,51 @@ public bool TipAllowed { get; set; }</code></pre>
   
   <a id="SIX_TimApi_TransactionData_TokenPan_" data-uid="SIX.TimApi.TransactionData.TokenPan*"></a>
   <h4 id="SIX_TimApi_TransactionData_TokenPan" data-uid="SIX.TimApi.TransactionData.TokenPan">TokenPan</h4>
-  <div class="markdown level1 summary"><p>The token PAN is a tokenized version for an underlaying card PAN. If the underlaying
+  <div class="markdown level1 summary"><p>The token PAN is a tokenized version for an underlying card PAN. If the underlaying
 payment protocol supports it, a payment transaction can be initiated with the token
 PAN instead of using a card. A token PAN is normally generated by a tokenization
 service either form the acquirer host or the issuer host.</p>
-<p>The TokenPan field is used in a SIXml request message as part of the
-sixml:TransactionData container to trigger a token-based transaction and in a SIXml
-response message as part of the sixml:CardData container for returning token PANs
-to the ECR.</p>
-<p>The TokenPan field always must be accompanied by a corresponding TokenPanType field.</p>
+<p>The TokenPan field is used to trigger a token-based transaction.
+Note: The TokenPanType must also be given</p>
+<p>Mandatory for (can not be null):</p>
+<ul>
+</ul>
+<p>Conditional for (can be null):</p>
+<ul>
+<li>SIX.TimApi.Constants.TransactionType.AccountVerification</li>
+<li>SIX.TimApi.Constants.TransactionType.ActivateCard</li>
+<li>SIX.TimApi.Constants.TransactionType.AuthorizeCredit</li>
+<li>SIX.TimApi.Constants.TransactionType.AuthorizeDeposit</li>
+<li>SIX.TimApi.Constants.TransactionType.CashAdvance</li>
+<li>SIX.TimApi.Constants.TransactionType.CollectPoints</li>
+<li>SIX.TimApi.Constants.TransactionType.Combined</li>
+<li>SIX.TimApi.Constants.TransactionType.Credit</li>
+<li>SIX.TimApi.Constants.TransactionType.Funding</li>
+<li>SIX.TimApi.Constants.TransactionType.Giro</li>
+<li>SIX.TimApi.Constants.TransactionType.Load</li>
+<li>SIX.TimApi.Constants.TransactionType.LoadVoucher</li>
+<li>SIX.TimApi.Constants.TransactionType.PreAuthorization</li>
+<li>SIX.TimApi.Constants.TransactionType.Purchase</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchaseForcedAcceptance</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchaseMailOrdered</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchasePhoneOrdered</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchaseWithCashback</li>
+<li>SIX.TimApi.Constants.TransactionType.Refunding</li>
+<li>SIX.TimApi.Constants.TransactionType.Reservation</li>
+<li>SIX.TimApi.Constants.TransactionType.Unload</li>
+</ul>
+<p>Forbidden (has to be always null):</p>
+<ul>
+<li>SIX.TimApi.Constants.TransactionType.AdjustReservation</li>
+<li>SIX.TimApi.Constants.TransactionType.CancelReservation</li>
+<li>SIX.TimApi.Constants.TransactionType.DebtRecovery</li>
+<li>SIX.TimApi.Constants.TransactionType.FinalizePurchase</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchasePhoneAuthorized</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchaseReservation</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchaseReservationPhoneAuthorized</li>
+<li>SIX.TimApi.Constants.TransactionType.Reversal</li>
+</ul>
+<p>Transactions will fail if one of the above mentioned restrictions are violated.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1714,11 +2612,47 @@ to the ECR.</p>
   
   <a id="SIX_TimApi_TransactionData_TokenPanType_" data-uid="SIX.TimApi.TransactionData.TokenPanType*"></a>
   <h4 id="SIX_TimApi_TransactionData_TokenPanType" data-uid="SIX.TimApi.TransactionData.TokenPanType">TokenPanType</h4>
-  <div class="markdown level1 summary"><p>To differ the source of a token PAN, the TokenPanType field is used in a SIXml
-request message as part of the sixml:TransactionData container and in a SIXml
-response message as part of the sixml:CardData container.</p>
-<p>The TokenPanType field always is transmitted if a TokenPan field is transmitted
-but must not be transmitted alone.</p>
+  <div class="markdown level1 summary"><p>To differ the source of a token PAN, the TokenPanType field is used.
+Only used in combination with TokenPan.</p>
+<p>Mandatory for (can not be null):</p>
+<ul>
+</ul>
+<p>Conditional for (can be null):</p>
+<ul>
+<li>SIX.TimApi.Constants.TransactionType.AccountVerification</li>
+<li>SIX.TimApi.Constants.TransactionType.ActivateCard</li>
+<li>SIX.TimApi.Constants.TransactionType.AuthorizeCredit</li>
+<li>SIX.TimApi.Constants.TransactionType.AuthorizeDeposit</li>
+<li>SIX.TimApi.Constants.TransactionType.CashAdvance</li>
+<li>SIX.TimApi.Constants.TransactionType.CollectPoints</li>
+<li>SIX.TimApi.Constants.TransactionType.Combined</li>
+<li>SIX.TimApi.Constants.TransactionType.Credit</li>
+<li>SIX.TimApi.Constants.TransactionType.Funding</li>
+<li>SIX.TimApi.Constants.TransactionType.Giro</li>
+<li>SIX.TimApi.Constants.TransactionType.Load</li>
+<li>SIX.TimApi.Constants.TransactionType.LoadVoucher</li>
+<li>SIX.TimApi.Constants.TransactionType.PreAuthorization</li>
+<li>SIX.TimApi.Constants.TransactionType.Purchase</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchaseForcedAcceptance</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchaseMailOrdered</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchasePhoneOrdered</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchaseWithCashback</li>
+<li>SIX.TimApi.Constants.TransactionType.Refunding</li>
+<li>SIX.TimApi.Constants.TransactionType.Reservation</li>
+<li>SIX.TimApi.Constants.TransactionType.Unload</li>
+</ul>
+<p>Forbidden (has to be always null):</p>
+<ul>
+<li>SIX.TimApi.Constants.TransactionType.AdjustReservation</li>
+<li>SIX.TimApi.Constants.TransactionType.CancelReservation</li>
+<li>SIX.TimApi.Constants.TransactionType.DebtRecovery</li>
+<li>SIX.TimApi.Constants.TransactionType.FinalizePurchase</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchasePhoneAuthorized</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchaseReservation</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchaseReservationPhoneAuthorized</li>
+<li>SIX.TimApi.Constants.TransactionType.Reversal</li>
+</ul>
+<p>Transactions will fail if one of the above mentioned restrictions are violated.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1735,7 +2669,7 @@ but must not be transmitted alone.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">TokenPanType</span></td>
+        <td><a class="xref" href="SIX.TimApi.Constants.TokenPanType.html">TokenPanType</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -1745,6 +2679,46 @@ but must not be transmitted alone.</p>
   <a id="SIX_TimApi_TransactionData_TransactionReason_" data-uid="SIX.TimApi.TransactionData.TransactionReason*"></a>
   <h4 id="SIX_TimApi_TransactionData_TransactionReason" data-uid="SIX.TimApi.TransactionData.TransactionReason">TransactionReason</h4>
   <div class="markdown level1 summary"><p>Set the transaction reason to setup credential on file.</p>
+<p>Mandatory for (can not be null):</p>
+<ul>
+</ul>
+<p>Conditional for (can be null):</p>
+<ul>
+<li>SIX.TimApi.Constants.TransactionType.AccountVerification</li>
+<li>SIX.TimApi.Constants.TransactionType.ActivateCard</li>
+<li>SIX.TimApi.Constants.TransactionType.AdjustReservation</li>
+<li>SIX.TimApi.Constants.TransactionType.AuthorizeCredit</li>
+<li>SIX.TimApi.Constants.TransactionType.AuthorizeDeposit</li>
+<li>SIX.TimApi.Constants.TransactionType.CancelReservation</li>
+<li>SIX.TimApi.Constants.TransactionType.CashAdvance</li>
+<li>SIX.TimApi.Constants.TransactionType.CollectPoints</li>
+<li>SIX.TimApi.Constants.TransactionType.Combined</li>
+<li>SIX.TimApi.Constants.TransactionType.Credit</li>
+<li>SIX.TimApi.Constants.TransactionType.DebtRecovery</li>
+<li>SIX.TimApi.Constants.TransactionType.FinalizePurchase</li>
+<li>SIX.TimApi.Constants.TransactionType.Funding</li>
+<li>SIX.TimApi.Constants.TransactionType.Giro</li>
+<li>SIX.TimApi.Constants.TransactionType.Load</li>
+<li>SIX.TimApi.Constants.TransactionType.LoadVoucher</li>
+<li>SIX.TimApi.Constants.TransactionType.PreAuthorization</li>
+<li>SIX.TimApi.Constants.TransactionType.Purchase</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchaseForcedAcceptance</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchaseMailOrdered</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchasePhoneAuthorized</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchasePhoneOrdered</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchaseReservation</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchaseReservationPhoneAuthorized</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchaseWithCashback</li>
+<li>SIX.TimApi.Constants.TransactionType.Refunding</li>
+<li>SIX.TimApi.Constants.TransactionType.Reservation</li>
+<li>SIX.TimApi.Constants.TransactionType.Reversal</li>
+<li>SIX.TimApi.Constants.TransactionType.Unload</li>
+</ul>
+<p>Forbidden (has to be always null):</p>
+<ul>
+<li>SIX.TimApi.Constants.TransactionType.InitTransaction</li>
+</ul>
+<p>Transactions will fail if one of the above mentioned restrictions are violated.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1771,6 +2745,46 @@ but must not be transmitted alone.</p>
   <a id="SIX_TimApi_TransactionData_TransRef_" data-uid="SIX.TimApi.TransactionData.TransRef*"></a>
   <h4 id="SIX_TimApi_TransactionData_TransRef" data-uid="SIX.TimApi.TransactionData.TransRef">TransRef</h4>
   <div class="markdown level1 summary"><p>Get/Set transaction reference defined by the terminal.</p>
+<p>Mandatory for (can not be null):</p>
+<ul>
+</ul>
+<p>Conditional for (can be null):</p>
+<ul>
+<li>SIX.TimApi.Constants.TransactionType.AccountVerification</li>
+<li>SIX.TimApi.Constants.TransactionType.Credit</li>
+<li>SIX.TimApi.Constants.TransactionType.FinalizePurchase</li>
+<li>SIX.TimApi.Constants.TransactionType.Load</li>
+<li>SIX.TimApi.Constants.TransactionType.Refunding</li>
+</ul>
+<p>Forbidden (has to be always null):</p>
+<ul>
+<li>SIX.TimApi.Constants.TransactionType.ActivateCard</li>
+<li>SIX.TimApi.Constants.TransactionType.AdjustReservation</li>
+<li>SIX.TimApi.Constants.TransactionType.AuthorizeCredit</li>
+<li>SIX.TimApi.Constants.TransactionType.AuthorizeDeposit</li>
+<li>SIX.TimApi.Constants.TransactionType.CancelReservation</li>
+<li>SIX.TimApi.Constants.TransactionType.CashAdvance</li>
+<li>SIX.TimApi.Constants.TransactionType.CollectPoints</li>
+<li>SIX.TimApi.Constants.TransactionType.Combined</li>
+<li>SIX.TimApi.Constants.TransactionType.DebtRecovery</li>
+<li>SIX.TimApi.Constants.TransactionType.Funding</li>
+<li>SIX.TimApi.Constants.TransactionType.Giro</li>
+<li>SIX.TimApi.Constants.TransactionType.InitTransaction</li>
+<li>SIX.TimApi.Constants.TransactionType.LoadVoucher</li>
+<li>SIX.TimApi.Constants.TransactionType.PreAuthorization</li>
+<li>SIX.TimApi.Constants.TransactionType.Purchase</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchaseForcedAcceptance</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchaseMailOrdered</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchasePhoneAuthorized</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchasePhoneOrdered</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchaseReservation</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchaseReservationPhoneAuthorized</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchaseWithCashback</li>
+<li>SIX.TimApi.Constants.TransactionType.Reservation</li>
+<li>SIX.TimApi.Constants.TransactionType.Reversal</li>
+<li>SIX.TimApi.Constants.TransactionType.Unload</li>
+</ul>
+<p>Transactions will fail if one of the above mentioned restrictions are violated.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1797,6 +2811,46 @@ but must not be transmitted alone.</p>
   <a id="SIX_TimApi_TransactionData_TransSeq_" data-uid="SIX.TimApi.TransactionData.TransSeq*"></a>
   <h4 id="SIX_TimApi_TransactionData_TransSeq" data-uid="SIX.TimApi.TransactionData.TransSeq">TransSeq</h4>
   <div class="markdown level1 summary"><p>Get/Set transaction sequence number defined by the terminal.</p>
+<p>Mandatory for (can not be null):</p>
+<ul>
+<li>SIX.TimApi.Constants.TransactionType.Reversal</li>
+</ul>
+<p>Conditional for (can be null):</p>
+<ul>
+<li>SIX.TimApi.Constants.TransactionType.AccountVerification</li>
+<li>SIX.TimApi.Constants.TransactionType.FinalizePurchase</li>
+</ul>
+<p>Forbidden (has to be always null):</p>
+<ul>
+<li>SIX.TimApi.Constants.TransactionType.ActivateCard</li>
+<li>SIX.TimApi.Constants.TransactionType.AdjustReservation</li>
+<li>SIX.TimApi.Constants.TransactionType.AuthorizeCredit</li>
+<li>SIX.TimApi.Constants.TransactionType.AuthorizeDeposit</li>
+<li>SIX.TimApi.Constants.TransactionType.CancelReservation</li>
+<li>SIX.TimApi.Constants.TransactionType.CashAdvance</li>
+<li>SIX.TimApi.Constants.TransactionType.CollectPoints</li>
+<li>SIX.TimApi.Constants.TransactionType.Combined</li>
+<li>SIX.TimApi.Constants.TransactionType.Credit</li>
+<li>SIX.TimApi.Constants.TransactionType.DebtRecovery</li>
+<li>SIX.TimApi.Constants.TransactionType.Funding</li>
+<li>SIX.TimApi.Constants.TransactionType.Giro</li>
+<li>SIX.TimApi.Constants.TransactionType.InitTransaction</li>
+<li>SIX.TimApi.Constants.TransactionType.Load</li>
+<li>SIX.TimApi.Constants.TransactionType.LoadVoucher</li>
+<li>SIX.TimApi.Constants.TransactionType.PreAuthorization</li>
+<li>SIX.TimApi.Constants.TransactionType.Purchase</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchaseForcedAcceptance</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchaseMailOrdered</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchasePhoneAuthorized</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchasePhoneOrdered</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchaseReservation</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchaseReservationPhoneAuthorized</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchaseWithCashback</li>
+<li>SIX.TimApi.Constants.TransactionType.Refunding</li>
+<li>SIX.TimApi.Constants.TransactionType.Reservation</li>
+<li>SIX.TimApi.Constants.TransactionType.Unload</li>
+</ul>
+<p>Transactions will fail if one of the above mentioned restrictions are violated.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1823,6 +2877,46 @@ but must not be transmitted alone.</p>
   <a id="SIX_TimApi_TransactionData_TrmTransRef_" data-uid="SIX.TimApi.TransactionData.TrmTransRef*"></a>
   <h4 id="SIX_TimApi_TransactionData_TrmTransRef" data-uid="SIX.TimApi.TransactionData.TrmTransRef">TrmTransRef</h4>
   <div class="markdown level1 summary"><p>transaction reference from the terminal.</p>
+<p>Mandatory for (can not be null):</p>
+<ul>
+<li>SIX.TimApi.Constants.TransactionType.FinalizePurchase</li>
+</ul>
+<p>Conditional for (can be null):</p>
+<ul>
+<li>SIX.TimApi.Constants.TransactionType.AccountVerification</li>
+<li>SIX.TimApi.Constants.TransactionType.ActivateCard</li>
+<li>SIX.TimApi.Constants.TransactionType.AuthorizeCredit</li>
+<li>SIX.TimApi.Constants.TransactionType.AuthorizeDeposit</li>
+<li>SIX.TimApi.Constants.TransactionType.CashAdvance</li>
+<li>SIX.TimApi.Constants.TransactionType.CollectPoints</li>
+<li>SIX.TimApi.Constants.TransactionType.Combined</li>
+<li>SIX.TimApi.Constants.TransactionType.Credit</li>
+<li>SIX.TimApi.Constants.TransactionType.DebtRecovery</li>
+<li>SIX.TimApi.Constants.TransactionType.Funding</li>
+<li>SIX.TimApi.Constants.TransactionType.Giro</li>
+<li>SIX.TimApi.Constants.TransactionType.Load</li>
+<li>SIX.TimApi.Constants.TransactionType.LoadVoucher</li>
+<li>SIX.TimApi.Constants.TransactionType.PreAuthorization</li>
+<li>SIX.TimApi.Constants.TransactionType.Purchase</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchaseForcedAcceptance</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchaseMailOrdered</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchasePhoneAuthorized</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchasePhoneOrdered</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchaseWithCashback</li>
+<li>SIX.TimApi.Constants.TransactionType.Refunding</li>
+<li>SIX.TimApi.Constants.TransactionType.Reservation</li>
+<li>SIX.TimApi.Constants.TransactionType.Reversal</li>
+<li>SIX.TimApi.Constants.TransactionType.Unload</li>
+</ul>
+<p>Forbidden (has to be always null):</p>
+<ul>
+<li>SIX.TimApi.Constants.TransactionType.AdjustReservation</li>
+<li>SIX.TimApi.Constants.TransactionType.CancelReservation</li>
+<li>SIX.TimApi.Constants.TransactionType.InitTransaction</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchaseReservation</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchaseReservationPhoneAuthorized</li>
+</ul>
+<p>Transactions will fail if one of the above mentioned restrictions are violated.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1878,6 +2972,46 @@ public DateTime TrxOriginalDate { get; set; }</code></pre>
   <a id="SIX_TimApi_TransactionData_TrxOriginalDateNullable_" data-uid="SIX.TimApi.TransactionData.TrxOriginalDateNullable*"></a>
   <h4 id="SIX_TimApi_TransactionData_TrxOriginalDateNullable" data-uid="SIX.TimApi.TransactionData.TrxOriginalDateNullable">TrxOriginalDateNullable</h4>
   <div class="markdown level1 summary"><p>Timestamp of the original transaction.</p>
+<p>Mandatory for (can not be null):</p>
+<ul>
+</ul>
+<p>Conditional for (can be null):</p>
+<ul>
+<li>SIX.TimApi.Constants.TransactionType.AccountVerification</li>
+<li>SIX.TimApi.Constants.TransactionType.AuthorizeCredit</li>
+<li>SIX.TimApi.Constants.TransactionType.Credit</li>
+<li>SIX.TimApi.Constants.TransactionType.Load</li>
+<li>SIX.TimApi.Constants.TransactionType.Refunding</li>
+</ul>
+<p>Forbidden (has to be always null):</p>
+<ul>
+<li>SIX.TimApi.Constants.TransactionType.ActivateCard</li>
+<li>SIX.TimApi.Constants.TransactionType.AdjustReservation</li>
+<li>SIX.TimApi.Constants.TransactionType.AuthorizeDeposit</li>
+<li>SIX.TimApi.Constants.TransactionType.CancelReservation</li>
+<li>SIX.TimApi.Constants.TransactionType.CashAdvance</li>
+<li>SIX.TimApi.Constants.TransactionType.CollectPoints</li>
+<li>SIX.TimApi.Constants.TransactionType.Combined</li>
+<li>SIX.TimApi.Constants.TransactionType.DebtRecovery</li>
+<li>SIX.TimApi.Constants.TransactionType.FinalizePurchase</li>
+<li>SIX.TimApi.Constants.TransactionType.Funding</li>
+<li>SIX.TimApi.Constants.TransactionType.Giro</li>
+<li>SIX.TimApi.Constants.TransactionType.InitTransaction</li>
+<li>SIX.TimApi.Constants.TransactionType.LoadVoucher</li>
+<li>SIX.TimApi.Constants.TransactionType.PreAuthorization</li>
+<li>SIX.TimApi.Constants.TransactionType.Purchase</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchaseForcedAcceptance</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchaseMailOrdered</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchasePhoneAuthorized</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchasePhoneOrdered</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchaseReservation</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchaseReservationPhoneAuthorized</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchaseWithCashback</li>
+<li>SIX.TimApi.Constants.TransactionType.Reservation</li>
+<li>SIX.TimApi.Constants.TransactionType.Reversal</li>
+<li>SIX.TimApi.Constants.TransactionType.Unload</li>
+</ul>
+<p>Transactions will fail if one of the above mentioned restrictions are violated.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1909,6 +3043,46 @@ public DateTime TrxOriginalDate { get; set; }</code></pre>
 <p>This method is to be used only for manual entry by clerks for EP2 hospitality transactions only.</p>
 <param name="acqId">Acquirer ID as printed on receipt.
 <param name="trxRefNo">trxRefNo Transaction reference as printed on receipt.
+<p>Mandatory for (can not be null):</p>
+<ul>
+<li>SIX.TimApi.Constants.TransactionType.AdjustReservation</li>
+<li>SIX.TimApi.Constants.TransactionType.CancelReservation</li>
+<li>SIX.TimApi.Constants.TransactionType.DebtRecovery</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchaseReservation</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchaseReservationPhoneAuthorized</li>
+<li>SIX.TimApi.Constants.TransactionType.Refunding</li>
+<li>SIX.TimApi.Constants.TransactionType.Unload</li>
+</ul>
+<p>Conditional for (can be null):</p>
+<ul>
+<li>SIX.TimApi.Constants.TransactionType.AccountVerification</li>
+<li>SIX.TimApi.Constants.TransactionType.ActivateCard</li>
+<li>SIX.TimApi.Constants.TransactionType.AuthorizeCredit</li>
+<li>SIX.TimApi.Constants.TransactionType.AuthorizeDeposit</li>
+<li>SIX.TimApi.Constants.TransactionType.CashAdvance</li>
+<li>SIX.TimApi.Constants.TransactionType.CollectPoints</li>
+<li>SIX.TimApi.Constants.TransactionType.Combined</li>
+<li>SIX.TimApi.Constants.TransactionType.Credit</li>
+<li>SIX.TimApi.Constants.TransactionType.FinalizePurchase</li>
+<li>SIX.TimApi.Constants.TransactionType.Funding</li>
+<li>SIX.TimApi.Constants.TransactionType.Giro</li>
+<li>SIX.TimApi.Constants.TransactionType.Load</li>
+<li>SIX.TimApi.Constants.TransactionType.LoadVoucher</li>
+<li>SIX.TimApi.Constants.TransactionType.PreAuthorization</li>
+<li>SIX.TimApi.Constants.TransactionType.Purchase</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchaseForcedAcceptance</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchaseMailOrdered</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchasePhoneAuthorized</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchasePhoneOrdered</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchaseWithCashback</li>
+<li>SIX.TimApi.Constants.TransactionType.Reservation</li>
+<li>SIX.TimApi.Constants.TransactionType.Reversal</li>
+</ul>
+<p>Forbidden (has to be always null):</p>
+<ul>
+<li>SIX.TimApi.Constants.TransactionType.InitTransaction</li>
+</ul>
+<p>Transactions will fail if one of the above mentioned restrictions are violated.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
