@@ -557,6 +557,9 @@
                             <a href="SIX.TimApi.Terminal.TerminalStatusChangedHandler.html" title="Terminal.TerminalStatusChangedHandler" class="">Terminal.TerminalStatusChangedHandler</a>
                           </li>
                           <li class="">
+                            <a href="SIX.TimApi.Terminal.ThirdPartyAppDataHandler.html" title="Terminal.ThirdPartyAppDataHandler" class="">Terminal.ThirdPartyAppDataHandler</a>
+                          </li>
+                          <li class="">
                             <a href="SIX.TimApi.Terminal.TransactionCompletedEventArgs.html" title="Terminal.TransactionCompletedEventArgs" class="">Terminal.TransactionCompletedEventArgs</a>
                           </li>
                           <li class="">
@@ -579,6 +582,9 @@
                           </li>
                           <li class="">
                             <a href="SIX.TimApi.TerminalStatus.html" title="TerminalStatus" class="">TerminalStatus</a>
+                          </li>
+                          <li class="">
+                            <a href="SIX.TimApi.ThirdPartyAppPayload.html" title="ThirdPartyAppPayload" class="">ThirdPartyAppPayload</a>
                           </li>
                           <li class="">
                             <a href="SIX.TimApi.TimEvent.html" title="TimEvent" class="">TimEvent</a>
@@ -797,6 +803,12 @@
                             <a href="SIX.TimApi.Constants.Theme.html" title="Theme" class="">Theme</a>
                           </li>
                           <li class="">
+                            <a href="SIX.TimApi.Constants.ThirdPartyAppId.html" title="ThirdPartyAppId" class="">ThirdPartyAppId</a>
+                          </li>
+                          <li class="">
+                            <a href="SIX.TimApi.Constants.ThirdPartyApps.html" title="ThirdPartyApps" class="">ThirdPartyApps</a>
+                          </li>
+                          <li class="">
                             <a href="SIX.TimApi.Constants.TokenPanType.html" title="TokenPanType" class="">TokenPanType</a>
                           </li>
                           <li class="">
@@ -900,6 +912,8 @@
   <h1 id="SIX_TimApi_Constants_FinancialTransactions" data-uid="SIX.TimApi.Constants.FinancialTransactions" class="text-break">Enum FinancialTransactions
   </h1>
   <div class="markdown level0 summary"><p>Flag constants for FeatureType and OptionType sixml:FinancialTransactions value.</p>
+<p>Guides: retail, petrol, unattended, advancedRetail, banking, hospitality,
+valueAddedServices.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <h6><strong>Namespace</strong>: <a class="xref" href="SIX.TimApi.Constants.html">SIX.TimApi.Constants</a></h6>
@@ -921,36 +935,43 @@
       <tr>
         <td id="SIX_TimApi_Constants_FinancialTransactions_ActivateCard">ActivateCard</td>
         <td><p>ActivateCard function supported.</p>
+<p>Specification: valueAddedServices.</p>
 </td>
       </tr>
       <tr>
         <td id="SIX_TimApi_Constants_FinancialTransactions_AmtAdjustment">AmtAdjustment</td>
         <td><p>Adjust amount of an open transaction.</p>
+<p>Specification: unattended.</p>
 </td>
       </tr>
       <tr>
         <td id="SIX_TimApi_Constants_FinancialTransactions_AuthorizeCredit">AuthorizeCredit</td>
         <td><p>Authorize credit function supported.</p>
+<p>Specification: banking.</p>
 </td>
       </tr>
       <tr>
         <td id="SIX_TimApi_Constants_FinancialTransactions_AuthorizeDeposit">AuthorizeDeposit</td>
         <td><p>Authorize deposit function supported.</p>
+<p>Specification: banking.</p>
 </td>
       </tr>
       <tr>
         <td id="SIX_TimApi_Constants_FinancialTransactions_CashAdvance">CashAdvance</td>
         <td><p>Cash advance function supported.</p>
+<p>Specification: advancedRetail.</p>
 </td>
       </tr>
       <tr>
         <td id="SIX_TimApi_Constants_FinancialTransactions_CollectPoints">CollectPoints</td>
         <td><p>Collect points request function supported.</p>
+<p>Specification: valueAddedServices.</p>
 </td>
       </tr>
       <tr>
         <td id="SIX_TimApi_Constants_FinancialTransactions_Combined">Combined</td>
         <td><p>Combined function supported.</p>
+<p>Specification: banking.</p>
 </td>
       </tr>
       <tr>
@@ -966,51 +987,55 @@
       <tr>
         <td id="SIX_TimApi_Constants_FinancialTransactions_DebtRecovery">DebtRecovery</td>
         <td><p>DebtRecovery function supported.</p>
+<p>Specification: unattended.</p>
 </td>
       </tr>
       <tr>
         <td id="SIX_TimApi_Constants_FinancialTransactions_FinalizePurchase">FinalizePurchase</td>
         <td><p>Online advice function supported.</p>
+<p>Specification: petrol.</p>
 </td>
       </tr>
       <tr>
         <td id="SIX_TimApi_Constants_FinancialTransactions_Funding">Funding</td>
         <td><p>Funding function supported.</p>
+<p>Specification: valueAddedServices.</p>
 </td>
       </tr>
       <tr>
         <td id="SIX_TimApi_Constants_FinancialTransactions_Giro">Giro</td>
         <td><p>Giro function supported.</p>
+<p>Specification: banking.</p>
 </td>
       </tr>
       <tr>
         <td id="SIX_TimApi_Constants_FinancialTransactions_Load">Load</td>
         <td><p>Load function supported.</p>
+<p>Specification: valueAddedServices.</p>
 </td>
       </tr>
       <tr>
         <td id="SIX_TimApi_Constants_FinancialTransactions_LoadVoucher">LoadVoucher</td>
         <td><p>Load Voucher request function supported.</p>
+<p>Specification: valueAddedServices.</p>
 </td>
       </tr>
       <tr>
         <td id="SIX_TimApi_Constants_FinancialTransactions_MobileTopupPurchase">MobileTopupPurchase</td>
         <td><p>MobileTopupPurchase function supported.</p>
+<p>Specification: valueAddedServices.</p>
 </td>
       </tr>
       <tr>
         <td id="SIX_TimApi_Constants_FinancialTransactions_MobileTopupReversal">MobileTopupReversal</td>
         <td><p>MobileTopupReversal function supported.</p>
+<p>Specification: valueAddedServices.</p>
 </td>
       </tr>
       <tr>
         <td id="SIX_TimApi_Constants_FinancialTransactions_PreAuthorization">PreAuthorization</td>
         <td><p>Pre-authorization function supported.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="SIX_TimApi_Constants_FinancialTransactions_Proceed">Proceed</td>
-        <td><p>Proceed function supported.</p>
+<p>Specification: petrol.</p>
 </td>
       </tr>
       <tr>
@@ -1021,41 +1046,49 @@
       <tr>
         <td id="SIX_TimApi_Constants_FinancialTransactions_PurchaseForcedAcceptance">PurchaseForcedAcceptance</td>
         <td><p>Purchase function with forced acceptance supported.</p>
+<p>Specification: advancedRetail.</p>
 </td>
       </tr>
       <tr>
         <td id="SIX_TimApi_Constants_FinancialTransactions_PurchaseMailOrdered">PurchaseMailOrdered</td>
         <td><p>Purchase function mail ordered supported.</p>
+<p>Specification: advancedRetail.</p>
 </td>
       </tr>
       <tr>
         <td id="SIX_TimApi_Constants_FinancialTransactions_PurchasePhoneAuthorized">PurchasePhoneAuthorized</td>
         <td><p>Purchase function phone authorized function supported.</p>
+<p>Specification: advancedRetail.</p>
 </td>
       </tr>
       <tr>
         <td id="SIX_TimApi_Constants_FinancialTransactions_PurchasePhoneOrdered">PurchasePhoneOrdered</td>
         <td><p>Purchase function phone ordered supported.</p>
+<p>Specification: advancedRetail.</p>
 </td>
       </tr>
       <tr>
         <td id="SIX_TimApi_Constants_FinancialTransactions_PurchaseReservation">PurchaseReservation</td>
         <td><p>Capture an open reservation.</p>
+<p>Specification: hospitality.</p>
 </td>
       </tr>
       <tr>
         <td id="SIX_TimApi_Constants_FinancialTransactions_PurchaseReservationPhoneAuthorized">PurchaseReservationPhoneAuthorized</td>
         <td><p>Capture an open reservation phone authorized.</p>
+<p>Specification: hospitality.</p>
 </td>
       </tr>
       <tr>
         <td id="SIX_TimApi_Constants_FinancialTransactions_PurchaseWithCashback">PurchaseWithCashback</td>
         <td><p>Purchase function with cashback amount function supported.</p>
+<p>Specification: advancedRetail.</p>
 </td>
       </tr>
       <tr>
         <td id="SIX_TimApi_Constants_FinancialTransactions_Refunding">Refunding</td>
         <td><p>Refunding function supported.</p>
+<p>Specification: valueAddedServices.</p>
 </td>
       </tr>
       <tr>
@@ -1076,6 +1109,7 @@
       <tr>
         <td id="SIX_TimApi_Constants_FinancialTransactions_Unload">Unload</td>
         <td><p>Unload function supported.</p>
+<p>Specification: valueAddedServices.</p>
 </td>
       </tr>
     </tbody>

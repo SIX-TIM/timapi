@@ -55,6 +55,7 @@ var terminal__listener_8h =
     [ "ta_cb_terminal_start_checkout_completed", "terminal__listener_8h.html#a62d2db0c26edc276ce45b28e701fdb0a", null ],
     [ "ta_cb_terminal_system_information_completed", "terminal__listener_8h.html#a525bbb9e456e4db89fca49e7454f8389", null ],
     [ "ta_cb_terminal_terminal_status_changed", "terminal__listener_8h.html#a8383e2be0f809fc382f307c0180bd783", null ],
+    [ "ta_cb_terminal_third_party_app_data", "terminal__listener_8h.html#a005b7c351bca7372775ec03e9be90527", null ],
     [ "ta_cb_terminal_transaction_completed", "terminal__listener_8h.html#acb4d8efc06602d461d8c634e92cca491", null ],
     [ "ta_cb_terminal_transaction_info_request_completed", "terminal__listener_8h.html#ad9c433be1e322c491e6c4d1ebaab44bf", null ],
     [ "ta_cb_terminal_vas_info", "terminal__listener_8h.html#ae2b2230010970a7bc7d3db11c3eaf7ba", null ],

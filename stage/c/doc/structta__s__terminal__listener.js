@@ -53,6 +53,7 @@ var structta__s__terminal__listener =
     [ "start_checkout_completed", "structta__s__terminal__listener.html#a44eb77f630ea85477bd7b0d9f2f33f56", null ],
     [ "system_information_completed", "structta__s__terminal__listener.html#a19e274566f8ff630bedf64f0c7f76fc0", null ],
     [ "terminal_status_changed", "structta__s__terminal__listener.html#aacac203f3b8d7e1b30e236afce4c1833", null ],
+    [ "third_party_app_data", "structta__s__terminal__listener.html#a6afb79308f35fc87dff89761379e39ab", null ],
     [ "transaction_completed", "structta__s__terminal__listener.html#a6e25c412b22f904a95fd50333fb43144", null ],
     [ "transaction_info_request_completed", "structta__s__terminal__listener.html#aee8acd0a29ada71c7f171554a530b511", null ],
     [ "user_pointer", "structta__s__terminal__listener.html#acbe1db2e691b73153ba408e50995820f", null ],

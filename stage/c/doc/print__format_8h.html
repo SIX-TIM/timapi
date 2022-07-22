@@ -98,12 +98,14 @@ Typedefs</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
 <tr class="memitem:a44afe747b1718776d62504470fdf46c6"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="print__format_8h.html#a44afe747b1718776d62504470fdf46c6">ta_e_print_format</a> { <br />
-&#160;&#160;<a class="el" href="print__format_8h.html#a44afe747b1718776d62504470fdf46c6a926e322498b124d2afbe38f7a77aaa03">ta_c_pfmt_undefined</a>, 
-<a class="el" href="print__format_8h.html#a44afe747b1718776d62504470fdf46c6a34065c00abc896a9b9fb054f0abe840d">ta_c_pfmt_no_print</a>, 
-<a class="el" href="print__format_8h.html#a44afe747b1718776d62504470fdf46c6a38b24d83679fc5be17b4044eaf039c08">ta_c_pfmt_normal</a>, 
-<a class="el" href="print__format_8h.html#a44afe747b1718776d62504470fdf46c6ad40c92dc5aed981c46beb60198e818d9">ta_c_pfmt_on_device</a>, 
+&#160;&#160;<a class="el" href="print__format_8h.html#a44afe747b1718776d62504470fdf46c6a926e322498b124d2afbe38f7a77aaa03">ta_c_pfmt_undefined</a> = 0, 
+<a class="el" href="print__format_8h.html#a44afe747b1718776d62504470fdf46c6a34065c00abc896a9b9fb054f0abe840d">ta_c_pfmt_no_print</a> = 1, 
+<a class="el" href="print__format_8h.html#a44afe747b1718776d62504470fdf46c6a38b24d83679fc5be17b4044eaf039c08">ta_c_pfmt_normal</a> = 2, 
+<a class="el" href="print__format_8h.html#a44afe747b1718776d62504470fdf46c6ad40c92dc5aed981c46beb60198e818d9">ta_c_pfmt_on_device</a> = 3, 
 <br />
-&#160;&#160;<a class="el" href="print__format_8h.html#a44afe747b1718776d62504470fdf46c6a96ed0667c7529b7129b3fa0c1aaba6ce">ta_c_pfmt_fields_only</a>
+&#160;&#160;<a class="el" href="print__format_8h.html#a44afe747b1718776d62504470fdf46c6a96ed0667c7529b7129b3fa0c1aaba6ce">ta_c_pfmt_fields_only</a> = 4, 
+<a class="el" href="print__format_8h.html#a44afe747b1718776d62504470fdf46c6a2beb87b907c909f16f57e5d9a6537f11">ta_c_pfmt_on_device_with_receipt</a> = 5, 
+<a class="el" href="print__format_8h.html#a44afe747b1718776d62504470fdf46c6a1e677dfa94e7665f81178774399da366">ta_c_pfmt_on_device_with_fields</a> = 6
 <br />
  }</td></tr>
 <tr class="separator:a44afe747b1718776d62504470fdf46c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -148,10 +150,16 @@ Enumerations</h2></td></tr>
 <tr><td class="fieldname"><a id="a44afe747b1718776d62504470fdf46c6a38b24d83679fc5be17b4044eaf039c08"></a>ta_c_pfmt_normal&#160;</td><td class="fielddoc"><p>Receipts are generated, formatted and sent to the ECR. (default)</p>
 <p>Specification: retail.</p>
 </td></tr>
-<tr><td class="fieldname"><a id="a44afe747b1718776d62504470fdf46c6ad40c92dc5aed981c46beb60198e818d9"></a>ta_c_pfmt_on_device&#160;</td><td class="fielddoc"><p>Receipts are generated and printed on the printer attached to the EFT terminal.</p>
+<tr><td class="fieldname"><a id="a44afe747b1718776d62504470fdf46c6ad40c92dc5aed981c46beb60198e818d9"></a>ta_c_pfmt_on_device&#160;</td><td class="fielddoc"><p>Receipts are generated and printed on the printer attached to the EFT terminal but not returned to the ECR.</p>
 <p>Specification: retail.</p>
 </td></tr>
 <tr><td class="fieldname"><a id="a44afe747b1718776d62504470fdf46c6a96ed0667c7529b7129b3fa0c1aaba6ce"></a>ta_c_pfmt_fields_only&#160;</td><td class="fielddoc"><p>Only fields are returned for printing, not a generated receipt.</p>
+<p>Specification: retail.</p>
+</td></tr>
+<tr><td class="fieldname"><a id="a44afe747b1718776d62504470fdf46c6a2beb87b907c909f16f57e5d9a6537f11"></a>ta_c_pfmt_on_device_with_receipt&#160;</td><td class="fielddoc"><p>Receipts are generated and printed on the printer attached to the EFT terminal and generated receipts are returned to the ECR.</p>
+<p>Specification: retail.</p>
+</td></tr>
+<tr><td class="fieldname"><a id="a44afe747b1718776d62504470fdf46c6a1e677dfa94e7665f81178774399da366"></a>ta_c_pfmt_on_device_with_fields&#160;</td><td class="fielddoc"><p>Receipts are generated and printed on the printer attached to the EFT terminal and receipt fields are returned to the ECR, not generated receipts.</p>
 <p>Specification: retail.</p>
 </td></tr>
 </table>

@@ -60,6 +60,8 @@ var dir_55ef98a57036556dcc9a226e6204f780 =
     [ "sleep_mode_status.h", "sleep__mode__status_8h.html", "sleep__mode__status_8h" ],
     [ "status_functions.h", "status__functions_8h.html", "status__functions_8h" ],
     [ "theme.h", "theme_8h.html", "theme_8h" ],
+    [ "third_party_app_id.h", "third__party__app__id_8h.html", "third__party__app__id_8h" ],
+    [ "third_party_apps.h", "third__party__apps_8h.html", "third__party__apps_8h" ],
     [ "token_pan_type.h", "token__pan__type_8h.html", "token__pan__type_8h" ],
     [ "transaction_reason.h", "transaction__reason_8h.html", "transaction__reason_8h" ],
     [ "transaction_status.h", "transaction__status_8h.html", "transaction__status_8h" ],

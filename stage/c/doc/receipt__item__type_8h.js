@@ -72,6 +72,7 @@ var receipt__item__type_8h =
       [ "ta_c_rit_shift_number", "receipt__item__type_8h.html#a3d3044dd871a9c7d630dbcf3d9b738bea3ff52d4f5ed4ef3be22ea292f4fc9bf4", null ],
       [ "ta_c_rit_card_product_type", "receipt__item__type_8h.html#a3d3044dd871a9c7d630dbcf3d9b738bea807b50edc27d28da7028d75805afe1f5", null ],
       [ "ta_c_rit_account_type", "receipt__item__type_8h.html#a3d3044dd871a9c7d630dbcf3d9b738bea6d4acdbaa45309c58a6cc1959ecdee91", null ],
-      [ "ta_c_rit_surcharge_amount", "receipt__item__type_8h.html#a3d3044dd871a9c7d630dbcf3d9b738bead4ea346298cda1b451c68562e37b8aec", null ]
+      [ "ta_c_rit_surcharge_amount", "receipt__item__type_8h.html#a3d3044dd871a9c7d630dbcf3d9b738bead4ea346298cda1b451c68562e37b8aec", null ],
+      [ "ta_c_rit_original_trx_ref_num", "receipt__item__type_8h.html#a3d3044dd871a9c7d630dbcf3d9b738bea35b2db40337a01b7938d4612c9a02fdf", null ]
     ] ]
 ];

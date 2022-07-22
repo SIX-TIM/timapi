@@ -158,7 +158,8 @@ var NAVTREEINDEX1 =
 "counter__type_8h.html#a23b120c6b3cc3ddac8d1f01f069d35c1ac1a8e5a57ca283f1e6a32b6eb5189037":[1,1,0,1,13,1,1],
 "counter__type_8h.html#a71641ecb15f69a8b0b1972ed87168482":[1,1,0,1,13,0],
 "counters_8h.html":[1,1,0,21],
-"counters_8h.html#a56019f76a316fdbf7e16e189fa7eba56":[1,1,0,21,2],
+"counters_8h.html#a515c20d336013b628d66b7213853f8f8":[1,1,0,21,2],
+"counters_8h.html#a56019f76a316fdbf7e16e189fa7eba56":[1,1,0,21,3],
 "counters_8h.html#a6e3f2d6f0af0c46e9cc991f92b547669":[1,1,0,21,0],
 "counters_8h.html#afc0c1f6af89581185ea809623f4c0881":[1,1,0,21,1],
 "coupon__rejection__reason_8h.html":[1,1,0,1,14],
@@ -248,6 +249,5 @@ var NAVTREEINDEX1 =
 "currency_8h.html#ad375db379bcf5a792280a2735f80f7d9a621e28fb4e0eaa256fb1beda80a6ed9c":[1,1,0,1,15,3,74],
 "currency_8h.html#ad375db379bcf5a792280a2735f80f7d9a62dcbd4021a7780d1c802812a3c3d30b":[1,1,0,1,15,3,15],
 "currency_8h.html#ad375db379bcf5a792280a2735f80f7d9a635c47fe86752f5f5168f5a02a8bc2bd":[1,1,0,1,15,3,131],
-"currency_8h.html#ad375db379bcf5a792280a2735f80f7d9a64d0176eb70e3bb94a44d0995890c57a":[1,1,0,1,15,3,96],
-"currency_8h.html#ad375db379bcf5a792280a2735f80f7d9a64ed339bd819982737b08c40e158023a":[1,1,0,1,15,3,166]
+"currency_8h.html#ad375db379bcf5a792280a2735f80f7d9a64d0176eb70e3bb94a44d0995890c57a":[1,1,0,1,15,3,96]
 };

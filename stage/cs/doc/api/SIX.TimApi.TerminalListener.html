@@ -557,6 +557,9 @@
                             <a href="SIX.TimApi.Terminal.TerminalStatusChangedHandler.html" title="Terminal.TerminalStatusChangedHandler" class="">Terminal.TerminalStatusChangedHandler</a>
                           </li>
                           <li class="">
+                            <a href="SIX.TimApi.Terminal.ThirdPartyAppDataHandler.html" title="Terminal.ThirdPartyAppDataHandler" class="">Terminal.ThirdPartyAppDataHandler</a>
+                          </li>
+                          <li class="">
                             <a href="SIX.TimApi.Terminal.TransactionCompletedEventArgs.html" title="Terminal.TransactionCompletedEventArgs" class="">Terminal.TransactionCompletedEventArgs</a>
                           </li>
                           <li class="">
@@ -579,6 +582,9 @@
                           </li>
                           <li class="">
                             <a href="SIX.TimApi.TerminalStatus.html" title="TerminalStatus" class="">TerminalStatus</a>
+                          </li>
+                          <li class="">
+                            <a href="SIX.TimApi.ThirdPartyAppPayload.html" title="ThirdPartyAppPayload" class="">ThirdPartyAppPayload</a>
                           </li>
                           <li class="">
                             <a href="SIX.TimApi.TimEvent.html" title="TimEvent" class="">TimEvent</a>
@@ -795,6 +801,12 @@
                           </li>
                           <li class="">
                             <a href="SIX.TimApi.Constants.Theme.html" title="Theme" class="">Theme</a>
+                          </li>
+                          <li class="">
+                            <a href="SIX.TimApi.Constants.ThirdPartyAppId.html" title="ThirdPartyAppId" class="">ThirdPartyAppId</a>
+                          </li>
+                          <li class="">
+                            <a href="SIX.TimApi.Constants.ThirdPartyApps.html" title="ThirdPartyApps" class="">ThirdPartyApps</a>
                           </li>
                           <li class="">
                             <a href="SIX.TimApi.Constants.TokenPanType.html" title="TokenPanType" class="">TokenPanType</a>
@@ -1401,7 +1413,7 @@ started request finished.</p>
   
   
   <a id="SIX_TimApi_TerminalListener_DeferredAuth_" data-uid="SIX.TimApi.TerminalListener.DeferredAuth*"></a>
-  <h4 id="SIX_TimApi_TerminalListener_DeferredAuth_SIX_TimApi_Terminal_TransactionResponse_" data-uid="SIX.TimApi.TerminalListener.DeferredAuth(SIX.TimApi.Terminal,TransactionResponse)">DeferredAuth(Terminal, TransactionResponse)</h4>
+  <h4 id="SIX_TimApi_TerminalListener_DeferredAuth_SIX_TimApi_Terminal_SIX_TimApi_TransactionResponse_" data-uid="SIX.TimApi.TerminalListener.DeferredAuth(SIX.TimApi.Terminal,SIX.TimApi.TransactionResponse)">DeferredAuth(Terminal, TransactionResponse)</h4>
   <div class="markdown level1 summary"><p>Called if a Deferred Authorization Notification has been received.</p>
 <p>Supported only if  Guides.UNATTENDED is enabled.</p>
 </div>
@@ -1426,7 +1438,7 @@ started request finished.</p>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">TransactionResponse</span></td>
+        <td><a class="xref" href="SIX.TimApi.TransactionResponse.html">TransactionResponse</a></td>
         <td><span class="parametername">response</span></td>
         <td></td>
       </tr>
@@ -2563,8 +2575,42 @@ event.getTerminal().getTerminalState().</p>
   </table>
   
   
+  <a id="SIX_TimApi_TerminalListener_ThirdPartyAppData_" data-uid="SIX.TimApi.TerminalListener.ThirdPartyAppData*"></a>
+  <h4 id="SIX_TimApi_TerminalListener_ThirdPartyAppData_SIX_TimApi_Terminal_SIX_TimApi_ThirdPartyAppPayload_" data-uid="SIX.TimApi.TerminalListener.ThirdPartyAppData(SIX.TimApi.Terminal,SIX.TimApi.ThirdPartyAppPayload)">ThirdPartyAppData(Terminal, ThirdPartyAppPayload)</h4>
+  <div class="markdown level1 summary"><p>Called if a ThirdPartyAppData Notification has been received.</p>
+<p>Supported only if  Guides.VALUE_ADDED_SERVICES is enabled.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void ThirdPartyAppData(Terminal terminal, ThirdPartyAppPayload data)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="SIX.TimApi.Terminal.html">Terminal</a></td>
+        <td><span class="parametername">terminal</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="SIX.TimApi.ThirdPartyAppPayload.html">ThirdPartyAppPayload</a></td>
+        <td><span class="parametername">data</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="SIX_TimApi_TerminalListener_TransactionCompleted_" data-uid="SIX.TimApi.TerminalListener.TransactionCompleted*"></a>
-  <h4 id="SIX_TimApi_TerminalListener_TransactionCompleted_SIX_TimApi_TimEvent_TransactionResponse_" data-uid="SIX.TimApi.TerminalListener.TransactionCompleted(SIX.TimApi.TimEvent,TransactionResponse)">TransactionCompleted(TimEvent, TransactionResponse)</h4>
+  <h4 id="SIX_TimApi_TerminalListener_TransactionCompleted_SIX_TimApi_TimEvent_SIX_TimApi_TransactionResponse_" data-uid="SIX.TimApi.TerminalListener.TransactionCompleted(SIX.TimApi.TimEvent,SIX.TimApi.TransactionResponse)">TransactionCompleted(TimEvent, TransactionResponse)</h4>
   <div class="markdown level1 summary"><p>Called if an Terminal.transactionAsync(com.six.timapi.constants.TransactionType, Amount)
 or Terminal.transactionAsync(com.six.timapi.constants.TransactionType, TransactionRequest)
 started request finished.</p>
@@ -2591,7 +2637,7 @@ started request finished.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">TransactionResponse</span></td>
+        <td><a class="xref" href="SIX.TimApi.TransactionResponse.html">TransactionResponse</a></td>
         <td><span class="parametername">data</span></td>
         <td><p>Contains transaction result information and print information for the merchant and cardholder.</p>
 </td>
@@ -2601,7 +2647,7 @@ started request finished.</p>
   
   
   <a id="SIX_TimApi_TerminalListener_TransactionInfoRequestCompleted_" data-uid="SIX.TimApi.TerminalListener.TransactionInfoRequestCompleted*"></a>
-  <h4 id="SIX_TimApi_TerminalListener_TransactionInfoRequestCompleted_SIX_TimApi_TimEvent_TransactionInfoRequestResponse_" data-uid="SIX.TimApi.TerminalListener.TransactionInfoRequestCompleted(SIX.TimApi.TimEvent,TransactionInfoRequestResponse)">TransactionInfoRequestCompleted(TimEvent, TransactionInfoRequestResponse)</h4>
+  <h4 id="SIX_TimApi_TerminalListener_TransactionInfoRequestCompleted_SIX_TimApi_TimEvent_SIX_TimApi_TransactionInfoRequestResponse_" data-uid="SIX.TimApi.TerminalListener.TransactionInfoRequestCompleted(SIX.TimApi.TimEvent,SIX.TimApi.TransactionInfoRequestResponse)">TransactionInfoRequestCompleted(TimEvent, TransactionInfoRequestResponse)</h4>
   <div class="markdown level1 summary"><p>Called if an Terminal.TransactionInfoRequestAsync()
 started request finished.</p>
 </div>
@@ -2627,7 +2673,7 @@ started request finished.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">TransactionInfoRequestResponse</span></td>
+        <td><a class="xref" href="SIX.TimApi.TransactionInfoRequestResponse.html">TransactionInfoRequestResponse</a></td>
         <td><span class="parametername">data</span></td>
         <td><p>Contains all requested receipts up to a maximum number of receipts the EFT Terminal
 can send. if HasMoreReceipts is True not all receipts could be send by the EFT
