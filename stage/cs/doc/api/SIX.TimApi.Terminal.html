@@ -149,6 +149,9 @@
                             <a href="SIX.TimApi.FeaturesPayment.html" title="FeaturesPayment" class="">FeaturesPayment</a>
                           </li>
                           <li class="">
+                            <a href="SIX.TimApi.FeaturesPayment.AgeCheckSupport.html" title="FeaturesPayment.AgeCheckSupport" class="">FeaturesPayment.AgeCheckSupport</a>
+                          </li>
+                          <li class="">
                             <a href="SIX.TimApi.FeaturesSixml.html" title="FeaturesSixml" class="">FeaturesSixml</a>
                           </li>
                           <li class="">
@@ -279,6 +282,12 @@
                           </li>
                           <li class="">
                             <a href="SIX.TimApi.Terminal.ActivateServiceMenuCompletedEventHandler.html" title="Terminal.ActivateServiceMenuCompletedEventHandler" class="">Terminal.ActivateServiceMenuCompletedEventHandler</a>
+                          </li>
+                          <li class="">
+                            <a href="SIX.TimApi.Terminal.AgeCheckCompletedEventArgs.html" title="Terminal.AgeCheckCompletedEventArgs" class="">Terminal.AgeCheckCompletedEventArgs</a>
+                          </li>
+                          <li class="">
+                            <a href="SIX.TimApi.Terminal.AgeCheckCompletedEventHandler.html" title="Terminal.AgeCheckCompletedEventHandler" class="">Terminal.AgeCheckCompletedEventHandler</a>
                           </li>
                           <li class="">
                             <a href="SIX.TimApi.Terminal.ApplicationInformationCompletedEventArgs.html" title="Terminal.ApplicationInformationCompletedEventArgs" class="">Terminal.ApplicationInformationCompletedEventArgs</a>
@@ -642,6 +651,9 @@
                           </li>
                           <li class="">
                             <a href="SIX.TimApi.Constants.AdminFunctions.html" title="AdminFunctions" class="">AdminFunctions</a>
+                          </li>
+                          <li class="">
+                            <a href="SIX.TimApi.Constants.AgeCheckResult.html" title="AgeCheckResult" class="">AgeCheckResult</a>
                           </li>
                           <li class="">
                             <a href="SIX.TimApi.Constants.AllowedAccounts.html" title="AllowedAccounts" class="">AllowedAccounts</a>
@@ -1780,6 +1792,92 @@ To remove elements use setEcrData instead.</p>
   </table>
   
   
+  <a id="SIX_TimApi_Terminal_AgeCheck_" data-uid="SIX.TimApi.Terminal.AgeCheck*"></a>
+  <h4 id="SIX_TimApi_Terminal_AgeCheck_System_Int64_" data-uid="SIX.TimApi.Terminal.AgeCheck(System.Int64)">AgeCheck(Int64)</h4>
+  <div class="markdown level1 summary"><p>Start age check verification.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TransactionInformation AgeCheck(long ageToCheck)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><span class="parametername">ageToCheck</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="SIX.TimApi.TransactionInformation.html">TransactionInformation</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="SIX.TimApi.TimException.html">TimException</a></td>
+        <td><p>an error occurred during the device maintenance</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SIX_TimApi_Terminal_AgeCheckAsync_" data-uid="SIX.TimApi.Terminal.AgeCheckAsync*"></a>
+  <h4 id="SIX_TimApi_Terminal_AgeCheckAsync_System_Int64_" data-uid="SIX.TimApi.Terminal.AgeCheckAsync(System.Int64)">AgeCheckAsync(Int64)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AgeCheckAsync(long ageToCheck)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><span class="parametername">ageToCheck</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="SIX_TimApi_Terminal_AmtAdjustment_" data-uid="SIX.TimApi.Terminal.AmtAdjustment*"></a>
   <h4 id="SIX_TimApi_Terminal_AmtAdjustment_SIX_TimApi_Amount_" data-uid="SIX.TimApi.Terminal.AmtAdjustment(SIX.TimApi.Amount)">AmtAdjustment(Amount)</h4>
   <div class="markdown level1 summary"><p>Dynamically adjusts the transaction amount of an already running transaction.</p>
@@ -2561,6 +2659,51 @@ one or multiple reboot processes.</p>
         <td><a class="xref" href="SIX.TimApi.TimException.html">TimException</a></td>
         <td><p>an error occurred during the Cancel</p>
 </td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SIX_TimApi_Terminal_ConvertSIXTransRefToLegacy_" data-uid="SIX.TimApi.Terminal.ConvertSIXTransRefToLegacy*"></a>
+  <h4 id="SIX_TimApi_Terminal_ConvertSIXTransRefToLegacy_System_String_" data-uid="SIX.TimApi.Terminal.ConvertSIXTransRefToLegacy(System.String)">ConvertSIXTransRefToLegacy(String)</h4>
+  <div class="markdown level1 summary"><p>This function tries to convert a SIXTransRef of type X:Y:4 into
+A SIXTransRef of type X:Y:1 . For all other SIXTransRef values
+the value will be returned unchanged.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string ConvertSIXTransRefToLegacy(string sixTransRef)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">sixTransRef</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -5719,6 +5862,38 @@ Asynchronous operations are started by calling the <a class="xref" href="SIX.Tim
 <br>
 The  <a class="xref" href="SIX.TimApi.Terminal.ActivateServiceMenuCompletedEventHandler.html">Terminal.ActivateServiceMenuCompletedEventHandler</a>  is the delegate for this event.
 The <a class="xref" href="SIX.TimApi.Terminal.ActivateServiceMenuCompletedEventArgs.html">Terminal.ActivateServiceMenuCompletedEventArgs</a> class provides the event handler with event data.</p>
+</div>
+  
+  
+  <h4 id="SIX_TimApi_Terminal_AgeCheckCompleted" data-uid="SIX.TimApi.Terminal.AgeCheckCompleted">AgeCheckCompleted</h4>
+  <div class="markdown level1 summary"><p>Occurs when an asynchronous age check completes.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event Terminal.AgeCheckCompletedEventHandler AgeCheckCompleted</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="SIX.TimApi.Terminal.AgeCheckCompletedEventHandler.html">Terminal.AgeCheckCompletedEventHandler</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="SIX_TimApi_Terminal_AgeCheckCompleted_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This event is raised each time an asynchronous age check completes.<br>
+Asynchronous transactions are started by calling the <a class="xref" href="SIX.TimApi.Terminal.html#SIX_TimApi_Terminal_AgeCheckAsync_System_Int64_">AgeCheckAsync(Int64)</a> methods.
+<br>
+The <a class="xref" href="SIX.TimApi.Terminal.AgeCheckCompletedEventHandler.html">Terminal.AgeCheckCompletedEventHandler</a>  is the delegate for this event.
+The <a class="xref" href="SIX.TimApi.Terminal.AgeCheckCompletedEventArgs.html">Terminal.AgeCheckCompletedEventArgs</a> class provides the event handler with event data.</p>
 </div>
   
   

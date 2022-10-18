@@ -13,7 +13,7 @@ public class SimpleTransaction {
 	// Create initial terminal settings
 	TerminalSettings settings = new TerminalSettings();
 
-	// Set the IntegratorId that has been provided to you by SIX Payment Services AG
+	// Set the IntegratorId that has been provided to you by Worldline
 	settings.setIntegratorId("0e6b1705-ab96-455b-9ba3-a77dd919d7a5");
 
 	// Create new terminal

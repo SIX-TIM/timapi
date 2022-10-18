@@ -26,6 +26,7 @@ var result__code_8h =
       [ "ta_c_rc_tim_init_failure", "result__code_8h.html#aebaf00d1ceef4b827866ca9de0bd3320a0e84a1d3ae91f463aa88b3cd3ab7c2f5", null ],
       [ "ta_c_rc_host_timeout_outcome_unknown", "result__code_8h.html#aebaf00d1ceef4b827866ca9de0bd3320aa4dfb35ace851c3a11c92b6863f4065d", null ],
       [ "ta_c_rc_third_party_app_not_available", "result__code_8h.html#aebaf00d1ceef4b827866ca9de0bd3320a9e232773bcce4cf5083eaac75809640d", null ],
+      [ "ta_c_rc_unsupported_reference_age", "result__code_8h.html#aebaf00d1ceef4b827866ca9de0bd3320a45ba6a9a9bb71a6ab35772c982bfd8ba", null ],
       [ "ta_c_rc_server_invalid_answer", "result__code_8h.html#aebaf00d1ceef4b827866ca9de0bd3320ae3b1fc71e718396faa8ac02a9315490d", null ],
       [ "ta_c_rc_server_invalid_request", "result__code_8h.html#aebaf00d1ceef4b827866ca9de0bd3320ae35b2cebdc02e0d4f3b0a923f1a443f7", null ],
       [ "ta_c_rc_server_disabled_feature", "result__code_8h.html#aebaf00d1ceef4b827866ca9de0bd3320a67868d7b31e3cf0572004e613f944f88", null ],

@@ -18,7 +18,9 @@ var custom__receipt__formatter_8h =
       [ "ta_crfc_has_values", "custom__receipt__formatter_8h.html#a07c5b9d0b4ce2c471dd995fbae1716b0a0826e5fed0af3c978f47c1874b593749", null ],
       [ "ta_crfc_has_installment", "custom__receipt__formatter_8h.html#a07c5b9d0b4ce2c471dd995fbae1716b0a708af4aa24a8c1f76955f69957f40544", null ],
       [ "ta_crfc_dcc", "custom__receipt__formatter_8h.html#a07c5b9d0b4ce2c471dd995fbae1716b0a72eb653b151a26ac6b1abc6916a6f464", null ],
-      [ "ta_crfc_has_values_no_invalid_fields", "custom__receipt__formatter_8h.html#a07c5b9d0b4ce2c471dd995fbae1716b0a64ce1f27a3e0cb48b2c818e68f4bd76c", null ]
+      [ "ta_crfc_has_values_no_invalid_fields", "custom__receipt__formatter_8h.html#a07c5b9d0b4ce2c471dd995fbae1716b0a64ce1f27a3e0cb48b2c818e68f4bd76c", null ],
+      [ "ta_crfc_header", "custom__receipt__formatter_8h.html#a07c5b9d0b4ce2c471dd995fbae1716b0ab6b7c094dfc71f945a181f4d5dd9de83", null ],
+      [ "ta_crfc_footer", "custom__receipt__formatter_8h.html#a07c5b9d0b4ce2c471dd995fbae1716b0a681e3a0ac8a3eeea1ca052bd87fe2c71", null ]
     ] ],
     [ "ta_e_custom_receipt_formatter_text_alignment", "custom__receipt__formatter_8h.html#a089412c826d5c6d0e523915d07b4036f", [
       [ "ta_c_crfta_left", "custom__receipt__formatter_8h.html#a089412c826d5c6d0e523915d07b4036faadb264cda357ac503e4e8d6ffd73c5cd", null ],

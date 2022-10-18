@@ -149,6 +149,9 @@
                             <a href="SIX.TimApi.FeaturesPayment.html" title="FeaturesPayment" class="">FeaturesPayment</a>
                           </li>
                           <li class="">
+                            <a href="SIX.TimApi.FeaturesPayment.AgeCheckSupport.html" title="FeaturesPayment.AgeCheckSupport" class="">FeaturesPayment.AgeCheckSupport</a>
+                          </li>
+                          <li class="">
                             <a href="SIX.TimApi.FeaturesSixml.html" title="FeaturesSixml" class="">FeaturesSixml</a>
                           </li>
                           <li class="">
@@ -279,6 +282,12 @@
                           </li>
                           <li class="">
                             <a href="SIX.TimApi.Terminal.ActivateServiceMenuCompletedEventHandler.html" title="Terminal.ActivateServiceMenuCompletedEventHandler" class="">Terminal.ActivateServiceMenuCompletedEventHandler</a>
+                          </li>
+                          <li class="">
+                            <a href="SIX.TimApi.Terminal.AgeCheckCompletedEventArgs.html" title="Terminal.AgeCheckCompletedEventArgs" class="">Terminal.AgeCheckCompletedEventArgs</a>
+                          </li>
+                          <li class="">
+                            <a href="SIX.TimApi.Terminal.AgeCheckCompletedEventHandler.html" title="Terminal.AgeCheckCompletedEventHandler" class="">Terminal.AgeCheckCompletedEventHandler</a>
                           </li>
                           <li class="">
                             <a href="SIX.TimApi.Terminal.ApplicationInformationCompletedEventArgs.html" title="Terminal.ApplicationInformationCompletedEventArgs" class="">Terminal.ApplicationInformationCompletedEventArgs</a>
@@ -644,6 +653,9 @@
                             <a href="SIX.TimApi.Constants.AdminFunctions.html" title="AdminFunctions" class="">AdminFunctions</a>
                           </li>
                           <li class="">
+                            <a href="SIX.TimApi.Constants.AgeCheckResult.html" title="AgeCheckResult" class="">AgeCheckResult</a>
+                          </li>
+                          <li class="">
                             <a href="SIX.TimApi.Constants.AllowedAccounts.html" title="AllowedAccounts" class="">AllowedAccounts</a>
                           </li>
                           <li class="">
@@ -983,6 +995,42 @@
         <td><a class="xref" href="SIX.TimApi.TimEvent.html">TimEvent</a></td>
         <td><span class="parametername">tevent</span></td>
         <td><p>Contains the terminal sending the event and error information if the request failed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SIX_TimApi_TerminalListener_AgeCheckCompleted_" data-uid="SIX.TimApi.TerminalListener.AgeCheckCompleted*"></a>
+  <h4 id="SIX_TimApi_TerminalListener_AgeCheckCompleted_SIX_TimApi_TimEvent_SIX_TimApi_TransactionInformation_" data-uid="SIX.TimApi.TerminalListener.AgeCheckCompleted(SIX.TimApi.TimEvent,SIX.TimApi.TransactionInformation)">AgeCheckCompleted(TimEvent, TransactionInformation)</h4>
+  <div class="markdown level1 summary"><p>Called if an Terminal.AgeCheckAsync() started request finished.</p>
+<p>Supported only if  Guides.REMOTE is enabled.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void AgeCheckCompleted(TimEvent tevent, TransactionInformation data)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="SIX.TimApi.TimEvent.html">TimEvent</a></td>
+        <td><span class="parametername">tevent</span></td>
+        <td><p>Contains the terminal sending the event and error information if the request failed.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="SIX.TimApi.TransactionInformation.html">TransactionInformation</a></td>
+        <td><span class="parametername">data</span></td>
+        <td><p>Contains transaction result information and print information for the merchant and cardholder.</p>
 </td>
       </tr>
     </tbody>

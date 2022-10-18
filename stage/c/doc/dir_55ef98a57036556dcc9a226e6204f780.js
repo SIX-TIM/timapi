@@ -5,6 +5,7 @@ var dir_55ef98a57036556dcc9a226e6204f780 =
     [ "additional_info_item.h", "additional__info__item_8h.html", "additional__info__item_8h" ],
     [ "adjustment_result.h", "adjustment__result_8h.html", "adjustment__result_8h" ],
     [ "admin_functions.h", "admin__functions_8h.html", "admin__functions_8h" ],
+    [ "age_check_result.h", "age__check__result_8h.html", "age__check__result_8h" ],
     [ "allowed_accounts.h", "allowed__accounts_8h.html", "allowed__accounts_8h" ],
     [ "brand_bar_brand.h", "brand__bar__brand_8h.html", "brand__bar__brand_8h" ],
     [ "brand_mode.h", "brand__mode_8h.html", "brand__mode_8h" ],

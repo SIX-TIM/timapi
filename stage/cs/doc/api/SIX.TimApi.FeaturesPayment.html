@@ -149,6 +149,9 @@
                             <a href="SIX.TimApi.FeaturesPayment.html" title="FeaturesPayment" class="active">FeaturesPayment</a>
                           </li>
                           <li class="">
+                            <a href="SIX.TimApi.FeaturesPayment.AgeCheckSupport.html" title="FeaturesPayment.AgeCheckSupport" class="">FeaturesPayment.AgeCheckSupport</a>
+                          </li>
+                          <li class="">
                             <a href="SIX.TimApi.FeaturesSixml.html" title="FeaturesSixml" class="">FeaturesSixml</a>
                           </li>
                           <li class="">
@@ -279,6 +282,12 @@
                           </li>
                           <li class="">
                             <a href="SIX.TimApi.Terminal.ActivateServiceMenuCompletedEventHandler.html" title="Terminal.ActivateServiceMenuCompletedEventHandler" class="">Terminal.ActivateServiceMenuCompletedEventHandler</a>
+                          </li>
+                          <li class="">
+                            <a href="SIX.TimApi.Terminal.AgeCheckCompletedEventArgs.html" title="Terminal.AgeCheckCompletedEventArgs" class="">Terminal.AgeCheckCompletedEventArgs</a>
+                          </li>
+                          <li class="">
+                            <a href="SIX.TimApi.Terminal.AgeCheckCompletedEventHandler.html" title="Terminal.AgeCheckCompletedEventHandler" class="">Terminal.AgeCheckCompletedEventHandler</a>
                           </li>
                           <li class="">
                             <a href="SIX.TimApi.Terminal.ApplicationInformationCompletedEventArgs.html" title="Terminal.ApplicationInformationCompletedEventArgs" class="">Terminal.ApplicationInformationCompletedEventArgs</a>
@@ -644,6 +653,9 @@
                             <a href="SIX.TimApi.Constants.AdminFunctions.html" title="AdminFunctions" class="">AdminFunctions</a>
                           </li>
                           <li class="">
+                            <a href="SIX.TimApi.Constants.AgeCheckResult.html" title="AgeCheckResult" class="">AgeCheckResult</a>
+                          </li>
+                          <li class="">
                             <a href="SIX.TimApi.Constants.AllowedAccounts.html" title="AllowedAccounts" class="">AllowedAccounts</a>
                           </li>
                           <li class="">
@@ -952,13 +964,13 @@ Immutable class.</p>
   
   
   <a id="SIX_TimApi_FeaturesPayment__ctor_" data-uid="SIX.TimApi.FeaturesPayment.#ctor*"></a>
-  <h4 id="SIX_TimApi_FeaturesPayment__ctor_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_" data-uid="SIX.TimApi.FeaturesPayment.#ctor(System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean)">FeaturesPayment(Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean)</h4>
+  <h4 id="SIX_TimApi_FeaturesPayment__ctor_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_SIX_TimApi_FeaturesPayment_AgeCheckSupport_" data-uid="SIX.TimApi.FeaturesPayment.#ctor(System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,SIX.TimApi.FeaturesPayment.AgeCheckSupport)">FeaturesPayment(Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, FeaturesPayment.AgeCheckSupport)</h4>
   <div class="markdown level1 summary"><p>Create hardware features.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public FeaturesPayment(bool dcc, bool declinedReceipts, bool partialApproval, bool partialCommit, bool ep2Available, bool ep2Dcc, bool ep2DeclinedReceipts, bool ep2MultiAccountSelection, bool ep2MultiContractSelection, bool ep2Installment, bool ep2Giftcard, bool accountSelection, bool mcr, bool surcharge)</code></pre>
+    <pre><code class="lang-csharp hljs">public FeaturesPayment(bool dcc, bool declinedReceipts, bool partialApproval, bool partialCommit, bool ep2Available, bool ep2Dcc, bool ep2DeclinedReceipts, bool ep2MultiAccountSelection, bool ep2MultiContractSelection, bool ep2Installment, bool ep2Giftcard, bool accountSelection, bool mcr, bool surcharge, FeaturesPayment.AgeCheckSupport ep2AgeCheck)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1038,6 +1050,38 @@ Immutable class.</p>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
         <td><span class="parametername">surcharge</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="SIX.TimApi.FeaturesPayment.AgeCheckSupport.html">FeaturesPayment.AgeCheckSupport</a></td>
+        <td><span class="parametername">ep2AgeCheck</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  
+  
+  <h4 id="SIX_TimApi_FeaturesPayment_Ep2AgeCheck" data-uid="SIX.TimApi.FeaturesPayment.Ep2AgeCheck">Ep2AgeCheck</h4>
+  <div class="markdown level1 summary"><p>EP2 AgeCheck is available on the terminal.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FeaturesPayment.AgeCheckSupport Ep2AgeCheck</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="SIX.TimApi.FeaturesPayment.AgeCheckSupport.html">FeaturesPayment.AgeCheckSupport</a></td>
         <td></td>
       </tr>
     </tbody>

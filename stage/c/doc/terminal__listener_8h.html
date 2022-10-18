@@ -271,6 +271,9 @@ typedef struct <a class="el" href="structta__s__event.html">ta_s_event</a>&#160;
 <tr class="memitem:affbb70ca5246514ca9db64cbf18e4b06"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="terminal__listener_8h.html#affbb70ca5246514ca9db64cbf18e4b06">ta_cb_terminal_device_maintenance_completed</a>) (const <a class="el" href="terminal__listener_8h.html#a8c82d4a43c82433ef948451772ba0629">ta_s_event_t</a> *event, void *user_pointer)</td></tr>
 <tr class="memdesc:affbb70ca5246514ca9db64cbf18e4b06"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called if an ta_terminal_device_maintenance_async started request finished.  <a href="terminal__listener_8h.html#affbb70ca5246514ca9db64cbf18e4b06">More...</a><br /></td></tr>
 <tr class="separator:affbb70ca5246514ca9db64cbf18e4b06"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2281215164eaf3b87804c4e11e11dfc"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="terminal__listener_8h.html#ae2281215164eaf3b87804c4e11e11dfc">ta_cb_terminal_age_check_completed</a>) (const <a class="el" href="terminal__listener_8h.html#a8c82d4a43c82433ef948451772ba0629">ta_s_event_t</a> *event, <a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a> data, void *user_pointer)</td></tr>
+<tr class="memdesc:ae2281215164eaf3b87804c4e11e11dfc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called if an ta_terminal_age_check_async started request finished.  <a href="terminal__listener_8h.html#ae2281215164eaf3b87804c4e11e11dfc">More...</a><br /></td></tr>
+<tr class="separator:ae2281215164eaf3b87804c4e11e11dfc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6547832ef93cedf0884755827f6f1e10"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="terminal__listener_8h.html#a6547832ef93cedf0884755827f6f1e10">ta_cb_terminal_request_completed</a>) (const <a class="el" href="terminal__listener_8h.html#a8c82d4a43c82433ef948451772ba0629">ta_s_event_t</a> *event, <a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a> data, void *user_pointer)</td></tr>
 <tr class="memdesc:a6547832ef93cedf0884755827f6f1e10"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called for all completed requests.  <a href="terminal__listener_8h.html#a6547832ef93cedf0884755827f6f1e10">More...</a><br /></td></tr>
 <tr class="separator:a6547832ef93cedf0884755827f6f1e10"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -332,6 +335,31 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">event</td><td>Pointer to struct containing information about the event. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">user_pointer</td><td>User pointer value used while creating the listener. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ae2281215164eaf3b87804c4e11e11dfc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae2281215164eaf3b87804c4e11e11dfc">&#9670;&nbsp;</a></span>ta_cb_terminal_age_check_completed</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef void( * ta_cb_terminal_age_check_completed) (const <a class="el" href="terminal__listener_8h.html#a8c82d4a43c82433ef948451772ba0629">ta_s_event_t</a> *event, <a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a> data, void *user_pointer)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Called if an ta_terminal_age_check_async started request finished. </p>
+<p>Supported only if guide value added services is enabled.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">event</td><td>Pointer to struct containing information about the event. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>Object instance of type <a class="el" href="transaction__information_8h.html">transaction_information</a>. Object instance is not retained. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">user_pointer</td><td>User pointer value used while creating the listener. </td></tr>
   </table>
   </dd>

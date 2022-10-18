@@ -2,6 +2,7 @@ var structta__s__terminal__listener =
 [
     [ "activate_completed", "structta__s__terminal__listener.html#a84d2ee4a93851166954e44667f49aac6", null ],
     [ "activate_service_menu_completed", "structta__s__terminal__listener.html#ad1deb1f5af9288e96eeffd3b9034cc9e", null ],
+    [ "age_check_completed", "structta__s__terminal__listener.html#a9ff9566cde236afaeb6014fb7fe671ec", null ],
     [ "application_information_completed", "structta__s__terminal__listener.html#aa1d3cfd4e8753d1efc57dc054a6cac78", null ],
     [ "balance_completed", "structta__s__terminal__listener.html#a46f3508934cee083eacae78b24991712", null ],
     [ "balance_inquiry_completed", "structta__s__terminal__listener.html#a2e7b8b49e2d81666734133f48ab48e8e", null ],
