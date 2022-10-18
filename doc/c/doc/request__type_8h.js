@@ -48,6 +48,7 @@ var request__type_8h =
       [ "ta_c_req_request_alias", "request__type_8h.html#a38268da75c7795fd3a4f057bc6a7fcd2af5919105790a5cb23420a3cb70e87529", null ],
       [ "ta_c_req_device_maintenance", "request__type_8h.html#a38268da75c7795fd3a4f057bc6a7fcd2aea2f339596878ddb0940004cb889d6d4", null ],
       [ "ta_c_req_client_identification", "request__type_8h.html#a38268da75c7795fd3a4f057bc6a7fcd2a09a49e60a0cfed9a478beb7f9241f356", null ],
-      [ "ta_c_req_transaction_info_request", "request__type_8h.html#a38268da75c7795fd3a4f057bc6a7fcd2a8bb0292172f3ec80ea4d655c85fa7053", null ]
+      [ "ta_c_req_transaction_info_request", "request__type_8h.html#a38268da75c7795fd3a4f057bc6a7fcd2a8bb0292172f3ec80ea4d655c85fa7053", null ],
+      [ "ta_c_req_age_check", "request__type_8h.html#a38268da75c7795fd3a4f057bc6a7fcd2a3231d2bc521455761b38b793e0339dc1", null ]
     ] ]
 ];

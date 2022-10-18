@@ -4,6 +4,7 @@ var terminal__listener_8h =
     [ "ta_s_terminal_listener", "structta__s__terminal__listener.html", "structta__s__terminal__listener" ],
     [ "ta_cb_terminal_activate_completed", "terminal__listener_8h.html#acbfefabfc85c91779a0f6293988ec9a8", null ],
     [ "ta_cb_terminal_activate_service_menu_completed", "terminal__listener_8h.html#af524b398ff38da113138035d936509a0", null ],
+    [ "ta_cb_terminal_age_check_completed", "terminal__listener_8h.html#ae2281215164eaf3b87804c4e11e11dfc", null ],
     [ "ta_cb_terminal_application_information_completed", "terminal__listener_8h.html#ad53d815aff9026f1a6a2ce315214908c", null ],
     [ "ta_cb_terminal_balance_completed", "terminal__listener_8h.html#a1834394fe87abd900fd82c659d213159", null ],
     [ "ta_cb_terminal_balance_inquiry_completed", "terminal__listener_8h.html#aee3b197131cd0666da2ad08fa23cc2a7", null ],

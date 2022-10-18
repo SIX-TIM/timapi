@@ -2307,6 +2307,42 @@ references:
   commentId: F:SIX.TimApi.Constants.AdminFunctions.Unknown
   fullName: SIX.TimApi.Constants.AdminFunctions.Unknown
   nameWithType: AdminFunctions.Unknown
+- uid: SIX.TimApi.Constants.AgeCheckResult
+  name: AgeCheckResult
+  href: api/SIX.TimApi.Constants.AgeCheckResult.html
+  commentId: T:SIX.TimApi.Constants.AgeCheckResult
+  fullName: SIX.TimApi.Constants.AgeCheckResult
+  nameWithType: AgeCheckResult
+- uid: SIX.TimApi.Constants.AgeCheckResult.NoAgeCheckPerformed
+  name: NoAgeCheckPerformed
+  href: api/SIX.TimApi.Constants.AgeCheckResult.html#SIX_TimApi_Constants_AgeCheckResult_NoAgeCheckPerformed
+  commentId: F:SIX.TimApi.Constants.AgeCheckResult.NoAgeCheckPerformed
+  fullName: SIX.TimApi.Constants.AgeCheckResult.NoAgeCheckPerformed
+  nameWithType: AgeCheckResult.NoAgeCheckPerformed
+- uid: SIX.TimApi.Constants.AgeCheckResult.Nok
+  name: Nok
+  href: api/SIX.TimApi.Constants.AgeCheckResult.html#SIX_TimApi_Constants_AgeCheckResult_Nok
+  commentId: F:SIX.TimApi.Constants.AgeCheckResult.Nok
+  fullName: SIX.TimApi.Constants.AgeCheckResult.Nok
+  nameWithType: AgeCheckResult.Nok
+- uid: SIX.TimApi.Constants.AgeCheckResult.NotSupportedByBank
+  name: NotSupportedByBank
+  href: api/SIX.TimApi.Constants.AgeCheckResult.html#SIX_TimApi_Constants_AgeCheckResult_NotSupportedByBank
+  commentId: F:SIX.TimApi.Constants.AgeCheckResult.NotSupportedByBank
+  fullName: SIX.TimApi.Constants.AgeCheckResult.NotSupportedByBank
+  nameWithType: AgeCheckResult.NotSupportedByBank
+- uid: SIX.TimApi.Constants.AgeCheckResult.Ok
+  name: Ok
+  href: api/SIX.TimApi.Constants.AgeCheckResult.html#SIX_TimApi_Constants_AgeCheckResult_Ok
+  commentId: F:SIX.TimApi.Constants.AgeCheckResult.Ok
+  fullName: SIX.TimApi.Constants.AgeCheckResult.Ok
+  nameWithType: AgeCheckResult.Ok
+- uid: SIX.TimApi.Constants.AgeCheckResult.Unknown
+  name: Unknown
+  href: api/SIX.TimApi.Constants.AgeCheckResult.html#SIX_TimApi_Constants_AgeCheckResult_Unknown
+  commentId: F:SIX.TimApi.Constants.AgeCheckResult.Unknown
+  fullName: SIX.TimApi.Constants.AgeCheckResult.Unknown
+  nameWithType: AgeCheckResult.Unknown
 - uid: SIX.TimApi.Constants.AllowedAccounts
   name: AllowedAccounts
   href: api/SIX.TimApi.Constants.AllowedAccounts.html
@@ -5308,6 +5344,12 @@ references:
   commentId: F:SIX.TimApi.Constants.NonFinancialTransactions.AdjustReservation
   fullName: SIX.TimApi.Constants.NonFinancialTransactions.AdjustReservation
   nameWithType: NonFinancialTransactions.AdjustReservation
+- uid: SIX.TimApi.Constants.NonFinancialTransactions.AgeCheck
+  name: AgeCheck
+  href: api/SIX.TimApi.Constants.NonFinancialTransactions.html#SIX_TimApi_Constants_NonFinancialTransactions_AgeCheck
+  commentId: F:SIX.TimApi.Constants.NonFinancialTransactions.AgeCheck
+  fullName: SIX.TimApi.Constants.NonFinancialTransactions.AgeCheck
+  nameWithType: NonFinancialTransactions.AgeCheck
 - uid: SIX.TimApi.Constants.NonFinancialTransactions.BalanceInquiry
   name: BalanceInquiry
   href: api/SIX.TimApi.Constants.NonFinancialTransactions.html#SIX_TimApi_Constants_NonFinancialTransactions_BalanceInquiry
@@ -6220,6 +6262,12 @@ references:
   commentId: F:SIX.TimApi.Constants.ReceiptItemType.ShiftNumber
   fullName: SIX.TimApi.Constants.ReceiptItemType.ShiftNumber
   nameWithType: ReceiptItemType.ShiftNumber
+- uid: SIX.TimApi.Constants.ReceiptItemType.SignatureLine
+  name: SignatureLine
+  href: api/SIX.TimApi.Constants.ReceiptItemType.html#SIX_TimApi_Constants_ReceiptItemType_SignatureLine
+  commentId: F:SIX.TimApi.Constants.ReceiptItemType.SignatureLine
+  fullName: SIX.TimApi.Constants.ReceiptItemType.SignatureLine
+  nameWithType: ReceiptItemType.SignatureLine
 - uid: SIX.TimApi.Constants.ReceiptItemType.SurchargeAmount
   name: SurchargeAmount
   href: api/SIX.TimApi.Constants.ReceiptItemType.html#SIX_TimApi_Constants_ReceiptItemType_SurchargeAmount
@@ -7228,6 +7276,12 @@ references:
   commentId: F:SIX.TimApi.Constants.ResourceId.PetrolWelcomeShopOpen
   fullName: SIX.TimApi.Constants.ResourceId.PetrolWelcomeShopOpen
   nameWithType: ResourceId.PetrolWelcomeShopOpen
+- uid: SIX.TimApi.Constants.ResourceId.PostConfirmCostsForUseCase
+  name: PostConfirmCostsForUseCase
+  href: api/SIX.TimApi.Constants.ResourceId.html#SIX_TimApi_Constants_ResourceId_PostConfirmCostsForUseCase
+  commentId: F:SIX.TimApi.Constants.ResourceId.PostConfirmCostsForUseCase
+  fullName: SIX.TimApi.Constants.ResourceId.PostConfirmCostsForUseCase
+  nameWithType: ResourceId.PostConfirmCostsForUseCase
 - uid: SIX.TimApi.Constants.ResourceId.PostDepositOwnAccount
   name: PostDepositOwnAccount
   href: api/SIX.TimApi.Constants.ResourceId.html#SIX_TimApi_Constants_ResourceId_PostDepositOwnAccount
@@ -8350,6 +8404,12 @@ references:
   commentId: F:SIX.TimApi.Constants.ResultCode.UnsupportedCharactersInMessage
   fullName: SIX.TimApi.Constants.ResultCode.UnsupportedCharactersInMessage
   nameWithType: ResultCode.UnsupportedCharactersInMessage
+- uid: SIX.TimApi.Constants.ResultCode.UnsupportedReferenceAge
+  name: UnsupportedReferenceAge
+  href: api/SIX.TimApi.Constants.ResultCode.html#SIX_TimApi_Constants_ResultCode_UnsupportedReferenceAge
+  commentId: F:SIX.TimApi.Constants.ResultCode.UnsupportedReferenceAge
+  fullName: SIX.TimApi.Constants.ResultCode.UnsupportedReferenceAge
+  nameWithType: ResultCode.UnsupportedReferenceAge
 - uid: SIX.TimApi.Constants.ResultCode.ValueOutOfRangeInThisContext
   name: ValueOutOfRangeInThisContext
   href: api/SIX.TimApi.Constants.ResultCode.html#SIX_TimApi_Constants_ResultCode_ValueOutOfRangeInThisContext
@@ -9850,6 +9910,19 @@ references:
   isSpec: "True"
   fullName: SIX.TimApi.DefaultTerminalListener.ActivateServiceMenuCompleted
   nameWithType: DefaultTerminalListener.ActivateServiceMenuCompleted
+- uid: SIX.TimApi.DefaultTerminalListener.AgeCheckCompleted(SIX.TimApi.TimEvent,SIX.TimApi.TransactionInformation)
+  name: AgeCheckCompleted(TimEvent, TransactionInformation)
+  href: api/SIX.TimApi.DefaultTerminalListener.html#SIX_TimApi_DefaultTerminalListener_AgeCheckCompleted_SIX_TimApi_TimEvent_SIX_TimApi_TransactionInformation_
+  commentId: M:SIX.TimApi.DefaultTerminalListener.AgeCheckCompleted(SIX.TimApi.TimEvent,SIX.TimApi.TransactionInformation)
+  fullName: SIX.TimApi.DefaultTerminalListener.AgeCheckCompleted(SIX.TimApi.TimEvent, SIX.TimApi.TransactionInformation)
+  nameWithType: DefaultTerminalListener.AgeCheckCompleted(TimEvent, TransactionInformation)
+- uid: SIX.TimApi.DefaultTerminalListener.AgeCheckCompleted*
+  name: AgeCheckCompleted
+  href: api/SIX.TimApi.DefaultTerminalListener.html#SIX_TimApi_DefaultTerminalListener_AgeCheckCompleted_
+  commentId: Overload:SIX.TimApi.DefaultTerminalListener.AgeCheckCompleted
+  isSpec: "True"
+  fullName: SIX.TimApi.DefaultTerminalListener.AgeCheckCompleted
+  nameWithType: DefaultTerminalListener.AgeCheckCompleted
 - uid: SIX.TimApi.DefaultTerminalListener.ApplicationInformationCompleted(SIX.TimApi.TimEvent)
   name: ApplicationInformationCompleted(TimEvent)
   href: api/SIX.TimApi.DefaultTerminalListener.html#SIX_TimApi_DefaultTerminalListener_ApplicationInformationCompleted_SIX_TimApi_TimEvent_
@@ -11092,12 +11165,12 @@ references:
   commentId: T:SIX.TimApi.FeaturesPayment
   fullName: SIX.TimApi.FeaturesPayment
   nameWithType: FeaturesPayment
-- uid: SIX.TimApi.FeaturesPayment.#ctor(System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean)
-  name: FeaturesPayment(Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean)
-  href: api/SIX.TimApi.FeaturesPayment.html#SIX_TimApi_FeaturesPayment__ctor_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_
-  commentId: M:SIX.TimApi.FeaturesPayment.#ctor(System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean)
-  fullName: SIX.TimApi.FeaturesPayment.FeaturesPayment(System.Boolean, System.Boolean, System.Boolean, System.Boolean, System.Boolean, System.Boolean, System.Boolean, System.Boolean, System.Boolean, System.Boolean, System.Boolean, System.Boolean, System.Boolean, System.Boolean)
-  nameWithType: FeaturesPayment.FeaturesPayment(Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean)
+- uid: SIX.TimApi.FeaturesPayment.#ctor(System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,SIX.TimApi.FeaturesPayment.AgeCheckSupport)
+  name: FeaturesPayment(Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, FeaturesPayment.AgeCheckSupport)
+  href: api/SIX.TimApi.FeaturesPayment.html#SIX_TimApi_FeaturesPayment__ctor_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_SIX_TimApi_FeaturesPayment_AgeCheckSupport_
+  commentId: M:SIX.TimApi.FeaturesPayment.#ctor(System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,SIX.TimApi.FeaturesPayment.AgeCheckSupport)
+  fullName: SIX.TimApi.FeaturesPayment.FeaturesPayment(System.Boolean, System.Boolean, System.Boolean, System.Boolean, System.Boolean, System.Boolean, System.Boolean, System.Boolean, System.Boolean, System.Boolean, System.Boolean, System.Boolean, System.Boolean, System.Boolean, SIX.TimApi.FeaturesPayment.AgeCheckSupport)
+  nameWithType: FeaturesPayment.FeaturesPayment(Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, FeaturesPayment.AgeCheckSupport)
 - uid: SIX.TimApi.FeaturesPayment.#ctor*
   name: FeaturesPayment
   href: api/SIX.TimApi.FeaturesPayment.html#SIX_TimApi_FeaturesPayment__ctor_
@@ -11105,6 +11178,30 @@ references:
   isSpec: "True"
   fullName: SIX.TimApi.FeaturesPayment.FeaturesPayment
   nameWithType: FeaturesPayment.FeaturesPayment
+- uid: SIX.TimApi.FeaturesPayment.AgeCheckSupport
+  name: FeaturesPayment.AgeCheckSupport
+  href: api/SIX.TimApi.FeaturesPayment.AgeCheckSupport.html
+  commentId: T:SIX.TimApi.FeaturesPayment.AgeCheckSupport
+  fullName: SIX.TimApi.FeaturesPayment.AgeCheckSupport
+  nameWithType: FeaturesPayment.AgeCheckSupport
+- uid: SIX.TimApi.FeaturesPayment.AgeCheckSupport.NotSupported
+  name: NotSupported
+  href: api/SIX.TimApi.FeaturesPayment.AgeCheckSupport.html#SIX_TimApi_FeaturesPayment_AgeCheckSupport_NotSupported
+  commentId: F:SIX.TimApi.FeaturesPayment.AgeCheckSupport.NotSupported
+  fullName: SIX.TimApi.FeaturesPayment.AgeCheckSupport.NotSupported
+  nameWithType: FeaturesPayment.AgeCheckSupport.NotSupported
+- uid: SIX.TimApi.FeaturesPayment.AgeCheckSupport.OnlyAgeCheck
+  name: OnlyAgeCheck
+  href: api/SIX.TimApi.FeaturesPayment.AgeCheckSupport.html#SIX_TimApi_FeaturesPayment_AgeCheckSupport_OnlyAgeCheck
+  commentId: F:SIX.TimApi.FeaturesPayment.AgeCheckSupport.OnlyAgeCheck
+  fullName: SIX.TimApi.FeaturesPayment.AgeCheckSupport.OnlyAgeCheck
+  nameWithType: FeaturesPayment.AgeCheckSupport.OnlyAgeCheck
+- uid: SIX.TimApi.FeaturesPayment.AgeCheckSupport.TransactionAgeCheck
+  name: TransactionAgeCheck
+  href: api/SIX.TimApi.FeaturesPayment.AgeCheckSupport.html#SIX_TimApi_FeaturesPayment_AgeCheckSupport_TransactionAgeCheck
+  commentId: F:SIX.TimApi.FeaturesPayment.AgeCheckSupport.TransactionAgeCheck
+  fullName: SIX.TimApi.FeaturesPayment.AgeCheckSupport.TransactionAgeCheck
+  nameWithType: FeaturesPayment.AgeCheckSupport.TransactionAgeCheck
 - uid: SIX.TimApi.FeaturesPayment.canAccountSelection
   name: canAccountSelection()
   href: api/SIX.TimApi.FeaturesPayment.html#SIX_TimApi_FeaturesPayment_canAccountSelection
@@ -11274,6 +11371,12 @@ references:
   isSpec: "True"
   fullName: SIX.TimApi.FeaturesPayment.canSurcharge
   nameWithType: FeaturesPayment.canSurcharge
+- uid: SIX.TimApi.FeaturesPayment.Ep2AgeCheck
+  name: Ep2AgeCheck
+  href: api/SIX.TimApi.FeaturesPayment.html#SIX_TimApi_FeaturesPayment_Ep2AgeCheck
+  commentId: F:SIX.TimApi.FeaturesPayment.Ep2AgeCheck
+  fullName: SIX.TimApi.FeaturesPayment.Ep2AgeCheck
+  nameWithType: FeaturesPayment.Ep2AgeCheck
 - uid: SIX.TimApi.FeaturesPayment.isEp2Available
   name: isEp2Available()
   href: api/SIX.TimApi.FeaturesPayment.html#SIX_TimApi_FeaturesPayment_isEp2Available
@@ -14371,6 +14474,12 @@ references:
   commentId: F:SIX.TimApi.Receipts.CustomReceiptFormatter.Condition.EFT_INFO
   fullName: SIX.TimApi.Receipts.CustomReceiptFormatter.Condition.EFT_INFO
   nameWithType: CustomReceiptFormatter.Condition.EFT_INFO
+- uid: SIX.TimApi.Receipts.CustomReceiptFormatter.Condition.FOOTER
+  name: FOOTER
+  href: api/SIX.TimApi.Receipts.CustomReceiptFormatter.Condition.html#SIX_TimApi_Receipts_CustomReceiptFormatter_Condition_FOOTER
+  commentId: F:SIX.TimApi.Receipts.CustomReceiptFormatter.Condition.FOOTER
+  fullName: SIX.TimApi.Receipts.CustomReceiptFormatter.Condition.FOOTER
+  nameWithType: CustomReceiptFormatter.Condition.FOOTER
 - uid: SIX.TimApi.Receipts.CustomReceiptFormatter.Condition.HAS_VALUES
   name: HAS_VALUES
   href: api/SIX.TimApi.Receipts.CustomReceiptFormatter.Condition.html#SIX_TimApi_Receipts_CustomReceiptFormatter_Condition_HAS_VALUES
@@ -14383,6 +14492,12 @@ references:
   commentId: F:SIX.TimApi.Receipts.CustomReceiptFormatter.Condition.HAS_VALUES_NO_INVALID_FIELD
   fullName: SIX.TimApi.Receipts.CustomReceiptFormatter.Condition.HAS_VALUES_NO_INVALID_FIELD
   nameWithType: CustomReceiptFormatter.Condition.HAS_VALUES_NO_INVALID_FIELD
+- uid: SIX.TimApi.Receipts.CustomReceiptFormatter.Condition.HEADER
+  name: HEADER
+  href: api/SIX.TimApi.Receipts.CustomReceiptFormatter.Condition.html#SIX_TimApi_Receipts_CustomReceiptFormatter_Condition_HEADER
+  commentId: F:SIX.TimApi.Receipts.CustomReceiptFormatter.Condition.HEADER
+  fullName: SIX.TimApi.Receipts.CustomReceiptFormatter.Condition.HEADER
+  nameWithType: CustomReceiptFormatter.Condition.HEADER
 - uid: SIX.TimApi.Receipts.CustomReceiptFormatter.Condition.INSTALLMENT
   name: INSTALLMENT
   href: api/SIX.TimApi.Receipts.CustomReceiptFormatter.Condition.html#SIX_TimApi_Receipts_CustomReceiptFormatter_Condition_INSTALLMENT
@@ -14655,6 +14770,15 @@ references:
   fullName.vb: SIX.TimApi.Receipts.CustomReceiptFormatter.resolveField(System.Collections.Generic.List(Of SIX.TimApi.ReceiptItem), SIX.TimApi.Constants.ReceiptItemType, SIX.TimApi.Receipts.CustomReceiptFormatter.Counters, System.Int32, System.Char)
   nameWithType: CustomReceiptFormatter.resolveField(List<ReceiptItem>, ReceiptItemType, CustomReceiptFormatter.Counters, Int32, Char)
   nameWithType.vb: CustomReceiptFormatter.resolveField(List(Of ReceiptItem), ReceiptItemType, CustomReceiptFormatter.Counters, Int32, Char)
+- uid: SIX.TimApi.Receipts.CustomReceiptFormatter.resolveField(System.Collections.Generic.List{SIX.TimApi.ReceiptItem},SIX.TimApi.Constants.ReceiptItemType,System.String)
+  name: resolveField(List<ReceiptItem>, ReceiptItemType, String)
+  href: api/SIX.TimApi.Receipts.CustomReceiptFormatter.html#SIX_TimApi_Receipts_CustomReceiptFormatter_resolveField_System_Collections_Generic_List_SIX_TimApi_ReceiptItem__SIX_TimApi_Constants_ReceiptItemType_System_String_
+  commentId: M:SIX.TimApi.Receipts.CustomReceiptFormatter.resolveField(System.Collections.Generic.List{SIX.TimApi.ReceiptItem},SIX.TimApi.Constants.ReceiptItemType,System.String)
+  name.vb: resolveField(List(Of ReceiptItem), ReceiptItemType, String)
+  fullName: SIX.TimApi.Receipts.CustomReceiptFormatter.resolveField(System.Collections.Generic.List<SIX.TimApi.ReceiptItem>, SIX.TimApi.Constants.ReceiptItemType, System.String)
+  fullName.vb: SIX.TimApi.Receipts.CustomReceiptFormatter.resolveField(System.Collections.Generic.List(Of SIX.TimApi.ReceiptItem), SIX.TimApi.Constants.ReceiptItemType, System.String)
+  nameWithType: CustomReceiptFormatter.resolveField(List<ReceiptItem>, ReceiptItemType, String)
+  nameWithType.vb: CustomReceiptFormatter.resolveField(List(Of ReceiptItem), ReceiptItemType, String)
 - uid: SIX.TimApi.Receipts.CustomReceiptFormatter.resolveField*
   name: resolveField
   href: api/SIX.TimApi.Receipts.CustomReceiptFormatter.html#SIX_TimApi_Receipts_CustomReceiptFormatter_resolveField_
@@ -15714,6 +15838,12 @@ references:
   commentId: F:SIX.TimApi.RequestTypes.ActivateServiceMenu
   fullName: SIX.TimApi.RequestTypes.ActivateServiceMenu
   nameWithType: RequestTypes.ActivateServiceMenu
+- uid: SIX.TimApi.RequestTypes.AgeCheck
+  name: AgeCheck
+  href: api/SIX.TimApi.RequestTypes.html#SIX_TimApi_RequestTypes_AgeCheck
+  commentId: F:SIX.TimApi.RequestTypes.AgeCheck
+  fullName: SIX.TimApi.RequestTypes.AgeCheck
+  nameWithType: RequestTypes.AgeCheck
 - uid: SIX.TimApi.RequestTypes.AmtAdjustment
   name: AmtAdjustment
   href: api/SIX.TimApi.RequestTypes.html#SIX_TimApi_RequestTypes_AmtAdjustment
@@ -17209,6 +17339,69 @@ references:
   isSpec: "True"
   fullName: SIX.TimApi.Terminal.AddListener
   nameWithType: Terminal.AddListener
+- uid: SIX.TimApi.Terminal.AgeCheck(System.Int64)
+  name: AgeCheck(Int64)
+  href: api/SIX.TimApi.Terminal.html#SIX_TimApi_Terminal_AgeCheck_System_Int64_
+  commentId: M:SIX.TimApi.Terminal.AgeCheck(System.Int64)
+  fullName: SIX.TimApi.Terminal.AgeCheck(System.Int64)
+  nameWithType: Terminal.AgeCheck(Int64)
+- uid: SIX.TimApi.Terminal.AgeCheck*
+  name: AgeCheck
+  href: api/SIX.TimApi.Terminal.html#SIX_TimApi_Terminal_AgeCheck_
+  commentId: Overload:SIX.TimApi.Terminal.AgeCheck
+  isSpec: "True"
+  fullName: SIX.TimApi.Terminal.AgeCheck
+  nameWithType: Terminal.AgeCheck
+- uid: SIX.TimApi.Terminal.AgeCheckAsync(System.Int64)
+  name: AgeCheckAsync(Int64)
+  href: api/SIX.TimApi.Terminal.html#SIX_TimApi_Terminal_AgeCheckAsync_System_Int64_
+  commentId: M:SIX.TimApi.Terminal.AgeCheckAsync(System.Int64)
+  fullName: SIX.TimApi.Terminal.AgeCheckAsync(System.Int64)
+  nameWithType: Terminal.AgeCheckAsync(Int64)
+- uid: SIX.TimApi.Terminal.AgeCheckAsync*
+  name: AgeCheckAsync
+  href: api/SIX.TimApi.Terminal.html#SIX_TimApi_Terminal_AgeCheckAsync_
+  commentId: Overload:SIX.TimApi.Terminal.AgeCheckAsync
+  isSpec: "True"
+  fullName: SIX.TimApi.Terminal.AgeCheckAsync
+  nameWithType: Terminal.AgeCheckAsync
+- uid: SIX.TimApi.Terminal.AgeCheckCompleted
+  name: AgeCheckCompleted
+  href: api/SIX.TimApi.Terminal.html#SIX_TimApi_Terminal_AgeCheckCompleted
+  commentId: E:SIX.TimApi.Terminal.AgeCheckCompleted
+  fullName: SIX.TimApi.Terminal.AgeCheckCompleted
+  nameWithType: Terminal.AgeCheckCompleted
+- uid: SIX.TimApi.Terminal.AgeCheckCompletedEventArgs
+  name: Terminal.AgeCheckCompletedEventArgs
+  href: api/SIX.TimApi.Terminal.AgeCheckCompletedEventArgs.html
+  commentId: T:SIX.TimApi.Terminal.AgeCheckCompletedEventArgs
+  fullName: SIX.TimApi.Terminal.AgeCheckCompletedEventArgs
+  nameWithType: Terminal.AgeCheckCompletedEventArgs
+- uid: SIX.TimApi.Terminal.AgeCheckCompletedEventArgs.#ctor(SIX.TimApi.Terminal.RequestCompletedEventArgs,SIX.TimApi.TransactionInformation)
+  name: AgeCheckCompletedEventArgs(Terminal.RequestCompletedEventArgs, TransactionInformation)
+  href: api/SIX.TimApi.Terminal.AgeCheckCompletedEventArgs.html#SIX_TimApi_Terminal_AgeCheckCompletedEventArgs__ctor_SIX_TimApi_Terminal_RequestCompletedEventArgs_SIX_TimApi_TransactionInformation_
+  commentId: M:SIX.TimApi.Terminal.AgeCheckCompletedEventArgs.#ctor(SIX.TimApi.Terminal.RequestCompletedEventArgs,SIX.TimApi.TransactionInformation)
+  fullName: SIX.TimApi.Terminal.AgeCheckCompletedEventArgs.AgeCheckCompletedEventArgs(SIX.TimApi.Terminal.RequestCompletedEventArgs, SIX.TimApi.TransactionInformation)
+  nameWithType: Terminal.AgeCheckCompletedEventArgs.AgeCheckCompletedEventArgs(Terminal.RequestCompletedEventArgs, TransactionInformation)
+- uid: SIX.TimApi.Terminal.AgeCheckCompletedEventArgs.#ctor*
+  name: AgeCheckCompletedEventArgs
+  href: api/SIX.TimApi.Terminal.AgeCheckCompletedEventArgs.html#SIX_TimApi_Terminal_AgeCheckCompletedEventArgs__ctor_
+  commentId: Overload:SIX.TimApi.Terminal.AgeCheckCompletedEventArgs.#ctor
+  isSpec: "True"
+  fullName: SIX.TimApi.Terminal.AgeCheckCompletedEventArgs.AgeCheckCompletedEventArgs
+  nameWithType: Terminal.AgeCheckCompletedEventArgs.AgeCheckCompletedEventArgs
+- uid: SIX.TimApi.Terminal.AgeCheckCompletedEventArgs.Data
+  name: Data
+  href: api/SIX.TimApi.Terminal.AgeCheckCompletedEventArgs.html#SIX_TimApi_Terminal_AgeCheckCompletedEventArgs_Data
+  commentId: F:SIX.TimApi.Terminal.AgeCheckCompletedEventArgs.Data
+  fullName: SIX.TimApi.Terminal.AgeCheckCompletedEventArgs.Data
+  nameWithType: Terminal.AgeCheckCompletedEventArgs.Data
+- uid: SIX.TimApi.Terminal.AgeCheckCompletedEventHandler
+  name: Terminal.AgeCheckCompletedEventHandler
+  href: api/SIX.TimApi.Terminal.AgeCheckCompletedEventHandler.html
+  commentId: T:SIX.TimApi.Terminal.AgeCheckCompletedEventHandler
+  fullName: SIX.TimApi.Terminal.AgeCheckCompletedEventHandler
+  nameWithType: Terminal.AgeCheckCompletedEventHandler
 - uid: SIX.TimApi.Terminal.AllowedThirdPartyApps
   name: AllowedThirdPartyApps
   href: api/SIX.TimApi.Terminal.html#SIX_TimApi_Terminal_AllowedThirdPartyApps
@@ -17901,6 +18094,19 @@ references:
   commentId: T:SIX.TimApi.Terminal.ConnectCompletedHandler
   fullName: SIX.TimApi.Terminal.ConnectCompletedHandler
   nameWithType: Terminal.ConnectCompletedHandler
+- uid: SIX.TimApi.Terminal.ConvertSIXTransRefToLegacy(System.String)
+  name: ConvertSIXTransRefToLegacy(String)
+  href: api/SIX.TimApi.Terminal.html#SIX_TimApi_Terminal_ConvertSIXTransRefToLegacy_System_String_
+  commentId: M:SIX.TimApi.Terminal.ConvertSIXTransRefToLegacy(System.String)
+  fullName: SIX.TimApi.Terminal.ConvertSIXTransRefToLegacy(System.String)
+  nameWithType: Terminal.ConvertSIXTransRefToLegacy(String)
+- uid: SIX.TimApi.Terminal.ConvertSIXTransRefToLegacy*
+  name: ConvertSIXTransRefToLegacy
+  href: api/SIX.TimApi.Terminal.html#SIX_TimApi_Terminal_ConvertSIXTransRefToLegacy_
+  commentId: Overload:SIX.TimApi.Terminal.ConvertSIXTransRefToLegacy
+  isSpec: "True"
+  fullName: SIX.TimApi.Terminal.ConvertSIXTransRefToLegacy
+  nameWithType: Terminal.ConvertSIXTransRefToLegacy
 - uid: SIX.TimApi.Terminal.CounterRequest(SIX.TimApi.Constants.CounterType)
   name: CounterRequest(CounterType)
   href: api/SIX.TimApi.Terminal.html#SIX_TimApi_Terminal_CounterRequest_SIX_TimApi_Constants_CounterType_
@@ -20702,6 +20908,19 @@ references:
   isSpec: "True"
   fullName: SIX.TimApi.TerminalListener.ActivateServiceMenuCompleted
   nameWithType: TerminalListener.ActivateServiceMenuCompleted
+- uid: SIX.TimApi.TerminalListener.AgeCheckCompleted(SIX.TimApi.TimEvent,SIX.TimApi.TransactionInformation)
+  name: AgeCheckCompleted(TimEvent, TransactionInformation)
+  href: api/SIX.TimApi.TerminalListener.html#SIX_TimApi_TerminalListener_AgeCheckCompleted_SIX_TimApi_TimEvent_SIX_TimApi_TransactionInformation_
+  commentId: M:SIX.TimApi.TerminalListener.AgeCheckCompleted(SIX.TimApi.TimEvent,SIX.TimApi.TransactionInformation)
+  fullName: SIX.TimApi.TerminalListener.AgeCheckCompleted(SIX.TimApi.TimEvent, SIX.TimApi.TransactionInformation)
+  nameWithType: TerminalListener.AgeCheckCompleted(TimEvent, TransactionInformation)
+- uid: SIX.TimApi.TerminalListener.AgeCheckCompleted*
+  name: AgeCheckCompleted
+  href: api/SIX.TimApi.TerminalListener.html#SIX_TimApi_TerminalListener_AgeCheckCompleted_
+  commentId: Overload:SIX.TimApi.TerminalListener.AgeCheckCompleted
+  isSpec: "True"
+  fullName: SIX.TimApi.TerminalListener.AgeCheckCompleted
+  nameWithType: TerminalListener.AgeCheckCompleted
 - uid: SIX.TimApi.TerminalListener.ApplicationInformationCompleted(SIX.TimApi.TimEvent)
   name: ApplicationInformationCompleted(TimEvent)
   href: api/SIX.TimApi.TerminalListener.html#SIX_TimApi_TerminalListener_ApplicationInformationCompleted_SIX_TimApi_TimEvent_
@@ -22754,6 +22973,19 @@ references:
   isSpec: "True"
   fullName: SIX.TimApi.TransactionData.AcqTransRef
   nameWithType: TransactionData.AcqTransRef
+- uid: SIX.TimApi.TransactionData.AgeToCheck
+  name: AgeToCheck
+  href: api/SIX.TimApi.TransactionData.html#SIX_TimApi_TransactionData_AgeToCheck
+  commentId: P:SIX.TimApi.TransactionData.AgeToCheck
+  fullName: SIX.TimApi.TransactionData.AgeToCheck
+  nameWithType: TransactionData.AgeToCheck
+- uid: SIX.TimApi.TransactionData.AgeToCheck*
+  name: AgeToCheck
+  href: api/SIX.TimApi.TransactionData.html#SIX_TimApi_TransactionData_AgeToCheck_
+  commentId: Overload:SIX.TimApi.TransactionData.AgeToCheck
+  isSpec: "True"
+  fullName: SIX.TimApi.TransactionData.AgeToCheck
+  nameWithType: TransactionData.AgeToCheck
 - uid: SIX.TimApi.TransactionData.AllowedAccounts
   name: AllowedAccounts
   href: api/SIX.TimApi.TransactionData.html#SIX_TimApi_TransactionData_AllowedAccounts
@@ -23329,6 +23561,19 @@ references:
   isSpec: "True"
   fullName: SIX.TimApi.TransactionInformation.AcqTransRef
   nameWithType: TransactionInformation.AcqTransRef
+- uid: SIX.TimApi.TransactionInformation.AgeCheckResult
+  name: AgeCheckResult
+  href: api/SIX.TimApi.TransactionInformation.html#SIX_TimApi_TransactionInformation_AgeCheckResult
+  commentId: P:SIX.TimApi.TransactionInformation.AgeCheckResult
+  fullName: SIX.TimApi.TransactionInformation.AgeCheckResult
+  nameWithType: TransactionInformation.AgeCheckResult
+- uid: SIX.TimApi.TransactionInformation.AgeCheckResult*
+  name: AgeCheckResult
+  href: api/SIX.TimApi.TransactionInformation.html#SIX_TimApi_TransactionInformation_AgeCheckResult_
+  commentId: Overload:SIX.TimApi.TransactionInformation.AgeCheckResult
+  isSpec: "True"
+  fullName: SIX.TimApi.TransactionInformation.AgeCheckResult
+  nameWithType: TransactionInformation.AgeCheckResult
 - uid: SIX.TimApi.TransactionInformation.AuthCode
   name: AuthCode
   href: api/SIX.TimApi.TransactionInformation.html#SIX_TimApi_TransactionInformation_AuthCode
@@ -24423,6 +24668,19 @@ references:
   isSpec: "True"
   fullName: SIX.TimApi.Utility.Logger.Logger.entering
   nameWithType: Logger.entering
+- uid: SIX.TimApi.Utility.Logger.Logger.exception(System.String,System.Exception)
+  name: exception(String, Exception)
+  href: api/SIX.TimApi.Utility.Logger.Logger.html#SIX_TimApi_Utility_Logger_Logger_exception_System_String_System_Exception_
+  commentId: M:SIX.TimApi.Utility.Logger.Logger.exception(System.String,System.Exception)
+  fullName: SIX.TimApi.Utility.Logger.Logger.exception(System.String, System.Exception)
+  nameWithType: Logger.exception(String, Exception)
+- uid: SIX.TimApi.Utility.Logger.Logger.exception*
+  name: exception
+  href: api/SIX.TimApi.Utility.Logger.Logger.html#SIX_TimApi_Utility_Logger_Logger_exception_
+  commentId: Overload:SIX.TimApi.Utility.Logger.Logger.exception
+  isSpec: "True"
+  fullName: SIX.TimApi.Utility.Logger.Logger.exception
+  nameWithType: Logger.exception
 - uid: SIX.TimApi.Utility.Logger.Logger.exiting(System.String,System.String)
   name: exiting(String, String)
   href: api/SIX.TimApi.Utility.Logger.Logger.html#SIX_TimApi_Utility_Logger_Logger_exiting_System_String_System_String_

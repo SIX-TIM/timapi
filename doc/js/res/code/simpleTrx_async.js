@@ -24,7 +24,7 @@ function initTimApi(){
 
  settings.autoCommit = false;
  
- // The integrator id is provided by SIX Payment Services / Worldline
+ // The integrator id is provided by Worldline
  // to identify the integrator for support purposes.
  settings.integratorId = "0e6b1705-ab96-455b-9ba3-a77dd919d7a5";
 

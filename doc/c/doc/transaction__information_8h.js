@@ -4,6 +4,7 @@ var transaction__information_8h =
     [ "ta_transaction_information_get_acq", "transaction__information_8h.html#ae4cba84c86e9f14eb273cbe634fbea07", null ],
     [ "ta_transaction_information_get_acq_id", "transaction__information_8h.html#a17398a7c75990e27d0a9ed6716909e8e", null ],
     [ "ta_transaction_information_get_acq_trans_ref", "transaction__information_8h.html#abc1909d7cf496cda810138b564da0b82", null ],
+    [ "ta_transaction_information_get_age_check_result", "transaction__information_8h.html#a3ed3f7ddc9723f3b4f7b3be86824550c", null ],
     [ "ta_transaction_information_get_auth_code", "transaction__information_8h.html#a40d5355d750f73743256828962fc4f35", null ],
     [ "ta_transaction_information_get_card_id", "transaction__information_8h.html#a141aa3b3030fb7241e95d32cb877255c", null ],
     [ "ta_transaction_information_get_cardholder_name", "transaction__information_8h.html#ab6251947120a4b1fc85f1b1247b84f36", null ],

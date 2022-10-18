@@ -276,6 +276,10 @@ Functions</h2></td></tr>
 <tr class="separator:a91473b923187c6f25a7d9f9117a1eec0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac585ece34a7a6122946e83b6e23d60f0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="result__code_8h.html#ab4ec13ca136d8c8377f07b334c5c431e">ta_e_result_code_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="transaction__data_8h.html#ac585ece34a7a6122946e83b6e23d60f0">ta_transaction_data_set_omnichannel_merchant_id</a> (<a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a> trx_data, <a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a> merchant_id)</td></tr>
 <tr class="separator:ac585ece34a7a6122946e83b6e23d60f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a8fd2e15602142318ba180b82ab94dd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="result__code_8h.html#ab4ec13ca136d8c8377f07b334c5c431e">ta_e_result_code_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="transaction__data_8h.html#a4a8fd2e15602142318ba180b82ab94dd">ta_transaction_data_get_age_to_check</a> (<a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a> trx_data, <a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a> *age_to_check)</td></tr>
+<tr class="separator:a4a8fd2e15602142318ba180b82ab94dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a1a6a057322bf574d76f87ffbab8377"><td class="memItemLeft" align="right" valign="top"><a class="el" href="result__code_8h.html#ab4ec13ca136d8c8377f07b334c5c431e">ta_e_result_code_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="transaction__data_8h.html#a9a1a6a057322bf574d76f87ffbab8377">ta_transaction_data_set_age_to_check</a> (<a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a> trx_data, <a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a> age_to_check)</td></tr>
+<tr class="separator:a9a1a6a057322bf574d76f87ffbab8377"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="a08d7b1f880ece1fb8444d675f300c260"></a>
@@ -445,6 +449,51 @@ Functions</h2></td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>trx_data</em> is <em>ta_object_invalid</em>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>trx_data</em> is not of type <a class="el" href="transaction__data_8h.html">transaction_data</a>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>acq_trans_ref</em> is <em>null-pointer</em>. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a4a8fd2e15602142318ba180b82ab94dd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4a8fd2e15602142318ba180b82ab94dd">&#9670;&nbsp;</a></span>ta_transaction_data_get_age_to_check()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="result__code_8h.html#ab4ec13ca136d8c8377f07b334c5c431e">ta_e_result_code_t</a> ta_transaction_data_get_age_to_check </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a>&#160;</td>
+          <td class="paramname"><em>trx_data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a> *&#160;</td>
+          <td class="paramname"><em>age_to_check</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Age to check.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">trx_data</td><td>Object instance of type <a class="el" href="transaction__data_8h.html">transaction_data</a>. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">age_to_check</td><td>Pointer to variable to write object instance to. Object instance is of type <a class="el" href="integer_8h.html">integer</a> and is not retained. Object instance is <em>ta_object_invalid</em> if value is not set.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">ta_c_rc_ok</td><td>Object instance written to <em>merchant_id</em>. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>trx_data</em> is <em>ta_object_invalid</em>. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>trx_data</em> is not of type <a class="el" href="transaction__data_8h.html">transaction_data</a>. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>age_to_check</em> is <em>null-pointer</em>. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1504,7 +1553,7 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">trx_data</td><td>Object instance of type <a class="el" href="transaction__data_8h.html">transaction_data</a>. </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">token_pan_type</td><td>Pointer to variable to write value to. Value is <em>ta_c_ngvm_undefined</em> if value is not set in <em>trx_data</em>.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">token_pan_type</td><td>Pointer to variable to write value to. Value is <em>ta_c_tpt_undefined</em> if value is not set in <em>trx_data</em>.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1910,6 +1959,86 @@ Functions</h2></td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>trx_data</em> is <em>ta_object_invalid</em>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>trx_data</em> is not of type <a class="el" href="transaction__data_8h.html">transaction_data</a>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>acq_trans_ref</em> is not <em>ta_object_invalid</em> and is not of type <a class="el" href="string_8h.html">string</a>. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a9a1a6a057322bf574d76f87ffbab8377"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9a1a6a057322bf574d76f87ffbab8377">&#9670;&nbsp;</a></span>ta_transaction_data_set_age_to_check()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="result__code_8h.html#ab4ec13ca136d8c8377f07b334c5c431e">ta_e_result_code_t</a> ta_transaction_data_set_age_to_check </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a>&#160;</td>
+          <td class="paramname"><em>trx_data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a>&#160;</td>
+          <td class="paramname"><em>age_to_check</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Set age to check.</p>
+<p>Mandatory for (can not be null):</p>
+<p>Conditional for (can be null):</p><ul>
+<li>ta_c_tt_purchase</li>
+<li>ta_c_tt_purchase_with_cashback</li>
+<li>ta_c_tt_pre_authorization</li>
+<li>ta_c_tt_reservation</li>
+</ul>
+<p>Forbidden (has to be always null):</p><ul>
+<li>ta_c_tt_adjust_reservation</li>
+<li>ta_c_tt_cancel_reservation</li>
+<li>ta_c_tt_credit</li>
+<li>ta_c_tt_debt_recovery</li>
+<li>ta_c_tt_finalize_purchase</li>
+<li>ta_c_tt_purchase_phone_authorized</li>
+<li>ta_c_tt_purchase_reservation</li>
+<li>ta_c_tt_purchase_reservation_phone_authorized</li>
+<li>ta_c_tt_reversal</li>
+<li>ta_c_tt_account_verification</li>
+<li>ta_c_tt_activate_card</li>
+<li>ta_c_tt_authorize_credit</li>
+<li>ta_c_tt_authorize_deposit</li>
+<li>ta_c_tt_cash_advance</li>
+<li>ta_c_tt_collect_points</li>
+<li>ta_c_tt_combined</li>
+<li>ta_c_tt_funding</li>
+<li>ta_c_tt_giro</li>
+<li>ta_c_tt_load</li>
+<li>ta_c_tt_load_voucher</li>
+<li>ta_c_tt_purchase_forced_acceptance</li>
+<li>ta_c_tt_purchase_mail_ordered</li>
+<li>ta_c_tt_purchase_phone_ordered</li>
+<li>ta_c_tt_refunding</li>
+<li>ta_c_tt_unload</li>
+</ul>
+<p>Transactions will fail if one of the above mentioned restrictions are violated.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">trx_data</td><td>Object instance of type <a class="el" href="transaction__data_8h.html">transaction_data</a>. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">age_to_check</td><td>Object instance to set. Object instance can be <em>ta_object_invalid</em> to clear the value in <em>trx_data</em>. If object instance is not ta_object_invalid is has to be of type <a class="el" href="integer_8h.html">integer</a>.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">ta_c_rc_ok</td><td>Value assigned to <em>trx_data</em>. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>trx_data</em> is <em>ta_object_invalid</em>. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>trx_data</em> is not of type <a class="el" href="transaction__data_8h.html">transaction_data</a>. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>age_to_check</em> is <em>null-pointer</em>. </td></tr>
   </table>
   </dd>
 </dl>
@@ -3733,7 +3862,7 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">trx_data</td><td>Object instance of type <a class="el" href="transaction__data_8h.html">transaction_data</a>. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">token_pan_type</td><td>Value to set. Value can be <em>ta_c_ngvm_undefined</em> to clear the value in <em>trx_data</em>.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">token_pan_type</td><td>Value to set. Value can be <em>ta_c_tpt_undefined</em> to clear the value in <em>trx_data</em>.</td></tr>
   </table>
   </dd>
 </dl>
