@@ -930,35 +930,11 @@
     <div class="level0"><span class="xref">System.Object</span></div>
     <div class="level1"><span class="xref">LoyaltyCoupon</span></div>
   </div>
-  <div class="inheritedMembers">
-    <h5>Inherited Members</h5>
-    <div>
-      <span class="xref">System.Object.Equals(System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.GetHashCode()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.GetType()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.MemberwiseClone()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.ToString()</span>
-    </div>
-  </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="SIX.TimApi.html">SIX.TimApi</a></h6>
   <h6><strong>Assembly</strong>: TimApi.dll</h6>
   <h5 id="SIX_TimApi_LoyaltyCoupon_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class LoyaltyCoupon</code></pre>
+    <pre><code class="lang-csharp hljs">public class LoyaltyCoupon : object</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -992,12 +968,12 @@
   
   
   <a id="SIX_TimApi_LoyaltyCoupon__ctor_" data-uid="SIX.TimApi.LoyaltyCoupon.#ctor*"></a>
-  <h4 id="SIX_TimApi_LoyaltyCoupon__ctor_System_Int32_System_String_System_String_System_Int32_SIX_TimApi_Constants_CouponRejectionReason_" data-uid="SIX.TimApi.LoyaltyCoupon.#ctor(System.Int32,System.String,System.String,System.Int32,SIX.TimApi.Constants.CouponRejectionReason)">LoyaltyCoupon(Int32, String, String, Int32, CouponRejectionReason)</h4>
+  <h4 id="SIX_TimApi_LoyaltyCoupon__ctor_System_Int32_String_System_String_System_Int32_SIX_TimApi_Constants_CouponRejectionReason_" data-uid="SIX.TimApi.LoyaltyCoupon.#ctor(System.Int32,String,System.String,System.Int32,SIX.TimApi.Constants.CouponRejectionReason)">LoyaltyCoupon(Int32, String, String, Int32, CouponRejectionReason)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public LoyaltyCoupon(int amount, string couponId, string currency, int exponent, CouponRejectionReason couponRejectionReason)</code></pre>
+    <pre><code class="lang-csharp hljs">public LoyaltyCoupon(int amount, String couponId, string currency, int exponent, CouponRejectionReason couponRejectionReason)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1015,7 +991,7 @@
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="xref">String</span></td>
         <td><span class="parametername">couponId</span></td>
         <td></td>
       </tr>
@@ -1071,7 +1047,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string CouponId { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public String CouponId { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1083,7 +1059,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="xref">String</span></td>
         <td></td>
       </tr>
     </tbody>

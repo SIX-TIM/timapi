@@ -931,45 +931,24 @@
     <div class="level0"><span class="xref">System.Object</span></div>
     <div class="level1"><span class="xref">TransactionResponse</span></div>
   </div>
-  <div class="inheritedMembers">
-    <h5>Inherited Members</h5>
-    <div>
-      <span class="xref">System.Object.Equals(System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.GetHashCode()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.GetType()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.MemberwiseClone()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
-    </div>
-  </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="SIX.TimApi.html">SIX.TimApi</a></h6>
   <h6><strong>Assembly</strong>: TimApi.dll</h6>
   <h5 id="SIX_TimApi_TransactionResponse_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class TransactionResponse</code></pre>
+    <pre><code class="lang-csharp hljs">public class TransactionResponse : object</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
   
   
   <a id="SIX_TimApi_TransactionResponse__ctor_" data-uid="SIX.TimApi.TransactionResponse.#ctor*"></a>
-  <h4 id="SIX_TimApi_TransactionResponse__ctor_SIX_TimApi_Constants_TransactionType_SIX_TimApi_Amount_SIX_TimApi_Amount_SIX_TimApi_Amount_SIX_TimApi_AmountDcc_SIX_TimApi_Amount_SIX_TimApi_TransactionInformation_System_String_SIX_TimApi_CardData_SIX_TimApi_PrintData_SIX_TimApi_Amount_System_Collections_Generic_Dictionary_System_Int64_System_String__SIX_TimApi_Basket_SIX_TimApi_Amount_SIX_TimApi_Amount_" data-uid="SIX.TimApi.TransactionResponse.#ctor(SIX.TimApi.Constants.TransactionType,SIX.TimApi.Amount,SIX.TimApi.Amount,SIX.TimApi.Amount,SIX.TimApi.AmountDcc,SIX.TimApi.Amount,SIX.TimApi.TransactionInformation,System.String,SIX.TimApi.CardData,SIX.TimApi.PrintData,SIX.TimApi.Amount,System.Collections.Generic.Dictionary{System.Int64,System.String},SIX.TimApi.Basket,SIX.TimApi.Amount,SIX.TimApi.Amount)">TransactionResponse(TransactionType, Amount, Amount, Amount, AmountDcc, Amount, TransactionInformation, String, CardData, PrintData, Amount, Dictionary&lt;Int64, String&gt;, Basket, Amount, Amount)</h4>
+  <h4 id="SIX_TimApi_TransactionResponse__ctor_SIX_TimApi_Constants_TransactionType_SIX_TimApi_Amount_SIX_TimApi_Amount_SIX_TimApi_Amount_SIX_TimApi_AmountDcc_SIX_TimApi_Amount_SIX_TimApi_TransactionInformation_String_SIX_TimApi_CardData_SIX_TimApi_PrintData_SIX_TimApi_Amount_Dictionary_System_Int64_String__SIX_TimApi_Basket_SIX_TimApi_Amount_SIX_TimApi_Amount_" data-uid="SIX.TimApi.TransactionResponse.#ctor(SIX.TimApi.Constants.TransactionType,SIX.TimApi.Amount,SIX.TimApi.Amount,SIX.TimApi.Amount,SIX.TimApi.AmountDcc,SIX.TimApi.Amount,SIX.TimApi.TransactionInformation,String,SIX.TimApi.CardData,SIX.TimApi.PrintData,SIX.TimApi.Amount,Dictionary{System.Int64,String},SIX.TimApi.Basket,SIX.TimApi.Amount,SIX.TimApi.Amount)">TransactionResponse(TransactionType, Amount, Amount, Amount, AmountDcc, Amount, TransactionInformation, String, CardData, PrintData, Amount, Dictionary&lt;Int64, String&gt;, Basket, Amount, Amount)</h4>
   <div class="markdown level1 summary"><p>Create transaction response.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public TransactionResponse(TransactionType transactionType, Amount amount, Amount amountOther, Amount amountDue, AmountDcc amountDcc, Amount amountSaldo, TransactionInformation transactionInformation, string dccDisclaimer, CardData cardData, PrintData printData, Amount tipAmount, Dictionary&lt;long, string&gt; additionalInfo, Basket basket, Amount amountLoyaltyCashback, Amount amountSurcharge)</code></pre>
+    <pre><code class="lang-csharp hljs">public TransactionResponse(TransactionType transactionType, Amount amount, Amount amountOther, Amount amountDue, AmountDcc amountDcc, Amount amountSaldo, TransactionInformation transactionInformation, String dccDisclaimer, CardData cardData, PrintData printData, Amount tipAmount, Dictionary&lt;long, String&gt; additionalInfo, Basket basket, Amount amountLoyaltyCashback, Amount amountSurcharge)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1017,7 +996,7 @@
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="xref">String</span></td>
         <td><span class="parametername">dccDisclaimer</span></td>
         <td></td>
       </tr>
@@ -1037,7 +1016,7 @@
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;<span class="xref">System.Int64</span>, <span class="xref">System.String</span>&gt;</td>
+        <td><span class="xref">Dictionary</span>&lt;<span class="xref">System.Int64</span>, <span class="xref">String</span>&gt;</td>
         <td><span class="parametername">additionalInfo</span></td>
         <td></td>
       </tr>
@@ -1107,7 +1086,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;<span class="xref">System.Int64</span>, <span class="xref">System.String</span>&gt;</td>
+        <td><span class="xref">Dictionary</span>&lt;<span class="xref">System.Int64</span>, <span class="xref">System.String</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -1356,7 +1335,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string DccDisclaimer { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public String DccDisclaimer { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1368,7 +1347,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="xref">String</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -1462,7 +1441,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int cardCountryCode()</code></pre>
+    <pre><code class="lang-csharp hljs">public Int32 cardCountryCode()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1474,7 +1453,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Int32</span></td>
+        <td><span class="xref">Int32</span></td>
         <td><p>int?</p>
 </td>
       </tr>
@@ -1544,7 +1523,7 @@ and terminal country code are both set and are equal.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int terminalCountryCode()</code></pre>
+    <pre><code class="lang-csharp hljs">public Int32 terminalCountryCode()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1556,7 +1535,7 @@ and terminal country code are both set and are equal.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Int32</span></td>
+        <td><span class="xref">Int32</span></td>
         <td><p>Int32</p>
 </td>
       </tr>
@@ -1571,7 +1550,7 @@ and terminal country code are both set and are equal.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+    <pre><code class="lang-csharp hljs">public override String ToString()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1583,13 +1562,11 @@ and terminal country code are both set and are equal.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="xref">String</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  <h5 class="overrides">Overrides</h5>
-  <div><span class="xref">System.Object.ToString()</span></div>
   
   
   <a id="SIX_TimApi_TransactionResponse_wasDcc_" data-uid="SIX.TimApi.TransactionResponse.wasDcc*"></a>

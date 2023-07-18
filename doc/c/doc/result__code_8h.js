@@ -145,6 +145,10 @@ var result__code_8h =
       [ "ta_c_rc_no_account_selectable_with_given_restrictions", "result__code_8h.html#aebaf00d1ceef4b827866ca9de0bd3320adae95386cb32e9b1d5034c58198140be", null ],
       [ "ta_c_rc_transaction_type_not_allowed_for_selected_account", "result__code_8h.html#aebaf00d1ceef4b827866ca9de0bd3320ac5f180a43fac9ebeacc58d3cc4dac03a", null ],
       [ "ta_c_rc_action_not_allowed_on_the_transaction", "result__code_8h.html#aebaf00d1ceef4b827866ca9de0bd3320afbfff95cf71ecb67ea9af85b5f1fa9e1", null ],
+      [ "ta_c_rc_authorisation_declined_different_card_used", "result__code_8h.html#aebaf00d1ceef4b827866ca9de0bd3320a17f5109e94333364c2192b2626fc890d", null ],
+      [ "ta_c_rc_authorisation_declined_pan_key_entry_not_allowed", "result__code_8h.html#aebaf00d1ceef4b827866ca9de0bd3320a07e0fe2b2f5b1d68aa40bb704e94fb29", null ],
+      [ "ta_c_rc_authorisation_declined_cvc2_entry_not_allowed", "result__code_8h.html#aebaf00d1ceef4b827866ca9de0bd3320a7df9c253be98d34fce50a9c3fb58a0b7", null ],
+      [ "ta_c_rc_result_unknown_acquirer_specific", "result__code_8h.html#aebaf00d1ceef4b827866ca9de0bd3320ae09ee5d8a304ffbe507b297cab664c5b", null ],
       [ "ta_c_rc_invalid_argument", "result__code_8h.html#aebaf00d1ceef4b827866ca9de0bd3320a306acc157474b36c57faa559c710d8c3", null ],
       [ "ta_c_rc_out_of_memory", "result__code_8h.html#aebaf00d1ceef4b827866ca9de0bd3320a1895fe80e9772f70ef54177746bfed4a", null ],
       [ "ta_c_rc_system_error", "result__code_8h.html#aebaf00d1ceef4b827866ca9de0bd3320a58db8236054739cfd49c849b0c16e1be", null ]

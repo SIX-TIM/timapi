@@ -73,7 +73,7 @@ var terminal_8h =
     [ "ta_terminal_get_supported_languages", "terminal_8h.html#ad62e86cdad8365a04058f993260ab3e5", null ],
     [ "ta_terminal_get_terminal_id", "terminal_8h.html#a69cd9a5fb957251c966827f7a897098e", null ],
     [ "ta_terminal_get_terminal_status", "terminal_8h.html#a89a11849816acf20476ccf8ea5054582", null ],
-    [ "ta_terminal_get_tim_api_version", "terminal_8h.html#a95aa90739037d8d585d6e2d6a9c76320", null ],
+    [ "ta_terminal_get_tim_api_version", "terminal_8h.html#a37ff59517af2f7cf1fa731473fc7f6c8", null ],
     [ "ta_terminal_get_transaction_data", "terminal_8h.html#a2fb543b90841f89e10118c291255073d", null ],
     [ "ta_terminal_get_user_id", "terminal_8h.html#a3de84846aaae055befee2f213a78e4a9", null ],
     [ "ta_terminal_hardware_information", "terminal_8h.html#a76fe78ef3297a1c301d03402a183afe2", null ],

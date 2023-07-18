@@ -27,6 +27,9 @@ var receipt__type_8h =
       [ "ta_c_rt_authorize_credit", "receipt__type_8h.html#a74be600736ad05d66a867681226384f1acc65aeaadf0518d17f544252339c8101", null ],
       [ "ta_c_rt_authorize_deposit", "receipt__type_8h.html#a74be600736ad05d66a867681226384f1ad891afd1fffe713f09edd45873089bf8", null ],
       [ "ta_c_rt_client_id_request", "receipt__type_8h.html#a74be600736ad05d66a867681226384f1a818cfe0e749262cbe630ac942a7a008d", null ],
-      [ "ta_c_rt_account_verification", "receipt__type_8h.html#a74be600736ad05d66a867681226384f1ad7d118545d5bf658f071a1182d9f5bc9", null ]
+      [ "ta_c_rt_account_verification", "receipt__type_8h.html#a74be600736ad05d66a867681226384f1ad7d118545d5bf658f071a1182d9f5bc9", null ],
+      [ "ta_c_rt_funding", "receipt__type_8h.html#a74be600736ad05d66a867681226384f1ab51d53b0bc94b276b700a09b54001dca", null ],
+      [ "ta_c_rt_refunding", "receipt__type_8h.html#a74be600736ad05d66a867681226384f1a3443f7c934df29a4719bb26ca0e29051", null ],
+      [ "ta_c_rt_unload", "receipt__type_8h.html#a74be600736ad05d66a867681226384f1a13bb1b0b68eb7a6d25fec05d4fd0b8c4", null ]
     ] ]
 ];

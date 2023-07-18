@@ -932,45 +932,24 @@ Immutable class.</p>
     <div class="level0"><span class="xref">System.Object</span></div>
     <div class="level1"><span class="xref">HardwareInformationResponse</span></div>
   </div>
-  <div class="inheritedMembers">
-    <h5>Inherited Members</h5>
-    <div>
-      <span class="xref">System.Object.Equals(System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.GetHashCode()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.GetType()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.MemberwiseClone()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
-    </div>
-  </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="SIX.TimApi.html">SIX.TimApi</a></h6>
   <h6><strong>Assembly</strong>: TimApi.dll</h6>
   <h5 id="SIX_TimApi_HardwareInformationResponse_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class HardwareInformationResponse</code></pre>
+    <pre><code class="lang-csharp hljs">public class HardwareInformationResponse : object</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
   
   
   <a id="SIX_TimApi_HardwareInformationResponse__ctor_" data-uid="SIX.TimApi.HardwareInformationResponse.#ctor*"></a>
-  <h4 id="SIX_TimApi_HardwareInformationResponse__ctor_System_Collections_Generic_List_SIX_TimApi_Hardware__System_Collections_Generic_Dictionary_SIX_TimApi_Constants_KernelType_System_String__System_Collections_Generic_Dictionary_SIX_TimApi_Constants_SettingType_System_String__System_Collections_Generic_Dictionary_System_String_System_String__System_Int32_System_Boolean_" data-uid="SIX.TimApi.HardwareInformationResponse.#ctor(System.Collections.Generic.List{SIX.TimApi.Hardware},System.Collections.Generic.Dictionary{SIX.TimApi.Constants.KernelType,System.String},System.Collections.Generic.Dictionary{SIX.TimApi.Constants.SettingType,System.String},System.Collections.Generic.Dictionary{System.String,System.String},System.Int32,System.Boolean)">HardwareInformationResponse(List&lt;Hardware&gt;, Dictionary&lt;KernelType, String&gt;, Dictionary&lt;SettingType, String&gt;, Dictionary&lt;String, String&gt;, Int32, Boolean)</h4>
+  <h4 id="SIX_TimApi_HardwareInformationResponse__ctor_List_SIX_TimApi_Hardware__Dictionary_SIX_TimApi_Constants_KernelType_String__Dictionary_SIX_TimApi_Constants_SettingType_String__Dictionary_String_String__System_Int32_System_Boolean_" data-uid="SIX.TimApi.HardwareInformationResponse.#ctor(List{SIX.TimApi.Hardware},Dictionary{SIX.TimApi.Constants.KernelType,String},Dictionary{SIX.TimApi.Constants.SettingType,String},Dictionary{String,String},System.Int32,System.Boolean)">HardwareInformationResponse(List&lt;Hardware&gt;, Dictionary&lt;KernelType, String&gt;, Dictionary&lt;SettingType, String&gt;, Dictionary&lt;String, String&gt;, Int32, Boolean)</h4>
   <div class="markdown level1 summary"><p>Create hardware information response.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public HardwareInformationResponse(List&lt;Hardware&gt; hardwares, Dictionary&lt;KernelType, string&gt; kernelVersions, Dictionary&lt;SettingType, string&gt; settings, Dictionary&lt;string, string&gt; statistics, int batteryLevel, bool batteryCharging)</code></pre>
+    <pre><code class="lang-csharp hljs">public HardwareInformationResponse(List&lt;Hardware&gt; hardwares, Dictionary&lt;KernelType, String&gt; kernelVersions, Dictionary&lt;SettingType, String&gt; settings, Dictionary&lt;String, String&gt; statistics, int batteryLevel, bool batteryCharging)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -983,22 +962,22 @@ Immutable class.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="SIX.TimApi.Hardware.html">Hardware</a>&gt;</td>
+        <td><span class="xref">List</span>&lt;<a class="xref" href="SIX.TimApi.Hardware.html">Hardware</a>&gt;</td>
         <td><span class="parametername">hardwares</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;<a class="xref" href="SIX.TimApi.Constants.KernelType.html">KernelType</a>, <span class="xref">System.String</span>&gt;</td>
+        <td><span class="xref">Dictionary</span>&lt;<a class="xref" href="SIX.TimApi.Constants.KernelType.html">KernelType</a>, <span class="xref">String</span>&gt;</td>
         <td><span class="parametername">kernelVersions</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;<a class="xref" href="SIX.TimApi.Constants.SettingType.html">SettingType</a>, <span class="xref">System.String</span>&gt;</td>
+        <td><span class="xref">Dictionary</span>&lt;<a class="xref" href="SIX.TimApi.Constants.SettingType.html">SettingType</a>, <span class="xref">String</span>&gt;</td>
         <td><span class="parametername">settings</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.String</span>&gt;</td>
+        <td><span class="xref">Dictionary</span>&lt;<span class="xref">String</span>, <span class="xref">String</span>&gt;</td>
         <td><span class="parametername">statistics</span></td>
         <td></td>
       </tr>
@@ -1090,7 +1069,7 @@ Immutable class.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="SIX.TimApi.Hardware.html">Hardware</a>&gt;</td>
+        <td><span class="xref">List</span>&lt;<a class="xref" href="SIX.TimApi.Hardware.html">Hardware</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -1105,7 +1084,7 @@ string version is stored.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Dictionary&lt;KernelType, string&gt; KernelVersions { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public Dictionary&lt;KernelType, String&gt; KernelVersions { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1117,7 +1096,7 @@ string version is stored.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;<a class="xref" href="SIX.TimApi.Constants.KernelType.html">KernelType</a>, <span class="xref">System.String</span>&gt;</td>
+        <td><span class="xref">Dictionary</span>&lt;<a class="xref" href="SIX.TimApi.Constants.KernelType.html">KernelType</a>, <span class="xref">String</span>&gt;</td>
         <td><p>The kernel versions.</p>
 </td>
       </tr>
@@ -1133,7 +1112,7 @@ value is stored as string.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Dictionary&lt;SettingType, string&gt; Settings { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public Dictionary&lt;SettingType, String&gt; Settings { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1145,7 +1124,7 @@ value is stored as string.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;<a class="xref" href="SIX.TimApi.Constants.SettingType.html">SettingType</a>, <span class="xref">System.String</span>&gt;</td>
+        <td><span class="xref">Dictionary</span>&lt;<a class="xref" href="SIX.TimApi.Constants.SettingType.html">SettingType</a>, <span class="xref">String</span>&gt;</td>
         <td><p>The settings.</p>
 </td>
       </tr>
@@ -1162,7 +1141,7 @@ Available only if {@link com.six.timapi.constants.Guides#UNATTENDED} guide is en
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Dictionary&lt;string, string&gt; Statistics { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public Dictionary&lt;String, String&gt; Statistics { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1174,7 +1153,7 @@ Available only if {@link com.six.timapi.constants.Guides#UNATTENDED} guide is en
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.String</span>&gt;</td>
+        <td><span class="xref">Dictionary</span>&lt;<span class="xref">String</span>, <span class="xref">String</span>&gt;</td>
         <td><p>The statistics.</p>
 </td>
       </tr>
@@ -1191,7 +1170,7 @@ Available only if {@link com.six.timapi.constants.Guides#UNATTENDED} guide is en
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+    <pre><code class="lang-csharp hljs">public override String ToString()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1203,13 +1182,11 @@ Available only if {@link com.six.timapi.constants.Guides#UNATTENDED} guide is en
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="xref">String</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  <h5 class="overrides">Overrides</h5>
-  <div><span class="xref">System.Object.ToString()</span></div>
 </article>
           </div>
           

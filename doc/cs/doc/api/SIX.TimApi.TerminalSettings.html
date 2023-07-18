@@ -931,32 +931,11 @@
     <div class="level0"><span class="xref">System.Object</span></div>
     <div class="level1"><span class="xref">TerminalSettings</span></div>
   </div>
-  <div class="inheritedMembers">
-    <h5>Inherited Members</h5>
-    <div>
-      <span class="xref">System.Object.Equals(System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.GetHashCode()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.GetType()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.MemberwiseClone()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
-    </div>
-  </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="SIX.TimApi.html">SIX.TimApi</a></h6>
   <h6><strong>Assembly</strong>: TimApi.dll</h6>
   <h5 id="SIX_TimApi_TerminalSettings_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class TerminalSettings</code></pre>
+    <pre><code class="lang-csharp hljs">public class TerminalSettings : object</code></pre>
   </div>
   <h5 id="SIX_TimApi_TerminalSettings_remarks"><strong>Remarks</strong></h5>
   <div class="markdown level0 remarks"><p>The per terminal configuration can be done on two ways:</p>
@@ -991,13 +970,13 @@ automatic behaviors are enabled.</p>
   
   
   <a id="SIX_TimApi_TerminalSettings__ctor_" data-uid="SIX.TimApi.TerminalSettings.#ctor*"></a>
-  <h4 id="SIX_TimApi_TerminalSettings__ctor_System_String_" data-uid="SIX.TimApi.TerminalSettings.#ctor(System.String)">TerminalSettings(String)</h4>
+  <h4 id="SIX_TimApi_TerminalSettings__ctor_String_" data-uid="SIX.TimApi.TerminalSettings.#ctor(String)">TerminalSettings(String)</h4>
   <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="SIX.TimApi.TerminalSettings.html">TerminalSettings</a> class.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public TerminalSettings(string deviceId)</code></pre>
+    <pre><code class="lang-csharp hljs">public TerminalSettings(String deviceId)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1010,7 +989,7 @@ automatic behaviors are enabled.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="xref">String</span></td>
         <td><span class="parametername">deviceId</span></td>
         <td><p>The device identifier.</p>
 </td>
@@ -1182,7 +1161,7 @@ Set this value before constructing a TerminalSettings instance.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string BroadcastInterface { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public String BroadcastInterface { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1194,7 +1173,7 @@ Set this value before constructing a TerminalSettings instance.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="xref">String</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -1320,7 +1299,7 @@ reset in case client enters information in the terminal.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string ConnectionIPString { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public String ConnectionIPString { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1332,7 +1311,7 @@ reset in case client enters information in the terminal.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="xref">String</span></td>
         <td><p>The connection ip string.</p>
 </td>
       </tr>
@@ -1400,7 +1379,7 @@ reset in case client enters information in the terminal.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string ConnectionListenIPString { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public String ConnectionListenIPString { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1412,7 +1391,7 @@ reset in case client enters information in the terminal.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="xref">String</span></td>
         <td><p>The connection listen ip string.</p>
 </td>
       </tr>
@@ -1494,7 +1473,7 @@ default: Broadcast</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.List</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><span class="xref">List</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -1599,7 +1578,7 @@ all requested guides.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="SIX.TimApi.Constants.Guides.html">Guides</a>&gt;</td>
+        <td><span class="xref">List</span>&lt;<a class="xref" href="SIX.TimApi.Constants.Guides.html">Guides</a>&gt;</td>
         <td><p>The guides.</p>
 </td>
       </tr>
@@ -1614,7 +1593,7 @@ all requested guides.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string IntegratorId { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public String IntegratorId { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1626,7 +1605,7 @@ all requested guides.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="xref">String</span></td>
         <td><p>The integrator identifier.</p>
 </td>
       </tr>
@@ -1668,7 +1647,7 @@ AmtAdjustment notification from the ECR in case of a late-checkin.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string LogBackend { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public String LogBackend { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1680,7 +1659,7 @@ AmtAdjustment notification from the ECR in case of a late-checkin.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="xref">String</span></td>
         <td><p>The log level.</p>
 </td>
       </tr>
@@ -1695,7 +1674,7 @@ AmtAdjustment notification from the ECR in case of a late-checkin.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string LogComm { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public String LogComm { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1707,7 +1686,7 @@ AmtAdjustment notification from the ECR in case of a late-checkin.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="xref">String</span></td>
         <td><p>The log level.</p>
 </td>
       </tr>
@@ -1723,7 +1702,7 @@ Use empty string to disable logging.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string LogDir { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public String LogDir { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1735,7 +1714,7 @@ Use empty string to disable logging.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="xref">String</span></td>
         <td><p>The log dir.</p>
 </td>
       </tr>
@@ -1828,7 +1807,7 @@ Use empty string to disable logging.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string LogStateMachine { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public String LogStateMachine { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1840,7 +1819,7 @@ Use empty string to disable logging.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="xref">String</span></td>
         <td><p>The log level.</p>
 </td>
       </tr>
@@ -1855,7 +1834,7 @@ Use empty string to disable logging.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string LogTerminal { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public String LogTerminal { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1867,7 +1846,7 @@ Use empty string to disable logging.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="xref">String</span></td>
         <td><p>The log level.</p>
 </td>
       </tr>
@@ -1909,7 +1888,7 @@ Use empty string to disable logging.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string OgoneBaseUrl { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public String OgoneBaseUrl { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1921,7 +1900,7 @@ Use empty string to disable logging.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="xref">String</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -1935,7 +1914,7 @@ Use empty string to disable logging.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string OmnichannelAPIKey { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public String OmnichannelAPIKey { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1947,7 +1926,7 @@ Use empty string to disable logging.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="xref">String</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -1961,7 +1940,7 @@ Use empty string to disable logging.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string OmnichannelAPISecret { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public String OmnichannelAPISecret { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1973,7 +1952,7 @@ Use empty string to disable logging.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="xref">String</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -2012,7 +1991,7 @@ Use empty string to disable logging.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string OmnichannelHostURL { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public String OmnichannelHostURL { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2024,7 +2003,7 @@ Use empty string to disable logging.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="xref">String</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -2053,6 +2032,31 @@ Use empty string to disable logging.</p>
         <td><span class="xref">System.Boolean</span></td>
         <td><p><code>true</code> if [partial approval]; otherwise, <code>false</code>.</p>
 </td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SIX_TimApi_TerminalSettings_PartialCommit_" data-uid="SIX.TimApi.TerminalSettings.PartialCommit*"></a>
+  <h4 id="SIX_TimApi_TerminalSettings_PartialCommit" data-uid="SIX.TimApi.TerminalSettings.PartialCommit">PartialCommit</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool? PartialCommit { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -2103,7 +2107,7 @@ Use empty string to disable logging.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="SIX.TimApi.Constants.TransactionType.html">TransactionType</a>&gt;</td>
+        <td><span class="xref">List</span>&lt;<a class="xref" href="SIX.TimApi.Constants.TransactionType.html">TransactionType</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -2231,7 +2235,7 @@ Affects these functions:</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string SaferpayBaseUrl { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public String SaferpayBaseUrl { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2243,7 +2247,7 @@ Affects these functions:</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="xref">String</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -2257,7 +2261,7 @@ Affects these functions:</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string SaferpayCredentials { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public String SaferpayCredentials { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2269,7 +2273,7 @@ Affects these functions:</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="xref">String</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -2283,7 +2287,7 @@ Affects these functions:</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string SaferpayCustomerId { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public String SaferpayCustomerId { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2295,7 +2299,7 @@ Affects these functions:</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="xref">String</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -2309,7 +2313,7 @@ Affects these functions:</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string SaferpayTerminalId { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public String SaferpayTerminalId { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2321,7 +2325,7 @@ Affects these functions:</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="xref">String</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -2362,7 +2366,7 @@ Affects these functions:</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string SerialPort { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public String SerialPort { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2374,7 +2378,7 @@ Affects these functions:</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="xref">String</span></td>
         <td><p>The serial port.</p>
 </td>
       </tr>
@@ -2389,7 +2393,7 @@ Affects these functions:</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string TerminalId { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public String TerminalId { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2401,7 +2405,7 @@ Affects these functions:</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="xref">String</span></td>
         <td><p>The terminal identifier.</p>
 </td>
       </tr>
@@ -2475,7 +2479,7 @@ function that needs the terminal.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+    <pre><code class="lang-csharp hljs">public override String ToString()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2487,13 +2491,11 @@ function that needs the terminal.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="xref">String</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  <h5 class="overrides">Overrides</h5>
-  <div><span class="xref">System.Object.ToString()</span></div>
 </article>
           </div>
           

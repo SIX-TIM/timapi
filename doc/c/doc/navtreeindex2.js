@@ -137,6 +137,7 @@ var NAVTREEINDEX2 =
 "custom__receipt__formatter_8h.html#a07c5b9d0b4ce2c471dd995fbae1716b0a72eb653b151a26ac6b1abc6916a6f464":[1,1,0,23,10,6],
 "custom__receipt__formatter_8h.html#a07c5b9d0b4ce2c471dd995fbae1716b0a933a969b2ba4cecc04ae23de9dcfe573":[1,1,0,23,10,3],
 "custom__receipt__formatter_8h.html#a07c5b9d0b4ce2c471dd995fbae1716b0ab6b7c094dfc71f945a181f4d5dd9de83":[1,1,0,23,10,8],
+"custom__receipt__formatter_8h.html#a07c5b9d0b4ce2c471dd995fbae1716b0abc5c86fcb16754b9ef43ccc326fe4481":[1,1,0,23,10,10],
 "custom__receipt__formatter_8h.html#a07c5b9d0b4ce2c471dd995fbae1716b0afe46fef2da1663b7c21ecbb737fad84b":[1,1,0,23,10,2],
 "custom__receipt__formatter_8h.html#a089412c826d5c6d0e523915d07b4036f":[1,1,0,23,11],
 "custom__receipt__formatter_8h.html#a089412c826d5c6d0e523915d07b4036fa4ab50c38359e9a55b2b9b75dda279926":[1,1,0,23,11,1],
@@ -149,6 +150,7 @@ var NAVTREEINDEX2 =
 "custom__receipt__formatter_8h.html#a7259dc92c0c36d304605a834892653f2":[1,1,0,23,9],
 "custom__receipt__formatter_8h.html#a7b7ada3bb25ea7f92bff99d675af788e":[1,1,0,23,18],
 "custom__receipt__formatter_8h.html#a883a5ff78a5d2ad805f9f6af32a8d2af":[1,1,0,23,12],
+"custom__receipt__formatter_8h.html#a883a5ff78a5d2ad805f9f6af32a8d2afa0245dfd8d1567043e05634c56c6d3a2e":[1,1,0,23,12,76],
 "custom__receipt__formatter_8h.html#a883a5ff78a5d2ad805f9f6af32a8d2afa024727b39d9a9e900c40a1c23047a161":[1,1,0,23,12,5],
 "custom__receipt__formatter_8h.html#a883a5ff78a5d2ad805f9f6af32a8d2afa02d5ce2b055b3f501443acc616a2834f":[1,1,0,23,12,30],
 "custom__receipt__formatter_8h.html#a883a5ff78a5d2ad805f9f6af32a8d2afa044fff072a351099285eb4db50b354f7":[1,1,0,23,12,18],
@@ -182,6 +184,7 @@ var NAVTREEINDEX2 =
 "custom__receipt__formatter_8h.html#a883a5ff78a5d2ad805f9f6af32a8d2afa737adebb572cf68d6e3fd6acdc568e79":[1,1,0,23,12,9],
 "custom__receipt__formatter_8h.html#a883a5ff78a5d2ad805f9f6af32a8d2afa73a08a4e4e15491e5dc48e5e1f5857b3":[1,1,0,23,12,17],
 "custom__receipt__formatter_8h.html#a883a5ff78a5d2ad805f9f6af32a8d2afa78460aba50943c7373842865c85cebaf":[1,1,0,23,12,39],
+"custom__receipt__formatter_8h.html#a883a5ff78a5d2ad805f9f6af32a8d2afa78f93e81b685a9f952ebc55a666be513":[1,1,0,23,12,77],
 "custom__receipt__formatter_8h.html#a883a5ff78a5d2ad805f9f6af32a8d2afa79c32d2c38064b0b6f60e3bc141681e3":[1,1,0,23,12,6],
 "custom__receipt__formatter_8h.html#a883a5ff78a5d2ad805f9f6af32a8d2afa7c2edc5073e2dfbd9473c8501202822f":[1,1,0,23,12,20],
 "custom__receipt__formatter_8h.html#a883a5ff78a5d2ad805f9f6af32a8d2afa7e0ac76db3a9c6b8adf947919181bfd0":[1,1,0,23,12,44],
@@ -235,6 +238,7 @@ var NAVTREEINDEX2 =
 "custom__receipt__formatter_8h.html#aa2ad96ca8f3d24cc69d417eaa70dd2e3a2dc1471ba35fd298ee89ae2da75437a7":[1,1,0,23,13,5],
 "custom__receipt__formatter_8h.html#aa2ad96ca8f3d24cc69d417eaa70dd2e3a302a627fda951a91b769c20abbc81ae8":[1,1,0,23,13,27],
 "custom__receipt__formatter_8h.html#aa2ad96ca8f3d24cc69d417eaa70dd2e3a344d409e649ab783be56cd7c6fc02218":[1,1,0,23,13,2],
+"custom__receipt__formatter_8h.html#aa2ad96ca8f3d24cc69d417eaa70dd2e3a385fcfb19cbdf31f92442cc97ca21995":[1,1,0,23,13,36],
 "custom__receipt__formatter_8h.html#aa2ad96ca8f3d24cc69d417eaa70dd2e3a430d4c8fd6e7b7548e8b5e667ff99ae1":[1,1,0,23,13,18],
 "custom__receipt__formatter_8h.html#aa2ad96ca8f3d24cc69d417eaa70dd2e3a43c3b26487c61f16ddc422e3ee06c572":[1,1,0,23,13,10],
 "custom__receipt__formatter_8h.html#aa2ad96ca8f3d24cc69d417eaa70dd2e3a473f0b9b1649bdac569b654050e847a2":[1,1,0,23,13,30],
@@ -245,9 +249,5 @@ var NAVTREEINDEX2 =
 "custom__receipt__formatter_8h.html#aa2ad96ca8f3d24cc69d417eaa70dd2e3a6c86f46c0cdb8cccd3c80f8d42f5bde9":[1,1,0,23,13,1],
 "custom__receipt__formatter_8h.html#aa2ad96ca8f3d24cc69d417eaa70dd2e3a70236c3877b9aeb901b8f9c0cbc952e4":[1,1,0,23,13,24],
 "custom__receipt__formatter_8h.html#aa2ad96ca8f3d24cc69d417eaa70dd2e3a7766055d2f1fd03b9050dd48da07726b":[1,1,0,23,13,23],
-"custom__receipt__formatter_8h.html#aa2ad96ca8f3d24cc69d417eaa70dd2e3a80e354988e8d646dc1f3bfcf68c48e9f":[1,1,0,23,13,33],
-"custom__receipt__formatter_8h.html#aa2ad96ca8f3d24cc69d417eaa70dd2e3a89d77a413be91a56415d0164a931b45c":[1,1,0,23,13,6],
-"custom__receipt__formatter_8h.html#aa2ad96ca8f3d24cc69d417eaa70dd2e3a8adce23ab0eea6a3e54fe560315e58a9":[1,1,0,23,13,21],
-"custom__receipt__formatter_8h.html#aa2ad96ca8f3d24cc69d417eaa70dd2e3a8d712f162257dd0f15f346f5d6eb5d9c":[1,1,0,23,13,15],
-"custom__receipt__formatter_8h.html#aa2ad96ca8f3d24cc69d417eaa70dd2e3a8ee876a2170b70cf7f1063e54b4cc47e":[1,1,0,23,13,25]
+"custom__receipt__formatter_8h.html#aa2ad96ca8f3d24cc69d417eaa70dd2e3a80e354988e8d646dc1f3bfcf68c48e9f":[1,1,0,23,13,33]
 };

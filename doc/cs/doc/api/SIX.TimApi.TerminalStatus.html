@@ -933,45 +933,24 @@ if available card data</p>
     <div class="level0"><span class="xref">System.Object</span></div>
     <div class="level1"><span class="xref">TerminalStatus</span></div>
   </div>
-  <div class="inheritedMembers">
-    <h5>Inherited Members</h5>
-    <div>
-      <span class="xref">System.Object.Equals(System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.GetHashCode()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.GetType()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.MemberwiseClone()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
-    </div>
-  </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="SIX.TimApi.html">SIX.TimApi</a></h6>
   <h6><strong>Assembly</strong>: TimApi.dll</h6>
   <h5 id="SIX_TimApi_TerminalStatus_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class TerminalStatus</code></pre>
+    <pre><code class="lang-csharp hljs">public class TerminalStatus : object</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
   
   
   <a id="SIX_TimApi_TerminalStatus__ctor_" data-uid="SIX.TimApi.TerminalStatus.#ctor*"></a>
-  <h4 id="SIX_TimApi_TerminalStatus__ctor_System_Collections_Generic_List_System_String__SIX_TimApi_Constants_ConnectionStatus_SIX_TimApi_Constants_ManagementStatus_SIX_TimApi_Constants_CardReaderStatus_SIX_TimApi_Constants_TransactionStatus_SIX_TimApi_Constants_SleepModeStatus_System_Boolean_SIX_TimApi_CardData_System_Boolean_SIX_TimApi_Amount_" data-uid="SIX.TimApi.TerminalStatus.#ctor(System.Collections.Generic.List{System.String},SIX.TimApi.Constants.ConnectionStatus,SIX.TimApi.Constants.ManagementStatus,SIX.TimApi.Constants.CardReaderStatus,SIX.TimApi.Constants.TransactionStatus,SIX.TimApi.Constants.SleepModeStatus,System.Boolean,SIX.TimApi.CardData,System.Boolean,SIX.TimApi.Amount)">TerminalStatus(List&lt;String&gt;, ConnectionStatus, ManagementStatus, CardReaderStatus, TransactionStatus, SleepModeStatus, Boolean, CardData, Boolean, Amount)</h4>
+  <h4 id="SIX_TimApi_TerminalStatus__ctor_List_String__SIX_TimApi_Constants_ConnectionStatus_SIX_TimApi_Constants_ManagementStatus_SIX_TimApi_Constants_CardReaderStatus_SIX_TimApi_Constants_TransactionStatus_SIX_TimApi_Constants_SleepModeStatus_System_Boolean_SIX_TimApi_CardData_System_Boolean_SIX_TimApi_AmountFinal_" data-uid="SIX.TimApi.TerminalStatus.#ctor(List{String},SIX.TimApi.Constants.ConnectionStatus,SIX.TimApi.Constants.ManagementStatus,SIX.TimApi.Constants.CardReaderStatus,SIX.TimApi.Constants.TransactionStatus,SIX.TimApi.Constants.SleepModeStatus,System.Boolean,SIX.TimApi.CardData,System.Boolean,SIX.TimApi.AmountFinal)">TerminalStatus(List&lt;String&gt;, ConnectionStatus, ManagementStatus, CardReaderStatus, TransactionStatus, SleepModeStatus, Boolean, CardData, Boolean, AmountFinal)</h4>
   <div class="markdown level1 summary"><p>Create terminal status.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public TerminalStatus(List&lt;string&gt; displayContent, ConnectionStatus connectionStatus, ManagementStatus managementStatus, CardReaderStatus cardReaderStatus, TransactionStatus transactionStatus, SleepModeStatus sleepModeStatus, bool receiptInformation, CardData cardData, bool swUpdateAvailable, Amount finalAmount)</code></pre>
+    <pre><code class="lang-csharp hljs">public TerminalStatus(List&lt;String&gt; displayContent, ConnectionStatus connectionStatus, ManagementStatus managementStatus, CardReaderStatus cardReaderStatus, TransactionStatus transactionStatus, SleepModeStatus sleepModeStatus, bool receiptInformation, CardData cardData, bool swUpdateAvailable, AmountFinal finalAmount)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -984,7 +963,7 @@ if available card data</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.List</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><span class="xref">List</span>&lt;<span class="xref">String</span>&gt;</td>
         <td><span class="parametername">displayContent</span></td>
         <td></td>
       </tr>
@@ -1029,7 +1008,7 @@ if available card data</p>
         <td></td>
       </tr>
       <tr>
-        <td><a class="xref" href="SIX.TimApi.Amount.html">Amount</a></td>
+        <td><a class="xref" href="SIX.TimApi.AmountFinal.html">AmountFinal</a></td>
         <td><span class="parametername">finalAmount</span></td>
         <td></td>
       </tr>
@@ -1137,7 +1116,7 @@ if available card data</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.List</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><span class="xref">List</span>&lt;<span class="xref">System.String</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -1151,7 +1130,7 @@ if available card data</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Amount FinalAmount { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public AmountFinal FinalAmount { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1163,7 +1142,7 @@ if available card data</p>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="SIX.TimApi.Amount.html">Amount</a></td>
+        <td><a class="xref" href="SIX.TimApi.AmountFinal.html">AmountFinal</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -1337,7 +1316,7 @@ if available card data</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+    <pre><code class="lang-csharp hljs">public override String ToString()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1349,13 +1328,11 @@ if available card data</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="xref">String</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  <h5 class="overrides">Overrides</h5>
-  <div><span class="xref">System.Object.ToString()</span></div>
 </article>
           </div>
           
