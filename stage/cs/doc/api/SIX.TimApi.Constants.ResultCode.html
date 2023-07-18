@@ -931,7 +931,7 @@
   <h6><strong>Assembly</strong>: TimApi.dll</h6>
   <h5 id="SIX_TimApi_Constants_ResultCode_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public enum ResultCode</code></pre>
+    <pre><code class="lang-csharp hljs">public enum ResultCode : int</code></pre>
   </div>
   <h3 id="fields">Fields
   </h3>
@@ -1022,6 +1022,27 @@ Timeout during connection establishment from TIM API to TIM Server.<br>
         <td><p>Category: TIM API related results - Communication<br>
 Timeout during connection establishment from TIM API to EFT Terminal.<br>
 <strong>Error message:</strong> Timeout - Communication EFT Terminal</p>
+</td>
+      </tr>
+      <tr>
+        <td id="SIX_TimApi_Constants_ResultCode_AuthorisationDeclinedCvc2EntryNotAllowed">AuthorisationDeclinedCvc2EntryNotAllowed</td>
+        <td><p>Category: TIM API related results - Transaction<br></p>
+<p>CVC2 Entry and not allowed.</p>
+<p> <strong>Error message</strong> : Authorisation Declined - CVC2 Entry not allowed.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="SIX_TimApi_Constants_ResultCode_AuthorisationDeclinedDifferentCardUsed">AuthorisationDeclinedDifferentCardUsed</td>
+        <td><p>Category: TIM API related results - Transaction<br></p>
+<p>Different card used as for initial transaction.</p>
+<p> <strong>Error message</strong> : Authorisation Declined - Wrong Card.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="SIX_TimApi_Constants_ResultCode_AuthorisationDeclinedPanKeyEntryNotAllowed">AuthorisationDeclinedPanKeyEntryNotAllowed</td>
+        <td><p>Category: TIM API related results - Transaction<br></p>
+<p>Pan Key entered and not allowed.</p>
+<p> <strong>Error message</strong> : Authorisation Declined - PAN Key Entry not allowed.</p>
 </td>
       </tr>
       <tr>
@@ -1615,6 +1636,13 @@ Product not supported . Transaction declined.<br>
         <td><p>Category: TIM API related results - SIXml Protocol<br>
 Another request from the same controller is already running.<br>
 <strong>Error message:</strong> Busy - Another request running</p>
+</td>
+      </tr>
+      <tr>
+        <td id="SIX_TimApi_Constants_ResultCode_ResultUnknownAcquirerSpecific">ResultUnknownAcquirerSpecific</td>
+        <td><p>Category: TIM API related results - Transaction<br></p>
+<p>Result unknown – acquirer specific</p>
+<p> <strong>Error message</strong> : Result unknown - Acquirer Specific.</p>
 </td>
       </tr>
       <tr>

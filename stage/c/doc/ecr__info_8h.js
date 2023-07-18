@@ -2,6 +2,7 @@ var ecr__info_8h =
 [
     [ "ta_ecr_info_create", "ecr__info_8h.html#a6c1970209c463490683002059bbbd548", null ],
     [ "ta_ecr_info_get_architecture", "ecr__info_8h.html#a5250b8cf39872d625412fea4d3adbe88", null ],
+    [ "ta_ecr_info_get_configuration", "ecr__info_8h.html#a3baed1b52e7ebc120dd1533d22cd8d5b", null ],
     [ "ta_ecr_info_get_integrator_solution", "ecr__info_8h.html#af892bf245bf29e5fe3c18be62272c9b7", null ],
     [ "ta_ecr_info_get_manufacturer_name", "ecr__info_8h.html#a5867ea31e9a00c7b90470712957a04cd", null ],
     [ "ta_ecr_info_get_name", "ecr__info_8h.html#a095ae3b385eabc6a8c39ca17f109f2a3", null ],
@@ -10,6 +11,7 @@ var ecr__info_8h =
     [ "ta_ecr_info_get_type", "ecr__info_8h.html#a47c12b49dca2c83379048b9ecf922bc6", null ],
     [ "ta_ecr_info_get_version", "ecr__info_8h.html#a1bfb6d9bde0c09eeaacdb6b59e859df3", null ],
     [ "ta_ecr_info_set_architecture", "ecr__info_8h.html#a3582df9c3472170a304ffd92a9105a6d", null ],
+    [ "ta_ecr_info_set_configuration", "ecr__info_8h.html#a0070c6beefcdd4048b390d6371203011", null ],
     [ "ta_ecr_info_set_integrator_solution", "ecr__info_8h.html#a17acea7610b7e736ac977872be12e16d", null ],
     [ "ta_ecr_info_set_manufacturer_name", "ecr__info_8h.html#a2f0302f2ca5d6d8c1fe97cd1684f7848", null ],
     [ "ta_ecr_info_set_name", "ecr__info_8h.html#ac12e0d0733d8d5f9b02895c16bf52de5", null ],

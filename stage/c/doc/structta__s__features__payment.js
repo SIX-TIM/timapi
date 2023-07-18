@@ -1,6 +1,7 @@
 var structta__s__features__payment =
 [
     [ "account_selection", "structta__s__features__payment.html#a7405300d60b9ccfda2ef69591f2727bd", null ],
+    [ "ctap_available", "structta__s__features__payment.html#a6d55f4fabebe51dcc03f0c96bf583416", null ],
     [ "dcc", "structta__s__features__payment.html#a53188968afc204c1f7117b13b5ed42ac", null ],
     [ "declined_receipts", "structta__s__features__payment.html#afd49fa8c0ce9c734fee95ed1fe397c77", null ],
     [ "ep2_age_check", "structta__s__features__payment.html#ae32edc9b93571de0e9f8d8434ae3402f", null ],

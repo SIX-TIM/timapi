@@ -932,45 +932,24 @@ Immutable class.</p>
     <div class="level0"><span class="xref">System.Object</span></div>
     <div class="level1"><span class="xref">Counter</span></div>
   </div>
-  <div class="inheritedMembers">
-    <h5>Inherited Members</h5>
-    <div>
-      <span class="xref">System.Object.Equals(System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.GetHashCode()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.GetType()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.MemberwiseClone()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
-    </div>
-  </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="SIX.TimApi.html">SIX.TimApi</a></h6>
   <h6><strong>Assembly</strong>: TimApi.dll</h6>
   <h5 id="SIX_TimApi_Counter_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class Counter</code></pre>
+    <pre><code class="lang-csharp hljs">public class Counter : object</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
   
   
   <a id="SIX_TimApi_Counter__ctor_" data-uid="SIX.TimApi.Counter.#ctor*"></a>
-  <h4 id="SIX_TimApi_Counter__ctor_System_String_SIX_TimApi_Constants_PaymentProtocol_System_Nullable_SIX_TimApi_Constants_CardProductType__System_Int64_System_Int32_System_Int32_System_Int32_System_Collections_Generic_List_SIX_TimApi_Total__" data-uid="SIX.TimApi.Counter.#ctor(System.String,SIX.TimApi.Constants.PaymentProtocol,System.Nullable{SIX.TimApi.Constants.CardProductType},System.Int64,System.Int32,System.Int32,System.Int32,System.Collections.Generic.List{SIX.TimApi.Total})">Counter(String, PaymentProtocol, Nullable&lt;CardProductType&gt;, Int64, Int32, Int32, Int32, List&lt;Total&gt;)</h4>
+  <h4 id="SIX_TimApi_Counter__ctor_String_SIX_TimApi_Constants_PaymentProtocol_System_Nullable_SIX_TimApi_Constants_CardProductType__System_Int64_System_Int32_System_Int32_System_Int32_List_SIX_TimApi_Total__" data-uid="SIX.TimApi.Counter.#ctor(String,SIX.TimApi.Constants.PaymentProtocol,System.Nullable{SIX.TimApi.Constants.CardProductType},System.Int64,System.Int32,System.Int32,System.Int32,List{SIX.TimApi.Total})">Counter(String, PaymentProtocol, Nullable&lt;CardProductType&gt;, Int64, Int32, Int32, Int32, List&lt;Total&gt;)</h4>
   <div class="markdown level1 summary"><p>Create counter.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Counter(string brandName, PaymentProtocol paymentProtocol, CardProductType? cardProductType, long acqId, int count, int countDcc, int countForeign, List&lt;Total&gt; totals)</code></pre>
+    <pre><code class="lang-csharp hljs">public Counter(String brandName, PaymentProtocol paymentProtocol, CardProductType? cardProductType, long acqId, int count, int countDcc, int countForeign, List&lt;Total&gt; totals)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -983,7 +962,7 @@ Immutable class.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="xref">String</span></td>
         <td><span class="parametername">brandName</span></td>
         <td></td>
       </tr>
@@ -1018,7 +997,7 @@ Immutable class.</p>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="SIX.TimApi.Total.html">Total</a>&gt;</td>
+        <td><span class="xref">List</span>&lt;<a class="xref" href="SIX.TimApi.Total.html">Total</a>&gt;</td>
         <td><span class="parametername">totals</span></td>
         <td></td>
       </tr>
@@ -1229,7 +1208,7 @@ Immutable class.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="SIX.TimApi.Total.html">Total</a>&gt;</td>
+        <td><span class="xref">List</span>&lt;<a class="xref" href="SIX.TimApi.Total.html">Total</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -1245,7 +1224,7 @@ Immutable class.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+    <pre><code class="lang-csharp hljs">public override String ToString()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1257,13 +1236,11 @@ Immutable class.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="xref">String</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  <h5 class="overrides">Overrides</h5>
-  <div><span class="xref">System.Object.ToString()</span></div>
 </article>
           </div>
           

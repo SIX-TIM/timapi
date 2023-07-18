@@ -930,35 +930,11 @@
     <div class="level0"><span class="xref">System.Object</span></div>
     <div class="level1"><span class="xref">Logger</span></div>
   </div>
-  <div class="inheritedMembers">
-    <h5>Inherited Members</h5>
-    <div>
-      <span class="xref">System.Object.Equals(System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.GetHashCode()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.GetType()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.MemberwiseClone()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.ToString()</span>
-    </div>
-  </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="SIX.TimApi.Utility.Logger.html">SIX.TimApi.Utility.Logger</a></h6>
   <h6><strong>Assembly</strong>: TimApi.dll</h6>
   <h5 id="SIX_TimApi_Utility_Logger_Logger_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class Logger</code></pre>
+    <pre><code class="lang-csharp hljs">public class Logger : object</code></pre>
   </div>
   <h3 id="fields">Fields
   </h3>
@@ -1140,8 +1116,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use terminal settings to set this parameter per terminal instance.&quot;)]
-public static string LogDir { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public static string LogDir { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1166,8 +1141,7 @@ public static string LogDir { get; set; }</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use terminal settings to set this parameter per terminal instance.&quot;)]
-public static int LogRetainArchiveCount { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public static int LogRetainArchiveCount { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1194,8 +1168,7 @@ public static int LogRetainArchiveCount { get; set; }</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use terminal settings to set this parameter per terminal instance.&quot;)]
-public static bool ArchiveLogsInZip(Logger.ArchiveMode am)</code></pre>
+    <pre><code class="lang-csharp hljs">public static bool ArchiveLogsInZip(Logger.ArchiveMode am)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1237,8 +1210,7 @@ public static bool ArchiveLogsInZip(Logger.ArchiveMode am)</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Obsolete(&quot;No longer supported!&quot;)]
-public static void Dispose()</code></pre>
+    <pre><code class="lang-csharp hljs">public static void Dispose()</code></pre>
   </div>
   
   
@@ -1312,7 +1284,7 @@ public static void Dispose()</code></pre>
   
   
   <a id="SIX_TimApi_Utility_Logger_Logger_exception_" data-uid="SIX.TimApi.Utility.Logger.Logger.exception*"></a>
-  <h4 id="SIX_TimApi_Utility_Logger_Logger_exception_System_String_System_Exception_" data-uid="SIX.TimApi.Utility.Logger.Logger.exception(System.String,System.Exception)">exception(String, Exception)</h4>
+  <h4 id="SIX_TimApi_Utility_Logger_Logger_exception_System_String_Exception_" data-uid="SIX.TimApi.Utility.Logger.Logger.exception(System.String,Exception)">exception(String, Exception)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1335,7 +1307,7 @@ public static void Dispose()</code></pre>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">System.Exception</span></td>
+        <td><span class="xref">Exception</span></td>
         <td><span class="parametername">thrown</span></td>
         <td></td>
       </tr>
@@ -1418,8 +1390,7 @@ public static void Dispose()</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Obsolete(&quot;No longer supported!&quot;)]
-public static void Flush()</code></pre>
+    <pre><code class="lang-csharp hljs">public static void Flush()</code></pre>
   </div>
   
   
@@ -1429,8 +1400,7 @@ public static void Flush()</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Obsolete(&quot;No longer supported!&quot;)]
-public static void FlushLogs()</code></pre>
+    <pre><code class="lang-csharp hljs">public static void FlushLogs()</code></pre>
   </div>
   
   
@@ -1440,8 +1410,7 @@ public static void FlushLogs()</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Obsolete(&quot;No longer supported!&quot;)]
-public static Logger getLogger(string name)</code></pre>
+    <pre><code class="lang-csharp hljs">public static Logger getLogger(string name)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1510,8 +1479,7 @@ public static Logger getLogger(string name)</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Obsolete(&quot;No longer supported!&quot;)]
-public static void Init()</code></pre>
+    <pre><code class="lang-csharp hljs">public static void Init()</code></pre>
   </div>
   
   
@@ -1669,6 +1637,43 @@ public static void Init()</code></pre>
   
   
   <a id="SIX_TimApi_Utility_Logger_Logger_log_" data-uid="SIX.TimApi.Utility.Logger.Logger.log*"></a>
+  <h4 id="SIX_TimApi_Utility_Logger_Logger_log_SIX_TimApi_Utility_Logger_Level_System_String_Exception_" data-uid="SIX.TimApi.Utility.Logger.Logger.log(SIX.TimApi.Utility.Logger.Level,System.String,Exception)">log(Level, String, Exception)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void log(Level level, string message, Exception thrown)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="SIX.TimApi.Utility.Logger.Level.html">Level</a></td>
+        <td><span class="parametername">level</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">message</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Exception</span></td>
+        <td><span class="parametername">thrown</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SIX_TimApi_Utility_Logger_Logger_log_" data-uid="SIX.TimApi.Utility.Logger.Logger.log*"></a>
   <h4 id="SIX_TimApi_Utility_Logger_Logger_log_SIX_TimApi_Utility_Logger_Level_System_String_System_Byte___System_Int32_" data-uid="SIX.TimApi.Utility.Logger.Logger.log(SIX.TimApi.Utility.Logger.Level,System.String,System.Byte[],System.Int32)">log(Level, String, Byte[], Int32)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
@@ -1704,43 +1709,6 @@ public static void Init()</code></pre>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">size</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="SIX_TimApi_Utility_Logger_Logger_log_" data-uid="SIX.TimApi.Utility.Logger.Logger.log*"></a>
-  <h4 id="SIX_TimApi_Utility_Logger_Logger_log_SIX_TimApi_Utility_Logger_Level_System_String_System_Exception_" data-uid="SIX.TimApi.Utility.Logger.Logger.log(SIX.TimApi.Utility.Logger.Level,System.String,System.Exception)">log(Level, String, Exception)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void log(Level level, string message, Exception thrown)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="SIX.TimApi.Utility.Logger.Level.html">Level</a></td>
-        <td><span class="parametername">level</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">message</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Exception</span></td>
-        <td><span class="parametername">thrown</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -2065,8 +2033,7 @@ public static void Init()</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Obsolete(&quot;No longer supported!&quot;)]
-public static void PrintThreadProc()</code></pre>
+    <pre><code class="lang-csharp hljs">public static void PrintThreadProc()</code></pre>
   </div>
   
   
@@ -2076,8 +2043,7 @@ public static void PrintThreadProc()</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Obsolete(&quot;No longer supported!&quot;)]
-public static void PrintToFile(string s)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void PrintToFile(string s)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2104,8 +2070,7 @@ public static void PrintToFile(string s)</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use terminal settings to set this parameter per terminal instance.&quot;)]
-public static void SetLevel(string module, string sNewLevel)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void SetLevel(string module, string sNewLevel)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">

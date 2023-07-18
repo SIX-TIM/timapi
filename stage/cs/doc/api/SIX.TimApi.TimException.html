@@ -929,73 +929,13 @@
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
-    <div class="level1"><span class="xref">System.Exception</span></div>
-    <div class="level2"><span class="xref">TimException</span></div>
-  </div>
-  <div classs="implements">
-    <h5>Implements</h5>
-    <div><span class="xref">System.Runtime.InteropServices._Exception</span></div>
-    <div><span class="xref">System.Runtime.Serialization.ISerializable</span></div>
-  </div>
-  <div class="inheritedMembers">
-    <h5>Inherited Members</h5>
-    <div>
-      <span class="xref">System.Exception.GetBaseException()</span>
-    </div>
-    <div>
-      <span class="xref">System.Exception.GetObjectData(System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)</span>
-    </div>
-    <div>
-      <span class="xref">System.Exception.GetType()</span>
-    </div>
-    <div>
-      <span class="xref">System.Exception.Data</span>
-    </div>
-    <div>
-      <span class="xref">System.Exception.HelpLink</span>
-    </div>
-    <div>
-      <span class="xref">System.Exception.HResult</span>
-    </div>
-    <div>
-      <span class="xref">System.Exception.InnerException</span>
-    </div>
-    <div>
-      <span class="xref">System.Exception.Message</span>
-    </div>
-    <div>
-      <span class="xref">System.Exception.Source</span>
-    </div>
-    <div>
-      <span class="xref">System.Exception.StackTrace</span>
-    </div>
-    <div>
-      <span class="xref">System.Exception.TargetSite</span>
-    </div>
-    <div>
-      <span class="xref">System.Exception.SerializeObjectState</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.Equals(System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.GetHashCode()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.MemberwiseClone()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
-    </div>
+    <div class="level1"><span class="xref">TimException</span></div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="SIX.TimApi.html">SIX.TimApi</a></h6>
   <h6><strong>Assembly</strong>: TimApi.dll</h6>
   <h5 id="SIX_TimApi_TimException_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class TimException : Exception, _Exception, ISerializable</code></pre>
+    <pre><code class="lang-csharp hljs">public class TimException : System.Exception</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -1029,7 +969,7 @@
   
   
   <a id="SIX_TimApi_TimException__ctor_" data-uid="SIX.TimApi.TimException.#ctor*"></a>
-  <h4 id="SIX_TimApi_TimException__ctor_SIX_TimApi_Constants_ResultCode_System_String_SIX_TimApi_NativeError_SIX_TimApi_PpInfo_System_Collections_Generic_Dictionary_System_String_System_String__SIX_TimApi_PrintData_SIX_TimApi_Basket_" data-uid="SIX.TimApi.TimException.#ctor(SIX.TimApi.Constants.ResultCode,System.String,SIX.TimApi.NativeError,SIX.TimApi.PpInfo,System.Collections.Generic.Dictionary{System.String,System.String},SIX.TimApi.PrintData,SIX.TimApi.Basket)">TimException(ResultCode, String, NativeError, PpInfo, Dictionary&lt;String, String&gt;, PrintData, Basket)</h4>
+  <h4 id="SIX_TimApi_TimException__ctor_SIX_TimApi_Constants_ResultCode_System_String_SIX_TimApi_NativeError_SIX_TimApi_PpInfo_Dictionary_System_String_System_String__SIX_TimApi_PrintData_SIX_TimApi_Basket_" data-uid="SIX.TimApi.TimException.#ctor(SIX.TimApi.Constants.ResultCode,System.String,SIX.TimApi.NativeError,SIX.TimApi.PpInfo,Dictionary{System.String,System.String},SIX.TimApi.PrintData,SIX.TimApi.Basket)">TimException(ResultCode, String, NativeError, PpInfo, Dictionary&lt;String, String&gt;, PrintData, Basket)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1067,7 +1007,7 @@
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.String</span>&gt;</td>
+        <td><span class="xref">Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.String</span>&gt;</td>
         <td><span class="parametername">additionalErrorInfo</span></td>
         <td></td>
       </tr>
@@ -1086,7 +1026,7 @@
   
   
   <a id="SIX_TimApi_TimException__ctor_" data-uid="SIX.TimApi.TimException.#ctor*"></a>
-  <h4 id="SIX_TimApi_TimException__ctor_SIX_TimApi_Constants_ResultCode_System_String_System_String_SIX_TimApi_NativeError_SIX_TimApi_PpInfo_System_Collections_Generic_Dictionary_System_String_System_String__SIX_TimApi_PrintData_SIX_TimApi_Basket_" data-uid="SIX.TimApi.TimException.#ctor(SIX.TimApi.Constants.ResultCode,System.String,System.String,SIX.TimApi.NativeError,SIX.TimApi.PpInfo,System.Collections.Generic.Dictionary{System.String,System.String},SIX.TimApi.PrintData,SIX.TimApi.Basket)">TimException(ResultCode, String, String, NativeError, PpInfo, Dictionary&lt;String, String&gt;, PrintData, Basket)</h4>
+  <h4 id="SIX_TimApi_TimException__ctor_SIX_TimApi_Constants_ResultCode_System_String_System_String_SIX_TimApi_NativeError_SIX_TimApi_PpInfo_Dictionary_System_String_System_String__SIX_TimApi_PrintData_SIX_TimApi_Basket_" data-uid="SIX.TimApi.TimException.#ctor(SIX.TimApi.Constants.ResultCode,System.String,System.String,SIX.TimApi.NativeError,SIX.TimApi.PpInfo,Dictionary{System.String,System.String},SIX.TimApi.PrintData,SIX.TimApi.Basket)">TimException(ResultCode, String, String, NativeError, PpInfo, Dictionary&lt;String, String&gt;, PrintData, Basket)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1129,7 +1069,7 @@
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.String</span>&gt;</td>
+        <td><span class="xref">Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.String</span>&gt;</td>
         <td><span class="parametername">additionalErrorInfo</span></td>
         <td></td>
       </tr>
@@ -1196,7 +1136,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.String</span>&gt;</td>
+        <td><span class="xref">Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.String</span>&gt;</td>
         <td><p>The additional error information.</p>
 </td>
       </tr>
@@ -1439,19 +1379,6 @@
       </tr>
     </tbody>
   </table>
-  <h5 class="overrides">Overrides</h5>
-  <div><span class="xref">System.Exception.ToString()</span></div>
-  <h3 id="implements">Implements</h3>
-  <div>
-      <span class="xref">System.Runtime.InteropServices._Exception</span>
-  </div>
-  <div>
-      <span class="xref">System.Runtime.Serialization.ISerializable</span>
-  </div>
-  <h3 id="seealso">See Also</h3>
-  <div class="seealso">
-      <div><span class="xref">System.Exception</span></div>
-  </div>
 </article>
           </div>
           

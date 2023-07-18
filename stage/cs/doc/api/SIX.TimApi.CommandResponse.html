@@ -932,48 +932,24 @@
     <div class="level0"><span class="xref">System.Object</span></div>
     <div class="level1"><span class="xref">CommandResponse</span></div>
   </div>
-  <div class="inheritedMembers">
-    <h5>Inherited Members</h5>
-    <div>
-      <span class="xref">System.Object.Equals(System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.GetHashCode()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.GetType()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.MemberwiseClone()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.ToString()</span>
-    </div>
-  </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="SIX.TimApi.html">SIX.TimApi</a></h6>
   <h6><strong>Assembly</strong>: TimApi.dll</h6>
   <h5 id="SIX_TimApi_CommandResponse_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class CommandResponse</code></pre>
+    <pre><code class="lang-csharp hljs">public class CommandResponse : object</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
   
   
   <a id="SIX_TimApi_CommandResponse__ctor_" data-uid="SIX.TimApi.CommandResponse.#ctor*"></a>
-  <h4 id="SIX_TimApi_CommandResponse__ctor_System_Int32_SIX_TimApi_Constants_ResponseType_System_String_System_String_System_String_" data-uid="SIX.TimApi.CommandResponse.#ctor(System.Int32,SIX.TimApi.Constants.ResponseType,System.String,System.String,System.String)">CommandResponse(Int32, ResponseType, String, String, String)</h4>
+  <h4 id="SIX_TimApi_CommandResponse__ctor_System_Int32_SIX_TimApi_Constants_ResponseType_String_String_String_" data-uid="SIX.TimApi.CommandResponse.#ctor(System.Int32,SIX.TimApi.Constants.ResponseType,String,String,String)">CommandResponse(Int32, ResponseType, String, String, String)</h4>
   <div class="markdown level1 summary"><p>Create command response.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public CommandResponse(int order, ResponseType responseType, string cardResponse, string uid, string atr)</code></pre>
+    <pre><code class="lang-csharp hljs">public CommandResponse(int order, ResponseType responseType, String cardResponse, String uid, String atr)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -996,17 +972,17 @@
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="xref">String</span></td>
         <td><span class="parametername">cardResponse</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="xref">String</span></td>
         <td><span class="parametername">uid</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="xref">String</span></td>
         <td><span class="parametername">atr</span></td>
         <td></td>
       </tr>
@@ -1023,7 +999,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string Atr { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public String Atr { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1035,7 +1011,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="xref">String</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -1049,7 +1025,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string CardResponse { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public String CardResponse { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1061,7 +1037,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="xref">String</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -1127,7 +1103,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string Uid { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public String Uid { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1139,7 +1115,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="xref">String</span></td>
         <td></td>
       </tr>
     </tbody>

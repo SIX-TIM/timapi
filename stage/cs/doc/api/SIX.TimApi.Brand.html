@@ -937,32 +937,11 @@ or brands have been manually retrieved by <a class="xref" href="SIX.TimApi.Termi
     <div class="level0"><span class="xref">System.Object</span></div>
     <div class="level1"><span class="xref">Brand</span></div>
   </div>
-  <div class="inheritedMembers">
-    <h5>Inherited Members</h5>
-    <div>
-      <span class="xref">System.Object.Equals(System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.GetHashCode()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.GetType()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.MemberwiseClone()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
-    </div>
-  </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="SIX.TimApi.html">SIX.TimApi</a></h6>
   <h6><strong>Assembly</strong>: TimApi.dll</h6>
   <h5 id="SIX_TimApi_Brand_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class Brand</code></pre>
+    <pre><code class="lang-csharp hljs">public class Brand : object</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -980,13 +959,13 @@ or brands have been manually retrieved by <a class="xref" href="SIX.TimApi.Termi
   
   
   <a id="SIX_TimApi_Brand__ctor_" data-uid="SIX.TimApi.Brand.#ctor*"></a>
-  <h4 id="SIX_TimApi_Brand__ctor_System_String_System_Boolean_SIX_TimApi_Constants_PaymentProtocol_System_Int64_System_Nullable_System_DateTime__System_Collections_Generic_List_SIX_TimApi_Application__System_Collections_Generic_List_SIX_TimApi_CurrencyItem__" data-uid="SIX.TimApi.Brand.#ctor(System.String,System.Boolean,SIX.TimApi.Constants.PaymentProtocol,System.Int64,System.Nullable{System.DateTime},System.Collections.Generic.List{SIX.TimApi.Application},System.Collections.Generic.List{SIX.TimApi.CurrencyItem})">Brand(String, Boolean, PaymentProtocol, Int64, Nullable&lt;DateTime&gt;, List&lt;Application&gt;, List&lt;CurrencyItem&gt;)</h4>
+  <h4 id="SIX_TimApi_Brand__ctor_String_System_Boolean_SIX_TimApi_Constants_PaymentProtocol_System_Int64_System_Nullable_DateTime__List_SIX_TimApi_Application__List_SIX_TimApi_CurrencyItem__" data-uid="SIX.TimApi.Brand.#ctor(String,System.Boolean,SIX.TimApi.Constants.PaymentProtocol,System.Int64,System.Nullable{DateTime},List{SIX.TimApi.Application},List{SIX.TimApi.CurrencyItem})">Brand(String, Boolean, PaymentProtocol, Int64, Nullable&lt;DateTime&gt;, List&lt;Application&gt;, List&lt;CurrencyItem&gt;)</h4>
   <div class="markdown level1 summary"><p>Create brand.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Brand(string name, bool dccAvailable, PaymentProtocol paymentProtocol, long acqId, DateTime? lastInitDate, List&lt;Application&gt; applications, List&lt;CurrencyItem&gt; currencies)</code></pre>
+    <pre><code class="lang-csharp hljs">public Brand(String name, bool dccAvailable, PaymentProtocol paymentProtocol, long acqId, DateTime? lastInitDate, List&lt;Application&gt; applications, List&lt;CurrencyItem&gt; currencies)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -999,7 +978,7 @@ or brands have been manually retrieved by <a class="xref" href="SIX.TimApi.Termi
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="xref">String</span></td>
         <td><span class="parametername">name</span></td>
         <td></td>
       </tr>
@@ -1019,17 +998,17 @@ or brands have been manually retrieved by <a class="xref" href="SIX.TimApi.Termi
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.DateTime</span>&gt;</td>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">DateTime</span>&gt;</td>
         <td><span class="parametername">lastInitDate</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="SIX.TimApi.Application.html">Application</a>&gt;</td>
+        <td><span class="xref">List</span>&lt;<a class="xref" href="SIX.TimApi.Application.html">Application</a>&gt;</td>
         <td><span class="parametername">applications</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="SIX.TimApi.CurrencyItem.html">CurrencyItem</a>&gt;</td>
+        <td><span class="xref">List</span>&lt;<a class="xref" href="SIX.TimApi.CurrencyItem.html">CurrencyItem</a>&gt;</td>
         <td><span class="parametername">currencies</span></td>
         <td></td>
       </tr>
@@ -1084,7 +1063,7 @@ or brands have been manually retrieved by <a class="xref" href="SIX.TimApi.Termi
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="SIX.TimApi.Application.html">Application</a>&gt;</td>
+        <td><span class="xref">List</span>&lt;<a class="xref" href="SIX.TimApi.Application.html">Application</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -1136,7 +1115,7 @@ or brands have been manually retrieved by <a class="xref" href="SIX.TimApi.Termi
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="SIX.TimApi.CurrencyItem.html">CurrencyItem</a>&gt;</td>
+        <td><span class="xref">List</span>&lt;<a class="xref" href="SIX.TimApi.CurrencyItem.html">CurrencyItem</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -1188,7 +1167,7 @@ or brands have been manually retrieved by <a class="xref" href="SIX.TimApi.Termi
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.DateTime</span>&gt;</td>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">DateTime</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -1230,7 +1209,7 @@ or brands have been manually retrieved by <a class="xref" href="SIX.TimApi.Termi
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+    <pre><code class="lang-csharp hljs">public override String ToString()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1242,13 +1221,11 @@ or brands have been manually retrieved by <a class="xref" href="SIX.TimApi.Termi
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="xref">String</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  <h5 class="overrides">Overrides</h5>
-  <div><span class="xref">System.Object.ToString()</span></div>
 </article>
           </div>
           

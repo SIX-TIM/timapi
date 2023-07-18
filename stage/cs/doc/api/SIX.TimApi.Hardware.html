@@ -932,45 +932,24 @@ Immutable class.</p>
     <div class="level0"><span class="xref">System.Object</span></div>
     <div class="level1"><span class="xref">Hardware</span></div>
   </div>
-  <div class="inheritedMembers">
-    <h5>Inherited Members</h5>
-    <div>
-      <span class="xref">System.Object.Equals(System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.GetHashCode()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.GetType()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.MemberwiseClone()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
-    </div>
-  </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="SIX.TimApi.html">SIX.TimApi</a></h6>
   <h6><strong>Assembly</strong>: TimApi.dll</h6>
   <h5 id="SIX_TimApi_Hardware_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class Hardware</code></pre>
+    <pre><code class="lang-csharp hljs">public class Hardware : object</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
   
   
   <a id="SIX_TimApi_Hardware__ctor_" data-uid="SIX.TimApi.Hardware.#ctor*"></a>
-  <h4 id="SIX_TimApi_Hardware__ctor_SIX_TimApi_Constants_HardwareType_System_String_System_Nullable_System_DateTime__System_String_System_String_SIX_TimApi_Constants_SecurityStatus_System_Nullable_System_DateTime__System_String_System_String_System_String_System_String_System_String_" data-uid="SIX.TimApi.Hardware.#ctor(SIX.TimApi.Constants.HardwareType,System.String,System.Nullable{System.DateTime},System.String,System.String,SIX.TimApi.Constants.SecurityStatus,System.Nullable{System.DateTime},System.String,System.String,System.String,System.String,System.String)">Hardware(HardwareType, String, Nullable&lt;DateTime&gt;, String, String, SecurityStatus, Nullable&lt;DateTime&gt;, String, String, String, String, String)</h4>
+  <h4 id="SIX_TimApi_Hardware__ctor_SIX_TimApi_Constants_HardwareType_String_System_Nullable_DateTime__String_String_SIX_TimApi_Constants_SecurityStatus_System_Nullable_DateTime__System_String_System_String_System_String_System_String_System_String_" data-uid="SIX.TimApi.Hardware.#ctor(SIX.TimApi.Constants.HardwareType,String,System.Nullable{DateTime},String,String,SIX.TimApi.Constants.SecurityStatus,System.Nullable{DateTime},System.String,System.String,System.String,System.String,System.String)">Hardware(HardwareType, String, Nullable&lt;DateTime&gt;, String, String, SecurityStatus, Nullable&lt;DateTime&gt;, String, String, String, String, String)</h4>
   <div class="markdown level1 summary"><p>Create hardware information.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Hardware(HardwareType hardwareType, string serialNumber, DateTime? productionDate, string productVersion, string firmwareVersion, SecurityStatus securityStatus, DateTime? lastCleaningDate, string imsi, string imei, string iccid, string hardwareAddress, string hardwareDescription)</code></pre>
+    <pre><code class="lang-csharp hljs">public Hardware(HardwareType hardwareType, String serialNumber, DateTime? productionDate, String productVersion, String firmwareVersion, SecurityStatus securityStatus, DateTime? lastCleaningDate, string imsi, string imei, string iccid, string hardwareAddress, string hardwareDescription)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -988,22 +967,22 @@ Immutable class.</p>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="xref">String</span></td>
         <td><span class="parametername">serialNumber</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.DateTime</span>&gt;</td>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">DateTime</span>&gt;</td>
         <td><span class="parametername">productionDate</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="xref">String</span></td>
         <td><span class="parametername">productVersion</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="xref">String</span></td>
         <td><span class="parametername">firmwareVersion</span></td>
         <td></td>
       </tr>
@@ -1013,7 +992,7 @@ Immutable class.</p>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.DateTime</span>&gt;</td>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">DateTime</span>&gt;</td>
         <td><span class="parametername">lastCleaningDate</span></td>
         <td></td>
       </tr>
@@ -1081,7 +1060,7 @@ Immutable class.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string HardwareAddress { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public String HardwareAddress { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1093,7 +1072,7 @@ Immutable class.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="xref">String</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -1107,7 +1086,7 @@ Immutable class.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string HardwareDescription { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public String HardwareDescription { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1119,7 +1098,7 @@ Immutable class.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="xref">String</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -1159,7 +1138,7 @@ Immutable class.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string Iccid { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public String Iccid { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1171,7 +1150,7 @@ Immutable class.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="xref">String</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -1185,7 +1164,7 @@ Immutable class.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string Imei { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public String Imei { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1197,7 +1176,7 @@ Immutable class.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="xref">String</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -1211,7 +1190,7 @@ Immutable class.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string Imsi { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public String Imsi { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1223,7 +1202,7 @@ Immutable class.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="xref">String</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -1240,8 +1219,7 @@ Deprecated! Use LastCleaningDateNullable instead since this property can return 
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use LastCleaningDateNullable instead since this property can return null value if not set.&quot;)]
-public DateTime LastCleaningDate { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public DateTime LastCleaningDate { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1253,7 +1231,7 @@ public DateTime LastCleaningDate { get; }</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.DateTime</span></td>
+        <td><span class="xref">DateTime</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -1280,7 +1258,7 @@ Available if HardwareType = ContactReader, MagStripeReader.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.DateTime</span>&gt;</td>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">DateTime</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -1296,8 +1274,7 @@ Deprecated! Use ProductionDateNullable instead since this property can return nu
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use ProductionDateNullable instead since this property can return null value if not set.&quot;)]
-public DateTime ProductionDate { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public DateTime ProductionDate { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1309,7 +1286,7 @@ public DateTime ProductionDate { get; }</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.DateTime</span></td>
+        <td><span class="xref">DateTime</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -1335,7 +1312,7 @@ public DateTime ProductionDate { get; }</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.DateTime</span>&gt;</td>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">DateTime</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -1429,7 +1406,7 @@ public DateTime ProductionDate { get; }</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+    <pre><code class="lang-csharp hljs">public override String ToString()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1441,13 +1418,11 @@ public DateTime ProductionDate { get; }</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="xref">String</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  <h5 class="overrides">Overrides</h5>
-  <div><span class="xref">System.Object.ToString()</span></div>
 </article>
           </div>
           

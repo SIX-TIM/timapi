@@ -930,47 +930,23 @@
     <div class="level0"><span class="xref">System.Object</span></div>
     <div class="level1"><span class="xref">ConversionHelper</span></div>
   </div>
-  <div class="inheritedMembers">
-    <h5>Inherited Members</h5>
-    <div>
-      <span class="xref">System.Object.Equals(System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.GetHashCode()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.GetType()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.MemberwiseClone()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.ToString()</span>
-    </div>
-  </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="SIX.TimApi.html">SIX.TimApi</a></h6>
   <h6><strong>Assembly</strong>: TimApi.dll</h6>
   <h5 id="SIX_TimApi_ConversionHelper_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class ConversionHelper</code></pre>
+    <pre><code class="lang-csharp hljs">public class ConversionHelper : object</code></pre>
   </div>
   <h3 id="methods">Methods
   </h3>
   
   
   <a id="SIX_TimApi_ConversionHelper_base64StringToByte_" data-uid="SIX.TimApi.ConversionHelper.base64StringToByte*"></a>
-  <h4 id="SIX_TimApi_ConversionHelper_base64StringToByte_System_String_" data-uid="SIX.TimApi.ConversionHelper.base64StringToByte(System.String)">base64StringToByte(String)</h4>
+  <h4 id="SIX_TimApi_ConversionHelper_base64StringToByte_String_" data-uid="SIX.TimApi.ConversionHelper.base64StringToByte(String)">base64StringToByte(String)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static byte[] base64StringToByte(string s)</code></pre>
+    <pre><code class="lang-csharp hljs">public static byte[] base64StringToByte(String s)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -983,7 +959,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="xref">String</span></td>
         <td><span class="parametername">s</span></td>
         <td></td>
       </tr>
@@ -1012,7 +988,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static string byteOrNullToBase64String(byte[] bytes)</code></pre>
+    <pre><code class="lang-csharp hljs">public static String byteOrNullToBase64String(byte[] bytes)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1041,7 +1017,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="xref">String</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -1054,7 +1030,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static string byteOrNullToHexString(byte[] bytes)</code></pre>
+    <pre><code class="lang-csharp hljs">public static String byteOrNullToHexString(byte[] bytes)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1083,7 +1059,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="xref">String</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -1096,7 +1072,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static string byteToBase64String(byte[] bytes)</code></pre>
+    <pre><code class="lang-csharp hljs">public static String byteToBase64String(byte[] bytes)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1125,7 +1101,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="xref">String</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -1138,7 +1114,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static string byteToHexString(byte[] bytes)</code></pre>
+    <pre><code class="lang-csharp hljs">public static String byteToHexString(byte[] bytes)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1167,7 +1143,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="xref">String</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -1175,12 +1151,12 @@
   
   
   <a id="SIX_TimApi_ConversionHelper_hexStringToByte_" data-uid="SIX.TimApi.ConversionHelper.hexStringToByte*"></a>
-  <h4 id="SIX_TimApi_ConversionHelper_hexStringToByte_System_String_" data-uid="SIX.TimApi.ConversionHelper.hexStringToByte(System.String)">hexStringToByte(String)</h4>
+  <h4 id="SIX_TimApi_ConversionHelper_hexStringToByte_String_" data-uid="SIX.TimApi.ConversionHelper.hexStringToByte(String)">hexStringToByte(String)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static byte[] hexStringToByte(string s)</code></pre>
+    <pre><code class="lang-csharp hljs">public static byte[] hexStringToByte(String s)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1193,7 +1169,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="xref">String</span></td>
         <td><span class="parametername">s</span></td>
         <td></td>
       </tr>
@@ -1316,7 +1292,7 @@
   
   
   <a id="SIX_TimApi_ConversionHelper_ToString_" data-uid="SIX.TimApi.ConversionHelper.ToString*"></a>
-  <h4 id="SIX_TimApi_ConversionHelper_ToString__1_System_Collections_Generic_List___0__" data-uid="SIX.TimApi.ConversionHelper.ToString``1(System.Collections.Generic.List{``0})">ToString&lt;T&gt;(List&lt;T&gt;)</h4>
+  <h4 id="SIX_TimApi_ConversionHelper_ToString__1_List___0__" data-uid="SIX.TimApi.ConversionHelper.ToString``1(List{``0})">ToString&lt;T&gt;(List&lt;T&gt;)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1334,7 +1310,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.List</span>&lt;T&gt;</td>
+        <td><span class="xref">List</span>&lt;T&gt;</td>
         <td><span class="parametername">array</span></td>
         <td></td>
       </tr>
@@ -1373,7 +1349,7 @@
   
   
   <a id="SIX_TimApi_ConversionHelper_ToString_" data-uid="SIX.TimApi.ConversionHelper.ToString*"></a>
-  <h4 id="SIX_TimApi_ConversionHelper_ToString__2_System_Collections_Generic_Dictionary___0___1__" data-uid="SIX.TimApi.ConversionHelper.ToString``2(System.Collections.Generic.Dictionary{``0,``1})">ToString&lt;T1, T2&gt;(Dictionary&lt;T1, T2&gt;)</h4>
+  <h4 id="SIX_TimApi_ConversionHelper_ToString__2_Dictionary___0___1__" data-uid="SIX.TimApi.ConversionHelper.ToString``2(Dictionary{``0,``1})">ToString&lt;T1, T2&gt;(Dictionary&lt;T1, T2&gt;)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1391,7 +1367,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;T1, T2&gt;</td>
+        <td><span class="xref">Dictionary</span>&lt;T1, T2&gt;</td>
         <td><span class="parametername">map</span></td>
         <td></td>
       </tr>
@@ -1434,7 +1410,7 @@
   
   
   <a id="SIX_TimApi_ConversionHelper_ToStringOrNull_" data-uid="SIX.TimApi.ConversionHelper.ToStringOrNull*"></a>
-  <h4 id="SIX_TimApi_ConversionHelper_ToStringOrNull__1_System_Collections_Generic_List___0__" data-uid="SIX.TimApi.ConversionHelper.ToStringOrNull``1(System.Collections.Generic.List{``0})">ToStringOrNull&lt;T&gt;(List&lt;T&gt;)</h4>
+  <h4 id="SIX_TimApi_ConversionHelper_ToStringOrNull__1_List___0__" data-uid="SIX.TimApi.ConversionHelper.ToStringOrNull``1(List{``0})">ToStringOrNull&lt;T&gt;(List&lt;T&gt;)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1452,7 +1428,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.List</span>&lt;T&gt;</td>
+        <td><span class="xref">List</span>&lt;T&gt;</td>
         <td><span class="parametername">array</span></td>
         <td></td>
       </tr>
@@ -1491,7 +1467,7 @@
   
   
   <a id="SIX_TimApi_ConversionHelper_ToStringOrNull_" data-uid="SIX.TimApi.ConversionHelper.ToStringOrNull*"></a>
-  <h4 id="SIX_TimApi_ConversionHelper_ToStringOrNull__2_System_Collections_Generic_Dictionary___0___1__" data-uid="SIX.TimApi.ConversionHelper.ToStringOrNull``2(System.Collections.Generic.Dictionary{``0,``1})">ToStringOrNull&lt;T1, T2&gt;(Dictionary&lt;T1, T2&gt;)</h4>
+  <h4 id="SIX_TimApi_ConversionHelper_ToStringOrNull__2_Dictionary___0___1__" data-uid="SIX.TimApi.ConversionHelper.ToStringOrNull``2(Dictionary{``0,``1})">ToStringOrNull&lt;T1, T2&gt;(Dictionary&lt;T1, T2&gt;)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1509,7 +1485,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;T1, T2&gt;</td>
+        <td><span class="xref">Dictionary</span>&lt;T1, T2&gt;</td>
         <td><span class="parametername">map</span></td>
         <td></td>
       </tr>
