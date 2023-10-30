@@ -3003,6 +3003,12 @@ references:
   commentId: F:SIX.TimApi.Constants.CardProductType.Debit
   fullName: SIX.TimApi.Constants.CardProductType.Debit
   nameWithType: CardProductType.Debit
+- uid: SIX.TimApi.Constants.CardProductType.Other
+  name: Other
+  href: api/SIX.TimApi.Constants.CardProductType.html#SIX_TimApi_Constants_CardProductType_Other
+  commentId: F:SIX.TimApi.Constants.CardProductType.Other
+  fullName: SIX.TimApi.Constants.CardProductType.Other
+  nameWithType: CardProductType.Other
 - uid: SIX.TimApi.Constants.CardProductType.Prepaid
   name: Prepaid
   href: api/SIX.TimApi.Constants.CardProductType.html#SIX_TimApi_Constants_CardProductType_Prepaid
@@ -4426,6 +4432,12 @@ references:
   commentId: F:SIX.TimApi.Constants.Cvm.OnDevice
   fullName: SIX.TimApi.Constants.Cvm.OnDevice
   nameWithType: Cvm.OnDevice
+- uid: SIX.TimApi.Constants.Cvm.Other
+  name: Other
+  href: api/SIX.TimApi.Constants.Cvm.html#SIX_TimApi_Constants_Cvm_Other
+  commentId: F:SIX.TimApi.Constants.Cvm.Other
+  fullName: SIX.TimApi.Constants.Cvm.Other
+  nameWithType: Cvm.Other
 - uid: SIX.TimApi.Constants.Cvm.Pin
   name: Pin
   href: api/SIX.TimApi.Constants.Cvm.html#SIX_TimApi_Constants_Cvm_Pin
@@ -5488,6 +5500,12 @@ references:
   commentId: F:SIX.TimApi.Constants.PaymentProtocol.Ev
   fullName: SIX.TimApi.Constants.PaymentProtocol.Ev
   nameWithType: PaymentProtocol.Ev
+- uid: SIX.TimApi.Constants.PaymentProtocol.Other
+  name: Other
+  href: api/SIX.TimApi.Constants.PaymentProtocol.html#SIX_TimApi_Constants_PaymentProtocol_Other
+  commentId: F:SIX.TimApi.Constants.PaymentProtocol.Other
+  fullName: SIX.TimApi.Constants.PaymentProtocol.Other
+  nameWithType: PaymentProtocol.Other
 - uid: SIX.TimApi.Constants.PaymentProtocol.Unknown
   name: Unknown
   href: api/SIX.TimApi.Constants.PaymentProtocol.html#SIX_TimApi_Constants_PaymentProtocol_Unknown
@@ -5932,6 +5950,12 @@ references:
   commentId: F:SIX.TimApi.Constants.ReceiptItemType.AmountDcc
   fullName: SIX.TimApi.Constants.ReceiptItemType.AmountDcc
   nameWithType: ReceiptItemType.AmountDcc
+- uid: SIX.TimApi.Constants.ReceiptItemType.AmountDue
+  name: AmountDue
+  href: api/SIX.TimApi.Constants.ReceiptItemType.html#SIX_TimApi_Constants_ReceiptItemType_AmountDue
+  commentId: F:SIX.TimApi.Constants.ReceiptItemType.AmountDue
+  fullName: SIX.TimApi.Constants.ReceiptItemType.AmountDue
+  nameWithType: ReceiptItemType.AmountDue
 - uid: SIX.TimApi.Constants.ReceiptItemType.AmountInstallmentFee
   name: AmountInstallmentFee
   href: api/SIX.TimApi.Constants.ReceiptItemType.html#SIX_TimApi_Constants_ReceiptItemType_AmountInstallmentFee
@@ -5956,6 +5980,12 @@ references:
   commentId: F:SIX.TimApi.Constants.ReceiptItemType.AmountInstallmentTotal
   fullName: SIX.TimApi.Constants.ReceiptItemType.AmountInstallmentTotal
   nameWithType: ReceiptItemType.AmountInstallmentTotal
+- uid: SIX.TimApi.Constants.ReceiptItemType.AmountOfGoods
+  name: AmountOfGoods
+  href: api/SIX.TimApi.Constants.ReceiptItemType.html#SIX_TimApi_Constants_ReceiptItemType_AmountOfGoods
+  commentId: F:SIX.TimApi.Constants.ReceiptItemType.AmountOfGoods
+  fullName: SIX.TimApi.Constants.ReceiptItemType.AmountOfGoods
+  nameWithType: ReceiptItemType.AmountOfGoods
 - uid: SIX.TimApi.Constants.ReceiptItemType.AmountOther
   name: AmountOther
   href: api/SIX.TimApi.Constants.ReceiptItemType.html#SIX_TimApi_Constants_ReceiptItemType_AmountOther
@@ -5980,6 +6010,12 @@ references:
   commentId: F:SIX.TimApi.Constants.ReceiptItemType.AmountTip
   fullName: SIX.TimApi.Constants.ReceiptItemType.AmountTip
   nameWithType: ReceiptItemType.AmountTip
+- uid: SIX.TimApi.Constants.ReceiptItemType.AmountTotal
+  name: AmountTotal
+  href: api/SIX.TimApi.Constants.ReceiptItemType.html#SIX_TimApi_Constants_ReceiptItemType_AmountTotal
+  commentId: F:SIX.TimApi.Constants.ReceiptItemType.AmountTotal
+  fullName: SIX.TimApi.Constants.ReceiptItemType.AmountTotal
+  nameWithType: ReceiptItemType.AmountTotal
 - uid: SIX.TimApi.Constants.ReceiptItemType.AuthCode
   name: AuthCode
   href: api/SIX.TimApi.Constants.ReceiptItemType.html#SIX_TimApi_Constants_ReceiptItemType_AuthCode
@@ -6004,6 +6040,12 @@ references:
   commentId: F:SIX.TimApi.Constants.ReceiptItemType.AuthRespTextC
   fullName: SIX.TimApi.Constants.ReceiptItemType.AuthRespTextC
   nameWithType: ReceiptItemType.AuthRespTextC
+- uid: SIX.TimApi.Constants.ReceiptItemType.BalanceExpDate
+  name: BalanceExpDate
+  href: api/SIX.TimApi.Constants.ReceiptItemType.html#SIX_TimApi_Constants_ReceiptItemType_BalanceExpDate
+  commentId: F:SIX.TimApi.Constants.ReceiptItemType.BalanceExpDate
+  fullName: SIX.TimApi.Constants.ReceiptItemType.BalanceExpDate
+  nameWithType: ReceiptItemType.BalanceExpDate
 - uid: SIX.TimApi.Constants.ReceiptItemType.BrandName
   name: BrandName
   href: api/SIX.TimApi.Constants.ReceiptItemType.html#SIX_TimApi_Constants_ReceiptItemType_BrandName
@@ -7426,6 +7468,12 @@ references:
   commentId: F:SIX.TimApi.Constants.ResourceId.PostProcessingOk
   fullName: SIX.TimApi.Constants.ResourceId.PostProcessingOk
   nameWithType: ResourceId.PostProcessingOk
+- uid: SIX.TimApi.Constants.ResourceId.PostQrcodeConfirmation
+  name: PostQrcodeConfirmation
+  href: api/SIX.TimApi.Constants.ResourceId.html#SIX_TimApi_Constants_ResourceId_PostQrcodeConfirmation
+  commentId: F:SIX.TimApi.Constants.ResourceId.PostQrcodeConfirmation
+  fullName: SIX.TimApi.Constants.ResourceId.PostQrcodeConfirmation
+  nameWithType: ResourceId.PostQrcodeConfirmation
 - uid: SIX.TimApi.Constants.ResourceId.PostRegisterCard
   name: PostRegisterCard
   href: api/SIX.TimApi.Constants.ResourceId.html#SIX_TimApi_Constants_ResourceId_PostRegisterCard
@@ -8782,6 +8830,12 @@ references:
   commentId: F:SIX.TimApi.Constants.TokenPanType.Gts
   fullName: SIX.TimApi.Constants.TokenPanType.Gts
   nameWithType: TokenPanType.Gts
+- uid: SIX.TimApi.Constants.TokenPanType.Other
+  name: Other
+  href: api/SIX.TimApi.Constants.TokenPanType.html#SIX_TimApi_Constants_TokenPanType_Other
+  commentId: F:SIX.TimApi.Constants.TokenPanType.Other
+  fullName: SIX.TimApi.Constants.TokenPanType.Other
+  nameWithType: TokenPanType.Other
 - uid: SIX.TimApi.Constants.TokenPanType.Unknown
   name: Unknown
   href: api/SIX.TimApi.Constants.TokenPanType.html#SIX_TimApi_Constants_TokenPanType_Unknown
@@ -10964,6 +11018,188 @@ references:
   isSpec: "True"
   fullName: SIX.TimApi.EcrInfo.ToString
   nameWithType: EcrInfo.ToString
+- uid: SIX.TimApi.EndianReader
+  name: EndianReader
+  href: api/SIX.TimApi.EndianReader.html
+  commentId: T:SIX.TimApi.EndianReader
+  fullName: SIX.TimApi.EndianReader
+  nameWithType: EndianReader
+- uid: SIX.TimApi.EndianReader.#ctor(Stream)
+  name: EndianReader(Stream)
+  href: api/SIX.TimApi.EndianReader.html#SIX_TimApi_EndianReader__ctor_Stream_
+  commentId: M:SIX.TimApi.EndianReader.#ctor(Stream)
+  fullName: SIX.TimApi.EndianReader.EndianReader(Stream)
+  nameWithType: EndianReader.EndianReader(Stream)
+- uid: SIX.TimApi.EndianReader.#ctor(Stream,Encoding)
+  name: EndianReader(Stream, Encoding)
+  href: api/SIX.TimApi.EndianReader.html#SIX_TimApi_EndianReader__ctor_Stream_Encoding_
+  commentId: M:SIX.TimApi.EndianReader.#ctor(Stream,Encoding)
+  fullName: SIX.TimApi.EndianReader.EndianReader(Stream, Encoding)
+  nameWithType: EndianReader.EndianReader(Stream, Encoding)
+- uid: SIX.TimApi.EndianReader.#ctor(Stream,Encoding,SIX.TimApi.EndianReader.Endianness)
+  name: EndianReader(Stream, Encoding, EndianReader.Endianness)
+  href: api/SIX.TimApi.EndianReader.html#SIX_TimApi_EndianReader__ctor_Stream_Encoding_SIX_TimApi_EndianReader_Endianness_
+  commentId: M:SIX.TimApi.EndianReader.#ctor(Stream,Encoding,SIX.TimApi.EndianReader.Endianness)
+  fullName: SIX.TimApi.EndianReader.EndianReader(Stream, Encoding, SIX.TimApi.EndianReader.Endianness)
+  nameWithType: EndianReader.EndianReader(Stream, Encoding, EndianReader.Endianness)
+- uid: SIX.TimApi.EndianReader.#ctor(Stream,SIX.TimApi.EndianReader.Endianness)
+  name: EndianReader(Stream, EndianReader.Endianness)
+  href: api/SIX.TimApi.EndianReader.html#SIX_TimApi_EndianReader__ctor_Stream_SIX_TimApi_EndianReader_Endianness_
+  commentId: M:SIX.TimApi.EndianReader.#ctor(Stream,SIX.TimApi.EndianReader.Endianness)
+  fullName: SIX.TimApi.EndianReader.EndianReader(Stream, SIX.TimApi.EndianReader.Endianness)
+  nameWithType: EndianReader.EndianReader(Stream, EndianReader.Endianness)
+- uid: SIX.TimApi.EndianReader.#ctor*
+  name: EndianReader
+  href: api/SIX.TimApi.EndianReader.html#SIX_TimApi_EndianReader__ctor_
+  commentId: Overload:SIX.TimApi.EndianReader.#ctor
+  isSpec: "True"
+  fullName: SIX.TimApi.EndianReader.EndianReader
+  nameWithType: EndianReader.EndianReader
+- uid: SIX.TimApi.EndianReader.Endianness
+  name: EndianReader.Endianness
+  href: api/SIX.TimApi.EndianReader.Endianness.html
+  commentId: T:SIX.TimApi.EndianReader.Endianness
+  fullName: SIX.TimApi.EndianReader.Endianness
+  nameWithType: EndianReader.Endianness
+- uid: SIX.TimApi.EndianReader.Endianness.Big
+  name: Big
+  href: api/SIX.TimApi.EndianReader.Endianness.html#SIX_TimApi_EndianReader_Endianness_Big
+  commentId: F:SIX.TimApi.EndianReader.Endianness.Big
+  fullName: SIX.TimApi.EndianReader.Endianness.Big
+  nameWithType: EndianReader.Endianness.Big
+- uid: SIX.TimApi.EndianReader.Endianness.Little
+  name: Little
+  href: api/SIX.TimApi.EndianReader.Endianness.html#SIX_TimApi_EndianReader_Endianness_Little
+  commentId: F:SIX.TimApi.EndianReader.Endianness.Little
+  fullName: SIX.TimApi.EndianReader.Endianness.Little
+  nameWithType: EndianReader.Endianness.Little
+- uid: SIX.TimApi.EndianReader.ReadInt16
+  name: ReadInt16()
+  href: api/SIX.TimApi.EndianReader.html#SIX_TimApi_EndianReader_ReadInt16
+  commentId: M:SIX.TimApi.EndianReader.ReadInt16
+  fullName: SIX.TimApi.EndianReader.ReadInt16()
+  nameWithType: EndianReader.ReadInt16()
+- uid: SIX.TimApi.EndianReader.ReadInt16(SIX.TimApi.EndianReader.Endianness)
+  name: ReadInt16(EndianReader.Endianness)
+  href: api/SIX.TimApi.EndianReader.html#SIX_TimApi_EndianReader_ReadInt16_SIX_TimApi_EndianReader_Endianness_
+  commentId: M:SIX.TimApi.EndianReader.ReadInt16(SIX.TimApi.EndianReader.Endianness)
+  fullName: SIX.TimApi.EndianReader.ReadInt16(SIX.TimApi.EndianReader.Endianness)
+  nameWithType: EndianReader.ReadInt16(EndianReader.Endianness)
+- uid: SIX.TimApi.EndianReader.ReadInt16*
+  name: ReadInt16
+  href: api/SIX.TimApi.EndianReader.html#SIX_TimApi_EndianReader_ReadInt16_
+  commentId: Overload:SIX.TimApi.EndianReader.ReadInt16
+  isSpec: "True"
+  fullName: SIX.TimApi.EndianReader.ReadInt16
+  nameWithType: EndianReader.ReadInt16
+- uid: SIX.TimApi.EndianReader.ReadInt32
+  name: ReadInt32()
+  href: api/SIX.TimApi.EndianReader.html#SIX_TimApi_EndianReader_ReadInt32
+  commentId: M:SIX.TimApi.EndianReader.ReadInt32
+  fullName: SIX.TimApi.EndianReader.ReadInt32()
+  nameWithType: EndianReader.ReadInt32()
+- uid: SIX.TimApi.EndianReader.ReadInt32(SIX.TimApi.EndianReader.Endianness)
+  name: ReadInt32(EndianReader.Endianness)
+  href: api/SIX.TimApi.EndianReader.html#SIX_TimApi_EndianReader_ReadInt32_SIX_TimApi_EndianReader_Endianness_
+  commentId: M:SIX.TimApi.EndianReader.ReadInt32(SIX.TimApi.EndianReader.Endianness)
+  fullName: SIX.TimApi.EndianReader.ReadInt32(SIX.TimApi.EndianReader.Endianness)
+  nameWithType: EndianReader.ReadInt32(EndianReader.Endianness)
+- uid: SIX.TimApi.EndianReader.ReadInt32*
+  name: ReadInt32
+  href: api/SIX.TimApi.EndianReader.html#SIX_TimApi_EndianReader_ReadInt32_
+  commentId: Overload:SIX.TimApi.EndianReader.ReadInt32
+  isSpec: "True"
+  fullName: SIX.TimApi.EndianReader.ReadInt32
+  nameWithType: EndianReader.ReadInt32
+- uid: SIX.TimApi.EndianReader.ReadInt64
+  name: ReadInt64()
+  href: api/SIX.TimApi.EndianReader.html#SIX_TimApi_EndianReader_ReadInt64
+  commentId: M:SIX.TimApi.EndianReader.ReadInt64
+  fullName: SIX.TimApi.EndianReader.ReadInt64()
+  nameWithType: EndianReader.ReadInt64()
+- uid: SIX.TimApi.EndianReader.ReadInt64(SIX.TimApi.EndianReader.Endianness)
+  name: ReadInt64(EndianReader.Endianness)
+  href: api/SIX.TimApi.EndianReader.html#SIX_TimApi_EndianReader_ReadInt64_SIX_TimApi_EndianReader_Endianness_
+  commentId: M:SIX.TimApi.EndianReader.ReadInt64(SIX.TimApi.EndianReader.Endianness)
+  fullName: SIX.TimApi.EndianReader.ReadInt64(SIX.TimApi.EndianReader.Endianness)
+  nameWithType: EndianReader.ReadInt64(EndianReader.Endianness)
+- uid: SIX.TimApi.EndianReader.ReadInt64*
+  name: ReadInt64
+  href: api/SIX.TimApi.EndianReader.html#SIX_TimApi_EndianReader_ReadInt64_
+  commentId: Overload:SIX.TimApi.EndianReader.ReadInt64
+  isSpec: "True"
+  fullName: SIX.TimApi.EndianReader.ReadInt64
+  nameWithType: EndianReader.ReadInt64
+- uid: SIX.TimApi.EndianReader.ReadString8
+  name: ReadString8()
+  href: api/SIX.TimApi.EndianReader.html#SIX_TimApi_EndianReader_ReadString8
+  commentId: M:SIX.TimApi.EndianReader.ReadString8
+  fullName: SIX.TimApi.EndianReader.ReadString8()
+  nameWithType: EndianReader.ReadString8()
+- uid: SIX.TimApi.EndianReader.ReadString8*
+  name: ReadString8
+  href: api/SIX.TimApi.EndianReader.html#SIX_TimApi_EndianReader_ReadString8_
+  commentId: Overload:SIX.TimApi.EndianReader.ReadString8
+  isSpec: "True"
+  fullName: SIX.TimApi.EndianReader.ReadString8
+  nameWithType: EndianReader.ReadString8
+- uid: SIX.TimApi.EndianReader.ReadUInt16
+  name: ReadUInt16()
+  href: api/SIX.TimApi.EndianReader.html#SIX_TimApi_EndianReader_ReadUInt16
+  commentId: M:SIX.TimApi.EndianReader.ReadUInt16
+  fullName: SIX.TimApi.EndianReader.ReadUInt16()
+  nameWithType: EndianReader.ReadUInt16()
+- uid: SIX.TimApi.EndianReader.ReadUInt16(SIX.TimApi.EndianReader.Endianness)
+  name: ReadUInt16(EndianReader.Endianness)
+  href: api/SIX.TimApi.EndianReader.html#SIX_TimApi_EndianReader_ReadUInt16_SIX_TimApi_EndianReader_Endianness_
+  commentId: M:SIX.TimApi.EndianReader.ReadUInt16(SIX.TimApi.EndianReader.Endianness)
+  fullName: SIX.TimApi.EndianReader.ReadUInt16(SIX.TimApi.EndianReader.Endianness)
+  nameWithType: EndianReader.ReadUInt16(EndianReader.Endianness)
+- uid: SIX.TimApi.EndianReader.ReadUInt16*
+  name: ReadUInt16
+  href: api/SIX.TimApi.EndianReader.html#SIX_TimApi_EndianReader_ReadUInt16_
+  commentId: Overload:SIX.TimApi.EndianReader.ReadUInt16
+  isSpec: "True"
+  fullName: SIX.TimApi.EndianReader.ReadUInt16
+  nameWithType: EndianReader.ReadUInt16
+- uid: SIX.TimApi.EndianReader.ReadUInt32
+  name: ReadUInt32()
+  href: api/SIX.TimApi.EndianReader.html#SIX_TimApi_EndianReader_ReadUInt32
+  commentId: M:SIX.TimApi.EndianReader.ReadUInt32
+  fullName: SIX.TimApi.EndianReader.ReadUInt32()
+  nameWithType: EndianReader.ReadUInt32()
+- uid: SIX.TimApi.EndianReader.ReadUInt32(SIX.TimApi.EndianReader.Endianness)
+  name: ReadUInt32(EndianReader.Endianness)
+  href: api/SIX.TimApi.EndianReader.html#SIX_TimApi_EndianReader_ReadUInt32_SIX_TimApi_EndianReader_Endianness_
+  commentId: M:SIX.TimApi.EndianReader.ReadUInt32(SIX.TimApi.EndianReader.Endianness)
+  fullName: SIX.TimApi.EndianReader.ReadUInt32(SIX.TimApi.EndianReader.Endianness)
+  nameWithType: EndianReader.ReadUInt32(EndianReader.Endianness)
+- uid: SIX.TimApi.EndianReader.ReadUInt32*
+  name: ReadUInt32
+  href: api/SIX.TimApi.EndianReader.html#SIX_TimApi_EndianReader_ReadUInt32_
+  commentId: Overload:SIX.TimApi.EndianReader.ReadUInt32
+  isSpec: "True"
+  fullName: SIX.TimApi.EndianReader.ReadUInt32
+  nameWithType: EndianReader.ReadUInt32
+- uid: SIX.TimApi.EndianReader.ReadUInt64
+  name: ReadUInt64()
+  href: api/SIX.TimApi.EndianReader.html#SIX_TimApi_EndianReader_ReadUInt64
+  commentId: M:SIX.TimApi.EndianReader.ReadUInt64
+  fullName: SIX.TimApi.EndianReader.ReadUInt64()
+  nameWithType: EndianReader.ReadUInt64()
+- uid: SIX.TimApi.EndianReader.ReadUInt64(SIX.TimApi.EndianReader.Endianness)
+  name: ReadUInt64(EndianReader.Endianness)
+  href: api/SIX.TimApi.EndianReader.html#SIX_TimApi_EndianReader_ReadUInt64_SIX_TimApi_EndianReader_Endianness_
+  commentId: M:SIX.TimApi.EndianReader.ReadUInt64(SIX.TimApi.EndianReader.Endianness)
+  fullName: SIX.TimApi.EndianReader.ReadUInt64(SIX.TimApi.EndianReader.Endianness)
+  nameWithType: EndianReader.ReadUInt64(EndianReader.Endianness)
+- uid: SIX.TimApi.EndianReader.ReadUInt64*
+  name: ReadUInt64
+  href: api/SIX.TimApi.EndianReader.html#SIX_TimApi_EndianReader_ReadUInt64_
+  commentId: Overload:SIX.TimApi.EndianReader.ReadUInt64
+  isSpec: "True"
+  fullName: SIX.TimApi.EndianReader.ReadUInt64
+  nameWithType: EndianReader.ReadUInt64
 - uid: SIX.TimApi.ErrorMessages
   name: ErrorMessages
   href: api/SIX.TimApi.ErrorMessages.html
@@ -14560,6 +14796,12 @@ references:
   commentId: T:SIX.TimApi.Receipts.CustomReceiptFormatter
   fullName: SIX.TimApi.Receipts.CustomReceiptFormatter
   nameWithType: CustomReceiptFormatter
+- uid: SIX.TimApi.Receipts.CustomReceiptFormatter.AutoAddHeader
+  name: AutoAddHeader
+  href: api/SIX.TimApi.Receipts.CustomReceiptFormatter.html#SIX_TimApi_Receipts_CustomReceiptFormatter_AutoAddHeader
+  commentId: F:SIX.TimApi.Receipts.CustomReceiptFormatter.AutoAddHeader
+  fullName: SIX.TimApi.Receipts.CustomReceiptFormatter.AutoAddHeader
+  nameWithType: CustomReceiptFormatter.AutoAddHeader
 - uid: SIX.TimApi.Receipts.CustomReceiptFormatter.Condition
   name: CustomReceiptFormatter.Condition
   href: api/SIX.TimApi.Receipts.CustomReceiptFormatter.Condition.html
@@ -14578,6 +14820,12 @@ references:
   commentId: F:SIX.TimApi.Receipts.CustomReceiptFormatter.Condition.ECR_INFO
   fullName: SIX.TimApi.Receipts.CustomReceiptFormatter.Condition.ECR_INFO
   nameWithType: CustomReceiptFormatter.Condition.ECR_INFO
+- uid: SIX.TimApi.Receipts.CustomReceiptFormatter.Condition.ECR_INFO_WITH_TRANS_SEQ
+  name: ECR_INFO_WITH_TRANS_SEQ
+  href: api/SIX.TimApi.Receipts.CustomReceiptFormatter.Condition.html#SIX_TimApi_Receipts_CustomReceiptFormatter_Condition_ECR_INFO_WITH_TRANS_SEQ
+  commentId: F:SIX.TimApi.Receipts.CustomReceiptFormatter.Condition.ECR_INFO_WITH_TRANS_SEQ
+  fullName: SIX.TimApi.Receipts.CustomReceiptFormatter.Condition.ECR_INFO_WITH_TRANS_SEQ
+  nameWithType: CustomReceiptFormatter.Condition.ECR_INFO_WITH_TRANS_SEQ
 - uid: SIX.TimApi.Receipts.CustomReceiptFormatter.Condition.EFT_INFO
   name: EFT_INFO
   href: api/SIX.TimApi.Receipts.CustomReceiptFormatter.Condition.html#SIX_TimApi_Receipts_CustomReceiptFormatter_Condition_EFT_INFO
@@ -14590,6 +14838,18 @@ references:
   commentId: F:SIX.TimApi.Receipts.CustomReceiptFormatter.Condition.FOOTER
   fullName: SIX.TimApi.Receipts.CustomReceiptFormatter.Condition.FOOTER
   nameWithType: CustomReceiptFormatter.Condition.FOOTER
+- uid: SIX.TimApi.Receipts.CustomReceiptFormatter.Condition.HAS_ADDITIONAL_AMOUNTS
+  name: HAS_ADDITIONAL_AMOUNTS
+  href: api/SIX.TimApi.Receipts.CustomReceiptFormatter.Condition.html#SIX_TimApi_Receipts_CustomReceiptFormatter_Condition_HAS_ADDITIONAL_AMOUNTS
+  commentId: F:SIX.TimApi.Receipts.CustomReceiptFormatter.Condition.HAS_ADDITIONAL_AMOUNTS
+  fullName: SIX.TimApi.Receipts.CustomReceiptFormatter.Condition.HAS_ADDITIONAL_AMOUNTS
+  nameWithType: CustomReceiptFormatter.Condition.HAS_ADDITIONAL_AMOUNTS
+- uid: SIX.TimApi.Receipts.CustomReceiptFormatter.Condition.HAS_ALL_VALUES
+  name: HAS_ALL_VALUES
+  href: api/SIX.TimApi.Receipts.CustomReceiptFormatter.Condition.html#SIX_TimApi_Receipts_CustomReceiptFormatter_Condition_HAS_ALL_VALUES
+  commentId: F:SIX.TimApi.Receipts.CustomReceiptFormatter.Condition.HAS_ALL_VALUES
+  fullName: SIX.TimApi.Receipts.CustomReceiptFormatter.Condition.HAS_ALL_VALUES
+  nameWithType: CustomReceiptFormatter.Condition.HAS_ALL_VALUES
 - uid: SIX.TimApi.Receipts.CustomReceiptFormatter.Condition.HAS_VALUES
   name: HAS_VALUES
   href: api/SIX.TimApi.Receipts.CustomReceiptFormatter.Condition.html#SIX_TimApi_Receipts_CustomReceiptFormatter_Condition_HAS_VALUES
@@ -14620,12 +14880,24 @@ references:
   commentId: F:SIX.TimApi.Receipts.CustomReceiptFormatter.Condition.IS_REVERSAL
   fullName: SIX.TimApi.Receipts.CustomReceiptFormatter.Condition.IS_REVERSAL
   nameWithType: CustomReceiptFormatter.Condition.IS_REVERSAL
+- uid: SIX.TimApi.Receipts.CustomReceiptFormatter.Condition.NO_PARTIAL_APPROVAL
+  name: NO_PARTIAL_APPROVAL
+  href: api/SIX.TimApi.Receipts.CustomReceiptFormatter.Condition.html#SIX_TimApi_Receipts_CustomReceiptFormatter_Condition_NO_PARTIAL_APPROVAL
+  commentId: F:SIX.TimApi.Receipts.CustomReceiptFormatter.Condition.NO_PARTIAL_APPROVAL
+  fullName: SIX.TimApi.Receipts.CustomReceiptFormatter.Condition.NO_PARTIAL_APPROVAL
+  nameWithType: CustomReceiptFormatter.Condition.NO_PARTIAL_APPROVAL
 - uid: SIX.TimApi.Receipts.CustomReceiptFormatter.Condition.NONE
   name: NONE
   href: api/SIX.TimApi.Receipts.CustomReceiptFormatter.Condition.html#SIX_TimApi_Receipts_CustomReceiptFormatter_Condition_NONE
   commentId: F:SIX.TimApi.Receipts.CustomReceiptFormatter.Condition.NONE
   fullName: SIX.TimApi.Receipts.CustomReceiptFormatter.Condition.NONE
   nameWithType: CustomReceiptFormatter.Condition.NONE
+- uid: SIX.TimApi.Receipts.CustomReceiptFormatter.Condition.PARTIAL_APPROVAL
+  name: PARTIAL_APPROVAL
+  href: api/SIX.TimApi.Receipts.CustomReceiptFormatter.Condition.html#SIX_TimApi_Receipts_CustomReceiptFormatter_Condition_PARTIAL_APPROVAL
+  commentId: F:SIX.TimApi.Receipts.CustomReceiptFormatter.Condition.PARTIAL_APPROVAL
+  fullName: SIX.TimApi.Receipts.CustomReceiptFormatter.Condition.PARTIAL_APPROVAL
+  nameWithType: CustomReceiptFormatter.Condition.PARTIAL_APPROVAL
 - uid: SIX.TimApi.Receipts.CustomReceiptFormatter.Condition.SIGNATURE
   name: SIGNATURE
   href: api/SIX.TimApi.Receipts.CustomReceiptFormatter.Condition.html#SIX_TimApi_Receipts_CustomReceiptFormatter_Condition_SIGNATURE
@@ -14701,15 +14973,15 @@ references:
   isSpec: "True"
   fullName: SIX.TimApi.Receipts.CustomReceiptFormatter.formatReceipt
   nameWithType: CustomReceiptFormatter.formatReceipt
-- uid: SIX.TimApi.Receipts.CustomReceiptFormatter.formatReceiptAddLine(StringBuilder,SIX.TimApi.Terminal,System.Int32,List{SIX.TimApi.Constants.PrintFlag},SIX.TimApi.Receipts.CustomReceiptFormatter.LineFormat,List{SIX.TimApi.ReceiptItem},SIX.TimApi.Constants.ReceiptType)
-  name: formatReceiptAddLine(StringBuilder, Terminal, Int32, List<PrintFlag>, CustomReceiptFormatter.LineFormat, List<ReceiptItem>, ReceiptType)
-  href: api/SIX.TimApi.Receipts.CustomReceiptFormatter.html#SIX_TimApi_Receipts_CustomReceiptFormatter_formatReceiptAddLine_StringBuilder_SIX_TimApi_Terminal_System_Int32_List_SIX_TimApi_Constants_PrintFlag__SIX_TimApi_Receipts_CustomReceiptFormatter_LineFormat_List_SIX_TimApi_ReceiptItem__SIX_TimApi_Constants_ReceiptType_
-  commentId: M:SIX.TimApi.Receipts.CustomReceiptFormatter.formatReceiptAddLine(StringBuilder,SIX.TimApi.Terminal,System.Int32,List{SIX.TimApi.Constants.PrintFlag},SIX.TimApi.Receipts.CustomReceiptFormatter.LineFormat,List{SIX.TimApi.ReceiptItem},SIX.TimApi.Constants.ReceiptType)
-  name.vb: formatReceiptAddLine(StringBuilder, Terminal, Int32, List(Of PrintFlag), CustomReceiptFormatter.LineFormat, List(Of ReceiptItem), ReceiptType)
-  fullName: SIX.TimApi.Receipts.CustomReceiptFormatter.formatReceiptAddLine(StringBuilder, SIX.TimApi.Terminal, System.Int32, List<SIX.TimApi.Constants.PrintFlag>, SIX.TimApi.Receipts.CustomReceiptFormatter.LineFormat, List<SIX.TimApi.ReceiptItem>, SIX.TimApi.Constants.ReceiptType)
-  fullName.vb: SIX.TimApi.Receipts.CustomReceiptFormatter.formatReceiptAddLine(StringBuilder, SIX.TimApi.Terminal, System.Int32, List(Of SIX.TimApi.Constants.PrintFlag), SIX.TimApi.Receipts.CustomReceiptFormatter.LineFormat, List(Of SIX.TimApi.ReceiptItem), SIX.TimApi.Constants.ReceiptType)
-  nameWithType: CustomReceiptFormatter.formatReceiptAddLine(StringBuilder, Terminal, Int32, List<PrintFlag>, CustomReceiptFormatter.LineFormat, List<ReceiptItem>, ReceiptType)
-  nameWithType.vb: CustomReceiptFormatter.formatReceiptAddLine(StringBuilder, Terminal, Int32, List(Of PrintFlag), CustomReceiptFormatter.LineFormat, List(Of ReceiptItem), ReceiptType)
+- uid: SIX.TimApi.Receipts.CustomReceiptFormatter.formatReceiptAddLine(SIX.TimApi.Constants.Recipient,StringBuilder,SIX.TimApi.Terminal,System.Int32,List{SIX.TimApi.Constants.PrintFlag},SIX.TimApi.Receipts.CustomReceiptFormatter.LineFormat,List{SIX.TimApi.ReceiptItem},SIX.TimApi.Constants.ReceiptType)
+  name: formatReceiptAddLine(Recipient, StringBuilder, Terminal, Int32, List<PrintFlag>, CustomReceiptFormatter.LineFormat, List<ReceiptItem>, ReceiptType)
+  href: api/SIX.TimApi.Receipts.CustomReceiptFormatter.html#SIX_TimApi_Receipts_CustomReceiptFormatter_formatReceiptAddLine_SIX_TimApi_Constants_Recipient_StringBuilder_SIX_TimApi_Terminal_System_Int32_List_SIX_TimApi_Constants_PrintFlag__SIX_TimApi_Receipts_CustomReceiptFormatter_LineFormat_List_SIX_TimApi_ReceiptItem__SIX_TimApi_Constants_ReceiptType_
+  commentId: M:SIX.TimApi.Receipts.CustomReceiptFormatter.formatReceiptAddLine(SIX.TimApi.Constants.Recipient,StringBuilder,SIX.TimApi.Terminal,System.Int32,List{SIX.TimApi.Constants.PrintFlag},SIX.TimApi.Receipts.CustomReceiptFormatter.LineFormat,List{SIX.TimApi.ReceiptItem},SIX.TimApi.Constants.ReceiptType)
+  name.vb: formatReceiptAddLine(Recipient, StringBuilder, Terminal, Int32, List(Of PrintFlag), CustomReceiptFormatter.LineFormat, List(Of ReceiptItem), ReceiptType)
+  fullName: SIX.TimApi.Receipts.CustomReceiptFormatter.formatReceiptAddLine(SIX.TimApi.Constants.Recipient, StringBuilder, SIX.TimApi.Terminal, System.Int32, List<SIX.TimApi.Constants.PrintFlag>, SIX.TimApi.Receipts.CustomReceiptFormatter.LineFormat, List<SIX.TimApi.ReceiptItem>, SIX.TimApi.Constants.ReceiptType)
+  fullName.vb: SIX.TimApi.Receipts.CustomReceiptFormatter.formatReceiptAddLine(SIX.TimApi.Constants.Recipient, StringBuilder, SIX.TimApi.Terminal, System.Int32, List(Of SIX.TimApi.Constants.PrintFlag), SIX.TimApi.Receipts.CustomReceiptFormatter.LineFormat, List(Of SIX.TimApi.ReceiptItem), SIX.TimApi.Constants.ReceiptType)
+  nameWithType: CustomReceiptFormatter.formatReceiptAddLine(Recipient, StringBuilder, Terminal, Int32, List<PrintFlag>, CustomReceiptFormatter.LineFormat, List<ReceiptItem>, ReceiptType)
+  nameWithType.vb: CustomReceiptFormatter.formatReceiptAddLine(Recipient, StringBuilder, Terminal, Int32, List(Of PrintFlag), CustomReceiptFormatter.LineFormat, List(Of ReceiptItem), ReceiptType)
 - uid: SIX.TimApi.Receipts.CustomReceiptFormatter.formatReceiptAddLine(StringBuilder,System.Int32,String,String,String,Char)
   name: formatReceiptAddLine(StringBuilder, Int32, String, String, String, Char)
   href: api/SIX.TimApi.Receipts.CustomReceiptFormatter.html#SIX_TimApi_Receipts_CustomReceiptFormatter_formatReceiptAddLine_StringBuilder_System_Int32_String_String_String_Char_
@@ -14723,15 +14995,15 @@ references:
   isSpec: "True"
   fullName: SIX.TimApi.Receipts.CustomReceiptFormatter.formatReceiptAddLine
   nameWithType: CustomReceiptFormatter.formatReceiptAddLine
-- uid: SIX.TimApi.Receipts.CustomReceiptFormatter.formatReceiptText(StringBuilder,SIX.TimApi.Terminal,System.Int32,List{SIX.TimApi.Constants.PrintFlag},List{SIX.TimApi.ReceiptItem},SIX.TimApi.Constants.ReceiptType,List{SIX.TimApi.Receipts.CustomReceiptFormatter.LineFormat})
-  name: formatReceiptText(StringBuilder, Terminal, Int32, List<PrintFlag>, List<ReceiptItem>, ReceiptType, List<CustomReceiptFormatter.LineFormat>)
-  href: api/SIX.TimApi.Receipts.CustomReceiptFormatter.html#SIX_TimApi_Receipts_CustomReceiptFormatter_formatReceiptText_StringBuilder_SIX_TimApi_Terminal_System_Int32_List_SIX_TimApi_Constants_PrintFlag__List_SIX_TimApi_ReceiptItem__SIX_TimApi_Constants_ReceiptType_List_SIX_TimApi_Receipts_CustomReceiptFormatter_LineFormat__
-  commentId: M:SIX.TimApi.Receipts.CustomReceiptFormatter.formatReceiptText(StringBuilder,SIX.TimApi.Terminal,System.Int32,List{SIX.TimApi.Constants.PrintFlag},List{SIX.TimApi.ReceiptItem},SIX.TimApi.Constants.ReceiptType,List{SIX.TimApi.Receipts.CustomReceiptFormatter.LineFormat})
-  name.vb: formatReceiptText(StringBuilder, Terminal, Int32, List(Of PrintFlag), List(Of ReceiptItem), ReceiptType, List(Of CustomReceiptFormatter.LineFormat))
-  fullName: SIX.TimApi.Receipts.CustomReceiptFormatter.formatReceiptText(StringBuilder, SIX.TimApi.Terminal, System.Int32, List<SIX.TimApi.Constants.PrintFlag>, List<SIX.TimApi.ReceiptItem>, SIX.TimApi.Constants.ReceiptType, List<SIX.TimApi.Receipts.CustomReceiptFormatter.LineFormat>)
-  fullName.vb: SIX.TimApi.Receipts.CustomReceiptFormatter.formatReceiptText(StringBuilder, SIX.TimApi.Terminal, System.Int32, List(Of SIX.TimApi.Constants.PrintFlag), List(Of SIX.TimApi.ReceiptItem), SIX.TimApi.Constants.ReceiptType, List(Of SIX.TimApi.Receipts.CustomReceiptFormatter.LineFormat))
-  nameWithType: CustomReceiptFormatter.formatReceiptText(StringBuilder, Terminal, Int32, List<PrintFlag>, List<ReceiptItem>, ReceiptType, List<CustomReceiptFormatter.LineFormat>)
-  nameWithType.vb: CustomReceiptFormatter.formatReceiptText(StringBuilder, Terminal, Int32, List(Of PrintFlag), List(Of ReceiptItem), ReceiptType, List(Of CustomReceiptFormatter.LineFormat))
+- uid: SIX.TimApi.Receipts.CustomReceiptFormatter.formatReceiptText(SIX.TimApi.Constants.Recipient,StringBuilder,SIX.TimApi.Terminal,System.Int32,List{SIX.TimApi.Constants.PrintFlag},List{SIX.TimApi.ReceiptItem},SIX.TimApi.Constants.ReceiptType,List{SIX.TimApi.Receipts.CustomReceiptFormatter.LineFormat})
+  name: formatReceiptText(Recipient, StringBuilder, Terminal, Int32, List<PrintFlag>, List<ReceiptItem>, ReceiptType, List<CustomReceiptFormatter.LineFormat>)
+  href: api/SIX.TimApi.Receipts.CustomReceiptFormatter.html#SIX_TimApi_Receipts_CustomReceiptFormatter_formatReceiptText_SIX_TimApi_Constants_Recipient_StringBuilder_SIX_TimApi_Terminal_System_Int32_List_SIX_TimApi_Constants_PrintFlag__List_SIX_TimApi_ReceiptItem__SIX_TimApi_Constants_ReceiptType_List_SIX_TimApi_Receipts_CustomReceiptFormatter_LineFormat__
+  commentId: M:SIX.TimApi.Receipts.CustomReceiptFormatter.formatReceiptText(SIX.TimApi.Constants.Recipient,StringBuilder,SIX.TimApi.Terminal,System.Int32,List{SIX.TimApi.Constants.PrintFlag},List{SIX.TimApi.ReceiptItem},SIX.TimApi.Constants.ReceiptType,List{SIX.TimApi.Receipts.CustomReceiptFormatter.LineFormat})
+  name.vb: formatReceiptText(Recipient, StringBuilder, Terminal, Int32, List(Of PrintFlag), List(Of ReceiptItem), ReceiptType, List(Of CustomReceiptFormatter.LineFormat))
+  fullName: SIX.TimApi.Receipts.CustomReceiptFormatter.formatReceiptText(SIX.TimApi.Constants.Recipient, StringBuilder, SIX.TimApi.Terminal, System.Int32, List<SIX.TimApi.Constants.PrintFlag>, List<SIX.TimApi.ReceiptItem>, SIX.TimApi.Constants.ReceiptType, List<SIX.TimApi.Receipts.CustomReceiptFormatter.LineFormat>)
+  fullName.vb: SIX.TimApi.Receipts.CustomReceiptFormatter.formatReceiptText(SIX.TimApi.Constants.Recipient, StringBuilder, SIX.TimApi.Terminal, System.Int32, List(Of SIX.TimApi.Constants.PrintFlag), List(Of SIX.TimApi.ReceiptItem), SIX.TimApi.Constants.ReceiptType, List(Of SIX.TimApi.Receipts.CustomReceiptFormatter.LineFormat))
+  nameWithType: CustomReceiptFormatter.formatReceiptText(Recipient, StringBuilder, Terminal, Int32, List<PrintFlag>, List<ReceiptItem>, ReceiptType, List<CustomReceiptFormatter.LineFormat>)
+  nameWithType.vb: CustomReceiptFormatter.formatReceiptText(Recipient, StringBuilder, Terminal, Int32, List(Of PrintFlag), List(Of ReceiptItem), ReceiptType, List(Of CustomReceiptFormatter.LineFormat))
 - uid: SIX.TimApi.Receipts.CustomReceiptFormatter.formatReceiptText*
   name: formatReceiptText
   href: api/SIX.TimApi.Receipts.CustomReceiptFormatter.html#SIX_TimApi_Receipts_CustomReceiptFormatter_formatReceiptText_
@@ -14796,6 +15068,15 @@ references:
   commentId: M:SIX.TimApi.Receipts.CustomReceiptFormatter.LineFormat.#ctor
   fullName: SIX.TimApi.Receipts.CustomReceiptFormatter.LineFormat.LineFormat()
   nameWithType: CustomReceiptFormatter.LineFormat.LineFormat()
+- uid: SIX.TimApi.Receipts.CustomReceiptFormatter.LineFormat.#ctor(List{SIX.TimApi.Receipts.CustomReceiptFormatter.Condition},List{SIX.TimApi.Receipts.CustomReceiptFormatter.TextElement},System.Char)
+  name: LineFormat(List<CustomReceiptFormatter.Condition>, List<CustomReceiptFormatter.TextElement>, Char)
+  href: api/SIX.TimApi.Receipts.CustomReceiptFormatter.LineFormat.html#SIX_TimApi_Receipts_CustomReceiptFormatter_LineFormat__ctor_List_SIX_TimApi_Receipts_CustomReceiptFormatter_Condition__List_SIX_TimApi_Receipts_CustomReceiptFormatter_TextElement__System_Char_
+  commentId: M:SIX.TimApi.Receipts.CustomReceiptFormatter.LineFormat.#ctor(List{SIX.TimApi.Receipts.CustomReceiptFormatter.Condition},List{SIX.TimApi.Receipts.CustomReceiptFormatter.TextElement},System.Char)
+  name.vb: LineFormat(List(Of CustomReceiptFormatter.Condition), List(Of CustomReceiptFormatter.TextElement), Char)
+  fullName: SIX.TimApi.Receipts.CustomReceiptFormatter.LineFormat.LineFormat(List<SIX.TimApi.Receipts.CustomReceiptFormatter.Condition>, List<SIX.TimApi.Receipts.CustomReceiptFormatter.TextElement>, System.Char)
+  fullName.vb: SIX.TimApi.Receipts.CustomReceiptFormatter.LineFormat.LineFormat(List(Of SIX.TimApi.Receipts.CustomReceiptFormatter.Condition), List(Of SIX.TimApi.Receipts.CustomReceiptFormatter.TextElement), System.Char)
+  nameWithType: CustomReceiptFormatter.LineFormat.LineFormat(List<CustomReceiptFormatter.Condition>, List<CustomReceiptFormatter.TextElement>, Char)
+  nameWithType.vb: CustomReceiptFormatter.LineFormat.LineFormat(List(Of CustomReceiptFormatter.Condition), List(Of CustomReceiptFormatter.TextElement), Char)
 - uid: SIX.TimApi.Receipts.CustomReceiptFormatter.LineFormat.#ctor(List{SIX.TimApi.Receipts.CustomReceiptFormatter.TextElement})
   name: LineFormat(List<CustomReceiptFormatter.TextElement>)
   href: api/SIX.TimApi.Receipts.CustomReceiptFormatter.LineFormat.html#SIX_TimApi_Receipts_CustomReceiptFormatter_LineFormat__ctor_List_SIX_TimApi_Receipts_CustomReceiptFormatter_TextElement__
@@ -14845,12 +15126,12 @@ references:
   isSpec: "True"
   fullName: SIX.TimApi.Receipts.CustomReceiptFormatter.LineFormat.LineFormat
   nameWithType: CustomReceiptFormatter.LineFormat.LineFormat
-- uid: SIX.TimApi.Receipts.CustomReceiptFormatter.LineFormat.condition
-  name: condition
-  href: api/SIX.TimApi.Receipts.CustomReceiptFormatter.LineFormat.html#SIX_TimApi_Receipts_CustomReceiptFormatter_LineFormat_condition
-  commentId: F:SIX.TimApi.Receipts.CustomReceiptFormatter.LineFormat.condition
-  fullName: SIX.TimApi.Receipts.CustomReceiptFormatter.LineFormat.condition
-  nameWithType: CustomReceiptFormatter.LineFormat.condition
+- uid: SIX.TimApi.Receipts.CustomReceiptFormatter.LineFormat.conditions
+  name: conditions
+  href: api/SIX.TimApi.Receipts.CustomReceiptFormatter.LineFormat.html#SIX_TimApi_Receipts_CustomReceiptFormatter_LineFormat_conditions
+  commentId: F:SIX.TimApi.Receipts.CustomReceiptFormatter.LineFormat.conditions
+  fullName: SIX.TimApi.Receipts.CustomReceiptFormatter.LineFormat.conditions
+  nameWithType: CustomReceiptFormatter.LineFormat.conditions
 - uid: SIX.TimApi.Receipts.CustomReceiptFormatter.LineFormat.getElements
   name: getElements()
   href: api/SIX.TimApi.Receipts.CustomReceiptFormatter.LineFormat.html#SIX_TimApi_Receipts_CustomReceiptFormatter_LineFormat_getElements
@@ -15217,6 +15498,12 @@ references:
   commentId: F:SIX.TimApi.Receipts.CustomReceiptFormatter.TextType.FIELD_AMOUNT_DCC
   fullName: SIX.TimApi.Receipts.CustomReceiptFormatter.TextType.FIELD_AMOUNT_DCC
   nameWithType: CustomReceiptFormatter.TextType.FIELD_AMOUNT_DCC
+- uid: SIX.TimApi.Receipts.CustomReceiptFormatter.TextType.FIELD_AMOUNT_DUE
+  name: FIELD_AMOUNT_DUE
+  href: api/SIX.TimApi.Receipts.CustomReceiptFormatter.TextType.html#SIX_TimApi_Receipts_CustomReceiptFormatter_TextType_FIELD_AMOUNT_DUE
+  commentId: F:SIX.TimApi.Receipts.CustomReceiptFormatter.TextType.FIELD_AMOUNT_DUE
+  fullName: SIX.TimApi.Receipts.CustomReceiptFormatter.TextType.FIELD_AMOUNT_DUE
+  nameWithType: CustomReceiptFormatter.TextType.FIELD_AMOUNT_DUE
 - uid: SIX.TimApi.Receipts.CustomReceiptFormatter.TextType.FIELD_AMOUNT_INSTALLMENT_FEE
   name: FIELD_AMOUNT_INSTALLMENT_FEE
   href: api/SIX.TimApi.Receipts.CustomReceiptFormatter.TextType.html#SIX_TimApi_Receipts_CustomReceiptFormatter_TextType_FIELD_AMOUNT_INSTALLMENT_FEE
@@ -15241,6 +15528,12 @@ references:
   commentId: F:SIX.TimApi.Receipts.CustomReceiptFormatter.TextType.FIELD_AMOUNT_INSTALLMENT_TOTAL
   fullName: SIX.TimApi.Receipts.CustomReceiptFormatter.TextType.FIELD_AMOUNT_INSTALLMENT_TOTAL
   nameWithType: CustomReceiptFormatter.TextType.FIELD_AMOUNT_INSTALLMENT_TOTAL
+- uid: SIX.TimApi.Receipts.CustomReceiptFormatter.TextType.FIELD_AMOUNT_OF_GOODS
+  name: FIELD_AMOUNT_OF_GOODS
+  href: api/SIX.TimApi.Receipts.CustomReceiptFormatter.TextType.html#SIX_TimApi_Receipts_CustomReceiptFormatter_TextType_FIELD_AMOUNT_OF_GOODS
+  commentId: F:SIX.TimApi.Receipts.CustomReceiptFormatter.TextType.FIELD_AMOUNT_OF_GOODS
+  fullName: SIX.TimApi.Receipts.CustomReceiptFormatter.TextType.FIELD_AMOUNT_OF_GOODS
+  nameWithType: CustomReceiptFormatter.TextType.FIELD_AMOUNT_OF_GOODS
 - uid: SIX.TimApi.Receipts.CustomReceiptFormatter.TextType.FIELD_AMOUNT_OTHER
   name: FIELD_AMOUNT_OTHER
   href: api/SIX.TimApi.Receipts.CustomReceiptFormatter.TextType.html#SIX_TimApi_Receipts_CustomReceiptFormatter_TextType_FIELD_AMOUNT_OTHER
@@ -15265,6 +15558,12 @@ references:
   commentId: F:SIX.TimApi.Receipts.CustomReceiptFormatter.TextType.FIELD_AMOUNT_TIP
   fullName: SIX.TimApi.Receipts.CustomReceiptFormatter.TextType.FIELD_AMOUNT_TIP
   nameWithType: CustomReceiptFormatter.TextType.FIELD_AMOUNT_TIP
+- uid: SIX.TimApi.Receipts.CustomReceiptFormatter.TextType.FIELD_AMOUNT_TOTAL
+  name: FIELD_AMOUNT_TOTAL
+  href: api/SIX.TimApi.Receipts.CustomReceiptFormatter.TextType.html#SIX_TimApi_Receipts_CustomReceiptFormatter_TextType_FIELD_AMOUNT_TOTAL
+  commentId: F:SIX.TimApi.Receipts.CustomReceiptFormatter.TextType.FIELD_AMOUNT_TOTAL
+  fullName: SIX.TimApi.Receipts.CustomReceiptFormatter.TextType.FIELD_AMOUNT_TOTAL
+  nameWithType: CustomReceiptFormatter.TextType.FIELD_AMOUNT_TOTAL
 - uid: SIX.TimApi.Receipts.CustomReceiptFormatter.TextType.FIELD_AUTH_CODE
   name: FIELD_AUTH_CODE
   href: api/SIX.TimApi.Receipts.CustomReceiptFormatter.TextType.html#SIX_TimApi_Receipts_CustomReceiptFormatter_TextType_FIELD_AUTH_CODE
@@ -15289,6 +15588,12 @@ references:
   commentId: F:SIX.TimApi.Receipts.CustomReceiptFormatter.TextType.FIELD_AUTH_RESP_TEXT_C
   fullName: SIX.TimApi.Receipts.CustomReceiptFormatter.TextType.FIELD_AUTH_RESP_TEXT_C
   nameWithType: CustomReceiptFormatter.TextType.FIELD_AUTH_RESP_TEXT_C
+- uid: SIX.TimApi.Receipts.CustomReceiptFormatter.TextType.FIELD_BALANCE_EXP_DATE
+  name: FIELD_BALANCE_EXP_DATE
+  href: api/SIX.TimApi.Receipts.CustomReceiptFormatter.TextType.html#SIX_TimApi_Receipts_CustomReceiptFormatter_TextType_FIELD_BALANCE_EXP_DATE
+  commentId: F:SIX.TimApi.Receipts.CustomReceiptFormatter.TextType.FIELD_BALANCE_EXP_DATE
+  fullName: SIX.TimApi.Receipts.CustomReceiptFormatter.TextType.FIELD_BALANCE_EXP_DATE
+  nameWithType: CustomReceiptFormatter.TextType.FIELD_BALANCE_EXP_DATE
 - uid: SIX.TimApi.Receipts.CustomReceiptFormatter.TextType.FIELD_BRAND_NAME
   name: FIELD_BRAND_NAME
   href: api/SIX.TimApi.Receipts.CustomReceiptFormatter.TextType.html#SIX_TimApi_Receipts_CustomReceiptFormatter_TextType_FIELD_BRAND_NAME
@@ -15559,6 +15864,12 @@ references:
   commentId: F:SIX.TimApi.Receipts.CustomReceiptFormatter.TextType.FIELD_SHIFT_NUMBER
   fullName: SIX.TimApi.Receipts.CustomReceiptFormatter.TextType.FIELD_SHIFT_NUMBER
   nameWithType: CustomReceiptFormatter.TextType.FIELD_SHIFT_NUMBER
+- uid: SIX.TimApi.Receipts.CustomReceiptFormatter.TextType.FIELD_SIGNATURE_LINE
+  name: FIELD_SIGNATURE_LINE
+  href: api/SIX.TimApi.Receipts.CustomReceiptFormatter.TextType.html#SIX_TimApi_Receipts_CustomReceiptFormatter_TextType_FIELD_SIGNATURE_LINE
+  commentId: F:SIX.TimApi.Receipts.CustomReceiptFormatter.TextType.FIELD_SIGNATURE_LINE
+  fullName: SIX.TimApi.Receipts.CustomReceiptFormatter.TextType.FIELD_SIGNATURE_LINE
+  nameWithType: CustomReceiptFormatter.TextType.FIELD_SIGNATURE_LINE
 - uid: SIX.TimApi.Receipts.CustomReceiptFormatter.TextType.FIELD_SURCHARGE_AMOUNT
   name: FIELD_SURCHARGE_AMOUNT
   href: api/SIX.TimApi.Receipts.CustomReceiptFormatter.TextType.html#SIX_TimApi_Receipts_CustomReceiptFormatter_TextType_FIELD_SURCHARGE_AMOUNT
@@ -15667,6 +15978,48 @@ references:
   commentId: F:SIX.TimApi.Receipts.CustomReceiptFormatter.TranslatedText.AID
   fullName: SIX.TimApi.Receipts.CustomReceiptFormatter.TranslatedText.AID
   nameWithType: CustomReceiptFormatter.TranslatedText.AID
+- uid: SIX.TimApi.Receipts.CustomReceiptFormatter.TranslatedText.AMOUNT_CASHBACK
+  name: AMOUNT_CASHBACK
+  href: api/SIX.TimApi.Receipts.CustomReceiptFormatter.TranslatedText.html#SIX_TimApi_Receipts_CustomReceiptFormatter_TranslatedText_AMOUNT_CASHBACK
+  commentId: F:SIX.TimApi.Receipts.CustomReceiptFormatter.TranslatedText.AMOUNT_CASHBACK
+  fullName: SIX.TimApi.Receipts.CustomReceiptFormatter.TranslatedText.AMOUNT_CASHBACK
+  nameWithType: CustomReceiptFormatter.TranslatedText.AMOUNT_CASHBACK
+- uid: SIX.TimApi.Receipts.CustomReceiptFormatter.TranslatedText.AMOUNT_DUE
+  name: AMOUNT_DUE
+  href: api/SIX.TimApi.Receipts.CustomReceiptFormatter.TranslatedText.html#SIX_TimApi_Receipts_CustomReceiptFormatter_TranslatedText_AMOUNT_DUE
+  commentId: F:SIX.TimApi.Receipts.CustomReceiptFormatter.TranslatedText.AMOUNT_DUE
+  fullName: SIX.TimApi.Receipts.CustomReceiptFormatter.TranslatedText.AMOUNT_DUE
+  nameWithType: CustomReceiptFormatter.TranslatedText.AMOUNT_DUE
+- uid: SIX.TimApi.Receipts.CustomReceiptFormatter.TranslatedText.AMOUNT_EFT
+  name: AMOUNT_EFT
+  href: api/SIX.TimApi.Receipts.CustomReceiptFormatter.TranslatedText.html#SIX_TimApi_Receipts_CustomReceiptFormatter_TranslatedText_AMOUNT_EFT
+  commentId: F:SIX.TimApi.Receipts.CustomReceiptFormatter.TranslatedText.AMOUNT_EFT
+  fullName: SIX.TimApi.Receipts.CustomReceiptFormatter.TranslatedText.AMOUNT_EFT
+  nameWithType: CustomReceiptFormatter.TranslatedText.AMOUNT_EFT
+- uid: SIX.TimApi.Receipts.CustomReceiptFormatter.TranslatedText.AMOUNT_INSTALLMENT_TOTAL
+  name: AMOUNT_INSTALLMENT_TOTAL
+  href: api/SIX.TimApi.Receipts.CustomReceiptFormatter.TranslatedText.html#SIX_TimApi_Receipts_CustomReceiptFormatter_TranslatedText_AMOUNT_INSTALLMENT_TOTAL
+  commentId: F:SIX.TimApi.Receipts.CustomReceiptFormatter.TranslatedText.AMOUNT_INSTALLMENT_TOTAL
+  fullName: SIX.TimApi.Receipts.CustomReceiptFormatter.TranslatedText.AMOUNT_INSTALLMENT_TOTAL
+  nameWithType: CustomReceiptFormatter.TranslatedText.AMOUNT_INSTALLMENT_TOTAL
+- uid: SIX.TimApi.Receipts.CustomReceiptFormatter.TranslatedText.AMOUNT_TIP
+  name: AMOUNT_TIP
+  href: api/SIX.TimApi.Receipts.CustomReceiptFormatter.TranslatedText.html#SIX_TimApi_Receipts_CustomReceiptFormatter_TranslatedText_AMOUNT_TIP
+  commentId: F:SIX.TimApi.Receipts.CustomReceiptFormatter.TranslatedText.AMOUNT_TIP
+  fullName: SIX.TimApi.Receipts.CustomReceiptFormatter.TranslatedText.AMOUNT_TIP
+  nameWithType: CustomReceiptFormatter.TranslatedText.AMOUNT_TIP
+- uid: SIX.TimApi.Receipts.CustomReceiptFormatter.TranslatedText.AMOUNT_TOTAL
+  name: AMOUNT_TOTAL
+  href: api/SIX.TimApi.Receipts.CustomReceiptFormatter.TranslatedText.html#SIX_TimApi_Receipts_CustomReceiptFormatter_TranslatedText_AMOUNT_TOTAL
+  commentId: F:SIX.TimApi.Receipts.CustomReceiptFormatter.TranslatedText.AMOUNT_TOTAL
+  fullName: SIX.TimApi.Receipts.CustomReceiptFormatter.TranslatedText.AMOUNT_TOTAL
+  nameWithType: CustomReceiptFormatter.TranslatedText.AMOUNT_TOTAL
+- uid: SIX.TimApi.Receipts.CustomReceiptFormatter.TranslatedText.APPROVED
+  name: APPROVED
+  href: api/SIX.TimApi.Receipts.CustomReceiptFormatter.TranslatedText.html#SIX_TimApi_Receipts_CustomReceiptFormatter_TranslatedText_APPROVED
+  commentId: F:SIX.TimApi.Receipts.CustomReceiptFormatter.TranslatedText.APPROVED
+  fullName: SIX.TimApi.Receipts.CustomReceiptFormatter.TranslatedText.APPROVED
+  nameWithType: CustomReceiptFormatter.TranslatedText.APPROVED
 - uid: SIX.TimApi.Receipts.CustomReceiptFormatter.TranslatedText.ATT_ECR_ID_SEQ
   name: ATT_ECR_ID_SEQ
   href: api/SIX.TimApi.Receipts.CustomReceiptFormatter.TranslatedText.html#SIX_TimApi_Receipts_CustomReceiptFormatter_TranslatedText_ATT_ECR_ID_SEQ
@@ -15685,6 +16038,12 @@ references:
   commentId: F:SIX.TimApi.Receipts.CustomReceiptFormatter.TranslatedText.AUTH_CODE
   fullName: SIX.TimApi.Receipts.CustomReceiptFormatter.TranslatedText.AUTH_CODE
   nameWithType: CustomReceiptFormatter.TranslatedText.AUTH_CODE
+- uid: SIX.TimApi.Receipts.CustomReceiptFormatter.TranslatedText.BALANCE_EXP_DATE
+  name: BALANCE_EXP_DATE
+  href: api/SIX.TimApi.Receipts.CustomReceiptFormatter.TranslatedText.html#SIX_TimApi_Receipts_CustomReceiptFormatter_TranslatedText_BALANCE_EXP_DATE
+  commentId: F:SIX.TimApi.Receipts.CustomReceiptFormatter.TranslatedText.BALANCE_EXP_DATE
+  fullName: SIX.TimApi.Receipts.CustomReceiptFormatter.TranslatedText.BALANCE_EXP_DATE
+  nameWithType: CustomReceiptFormatter.TranslatedText.BALANCE_EXP_DATE
 - uid: SIX.TimApi.Receipts.CustomReceiptFormatter.TranslatedText.CARDHOLDER
   name: CARDHOLDER
   href: api/SIX.TimApi.Receipts.CustomReceiptFormatter.TranslatedText.html#SIX_TimApi_Receipts_CustomReceiptFormatter_TranslatedText_CARDHOLDER
@@ -15727,6 +16086,30 @@ references:
   commentId: F:SIX.TimApi.Receipts.CustomReceiptFormatter.TranslatedText.EXPIRATION_DATE
   fullName: SIX.TimApi.Receipts.CustomReceiptFormatter.TranslatedText.EXPIRATION_DATE
   nameWithType: CustomReceiptFormatter.TranslatedText.EXPIRATION_DATE
+- uid: SIX.TimApi.Receipts.CustomReceiptFormatter.TranslatedText.INSTALLMENT_FEE
+  name: INSTALLMENT_FEE
+  href: api/SIX.TimApi.Receipts.CustomReceiptFormatter.TranslatedText.html#SIX_TimApi_Receipts_CustomReceiptFormatter_TranslatedText_INSTALLMENT_FEE
+  commentId: F:SIX.TimApi.Receipts.CustomReceiptFormatter.TranslatedText.INSTALLMENT_FEE
+  fullName: SIX.TimApi.Receipts.CustomReceiptFormatter.TranslatedText.INSTALLMENT_FEE
+  nameWithType: CustomReceiptFormatter.TranslatedText.INSTALLMENT_FEE
+- uid: SIX.TimApi.Receipts.CustomReceiptFormatter.TranslatedText.INSTALLMENT_FIRST
+  name: INSTALLMENT_FIRST
+  href: api/SIX.TimApi.Receipts.CustomReceiptFormatter.TranslatedText.html#SIX_TimApi_Receipts_CustomReceiptFormatter_TranslatedText_INSTALLMENT_FIRST
+  commentId: F:SIX.TimApi.Receipts.CustomReceiptFormatter.TranslatedText.INSTALLMENT_FIRST
+  fullName: SIX.TimApi.Receipts.CustomReceiptFormatter.TranslatedText.INSTALLMENT_FIRST
+  nameWithType: CustomReceiptFormatter.TranslatedText.INSTALLMENT_FIRST
+- uid: SIX.TimApi.Receipts.CustomReceiptFormatter.TranslatedText.INSTALLMENT_INTEREST
+  name: INSTALLMENT_INTEREST
+  href: api/SIX.TimApi.Receipts.CustomReceiptFormatter.TranslatedText.html#SIX_TimApi_Receipts_CustomReceiptFormatter_TranslatedText_INSTALLMENT_INTEREST
+  commentId: F:SIX.TimApi.Receipts.CustomReceiptFormatter.TranslatedText.INSTALLMENT_INTEREST
+  fullName: SIX.TimApi.Receipts.CustomReceiptFormatter.TranslatedText.INSTALLMENT_INTEREST
+  nameWithType: CustomReceiptFormatter.TranslatedText.INSTALLMENT_INTEREST
+- uid: SIX.TimApi.Receipts.CustomReceiptFormatter.TranslatedText.INSTALLMENT_ONE
+  name: INSTALLMENT_ONE
+  href: api/SIX.TimApi.Receipts.CustomReceiptFormatter.TranslatedText.html#SIX_TimApi_Receipts_CustomReceiptFormatter_TranslatedText_INSTALLMENT_ONE
+  commentId: F:SIX.TimApi.Receipts.CustomReceiptFormatter.TranslatedText.INSTALLMENT_ONE
+  fullName: SIX.TimApi.Receipts.CustomReceiptFormatter.TranslatedText.INSTALLMENT_ONE
+  nameWithType: CustomReceiptFormatter.TranslatedText.INSTALLMENT_ONE
 - uid: SIX.TimApi.Receipts.CustomReceiptFormatter.TranslatedText.INSTALLMENT_PAYMENT
   name: INSTALLMENT_PAYMENT
   href: api/SIX.TimApi.Receipts.CustomReceiptFormatter.TranslatedText.html#SIX_TimApi_Receipts_CustomReceiptFormatter_TranslatedText_INSTALLMENT_PAYMENT
@@ -15763,6 +16146,18 @@ references:
   commentId: F:SIX.TimApi.Receipts.CustomReceiptFormatter.TranslatedText.ORIGINAL_TRANS_REF
   fullName: SIX.TimApi.Receipts.CustomReceiptFormatter.TranslatedText.ORIGINAL_TRANS_REF
   nameWithType: CustomReceiptFormatter.TranslatedText.ORIGINAL_TRANS_REF
+- uid: SIX.TimApi.Receipts.CustomReceiptFormatter.TranslatedText.PARTIAL_APPROVAL
+  name: PARTIAL_APPROVAL
+  href: api/SIX.TimApi.Receipts.CustomReceiptFormatter.TranslatedText.html#SIX_TimApi_Receipts_CustomReceiptFormatter_TranslatedText_PARTIAL_APPROVAL
+  commentId: F:SIX.TimApi.Receipts.CustomReceiptFormatter.TranslatedText.PARTIAL_APPROVAL
+  fullName: SIX.TimApi.Receipts.CustomReceiptFormatter.TranslatedText.PARTIAL_APPROVAL
+  nameWithType: CustomReceiptFormatter.TranslatedText.PARTIAL_APPROVAL
+- uid: SIX.TimApi.Receipts.CustomReceiptFormatter.TranslatedText.PRE_AUTHORIZATION_EXP_DATE
+  name: PRE_AUTHORIZATION_EXP_DATE
+  href: api/SIX.TimApi.Receipts.CustomReceiptFormatter.TranslatedText.html#SIX_TimApi_Receipts_CustomReceiptFormatter_TranslatedText_PRE_AUTHORIZATION_EXP_DATE
+  commentId: F:SIX.TimApi.Receipts.CustomReceiptFormatter.TranslatedText.PRE_AUTHORIZATION_EXP_DATE
+  fullName: SIX.TimApi.Receipts.CustomReceiptFormatter.TranslatedText.PRE_AUTHORIZATION_EXP_DATE
+  nameWithType: CustomReceiptFormatter.TranslatedText.PRE_AUTHORIZATION_EXP_DATE
 - uid: SIX.TimApi.Receipts.CustomReceiptFormatter.TranslatedText.PRODUCT
   name: PRODUCT
   href: api/SIX.TimApi.Receipts.CustomReceiptFormatter.TranslatedText.html#SIX_TimApi_Receipts_CustomReceiptFormatter_TranslatedText_PRODUCT
@@ -15811,6 +16206,12 @@ references:
   commentId: F:SIX.TimApi.Receipts.CustomReceiptFormatter.TranslatedText.TOTAL_EFT
   fullName: SIX.TimApi.Receipts.CustomReceiptFormatter.TranslatedText.TOTAL_EFT
   nameWithType: CustomReceiptFormatter.TranslatedText.TOTAL_EFT
+- uid: SIX.TimApi.Receipts.CustomReceiptFormatter.TranslatedText.TRANSACTION_AMOUNT
+  name: TRANSACTION_AMOUNT
+  href: api/SIX.TimApi.Receipts.CustomReceiptFormatter.TranslatedText.html#SIX_TimApi_Receipts_CustomReceiptFormatter_TranslatedText_TRANSACTION_AMOUNT
+  commentId: F:SIX.TimApi.Receipts.CustomReceiptFormatter.TranslatedText.TRANSACTION_AMOUNT
+  fullName: SIX.TimApi.Receipts.CustomReceiptFormatter.TranslatedText.TRANSACTION_AMOUNT
+  nameWithType: CustomReceiptFormatter.TranslatedText.TRANSACTION_AMOUNT
 - uid: SIX.TimApi.Receipts.CustomReceiptFormatter.TranslatedText.TRM_ACT_ID
   name: TRM_ACT_ID
   href: api/SIX.TimApi.Receipts.CustomReceiptFormatter.TranslatedText.html#SIX_TimApi_Receipts_CustomReceiptFormatter_TranslatedText_TRM_ACT_ID
@@ -15859,6 +16260,57 @@ references:
   commentId: F:SIX.TimApi.Receipts.CustomReceiptFormatter.TranslatedText.TRX_TYPE_REVERSAL
   fullName: SIX.TimApi.Receipts.CustomReceiptFormatter.TranslatedText.TRX_TYPE_REVERSAL
   nameWithType: CustomReceiptFormatter.TranslatedText.TRX_TYPE_REVERSAL
+- uid: SIX.TimApi.Receipts.CustomReceiptFormatter.TranslatedText.USER_ID
+  name: USER_ID
+  href: api/SIX.TimApi.Receipts.CustomReceiptFormatter.TranslatedText.html#SIX_TimApi_Receipts_CustomReceiptFormatter_TranslatedText_USER_ID
+  commentId: F:SIX.TimApi.Receipts.CustomReceiptFormatter.TranslatedText.USER_ID
+  fullName: SIX.TimApi.Receipts.CustomReceiptFormatter.TranslatedText.USER_ID
+  nameWithType: CustomReceiptFormatter.TranslatedText.USER_ID
+- uid: SIX.TimApi.Receipts.DelegatableReceiptFormatter
+  name: DelegatableReceiptFormatter
+  href: api/SIX.TimApi.Receipts.DelegatableReceiptFormatter.html
+  commentId: T:SIX.TimApi.Receipts.DelegatableReceiptFormatter
+  fullName: SIX.TimApi.Receipts.DelegatableReceiptFormatter
+  nameWithType: DelegatableReceiptFormatter
+- uid: SIX.TimApi.Receipts.DelegatableReceiptFormatter.#ctor
+  name: DelegatableReceiptFormatter()
+  href: api/SIX.TimApi.Receipts.DelegatableReceiptFormatter.html#SIX_TimApi_Receipts_DelegatableReceiptFormatter__ctor
+  commentId: M:SIX.TimApi.Receipts.DelegatableReceiptFormatter.#ctor
+  fullName: SIX.TimApi.Receipts.DelegatableReceiptFormatter.DelegatableReceiptFormatter()
+  nameWithType: DelegatableReceiptFormatter.DelegatableReceiptFormatter()
+- uid: SIX.TimApi.Receipts.DelegatableReceiptFormatter.#ctor*
+  name: DelegatableReceiptFormatter
+  href: api/SIX.TimApi.Receipts.DelegatableReceiptFormatter.html#SIX_TimApi_Receipts_DelegatableReceiptFormatter__ctor_
+  commentId: Overload:SIX.TimApi.Receipts.DelegatableReceiptFormatter.#ctor
+  isSpec: "True"
+  fullName: SIX.TimApi.Receipts.DelegatableReceiptFormatter.DelegatableReceiptFormatter
+  nameWithType: DelegatableReceiptFormatter.DelegatableReceiptFormatter
+- uid: SIX.TimApi.Receipts.DelegatableReceiptFormatter.formatReceipt(SIX.TimApi.Terminal,SIX.TimApi.ReceiptItems)
+  name: formatReceipt(Terminal, ReceiptItems)
+  href: api/SIX.TimApi.Receipts.DelegatableReceiptFormatter.html#SIX_TimApi_Receipts_DelegatableReceiptFormatter_formatReceipt_SIX_TimApi_Terminal_SIX_TimApi_ReceiptItems_
+  commentId: M:SIX.TimApi.Receipts.DelegatableReceiptFormatter.formatReceipt(SIX.TimApi.Terminal,SIX.TimApi.ReceiptItems)
+  fullName: SIX.TimApi.Receipts.DelegatableReceiptFormatter.formatReceipt(SIX.TimApi.Terminal, SIX.TimApi.ReceiptItems)
+  nameWithType: DelegatableReceiptFormatter.formatReceipt(Terminal, ReceiptItems)
+- uid: SIX.TimApi.Receipts.DelegatableReceiptFormatter.formatReceipt*
+  name: formatReceipt
+  href: api/SIX.TimApi.Receipts.DelegatableReceiptFormatter.html#SIX_TimApi_Receipts_DelegatableReceiptFormatter_formatReceipt_
+  commentId: Overload:SIX.TimApi.Receipts.DelegatableReceiptFormatter.formatReceipt
+  isSpec: "True"
+  fullName: SIX.TimApi.Receipts.DelegatableReceiptFormatter.formatReceipt
+  nameWithType: DelegatableReceiptFormatter.formatReceipt
+- uid: SIX.TimApi.Receipts.DelegatableReceiptFormatter.loadDelegate(System.Int32)
+  name: loadDelegate(Int32)
+  href: api/SIX.TimApi.Receipts.DelegatableReceiptFormatter.html#SIX_TimApi_Receipts_DelegatableReceiptFormatter_loadDelegate_System_Int32_
+  commentId: M:SIX.TimApi.Receipts.DelegatableReceiptFormatter.loadDelegate(System.Int32)
+  fullName: SIX.TimApi.Receipts.DelegatableReceiptFormatter.loadDelegate(System.Int32)
+  nameWithType: DelegatableReceiptFormatter.loadDelegate(Int32)
+- uid: SIX.TimApi.Receipts.DelegatableReceiptFormatter.loadDelegate*
+  name: loadDelegate
+  href: api/SIX.TimApi.Receipts.DelegatableReceiptFormatter.html#SIX_TimApi_Receipts_DelegatableReceiptFormatter_loadDelegate_
+  commentId: Overload:SIX.TimApi.Receipts.DelegatableReceiptFormatter.loadDelegate
+  isSpec: "True"
+  fullName: SIX.TimApi.Receipts.DelegatableReceiptFormatter.loadDelegate
+  nameWithType: DelegatableReceiptFormatter.loadDelegate
 - uid: SIX.TimApi.Receipts.NormalReceiptFormatter
   name: NormalReceiptFormatter
   href: api/SIX.TimApi.Receipts.NormalReceiptFormatter.html
@@ -15878,6 +16330,25 @@ references:
   isSpec: "True"
   fullName: SIX.TimApi.Receipts.NormalReceiptFormatter.NormalReceiptFormatter
   nameWithType: NormalReceiptFormatter.NormalReceiptFormatter
+- uid: SIX.TimApi.Receipts.RdfReceiptFormatter
+  name: RdfReceiptFormatter
+  href: api/SIX.TimApi.Receipts.RdfReceiptFormatter.html
+  commentId: T:SIX.TimApi.Receipts.RdfReceiptFormatter
+  fullName: SIX.TimApi.Receipts.RdfReceiptFormatter
+  nameWithType: RdfReceiptFormatter
+- uid: SIX.TimApi.Receipts.RdfReceiptFormatter.#ctor(StreamReader,System.Int32)
+  name: RdfReceiptFormatter(StreamReader, Int32)
+  href: api/SIX.TimApi.Receipts.RdfReceiptFormatter.html#SIX_TimApi_Receipts_RdfReceiptFormatter__ctor_StreamReader_System_Int32_
+  commentId: M:SIX.TimApi.Receipts.RdfReceiptFormatter.#ctor(StreamReader,System.Int32)
+  fullName: SIX.TimApi.Receipts.RdfReceiptFormatter.RdfReceiptFormatter(StreamReader, System.Int32)
+  nameWithType: RdfReceiptFormatter.RdfReceiptFormatter(StreamReader, Int32)
+- uid: SIX.TimApi.Receipts.RdfReceiptFormatter.#ctor*
+  name: RdfReceiptFormatter
+  href: api/SIX.TimApi.Receipts.RdfReceiptFormatter.html#SIX_TimApi_Receipts_RdfReceiptFormatter__ctor_
+  commentId: Overload:SIX.TimApi.Receipts.RdfReceiptFormatter.#ctor
+  isSpec: "True"
+  fullName: SIX.TimApi.Receipts.RdfReceiptFormatter.RdfReceiptFormatter
+  nameWithType: RdfReceiptFormatter.RdfReceiptFormatter
 - uid: SIX.TimApi.Receipts.ReceiptFormatter
   name: ReceiptFormatter
   href: api/SIX.TimApi.Receipts.ReceiptFormatter.html

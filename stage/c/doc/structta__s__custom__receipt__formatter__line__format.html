@@ -98,15 +98,49 @@ Data Fields</h2></td></tr>
 size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structta__s__custom__receipt__formatter__line__format.html#a34c996ff6437422cd472fbd3b519dc56">element_count</a></td></tr>
 <tr class="memdesc:a34c996ff6437422cd472fbd3b519dc56"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of elements in array. <br /></td></tr>
 <tr class="separator:a34c996ff6437422cd472fbd3b519dc56"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab78bd63c8f7a10dda4df615186276fb8"><td class="memItemLeft" align="right" valign="top"><a id="ab78bd63c8f7a10dda4df615186276fb8"></a>
-<a class="el" href="custom__receipt__formatter_8h.html#a5b010ebcd7f7b81f571bc21b30010f2b">ta_e_custom_receipt_formatter_condition_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structta__s__custom__receipt__formatter__line__format.html#ab78bd63c8f7a10dda4df615186276fb8">condition</a></td></tr>
-<tr class="memdesc:ab78bd63c8f7a10dda4df615186276fb8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Condition. <br /></td></tr>
+<tr class="memitem:ab78bd63c8f7a10dda4df615186276fb8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="custom__receipt__formatter_8h.html#a5b010ebcd7f7b81f571bc21b30010f2b">ta_e_custom_receipt_formatter_condition_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structta__s__custom__receipt__formatter__line__format.html#ab78bd63c8f7a10dda4df615186276fb8">condition</a></td></tr>
 <tr class="separator:ab78bd63c8f7a10dda4df615186276fb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9ad0d5c7a4353383b6e4d7d564534ed6"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structta__s__custom__receipt__formatter__line__format.html#a9ad0d5c7a4353383b6e4d7d564534ed6">padding</a></td></tr>
-<tr class="memdesc:a9ad0d5c7a4353383b6e4d7d564534ed6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Padding character.  <a href="structta__s__custom__receipt__formatter__line__format.html#a9ad0d5c7a4353383b6e4d7d564534ed6">More...</a><br /></td></tr>
-<tr class="separator:a9ad0d5c7a4353383b6e4d7d564534ed6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1b4307c1f38e148434390649d07dc8b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structta__s__custom__receipt__formatter__line__format.html#af1b4307c1f38e148434390649d07dc8b">condition_mask</a></td></tr>
+<tr class="memdesc:af1b4307c1f38e148434390649d07dc8b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Condition mask.  <a href="structta__s__custom__receipt__formatter__line__format.html#af1b4307c1f38e148434390649d07dc8b">More...</a><br /></td></tr>
+<tr class="separator:af1b4307c1f38e148434390649d07dc8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4645ea02a465ff314d24a33fb2f0f5e6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structta__s__custom__receipt__formatter__line__format.html#a4645ea02a465ff314d24a33fb2f0f5e6">padding</a></td></tr>
+<tr class="memdesc:a4645ea02a465ff314d24a33fb2f0f5e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Padding character.  <a href="structta__s__custom__receipt__formatter__line__format.html#a4645ea02a465ff314d24a33fb2f0f5e6">More...</a><br /></td></tr>
+<tr class="separator:a4645ea02a465ff314d24a33fb2f0f5e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Field Documentation</h2>
+<a id="ab78bd63c8f7a10dda4df615186276fb8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab78bd63c8f7a10dda4df615186276fb8">&#9670;&nbsp;</a></span>condition</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="custom__receipt__formatter_8h.html#a5b010ebcd7f7b81f571bc21b30010f2b">ta_e_custom_receipt_formatter_condition_t</a> ta_s_custom_receipt_formatter_line_format::condition</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000001">Deprecated:</a></b></dt><dd>Use condition mask. </dd></dl>
+
+</div>
+</div>
+<a id="af1b4307c1f38e148434390649d07dc8b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af1b4307c1f38e148434390649d07dc8b">&#9670;&nbsp;</a></span>condition_mask</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ta_s_custom_receipt_formatter_line_format::condition_mask</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Condition mask. </p>
+<p>Set bit "1 &lt;&lt; condition" to enable respective condition. Line is shown if at least one enabled condition is fulfilled.</p>
+<p>Condition flag are values ta_crfc_* from ta_e_custom_receipt_formatter_condition_t. </p>
+
+</div>
+</div>
 <a id="ac430db038191ec993a0d56fd2c9b1295"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac430db038191ec993a0d56fd2c9b1295">&#9670;&nbsp;</a></span>elements</h2>
 
@@ -125,20 +159,20 @@ size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="st
 
 </div>
 </div>
-<a id="a9ad0d5c7a4353383b6e4d7d564534ed6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9ad0d5c7a4353383b6e4d7d564534ed6">&#9670;&nbsp;</a></span>padding</h2>
+<a id="a4645ea02a465ff314d24a33fb2f0f5e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4645ea02a465ff314d24a33fb2f0f5e6">&#9670;&nbsp;</a></span>padding</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">char ta_s_custom_receipt_formatter_line_format::padding</td>
+          <td class="memname">int ta_s_custom_receipt_formatter_line_format::padding</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Padding character. </p>
-<p>Character has to be a valid printable character. </p>
+<p>Character has to be a valid printable unicode character. </p>
 
 </div>
 </div>

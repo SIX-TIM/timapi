@@ -137,6 +137,12 @@
                             <a href="SIX.TimApi.EcrInfo.html" title="EcrInfo" class="">EcrInfo</a>
                           </li>
                           <li class="">
+                            <a href="SIX.TimApi.EndianReader.html" title="EndianReader" class="">EndianReader</a>
+                          </li>
+                          <li class="">
+                            <a href="SIX.TimApi.EndianReader.Endianness.html" title="EndianReader.Endianness" class="">EndianReader.Endianness</a>
+                          </li>
+                          <li class="">
                             <a href="SIX.TimApi.ErrorMessages.html" title="ErrorMessages" class="">ErrorMessages</a>
                           </li>
                           <li class="">
@@ -875,7 +881,13 @@
                             <a href="SIX.TimApi.Receipts.CustomReceiptFormatter.TranslatedText.html" title="CustomReceiptFormatter.TranslatedText" class="">CustomReceiptFormatter.TranslatedText</a>
                           </li>
                           <li class="">
+                            <a href="SIX.TimApi.Receipts.DelegatableReceiptFormatter.html" title="DelegatableReceiptFormatter" class="">DelegatableReceiptFormatter</a>
+                          </li>
+                          <li class="">
                             <a href="SIX.TimApi.Receipts.NormalReceiptFormatter.html" title="NormalReceiptFormatter" class="">NormalReceiptFormatter</a>
+                          </li>
+                          <li class="">
+                            <a href="SIX.TimApi.Receipts.RdfReceiptFormatter.html" title="RdfReceiptFormatter" class="">RdfReceiptFormatter</a>
                           </li>
                           <li class="">
                             <a href="SIX.TimApi.Receipts.ReceiptFormatter.html" title="ReceiptFormatter" class="">ReceiptFormatter</a>
@@ -975,12 +987,19 @@
       </tr>
       <tr>
         <td id="SIX_TimApi_Constants_ReceiptItemType_Amount">Amount</td>
-        <td><p>Amount of the transaction</p>
+        <td><p>Amount of the transaction. Final host-authorized amount. Can be lower than the requested
+/ total amount in case of partial approval.</p>
 </td>
       </tr>
       <tr>
         <td id="SIX_TimApi_Constants_ReceiptItemType_AmountDcc">AmountDcc</td>
         <td><p>DCC amount of the transaction</p>
+</td>
+      </tr>
+      <tr>
+        <td id="SIX_TimApi_Constants_ReceiptItemType_AmountDue">AmountDue</td>
+        <td><p>Remaining amount that must be paid after a partial approval. Send only in case of
+partial approval.</p>
 </td>
       </tr>
       <tr>
@@ -1004,8 +1023,14 @@
 </td>
       </tr>
       <tr>
+        <td id="SIX_TimApi_Constants_ReceiptItemType_AmountOfGoods">AmountOfGoods</td>
+        <td><p>Amount of goods (not containing any cashback, tip or surcharge amounts). Send only, if
+either a tip, surcharge and/or cashback amount is present.</p>
+</td>
+      </tr>
+      <tr>
         <td id="SIX_TimApi_Constants_ReceiptItemType_AmountOther">AmountOther</td>
-        <td><p>Other amount of the transaction</p>
+        <td><p>Other amount of the transaction (e.g. cashback amount)</p>
 </td>
       </tr>
       <tr>
@@ -1021,6 +1046,12 @@
       <tr>
         <td id="SIX_TimApi_Constants_ReceiptItemType_AmountTip">AmountTip</td>
         <td><p>Tip amount</p>
+</td>
+      </tr>
+      <tr>
+        <td id="SIX_TimApi_Constants_ReceiptItemType_AmountTotal">AmountTotal</td>
+        <td><p>Total amount to authorize (if applicable including tip, cashback and surcharge amount).
+Send only in case of partial approval.</p>
 </td>
       </tr>
       <tr>
@@ -1041,6 +1072,11 @@
       <tr>
         <td id="SIX_TimApi_Constants_ReceiptItemType_AuthRespTextC">AuthRespTextC</td>
         <td><p>ep2 Authorization response text</p>
+</td>
+      </tr>
+      <tr>
+        <td id="SIX_TimApi_Constants_ReceiptItemType_BalanceExpDate">BalanceExpDate</td>
+        <td><p>Balance expiration date.</p>
 </td>
       </tr>
       <tr>

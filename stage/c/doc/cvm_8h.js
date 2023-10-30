@@ -7,6 +7,7 @@ var cvm_8h =
       [ "ta_c_cvm_pin_signature", "cvm_8h.html#aa1eec890888312d72912378cd7fcfc03a0d37090d88d5bf9c132b6b845032ab40", null ],
       [ "ta_c_cvm_signature", "cvm_8h.html#aa1eec890888312d72912378cd7fcfc03aa675533bd3caaf247a8d9099d34de42b", null ],
       [ "ta_c_cvm_on_device", "cvm_8h.html#aa1eec890888312d72912378cd7fcfc03aadeb301996a2e9ede93e5ace2651e0e9", null ],
-      [ "ta_c_cvm_no_cvm", "cvm_8h.html#aa1eec890888312d72912378cd7fcfc03acdcdddd7c1adffa433531249e168912c", null ]
+      [ "ta_c_cvm_no_cvm", "cvm_8h.html#aa1eec890888312d72912378cd7fcfc03acdcdddd7c1adffa433531249e168912c", null ],
+      [ "ta_c_cvm_other", "cvm_8h.html#aa1eec890888312d72912378cd7fcfc03a5e3456595c7ee149cacbdff06daf2b24", null ]
     ] ]
 ];

@@ -191,6 +191,11 @@ Enumerations</h2></td></tr>
 , <br />
 &#160;&#160;<a class="el" href="receipt__item__type_8h.html#a3d3044dd871a9c7d630dbcf3d9b738beaf335f67d9046013e0dca774d2d7652e2">ta_c_rit_signature_line</a> = 72
 , <a class="el" href="receipt__item__type_8h.html#a3d3044dd871a9c7d630dbcf3d9b738beafaba79e241b7dbbbf1bc7e14b1865a84">ta_c_rit_original_trans_seq</a> = 73
+, <a class="el" href="receipt__item__type_8h.html#a3d3044dd871a9c7d630dbcf3d9b738bea49f04aa9e8694053d978ebd212d173be">ta_c_rit_balance_exp_date</a> = 74
+, <a class="el" href="receipt__item__type_8h.html#a3d3044dd871a9c7d630dbcf3d9b738beafa183ff144d2866ba85a846570185c3c">ta_c_rit_amount_of_goods</a> = 75
+, <br />
+&#160;&#160;<a class="el" href="receipt__item__type_8h.html#a3d3044dd871a9c7d630dbcf3d9b738beaf5a6134881d7b9f5ea9b147fb0707d8c">ta_c_rit_amount_due</a> = 76
+, <a class="el" href="receipt__item__type_8h.html#a3d3044dd871a9c7d630dbcf3d9b738bea03c50ecc4a1f9066ee8316d979da701c">ta_c_rit_amount_total</a> = 77
 <br />
  }</td></tr>
 <tr class="separator:a3d3044dd871a9c7d630dbcf3d9b738be"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -243,13 +248,13 @@ Enumerations</h2></td></tr>
 <tr><td class="fieldname"><a id="a3d3044dd871a9c7d630dbcf3d9b738beaa59cac2cc78ff78a5079193243d3b283"></a>ta_c_rit_aid&#160;</td><td class="fielddoc"><p>Application identifier</p>
 <p>Specification: retail.</p>
 </td></tr>
-<tr><td class="fieldname"><a id="a3d3044dd871a9c7d630dbcf3d9b738beaf8e094342f923ade3ba2c831220ab724"></a>ta_c_rit_amount&#160;</td><td class="fielddoc"><p>Amount of the transaction</p>
+<tr><td class="fieldname"><a id="a3d3044dd871a9c7d630dbcf3d9b738beaf8e094342f923ade3ba2c831220ab724"></a>ta_c_rit_amount&#160;</td><td class="fielddoc"><p>Amount of the transaction. Final host-authorized amount. Can be lower than the requested / total amount in case of partial approval.</p>
 <p>Specification: retail.</p>
 </td></tr>
 <tr><td class="fieldname"><a id="a3d3044dd871a9c7d630dbcf3d9b738beaee2bc011d32e8183015d98c63e0f1d71"></a>ta_c_rit_amount_dcc&#160;</td><td class="fielddoc"><p>DCC amount of the transaction</p>
 <p>Specification: retail.</p>
 </td></tr>
-<tr><td class="fieldname"><a id="a3d3044dd871a9c7d630dbcf3d9b738bea0235c1a2174184dead5ff99be3787781"></a>ta_c_rit_amount_other&#160;</td><td class="fielddoc"><p>Other amount of the transaction</p>
+<tr><td class="fieldname"><a id="a3d3044dd871a9c7d630dbcf3d9b738bea0235c1a2174184dead5ff99be3787781"></a>ta_c_rit_amount_other&#160;</td><td class="fielddoc"><p>Other amount of the transaction (e.g. cashback amount)</p>
 <p>Specification: retail.</p>
 </td></tr>
 <tr><td class="fieldname"><a id="a3d3044dd871a9c7d630dbcf3d9b738beab4e6f5a221ed99e69b154030cc2dd866"></a>ta_c_rit_amount_reservation&#160;</td><td class="fielddoc"><p>Total reservation amount after a reservation adjustment</p>
@@ -448,6 +453,18 @@ Enumerations</h2></td></tr>
 <p>Specification: retail.</p>
 </td></tr>
 <tr><td class="fieldname"><a id="a3d3044dd871a9c7d630dbcf3d9b738beafaba79e241b7dbbbf1bc7e14b1865a84"></a>ta_c_rit_original_trans_seq&#160;</td><td class="fielddoc"><p>Transaction sequence counter of the original transaction e.g. the transaction that has just been reversed.</p>
+<p>Specification: retail.</p>
+</td></tr>
+<tr><td class="fieldname"><a id="a3d3044dd871a9c7d630dbcf3d9b738bea49f04aa9e8694053d978ebd212d173be"></a>ta_c_rit_balance_exp_date&#160;</td><td class="fielddoc"><p>Balance expiration date.</p>
+<p>Specification: retail.</p>
+</td></tr>
+<tr><td class="fieldname"><a id="a3d3044dd871a9c7d630dbcf3d9b738beafa183ff144d2866ba85a846570185c3c"></a>ta_c_rit_amount_of_goods&#160;</td><td class="fielddoc"><p>Amount of goods (not containing any cashback, tip or surcharge amounts). Send only, if either a tip, surcharge and/or cashback amount is present.</p>
+<p>Specification: retail.</p>
+</td></tr>
+<tr><td class="fieldname"><a id="a3d3044dd871a9c7d630dbcf3d9b738beaf5a6134881d7b9f5ea9b147fb0707d8c"></a>ta_c_rit_amount_due&#160;</td><td class="fielddoc"><p>Remaining amount that must be paid after a partial approval. Send only in case of partial approval.</p>
+<p>Specification: retail.</p>
+</td></tr>
+<tr><td class="fieldname"><a id="a3d3044dd871a9c7d630dbcf3d9b738bea03c50ecc4a1f9066ee8316d979da701c"></a>ta_c_rit_amount_total&#160;</td><td class="fielddoc"><p>Total amount to authorize (if applicable including tip, cashback and surcharge amount). Send only in case of partial approval.</p>
 <p>Specification: retail.</p>
 </td></tr>
 </table>

@@ -75,6 +75,10 @@ var receipt__item__type_8h =
       [ "ta_c_rit_surcharge_amount", "receipt__item__type_8h.html#a3d3044dd871a9c7d630dbcf3d9b738bead4ea346298cda1b451c68562e37b8aec", null ],
       [ "ta_c_rit_original_trx_ref_num", "receipt__item__type_8h.html#a3d3044dd871a9c7d630dbcf3d9b738bea35b2db40337a01b7938d4612c9a02fdf", null ],
       [ "ta_c_rit_signature_line", "receipt__item__type_8h.html#a3d3044dd871a9c7d630dbcf3d9b738beaf335f67d9046013e0dca774d2d7652e2", null ],
-      [ "ta_c_rit_original_trans_seq", "receipt__item__type_8h.html#a3d3044dd871a9c7d630dbcf3d9b738beafaba79e241b7dbbbf1bc7e14b1865a84", null ]
+      [ "ta_c_rit_original_trans_seq", "receipt__item__type_8h.html#a3d3044dd871a9c7d630dbcf3d9b738beafaba79e241b7dbbbf1bc7e14b1865a84", null ],
+      [ "ta_c_rit_balance_exp_date", "receipt__item__type_8h.html#a3d3044dd871a9c7d630dbcf3d9b738bea49f04aa9e8694053d978ebd212d173be", null ],
+      [ "ta_c_rit_amount_of_goods", "receipt__item__type_8h.html#a3d3044dd871a9c7d630dbcf3d9b738beafa183ff144d2866ba85a846570185c3c", null ],
+      [ "ta_c_rit_amount_due", "receipt__item__type_8h.html#a3d3044dd871a9c7d630dbcf3d9b738beaf5a6134881d7b9f5ea9b147fb0707d8c", null ],
+      [ "ta_c_rit_amount_total", "receipt__item__type_8h.html#a3d3044dd871a9c7d630dbcf3d9b738bea03c50ecc4a1f9066ee8316d979da701c", null ]
     ] ]
 ];

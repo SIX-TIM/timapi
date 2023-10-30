@@ -220,6 +220,15 @@
             
                 <tr>
                     <td>
+                        <li><a href="timapi.constants.ReceiptItemType.html#.amountDue">amountDue</a></li>
+                    </td>
+                    <td>
+                        <span class="type-signature"></span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
                         <li><a href="timapi.constants.ReceiptItemType.html#.amountInstallmentFee">amountInstallmentFee</a></li>
                     </td>
                     <td>
@@ -248,6 +257,15 @@
                 <tr>
                     <td>
                         <li><a href="timapi.constants.ReceiptItemType.html#.amountInstallmentTotal">amountInstallmentTotal</a></li>
+                    </td>
+                    <td>
+                        <span class="type-signature"></span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        <li><a href="timapi.constants.ReceiptItemType.html#.amountOfGoods">amountOfGoods</a></li>
                     </td>
                     <td>
                         <span class="type-signature"></span>
@@ -292,6 +310,15 @@
             
                 <tr>
                     <td>
+                        <li><a href="timapi.constants.ReceiptItemType.html#.amountTotal">amountTotal</a></li>
+                    </td>
+                    <td>
+                        <span class="type-signature"></span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
                         <li><a href="timapi.constants.ReceiptItemType.html#.authCode">authCode</a></li>
                     </td>
                     <td>
@@ -320,6 +347,15 @@
                 <tr>
                     <td>
                         <li><a href="timapi.constants.ReceiptItemType.html#.authRespTextC">authRespTextC</a></li>
+                    </td>
+                    <td>
+                        <span class="type-signature"></span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        <li><a href="timapi.constants.ReceiptItemType.html#.balanceExpDate">balanceExpDate</a></li>
                     </td>
                     <td>
                         <span class="type-signature"></span>
@@ -1295,7 +1331,8 @@
 
 
 <div class="description">
-    <p>Amount of the transaction</p>
+    <p>Amount of the transaction. Final host-authorized amount. Can be lower than the requested /
+total amount in case of partial approval.</p>
 <p>Specification: retail.</p>
 </div>
 
@@ -1360,6 +1397,71 @@
 
 <div class="description">
     <p>DCC amount of the transaction</p>
+<p>Specification: retail.</p>
+</div>
+
+
+<!-- not needed, since it's in the signature 
+
+-->
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+            </div>
+        
+            <div class="member">
+                
+<h4 class="name" id=".amountDue">
+    <a href="timapi.constants.ReceiptItemType.html#.amountDue">amountDue</a> <span class="type-signature">(static, constant) </span><span class="type-signature"></span>
+</h4>
+
+
+
+
+<div class="description">
+    <p>Remaining amount that must be paid after a partial approval. Send only in case of partial
+approval.</p>
 <p>Specification: retail.</p>
 </div>
 
@@ -1671,6 +1773,71 @@
         
             <div class="member">
                 
+<h4 class="name" id=".amountOfGoods">
+    <a href="timapi.constants.ReceiptItemType.html#.amountOfGoods">amountOfGoods</a> <span class="type-signature">(static, constant) </span><span class="type-signature"></span>
+</h4>
+
+
+
+
+<div class="description">
+    <p>Amount of goods (not containing any cashback, tip or surcharge amounts). Send only, if either
+a tip, surcharge and/or cashback amount is present.</p>
+<p>Specification: retail.</p>
+</div>
+
+
+<!-- not needed, since it's in the signature 
+
+-->
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+            </div>
+        
+            <div class="member">
+                
 <h4 class="name" id=".amountOther">
     <a href="timapi.constants.ReceiptItemType.html#.amountOther">amountOther</a> <span class="type-signature">(static, constant) </span><span class="type-signature"></span>
 </h4>
@@ -1679,7 +1846,7 @@
 
 
 <div class="description">
-    <p>Other amount of the transaction</p>
+    <p>Other amount of the transaction (e.g. cashback amount)</p>
 <p>Specification: retail.</p>
 </div>
 
@@ -1872,6 +2039,71 @@
 
 <div class="description">
     <p>Tip amount</p>
+<p>Specification: retail.</p>
+</div>
+
+
+<!-- not needed, since it's in the signature 
+
+-->
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+            </div>
+        
+            <div class="member">
+                
+<h4 class="name" id=".amountTotal">
+    <a href="timapi.constants.ReceiptItemType.html#.amountTotal">amountTotal</a> <span class="type-signature">(static, constant) </span><span class="type-signature"></span>
+</h4>
+
+
+
+
+<div class="description">
+    <p>Total amount to authorize (if applicable including tip, cashback and surcharge amount). Send
+only in case of partial approval.</p>
 <p>Specification: retail.</p>
 </div>
 
@@ -2128,6 +2360,70 @@
 
 <div class="description">
     <p>ep2 Authorization response text</p>
+<p>Specification: retail.</p>
+</div>
+
+
+<!-- not needed, since it's in the signature 
+
+-->
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+            </div>
+        
+            <div class="member">
+                
+<h4 class="name" id=".balanceExpDate">
+    <a href="timapi.constants.ReceiptItemType.html#.balanceExpDate">balanceExpDate</a> <span class="type-signature">(static, constant) </span><span class="type-signature"></span>
+</h4>
+
+
+
+
+<div class="description">
+    <p>Balance expiration date.</p>
 <p>Specification: retail.</p>
 </div>
 
