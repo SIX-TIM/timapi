@@ -7,6 +7,7 @@ var payment__protocol_8h =
       [ "ta_c_pp_ev", "payment__protocol_8h.html#a29ce3e4b96c0aaba39762637b1cb276ba12fb03542e3bf8cf02fb5ed1fe9db8db", null ],
       [ "ta_c_pp_vm", "payment__protocol_8h.html#a29ce3e4b96c0aaba39762637b1cb276ba0a0e5ae968732a010f4e8f8e5bc6b137", null ],
       [ "ta_c_pp_3cxml", "payment__protocol_8h.html#a29ce3e4b96c0aaba39762637b1cb276ba2e389487bcf856ee0de0df43dca9dc2d", null ],
-      [ "ta_c_pp_ctap", "payment__protocol_8h.html#a29ce3e4b96c0aaba39762637b1cb276baf0f4e8b97c5402960fa793f2427cebf0", null ]
+      [ "ta_c_pp_ctap", "payment__protocol_8h.html#a29ce3e4b96c0aaba39762637b1cb276baf0f4e8b97c5402960fa793f2427cebf0", null ],
+      [ "ta_c_pp_other", "payment__protocol_8h.html#a29ce3e4b96c0aaba39762637b1cb276ba881a7fba8cfe37e17d8b6b6c758a2b05", null ]
     ] ]
 ];

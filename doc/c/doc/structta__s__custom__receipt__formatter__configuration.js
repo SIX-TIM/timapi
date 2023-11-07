@@ -1,5 +1,6 @@
 var structta__s__custom__receipt__formatter__configuration =
 [
+    [ "auto_add_headr", "structta__s__custom__receipt__formatter__configuration.html#a9a6aa9fd55e79d3e38e9a8fc6ae80647", null ],
     [ "cardholder", "structta__s__custom__receipt__formatter__configuration.html#ada2e2f957a0728dd2a8c6593467c58e5", null ],
     [ "cardholder_count", "structta__s__custom__receipt__formatter__configuration.html#aeb31dc31622be24b356004731d0ea1c8", null ],
     [ "empty_value", "structta__s__custom__receipt__formatter__configuration.html#aff6767de6dbd1a9e281ee621ca5547a8", null ],

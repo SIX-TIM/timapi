@@ -137,6 +137,12 @@
                             <a href="SIX.TimApi.EcrInfo.html" title="EcrInfo" class="">EcrInfo</a>
                           </li>
                           <li class="">
+                            <a href="SIX.TimApi.EndianReader.html" title="EndianReader" class="">EndianReader</a>
+                          </li>
+                          <li class="">
+                            <a href="SIX.TimApi.EndianReader.Endianness.html" title="EndianReader.Endianness" class="">EndianReader.Endianness</a>
+                          </li>
+                          <li class="">
                             <a href="SIX.TimApi.ErrorMessages.html" title="ErrorMessages" class="">ErrorMessages</a>
                           </li>
                           <li class="">
@@ -875,7 +881,13 @@
                             <a href="SIX.TimApi.Receipts.CustomReceiptFormatter.TranslatedText.html" title="CustomReceiptFormatter.TranslatedText" class="">CustomReceiptFormatter.TranslatedText</a>
                           </li>
                           <li class="">
+                            <a href="SIX.TimApi.Receipts.DelegatableReceiptFormatter.html" title="DelegatableReceiptFormatter" class="">DelegatableReceiptFormatter</a>
+                          </li>
+                          <li class="">
                             <a href="SIX.TimApi.Receipts.NormalReceiptFormatter.html" title="NormalReceiptFormatter" class="">NormalReceiptFormatter</a>
+                          </li>
+                          <li class="">
+                            <a href="SIX.TimApi.Receipts.RdfReceiptFormatter.html" title="RdfReceiptFormatter" class="">RdfReceiptFormatter</a>
                           </li>
                           <li class="">
                             <a href="SIX.TimApi.Receipts.ReceiptFormatter.html" title="ReceiptFormatter" class="">ReceiptFormatter</a>
@@ -929,10 +941,8 @@
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
     <div class="level1"><span class="xref">CustomReceiptFormatter</span></div>
-      <div class="level2"><a class="xref" href="SIX.TimApi.Receipts.CompactReceiptFormatter.html">CompactReceiptFormatter</a></div>
-      <div class="level2"><a class="xref" href="SIX.TimApi.Receipts.NormalReceiptFormatter.html">NormalReceiptFormatter</a></div>
-      <div class="level2"><a class="xref" href="SIX.TimApi.Receipts.SuperCompactReceiptFormatter.html">SuperCompactReceiptFormatter</a></div>
-      <div class="level2"><a class="xref" href="SIX.TimApi.Receipts.UltraCompactReceiptFormatter.html">UltraCompactReceiptFormatter</a></div>
+      <div class="level2"><a class="xref" href="SIX.TimApi.Receipts.DelegatableReceiptFormatter.html">DelegatableReceiptFormatter</a></div>
+      <div class="level2"><a class="xref" href="SIX.TimApi.Receipts.RdfReceiptFormatter.html">RdfReceiptFormatter</a></div>
   </div>
   <div classs="implements">
     <h5>Implements</h5>
@@ -946,6 +956,30 @@
   </div>
   <h3 id="fields">Fields
   </h3>
+  
+  
+  <h4 id="SIX_TimApi_Receipts_CustomReceiptFormatter_AutoAddHeader" data-uid="SIX.TimApi.Receipts.CustomReceiptFormatter.AutoAddHeader">AutoAddHeader</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool AutoAddHeader</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   
   
   <h4 id="SIX_TimApi_Receipts_CustomReceiptFormatter_EmptyValueString" data-uid="SIX.TimApi.Receipts.CustomReceiptFormatter.EmptyValueString">EmptyValueString</h4>
@@ -1027,7 +1061,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public List&lt;Receipt&gt; formatReceipt(Terminal terminal, ReceiptItems receiptItems)</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual List&lt;Receipt&gt; formatReceipt(Terminal terminal, ReceiptItems receiptItems)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1069,12 +1103,12 @@
   
   
   <a id="SIX_TimApi_Receipts_CustomReceiptFormatter_formatReceiptAddLine_" data-uid="SIX.TimApi.Receipts.CustomReceiptFormatter.formatReceiptAddLine*"></a>
-  <h4 id="SIX_TimApi_Receipts_CustomReceiptFormatter_formatReceiptAddLine_StringBuilder_SIX_TimApi_Terminal_System_Int32_List_SIX_TimApi_Constants_PrintFlag__SIX_TimApi_Receipts_CustomReceiptFormatter_LineFormat_List_SIX_TimApi_ReceiptItem__SIX_TimApi_Constants_ReceiptType_" data-uid="SIX.TimApi.Receipts.CustomReceiptFormatter.formatReceiptAddLine(StringBuilder,SIX.TimApi.Terminal,System.Int32,List{SIX.TimApi.Constants.PrintFlag},SIX.TimApi.Receipts.CustomReceiptFormatter.LineFormat,List{SIX.TimApi.ReceiptItem},SIX.TimApi.Constants.ReceiptType)">formatReceiptAddLine(StringBuilder, Terminal, Int32, List&lt;PrintFlag&gt;, CustomReceiptFormatter.LineFormat, List&lt;ReceiptItem&gt;, ReceiptType)</h4>
+  <h4 id="SIX_TimApi_Receipts_CustomReceiptFormatter_formatReceiptAddLine_SIX_TimApi_Constants_Recipient_StringBuilder_SIX_TimApi_Terminal_System_Int32_List_SIX_TimApi_Constants_PrintFlag__SIX_TimApi_Receipts_CustomReceiptFormatter_LineFormat_List_SIX_TimApi_ReceiptItem__SIX_TimApi_Constants_ReceiptType_" data-uid="SIX.TimApi.Receipts.CustomReceiptFormatter.formatReceiptAddLine(SIX.TimApi.Constants.Recipient,StringBuilder,SIX.TimApi.Terminal,System.Int32,List{SIX.TimApi.Constants.PrintFlag},SIX.TimApi.Receipts.CustomReceiptFormatter.LineFormat,List{SIX.TimApi.ReceiptItem},SIX.TimApi.Constants.ReceiptType)">formatReceiptAddLine(Recipient, StringBuilder, Terminal, Int32, List&lt;PrintFlag&gt;, CustomReceiptFormatter.LineFormat, List&lt;ReceiptItem&gt;, ReceiptType)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected void formatReceiptAddLine(StringBuilder builder, Terminal terminal, int width, List&lt;PrintFlag&gt; flags, CustomReceiptFormatter.LineFormat lineFormat, List&lt;ReceiptItem&gt; receiptItems, ReceiptType receiptType)</code></pre>
+    <pre><code class="lang-csharp hljs">protected void formatReceiptAddLine(Recipient recipient, StringBuilder builder, Terminal terminal, int width, List&lt;PrintFlag&gt; flags, CustomReceiptFormatter.LineFormat lineFormat, List&lt;ReceiptItem&gt; receiptItems, ReceiptType receiptType)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1086,6 +1120,11 @@
       </tr>
     </thead>
     <tbody>
+      <tr>
+        <td><a class="xref" href="SIX.TimApi.Constants.Recipient.html">Recipient</a></td>
+        <td><span class="parametername">recipient</span></td>
+        <td></td>
+      </tr>
       <tr>
         <td><span class="xref">StringBuilder</span></td>
         <td><span class="parametername">builder</span></td>
@@ -1178,12 +1217,12 @@
   
   
   <a id="SIX_TimApi_Receipts_CustomReceiptFormatter_formatReceiptText_" data-uid="SIX.TimApi.Receipts.CustomReceiptFormatter.formatReceiptText*"></a>
-  <h4 id="SIX_TimApi_Receipts_CustomReceiptFormatter_formatReceiptText_StringBuilder_SIX_TimApi_Terminal_System_Int32_List_SIX_TimApi_Constants_PrintFlag__List_SIX_TimApi_ReceiptItem__SIX_TimApi_Constants_ReceiptType_List_SIX_TimApi_Receipts_CustomReceiptFormatter_LineFormat__" data-uid="SIX.TimApi.Receipts.CustomReceiptFormatter.formatReceiptText(StringBuilder,SIX.TimApi.Terminal,System.Int32,List{SIX.TimApi.Constants.PrintFlag},List{SIX.TimApi.ReceiptItem},SIX.TimApi.Constants.ReceiptType,List{SIX.TimApi.Receipts.CustomReceiptFormatter.LineFormat})">formatReceiptText(StringBuilder, Terminal, Int32, List&lt;PrintFlag&gt;, List&lt;ReceiptItem&gt;, ReceiptType, List&lt;CustomReceiptFormatter.LineFormat&gt;)</h4>
+  <h4 id="SIX_TimApi_Receipts_CustomReceiptFormatter_formatReceiptText_SIX_TimApi_Constants_Recipient_StringBuilder_SIX_TimApi_Terminal_System_Int32_List_SIX_TimApi_Constants_PrintFlag__List_SIX_TimApi_ReceiptItem__SIX_TimApi_Constants_ReceiptType_List_SIX_TimApi_Receipts_CustomReceiptFormatter_LineFormat__" data-uid="SIX.TimApi.Receipts.CustomReceiptFormatter.formatReceiptText(SIX.TimApi.Constants.Recipient,StringBuilder,SIX.TimApi.Terminal,System.Int32,List{SIX.TimApi.Constants.PrintFlag},List{SIX.TimApi.ReceiptItem},SIX.TimApi.Constants.ReceiptType,List{SIX.TimApi.Receipts.CustomReceiptFormatter.LineFormat})">formatReceiptText(Recipient, StringBuilder, Terminal, Int32, List&lt;PrintFlag&gt;, List&lt;ReceiptItem&gt;, ReceiptType, List&lt;CustomReceiptFormatter.LineFormat&gt;)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected void formatReceiptText(StringBuilder builder, Terminal terminal, int width, List&lt;PrintFlag&gt; flags, List&lt;ReceiptItem&gt; receiptItems, ReceiptType receiptType, List&lt;CustomReceiptFormatter.LineFormat&gt; lineFormats)</code></pre>
+    <pre><code class="lang-csharp hljs">protected void formatReceiptText(Recipient recipient, StringBuilder builder, Terminal terminal, int width, List&lt;PrintFlag&gt; flags, List&lt;ReceiptItem&gt; receiptItems, ReceiptType receiptType, List&lt;CustomReceiptFormatter.LineFormat&gt; lineFormats)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1195,6 +1234,11 @@
       </tr>
     </thead>
     <tbody>
+      <tr>
+        <td><a class="xref" href="SIX.TimApi.Constants.Recipient.html">Recipient</a></td>
+        <td><span class="parametername">recipient</span></td>
+        <td></td>
+      </tr>
       <tr>
         <td><span class="xref">StringBuilder</span></td>
         <td><span class="parametername">builder</span></td>
