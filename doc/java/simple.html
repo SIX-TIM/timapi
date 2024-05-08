@@ -127,7 +127,7 @@ settings.setAutoCommit = false;
 // Create a terminal instance using the adjusted terminalSettings object
 Terminal terminal = new Terminal(settings);
 </code></pre> </p>
-                  <p>This block shows the setup with the fixed ip connection mode: <pre><code class="language-{.java}">// Create new TerminalSettings instance
+                <p>This block shows the setup with the fixed ip connection mode: <pre><code class="language-{.java}">// Create new TerminalSettings instance
 TerminalSettings settings = new TerminalSettings();
 
 // ----------------------------LOGGING----------------------------
@@ -165,10 +165,10 @@ settings.setAutoCommit = false;
 // Create a terminal instance using the adjusted terminalSettings object
 Terminal terminal = new Terminal(settings);
 </code></pre> </p>
-                    <p>After the Terminal instance has been created it can be used to perform transactions.</p>
-                  </div><div class="col-md-6">
-                    <p lang="Java">In the TimApi.cfg file the following parameter can be set:
-                      <pre><code class="language-{.cfg}">[global]
+                <p>After the Terminal instance has been created it can be used to perform transactions.</p>
+              </div><div class="col-md-6">
+                <p lang="Java">In the TimApi.cfg file the following parameter can be set:
+                  <pre><code class="language-{.cfg}">[global]
 
 # ---------------LOGGING----------------
 # Define the logging path where to save the TIM API log file.
@@ -203,9 +203,14 @@ ConnectionIPString = 192.168.1.13
 # AutoCommit = false
 
 </code></pre>
-                    </p>
-                  </div></div>
-              <div class="row"><div class="col-md-6"></div></div></section>
+                </p>
+              </div></div>
+            <div class="row"><div class="col-md-6"><p lang="Java">
+              The TimApi.cfg file has to be placed in the working directory used when the java
+              process is launched. Set the working directory accordingly for running your
+              application to make sure TimApi.cfg is found.
+            </p>
+            </div></div></section>
               <section><h1><a name="simpleTransaction" id="simpleTransaction">&#160;</a>Simple Transaction</h1><div class="row"><div class="col-md-6">
                     <p>
                       The flow on the right shows a simple transaction flow and which steps are done by which participant.

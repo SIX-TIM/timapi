@@ -1,8 +1,8 @@
 var currency_8h =
 [
     [ "ta_s_currency", "structta__s__currency.html", "structta__s__currency" ],
-    [ "ta_e_currency_t", "currency_8h.html#a5b2854bf8397dcb3a24c9e1bc6db549f", null ],
-    [ "ta_s_currency_t", "currency_8h.html#abad277a74d594065e2b2effc0e0466dd", null ],
+    [ "ta_e_currency_t", "currency_8h.html#a66e117db99cb19c79820596746e02776", null ],
+    [ "ta_s_currency_t", "currency_8h.html#a94dfe4fe6d3c05e55a9e3651d621fcf8", null ],
     [ "ta_e_currency", "currency_8h.html#ad375db379bcf5a792280a2735f80f7d9", [
       [ "ta_c_currency_undefined", "currency_8h.html#ad375db379bcf5a792280a2735f80f7d9aa8145e4ef0817018788f424132b72f2f", null ],
       [ "ta_c_currency_aed", "currency_8h.html#ad375db379bcf5a792280a2735f80f7d9a45cd79ff38c8c804dc47a5ee60776ae0", null ],

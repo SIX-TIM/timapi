@@ -1,6 +1,6 @@
 var additional__info__item_8h =
 [
-    [ "ta_e_additional_info_item_t", "additional__info__item_8h.html#a9d6cdb568e142d26d0df2af62b386e02", null ],
+    [ "ta_e_additional_info_item_t", "additional__info__item_8h.html#a14e59c5446a07064da6c97f4e013cdee", null ],
     [ "ta_e_additional_info_item", "additional__info__item_8h.html#aac5494ba6460fa4c7ac9d54689567f65", [
       [ "ta_c_aii_undefined", "additional__info__item_8h.html#aac5494ba6460fa4c7ac9d54689567f65a25d34524011cbb8150de5ac9f0d93629", null ],
       [ "ta_c_aii_mileage", "additional__info__item_8h.html#aac5494ba6460fa4c7ac9d54689567f65aae772db6bb9c3863b13f65b7dea4b4f0", null ],

@@ -145,6 +145,11 @@ Terminal terminal = new Terminal(settings);
 
 // Disconnect from terminal and clean up properly
 terminal.dispose();
+
+// Before exiting your application make sure to clean up all resources.
+// It is not required to call TimApiDispose() for disposing individual
+// terminal instances. It is just required before exiting the application
+Terminal.TimApiDispose();
 </code></pre>
                 </div></div>
 
@@ -320,6 +325,18 @@ terminal.dispose();
                             </tr>
                         </tbody>
                     </table>
+                <p lang="cs">
+                    The TimApi.cfg file has to be placed in one of two possible locations:
+                    <ul>
+                        <li>
+                            In the working directory used when the application process is launched.
+                            Make sure to set the working directory accordingly for running your
+                            application to make sure the TimApi.cfg is found.
+                        </li>
+                        <li>In the same directory as TimApi.dll is located.</li>
+                    </ul>
+                    The first found TimApi.cfg is used.
+                </p>
                 </div><div class="col-md-6">
                     <p>Example &#8220;TimApi.cfg&#8221;: This example describes the TimApi.cfg file with a global ini-section and
                         two different

@@ -82,10 +82,22 @@
             <p>This minimal configuration can be done directly in the code after creating a<code><a href="doc/api/SIX.TimApi.TerminalSettings.html">TerminalSettings</a></code> instance.</p>
             </div></div><div class="row"><div class="col-md-6">
                 <p>This block shows the setup with the fixed ip connection mode: </p>
-                    <p>After the Terminal instance has been created it can be used to perform transactions.</p>
-                  </div><div class="col-md-6">
-                    </div></div>
-              <div class="row"><div class="col-md-6"></div></div></section>
+                <p>After the Terminal instance has been created it can be used to perform transactions.</p>
+              </div><div class="col-md-6">
+                </div></div>
+            <div class="row"><div class="col-md-6"><p lang="cs">
+              The TimApi.cfg file has to be placed in one of two possible locations:
+              <ul>
+                <li>
+                  In the working directory used when the application process is launched.
+                  Make sure to set the working directory accordingly for running your
+                  application to make sure the TimApi.cfg is found.
+                </li>
+                <li>In the same directory as TimApi.dll is located.</li>
+              </ul>
+              The first found TimApi.cfg is used.
+            </p>
+          </div></div></section>
               <section><h1><a name="simpleTransaction" id="simpleTransaction">&#160;</a>Simple Transaction</h1><div class="row"><div class="col-md-6">
                     <p>
                       The flow on the right shows a simple transaction flow and which steps are done by which participant.
