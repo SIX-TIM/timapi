@@ -2793,6 +2793,12 @@ references:
   commentId: F:SIX.TimApi.Constants.BrandBarBrand.PostCard
   fullName: SIX.TimApi.Constants.BrandBarBrand.PostCard
   nameWithType: BrandBarBrand.PostCard
+- uid: SIX.TimApi.Constants.BrandBarBrand.PostMobile
+  name: PostMobile
+  href: api/SIX.TimApi.Constants.BrandBarBrand.html#SIX_TimApi_Constants_BrandBarBrand_PostMobile
+  commentId: F:SIX.TimApi.Constants.BrandBarBrand.PostMobile
+  fullName: SIX.TimApi.Constants.BrandBarBrand.PostMobile
+  nameWithType: BrandBarBrand.PostMobile
 - uid: SIX.TimApi.Constants.BrandBarBrand.PowerCard
   name: PowerCard
   href: api/SIX.TimApi.Constants.BrandBarBrand.html#SIX_TimApi_Constants_BrandBarBrand_PowerCard
@@ -13196,6 +13202,19 @@ references:
   isSpec: "True"
   fullName: SIX.TimApi.ImmutableTerminalSettings.SerialPort
   nameWithType: ImmutableTerminalSettings.SerialPort
+- uid: SIX.TimApi.ImmutableTerminalSettings.SIXmlRequestTimeout
+  name: SIXmlRequestTimeout
+  href: api/SIX.TimApi.ImmutableTerminalSettings.html#SIX_TimApi_ImmutableTerminalSettings_SIXmlRequestTimeout
+  commentId: P:SIX.TimApi.ImmutableTerminalSettings.SIXmlRequestTimeout
+  fullName: SIX.TimApi.ImmutableTerminalSettings.SIXmlRequestTimeout
+  nameWithType: ImmutableTerminalSettings.SIXmlRequestTimeout
+- uid: SIX.TimApi.ImmutableTerminalSettings.SIXmlRequestTimeout*
+  name: SIXmlRequestTimeout
+  href: api/SIX.TimApi.ImmutableTerminalSettings.html#SIX_TimApi_ImmutableTerminalSettings_SIXmlRequestTimeout_
+  commentId: Overload:SIX.TimApi.ImmutableTerminalSettings.SIXmlRequestTimeout
+  isSpec: "True"
+  fullName: SIX.TimApi.ImmutableTerminalSettings.SIXmlRequestTimeout
+  nameWithType: ImmutableTerminalSettings.SIXmlRequestTimeout
 - uid: SIX.TimApi.ImmutableTerminalSettings.TerminalId
   name: TerminalId
   href: api/SIX.TimApi.ImmutableTerminalSettings.html#SIX_TimApi_ImmutableTerminalSettings_TerminalId
@@ -22944,6 +22963,19 @@ references:
   isSpec: "True"
   fullName: SIX.TimApi.TerminalSettings.SerialPort
   nameWithType: TerminalSettings.SerialPort
+- uid: SIX.TimApi.TerminalSettings.SIXmlRequestTimeout
+  name: SIXmlRequestTimeout
+  href: api/SIX.TimApi.TerminalSettings.html#SIX_TimApi_TerminalSettings_SIXmlRequestTimeout
+  commentId: P:SIX.TimApi.TerminalSettings.SIXmlRequestTimeout
+  fullName: SIX.TimApi.TerminalSettings.SIXmlRequestTimeout
+  nameWithType: TerminalSettings.SIXmlRequestTimeout
+- uid: SIX.TimApi.TerminalSettings.SIXmlRequestTimeout*
+  name: SIXmlRequestTimeout
+  href: api/SIX.TimApi.TerminalSettings.html#SIX_TimApi_TerminalSettings_SIXmlRequestTimeout_
+  commentId: Overload:SIX.TimApi.TerminalSettings.SIXmlRequestTimeout
+  isSpec: "True"
+  fullName: SIX.TimApi.TerminalSettings.SIXmlRequestTimeout
+  nameWithType: TerminalSettings.SIXmlRequestTimeout
 - uid: SIX.TimApi.TerminalSettings.TerminalId
   name: TerminalId
   href: api/SIX.TimApi.TerminalSettings.html#SIX_TimApi_TerminalSettings_TerminalId

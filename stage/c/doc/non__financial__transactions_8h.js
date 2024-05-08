@@ -1,6 +1,6 @@
 var non__financial__transactions_8h =
 [
-    [ "ta_e_non_financial_transactions_t", "non__financial__transactions_8h.html#aeed3b90f135e394d23e56db2381d3dc6", null ],
+    [ "ta_e_non_financial_transactions_t", "non__financial__transactions_8h.html#afdbdfeff32cdefa3395e95e133d0feb9", null ],
     [ "ta_e_non_financial_transactions", "non__financial__transactions_8h.html#a9519a57c1ef87f4cdf5937084bf4de93", [
       [ "ta_c_nft_undefined", "non__financial__transactions_8h.html#a9519a57c1ef87f4cdf5937084bf4de93ae68c6c45069e3be74e1f75772b1780f4", null ],
       [ "ta_c_nft_cancel", "non__financial__transactions_8h.html#a9519a57c1ef87f4cdf5937084bf4de93ac2251a8c0a6f2b6a330633823dbd5254", null ],

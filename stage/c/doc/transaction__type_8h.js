@@ -1,6 +1,6 @@
 var transaction__type_8h =
 [
-    [ "ta_e_transaction_type_t", "transaction__type_8h.html#ab13191832b3ec9a25d18420ae07439a2", null ],
+    [ "ta_e_transaction_type_t", "transaction__type_8h.html#ab6ee5e4d83de5d339ec03b569082c238", null ],
     [ "ta_e_transaction_type", "transaction__type_8h.html#a08f07046806962db06121bebefd306d1", [
       [ "ta_c_tt_undefined", "transaction__type_8h.html#a08f07046806962db06121bebefd306d1a0648dbec562790692a38ae234aa5c576", null ],
       [ "ta_c_tt_purchase", "transaction__type_8h.html#a08f07046806962db06121bebefd306d1ac9d4e87198ab31d00d1688995088c5de", null ],
