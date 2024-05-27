@@ -1,1 +1,1 @@
-timsdk = {}; timsdk.sdk_version = "24-01";
+timsdk = {}; timsdk.sdk_version = "24-05";

@@ -16,6 +16,7 @@ var resource__parameter__type_8h =
       [ "ta_c_rpt_key_mode_f1", "resource__parameter__type_8h.html#a24c84814e0ce6a320ff3bd3826a297fbaacf600ea2081d9e6b9877fdb303a229f", null ],
       [ "ta_c_rpt_key_mode_f2", "resource__parameter__type_8h.html#a24c84814e0ce6a320ff3bd3826a297fba0fb2962e53991b9f0b9a0ab964e77317", null ],
       [ "ta_c_rpt_key_mode_f3", "resource__parameter__type_8h.html#a24c84814e0ce6a320ff3bd3826a297fba9b60ecc9dc494e7fed5ead022a439b5a", null ],
-      [ "ta_c_rpt_pin_retry_counter", "resource__parameter__type_8h.html#a24c84814e0ce6a320ff3bd3826a297fba18a59fd58ad83e29e5ee89ec446ee7b0", null ]
+      [ "ta_c_rpt_pin_retry_counter", "resource__parameter__type_8h.html#a24c84814e0ce6a320ff3bd3826a297fba18a59fd58ad83e29e5ee89ec446ee7b0", null ],
+      [ "ta_c_rpt_aid", "resource__parameter__type_8h.html#a24c84814e0ce6a320ff3bd3826a297fba14acada9f526233ca9e693dc563d02c9", null ]
     ] ]
 ];

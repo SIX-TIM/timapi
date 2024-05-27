@@ -26,7 +26,8 @@ var custom__receipt__formatter_8h =
       [ "ta_crfc_partial_approval", "custom__receipt__formatter_8h.html#a07c5b9d0b4ce2c471dd995fbae1716b0abb2ac46451e4627eca38605763d3cb69", null ],
       [ "ta_crfc_no_partial_approval", "custom__receipt__formatter_8h.html#a07c5b9d0b4ce2c471dd995fbae1716b0a61da8f53e65f71a1dbbef940ca6264e2", null ],
       [ "ta_crfc_has_additional_amounts", "custom__receipt__formatter_8h.html#a07c5b9d0b4ce2c471dd995fbae1716b0a0df073165fce9941704b5bed9ec9f733", null ],
-      [ "ta_crfc_ecr_info_with_trans_seq", "custom__receipt__formatter_8h.html#a07c5b9d0b4ce2c471dd995fbae1716b0ace06ac8f369a29d3f43af0e4bbb5a935", null ]
+      [ "ta_crfc_ecr_info_with_trans_seq", "custom__receipt__formatter_8h.html#a07c5b9d0b4ce2c471dd995fbae1716b0ace06ac8f369a29d3f43af0e4bbb5a935", null ],
+      [ "ta_crfc_merchant_signature", "custom__receipt__formatter_8h.html#a07c5b9d0b4ce2c471dd995fbae1716b0afbe4180da36d77d75fbda45f103cfe31", null ]
     ] ],
     [ "ta_e_custom_receipt_formatter_text_alignment", "custom__receipt__formatter_8h.html#a089412c826d5c6d0e523915d07b4036f", [
       [ "ta_c_crfta_left", "custom__receipt__formatter_8h.html#a089412c826d5c6d0e523915d07b4036faadb264cda357ac503e4e8d6ffd73c5cd", null ],

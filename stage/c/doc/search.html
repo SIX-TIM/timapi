@@ -1212,6 +1212,14 @@ $(document).ready(function(){initNavTree('search.html','');});
     <field name="text">Token PAN type To differ the source of a token PAN the TokenPanType field is used in a SIXml request message as part of the sixml TransactionData container and in a SIXml response message as part of the sixml CardData container The TokenPanType field always is transmitted if a TokenPan field is transmitted but must not be transmitted alone card_data Object instance of type card_data token_pan_type Pointer to variable to write object instance to ta_c_rc_ok Object instance written to card_product_type ta_c_rc_invalid_argument card_data is ta_object_invalid ta_c_rc_invalid_argument card_data is not of type card_data ta_c_rc_invalid_argument token_pan_type is null-pointer</field>
   </doc>
   <doc>
+    <field name="type">function</field>
+    <field name="name">ta_card_data_get_additional_card_data</field>
+    <field name="args">(ta_object_t card_data, ta_object_t *additional_card_data)</field>
+    <field name="url">card__data_8h.html#ad56339f4c6397208cd675e1cbdc1bbf1</field>
+    <field name="keywords">ta_card_data_get_additional_card_data</field>
+    <field name="text">Additional card information non-PCI that can have merchant specific formatting Available if Dialog guide is enabled card_data Object instance of type card_data additional_card_data Pointer to variable to write object instance to Object instance is of type string and is not retained Object instance is ta_object_invalid if value is not set in card_data ta_c_rc_ok Object instance written to asrpd ta_c_rc_invalid_argument card_data is ta_object_invalid ta_c_rc_invalid_argument card_data is not of type card_data ta_c_rc_invalid_argument additional_card_data is null-pointer</field>
+  </doc>
+  <doc>
     <field name="type">file</field>
     <field name="name">card_track_data.h</field>
     <field name="url">card__track__data_8h.html</field>
@@ -6470,6 +6478,48 @@ $(document).ready(function(){initNavTree('search.html','');});
     <field name="text">ECR side shift number Used for petrol MOC provided by ECR Specification retail</field>
   </doc>
   <doc>
+    <field name="type">enumvalue</field>
+    <field name="name">ta_c_mot_accounting_department</field>
+    <field name="url">merchant__option__type_8h.html#aea3eaf253bcce054769642d812d46362a9c80bc712cfc818609157a5a34dc12fb</field>
+    <field name="keywords">ta_c_mot_accounting_department</field>
+    <field name="text">Generally used for Swiss public transportation as merchant specific station description but can be used differently according merchant needs e.g as cost center etc Specification retail</field>
+  </doc>
+  <doc>
+    <field name="type">enumvalue</field>
+    <field name="name">ta_c_mot_accounting_period</field>
+    <field name="url">merchant__option__type_8h.html#aea3eaf253bcce054769642d812d46362a6831970e2bcbbf2829b428600536c072</field>
+    <field name="keywords">ta_c_mot_accounting_period</field>
+    <field name="text">Merchant defined accounting period for a specific shift or transaction Specification retail</field>
+  </doc>
+  <doc>
+    <field name="type">enumvalue</field>
+    <field name="name">ta_c_mot_device_type</field>
+    <field name="url">merchant__option__type_8h.html#aea3eaf253bcce054769642d812d46362a28bcde67ab27c511cea9ac9596d92532</field>
+    <field name="keywords">ta_c_mot_device_type</field>
+    <field name="text">Generally used for Swiss public transportation as merchant specific ECR device type description but can be used differently according merchant needs Specification retail</field>
+  </doc>
+  <doc>
+    <field name="type">enumvalue</field>
+    <field name="name">ta_c_mot_ktucode</field>
+    <field name="url">merchant__option__type_8h.html#aea3eaf253bcce054769642d812d46362a3fa9c254a99df02e08fc361654a90757</field>
+    <field name="keywords">ta_c_mot_ktucode</field>
+    <field name="text">Generally used for Swiss public transportation to describe the state-licensed transportation company but can be used differently according merchant needs Specification retail</field>
+  </doc>
+  <doc>
+    <field name="type">enumvalue</field>
+    <field name="name">ta_c_mot_station_code</field>
+    <field name="url">merchant__option__type_8h.html#aea3eaf253bcce054769642d812d46362a42531098bb97678ac56470d20ba36a40</field>
+    <field name="keywords">ta_c_mot_station_code</field>
+    <field name="text">Generally used for Swiss public transportation as merchant specific station description according department documentation but can be used differently according merchant needs Specification retail</field>
+  </doc>
+  <doc>
+    <field name="type">enumvalue</field>
+    <field name="name">ta_c_mot_wsnumber</field>
+    <field name="url">merchant__option__type_8h.html#aea3eaf253bcce054769642d812d46362a7ac0a2c136e71c7878f3adff6a01b51a</field>
+    <field name="keywords">ta_c_mot_wsnumber</field>
+    <field name="text">Generally used for Swiss public transportation as merchant specific work station number but can be used differently according merchant needs Specification retail</field>
+  </doc>
+  <doc>
     <field name="type">file</field>
     <field name="name">ngv_mode.h</field>
     <field name="url">enum__string__maps_2ngv__mode_8h.html</field>
@@ -9553,6 +9603,20 @@ $(document).ready(function(){initNavTree('search.html','');});
     <field name="text">Punkte einlösen i</field>
   </doc>
   <doc>
+    <field name="type">enumvalue</field>
+    <field name="name">ta_c_rid_present_specific_card</field>
+    <field name="url">resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9a925cdf731cdf530dcbe6cd8eb77ecf8e</field>
+    <field name="keywords">ta_c_rid_present_specific_card</field>
+    <field name="text">Please present 0 Placeholders 0 CardName Resource Parameters 0 Aid Optional No Active Confirmation CardReader</field>
+  </doc>
+  <doc>
+    <field name="type">enumvalue</field>
+    <field name="name">ta_c_rid_specific_card_read_ok</field>
+    <field name="url">resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9a679eaa5fb02c9a268a0b139156edd23e</field>
+    <field name="keywords">ta_c_rid_specific_card_read_ok</field>
+    <field name="text">0 read OK Placeholders 0 CardName Active Confirmation Timeout</field>
+  </doc>
+  <doc>
     <field name="type">file</field>
     <field name="name">resource_parameter_type.h</field>
     <field name="url">enum__string__maps_2resource__parameter__type_8h.html</field>
@@ -9692,6 +9756,13 @@ $(document).ready(function(){initNavTree('search.html','');});
     <field name="url">resource__parameter__type_8h.html#a24c84814e0ce6a320ff3bd3826a297fba18a59fd58ad83e29e5ee89ec446ee7b0</field>
     <field name="keywords">ta_c_rpt_pin_retry_counter</field>
     <field name="text">Defines how many times a PIN or other code entry can be done before failing the dialog Example PinRetryCounter 3 the PIN or other code can be entered 3 times in total before the dialog fails Specification petrol</field>
+  </doc>
+  <doc>
+    <field name="type">enumvalue</field>
+    <field name="name">ta_c_rpt_aid</field>
+    <field name="url">resource__parameter__type_8h.html#a24c84814e0ce6a320ff3bd3826a297fba14acada9f526233ca9e693dc563d02c9</field>
+    <field name="keywords">ta_c_rpt_aid</field>
+    <field name="text">Application identifier of the card that is expected to be used with the corresponding dialog e.g for limiting that the terminal only is allowed to read one specific card with the given AID Specification petrol</field>
   </doc>
   <doc>
     <field name="type">file</field>
@@ -10828,6 +10899,13 @@ $(document).ready(function(){initNavTree('search.html','');});
     <field name="url">result__code_8h.html#aebaf00d1ceef4b827866ca9de0bd3320ae09ee5d8a304ffbe507b297cab664c5b</field>
     <field name="keywords">ta_c_rc_result_unknown_acquirer_specific</field>
     <field name="text">Result unknown – acquirer specific Error message Result unknown Acquirer Specific Specification retail</field>
+  </doc>
+  <doc>
+    <field name="type">enumvalue</field>
+    <field name="name">ta_c_rc_unknown_card</field>
+    <field name="url">result__code_8h.html#aebaf00d1ceef4b827866ca9de0bd3320a39977ea787d536a13f6e109c170d117d</field>
+    <field name="keywords">ta_c_rc_unknown_card</field>
+    <field name="text">Unknown Card Error message Unknown Card Specification retail</field>
   </doc>
   <doc>
     <field name="type">enumvalue</field>
