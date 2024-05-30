@@ -84,11 +84,11 @@
                 <li>Terminal IP: The IP of the terminal that shall be used afterwards. Used if direct connection is used: ConnectionMode = OnFixIp</li>
                 <li lang="Java Swift C">ConnectionMode: Only if "OnFixIp" with set Terminal IP shall be used. (Default: ConnectionMode = Broadcast)
                 </li>
-                <li><code><a href="doc/index.html?com/six/timapi/TerminalSettings.html#setAutoCommit-boolean-">AutoCommit</a></code>: Defines if terminal performs a Commit automatically or if it must be done from the ECR. (Default: AutoCommit = true)</li>
+                <li><code><a href="doc/com/six/timapi/TerminalSettings.html#setAutoCommit-boolean-">AutoCommit</a></code>: Defines if terminal performs a Commit automatically or if it must be done from the ECR. (Default: AutoCommit = true)</li>
               </ul>
             </p>
             <p>This minimal configuration can <span lang="Java">either</span> be done <span lang="Java">using the TimApi.cfg configuration file,
-            which must be located in the same directory as the TIM API, or </span>directly in the code after creating a <code><a href="doc/index.html?com/six/timapi/TerminalSettings.html">TerminalSettings</a></code> instance.</p>
+            which must be located in the same directory as the TIM API, or </span>directly in the code after creating a <code><a href="doc/com/six/timapi/TerminalSettings.html">TerminalSettings</a></code> instance.</p>
             </div></div><div class="row"><div class="col-md-6">
                 <p lang="Java Swift C">This block shows the minimal setup with broadcast connection mode: <pre><code class="language-{.java}">// Create new TerminalSettings instance
 TerminalSettings settings = new TerminalSettings();
@@ -221,14 +221,14 @@ ConnectionIPString = 192.168.1.13
                       The steps the integrator has to perform are the following:
                       <ul>
                         <li><b>1. Start transaction: </b>The integrator has to call the
-                        <code><a href="doc/index.html?com/six/timapi/Terminal.html#transactionAsync-com.six.timapi.constants.TransactionType-com.six.timapi.Amount-">transactionAsync</a></code> function including the required parameters which are shown in the code example below.</li>
+                        <code><a href="doc/com/six/timapi/Terminal.html#transactionAsync-com.six.timapi.constants.TransactionType-com.six.timapi.Amount-">transactionAsync</a></code> function including the required parameters which are shown in the code example below.</li>
                       <li><b>2. Process transaction completed: </b> After processing the transaction the TIM API will return a
-                      <code><a href="doc/index.html?com/six/timapi/TransactionResponse.html">TransactionResponse</a></code> in the corresponding<code><a href="doc/index.html?com/six/timapi/TerminalListener.html#transactionCompleted-com.six.timapi.TimEvent-com.six.timapi.TransactionResponse-">transactionCompleted</a></code> callback method.</li>
+                      <code><a href="doc/com/six/timapi/TransactionResponse.html">TransactionResponse</a></code> in the corresponding<code><a href="doc/com/six/timapi/TerminalListener.html#transactionCompleted-com.six.timapi.TimEvent-com.six.timapi.TransactionResponse-">transactionCompleted</a></code> callback method.</li>
                     <li><b>3. Send commit (if AutoCommit deactivated): </b> After receiving the feedback in the transactionCompleted callback the integrator has to call the
-                    <code><a href="doc/index.html?com/six/timapi/Terminal.html#commitAsync--">commitAsync</a></code> function to complete the transaction process.
+                    <code><a href="doc/com/six/timapi/Terminal.html#commitAsync--">commitAsync</a></code> function to complete the transaction process.
                     This step must only be done if AutoCommit has been set to "false" in the terminal settings.</li>
                   <li><b>4. Process commit completed (if AutoCommit deactivated): </b> Also the commit function is finished from the TIM API by calling the
-                  <code><a href="doc/index.html?com/six/timapi/TerminalListener.html#commitCompleted-com.six.timapi.TimEvent-com.six.timapi.PrintData-">commitCompleted</a></code> callback function.
+                  <code><a href="doc/com/six/timapi/TerminalListener.html#commitCompleted-com.six.timapi.TimEvent-com.six.timapi.PrintData-">commitCompleted</a></code> callback function.
                   After getting the commit completed callback call from the TIM API, another requests, e.g. another transaction, can be called.</li>
               </ul>
             </p>
@@ -299,7 +299,7 @@ public class SimpleTransaction {
 <div class="row"><div class="col-md-6"></div></div></section>
 <section><h1><a name="simpleResponse" id="simpleResponse">&#160;</a>Simple Response Handling</h1><div class="row"><div class="col-md-6">
       <p>The following section explains how to easily retrieve response data from the
-        <code><a href="doc/index.html?com/six/timapi/TransactionResponse.html">TransactionResponse</a></code> which is available after a transaction as described above.</p>
+        <code><a href="doc/com/six/timapi/TransactionResponse.html">TransactionResponse</a></code> which is available after a transaction as described above.</p>
         <p>The first step is to implement your own terminal listener class wherein you overwrite the functions you want to use.
           If you are mainly interested in the transaction response you can use the following code:</p>
           <pre><code class="language-{.java}">/** Asynchronous listener handling terminal events. */
@@ -317,35 +317,35 @@ terminal.addListener(new MyTerminalListener());
 
 </code></pre>
           <h2>Check transaction outcome</h2>
-          <p>To check if a transaction has been performed successfully you have to check the <code><a href="doc/index.html?com/six/timapi/constants/ResultCode.html">ResultCode</a></code>
+          <p>To check if a transaction has been performed successfully you have to check the <code><a href="doc/com/six/timapi/constants/ResultCode.html">ResultCode</a></code>
           which is part of the
-          <code><a href="doc/index.html?com/six/timapi/TimEvent.html">TimEvent</a></code> object in the<code><a href="doc/index.html?com/six/timapi/TerminalListener.html#transactionCompleted-com.six.timapi.TimEvent-com.six.timapi.TransactionResponse-">transactionCompleted</a></code> callback.</p>
+          <code><a href="doc/com/six/timapi/TimEvent.html">TimEvent</a></code> object in the<code><a href="doc/com/six/timapi/TerminalListener.html#transactionCompleted-com.six.timapi.TimEvent-com.six.timapi.TransactionResponse-">transactionCompleted</a></code> callback.</p>
           <p>Further error information can be retrieved as described in the API documentation in the
-            <code><a href="doc/index.html?com/six/timapi/TimException.html">TimException</a></code> section.</p>
+            <code><a href="doc/com/six/timapi/TimException.html">TimException</a></code> section.</p>
             <p lang="Java Swift DotNet"><b>IMPORTANT:</b> Please note that only the <b>enum value</b> of the ResultCode can be used and <b>NOT</b> the int value, as this is generated code and the int value
             may not correspond to the int value shown in the TIM API log.</p>
             <hr>
             <h2>Print data</h2>
             <p>
-              The <code><a href="doc/index.html?com/six/timapi/TransactionResponse.html">TransactionResponse</a></code> has a member <code><a href="doc/index.html?com/six/timapi/PrintData.html">PrintData</a></code>
-              (accessed via <code><a href="doc/index.html?com/six/timapi/TransactionResponse.html#getPrintData--">getPrintData</a></code>) which contains merchant and cardholder receipts.
+              The <code><a href="doc/com/six/timapi/TransactionResponse.html">TransactionResponse</a></code> has a member <code><a href="doc/com/six/timapi/PrintData.html">PrintData</a></code>
+              (accessed via <code><a href="doc/com/six/timapi/TransactionResponse.html#getPrintData--">getPrintData</a></code>) which contains merchant and cardholder receipts.
             </p>
-            <p>The <code><a href="doc/index.html?com/six/timapi/PrintData.html">PrintData</a></code> returned in the
-            <code><a href="doc/index.html?com/six/timapi/TransactionResponse.html">TransactionResponse</a></code> contains a merchant and
-            a cardholder receipt which can be retrieved in the <code><a href="doc/index.html?com/six/timapi/TerminalListener.html#transactionCompleted-com.six.timapi.TimEvent-com.six.timapi.TransactionResponse-">transactionCompleted</a></code>
-            callback using the <code><a href="doc/index.html?com/six/timapi/TransactionResponse.html#getPrintData--">getPrintData</a></code> function. The <code><a href="doc/index.html?com/six/timapi/PrintData.html">PrintData</a></code> object
-            then contains a list of <code><a href="doc/index.html?com/six/timapi/Receipt.html">Receipt</a></code> objects which can be retrieved individually.</p>
+            <p>The <code><a href="doc/com/six/timapi/PrintData.html">PrintData</a></code> returned in the
+            <code><a href="doc/com/six/timapi/TransactionResponse.html">TransactionResponse</a></code> contains a merchant and
+            a cardholder receipt which can be retrieved in the <code><a href="doc/com/six/timapi/TerminalListener.html#transactionCompleted-com.six.timapi.TimEvent-com.six.timapi.TransactionResponse-">transactionCompleted</a></code>
+            callback using the <code><a href="doc/com/six/timapi/TransactionResponse.html#getPrintData--">getPrintData</a></code> function. The <code><a href="doc/com/six/timapi/PrintData.html">PrintData</a></code> object
+            then contains a list of <code><a href="doc/com/six/timapi/Receipt.html">Receipt</a></code> objects which can be retrieved individually.</p>
             <hr>
             <h2>Card data</h2>
-            <p>To retrieve card specific information the <code><a href="doc/index.html?com/six/timapi/CardData.html">CardData</a></code> object is also available in
-            the <code><a href="doc/index.html?com/six/timapi/TransactionResponse.html">TransactionResponse</a></code>. This object contains several card information that
+            <p>To retrieve card specific information the <code><a href="doc/com/six/timapi/CardData.html">CardData</a></code> object is also available in
+            the <code><a href="doc/com/six/timapi/TransactionResponse.html">TransactionResponse</a></code>. This object contains several card information that
             was available to the terminal during the transaction process.</p>
             <hr>
             <h2>Further transaction information</h2>
-            <p>Further information regarding the transaction can be found in the <code><a href="doc/index.html?com/six/timapi/TransactionInformation.html">TransactionInformation</a></code> object.</p>
+            <p>Further information regarding the transaction can be found in the <code><a href="doc/com/six/timapi/TransactionInformation.html">TransactionInformation</a></code> object.</p>
           </div><div class="col-md-6">
             <p>The following code shows how the information mentioned above can be retrieved in the
-              <code><a href="doc/index.html?com/six/timapi/TerminalListener.html#transactionCompleted-com.six.timapi.TimEvent-com.six.timapi.TransactionResponse-">transactionCompleted</a></code> event:</p>
+              <code><a href="doc/com/six/timapi/TerminalListener.html#transactionCompleted-com.six.timapi.TimEvent-com.six.timapi.TransactionResponse-">transactionCompleted</a></code> event:</p>
               <pre><code class="language-{.java}">// These completed functions have to be implemented in your "MyTerminalListener"
 // class to overwrite the standard implementation.
 

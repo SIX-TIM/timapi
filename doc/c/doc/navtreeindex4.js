@@ -1,5 +1,7 @@
 var NAVTREEINDEX4 =
 {
+"enum__string__maps_2vas__info__list__type_8h.html":[1,1,0,1,0,61],
+"enum__string__maps_2vas__info__list__type_8h.html#ab4245e1e99b9bfaaeb097854c4f0fbc7":[1,1,0,1,0,61,0],
 "enum__string__maps_2vas__info__type_8h.html":[1,1,0,1,0,62],
 "enum__string__maps_2vas__info__type_8h.html#a7af60a81dd0cd91d2b4a11291a1ac8bb":[1,1,0,1,0,62,0],
 "error__messages_8h.html":[1,1,0,27],
@@ -247,7 +249,5 @@ var NAVTREEINDEX4 =
 "management__status_8h.html#a816c526c8d96eec6ad132cb3a6158624":[1,1,0,1,31,0],
 "map_8h.html":[1,1,0,0,3],
 "map_8h.html":[1,0,5],
-"map_8h.html#a0bf0aa128d608a79e5ad59f37a95529f":[1,1,0,0,3,1],
-"map_8h.html#a12605164e5253260df3182967fd725df":[1,1,0,0,3,7],
-"map_8h.html#a308696c468946f2bb527eb24acf16c4b":[1,1,0,0,3,0]
+"map_8h.html#a0bf0aa128d608a79e5ad59f37a95529f":[1,1,0,0,3,1]
 };

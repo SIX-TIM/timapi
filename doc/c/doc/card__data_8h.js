@@ -2,6 +2,7 @@ var card__data_8h =
 [
     [ "ta_card_data_get_acc", "card__data_8h.html#a05ff3c930eee5af6c9950ee267d44951", null ],
     [ "ta_card_data_get_account_type", "card__data_8h.html#a93cdc0faec7b446f5bacfc585cf49e67", null ],
+    [ "ta_card_data_get_additional_card_data", "card__data_8h.html#ad56339f4c6397208cd675e1cbdc1bbf1", null ],
     [ "ta_card_data_get_aid", "card__data_8h.html#a0185eb69f13b183cd277c3d78c22b2f8", null ],
     [ "ta_card_data_get_asrpd", "card__data_8h.html#a0345580a994785d02eaaa3fdfd1c29bf", null ],
     [ "ta_card_data_get_brand_name", "card__data_8h.html#ac94de996c10f804b03cce1c11ea2bd9f", null ],
