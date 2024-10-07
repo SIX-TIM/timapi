@@ -193,6 +193,15 @@
             
                 <tr>
                     <td>
+                        <li><a href="timapi.constants.MerchantOptionType.html#.dspMsgSuppressFlag">dspMsgSuppressFlag</a></li>
+                    </td>
+                    <td>
+                        <span class="type-signature"></span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
                         <li><a href="timapi.constants.MerchantOptionType.html#.fuelDispenserNumber">fuelDispenserNumber</a></li>
                     </td>
                     <td>
@@ -266,6 +275,15 @@
                 <tr>
                     <td>
                         <li><a href="timapi.constants.MerchantOptionType.html#.stationCode">stationCode</a></li>
+                    </td>
+                    <td>
+                        <span class="type-signature"></span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        <li><a href="timapi.constants.MerchantOptionType.html#.voucherId">voucherId</a></li>
                     </td>
                     <td>
                         <span class="type-signature"></span>
@@ -648,6 +666,77 @@ can be used differently according merchant needs, e.g. as cost center etc.</p>
 <div class="description">
     <p>Generally used for Swiss public transportation as merchant specific ECR device type
 description, but can be used differently according merchant needs.</p>
+<p>Specification: retail.</p>
+</div>
+
+
+<!-- not needed, since it's in the signature 
+
+-->
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+            </div>
+        
+            <div class="member">
+                
+<h4 class="name" id=".dspMsgSuppressFlag">
+    <a href="timapi.constants.MerchantOptionType.html#.dspMsgSuppressFlag">dspMsgSuppressFlag</a> <span class="type-signature">(static, constant) </span><span class="type-signature"></span>
+</h4>
+
+
+
+
+<div class="description">
+    <p>Flag used to suppress display messages.
+<ul>
+  <li>0: Disabled - all cardholder and attendant display messages shall be displayed</li>
+  <li>1: Cardholder Suppression - all cardholder display messages except "Please wait" shall be suppressed for this transaction</li>
+  <li>2: RFU (Attendant Suppression - all attendant display messages except "Processing" shall be suppressed for this transaction)</li>
+  <li>3: RFU (Full Suppression - all cardholder and attendant display messages except "Please wait" and "Processing" shall be suppressed for this transaction)</li>
+</ul>
+Any other values or null should be treated as 0.</p>
 <p>Specification: retail.</p>
 </div>
 
@@ -1228,6 +1317,70 @@ specifies the contract index.</p>
 <div class="description">
     <p>Generally used for Swiss public transportation as merchant specific station description
 according department documentation, but can be used differently according merchant needs.</p>
+<p>Specification: retail.</p>
+</div>
+
+
+<!-- not needed, since it's in the signature 
+
+-->
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+            </div>
+        
+            <div class="member">
+                
+<h4 class="name" id=".voucherId">
+    <a href="timapi.constants.MerchantOptionType.html#.voucherId">voucherId</a> <span class="type-signature">(static, constant) </span><span class="type-signature"></span>
+</h4>
+
+
+
+
+<div class="description">
+    <p>Voucher type identifier that shall be used for the current transaction, provided by ECR</p>
 <p>Specification: retail.</p>
 </div>
 
