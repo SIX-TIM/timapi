@@ -17,8 +17,6 @@ var merchant__option__type_8h =
       [ "ta_c_mot_device_type", "merchant__option__type_8h.html#aea3eaf253bcce054769642d812d46362a28bcde67ab27c511cea9ac9596d92532", null ],
       [ "ta_c_mot_ktucode", "merchant__option__type_8h.html#aea3eaf253bcce054769642d812d46362a3fa9c254a99df02e08fc361654a90757", null ],
       [ "ta_c_mot_station_code", "merchant__option__type_8h.html#aea3eaf253bcce054769642d812d46362a42531098bb97678ac56470d20ba36a40", null ],
-      [ "ta_c_mot_wsnumber", "merchant__option__type_8h.html#aea3eaf253bcce054769642d812d46362a7ac0a2c136e71c7878f3adff6a01b51a", null ],
-      [ "ta_c_mot_voucher_id", "merchant__option__type_8h.html#aea3eaf253bcce054769642d812d46362ae9a11a11fec15417a0cc90d6ff72a24c", null ],
-      [ "ta_c_mot_dsp_msg_suppress_flag", "merchant__option__type_8h.html#aea3eaf253bcce054769642d812d46362a83c09cb5a6996cd977747d824afdbfd2", null ]
+      [ "ta_c_mot_wsnumber", "merchant__option__type_8h.html#aea3eaf253bcce054769642d812d46362a7ac0a2c136e71c7878f3adff6a01b51a", null ]
     ] ]
 ];

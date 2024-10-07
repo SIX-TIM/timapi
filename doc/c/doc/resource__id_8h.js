@@ -37,8 +37,6 @@ var resource__id_8h =
       [ "ta_c_rid_petrol_tankcode_tries_left", "resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9abfd93ac544b73cb1c8bbf710dd640d3d", null ],
       [ "ta_c_rid_petrol_no_more_tankcode_tries_left", "resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9a1d33b49c023802b512f9834b25879ba0", null ],
       [ "ta_c_rid_petrol_tankcode_incorrect", "resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9a90e03d24f75e333f0ce5570080a2f0a0", null ],
-      [ "ta_c_rid_unencrypted_id_no", "resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9a488337b80bee55dd5e8bc0b622fb22f5", null ],
-      [ "ta_c_rid_work_order_po_no", "resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9ab71925212e7fa01a9e5fa009fc82b216", null ],
       [ "ta_c_rid_petrol_card_inverted", "resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9aa07adc9d6378aa0b31e850df5f38bba8", null ],
       [ "ta_c_rid_petrol_card_out_of_order", "resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9aa7c926c3c6008b777051ee41742beb3c", null ],
       [ "ta_c_rid_petrol_card_not_authorised", "resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9a84431e34b7050c12b6106b4e6cf9642d", null ],

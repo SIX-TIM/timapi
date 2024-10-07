@@ -98,9 +98,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a3d405d62be56b2fc3f7c475a60176ecd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="result__code_8h.html#ae860ee870a289833a24a586ba0c24975">ta_e_result_code_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ppinfo_8h.html#a3d405d62be56b2fc3f7c475a60176ecd">ta_ppinfo_get_payment_protocol</a> (<a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a> response, <a class="el" href="payment__protocol_8h.html#a51699dac19efdf9c1ab3267741ec607e">ta_e_payment_protocol_t</a> *payment_protocol)</td></tr>
 <tr class="memdesc:a3d405d62be56b2fc3f7c475a60176ecd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specifies the payment protocol used.  <a href="#a3d405d62be56b2fc3f7c475a60176ecd">More...</a><br /></td></tr>
 <tr class="separator:a3d405d62be56b2fc3f7c475a60176ecd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeeaac69fa078c86f8622dde345de7152"><td class="memItemLeft" align="right" valign="top"><a class="el" href="result__code_8h.html#ae860ee870a289833a24a586ba0c24975">ta_e_result_code_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ppinfo_8h.html#aeeaac69fa078c86f8622dde345de7152">ta_ppinfo_get_pp_ep2_trans_seq_cnt</a> (<a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a> response, <a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a> *pp_ep2_trans_seq_cnt)</td></tr>
-<tr class="memdesc:aeeaac69fa078c86f8622dde345de7152"><td class="mdescLeft">&#160;</td><td class="mdescRight">Payment protocol specific transaction sequence counter.  <a href="#aeeaac69fa078c86f8622dde345de7152">More...</a><br /></td></tr>
-<tr class="separator:aeeaac69fa078c86f8622dde345de7152"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeed91623484f370d336c41ac72fb9f66"><td class="memItemLeft" align="right" valign="top"><a class="el" href="result__code_8h.html#ae860ee870a289833a24a586ba0c24975">ta_e_result_code_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ppinfo_8h.html#aeed91623484f370d336c41ac72fb9f66">ta_ppinfo_get_pp_ep2_trans_seq_cnt</a> (<a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a> response, <a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a> *pp_ep2_trans_seq_cnt_orig)</td></tr>
+<tr class="memdesc:aeed91623484f370d336c41ac72fb9f66"><td class="mdescLeft">&#160;</td><td class="mdescRight">Payment protocol specific transaction sequence counter, which refers to a previous transaction.  <a href="#aeed91623484f370d336c41ac72fb9f66">More...</a><br /></td></tr>
+<tr class="separator:aeed91623484f370d336c41ac72fb9f66"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9c7b5f2047d28c1797782f24b45e1fb9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="result__code_8h.html#ae860ee870a289833a24a586ba0c24975">ta_e_result_code_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ppinfo_8h.html#a9c7b5f2047d28c1797782f24b45e1fb9">ta_ppinfo_get_pp_ep2_trans_seq_cnt_orig</a> (<a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a> response, <a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a> *pp_ep2_trans_seq_cnt_orig)</td></tr>
 <tr class="memdesc:a9c7b5f2047d28c1797782f24b45e1fb9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Payment protocol specific original transaction sequence counter, which refers to a previous transaction.  <a href="#a9c7b5f2047d28c1797782f24b45e1fb9">More...</a><br /></td></tr>
 <tr class="separator:a9c7b5f2047d28c1797782f24b45e1fb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -255,8 +255,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="aeeaac69fa078c86f8622dde345de7152"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aeeaac69fa078c86f8622dde345de7152">&#9670;&nbsp;</a></span>ta_ppinfo_get_pp_ep2_trans_seq_cnt()</h2>
+<a id="aeed91623484f370d336c41ac72fb9f66"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeed91623484f370d336c41ac72fb9f66">&#9670;&nbsp;</a></span>ta_ppinfo_get_pp_ep2_trans_seq_cnt()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -271,7 +271,7 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a> *&#160;</td>
-          <td class="paramname"><em>pp_ep2_trans_seq_cnt</em>&#160;</td>
+          <td class="paramname"><em>pp_ep2_trans_seq_cnt_orig</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -281,13 +281,13 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Payment protocol specific transaction sequence counter. </p>
+<p>Payment protocol specific transaction sequence counter, which refers to a previous transaction. </p>
 <p>Optional: Mandatory if payment protocol provides info.</p>
 <p>Specification: <em>retail</em>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">response</td><td>Object instance of type <a class="el" href="ppinfo_8h.html">ppinfo</a>. </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">pp_ep2_trans_seq_cnt</td><td>Pointer to variable to write value to. Object instance of type <a class="el" href="integer_8h.html">integer</a> and is not retained.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">pp_ep2_trans_seq_cnt_orig</td><td>Pointer to variable to write value to. Object instance of type <a class="el" href="integer_8h.html">integer</a> and is not retained.</td></tr>
   </table>
   </dd>
 </dl>
@@ -296,7 +296,7 @@ Functions</h2></td></tr>
     <tr><td class="paramname">ta_c_rc_ok</td><td>Value written to <em>pp_ep2_trans_seq_cnt_orig</em>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>response</em> is <em>ta_object_invalid</em>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>response</em> is not of type <a class="el" href="ppinfo_8h.html">ppinfo</a>. </td></tr>
-    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>pp_ep2_trans_seq_cnt</em> is <em>null-pointer</em>. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>pp_ep2_trans_seq_cnt_orig</em> is <em>null-pointer</em>. </td></tr>
   </table>
   </dd>
 </dl>

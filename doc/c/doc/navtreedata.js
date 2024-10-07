@@ -42,16 +42,16 @@ var NAVTREEINDEX =
 [
 "account__type_8h.html",
 "brand__bar__brand_8h.html#a065fb75dccd6ee5e82f29d4cce775549a8606a403d77aa1af1cc78fccda277dd8",
-"currency_8h.html#ad375db379bcf5a792280a2735f80f7d9a5619f3373b19a4f33cd2e8cef93023c6",
-"custom__receipt__formatter_8h.html#aa2ad96ca8f3d24cc69d417eaa70dd2e3a29a3298ad95034fc88a031e0a8cba98b",
-"enum__string__maps_2update__status_8h.html",
-"management__status_8h.html#a0815e7cf1e193cdb55d4505ad6142913abdbef6f11f4ef995e0da6d9cdf358df1",
-"receipt__item__type_8h.html#a3d3044dd871a9c7d630dbcf3d9b738bea279c62d146c627e8db2f85103f41b24e",
-"resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9a787681c99c849c890bb140b2c7c21823",
-"result__code_8h.html#aebaf00d1ceef4b827866ca9de0bd3320ae3ef2c8a90093c68ed18a5fd472af078",
-"terminal_8h.html#aa3f974ab897252b1d42e2be3edefd1bf",
-"third__party__apps_8h.html#a4f195825ca4f737073ab026435d31358a452c40c4cffdef4d9289a685c284fd1d",
-"trx__detail_8h.html#a156057dc5222506509ac131080127141"
+"currency_8h.html#ad375db379bcf5a792280a2735f80f7d9a568ee31e53d5ea817cd4fd90d4ebc2ab",
+"custom__receipt__formatter_8h.html#aa2ad96ca8f3d24cc69d417eaa70dd2e3a302a627fda951a91b769c20abbc81ae8",
+"enum__string__maps_2vas__info__list__type_8h.html",
+"map_8h.html#a12605164e5253260df3182967fd725df",
+"receipt__item__type_8h.html#a3d3044dd871a9c7d630dbcf3d9b738bea3ff52d4f5ed4ef3be22ea292f4fc9bf4",
+"resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9a90e03d24f75e333f0ce5570080a2f0a0",
+"result__code_8h.html#aebaf00d1ceef4b827866ca9de0bd3320afbfff95cf71ecb67ea9af85b5f1fa9e1",
+"terminal_8h.html#ab9da80e9b76ae7be14cd9f8900a26b6a",
+"token__pan__type_8h.html",
+"vas__info__list__type_8h.html#a76f59d6e11912abeedcd4e1b307577b9"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
