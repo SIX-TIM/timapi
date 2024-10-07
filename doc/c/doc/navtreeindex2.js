@@ -1,5 +1,6 @@
 var NAVTREEINDEX2 =
 {
+"currency_8h.html#ad375db379bcf5a792280a2735f80f7d9a5619f3373b19a4f33cd2e8cef93023c6":[1,1,0,1,16,3,174],
 "currency_8h.html#ad375db379bcf5a792280a2735f80f7d9a568ee31e53d5ea817cd4fd90d4ebc2ab":[1,1,0,1,16,3,44],
 "currency_8h.html#ad375db379bcf5a792280a2735f80f7d9a571fcdd53010627d3021eeefe53158c8":[1,1,0,1,16,3,126],
 "currency_8h.html#ad375db379bcf5a792280a2735f80f7d9a587d4ba85111b65088c4c4f3193b7df4":[1,1,0,1,16,3,54],
@@ -233,6 +234,7 @@ var NAVTREEINDEX2 =
 "custom__receipt__formatter_8h.html#a883a5ff78a5d2ad805f9f6af32a8d2afadeb56037e4a3c245e31b4779bdf4b311":[1,1,0,23,12,24],
 "custom__receipt__formatter_8h.html#a883a5ff78a5d2ad805f9f6af32a8d2afadefe33602c4b1cea5831b1ac44ebd931":[1,1,0,23,12,72],
 "custom__receipt__formatter_8h.html#a883a5ff78a5d2ad805f9f6af32a8d2afae1f218f0e00fd9bbe2608e7fcab703a8":[1,1,0,23,12,2],
+"custom__receipt__formatter_8h.html#a883a5ff78a5d2ad805f9f6af32a8d2afae1f51e2f183c140bb00313bd4cee561d":[1,1,0,23,12,83],
 "custom__receipt__formatter_8h.html#a883a5ff78a5d2ad805f9f6af32a8d2afae69d937e747d93935c75043092deeb6d":[1,1,0,23,12,49],
 "custom__receipt__formatter_8h.html#a883a5ff78a5d2ad805f9f6af32a8d2afae8148fcdac4b7a1fbe09f070feacd442":[1,1,0,23,12,66],
 "custom__receipt__formatter_8h.html#a883a5ff78a5d2ad805f9f6af32a8d2afaeba51a75374963502f96ff6e90884576":[1,1,0,23,12,36],
@@ -247,7 +249,5 @@ var NAVTREEINDEX2 =
 "custom__receipt__formatter_8h.html#aa2ad96ca8f3d24cc69d417eaa70dd2e3a058ed914e2eb13924fe10ca7b6aeeaee":[1,1,0,23,13,19],
 "custom__receipt__formatter_8h.html#aa2ad96ca8f3d24cc69d417eaa70dd2e3a0891ca2639be9b798e9cc76a5bffab33":[1,1,0,23,13,29],
 "custom__receipt__formatter_8h.html#aa2ad96ca8f3d24cc69d417eaa70dd2e3a08c159919e4bc5a45ff3de655347a80f":[1,1,0,23,13,14],
-"custom__receipt__formatter_8h.html#aa2ad96ca8f3d24cc69d417eaa70dd2e3a28beee7ee1b6312de1226cdaaea4f42d":[1,1,0,23,13,49],
-"custom__receipt__formatter_8h.html#aa2ad96ca8f3d24cc69d417eaa70dd2e3a29a3298ad95034fc88a031e0a8cba98b":[1,1,0,23,13,28],
-"custom__receipt__formatter_8h.html#aa2ad96ca8f3d24cc69d417eaa70dd2e3a2dc1471ba35fd298ee89ae2da75437a7":[1,1,0,23,13,5]
+"custom__receipt__formatter_8h.html#aa2ad96ca8f3d24cc69d417eaa70dd2e3a28beee7ee1b6312de1226cdaaea4f42d":[1,1,0,23,13,49]
 };
