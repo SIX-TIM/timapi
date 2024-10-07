@@ -1258,6 +1258,73 @@
   </table>
   
   
+  <a id="SIX_TimApi_TransactionData_AllowedAppList_" data-uid="SIX.TimApi.TransactionData.AllowedAppList*"></a>
+  <h4 id="SIX_TimApi_TransactionData_AllowedAppList" data-uid="SIX.TimApi.TransactionData.AllowedAppList">AllowedAppList</h4>
+  <div class="markdown level1 summary"><p>Allowed applications for a transaction.</p>
+<p>For each application that should be allowed for the next transaction,
+one entry is required. A specific AID must only be present once in this list.</p>
+<p>Mandatory for (can not be null):</p>
+<ul>
+</ul>
+<p>Conditional for (can be null):</p>
+<ul>
+<li>SIX.TimApi.Constants.TransactionType.Credit</li>
+<li>SIX.TimApi.Constants.TransactionType.PreAuthorization</li>
+<li>SIX.TimApi.Constants.TransactionType.Purchase</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchaseWithCashback</li>
+<li>SIX.TimApi.Constants.TransactionType.Reservation</li>
+<li>SIX.TimApi.Constants.TransactionType.AdjustReservation</li>
+<li>SIX.TimApi.Constants.TransactionType.CancelReservation</li>
+<li>SIX.TimApi.Constants.TransactionType.DebtRecovery</li>
+<li>SIX.TimApi.Constants.TransactionType.FinalizePurchase</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchasePhoneAuthorized</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchaseReservation</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchaseReservationPhoneAuthorized</li>
+<li>SIX.TimApi.Constants.TransactionType.AccountVerification</li>
+<li>SIX.TimApi.Constants.TransactionType.ActivateCard</li>
+<li>SIX.TimApi.Constants.TransactionType.AuthorizeCredit</li>
+<li>SIX.TimApi.Constants.TransactionType.AuthorizeDeposit</li>
+<li>SIX.TimApi.Constants.TransactionType.CashAdvance</li>
+<li>SIX.TimApi.Constants.TransactionType.CollectPoints</li>
+<li>SIX.TimApi.Constants.TransactionType.Combined</li>
+<li>SIX.TimApi.Constants.TransactionType.Funding</li>
+<li>SIX.TimApi.Constants.TransactionType.Giro</li>
+<li>SIX.TimApi.Constants.TransactionType.Load</li>
+<li>SIX.TimApi.Constants.TransactionType.LoadVoucher</li>
+<li>SIX.TimApi.Constants.TransactionType.Reversal</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchaseForcedAcceptance</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchaseMailOrdered</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchasePhoneOrdered</li>
+<li>SIX.TimApi.Constants.TransactionType.Refunding</li>
+<li>SIX.TimApi.Constants.TransactionType.Unload</li>
+</ul>
+<p>Forbidden (has to be always null):</p>
+<ul>
+</ul>
+<p>Transactions will fail if one of the above mentioned restrictions are violated.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;string&gt; AllowedAppList { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">List</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="SIX_TimApi_TransactionData_AppExpirationDate_" data-uid="SIX.TimApi.TransactionData.AppExpirationDate*"></a>
   <h4 id="SIX_TimApi_TransactionData_AppExpirationDate" data-uid="SIX.TimApi.TransactionData.AppExpirationDate">AppExpirationDate</h4>
   <div class="markdown level1 summary"><p>Application expiration date.
@@ -1762,6 +1829,73 @@ false: Standard authorisation scheme (default)</p>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public int? EcrSeqCounterNullable { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SIX_TimApi_TransactionData_ForcePosEntryModes_" data-uid="SIX.TimApi.TransactionData.ForcePosEntryModes*"></a>
+  <h4 id="SIX_TimApi_TransactionData_ForcePosEntryModes" data-uid="SIX.TimApi.TransactionData.ForcePosEntryModes">ForcePosEntryModes</h4>
+  <div class="markdown level1 summary"><p>Specifies the allowed POS Entry Modes for the next transaction. This allowes to force
+specific POS Entry Modes to be used. Value stores bitmap with a maximum of 16 bits.
+Example: Forced POS Entry Modes, Manual, ICC and Contactless give a value of 0x31.</p>
+<p>Mandatory for (can not be null):</p>
+<ul>
+</ul>
+<p>Conditional for (can be null):</p>
+<ul>
+<li>SIX.TimApi.Constants.TransactionType.Credit</li>
+<li>SIX.TimApi.Constants.TransactionType.PreAuthorization</li>
+<li>SIX.TimApi.Constants.TransactionType.Purchase</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchaseWithCashback</li>
+<li>SIX.TimApi.Constants.TransactionType.Reservation</li>
+<li>SIX.TimApi.Constants.TransactionType.AdjustReservation</li>
+<li>SIX.TimApi.Constants.TransactionType.CancelReservation</li>
+<li>SIX.TimApi.Constants.TransactionType.DebtRecovery</li>
+<li>SIX.TimApi.Constants.TransactionType.FinalizePurchase</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchasePhoneAuthorized</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchaseReservation</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchaseReservationPhoneAuthorized</li>
+<li>SIX.TimApi.Constants.TransactionType.AccountVerification</li>
+<li>SIX.TimApi.Constants.TransactionType.ActivateCard</li>
+<li>SIX.TimApi.Constants.TransactionType.AuthorizeCredit</li>
+<li>SIX.TimApi.Constants.TransactionType.AuthorizeDeposit</li>
+<li>SIX.TimApi.Constants.TransactionType.CashAdvance</li>
+<li>SIX.TimApi.Constants.TransactionType.CollectPoints</li>
+<li>SIX.TimApi.Constants.TransactionType.Combined</li>
+<li>SIX.TimApi.Constants.TransactionType.Funding</li>
+<li>SIX.TimApi.Constants.TransactionType.Giro</li>
+<li>SIX.TimApi.Constants.TransactionType.Load</li>
+<li>SIX.TimApi.Constants.TransactionType.LoadVoucher</li>
+<li>SIX.TimApi.Constants.TransactionType.Reversal</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchaseForcedAcceptance</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchaseMailOrdered</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchasePhoneOrdered</li>
+<li>SIX.TimApi.Constants.TransactionType.Refunding</li>
+<li>SIX.TimApi.Constants.TransactionType.Unload</li>
+</ul>
+<p>Forbidden (has to be always null):</p>
+<ul>
+</ul>
+<p>Transactions will fail if one of the above mentioned restrictions are violated.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int? ForcePosEntryModes { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">

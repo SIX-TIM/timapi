@@ -983,6 +983,18 @@ description, but can be used differently according merchant needs.</p>
 </td>
       </tr>
       <tr>
+        <td id="SIX_TimApi_Constants_MerchantOptionType_DspMsgSuppressFlag">DspMsgSuppressFlag</td>
+        <td><p>Flag used to suppress display messages.</p>
+<ul>
+<li>0: Disabled - all cardholder and attendant display messages shall be displayed</li>
+<li>1: Cardholder Suppression - all cardholder display messages except &quot;Please wait&quot; shall be suppressed for this transaction</li>
+<li>2: RFU (Attendant Suppression - all attendant display messages except &quot;Processing&quot; shall be suppressed for this transaction)</li>
+<li>3: RFU (Full Suppression - all cardholder and attendant display messages except &quot;Please wait&quot; and &quot;Processing&quot; shall be suppressed for this transaction)</li>
+</ul>
+Any other values or null should be treated as 0.
+</td>
+      </tr>
+      <tr>
         <td id="SIX_TimApi_Constants_MerchantOptionType_FuelDispenserNumber">FuelDispenserNumber</td>
         <td><p>Fuel Pump number. Used for petrol MOC, provided by ECR.</p>
 </td>
@@ -1035,6 +1047,11 @@ needs.</p>
       <tr>
         <td id="SIX_TimApi_Constants_MerchantOptionType_Unknown">Unknown</td>
         <td><p>Invalid/unknown constant value.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="SIX_TimApi_Constants_MerchantOptionType_VoucherId">VoucherId</td>
+        <td><p>Voucher type identifier that shall be used for the current transaction, provided by ECR</p>
 </td>
       </tr>
       <tr>
