@@ -52,6 +52,7 @@ var dir_68267d1309a1af8e8297ef4c3efbcdba =
     [ "receipt_items.h", "receipt__items_8h.html", "receipt__items_8h" ],
     [ "receipt_request_response.h", "receipt__request__response_8h.html", "receipt__request__response_8h" ],
     [ "reconciliation_response.h", "reconciliation__response_8h.html", "reconciliation__response_8h" ],
+    [ "reconfig_parameters.h", "reconfig__parameters_8h.html", "reconfig__parameters_8h" ],
     [ "screenshot_information.h", "screenshot__information_8h.html", "screenshot__information_8h" ],
     [ "show_dialog_request.h", "show__dialog__request_8h.html", "show__dialog__request_8h" ],
     [ "show_dialog_response.h", "show__dialog__response_8h.html", "show__dialog__response_8h" ],

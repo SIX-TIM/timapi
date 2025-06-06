@@ -50,6 +50,7 @@ var dir_55ef98a57036556dcc9a226e6204f780 =
     [ "receipt_request_type.h", "receipt__request__type_8h.html", "receipt__request__type_8h" ],
     [ "receipt_type.h", "receipt__type_8h.html", "receipt__type_8h" ],
     [ "recipient.h", "recipient_8h.html", "recipient_8h" ],
+    [ "reconfig_mode.h", "reconfig__mode_8h.html", "reconfig__mode_8h" ],
     [ "remote_functions.h", "remote__functions_8h.html", "remote__functions_8h" ],
     [ "request_type.h", "request__type_8h.html", "request__type_8h" ],
     [ "resource_id.h", "resource__id_8h.html", "resource__id_8h" ],

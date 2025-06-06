@@ -8177,6 +8177,48 @@ $(document).ready(function(){initNavTree('search.html','');});
     <field name="text">Text provided in the authorization response to be printed on the merchant ticket Specification retail</field>
   </doc>
   <doc>
+    <field name="type">enumvalue</field>
+    <field name="name">ta_c_rit_trx_ok</field>
+    <field name="url">receipt__item__type_8h.html#a3d3044dd871a9c7d630dbcf3d9b738bea793079f161b9b26f5c694ad76cbddd90</field>
+    <field name="keywords">ta_c_rit_trx_ok</field>
+    <field name="text">Flag to print to receipts If value is 1 Specification retail</field>
+  </doc>
+  <doc>
+    <field name="type">enumvalue</field>
+    <field name="name">ta_c_rit_verified_by_device</field>
+    <field name="url">receipt__item__type_8h.html#a3d3044dd871a9c7d630dbcf3d9b738beae55dad17ba06b9c706b1d4f84fc64cb1</field>
+    <field name="keywords">ta_c_rit_verified_by_device</field>
+    <field name="text">Flag to print to receipts If value is 1 Specification retail</field>
+  </doc>
+  <doc>
+    <field name="type">enumvalue</field>
+    <field name="name">ta_c_rit_pfa_evt_seq_cnt</field>
+    <field name="url">receipt__item__type_8h.html#a3d3044dd871a9c7d630dbcf3d9b738bea030e036bfd290e4b1c502baf09ac80cb</field>
+    <field name="keywords">ta_c_rit_pfa_evt_seq_cnt</field>
+    <field name="text">Sequence counter for an Own Risk 2 Event Send only in case of Purchase Forced Acceptance transaction when OwnRisk2 mode is activated Specification retail</field>
+  </doc>
+  <doc>
+    <field name="type">enumvalue</field>
+    <field name="name">ta_c_rit_transaction_type</field>
+    <field name="url">receipt__item__type_8h.html#a3d3044dd871a9c7d630dbcf3d9b738beaccd09f064b51382f0ba21b4c2b77789a</field>
+    <field name="keywords">ta_c_rit_transaction_type</field>
+    <field name="text">If present the content of the TransactionType will be used as on the transaction receipt Specification retail</field>
+  </doc>
+  <doc>
+    <field name="type">enumvalue</field>
+    <field name="name">ta_c_rit_last4digits_of_pan</field>
+    <field name="url">receipt__item__type_8h.html#a3d3044dd871a9c7d630dbcf3d9b738beaf277e4003a7684edadb8d4d9aaa78e81</field>
+    <field name="keywords">ta_c_rit_last4digits_of_pan</field>
+    <field name="text">Last 4 digits of PAN Specification retail</field>
+  </doc>
+  <doc>
+    <field name="type">enumvalue</field>
+    <field name="name">ta_c_rit_order_id</field>
+    <field name="url">receipt__item__type_8h.html#a3d3044dd871a9c7d630dbcf3d9b738bea10c41ff35f9fdccba1a3c3176661372c</field>
+    <field name="keywords">ta_c_rit_order_id</field>
+    <field name="text">Order ID originally sent by the ECR Specification retail</field>
+  </doc>
+  <doc>
     <field name="type">file</field>
     <field name="name">receipt_request_type.h</field>
     <field name="url">enum__string__maps_2receipt__request__type_8h.html</field>
@@ -8535,6 +8577,70 @@ $(document).ready(function(){initNavTree('search.html','');});
     <field name="url">recipient_8h.html#a7d9fdd093196d7a9f946f6ea86563cf0a5e96c192268d5b3620a09075b13fd67d</field>
     <field name="keywords">ta_c_rcp_both</field>
     <field name="text">The datum is intended for the cardholder and the merchant Specification retail</field>
+  </doc>
+  <doc>
+    <field name="type">file</field>
+    <field name="name">reconfig_mode.h</field>
+    <field name="url">enum__string__maps_2reconfig__mode_8h.html</field>
+    <field name="keywords">reconfig_mode.h</field>
+    <field name="text">This file is generated Do not edit Copyright Worldline</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">ta_reconfig_mode_e2s</field>
+    <field name="args">(ta_e_reconfig_mode_t value)</field>
+    <field name="url">enum__string__maps_2reconfig__mode_8h.html#a433a79581dd24e51f42acefee3413ed1</field>
+    <field name="keywords">ta_reconfig_mode_e2s</field>
+    <field name="text">Get String for Enum value value Enum value to get string for String value</field>
+  </doc>
+  <doc>
+    <field name="type">file</field>
+    <field name="name">reconfig_mode.h</field>
+    <field name="url">reconfig__mode_8h.html</field>
+    <field name="keywords">reconfig_mode.h</field>
+    <field name="text">Defines the type of the Reconfig Request default can be omitted in this case for a full reconfiguration reconfigure one specific or all acquirers reconfigure terminal parameters The following values are valid Copyright Worldline</field>
+  </doc>
+  <doc>
+    <field name="type">typedef</field>
+    <field name="name">ta_e_reconfig_mode_t</field>
+    <field name="url">reconfig__mode_8h.html#a13a8c8db17c7ec27bd553bb72f3f193e</field>
+    <field name="keywords">ta_e_reconfig_mode_t</field>
+    <field name="text">Defines the type of the Reconfig Request default can be omitted in this case for a full reconfiguration reconfigure one specific or all acquirers reconfigure terminal parameters The following values are valid Specification retail</field>
+  </doc>
+  <doc>
+    <field name="type">enum</field>
+    <field name="name">ta_e_reconfig_mode</field>
+    <field name="url">reconfig__mode_8h.html#a77f48512387ea5014208a993024134de</field>
+    <field name="keywords">ta_e_reconfig_mode</field>
+    <field name="text">Defines the type of the Reconfig Request default can be omitted in this case for a full reconfiguration reconfigure one specific or all acquirers reconfigure terminal parameters The following values are valid Specification retail</field>
+  </doc>
+  <doc>
+    <field name="type">enumvalue</field>
+    <field name="name">ta_c_rm_undefined</field>
+    <field name="url">reconfig__mode_8h.html#a77f48512387ea5014208a993024134dea373bae8e34c2f52d87963442e448ff72</field>
+    <field name="keywords">ta_c_rm_undefined</field>
+    <field name="text">Undefined/invalid value</field>
+  </doc>
+  <doc>
+    <field name="type">enumvalue</field>
+    <field name="name">ta_c_rm_full_reconfig</field>
+    <field name="url">reconfig__mode_8h.html#a77f48512387ea5014208a993024134dea35dd61e946fa79cc0074d7a56b0c394e</field>
+    <field name="keywords">ta_c_rm_full_reconfig</field>
+    <field name="text">Default can therefore be omitted Perform standard behaviour terminal config and acquirer init Specification retail</field>
+  </doc>
+  <doc>
+    <field name="type">enumvalue</field>
+    <field name="name">ta_c_rm_trm_config</field>
+    <field name="url">reconfig__mode_8h.html#a77f48512387ea5014208a993024134deae99cd23b658112dac506aa83ad018ad8</field>
+    <field name="keywords">ta_c_rm_trm_config</field>
+    <field name="text">Only a terminal config is performed instead of combined terminal config acquirer init Specification retail</field>
+  </doc>
+  <doc>
+    <field name="type">enumvalue</field>
+    <field name="name">ta_c_rm_acq_init</field>
+    <field name="url">reconfig__mode_8h.html#a77f48512387ea5014208a993024134dea0f6c62c2d01e8f8fa8a25aedccd768f9</field>
+    <field name="keywords">ta_c_rm_acq_init</field>
+    <field name="text">Only an acquirer init is performed instead of combined terminal config acquirer init Specification retail</field>
   </doc>
   <doc>
     <field name="type">file</field>
@@ -11000,6 +11106,13 @@ $(document).ready(function(){initNavTree('search.html','');});
   </doc>
   <doc>
     <field name="type">enumvalue</field>
+    <field name="name">ta_c_rc_own_risk_transaction_log_full</field>
+    <field name="url">result__code_8h.html#aebaf00d1ceef4b827866ca9de0bd3320a6b4bff41b82fedbc8992fff9bc1f9b15</field>
+    <field name="keywords">ta_c_rc_own_risk_transaction_log_full</field>
+    <field name="text">OwnRisk transaction log full Error message Transaction log is full Specification retail</field>
+  </doc>
+  <doc>
+    <field name="type">enumvalue</field>
     <field name="name">ta_c_rc_invalid_argument</field>
     <field name="url">result__code_8h.html#aebaf00d1ceef4b827866ca9de0bd3320a306acc157474b36c57faa559c710d8c3</field>
     <field name="keywords">ta_c_rc_invalid_argument</field>
@@ -11167,6 +11280,13 @@ $(document).ready(function(){initNavTree('search.html','');});
     <field name="url">setting__type_8h.html#a68163926aacae5b0e415c0dcf343b6cbad0ed08906af4235082bebc73051aa904</field>
     <field name="keywords">ta_c_st_power_management_mode</field>
     <field name="text">Selection of active power management profile Valid values are fully devices dependent Specification retail</field>
+  </doc>
+  <doc>
+    <field name="type">enumvalue</field>
+    <field name="name">ta_c_st_own_risk2activation</field>
+    <field name="url">setting__type_8h.html#a68163926aacae5b0e415c0dcf343b6cba62057b76e06447554f465cf654285664</field>
+    <field name="keywords">ta_c_st_own_risk2activation</field>
+    <field name="text">Activate 1 or de-activate 0 the OwnRisk2 mode Specification retail</field>
   </doc>
   <doc>
     <field name="type">file</field>
@@ -14928,6 +15048,37 @@ $(document).ready(function(){initNavTree('search.html','');});
   </doc>
   <doc>
     <field name="type">file</field>
+    <field name="name">reconfig_parameters.h</field>
+    <field name="url">reconfig__parameters_8h.html</field>
+    <field name="keywords">reconfig_parameters.h</field>
+    <field name="text">Object type reconfig_parameters</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">ta_reconfig_parameters_create</field>
+    <field name="args">(ta_object_t *reconfig_parameters)</field>
+    <field name="url">reconfig__parameters_8h.html#a181c12bd98acf4c7e8092e9df7d235cc</field>
+    <field name="keywords">ta_reconfig_parameters_create</field>
+    <field name="text">Create object of type reconfig_parameters reconfig_parameters Pointer to variable to write created object instance to Created object instance is retained ta_c_rc_ok Object instance has been created and written to reconfig_parameters ta_c_rc_invalid_argument reconfig_parameters is null-pointer ta_c_rc_out_of_memory Failed allocating memory</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">ta_reconfig_parameters_set_reconfig_mode</field>
+    <field name="args">(ta_object_t reconfig_parameters, ta_e_reconfig_mode_t reconfig_mode)</field>
+    <field name="url">reconfig__parameters_8h.html#ad7d6624abc8c47eecaae3f9c9a944737</field>
+    <field name="keywords">ta_reconfig_parameters_set_reconfig_mode</field>
+    <field name="text">Set optional reconfig mode Object instance of type reconfig_parameters reconfig_mode Value to set.Value can be ta_c_reconfig_mode_undefined to clear the value in reconfig_parameters ta_c_rc_ok Value assigned to reconfig_parameters ta_c_rc_invalid_argument reconfig_parameters is ta_object_invalid ta_c_rc_invalid_argument reconfig_parameters is not of type reconfig_parameters ta_c_rc_invalid_argument reconfig_mode is null pointer</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">ta_reconfig_parameters_set_acq_id</field>
+    <field name="args">(ta_object_t reconfig_parameters, ta_object_t acq_id)</field>
+    <field name="url">reconfig__parameters_8h.html#aacbb12c65ad403bf59fbed76d6faada2</field>
+    <field name="keywords">ta_reconfig_parameters_set_acq_id</field>
+    <field name="text">Set optional acq id Object instance of type reconfig_parameters acq_id Object instance to set Object instance can be ta_object_invalid to clear the value in reconfig_parameters If object instance is not ta_object_invalid is has to be of type integer ta_c_rc_ok Object instance assigned to reconfig_parameters ta_c_rc_invalid_argument reconfig_parameters is ta_object_invalid ta_c_rc_invalid_argument reconfig_parameters is not of type reconfig_parameters ta_c_rc_invalid_argument acq_id is not ta_object_invalid and is not of type integer</field>
+  </doc>
+  <doc>
+    <field name="type">file</field>
     <field name="name">screenshot_information.h</field>
     <field name="url">screenshot__information_8h.html</field>
     <field name="keywords">screenshot_information.h</field>
@@ -16047,6 +16198,14 @@ $(document).ready(function(){initNavTree('search.html','');});
   </doc>
   <doc>
     <field name="type">function</field>
+    <field name="name">ta_terminal_init_transaction2_with_amountother</field>
+    <field name="args">(ta_object_t terminal, ta_e_boolean_t display_amount, ta_object_t amount, ta_object_t amount_other, ta_e_function_hint_t function_hint, ta_object_t *response)</field>
+    <field name="url">terminal_8h.html#a4e0c8fd38a0c88671b9c8694a8cb8639</field>
+    <field name="keywords">ta_terminal_init_transaction2_with_amountother</field>
+    <field name="text">Initialize a transaction knowing the amount or the card type terminal Object instance of type terminal display_amount ta_c_b_true to display amount on screen ta_c_b_false to not display amount on screen ta_c_b_undefined to use default behavior of terminal amount Object instance of type amount Can be ta_object_invalid to not use an amount display_amount has no effect if not amount is used amount_other Object instance of type amount_other Can be ta_object_invalid to not use an amount function_hint Function hint response Pointer to variable to write object instance to Object instance is ta_object_invalid if not contained in the response Otherwise object instance is of type card_data Object instance is retained ta_c_rc_ok Request finished successfully Object instance written to response If object instance is not ta_object_invalid object instance has been retained ta_c_rc_invalid_argument terminal is ta_object_invalid ta_c_rc_invalid_argument terminal is not of type terminal ta_c_rc_invalid_argument terminal has been disposed ta_c_rc_invalid_argument amount is not ta_object_invalid and is not of type amount ta_c_rc_invalid_argument response is null-pointer</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
     <field name="name">ta_terminal_init_transaction_async</field>
     <field name="args">(ta_object_t terminal, ta_e_boolean_t display_amount, ta_object_t amount)</field>
     <field name="url">terminal_8h.html#ac4d632daf6e832115c0bfa89608dda01</field>
@@ -16060,6 +16219,14 @@ $(document).ready(function(){initNavTree('search.html','');});
     <field name="url">terminal_8h.html#a012cd68f352b29011194fbe044fb0a30</field>
     <field name="keywords">ta_terminal_init_transaction2_async</field>
     <field name="text">Initialize a transaction knowing the amount or the card type Asynchronous version of ta_terminal_init_transaction Callback function is ta_cb_terminal_init_transaction_completed terminal Object instance of type terminal display_amount ta_c_b_true to display amount on screen ta_c_b_false to not display amount on screen ta_c_b_undefined to use default behavior of terminal amount Object instance of type amount Can be ta_object_invalid to not use an amount display_amount has no effect if not amount is used function_hint Function hint ta_c_rc_ok Request started successfully ta_c_rc_invalid_argument terminal is ta_object_invalid ta_c_rc_invalid_argument terminal is not of type terminal ta_c_rc_invalid_argument terminal has been disposed ta_c_rc_invalid_argument amount is not ta_object_invalid and is not of type amount</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">ta_terminal_init_transaction2_with_amountother_async</field>
+    <field name="args">(ta_object_t terminal, ta_e_boolean_t display_amount, ta_object_t amount, ta_object_t amount_other, ta_e_function_hint_t function_hint)</field>
+    <field name="url">terminal_8h.html#a78562a5e62bac2cbd1e68e05fb577074</field>
+    <field name="keywords">ta_terminal_init_transaction2_with_amountother_async</field>
+    <field name="text">Initialize a transaction knowing the amount or the card type Asynchronous version of ta_terminal_init_transaction Callback function is ta_cb_terminal_init_transaction_completed terminal Object instance of type terminal display_amount ta_c_b_true to display amount on screen ta_c_b_false to not display amount on screen ta_c_b_undefined to use default behavior of terminal amount Object instance of type amount Can be ta_object_invalid to not use an amount display_amount has no effect if not amount is used amount_other Object instance of type amount_other Can be ta_object_invalid to not use an amount function_hint Function hint ta_c_rc_ok Request started successfully ta_c_rc_invalid_argument terminal is ta_object_invalid ta_c_rc_invalid_argument terminal is not of type terminal ta_c_rc_invalid_argument terminal has been disposed ta_c_rc_invalid_argument amount is not ta_object_invalid and is not of type amount</field>
   </doc>
   <doc>
     <field name="type">function</field>
@@ -16087,11 +16254,27 @@ $(document).ready(function(){initNavTree('search.html','');});
   </doc>
   <doc>
     <field name="type">function</field>
+    <field name="name">ta_terminal_init_transaction_with_dialog_with_amountother</field>
+    <field name="args">(ta_object_t terminal, ta_object_t amount, ta_object_t amount_other, ta_e_function_hint_t function_hint, ta_object_t dialog, ta_object_t *response)</field>
+    <field name="url">terminal_8h.html#ab9c48090e46b820105d68e9ad3c30dc4</field>
+    <field name="keywords">ta_terminal_init_transaction_with_dialog_with_amountother</field>
+    <field name="text">Initialize a transaction with dialog terminal Object instance of type terminal amount Object instance of type amount amount_other Object instance of type amount_other function_hint Function hint dialog Object instance of type show_dialog_request response Pointer to variable to write object instance to Object instance is ta_object_invalid if not contained in the response Otherwise object instance is of type init_transaction_response Object instance is retained ta_c_rc_ok Request finished successfully Object instance written to response If object instance is not ta_object_invalid object instance has been retained ta_c_rc_invalid_argument terminal is ta_object_invalid ta_c_rc_invalid_argument terminal is not of type terminal ta_c_rc_invalid_argument terminal has been disposed ta_c_rc_invalid_argument amount is not ta_object_invalid and is not of type amount ta_c_rc_invalid_argument dialog is not ta_object_invalid and is not of type show_dialog_request ta_c_rc_invalid_argument response is null-pointer</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
     <field name="name">ta_terminal_init_transaction_with_dialog_async</field>
     <field name="args">(ta_object_t terminal, ta_object_t amount, ta_e_function_hint_t function_hint, ta_object_t dialog)</field>
     <field name="url">terminal_8h.html#a38d376c1e92c155a6dbd5ad458caaefd</field>
     <field name="keywords">ta_terminal_init_transaction_with_dialog_async</field>
     <field name="text">Initialize a transaction with dialog Asynchronous version of ta_terminal_init_transaction_with_dialog Callback function is ta_cb_terminal_init_transaction_with_dialog_completed terminal Object instance of type terminal amount Object instance of type amount function_hint Function hint dialog Object instance of type show_dialog_request ta_c_rc_ok Request started successfully ta_c_rc_invalid_argument terminal is ta_object_invalid ta_c_rc_invalid_argument terminal is not of type terminal ta_c_rc_invalid_argument terminal has been disposed ta_c_rc_invalid_argument amount is not ta_object_invalid and is not of type amount ta_c_rc_invalid_argument dialog is not ta_object_invalid and is not of type show_dialog_request</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">ta_terminal_init_transaction_with_dialog_with_amountother_async</field>
+    <field name="args">(ta_object_t terminal, ta_object_t amount, ta_object_t amount_other, ta_e_function_hint_t function_hint, ta_object_t dialog)</field>
+    <field name="url">terminal_8h.html#ab956c5ac4f72b39154ab0321f5be2b64</field>
+    <field name="keywords">ta_terminal_init_transaction_with_dialog_with_amountother_async</field>
+    <field name="text">Initialize a transaction with dialog Asynchronous version of ta_terminal_init_transaction_with_dialog Callback function is ta_cb_terminal_init_transaction_with_dialog_completed terminal Object instance of type terminal amount Object instance of type amount amount_other Object instance of type amount_other function_hint Function hint dialog Object instance of type show_dialog_request ta_c_rc_ok Request started successfully ta_c_rc_invalid_argument terminal is ta_object_invalid ta_c_rc_invalid_argument terminal is not of type terminal ta_c_rc_invalid_argument terminal has been disposed ta_c_rc_invalid_argument amount is not ta_object_invalid and is not of type amount ta_c_rc_invalid_argument dialog is not ta_object_invalid and is not of type show_dialog_request</field>
   </doc>
   <doc>
     <field name="type">function</field>
@@ -16844,6 +17027,22 @@ $(document).ready(function(){initNavTree('search.html','');});
     <field name="url">terminal_8h.html#ada7e02a2845a867be0c4eab591156206</field>
     <field name="keywords">ta_terminal_set_custom_logger</field>
     <field name="text">Set custom terminal logger callback If not null-pointer the callback is used whenever the terminal logger needs to publish a new log record The terminal logger is used whenever a terminal function is called hence any function of ta_terminal_* In all other cases the global logger is used You can use the same logger for both global and terminal specific logging If no custom terminal logger is set the global one is used if set terminal Object instance of type terminal callback Callback to set Can be null-pointer to disable user_pointer User pointer to use in the callback ta_c_rc_ok Listener removed from terminal ta_c_rc_invalid_argument terminal is ta_object_invalid ta_c_rc_invalid_argument terminal is not of type terminal</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">ta_terminal_reconfig_with_params</field>
+    <field name="args">(ta_object_t terminal, ta_object_t parameters, ta_object_t *response)</field>
+    <field name="url">terminal_8h.html#a78c0de8a5d174d4b5e3e7d72f1c909ec</field>
+    <field name="keywords">ta_terminal_reconfig_with_params</field>
+    <field name="text">Reconfigure terminal with specified parameters This function is used to apply new configuration parameters to the terminal The provided parameters are used to modify the terminal s behavior as needed It ensures that the terminal is valid and not disposed before proceeding The response object if valid will hold any relevant data post reconfiguration terminal Object instance of type terminal parameters Object instance of type reconfig_parameters response Pointer to an object that will hold the response data Must not be null ta_c_rc_ok Reconfiguration successful ta_c_rc_invalid_argument terminal is ta_object_invalid or not of type terminal ta_c_rc_invalid_argument parameters is not of type reconfig_parameters</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">ta_terminal_reconfig_with_params_async</field>
+    <field name="args">(ta_object_t terminal, ta_object_t parameters)</field>
+    <field name="url">terminal_8h.html#a9188ea7419da13655da857619254f003</field>
+    <field name="keywords">ta_terminal_reconfig_with_params_async</field>
+    <field name="text">Asynchronously reconfigure terminal with specified parameters This function performs an asynchronous operation to apply new configuration parameters to the terminal The function validates that the terminal is appropriate and ensures it is not disposed before starting the reconfiguration terminal Object instance of type terminal parameters Object instance of type reconfig_parameters ta_c_rc_ok Reconfiguration started successfully ta_c_rc_invalid_argument terminal is ta_object_invalid or not of type terminal ta_c_rc_invalid_argument parameters is not of type reconfig_parameters</field>
   </doc>
   <doc>
     <field name="type">file</field>
@@ -18233,6 +18432,14 @@ $(document).ready(function(){initNavTree('search.html','');});
     <field name="text">If the amount of the original transaction has been adjusted terminal_status Object instance of type terminal_status amount Pointer to variable to write object instance to Object instance is of type amount_final and is not retained Object instance is ta_object_invalid if value is not set in terminal_status ta_c_rc_ok Object instance written to card_data ta_c_rc_invalid_argument terminal_status is ta_object_invalid ta_c_rc_invalid_argument terminal_status is not of type terminal_status ta_c_rc_invalid_argument amount is null-pointer</field>
   </doc>
   <doc>
+    <field name="type">function</field>
+    <field name="name">ta_terminal_status_get_own_risk_2_activation_status</field>
+    <field name="args">(ta_object_t terminal_status, ta_e_boolean_t *own_risk_2_activation_status)</field>
+    <field name="url">terminal__status_8h.html#a9b55abc448d45c3972c13f8b011ae614</field>
+    <field name="keywords">ta_terminal_status_get_own_risk_2_activation_status</field>
+    <field name="text">Specifies if the OwnRisk2 functionality is activated at terminal side This field is returned in a standard TerminalStatus notification from terminal to ECR if he OwnRisk2 mode is activated The absence of the OwnRisk2Activation in the TerminalStatus notification means that the OwnRisk2 mode is de-activated or not supported by the payment application Optional Mandatory if OwnRisk2 mode is activated Specification retail terminal_status Object instance of type terminal_status own_risk_2_activation_status Pointer to variable to write value to Value is ta_c_b_undefined if value is not set in terminal_status ta_c_rc_ok Value written to own_risk_2_activation_status ta_c_rc_invalid_argument terminal_status is ta_object_invalid ta_c_rc_invalid_argument terminal_status is not of type terminal_status ta_c_rc_invalid_argument own_risk_2_activation_status is null-pointer</field>
+  </doc>
+  <doc>
     <field name="type">file</field>
     <field name="name">third_party_app_payload.h</field>
     <field name="url">third__party__app__payload_8h.html</field>
@@ -19216,6 +19423,14 @@ $(document).ready(function(){initNavTree('search.html','');});
     <field name="url">transaction__information_8h.html#a3ed3f7ddc9723f3b4f7b3be86824550c</field>
     <field name="keywords">ta_transaction_information_get_age_check_result</field>
     <field name="text">Get Age Check Result Optional Mandatory if available to terminal Specifications valueAddedServices trx_info Object instance of type transaction_information age_check_result Pointer to variable to write value to ta_c_rc_ok Object instance written to card_id ta_c_rc_invalid_argument trx_info is ta_object_invalid ta_c_rc_invalid_argument trx_info is not of type transaction_information ta_c_rc_invalid_argument age_check_result is null-pointer</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">ta_transaction_information_get_own_risk_2_outcome</field>
+    <field name="args">(ta_object_t trx_info, ta_object_t *own_risk_2_outcome)</field>
+    <field name="url">transaction__information_8h.html#a158ea9af4261e318893580556338dc3a</field>
+    <field name="keywords">ta_transaction_information_get_own_risk_2_outcome</field>
+    <field name="text">Gets the OwnRisk2 outcome which indicates if the requested Purchase has been treated by the terminal as a Purchase or PurchaseForcedAcceptance The following values are valid Purchase The transaction has been processed as a Purchase PurchaseForcedAcceptance The transaction has been processed as a PurchaseForcedAcceptance Optional Mandatory if OwnRisk2 mode is activated Specifications retail Banking AustrianUseCases trx_info Object instance of type transaction_information own_risk_2_outcome Pointer to variable to write object instance to Object instance is of type string and is not retained Object instance is ta_object_invalid if value is not set in trx_info ta_c_rc_ok Object instance written to own_risk_2_outcome ta_c_rc_invalid_argument trx_info is ta_object_invalid ta_c_rc_invalid_argument trx_info is not of type transaction_information ta_c_rc_invalid_argument own_risk_2_outcome is null-pointer</field>
   </doc>
   <doc>
     <field name="type">file</field>
@@ -20242,6 +20457,13 @@ $(document).ready(function(){initNavTree('search.html','');});
     <field name="url">structta__s__features__payment.html#a3505a0e46fb706fbb5660cd4ff6044ab</field>
     <field name="keywords">ep2_giftcard ta_s_features_payment::ep2_giftcard ta_s_features_payment</field>
     <field name="text">Support for giftcard functions</field>
+  </doc>
+  <doc>
+    <field name="type">variable</field>
+    <field name="name">ta_s_features_payment::ep2_own_risk_2</field>
+    <field name="url">structta__s__features__payment.html#a273b10b5d76f82023f779bfe8cfd3582</field>
+    <field name="keywords">ep2_own_risk_2 ta_s_features_payment::ep2_own_risk_2 ta_s_features_payment</field>
+    <field name="text">Support for OwnRisk2 transactions</field>
   </doc>
   <doc>
     <field name="type">variable</field>
