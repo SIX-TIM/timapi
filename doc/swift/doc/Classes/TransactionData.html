@@ -1,0 +1,3150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>TransactionData Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../sdk_version.js"></script>
+<script src="../api_version.js"></script>
+<script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Class/TransactionData" class="dashAnchor"></a>
+    <a title="TransactionData Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html"> Docs</a> (100% documented)</p>
+        <div class="header-right">
+          <form role="search" action="../search.json">
+            <input type="text" placeholder="Search documentation" data-typeahead>
+          </form>
+        </div>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">Index</a>
+        <img id="carat" src="../img/carat.png" alt=""/>
+        <a href="../Classes.html">Classes</a>
+        <img id="carat" src="../img/carat.png" alt=""/>
+        TimApi.TransactionData Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups"><li class="nav-group-name" id="titlearea"><td id="projectalign"><div id="projectname">TIM SDK</div><div id="projectbrief">TIM API Swift</div></td><div id="guidelink"><a href="../guide.html">Implementation Guide</a></div></li>
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/ActivateResponse.html">ActivateResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Amount.html">Amount</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/AmountDcc.html">AmountDcc</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/AmountDiscount.html">AmountDiscount</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/AmountFinal.html">AmountFinal</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Application.html">Application</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BalanceInquiryResponse.html">BalanceInquiryResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BalanceResponse.html">BalanceResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Basket.html">Basket</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BasketItem.html">BasketItem</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BigEndianInputStream.html">BigEndianInputStream</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Brands.html">Brands</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CardData.html">CardData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CardTrackData.html">CardTrackData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ClientIdentificationResponse.html">ClientIdentificationResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CommandRequest.html">CommandRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CommandResponse.html">CommandResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CompactReceiptFormatter.html">CompactReceiptFormatter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ConfigData.html">ConfigData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ConnectionManager.html">ConnectionManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/s:6TimApi11ConvenienceC">Convenience</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ConversionHelper.html">ConversionHelper</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Counter.html">Counter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Counters.html">Counters</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CurrencyItem.html">CurrencyItem</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CustomReceiptFormatter.html">CustomReceiptFormatter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CustomReceiptFormatter/TextType.html">– TextType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CustomReceiptFormatter/TranslatedText.html">– TranslatedText</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CustomReceiptFormatter/TextAlignment.html">– TextAlignment</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CustomReceiptFormatter/Condition.html">– Condition</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CustomReceiptFormatter/TextElement.html">– TextElement</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CustomReceiptFormatter/LineFormat.html">– LineFormat</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DeactivateResponse.html">DeactivateResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DefaultTerminalListener.html">DefaultTerminalListener</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DelegatableReceiptFormatter.html">DelegatableReceiptFormatter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DisplayProductInfo.html">DisplayProductInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EcrInfo.html">EcrInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ErrorMessages.html">ErrorMessages</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Features.html">Features</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/FeaturesHardware.html">FeaturesHardware</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/FeaturesPayment.html">FeaturesPayment</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/FeaturesPayment/AgeCheckSupport.html">– AgeCheckSupport</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/FeaturesSixml.html">FeaturesSixml</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/FeaturesSixml/Support.html">– Support</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/GlobalSettings.html">GlobalSettings</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Hardware.html">Hardware</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/HardwareInformationResponse.html">HardwareInformationResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/InitTransactionResponse.html">InitTransactionResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ItemQuantity.html">ItemQuantity</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/LogHandlerConsole.html">LogHandlerConsole</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/LogHandlerFile.html">LogHandlerFile</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Logger.html">Logger</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Logger/Level.html">– Level</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Logger/LogRecord.html">– LogRecord</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/LoyaltyCoupon.html">LoyaltyCoupon</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/LoyaltyDiscount.html">LoyaltyDiscount</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/LoyaltyInformation.html">LoyaltyInformation</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/LoyaltyItem.html">LoyaltyItem</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/MobileTopupData.html">MobileTopupData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/MobileTopupValue.html">MobileTopupValue</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/NativeError.html">NativeError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/NetworkInformation.html">NetworkInformation</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/NormalReceiptFormatter.html">NormalReceiptFormatter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/PclCommEndpoint.html">PclCommEndpoint</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/PpInfo.html">PpInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/PrintData.html">PrintData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/PrintOption.html">PrintOption</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/RdfReceiptFormatter.html">RdfReceiptFormatter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Receipt.html">Receipt</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ReceiptItem.html">ReceiptItem</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ReceiptItems.html">ReceiptItems</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ReceiptRequestResponse.html">ReceiptRequestResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ReconciliationResponse.html">ReconciliationResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ScreenshotInformation.html">ScreenshotInformation</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ShowDialogRequest.html">ShowDialogRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ShowDialogResponse.html">ShowDialogResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ShowSignatureCaptureRequest.html">ShowSignatureCaptureRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ShowSignatureCaptureResponse.html">ShowSignatureCaptureResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SignatureInformation.html">SignatureInformation</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SubTransaction.html">SubTransaction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SuperCompactReceiptFormatter.html">SuperCompactReceiptFormatter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Synchronized.html">Synchronized</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Synchronized/AutoLocker.html">– AutoLocker</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SynchronousTerminalListener.html">SynchronousTerminalListener</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SystemInformationResponse.html">SystemInformationResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Terminal.html">Terminal</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TerminalSettings.html">TerminalSettings</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TerminalSettingsImmutable.html">TerminalSettingsImmutable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TerminalStatus.html">TerminalStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ThirdPartyAppPayload.html">ThirdPartyAppPayload</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TimEvent.html">TimEvent</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TimException.html">TimException</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Total.html">Total</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TransactionData.html">TransactionData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TransactionInfoRequestResponse.html">TransactionInfoRequestResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TransactionInformation.html">TransactionInformation</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TransactionRequest.html">TransactionRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TransactionResponse.html">TransactionResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TransactionResponse/Action.html">– Action</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TrxDetail.html">TrxDetail</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/UltraCompactReceiptFormatter.html">UltraCompactReceiptFormatter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Utils.html">Utils</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/VasCheckoutInformation.html">VasCheckoutInformation</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/VasInformationList.html">VasInformationList</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/VasResult.html">VasResult</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/CAccountType.html">CAccountType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CAdditionalInfoItem.html">CAdditionalInfoItem</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CAdjustmentResult.html">CAdjustmentResult</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CAdminFunctions.html">CAdminFunctions</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CAgeCheckResult.html">CAgeCheckResult</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CAllowedAccounts.html">CAllowedAccounts</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CBrandBarBrand.html">CBrandBarBrand</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CBrandMode.html">CBrandMode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CCardProductType.html">CCardProductType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CCardReader.html">CCardReader</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CCardReaderStatus.html">CCardReaderStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CConnectionMode.html">CConnectionMode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CConnectionStatus.html">CConnectionStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CCounterType.html">CCounterType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CCouponRejectionReason.html">CCouponRejectionReason</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CCurrency.html">CCurrency</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CCurrencyType.html">CCurrencyType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CCustomerDataType.html">CCustomerDataType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CCvm.html">CCvm</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CDialogFunctions.html">CDialogFunctions</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CEcrInfoType.html">CEcrInfoType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CFinancialTransactions.html">CFinancialTransactions</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CFunctionHint.html">CFunctionHint</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CGuides.html">CGuides</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CHardwareType.html">CHardwareType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CImageFileFormat.html">CImageFileFormat</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CKernelType.html">CKernelType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CLoyaltyFunctionType.html">CLoyaltyFunctionType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CMaintenanceType.html">CMaintenanceType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CManagementStatus.html">CManagementStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CMerchantAction.html">CMerchantAction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CMerchantOptionType.html">CMerchantOptionType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CMobileTopupType.html">CMobileTopupType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CNgvMode.html">CNgvMode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CNonFinancialTransactions.html">CNonFinancialTransactions</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/COutcome.html">COutcome</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CPaymentProtocol.html">CPaymentProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CPosEntryMode.html">CPosEntryMode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CPrintFlag.html">CPrintFlag</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CPrintFormat.html">CPrintFormat</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CProcessingDisposition.html">CProcessingDisposition</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CProtocolLevel.html">CProtocolLevel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CProtocolType.html">CProtocolType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CReason.html">CReason</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CReceiptItemType.html">CReceiptItemType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CReceiptRequestType.html">CReceiptRequestType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CReceiptType.html">CReceiptType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CRecipient.html">CRecipient</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CRemoteFunctions.html">CRemoteFunctions</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CRequestType.html">CRequestType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CResourceId.html">CResourceId</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CResourceParameterType.html">CResourceParameterType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CResponseType.html">CResponseType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CResultCode.html">CResultCode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CSecurityStatus.html">CSecurityStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CSettingType.html">CSettingType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CSleepModeStatus.html">CSleepModeStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CStatusFunctions.html">CStatusFunctions</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CTheme.html">CTheme</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CThirdPartyAppId.html">CThirdPartyAppId</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CThirdPartyApps.html">CThirdPartyApps</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CTokenPanType.html">CTokenPanType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CTransactionReason.html">CTransactionReason</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CTransactionStatus.html">CTransactionStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CTransactionType.html">CTransactionType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CUpdateStatus.html">CUpdateStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CVasInfoListType.html">CVasInfoListType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CVasInfoType.html">CVasInfoType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Errors.html">Errors</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Functions.html">Functions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:6TimApi6unwrapyxxSgKlF">unwrap(_:)</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/CommEndpoint.html">CommEndpoint</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/CommListener.html">CommListener</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/ConnectionManagerDelegate.html">ConnectionManagerDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/LogHandler.html">LogHandler</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/ReceiptFormatter.html">ReceiptFormatter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/TerminalListener.html">TerminalListener</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/TimeDate.html">TimeDate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/TimeDate/Errors.html">– Errors</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Typealiases.html">Type Aliases</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/Color">Color</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:6TimApi5Colora">Color</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>TransactionData</h1>
+              <div class="declaration">
+                <div class="language">
+                  
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">TransactionData</span> <span class="p">:</span> <span class="kt">CustomStringConvertible</span></code></pre>
+
+                </div>
+              </div>
+            <p>Contains configuration for transaction used by {@link Terminal#transaction}
+or {@link Terminal#transactionAsync}.</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6TimApi15TransactionDataCACycfc"></a>
+                    <a name="//apple_ref/swift/Method/init()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TimApi15TransactionDataCACycfc">init()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Create transaction data.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6TimApi15TransactionDataC4dataA2C_tcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(data:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TimApi15TransactionDataC4dataA2C_tcfc">init(data:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Create copy of transaction data.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">data</span><span class="p">:</span> <span class="kt">TransactionData</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6TimApi15TransactionDataC10dccAllowedSbSgvp"></a>
+                    <a name="//apple_ref/swift/Property/dccAllowed" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TimApi15TransactionDataC10dccAllowedSbSgvp">dccAllowed</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Allows the EFT Terminal to enable DCC function. Use null to not use this parameter.</p>
+
+<p>Mandatory for (can not be nil):</p>
+
+<ul>
+</ul>
+
+<p>Conditional for (can be nil):</p>
+
+<ul>
+<li>CTransactionType.accountVerification</li>
+<li>CTransactionType.adjustReservation</li>
+<li>CTransactionType.cashAdvance</li>
+<li>CTransactionType.debtRecovery</li>
+<li>CTransactionType.preAuthorization</li>
+<li>CTransactionType.purchaseForcedAcceptance</li>
+<li>CTransactionType.purchaseMailOrdered</li>
+<li>CTransactionType.purchasePhoneAuthorized</li>
+<li>CTransactionType.purchasePhoneOrdered</li>
+<li>CTransactionType.purchaseReservation</li>
+<li>CTransactionType.purchaseReservationPhoneAuthorized</li>
+<li>CTransactionType.purchaseWithCashback</li>
+<li>CTransactionType.reservation</li>
+</ul>
+
+<p>Forbidden (has to be always nil):</p>
+
+<ul>
+<li>CTransactionType.activateCard</li>
+<li>CTransactionType.authorizeCredit</li>
+<li>CTransactionType.authorizeDeposit</li>
+<li>CTransactionType.cancelReservation</li>
+<li>CTransactionType.collectPoints</li>
+<li>CTransactionType.combined</li>
+<li>CTransactionType.credit</li>
+<li>CTransactionType.finalizePurchase</li>
+<li>CTransactionType.funding</li>
+<li>CTransactionType.giro</li>
+<li>CTransactionType.initTransaction</li>
+<li>CTransactionType.load</li>
+<li>CTransactionType.loadVoucher</li>
+<li>CTransactionType.purchase</li>
+<li>CTransactionType.refunding</li>
+<li>CTransactionType.reversal</li>
+<li>CTransactionType.unload</li>
+</ul>
+
+<p>Transactions will fail if one of the above mentioned restrictions are violated.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">dccAllowed</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6TimApi15TransactionDataC15trxOriginalDateAA04TimeG0VSgvp"></a>
+                    <a name="//apple_ref/swift/Property/trxOriginalDate" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TimApi15TransactionDataC15trxOriginalDateAA04TimeG0VSgvp">trxOriginalDate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Timestamp of the original transaction. Use null to not use this parameter.</p>
+
+<p>Mandatory for (can not be nil):</p>
+
+<ul>
+</ul>
+
+<p>Conditional for (can be nil):</p>
+
+<ul>
+<li>CTransactionType.accountVerification</li>
+<li>CTransactionType.authorizeCredit</li>
+<li>CTransactionType.credit</li>
+<li>CTransactionType.load</li>
+<li>CTransactionType.refunding</li>
+</ul>
+
+<p>Forbidden (has to be always nil):</p>
+
+<ul>
+<li>CTransactionType.activateCard</li>
+<li>CTransactionType.adjustReservation</li>
+<li>CTransactionType.authorizeDeposit</li>
+<li>CTransactionType.cancelReservation</li>
+<li>CTransactionType.cashAdvance</li>
+<li>CTransactionType.collectPoints</li>
+<li>CTransactionType.combined</li>
+<li>CTransactionType.debtRecovery</li>
+<li>CTransactionType.finalizePurchase</li>
+<li>CTransactionType.funding</li>
+<li>CTransactionType.giro</li>
+<li>CTransactionType.initTransaction</li>
+<li>CTransactionType.loadVoucher</li>
+<li>CTransactionType.preAuthorization</li>
+<li>CTransactionType.purchase</li>
+<li>CTransactionType.purchaseForcedAcceptance</li>
+<li>CTransactionType.purchaseMailOrdered</li>
+<li>CTransactionType.purchasePhoneAuthorized</li>
+<li>CTransactionType.purchasePhoneOrdered</li>
+<li>CTransactionType.purchaseReservation</li>
+<li>CTransactionType.purchaseReservationPhoneAuthorized</li>
+<li>CTransactionType.purchaseWithCashback</li>
+<li>CTransactionType.reservation</li>
+<li>CTransactionType.reversal</li>
+<li>CTransactionType.unload</li>
+</ul>
+
+<p>Transactions will fail if one of the above mentioned restrictions are violated.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">trxOriginalDate</span><span class="p">:</span> <span class="kt"><a href="../Structs/TimeDate.html">TimeDate</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6TimApi15TransactionDataC13ecrSeqCounterSiSgvp"></a>
+                    <a name="//apple_ref/swift/Property/ecrSeqCounter" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TimApi15TransactionDataC13ecrSeqCounterSiSgvp">ecrSeqCounter</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>ECR sequence counter. Use null to not use this parameter.</p>
+
+<p>Mandatory for (can not be nil):</p>
+
+<ul>
+</ul>
+
+<p>Conditional for (can be nil):</p>
+
+<ul>
+<li>CTransactionType.accountVerification</li>
+<li>CTransactionType.activateCard</li>
+<li>CTransactionType.adjustReservation</li>
+<li>CTransactionType.authorizeCredit</li>
+<li>CTransactionType.authorizeDeposit</li>
+<li>CTransactionType.cancelReservation</li>
+<li>CTransactionType.cashAdvance</li>
+<li>CTransactionType.collectPoints</li>
+<li>CTransactionType.combined</li>
+<li>CTransactionType.credit</li>
+<li>CTransactionType.debtRecovery</li>
+<li>CTransactionType.finalizePurchase</li>
+<li>CTransactionType.funding</li>
+<li>CTransactionType.giro</li>
+<li>CTransactionType.load</li>
+<li>CTransactionType.loadVoucher</li>
+<li>CTransactionType.preAuthorization</li>
+<li>CTransactionType.purchase</li>
+<li>CTransactionType.purchaseForcedAcceptance</li>
+<li>CTransactionType.purchaseMailOrdered</li>
+<li>CTransactionType.purchasePhoneAuthorized</li>
+<li>CTransactionType.purchasePhoneOrdered</li>
+<li>CTransactionType.purchaseReservation</li>
+<li>CTransactionType.purchaseReservationPhoneAuthorized</li>
+<li>CTransactionType.purchaseWithCashback</li>
+<li>CTransactionType.refunding</li>
+<li>CTransactionType.reservation</li>
+<li>CTransactionType.reversal</li>
+<li>CTransactionType.unload</li>
+</ul>
+
+<p>Forbidden (has to be always nil):</p>
+
+<ul>
+<li>CTransactionType.initTransaction</li>
+</ul>
+
+<p>Transactions will fail if one of the above mentioned restrictions are violated.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">ecrSeqCounter</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6TimApi15TransactionDataC22partialApprovalAllowedSbSgvp"></a>
+                    <a name="//apple_ref/swift/Property/partialApprovalAllowed" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TimApi15TransactionDataC22partialApprovalAllowedSbSgvp">partialApprovalAllowed</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Partial approval is allowed. Use null to not use this parameter.</p>
+
+<p>Mandatory for (can not be nil):</p>
+
+<ul>
+</ul>
+
+<p>Conditional for (can be nil):</p>
+
+<ul>
+<li>CTransactionType.accountVerification</li>
+<li>CTransactionType.adjustReservation</li>
+<li>CTransactionType.cashAdvance</li>
+<li>CTransactionType.combined</li>
+<li>CTransactionType.debtRecovery</li>
+<li>CTransactionType.giro</li>
+<li>CTransactionType.preAuthorization</li>
+<li>CTransactionType.purchase</li>
+<li>CTransactionType.purchaseForcedAcceptance</li>
+<li>CTransactionType.purchaseMailOrdered</li>
+<li>CTransactionType.purchasePhoneAuthorized</li>
+<li>CTransactionType.purchasePhoneOrdered</li>
+<li>CTransactionType.purchaseWithCashback</li>
+<li>CTransactionType.reservation</li>
+</ul>
+
+<p>Forbidden (has to be always nil):</p>
+
+<ul>
+<li>CTransactionType.activateCard</li>
+<li>CTransactionType.authorizeCredit</li>
+<li>CTransactionType.authorizeDeposit</li>
+<li>CTransactionType.cancelReservation</li>
+<li>CTransactionType.collectPoints</li>
+<li>CTransactionType.credit</li>
+<li>CTransactionType.finalizePurchase</li>
+<li>CTransactionType.funding</li>
+<li>CTransactionType.initTransaction</li>
+<li>CTransactionType.load</li>
+<li>CTransactionType.loadVoucher</li>
+<li>CTransactionType.purchaseReservation</li>
+<li>CTransactionType.purchaseReservationPhoneAuthorized</li>
+<li>CTransactionType.refunding</li>
+<li>CTransactionType.reversal</li>
+<li>CTransactionType.unload</li>
+</ul>
+
+<p>Transactions will fail if one of the above mentioned restrictions are violated.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">partialApprovalAllowed</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6TimApi15TransactionDataC8transRefSiSgvp"></a>
+                    <a name="//apple_ref/swift/Property/transRef" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TimApi15TransactionDataC8transRefSiSgvp">transRef</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Transaction reference defined by the terminal. Use null to not use this parameter.</p>
+
+<p>Mandatory for (can not be nil):</p>
+
+<ul>
+</ul>
+
+<p>Conditional for (can be nil):</p>
+
+<ul>
+<li>CTransactionType.accountVerification</li>
+<li>CTransactionType.credit</li>
+<li>CTransactionType.finalizePurchase</li>
+<li>CTransactionType.load</li>
+<li>CTransactionType.refunding</li>
+</ul>
+
+<p>Forbidden (has to be always nil):</p>
+
+<ul>
+<li>CTransactionType.activateCard</li>
+<li>CTransactionType.adjustReservation</li>
+<li>CTransactionType.authorizeCredit</li>
+<li>CTransactionType.authorizeDeposit</li>
+<li>CTransactionType.cancelReservation</li>
+<li>CTransactionType.cashAdvance</li>
+<li>CTransactionType.collectPoints</li>
+<li>CTransactionType.combined</li>
+<li>CTransactionType.debtRecovery</li>
+<li>CTransactionType.funding</li>
+<li>CTransactionType.giro</li>
+<li>CTransactionType.initTransaction</li>
+<li>CTransactionType.loadVoucher</li>
+<li>CTransactionType.preAuthorization</li>
+<li>CTransactionType.purchase</li>
+<li>CTransactionType.purchaseForcedAcceptance</li>
+<li>CTransactionType.purchaseMailOrdered</li>
+<li>CTransactionType.purchasePhoneAuthorized</li>
+<li>CTransactionType.purchasePhoneOrdered</li>
+<li>CTransactionType.purchaseReservation</li>
+<li>CTransactionType.purchaseReservationPhoneAuthorized</li>
+<li>CTransactionType.purchaseWithCashback</li>
+<li>CTransactionType.reservation</li>
+<li>CTransactionType.reversal</li>
+<li>CTransactionType.unload</li>
+</ul>
+
+<p>Transactions will fail if one of the above mentioned restrictions are violated.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">transRef</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6TimApi15TransactionDataC8transSeqSiSgvp"></a>
+                    <a name="//apple_ref/swift/Property/transSeq" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TimApi15TransactionDataC8transSeqSiSgvp">transSeq</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Transaction sequence number defined by the terminal. Use null to not use this parameter.</p>
+
+<p>Mandatory for (can not be nil):</p>
+
+<ul>
+<li>CTransactionType.reversal</li>
+</ul>
+
+<p>Conditional for (can be nil):</p>
+
+<ul>
+<li>CTransactionType.accountVerification</li>
+<li>CTransactionType.finalizePurchase</li>
+</ul>
+
+<p>Forbidden (has to be always nil):</p>
+
+<ul>
+<li>CTransactionType.activateCard</li>
+<li>CTransactionType.adjustReservation</li>
+<li>CTransactionType.authorizeCredit</li>
+<li>CTransactionType.authorizeDeposit</li>
+<li>CTransactionType.cancelReservation</li>
+<li>CTransactionType.cashAdvance</li>
+<li>CTransactionType.collectPoints</li>
+<li>CTransactionType.combined</li>
+<li>CTransactionType.credit</li>
+<li>CTransactionType.debtRecovery</li>
+<li>CTransactionType.funding</li>
+<li>CTransactionType.giro</li>
+<li>CTransactionType.initTransaction</li>
+<li>CTransactionType.load</li>
+<li>CTransactionType.loadVoucher</li>
+<li>CTransactionType.preAuthorization</li>
+<li>CTransactionType.purchase</li>
+<li>CTransactionType.purchaseForcedAcceptance</li>
+<li>CTransactionType.purchaseMailOrdered</li>
+<li>CTransactionType.purchasePhoneAuthorized</li>
+<li>CTransactionType.purchasePhoneOrdered</li>
+<li>CTransactionType.purchaseReservation</li>
+<li>CTransactionType.purchaseReservationPhoneAuthorized</li>
+<li>CTransactionType.purchaseWithCashback</li>
+<li>CTransactionType.refunding</li>
+<li>CTransactionType.reservation</li>
+<li>CTransactionType.unload</li>
+</ul>
+
+<p>Transactions will fail if one of the above mentioned restrictions are violated.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">transSeq</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6TimApi15TransactionDataC7cardRefSSSgvp"></a>
+                    <a name="//apple_ref/swift/Property/cardRef" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TimApi15TransactionDataC7cardRefSSSgvp">cardRef</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+<ul>
+<li>Petrol: Reference from the card.</li>
+</ul>
+
+<p>Mandatory for (can not be nil):</p>
+
+<ul>
+</ul>
+
+<p>Conditional for (can be nil):</p>
+
+<ul>
+<li>CTransactionType.accountVerification</li>
+<li>CTransactionType.activateCard</li>
+<li>CTransactionType.authorizeCredit</li>
+<li>CTransactionType.authorizeDeposit</li>
+<li>CTransactionType.cashAdvance</li>
+<li>CTransactionType.collectPoints</li>
+<li>CTransactionType.combined</li>
+<li>CTransactionType.credit</li>
+<li>CTransactionType.debtRecovery</li>
+<li>CTransactionType.finalizePurchase</li>
+<li>CTransactionType.funding</li>
+<li>CTransactionType.giro</li>
+<li>CTransactionType.load</li>
+<li>CTransactionType.loadVoucher</li>
+<li>CTransactionType.purchase</li>
+<li>CTransactionType.purchaseForcedAcceptance</li>
+<li>CTransactionType.purchaseMailOrdered</li>
+<li>CTransactionType.purchasePhoneAuthorized</li>
+<li>CTransactionType.purchasePhoneOrdered</li>
+<li>CTransactionType.purchaseReservation</li>
+<li>CTransactionType.purchaseReservationPhoneAuthorized</li>
+<li>CTransactionType.purchaseWithCashback</li>
+<li>CTransactionType.refunding</li>
+<li>CTransactionType.reservation</li>
+<li>CTransactionType.reversal</li>
+<li>CTransactionType.unload</li>
+</ul>
+
+<p>Forbidden (has to be always nil):</p>
+
+<ul>
+<li>CTransactionType.adjustReservation</li>
+<li>CTransactionType.cancelReservation</li>
+<li>CTransactionType.preAuthorization</li>
+</ul>
+
+<p>Transactions will fail if one of the above mentioned restrictions are violated.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">cardRef</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6TimApi15TransactionDataC5acqIds5Int64VSgvp"></a>
+                    <a name="//apple_ref/swift/Property/acqId" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TimApi15TransactionDataC5acqIds5Int64VSgvp">acqId</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+<ul>
+<li>Acquirer identifier. Uniquely identifies the acquirer.</li>
+</ul>
+
+<p>Mandatory for (can not be nil):</p>
+
+<ul>
+</ul>
+
+<p>Conditional for (can be nil):</p>
+
+<ul>
+<li>CTransactionType.accountVerification</li>
+<li>CTransactionType.adjustReservation</li>
+<li>CTransactionType.authorizeCredit</li>
+<li>CTransactionType.authorizeDeposit</li>
+<li>CTransactionType.cancelReservation</li>
+<li>CTransactionType.cashAdvance</li>
+<li>CTransactionType.combined</li>
+<li>CTransactionType.credit</li>
+<li>CTransactionType.debtRecovery</li>
+<li>CTransactionType.finalizePurchase</li>
+<li>CTransactionType.giro</li>
+<li>CTransactionType.load</li>
+<li>CTransactionType.preAuthorization</li>
+<li>CTransactionType.purchase</li>
+<li>CTransactionType.purchaseForcedAcceptance</li>
+<li>CTransactionType.purchaseMailOrdered</li>
+<li>CTransactionType.purchasePhoneAuthorized</li>
+<li>CTransactionType.purchasePhoneOrdered</li>
+<li>CTransactionType.purchaseReservation</li>
+<li>CTransactionType.purchaseWithCashback</li>
+<li>CTransactionType.refunding</li>
+<li>CTransactionType.reservation</li>
+<li>CTransactionType.reversal</li>
+</ul>
+
+<p>Forbidden (has to be always nil):</p>
+
+<ul>
+<li>CTransactionType.activateCard</li>
+<li>CTransactionType.collectPoints</li>
+<li>CTransactionType.funding</li>
+<li>CTransactionType.initTransaction</li>
+<li>CTransactionType.loadVoucher</li>
+<li>CTransactionType.purchaseReservationPhoneAuthorized</li>
+<li>CTransactionType.unload</li>
+</ul>
+
+<p>Transactions will fail if one of the above mentioned restrictions are violated.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">acqId</span><span class="p">:</span> <span class="kt">Int64</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6TimApi15TransactionDataC11acqTransRefSSSgvp"></a>
+                    <a name="//apple_ref/swift/Property/acqTransRef" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TimApi15TransactionDataC11acqTransRefSSSgvp">acqTransRef</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+<ul>
+<li>Contains the transaction reference from the acquirer.</li>
+</ul>
+
+<p>Mandatory for (can not be nil):</p>
+
+<ul>
+<li>CTransactionType.adjustReservation</li>
+<li>CTransactionType.cancelReservation</li>
+<li>CTransactionType.debtRecovery</li>
+<li>CTransactionType.purchaseReservation</li>
+<li>CTransactionType.purchaseReservationPhoneAuthorized</li>
+<li>CTransactionType.refunding</li>
+<li>CTransactionType.unload</li>
+</ul>
+
+<p>Conditional for (can be nil):</p>
+
+<ul>
+<li>CTransactionType.accountVerification</li>
+<li>CTransactionType.activateCard</li>
+<li>CTransactionType.authorizeCredit</li>
+<li>CTransactionType.authorizeDeposit</li>
+<li>CTransactionType.cashAdvance</li>
+<li>CTransactionType.collectPoints</li>
+<li>CTransactionType.combined</li>
+<li>CTransactionType.credit</li>
+<li>CTransactionType.finalizePurchase</li>
+<li>CTransactionType.funding</li>
+<li>CTransactionType.giro</li>
+<li>CTransactionType.load</li>
+<li>CTransactionType.loadVoucher</li>
+<li>CTransactionType.preAuthorization</li>
+<li>CTransactionType.purchase</li>
+<li>CTransactionType.purchaseForcedAcceptance</li>
+<li>CTransactionType.purchaseMailOrdered</li>
+<li>CTransactionType.purchasePhoneAuthorized</li>
+<li>CTransactionType.purchasePhoneOrdered</li>
+<li>CTransactionType.purchaseWithCashback</li>
+<li>CTransactionType.reservation</li>
+<li>CTransactionType.reversal</li>
+</ul>
+
+<p>Forbidden (has to be always nil):</p>
+
+<ul>
+<li>CTransactionType.initTransaction</li>
+</ul>
+
+<p>Transactions will fail if one of the above mentioned restrictions are violated.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">acqTransRef</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6TimApi15TransactionDataC14setAcqTransRef5acqId03trxH2Noys5Int64V_SitF"></a>
+                    <a name="//apple_ref/swift/Method/setAcqTransRef(acqId:trxRefNo:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TimApi15TransactionDataC14setAcqTransRef5acqId03trxH2Noys5Int64V_SitF">setAcqTransRef(acqId:<wbr>trxRefNo:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+<ul>
+<li>Set transaction reference from the acquirer.
+*</li>
+<li>This method is to be used only for manual entry by clerks for EP2 hospitality</li>
+<li>transactions only.</li>
+</ul>
+
+<p>Mandatory for (can not be nil):</p>
+
+<ul>
+<li>CTransactionType.adjustReservation</li>
+<li>CTransactionType.cancelReservation</li>
+<li>CTransactionType.debtRecovery</li>
+<li>CTransactionType.purchaseReservation</li>
+<li>CTransactionType.purchaseReservationPhoneAuthorized</li>
+<li>CTransactionType.refunding</li>
+<li>CTransactionType.unload</li>
+</ul>
+
+<p>Conditional for (can be nil):</p>
+
+<ul>
+<li>CTransactionType.accountVerification</li>
+<li>CTransactionType.activateCard</li>
+<li>CTransactionType.authorizeCredit</li>
+<li>CTransactionType.authorizeDeposit</li>
+<li>CTransactionType.cashAdvance</li>
+<li>CTransactionType.collectPoints</li>
+<li>CTransactionType.combined</li>
+<li>CTransactionType.credit</li>
+<li>CTransactionType.finalizePurchase</li>
+<li>CTransactionType.funding</li>
+<li>CTransactionType.giro</li>
+<li>CTransactionType.load</li>
+<li>CTransactionType.loadVoucher</li>
+<li>CTransactionType.preAuthorization</li>
+<li>CTransactionType.purchase</li>
+<li>CTransactionType.purchaseForcedAcceptance</li>
+<li>CTransactionType.purchaseMailOrdered</li>
+<li>CTransactionType.purchasePhoneAuthorized</li>
+<li>CTransactionType.purchasePhoneOrdered</li>
+<li>CTransactionType.purchaseWithCashback</li>
+<li>CTransactionType.reservation</li>
+<li>CTransactionType.reversal</li>
+</ul>
+
+<p>Forbidden (has to be always nil):</p>
+
+<ul>
+<li>CTransactionType.initTransaction</li>
+</ul>
+
+<p>Transactions will fail if one of the above mentioned restrictions are violated.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">setAcqTransRef</span><span class="p">(</span><span class="nv">acqId</span><span class="p">:</span> <span class="kt">Int64</span><span class="p">,</span> <span class="nv">trxRefNo</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6TimApi15TransactionDataC11trmTransRefSSSgvp"></a>
+                    <a name="//apple_ref/swift/Property/trmTransRef" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TimApi15TransactionDataC11trmTransRefSSSgvp">trmTransRef</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+<ul>
+<li>Transaction reference from the terminal.</li>
+</ul>
+
+<p>Mandatory for (can not be nil):</p>
+
+<ul>
+<li>CTransactionType.finalizePurchase</li>
+</ul>
+
+<p>Conditional for (can be nil):</p>
+
+<ul>
+<li>CTransactionType.accountVerification</li>
+<li>CTransactionType.activateCard</li>
+<li>CTransactionType.authorizeCredit</li>
+<li>CTransactionType.authorizeDeposit</li>
+<li>CTransactionType.cashAdvance</li>
+<li>CTransactionType.collectPoints</li>
+<li>CTransactionType.combined</li>
+<li>CTransactionType.credit</li>
+<li>CTransactionType.debtRecovery</li>
+<li>CTransactionType.funding</li>
+<li>CTransactionType.giro</li>
+<li>CTransactionType.load</li>
+<li>CTransactionType.loadVoucher</li>
+<li>CTransactionType.preAuthorization</li>
+<li>CTransactionType.purchase</li>
+<li>CTransactionType.purchaseForcedAcceptance</li>
+<li>CTransactionType.purchaseMailOrdered</li>
+<li>CTransactionType.purchasePhoneAuthorized</li>
+<li>CTransactionType.purchasePhoneOrdered</li>
+<li>CTransactionType.purchaseWithCashback</li>
+<li>CTransactionType.refunding</li>
+<li>CTransactionType.reservation</li>
+<li>CTransactionType.reversal</li>
+<li>CTransactionType.unload</li>
+</ul>
+
+<p>Forbidden (has to be always nil):</p>
+
+<ul>
+<li>CTransactionType.adjustReservation</li>
+<li>CTransactionType.cancelReservation</li>
+<li>CTransactionType.initTransaction</li>
+<li>CTransactionType.purchaseReservation</li>
+<li>CTransactionType.purchaseReservationPhoneAuthorized</li>
+</ul>
+
+<p>Transactions will fail if one of the above mentioned restrictions are violated.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">trmTransRef</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6TimApi15TransactionDataC10tipAllowedSbSgvp"></a>
+                    <a name="//apple_ref/swift/Property/tipAllowed" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TimApi15TransactionDataC10tipAllowedSbSgvp">tipAllowed</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Tip is allowed for purchase transactions. Use null to not use this parameter.</p>
+
+<p>This parameter is only used if {@link com.six.timapi.constants.Guides#GASTRO} is enabled.</p>
+
+<p>Mandatory for (can not be nil):</p>
+
+<ul>
+</ul>
+
+<p>Conditional for (can be nil):</p>
+
+<ul>
+<li>CTransactionType.accountVerification</li>
+<li>CTransactionType.activateCard</li>
+<li>CTransactionType.authorizeCredit</li>
+<li>CTransactionType.authorizeDeposit</li>
+<li>CTransactionType.cashAdvance</li>
+<li>CTransactionType.collectPoints</li>
+<li>CTransactionType.combined</li>
+<li>CTransactionType.credit</li>
+<li>CTransactionType.debtRecovery</li>
+<li>CTransactionType.finalizePurchase</li>
+<li>CTransactionType.funding</li>
+<li>CTransactionType.giro</li>
+<li>CTransactionType.load</li>
+<li>CTransactionType.loadVoucher</li>
+<li>CTransactionType.preAuthorization</li>
+<li>CTransactionType.purchase</li>
+<li>CTransactionType.purchaseForcedAcceptance</li>
+<li>CTransactionType.purchaseMailOrdered</li>
+<li>CTransactionType.purchasePhoneAuthorized</li>
+<li>CTransactionType.purchasePhoneOrdered</li>
+<li>CTransactionType.purchaseReservation</li>
+<li>CTransactionType.purchaseReservationPhoneAuthorized</li>
+<li>CTransactionType.purchaseWithCashback</li>
+<li>CTransactionType.refunding</li>
+<li>CTransactionType.reversal</li>
+<li>CTransactionType.unload</li>
+</ul>
+
+<p>Forbidden (has to be always nil):</p>
+
+<ul>
+<li>CTransactionType.adjustReservation</li>
+<li>CTransactionType.cancelReservation</li>
+<li>CTransactionType.reservation</li>
+</ul>
+
+<p>Transactions will fail if one of the above mentioned restrictions are violated.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">tipAllowed</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6TimApi15TransactionDataC13phoneAuthCodeSSSgvp"></a>
+                    <a name="//apple_ref/swift/Property/phoneAuthCode" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TimApi15TransactionDataC13phoneAuthCodeSSSgvp">phoneAuthCode</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+<ul>
+<li>Phone authorization code.</li>
+</ul>
+
+<p>Mandatory for (can not be nil):</p>
+
+<ul>
+<li>CTransactionType.purchasePhoneAuthorized</li>
+<li>CTransactionType.purchaseReservationPhoneAuthorized</li>
+</ul>
+
+<p>Conditional for (can be nil):</p>
+
+<ul>
+<li>CTransactionType.accountVerification</li>
+<li>CTransactionType.activateCard</li>
+<li>CTransactionType.collectPoints</li>
+<li>CTransactionType.debtRecovery</li>
+<li>CTransactionType.finalizePurchase</li>
+<li>CTransactionType.funding</li>
+<li>CTransactionType.load</li>
+<li>CTransactionType.loadVoucher</li>
+<li>CTransactionType.preAuthorization</li>
+<li>CTransactionType.refunding</li>
+<li>CTransactionType.reversal</li>
+<li>CTransactionType.unload</li>
+</ul>
+
+<p>Forbidden (has to be always nil):</p>
+
+<ul>
+<li>CTransactionType.adjustReservation</li>
+<li>CTransactionType.authorizeCredit</li>
+<li>CTransactionType.authorizeDeposit</li>
+<li>CTransactionType.cancelReservation</li>
+<li>CTransactionType.cashAdvance</li>
+<li>CTransactionType.combined</li>
+<li>CTransactionType.credit</li>
+<li>CTransactionType.giro</li>
+<li>CTransactionType.purchase</li>
+<li>CTransactionType.purchaseForcedAcceptance</li>
+<li>CTransactionType.purchaseMailOrdered</li>
+<li>CTransactionType.purchasePhoneOrdered</li>
+<li>CTransactionType.purchaseReservation</li>
+<li>CTransactionType.purchaseWithCashback</li>
+<li>CTransactionType.reservation</li>
+</ul>
+
+<p>Transactions will fail if one of the above mentioned restrictions are violated.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">phoneAuthCode</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6TimApi15TransactionDataC8languageSSSgvp"></a>
+                    <a name="//apple_ref/swift/Property/language" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TimApi15TransactionDataC8languageSSSgvp">language</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+<ul>
+<li>Petrol, Unattended: Language</li>
+</ul>
+
+<p>Mandatory for (can not be nil):</p>
+
+<ul>
+</ul>
+
+<p>Conditional for (can be nil):</p>
+
+<ul>
+<li>CTransactionType.activateCard</li>
+<li>CTransactionType.adjustReservation</li>
+<li>CTransactionType.authorizeCredit</li>
+<li>CTransactionType.authorizeDeposit</li>
+<li>CTransactionType.balanceInquiry</li>
+<li>CTransactionType.cancelReservation</li>
+<li>CTransactionType.cashAdvance</li>
+<li>CTransactionType.clientIdentification</li>
+<li>CTransactionType.collectPoints</li>
+<li>CTransactionType.combined</li>
+<li>CTransactionType.credit</li>
+<li>CTransactionType.debtRecovery</li>
+<li>CTransactionType.funding</li>
+<li>CTransactionType.giro</li>
+<li>CTransactionType.initTransaction</li>
+<li>CTransactionType.load</li>
+<li>CTransactionType.loadVoucher</li>
+<li>CTransactionType.preAuthorization</li>
+<li>CTransactionType.purchase</li>
+<li>CTransactionType.purchaseForcedAcceptance</li>
+<li>CTransactionType.purchaseMailOrdered</li>
+<li>CTransactionType.purchasePhoneAuthorized</li>
+<li>CTransactionType.purchasePhoneOrdered</li>
+<li>CTransactionType.purchaseReservation</li>
+<li>CTransactionType.purchaseReservationPhoneAuthorized</li>
+<li>CTransactionType.purchaseWithCashback</li>
+<li>CTransactionType.refunding</li>
+<li>CTransactionType.reservation</li>
+<li>CTransactionType.sendCardCommand</li>
+<li>CTransactionType.startCheckout</li>
+<li>CTransactionType.unload</li>
+</ul>
+
+<p>Forbidden (has to be always nil):</p>
+
+<ul>
+<li>CTransactionType.accountVerification</li>
+<li>CTransactionType.finalizePurchase</li>
+<li>CTransactionType.reversal</li>
+</ul>
+
+<p>Transactions will fail if one of the above mentioned restrictions are violated.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">language</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6TimApi15TransactionDataC12sixTrxRefNumSSSgvp"></a>
+                    <a name="//apple_ref/swift/Property/sixTrxRefNum" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TimApi15TransactionDataC12sixTrxRefNumSSSgvp">sixTrxRefNum</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>SIX Transaction Reference Number.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">sixTrxRefNum</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6TimApi15TransactionDataC15setSixTrxRefNum5acqId03trxhI0ys5Int64V_SStF"></a>
+                    <a name="//apple_ref/swift/Method/setSixTrxRefNum(acqId:trxRefNum:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TimApi15TransactionDataC15setSixTrxRefNum5acqId03trxhI0ys5Int64V_SStF">setSixTrxRefNum(acqId:<wbr>trxRefNum:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>SIX Transaction Reference Number for integrators using MPD Client.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">setSixTrxRefNum</span><span class="p">(</span><span class="nv">acqId</span><span class="p">:</span> <span class="kt">Int64</span><span class="p">,</span> <span class="nv">trxRefNum</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6TimApi15TransactionDataC13saferpayAliasSSSgvp"></a>
+                    <a name="//apple_ref/swift/Property/saferpayAlias" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TimApi15TransactionDataC13saferpayAliasSSSgvp">saferpayAlias</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Saferpay alias.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">saferpayAlias</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6TimApi15TransactionDataC17saferpayRecurringSbvp"></a>
+                    <a name="//apple_ref/swift/Property/saferpayRecurring" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TimApi15TransactionDataC17saferpayRecurringSbvp">saferpayRecurring</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Saferpay recurring enabled.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">saferpayRecurring</span><span class="p">:</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6TimApi15TransactionDataC17multiCurrencyFlagSbSgvp"></a>
+                    <a name="//apple_ref/swift/Property/multiCurrencyFlag" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TimApi15TransactionDataC17multiCurrencyFlagSbSgvp">multiCurrencyFlag</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+<ul>
+<li>Indicates if the transaction uses multiple currencies.</li>
+<li>Optional: Indicates that the transaction uses multiple currencies.</li>
+<li>Specifications: <em>banking</em>, <em>gastro</em>, <em>hospitality</em>,</li>
+<li><em>austrianUseCases</em>.</li>
+</ul>
+
+<p>Mandatory for (can not be nil):</p>
+
+<ul>
+</ul>
+
+<p>Conditional for (can be nil):</p>
+
+<ul>
+<li>CTransactionType.accountVerification</li>
+<li>CTransactionType.activateCard</li>
+<li>CTransactionType.adjustReservation</li>
+<li>CTransactionType.authorizeCredit</li>
+<li>CTransactionType.authorizeDeposit</li>
+<li>CTransactionType.cancelReservation</li>
+<li>CTransactionType.cashAdvance</li>
+<li>CTransactionType.collectPoints</li>
+<li>CTransactionType.combined</li>
+<li>CTransactionType.credit</li>
+<li>CTransactionType.debtRecovery</li>
+<li>CTransactionType.finalizePurchase</li>
+<li>CTransactionType.funding</li>
+<li>CTransactionType.giro</li>
+<li>CTransactionType.load</li>
+<li>CTransactionType.loadVoucher</li>
+<li>CTransactionType.preAuthorization</li>
+<li>CTransactionType.purchase</li>
+<li>CTransactionType.purchaseForcedAcceptance</li>
+<li>CTransactionType.purchaseMailOrdered</li>
+<li>CTransactionType.purchasePhoneAuthorized</li>
+<li>CTransactionType.purchasePhoneOrdered</li>
+<li>CTransactionType.purchaseReservation</li>
+<li>CTransactionType.purchaseReservationPhoneAuthorized</li>
+<li>CTransactionType.purchaseWithCashback</li>
+<li>CTransactionType.refunding</li>
+<li>CTransactionType.reservation</li>
+<li>CTransactionType.reversal</li>
+<li>CTransactionType.unload</li>
+</ul>
+
+<p>Forbidden (has to be always nil):</p>
+
+<ul>
+</ul>
+
+<p>Transactions will fail if one of the above mentioned restrictions are violated.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">multiCurrencyFlag</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6TimApi15TransactionDataC7ngvModeAA04CNgvF0OSgvp"></a>
+                    <a name="//apple_ref/swift/Property/ngvMode" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TimApi15TransactionDataC7ngvModeAA04CNgvF0OSgvp">ngvMode</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+<ul>
+<li>Defines if NGV usage is mandatory or optional if card supports it.
+*</li>
+<li>Available if {@link Guides#AUSTRIAN_USE_CASES} is enabled.</li>
+</ul>
+
+<p>Mandatory for (can not be nil):</p>
+
+<ul>
+</ul>
+
+<p>Conditional for (can be nil):</p>
+
+<ul>
+<li>CTransactionType.accountVerification</li>
+<li>CTransactionType.activateCard</li>
+<li>CTransactionType.adjustReservation</li>
+<li>CTransactionType.authorizeCredit</li>
+<li>CTransactionType.authorizeDeposit</li>
+<li>CTransactionType.cancelReservation</li>
+<li>CTransactionType.cashAdvance</li>
+<li>CTransactionType.collectPoints</li>
+<li>CTransactionType.combined</li>
+<li>CTransactionType.credit</li>
+<li>CTransactionType.debtRecovery</li>
+<li>CTransactionType.finalizePurchase</li>
+<li>CTransactionType.funding</li>
+<li>CTransactionType.giro</li>
+<li>CTransactionType.load</li>
+<li>CTransactionType.loadVoucher</li>
+<li>CTransactionType.preAuthorization</li>
+<li>CTransactionType.purchase</li>
+<li>CTransactionType.purchaseForcedAcceptance</li>
+<li>CTransactionType.purchaseMailOrdered</li>
+<li>CTransactionType.purchasePhoneAuthorized</li>
+<li>CTransactionType.purchasePhoneOrdered</li>
+<li>CTransactionType.purchaseReservation</li>
+<li>CTransactionType.purchaseReservationPhoneAuthorized</li>
+<li>CTransactionType.purchaseWithCashback</li>
+<li>CTransactionType.refunding</li>
+<li>CTransactionType.reservation</li>
+<li>CTransactionType.reversal</li>
+<li>CTransactionType.unload</li>
+</ul>
+
+<p>Forbidden (has to be always nil):</p>
+
+<ul>
+</ul>
+
+<p>Transactions will fail if one of the above mentioned restrictions are violated.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">ngvMode</span><span class="p">:</span> <span class="kt"><a href="../Enums/CNgvMode.html">CNgvMode</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6TimApi15TransactionDataC16ngvClearingDelaySivp"></a>
+                    <a name="//apple_ref/swift/Property/ngvClearingDelay" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TimApi15TransactionDataC16ngvClearingDelaySivp">ngvClearingDelay</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+<ul>
+<li>Defines the clearing delay of the PurchaseNGV transaction.
+*</li>
+<li>Available if {@link Guides#AUSTRIAN_USE_CASES} is enabled.</li>
+</ul>
+
+<p>Mandatory for (can not be nil):</p>
+
+<ul>
+</ul>
+
+<p>Conditional for (can be nil):</p>
+
+<ul>
+<li>CTransactionType.accountVerification</li>
+<li>CTransactionType.activateCard</li>
+<li>CTransactionType.adjustReservation</li>
+<li>CTransactionType.authorizeCredit</li>
+<li>CTransactionType.authorizeDeposit</li>
+<li>CTransactionType.cancelReservation</li>
+<li>CTransactionType.cashAdvance</li>
+<li>CTransactionType.collectPoints</li>
+<li>CTransactionType.combined</li>
+<li>CTransactionType.credit</li>
+<li>CTransactionType.debtRecovery</li>
+<li>CTransactionType.finalizePurchase</li>
+<li>CTransactionType.funding</li>
+<li>CTransactionType.giro</li>
+<li>CTransactionType.load</li>
+<li>CTransactionType.loadVoucher</li>
+<li>CTransactionType.preAuthorization</li>
+<li>CTransactionType.purchase</li>
+<li>CTransactionType.purchaseForcedAcceptance</li>
+<li>CTransactionType.purchaseMailOrdered</li>
+<li>CTransactionType.purchasePhoneAuthorized</li>
+<li>CTransactionType.purchasePhoneOrdered</li>
+<li>CTransactionType.purchaseReservation</li>
+<li>CTransactionType.purchaseReservationPhoneAuthorized</li>
+<li>CTransactionType.purchaseWithCashback</li>
+<li>CTransactionType.refunding</li>
+<li>CTransactionType.reservation</li>
+<li>CTransactionType.reversal</li>
+<li>CTransactionType.unload</li>
+</ul>
+
+<p>Forbidden (has to be always nil):</p>
+
+<ul>
+</ul>
+
+<p>Transactions will fail if one of the above mentioned restrictions are violated.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">ngvClearingDelay</span><span class="p">:</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6TimApi15TransactionDataC4cvc2SiSgvp"></a>
+                    <a name="//apple_ref/swift/Property/cvc2" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TimApi15TransactionDataC4cvc2SiSgvp">cvc2</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+<ul>
+<li>Card verification code 2.</li>
+<li>The card verification code 2 is used for transactions with MPKE as an additional security</li>
+<li>element that has to be provided.</li>
+<li>It has an n3 value: Numeric 3 digits: 012</li>
+<li>Optional: Used for MPKE for non-PCI brands.</li>
+</ul>
+
+<p>Mandatory for (can not be nil):</p>
+
+<ul>
+</ul>
+
+<p>Conditional for (can be nil):</p>
+
+<ul>
+<li>CTransactionType.accountVerification</li>
+<li>CTransactionType.activateCard</li>
+<li>CTransactionType.authorizeCredit</li>
+<li>CTransactionType.authorizeDeposit</li>
+<li>CTransactionType.cashAdvance</li>
+<li>CTransactionType.collectPoints</li>
+<li>CTransactionType.combined</li>
+<li>CTransactionType.credit</li>
+<li>CTransactionType.debtRecovery</li>
+<li>CTransactionType.finalizePurchase</li>
+<li>CTransactionType.funding</li>
+<li>CTransactionType.giro</li>
+<li>CTransactionType.load</li>
+<li>CTransactionType.loadVoucher</li>
+<li>CTransactionType.preAuthorization</li>
+<li>CTransactionType.purchase</li>
+<li>CTransactionType.purchaseForcedAcceptance</li>
+<li>CTransactionType.purchaseMailOrdered</li>
+<li>CTransactionType.purchasePhoneAuthorized</li>
+<li>CTransactionType.purchasePhoneOrdered</li>
+<li>CTransactionType.purchaseReservationPhoneAuthorized</li>
+<li>CTransactionType.purchaseWithCashback</li>
+<li>CTransactionType.refunding</li>
+<li>CTransactionType.reservation</li>
+<li>CTransactionType.reversal</li>
+<li>CTransactionType.unload</li>
+</ul>
+
+<p>Forbidden (has to be always nil):</p>
+
+<ul>
+<li>CTransactionType.adjustReservation</li>
+<li>CTransactionType.cancelReservation</li>
+<li>CTransactionType.initTransaction</li>
+<li>CTransactionType.purchaseReservation</li>
+</ul>
+
+<p>Transactions will fail if one of the above mentioned restrictions are violated.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">cvc2</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6TimApi15TransactionDataC17appExpirationDateAA04TimeG0VSgvp"></a>
+                    <a name="//apple_ref/swift/Property/appExpirationDate" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TimApi15TransactionDataC17appExpirationDateAA04TimeG0VSgvp">appExpirationDate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+<ul>
+<li>Application expiration date.</li>
+<li>Each application on a card has a corresponding expiration date and can be read from the</li>
+<li>card.</li>
+<li>Example: The format of an &lsquo;Expiration Date&rsquo; is defined as MMyy, 2 digits for the month and</li>
+<li>2 digits for the year. So January 2018 will have the following format as &lsquo;Expiration Date&rsquo;:</li>
+<li>0118</li>
+<li>Optional: Used for MPKE for non-PCI brands based transactions.</li>
+</ul>
+
+<p>Mandatory for (can not be nil):</p>
+
+<ul>
+</ul>
+
+<p>Conditional for (can be nil):</p>
+
+<ul>
+<li>CTransactionType.accountVerification</li>
+<li>CTransactionType.activateCard</li>
+<li>CTransactionType.authorizeCredit</li>
+<li>CTransactionType.authorizeDeposit</li>
+<li>CTransactionType.cashAdvance</li>
+<li>CTransactionType.collectPoints</li>
+<li>CTransactionType.combined</li>
+<li>CTransactionType.credit</li>
+<li>CTransactionType.debtRecovery</li>
+<li>CTransactionType.finalizePurchase</li>
+<li>CTransactionType.funding</li>
+<li>CTransactionType.giro</li>
+<li>CTransactionType.load</li>
+<li>CTransactionType.loadVoucher</li>
+<li>CTransactionType.preAuthorization</li>
+<li>CTransactionType.purchase</li>
+<li>CTransactionType.purchaseForcedAcceptance</li>
+<li>CTransactionType.purchaseMailOrdered</li>
+<li>CTransactionType.purchasePhoneAuthorized</li>
+<li>CTransactionType.purchasePhoneOrdered</li>
+<li>CTransactionType.purchaseReservationPhoneAuthorized</li>
+<li>CTransactionType.purchaseWithCashback</li>
+<li>CTransactionType.refunding</li>
+<li>CTransactionType.reservation</li>
+<li>CTransactionType.reversal</li>
+<li>CTransactionType.unload</li>
+</ul>
+
+<p>Forbidden (has to be always nil):</p>
+
+<ul>
+<li>CTransactionType.adjustReservation</li>
+<li>CTransactionType.cancelReservation</li>
+<li>CTransactionType.purchaseReservation</li>
+</ul>
+
+<p>Transactions will fail if one of the above mentioned restrictions are violated.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">appExpirationDate</span><span class="p">:</span> <span class="kt"><a href="../Structs/TimeDate.html">TimeDate</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6TimApi15TransactionDataC18installmentAllowedSbSgvp"></a>
+                    <a name="//apple_ref/swift/Property/installmentAllowed" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TimApi15TransactionDataC18installmentAllowedSbSgvp">installmentAllowed</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+<ul>
+<li>Indicates if installment shall be allowed for a transaction.</li>
+<li>This tag can be set for each transaction separately to specifically allow or disallow</li>
+<li>installment feature during the corresponding transaction.</li>
+<li>As this is a boolean value is can be understood as follows:</li>
+<li>true: Installment is allowed for the transaction</li>
+<li>false: Installment is NOT allowed for the transaction</li>
+</ul>
+
+<p>Mandatory for (can not be nil):</p>
+
+<ul>
+</ul>
+
+<p>Conditional for (can be nil):</p>
+
+<ul>
+<li>CTransactionType.accountVerification</li>
+<li>CTransactionType.activateCard</li>
+<li>CTransactionType.adjustReservation</li>
+<li>CTransactionType.authorizeCredit</li>
+<li>CTransactionType.authorizeDeposit</li>
+<li>CTransactionType.cancelReservation</li>
+<li>CTransactionType.cashAdvance</li>
+<li>CTransactionType.collectPoints</li>
+<li>CTransactionType.combined</li>
+<li>CTransactionType.credit</li>
+<li>CTransactionType.debtRecovery</li>
+<li>CTransactionType.finalizePurchase</li>
+<li>CTransactionType.funding</li>
+<li>CTransactionType.giro</li>
+<li>CTransactionType.load</li>
+<li>CTransactionType.loadVoucher</li>
+<li>CTransactionType.preAuthorization</li>
+<li>CTransactionType.purchase</li>
+<li>CTransactionType.purchaseForcedAcceptance</li>
+<li>CTransactionType.purchaseMailOrdered</li>
+<li>CTransactionType.purchasePhoneAuthorized</li>
+<li>CTransactionType.purchasePhoneOrdered</li>
+<li>CTransactionType.purchaseReservation</li>
+<li>CTransactionType.purchaseReservationPhoneAuthorized</li>
+<li>CTransactionType.purchaseWithCashback</li>
+<li>CTransactionType.refunding</li>
+<li>CTransactionType.reservation</li>
+<li>CTransactionType.reversal</li>
+<li>CTransactionType.unload</li>
+</ul>
+
+<p>Forbidden (has to be always nil):</p>
+
+<ul>
+<li>CTransactionType.initTransaction</li>
+</ul>
+
+<p>Transactions will fail if one of the above mentioned restrictions are violated.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">installmentAllowed</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6TimApi15TransactionDataC15deferredAuthIndSbSgvp"></a>
+                    <a name="//apple_ref/swift/Property/deferredAuthInd" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TimApi15TransactionDataC15deferredAuthIndSbSgvp">deferredAuthInd</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+<ul>
+<li>Indicates that the transaction shall be performed using deffered authorisation.</li>
+<li>The following values are valid:</li>
+<li>true: Deferred authorisation applies</li>
+<li>false: Standard authorisation scheme (default)</li>
+</ul>
+
+<p>Mandatory for (can not be nil):</p>
+
+<ul>
+</ul>
+
+<p>Conditional for (can be nil):</p>
+
+<ul>
+<li>CTransactionType.accountVerification</li>
+<li>CTransactionType.activateCard</li>
+<li>CTransactionType.adjustReservation</li>
+<li>CTransactionType.authorizeCredit</li>
+<li>CTransactionType.authorizeDeposit</li>
+<li>CTransactionType.cancelReservation</li>
+<li>CTransactionType.cashAdvance</li>
+<li>CTransactionType.collectPoints</li>
+<li>CTransactionType.combined</li>
+<li>CTransactionType.credit</li>
+<li>CTransactionType.debtRecovery</li>
+<li>CTransactionType.finalizePurchase</li>
+<li>CTransactionType.funding</li>
+<li>CTransactionType.giro</li>
+<li>CTransactionType.load</li>
+<li>CTransactionType.loadVoucher</li>
+<li>CTransactionType.preAuthorization</li>
+<li>CTransactionType.purchase</li>
+<li>CTransactionType.purchaseForcedAcceptance</li>
+<li>CTransactionType.purchaseMailOrdered</li>
+<li>CTransactionType.purchasePhoneAuthorized</li>
+<li>CTransactionType.purchasePhoneOrdered</li>
+<li>CTransactionType.purchaseReservation</li>
+<li>CTransactionType.purchaseReservationPhoneAuthorized</li>
+<li>CTransactionType.purchaseWithCashback</li>
+<li>CTransactionType.refunding</li>
+<li>CTransactionType.reservation</li>
+<li>CTransactionType.reversal</li>
+<li>CTransactionType.unload</li>
+</ul>
+
+<p>Forbidden (has to be always nil):</p>
+
+<ul>
+</ul>
+
+<p>Transactions will fail if one of the above mentioned restrictions are violated.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">deferredAuthInd</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6TimApi15TransactionDataC17transactionReasonAA012CTransactionF0OSgvp"></a>
+                    <a name="//apple_ref/swift/Property/transactionReason" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TimApi15TransactionDataC17transactionReasonAA012CTransactionF0OSgvp">transactionReason</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+<ul>
+<li>Transaction reasno to setup credential on file.</li>
+</ul>
+
+<p>Mandatory for (can not be nil):</p>
+
+<ul>
+</ul>
+
+<p>Conditional for (can be nil):</p>
+
+<ul>
+<li>CTransactionType.accountVerification</li>
+<li>CTransactionType.activateCard</li>
+<li>CTransactionType.adjustReservation</li>
+<li>CTransactionType.authorizeCredit</li>
+<li>CTransactionType.authorizeDeposit</li>
+<li>CTransactionType.cancelReservation</li>
+<li>CTransactionType.cashAdvance</li>
+<li>CTransactionType.collectPoints</li>
+<li>CTransactionType.combined</li>
+<li>CTransactionType.credit</li>
+<li>CTransactionType.debtRecovery</li>
+<li>CTransactionType.finalizePurchase</li>
+<li>CTransactionType.funding</li>
+<li>CTransactionType.giro</li>
+<li>CTransactionType.load</li>
+<li>CTransactionType.loadVoucher</li>
+<li>CTransactionType.preAuthorization</li>
+<li>CTransactionType.purchase</li>
+<li>CTransactionType.purchaseForcedAcceptance</li>
+<li>CTransactionType.purchaseMailOrdered</li>
+<li>CTransactionType.purchasePhoneAuthorized</li>
+<li>CTransactionType.purchasePhoneOrdered</li>
+<li>CTransactionType.purchaseReservation</li>
+<li>CTransactionType.purchaseReservationPhoneAuthorized</li>
+<li>CTransactionType.purchaseWithCashback</li>
+<li>CTransactionType.refunding</li>
+<li>CTransactionType.reservation</li>
+<li>CTransactionType.reversal</li>
+<li>CTransactionType.unload</li>
+</ul>
+
+<p>Forbidden (has to be always nil):</p>
+
+<ul>
+<li>CTransactionType.initTransaction</li>
+</ul>
+
+<p>Transactions will fail if one of the above mentioned restrictions are violated.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">transactionReason</span><span class="p">:</span> <span class="kt"><a href="../Enums/CTransactionReason.html">CTransactionReason</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6TimApi15TransactionDataC15subTransactionsSayAA03SubC0CGvp"></a>
+                    <a name="//apple_ref/swift/Property/subTransactions" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TimApi15TransactionDataC15subTransactionsSayAA03SubC0CGvp">subTransactions</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+<ul>
+<li>Sub transactions.</li>
+</ul>
+
+<p>Mandatory for (can not be nil):</p>
+
+<ul>
+</ul>
+
+<p>Conditional for (can be nil):</p>
+
+<ul>
+<li>CTransactionType.combined</li>
+</ul>
+
+<p>Forbidden (has to be always nil):</p>
+
+<ul>
+<li>CTransactionType.accountVerification</li>
+<li>CTransactionType.activateCard</li>
+<li>CTransactionType.adjustReservation</li>
+<li>CTransactionType.authorizeCredit</li>
+<li>CTransactionType.authorizeDeposit</li>
+<li>CTransactionType.cancelReservation</li>
+<li>CTransactionType.cashAdvance</li>
+<li>CTransactionType.collectPoints</li>
+<li>CTransactionType.credit</li>
+<li>CTransactionType.debtRecovery</li>
+<li>CTransactionType.finalizePurchase</li>
+<li>CTransactionType.funding</li>
+<li>CTransactionType.giro</li>
+<li>CTransactionType.load</li>
+<li>CTransactionType.loadVoucher</li>
+<li>CTransactionType.preAuthorization</li>
+<li>CTransactionType.purchase</li>
+<li>CTransactionType.purchaseForcedAcceptance</li>
+<li>CTransactionType.purchaseMailOrdered</li>
+<li>CTransactionType.purchasePhoneAuthorized</li>
+<li>CTransactionType.purchasePhoneOrdered</li>
+<li>CTransactionType.purchaseReservation</li>
+<li>CTransactionType.purchaseReservationPhoneAuthorized</li>
+<li>CTransactionType.purchaseWithCashback</li>
+<li>CTransactionType.refunding</li>
+<li>CTransactionType.reservation</li>
+<li>CTransactionType.reversal</li>
+<li>CTransactionType.unload</li>
+</ul>
+
+<p>Transactions will fail if one of the above mentioned restrictions are violated.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">subTransactions</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Classes/SubTransaction.html">SubTransaction</a></span><span class="p">]</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6TimApi15TransactionDataC15allowedAccountsShyAA08CAllowedF0OGSgvp"></a>
+                    <a name="//apple_ref/swift/Property/allowedAccounts" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TimApi15TransactionDataC15allowedAccountsShyAA08CAllowedF0OGSgvp">allowedAccounts</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+<ul>
+<li>Allowed accounts.</li>
+</ul>
+
+<p>Mandatory for (can not be nil):</p>
+
+<ul>
+</ul>
+
+<p>Conditional for (can be nil):</p>
+
+<ul>
+<li>CTransactionType.credit</li>
+<li>CTransactionType.purchase</li>
+<li>CTransactionType.purchaseForcedAcceptance</li>
+<li>CTransactionType.purchaseMailOrdered</li>
+<li>CTransactionType.purchasePhoneAuthorized</li>
+<li>CTransactionType.purchasePhoneOrdered</li>
+<li>CTransactionType.purchaseWithCashback</li>
+</ul>
+
+<p>Forbidden (has to be always nil):</p>
+
+<ul>
+<li>CTransactionType.accountVerification</li>
+<li>CTransactionType.activateCard</li>
+<li>CTransactionType.adjustReservation</li>
+<li>CTransactionType.authorizeCredit</li>
+<li>CTransactionType.authorizeDeposit</li>
+<li>CTransactionType.balanceInquiry</li>
+<li>CTransactionType.cancelReservation</li>
+<li>CTransactionType.cashAdvance</li>
+<li>CTransactionType.collectPoints</li>
+<li>CTransactionType.combined</li>
+<li>CTransactionType.debtRecovery</li>
+<li>CTransactionType.finalizePurchase</li>
+<li>CTransactionType.funding</li>
+<li>CTransactionType.giro</li>
+<li>CTransactionType.load</li>
+<li>CTransactionType.loadVoucher</li>
+<li>CTransactionType.preAuthorization</li>
+<li>CTransactionType.purchaseReservation</li>
+<li>CTransactionType.purchaseReservationPhoneAuthorized</li>
+<li>CTransactionType.refunding</li>
+<li>CTransactionType.reservation</li>
+<li>CTransactionType.reversal</li>
+<li>CTransactionType.unload</li>
+</ul>
+
+<p>Transactions will fail if one of the above mentioned restrictions are violated.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">allowedAccounts</span><span class="p">:</span> <span class="kt">Set</span><span class="o">&lt;</span><span class="kt"><a href="../Enums/CAllowedAccounts.html">CAllowedAccounts</a></span><span class="o">&gt;</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6TimApi15TransactionDataC8tokenPanSSSgvp"></a>
+                    <a name="//apple_ref/swift/Property/tokenPan" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TimApi15TransactionDataC8tokenPanSSSgvp">tokenPan</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The token PAN is a tokenized version for an underlaying card PAN. If the
+underlaying payment protocol supports it, a payment transaction can be initiated
+with the token PAN instead of using a card. A token PAN is normally generated by
+a tokenization service either form the acquirer host or the issuer host.</p>
+
+<p>The TokenPan field is used in a SIXml request message as part of the
+sixml:TransactionData container to trigger a token-based transaction and in a SIXml
+response message as part of the sixml:CardData container for returning token PANs
+to the ECR.</p>
+
+<p>The TokenPan field always must be accompanied by a corresponding TokenPanType field.</p>
+
+<p>Mandatory for (can not be nil):</p>
+
+<ul>
+</ul>
+
+<p>Conditional for (can be nil):</p>
+
+<ul>
+<li>CTransactionType.accountVerification</li>
+<li>CTransactionType.activateCard</li>
+<li>CTransactionType.authorizeCredit</li>
+<li>CTransactionType.authorizeDeposit</li>
+<li>CTransactionType.cashAdvance</li>
+<li>CTransactionType.collectPoints</li>
+<li>CTransactionType.combined</li>
+<li>CTransactionType.credit</li>
+<li>CTransactionType.funding</li>
+<li>CTransactionType.giro</li>
+<li>CTransactionType.load</li>
+<li>CTransactionType.loadVoucher</li>
+<li>CTransactionType.preAuthorization</li>
+<li>CTransactionType.purchase</li>
+<li>CTransactionType.purchaseForcedAcceptance</li>
+<li>CTransactionType.purchaseMailOrdered</li>
+<li>CTransactionType.purchasePhoneOrdered</li>
+<li>CTransactionType.purchaseWithCashback</li>
+<li>CTransactionType.refunding</li>
+<li>CTransactionType.reservation</li>
+<li>CTransactionType.unload</li>
+</ul>
+
+<p>Forbidden (has to be always nil):</p>
+
+<ul>
+<li>CTransactionType.adjustReservation</li>
+<li>CTransactionType.cancelReservation</li>
+<li>CTransactionType.debtRecovery</li>
+<li>CTransactionType.finalizePurchase</li>
+<li>CTransactionType.purchasePhoneAuthorized</li>
+<li>CTransactionType.purchaseReservation</li>
+<li>CTransactionType.purchaseReservationPhoneAuthorized</li>
+<li>CTransactionType.reversal</li>
+</ul>
+
+<p>Transactions will fail if one of the above mentioned restrictions are violated.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">tokenPan</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6TimApi15TransactionDataC12tokenPanTypeAA06CTokenfG0OSgvp"></a>
+                    <a name="//apple_ref/swift/Property/tokenPanType" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TimApi15TransactionDataC12tokenPanTypeAA06CTokenfG0OSgvp">tokenPanType</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>To differ the source of a token PAN, the TokenPanType field is used in a SIXml
+request message as part of the sixml:TransactionData container and in a SIXml
+response message as part of the sixml:CardData container.</p>
+
+<p>The TokenPanType field always is transmitted if a TokenPan field is transmitted
+but must not be transmitted alone.</p>
+
+<p>Mandatory for (can not be nil):</p>
+
+<ul>
+</ul>
+
+<p>Conditional for (can be nil):</p>
+
+<ul>
+<li>CTransactionType.accountVerification</li>
+<li>CTransactionType.activateCard</li>
+<li>CTransactionType.authorizeCredit</li>
+<li>CTransactionType.authorizeDeposit</li>
+<li>CTransactionType.cashAdvance</li>
+<li>CTransactionType.collectPoints</li>
+<li>CTransactionType.combined</li>
+<li>CTransactionType.credit</li>
+<li>CTransactionType.funding</li>
+<li>CTransactionType.giro</li>
+<li>CTransactionType.load</li>
+<li>CTransactionType.loadVoucher</li>
+<li>CTransactionType.preAuthorization</li>
+<li>CTransactionType.purchase</li>
+<li>CTransactionType.purchaseForcedAcceptance</li>
+<li>CTransactionType.purchaseMailOrdered</li>
+<li>CTransactionType.purchasePhoneOrdered</li>
+<li>CTransactionType.purchaseWithCashback</li>
+<li>CTransactionType.refunding</li>
+<li>CTransactionType.reservation</li>
+<li>CTransactionType.unload</li>
+</ul>
+
+<p>Forbidden (has to be always nil):</p>
+
+<ul>
+<li>CTransactionType.adjustReservation</li>
+<li>CTransactionType.cancelReservation</li>
+<li>CTransactionType.debtRecovery</li>
+<li>CTransactionType.finalizePurchase</li>
+<li>CTransactionType.purchasePhoneAuthorized</li>
+<li>CTransactionType.purchaseReservation</li>
+<li>CTransactionType.purchaseReservationPhoneAuthorized</li>
+<li>CTransactionType.reversal</li>
+</ul>
+
+<p>Transactions will fail if one of the above mentioned restrictions are violated.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">tokenPanType</span><span class="p">:</span> <span class="kt"><a href="../Enums/CTokenPanType.html">CTokenPanType</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6TimApi15TransactionDataC20omnichannelPaymentIdSSSgvp"></a>
+                    <a name="//apple_ref/swift/Property/omnichannelPaymentId" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TimApi15TransactionDataC20omnichannelPaymentIdSSSgvp">omnichannelPaymentId</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>To identify an Omnichannel transaction (not used for Saferpay) the
+ OmnichannelPaymentId has to be set in TransactionData. This attribute is also
+ used to identify the Omnichannel host, a OmnichannelPaymentId starting by
+ &lsquo;90&rsquo; meens for example that Ogone has to be used.</p>
+
+<p>Mandatory for (can not be null):
+ <ul>
+ </ul></p>
+
+<p>Conditional for (can be null):
+ <ul>
+ <li>SIX.TimApi.Constants.TransactionType.Credit</li>
+ </ul></p>
+
+<p>Forbidden (has to be always null):
+ <ul>
+ <li>SIX.TimApi.Constants.TransactionType.AdjustReservation</li>
+ <li>SIX.TimApi.Constants.TransactionType.CancelReservation</li>
+ <li>SIX.TimApi.Constants.TransactionType.DebtRecovery</li>
+ <li>SIX.TimApi.Constants.TransactionType.FinalizePurchase</li>
+ <li>SIX.TimApi.Constants.TransactionType.PurchasePhoneAuthorized</li>
+ <li>SIX.TimApi.Constants.TransactionType.PurchaseReservation</li>
+ <li>SIX.TimApi.Constants.TransactionType.PurchaseReservationPhoneAuthorized</li>
+ <li>SIX.TimApi.Constants.TransactionType.Reversal</li>
+ <li>SIX.TimApi.Constants.TransactionType.AccountVerification</li>
+ <li>SIX.TimApi.Constants.TransactionType.ActivateCard</li>
+ <li>SIX.TimApi.Constants.TransactionType.AuthorizeCredit</li>
+ <li>SIX.TimApi.Constants.TransactionType.AuthorizeDeposit</li>
+ <li>SIX.TimApi.Constants.TransactionType.CashAdvance</li>
+ <li>SIX.TimApi.Constants.TransactionType.CollectPoints</li>
+ <li>SIX.TimApi.Constants.TransactionType.Combined</li>
+ <li>SIX.TimApi.Constants.TransactionType.Credit</li>
+ <li>SIX.TimApi.Constants.TransactionType.Funding</li>
+ <li>SIX.TimApi.Constants.TransactionType.Giro</li>
+ <li>SIX.TimApi.Constants.TransactionType.Load</li>
+ <li>SIX.TimApi.Constants.TransactionType.LoadVoucher</li>
+ <li>SIX.TimApi.Constants.TransactionType.PreAuthorization</li>
+ <li>SIX.TimApi.Constants.TransactionType.Purchase</li>
+ <li>SIX.TimApi.Constants.TransactionType.PurchaseForcedAcceptance</li>
+ <li>SIX.TimApi.Constants.TransactionType.PurchaseMailOrdered</li>
+ <li>SIX.TimApi.Constants.TransactionType.PurchasePhoneOrdered</li>
+ <li>SIX.TimApi.Constants.TransactionType.PurchaseWithCashback</li>
+ <li>SIX.TimApi.Constants.TransactionType.Refunding</li>
+ <li>SIX.TimApi.Constants.TransactionType.Reservation</li>
+ <li>SIX.TimApi.Constants.TransactionType.Unload</li>
+ </ul></p>
+
+<p>Transactions will fail if one of the above mentioned restrictions are
+ violated.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">omnichannelPaymentId</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6TimApi15TransactionDataC21omnichannelMerchantIdSSSgvp"></a>
+                    <a name="//apple_ref/swift/Property/omnichannelMerchantId" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TimApi15TransactionDataC21omnichannelMerchantIdSSSgvp">omnichannelMerchantId</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The OmnichannelMerchantId is used to identify the merchant on a Omnichannel
+ host. This field is not used for Saferpay, but is for example for Ogone.</p>
+
+<p>Mandatory for (can not be null):
+ <ul>
+ </ul></p>
+
+<p>Conditional for (can be null):
+ <ul>
+ <li>SIX.TimApi.Constants.TransactionType.Credit</li>
+ </ul></p>
+
+<p>Forbidden (has to be always null):
+ <ul>
+ <li>SIX.TimApi.Constants.TransactionType.AdjustReservation</li>
+ <li>SIX.TimApi.Constants.TransactionType.CancelReservation</li>
+ <li>SIX.TimApi.Constants.TransactionType.DebtRecovery</li>
+ <li>SIX.TimApi.Constants.TransactionType.FinalizePurchase</li>
+ <li>SIX.TimApi.Constants.TransactionType.PurchasePhoneAuthorized</li>
+ <li>SIX.TimApi.Constants.TransactionType.PurchaseReservation</li>
+ <li>SIX.TimApi.Constants.TransactionType.PurchaseReservationPhoneAuthorized</li>
+ <li>SIX.TimApi.Constants.TransactionType.Reversal</li>
+ <li>SIX.TimApi.Constants.TransactionType.AccountVerification</li>
+ <li>SIX.TimApi.Constants.TransactionType.ActivateCard</li>
+ <li>SIX.TimApi.Constants.TransactionType.AuthorizeCredit</li>
+ <li>SIX.TimApi.Constants.TransactionType.AuthorizeDeposit</li>
+ <li>SIX.TimApi.Constants.TransactionType.CashAdvance</li>
+ <li>SIX.TimApi.Constants.TransactionType.CollectPoints</li>
+ <li>SIX.TimApi.Constants.TransactionType.Combined</li>
+ <li>SIX.TimApi.Constants.TransactionType.Funding</li>
+ <li>SIX.TimApi.Constants.TransactionType.Giro</li>
+ <li>SIX.TimApi.Constants.TransactionType.Load</li>
+ <li>SIX.TimApi.Constants.TransactionType.LoadVoucher</li>
+ <li>SIX.TimApi.Constants.TransactionType.PreAuthorization</li>
+ <li>SIX.TimApi.Constants.TransactionType.Purchase</li>
+ <li>SIX.TimApi.Constants.TransactionType.PurchaseForcedAcceptance</li>
+ <li>SIX.TimApi.Constants.TransactionType.PurchaseMailOrdered</li>
+ <li>SIX.TimApi.Constants.TransactionType.PurchasePhoneOrdered</li>
+ <li>SIX.TimApi.Constants.TransactionType.PurchaseWithCashback</li>
+ <li>SIX.TimApi.Constants.TransactionType.Refunding</li>
+ <li>SIX.TimApi.Constants.TransactionType.Reservation</li>
+ <li>SIX.TimApi.Constants.TransactionType.Unload</li>
+ </ul></p>
+
+<p>Transactions will fail if one of the above mentioned restrictions are
+ violated.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">omnichannelMerchantId</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6TimApi15TransactionDataC10ageToCheckSiSgvp"></a>
+                    <a name="//apple_ref/swift/Property/ageToCheck" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TimApi15TransactionDataC10ageToCheckSiSgvp">ageToCheck</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Age to check.</p>
+
+<p>Mandatory for (can not be nil):</p>
+
+<ul>
+</ul>
+
+<p>Conditional for (can be nil):</p>
+
+<ul>
+<li>CTransactionType.purchase</li>
+<li>CTransactionType.purchaseWithCashback</li>
+<li>CTransactionType.preAuthorization</li>
+<li>CTransactionType.reservation</li>
+</ul>
+
+<p>Forbidden (has to be always nil):</p>
+
+<ul>
+<li>CTransactionType.accountVerification</li>
+<li>CTransactionType.activateCard</li>
+<li>CTransactionType.authorizeCredit</li>
+<li>CTransactionType.authorizeDeposit</li>
+<li>CTransactionType.cashAdvance</li>
+<li>CTransactionType.collectPoints</li>
+<li>CTransactionType.combined</li>
+<li>CTransactionType.credit</li>
+<li>CTransactionType.funding</li>
+<li>CTransactionType.giro</li>
+<li>CTransactionType.load</li>
+<li>CTransactionType.loadVoucher</li>
+<li>CTransactionType.purchaseForcedAcceptance</li>
+<li>CTransactionType.purchaseMailOrdered</li>
+<li>CTransactionType.purchasePhoneOrdered</li>
+<li>CTransactionType.refunding</li>
+<li>CTransactionType.unload</li>
+<li>CTransactionType.adjustReservation</li>
+<li>CTransactionType.cancelReservation</li>
+<li>CTransactionType.debtRecovery</li>
+<li>CTransactionType.finalizePurchase</li>
+<li>CTransactionType.purchasePhoneAuthorized</li>
+<li>CTransactionType.purchaseReservation</li>
+<li>CTransactionType.purchaseReservationPhoneAuthorized</li>
+<li>CTransactionType.reversal</li>
+</ul>
+
+<p>Transactions will fail if one of the above mentioned restrictions are violated.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">ageToCheck</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6TimApi15TransactionDataC8authCodeSSSgvp"></a>
+                    <a name="//apple_ref/swift/Property/authCode" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TimApi15TransactionDataC8authCodeSSSgvp">authCode</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>If used by underlaying payment protocol.</p>
+
+<p>Mandatory for (can not be nil):
+ <ul>
+ </ul></p>
+
+<p>Conditional for (can be nil):
+ <ul>
+ <li>CTransactionType.credit</li>
+ </ul></p>
+
+<p>Forbidden (has to be always nil):
+ <ul>
+ <li>CTransactionType.accountVerification</li>
+ <li>CTransactionType.activateCard</li>
+ <li>CTransactionType.authorizeCredit</li>
+ <li>CTransactionType.authorizeDeposit</li>
+ <li>CTransactionType.cashAdvance</li>
+ <li>CTransactionType.collectPoints</li>
+ <li>CTransactionType.combined</li>
+ <li>CTransactionType.funding</li>
+ <li>CTransactionType.giro</li>
+ <li>CTransactionType.load</li>
+ <li>CTransactionType.loadVoucher</li>
+ <li>CTransactionType.preAuthorization</li>
+ <li>CTransactionType.purchase</li>
+ <li>CTransactionType.purchaseForcedAcceptance</li>
+ <li>CTransactionType.purchaseMailOrdered</li>
+ <li>CTransactionType.purchasePhoneOrdered</li>
+ <li>CTransactionType.purchaseWithCashback</li>
+ <li>CTransactionType.refunding</li>
+ <li>CTransactionType.reservation</li>
+ <li>CTransactionType.unload</li>
+ <li>CTransactionType.adjustReservation</li>
+ <li>CTransactionType.cancelReservation</li>
+ <li>CTransactionType.debtRecovery</li>
+ <li>CTransactionType.finalizePurchase</li>
+ <li>CTransactionType.purchasePhoneAuthorized</li>
+ <li>CTransactionType.purchaseReservation</li>
+ <li>CTransactionType.purchaseReservationPhoneAuthorized</li>
+ <li>CTransactionType.reversal</li>
+ </ul></p>
+
+<p>Transactions will fail if one of the above mentioned restrictions are violated.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">authCode</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6TimApi15TransactionDataC11descriptionSSvp"></a>
+                    <a name="//apple_ref/swift/Property/description" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TimApi15TransactionDataC11descriptionSSvp">description</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Textual representation.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">description</span><span class="p">:</span> <span class="kt">String</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2025 <a class="link" href="" target="_blank" rel="external noopener"></a>. All rights reserved. (Last updated: 2025-07-07)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.15.0</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</html>
