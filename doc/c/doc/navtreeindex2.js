@@ -1,5 +1,6 @@
 var NAVTREEINDEX2 =
 {
+"currency_8h.html#ad375db379bcf5a792280a2735f80f7d9a560697baf80d61c7a418d33723fb7ffe":[1,1,0,1,16,3,156],
 "currency_8h.html#ad375db379bcf5a792280a2735f80f7d9a5619f3373b19a4f33cd2e8cef93023c6":[1,1,0,1,16,3,174],
 "currency_8h.html#ad375db379bcf5a792280a2735f80f7d9a568ee31e53d5ea817cd4fd90d4ebc2ab":[1,1,0,1,16,3,44],
 "currency_8h.html#ad375db379bcf5a792280a2735f80f7d9a571fcdd53010627d3021eeefe53158c8":[1,1,0,1,16,3,126],
@@ -248,6 +249,5 @@ var NAVTREEINDEX2 =
 "custom__receipt__formatter_8h.html#a883a5ff78a5d2ad805f9f6af32a8d2afad2c2c406bf4714745f4f6ab38dbeb28e":[1,1,0,23,12,89],
 "custom__receipt__formatter_8h.html#a883a5ff78a5d2ad805f9f6af32a8d2afad43888d763918246abb892151bb13e83":[1,1,0,23,12,40],
 "custom__receipt__formatter_8h.html#a883a5ff78a5d2ad805f9f6af32a8d2afad79f596343d9a3369af04bd409869a3a":[1,1,0,23,12,57],
-"custom__receipt__formatter_8h.html#a883a5ff78a5d2ad805f9f6af32a8d2afadc6dced3146570cc295a6ead03176596":[1,1,0,23,12,46],
-"custom__receipt__formatter_8h.html#a883a5ff78a5d2ad805f9f6af32a8d2afadeb56037e4a3c245e31b4779bdf4b311":[1,1,0,23,12,24]
+"custom__receipt__formatter_8h.html#a883a5ff78a5d2ad805f9f6af32a8d2afadc6dced3146570cc295a6ead03176596":[1,1,0,23,12,46]
 };

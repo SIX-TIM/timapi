@@ -960,13 +960,13 @@
   
   
   <a id="SIX_TimApi_CardData__ctor_" data-uid="SIX.TimApi.CardData.#ctor*"></a>
-  <h4 id="SIX_TimApi_CardData__ctor_SIX_TimApi_Constants_PosEntryMode_String_String_String_String_String_System_Byte___System_Int32_System_Nullable_DateTime__String_String_List_SIX_TimApi_CardTrackData__Dictionary_String_System_Byte____String_SIX_TimApi_Constants_ProcessingDisposition_String_Int32_Int32_String_System_Byte___SIX_TimApi_Constants_CardProductType_System_Nullable_System_Int64__String_SIX_TimApi_Constants_AccountType_System_String_System_String_SIX_TimApi_Constants_TokenPanType_System_String_" data-uid="SIX.TimApi.CardData.#ctor(SIX.TimApi.Constants.PosEntryMode,String,String,String,String,String,System.Byte[],System.Int32,System.Nullable{DateTime},String,String,List{SIX.TimApi.CardTrackData},Dictionary{String,System.Byte[]},String,SIX.TimApi.Constants.ProcessingDisposition,String,Int32,Int32,String,System.Byte[],SIX.TimApi.Constants.CardProductType,System.Nullable{System.Int64},String,SIX.TimApi.Constants.AccountType,System.String,System.String,SIX.TimApi.Constants.TokenPanType,System.String)">CardData(PosEntryMode, String, String, String, String, String, Byte[], Int32, Nullable&lt;DateTime&gt;, String, String, List&lt;CardTrackData&gt;, Dictionary&lt;String, Byte[]&gt;, String, ProcessingDisposition, String, Int32, Int32, String, Byte[], CardProductType, Nullable&lt;Int64&gt;, String, AccountType, String, String, TokenPanType, String)</h4>
+  <h4 id="SIX_TimApi_CardData__ctor_SIX_TimApi_Constants_PosEntryMode_String_String_String_String_String_System_Byte___System_Int32_System_Nullable_DateTime__String_String_List_SIX_TimApi_CardTrackData__Dictionary_String_System_Byte____String_SIX_TimApi_Constants_ProcessingDisposition_String_Int32_Int32_String_System_Byte___SIX_TimApi_Constants_CardProductType_System_Nullable_System_Int64__String_SIX_TimApi_Constants_AccountType_System_String_System_String_SIX_TimApi_Constants_TokenPanType_System_String_System_Byte___" data-uid="SIX.TimApi.CardData.#ctor(SIX.TimApi.Constants.PosEntryMode,String,String,String,String,String,System.Byte[],System.Int32,System.Nullable{DateTime},String,String,List{SIX.TimApi.CardTrackData},Dictionary{String,System.Byte[]},String,SIX.TimApi.Constants.ProcessingDisposition,String,Int32,Int32,String,System.Byte[],SIX.TimApi.Constants.CardProductType,System.Nullable{System.Int64},String,SIX.TimApi.Constants.AccountType,System.String,System.String,SIX.TimApi.Constants.TokenPanType,System.String,System.Byte[])">CardData(PosEntryMode, String, String, String, String, String, Byte[], Int32, Nullable&lt;DateTime&gt;, String, String, List&lt;CardTrackData&gt;, Dictionary&lt;String, Byte[]&gt;, String, ProcessingDisposition, String, Int32, Int32, String, Byte[], CardProductType, Nullable&lt;Int64&gt;, String, AccountType, String, String, TokenPanType, String, Byte[])</h4>
   <div class="markdown level1 summary"><p>Create card data information.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public CardData(PosEntryMode posEntryMode, String aid, String acc, String cardNumber, String cardNumberPrintable, String cardNumberPrintableCardholder, byte[] cardNumberEnc, int cardNumberEncKeyIndex, DateTime? cardExpiryDate, String brandName, String tenderName, List&lt;CardTrackData&gt; cardTrackDatas, Dictionary&lt;String, byte[]&gt; loyaltyInformation, String cardRef, ProcessingDisposition processingDisposition, String language, Int32 cardCountryCode, Int32 terminalCountryCode, String uid, byte[] asrpd, CardProductType cardProductType, long? cardType, String cardholder, AccountType accountType, string emvPar, string tokenPan, TokenPanType tokenPanType, string additionalCardData)</code></pre>
+    <pre><code class="lang-csharp hljs">public CardData(PosEntryMode posEntryMode, String aid, String acc, String cardNumber, String cardNumberPrintable, String cardNumberPrintableCardholder, byte[] cardNumberEnc, int cardNumberEncKeyIndex, DateTime? cardExpiryDate, String brandName, String tenderName, List&lt;CardTrackData&gt; cardTrackDatas, Dictionary&lt;String, byte[]&gt; loyaltyInformation, String cardRef, ProcessingDisposition processingDisposition, String language, Int32 cardCountryCode, Int32 terminalCountryCode, String uid, byte[] asrpd, CardProductType cardProductType, long? cardType, String cardholder, AccountType accountType, string emvPar, string tokenPan, TokenPanType tokenPanType, string additionalCardData, byte[] surrogatePanSecondary)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1116,6 +1116,11 @@
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">additionalCardData</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td><span class="parametername">surrogatePanSecondary</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -1760,6 +1765,31 @@ Deprecated! Use LoyaltyInformation instead.</p>
         <td><a class="xref" href="SIX.TimApi.Constants.ProcessingDisposition.html">ProcessingDisposition</a></td>
         <td><p>The processing disposition.</p>
 </td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SIX_TimApi_CardData_SurrogatePanSecondary_" data-uid="SIX.TimApi.CardData.SurrogatePanSecondary*"></a>
+  <h4 id="SIX_TimApi_CardData_SurrogatePanSecondary" data-uid="SIX.TimApi.CardData.SurrogatePanSecondary">SurrogatePanSecondary</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public byte[] SurrogatePanSecondary { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td></td>
       </tr>
     </tbody>
   </table>

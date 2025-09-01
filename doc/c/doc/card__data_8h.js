@@ -23,6 +23,7 @@ var card__data_8h =
     [ "ta_card_data_get_loyalty_information", "card__data_8h.html#aaf77a503e29f15db3c490cf582e64227", null ],
     [ "ta_card_data_get_pos_entry_mode", "card__data_8h.html#ae92aad88b989faa10b755a3d1fbb7771", null ],
     [ "ta_card_data_get_processing_disposition", "card__data_8h.html#a626bfcde03662583b760e1ca5ac00eaf", null ],
+    [ "ta_card_data_get_surrogate_pan_secondary", "card__data_8h.html#aa685e4a18b74b94960f8ef59f2dc3619", null ],
     [ "ta_card_data_get_tender_name", "card__data_8h.html#a19bb6fb974e7c1181ca10ec88f3e8ceb", null ],
     [ "ta_card_data_get_terminal_country_code", "card__data_8h.html#a772c93c6fd32b7e9633bd46fe73eec69", null ],
     [ "ta_card_data_get_token_pan", "card__data_8h.html#a2732158fb4ea3f721ed3ca8842033c6c", null ],

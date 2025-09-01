@@ -2844,6 +2844,8 @@ but must not be transmitted alone.</p>
 <p>Conditional for (can be null):
  <ul>
  <li>SIX.TimApi.Constants.TransactionType.Credit</li>
+ <li>SIX.TimApi.Constants.TransactionType.FinalizePurchase</li>
+ <li>SIX.TimApi.Constants.TransactionType.Purchase</li>
  </ul></p>
 
 <p>Forbidden (has to be always null):
@@ -2851,7 +2853,6 @@ but must not be transmitted alone.</p>
  <li>SIX.TimApi.Constants.TransactionType.AdjustReservation</li>
  <li>SIX.TimApi.Constants.TransactionType.CancelReservation</li>
  <li>SIX.TimApi.Constants.TransactionType.DebtRecovery</li>
- <li>SIX.TimApi.Constants.TransactionType.FinalizePurchase</li>
  <li>SIX.TimApi.Constants.TransactionType.PurchasePhoneAuthorized</li>
  <li>SIX.TimApi.Constants.TransactionType.PurchaseReservation</li>
  <li>SIX.TimApi.Constants.TransactionType.PurchaseReservationPhoneAuthorized</li>
@@ -2917,6 +2918,8 @@ but must not be transmitted alone.</p>
 <p>Conditional for (can be null):
  <ul>
  <li>SIX.TimApi.Constants.TransactionType.Credit</li>
+ <li>SIX.TimApi.Constants.TransactionType.FinalizePurchase</li>
+ <li>SIX.TimApi.Constants.TransactionType.Purchase</li>
  </ul></p>
 
 <p>Forbidden (has to be always null):
@@ -2924,7 +2927,6 @@ but must not be transmitted alone.</p>
  <li>SIX.TimApi.Constants.TransactionType.AdjustReservation</li>
  <li>SIX.TimApi.Constants.TransactionType.CancelReservation</li>
  <li>SIX.TimApi.Constants.TransactionType.DebtRecovery</li>
- <li>SIX.TimApi.Constants.TransactionType.FinalizePurchase</li>
  <li>SIX.TimApi.Constants.TransactionType.PurchasePhoneAuthorized</li>
  <li>SIX.TimApi.Constants.TransactionType.PurchaseReservation</li>
  <li>SIX.TimApi.Constants.TransactionType.PurchaseReservationPhoneAuthorized</li>
@@ -2941,7 +2943,6 @@ but must not be transmitted alone.</p>
  <li>SIX.TimApi.Constants.TransactionType.Load</li>
  <li>SIX.TimApi.Constants.TransactionType.LoadVoucher</li>
  <li>SIX.TimApi.Constants.TransactionType.PreAuthorization</li>
- <li>SIX.TimApi.Constants.TransactionType.Purchase</li>
  <li>SIX.TimApi.Constants.TransactionType.PurchaseForcedAcceptance</li>
  <li>SIX.TimApi.Constants.TransactionType.PurchaseMailOrdered</li>
  <li>SIX.TimApi.Constants.TransactionType.PurchasePhoneOrdered</li>
@@ -3112,6 +3113,77 @@ but must not be transmitted alone.</p>
                 <li class="item">
                   <div>
                     <code>
+                    <a name="/s:6TimApi15TransactionDataC7isFinalSbvp"></a>
+                    <a name="//apple_ref/swift/Property/isFinal" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TimApi15TransactionDataC7isFinalSbvp">isFinal</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This property indicates whether an omnichannel operation
+ will be the final. Used for Capture Payments.</p>
+
+<p>Mandatory for (can not be null):
+ <ul>
+ </ul></p>
+
+<p>Conditional for (can be null):
+ <ul>
+ <li>SIX.TimApi.Constants.TransactionType.FinalizePurchase</li>
+ </ul></p>
+
+<p>Forbidden (has to be always null):
+ <ul>
+ <li>SIX.TimApi.Constants.TransactionType.AdjustReservation</li>
+ <li>SIX.TimApi.Constants.TransactionType.CancelReservation</li>
+ <li>SIX.TimApi.Constants.TransactionType.DebtRecovery</li>
+ <li>SIX.TimApi.Constants.TransactionType.PurchasePhoneAuthorized</li>
+ <li>SIX.TimApi.Constants.TransactionType.PurchaseReservation</li>
+ <li>SIX.TimApi.Constants.TransactionType.PurchaseReservationPhoneAuthorized</li>
+ <li>SIX.TimApi.Constants.TransactionType.Reversal</li>
+ <li>SIX.TimApi.Constants.TransactionType.AccountVerification</li>
+ <li>SIX.TimApi.Constants.TransactionType.ActivateCard</li>
+ <li>SIX.TimApi.Constants.TransactionType.AuthorizeCredit</li>
+ <li>SIX.TimApi.Constants.TransactionType.AuthorizeDeposit</li>
+ <li>SIX.TimApi.Constants.TransactionType.CashAdvance</li>
+ <li>SIX.TimApi.Constants.TransactionType.CollectPoints</li>
+ <li>SIX.TimApi.Constants.TransactionType.Combined</li>
+ <li>SIX.TimApi.Constants.TransactionType.Funding</li>
+ <li>SIX.TimApi.Constants.TransactionType.Giro</li>
+ <li>SIX.TimApi.Constants.TransactionType.Load</li>
+ <li>SIX.TimApi.Constants.TransactionType.LoadVoucher</li>
+ <li>SIX.TimApi.Constants.TransactionType.PreAuthorization</li>
+ <li>SIX.TimApi.Constants.TransactionType.Purchase</li>
+ <li>SIX.TimApi.Constants.TransactionType.PurchaseForcedAcceptance</li>
+ <li>SIX.TimApi.Constants.TransactionType.PurchaseMailOrdered</li>
+ <li>SIX.TimApi.Constants.TransactionType.PurchasePhoneOrdered</li>
+ <li>SIX.TimApi.Constants.TransactionType.PurchaseWithCashback</li>
+ <li>SIX.TimApi.Constants.TransactionType.Refunding</li>
+ <li>SIX.TimApi.Constants.TransactionType.Reservation</li>
+ <li>SIX.TimApi.Constants.TransactionType.Unload</li>
+ </ul></p>
+
+<p>Transactions will fail if one of the above mentioned restrictions are
+ violated.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">isFinal</span><span class="p">:</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
                     <a name="/s:6TimApi15TransactionDataC11descriptionSSvp"></a>
                     <a name="//apple_ref/swift/Property/description" class="dashAnchor"></a>
                     <a class="token" href="#/s:6TimApi15TransactionDataC11descriptionSSvp">description</a>
@@ -3141,7 +3213,7 @@ but must not be transmitted alone.</p>
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2025 <a class="link" href="" target="_blank" rel="external noopener"></a>. All rights reserved. (Last updated: 2025-07-07)</p>
+          <p>&copy; 2025 <a class="link" href="" target="_blank" rel="external noopener"></a>. All rights reserved. (Last updated: 2025-07-11)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.15.0</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
         </section>
       </article>

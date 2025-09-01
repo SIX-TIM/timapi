@@ -296,6 +296,10 @@ Functions</h2></td></tr>
 <tr class="separator:a502374908293ef1743cf3f2606aac224"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa428b6cd90eb89fbc983f8d879ff523a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="result__code_8h.html#ae860ee870a289833a24a586ba0c24975">ta_e_result_code_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="transaction__data_8h.html#aa428b6cd90eb89fbc983f8d879ff523a">ta_transaction_data_set_allowed_app_list</a> (<a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a> trx_data, <a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a> allowed_app_list)</td></tr>
 <tr class="separator:aa428b6cd90eb89fbc983f8d879ff523a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61a3610d20683b0e11a1ffa6b52e0f99"><td class="memItemLeft" align="right" valign="top"><a class="el" href="result__code_8h.html#ae860ee870a289833a24a586ba0c24975">ta_e_result_code_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="transaction__data_8h.html#a61a3610d20683b0e11a1ffa6b52e0f99">ta_transaction_data_get_is_final</a> (<a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a> trx_data, <a class="el" href="boolean_8h.html#a5d3636b1f1f5de7550c138d0f81825bf">ta_e_boolean_t</a> *is_final)</td></tr>
+<tr class="separator:a61a3610d20683b0e11a1ffa6b52e0f99"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88f946dc3eeb07c5cab69a34e4d411d4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="result__code_8h.html#ae860ee870a289833a24a586ba0c24975">ta_e_result_code_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="transaction__data_8h.html#a88f946dc3eeb07c5cab69a34e4d411d4">ta_transaction_data_set_is_final</a> (<a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a> trx_data, <a class="el" href="boolean_8h.html#a5d3636b1f1f5de7550c138d0f81825bf">ta_e_boolean_t</a> is_final)</td></tr>
+<tr class="separator:a88f946dc3eeb07c5cab69a34e4d411d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="a08d7b1f880ece1fb8444d675f300c260"></a>
@@ -1018,6 +1022,51 @@ Functions</h2></td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>trx_data</em> is <em>ta_object_invalid</em>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>trx_data</em> is not of type <a class="el" href="transaction__data_8h.html">transaction_data</a>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>installment_allowed</em> is <em>null-pointer</em>. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a61a3610d20683b0e11a1ffa6b52e0f99"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a61a3610d20683b0e11a1ffa6b52e0f99">&#9670;&nbsp;</a></span>ta_transaction_data_get_is_final()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="result__code_8h.html#ae860ee870a289833a24a586ba0c24975">ta_e_result_code_t</a> ta_transaction_data_get_is_final </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a>&#160;</td>
+          <td class="paramname"><em>trx_data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="boolean_8h.html#a5d3636b1f1f5de7550c138d0f81825bf">ta_e_boolean_t</a> *&#160;</td>
+          <td class="paramname"><em>is_final</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>This property indicates whether an omnichannel operation will be the final. Used for Capture Payments.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">trx_data</td><td>Object instance of type <a class="el" href="transaction__data_8h.html">transaction_data</a>. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">is_final</td><td>Pointer to variable to write value to. Value is <em>ta_c_b_undefined</em> if value is not set in <em>trx_data</em>.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">ta_c_rc_ok</td><td>Object instance written to <em>is_final</em>. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>trx_data</em> is <em>ta_object_invalid</em>. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>trx_data</em> is not of type <a class="el" href="transaction__data_8h.html">transaction_data</a>. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>is_final</em> is <em>null-pointer</em>. </td></tr>
   </table>
   </dd>
 </dl>
@@ -3093,6 +3142,86 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a88f946dc3eeb07c5cab69a34e4d411d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a88f946dc3eeb07c5cab69a34e4d411d4">&#9670;&nbsp;</a></span>ta_transaction_data_set_is_final()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="result__code_8h.html#ae860ee870a289833a24a586ba0c24975">ta_e_result_code_t</a> ta_transaction_data_set_is_final </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a>&#160;</td>
+          <td class="paramname"><em>trx_data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="boolean_8h.html#a5d3636b1f1f5de7550c138d0f81825bf">ta_e_boolean_t</a>&#160;</td>
+          <td class="paramname"><em>is_final</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>This property indicates whether an omnichannel operation will be the final. Used for Capture Payments.</p>
+<p>Mandatory for (can not be null):</p>
+<p>Conditional for (can be null):</p><ul>
+<li>ta_c_tt_finalize_purchase</li>
+</ul>
+<p>Forbidden (has to be always null):</p><ul>
+<li>ta_c_tt_credit</li>
+<li>ta_c_tt_adjust_reservation</li>
+<li>ta_c_tt_cancel_reservation</li>
+<li>ta_c_tt_debt_recovery</li>
+<li>ta_c_tt_purchase</li>
+<li>ta_c_tt_purchase_phone_authorized</li>
+<li>ta_c_tt_purchase_reservation</li>
+<li>ta_c_tt_purchase_reservation_phone_authorized</li>
+<li>ta_c_tt_reversal</li>
+<li>ta_c_tt_account_verification</li>
+<li>ta_c_tt_activate_card</li>
+<li>ta_c_tt_authorize_credit</li>
+<li>ta_c_tt_authorize_deposit</li>
+<li>ta_c_tt_cash_advance</li>
+<li>ta_c_tt_collect_points</li>
+<li>ta_c_tt_combined</li>
+<li>ta_c_tt_funding</li>
+<li>ta_c_tt_giro</li>
+<li>ta_c_tt_load</li>
+<li>ta_c_tt_load_voucher</li>
+<li>ta_c_tt_pre_authorization</li>
+<li>ta_c_tt_purchase_forced_acceptance</li>
+<li>ta_c_tt_purchase_mail_ordered</li>
+<li>ta_c_tt_purchase_phone_ordered</li>
+<li>ta_c_tt_purchase_with_cashback</li>
+<li>ta_c_tt_refunding</li>
+<li>ta_c_tt_reservation</li>
+<li>ta_c_tt_unload</li>
+</ul>
+<p>Transactions will fail if one of the above mentioned restrictions are violated.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">trx_data</td><td>Object instance of type <a class="el" href="transaction__data_8h.html">transaction_data</a>. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">is_final</td><td>Value to set. Value can be <em>ta_c_b_undefined</em> to clear the value in <em>trx_data</em>.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">ta_c_rc_ok</td><td>Value assigned to <em>trx_data</em>. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>trx_data</em> is <em>ta_object_invalid</em>. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>trx_data</em> is not of type <a class="el" href="transaction__data_8h.html">transaction_data</a>. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>is_final</em> is <em>null-pointer</em>. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a867094a45dde58b96c8f53944153cde9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a867094a45dde58b96c8f53944153cde9">&#9670;&nbsp;</a></span>ta_transaction_data_set_language()</h2>
 
@@ -3452,12 +3581,13 @@ Functions</h2></td></tr>
 <p>Mandatory for (can not be null):</p>
 <p>Conditional for (can be null):</p><ul>
 <li>ta_c_tt_credit</li>
+<li>ta_c_tt_finalize_purchase</li>
+<li>ta_c_tt_purchase</li>
 </ul>
 <p>Forbidden (has to be always null):</p><ul>
 <li>ta_c_tt_adjust_reservation</li>
 <li>ta_c_tt_cancel_reservation</li>
 <li>ta_c_tt_debt_recovery</li>
-<li>ta_c_tt_finalize_purchase</li>
 <li>ta_c_tt_purchase_phone_authorized</li>
 <li>ta_c_tt_purchase_reservation</li>
 <li>ta_c_tt_purchase_reservation_phone_authorized</li>
@@ -3474,7 +3604,6 @@ Functions</h2></td></tr>
 <li>ta_c_tt_load</li>
 <li>ta_c_tt_load_voucher</li>
 <li>ta_c_tt_pre_authorization</li>
-<li>ta_c_tt_purchase</li>
 <li>ta_c_tt_purchase_forced_acceptance</li>
 <li>ta_c_tt_purchase_mail_ordered</li>
 <li>ta_c_tt_purchase_phone_ordered</li>
@@ -3532,12 +3661,13 @@ Functions</h2></td></tr>
 <p>Mandatory for (can not be null):</p>
 <p>Conditional for (can be null):</p><ul>
 <li>ta_c_tt_credit</li>
+<li>ta_c_tt_finalize_purchase</li>
+<li>ta_c_tt_purchase</li>
 </ul>
 <p>Forbidden (has to be always null):</p><ul>
 <li>ta_c_tt_adjust_reservation</li>
 <li>ta_c_tt_cancel_reservation</li>
 <li>ta_c_tt_debt_recovery</li>
-<li>ta_c_tt_finalize_purchase</li>
 <li>ta_c_tt_purchase_phone_authorized</li>
 <li>ta_c_tt_purchase_reservation</li>
 <li>ta_c_tt_purchase_reservation_phone_authorized</li>
@@ -3555,7 +3685,6 @@ Functions</h2></td></tr>
 <li>ta_c_tt_load</li>
 <li>ta_c_tt_load_voucher</li>
 <li>ta_c_tt_pre_authorization</li>
-<li>ta_c_tt_purchase</li>
 <li>ta_c_tt_purchase_forced_acceptance</li>
 <li>ta_c_tt_purchase_mail_ordered</li>
 <li>ta_c_tt_purchase_phone_ordered</li>

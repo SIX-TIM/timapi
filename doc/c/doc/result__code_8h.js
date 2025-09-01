@@ -152,6 +152,8 @@ var result__code_8h =
       [ "ta_c_rc_unknown_card", "result__code_8h.html#aebaf00d1ceef4b827866ca9de0bd3320a39977ea787d536a13f6e109c170d117d", null ],
       [ "ta_c_rc_invalid_transaction_reference_no", "result__code_8h.html#aebaf00d1ceef4b827866ca9de0bd3320a85626d29838bc0f51cd1f364e3040f4f", null ],
       [ "ta_c_rc_own_risk_transaction_log_full", "result__code_8h.html#aebaf00d1ceef4b827866ca9de0bd3320a6b4bff41b82fedbc8992fff9bc1f9b15", null ],
+      [ "ta_c_rc_generic_blacklist_match", "result__code_8h.html#aebaf00d1ceef4b827866ca9de0bd3320a66ea698c21aa29f4b9d0cac468fe003d", null ],
+      [ "ta_c_rc_duplicate_request_in_progress", "result__code_8h.html#aebaf00d1ceef4b827866ca9de0bd3320ade56938e82b320649ef7c680ddfa7765", null ],
       [ "ta_c_rc_invalid_argument", "result__code_8h.html#aebaf00d1ceef4b827866ca9de0bd3320a306acc157474b36c57faa559c710d8c3", null ],
       [ "ta_c_rc_out_of_memory", "result__code_8h.html#aebaf00d1ceef4b827866ca9de0bd3320a1895fe80e9772f70ef54177746bfed4a", null ],
       [ "ta_c_rc_system_error", "result__code_8h.html#aebaf00d1ceef4b827866ca9de0bd3320a58db8236054739cfd49c849b0c16e1be", null ]
