@@ -1220,6 +1220,14 @@ $(document).ready(function(){initNavTree('search.html','');});
     <field name="text">Additional card information non-PCI that can have merchant specific formatting Available if Dialog guide is enabled card_data Object instance of type card_data additional_card_data Pointer to variable to write object instance to Object instance is of type string and is not retained Object instance is ta_object_invalid if value is not set in card_data ta_c_rc_ok Object instance written to asrpd ta_c_rc_invalid_argument card_data is ta_object_invalid ta_c_rc_invalid_argument card_data is not of type card_data ta_c_rc_invalid_argument additional_card_data is null-pointer</field>
   </doc>
   <doc>
+    <field name="type">function</field>
+    <field name="name">ta_card_data_get_surrogate_pan_secondary</field>
+    <field name="args">(ta_object_t card_data, ta_object_t *surrogate_pan_secondary)</field>
+    <field name="url">card__data_8h.html#aa685e4a18b74b94960f8ef59f2dc3619</field>
+    <field name="keywords">ta_card_data_get_surrogate_pan_secondary</field>
+    <field name="text">Surrogate Pan Secondary card_data Object instance of type card_data asrpd Pointer to variable to write object instance to Object instance is of type string and is not retained Object instance is ta_object_invalid if value is not set in card_data ta_c_rc_ok Object instance written to surrogate_pan_secondary ta_c_rc_invalid_argument card_data is ta_object_invalid ta_c_rc_invalid_argument card_data is not of type card_data ta_c_rc_invalid_argument surrogate_pan_secondary is null-pointer</field>
+  </doc>
+  <doc>
     <field name="type">file</field>
     <field name="name">card_track_data.h</field>
     <field name="url">card__track__data_8h.html</field>
@@ -6562,6 +6570,13 @@ $(document).ready(function(){initNavTree('search.html','');});
     <field name="text">Flag used to suppress display messages 0 Disabled all cardholder and attendant display messages shall be displayed 1 Cardholder Suppression all cardholder display messages except shall be suppressed for this transaction 2 RFU Attendant Suppression all attendant display messages except shall be suppressed for this transaction 3 RFU Full Suppression all cardholder and attendant display messages except and shall be suppressed for this transaction Any other values or null should be treated as 0 Specification retail</field>
   </doc>
   <doc>
+    <field name="type">enumvalue</field>
+    <field name="name">ta_c_mot_order_id</field>
+    <field name="url">merchant__option__type_8h.html#aea3eaf253bcce054769642d812d46362a00c6632102ca2d6df8e43ce57c6fafe4</field>
+    <field name="keywords">ta_c_mot_order_id</field>
+    <field name="text">Order ID originally sent by the ECR Specification retail</field>
+  </doc>
+  <doc>
     <field name="type">file</field>
     <field name="name">ngv_mode.h</field>
     <field name="url">enum__string__maps_2ngv__mode_8h.html</field>
@@ -9619,6 +9634,13 @@ $(document).ready(function(){initNavTree('search.html','');});
   </doc>
   <doc>
     <field name="type">enumvalue</field>
+    <field name="name">ta_c_rid_dangerous_goods</field>
+    <field name="url">resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9add855e59eddcd0222f1ee589d460c38f</field>
+    <field name="keywords">ta_c_rid_dangerous_goods</field>
+    <field name="text">I confirm that I have read the brochure «Dangerous goods in international mail»</field>
+  </doc>
+  <doc>
+    <field name="type">enumvalue</field>
     <field name="name">ta_c_rid_banking_insert_card</field>
     <field name="url">resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9ad55032f46f2c0e7e1f865c224e15fa54</field>
     <field name="keywords">ta_c_rid_banking_insert_card</field>
@@ -11113,6 +11135,20 @@ $(document).ready(function(){initNavTree('search.html','');});
   </doc>
   <doc>
     <field name="type">enumvalue</field>
+    <field name="name">ta_c_rc_generic_blacklist_match</field>
+    <field name="url">result__code_8h.html#aebaf00d1ceef4b827866ca9de0bd3320a66ea698c21aa29f4b9d0cac468fe003d</field>
+    <field name="keywords">ta_c_rc_generic_blacklist_match</field>
+    <field name="text">Generic Blacklist Match E.g Location IP BIN card number customer name Error message Generic Blacklist Match Specification retail</field>
+  </doc>
+  <doc>
+    <field name="type">enumvalue</field>
+    <field name="name">ta_c_rc_duplicate_request_in_progress</field>
+    <field name="url">result__code_8h.html#aebaf00d1ceef4b827866ca9de0bd3320ade56938e82b320649ef7c680ddfa7765</field>
+    <field name="keywords">ta_c_rc_duplicate_request_in_progress</field>
+    <field name="text">Duplicate Request in Progress Error message Duplicate Request in Progress Specification retail</field>
+  </doc>
+  <doc>
+    <field name="type">enumvalue</field>
     <field name="name">ta_c_rc_invalid_argument</field>
     <field name="url">result__code_8h.html#aebaf00d1ceef4b827866ca9de0bd3320a306acc157474b36c57faa559c710d8c3</field>
     <field name="keywords">ta_c_rc_invalid_argument</field>
@@ -11777,6 +11813,20 @@ $(document).ready(function(){initNavTree('search.html','');});
     <field name="url">transaction__reason_8h.html#a8b789089b0e1fb7bdf642e5dcf140621a9c7f666efcb899cd0fe56d229735d590</field>
     <field name="keywords">ta_c_tr_recurring_fixed</field>
     <field name="text">Establish credentials on file for recurring payment with fixed amount Specification retail</field>
+  </doc>
+  <doc>
+    <field name="type">enumvalue</field>
+    <field name="name">ta_c_tr_recurring_subsequent</field>
+    <field name="url">transaction__reason_8h.html#a8b789089b0e1fb7bdf642e5dcf140621a83910e92a951b1a7f346f68a54758e4a</field>
+    <field name="keywords">ta_c_tr_recurring_subsequent</field>
+    <field name="text">Establish credentials on file for recurring subsequent payment with variable amount Specification retail</field>
+  </doc>
+  <doc>
+    <field name="type">enumvalue</field>
+    <field name="name">ta_c_tr_recurring_fixed_subsequent</field>
+    <field name="url">transaction__reason_8h.html#a8b789089b0e1fb7bdf642e5dcf140621af11d32dfe0603cf2957af15c37f366c8</field>
+    <field name="keywords">ta_c_tr_recurring_fixed_subsequent</field>
+    <field name="text">Establish credentials on file for recurring subsequent payment with fixed amount Specification retail</field>
   </doc>
   <doc>
     <field name="type">file</field>
@@ -19112,7 +19162,7 @@ $(document).ready(function(){initNavTree('search.html','');});
     <field name="args">(ta_object_t trx_data, ta_object_t payment_id)</field>
     <field name="url">transaction__data_8h.html#a472324bcfae2e53aee9c6155fbd1986a</field>
     <field name="keywords">ta_transaction_data_set_omnichannel_payment_id</field>
-    <field name="text">To identify an Omnichannel transaction not used for Saferpay the OmnichannelPaymentId has to be set in TransactionData This attribute is also used to identify the Omnichannel host a OmnichannelPaymentId starting by 90 meens for example that Ogone has to be used Mandatory for can not be null Conditional for can be null ta_c_tt_credit Forbidden has to be always null ta_c_tt_adjust_reservation ta_c_tt_cancel_reservation ta_c_tt_debt_recovery ta_c_tt_finalize_purchase ta_c_tt_purchase_phone_authorized ta_c_tt_purchase_reservation ta_c_tt_purchase_reservation_phone_authorized ta_c_tt_reversal ta_c_tt_account_verification ta_c_tt_activate_card ta_c_tt_authorize_credit ta_c_tt_authorize_deposit ta_c_tt_cash_advance ta_c_tt_collect_points ta_c_tt_combined ta_c_tt_credit ta_c_tt_funding ta_c_tt_giro ta_c_tt_load ta_c_tt_load_voucher ta_c_tt_pre_authorization ta_c_tt_purchase ta_c_tt_purchase_forced_acceptance ta_c_tt_purchase_mail_ordered ta_c_tt_purchase_phone_ordered ta_c_tt_purchase_with_cashback ta_c_tt_refunding ta_c_tt_reservation ta_c_tt_unload Transactions will fail if one of the above mentioned restrictions are violated trx_data Object instance of type transaction_data payment_id Value to set Value can be ta_c_ngvm_undefined to clear the value in trx_data ta_c_rc_ok Value assigned to trx_data ta_c_rc_invalid_argument trx_data is ta_object_invalid ta_c_rc_invalid_argument trx_data is not of type transaction_data ta_c_rc_invalid_argument payment_id is null-pointer</field>
+    <field name="text">To identify an Omnichannel transaction not used for Saferpay the OmnichannelPaymentId has to be set in TransactionData This attribute is also used to identify the Omnichannel host a OmnichannelPaymentId starting by 90 meens for example that Ogone has to be used Mandatory for can not be null Conditional for can be null ta_c_tt_credit ta_c_tt_finalize_purchase ta_c_tt_purchase Forbidden has to be always null ta_c_tt_adjust_reservation ta_c_tt_cancel_reservation ta_c_tt_debt_recovery ta_c_tt_purchase_phone_authorized ta_c_tt_purchase_reservation ta_c_tt_purchase_reservation_phone_authorized ta_c_tt_reversal ta_c_tt_account_verification ta_c_tt_activate_card ta_c_tt_authorize_credit ta_c_tt_authorize_deposit ta_c_tt_cash_advance ta_c_tt_collect_points ta_c_tt_combined ta_c_tt_credit ta_c_tt_funding ta_c_tt_giro ta_c_tt_load ta_c_tt_load_voucher ta_c_tt_pre_authorization ta_c_tt_purchase_forced_acceptance ta_c_tt_purchase_mail_ordered ta_c_tt_purchase_phone_ordered ta_c_tt_purchase_with_cashback ta_c_tt_refunding ta_c_tt_reservation ta_c_tt_unload Transactions will fail if one of the above mentioned restrictions are violated trx_data Object instance of type transaction_data payment_id Value to set Value can be ta_c_ngvm_undefined to clear the value in trx_data ta_c_rc_ok Value assigned to trx_data ta_c_rc_invalid_argument trx_data is ta_object_invalid ta_c_rc_invalid_argument trx_data is not of type transaction_data ta_c_rc_invalid_argument payment_id is null-pointer</field>
   </doc>
   <doc>
     <field name="type">function</field>
@@ -19128,7 +19178,7 @@ $(document).ready(function(){initNavTree('search.html','');});
     <field name="args">(ta_object_t trx_data, ta_object_t merchant_id)</field>
     <field name="url">transaction__data_8h.html#ac585ece34a7a6122946e83b6e23d60f0</field>
     <field name="keywords">ta_transaction_data_set_omnichannel_merchant_id</field>
-    <field name="text">The OmnichannelMerchantId is used to identify the merchant on a Omnichannel host This field is not used for Saferpay but is for example for Ogone Mandatory for can not be null Conditional for can be null ta_c_tt_credit Forbidden has to be always null ta_c_tt_adjust_reservation ta_c_tt_cancel_reservation ta_c_tt_debt_recovery ta_c_tt_finalize_purchase ta_c_tt_purchase_phone_authorized ta_c_tt_purchase_reservation ta_c_tt_purchase_reservation_phone_authorized ta_c_tt_reversal ta_c_tt_account_verification ta_c_tt_activate_card ta_c_tt_authorize_credit ta_c_tt_authorize_deposit ta_c_tt_cash_advance ta_c_tt_collect_points ta_c_tt_combined ta_c_tt_funding ta_c_tt_giro ta_c_tt_load ta_c_tt_load_voucher ta_c_tt_pre_authorization ta_c_tt_purchase ta_c_tt_purchase_forced_acceptance ta_c_tt_purchase_mail_ordered ta_c_tt_purchase_phone_ordered ta_c_tt_purchase_with_cashback ta_c_tt_refunding ta_c_tt_reservation ta_c_tt_unload Transactions will fail if one of the above mentioned restrictions are violated trx_data Object instance of type transaction_data merchant_id Value to set Value can be ta_c_ngvm_undefined to clear the value in trx_data ta_c_rc_ok Value assigned to trx_data ta_c_rc_invalid_argument trx_data is ta_object_invalid ta_c_rc_invalid_argument trx_data is not of type transaction_data ta_c_rc_invalid_argument merchant_id is null-pointer</field>
+    <field name="text">The OmnichannelMerchantId is used to identify the merchant on a Omnichannel host This field is not used for Saferpay but is for example for Ogone Mandatory for can not be null Conditional for can be null ta_c_tt_credit ta_c_tt_finalize_purchase ta_c_tt_purchase Forbidden has to be always null ta_c_tt_adjust_reservation ta_c_tt_cancel_reservation ta_c_tt_debt_recovery ta_c_tt_purchase_phone_authorized ta_c_tt_purchase_reservation ta_c_tt_purchase_reservation_phone_authorized ta_c_tt_reversal ta_c_tt_account_verification ta_c_tt_activate_card ta_c_tt_authorize_credit ta_c_tt_authorize_deposit ta_c_tt_cash_advance ta_c_tt_collect_points ta_c_tt_combined ta_c_tt_funding ta_c_tt_giro ta_c_tt_load ta_c_tt_load_voucher ta_c_tt_pre_authorization ta_c_tt_purchase_forced_acceptance ta_c_tt_purchase_mail_ordered ta_c_tt_purchase_phone_ordered ta_c_tt_purchase_with_cashback ta_c_tt_refunding ta_c_tt_reservation ta_c_tt_unload Transactions will fail if one of the above mentioned restrictions are violated trx_data Object instance of type transaction_data merchant_id Value to set Value can be ta_c_ngvm_undefined to clear the value in trx_data ta_c_rc_ok Value assigned to trx_data ta_c_rc_invalid_argument trx_data is ta_object_invalid ta_c_rc_invalid_argument trx_data is not of type transaction_data ta_c_rc_invalid_argument merchant_id is null-pointer</field>
   </doc>
   <doc>
     <field name="type">function</field>
@@ -19193,6 +19243,22 @@ $(document).ready(function(){initNavTree('search.html','');});
     <field name="url">transaction__data_8h.html#aa428b6cd90eb89fbc983f8d879ff523a</field>
     <field name="keywords">ta_transaction_data_set_allowed_app_list</field>
     <field name="text">Allowed applications for a transaction For each application that should be allowed for the next transaction one entry is required A specific AID must only be present once in this list Mandatory for can not be null Conditional for can be null ta_c_tt_credit ta_c_tt_adjust_reservation ta_c_tt_cancel_reservation ta_c_tt_debt_recovery ta_c_tt_finalize_purchase ta_c_tt_purchase_phone_authorized ta_c_tt_purchase_reservation ta_c_tt_purchase_reservation_phone_authorized ta_c_tt_reversal ta_c_tt_account_verification ta_c_tt_activate_card ta_c_tt_authorize_credit ta_c_tt_authorize_deposit ta_c_tt_cash_advance ta_c_tt_collect_points ta_c_tt_combined ta_c_tt_funding ta_c_tt_giro ta_c_tt_load ta_c_tt_load_voucher ta_c_tt_pre_authorization ta_c_tt_purchase ta_c_tt_purchase_forced_acceptance ta_c_tt_purchase_mail_ordered ta_c_tt_purchase_phone_ordered ta_c_tt_purchase_with_cashback ta_c_tt_refunding ta_c_tt_reservation ta_c_tt_unload Forbidden has to be always null Transactions will fail if one of the above mentioned restrictions are violated trx_data Object instance of type transaction_data allowed_app_list Value to set Value can be ta_object_invalid to clear the value in trx_data If not ta_object_invalid Object instance is of type list with list entries of type string and is retained ta_c_rc_ok Value assigned to trx_data ta_c_rc_invalid_argument trx_data is ta_object_invalid ta_c_rc_invalid_argument trx_data is not of type transaction_data ta_c_rc_invalid_argument allowed_app_list is null-pointer</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">ta_transaction_data_get_is_final</field>
+    <field name="args">(ta_object_t trx_data, ta_e_boolean_t *is_final)</field>
+    <field name="url">transaction__data_8h.html#a61a3610d20683b0e11a1ffa6b52e0f99</field>
+    <field name="keywords">ta_transaction_data_get_is_final</field>
+    <field name="text">This property indicates whether an omnichannel operation will be the final Used for Capture Payments trx_data Object instance of type transaction_data is_final Pointer to variable to write value to Value is ta_c_b_undefined if value is not set in trx_data ta_c_rc_ok Object instance written to is_final ta_c_rc_invalid_argument trx_data is ta_object_invalid ta_c_rc_invalid_argument trx_data is not of type transaction_data ta_c_rc_invalid_argument is_final is null-pointer</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">ta_transaction_data_set_is_final</field>
+    <field name="args">(ta_object_t trx_data, ta_e_boolean_t is_final)</field>
+    <field name="url">transaction__data_8h.html#a88f946dc3eeb07c5cab69a34e4d411d4</field>
+    <field name="keywords">ta_transaction_data_set_is_final</field>
+    <field name="text">This property indicates whether an omnichannel operation will be the final Used for Capture Payments Mandatory for can not be null Conditional for can be null ta_c_tt_finalize_purchase Forbidden has to be always null ta_c_tt_credit ta_c_tt_adjust_reservation ta_c_tt_cancel_reservation ta_c_tt_debt_recovery ta_c_tt_purchase ta_c_tt_purchase_phone_authorized ta_c_tt_purchase_reservation ta_c_tt_purchase_reservation_phone_authorized ta_c_tt_reversal ta_c_tt_account_verification ta_c_tt_activate_card ta_c_tt_authorize_credit ta_c_tt_authorize_deposit ta_c_tt_cash_advance ta_c_tt_collect_points ta_c_tt_combined ta_c_tt_funding ta_c_tt_giro ta_c_tt_load ta_c_tt_load_voucher ta_c_tt_pre_authorization ta_c_tt_purchase_forced_acceptance ta_c_tt_purchase_mail_ordered ta_c_tt_purchase_phone_ordered ta_c_tt_purchase_with_cashback ta_c_tt_refunding ta_c_tt_reservation ta_c_tt_unload Transactions will fail if one of the above mentioned restrictions are violated trx_data Object instance of type transaction_data is_final Value to set Value can be ta_c_b_undefined to clear the value in trx_data ta_c_rc_ok Value assigned to trx_data ta_c_rc_invalid_argument trx_data is ta_object_invalid ta_c_rc_invalid_argument trx_data is not of type transaction_data ta_c_rc_invalid_argument is_final is null-pointer</field>
   </doc>
   <doc>
     <field name="type">file</field>

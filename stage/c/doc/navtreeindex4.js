@@ -1,5 +1,6 @@
 var NAVTREEINDEX4 =
 {
+"enum__string__maps_2reconfig__mode_8h.html":[1,1,0,1,0,44],
 "enum__string__maps_2reconfig__mode_8h.html#a433a79581dd24e51f42acefee3413ed1":[1,1,0,1,0,44,0],
 "enum__string__maps_2remote__functions_8h.html":[1,1,0,1,0,45],
 "enum__string__maps_2remote__functions_8h.html#a6d64e7e7dde04a44117d9fafb300491a":[1,1,0,1,0,45,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX4 =
 "loyalty__function__type_8h.html#ae34d625b831c335c633e976a45c15dd2a567d398734b407d806ff523fd73705cf":[1,1,0,1,29,1,1],
 "loyalty__function__type_8h.html#ae34d625b831c335c633e976a45c15dd2a9012cb39517621feba9d40c4e99fd493":[1,1,0,1,29,1,4],
 "loyalty__function__type_8h.html#ae34d625b831c335c633e976a45c15dd2ac9d117ca7e2243158b8aeabfd1f02867":[1,1,0,1,29,1,0],
-"loyalty__information_8h.html":[1,1,0,36],
-"loyalty__information_8h.html#a01a9d200daea0fa116f03be1c358e4f6":[1,1,0,36,4]
+"loyalty__information_8h.html":[1,1,0,36]
 };

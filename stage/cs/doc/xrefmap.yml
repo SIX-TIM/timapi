@@ -1210,15 +1210,15 @@ references:
   commentId: T:SIX.TimApi.CardData
   fullName: SIX.TimApi.CardData
   nameWithType: CardData
-- uid: SIX.TimApi.CardData.#ctor(SIX.TimApi.Constants.PosEntryMode,String,String,String,String,String,System.Byte[],System.Int32,System.Nullable{DateTime},String,String,List{SIX.TimApi.CardTrackData},Dictionary{String,System.Byte[]},String,SIX.TimApi.Constants.ProcessingDisposition,String,Int32,Int32,String,System.Byte[],SIX.TimApi.Constants.CardProductType,System.Nullable{System.Int64},String,SIX.TimApi.Constants.AccountType,System.String,System.String,SIX.TimApi.Constants.TokenPanType,System.String)
-  name: CardData(PosEntryMode, String, String, String, String, String, Byte[], Int32, Nullable<DateTime>, String, String, List<CardTrackData>, Dictionary<String, Byte[]>, String, ProcessingDisposition, String, Int32, Int32, String, Byte[], CardProductType, Nullable<Int64>, String, AccountType, String, String, TokenPanType, String)
-  href: api/SIX.TimApi.CardData.html#SIX_TimApi_CardData__ctor_SIX_TimApi_Constants_PosEntryMode_String_String_String_String_String_System_Byte___System_Int32_System_Nullable_DateTime__String_String_List_SIX_TimApi_CardTrackData__Dictionary_String_System_Byte____String_SIX_TimApi_Constants_ProcessingDisposition_String_Int32_Int32_String_System_Byte___SIX_TimApi_Constants_CardProductType_System_Nullable_System_Int64__String_SIX_TimApi_Constants_AccountType_System_String_System_String_SIX_TimApi_Constants_TokenPanType_System_String_
-  commentId: M:SIX.TimApi.CardData.#ctor(SIX.TimApi.Constants.PosEntryMode,String,String,String,String,String,System.Byte[],System.Int32,System.Nullable{DateTime},String,String,List{SIX.TimApi.CardTrackData},Dictionary{String,System.Byte[]},String,SIX.TimApi.Constants.ProcessingDisposition,String,Int32,Int32,String,System.Byte[],SIX.TimApi.Constants.CardProductType,System.Nullable{System.Int64},String,SIX.TimApi.Constants.AccountType,System.String,System.String,SIX.TimApi.Constants.TokenPanType,System.String)
-  name.vb: CardData(PosEntryMode, String, String, String, String, String, Byte(), Int32, Nullable(Of DateTime), String, String, List(Of CardTrackData), Dictionary(Of String, Byte()), String, ProcessingDisposition, String, Int32, Int32, String, Byte(), CardProductType, Nullable(Of Int64), String, AccountType, String, String, TokenPanType, String)
-  fullName: SIX.TimApi.CardData.CardData(SIX.TimApi.Constants.PosEntryMode, String, String, String, String, String, System.Byte[], System.Int32, System.Nullable<DateTime>, String, String, List<SIX.TimApi.CardTrackData>, Dictionary<String, System.Byte[]>, String, SIX.TimApi.Constants.ProcessingDisposition, String, Int32, Int32, String, System.Byte[], SIX.TimApi.Constants.CardProductType, System.Nullable<System.Int64>, String, SIX.TimApi.Constants.AccountType, System.String, System.String, SIX.TimApi.Constants.TokenPanType, System.String)
-  fullName.vb: SIX.TimApi.CardData.CardData(SIX.TimApi.Constants.PosEntryMode, String, String, String, String, String, System.Byte(), System.Int32, System.Nullable(Of DateTime), String, String, List(Of SIX.TimApi.CardTrackData), Dictionary(Of String, System.Byte()), String, SIX.TimApi.Constants.ProcessingDisposition, String, Int32, Int32, String, System.Byte(), SIX.TimApi.Constants.CardProductType, System.Nullable(Of System.Int64), String, SIX.TimApi.Constants.AccountType, System.String, System.String, SIX.TimApi.Constants.TokenPanType, System.String)
-  nameWithType: CardData.CardData(PosEntryMode, String, String, String, String, String, Byte[], Int32, Nullable<DateTime>, String, String, List<CardTrackData>, Dictionary<String, Byte[]>, String, ProcessingDisposition, String, Int32, Int32, String, Byte[], CardProductType, Nullable<Int64>, String, AccountType, String, String, TokenPanType, String)
-  nameWithType.vb: CardData.CardData(PosEntryMode, String, String, String, String, String, Byte(), Int32, Nullable(Of DateTime), String, String, List(Of CardTrackData), Dictionary(Of String, Byte()), String, ProcessingDisposition, String, Int32, Int32, String, Byte(), CardProductType, Nullable(Of Int64), String, AccountType, String, String, TokenPanType, String)
+- uid: SIX.TimApi.CardData.#ctor(SIX.TimApi.Constants.PosEntryMode,String,String,String,String,String,System.Byte[],System.Int32,System.Nullable{DateTime},String,String,List{SIX.TimApi.CardTrackData},Dictionary{String,System.Byte[]},String,SIX.TimApi.Constants.ProcessingDisposition,String,Int32,Int32,String,System.Byte[],SIX.TimApi.Constants.CardProductType,System.Nullable{System.Int64},String,SIX.TimApi.Constants.AccountType,System.String,System.String,SIX.TimApi.Constants.TokenPanType,System.String,System.Byte[])
+  name: CardData(PosEntryMode, String, String, String, String, String, Byte[], Int32, Nullable<DateTime>, String, String, List<CardTrackData>, Dictionary<String, Byte[]>, String, ProcessingDisposition, String, Int32, Int32, String, Byte[], CardProductType, Nullable<Int64>, String, AccountType, String, String, TokenPanType, String, Byte[])
+  href: api/SIX.TimApi.CardData.html#SIX_TimApi_CardData__ctor_SIX_TimApi_Constants_PosEntryMode_String_String_String_String_String_System_Byte___System_Int32_System_Nullable_DateTime__String_String_List_SIX_TimApi_CardTrackData__Dictionary_String_System_Byte____String_SIX_TimApi_Constants_ProcessingDisposition_String_Int32_Int32_String_System_Byte___SIX_TimApi_Constants_CardProductType_System_Nullable_System_Int64__String_SIX_TimApi_Constants_AccountType_System_String_System_String_SIX_TimApi_Constants_TokenPanType_System_String_System_Byte___
+  commentId: M:SIX.TimApi.CardData.#ctor(SIX.TimApi.Constants.PosEntryMode,String,String,String,String,String,System.Byte[],System.Int32,System.Nullable{DateTime},String,String,List{SIX.TimApi.CardTrackData},Dictionary{String,System.Byte[]},String,SIX.TimApi.Constants.ProcessingDisposition,String,Int32,Int32,String,System.Byte[],SIX.TimApi.Constants.CardProductType,System.Nullable{System.Int64},String,SIX.TimApi.Constants.AccountType,System.String,System.String,SIX.TimApi.Constants.TokenPanType,System.String,System.Byte[])
+  name.vb: CardData(PosEntryMode, String, String, String, String, String, Byte(), Int32, Nullable(Of DateTime), String, String, List(Of CardTrackData), Dictionary(Of String, Byte()), String, ProcessingDisposition, String, Int32, Int32, String, Byte(), CardProductType, Nullable(Of Int64), String, AccountType, String, String, TokenPanType, String, Byte())
+  fullName: SIX.TimApi.CardData.CardData(SIX.TimApi.Constants.PosEntryMode, String, String, String, String, String, System.Byte[], System.Int32, System.Nullable<DateTime>, String, String, List<SIX.TimApi.CardTrackData>, Dictionary<String, System.Byte[]>, String, SIX.TimApi.Constants.ProcessingDisposition, String, Int32, Int32, String, System.Byte[], SIX.TimApi.Constants.CardProductType, System.Nullable<System.Int64>, String, SIX.TimApi.Constants.AccountType, System.String, System.String, SIX.TimApi.Constants.TokenPanType, System.String, System.Byte[])
+  fullName.vb: SIX.TimApi.CardData.CardData(SIX.TimApi.Constants.PosEntryMode, String, String, String, String, String, System.Byte(), System.Int32, System.Nullable(Of DateTime), String, String, List(Of SIX.TimApi.CardTrackData), Dictionary(Of String, System.Byte()), String, SIX.TimApi.Constants.ProcessingDisposition, String, Int32, Int32, String, System.Byte(), SIX.TimApi.Constants.CardProductType, System.Nullable(Of System.Int64), String, SIX.TimApi.Constants.AccountType, System.String, System.String, SIX.TimApi.Constants.TokenPanType, System.String, System.Byte())
+  nameWithType: CardData.CardData(PosEntryMode, String, String, String, String, String, Byte[], Int32, Nullable<DateTime>, String, String, List<CardTrackData>, Dictionary<String, Byte[]>, String, ProcessingDisposition, String, Int32, Int32, String, Byte[], CardProductType, Nullable<Int64>, String, AccountType, String, String, TokenPanType, String, Byte[])
+  nameWithType.vb: CardData.CardData(PosEntryMode, String, String, String, String, String, Byte(), Int32, Nullable(Of DateTime), String, String, List(Of CardTrackData), Dictionary(Of String, Byte()), String, ProcessingDisposition, String, Int32, Int32, String, Byte(), CardProductType, Nullable(Of Int64), String, AccountType, String, String, TokenPanType, String, Byte())
 - uid: SIX.TimApi.CardData.#ctor*
   name: CardData
   href: api/SIX.TimApi.CardData.html#SIX_TimApi_CardData__ctor_
@@ -1538,6 +1538,19 @@ references:
   isSpec: "True"
   fullName: SIX.TimApi.CardData.ProcessingDisposition
   nameWithType: CardData.ProcessingDisposition
+- uid: SIX.TimApi.CardData.SurrogatePanSecondary
+  name: SurrogatePanSecondary
+  href: api/SIX.TimApi.CardData.html#SIX_TimApi_CardData_SurrogatePanSecondary
+  commentId: P:SIX.TimApi.CardData.SurrogatePanSecondary
+  fullName: SIX.TimApi.CardData.SurrogatePanSecondary
+  nameWithType: CardData.SurrogatePanSecondary
+- uid: SIX.TimApi.CardData.SurrogatePanSecondary*
+  name: SurrogatePanSecondary
+  href: api/SIX.TimApi.CardData.html#SIX_TimApi_CardData_SurrogatePanSecondary_
+  commentId: Overload:SIX.TimApi.CardData.SurrogatePanSecondary
+  isSpec: "True"
+  fullName: SIX.TimApi.CardData.SurrogatePanSecondary
+  nameWithType: CardData.SurrogatePanSecondary
 - uid: SIX.TimApi.CardData.TenderName
   name: TenderName
   href: api/SIX.TimApi.CardData.html#SIX_TimApi_CardData_TenderName
@@ -5345,6 +5358,12 @@ references:
   commentId: F:SIX.TimApi.Constants.MerchantOptionType.MultiContractIndex
   fullName: SIX.TimApi.Constants.MerchantOptionType.MultiContractIndex
   nameWithType: MerchantOptionType.MultiContractIndex
+- uid: SIX.TimApi.Constants.MerchantOptionType.OrderId
+  name: OrderId
+  href: api/SIX.TimApi.Constants.MerchantOptionType.html#SIX_TimApi_Constants_MerchantOptionType_OrderId
+  commentId: F:SIX.TimApi.Constants.MerchantOptionType.OrderId
+  fullName: SIX.TimApi.Constants.MerchantOptionType.OrderId
+  nameWithType: MerchantOptionType.OrderId
 - uid: SIX.TimApi.Constants.MerchantOptionType.Posdnumber
   name: Posdnumber
   href: api/SIX.TimApi.Constants.MerchantOptionType.html#SIX_TimApi_Constants_MerchantOptionType_Posdnumber
@@ -6923,6 +6942,12 @@ references:
   commentId: F:SIX.TimApi.Constants.ResourceId.CommonRemoveCard
   fullName: SIX.TimApi.Constants.ResourceId.CommonRemoveCard
   nameWithType: ResourceId.CommonRemoveCard
+- uid: SIX.TimApi.Constants.ResourceId.DangerousGoods
+  name: DangerousGoods
+  href: api/SIX.TimApi.Constants.ResourceId.html#SIX_TimApi_Constants_ResourceId_DangerousGoods
+  commentId: F:SIX.TimApi.Constants.ResourceId.DangerousGoods
+  fullName: SIX.TimApi.Constants.ResourceId.DangerousGoods
+  nameWithType: ResourceId.DangerousGoods
 - uid: SIX.TimApi.Constants.ResourceId.EnterAdditionalInformation
   name: EnterAdditionalInformation
   href: api/SIX.TimApi.Constants.ResourceId.html#SIX_TimApi_Constants_ResourceId_EnterAdditionalInformation
@@ -8345,12 +8370,24 @@ references:
   commentId: F:SIX.TimApi.Constants.ResultCode.DisplayUnavailable
   fullName: SIX.TimApi.Constants.ResultCode.DisplayUnavailable
   nameWithType: ResultCode.DisplayUnavailable
+- uid: SIX.TimApi.Constants.ResultCode.DuplicateRequestInProgress
+  name: DuplicateRequestInProgress
+  href: api/SIX.TimApi.Constants.ResultCode.html#SIX_TimApi_Constants_ResultCode_DuplicateRequestInProgress
+  commentId: F:SIX.TimApi.Constants.ResultCode.DuplicateRequestInProgress
+  fullName: SIX.TimApi.Constants.ResultCode.DuplicateRequestInProgress
+  nameWithType: ResultCode.DuplicateRequestInProgress
 - uid: SIX.TimApi.Constants.ResultCode.EthernetDisconnected
   name: EthernetDisconnected
   href: api/SIX.TimApi.Constants.ResultCode.html#SIX_TimApi_Constants_ResultCode_EthernetDisconnected
   commentId: F:SIX.TimApi.Constants.ResultCode.EthernetDisconnected
   fullName: SIX.TimApi.Constants.ResultCode.EthernetDisconnected
   nameWithType: ResultCode.EthernetDisconnected
+- uid: SIX.TimApi.Constants.ResultCode.GenericBlacklistMatch
+  name: GenericBlacklistMatch
+  href: api/SIX.TimApi.Constants.ResultCode.html#SIX_TimApi_Constants_ResultCode_GenericBlacklistMatch
+  commentId: F:SIX.TimApi.Constants.ResultCode.GenericBlacklistMatch
+  fullName: SIX.TimApi.Constants.ResultCode.GenericBlacklistMatch
+  nameWithType: ResultCode.GenericBlacklistMatch
 - uid: SIX.TimApi.Constants.ResultCode.HostTimeoutOutcomeUnknown
   name: HostTimeoutOutcomeUnknown
   href: api/SIX.TimApi.Constants.ResultCode.html#SIX_TimApi_Constants_ResultCode_HostTimeoutOutcomeUnknown
@@ -9107,6 +9144,18 @@ references:
   commentId: F:SIX.TimApi.Constants.TransactionReason.RecurringFixed
   fullName: SIX.TimApi.Constants.TransactionReason.RecurringFixed
   nameWithType: TransactionReason.RecurringFixed
+- uid: SIX.TimApi.Constants.TransactionReason.RecurringFixedSubsequent
+  name: RecurringFixedSubsequent
+  href: api/SIX.TimApi.Constants.TransactionReason.html#SIX_TimApi_Constants_TransactionReason_RecurringFixedSubsequent
+  commentId: F:SIX.TimApi.Constants.TransactionReason.RecurringFixedSubsequent
+  fullName: SIX.TimApi.Constants.TransactionReason.RecurringFixedSubsequent
+  nameWithType: TransactionReason.RecurringFixedSubsequent
+- uid: SIX.TimApi.Constants.TransactionReason.RecurringSubsequent
+  name: RecurringSubsequent
+  href: api/SIX.TimApi.Constants.TransactionReason.html#SIX_TimApi_Constants_TransactionReason_RecurringSubsequent
+  commentId: F:SIX.TimApi.Constants.TransactionReason.RecurringSubsequent
+  fullName: SIX.TimApi.Constants.TransactionReason.RecurringSubsequent
+  nameWithType: TransactionReason.RecurringSubsequent
 - uid: SIX.TimApi.Constants.TransactionReason.Unknown
   name: Unknown
   href: api/SIX.TimApi.Constants.TransactionReason.html#SIX_TimApi_Constants_TransactionReason_Unknown
@@ -24480,6 +24529,19 @@ references:
   isSpec: "True"
   fullName: SIX.TimApi.TransactionData.InstallmentAllowed
   nameWithType: TransactionData.InstallmentAllowed
+- uid: SIX.TimApi.TransactionData.IsFinal
+  name: IsFinal
+  href: api/SIX.TimApi.TransactionData.html#SIX_TimApi_TransactionData_IsFinal
+  commentId: P:SIX.TimApi.TransactionData.IsFinal
+  fullName: SIX.TimApi.TransactionData.IsFinal
+  nameWithType: TransactionData.IsFinal
+- uid: SIX.TimApi.TransactionData.IsFinal*
+  name: IsFinal
+  href: api/SIX.TimApi.TransactionData.html#SIX_TimApi_TransactionData_IsFinal_
+  commentId: Overload:SIX.TimApi.TransactionData.IsFinal
+  isSpec: "True"
+  fullName: SIX.TimApi.TransactionData.IsFinal
+  nameWithType: TransactionData.IsFinal
 - uid: SIX.TimApi.TransactionData.Language
   name: Language
   href: api/SIX.TimApi.TransactionData.html#SIX_TimApi_TransactionData_Language

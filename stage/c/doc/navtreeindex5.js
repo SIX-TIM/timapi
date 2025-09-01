@@ -1,5 +1,6 @@
 var NAVTREEINDEX5 =
 {
+"loyalty__information_8h.html#a01a9d200daea0fa116f03be1c358e4f6":[1,1,0,36,4],
 "loyalty__information_8h.html#a32bce129db1ee0103b467d850a4ee178":[1,1,0,36,1],
 "loyalty__information_8h.html#a51942016590263cfb68e1bfac5181be4":[1,1,0,36,2],
 "loyalty__information_8h.html#a81176491075fe6b6564489b680d86758":[1,1,0,36,0],
@@ -59,6 +60,7 @@ var NAVTREEINDEX5 =
 "merchant__option__type_8h.html":[1,1,0,1,33],
 "merchant__option__type_8h.html#a85baa6c1a5b70326c0ab26fb93c563ee":[1,1,0,1,33,0],
 "merchant__option__type_8h.html#aea3eaf253bcce054769642d812d46362":[1,1,0,1,33,1],
+"merchant__option__type_8h.html#aea3eaf253bcce054769642d812d46362a00c6632102ca2d6df8e43ce57c6fafe4":[1,1,0,1,33,1,18],
 "merchant__option__type_8h.html#aea3eaf253bcce054769642d812d46362a0ace3ceeec8b839e2b9185ae6acb5c45":[1,1,0,1,33,1,8],
 "merchant__option__type_8h.html#aea3eaf253bcce054769642d812d46362a17ed3ffa300bcf915754877f5deef460":[1,1,0,1,33,1,6],
 "merchant__option__type_8h.html#aea3eaf253bcce054769642d812d46362a28bcde67ab27c511cea9ac9596d92532":[1,1,0,1,33,1,12],
@@ -247,7 +249,5 @@ var NAVTREEINDEX5 =
 "reason_8h.html#ab10e533f4ad4f7409b4a8fbdaefbf972a42c138ed7ad5f946138712480499ccfe":[1,1,0,1,45,1,12],
 "reason_8h.html#ab10e533f4ad4f7409b4a8fbdaefbf972a488ee0ba402643e29723310f1cacf4e5":[1,1,0,1,45,1,4],
 "reason_8h.html#ab10e533f4ad4f7409b4a8fbdaefbf972a4b5a39531c0eff578b1c985e056fe6bd":[1,1,0,1,45,1,0],
-"reason_8h.html#ab10e533f4ad4f7409b4a8fbdaefbf972a6a8873709c8563cc302cf61955d3adb2":[1,1,0,1,45,1,5],
-"reason_8h.html#ab10e533f4ad4f7409b4a8fbdaefbf972a6ea98693fb09a95a935fbf08e0d5c21a":[1,1,0,1,45,1,14],
-"reason_8h.html#ab10e533f4ad4f7409b4a8fbdaefbf972a8a5ab8d45d56f90b82e7780de81605ae":[1,1,0,1,45,1,7]
+"reason_8h.html#ab10e533f4ad4f7409b4a8fbdaefbf972a6a8873709c8563cc302cf61955d3adb2":[1,1,0,1,45,1,5]
 };

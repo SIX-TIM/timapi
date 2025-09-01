@@ -129,6 +129,7 @@ var resource__id_8h =
       [ "ta_c_rid_post_pin_entry", "resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9ad911ca91349c1c99d0e73a9f8635d28f", null ],
       [ "ta_c_rid_post_confirm_costs_for_use_case", "resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9a9eaccf75658f395bfc03a21489b4fb3d", null ],
       [ "ta_c_rid_post_qrcode_confirmation", "resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9ac5aeb0a4651fc4a2470709b907a99fc2", null ],
+      [ "ta_c_rid_dangerous_goods", "resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9add855e59eddcd0222f1ee589d460c38f", null ],
       [ "ta_c_rid_banking_insert_card", "resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9ad55032f46f2c0e7e1f865c224e15fa54", null ],
       [ "ta_c_rid_banking_pin_check", "resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9a93af25ad0d4ba3dd903cfcd483238121", null ],
       [ "ta_c_rid_banking_show_saldo", "resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9ac7b49d46f65ca6e69cec8835ae1a8812", null ],
