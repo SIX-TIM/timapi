@@ -1,0 +1,886 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>HardwareInformationResponse Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../sdk_version.js"></script>
+<script src="../api_version.js"></script>
+<script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Class/HardwareInformationResponse" class="dashAnchor"></a>
+    <a title="HardwareInformationResponse Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html"> Docs</a> (100% documented)</p>
+        <div class="header-right">
+          <form role="search" action="../search.json">
+            <input type="text" placeholder="Search documentation" data-typeahead>
+          </form>
+        </div>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">Index</a>
+        <img id="carat" src="../img/carat.png" alt=""/>
+        <a href="../Classes.html">Classes</a>
+        <img id="carat" src="../img/carat.png" alt=""/>
+        TimApi.HardwareInformationResponse Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups"><li class="nav-group-name" id="titlearea"><td id="projectalign"><div id="projectname">TIM SDK</div><div id="projectbrief">TIM API Swift</div></td><div id="guidelink"><a href="../guide.html">Implementation Guide</a></div></li>
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/ActivateResponse.html">ActivateResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Amount.html">Amount</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/AmountDcc.html">AmountDcc</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/AmountDiscount.html">AmountDiscount</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/AmountFinal.html">AmountFinal</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Application.html">Application</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BalanceInquiryResponse.html">BalanceInquiryResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BalanceResponse.html">BalanceResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Basket.html">Basket</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BasketItem.html">BasketItem</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BigEndianInputStream.html">BigEndianInputStream</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Brands.html">Brands</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CardData.html">CardData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CardTrackData.html">CardTrackData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ClientIdentificationResponse.html">ClientIdentificationResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CommandRequest.html">CommandRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CommandResponse.html">CommandResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CompactReceiptFormatter.html">CompactReceiptFormatter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ConfigData.html">ConfigData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ConnectionManager.html">ConnectionManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/s:6TimApi11ConvenienceC">Convenience</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ConversionHelper.html">ConversionHelper</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Counter.html">Counter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Counters.html">Counters</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CurrencyItem.html">CurrencyItem</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CustomReceiptFormatter.html">CustomReceiptFormatter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CustomReceiptFormatter/TextType.html">– TextType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CustomReceiptFormatter/TranslatedText.html">– TranslatedText</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CustomReceiptFormatter/TextAlignment.html">– TextAlignment</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CustomReceiptFormatter/Condition.html">– Condition</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CustomReceiptFormatter/TextElement.html">– TextElement</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CustomReceiptFormatter/LineFormat.html">– LineFormat</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DeactivateResponse.html">DeactivateResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DefaultTerminalListener.html">DefaultTerminalListener</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DelegatableReceiptFormatter.html">DelegatableReceiptFormatter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DisplayProductInfo.html">DisplayProductInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EcrInfo.html">EcrInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ErrorMessages.html">ErrorMessages</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Features.html">Features</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/FeaturesHardware.html">FeaturesHardware</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/FeaturesPayment.html">FeaturesPayment</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/FeaturesPayment/AgeCheckSupport.html">– AgeCheckSupport</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/FeaturesSixml.html">FeaturesSixml</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/FeaturesSixml/Support.html">– Support</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/GlobalSettings.html">GlobalSettings</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Hardware.html">Hardware</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/HardwareInformationResponse.html">HardwareInformationResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/InitTransactionResponse.html">InitTransactionResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ItemQuantity.html">ItemQuantity</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/LogHandlerConsole.html">LogHandlerConsole</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/LogHandlerFile.html">LogHandlerFile</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Logger.html">Logger</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Logger/Level.html">– Level</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Logger/LogRecord.html">– LogRecord</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/LoyaltyCoupon.html">LoyaltyCoupon</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/LoyaltyDiscount.html">LoyaltyDiscount</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/LoyaltyInformation.html">LoyaltyInformation</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/LoyaltyItem.html">LoyaltyItem</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/MobileTopupData.html">MobileTopupData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/MobileTopupValue.html">MobileTopupValue</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/NativeError.html">NativeError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/NetworkInformation.html">NetworkInformation</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/NormalReceiptFormatter.html">NormalReceiptFormatter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/PclCommEndpoint.html">PclCommEndpoint</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/PpInfo.html">PpInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/PrintData.html">PrintData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/PrintOption.html">PrintOption</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/RdfReceiptFormatter.html">RdfReceiptFormatter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Receipt.html">Receipt</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ReceiptItem.html">ReceiptItem</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ReceiptItems.html">ReceiptItems</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ReceiptRequestResponse.html">ReceiptRequestResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ReconciliationResponse.html">ReconciliationResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ScreenshotInformation.html">ScreenshotInformation</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ShowDialogRequest.html">ShowDialogRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ShowDialogResponse.html">ShowDialogResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ShowSignatureCaptureRequest.html">ShowSignatureCaptureRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ShowSignatureCaptureResponse.html">ShowSignatureCaptureResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SignatureInformation.html">SignatureInformation</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SubTransaction.html">SubTransaction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SuperCompactReceiptFormatter.html">SuperCompactReceiptFormatter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Synchronized.html">Synchronized</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Synchronized/AutoLocker.html">– AutoLocker</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SynchronousTerminalListener.html">SynchronousTerminalListener</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SystemInformationResponse.html">SystemInformationResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Terminal.html">Terminal</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TerminalSettings.html">TerminalSettings</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TerminalSettingsImmutable.html">TerminalSettingsImmutable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TerminalStatus.html">TerminalStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ThirdPartyAppPayload.html">ThirdPartyAppPayload</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TimEvent.html">TimEvent</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TimException.html">TimException</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Total.html">Total</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TransactionData.html">TransactionData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TransactionInfoRequestResponse.html">TransactionInfoRequestResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TransactionInformation.html">TransactionInformation</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TransactionRequest.html">TransactionRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TransactionResponse.html">TransactionResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TransactionResponse/Action.html">– Action</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TrxDetail.html">TrxDetail</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/UltraCompactReceiptFormatter.html">UltraCompactReceiptFormatter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Utils.html">Utils</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/VasCheckoutInformation.html">VasCheckoutInformation</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/VasInformationList.html">VasInformationList</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/VasResult.html">VasResult</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/CAccountType.html">CAccountType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CAdditionalInfoItem.html">CAdditionalInfoItem</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CAdjustmentResult.html">CAdjustmentResult</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CAdminFunctions.html">CAdminFunctions</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CAgeCheckResult.html">CAgeCheckResult</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CAllowedAccounts.html">CAllowedAccounts</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CBrandBarBrand.html">CBrandBarBrand</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CBrandMode.html">CBrandMode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CCardProductType.html">CCardProductType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CCardReader.html">CCardReader</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CCardReaderStatus.html">CCardReaderStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CConnectionMode.html">CConnectionMode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CConnectionStatus.html">CConnectionStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CCounterType.html">CCounterType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CCouponRejectionReason.html">CCouponRejectionReason</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CCurrency.html">CCurrency</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CCurrencyType.html">CCurrencyType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CCustomerDataType.html">CCustomerDataType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CCvm.html">CCvm</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CDialogFunctions.html">CDialogFunctions</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CEcrInfoType.html">CEcrInfoType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CFinancialTransactions.html">CFinancialTransactions</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CFunctionHint.html">CFunctionHint</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CGuides.html">CGuides</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CHardwareType.html">CHardwareType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CImageFileFormat.html">CImageFileFormat</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CKernelType.html">CKernelType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CLoyaltyFunctionType.html">CLoyaltyFunctionType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CMaintenanceType.html">CMaintenanceType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CManagementStatus.html">CManagementStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CMerchantAction.html">CMerchantAction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CMerchantOptionType.html">CMerchantOptionType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CMobileTopupType.html">CMobileTopupType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CNgvMode.html">CNgvMode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CNonFinancialTransactions.html">CNonFinancialTransactions</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/COutcome.html">COutcome</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CPaymentProtocol.html">CPaymentProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CPosEntryMode.html">CPosEntryMode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CPrintFlag.html">CPrintFlag</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CPrintFormat.html">CPrintFormat</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CProcessingDisposition.html">CProcessingDisposition</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CProtocolLevel.html">CProtocolLevel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CProtocolType.html">CProtocolType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CReason.html">CReason</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CReceiptItemType.html">CReceiptItemType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CReceiptRequestType.html">CReceiptRequestType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CReceiptType.html">CReceiptType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CRecipient.html">CRecipient</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CRemoteFunctions.html">CRemoteFunctions</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CRequestType.html">CRequestType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CResourceId.html">CResourceId</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CResourceParameterType.html">CResourceParameterType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CResponseType.html">CResponseType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CResultCode.html">CResultCode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CSecurityStatus.html">CSecurityStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CSettingType.html">CSettingType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CSleepModeStatus.html">CSleepModeStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CStatusFunctions.html">CStatusFunctions</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CTheme.html">CTheme</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CThirdPartyAppId.html">CThirdPartyAppId</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CThirdPartyApps.html">CThirdPartyApps</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CTokenPanType.html">CTokenPanType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CTransactionReason.html">CTransactionReason</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CTransactionStatus.html">CTransactionStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CTransactionType.html">CTransactionType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CUpdateStatus.html">CUpdateStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CVasInfoListType.html">CVasInfoListType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CVasInfoType.html">CVasInfoType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Errors.html">Errors</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Functions.html">Functions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:6TimApi6unwrapyxxSgKlF">unwrap(_:)</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/CommEndpoint.html">CommEndpoint</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/CommListener.html">CommListener</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/ConnectionManagerDelegate.html">ConnectionManagerDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/LogHandler.html">LogHandler</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/ReceiptFormatter.html">ReceiptFormatter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/TerminalListener.html">TerminalListener</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/TimeDate.html">TimeDate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/TimeDate/Errors.html">– Errors</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Typealiases.html">Type Aliases</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/Color">Color</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:6TimApi5Colora">Color</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>HardwareInformationResponse</h1>
+              <div class="declaration">
+                <div class="language">
+                  
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">HardwareInformationResponse</span> <span class="p">:</span> <span class="kt">CustomStringConvertible</span></code></pre>
+
+                </div>
+              </div>
+            <p>Contains the result of calling the {@link Terminal#hardwareInformation}
+or {@link Terminal#hardwareInformationAsync}.
+Immutable class.</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6TimApi27HardwareInformationResponseC9hardwares14kernelVersions8settings10statistics12batteryLevel0K8ChargingACSayAA0C0CG_SDyAA11CKernelTypeOSSGSDyAA08CSettingO0OSSGSDyS2SGSiSbtcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(hardwares:kernelVersions:settings:statistics:batteryLevel:batteryCharging:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TimApi27HardwareInformationResponseC9hardwares14kernelVersions8settings10statistics12batteryLevel0K8ChargingACSayAA0C0CG_SDyAA11CKernelTypeOSSGSDyAA08CSettingO0OSSGSDyS2SGSiSbtcfc">init(hardwares:<wbr>kernelVersions:<wbr>settings:<wbr>statistics:<wbr>batteryLevel:<wbr>batteryCharging:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Create hardware information response.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">hardwares</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Classes/Hardware.html">Hardware</a></span><span class="p">],</span> <span class="nv">kernelVersions</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Enums/CKernelType.html">CKernelType</a></span><span class="p">:</span> <span class="kt">String</span><span class="p">],</span>
+            <span class="nv">settings</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Enums/CSettingType.html">CSettingType</a></span><span class="p">:</span> <span class="kt">String</span><span class="p">],</span> <span class="nv">statistics</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">:</span> <span class="kt">String</span><span class="p">],</span>
+            <span class="nv">batteryLevel</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span> <span class="nv">batteryCharging</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6TimApi27HardwareInformationResponseC9hardwaresSayAA0C0CGvp"></a>
+                    <a name="//apple_ref/swift/Property/hardwares" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TimApi27HardwareInformationResponseC9hardwaresSayAA0C0CGvp">hardwares</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>List of hardware attached to the EFT Terminal.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">private(set)</span> <span class="k">var</span> <span class="nv">hardwares</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Classes/Hardware.html">Hardware</a></span><span class="p">]</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6TimApi27HardwareInformationResponseC14kernelVersionsSDyAA11CKernelTypeOSSGvp"></a>
+                    <a name="//apple_ref/swift/Property/kernelVersions" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TimApi27HardwareInformationResponseC14kernelVersionsSDyAA11CKernelTypeOSSGvp">kernelVersions</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Kernel versions supported by the EFT Terminal. For each kernel type the
+string version is stored.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">private(set)</span> <span class="k">var</span> <span class="nv">kernelVersions</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Enums/CKernelType.html">CKernelType</a></span> <span class="p">:</span> <span class="kt">String</span><span class="p">]</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6TimApi27HardwareInformationResponseC8settingsSDyAA12CSettingTypeOSSGvp"></a>
+                    <a name="//apple_ref/swift/Property/settings" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TimApi27HardwareInformationResponseC8settingsSDyAA12CSettingTypeOSSGvp">settings</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Settings supported by the EFT Terminal. For each setting type the setting
+value is stored as string.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">private(set)</span> <span class="k">var</span> <span class="nv">settings</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Enums/CSettingType.html">CSettingType</a></span> <span class="p">:</span> <span class="kt">String</span><span class="p">]</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6TimApi27HardwareInformationResponseC10statisticsSDyS2SGvp"></a>
+                    <a name="//apple_ref/swift/Property/statistics" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TimApi27HardwareInformationResponseC10statisticsSDyS2SGvp">statistics</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Hardware statistics. For each statistic type (key) the statistics are stored
+ as string value.</p>
+
+<p>Available only if {@link com.six.timapi.constants.Guides#UNATTENDED} guide is enabled.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">private(set)</span> <span class="k">var</span> <span class="nv">statistics</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span> <span class="p">:</span> <span class="kt">String</span><span class="p">]</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6TimApi27HardwareInformationResponseC12batteryLevelSivp"></a>
+                    <a name="//apple_ref/swift/Property/batteryLevel" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TimApi27HardwareInformationResponseC12batteryLevelSivp">batteryLevel</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Charging level of the battery as a percentage value of the total charge.
+0% is defined as the amount of charge where the device performs an automatic shutdown.
+100% is a full charge.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">private(set)</span> <span class="k">var</span> <span class="nv">batteryLevel</span><span class="p">:</span> <span class="kt">Int</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6TimApi27HardwareInformationResponseC15batteryChargingSbvp"></a>
+                    <a name="//apple_ref/swift/Property/batteryCharging" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TimApi27HardwareInformationResponseC15batteryChargingSbvp">batteryCharging</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Indicates whether the batterie is being charged i.e. the device is plugged in.
+true: Plugged in
+false: Not plugged in</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">private(set)</span> <span class="k">var</span> <span class="nv">batteryCharging</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6TimApi27HardwareInformationResponseC11descriptionSSvp"></a>
+                    <a name="//apple_ref/swift/Property/description" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TimApi27HardwareInformationResponseC11descriptionSSvp">description</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Textual representation.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">description</span><span class="p">:</span> <span class="kt">String</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2025 <a class="link" href="" target="_blank" rel="external noopener"></a>. All rights reserved. (Last updated: 2025-07-11)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.15.0</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</html>
