@@ -1,0 +1,1546 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>CardData Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../sdk_version.js"></script>
+<script src="../api_version.js"></script>
+<script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Class/CardData" class="dashAnchor"></a>
+    <a title="CardData Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html"> Docs</a> (100% documented)</p>
+        <div class="header-right">
+          <form role="search" action="../search.json">
+            <input type="text" placeholder="Search documentation" data-typeahead>
+          </form>
+        </div>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">Index</a>
+        <img id="carat" src="../img/carat.png" alt=""/>
+        <a href="../Classes.html">Classes</a>
+        <img id="carat" src="../img/carat.png" alt=""/>
+        TimApi.CardData Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups"><li class="nav-group-name" id="titlearea"><td id="projectalign"><div id="projectname">TIM SDK</div><div id="projectbrief">TIM API Swift</div></td><div id="guidelink"><a href="../guide.html">Implementation Guide</a></div></li>
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/ActivateResponse.html">ActivateResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Amount.html">Amount</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/AmountDcc.html">AmountDcc</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/AmountDiscount.html">AmountDiscount</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/AmountFinal.html">AmountFinal</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Application.html">Application</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BalanceInquiryResponse.html">BalanceInquiryResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BalanceResponse.html">BalanceResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Basket.html">Basket</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BasketItem.html">BasketItem</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BigEndianInputStream.html">BigEndianInputStream</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Brands.html">Brands</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CardData.html">CardData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CardTrackData.html">CardTrackData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ClientIdentificationResponse.html">ClientIdentificationResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CommandRequest.html">CommandRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CommandResponse.html">CommandResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CompactReceiptFormatter.html">CompactReceiptFormatter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ConfigData.html">ConfigData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ConnectionManager.html">ConnectionManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/s:6TimApi11ConvenienceC">Convenience</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ConversionHelper.html">ConversionHelper</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Counter.html">Counter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Counters.html">Counters</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CurrencyItem.html">CurrencyItem</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CustomReceiptFormatter.html">CustomReceiptFormatter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CustomReceiptFormatter/TextType.html">– TextType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CustomReceiptFormatter/TranslatedText.html">– TranslatedText</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CustomReceiptFormatter/TextAlignment.html">– TextAlignment</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CustomReceiptFormatter/Condition.html">– Condition</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CustomReceiptFormatter/TextElement.html">– TextElement</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CustomReceiptFormatter/LineFormat.html">– LineFormat</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DeactivateResponse.html">DeactivateResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DefaultTerminalListener.html">DefaultTerminalListener</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DelegatableReceiptFormatter.html">DelegatableReceiptFormatter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DisplayProductInfo.html">DisplayProductInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EcrInfo.html">EcrInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ErrorMessages.html">ErrorMessages</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Features.html">Features</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/FeaturesHardware.html">FeaturesHardware</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/FeaturesPayment.html">FeaturesPayment</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/FeaturesPayment/AgeCheckSupport.html">– AgeCheckSupport</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/FeaturesSixml.html">FeaturesSixml</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/FeaturesSixml/Support.html">– Support</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/GlobalSettings.html">GlobalSettings</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Hardware.html">Hardware</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/HardwareInformationResponse.html">HardwareInformationResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/InitTransactionResponse.html">InitTransactionResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ItemQuantity.html">ItemQuantity</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/LogHandlerConsole.html">LogHandlerConsole</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/LogHandlerFile.html">LogHandlerFile</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Logger.html">Logger</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Logger/Level.html">– Level</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Logger/LogRecord.html">– LogRecord</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/LoyaltyCoupon.html">LoyaltyCoupon</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/LoyaltyDiscount.html">LoyaltyDiscount</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/LoyaltyInformation.html">LoyaltyInformation</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/LoyaltyItem.html">LoyaltyItem</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/MobileTopupData.html">MobileTopupData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/MobileTopupValue.html">MobileTopupValue</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/NativeError.html">NativeError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/NetworkInformation.html">NetworkInformation</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/NormalReceiptFormatter.html">NormalReceiptFormatter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/PclCommEndpoint.html">PclCommEndpoint</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/PpInfo.html">PpInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/PrintData.html">PrintData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/PrintOption.html">PrintOption</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/RdfReceiptFormatter.html">RdfReceiptFormatter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Receipt.html">Receipt</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ReceiptItem.html">ReceiptItem</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ReceiptItems.html">ReceiptItems</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ReceiptRequestResponse.html">ReceiptRequestResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ReconciliationResponse.html">ReconciliationResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ScreenshotInformation.html">ScreenshotInformation</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ShowDialogRequest.html">ShowDialogRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ShowDialogResponse.html">ShowDialogResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ShowSignatureCaptureRequest.html">ShowSignatureCaptureRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ShowSignatureCaptureResponse.html">ShowSignatureCaptureResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SignatureInformation.html">SignatureInformation</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SubTransaction.html">SubTransaction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SuperCompactReceiptFormatter.html">SuperCompactReceiptFormatter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Synchronized.html">Synchronized</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Synchronized/AutoLocker.html">– AutoLocker</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SynchronousTerminalListener.html">SynchronousTerminalListener</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SystemInformationResponse.html">SystemInformationResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Terminal.html">Terminal</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TerminalSettings.html">TerminalSettings</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TerminalSettingsImmutable.html">TerminalSettingsImmutable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TerminalStatus.html">TerminalStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ThirdPartyAppPayload.html">ThirdPartyAppPayload</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TimEvent.html">TimEvent</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TimException.html">TimException</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Total.html">Total</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TransactionData.html">TransactionData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TransactionInfoRequestResponse.html">TransactionInfoRequestResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TransactionInformation.html">TransactionInformation</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TransactionRequest.html">TransactionRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TransactionResponse.html">TransactionResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TransactionResponse/Action.html">– Action</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TrxDetail.html">TrxDetail</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/UltraCompactReceiptFormatter.html">UltraCompactReceiptFormatter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Utils.html">Utils</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/VasCheckoutInformation.html">VasCheckoutInformation</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/VasInformationList.html">VasInformationList</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/VasResult.html">VasResult</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/CAccountType.html">CAccountType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CAdditionalInfoItem.html">CAdditionalInfoItem</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CAdjustmentResult.html">CAdjustmentResult</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CAdminFunctions.html">CAdminFunctions</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CAgeCheckResult.html">CAgeCheckResult</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CAllowedAccounts.html">CAllowedAccounts</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CBrandBarBrand.html">CBrandBarBrand</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CBrandMode.html">CBrandMode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CCardProductType.html">CCardProductType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CCardReader.html">CCardReader</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CCardReaderStatus.html">CCardReaderStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CConnectionMode.html">CConnectionMode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CConnectionStatus.html">CConnectionStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CCounterType.html">CCounterType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CCouponRejectionReason.html">CCouponRejectionReason</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CCurrency.html">CCurrency</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CCurrencyType.html">CCurrencyType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CCustomerDataType.html">CCustomerDataType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CCvm.html">CCvm</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CDialogFunctions.html">CDialogFunctions</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CEcrInfoType.html">CEcrInfoType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CFinancialTransactions.html">CFinancialTransactions</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CFunctionHint.html">CFunctionHint</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CGuides.html">CGuides</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CHardwareType.html">CHardwareType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CImageFileFormat.html">CImageFileFormat</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CKernelType.html">CKernelType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CLoyaltyFunctionType.html">CLoyaltyFunctionType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CMaintenanceType.html">CMaintenanceType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CManagementStatus.html">CManagementStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CMerchantAction.html">CMerchantAction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CMerchantOptionType.html">CMerchantOptionType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CMobileTopupType.html">CMobileTopupType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CNgvMode.html">CNgvMode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CNonFinancialTransactions.html">CNonFinancialTransactions</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/COutcome.html">COutcome</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CPaymentProtocol.html">CPaymentProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CPosEntryMode.html">CPosEntryMode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CPrintFlag.html">CPrintFlag</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CPrintFormat.html">CPrintFormat</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CProcessingDisposition.html">CProcessingDisposition</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CProtocolLevel.html">CProtocolLevel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CProtocolType.html">CProtocolType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CReason.html">CReason</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CReceiptItemType.html">CReceiptItemType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CReceiptRequestType.html">CReceiptRequestType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CReceiptType.html">CReceiptType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CRecipient.html">CRecipient</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CRemoteFunctions.html">CRemoteFunctions</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CRequestType.html">CRequestType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CResourceId.html">CResourceId</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CResourceParameterType.html">CResourceParameterType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CResponseType.html">CResponseType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CResultCode.html">CResultCode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CSecurityStatus.html">CSecurityStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CSettingType.html">CSettingType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CSleepModeStatus.html">CSleepModeStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CStatusFunctions.html">CStatusFunctions</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CTheme.html">CTheme</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CThirdPartyAppId.html">CThirdPartyAppId</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CThirdPartyApps.html">CThirdPartyApps</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CTokenPanType.html">CTokenPanType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CTransactionReason.html">CTransactionReason</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CTransactionStatus.html">CTransactionStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CTransactionType.html">CTransactionType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CUpdateStatus.html">CUpdateStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CVasInfoListType.html">CVasInfoListType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CVasInfoType.html">CVasInfoType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Errors.html">Errors</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Functions.html">Functions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:6TimApi6unwrapyxxSgKlF">unwrap(_:)</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/CommEndpoint.html">CommEndpoint</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/CommListener.html">CommListener</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/ConnectionManagerDelegate.html">ConnectionManagerDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/LogHandler.html">LogHandler</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/ReceiptFormatter.html">ReceiptFormatter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/TerminalListener.html">TerminalListener</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/TimeDate.html">TimeDate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/TimeDate/Errors.html">– Errors</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Typealiases.html">Type Aliases</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/Color">Color</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:6TimApi5Colora">Color</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>CardData</h1>
+              <div class="declaration">
+                <div class="language">
+                  
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">CardData</span> <span class="p">:</span> <span class="kt">CustomStringConvertible</span></code></pre>
+
+                </div>
+              </div>
+            <p>Contains information about the used payment card
+Immutable class.</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6TimApi8CardDataC12posEntryMode3aid3acc10cardNumber0jK9Printable0jkL10Cardholder0jK3Enc0jkN8KeyIndex0J10ExpiryDate9brandName06tenderT00J10TrackDatas19loyaltyInformations0J3Ref21processingDisposition8language0J11CountryCode19terminalCountryCode3uid5asrpd0J11ProductType0J4Type10cardholder11accountType6emvPar8tokenPan12tokenPanType010additionalcD021surrogatePanSecondaryAcA04CPosfG0OSg_SSSgA8_A8_A8_A8_10Foundation0D0VSgSiSgAA04TimeR0VSgA8_A8_SayAA0cvD0CGSDySSA11_GA8_AA22CProcessingDispositionOSgA8_A13_A13_A8_A12_AA16CCardProductTypeOSgA13_A8_AA12CAccountTypeOSgA8_A8_AA13CTokenPanTypeOSgA8_A12_tcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(posEntryMode:aid:acc:cardNumber:cardNumberPrintable:cardNumberPrintableCardholder:cardNumberEnc:cardNumberEncKeyIndex:cardExpiryDate:brandName:tenderName:cardTrackDatas:loyaltyInformations:cardRef:processingDisposition:language:cardCountryCode:terminalCountryCode:uid:asrpd:cardProductType:cardType:cardholder:accountType:emvPar:tokenPan:tokenPanType:additionalCardData:surrogatePanSecondary:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TimApi8CardDataC12posEntryMode3aid3acc10cardNumber0jK9Printable0jkL10Cardholder0jK3Enc0jkN8KeyIndex0J10ExpiryDate9brandName06tenderT00J10TrackDatas19loyaltyInformations0J3Ref21processingDisposition8language0J11CountryCode19terminalCountryCode3uid5asrpd0J11ProductType0J4Type10cardholder11accountType6emvPar8tokenPan12tokenPanType010additionalcD021surrogatePanSecondaryAcA04CPosfG0OSg_SSSgA8_A8_A8_A8_10Foundation0D0VSgSiSgAA04TimeR0VSgA8_A8_SayAA0cvD0CGSDySSA11_GA8_AA22CProcessingDispositionOSgA8_A13_A13_A8_A12_AA16CCardProductTypeOSgA13_A8_AA12CAccountTypeOSgA8_A8_AA13CTokenPanTypeOSgA8_A12_tcfc">init(posEntryMode:<wbr>aid:<wbr>acc:<wbr>cardNumber:<wbr>cardNumberPrintable:<wbr>cardNumberPrintableCardholder:<wbr>cardNumberEnc:<wbr>cardNumberEncKeyIndex:<wbr>cardExpiryDate:<wbr>brandName:<wbr>tenderName:<wbr>cardTrackDatas:<wbr>loyaltyInformations:<wbr>cardRef:<wbr>processingDisposition:<wbr>language:<wbr>cardCountryCode:<wbr>terminalCountryCode:<wbr>uid:<wbr>asrpd:<wbr>cardProductType:<wbr>cardType:<wbr>cardholder:<wbr>accountType:<wbr>emvPar:<wbr>tokenPan:<wbr>tokenPanType:<wbr>additionalCardData:<wbr>surrogatePanSecondary:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Create card data information.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">posEntryMode</span><span class="p">:</span> <span class="kt"><a href="../Enums/CPosEntryMode.html">CPosEntryMode</a></span><span class="p">?,</span>
+            <span class="nv">aid</span><span class="p">:</span> <span class="kt">String</span><span class="p">?,</span>
+            <span class="nv">acc</span><span class="p">:</span> <span class="kt">String</span><span class="p">?,</span>
+            <span class="nv">cardNumber</span><span class="p">:</span> <span class="kt">String</span><span class="p">?,</span>
+            <span class="nv">cardNumberPrintable</span><span class="p">:</span> <span class="kt">String</span><span class="p">?,</span>
+            <span class="nv">cardNumberPrintableCardholder</span><span class="p">:</span> <span class="kt">String</span><span class="p">?,</span>
+            <span class="nv">cardNumberEnc</span><span class="p">:</span> <span class="kt">Data</span><span class="p">?,</span>
+            <span class="nv">cardNumberEncKeyIndex</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?,</span>
+            <span class="nv">cardExpiryDate</span><span class="p">:</span> <span class="kt"><a href="../Structs/TimeDate.html">TimeDate</a></span><span class="p">?,</span>
+            <span class="nv">brandName</span><span class="p">:</span> <span class="kt">String</span><span class="p">?,</span>
+            <span class="nv">tenderName</span><span class="p">:</span> <span class="kt">String</span><span class="p">?,</span>
+            <span class="nv">cardTrackDatas</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Classes/CardTrackData.html">CardTrackData</a></span><span class="p">],</span>
+            <span class="nv">loyaltyInformations</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">:</span> <span class="kt">Data</span><span class="p">],</span>
+            <span class="nv">cardRef</span><span class="p">:</span> <span class="kt">String</span><span class="p">?,</span>
+            <span class="nv">processingDisposition</span><span class="p">:</span> <span class="kt"><a href="../Enums/CProcessingDisposition.html">CProcessingDisposition</a></span><span class="p">?,</span>
+            <span class="nv">language</span><span class="p">:</span> <span class="kt">String</span><span class="p">?,</span>
+            <span class="nv">cardCountryCode</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?,</span>
+            <span class="nv">terminalCountryCode</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?,</span>
+            <span class="nv">uid</span><span class="p">:</span> <span class="kt">String</span><span class="p">?,</span>
+            <span class="nv">asrpd</span><span class="p">:</span> <span class="kt">Data</span><span class="p">?,</span>
+            <span class="nv">cardProductType</span><span class="p">:</span> <span class="kt"><a href="../Enums/CCardProductType.html">CCardProductType</a></span><span class="p">?,</span>
+            <span class="nv">cardType</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?,</span>
+            <span class="nv">cardholder</span><span class="p">:</span> <span class="kt">String</span><span class="p">?,</span>
+            <span class="nv">accountType</span><span class="p">:</span> <span class="kt"><a href="../Enums/CAccountType.html">CAccountType</a></span><span class="p">?,</span>
+            <span class="nv">emvPar</span><span class="p">:</span> <span class="kt">String</span><span class="p">?,</span>
+            <span class="nv">tokenPan</span><span class="p">:</span> <span class="kt">String</span><span class="p">?,</span>
+            <span class="nv">tokenPanType</span><span class="p">:</span> <span class="kt"><a href="../Enums/CTokenPanType.html">CTokenPanType</a></span><span class="p">?,</span>
+            <span class="nv">additionalCardData</span><span class="p">:</span> <span class="kt">String</span><span class="p">?,</span>
+            <span class="nv">surrogatePanSecondary</span><span class="p">:</span> <span class="kt">Data</span><span class="p">?</span>
+		<span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6TimApi8CardDataC12posEntryModeAA04CPosfG0OSgvp"></a>
+                    <a name="//apple_ref/swift/Property/posEntryMode" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TimApi8CardDataC12posEntryModeAA04CPosfG0OSgvp">posEntryMode</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>POS entry mode.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">posEntryMode</span><span class="p">:</span> <span class="kt"><a href="../Enums/CPosEntryMode.html">CPosEntryMode</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6TimApi8CardDataC3aidSSSgvp"></a>
+                    <a name="//apple_ref/swift/Property/aid" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TimApi8CardDataC3aidSSSgvp">aid</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Application identifier.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">aid</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6TimApi8CardDataC3accSSSgvp"></a>
+                    <a name="//apple_ref/swift/Property/acc" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TimApi8CardDataC3accSSSgvp">acc</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Application currency code.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">acc</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6TimApi8CardDataC10cardNumberSSSgvp"></a>
+                    <a name="//apple_ref/swift/Property/cardNumber" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TimApi8CardDataC10cardNumberSSSgvp">cardNumber</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Card number. Only for Non-PCI applications and if available to the terminal.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">cardNumber</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6TimApi8CardDataC19cardNumberPrintableSSSgvp"></a>
+                    <a name="//apple_ref/swift/Property/cardNumberPrintable" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TimApi8CardDataC19cardNumberPrintableSSSgvp">cardNumberPrintable</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Card number that should be printed on a merchant receipt.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">cardNumberPrintable</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6TimApi8CardDataC29cardNumberPrintableCardholderSSSgvp"></a>
+                    <a name="//apple_ref/swift/Property/cardNumberPrintableCardholder" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TimApi8CardDataC29cardNumberPrintableCardholderSSSgvp">cardNumberPrintableCardholder</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Card number that should be printed on a cardholder receipt.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">cardNumberPrintableCardholder</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6TimApi8CardDataC13cardNumberEnc10Foundation0D0VSgvp"></a>
+                    <a name="//apple_ref/swift/Property/cardNumberEnc" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TimApi8CardDataC13cardNumberEnc10Foundation0D0VSgvp">cardNumberEnc</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Encrypted card number.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">cardNumberEnc</span><span class="p">:</span> <span class="kt">Data</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6TimApi8CardDataC21cardNumberEncKeyIndexSiSgvp"></a>
+                    <a name="//apple_ref/swift/Property/cardNumberEncKeyIndex" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TimApi8CardDataC21cardNumberEncKeyIndexSiSgvp">cardNumberEncKeyIndex</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Card number encryption key index.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">cardNumberEncKeyIndex</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6TimApi8CardDataC14cardExpiryDateAA04TimeG0VSgvp"></a>
+                    <a name="//apple_ref/swift/Property/cardExpiryDate" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TimApi8CardDataC14cardExpiryDateAA04TimeG0VSgvp">cardExpiryDate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Card expiration date. Only for Non-PCI applications and if available to the terminal.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">cardExpiryDate</span><span class="p">:</span> <span class="kt"><a href="../Structs/TimeDate.html">TimeDate</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6TimApi8CardDataC9brandNameSSSgvp"></a>
+                    <a name="//apple_ref/swift/Property/brandName" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TimApi8CardDataC9brandNameSSSgvp">brandName</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Card brand name.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">brandName</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6TimApi8CardDataC10tenderNameSSSgvp"></a>
+                    <a name="//apple_ref/swift/Property/tenderName" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TimApi8CardDataC10tenderNameSSSgvp">tenderName</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Card tender name.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">tenderName</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6TimApi8CardDataC14cardTrackDatasSayAA0cfD0CGvp"></a>
+                    <a name="//apple_ref/swift/Property/cardTrackDatas" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TimApi8CardDataC14cardTrackDatasSayAA0cfD0CGvp">cardTrackDatas</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>List of card track data if present.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">cardTrackDatas</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Classes/CardTrackData.html">CardTrackData</a></span><span class="p">]</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6TimApi8CardDataC19loyaltyInformationsSDySS10Foundation0D0VGvp"></a>
+                    <a name="//apple_ref/swift/Property/loyaltyInformations" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TimApi8CardDataC19loyaltyInformationsSDySS10Foundation0D0VGvp">loyaltyInformations</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Loyalty information if present. Keyed by loyalty type string.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">loyaltyInformations</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span> <span class="p">:</span> <span class="kt">Data</span><span class="p">]</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6TimApi8CardDataC7cardRefSSSgvp"></a>
+                    <a name="//apple_ref/swift/Property/cardRef" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TimApi8CardDataC7cardRefSSSgvp">cardRef</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Petrol: Reference from the card.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">cardRef</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6TimApi8CardDataC21processingDispositionAA011CProcessingF0OSgvp"></a>
+                    <a name="//apple_ref/swift/Property/processingDisposition" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TimApi8CardDataC21processingDispositionAA011CProcessingF0OSgvp">processingDisposition</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Defines if the ECR or EFT is responsible for further trx handling.</p>
+
+<p>Specifications: <em>petrol</em>, <em>unattended</em>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">processingDisposition</span><span class="p">:</span> <span class="kt"><a href="../Enums/CProcessingDisposition.html">CProcessingDisposition</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6TimApi8CardDataC8languageSSSgvp"></a>
+                    <a name="//apple_ref/swift/Property/language" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TimApi8CardDataC8languageSSSgvp">language</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Card language.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">language</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6TimApi8CardDataC15cardCountryCodeSiSgvp"></a>
+                    <a name="//apple_ref/swift/Property/cardCountryCode" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TimApi8CardDataC15cardCountryCodeSiSgvp">cardCountryCode</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Card country code.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">cardCountryCode</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6TimApi8CardDataC19terminalCountryCodeSiSgvp"></a>
+                    <a name="//apple_ref/swift/Property/terminalCountryCode" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TimApi8CardDataC19terminalCountryCodeSiSgvp">terminalCountryCode</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Terminal country code.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">terminalCountryCode</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6TimApi8CardDataC3uidSSSgvp"></a>
+                    <a name="//apple_ref/swift/Property/uid" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TimApi8CardDataC3uidSSSgvp">uid</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Contains the uid of the contactless card.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">uid</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6TimApi8CardDataC5asrpd10Foundation0D0VSgvp"></a>
+                    <a name="//apple_ref/swift/Property/asrpd" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TimApi8CardDataC5asrpd10Foundation0D0VSgvp">asrpd</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Asrpd.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">asrpd</span><span class="p">:</span> <span class="kt">Data</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6TimApi8CardDataC15cardProductTypeAA05CCardfG0OSgvp"></a>
+                    <a name="//apple_ref/swift/Property/cardProductType" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TimApi8CardDataC15cardProductTypeAA05CCardfG0OSgvp">cardProductType</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>CardProductType.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">cardProductType</span><span class="p">:</span> <span class="kt"><a href="../Enums/CCardProductType.html">CCardProductType</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6TimApi8CardDataC8cardTypeSiSgvp"></a>
+                    <a name="//apple_ref/swift/Property/cardType" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TimApi8CardDataC8cardTypeSiSgvp">cardType</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>CardType.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">cardType</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6TimApi8CardDataC10cardholderSSSgvp"></a>
+                    <a name="//apple_ref/swift/Property/cardholder" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TimApi8CardDataC10cardholderSSSgvp">cardholder</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Cardholder.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">cardholder</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6TimApi8CardDataC11accountTypeAA08CAccountF0OSgvp"></a>
+                    <a name="//apple_ref/swift/Property/accountType" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TimApi8CardDataC11accountTypeAA08CAccountF0OSgvp">accountType</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Card product type.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">accountType</span><span class="p">:</span> <span class="kt"><a href="../Enums/CAccountType.html">CAccountType</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6TimApi8CardDataC6emvParSSSgvp"></a>
+                    <a name="//apple_ref/swift/Property/emvPar" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TimApi8CardDataC6emvParSSSgvp">emvPar</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The EMV PAR &ldquo;may be used to link transactions initiated on Payment Tokens with
+transactions initiated on the underlying PAN&rdquo;, which can be used in a transaction
+response to be able the identify if the transaction e.g. with a used token PAN is
+related to a previous transaction performed with the underlying PAN. If so, both
+transaction responses will contain the same value in the EmvPar field.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">emvPar</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6TimApi8CardDataC8tokenPanSSSgvp"></a>
+                    <a name="//apple_ref/swift/Property/tokenPan" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TimApi8CardDataC8tokenPanSSSgvp">tokenPan</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The token PAN is a tokenized version for an underlaying card PAN. If the
+underlaying payment protocol supports it, a payment transaction can be initiated
+with the token PAN instead of using a card. A token PAN is normally generated by
+a tokenization service either form the acquirer host or the issuer host.</p>
+
+<p>The TokenPan field is used in a SIXml request message as part of the
+sixml:TransactionData container to trigger a token-based transaction and in a SIXml
+response message as part of the sixml:CardData container for returning token PANs
+to the ECR.</p>
+
+<p>The TokenPan field always must be accompanied by a corresponding TokenPanType field.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">tokenPan</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6TimApi8CardDataC12tokenPanTypeAA06CTokenfG0OSgvp"></a>
+                    <a name="//apple_ref/swift/Property/tokenPanType" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TimApi8CardDataC12tokenPanTypeAA06CTokenfG0OSgvp">tokenPanType</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>To differ the source of a token PAN, the TokenPanType field is used in a SIXml
+request message as part of the sixml:TransactionData container and in a SIXml
+response message as part of the sixml:CardData container.</p>
+
+<p>The TokenPanType field always is transmitted if a TokenPan field is transmitted
+but must not be transmitted alone.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">tokenPanType</span><span class="p">:</span> <span class="kt"><a href="../Enums/CTokenPanType.html">CTokenPanType</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6TimApi8CardDataC010additionalcD0SSSgvp"></a>
+                    <a name="//apple_ref/swift/Property/additionalCardData" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TimApi8CardDataC010additionalcD0SSSgvp">additionalCardData</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Additional card information (non-PCI) that can have merchant specific formatting.
+Guides: Dialog</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">additionalCardData</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6TimApi8CardDataC21surrogatePanSecondary10Foundation0D0VSgvp"></a>
+                    <a name="//apple_ref/swift/Property/surrogatePanSecondary" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TimApi8CardDataC21surrogatePanSecondary10Foundation0D0VSgvp">surrogatePanSecondary</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Surrogate Pan Secondary.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">surrogatePanSecondary</span><span class="p">:</span> <span class="kt">Data</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6TimApi8CardDataC11descriptionSSvp"></a>
+                    <a name="//apple_ref/swift/Property/description" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TimApi8CardDataC11descriptionSSvp">description</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Textual representation.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">description</span><span class="p">:</span> <span class="kt">String</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2025 <a class="link" href="" target="_blank" rel="external noopener"></a>. All rights reserved. (Last updated: 2025-11-06)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.15.0</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</html>
