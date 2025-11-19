@@ -1210,15 +1210,15 @@ references:
   commentId: T:SIX.TimApi.CardData
   fullName: SIX.TimApi.CardData
   nameWithType: CardData
-- uid: SIX.TimApi.CardData.#ctor(SIX.TimApi.Constants.PosEntryMode,String,String,String,String,String,System.Byte[],System.Int32,System.Nullable{DateTime},String,String,List{SIX.TimApi.CardTrackData},Dictionary{String,System.Byte[]},String,SIX.TimApi.Constants.ProcessingDisposition,String,Int32,Int32,String,System.Byte[],SIX.TimApi.Constants.CardProductType,System.Nullable{System.Int64},String,SIX.TimApi.Constants.AccountType,System.String,System.String,SIX.TimApi.Constants.TokenPanType,System.String)
-  name: CardData(PosEntryMode, String, String, String, String, String, Byte[], Int32, Nullable<DateTime>, String, String, List<CardTrackData>, Dictionary<String, Byte[]>, String, ProcessingDisposition, String, Int32, Int32, String, Byte[], CardProductType, Nullable<Int64>, String, AccountType, String, String, TokenPanType, String)
-  href: api/SIX.TimApi.CardData.html#SIX_TimApi_CardData__ctor_SIX_TimApi_Constants_PosEntryMode_String_String_String_String_String_System_Byte___System_Int32_System_Nullable_DateTime__String_String_List_SIX_TimApi_CardTrackData__Dictionary_String_System_Byte____String_SIX_TimApi_Constants_ProcessingDisposition_String_Int32_Int32_String_System_Byte___SIX_TimApi_Constants_CardProductType_System_Nullable_System_Int64__String_SIX_TimApi_Constants_AccountType_System_String_System_String_SIX_TimApi_Constants_TokenPanType_System_String_
-  commentId: M:SIX.TimApi.CardData.#ctor(SIX.TimApi.Constants.PosEntryMode,String,String,String,String,String,System.Byte[],System.Int32,System.Nullable{DateTime},String,String,List{SIX.TimApi.CardTrackData},Dictionary{String,System.Byte[]},String,SIX.TimApi.Constants.ProcessingDisposition,String,Int32,Int32,String,System.Byte[],SIX.TimApi.Constants.CardProductType,System.Nullable{System.Int64},String,SIX.TimApi.Constants.AccountType,System.String,System.String,SIX.TimApi.Constants.TokenPanType,System.String)
-  name.vb: CardData(PosEntryMode, String, String, String, String, String, Byte(), Int32, Nullable(Of DateTime), String, String, List(Of CardTrackData), Dictionary(Of String, Byte()), String, ProcessingDisposition, String, Int32, Int32, String, Byte(), CardProductType, Nullable(Of Int64), String, AccountType, String, String, TokenPanType, String)
-  fullName: SIX.TimApi.CardData.CardData(SIX.TimApi.Constants.PosEntryMode, String, String, String, String, String, System.Byte[], System.Int32, System.Nullable<DateTime>, String, String, List<SIX.TimApi.CardTrackData>, Dictionary<String, System.Byte[]>, String, SIX.TimApi.Constants.ProcessingDisposition, String, Int32, Int32, String, System.Byte[], SIX.TimApi.Constants.CardProductType, System.Nullable<System.Int64>, String, SIX.TimApi.Constants.AccountType, System.String, System.String, SIX.TimApi.Constants.TokenPanType, System.String)
-  fullName.vb: SIX.TimApi.CardData.CardData(SIX.TimApi.Constants.PosEntryMode, String, String, String, String, String, System.Byte(), System.Int32, System.Nullable(Of DateTime), String, String, List(Of SIX.TimApi.CardTrackData), Dictionary(Of String, System.Byte()), String, SIX.TimApi.Constants.ProcessingDisposition, String, Int32, Int32, String, System.Byte(), SIX.TimApi.Constants.CardProductType, System.Nullable(Of System.Int64), String, SIX.TimApi.Constants.AccountType, System.String, System.String, SIX.TimApi.Constants.TokenPanType, System.String)
-  nameWithType: CardData.CardData(PosEntryMode, String, String, String, String, String, Byte[], Int32, Nullable<DateTime>, String, String, List<CardTrackData>, Dictionary<String, Byte[]>, String, ProcessingDisposition, String, Int32, Int32, String, Byte[], CardProductType, Nullable<Int64>, String, AccountType, String, String, TokenPanType, String)
-  nameWithType.vb: CardData.CardData(PosEntryMode, String, String, String, String, String, Byte(), Int32, Nullable(Of DateTime), String, String, List(Of CardTrackData), Dictionary(Of String, Byte()), String, ProcessingDisposition, String, Int32, Int32, String, Byte(), CardProductType, Nullable(Of Int64), String, AccountType, String, String, TokenPanType, String)
+- uid: SIX.TimApi.CardData.#ctor(SIX.TimApi.Constants.PosEntryMode,String,String,String,String,String,System.Byte[],System.Int32,System.Nullable{DateTime},String,String,List{SIX.TimApi.CardTrackData},Dictionary{String,System.Byte[]},String,SIX.TimApi.Constants.ProcessingDisposition,String,Int32,Int32,String,System.Byte[],SIX.TimApi.Constants.CardProductType,System.Nullable{System.Int64},String,SIX.TimApi.Constants.AccountType,System.String,System.String,SIX.TimApi.Constants.TokenPanType,System.String,System.Byte[])
+  name: CardData(PosEntryMode, String, String, String, String, String, Byte[], Int32, Nullable<DateTime>, String, String, List<CardTrackData>, Dictionary<String, Byte[]>, String, ProcessingDisposition, String, Int32, Int32, String, Byte[], CardProductType, Nullable<Int64>, String, AccountType, String, String, TokenPanType, String, Byte[])
+  href: api/SIX.TimApi.CardData.html#SIX_TimApi_CardData__ctor_SIX_TimApi_Constants_PosEntryMode_String_String_String_String_String_System_Byte___System_Int32_System_Nullable_DateTime__String_String_List_SIX_TimApi_CardTrackData__Dictionary_String_System_Byte____String_SIX_TimApi_Constants_ProcessingDisposition_String_Int32_Int32_String_System_Byte___SIX_TimApi_Constants_CardProductType_System_Nullable_System_Int64__String_SIX_TimApi_Constants_AccountType_System_String_System_String_SIX_TimApi_Constants_TokenPanType_System_String_System_Byte___
+  commentId: M:SIX.TimApi.CardData.#ctor(SIX.TimApi.Constants.PosEntryMode,String,String,String,String,String,System.Byte[],System.Int32,System.Nullable{DateTime},String,String,List{SIX.TimApi.CardTrackData},Dictionary{String,System.Byte[]},String,SIX.TimApi.Constants.ProcessingDisposition,String,Int32,Int32,String,System.Byte[],SIX.TimApi.Constants.CardProductType,System.Nullable{System.Int64},String,SIX.TimApi.Constants.AccountType,System.String,System.String,SIX.TimApi.Constants.TokenPanType,System.String,System.Byte[])
+  name.vb: CardData(PosEntryMode, String, String, String, String, String, Byte(), Int32, Nullable(Of DateTime), String, String, List(Of CardTrackData), Dictionary(Of String, Byte()), String, ProcessingDisposition, String, Int32, Int32, String, Byte(), CardProductType, Nullable(Of Int64), String, AccountType, String, String, TokenPanType, String, Byte())
+  fullName: SIX.TimApi.CardData.CardData(SIX.TimApi.Constants.PosEntryMode, String, String, String, String, String, System.Byte[], System.Int32, System.Nullable<DateTime>, String, String, List<SIX.TimApi.CardTrackData>, Dictionary<String, System.Byte[]>, String, SIX.TimApi.Constants.ProcessingDisposition, String, Int32, Int32, String, System.Byte[], SIX.TimApi.Constants.CardProductType, System.Nullable<System.Int64>, String, SIX.TimApi.Constants.AccountType, System.String, System.String, SIX.TimApi.Constants.TokenPanType, System.String, System.Byte[])
+  fullName.vb: SIX.TimApi.CardData.CardData(SIX.TimApi.Constants.PosEntryMode, String, String, String, String, String, System.Byte(), System.Int32, System.Nullable(Of DateTime), String, String, List(Of SIX.TimApi.CardTrackData), Dictionary(Of String, System.Byte()), String, SIX.TimApi.Constants.ProcessingDisposition, String, Int32, Int32, String, System.Byte(), SIX.TimApi.Constants.CardProductType, System.Nullable(Of System.Int64), String, SIX.TimApi.Constants.AccountType, System.String, System.String, SIX.TimApi.Constants.TokenPanType, System.String, System.Byte())
+  nameWithType: CardData.CardData(PosEntryMode, String, String, String, String, String, Byte[], Int32, Nullable<DateTime>, String, String, List<CardTrackData>, Dictionary<String, Byte[]>, String, ProcessingDisposition, String, Int32, Int32, String, Byte[], CardProductType, Nullable<Int64>, String, AccountType, String, String, TokenPanType, String, Byte[])
+  nameWithType.vb: CardData.CardData(PosEntryMode, String, String, String, String, String, Byte(), Int32, Nullable(Of DateTime), String, String, List(Of CardTrackData), Dictionary(Of String, Byte()), String, ProcessingDisposition, String, Int32, Int32, String, Byte(), CardProductType, Nullable(Of Int64), String, AccountType, String, String, TokenPanType, String, Byte())
 - uid: SIX.TimApi.CardData.#ctor*
   name: CardData
   href: api/SIX.TimApi.CardData.html#SIX_TimApi_CardData__ctor_
@@ -1538,6 +1538,19 @@ references:
   isSpec: "True"
   fullName: SIX.TimApi.CardData.ProcessingDisposition
   nameWithType: CardData.ProcessingDisposition
+- uid: SIX.TimApi.CardData.SurrogatePanSecondary
+  name: SurrogatePanSecondary
+  href: api/SIX.TimApi.CardData.html#SIX_TimApi_CardData_SurrogatePanSecondary
+  commentId: P:SIX.TimApi.CardData.SurrogatePanSecondary
+  fullName: SIX.TimApi.CardData.SurrogatePanSecondary
+  nameWithType: CardData.SurrogatePanSecondary
+- uid: SIX.TimApi.CardData.SurrogatePanSecondary*
+  name: SurrogatePanSecondary
+  href: api/SIX.TimApi.CardData.html#SIX_TimApi_CardData_SurrogatePanSecondary_
+  commentId: Overload:SIX.TimApi.CardData.SurrogatePanSecondary
+  isSpec: "True"
+  fullName: SIX.TimApi.CardData.SurrogatePanSecondary
+  nameWithType: CardData.SurrogatePanSecondary
 - uid: SIX.TimApi.CardData.TenderName
   name: TenderName
   href: api/SIX.TimApi.CardData.html#SIX_TimApi_CardData_TenderName
@@ -5345,6 +5358,12 @@ references:
   commentId: F:SIX.TimApi.Constants.MerchantOptionType.MultiContractIndex
   fullName: SIX.TimApi.Constants.MerchantOptionType.MultiContractIndex
   nameWithType: MerchantOptionType.MultiContractIndex
+- uid: SIX.TimApi.Constants.MerchantOptionType.OrderId
+  name: OrderId
+  href: api/SIX.TimApi.Constants.MerchantOptionType.html#SIX_TimApi_Constants_MerchantOptionType_OrderId
+  commentId: F:SIX.TimApi.Constants.MerchantOptionType.OrderId
+  fullName: SIX.TimApi.Constants.MerchantOptionType.OrderId
+  nameWithType: MerchantOptionType.OrderId
 - uid: SIX.TimApi.Constants.MerchantOptionType.Posdnumber
   name: Posdnumber
   href: api/SIX.TimApi.Constants.MerchantOptionType.html#SIX_TimApi_Constants_MerchantOptionType_Posdnumber
@@ -6275,6 +6294,24 @@ references:
   commentId: F:SIX.TimApi.Constants.ReceiptItemType.KeyPanReceiptIndex
   fullName: SIX.TimApi.Constants.ReceiptItemType.KeyPanReceiptIndex
   nameWithType: ReceiptItemType.KeyPanReceiptIndex
+- uid: SIX.TimApi.Constants.ReceiptItemType.LanguageCardholder
+  name: LanguageCardholder
+  href: api/SIX.TimApi.Constants.ReceiptItemType.html#SIX_TimApi_Constants_ReceiptItemType_LanguageCardholder
+  commentId: F:SIX.TimApi.Constants.ReceiptItemType.LanguageCardholder
+  fullName: SIX.TimApi.Constants.ReceiptItemType.LanguageCardholder
+  nameWithType: ReceiptItemType.LanguageCardholder
+- uid: SIX.TimApi.Constants.ReceiptItemType.LanguageMerchant
+  name: LanguageMerchant
+  href: api/SIX.TimApi.Constants.ReceiptItemType.html#SIX_TimApi_Constants_ReceiptItemType_LanguageMerchant
+  commentId: F:SIX.TimApi.Constants.ReceiptItemType.LanguageMerchant
+  fullName: SIX.TimApi.Constants.ReceiptItemType.LanguageMerchant
+  nameWithType: ReceiptItemType.LanguageMerchant
+- uid: SIX.TimApi.Constants.ReceiptItemType.Last4digitsOfPan
+  name: Last4digitsOfPan
+  href: api/SIX.TimApi.Constants.ReceiptItemType.html#SIX_TimApi_Constants_ReceiptItemType_Last4digitsOfPan
+  commentId: F:SIX.TimApi.Constants.ReceiptItemType.Last4digitsOfPan
+  fullName: SIX.TimApi.Constants.ReceiptItemType.Last4digitsOfPan
+  nameWithType: ReceiptItemType.Last4digitsOfPan
 - uid: SIX.TimApi.Constants.ReceiptItemType.MarkupDcc
   name: MarkupDcc
   href: api/SIX.TimApi.Constants.ReceiptItemType.html#SIX_TimApi_Constants_ReceiptItemType_MarkupDcc
@@ -6323,6 +6360,12 @@ references:
   commentId: F:SIX.TimApi.Constants.ReceiptItemType.NumberOfInstallments
   fullName: SIX.TimApi.Constants.ReceiptItemType.NumberOfInstallments
   nameWithType: ReceiptItemType.NumberOfInstallments
+- uid: SIX.TimApi.Constants.ReceiptItemType.OrderId
+  name: OrderId
+  href: api/SIX.TimApi.Constants.ReceiptItemType.html#SIX_TimApi_Constants_ReceiptItemType_OrderId
+  commentId: F:SIX.TimApi.Constants.ReceiptItemType.OrderId
+  fullName: SIX.TimApi.Constants.ReceiptItemType.OrderId
+  nameWithType: ReceiptItemType.OrderId
 - uid: SIX.TimApi.Constants.ReceiptItemType.OriginalAid
   name: OriginalAid
   href: api/SIX.TimApi.Constants.ReceiptItemType.html#SIX_TimApi_Constants_ReceiptItemType_OriginalAid
@@ -6383,6 +6426,12 @@ references:
   commentId: F:SIX.TimApi.Constants.ReceiptItemType.PanReceiptDolIndex
   fullName: SIX.TimApi.Constants.ReceiptItemType.PanReceiptDolIndex
   nameWithType: ReceiptItemType.PanReceiptDolIndex
+- uid: SIX.TimApi.Constants.ReceiptItemType.PfaEvtSeqCnt
+  name: PfaEvtSeqCnt
+  href: api/SIX.TimApi.Constants.ReceiptItemType.html#SIX_TimApi_Constants_ReceiptItemType_PfaEvtSeqCnt
+  commentId: F:SIX.TimApi.Constants.ReceiptItemType.PfaEvtSeqCnt
+  fullName: SIX.TimApi.Constants.ReceiptItemType.PfaEvtSeqCnt
+  nameWithType: ReceiptItemType.PfaEvtSeqCnt
 - uid: SIX.TimApi.Constants.ReceiptItemType.Posdnumber
   name: Posdnumber
   href: api/SIX.TimApi.Constants.ReceiptItemType.html#SIX_TimApi_Constants_ReceiptItemType_Posdnumber
@@ -6467,12 +6516,24 @@ references:
   commentId: F:SIX.TimApi.Constants.ReceiptItemType.TimeStampTime
   fullName: SIX.TimApi.Constants.ReceiptItemType.TimeStampTime
   nameWithType: ReceiptItemType.TimeStampTime
+- uid: SIX.TimApi.Constants.ReceiptItemType.TransactionType
+  name: TransactionType
+  href: api/SIX.TimApi.Constants.ReceiptItemType.html#SIX_TimApi_Constants_ReceiptItemType_TransactionType
+  commentId: F:SIX.TimApi.Constants.ReceiptItemType.TransactionType
+  fullName: SIX.TimApi.Constants.ReceiptItemType.TransactionType
+  nameWithType: ReceiptItemType.TransactionType
 - uid: SIX.TimApi.Constants.ReceiptItemType.TrmId
   name: TrmId
   href: api/SIX.TimApi.Constants.ReceiptItemType.html#SIX_TimApi_Constants_ReceiptItemType_TrmId
   commentId: F:SIX.TimApi.Constants.ReceiptItemType.TrmId
   fullName: SIX.TimApi.Constants.ReceiptItemType.TrmId
   nameWithType: ReceiptItemType.TrmId
+- uid: SIX.TimApi.Constants.ReceiptItemType.TrxOk
+  name: TrxOk
+  href: api/SIX.TimApi.Constants.ReceiptItemType.html#SIX_TimApi_Constants_ReceiptItemType_TrxOk
+  commentId: F:SIX.TimApi.Constants.ReceiptItemType.TrxOk
+  fullName: SIX.TimApi.Constants.ReceiptItemType.TrxOk
+  nameWithType: ReceiptItemType.TrxOk
 - uid: SIX.TimApi.Constants.ReceiptItemType.TrxRefNum
   name: TrxRefNum
   href: api/SIX.TimApi.Constants.ReceiptItemType.html#SIX_TimApi_Constants_ReceiptItemType_TrxRefNum
@@ -6491,6 +6552,12 @@ references:
   commentId: F:SIX.TimApi.Constants.ReceiptItemType.Unknown
   fullName: SIX.TimApi.Constants.ReceiptItemType.Unknown
   nameWithType: ReceiptItemType.Unknown
+- uid: SIX.TimApi.Constants.ReceiptItemType.VerifiedByDevice
+  name: VerifiedByDevice
+  href: api/SIX.TimApi.Constants.ReceiptItemType.html#SIX_TimApi_Constants_ReceiptItemType_VerifiedByDevice
+  commentId: F:SIX.TimApi.Constants.ReceiptItemType.VerifiedByDevice
+  fullName: SIX.TimApi.Constants.ReceiptItemType.VerifiedByDevice
+  nameWithType: ReceiptItemType.VerifiedByDevice
 - uid: SIX.TimApi.Constants.ReceiptRequestType
   name: ReceiptRequestType
   href: api/SIX.TimApi.Constants.ReceiptRequestType.html
@@ -6725,6 +6792,36 @@ references:
   commentId: F:SIX.TimApi.Constants.Recipient.Unknown
   fullName: SIX.TimApi.Constants.Recipient.Unknown
   nameWithType: Recipient.Unknown
+- uid: SIX.TimApi.Constants.ReconfigMode
+  name: ReconfigMode
+  href: api/SIX.TimApi.Constants.ReconfigMode.html
+  commentId: T:SIX.TimApi.Constants.ReconfigMode
+  fullName: SIX.TimApi.Constants.ReconfigMode
+  nameWithType: ReconfigMode
+- uid: SIX.TimApi.Constants.ReconfigMode.AcqInit
+  name: AcqInit
+  href: api/SIX.TimApi.Constants.ReconfigMode.html#SIX_TimApi_Constants_ReconfigMode_AcqInit
+  commentId: F:SIX.TimApi.Constants.ReconfigMode.AcqInit
+  fullName: SIX.TimApi.Constants.ReconfigMode.AcqInit
+  nameWithType: ReconfigMode.AcqInit
+- uid: SIX.TimApi.Constants.ReconfigMode.FullReconfig
+  name: FullReconfig
+  href: api/SIX.TimApi.Constants.ReconfigMode.html#SIX_TimApi_Constants_ReconfigMode_FullReconfig
+  commentId: F:SIX.TimApi.Constants.ReconfigMode.FullReconfig
+  fullName: SIX.TimApi.Constants.ReconfigMode.FullReconfig
+  nameWithType: ReconfigMode.FullReconfig
+- uid: SIX.TimApi.Constants.ReconfigMode.TrmConfig
+  name: TrmConfig
+  href: api/SIX.TimApi.Constants.ReconfigMode.html#SIX_TimApi_Constants_ReconfigMode_TrmConfig
+  commentId: F:SIX.TimApi.Constants.ReconfigMode.TrmConfig
+  fullName: SIX.TimApi.Constants.ReconfigMode.TrmConfig
+  nameWithType: ReconfigMode.TrmConfig
+- uid: SIX.TimApi.Constants.ReconfigMode.Unknown
+  name: Unknown
+  href: api/SIX.TimApi.Constants.ReconfigMode.html#SIX_TimApi_Constants_ReconfigMode_Unknown
+  commentId: F:SIX.TimApi.Constants.ReconfigMode.Unknown
+  fullName: SIX.TimApi.Constants.ReconfigMode.Unknown
+  nameWithType: ReconfigMode.Unknown
 - uid: SIX.TimApi.Constants.RemoteFunctions
   name: RemoteFunctions
   href: api/SIX.TimApi.Constants.RemoteFunctions.html
@@ -6857,6 +6954,12 @@ references:
   commentId: F:SIX.TimApi.Constants.ResourceId.CommonRemoveCard
   fullName: SIX.TimApi.Constants.ResourceId.CommonRemoveCard
   nameWithType: ResourceId.CommonRemoveCard
+- uid: SIX.TimApi.Constants.ResourceId.DangerousGoods
+  name: DangerousGoods
+  href: api/SIX.TimApi.Constants.ResourceId.html#SIX_TimApi_Constants_ResourceId_DangerousGoods
+  commentId: F:SIX.TimApi.Constants.ResourceId.DangerousGoods
+  fullName: SIX.TimApi.Constants.ResourceId.DangerousGoods
+  nameWithType: ResourceId.DangerousGoods
 - uid: SIX.TimApi.Constants.ResourceId.EnterAdditionalInformation
   name: EnterAdditionalInformation
   href: api/SIX.TimApi.Constants.ResourceId.html#SIX_TimApi_Constants_ResourceId_EnterAdditionalInformation
@@ -8279,12 +8382,24 @@ references:
   commentId: F:SIX.TimApi.Constants.ResultCode.DisplayUnavailable
   fullName: SIX.TimApi.Constants.ResultCode.DisplayUnavailable
   nameWithType: ResultCode.DisplayUnavailable
+- uid: SIX.TimApi.Constants.ResultCode.DuplicateRequestInProgress
+  name: DuplicateRequestInProgress
+  href: api/SIX.TimApi.Constants.ResultCode.html#SIX_TimApi_Constants_ResultCode_DuplicateRequestInProgress
+  commentId: F:SIX.TimApi.Constants.ResultCode.DuplicateRequestInProgress
+  fullName: SIX.TimApi.Constants.ResultCode.DuplicateRequestInProgress
+  nameWithType: ResultCode.DuplicateRequestInProgress
 - uid: SIX.TimApi.Constants.ResultCode.EthernetDisconnected
   name: EthernetDisconnected
   href: api/SIX.TimApi.Constants.ResultCode.html#SIX_TimApi_Constants_ResultCode_EthernetDisconnected
   commentId: F:SIX.TimApi.Constants.ResultCode.EthernetDisconnected
   fullName: SIX.TimApi.Constants.ResultCode.EthernetDisconnected
   nameWithType: ResultCode.EthernetDisconnected
+- uid: SIX.TimApi.Constants.ResultCode.GenericBlacklistMatch
+  name: GenericBlacklistMatch
+  href: api/SIX.TimApi.Constants.ResultCode.html#SIX_TimApi_Constants_ResultCode_GenericBlacklistMatch
+  commentId: F:SIX.TimApi.Constants.ResultCode.GenericBlacklistMatch
+  fullName: SIX.TimApi.Constants.ResultCode.GenericBlacklistMatch
+  nameWithType: ResultCode.GenericBlacklistMatch
 - uid: SIX.TimApi.Constants.ResultCode.HostTimeoutOutcomeUnknown
   name: HostTimeoutOutcomeUnknown
   href: api/SIX.TimApi.Constants.ResultCode.html#SIX_TimApi_Constants_ResultCode_HostTimeoutOutcomeUnknown
@@ -8399,6 +8514,12 @@ references:
   commentId: F:SIX.TimApi.Constants.ResultCode.Ok
   fullName: SIX.TimApi.Constants.ResultCode.Ok
   nameWithType: ResultCode.Ok
+- uid: SIX.TimApi.Constants.ResultCode.OwnRiskTransactionLogFull
+  name: OwnRiskTransactionLogFull
+  href: api/SIX.TimApi.Constants.ResultCode.html#SIX_TimApi_Constants_ResultCode_OwnRiskTransactionLogFull
+  commentId: F:SIX.TimApi.Constants.ResultCode.OwnRiskTransactionLogFull
+  fullName: SIX.TimApi.Constants.ResultCode.OwnRiskTransactionLogFull
+  nameWithType: ResultCode.OwnRiskTransactionLogFull
 - uid: SIX.TimApi.Constants.ResultCode.PinPadKeysLost
   name: PinPadKeysLost
   href: api/SIX.TimApi.Constants.ResultCode.html#SIX_TimApi_Constants_ResultCode_PinPadKeysLost
@@ -8783,6 +8904,12 @@ references:
   commentId: F:SIX.TimApi.Constants.SettingType.Language
   fullName: SIX.TimApi.Constants.SettingType.Language
   nameWithType: SettingType.Language
+- uid: SIX.TimApi.Constants.SettingType.OwnRisk2activation
+  name: OwnRisk2activation
+  href: api/SIX.TimApi.Constants.SettingType.html#SIX_TimApi_Constants_SettingType_OwnRisk2activation
+  commentId: F:SIX.TimApi.Constants.SettingType.OwnRisk2activation
+  fullName: SIX.TimApi.Constants.SettingType.OwnRisk2activation
+  nameWithType: SettingType.OwnRisk2activation
 - uid: SIX.TimApi.Constants.SettingType.PowerManagementMode
   name: PowerManagementMode
   href: api/SIX.TimApi.Constants.SettingType.html#SIX_TimApi_Constants_SettingType_PowerManagementMode
@@ -9029,6 +9156,18 @@ references:
   commentId: F:SIX.TimApi.Constants.TransactionReason.RecurringFixed
   fullName: SIX.TimApi.Constants.TransactionReason.RecurringFixed
   nameWithType: TransactionReason.RecurringFixed
+- uid: SIX.TimApi.Constants.TransactionReason.RecurringFixedSubsequent
+  name: RecurringFixedSubsequent
+  href: api/SIX.TimApi.Constants.TransactionReason.html#SIX_TimApi_Constants_TransactionReason_RecurringFixedSubsequent
+  commentId: F:SIX.TimApi.Constants.TransactionReason.RecurringFixedSubsequent
+  fullName: SIX.TimApi.Constants.TransactionReason.RecurringFixedSubsequent
+  nameWithType: TransactionReason.RecurringFixedSubsequent
+- uid: SIX.TimApi.Constants.TransactionReason.RecurringSubsequent
+  name: RecurringSubsequent
+  href: api/SIX.TimApi.Constants.TransactionReason.html#SIX_TimApi_Constants_TransactionReason_RecurringSubsequent
+  commentId: F:SIX.TimApi.Constants.TransactionReason.RecurringSubsequent
+  fullName: SIX.TimApi.Constants.TransactionReason.RecurringSubsequent
+  nameWithType: TransactionReason.RecurringSubsequent
 - uid: SIX.TimApi.Constants.TransactionReason.Unknown
   name: Unknown
   href: api/SIX.TimApi.Constants.TransactionReason.html#SIX_TimApi_Constants_TransactionReason_Unknown
@@ -11655,12 +11794,12 @@ references:
   commentId: T:SIX.TimApi.FeaturesPayment
   fullName: SIX.TimApi.FeaturesPayment
   nameWithType: FeaturesPayment
-- uid: SIX.TimApi.FeaturesPayment.#ctor(System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,SIX.TimApi.FeaturesPayment.AgeCheckSupport,System.Boolean)
-  name: FeaturesPayment(Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, FeaturesPayment.AgeCheckSupport, Boolean)
-  href: api/SIX.TimApi.FeaturesPayment.html#SIX_TimApi_FeaturesPayment__ctor_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_SIX_TimApi_FeaturesPayment_AgeCheckSupport_System_Boolean_
-  commentId: M:SIX.TimApi.FeaturesPayment.#ctor(System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,SIX.TimApi.FeaturesPayment.AgeCheckSupport,System.Boolean)
-  fullName: SIX.TimApi.FeaturesPayment.FeaturesPayment(System.Boolean, System.Boolean, System.Boolean, System.Boolean, System.Boolean, System.Boolean, System.Boolean, System.Boolean, System.Boolean, System.Boolean, System.Boolean, System.Boolean, System.Boolean, System.Boolean, SIX.TimApi.FeaturesPayment.AgeCheckSupport, System.Boolean)
-  nameWithType: FeaturesPayment.FeaturesPayment(Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, FeaturesPayment.AgeCheckSupport, Boolean)
+- uid: SIX.TimApi.FeaturesPayment.#ctor(System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,SIX.TimApi.FeaturesPayment.AgeCheckSupport,System.Boolean)
+  name: FeaturesPayment(Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, FeaturesPayment.AgeCheckSupport, Boolean)
+  href: api/SIX.TimApi.FeaturesPayment.html#SIX_TimApi_FeaturesPayment__ctor_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_SIX_TimApi_FeaturesPayment_AgeCheckSupport_System_Boolean_
+  commentId: M:SIX.TimApi.FeaturesPayment.#ctor(System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,SIX.TimApi.FeaturesPayment.AgeCheckSupport,System.Boolean)
+  fullName: SIX.TimApi.FeaturesPayment.FeaturesPayment(System.Boolean, System.Boolean, System.Boolean, System.Boolean, System.Boolean, System.Boolean, System.Boolean, System.Boolean, System.Boolean, System.Boolean, System.Boolean, System.Boolean, System.Boolean, System.Boolean, System.Boolean, SIX.TimApi.FeaturesPayment.AgeCheckSupport, System.Boolean)
+  nameWithType: FeaturesPayment.FeaturesPayment(Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, FeaturesPayment.AgeCheckSupport, Boolean)
 - uid: SIX.TimApi.FeaturesPayment.#ctor*
   name: FeaturesPayment
   href: api/SIX.TimApi.FeaturesPayment.html#SIX_TimApi_FeaturesPayment__ctor_
@@ -11809,6 +11948,19 @@ references:
   isSpec: "True"
   fullName: SIX.TimApi.FeaturesPayment.canEp2MultiContractSelection
   nameWithType: FeaturesPayment.canEp2MultiContractSelection
+- uid: SIX.TimApi.FeaturesPayment.canEp2OwnRisk2
+  name: canEp2OwnRisk2()
+  href: api/SIX.TimApi.FeaturesPayment.html#SIX_TimApi_FeaturesPayment_canEp2OwnRisk2
+  commentId: M:SIX.TimApi.FeaturesPayment.canEp2OwnRisk2
+  fullName: SIX.TimApi.FeaturesPayment.canEp2OwnRisk2()
+  nameWithType: FeaturesPayment.canEp2OwnRisk2()
+- uid: SIX.TimApi.FeaturesPayment.canEp2OwnRisk2*
+  name: canEp2OwnRisk2
+  href: api/SIX.TimApi.FeaturesPayment.html#SIX_TimApi_FeaturesPayment_canEp2OwnRisk2_
+  commentId: Overload:SIX.TimApi.FeaturesPayment.canEp2OwnRisk2
+  isSpec: "True"
+  fullName: SIX.TimApi.FeaturesPayment.canEp2OwnRisk2
+  nameWithType: FeaturesPayment.canEp2OwnRisk2
 - uid: SIX.TimApi.FeaturesPayment.canMcr
   name: canMcr()
   href: api/SIX.TimApi.FeaturesPayment.html#SIX_TimApi_FeaturesPayment_canMcr
@@ -13385,6 +13537,19 @@ references:
   isSpec: "True"
   fullName: SIX.TimApi.ImmutableTerminalSettings.SerialPort
   nameWithType: ImmutableTerminalSettings.SerialPort
+- uid: SIX.TimApi.ImmutableTerminalSettings.SilentLogin
+  name: SilentLogin
+  href: api/SIX.TimApi.ImmutableTerminalSettings.html#SIX_TimApi_ImmutableTerminalSettings_SilentLogin
+  commentId: P:SIX.TimApi.ImmutableTerminalSettings.SilentLogin
+  fullName: SIX.TimApi.ImmutableTerminalSettings.SilentLogin
+  nameWithType: ImmutableTerminalSettings.SilentLogin
+- uid: SIX.TimApi.ImmutableTerminalSettings.SilentLogin*
+  name: SilentLogin
+  href: api/SIX.TimApi.ImmutableTerminalSettings.html#SIX_TimApi_ImmutableTerminalSettings_SilentLogin_
+  commentId: Overload:SIX.TimApi.ImmutableTerminalSettings.SilentLogin
+  isSpec: "True"
+  fullName: SIX.TimApi.ImmutableTerminalSettings.SilentLogin
+  nameWithType: ImmutableTerminalSettings.SilentLogin
 - uid: SIX.TimApi.ImmutableTerminalSettings.SIXmlRequestTimeout
   name: SIXmlRequestTimeout
   href: api/SIX.TimApi.ImmutableTerminalSettings.html#SIX_TimApi_ImmutableTerminalSettings_SIXmlRequestTimeout
@@ -15023,6 +15188,12 @@ references:
   commentId: T:SIX.TimApi.Receipts.CustomReceiptFormatter.Condition
   fullName: SIX.TimApi.Receipts.CustomReceiptFormatter.Condition
   nameWithType: CustomReceiptFormatter.Condition
+- uid: SIX.TimApi.Receipts.CustomReceiptFormatter.Condition.CONTACTLESS
+  name: CONTACTLESS
+  href: api/SIX.TimApi.Receipts.CustomReceiptFormatter.Condition.html#SIX_TimApi_Receipts_CustomReceiptFormatter_Condition_CONTACTLESS
+  commentId: F:SIX.TimApi.Receipts.CustomReceiptFormatter.Condition.CONTACTLESS
+  fullName: SIX.TimApi.Receipts.CustomReceiptFormatter.Condition.CONTACTLESS
+  nameWithType: CustomReceiptFormatter.Condition.CONTACTLESS
 - uid: SIX.TimApi.Receipts.CustomReceiptFormatter.Condition.DCC
   name: DCC
   href: api/SIX.TimApi.Receipts.CustomReceiptFormatter.Condition.html#SIX_TimApi_Receipts_CustomReceiptFormatter_Condition_DCC
@@ -15047,6 +15218,12 @@ references:
   commentId: F:SIX.TimApi.Receipts.CustomReceiptFormatter.Condition.EFT_INFO
   fullName: SIX.TimApi.Receipts.CustomReceiptFormatter.Condition.EFT_INFO
   nameWithType: CustomReceiptFormatter.Condition.EFT_INFO
+- uid: SIX.TimApi.Receipts.CustomReceiptFormatter.Condition.FIELD_TRANSACTION_TYPE
+  name: FIELD_TRANSACTION_TYPE
+  href: api/SIX.TimApi.Receipts.CustomReceiptFormatter.Condition.html#SIX_TimApi_Receipts_CustomReceiptFormatter_Condition_FIELD_TRANSACTION_TYPE
+  commentId: F:SIX.TimApi.Receipts.CustomReceiptFormatter.Condition.FIELD_TRANSACTION_TYPE
+  fullName: SIX.TimApi.Receipts.CustomReceiptFormatter.Condition.FIELD_TRANSACTION_TYPE
+  nameWithType: CustomReceiptFormatter.Condition.FIELD_TRANSACTION_TYPE
 - uid: SIX.TimApi.Receipts.CustomReceiptFormatter.Condition.FOOTER
   name: FOOTER
   href: api/SIX.TimApi.Receipts.CustomReceiptFormatter.Condition.html#SIX_TimApi_Receipts_CustomReceiptFormatter_Condition_FOOTER
@@ -15095,18 +15272,42 @@ references:
   commentId: F:SIX.TimApi.Receipts.CustomReceiptFormatter.Condition.IS_REVERSAL
   fullName: SIX.TimApi.Receipts.CustomReceiptFormatter.Condition.IS_REVERSAL
   nameWithType: CustomReceiptFormatter.Condition.IS_REVERSAL
-- uid: SIX.TimApi.Receipts.CustomReceiptFormatter.Condition.MERCHANT_SIGNATURE
-  name: MERCHANT_SIGNATURE
-  href: api/SIX.TimApi.Receipts.CustomReceiptFormatter.Condition.html#SIX_TimApi_Receipts_CustomReceiptFormatter_Condition_MERCHANT_SIGNATURE
-  commentId: F:SIX.TimApi.Receipts.CustomReceiptFormatter.Condition.MERCHANT_SIGNATURE
-  fullName: SIX.TimApi.Receipts.CustomReceiptFormatter.Condition.MERCHANT_SIGNATURE
-  nameWithType: CustomReceiptFormatter.Condition.MERCHANT_SIGNATURE
+- uid: SIX.TimApi.Receipts.CustomReceiptFormatter.Condition.NO_DCC_REGULATED
+  name: NO_DCC_REGULATED
+  href: api/SIX.TimApi.Receipts.CustomReceiptFormatter.Condition.html#SIX_TimApi_Receipts_CustomReceiptFormatter_Condition_NO_DCC_REGULATED
+  commentId: F:SIX.TimApi.Receipts.CustomReceiptFormatter.Condition.NO_DCC_REGULATED
+  fullName: SIX.TimApi.Receipts.CustomReceiptFormatter.Condition.NO_DCC_REGULATED
+  nameWithType: CustomReceiptFormatter.Condition.NO_DCC_REGULATED
+- uid: SIX.TimApi.Receipts.CustomReceiptFormatter.Condition.NO_FIELD_TRANSACTION_TYPE
+  name: NO_FIELD_TRANSACTION_TYPE
+  href: api/SIX.TimApi.Receipts.CustomReceiptFormatter.Condition.html#SIX_TimApi_Receipts_CustomReceiptFormatter_Condition_NO_FIELD_TRANSACTION_TYPE
+  commentId: F:SIX.TimApi.Receipts.CustomReceiptFormatter.Condition.NO_FIELD_TRANSACTION_TYPE
+  fullName: SIX.TimApi.Receipts.CustomReceiptFormatter.Condition.NO_FIELD_TRANSACTION_TYPE
+  nameWithType: CustomReceiptFormatter.Condition.NO_FIELD_TRANSACTION_TYPE
 - uid: SIX.TimApi.Receipts.CustomReceiptFormatter.Condition.NO_PARTIAL_APPROVAL
   name: NO_PARTIAL_APPROVAL
   href: api/SIX.TimApi.Receipts.CustomReceiptFormatter.Condition.html#SIX_TimApi_Receipts_CustomReceiptFormatter_Condition_NO_PARTIAL_APPROVAL
   commentId: F:SIX.TimApi.Receipts.CustomReceiptFormatter.Condition.NO_PARTIAL_APPROVAL
   fullName: SIX.TimApi.Receipts.CustomReceiptFormatter.Condition.NO_PARTIAL_APPROVAL
   nameWithType: CustomReceiptFormatter.Condition.NO_PARTIAL_APPROVAL
+- uid: SIX.TimApi.Receipts.CustomReceiptFormatter.Condition.NO_PARTIAL_APPROVAL_AND_NO_RESERVATION_ADJUSTMENT
+  name: NO_PARTIAL_APPROVAL_AND_NO_RESERVATION_ADJUSTMENT
+  href: api/SIX.TimApi.Receipts.CustomReceiptFormatter.Condition.html#SIX_TimApi_Receipts_CustomReceiptFormatter_Condition_NO_PARTIAL_APPROVAL_AND_NO_RESERVATION_ADJUSTMENT
+  commentId: F:SIX.TimApi.Receipts.CustomReceiptFormatter.Condition.NO_PARTIAL_APPROVAL_AND_NO_RESERVATION_ADJUSTMENT
+  fullName: SIX.TimApi.Receipts.CustomReceiptFormatter.Condition.NO_PARTIAL_APPROVAL_AND_NO_RESERVATION_ADJUSTMENT
+  nameWithType: CustomReceiptFormatter.Condition.NO_PARTIAL_APPROVAL_AND_NO_RESERVATION_ADJUSTMENT
+- uid: SIX.TimApi.Receipts.CustomReceiptFormatter.Condition.NO_RESERVATION_ADJUSTMENT
+  name: NO_RESERVATION_ADJUSTMENT
+  href: api/SIX.TimApi.Receipts.CustomReceiptFormatter.Condition.html#SIX_TimApi_Receipts_CustomReceiptFormatter_Condition_NO_RESERVATION_ADJUSTMENT
+  commentId: F:SIX.TimApi.Receipts.CustomReceiptFormatter.Condition.NO_RESERVATION_ADJUSTMENT
+  fullName: SIX.TimApi.Receipts.CustomReceiptFormatter.Condition.NO_RESERVATION_ADJUSTMENT
+  nameWithType: CustomReceiptFormatter.Condition.NO_RESERVATION_ADJUSTMENT
+- uid: SIX.TimApi.Receipts.CustomReceiptFormatter.Condition.NO_TENDER_NAME
+  name: NO_TENDER_NAME
+  href: api/SIX.TimApi.Receipts.CustomReceiptFormatter.Condition.html#SIX_TimApi_Receipts_CustomReceiptFormatter_Condition_NO_TENDER_NAME
+  commentId: F:SIX.TimApi.Receipts.CustomReceiptFormatter.Condition.NO_TENDER_NAME
+  fullName: SIX.TimApi.Receipts.CustomReceiptFormatter.Condition.NO_TENDER_NAME
+  nameWithType: CustomReceiptFormatter.Condition.NO_TENDER_NAME
 - uid: SIX.TimApi.Receipts.CustomReceiptFormatter.Condition.NONE
   name: NONE
   href: api/SIX.TimApi.Receipts.CustomReceiptFormatter.Condition.html#SIX_TimApi_Receipts_CustomReceiptFormatter_Condition_NONE
@@ -15119,12 +15320,42 @@ references:
   commentId: F:SIX.TimApi.Receipts.CustomReceiptFormatter.Condition.PARTIAL_APPROVAL
   fullName: SIX.TimApi.Receipts.CustomReceiptFormatter.Condition.PARTIAL_APPROVAL
   nameWithType: CustomReceiptFormatter.Condition.PARTIAL_APPROVAL
+- uid: SIX.TimApi.Receipts.CustomReceiptFormatter.Condition.RESERVATION_ADJUSTMENT
+  name: RESERVATION_ADJUSTMENT
+  href: api/SIX.TimApi.Receipts.CustomReceiptFormatter.Condition.html#SIX_TimApi_Receipts_CustomReceiptFormatter_Condition_RESERVATION_ADJUSTMENT
+  commentId: F:SIX.TimApi.Receipts.CustomReceiptFormatter.Condition.RESERVATION_ADJUSTMENT
+  fullName: SIX.TimApi.Receipts.CustomReceiptFormatter.Condition.RESERVATION_ADJUSTMENT
+  nameWithType: CustomReceiptFormatter.Condition.RESERVATION_ADJUSTMENT
 - uid: SIX.TimApi.Receipts.CustomReceiptFormatter.Condition.SIGNATURE
   name: SIGNATURE
   href: api/SIX.TimApi.Receipts.CustomReceiptFormatter.Condition.html#SIX_TimApi_Receipts_CustomReceiptFormatter_Condition_SIGNATURE
   commentId: F:SIX.TimApi.Receipts.CustomReceiptFormatter.Condition.SIGNATURE
   fullName: SIX.TimApi.Receipts.CustomReceiptFormatter.Condition.SIGNATURE
   nameWithType: CustomReceiptFormatter.Condition.SIGNATURE
+- uid: SIX.TimApi.Receipts.CustomReceiptFormatter.Condition.SIGNATURE_MERCHANT
+  name: SIGNATURE_MERCHANT
+  href: api/SIX.TimApi.Receipts.CustomReceiptFormatter.Condition.html#SIX_TimApi_Receipts_CustomReceiptFormatter_Condition_SIGNATURE_MERCHANT
+  commentId: F:SIX.TimApi.Receipts.CustomReceiptFormatter.Condition.SIGNATURE_MERCHANT
+  fullName: SIX.TimApi.Receipts.CustomReceiptFormatter.Condition.SIGNATURE_MERCHANT
+  nameWithType: CustomReceiptFormatter.Condition.SIGNATURE_MERCHANT
+- uid: SIX.TimApi.Receipts.CustomReceiptFormatter.Condition.TRX_OK
+  name: TRX_OK
+  href: api/SIX.TimApi.Receipts.CustomReceiptFormatter.Condition.html#SIX_TimApi_Receipts_CustomReceiptFormatter_Condition_TRX_OK
+  commentId: F:SIX.TimApi.Receipts.CustomReceiptFormatter.Condition.TRX_OK
+  fullName: SIX.TimApi.Receipts.CustomReceiptFormatter.Condition.TRX_OK
+  nameWithType: CustomReceiptFormatter.Condition.TRX_OK
+- uid: SIX.TimApi.Receipts.CustomReceiptFormatter.Condition.TRX_OK_OR_VERIFIED_BY_DEVICE
+  name: TRX_OK_OR_VERIFIED_BY_DEVICE
+  href: api/SIX.TimApi.Receipts.CustomReceiptFormatter.Condition.html#SIX_TimApi_Receipts_CustomReceiptFormatter_Condition_TRX_OK_OR_VERIFIED_BY_DEVICE
+  commentId: F:SIX.TimApi.Receipts.CustomReceiptFormatter.Condition.TRX_OK_OR_VERIFIED_BY_DEVICE
+  fullName: SIX.TimApi.Receipts.CustomReceiptFormatter.Condition.TRX_OK_OR_VERIFIED_BY_DEVICE
+  nameWithType: CustomReceiptFormatter.Condition.TRX_OK_OR_VERIFIED_BY_DEVICE
+- uid: SIX.TimApi.Receipts.CustomReceiptFormatter.Condition.VERIFIED_BY_DEVICE
+  name: VERIFIED_BY_DEVICE
+  href: api/SIX.TimApi.Receipts.CustomReceiptFormatter.Condition.html#SIX_TimApi_Receipts_CustomReceiptFormatter_Condition_VERIFIED_BY_DEVICE
+  commentId: F:SIX.TimApi.Receipts.CustomReceiptFormatter.Condition.VERIFIED_BY_DEVICE
+  fullName: SIX.TimApi.Receipts.CustomReceiptFormatter.Condition.VERIFIED_BY_DEVICE
+  nameWithType: CustomReceiptFormatter.Condition.VERIFIED_BY_DEVICE
 - uid: SIX.TimApi.Receipts.CustomReceiptFormatter.Counters
   name: CustomReceiptFormatter.Counters
   href: api/SIX.TimApi.Receipts.CustomReceiptFormatter.Counters.html
@@ -15905,12 +16136,18 @@ references:
   commentId: F:SIX.TimApi.Receipts.CustomReceiptFormatter.TextType.FIELD_FUEL_DISPENSER_NUMBER
   fullName: SIX.TimApi.Receipts.CustomReceiptFormatter.TextType.FIELD_FUEL_DISPENSER_NUMBER
   nameWithType: CustomReceiptFormatter.TextType.FIELD_FUEL_DISPENSER_NUMBER
-- uid: SIX.TimApi.Receipts.CustomReceiptFormatter.TextType.FIELD_HOST_TEXT
-  name: FIELD_HOST_TEXT
-  href: api/SIX.TimApi.Receipts.CustomReceiptFormatter.TextType.html#SIX_TimApi_Receipts_CustomReceiptFormatter_TextType_FIELD_HOST_TEXT
-  commentId: F:SIX.TimApi.Receipts.CustomReceiptFormatter.TextType.FIELD_HOST_TEXT
-  fullName: SIX.TimApi.Receipts.CustomReceiptFormatter.TextType.FIELD_HOST_TEXT
-  nameWithType: CustomReceiptFormatter.TextType.FIELD_HOST_TEXT
+- uid: SIX.TimApi.Receipts.CustomReceiptFormatter.TextType.FIELD_HOST_CARDHOLDER_TEXT
+  name: FIELD_HOST_CARDHOLDER_TEXT
+  href: api/SIX.TimApi.Receipts.CustomReceiptFormatter.TextType.html#SIX_TimApi_Receipts_CustomReceiptFormatter_TextType_FIELD_HOST_CARDHOLDER_TEXT
+  commentId: F:SIX.TimApi.Receipts.CustomReceiptFormatter.TextType.FIELD_HOST_CARDHOLDER_TEXT
+  fullName: SIX.TimApi.Receipts.CustomReceiptFormatter.TextType.FIELD_HOST_CARDHOLDER_TEXT
+  nameWithType: CustomReceiptFormatter.TextType.FIELD_HOST_CARDHOLDER_TEXT
+- uid: SIX.TimApi.Receipts.CustomReceiptFormatter.TextType.FIELD_HOST_MERCHANT_TEXT
+  name: FIELD_HOST_MERCHANT_TEXT
+  href: api/SIX.TimApi.Receipts.CustomReceiptFormatter.TextType.html#SIX_TimApi_Receipts_CustomReceiptFormatter_TextType_FIELD_HOST_MERCHANT_TEXT
+  commentId: F:SIX.TimApi.Receipts.CustomReceiptFormatter.TextType.FIELD_HOST_MERCHANT_TEXT
+  fullName: SIX.TimApi.Receipts.CustomReceiptFormatter.TextType.FIELD_HOST_MERCHANT_TEXT
+  nameWithType: CustomReceiptFormatter.TextType.FIELD_HOST_MERCHANT_TEXT
 - uid: SIX.TimApi.Receipts.CustomReceiptFormatter.TextType.FIELD_INSTALLMENT_DISCLAIMER
   name: FIELD_INSTALLMENT_DISCLAIMER
   href: api/SIX.TimApi.Receipts.CustomReceiptFormatter.TextType.html#SIX_TimApi_Receipts_CustomReceiptFormatter_TextType_FIELD_INSTALLMENT_DISCLAIMER
@@ -15929,6 +16166,12 @@ references:
   commentId: F:SIX.TimApi.Receipts.CustomReceiptFormatter.TextType.FIELD_KEY_PAN_RECEIPT_INDEX
   fullName: SIX.TimApi.Receipts.CustomReceiptFormatter.TextType.FIELD_KEY_PAN_RECEIPT_INDEX
   nameWithType: CustomReceiptFormatter.TextType.FIELD_KEY_PAN_RECEIPT_INDEX
+- uid: SIX.TimApi.Receipts.CustomReceiptFormatter.TextType.FIELD_LAST_4_DIGITS_OF_PAN
+  name: FIELD_LAST_4_DIGITS_OF_PAN
+  href: api/SIX.TimApi.Receipts.CustomReceiptFormatter.TextType.html#SIX_TimApi_Receipts_CustomReceiptFormatter_TextType_FIELD_LAST_4_DIGITS_OF_PAN
+  commentId: F:SIX.TimApi.Receipts.CustomReceiptFormatter.TextType.FIELD_LAST_4_DIGITS_OF_PAN
+  fullName: SIX.TimApi.Receipts.CustomReceiptFormatter.TextType.FIELD_LAST_4_DIGITS_OF_PAN
+  nameWithType: CustomReceiptFormatter.TextType.FIELD_LAST_4_DIGITS_OF_PAN
 - uid: SIX.TimApi.Receipts.CustomReceiptFormatter.TextType.FIELD_MARKUP_DCC
   name: FIELD_MARKUP_DCC
   href: api/SIX.TimApi.Receipts.CustomReceiptFormatter.TextType.html#SIX_TimApi_Receipts_CustomReceiptFormatter_TextType_FIELD_MARKUP_DCC
@@ -15977,6 +16220,12 @@ references:
   commentId: F:SIX.TimApi.Receipts.CustomReceiptFormatter.TextType.FIELD_NUMBER_OF_INSTALLMENTS
   fullName: SIX.TimApi.Receipts.CustomReceiptFormatter.TextType.FIELD_NUMBER_OF_INSTALLMENTS
   nameWithType: CustomReceiptFormatter.TextType.FIELD_NUMBER_OF_INSTALLMENTS
+- uid: SIX.TimApi.Receipts.CustomReceiptFormatter.TextType.FIELD_ORDER_ID
+  name: FIELD_ORDER_ID
+  href: api/SIX.TimApi.Receipts.CustomReceiptFormatter.TextType.html#SIX_TimApi_Receipts_CustomReceiptFormatter_TextType_FIELD_ORDER_ID
+  commentId: F:SIX.TimApi.Receipts.CustomReceiptFormatter.TextType.FIELD_ORDER_ID
+  fullName: SIX.TimApi.Receipts.CustomReceiptFormatter.TextType.FIELD_ORDER_ID
+  nameWithType: CustomReceiptFormatter.TextType.FIELD_ORDER_ID
 - uid: SIX.TimApi.Receipts.CustomReceiptFormatter.TextType.FIELD_ORIGINAL_AID
   name: FIELD_ORIGINAL_AID
   href: api/SIX.TimApi.Receipts.CustomReceiptFormatter.TextType.html#SIX_TimApi_Receipts_CustomReceiptFormatter_TextType_FIELD_ORIGINAL_AID
@@ -16037,6 +16286,12 @@ references:
   commentId: F:SIX.TimApi.Receipts.CustomReceiptFormatter.TextType.FIELD_PAN_RECEIPT_DOL_INDEX
   fullName: SIX.TimApi.Receipts.CustomReceiptFormatter.TextType.FIELD_PAN_RECEIPT_DOL_INDEX
   nameWithType: CustomReceiptFormatter.TextType.FIELD_PAN_RECEIPT_DOL_INDEX
+- uid: SIX.TimApi.Receipts.CustomReceiptFormatter.TextType.FIELD_PFA_EVT_SEQ_CNT
+  name: FIELD_PFA_EVT_SEQ_CNT
+  href: api/SIX.TimApi.Receipts.CustomReceiptFormatter.TextType.html#SIX_TimApi_Receipts_CustomReceiptFormatter_TextType_FIELD_PFA_EVT_SEQ_CNT
+  commentId: F:SIX.TimApi.Receipts.CustomReceiptFormatter.TextType.FIELD_PFA_EVT_SEQ_CNT
+  fullName: SIX.TimApi.Receipts.CustomReceiptFormatter.TextType.FIELD_PFA_EVT_SEQ_CNT
+  nameWithType: CustomReceiptFormatter.TextType.FIELD_PFA_EVT_SEQ_CNT
 - uid: SIX.TimApi.Receipts.CustomReceiptFormatter.TextType.FIELD_POS_ENTRY_MODE
   name: FIELD_POS_ENTRY_MODE
   href: api/SIX.TimApi.Receipts.CustomReceiptFormatter.TextType.html#SIX_TimApi_Receipts_CustomReceiptFormatter_TextType_FIELD_POS_ENTRY_MODE
@@ -16127,12 +16382,24 @@ references:
   commentId: F:SIX.TimApi.Receipts.CustomReceiptFormatter.TextType.FIELD_TIME_STAMP_TIME
   fullName: SIX.TimApi.Receipts.CustomReceiptFormatter.TextType.FIELD_TIME_STAMP_TIME
   nameWithType: CustomReceiptFormatter.TextType.FIELD_TIME_STAMP_TIME
+- uid: SIX.TimApi.Receipts.CustomReceiptFormatter.TextType.FIELD_TRANSACTION_TYPE
+  name: FIELD_TRANSACTION_TYPE
+  href: api/SIX.TimApi.Receipts.CustomReceiptFormatter.TextType.html#SIX_TimApi_Receipts_CustomReceiptFormatter_TextType_FIELD_TRANSACTION_TYPE
+  commentId: F:SIX.TimApi.Receipts.CustomReceiptFormatter.TextType.FIELD_TRANSACTION_TYPE
+  fullName: SIX.TimApi.Receipts.CustomReceiptFormatter.TextType.FIELD_TRANSACTION_TYPE
+  nameWithType: CustomReceiptFormatter.TextType.FIELD_TRANSACTION_TYPE
 - uid: SIX.TimApi.Receipts.CustomReceiptFormatter.TextType.FIELD_TRM_ID
   name: FIELD_TRM_ID
   href: api/SIX.TimApi.Receipts.CustomReceiptFormatter.TextType.html#SIX_TimApi_Receipts_CustomReceiptFormatter_TextType_FIELD_TRM_ID
   commentId: F:SIX.TimApi.Receipts.CustomReceiptFormatter.TextType.FIELD_TRM_ID
   fullName: SIX.TimApi.Receipts.CustomReceiptFormatter.TextType.FIELD_TRM_ID
   nameWithType: CustomReceiptFormatter.TextType.FIELD_TRM_ID
+- uid: SIX.TimApi.Receipts.CustomReceiptFormatter.TextType.FIELD_TRX_OK
+  name: FIELD_TRX_OK
+  href: api/SIX.TimApi.Receipts.CustomReceiptFormatter.TextType.html#SIX_TimApi_Receipts_CustomReceiptFormatter_TextType_FIELD_TRX_OK
+  commentId: F:SIX.TimApi.Receipts.CustomReceiptFormatter.TextType.FIELD_TRX_OK
+  fullName: SIX.TimApi.Receipts.CustomReceiptFormatter.TextType.FIELD_TRX_OK
+  nameWithType: CustomReceiptFormatter.TextType.FIELD_TRX_OK
 - uid: SIX.TimApi.Receipts.CustomReceiptFormatter.TextType.FIELD_TRX_REF_NUM
   name: FIELD_TRX_REF_NUM
   href: api/SIX.TimApi.Receipts.CustomReceiptFormatter.TextType.html#SIX_TimApi_Receipts_CustomReceiptFormatter_TextType_FIELD_TRX_REF_NUM
@@ -16145,6 +16412,12 @@ references:
   commentId: F:SIX.TimApi.Receipts.CustomReceiptFormatter.TextType.FIELD_TRX_SEQ_CNT
   fullName: SIX.TimApi.Receipts.CustomReceiptFormatter.TextType.FIELD_TRX_SEQ_CNT
   nameWithType: CustomReceiptFormatter.TextType.FIELD_TRX_SEQ_CNT
+- uid: SIX.TimApi.Receipts.CustomReceiptFormatter.TextType.FIELD_VERIFIED_BY_DEVICE
+  name: FIELD_VERIFIED_BY_DEVICE
+  href: api/SIX.TimApi.Receipts.CustomReceiptFormatter.TextType.html#SIX_TimApi_Receipts_CustomReceiptFormatter_TextType_FIELD_VERIFIED_BY_DEVICE
+  commentId: F:SIX.TimApi.Receipts.CustomReceiptFormatter.TextType.FIELD_VERIFIED_BY_DEVICE
+  fullName: SIX.TimApi.Receipts.CustomReceiptFormatter.TextType.FIELD_VERIFIED_BY_DEVICE
+  nameWithType: CustomReceiptFormatter.TextType.FIELD_VERIFIED_BY_DEVICE
 - uid: SIX.TimApi.Receipts.CustomReceiptFormatter.TextType.POS_ID
   name: POS_ID
   href: api/SIX.TimApi.Receipts.CustomReceiptFormatter.TextType.html#SIX_TimApi_Receipts_CustomReceiptFormatter_TextType_POS_ID
@@ -16205,6 +16478,12 @@ references:
   commentId: F:SIX.TimApi.Receipts.CustomReceiptFormatter.TranslatedText.AID
   fullName: SIX.TimApi.Receipts.CustomReceiptFormatter.TranslatedText.AID
   nameWithType: CustomReceiptFormatter.TranslatedText.AID
+- uid: SIX.TimApi.Receipts.CustomReceiptFormatter.TranslatedText.AMOUNT_AVAILABLE
+  name: AMOUNT_AVAILABLE
+  href: api/SIX.TimApi.Receipts.CustomReceiptFormatter.TranslatedText.html#SIX_TimApi_Receipts_CustomReceiptFormatter_TranslatedText_AMOUNT_AVAILABLE
+  commentId: F:SIX.TimApi.Receipts.CustomReceiptFormatter.TranslatedText.AMOUNT_AVAILABLE
+  fullName: SIX.TimApi.Receipts.CustomReceiptFormatter.TranslatedText.AMOUNT_AVAILABLE
+  nameWithType: CustomReceiptFormatter.TranslatedText.AMOUNT_AVAILABLE
 - uid: SIX.TimApi.Receipts.CustomReceiptFormatter.TranslatedText.AMOUNT_CASHBACK
   name: AMOUNT_CASHBACK
   href: api/SIX.TimApi.Receipts.CustomReceiptFormatter.TranslatedText.html#SIX_TimApi_Receipts_CustomReceiptFormatter_TranslatedText_AMOUNT_CASHBACK
@@ -16223,6 +16502,12 @@ references:
   commentId: F:SIX.TimApi.Receipts.CustomReceiptFormatter.TranslatedText.AMOUNT_EFT
   fullName: SIX.TimApi.Receipts.CustomReceiptFormatter.TranslatedText.AMOUNT_EFT
   nameWithType: CustomReceiptFormatter.TranslatedText.AMOUNT_EFT
+- uid: SIX.TimApi.Receipts.CustomReceiptFormatter.TranslatedText.AMOUNT_INCREASE
+  name: AMOUNT_INCREASE
+  href: api/SIX.TimApi.Receipts.CustomReceiptFormatter.TranslatedText.html#SIX_TimApi_Receipts_CustomReceiptFormatter_TranslatedText_AMOUNT_INCREASE
+  commentId: F:SIX.TimApi.Receipts.CustomReceiptFormatter.TranslatedText.AMOUNT_INCREASE
+  fullName: SIX.TimApi.Receipts.CustomReceiptFormatter.TranslatedText.AMOUNT_INCREASE
+  nameWithType: CustomReceiptFormatter.TranslatedText.AMOUNT_INCREASE
 - uid: SIX.TimApi.Receipts.CustomReceiptFormatter.TranslatedText.AMOUNT_INSTALLMENT_TOTAL
   name: AMOUNT_INSTALLMENT_TOTAL
   href: api/SIX.TimApi.Receipts.CustomReceiptFormatter.TranslatedText.html#SIX_TimApi_Receipts_CustomReceiptFormatter_TranslatedText_AMOUNT_INSTALLMENT_TOTAL
@@ -16277,6 +16562,12 @@ references:
   commentId: F:SIX.TimApi.Receipts.CustomReceiptFormatter.TranslatedText.CARDHOLDER
   fullName: SIX.TimApi.Receipts.CustomReceiptFormatter.TranslatedText.CARDHOLDER
   nameWithType: CustomReceiptFormatter.TranslatedText.CARDHOLDER
+- uid: SIX.TimApi.Receipts.CustomReceiptFormatter.TranslatedText.CONTACTLESS
+  name: CONTACTLESS
+  href: api/SIX.TimApi.Receipts.CustomReceiptFormatter.TranslatedText.html#SIX_TimApi_Receipts_CustomReceiptFormatter_TranslatedText_CONTACTLESS
+  commentId: F:SIX.TimApi.Receipts.CustomReceiptFormatter.TranslatedText.CONTACTLESS
+  fullName: SIX.TimApi.Receipts.CustomReceiptFormatter.TranslatedText.CONTACTLESS
+  nameWithType: CustomReceiptFormatter.TranslatedText.CONTACTLESS
 - uid: SIX.TimApi.Receipts.CustomReceiptFormatter.TranslatedText.ECR_ID
   name: ECR_ID
   href: api/SIX.TimApi.Receipts.CustomReceiptFormatter.TranslatedText.html#SIX_TimApi_Receipts_CustomReceiptFormatter_TranslatedText_ECR_ID
@@ -16343,6 +16634,12 @@ references:
   commentId: F:SIX.TimApi.Receipts.CustomReceiptFormatter.TranslatedText.INSTALLMENT_PAYMENT
   fullName: SIX.TimApi.Receipts.CustomReceiptFormatter.TranslatedText.INSTALLMENT_PAYMENT
   nameWithType: CustomReceiptFormatter.TranslatedText.INSTALLMENT_PAYMENT
+- uid: SIX.TimApi.Receipts.CustomReceiptFormatter.TranslatedText.LAST_4_DIGITS_OF_PAN
+  name: LAST_4_DIGITS_OF_PAN
+  href: api/SIX.TimApi.Receipts.CustomReceiptFormatter.TranslatedText.html#SIX_TimApi_Receipts_CustomReceiptFormatter_TranslatedText_LAST_4_DIGITS_OF_PAN
+  commentId: F:SIX.TimApi.Receipts.CustomReceiptFormatter.TranslatedText.LAST_4_DIGITS_OF_PAN
+  fullName: SIX.TimApi.Receipts.CustomReceiptFormatter.TranslatedText.LAST_4_DIGITS_OF_PAN
+  nameWithType: CustomReceiptFormatter.TranslatedText.LAST_4_DIGITS_OF_PAN
 - uid: SIX.TimApi.Receipts.CustomReceiptFormatter.TranslatedText.LOCAL_CURR
   name: LOCAL_CURR
   href: api/SIX.TimApi.Receipts.CustomReceiptFormatter.TranslatedText.html#SIX_TimApi_Receipts_CustomReceiptFormatter_TranslatedText_LOCAL_CURR
@@ -16355,12 +16652,24 @@ references:
   commentId: F:SIX.TimApi.Receipts.CustomReceiptFormatter.TranslatedText.MARKUP
   fullName: SIX.TimApi.Receipts.CustomReceiptFormatter.TranslatedText.MARKUP
   nameWithType: CustomReceiptFormatter.TranslatedText.MARKUP
+- uid: SIX.TimApi.Receipts.CustomReceiptFormatter.TranslatedText.MARKUP_DCC_REGULATED
+  name: MARKUP_DCC_REGULATED
+  href: api/SIX.TimApi.Receipts.CustomReceiptFormatter.TranslatedText.html#SIX_TimApi_Receipts_CustomReceiptFormatter_TranslatedText_MARKUP_DCC_REGULATED
+  commentId: F:SIX.TimApi.Receipts.CustomReceiptFormatter.TranslatedText.MARKUP_DCC_REGULATED
+  fullName: SIX.TimApi.Receipts.CustomReceiptFormatter.TranslatedText.MARKUP_DCC_REGULATED
+  nameWithType: CustomReceiptFormatter.TranslatedText.MARKUP_DCC_REGULATED
 - uid: SIX.TimApi.Receipts.CustomReceiptFormatter.TranslatedText.MERCHANT
   name: MERCHANT
   href: api/SIX.TimApi.Receipts.CustomReceiptFormatter.TranslatedText.html#SIX_TimApi_Receipts_CustomReceiptFormatter_TranslatedText_MERCHANT
   commentId: F:SIX.TimApi.Receipts.CustomReceiptFormatter.TranslatedText.MERCHANT
   fullName: SIX.TimApi.Receipts.CustomReceiptFormatter.TranslatedText.MERCHANT
   nameWithType: CustomReceiptFormatter.TranslatedText.MERCHANT
+- uid: SIX.TimApi.Receipts.CustomReceiptFormatter.TranslatedText.MERCHANT_SIGNATURE
+  name: MERCHANT_SIGNATURE
+  href: api/SIX.TimApi.Receipts.CustomReceiptFormatter.TranslatedText.html#SIX_TimApi_Receipts_CustomReceiptFormatter_TranslatedText_MERCHANT_SIGNATURE
+  commentId: F:SIX.TimApi.Receipts.CustomReceiptFormatter.TranslatedText.MERCHANT_SIGNATURE
+  fullName: SIX.TimApi.Receipts.CustomReceiptFormatter.TranslatedText.MERCHANT_SIGNATURE
+  nameWithType: CustomReceiptFormatter.TranslatedText.MERCHANT_SIGNATURE
 - uid: SIX.TimApi.Receipts.CustomReceiptFormatter.TranslatedText.NO_INSTALLMENTS
   name: NO_INSTALLMENTS
   href: api/SIX.TimApi.Receipts.CustomReceiptFormatter.TranslatedText.html#SIX_TimApi_Receipts_CustomReceiptFormatter_TranslatedText_NO_INSTALLMENTS
@@ -16379,6 +16688,12 @@ references:
   commentId: F:SIX.TimApi.Receipts.CustomReceiptFormatter.TranslatedText.PARTIAL_APPROVAL
   fullName: SIX.TimApi.Receipts.CustomReceiptFormatter.TranslatedText.PARTIAL_APPROVAL
   nameWithType: CustomReceiptFormatter.TranslatedText.PARTIAL_APPROVAL
+- uid: SIX.TimApi.Receipts.CustomReceiptFormatter.TranslatedText.PFA_EVT_SEQ_CNT
+  name: PFA_EVT_SEQ_CNT
+  href: api/SIX.TimApi.Receipts.CustomReceiptFormatter.TranslatedText.html#SIX_TimApi_Receipts_CustomReceiptFormatter_TranslatedText_PFA_EVT_SEQ_CNT
+  commentId: F:SIX.TimApi.Receipts.CustomReceiptFormatter.TranslatedText.PFA_EVT_SEQ_CNT
+  fullName: SIX.TimApi.Receipts.CustomReceiptFormatter.TranslatedText.PFA_EVT_SEQ_CNT
+  nameWithType: CustomReceiptFormatter.TranslatedText.PFA_EVT_SEQ_CNT
 - uid: SIX.TimApi.Receipts.CustomReceiptFormatter.TranslatedText.PRE_AUTHORIZATION_EXP_DATE
   name: PRE_AUTHORIZATION_EXP_DATE
   href: api/SIX.TimApi.Receipts.CustomReceiptFormatter.TranslatedText.html#SIX_TimApi_Receipts_CustomReceiptFormatter_TranslatedText_PRE_AUTHORIZATION_EXP_DATE
@@ -16397,6 +16712,12 @@ references:
   commentId: F:SIX.TimApi.Receipts.CustomReceiptFormatter.TranslatedText.RATE
   fullName: SIX.TimApi.Receipts.CustomReceiptFormatter.TranslatedText.RATE
   nameWithType: CustomReceiptFormatter.TranslatedText.RATE
+- uid: SIX.TimApi.Receipts.CustomReceiptFormatter.TranslatedText.RES_EXP_DATE
+  name: RES_EXP_DATE
+  href: api/SIX.TimApi.Receipts.CustomReceiptFormatter.TranslatedText.html#SIX_TimApi_Receipts_CustomReceiptFormatter_TranslatedText_RES_EXP_DATE
+  commentId: F:SIX.TimApi.Receipts.CustomReceiptFormatter.TranslatedText.RES_EXP_DATE
+  fullName: SIX.TimApi.Receipts.CustomReceiptFormatter.TranslatedText.RES_EXP_DATE
+  nameWithType: CustomReceiptFormatter.TranslatedText.RES_EXP_DATE
 - uid: SIX.TimApi.Receipts.CustomReceiptFormatter.TranslatedText.REV_SEQ_COUNTER
   name: REV_SEQ_COUNTER
   href: api/SIX.TimApi.Receipts.CustomReceiptFormatter.TranslatedText.html#SIX_TimApi_Receipts_CustomReceiptFormatter_TranslatedText_REV_SEQ_COUNTER
@@ -16421,6 +16742,12 @@ references:
   commentId: F:SIX.TimApi.Receipts.CustomReceiptFormatter.TranslatedText.SEQ_REF_AUTH
   fullName: SIX.TimApi.Receipts.CustomReceiptFormatter.TranslatedText.SEQ_REF_AUTH
   nameWithType: CustomReceiptFormatter.TranslatedText.SEQ_REF_AUTH
+- uid: SIX.TimApi.Receipts.CustomReceiptFormatter.TranslatedText.SIGNATURE
+  name: SIGNATURE
+  href: api/SIX.TimApi.Receipts.CustomReceiptFormatter.TranslatedText.html#SIX_TimApi_Receipts_CustomReceiptFormatter_TranslatedText_SIGNATURE
+  commentId: F:SIX.TimApi.Receipts.CustomReceiptFormatter.TranslatedText.SIGNATURE
+  fullName: SIX.TimApi.Receipts.CustomReceiptFormatter.TranslatedText.SIGNATURE
+  nameWithType: CustomReceiptFormatter.TranslatedText.SIGNATURE
 - uid: SIX.TimApi.Receipts.CustomReceiptFormatter.TranslatedText.SURCHARGE_AMOUNT
   name: SURCHARGE_AMOUNT
   href: api/SIX.TimApi.Receipts.CustomReceiptFormatter.TranslatedText.html#SIX_TimApi_Receipts_CustomReceiptFormatter_TranslatedText_SURCHARGE_AMOUNT
@@ -16433,6 +16760,12 @@ references:
   commentId: F:SIX.TimApi.Receipts.CustomReceiptFormatter.TranslatedText.TOTAL_EFT
   fullName: SIX.TimApi.Receipts.CustomReceiptFormatter.TranslatedText.TOTAL_EFT
   nameWithType: CustomReceiptFormatter.TranslatedText.TOTAL_EFT
+- uid: SIX.TimApi.Receipts.CustomReceiptFormatter.TranslatedText.TOTAL_RES
+  name: TOTAL_RES
+  href: api/SIX.TimApi.Receipts.CustomReceiptFormatter.TranslatedText.html#SIX_TimApi_Receipts_CustomReceiptFormatter_TranslatedText_TOTAL_RES
+  commentId: F:SIX.TimApi.Receipts.CustomReceiptFormatter.TranslatedText.TOTAL_RES
+  fullName: SIX.TimApi.Receipts.CustomReceiptFormatter.TranslatedText.TOTAL_RES
+  nameWithType: CustomReceiptFormatter.TranslatedText.TOTAL_RES
 - uid: SIX.TimApi.Receipts.CustomReceiptFormatter.TranslatedText.TRANSACTION_AMOUNT
   name: TRANSACTION_AMOUNT
   href: api/SIX.TimApi.Receipts.CustomReceiptFormatter.TranslatedText.html#SIX_TimApi_Receipts_CustomReceiptFormatter_TranslatedText_TRANSACTION_AMOUNT
@@ -16457,6 +16790,12 @@ references:
   commentId: F:SIX.TimApi.Receipts.CustomReceiptFormatter.TranslatedText.TRX_CURR
   fullName: SIX.TimApi.Receipts.CustomReceiptFormatter.TranslatedText.TRX_CURR
   nameWithType: CustomReceiptFormatter.TranslatedText.TRX_CURR
+- uid: SIX.TimApi.Receipts.CustomReceiptFormatter.TranslatedText.TRX_OK
+  name: TRX_OK
+  href: api/SIX.TimApi.Receipts.CustomReceiptFormatter.TranslatedText.html#SIX_TimApi_Receipts_CustomReceiptFormatter_TranslatedText_TRX_OK
+  commentId: F:SIX.TimApi.Receipts.CustomReceiptFormatter.TranslatedText.TRX_OK
+  fullName: SIX.TimApi.Receipts.CustomReceiptFormatter.TranslatedText.TRX_OK
+  nameWithType: CustomReceiptFormatter.TranslatedText.TRX_OK
 - uid: SIX.TimApi.Receipts.CustomReceiptFormatter.TranslatedText.TRX_REF_NO
   name: TRX_REF_NO
   href: api/SIX.TimApi.Receipts.CustomReceiptFormatter.TranslatedText.html#SIX_TimApi_Receipts_CustomReceiptFormatter_TranslatedText_TRX_REF_NO
@@ -16493,6 +16832,12 @@ references:
   commentId: F:SIX.TimApi.Receipts.CustomReceiptFormatter.TranslatedText.USER_ID
   fullName: SIX.TimApi.Receipts.CustomReceiptFormatter.TranslatedText.USER_ID
   nameWithType: CustomReceiptFormatter.TranslatedText.USER_ID
+- uid: SIX.TimApi.Receipts.CustomReceiptFormatter.TranslatedText.VERIFIED_BY_DEVICE
+  name: VERIFIED_BY_DEVICE
+  href: api/SIX.TimApi.Receipts.CustomReceiptFormatter.TranslatedText.html#SIX_TimApi_Receipts_CustomReceiptFormatter_TranslatedText_VERIFIED_BY_DEVICE
+  commentId: F:SIX.TimApi.Receipts.CustomReceiptFormatter.TranslatedText.VERIFIED_BY_DEVICE
+  fullName: SIX.TimApi.Receipts.CustomReceiptFormatter.TranslatedText.VERIFIED_BY_DEVICE
+  nameWithType: CustomReceiptFormatter.TranslatedText.VERIFIED_BY_DEVICE
 - uid: SIX.TimApi.Receipts.DelegatableReceiptFormatter
   name: DelegatableReceiptFormatter
   href: api/SIX.TimApi.Receipts.DelegatableReceiptFormatter.html
@@ -16563,12 +16908,12 @@ references:
   commentId: T:SIX.TimApi.Receipts.RdfReceiptFormatter
   fullName: SIX.TimApi.Receipts.RdfReceiptFormatter
   nameWithType: RdfReceiptFormatter
-- uid: SIX.TimApi.Receipts.RdfReceiptFormatter.#ctor(StreamReader,System.Int32)
-  name: RdfReceiptFormatter(StreamReader, Int32)
-  href: api/SIX.TimApi.Receipts.RdfReceiptFormatter.html#SIX_TimApi_Receipts_RdfReceiptFormatter__ctor_StreamReader_System_Int32_
-  commentId: M:SIX.TimApi.Receipts.RdfReceiptFormatter.#ctor(StreamReader,System.Int32)
-  fullName: SIX.TimApi.Receipts.RdfReceiptFormatter.RdfReceiptFormatter(StreamReader, System.Int32)
-  nameWithType: RdfReceiptFormatter.RdfReceiptFormatter(StreamReader, Int32)
+- uid: SIX.TimApi.Receipts.RdfReceiptFormatter.#ctor(Stream,System.Int32)
+  name: RdfReceiptFormatter(Stream, Int32)
+  href: api/SIX.TimApi.Receipts.RdfReceiptFormatter.html#SIX_TimApi_Receipts_RdfReceiptFormatter__ctor_Stream_System_Int32_
+  commentId: M:SIX.TimApi.Receipts.RdfReceiptFormatter.#ctor(Stream,System.Int32)
+  fullName: SIX.TimApi.Receipts.RdfReceiptFormatter.RdfReceiptFormatter(Stream, System.Int32)
+  nameWithType: RdfReceiptFormatter.RdfReceiptFormatter(Stream, Int32)
 - uid: SIX.TimApi.Receipts.RdfReceiptFormatter.#ctor*
   name: RdfReceiptFormatter
   href: api/SIX.TimApi.Receipts.RdfReceiptFormatter.html#SIX_TimApi_Receipts_RdfReceiptFormatter__ctor_
@@ -16691,6 +17036,70 @@ references:
   isSpec: "True"
   fullName: SIX.TimApi.ReconciliationResponse.ToString
   nameWithType: ReconciliationResponse.ToString
+- uid: SIX.TimApi.ReconfigParameters
+  name: ReconfigParameters
+  href: api/SIX.TimApi.ReconfigParameters.html
+  commentId: T:SIX.TimApi.ReconfigParameters
+  fullName: SIX.TimApi.ReconfigParameters
+  nameWithType: ReconfigParameters
+- uid: SIX.TimApi.ReconfigParameters.#ctor
+  name: ReconfigParameters()
+  href: api/SIX.TimApi.ReconfigParameters.html#SIX_TimApi_ReconfigParameters__ctor
+  commentId: M:SIX.TimApi.ReconfigParameters.#ctor
+  fullName: SIX.TimApi.ReconfigParameters.ReconfigParameters()
+  nameWithType: ReconfigParameters.ReconfigParameters()
+- uid: SIX.TimApi.ReconfigParameters.#ctor(SIX.TimApi.ReconfigParameters)
+  name: ReconfigParameters(ReconfigParameters)
+  href: api/SIX.TimApi.ReconfigParameters.html#SIX_TimApi_ReconfigParameters__ctor_SIX_TimApi_ReconfigParameters_
+  commentId: M:SIX.TimApi.ReconfigParameters.#ctor(SIX.TimApi.ReconfigParameters)
+  fullName: SIX.TimApi.ReconfigParameters.ReconfigParameters(SIX.TimApi.ReconfigParameters)
+  nameWithType: ReconfigParameters.ReconfigParameters(ReconfigParameters)
+- uid: SIX.TimApi.ReconfigParameters.#ctor*
+  name: ReconfigParameters
+  href: api/SIX.TimApi.ReconfigParameters.html#SIX_TimApi_ReconfigParameters__ctor_
+  commentId: Overload:SIX.TimApi.ReconfigParameters.#ctor
+  isSpec: "True"
+  fullName: SIX.TimApi.ReconfigParameters.ReconfigParameters
+  nameWithType: ReconfigParameters.ReconfigParameters
+- uid: SIX.TimApi.ReconfigParameters.AcqId
+  name: AcqId
+  href: api/SIX.TimApi.ReconfigParameters.html#SIX_TimApi_ReconfigParameters_AcqId
+  commentId: P:SIX.TimApi.ReconfigParameters.AcqId
+  fullName: SIX.TimApi.ReconfigParameters.AcqId
+  nameWithType: ReconfigParameters.AcqId
+- uid: SIX.TimApi.ReconfigParameters.AcqId*
+  name: AcqId
+  href: api/SIX.TimApi.ReconfigParameters.html#SIX_TimApi_ReconfigParameters_AcqId_
+  commentId: Overload:SIX.TimApi.ReconfigParameters.AcqId
+  isSpec: "True"
+  fullName: SIX.TimApi.ReconfigParameters.AcqId
+  nameWithType: ReconfigParameters.AcqId
+- uid: SIX.TimApi.ReconfigParameters.ReconfigMode
+  name: ReconfigMode
+  href: api/SIX.TimApi.ReconfigParameters.html#SIX_TimApi_ReconfigParameters_ReconfigMode
+  commentId: P:SIX.TimApi.ReconfigParameters.ReconfigMode
+  fullName: SIX.TimApi.ReconfigParameters.ReconfigMode
+  nameWithType: ReconfigParameters.ReconfigMode
+- uid: SIX.TimApi.ReconfigParameters.ReconfigMode*
+  name: ReconfigMode
+  href: api/SIX.TimApi.ReconfigParameters.html#SIX_TimApi_ReconfigParameters_ReconfigMode_
+  commentId: Overload:SIX.TimApi.ReconfigParameters.ReconfigMode
+  isSpec: "True"
+  fullName: SIX.TimApi.ReconfigParameters.ReconfigMode
+  nameWithType: ReconfigParameters.ReconfigMode
+- uid: SIX.TimApi.ReconfigParameters.ToString
+  name: ToString()
+  href: api/SIX.TimApi.ReconfigParameters.html#SIX_TimApi_ReconfigParameters_ToString
+  commentId: M:SIX.TimApi.ReconfigParameters.ToString
+  fullName: SIX.TimApi.ReconfigParameters.ToString()
+  nameWithType: ReconfigParameters.ToString()
+- uid: SIX.TimApi.ReconfigParameters.ToString*
+  name: ToString
+  href: api/SIX.TimApi.ReconfigParameters.html#SIX_TimApi_ReconfigParameters_ToString_
+  commentId: Overload:SIX.TimApi.ReconfigParameters.ToString
+  isSpec: "True"
+  fullName: SIX.TimApi.ReconfigParameters.ToString
+  nameWithType: ReconfigParameters.ToString
 - uid: SIX.TimApi.RequestTypes
   name: RequestTypes
   href: api/SIX.TimApi.RequestTypes.html
@@ -19572,6 +19981,12 @@ references:
   commentId: M:SIX.TimApi.Terminal.InitTransaction(System.Boolean,SIX.TimApi.Amount)
   fullName: SIX.TimApi.Terminal.InitTransaction(System.Boolean, SIX.TimApi.Amount)
   nameWithType: Terminal.InitTransaction(Boolean, Amount)
+- uid: SIX.TimApi.Terminal.InitTransaction(System.Boolean,SIX.TimApi.Amount,SIX.TimApi.Amount,SIX.TimApi.Constants.FunctionHint)
+  name: InitTransaction(Boolean, Amount, Amount, FunctionHint)
+  href: api/SIX.TimApi.Terminal.html#SIX_TimApi_Terminal_InitTransaction_System_Boolean_SIX_TimApi_Amount_SIX_TimApi_Amount_SIX_TimApi_Constants_FunctionHint_
+  commentId: M:SIX.TimApi.Terminal.InitTransaction(System.Boolean,SIX.TimApi.Amount,SIX.TimApi.Amount,SIX.TimApi.Constants.FunctionHint)
+  fullName: SIX.TimApi.Terminal.InitTransaction(System.Boolean, SIX.TimApi.Amount, SIX.TimApi.Amount, SIX.TimApi.Constants.FunctionHint)
+  nameWithType: Terminal.InitTransaction(Boolean, Amount, Amount, FunctionHint)
 - uid: SIX.TimApi.Terminal.InitTransaction(System.Boolean,SIX.TimApi.Amount,SIX.TimApi.Constants.FunctionHint)
   name: InitTransaction(Boolean, Amount, FunctionHint)
   href: api/SIX.TimApi.Terminal.html#SIX_TimApi_Terminal_InitTransaction_System_Boolean_SIX_TimApi_Amount_SIX_TimApi_Constants_FunctionHint_
@@ -19591,6 +20006,12 @@ references:
   commentId: M:SIX.TimApi.Terminal.InitTransactionAsync(System.Boolean,SIX.TimApi.Amount)
   fullName: SIX.TimApi.Terminal.InitTransactionAsync(System.Boolean, SIX.TimApi.Amount)
   nameWithType: Terminal.InitTransactionAsync(Boolean, Amount)
+- uid: SIX.TimApi.Terminal.InitTransactionAsync(System.Boolean,SIX.TimApi.Amount,SIX.TimApi.Amount,SIX.TimApi.Constants.FunctionHint)
+  name: InitTransactionAsync(Boolean, Amount, Amount, FunctionHint)
+  href: api/SIX.TimApi.Terminal.html#SIX_TimApi_Terminal_InitTransactionAsync_System_Boolean_SIX_TimApi_Amount_SIX_TimApi_Amount_SIX_TimApi_Constants_FunctionHint_
+  commentId: M:SIX.TimApi.Terminal.InitTransactionAsync(System.Boolean,SIX.TimApi.Amount,SIX.TimApi.Amount,SIX.TimApi.Constants.FunctionHint)
+  fullName: SIX.TimApi.Terminal.InitTransactionAsync(System.Boolean, SIX.TimApi.Amount, SIX.TimApi.Amount, SIX.TimApi.Constants.FunctionHint)
+  nameWithType: Terminal.InitTransactionAsync(Boolean, Amount, Amount, FunctionHint)
 - uid: SIX.TimApi.Terminal.InitTransactionAsync(System.Boolean,SIX.TimApi.Amount,SIX.TimApi.Constants.FunctionHint)
   name: InitTransactionAsync(Boolean, Amount, FunctionHint)
   href: api/SIX.TimApi.Terminal.html#SIX_TimApi_Terminal_InitTransactionAsync_System_Boolean_SIX_TimApi_Amount_SIX_TimApi_Constants_FunctionHint_
@@ -19641,6 +20062,15 @@ references:
   commentId: T:SIX.TimApi.Terminal.InitTransactionCompletedEventHandler
   fullName: SIX.TimApi.Terminal.InitTransactionCompletedEventHandler
   nameWithType: Terminal.InitTransactionCompletedEventHandler
+- uid: SIX.TimApi.Terminal.InitTransactionWithDialog(SIX.TimApi.Amount,SIX.TimApi.Amount,System.Nullable{SIX.TimApi.Constants.FunctionHint},SIX.TimApi.ShowDialogRequest)
+  name: InitTransactionWithDialog(Amount, Amount, Nullable<FunctionHint>, ShowDialogRequest)
+  href: api/SIX.TimApi.Terminal.html#SIX_TimApi_Terminal_InitTransactionWithDialog_SIX_TimApi_Amount_SIX_TimApi_Amount_System_Nullable_SIX_TimApi_Constants_FunctionHint__SIX_TimApi_ShowDialogRequest_
+  commentId: M:SIX.TimApi.Terminal.InitTransactionWithDialog(SIX.TimApi.Amount,SIX.TimApi.Amount,System.Nullable{SIX.TimApi.Constants.FunctionHint},SIX.TimApi.ShowDialogRequest)
+  name.vb: InitTransactionWithDialog(Amount, Amount, Nullable(Of FunctionHint), ShowDialogRequest)
+  fullName: SIX.TimApi.Terminal.InitTransactionWithDialog(SIX.TimApi.Amount, SIX.TimApi.Amount, System.Nullable<SIX.TimApi.Constants.FunctionHint>, SIX.TimApi.ShowDialogRequest)
+  fullName.vb: SIX.TimApi.Terminal.InitTransactionWithDialog(SIX.TimApi.Amount, SIX.TimApi.Amount, System.Nullable(Of SIX.TimApi.Constants.FunctionHint), SIX.TimApi.ShowDialogRequest)
+  nameWithType: Terminal.InitTransactionWithDialog(Amount, Amount, Nullable<FunctionHint>, ShowDialogRequest)
+  nameWithType.vb: Terminal.InitTransactionWithDialog(Amount, Amount, Nullable(Of FunctionHint), ShowDialogRequest)
 - uid: SIX.TimApi.Terminal.InitTransactionWithDialog(SIX.TimApi.Amount,System.Nullable{SIX.TimApi.Constants.FunctionHint},SIX.TimApi.ShowDialogRequest)
   name: InitTransactionWithDialog(Amount, Nullable<FunctionHint>, ShowDialogRequest)
   href: api/SIX.TimApi.Terminal.html#SIX_TimApi_Terminal_InitTransactionWithDialog_SIX_TimApi_Amount_System_Nullable_SIX_TimApi_Constants_FunctionHint__SIX_TimApi_ShowDialogRequest_
@@ -19657,6 +20087,15 @@ references:
   isSpec: "True"
   fullName: SIX.TimApi.Terminal.InitTransactionWithDialog
   nameWithType: Terminal.InitTransactionWithDialog
+- uid: SIX.TimApi.Terminal.InitTransactionWithDialogAsync(SIX.TimApi.Amount,SIX.TimApi.Amount,System.Nullable{SIX.TimApi.Constants.FunctionHint},SIX.TimApi.ShowDialogRequest)
+  name: InitTransactionWithDialogAsync(Amount, Amount, Nullable<FunctionHint>, ShowDialogRequest)
+  href: api/SIX.TimApi.Terminal.html#SIX_TimApi_Terminal_InitTransactionWithDialogAsync_SIX_TimApi_Amount_SIX_TimApi_Amount_System_Nullable_SIX_TimApi_Constants_FunctionHint__SIX_TimApi_ShowDialogRequest_
+  commentId: M:SIX.TimApi.Terminal.InitTransactionWithDialogAsync(SIX.TimApi.Amount,SIX.TimApi.Amount,System.Nullable{SIX.TimApi.Constants.FunctionHint},SIX.TimApi.ShowDialogRequest)
+  name.vb: InitTransactionWithDialogAsync(Amount, Amount, Nullable(Of FunctionHint), ShowDialogRequest)
+  fullName: SIX.TimApi.Terminal.InitTransactionWithDialogAsync(SIX.TimApi.Amount, SIX.TimApi.Amount, System.Nullable<SIX.TimApi.Constants.FunctionHint>, SIX.TimApi.ShowDialogRequest)
+  fullName.vb: SIX.TimApi.Terminal.InitTransactionWithDialogAsync(SIX.TimApi.Amount, SIX.TimApi.Amount, System.Nullable(Of SIX.TimApi.Constants.FunctionHint), SIX.TimApi.ShowDialogRequest)
+  nameWithType: Terminal.InitTransactionWithDialogAsync(Amount, Amount, Nullable<FunctionHint>, ShowDialogRequest)
+  nameWithType.vb: Terminal.InitTransactionWithDialogAsync(Amount, Amount, Nullable(Of FunctionHint), ShowDialogRequest)
 - uid: SIX.TimApi.Terminal.InitTransactionWithDialogAsync(SIX.TimApi.Amount,System.Nullable{SIX.TimApi.Constants.FunctionHint},SIX.TimApi.ShowDialogRequest)
   name: InitTransactionWithDialogAsync(Amount, Nullable<FunctionHint>, ShowDialogRequest)
   href: api/SIX.TimApi.Terminal.html#SIX_TimApi_Terminal_InitTransactionWithDialogAsync_SIX_TimApi_Amount_System_Nullable_SIX_TimApi_Constants_FunctionHint__SIX_TimApi_ShowDialogRequest_
@@ -20738,6 +21177,12 @@ references:
   commentId: M:SIX.TimApi.Terminal.Reconfig
   fullName: SIX.TimApi.Terminal.Reconfig()
   nameWithType: Terminal.Reconfig()
+- uid: SIX.TimApi.Terminal.Reconfig(SIX.TimApi.ReconfigParameters)
+  name: Reconfig(ReconfigParameters)
+  href: api/SIX.TimApi.Terminal.html#SIX_TimApi_Terminal_Reconfig_SIX_TimApi_ReconfigParameters_
+  commentId: M:SIX.TimApi.Terminal.Reconfig(SIX.TimApi.ReconfigParameters)
+  fullName: SIX.TimApi.Terminal.Reconfig(SIX.TimApi.ReconfigParameters)
+  nameWithType: Terminal.Reconfig(ReconfigParameters)
 - uid: SIX.TimApi.Terminal.Reconfig*
   name: Reconfig
   href: api/SIX.TimApi.Terminal.html#SIX_TimApi_Terminal_Reconfig_
@@ -20751,6 +21196,12 @@ references:
   commentId: M:SIX.TimApi.Terminal.ReconfigAsync
   fullName: SIX.TimApi.Terminal.ReconfigAsync()
   nameWithType: Terminal.ReconfigAsync()
+- uid: SIX.TimApi.Terminal.ReconfigAsync(SIX.TimApi.ReconfigParameters)
+  name: ReconfigAsync(ReconfigParameters)
+  href: api/SIX.TimApi.Terminal.html#SIX_TimApi_Terminal_ReconfigAsync_SIX_TimApi_ReconfigParameters_
+  commentId: M:SIX.TimApi.Terminal.ReconfigAsync(SIX.TimApi.ReconfigParameters)
+  fullName: SIX.TimApi.Terminal.ReconfigAsync(SIX.TimApi.ReconfigParameters)
+  nameWithType: Terminal.ReconfigAsync(ReconfigParameters)
 - uid: SIX.TimApi.Terminal.ReconfigAsync*
   name: ReconfigAsync
   href: api/SIX.TimApi.Terminal.html#SIX_TimApi_Terminal_ReconfigAsync_
@@ -23209,6 +23660,19 @@ references:
   isSpec: "True"
   fullName: SIX.TimApi.TerminalSettings.SerialPort
   nameWithType: TerminalSettings.SerialPort
+- uid: SIX.TimApi.TerminalSettings.SilentLogin
+  name: SilentLogin
+  href: api/SIX.TimApi.TerminalSettings.html#SIX_TimApi_TerminalSettings_SilentLogin
+  commentId: P:SIX.TimApi.TerminalSettings.SilentLogin
+  fullName: SIX.TimApi.TerminalSettings.SilentLogin
+  nameWithType: TerminalSettings.SilentLogin
+- uid: SIX.TimApi.TerminalSettings.SilentLogin*
+  name: SilentLogin
+  href: api/SIX.TimApi.TerminalSettings.html#SIX_TimApi_TerminalSettings_SilentLogin_
+  commentId: Overload:SIX.TimApi.TerminalSettings.SilentLogin
+  isSpec: "True"
+  fullName: SIX.TimApi.TerminalSettings.SilentLogin
+  nameWithType: TerminalSettings.SilentLogin
 - uid: SIX.TimApi.TerminalSettings.SIXmlRequestTimeout
   name: SIXmlRequestTimeout
   href: api/SIX.TimApi.TerminalSettings.html#SIX_TimApi_TerminalSettings_SIXmlRequestTimeout
@@ -23280,15 +23744,15 @@ references:
   commentId: T:SIX.TimApi.TerminalStatus
   fullName: SIX.TimApi.TerminalStatus
   nameWithType: TerminalStatus
-- uid: SIX.TimApi.TerminalStatus.#ctor(List{String},SIX.TimApi.Constants.ConnectionStatus,SIX.TimApi.Constants.ManagementStatus,SIX.TimApi.Constants.CardReaderStatus,SIX.TimApi.Constants.TransactionStatus,SIX.TimApi.Constants.SleepModeStatus,System.Boolean,SIX.TimApi.CardData,System.Boolean,SIX.TimApi.AmountFinal)
-  name: TerminalStatus(List<String>, ConnectionStatus, ManagementStatus, CardReaderStatus, TransactionStatus, SleepModeStatus, Boolean, CardData, Boolean, AmountFinal)
-  href: api/SIX.TimApi.TerminalStatus.html#SIX_TimApi_TerminalStatus__ctor_List_String__SIX_TimApi_Constants_ConnectionStatus_SIX_TimApi_Constants_ManagementStatus_SIX_TimApi_Constants_CardReaderStatus_SIX_TimApi_Constants_TransactionStatus_SIX_TimApi_Constants_SleepModeStatus_System_Boolean_SIX_TimApi_CardData_System_Boolean_SIX_TimApi_AmountFinal_
-  commentId: M:SIX.TimApi.TerminalStatus.#ctor(List{String},SIX.TimApi.Constants.ConnectionStatus,SIX.TimApi.Constants.ManagementStatus,SIX.TimApi.Constants.CardReaderStatus,SIX.TimApi.Constants.TransactionStatus,SIX.TimApi.Constants.SleepModeStatus,System.Boolean,SIX.TimApi.CardData,System.Boolean,SIX.TimApi.AmountFinal)
-  name.vb: TerminalStatus(List(Of String), ConnectionStatus, ManagementStatus, CardReaderStatus, TransactionStatus, SleepModeStatus, Boolean, CardData, Boolean, AmountFinal)
-  fullName: SIX.TimApi.TerminalStatus.TerminalStatus(List<String>, SIX.TimApi.Constants.ConnectionStatus, SIX.TimApi.Constants.ManagementStatus, SIX.TimApi.Constants.CardReaderStatus, SIX.TimApi.Constants.TransactionStatus, SIX.TimApi.Constants.SleepModeStatus, System.Boolean, SIX.TimApi.CardData, System.Boolean, SIX.TimApi.AmountFinal)
-  fullName.vb: SIX.TimApi.TerminalStatus.TerminalStatus(List(Of String), SIX.TimApi.Constants.ConnectionStatus, SIX.TimApi.Constants.ManagementStatus, SIX.TimApi.Constants.CardReaderStatus, SIX.TimApi.Constants.TransactionStatus, SIX.TimApi.Constants.SleepModeStatus, System.Boolean, SIX.TimApi.CardData, System.Boolean, SIX.TimApi.AmountFinal)
-  nameWithType: TerminalStatus.TerminalStatus(List<String>, ConnectionStatus, ManagementStatus, CardReaderStatus, TransactionStatus, SleepModeStatus, Boolean, CardData, Boolean, AmountFinal)
-  nameWithType.vb: TerminalStatus.TerminalStatus(List(Of String), ConnectionStatus, ManagementStatus, CardReaderStatus, TransactionStatus, SleepModeStatus, Boolean, CardData, Boolean, AmountFinal)
+- uid: SIX.TimApi.TerminalStatus.#ctor(List{String},SIX.TimApi.Constants.ConnectionStatus,SIX.TimApi.Constants.ManagementStatus,SIX.TimApi.Constants.CardReaderStatus,SIX.TimApi.Constants.TransactionStatus,SIX.TimApi.Constants.SleepModeStatus,System.Boolean,SIX.TimApi.CardData,System.Boolean,SIX.TimApi.AmountFinal,System.Boolean)
+  name: TerminalStatus(List<String>, ConnectionStatus, ManagementStatus, CardReaderStatus, TransactionStatus, SleepModeStatus, Boolean, CardData, Boolean, AmountFinal, Boolean)
+  href: api/SIX.TimApi.TerminalStatus.html#SIX_TimApi_TerminalStatus__ctor_List_String__SIX_TimApi_Constants_ConnectionStatus_SIX_TimApi_Constants_ManagementStatus_SIX_TimApi_Constants_CardReaderStatus_SIX_TimApi_Constants_TransactionStatus_SIX_TimApi_Constants_SleepModeStatus_System_Boolean_SIX_TimApi_CardData_System_Boolean_SIX_TimApi_AmountFinal_System_Boolean_
+  commentId: M:SIX.TimApi.TerminalStatus.#ctor(List{String},SIX.TimApi.Constants.ConnectionStatus,SIX.TimApi.Constants.ManagementStatus,SIX.TimApi.Constants.CardReaderStatus,SIX.TimApi.Constants.TransactionStatus,SIX.TimApi.Constants.SleepModeStatus,System.Boolean,SIX.TimApi.CardData,System.Boolean,SIX.TimApi.AmountFinal,System.Boolean)
+  name.vb: TerminalStatus(List(Of String), ConnectionStatus, ManagementStatus, CardReaderStatus, TransactionStatus, SleepModeStatus, Boolean, CardData, Boolean, AmountFinal, Boolean)
+  fullName: SIX.TimApi.TerminalStatus.TerminalStatus(List<String>, SIX.TimApi.Constants.ConnectionStatus, SIX.TimApi.Constants.ManagementStatus, SIX.TimApi.Constants.CardReaderStatus, SIX.TimApi.Constants.TransactionStatus, SIX.TimApi.Constants.SleepModeStatus, System.Boolean, SIX.TimApi.CardData, System.Boolean, SIX.TimApi.AmountFinal, System.Boolean)
+  fullName.vb: SIX.TimApi.TerminalStatus.TerminalStatus(List(Of String), SIX.TimApi.Constants.ConnectionStatus, SIX.TimApi.Constants.ManagementStatus, SIX.TimApi.Constants.CardReaderStatus, SIX.TimApi.Constants.TransactionStatus, SIX.TimApi.Constants.SleepModeStatus, System.Boolean, SIX.TimApi.CardData, System.Boolean, SIX.TimApi.AmountFinal, System.Boolean)
+  nameWithType: TerminalStatus.TerminalStatus(List<String>, ConnectionStatus, ManagementStatus, CardReaderStatus, TransactionStatus, SleepModeStatus, Boolean, CardData, Boolean, AmountFinal, Boolean)
+  nameWithType.vb: TerminalStatus.TerminalStatus(List(Of String), ConnectionStatus, ManagementStatus, CardReaderStatus, TransactionStatus, SleepModeStatus, Boolean, CardData, Boolean, AmountFinal, Boolean)
 - uid: SIX.TimApi.TerminalStatus.#ctor*
   name: TerminalStatus
   href: api/SIX.TimApi.TerminalStatus.html#SIX_TimApi_TerminalStatus__ctor_
@@ -23387,6 +23851,19 @@ references:
   isSpec: "True"
   fullName: SIX.TimApi.TerminalStatus.ManagementStatus
   nameWithType: TerminalStatus.ManagementStatus
+- uid: SIX.TimApi.TerminalStatus.OwnRisk2ActivationStatus
+  name: OwnRisk2ActivationStatus
+  href: api/SIX.TimApi.TerminalStatus.html#SIX_TimApi_TerminalStatus_OwnRisk2ActivationStatus
+  commentId: P:SIX.TimApi.TerminalStatus.OwnRisk2ActivationStatus
+  fullName: SIX.TimApi.TerminalStatus.OwnRisk2ActivationStatus
+  nameWithType: TerminalStatus.OwnRisk2ActivationStatus
+- uid: SIX.TimApi.TerminalStatus.OwnRisk2ActivationStatus*
+  name: OwnRisk2ActivationStatus
+  href: api/SIX.TimApi.TerminalStatus.html#SIX_TimApi_TerminalStatus_OwnRisk2ActivationStatus_
+  commentId: Overload:SIX.TimApi.TerminalStatus.OwnRisk2ActivationStatus
+  isSpec: "True"
+  fullName: SIX.TimApi.TerminalStatus.OwnRisk2ActivationStatus
+  nameWithType: TerminalStatus.OwnRisk2ActivationStatus
 - uid: SIX.TimApi.TerminalStatus.ReceiptInformation
   name: ReceiptInformation
   href: api/SIX.TimApi.TerminalStatus.html#SIX_TimApi_TerminalStatus_ReceiptInformation
@@ -24090,6 +24567,19 @@ references:
   isSpec: "True"
   fullName: SIX.TimApi.TransactionData.InstallmentAllowed
   nameWithType: TransactionData.InstallmentAllowed
+- uid: SIX.TimApi.TransactionData.IsFinal
+  name: IsFinal
+  href: api/SIX.TimApi.TransactionData.html#SIX_TimApi_TransactionData_IsFinal
+  commentId: P:SIX.TimApi.TransactionData.IsFinal
+  fullName: SIX.TimApi.TransactionData.IsFinal
+  nameWithType: TransactionData.IsFinal
+- uid: SIX.TimApi.TransactionData.IsFinal*
+  name: IsFinal
+  href: api/SIX.TimApi.TransactionData.html#SIX_TimApi_TransactionData_IsFinal_
+  commentId: Overload:SIX.TimApi.TransactionData.IsFinal
+  isSpec: "True"
+  fullName: SIX.TimApi.TransactionData.IsFinal
+  nameWithType: TransactionData.IsFinal
 - uid: SIX.TimApi.TransactionData.Language
   name: Language
   href: api/SIX.TimApi.TransactionData.html#SIX_TimApi_TransactionData_Language
@@ -24665,6 +25155,19 @@ references:
   isSpec: "True"
   fullName: SIX.TimApi.TransactionInformation.OmnichannelPaymentId
   nameWithType: TransactionInformation.OmnichannelPaymentId
+- uid: SIX.TimApi.TransactionInformation.OwnRisk2Outcome
+  name: OwnRisk2Outcome
+  href: api/SIX.TimApi.TransactionInformation.html#SIX_TimApi_TransactionInformation_OwnRisk2Outcome
+  commentId: P:SIX.TimApi.TransactionInformation.OwnRisk2Outcome
+  fullName: SIX.TimApi.TransactionInformation.OwnRisk2Outcome
+  nameWithType: TransactionInformation.OwnRisk2Outcome
+- uid: SIX.TimApi.TransactionInformation.OwnRisk2Outcome*
+  name: OwnRisk2Outcome
+  href: api/SIX.TimApi.TransactionInformation.html#SIX_TimApi_TransactionInformation_OwnRisk2Outcome_
+  commentId: Overload:SIX.TimApi.TransactionInformation.OwnRisk2Outcome
+  isSpec: "True"
+  fullName: SIX.TimApi.TransactionInformation.OwnRisk2Outcome
+  nameWithType: TransactionInformation.OwnRisk2Outcome
 - uid: SIX.TimApi.TransactionInformation.PersonOid
   name: PersonOid
   href: api/SIX.TimApi.TransactionInformation.html#SIX_TimApi_TransactionInformation_PersonOid

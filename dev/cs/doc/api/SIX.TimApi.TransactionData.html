@@ -12,7 +12,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class TransactionData
    ">
-    <meta name="generator" content="docfx 2.59.4.0">
+    <meta name="generator" content="docfx 2.51.0.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -237,6 +237,9 @@
                           </li>
                           <li class="">
                             <a href="SIX.TimApi.ReconciliationResponse.html" title="ReconciliationResponse" class="">ReconciliationResponse</a>
+                          </li>
+                          <li class="">
+                            <a href="SIX.TimApi.ReconfigParameters.html" title="ReconfigParameters" class="">ReconfigParameters</a>
                           </li>
                           <li class="">
                             <a href="SIX.TimApi.RequestTypes.html" title="RequestTypes" class="">RequestTypes</a>
@@ -789,6 +792,9 @@
                           </li>
                           <li class="">
                             <a href="SIX.TimApi.Constants.Recipient.html" title="Recipient" class="">Recipient</a>
+                          </li>
+                          <li class="">
+                            <a href="SIX.TimApi.Constants.ReconfigMode.html" title="ReconfigMode" class="">ReconfigMode</a>
                           </li>
                           <li class="">
                             <a href="SIX.TimApi.Constants.RemoteFunctions.html" title="RemoteFunctions" class="">RemoteFunctions</a>
@@ -1985,6 +1991,70 @@ false: Installment is NOT allowed for the transaction</p>
   </table>
   
   
+  <a id="SIX_TimApi_TransactionData_IsFinal_" data-uid="SIX.TimApi.TransactionData.IsFinal*"></a>
+  <h4 id="SIX_TimApi_TransactionData_IsFinal" data-uid="SIX.TimApi.TransactionData.IsFinal">IsFinal</h4>
+  <div class="markdown level1 summary"><p>This property indicates whether an omnichannel operation
+will be the final. Used for Capture Payments.</p>
+<p>Mandatory for (can not be null):</p>
+<ul>
+</ul>
+<p>Conditional for (can be null):</p>
+<ul>
+<li>SIX.TimApi.Constants.TransactionType.FinalizePurchase</li>
+</ul>
+<p>Forbidden (has to be always null):</p>
+<ul>
+<li>SIX.TimApi.Constants.TransactionType.AdjustReservation</li>
+<li>SIX.TimApi.Constants.TransactionType.CancelReservation</li>
+<li>SIX.TimApi.Constants.TransactionType.DebtRecovery</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchasePhoneAuthorized</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchaseReservation</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchaseReservationPhoneAuthorized</li>
+<li>SIX.TimApi.Constants.TransactionType.Reversal</li>
+<li>SIX.TimApi.Constants.TransactionType.AccountVerification</li>
+<li>SIX.TimApi.Constants.TransactionType.ActivateCard</li>
+<li>SIX.TimApi.Constants.TransactionType.AuthorizeCredit</li>
+<li>SIX.TimApi.Constants.TransactionType.AuthorizeDeposit</li>
+<li>SIX.TimApi.Constants.TransactionType.CashAdvance</li>
+<li>SIX.TimApi.Constants.TransactionType.CollectPoints</li>
+<li>SIX.TimApi.Constants.TransactionType.Combined</li>
+<li>SIX.TimApi.Constants.TransactionType.Funding</li>
+<li>SIX.TimApi.Constants.TransactionType.Giro</li>
+<li>SIX.TimApi.Constants.TransactionType.Load</li>
+<li>SIX.TimApi.Constants.TransactionType.LoadVoucher</li>
+<li>SIX.TimApi.Constants.TransactionType.PreAuthorization</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchaseForcedAcceptance</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchaseMailOrdered</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchasePhoneOrdered</li>
+<li>SIX.TimApi.Constants.TransactionType.PurchaseWithCashback</li>
+<li>SIX.TimApi.Constants.TransactionType.Refunding</li>
+<li>SIX.TimApi.Constants.TransactionType.Reservation</li>
+<li>SIX.TimApi.Constants.TransactionType.Unload</li>
+</ul>
+<p>Transactions will fail if one of the above mentioned restrictions are violated.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool? IsFinal { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="SIX_TimApi_TransactionData_Language_" data-uid="SIX.TimApi.TransactionData.Language*"></a>
   <h4 id="SIX_TimApi_TransactionData_Language" data-uid="SIX.TimApi.TransactionData.Language">Language</h4>
   <div class="markdown level1 summary"><p>the language. (Petrol, Unattended)</p>
@@ -2281,13 +2351,14 @@ This field is not used for Saferpay, but is for example for Ogone.</p>
 <p>Conditional for (can be null):</p>
 <ul>
 <li>SIX.TimApi.Constants.TransactionType.Credit</li>
+<li>SIX.TimApi.Constants.TransactionType.FinalizePurchase</li>
+<li>SIX.TimApi.Constants.TransactionType.Purchase</li>
 </ul>
 <p>Forbidden (has to be always null):</p>
 <ul>
 <li>SIX.TimApi.Constants.TransactionType.AdjustReservation</li>
 <li>SIX.TimApi.Constants.TransactionType.CancelReservation</li>
 <li>SIX.TimApi.Constants.TransactionType.DebtRecovery</li>
-<li>SIX.TimApi.Constants.TransactionType.FinalizePurchase</li>
 <li>SIX.TimApi.Constants.TransactionType.PurchasePhoneAuthorized</li>
 <li>SIX.TimApi.Constants.TransactionType.PurchaseReservation</li>
 <li>SIX.TimApi.Constants.TransactionType.PurchaseReservationPhoneAuthorized</li>
@@ -2304,7 +2375,6 @@ This field is not used for Saferpay, but is for example for Ogone.</p>
 <li>SIX.TimApi.Constants.TransactionType.Load</li>
 <li>SIX.TimApi.Constants.TransactionType.LoadVoucher</li>
 <li>SIX.TimApi.Constants.TransactionType.PreAuthorization</li>
-<li>SIX.TimApi.Constants.TransactionType.Purchase</li>
 <li>SIX.TimApi.Constants.TransactionType.PurchaseForcedAcceptance</li>
 <li>SIX.TimApi.Constants.TransactionType.PurchaseMailOrdered</li>
 <li>SIX.TimApi.Constants.TransactionType.PurchasePhoneOrdered</li>
@@ -2349,13 +2419,14 @@ can be refunded via TIM API, by setting the e-commerce payment-id as Omnichannel
 <p>Conditional for (can be null):</p>
 <ul>
 <li>SIX.TimApi.Constants.TransactionType.Credit</li>
+<li>SIX.TimApi.Constants.TransactionType.FinalizePurchase</li>
+<li>SIX.TimApi.Constants.TransactionType.Purchase</li>
 </ul>
 <p>Forbidden (has to be always null):</p>
 <ul>
 <li>SIX.TimApi.Constants.TransactionType.AdjustReservation</li>
 <li>SIX.TimApi.Constants.TransactionType.CancelReservation</li>
 <li>SIX.TimApi.Constants.TransactionType.DebtRecovery</li>
-<li>SIX.TimApi.Constants.TransactionType.FinalizePurchase</li>
 <li>SIX.TimApi.Constants.TransactionType.PurchasePhoneAuthorized</li>
 <li>SIX.TimApi.Constants.TransactionType.PurchaseReservation</li>
 <li>SIX.TimApi.Constants.TransactionType.PurchaseReservationPhoneAuthorized</li>
@@ -2373,7 +2444,6 @@ can be refunded via TIM API, by setting the e-commerce payment-id as Omnichannel
 <li>SIX.TimApi.Constants.TransactionType.Load</li>
 <li>SIX.TimApi.Constants.TransactionType.LoadVoucher</li>
 <li>SIX.TimApi.Constants.TransactionType.PreAuthorization</li>
-<li>SIX.TimApi.Constants.TransactionType.Purchase</li>
 <li>SIX.TimApi.Constants.TransactionType.PurchaseForcedAcceptance</li>
 <li>SIX.TimApi.Constants.TransactionType.PurchaseMailOrdered</li>
 <li>SIX.TimApi.Constants.TransactionType.PurchasePhoneOrdered</li>

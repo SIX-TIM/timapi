@@ -1,6 +1,6 @@
 var financial__transactions_8h =
 [
-    [ "ta_e_financial_transactions_t", "financial__transactions_8h.html#ae3ec589efcb1cc420e1a889a5556dace", null ],
+    [ "ta_e_financial_transactions_t", "financial__transactions_8h.html#af736a16671fa3588c66b8e7cdb9e3997", null ],
     [ "ta_e_financial_transactions", "financial__transactions_8h.html#acb14a85df061e531e84d9409a28ead04", [
       [ "ta_c_ft_undefined", "financial__transactions_8h.html#acb14a85df061e531e84d9409a28ead04acf97e5593fe75ecd077da0dd20c51f2c", null ],
       [ "ta_c_ft_purchase", "financial__transactions_8h.html#acb14a85df061e531e84d9409a28ead04a562fdd12f3d20945d77cb3d6bdb0fe40", null ],

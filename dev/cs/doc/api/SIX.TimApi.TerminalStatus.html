@@ -12,7 +12,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class TerminalStatus
    ">
-    <meta name="generator" content="docfx 2.59.4.0">
+    <meta name="generator" content="docfx 2.51.0.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -237,6 +237,9 @@
                           </li>
                           <li class="">
                             <a href="SIX.TimApi.ReconciliationResponse.html" title="ReconciliationResponse" class="">ReconciliationResponse</a>
+                          </li>
+                          <li class="">
+                            <a href="SIX.TimApi.ReconfigParameters.html" title="ReconfigParameters" class="">ReconfigParameters</a>
                           </li>
                           <li class="">
                             <a href="SIX.TimApi.RequestTypes.html" title="RequestTypes" class="">RequestTypes</a>
@@ -791,6 +794,9 @@
                             <a href="SIX.TimApi.Constants.Recipient.html" title="Recipient" class="">Recipient</a>
                           </li>
                           <li class="">
+                            <a href="SIX.TimApi.Constants.ReconfigMode.html" title="ReconfigMode" class="">ReconfigMode</a>
+                          </li>
+                          <li class="">
                             <a href="SIX.TimApi.Constants.RemoteFunctions.html" title="RemoteFunctions" class="">RemoteFunctions</a>
                           </li>
                           <li class="">
@@ -956,13 +962,13 @@ if available card data</p>
   
   
   <a id="SIX_TimApi_TerminalStatus__ctor_" data-uid="SIX.TimApi.TerminalStatus.#ctor*"></a>
-  <h4 id="SIX_TimApi_TerminalStatus__ctor_List_String__SIX_TimApi_Constants_ConnectionStatus_SIX_TimApi_Constants_ManagementStatus_SIX_TimApi_Constants_CardReaderStatus_SIX_TimApi_Constants_TransactionStatus_SIX_TimApi_Constants_SleepModeStatus_System_Boolean_SIX_TimApi_CardData_System_Boolean_SIX_TimApi_AmountFinal_" data-uid="SIX.TimApi.TerminalStatus.#ctor(List{String},SIX.TimApi.Constants.ConnectionStatus,SIX.TimApi.Constants.ManagementStatus,SIX.TimApi.Constants.CardReaderStatus,SIX.TimApi.Constants.TransactionStatus,SIX.TimApi.Constants.SleepModeStatus,System.Boolean,SIX.TimApi.CardData,System.Boolean,SIX.TimApi.AmountFinal)">TerminalStatus(List&lt;String&gt;, ConnectionStatus, ManagementStatus, CardReaderStatus, TransactionStatus, SleepModeStatus, Boolean, CardData, Boolean, AmountFinal)</h4>
+  <h4 id="SIX_TimApi_TerminalStatus__ctor_List_String__SIX_TimApi_Constants_ConnectionStatus_SIX_TimApi_Constants_ManagementStatus_SIX_TimApi_Constants_CardReaderStatus_SIX_TimApi_Constants_TransactionStatus_SIX_TimApi_Constants_SleepModeStatus_System_Boolean_SIX_TimApi_CardData_System_Boolean_SIX_TimApi_AmountFinal_System_Boolean_" data-uid="SIX.TimApi.TerminalStatus.#ctor(List{String},SIX.TimApi.Constants.ConnectionStatus,SIX.TimApi.Constants.ManagementStatus,SIX.TimApi.Constants.CardReaderStatus,SIX.TimApi.Constants.TransactionStatus,SIX.TimApi.Constants.SleepModeStatus,System.Boolean,SIX.TimApi.CardData,System.Boolean,SIX.TimApi.AmountFinal,System.Boolean)">TerminalStatus(List&lt;String&gt;, ConnectionStatus, ManagementStatus, CardReaderStatus, TransactionStatus, SleepModeStatus, Boolean, CardData, Boolean, AmountFinal, Boolean)</h4>
   <div class="markdown level1 summary"><p>Create terminal status.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public TerminalStatus(List&lt;String&gt; displayContent, ConnectionStatus connectionStatus, ManagementStatus managementStatus, CardReaderStatus cardReaderStatus, TransactionStatus transactionStatus, SleepModeStatus sleepModeStatus, bool receiptInformation, CardData cardData, bool swUpdateAvailable, AmountFinal finalAmount)</code></pre>
+    <pre><code class="lang-csharp hljs">public TerminalStatus(List&lt;String&gt; displayContent, ConnectionStatus connectionStatus, ManagementStatus managementStatus, CardReaderStatus cardReaderStatus, TransactionStatus transactionStatus, SleepModeStatus sleepModeStatus, bool receiptInformation, CardData cardData, bool swUpdateAvailable, AmountFinal finalAmount, bool OwnRisk2ActivationStatus)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1022,6 +1028,11 @@ if available card data</p>
       <tr>
         <td><a class="xref" href="SIX.TimApi.AmountFinal.html">AmountFinal</a></td>
         <td><span class="parametername">finalAmount</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">OwnRisk2ActivationStatus</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -1187,6 +1198,38 @@ if available card data</p>
   </table>
   
   
+  <a id="SIX_TimApi_TerminalStatus_OwnRisk2ActivationStatus_" data-uid="SIX.TimApi.TerminalStatus.OwnRisk2ActivationStatus*"></a>
+  <h4 id="SIX_TimApi_TerminalStatus_OwnRisk2ActivationStatus" data-uid="SIX.TimApi.TerminalStatus.OwnRisk2ActivationStatus">OwnRisk2ActivationStatus</h4>
+  <div class="markdown level1 summary"><p><p>Specifies if the OwnRisk2 functionality is activated at terminal side.</p>
+<p>This field is returned in a standard TerminalStatus notification from terminal to ECR
+if the OwnRisk2 mode is activated. The absence of the OwnRisk2Activation in the
+TerminalStatus notification means that the OwnRisk2 mode is de-activated or not
+supported by the payment application.</p></p>
+<p>Optional: Mandatory If OwnRisk2 mode is activated.</p>
+<p>Guides: <em>retail</em>, <em>unattended</em>, <em>valueAddedServices</em>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool OwnRisk2ActivationStatus { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="SIX_TimApi_TerminalStatus_ReceiptInformation_" data-uid="SIX.TimApi.TerminalStatus.ReceiptInformation*"></a>
   <h4 id="SIX_TimApi_TerminalStatus_ReceiptInformation" data-uid="SIX.TimApi.TerminalStatus.ReceiptInformation">ReceiptInformation</h4>
   <div class="markdown level1 summary"><p>indicates if a receibt is available.</p>
@@ -1242,7 +1285,7 @@ if available card data</p>
   
   <a id="SIX_TimApi_TerminalStatus_SwUpdateAvailable_" data-uid="SIX.TimApi.TerminalStatus.SwUpdateAvailable*"></a>
   <h4 id="SIX_TimApi_TerminalStatus_SwUpdateAvailable" data-uid="SIX.TimApi.TerminalStatus.SwUpdateAvailable">SwUpdateAvailable</h4>
-  <div class="markdown level1 summary"><p>Gets if asw update is available.</p>
+  <div class="markdown level1 summary"><p>Gets if a software update is available.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
