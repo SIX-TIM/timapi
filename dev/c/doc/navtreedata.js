@@ -1,26 +1,25 @@
 /*
- @licstart  The following is the entire license notice for the JavaScript code in this file.
+@ @licstart  The following is the entire license notice for the
+JavaScript code in this file.
 
- The MIT License (MIT)
+Copyright (C) 1997-2017 by Dimitri van Heesch
 
- Copyright (C) 1997-2020 by Dimitri van Heesch
+This program is free software; you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation; either version 2 of the License, or
+(at your option) any later version.
 
- Permission is hereby granted, free of charge, to any person obtaining a copy of this software
- and associated documentation files (the "Software"), to deal in the Software without restriction,
- including without limitation the rights to use, copy, modify, merge, publish, distribute,
- sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is
- furnished to do so, subject to the following conditions:
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
 
- The above copyright notice and this permission notice shall be included in all copies or
- substantial portions of the Software.
+You should have received a copy of the GNU General Public License along
+with this program; if not, write to the Free Software Foundation, Inc.,
+51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
 
- THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING
- BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
- NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
- DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
- OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-
- @licend  The above is the entire license notice for the JavaScript code in this file
+@licend  The above is the entire license notice
+for the JavaScript code in this file
 */
 var NAVTREE =
 [
@@ -43,16 +42,16 @@ var NAVTREEINDEX =
 [
 "account__type_8h.html",
 "brand__bar__brand_8h.html#a065fb75dccd6ee5e82f29d4cce775549a8606a403d77aa1af1cc78fccda277dd8",
-"currency_8h.html#ad375db379bcf5a792280a2735f80f7d9a560697baf80d61c7a418d33723fb7ffe",
-"custom__receipt__formatter_8h.html#a883a5ff78a5d2ad805f9f6af32a8d2afadc6dced3146570cc295a6ead03176596",
-"enum__string__maps_2reconfig__mode_8h.html",
-"loyalty__information_8h.html#a01a9d200daea0fa116f03be1c358e4f6",
-"reason_8h.html#ab10e533f4ad4f7409b4a8fbdaefbf972a6ea98693fb09a95a935fbf08e0d5c21a",
-"resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9a1ed28b1b2e24d8beb5a79cca15f110c7",
-"result__code_8h.html#aebaf00d1ceef4b827866ca9de0bd3320a7f0d4eb443ea5dda12e7a8bcf0ad8e08",
-"terminal_8h.html#a3c804e0f2c3f8371dfef86877961f24e",
-"terminal__settings_8h.html#a9f5d41374672debbacbb69382b92feea",
-"transaction__response_8h.html#a485fc016dc2e044e8bb2d4d35166cfc4"
+"currency_8h.html#ad375db379bcf5a792280a2735f80f7d9a5619f3373b19a4f33cd2e8cef93023c6",
+"custom__receipt__formatter_8h.html#aa2ad96ca8f3d24cc69d417eaa70dd2e3a29a3298ad95034fc88a031e0a8cba98b",
+"enum__string__maps_2update__status_8h.html",
+"management__status_8h.html#a0815e7cf1e193cdb55d4505ad6142913abdbef6f11f4ef995e0da6d9cdf358df1",
+"receipt__item__type_8h.html#a3d3044dd871a9c7d630dbcf3d9b738bea279c62d146c627e8db2f85103f41b24e",
+"resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9a787681c99c849c890bb140b2c7c21823",
+"result__code_8h.html#aebaf00d1ceef4b827866ca9de0bd3320ae3ef2c8a90093c68ed18a5fd472af078",
+"terminal_8h.html#aa3f974ab897252b1d42e2be3edefd1bf",
+"third__party__apps_8h.html#a4f195825ca4f737073ab026435d31358a452c40c4cffdef4d9289a685c284fd1d",
+"trx__detail_8h.html#a156057dc5222506509ac131080127141"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

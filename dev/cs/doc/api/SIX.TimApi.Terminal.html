@@ -12,7 +12,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class Terminal
    ">
-    <meta name="generator" content="docfx 2.51.0.0">
+    <meta name="generator" content="docfx 2.59.4.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -237,9 +237,6 @@
                           </li>
                           <li class="">
                             <a href="SIX.TimApi.ReconciliationResponse.html" title="ReconciliationResponse" class="">ReconciliationResponse</a>
-                          </li>
-                          <li class="">
-                            <a href="SIX.TimApi.ReconfigParameters.html" title="ReconfigParameters" class="">ReconfigParameters</a>
                           </li>
                           <li class="">
                             <a href="SIX.TimApi.RequestTypes.html" title="RequestTypes" class="">RequestTypes</a>
@@ -792,9 +789,6 @@
                           </li>
                           <li class="">
                             <a href="SIX.TimApi.Constants.Recipient.html" title="Recipient" class="">Recipient</a>
-                          </li>
-                          <li class="">
-                            <a href="SIX.TimApi.Constants.ReconfigMode.html" title="ReconfigMode" class="">ReconfigMode</a>
                           </li>
                           <li class="">
                             <a href="SIX.TimApi.Constants.RemoteFunctions.html" title="RemoteFunctions" class="">RemoteFunctions</a>
@@ -3351,63 +3345,6 @@ The response is available in the <a class="xref" href="SIX.TimApi.Terminal.Hardw
   
   
   <a id="SIX_TimApi_Terminal_InitTransaction_" data-uid="SIX.TimApi.Terminal.InitTransaction*"></a>
-  <h4 id="SIX_TimApi_Terminal_InitTransaction_System_Boolean_SIX_TimApi_Amount_SIX_TimApi_Amount_SIX_TimApi_Constants_FunctionHint_" data-uid="SIX.TimApi.Terminal.InitTransaction(System.Boolean,SIX.TimApi.Amount,SIX.TimApi.Amount,SIX.TimApi.Constants.FunctionHint)">InitTransaction(Boolean, Amount, Amount, FunctionHint)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public CardData InitTransaction(bool displayAmount, Amount amount, Amount amountOther, FunctionHint functionHint)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td><span class="parametername">displayAmount</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="SIX.TimApi.Amount.html">Amount</a></td>
-        <td><span class="parametername">amount</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="SIX.TimApi.Amount.html">Amount</a></td>
-        <td><span class="parametername">amountOther</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="SIX.TimApi.Constants.FunctionHint.html">FunctionHint</a></td>
-        <td><span class="parametername">functionHint</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="SIX.TimApi.CardData.html">CardData</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="SIX_TimApi_Terminal_InitTransaction_" data-uid="SIX.TimApi.Terminal.InitTransaction*"></a>
   <h4 id="SIX_TimApi_Terminal_InitTransaction_System_Boolean_SIX_TimApi_Amount_SIX_TimApi_Constants_FunctionHint_" data-uid="SIX.TimApi.Terminal.InitTransaction(System.Boolean,SIX.TimApi.Amount,SIX.TimApi.Constants.FunctionHint)">InitTransaction(Boolean, Amount, FunctionHint)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
@@ -3498,48 +3435,6 @@ Your application must handle this event to receive notification.</p>
   
   
   <a id="SIX_TimApi_Terminal_InitTransactionAsync_" data-uid="SIX.TimApi.Terminal.InitTransactionAsync*"></a>
-  <h4 id="SIX_TimApi_Terminal_InitTransactionAsync_System_Boolean_SIX_TimApi_Amount_SIX_TimApi_Amount_SIX_TimApi_Constants_FunctionHint_" data-uid="SIX.TimApi.Terminal.InitTransactionAsync(System.Boolean,SIX.TimApi.Amount,SIX.TimApi.Amount,SIX.TimApi.Constants.FunctionHint)">InitTransactionAsync(Boolean, Amount, Amount, FunctionHint)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void InitTransactionAsync(bool displayAmount, Amount amount, Amount amountOther, FunctionHint functionHint)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td><span class="parametername">displayAmount</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="SIX.TimApi.Amount.html">Amount</a></td>
-        <td><span class="parametername">amount</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="SIX.TimApi.Amount.html">Amount</a></td>
-        <td><span class="parametername">amountOther</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="SIX.TimApi.Constants.FunctionHint.html">FunctionHint</a></td>
-        <td><span class="parametername">functionHint</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="SIX_TimApi_Terminal_InitTransactionAsync_" data-uid="SIX.TimApi.Terminal.InitTransactionAsync*"></a>
   <h4 id="SIX_TimApi_Terminal_InitTransactionAsync_System_Boolean_SIX_TimApi_Amount_SIX_TimApi_Constants_FunctionHint_" data-uid="SIX.TimApi.Terminal.InitTransactionAsync(System.Boolean,SIX.TimApi.Amount,SIX.TimApi.Constants.FunctionHint)">InitTransactionAsync(Boolean, Amount, FunctionHint)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
@@ -3570,63 +3465,6 @@ Your application must handle this event to receive notification.</p>
       <tr>
         <td><a class="xref" href="SIX.TimApi.Constants.FunctionHint.html">FunctionHint</a></td>
         <td><span class="parametername">functionHint</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="SIX_TimApi_Terminal_InitTransactionWithDialog_" data-uid="SIX.TimApi.Terminal.InitTransactionWithDialog*"></a>
-  <h4 id="SIX_TimApi_Terminal_InitTransactionWithDialog_SIX_TimApi_Amount_SIX_TimApi_Amount_System_Nullable_SIX_TimApi_Constants_FunctionHint__SIX_TimApi_ShowDialogRequest_" data-uid="SIX.TimApi.Terminal.InitTransactionWithDialog(SIX.TimApi.Amount,SIX.TimApi.Amount,System.Nullable{SIX.TimApi.Constants.FunctionHint},SIX.TimApi.ShowDialogRequest)">InitTransactionWithDialog(Amount, Amount, Nullable&lt;FunctionHint&gt;, ShowDialogRequest)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public InitTransactionResponse InitTransactionWithDialog(Amount amount, Amount amountOther, FunctionHint? functionHint, ShowDialogRequest dialog)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="SIX.TimApi.Amount.html">Amount</a></td>
-        <td><span class="parametername">amount</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="SIX.TimApi.Amount.html">Amount</a></td>
-        <td><span class="parametername">amountOther</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="SIX.TimApi.Constants.FunctionHint.html">FunctionHint</a>&gt;</td>
-        <td><span class="parametername">functionHint</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="SIX.TimApi.ShowDialogRequest.html">ShowDialogRequest</a></td>
-        <td><span class="parametername">dialog</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="SIX.TimApi.InitTransactionResponse.html">InitTransactionResponse</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -3697,48 +3535,6 @@ Your application must handle this event to receive notification.</p>
         <td><a class="xref" href="SIX.TimApi.TimException.html">TimException</a></td>
         <td><p>an error occurred during the InitTransaction operation</p>
 </td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="SIX_TimApi_Terminal_InitTransactionWithDialogAsync_" data-uid="SIX.TimApi.Terminal.InitTransactionWithDialogAsync*"></a>
-  <h4 id="SIX_TimApi_Terminal_InitTransactionWithDialogAsync_SIX_TimApi_Amount_SIX_TimApi_Amount_System_Nullable_SIX_TimApi_Constants_FunctionHint__SIX_TimApi_ShowDialogRequest_" data-uid="SIX.TimApi.Terminal.InitTransactionWithDialogAsync(SIX.TimApi.Amount,SIX.TimApi.Amount,System.Nullable{SIX.TimApi.Constants.FunctionHint},SIX.TimApi.ShowDialogRequest)">InitTransactionWithDialogAsync(Amount, Amount, Nullable&lt;FunctionHint&gt;, ShowDialogRequest)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void InitTransactionWithDialogAsync(Amount amount, Amount amountOther, FunctionHint? functionHint, ShowDialogRequest dialog)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="SIX.TimApi.Amount.html">Amount</a></td>
-        <td><span class="parametername">amount</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="SIX.TimApi.Amount.html">Amount</a></td>
-        <td><span class="parametername">amountOther</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="SIX.TimApi.Constants.FunctionHint.html">FunctionHint</a>&gt;</td>
-        <td><span class="parametername">functionHint</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="SIX.TimApi.ShowDialogRequest.html">ShowDialogRequest</a></td>
-        <td><span class="parametername">dialog</span></td>
-        <td></td>
       </tr>
     </tbody>
   </table>
@@ -4828,67 +4624,6 @@ as <a class="xref" href="SIX.TimApi.Terminal.ReconciliationCompletedEventArgs.ht
   </table>
   
   
-  <a id="SIX_TimApi_Terminal_Reconfig_" data-uid="SIX.TimApi.Terminal.Reconfig*"></a>
-  <h4 id="SIX_TimApi_Terminal_Reconfig_SIX_TimApi_ReconfigParameters_" data-uid="SIX.TimApi.Terminal.Reconfig(SIX.TimApi.ReconfigParameters)">Reconfig(ReconfigParameters)</h4>
-  <div class="markdown level1 summary"><p>Force the EFT Terminal to get the configuration from the service center using specific reconfiguration parameters.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public PrintData Reconfig(ReconfigParameters ReconfigParameters)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="SIX.TimApi.ReconfigParameters.html">ReconfigParameters</a></td>
-        <td><span class="parametername">ReconfigParameters</span></td>
-        <td><p>Parameters specifying the type of configuration request for the EFT Terminal.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="SIX.TimApi.PrintData.html">PrintData</a></td>
-        <td><p>the PrintData</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="SIX.TimApi.TimException.html">TimException</a></td>
-        <td><p>an error occurred during the receipt request</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
   <a id="SIX_TimApi_Terminal_ReconfigAsync_" data-uid="SIX.TimApi.Terminal.ReconfigAsync*"></a>
   <h4 id="SIX_TimApi_Terminal_ReconfigAsync" data-uid="SIX.TimApi.Terminal.ReconfigAsync">ReconfigAsync()</h4>
   <div class="markdown level1 summary"><p>Asynchronously force the EFT Terminal to get the configuration from the service center..</p>
@@ -4899,41 +4634,6 @@ as <a class="xref" href="SIX.TimApi.Terminal.ReconciliationCompletedEventArgs.ht
     <pre><code class="lang-csharp hljs">public void ReconfigAsync()</code></pre>
   </div>
   <h5 id="SIX_TimApi_Terminal_ReconfigAsync_remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>This method does not block the calling thread during the reconfiguration and uses the Event-based Asynchronous Pattern (EAP).
-When the transaction completes, the <a class="xref" href="SIX.TimApi.Terminal.html#SIX_TimApi_Terminal_ReconfigCompleted">ReconfigCompleted</a> event is raised.
-Your application must handle this event to receive notification.
-The response is available in the <a class="xref" href="SIX.TimApi.Terminal.ReconfigCompletedEventArgs.html">Terminal.ReconfigCompletedEventArgs</a> as <a class="xref" href="SIX.TimApi.Terminal.ReconfigCompletedEventArgs.html#SIX_TimApi_Terminal_ReconfigCompletedEventArgs_PrintData">PrintData</a>.</p>
-</div>
-  
-  
-  <a id="SIX_TimApi_Terminal_ReconfigAsync_" data-uid="SIX.TimApi.Terminal.ReconfigAsync*"></a>
-  <h4 id="SIX_TimApi_Terminal_ReconfigAsync_SIX_TimApi_ReconfigParameters_" data-uid="SIX.TimApi.Terminal.ReconfigAsync(SIX.TimApi.ReconfigParameters)">ReconfigAsync(ReconfigParameters)</h4>
-  <div class="markdown level1 summary"><p>Asynchronously force the EFT Terminal to get the configuration from the service center using specific reconfiguration parameters.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void ReconfigAsync(ReconfigParameters ReconfigParameters)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="SIX.TimApi.ReconfigParameters.html">ReconfigParameters</a></td>
-        <td><span class="parametername">ReconfigParameters</span></td>
-        <td><p>Parameters specifying the type of configuration request for the EFT Terminal.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 id="SIX_TimApi_Terminal_ReconfigAsync_SIX_TimApi_ReconfigParameters__remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>This method does not block the calling thread during the reconfiguration and uses the Event-based Asynchronous Pattern (EAP).
 When the transaction completes, the <a class="xref" href="SIX.TimApi.Terminal.html#SIX_TimApi_Terminal_ReconfigCompleted">ReconfigCompleted</a> event is raised.
 Your application must handle this event to receive notification.

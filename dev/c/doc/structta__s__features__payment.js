@@ -12,7 +12,6 @@ var structta__s__features__payment =
     [ "ep2_installment", "structta__s__features__payment.html#ab1b0c22ab26b9a3c0280ae9f6a4e97d2", null ],
     [ "ep2_multi_account_selection", "structta__s__features__payment.html#afb7b06ec637783a19d327f35a6372b4d", null ],
     [ "ep2_multi_contract_selection", "structta__s__features__payment.html#a9b5fcb1140ecde7d849e29960408c574", null ],
-    [ "ep2_own_risk_2", "structta__s__features__payment.html#a273b10b5d76f82023f779bfe8cfd3582", null ],
     [ "mcr", "structta__s__features__payment.html#a149240457b190d3c22b3c3d005543752", null ],
     [ "partial_approval", "structta__s__features__payment.html#ac9b4b0081fb192bf22ede0ef036405cc", null ],
     [ "partial_commit", "structta__s__features__payment.html#a9127f6f2e9621f883ff046dfba15f3f7", null ],
