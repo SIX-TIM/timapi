@@ -1,5 +1,6 @@
 var structta__s__features__payment =
 [
+    [ "accessibility", "structta__s__features__payment.html#a41558ec0db094e4fac70bb101f8f430e", null ],
     [ "account_selection", "structta__s__features__payment.html#a7405300d60b9ccfda2ef69591f2727bd", null ],
     [ "ctap_available", "structta__s__features__payment.html#a6d55f4fabebe51dcc03f0c96bf583416", null ],
     [ "dcc", "structta__s__features__payment.html#a53188968afc204c1f7117b13b5ed42ac", null ],

@@ -7,6 +7,137 @@ references:
   commentId: N:SIX.TimApi
   fullName: SIX.TimApi
   nameWithType: SIX.TimApi
+- uid: SIX.TimApi.AccessibilityOption
+  name: AccessibilityOption
+  href: api/SIX.TimApi.AccessibilityOption.html
+  commentId: T:SIX.TimApi.AccessibilityOption
+  fullName: SIX.TimApi.AccessibilityOption
+  nameWithType: AccessibilityOption
+- uid: SIX.TimApi.AccessibilityOption.#ctor(SIX.TimApi.Constants.AccessibilityOptionType,System.String)
+  name: AccessibilityOption(AccessibilityOptionType, String)
+  href: api/SIX.TimApi.AccessibilityOption.html#SIX_TimApi_AccessibilityOption__ctor_SIX_TimApi_Constants_AccessibilityOptionType_System_String_
+  commentId: M:SIX.TimApi.AccessibilityOption.#ctor(SIX.TimApi.Constants.AccessibilityOptionType,System.String)
+  fullName: SIX.TimApi.AccessibilityOption.AccessibilityOption(SIX.TimApi.Constants.AccessibilityOptionType, System.String)
+  nameWithType: AccessibilityOption.AccessibilityOption(AccessibilityOptionType, String)
+- uid: SIX.TimApi.AccessibilityOption.#ctor*
+  name: AccessibilityOption
+  href: api/SIX.TimApi.AccessibilityOption.html#SIX_TimApi_AccessibilityOption__ctor_
+  commentId: Overload:SIX.TimApi.AccessibilityOption.#ctor
+  isSpec: "True"
+  fullName: SIX.TimApi.AccessibilityOption.AccessibilityOption
+  nameWithType: AccessibilityOption.AccessibilityOption
+- uid: SIX.TimApi.AccessibilityOption.AccessibilityOptionType
+  name: AccessibilityOptionType
+  href: api/SIX.TimApi.AccessibilityOption.html#SIX_TimApi_AccessibilityOption_AccessibilityOptionType
+  commentId: P:SIX.TimApi.AccessibilityOption.AccessibilityOptionType
+  fullName: SIX.TimApi.AccessibilityOption.AccessibilityOptionType
+  nameWithType: AccessibilityOption.AccessibilityOptionType
+- uid: SIX.TimApi.AccessibilityOption.AccessibilityOptionType*
+  name: AccessibilityOptionType
+  href: api/SIX.TimApi.AccessibilityOption.html#SIX_TimApi_AccessibilityOption_AccessibilityOptionType_
+  commentId: Overload:SIX.TimApi.AccessibilityOption.AccessibilityOptionType
+  isSpec: "True"
+  fullName: SIX.TimApi.AccessibilityOption.AccessibilityOptionType
+  nameWithType: AccessibilityOption.AccessibilityOptionType
+- uid: SIX.TimApi.AccessibilityOption.AccessibilityOptionValue
+  name: AccessibilityOptionValue
+  href: api/SIX.TimApi.AccessibilityOption.html#SIX_TimApi_AccessibilityOption_AccessibilityOptionValue
+  commentId: P:SIX.TimApi.AccessibilityOption.AccessibilityOptionValue
+  fullName: SIX.TimApi.AccessibilityOption.AccessibilityOptionValue
+  nameWithType: AccessibilityOption.AccessibilityOptionValue
+- uid: SIX.TimApi.AccessibilityOption.AccessibilityOptionValue*
+  name: AccessibilityOptionValue
+  href: api/SIX.TimApi.AccessibilityOption.html#SIX_TimApi_AccessibilityOption_AccessibilityOptionValue_
+  commentId: Overload:SIX.TimApi.AccessibilityOption.AccessibilityOptionValue
+  isSpec: "True"
+  fullName: SIX.TimApi.AccessibilityOption.AccessibilityOptionValue
+  nameWithType: AccessibilityOption.AccessibilityOptionValue
+- uid: SIX.TimApi.AccessibilityOption.ToString
+  name: ToString()
+  href: api/SIX.TimApi.AccessibilityOption.html#SIX_TimApi_AccessibilityOption_ToString
+  commentId: M:SIX.TimApi.AccessibilityOption.ToString
+  fullName: SIX.TimApi.AccessibilityOption.ToString()
+  nameWithType: AccessibilityOption.ToString()
+- uid: SIX.TimApi.AccessibilityOption.ToString*
+  name: ToString
+  href: api/SIX.TimApi.AccessibilityOption.html#SIX_TimApi_AccessibilityOption_ToString_
+  commentId: Overload:SIX.TimApi.AccessibilityOption.ToString
+  isSpec: "True"
+  fullName: SIX.TimApi.AccessibilityOption.ToString
+  nameWithType: AccessibilityOption.ToString
+- uid: SIX.TimApi.AccessibilityOptionList
+  name: AccessibilityOptionList
+  href: api/SIX.TimApi.AccessibilityOptionList.html
+  commentId: T:SIX.TimApi.AccessibilityOptionList
+  fullName: SIX.TimApi.AccessibilityOptionList
+  nameWithType: AccessibilityOptionList
+- uid: SIX.TimApi.AccessibilityOptionList.#ctor
+  name: AccessibilityOptionList()
+  href: api/SIX.TimApi.AccessibilityOptionList.html#SIX_TimApi_AccessibilityOptionList__ctor
+  commentId: M:SIX.TimApi.AccessibilityOptionList.#ctor
+  fullName: SIX.TimApi.AccessibilityOptionList.AccessibilityOptionList()
+  nameWithType: AccessibilityOptionList.AccessibilityOptionList()
+- uid: SIX.TimApi.AccessibilityOptionList.#ctor(SIX.TimApi.AccessibilityOptionList)
+  name: AccessibilityOptionList(AccessibilityOptionList)
+  href: api/SIX.TimApi.AccessibilityOptionList.html#SIX_TimApi_AccessibilityOptionList__ctor_SIX_TimApi_AccessibilityOptionList_
+  commentId: M:SIX.TimApi.AccessibilityOptionList.#ctor(SIX.TimApi.AccessibilityOptionList)
+  fullName: SIX.TimApi.AccessibilityOptionList.AccessibilityOptionList(SIX.TimApi.AccessibilityOptionList)
+  nameWithType: AccessibilityOptionList.AccessibilityOptionList(AccessibilityOptionList)
+- uid: SIX.TimApi.AccessibilityOptionList.#ctor(System.Nullable{System.Int64},List{SIX.TimApi.AccessibilityOption})
+  name: AccessibilityOptionList(Nullable<Int64>, List<AccessibilityOption>)
+  href: api/SIX.TimApi.AccessibilityOptionList.html#SIX_TimApi_AccessibilityOptionList__ctor_System_Nullable_System_Int64__List_SIX_TimApi_AccessibilityOption__
+  commentId: M:SIX.TimApi.AccessibilityOptionList.#ctor(System.Nullable{System.Int64},List{SIX.TimApi.AccessibilityOption})
+  name.vb: AccessibilityOptionList(Nullable(Of Int64), List(Of AccessibilityOption))
+  fullName: SIX.TimApi.AccessibilityOptionList.AccessibilityOptionList(System.Nullable<System.Int64>, List<SIX.TimApi.AccessibilityOption>)
+  fullName.vb: SIX.TimApi.AccessibilityOptionList.AccessibilityOptionList(System.Nullable(Of System.Int64), List(Of SIX.TimApi.AccessibilityOption))
+  nameWithType: AccessibilityOptionList.AccessibilityOptionList(Nullable<Int64>, List<AccessibilityOption>)
+  nameWithType.vb: AccessibilityOptionList.AccessibilityOptionList(Nullable(Of Int64), List(Of AccessibilityOption))
+- uid: SIX.TimApi.AccessibilityOptionList.#ctor*
+  name: AccessibilityOptionList
+  href: api/SIX.TimApi.AccessibilityOptionList.html#SIX_TimApi_AccessibilityOptionList__ctor_
+  commentId: Overload:SIX.TimApi.AccessibilityOptionList.#ctor
+  isSpec: "True"
+  fullName: SIX.TimApi.AccessibilityOptionList.AccessibilityOptionList
+  nameWithType: AccessibilityOptionList.AccessibilityOptionList
+- uid: SIX.TimApi.AccessibilityOptionList.AccessibilityMode
+  name: AccessibilityMode
+  href: api/SIX.TimApi.AccessibilityOptionList.html#SIX_TimApi_AccessibilityOptionList_AccessibilityMode
+  commentId: P:SIX.TimApi.AccessibilityOptionList.AccessibilityMode
+  fullName: SIX.TimApi.AccessibilityOptionList.AccessibilityMode
+  nameWithType: AccessibilityOptionList.AccessibilityMode
+- uid: SIX.TimApi.AccessibilityOptionList.AccessibilityMode*
+  name: AccessibilityMode
+  href: api/SIX.TimApi.AccessibilityOptionList.html#SIX_TimApi_AccessibilityOptionList_AccessibilityMode_
+  commentId: Overload:SIX.TimApi.AccessibilityOptionList.AccessibilityMode
+  isSpec: "True"
+  fullName: SIX.TimApi.AccessibilityOptionList.AccessibilityMode
+  nameWithType: AccessibilityOptionList.AccessibilityMode
+- uid: SIX.TimApi.AccessibilityOptionList.ListAccessibilityOptions
+  name: ListAccessibilityOptions
+  href: api/SIX.TimApi.AccessibilityOptionList.html#SIX_TimApi_AccessibilityOptionList_ListAccessibilityOptions
+  commentId: P:SIX.TimApi.AccessibilityOptionList.ListAccessibilityOptions
+  fullName: SIX.TimApi.AccessibilityOptionList.ListAccessibilityOptions
+  nameWithType: AccessibilityOptionList.ListAccessibilityOptions
+- uid: SIX.TimApi.AccessibilityOptionList.ListAccessibilityOptions*
+  name: ListAccessibilityOptions
+  href: api/SIX.TimApi.AccessibilityOptionList.html#SIX_TimApi_AccessibilityOptionList_ListAccessibilityOptions_
+  commentId: Overload:SIX.TimApi.AccessibilityOptionList.ListAccessibilityOptions
+  isSpec: "True"
+  fullName: SIX.TimApi.AccessibilityOptionList.ListAccessibilityOptions
+  nameWithType: AccessibilityOptionList.ListAccessibilityOptions
+- uid: SIX.TimApi.AccessibilityOptionList.ToString
+  name: ToString()
+  href: api/SIX.TimApi.AccessibilityOptionList.html#SIX_TimApi_AccessibilityOptionList_ToString
+  commentId: M:SIX.TimApi.AccessibilityOptionList.ToString
+  fullName: SIX.TimApi.AccessibilityOptionList.ToString()
+  nameWithType: AccessibilityOptionList.ToString()
+- uid: SIX.TimApi.AccessibilityOptionList.ToString*
+  name: ToString
+  href: api/SIX.TimApi.AccessibilityOptionList.html#SIX_TimApi_AccessibilityOptionList_ToString_
+  commentId: Overload:SIX.TimApi.AccessibilityOptionList.ToString
+  isSpec: "True"
+  fullName: SIX.TimApi.AccessibilityOptionList.ToString
+  nameWithType: AccessibilityOptionList.ToString
 - uid: SIX.TimApi.ActivateResponse
   name: ActivateResponse
   href: api/SIX.TimApi.ActivateResponse.html
@@ -2051,6 +2182,24 @@ references:
   commentId: N:SIX.TimApi.Constants
   fullName: SIX.TimApi.Constants
   nameWithType: SIX.TimApi.Constants
+- uid: SIX.TimApi.Constants.AccessibilityOptionType
+  name: AccessibilityOptionType
+  href: api/SIX.TimApi.Constants.AccessibilityOptionType.html
+  commentId: T:SIX.TimApi.Constants.AccessibilityOptionType
+  fullName: SIX.TimApi.Constants.AccessibilityOptionType
+  nameWithType: AccessibilityOptionType
+- uid: SIX.TimApi.Constants.AccessibilityOptionType.Unknown
+  name: Unknown
+  href: api/SIX.TimApi.Constants.AccessibilityOptionType.html#SIX_TimApi_Constants_AccessibilityOptionType_Unknown
+  commentId: F:SIX.TimApi.Constants.AccessibilityOptionType.Unknown
+  fullName: SIX.TimApi.Constants.AccessibilityOptionType.Unknown
+  nameWithType: AccessibilityOptionType.Unknown
+- uid: SIX.TimApi.Constants.AccessibilityOptionType.Volume
+  name: Volume
+  href: api/SIX.TimApi.Constants.AccessibilityOptionType.html#SIX_TimApi_Constants_AccessibilityOptionType_Volume
+  commentId: F:SIX.TimApi.Constants.AccessibilityOptionType.Volume
+  fullName: SIX.TimApi.Constants.AccessibilityOptionType.Volume
+  nameWithType: AccessibilityOptionType.Volume
 - uid: SIX.TimApi.Constants.AccountType
   name: AccountType
   href: api/SIX.TimApi.Constants.AccountType.html
@@ -11794,12 +11943,12 @@ references:
   commentId: T:SIX.TimApi.FeaturesPayment
   fullName: SIX.TimApi.FeaturesPayment
   nameWithType: FeaturesPayment
-- uid: SIX.TimApi.FeaturesPayment.#ctor(System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,SIX.TimApi.FeaturesPayment.AgeCheckSupport,System.Boolean)
-  name: FeaturesPayment(Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, FeaturesPayment.AgeCheckSupport, Boolean)
-  href: api/SIX.TimApi.FeaturesPayment.html#SIX_TimApi_FeaturesPayment__ctor_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_SIX_TimApi_FeaturesPayment_AgeCheckSupport_System_Boolean_
-  commentId: M:SIX.TimApi.FeaturesPayment.#ctor(System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,SIX.TimApi.FeaturesPayment.AgeCheckSupport,System.Boolean)
-  fullName: SIX.TimApi.FeaturesPayment.FeaturesPayment(System.Boolean, System.Boolean, System.Boolean, System.Boolean, System.Boolean, System.Boolean, System.Boolean, System.Boolean, System.Boolean, System.Boolean, System.Boolean, System.Boolean, System.Boolean, System.Boolean, System.Boolean, SIX.TimApi.FeaturesPayment.AgeCheckSupport, System.Boolean)
-  nameWithType: FeaturesPayment.FeaturesPayment(Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, FeaturesPayment.AgeCheckSupport, Boolean)
+- uid: SIX.TimApi.FeaturesPayment.#ctor(System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,SIX.TimApi.FeaturesPayment.AgeCheckSupport,System.Boolean)
+  name: FeaturesPayment(Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, FeaturesPayment.AgeCheckSupport, Boolean)
+  href: api/SIX.TimApi.FeaturesPayment.html#SIX_TimApi_FeaturesPayment__ctor_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_SIX_TimApi_FeaturesPayment_AgeCheckSupport_System_Boolean_
+  commentId: M:SIX.TimApi.FeaturesPayment.#ctor(System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,SIX.TimApi.FeaturesPayment.AgeCheckSupport,System.Boolean)
+  fullName: SIX.TimApi.FeaturesPayment.FeaturesPayment(System.Boolean, System.Boolean, System.Boolean, System.Boolean, System.Boolean, System.Boolean, System.Boolean, System.Boolean, System.Boolean, System.Boolean, System.Boolean, System.Boolean, System.Boolean, System.Boolean, System.Boolean, System.Boolean, SIX.TimApi.FeaturesPayment.AgeCheckSupport, System.Boolean)
+  nameWithType: FeaturesPayment.FeaturesPayment(Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, FeaturesPayment.AgeCheckSupport, Boolean)
 - uid: SIX.TimApi.FeaturesPayment.#ctor*
   name: FeaturesPayment
   href: api/SIX.TimApi.FeaturesPayment.html#SIX_TimApi_FeaturesPayment__ctor_
@@ -11831,6 +11980,19 @@ references:
   commentId: F:SIX.TimApi.FeaturesPayment.AgeCheckSupport.TransactionAgeCheck
   fullName: SIX.TimApi.FeaturesPayment.AgeCheckSupport.TransactionAgeCheck
   nameWithType: FeaturesPayment.AgeCheckSupport.TransactionAgeCheck
+- uid: SIX.TimApi.FeaturesPayment.canAccessibility
+  name: canAccessibility()
+  href: api/SIX.TimApi.FeaturesPayment.html#SIX_TimApi_FeaturesPayment_canAccessibility
+  commentId: M:SIX.TimApi.FeaturesPayment.canAccessibility
+  fullName: SIX.TimApi.FeaturesPayment.canAccessibility()
+  nameWithType: FeaturesPayment.canAccessibility()
+- uid: SIX.TimApi.FeaturesPayment.canAccessibility*
+  name: canAccessibility
+  href: api/SIX.TimApi.FeaturesPayment.html#SIX_TimApi_FeaturesPayment_canAccessibility_
+  commentId: Overload:SIX.TimApi.FeaturesPayment.canAccessibility
+  isSpec: "True"
+  fullName: SIX.TimApi.FeaturesPayment.canAccessibility
+  nameWithType: FeaturesPayment.canAccessibility
 - uid: SIX.TimApi.FeaturesPayment.canAccountSelection
   name: canAccountSelection()
   href: api/SIX.TimApi.FeaturesPayment.html#SIX_TimApi_FeaturesPayment_canAccountSelection
@@ -18460,6 +18622,19 @@ references:
   isSpec: "True"
   fullName: SIX.TimApi.Terminal.Terminal
   nameWithType: Terminal.Terminal
+- uid: SIX.TimApi.Terminal.AccessibilityOptionList
+  name: AccessibilityOptionList
+  href: api/SIX.TimApi.Terminal.html#SIX_TimApi_Terminal_AccessibilityOptionList
+  commentId: P:SIX.TimApi.Terminal.AccessibilityOptionList
+  fullName: SIX.TimApi.Terminal.AccessibilityOptionList
+  nameWithType: Terminal.AccessibilityOptionList
+- uid: SIX.TimApi.Terminal.AccessibilityOptionList*
+  name: AccessibilityOptionList
+  href: api/SIX.TimApi.Terminal.html#SIX_TimApi_Terminal_AccessibilityOptionList_
+  commentId: Overload:SIX.TimApi.Terminal.AccessibilityOptionList
+  isSpec: "True"
+  fullName: SIX.TimApi.Terminal.AccessibilityOptionList
+  nameWithType: Terminal.AccessibilityOptionList
 - uid: SIX.TimApi.Terminal.Activate
   name: Activate()
   href: api/SIX.TimApi.Terminal.html#SIX_TimApi_Terminal_Activate
@@ -25323,6 +25498,19 @@ references:
   isSpec: "True"
   fullName: SIX.TimApi.TransactionRequest.TransactionRequest
   nameWithType: TransactionRequest.TransactionRequest
+- uid: SIX.TimApi.TransactionRequest.AccessibilityOptionList
+  name: AccessibilityOptionList
+  href: api/SIX.TimApi.TransactionRequest.html#SIX_TimApi_TransactionRequest_AccessibilityOptionList
+  commentId: P:SIX.TimApi.TransactionRequest.AccessibilityOptionList
+  fullName: SIX.TimApi.TransactionRequest.AccessibilityOptionList
+  nameWithType: TransactionRequest.AccessibilityOptionList
+- uid: SIX.TimApi.TransactionRequest.AccessibilityOptionList*
+  name: AccessibilityOptionList
+  href: api/SIX.TimApi.TransactionRequest.html#SIX_TimApi_TransactionRequest_AccessibilityOptionList_
+  commentId: Overload:SIX.TimApi.TransactionRequest.AccessibilityOptionList
+  isSpec: "True"
+  fullName: SIX.TimApi.TransactionRequest.AccessibilityOptionList
+  nameWithType: TransactionRequest.AccessibilityOptionList
 - uid: SIX.TimApi.TransactionRequest.AdditionalInfo
   name: AdditionalInfo
   href: api/SIX.TimApi.TransactionRequest.html#SIX_TimApi_TransactionRequest_AdditionalInfo

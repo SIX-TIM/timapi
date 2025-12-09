@@ -99,6 +99,96 @@ $(document).ready(function(){initNavTree('search.html',''); initResizable(); });
 <add>
   <doc>
     <field name="type">file</field>
+    <field name="name">accessibility_option_list.h</field>
+    <field name="url">accessibility__option__list_8h.html</field>
+    <field name="keywords">accessibility_option_list.h</field>
+    <field name="text">Object type accessibility_option_list</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">ta_accessibility_option_list_create</field>
+    <field name="args">(ta_object_t *accessibility_option_list)</field>
+    <field name="url">accessibility__option__list_8h.html#a00ecc7d237e9c83479ed8dc32e7c7c72</field>
+    <field name="keywords">ta_accessibility_option_list_create</field>
+    <field name="text">Create Accessibility Option List object accessibility_option_list Pointer to variable to write new object to ta_c_rc_ok New object created ta_c_rc_out_of_memory Not enough memory to create new object ta_c_rc_invalid_argument accessibility_option_list is null-pointer</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">ta_accessibility_option_list_set_accessibility_options</field>
+    <field name="args">(ta_object_t accessibility_option_list, ta_object_t accessibility_options)</field>
+    <field name="url">accessibility__option__list_8h.html#a0f6a58d095e038044f542a4b19838819</field>
+    <field name="keywords">ta_accessibility_option_list_set_accessibility_options</field>
+    <field name="text">Set List of Accessibility Options accessibility_option_list Object instance of type accessibility_option_list accessibility_options Object instance to set Object instance can be ta_object_invalid to clear the value in accessibility_option_list If object instance is not ta_object_invalid it has to be of type list.h with elements of type accessibility_options.h ta_c_rc_ok Value set in accessibility_option_list ta_c_rc_invalid_argument accessibility_option_list is ta_object_invalid ta_c_rc_invalid_argument accessibility_option_list is not of type accessibility_option_list ta_c_rc_invalid_argument accessibility_options is not of type list.h with elements of type accessibility_options.h</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">ta_accessibility_option_list_copy</field>
+    <field name="args">(ta_object_t *accessibility_option_list, const ta_object_t source_accessibility_option_list)</field>
+    <field name="url">accessibility__option__list_8h.html#a4e101d074f2a03633ade4e6c29d5cade</field>
+    <field name="keywords">ta_accessibility_option_list_copy</field>
+    <field name="text">Create a copy of Accessibility Option List object accessibility_option_list Pointer to variable to write new object to source_accessibility_option_list Object instance of type accessibility_option_list ta_c_rc_ok New object created ta_c_rc_out_of_memory Not enough memory to create new object ta_c_rc_invalid_argument accessibility_option_list is null-pointer ta_c_rc_invalid_argument source_accessibility_option_list is ta_object_invalid ta_c_rc_invalid_argument source_accessibility_option_list is not of type accessibility_option_list</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">ta_accessibility_option_list_get_accessibility_options</field>
+    <field name="args">(ta_object_t accessibility_option_list, ta_object_t *accessibility_options)</field>
+    <field name="url">accessibility__option__list_8h.html#a63e99e73586c06a9b94470bbdc48eabf</field>
+    <field name="keywords">ta_accessibility_option_list_get_accessibility_options</field>
+    <field name="text">Get List of Acessibility Options accessibility_option_list Object instance of type accessibility_option_list accessibility_options Pointer to variable to write object instance to Object instance is of type list.h with elements of type accessibility_option Object instance is not retained Object instance is ta_object_invalid if no accessibility options are set in accessibility_option_list ta_c_rc_ok Object instance written to accessibility_options ta_c_rc_invalid_argument accessibility_option_list is ta_object_invalid ta_c_rc_invalid_argument accessibility_option_list is not of type accessibility_option_list ta_c_rc_invalid_argument accessibility_options is null-pointer</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">ta_accessibility_option_list_get_accessibility_mode</field>
+    <field name="args">(ta_object_t accessibility_option_list, ta_object_t *accessibility_mode)</field>
+    <field name="url">accessibility__option__list_8h.html#aa7e6189771c3012823f8c55b501df60c</field>
+    <field name="keywords">ta_accessibility_option_list_get_accessibility_mode</field>
+    <field name="text">Get Accessibility Mode from Accessibility Option List accessibility_option_list Object instance of type accessibility_option_list accessibility_mode Pointer to variable to write value to Value is ta_c_aom_undefined if not set in accessibility_option_list ta_c_rc_ok Value written to accessibility_mode ta_c_rc_invalid_argument accessibility_option_list is ta_object_invalid ta_c_rc_invalid_argument accessibility_option_list is not of type accessibility_option_list ta_c_rc_invalid_argument accessibility_mode is null-pointer</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">ta_accessibility_option_list_set_accessibility_mode</field>
+    <field name="args">(ta_object_t accessibility_option_list, ta_object_t accessibility_mode)</field>
+    <field name="url">accessibility__option__list_8h.html#ad8b5f1bc8dfee3b06c0b0115b6cb196d</field>
+    <field name="keywords">ta_accessibility_option_list_set_accessibility_mode</field>
+    <field name="text">Set Accessibility Mode in Accessibility Option List accessibility_option_list Object instance of type accessibility_option_list accessibility_mode Object instance to set Object instance can be ta_object_invalid to clear the value in accessibility_option_list If object instance is not ta_object_invalid is has to be of type integer ta_c_rc_ok Value set in accessibility_option_list ta_c_rc_invalid_argument accessibility_option_list is ta_object_invalid ta_c_rc_invalid_argument accessibility_option_list is not of type accessibility_option_list ta_c_rc_invalid_argument accessibility_mode is not of type integer</field>
+  </doc>
+  <doc>
+    <field name="type">file</field>
+    <field name="name">accessibility_option_type.h</field>
+    <field name="url">accessibility__option__type_8h.html</field>
+    <field name="keywords">accessibility_option_type.h</field>
+    <field name="text">Specifies type of Accessibility option The following values are valid Copyright Worldline</field>
+  </doc>
+  <doc>
+    <field name="type">enum</field>
+    <field name="name">ta_e_accessibility_option_type</field>
+    <field name="url">accessibility__option__type_8h.html#a903877f61c7882a2660c39f0febf247c</field>
+    <field name="keywords">ta_e_accessibility_option_type</field>
+    <field name="text">Specifies type of Accessibility option The following values are valid Specification retail</field>
+  </doc>
+  <doc>
+    <field name="type">enumvalue</field>
+    <field name="name">ta_c_aot_volume</field>
+    <field name="url">accessibility__option__type_8h.html#a903877f61c7882a2660c39f0febf247ca4db8838a83e65104ee3ea63653b60b0c</field>
+    <field name="keywords">ta_c_aot_volume</field>
+    <field name="text">Volume of the voice guidance Overrides AccessibilityMode predefined volume values The following values are valid 0 to 1 0 0 Specification retail</field>
+  </doc>
+  <doc>
+    <field name="type">enumvalue</field>
+    <field name="name">ta_c_aot_undefined</field>
+    <field name="url">accessibility__option__type_8h.html#a903877f61c7882a2660c39f0febf247ca6cd3ffbe0b76d30b742977fc7fea2680</field>
+    <field name="keywords">ta_c_aot_undefined</field>
+    <field name="text">Undefined/invalid value</field>
+  </doc>
+  <doc>
+    <field name="type">typedef</field>
+    <field name="name">ta_e_accessibility_option_type_t</field>
+    <field name="url">accessibility__option__type_8h.html#ae57f17c7a203ade74fd456b4a4f3c9e3</field>
+    <field name="keywords">ta_e_accessibility_option_type_t</field>
+    <field name="text">Specifies type of Accessibility option The following values are valid Specification retail</field>
+  </doc>
+  <doc>
+    <field name="type">file</field>
     <field name="name">account_type.h</field>
     <field name="url">account__type_8h.html</field>
     <field name="keywords">account_type.h</field>
@@ -5612,6 +5702,21 @@ $(document).ready(function(){initNavTree('search.html',''); initResizable(); });
     <field name="url">ecr__info__type_8h.html#a265061e9002e2d2d0fd7e8b5c0593de4ade53b77d88f0c85a4b29e7055bdc2e00</field>
     <field name="keywords">ta_c_eit_ecr_application</field>
     <field name="text">Specification retail</field>
+  </doc>
+  <doc>
+    <field name="type">file</field>
+    <field name="name">accessibility_option_type.h</field>
+    <field name="url">enum__string__maps_2accessibility__option__type_8h.html</field>
+    <field name="keywords">accessibility_option_type.h</field>
+    <field name="text">This file is generated Do not edit Copyright Worldline</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">ta_accessibility_option_type_e2s</field>
+    <field name="args">(ta_e_accessibility_option_type_t value)</field>
+    <field name="url">enum__string__maps_2accessibility__option__type_8h.html#ae0ffce770607258f373b5d6f0a377405</field>
+    <field name="keywords">ta_accessibility_option_type_e2s</field>
+    <field name="text">Get String for Enum value value Enum value to get string for String value</field>
   </doc>
   <doc>
     <field name="type">file</field>
@@ -15148,6 +15253,13 @@ $(document).ready(function(){initNavTree('search.html',''); initResizable(); });
   </doc>
   <doc>
     <field name="type">variable</field>
+    <field name="name">ta_s_features_payment::accessibility</field>
+    <field name="url">structta__s__features__payment.html#a41558ec0db094e4fac70bb101f8f430e</field>
+    <field name="keywords">accessibility ta_s_features_payment::accessibility ta_s_features_payment</field>
+    <field name="text">Support for Accessibility options</field>
+  </doc>
+  <doc>
+    <field name="type">variable</field>
     <field name="name">ta_s_features_payment::dcc</field>
     <field name="url">structta__s__features__payment.html#a53188968afc204c1f7117b13b5ed42ac</field>
     <field name="keywords">dcc ta_s_features_payment::dcc ta_s_features_payment</field>
@@ -16418,6 +16530,14 @@ $(document).ready(function(){initNavTree('search.html',''); initResizable(); });
   </doc>
   <doc>
     <field name="type">function</field>
+    <field name="name">ta_terminal_get_accessibility_option_list</field>
+    <field name="args">(ta_object_t terminal, ta_object_t *accessibility_option_list)</field>
+    <field name="url">terminal_8h.html#a2d239fc9ad517e6006a8ff7d7c3fde03</field>
+    <field name="keywords">ta_terminal_get_accessibility_option_list</field>
+    <field name="text">Accessibility options terminal Object instance of type terminal accessibility_option_list Pointer to variable to write object instance to Object instance is ta_object_invalid if not set in terminal If object instance is not ta_object_invalid it is of type accessibility_option_list and will be retained ta_c_rc_ok Object instance written to accessibility_option_list Object instance has been retained ta_c_rc_invalid_argument terminal is ta_object_invalid ta_c_rc_invalid_argument terminal is not of type terminal ta_c_rc_invalid_argument terminal has been disposed ta_c_rc_invalid_argument accessibility_option_list is null-pointer</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
     <field name="name">ta_terminal_get_transaction_data</field>
     <field name="args">(ta_object_t terminal, ta_object_t *transaction_data)</field>
     <field name="url">terminal_8h.html#a2fb543b90841f89e10118c291255073d</field>
@@ -17063,6 +17183,14 @@ $(document).ready(function(){initNavTree('search.html',''); initResizable(); });
     <field name="url">terminal_8h.html#ab0f82ecd7a92f365725dac028bf626b6</field>
     <field name="keywords">ta_terminal_transaction2</field>
     <field name="text">Starts an EFT Terminal Transaction The transaction parameters are taken from TransactionRequest terminal property since those do not change often if at all default parameters terminal Object instance of type terminal type Transaction type request Object instance of type transaction_request response Pointer to variable to write object instance to Object instance is of type transaction_response Object instance is retained ta_c_rc_ok Request finished successfully Object instance written to response Object instance has been retained ta_c_rc_invalid_argument terminal is ta_object_invalid ta_c_rc_invalid_argument terminal is not of type terminal ta_c_rc_invalid_argument terminal has been disposed ta_c_rc_invalid_argument request is ta_object_invalid ta_c_rc_invalid_argument request is not of type transaction_request ta_c_rc_invalid_argument response is null-pointer</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">ta_terminal_set_accessibility_option_list</field>
+    <field name="args">(ta_object_t terminal, ta_object_t accessibility_option_list)</field>
+    <field name="url">terminal_8h.html#ab312c4426b713e5c5982a65366913281</field>
+    <field name="keywords">ta_terminal_set_accessibility_option_list</field>
+    <field name="text">Set accessibility options terminal Object instance of type terminal accessibility_option_list Object instance to set Object instance can be ta_object_invalid to clear the value in terminal If object instance is not ta_object_invalid it has to be of type accessibility_option_list ta_c_rc_ok Object instance assigned to terminal ta_c_rc_invalid_argument terminal is ta_object_invalid ta_c_rc_invalid_argument terminal is not of type terminal ta_c_rc_invalid_argument terminal has been disposed ta_c_rc_invalid_argument accessibility_option_list is not ta_object_invalid and is not of type accessibility_option_list</field>
   </doc>
   <doc>
     <field name="type">function</field>
@@ -20178,6 +20306,14 @@ $(document).ready(function(){initNavTree('search.html',''); initResizable(); });
   </doc>
   <doc>
     <field name="type">function</field>
+    <field name="name">ta_transaction_request_set_accessibility_option_list</field>
+    <field name="args">(ta_object_t request, ta_object_t accessibility_option_list)</field>
+    <field name="url">transaction__request_8h.html#a142362d1cd2e2d51365445c5d53dd058</field>
+    <field name="keywords">ta_transaction_request_set_accessibility_option_list</field>
+    <field name="text">Set accessibility option list request Object instance of type transaction_request accessibility_option_list Object instance to set Object instance can be ta_object_invalid to clear the value in request If object instance is not ta_object_invalid is has to be of type accessibility_option_list ta_c_rc_ok Object instance assigned to request ta_c_rc_invalid_argument request is ta_object_invalid ta_c_rc_invalid_argument request is not of type transaction_request ta_c_rc_invalid_argument accessibility_option_list is not ta_object_invalid and is not of type accessibility_option_list</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
     <field name="name">ta_transaction_request_get_merchant_options</field>
     <field name="args">(ta_object_t request, ta_object_t *merchant_options)</field>
     <field name="url">transaction__request_8h.html#a1451f17d45f6e7583bbd4d613ad05ce3</field>
@@ -20311,6 +20447,14 @@ $(document).ready(function(){initNavTree('search.html',''); initResizable(); });
     <field name="url">transaction__request_8h.html#ac750e590575bb83ad0f36a3e63399eb0</field>
     <field name="keywords">ta_transaction_request_create</field>
     <field name="text">Create object of type transaction_request request Pointer to variable to write created object instance to Created object instance is retained ta_c_rc_ok Object instance has been created and written to request ta_c_rc_invalid_argument request is null-pointer ta_c_rc_out_of_memory Failed allocating memory</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">ta_transaction_request_get_accessibility_option_list</field>
+    <field name="args">(ta_object_t request, ta_object_t *accessibility_option_list)</field>
+    <field name="url">transaction__request_8h.html#ac7572370e20967e5f81f4a18fdd03c78</field>
+    <field name="keywords">ta_transaction_request_get_accessibility_option_list</field>
+    <field name="text">Accessibility option list request Object instance of type transaction_request accessibility_option_list Pointer to variable to write object instance to Object instance is of type accessibility_option_list and is not retained Object instance is ta_object_invalid if value is not set in request ta_c_rc_ok Object instance written to accessibility_option_list ta_c_rc_invalid_argument request is ta_object_invalid ta_c_rc_invalid_argument request is not of type transaction_request ta_c_rc_invalid_argument accessibility_option_list is null-pointer</field>
   </doc>
   <doc>
     <field name="type">function</field>
