@@ -14,14 +14,12 @@ var function__hint_8h =
       [ "ta_c_fh_purchase_phone_authorized", "function__hint_8h.html#a1dcdaea84187050e3e030686bbe4cbe5a634af2bf62ed42a07158a154be29787d", null ],
       [ "ta_c_fh_purchase_phone_ordered", "function__hint_8h.html#a1dcdaea84187050e3e030686bbe4cbe5a1ec11469118c3e75b558f542b5801940", null ],
       [ "ta_c_fh_purchase_mail_ordered", "function__hint_8h.html#a1dcdaea84187050e3e030686bbe4cbe5a4e09b6c44c133e77b97355cb2235cb41", null ],
-      [ "ta_c_fh_account_verification", "function__hint_8h.html#a1dcdaea84187050e3e030686bbe4cbe5a35813e58087d8663f2016586a499729a", null ],
       [ "ta_c_fh_giro", "function__hint_8h.html#a1dcdaea84187050e3e030686bbe4cbe5aec17560178dd92a3937aa1b70d749abd", null ],
       [ "ta_c_fh_combined", "function__hint_8h.html#a1dcdaea84187050e3e030686bbe4cbe5aa566cc4313a910365dd7770fc786bba1", null ],
       [ "ta_c_fh_authorize_credit", "function__hint_8h.html#a1dcdaea84187050e3e030686bbe4cbe5a96ef7527daf9d7688c59efd8b55f3b81", null ],
       [ "ta_c_fh_authorize_deposit", "function__hint_8h.html#a1dcdaea84187050e3e030686bbe4cbe5a9d174b7df35ef7f730f4a4f1e2ac8447", null ],
       [ "ta_c_fh_reservation", "function__hint_8h.html#a1dcdaea84187050e3e030686bbe4cbe5a764c34ab9fc45d79eaf852baeca1ba9f", null ],
       [ "ta_c_fh_load_voucher", "function__hint_8h.html#a1dcdaea84187050e3e030686bbe4cbe5a1431a2165324ece2db41c78b19e1dbcf", null ],
-      [ "ta_c_fh_collect_points", "function__hint_8h.html#a1dcdaea84187050e3e030686bbe4cbe5a7b66309523df990dca7946eb155f9013", null ],
-      [ "ta_c_fh_load", "function__hint_8h.html#a1dcdaea84187050e3e030686bbe4cbe5a70f7ea6a0971b97fc88d70dbd014a396", null ]
+      [ "ta_c_fh_collect_points", "function__hint_8h.html#a1dcdaea84187050e3e030686bbe4cbe5a7b66309523df990dca7946eb155f9013", null ]
     ] ]
 ];

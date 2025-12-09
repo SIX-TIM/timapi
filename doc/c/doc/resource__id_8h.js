@@ -37,8 +37,6 @@ var resource__id_8h =
       [ "ta_c_rid_petrol_tankcode_tries_left", "resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9abfd93ac544b73cb1c8bbf710dd640d3d", null ],
       [ "ta_c_rid_petrol_no_more_tankcode_tries_left", "resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9a1d33b49c023802b512f9834b25879ba0", null ],
       [ "ta_c_rid_petrol_tankcode_incorrect", "resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9a90e03d24f75e333f0ce5570080a2f0a0", null ],
-      [ "ta_c_rid_unencrypted_id_no", "resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9a488337b80bee55dd5e8bc0b622fb22f5", null ],
-      [ "ta_c_rid_work_order_po_no", "resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9ab71925212e7fa01a9e5fa009fc82b216", null ],
       [ "ta_c_rid_petrol_card_inverted", "resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9aa07adc9d6378aa0b31e850df5f38bba8", null ],
       [ "ta_c_rid_petrol_card_out_of_order", "resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9aa7c926c3c6008b777051ee41742beb3c", null ],
       [ "ta_c_rid_petrol_card_not_authorised", "resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9a84431e34b7050c12b6106b4e6cf9642d", null ],
@@ -129,7 +127,6 @@ var resource__id_8h =
       [ "ta_c_rid_post_pin_entry", "resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9ad911ca91349c1c99d0e73a9f8635d28f", null ],
       [ "ta_c_rid_post_confirm_costs_for_use_case", "resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9a9eaccf75658f395bfc03a21489b4fb3d", null ],
       [ "ta_c_rid_post_qrcode_confirmation", "resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9ac5aeb0a4651fc4a2470709b907a99fc2", null ],
-      [ "ta_c_rid_dangerous_goods", "resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9add855e59eddcd0222f1ee589d460c38f", null ],
       [ "ta_c_rid_banking_insert_card", "resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9ad55032f46f2c0e7e1f865c224e15fa54", null ],
       [ "ta_c_rid_banking_pin_check", "resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9a93af25ad0d4ba3dd903cfcd483238121", null ],
       [ "ta_c_rid_banking_show_saldo", "resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9ac7b49d46f65ca6e69cec8835ae1a8812", null ],
@@ -154,8 +151,6 @@ var resource__id_8h =
       [ "ta_c_rid_migros_passode_ok", "resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9a62b044cf5977fb78550a919215292935", null ],
       [ "ta_c_rid_payback_read_code", "resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9ade7d0766d46c58189275b5f5fd42d228", null ],
       [ "ta_c_rid_payback_show_balance", "resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9ae37978504cceb9b6f5168c2754611437", null ],
-      [ "ta_c_rid_payback_spend_points", "resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9aa2117d8076f9de7854208754630e8c63", null ],
-      [ "ta_c_rid_present_specific_card", "resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9a925cdf731cdf530dcbe6cd8eb77ecf8e", null ],
-      [ "ta_c_rid_specific_card_read_ok", "resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9a679eaa5fb02c9a268a0b139156edd23e", null ]
+      [ "ta_c_rid_payback_spend_points", "resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9aa2117d8076f9de7854208754630e8c63", null ]
     ] ]
 ];
