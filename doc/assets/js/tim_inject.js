@@ -47,12 +47,7 @@ function timVersionInject() {
 
     // Type banner
     if(window.type != undefined) {
-        if(window.type.startsWith("dev")) {
-            var bannerElement = document.getElementById("devBanner");
-            // make banner visible
-            bannerElement.style.display = 'block';
-        }
-        else if(window.type === "stage") {
+        if(window.type === "stage") {
             var bannerElement = document.getElementById("stageBanner");
             // make banner visible
             bannerElement.style.display = 'block';
@@ -61,7 +56,7 @@ function timVersionInject() {
             var bannerElement = document.getElementById("archiveBanner");
             // make banner visible
             bannerElement.style.display = 'block';
-        }        
+        }
     }
 
     // Hide elements for given language

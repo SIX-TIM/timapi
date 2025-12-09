@@ -167,6 +167,12 @@ const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <tr class="memitem:a708659fa682524861627321f4d94ef4d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="result__code_8h.html#ae860ee870a289833a24a586ba0c24975">ta_e_result_code_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="terminal_8h.html#a708659fa682524861627321f4d94ef4d">ta_terminal_set_transaction_data</a> (<a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a> terminal, <a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a> transaction_data)</td></tr>
 <tr class="memdesc:a708659fa682524861627321f4d94ef4d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set transaction data to use for transaction requests unless set manually.  <a href="#a708659fa682524861627321f4d94ef4d">More...</a><br /></td></tr>
 <tr class="separator:a708659fa682524861627321f4d94ef4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d239fc9ad517e6006a8ff7d7c3fde03"><td class="memItemLeft" align="right" valign="top"><a class="el" href="result__code_8h.html#ae860ee870a289833a24a586ba0c24975">ta_e_result_code_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="terminal_8h.html#a2d239fc9ad517e6006a8ff7d7c3fde03">ta_terminal_get_accessibility_option_list</a> (<a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a> terminal, <a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a> *accessibility_option_list)</td></tr>
+<tr class="memdesc:a2d239fc9ad517e6006a8ff7d7c3fde03"><td class="mdescLeft">&#160;</td><td class="mdescRight">Accessibility options.  <a href="#a2d239fc9ad517e6006a8ff7d7c3fde03">More...</a><br /></td></tr>
+<tr class="separator:a2d239fc9ad517e6006a8ff7d7c3fde03"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab312c4426b713e5c5982a65366913281"><td class="memItemLeft" align="right" valign="top"><a class="el" href="result__code_8h.html#ae860ee870a289833a24a586ba0c24975">ta_e_result_code_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="terminal_8h.html#ab312c4426b713e5c5982a65366913281">ta_terminal_set_accessibility_option_list</a> (<a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a> terminal, <a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a> accessibility_option_list)</td></tr>
+<tr class="memdesc:ab312c4426b713e5c5982a65366913281"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set accessibility options.  <a href="#ab312c4426b713e5c5982a65366913281">More...</a><br /></td></tr>
+<tr class="separator:ab312c4426b713e5c5982a65366913281"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8dc228002ab3bcfbfd17689703bf2096"><td class="memItemLeft" align="right" valign="top"><a class="el" href="result__code_8h.html#ae860ee870a289833a24a586ba0c24975">ta_e_result_code_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="terminal_8h.html#a8dc228002ab3bcfbfd17689703bf2096">ta_terminal_get_receipt_formatter</a> (<a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a> terminal, <a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a> *formatter)</td></tr>
 <tr class="memdesc:a8dc228002ab3bcfbfd17689703bf2096"><td class="mdescLeft">&#160;</td><td class="mdescRight">Receipt formatter.  <a href="#a8dc228002ab3bcfbfd17689703bf2096">More...</a><br /></td></tr>
 <tr class="separator:a8dc228002ab3bcfbfd17689703bf2096"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -2989,6 +2995,53 @@ const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>terminal</em> is <a class="el" href="object_8h.html#a90487f9ada73238718e830f430d6f280">ta_object_invalid</a>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>terminal</em> is not of type <a class="el" href="terminal_8h.html">terminal</a>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>terminal</em> has been disposed. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a2d239fc9ad517e6006a8ff7d7c3fde03"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d239fc9ad517e6006a8ff7d7c3fde03">&#9670;&nbsp;</a></span>ta_terminal_get_accessibility_option_list()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="result__code_8h.html#ae860ee870a289833a24a586ba0c24975">ta_e_result_code_t</a> ta_terminal_get_accessibility_option_list </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a>&#160;</td>
+          <td class="paramname"><em>terminal</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a> *&#160;</td>
+          <td class="paramname"><em>accessibility_option_list</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Accessibility options. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">terminal</td><td>Object instance of type <a class="el" href="terminal_8h.html">terminal</a>. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">accessibility_option_list</td><td>Pointer to variable to write object instance to. Object instance is <a class="el" href="object_8h.html#a90487f9ada73238718e830f430d6f280">ta_object_invalid</a> if not set in <em>terminal</em>. If object instance is not ta_object_invalid it is of type <em>accessibility_option_list</em> and will be retained.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">ta_c_rc_ok</td><td>Object instance written to <em>accessibility_option_list</em>. Object instance has been retained. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>terminal</em> is <a class="el" href="object_8h.html#a90487f9ada73238718e830f430d6f280">ta_object_invalid</a>. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>terminal</em> is not of type <a class="el" href="terminal_8h.html">terminal</a>. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>terminal</em> has been disposed. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>accessibility_option_list</em> is <em>null-pointer</em>. </td></tr>
   </table>
   </dd>
 </dl>
@@ -6913,6 +6966,53 @@ Dialog shown after receiving a negative response: sixml:NegativeResource </li>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>terminal</em> has been disposed. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td>Element in <em>requests</em> is <a class="el" href="object_8h.html#a90487f9ada73238718e830f430d6f280">ta_object_invalid</a>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td>Element in <em>requests</em> is not of type <a class="el" href="command__request_8h.html">command_request</a>. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ab312c4426b713e5c5982a65366913281"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab312c4426b713e5c5982a65366913281">&#9670;&nbsp;</a></span>ta_terminal_set_accessibility_option_list()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="result__code_8h.html#ae860ee870a289833a24a586ba0c24975">ta_e_result_code_t</a> ta_terminal_set_accessibility_option_list </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a>&#160;</td>
+          <td class="paramname"><em>terminal</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a>&#160;</td>
+          <td class="paramname"><em>accessibility_option_list</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set accessibility options. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">terminal</td><td>Object instance of type <a class="el" href="terminal_8h.html">terminal</a>. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">accessibility_option_list</td><td>Object instance to set. Object instance can be <a class="el" href="object_8h.html#a90487f9ada73238718e830f430d6f280">ta_object_invalid</a> to clear the value in <em>terminal</em>. If object instance is not ta_object_invalid it has to be of type <em>accessibility_option_list</em>.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">ta_c_rc_ok</td><td>Object instance assigned to <em>terminal</em>. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>terminal</em> is <a class="el" href="object_8h.html#a90487f9ada73238718e830f430d6f280">ta_object_invalid</a>. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>terminal</em> is not of type <a class="el" href="terminal_8h.html">terminal</a>. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>terminal</em> has been disposed. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>accessibility_option_list</em> is not <em>ta_object_invalid</em> and is not of type <em>accessibility_option_list</em>. </td></tr>
   </table>
   </dd>
 </dl>
