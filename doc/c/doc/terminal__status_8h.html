@@ -125,8 +125,6 @@ Functions</h2></td></tr>
 <tr class="memitem:aeffc734fb7255c63108c327e6b248f80"><td class="memItemLeft" align="right" valign="top"><a class="el" href="result__code_8h.html#ae860ee870a289833a24a586ba0c24975">ta_e_result_code_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="terminal__status_8h.html#aeffc734fb7255c63108c327e6b248f80">ta_terminal_status_get_final_amount</a> (<a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a> terminal_status, <a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a> *amount)</td></tr>
 <tr class="memdesc:aeffc734fb7255c63108c327e6b248f80"><td class="mdescLeft">&#160;</td><td class="mdescRight">If the amount of the original transaction has been adjusted.  <a href="#aeffc734fb7255c63108c327e6b248f80">More...</a><br /></td></tr>
 <tr class="separator:aeffc734fb7255c63108c327e6b248f80"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9b55abc448d45c3972c13f8b011ae614"><td class="memItemLeft" align="right" valign="top"><a class="el" href="result__code_8h.html#ae860ee870a289833a24a586ba0c24975">ta_e_result_code_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="terminal__status_8h.html#a9b55abc448d45c3972c13f8b011ae614">ta_terminal_status_get_own_risk_2_activation_status</a> (<a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a> terminal_status, <a class="el" href="boolean_8h.html#a5d3636b1f1f5de7550c138d0f81825bf">ta_e_boolean_t</a> *own_risk_2_activation_status)</td></tr>
-<tr class="separator:a9b55abc448d45c3972c13f8b011ae614"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="a851beff7252c37e35cabdaac50e6777c"></a>
@@ -399,53 +397,6 @@ Functions</h2></td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>terminal_status</em> is <em>ta_object_invalid</em>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>terminal_status</em> is not of type <a class="el" href="terminal__status_8h.html">terminal_status</a>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>management_status</em> is <em>null-pointer</em>. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a9b55abc448d45c3972c13f8b011ae614"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9b55abc448d45c3972c13f8b011ae614">&#9670;&nbsp;</a></span>ta_terminal_status_get_own_risk_2_activation_status()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="result__code_8h.html#ae860ee870a289833a24a586ba0c24975">ta_e_result_code_t</a> ta_terminal_status_get_own_risk_2_activation_status </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a>&#160;</td>
-          <td class="paramname"><em>terminal_status</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="boolean_8h.html#a5d3636b1f1f5de7550c138d0f81825bf">ta_e_boolean_t</a> *&#160;</td>
-          <td class="paramname"><em>own_risk_2_activation_status</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Specifies if the OwnRisk2 functionality is activated at terminal side. This field is returned in a standard TerminalStatus notification from terminal to ECR if he OwnRisk2 mode is activated. The absence of the OwnRisk2Activation in the TerminalStatus notification means that the OwnRisk2 mode is de-activated or not supported by the payment application. </p>
-<p>Optional: Mandatory if OwnRisk2 mode is activated.</p>
-<p>Specification: <em>retail</em>.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">terminal_status</td><td>Object instance of type <a class="el" href="terminal__status_8h.html">terminal_status</a>. </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">own_risk_2_activation_status</td><td>Pointer to variable to write value to. Value is <em>ta_c_b_undefined</em> if value is not set in <em>terminal_status</em>.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">ta_c_rc_ok</td><td>Value written to <em>own_risk_2_activation_status</em>. </td></tr>
-    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>terminal_status</em> is <em>ta_object_invalid</em>. </td></tr>
-    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>terminal_status</em> is not of type <a class="el" href="terminal__status_8h.html">terminal_status</a>. </td></tr>
-    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>own_risk_2_activation_status</em> is <em>null-pointer</em>. </td></tr>
   </table>
   </dd>
 </dl>

@@ -44,7 +44,6 @@ var dir_2b8e89bb36cb38816e6fe595fb71ec42 =
     [ "receipt_request_type.h", "enum__string__maps_2receipt__request__type_8h.html", "enum__string__maps_2receipt__request__type_8h" ],
     [ "receipt_type.h", "enum__string__maps_2receipt__type_8h.html", "enum__string__maps_2receipt__type_8h" ],
     [ "recipient.h", "enum__string__maps_2recipient_8h.html", "enum__string__maps_2recipient_8h" ],
-    [ "reconfig_mode.h", "enum__string__maps_2reconfig__mode_8h.html", "enum__string__maps_2reconfig__mode_8h" ],
     [ "remote_functions.h", "enum__string__maps_2remote__functions_8h.html", "enum__string__maps_2remote__functions_8h" ],
     [ "resource_id.h", "enum__string__maps_2resource__id_8h.html", "enum__string__maps_2resource__id_8h" ],
     [ "resource_parameter_type.h", "enum__string__maps_2resource__parameter__type_8h.html", "enum__string__maps_2resource__parameter__type_8h" ],

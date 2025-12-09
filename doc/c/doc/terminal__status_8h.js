@@ -6,7 +6,6 @@ var terminal__status_8h =
     [ "ta_terminal_status_get_display_content", "terminal__status_8h.html#a6efd7f71b532a2b0944f5dbbad044922", null ],
     [ "ta_terminal_status_get_final_amount", "terminal__status_8h.html#aeffc734fb7255c63108c327e6b248f80", null ],
     [ "ta_terminal_status_get_management_status", "terminal__status_8h.html#aea078d42c67afe9393eb087af1c23acf", null ],
-    [ "ta_terminal_status_get_own_risk_2_activation_status", "terminal__status_8h.html#a9b55abc448d45c3972c13f8b011ae614", null ],
     [ "ta_terminal_status_get_receipt_information", "terminal__status_8h.html#ab9e7bb1dbdd20448a24533842279325d", null ],
     [ "ta_terminal_status_get_sleep_mode_status", "terminal__status_8h.html#ace86fe4a75bc0668baf45f1b4eca53f2", null ],
     [ "ta_terminal_status_get_sw_update_available", "terminal__status_8h.html#a990e902457b5914410eeda89b6ea81bb", null ],
