@@ -199,7 +199,17 @@ Enumerations</h2></td></tr>
 <a class="el" href="receipt__item__type_8h.html#a3d3044dd871a9c7d630dbcf3d9b738beafa183ff144d2866ba85a846570185c3c">ta_c_rit_amount_of_goods</a> = 75, 
 <br />
 &#160;&#160;<a class="el" href="receipt__item__type_8h.html#a3d3044dd871a9c7d630dbcf3d9b738beaf5a6134881d7b9f5ea9b147fb0707d8c">ta_c_rit_amount_due</a> = 76, 
-<a class="el" href="receipt__item__type_8h.html#a3d3044dd871a9c7d630dbcf3d9b738bea03c50ecc4a1f9066ee8316d979da701c">ta_c_rit_amount_total</a> = 77
+<a class="el" href="receipt__item__type_8h.html#a3d3044dd871a9c7d630dbcf3d9b738bea03c50ecc4a1f9066ee8316d979da701c">ta_c_rit_amount_total</a> = 77, 
+<a class="el" href="receipt__item__type_8h.html#a3d3044dd871a9c7d630dbcf3d9b738bea7eeb6e2f641c4bddc37a9c241002a976">ta_c_rit_host_cardholder_text</a> = 78, 
+<a class="el" href="receipt__item__type_8h.html#a3d3044dd871a9c7d630dbcf3d9b738beafd796a115d5b686eda529ebf00737df9">ta_c_rit_host_merchant_text</a> = 79, 
+<br />
+&#160;&#160;<a class="el" href="receipt__item__type_8h.html#a3d3044dd871a9c7d630dbcf3d9b738bea793079f161b9b26f5c694ad76cbddd90">ta_c_rit_trx_ok</a> = 80, 
+<a class="el" href="receipt__item__type_8h.html#a3d3044dd871a9c7d630dbcf3d9b738beae55dad17ba06b9c706b1d4f84fc64cb1">ta_c_rit_verified_by_device</a> = 81, 
+<a class="el" href="receipt__item__type_8h.html#a3d3044dd871a9c7d630dbcf3d9b738bea030e036bfd290e4b1c502baf09ac80cb">ta_c_rit_pfa_evt_seq_cnt</a> = 82, 
+<a class="el" href="receipt__item__type_8h.html#a3d3044dd871a9c7d630dbcf3d9b738beaccd09f064b51382f0ba21b4c2b77789a">ta_c_rit_transaction_type</a> = 83, 
+<br />
+&#160;&#160;<a class="el" href="receipt__item__type_8h.html#a3d3044dd871a9c7d630dbcf3d9b738beaf277e4003a7684edadb8d4d9aaa78e81">ta_c_rit_last4digits_of_pan</a> = 84, 
+<a class="el" href="receipt__item__type_8h.html#a3d3044dd871a9c7d630dbcf3d9b738bea10c41ff35f9fdccba1a3c3176661372c">ta_c_rit_order_id</a> = 85
 <br />
  }</td></tr>
 <tr class="separator:a3d3044dd871a9c7d630dbcf3d9b738be"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -469,6 +479,30 @@ Enumerations</h2></td></tr>
 <p>Specification: retail.</p>
 </td></tr>
 <tr><td class="fieldname"><a id="a3d3044dd871a9c7d630dbcf3d9b738bea03c50ecc4a1f9066ee8316d979da701c"></a>ta_c_rit_amount_total&#160;</td><td class="fielddoc"><p>Total amount to authorize (if applicable including tip, cashback and surcharge amount). Send only in case of partial approval.</p>
+<p>Specification: retail.</p>
+</td></tr>
+<tr><td class="fieldname"><a id="a3d3044dd871a9c7d630dbcf3d9b738bea7eeb6e2f641c4bddc37a9c241002a976"></a>ta_c_rit_host_cardholder_text&#160;</td><td class="fielddoc"><p>Text provided in the authorization response to be printed on the cardholder ticket</p>
+<p>Specification: retail.</p>
+</td></tr>
+<tr><td class="fieldname"><a id="a3d3044dd871a9c7d630dbcf3d9b738beafd796a115d5b686eda529ebf00737df9"></a>ta_c_rit_host_merchant_text&#160;</td><td class="fielddoc"><p>Text provided in the authorization response to be printed on the merchant ticket</p>
+<p>Specification: retail.</p>
+</td></tr>
+<tr><td class="fieldname"><a id="a3d3044dd871a9c7d630dbcf3d9b738bea793079f161b9b26f5c694ad76cbddd90"></a>ta_c_rit_trx_ok&#160;</td><td class="fielddoc"><p>Flag to print "Transaction OK" to receipts (If value is 1).</p>
+<p>Specification: retail.</p>
+</td></tr>
+<tr><td class="fieldname"><a id="a3d3044dd871a9c7d630dbcf3d9b738beae55dad17ba06b9c706b1d4f84fc64cb1"></a>ta_c_rit_verified_by_device&#160;</td><td class="fielddoc"><p>Flag to print "Verified on Device" to receipts (If value is 1).</p>
+<p>Specification: retail.</p>
+</td></tr>
+<tr><td class="fieldname"><a id="a3d3044dd871a9c7d630dbcf3d9b738bea030e036bfd290e4b1c502baf09ac80cb"></a>ta_c_rit_pfa_evt_seq_cnt&#160;</td><td class="fielddoc"><p>Sequence counter for an Own Risk 2 Event. Send only in case of Purchase Forced Acceptance transaction when OwnRisk2 mode is activated.</p>
+<p>Specification: retail.</p>
+</td></tr>
+<tr><td class="fieldname"><a id="a3d3044dd871a9c7d630dbcf3d9b738beaccd09f064b51382f0ba21b4c2b77789a"></a>ta_c_rit_transaction_type&#160;</td><td class="fielddoc"><p>If present, the content of the TransactionType will be used as &lt;transaction type="" extension="" name&gt;=""&gt; on the transaction receipt.</p>
+<p>Specification: retail.</p>
+</td></tr>
+<tr><td class="fieldname"><a id="a3d3044dd871a9c7d630dbcf3d9b738beaf277e4003a7684edadb8d4d9aaa78e81"></a>ta_c_rit_last4digits_of_pan&#160;</td><td class="fielddoc"><p>Last 4 digits of PAN.</p>
+<p>Specification: retail.</p>
+</td></tr>
+<tr><td class="fieldname"><a id="a3d3044dd871a9c7d630dbcf3d9b738bea10c41ff35f9fdccba1a3c3176661372c"></a>ta_c_rit_order_id&#160;</td><td class="fielddoc"><p>Order ID, originally sent by the ECR.</p>
 <p>Specification: retail.</p>
 </td></tr>
 </table>

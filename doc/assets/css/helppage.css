@@ -403,7 +403,7 @@ h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
  */
 
 
- #devBanner, #stageBanner, #archiveBanner
+ #stageBanner, #archiveBanner
  {
      font-family: Roboto, Arial,sans-serif;
 
@@ -424,12 +424,6 @@ h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
      -webkit-transform: rotate(-45deg); /* Safari */
      transform: rotate(-45deg);
      display: none;
- }
-
- #devBanner
- {
-    font-size: 170%;
-    background-color: #9b0bee;
  }
 
  #stageBanner

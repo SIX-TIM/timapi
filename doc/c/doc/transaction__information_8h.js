@@ -13,6 +13,7 @@ var transaction__information_8h =
     [ "ta_transaction_information_get_merchant_action", "transaction__information_8h.html#ac16195f79e5e5e3c551079014e8ad9b7", null ],
     [ "ta_transaction_information_get_ngv_used_flag", "transaction__information_8h.html#a4c494ca8e0c4e19e05be8d09c8e077e6", null ],
     [ "ta_transaction_information_get_omnichannel_payment_id", "transaction__information_8h.html#a4d0e99f0970c19995e7781bbaae31a9f", null ],
+    [ "ta_transaction_information_get_own_risk_2_outcome", "transaction__information_8h.html#a158ea9af4261e318893580556338dc3a", null ],
     [ "ta_transaction_information_get_person_oid", "transaction__information_8h.html#a423f7ad130e1724e949c89921e3a052a", null ],
     [ "ta_transaction_information_get_pos_entry_mode", "transaction__information_8h.html#a88bc69975934778ad5620ef6fb5ce97f", null ],
     [ "ta_transaction_information_get_scheme_trx_id", "transaction__information_8h.html#ada53182831904d8cce6ca40e0eb74b83", null ],

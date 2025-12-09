@@ -176,6 +176,12 @@ Functions</h2></td></tr>
 <tr class="memitem:a2778a0f2ca1053b579f0f16bf8bd1163"><td class="memItemLeft" align="right" valign="top"><a class="el" href="result__code_8h.html#ae860ee870a289833a24a586ba0c24975">ta_e_result_code_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="card__data_8h.html#a2778a0f2ca1053b579f0f16bf8bd1163">ta_card_data_get_token_pan_type</a> (<a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a> card_data, <a class="el" href="token__pan__type_8h.html#af7a948f9dcce9e2bad725b559392d330">ta_e_token_pan_type_t</a> *token_pan_type)</td></tr>
 <tr class="memdesc:a2778a0f2ca1053b579f0f16bf8bd1163"><td class="mdescLeft">&#160;</td><td class="mdescRight">Token PAN type.  <a href="#a2778a0f2ca1053b579f0f16bf8bd1163">More...</a><br /></td></tr>
 <tr class="separator:a2778a0f2ca1053b579f0f16bf8bd1163"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad56339f4c6397208cd675e1cbdc1bbf1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="result__code_8h.html#ae860ee870a289833a24a586ba0c24975">ta_e_result_code_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="card__data_8h.html#ad56339f4c6397208cd675e1cbdc1bbf1">ta_card_data_get_additional_card_data</a> (<a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a> card_data, <a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a> *additional_card_data)</td></tr>
+<tr class="memdesc:ad56339f4c6397208cd675e1cbdc1bbf1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Additional card information (non-PCI) that can have merchant specific formatting.  <a href="#ad56339f4c6397208cd675e1cbdc1bbf1">More...</a><br /></td></tr>
+<tr class="separator:ad56339f4c6397208cd675e1cbdc1bbf1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa685e4a18b74b94960f8ef59f2dc3619"><td class="memItemLeft" align="right" valign="top"><a class="el" href="result__code_8h.html#ae860ee870a289833a24a586ba0c24975">ta_e_result_code_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="card__data_8h.html#aa685e4a18b74b94960f8ef59f2dc3619">ta_card_data_get_surrogate_pan_secondary</a> (<a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a> card_data, <a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a> *surrogate_pan_secondary)</td></tr>
+<tr class="memdesc:aa685e4a18b74b94960f8ef59f2dc3619"><td class="mdescLeft">&#160;</td><td class="mdescRight">Surrogate Pan Secondary.  <a href="#aa685e4a18b74b94960f8ef59f2dc3619">More...</a><br /></td></tr>
+<tr class="separator:aa685e4a18b74b94960f8ef59f2dc3619"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="a05ff3c930eee5af6c9950ee267d44951"></a>
@@ -264,6 +270,53 @@ Functions</h2></td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>card_data</em> is <em>ta_object_invalid</em>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>card_data</em> is not of type <a class="el" href="card__data_8h.html">card_data</a>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>account_type</em> is <em>null-pointer</em>. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ad56339f4c6397208cd675e1cbdc1bbf1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad56339f4c6397208cd675e1cbdc1bbf1">&#9670;&nbsp;</a></span>ta_card_data_get_additional_card_data()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="result__code_8h.html#ae860ee870a289833a24a586ba0c24975">ta_e_result_code_t</a> ta_card_data_get_additional_card_data </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a>&#160;</td>
+          <td class="paramname"><em>card_data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a> *&#160;</td>
+          <td class="paramname"><em>additional_card_data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Additional card information (non-PCI) that can have merchant specific formatting. </p>
+<p>Available if Dialog guide is enabled.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">card_data</td><td>Object instance of type <a class="el" href="card__data_8h.html">card_data</a>. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">additional_card_data</td><td>Pointer to variable to write object instance to. Object instance is of type <a class="el" href="string_8h.html">string</a> and is not retained. Object instance is <em>ta_object_invalid</em> if value is not set in <em>card_data</em>.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">ta_c_rc_ok</td><td>Object instance written to <em>asrpd</em>. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>card_data</em> is <em>ta_object_invalid</em>. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>card_data</em> is not of type <a class="el" href="card__data_8h.html">card_data</a>. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>additional_card_data</em> is <em>null-pointer</em>. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1188,6 +1241,52 @@ initiated on the underlying PAN", which can be used in a transaction response to
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>card_data</em> is <em>ta_object_invalid</em>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>card_data</em> is not of type <a class="el" href="card__data_8h.html">card_data</a>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>processing_disposition</em> is <em>null-pointer</em>. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aa685e4a18b74b94960f8ef59f2dc3619"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa685e4a18b74b94960f8ef59f2dc3619">&#9670;&nbsp;</a></span>ta_card_data_get_surrogate_pan_secondary()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="result__code_8h.html#ae860ee870a289833a24a586ba0c24975">ta_e_result_code_t</a> ta_card_data_get_surrogate_pan_secondary </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a>&#160;</td>
+          <td class="paramname"><em>card_data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a> *&#160;</td>
+          <td class="paramname"><em>surrogate_pan_secondary</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Surrogate Pan Secondary. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">card_data</td><td>Object instance of type <a class="el" href="card__data_8h.html">card_data</a>. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">asrpd</td><td>Pointer to variable to write object instance to. Object instance is of type <a class="el" href="string_8h.html">string</a> and is not retained. Object instance is <em>ta_object_invalid</em> if value is not set in <em>card_data</em>.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">ta_c_rc_ok</td><td>Object instance written to <em>surrogate_pan_secondary</em>. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>card_data</em> is <em>ta_object_invalid</em>. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>card_data</em> is not of type <a class="el" href="card__data_8h.html">card_data</a>. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>surrogate_pan_secondary</em> is <em>null-pointer</em>. </td></tr>
   </table>
   </dd>
 </dl>

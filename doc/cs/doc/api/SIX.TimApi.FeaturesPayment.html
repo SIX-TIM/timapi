@@ -239,6 +239,9 @@
                             <a href="SIX.TimApi.ReconciliationResponse.html" title="ReconciliationResponse" class="">ReconciliationResponse</a>
                           </li>
                           <li class="">
+                            <a href="SIX.TimApi.ReconfigParameters.html" title="ReconfigParameters" class="">ReconfigParameters</a>
+                          </li>
+                          <li class="">
                             <a href="SIX.TimApi.RequestTypes.html" title="RequestTypes" class="">RequestTypes</a>
                           </li>
                           <li class="">
@@ -791,6 +794,9 @@
                             <a href="SIX.TimApi.Constants.Recipient.html" title="Recipient" class="">Recipient</a>
                           </li>
                           <li class="">
+                            <a href="SIX.TimApi.Constants.ReconfigMode.html" title="ReconfigMode" class="">ReconfigMode</a>
+                          </li>
+                          <li class="">
                             <a href="SIX.TimApi.Constants.RemoteFunctions.html" title="RemoteFunctions" class="">RemoteFunctions</a>
                           </li>
                           <li class="">
@@ -955,13 +961,13 @@ Immutable class.</p>
   
   
   <a id="SIX_TimApi_FeaturesPayment__ctor_" data-uid="SIX.TimApi.FeaturesPayment.#ctor*"></a>
-  <h4 id="SIX_TimApi_FeaturesPayment__ctor_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_SIX_TimApi_FeaturesPayment_AgeCheckSupport_System_Boolean_" data-uid="SIX.TimApi.FeaturesPayment.#ctor(System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,SIX.TimApi.FeaturesPayment.AgeCheckSupport,System.Boolean)">FeaturesPayment(Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, FeaturesPayment.AgeCheckSupport, Boolean)</h4>
+  <h4 id="SIX_TimApi_FeaturesPayment__ctor_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_SIX_TimApi_FeaturesPayment_AgeCheckSupport_System_Boolean_" data-uid="SIX.TimApi.FeaturesPayment.#ctor(System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,SIX.TimApi.FeaturesPayment.AgeCheckSupport,System.Boolean)">FeaturesPayment(Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, FeaturesPayment.AgeCheckSupport, Boolean)</h4>
   <div class="markdown level1 summary"><p>Create hardware features.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public FeaturesPayment(bool dcc, bool declinedReceipts, bool partialApproval, bool partialCommit, bool ep2Available, bool ep2Dcc, bool ep2DeclinedReceipts, bool ep2MultiAccountSelection, bool ep2MultiContractSelection, bool ep2Installment, bool ep2Giftcard, bool accountSelection, bool mcr, bool surcharge, FeaturesPayment.AgeCheckSupport ep2AgeCheck, bool ctapAvailable)</code></pre>
+    <pre><code class="lang-csharp hljs">public FeaturesPayment(bool dcc, bool declinedReceipts, bool partialApproval, bool partialCommit, bool ep2Available, bool ep2Dcc, bool ep2DeclinedReceipts, bool ep2MultiAccountSelection, bool ep2MultiContractSelection, bool ep2Installment, bool ep2Giftcard, bool ep2OwnRisk2, bool accountSelection, bool mcr, bool surcharge, FeaturesPayment.AgeCheckSupport ep2AgeCheck, bool ctapAvailable)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1026,6 +1032,11 @@ Immutable class.</p>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
         <td><span class="parametername">ep2Giftcard</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">ep2OwnRisk2</span></td>
         <td></td>
       </tr>
       <tr>
@@ -1340,6 +1351,33 @@ Immutable class.</p>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
         <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SIX_TimApi_FeaturesPayment_canEp2OwnRisk2_" data-uid="SIX.TimApi.FeaturesPayment.canEp2OwnRisk2*"></a>
+  <h4 id="SIX_TimApi_FeaturesPayment_canEp2OwnRisk2" data-uid="SIX.TimApi.FeaturesPayment.canEp2OwnRisk2">canEp2OwnRisk2()</h4>
+  <div class="markdown level1 summary"><p>Support for OwnRisk2 transactions.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool canEp2OwnRisk2()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p><code>true</code> if the OwnRisk2 feature is supported; otherwise, <code>false</code>.</p>
+</td>
       </tr>
     </tbody>
   </table>

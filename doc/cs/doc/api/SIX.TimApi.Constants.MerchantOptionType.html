@@ -239,6 +239,9 @@
                             <a href="SIX.TimApi.ReconciliationResponse.html" title="ReconciliationResponse" class="">ReconciliationResponse</a>
                           </li>
                           <li class="">
+                            <a href="SIX.TimApi.ReconfigParameters.html" title="ReconfigParameters" class="">ReconfigParameters</a>
+                          </li>
+                          <li class="">
                             <a href="SIX.TimApi.RequestTypes.html" title="RequestTypes" class="">RequestTypes</a>
                           </li>
                           <li class="">
@@ -791,6 +794,9 @@
                             <a href="SIX.TimApi.Constants.Recipient.html" title="Recipient" class="">Recipient</a>
                           </li>
                           <li class="">
+                            <a href="SIX.TimApi.Constants.ReconfigMode.html" title="ReconfigMode" class="">ReconfigMode</a>
+                          </li>
+                          <li class="">
                             <a href="SIX.TimApi.Constants.RemoteFunctions.html" title="RemoteFunctions" class="">RemoteFunctions</a>
                           </li>
                           <li class="">
@@ -956,6 +962,17 @@
     <thead>
     <tbody>
       <tr>
+        <td id="SIX_TimApi_Constants_MerchantOptionType_AccountingDepartment">AccountingDepartment</td>
+        <td><p>Generally used for Swiss public transportation as merchant specific station description,
+but can be used differently according merchant needs, e.g. as cost center etc.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="SIX_TimApi_Constants_MerchantOptionType_AccountingPeriod">AccountingPeriod</td>
+        <td><p>Merchant defined accounting period for a specific shift or transaction.</p>
+</td>
+      </tr>
+      <tr>
         <td id="SIX_TimApi_Constants_MerchantOptionType_AdditionalMerchantData">AdditionalMerchantData</td>
         <td><p>Additional data the merchant would like to add. String value.</p>
 </td>
@@ -966,8 +983,32 @@
 </td>
       </tr>
       <tr>
+        <td id="SIX_TimApi_Constants_MerchantOptionType_DeviceType">DeviceType</td>
+        <td><p>Generally used for Swiss public transportation as merchant specific ECR device type
+description, but can be used differently according merchant needs.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="SIX_TimApi_Constants_MerchantOptionType_DspMsgSuppressFlag">DspMsgSuppressFlag</td>
+        <td><p>Flag used to suppress display messages.</p>
+<ul>
+<li>0: Disabled - all cardholder and attendant display messages shall be displayed</li>
+<li>1: Cardholder Suppression - all cardholder display messages except &quot;Please wait&quot; shall be suppressed for this transaction</li>
+<li>2: RFU (Attendant Suppression - all attendant display messages except &quot;Processing&quot; shall be suppressed for this transaction)</li>
+<li>3: RFU (Full Suppression - all cardholder and attendant display messages except &quot;Please wait&quot; and &quot;Processing&quot; shall be suppressed for this transaction)</li>
+</ul>
+Any other values or null should be treated as 0.
+</td>
+      </tr>
+      <tr>
         <td id="SIX_TimApi_Constants_MerchantOptionType_FuelDispenserNumber">FuelDispenserNumber</td>
         <td><p>Fuel Pump number. Used for petrol MOC, provided by ECR.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="SIX_TimApi_Constants_MerchantOptionType_Ktucode">Ktucode</td>
+        <td><p>Generally used for Swiss public transportation to describe the state-licensed
+transportation company, but can be used differently according merchant needs.</p>
 </td>
       </tr>
       <tr>
@@ -988,6 +1029,11 @@ specifies the contract index.</p>
 </td>
       </tr>
       <tr>
+        <td id="SIX_TimApi_Constants_MerchantOptionType_OrderId">OrderId</td>
+        <td><p>Order ID, originally sent by the ECR.</p>
+</td>
+      </tr>
+      <tr>
         <td id="SIX_TimApi_Constants_MerchantOptionType_Posdnumber">Posdnumber</td>
         <td><p>Number of the ECR device. Used for petrol MOC, provided by ECR.</p>
 </td>
@@ -1003,8 +1049,26 @@ specifies the contract index.</p>
 </td>
       </tr>
       <tr>
+        <td id="SIX_TimApi_Constants_MerchantOptionType_StationCode">StationCode</td>
+        <td><p>Generally used for Swiss public transportation as merchant specific station description
+according department documentation, but can be used differently according merchant
+needs.</p>
+</td>
+      </tr>
+      <tr>
         <td id="SIX_TimApi_Constants_MerchantOptionType_Unknown">Unknown</td>
         <td><p>Invalid/unknown constant value.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="SIX_TimApi_Constants_MerchantOptionType_VoucherId">VoucherId</td>
+        <td><p>Voucher type identifier that shall be used for the current transaction, provided by ECR</p>
+</td>
+      </tr>
+      <tr>
+        <td id="SIX_TimApi_Constants_MerchantOptionType_Wsnumber">Wsnumber</td>
+        <td><p>Generally used for Swiss public transportation as merchant specific work station number,
+but can be used differently according merchant needs.</p>
 </td>
       </tr>
     </tbody>
