@@ -114,7 +114,18 @@ Enumerations</h2></td></tr>
 <a class="el" href="merchant__option__type_8h.html#aea3eaf253bcce054769642d812d46362a770fa5489b1d638a8780896eff4a748d">ta_c_mot_posdnumber</a> = 7, 
 <br />
 &#160;&#160;<a class="el" href="merchant__option__type_8h.html#aea3eaf253bcce054769642d812d46362a0ace3ceeec8b839e2b9185ae6acb5c45">ta_c_mot_receipt_number</a> = 8, 
-<a class="el" href="merchant__option__type_8h.html#aea3eaf253bcce054769642d812d46362a6c181472ceda7a1043af135be9c8973a">ta_c_mot_shift_number</a> = 9
+<a class="el" href="merchant__option__type_8h.html#aea3eaf253bcce054769642d812d46362a6c181472ceda7a1043af135be9c8973a">ta_c_mot_shift_number</a> = 9, 
+<a class="el" href="merchant__option__type_8h.html#aea3eaf253bcce054769642d812d46362a9c80bc712cfc818609157a5a34dc12fb">ta_c_mot_accounting_department</a> = 10, 
+<a class="el" href="merchant__option__type_8h.html#aea3eaf253bcce054769642d812d46362a6831970e2bcbbf2829b428600536c072">ta_c_mot_accounting_period</a> = 11, 
+<br />
+&#160;&#160;<a class="el" href="merchant__option__type_8h.html#aea3eaf253bcce054769642d812d46362a28bcde67ab27c511cea9ac9596d92532">ta_c_mot_device_type</a> = 12, 
+<a class="el" href="merchant__option__type_8h.html#aea3eaf253bcce054769642d812d46362a3fa9c254a99df02e08fc361654a90757">ta_c_mot_ktucode</a> = 13, 
+<a class="el" href="merchant__option__type_8h.html#aea3eaf253bcce054769642d812d46362a42531098bb97678ac56470d20ba36a40">ta_c_mot_station_code</a> = 14, 
+<a class="el" href="merchant__option__type_8h.html#aea3eaf253bcce054769642d812d46362a7ac0a2c136e71c7878f3adff6a01b51a">ta_c_mot_wsnumber</a> = 15, 
+<br />
+&#160;&#160;<a class="el" href="merchant__option__type_8h.html#aea3eaf253bcce054769642d812d46362ae9a11a11fec15417a0cc90d6ff72a24c">ta_c_mot_voucher_id</a> = 16, 
+<a class="el" href="merchant__option__type_8h.html#aea3eaf253bcce054769642d812d46362a83c09cb5a6996cd977747d824afdbfd2">ta_c_mot_dsp_msg_suppress_flag</a> = 17, 
+<a class="el" href="merchant__option__type_8h.html#aea3eaf253bcce054769642d812d46362a00c6632102ca2d6df8e43ce57c6fafe4">ta_c_mot_order_id</a> = 18
 <br />
  }</td></tr>
 <tr class="separator:aea3eaf253bcce054769642d812d46362"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -180,6 +191,43 @@ Enumerations</h2></td></tr>
 <p>Specification: retail.</p>
 </td></tr>
 <tr><td class="fieldname"><a id="aea3eaf253bcce054769642d812d46362a6c181472ceda7a1043af135be9c8973a"></a>ta_c_mot_shift_number&#160;</td><td class="fielddoc"><p>ECR side shift number. Used for petrol MOC, provided by ECR.</p>
+<p>Specification: retail.</p>
+</td></tr>
+<tr><td class="fieldname"><a id="aea3eaf253bcce054769642d812d46362a9c80bc712cfc818609157a5a34dc12fb"></a>ta_c_mot_accounting_department&#160;</td><td class="fielddoc"><p>Generally used for Swiss public transportation as merchant specific station description, but can be used differently according merchant needs, e.g. as cost center etc.</p>
+<p>Specification: retail.</p>
+</td></tr>
+<tr><td class="fieldname"><a id="aea3eaf253bcce054769642d812d46362a6831970e2bcbbf2829b428600536c072"></a>ta_c_mot_accounting_period&#160;</td><td class="fielddoc"><p>Merchant defined accounting period for a specific shift or transaction.</p>
+<p>Specification: retail.</p>
+</td></tr>
+<tr><td class="fieldname"><a id="aea3eaf253bcce054769642d812d46362a28bcde67ab27c511cea9ac9596d92532"></a>ta_c_mot_device_type&#160;</td><td class="fielddoc"><p>Generally used for Swiss public transportation as merchant specific ECR device type description, but can be used differently according merchant needs.</p>
+<p>Specification: retail.</p>
+</td></tr>
+<tr><td class="fieldname"><a id="aea3eaf253bcce054769642d812d46362a3fa9c254a99df02e08fc361654a90757"></a>ta_c_mot_ktucode&#160;</td><td class="fielddoc"><p>Generally used for Swiss public transportation to describe the state-licensed transportation company, but can be used differently according merchant needs.</p>
+<p>Specification: retail.</p>
+</td></tr>
+<tr><td class="fieldname"><a id="aea3eaf253bcce054769642d812d46362a42531098bb97678ac56470d20ba36a40"></a>ta_c_mot_station_code&#160;</td><td class="fielddoc"><p>Generally used for Swiss public transportation as merchant specific station description according department documentation, but can be used differently according merchant needs.</p>
+<p>Specification: retail.</p>
+</td></tr>
+<tr><td class="fieldname"><a id="aea3eaf253bcce054769642d812d46362a7ac0a2c136e71c7878f3adff6a01b51a"></a>ta_c_mot_wsnumber&#160;</td><td class="fielddoc"><p>Generally used for Swiss public transportation as merchant specific work station number, but can be used differently according merchant needs.</p>
+<p>Specification: retail.</p>
+</td></tr>
+<tr><td class="fieldname"><a id="aea3eaf253bcce054769642d812d46362ae9a11a11fec15417a0cc90d6ff72a24c"></a>ta_c_mot_voucher_id&#160;</td><td class="fielddoc"><p>Voucher type identifier that shall be used for the current transaction, provided by ECR</p>
+<p>Specification: retail.</p>
+</td></tr>
+<tr><td class="fieldname"><a id="aea3eaf253bcce054769642d812d46362a83c09cb5a6996cd977747d824afdbfd2"></a>ta_c_mot_dsp_msg_suppress_flag&#160;</td><td class="fielddoc"><p>Flag used to suppress display messages. </p><ul>
+<li>
+0: Disabled - all cardholder and attendant display messages shall be displayed </li>
+<li>
+1: Cardholder Suppression - all cardholder display messages except "Please wait" shall be suppressed for this transaction </li>
+<li>
+2: RFU (Attendant Suppression - all attendant display messages except "Processing" shall be suppressed for this transaction) </li>
+<li>
+3: RFU (Full Suppression - all cardholder and attendant display messages except "Please wait" and "Processing" shall be suppressed for this transaction) </li>
+</ul>
+<p>Any other values or null should be treated as 0.</p>
+<p>Specification: retail.</p>
+</td></tr>
+<tr><td class="fieldname"><a id="aea3eaf253bcce054769642d812d46362a00c6632102ca2d6df8e43ce57c6fafe4"></a>ta_c_mot_order_id&#160;</td><td class="fielddoc"><p>Order ID, originally sent by the ECR.</p>
 <p>Specification: retail.</p>
 </td></tr>
 </table>
