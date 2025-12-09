@@ -2,6 +2,7 @@ var transaction__request_8h =
 [
     [ "ta_transaction_request_copy", "transaction__request_8h.html#a7530d254e7ae084ba0301a4a8333db8b", null ],
     [ "ta_transaction_request_create", "transaction__request_8h.html#ac750e590575bb83ad0f36a3e63399eb0", null ],
+    [ "ta_transaction_request_get_accessibility_option_list", "transaction__request_8h.html#ac7572370e20967e5f81f4a18fdd03c78", null ],
     [ "ta_transaction_request_get_additional_info", "transaction__request_8h.html#a76f655fbbeee335f74f625a187372012", null ],
     [ "ta_transaction_request_get_amount", "transaction__request_8h.html#a9502b5a1f832e64fd70dd15b3d6eb2f9", null ],
     [ "ta_transaction_request_get_amount_discount", "transaction__request_8h.html#a0c89a4944a8a82c1a9611a1b9e844192", null ],
@@ -14,6 +15,7 @@ var transaction__request_8h =
     [ "ta_transaction_request_get_retain_card", "transaction__request_8h.html#af7278e9fda68f02457b6f817b78aae2b", null ],
     [ "ta_transaction_request_get_transaction_data", "transaction__request_8h.html#a772e3ed0c701179a90754f8007e13c4f", null ],
     [ "ta_transaction_request_get_user_id", "transaction__request_8h.html#a6a5e178790b922205d34711b92b6f2fd", null ],
+    [ "ta_transaction_request_set_accessibility_option_list", "transaction__request_8h.html#a142362d1cd2e2d51365445c5d53dd058", null ],
     [ "ta_transaction_request_set_additional_info", "transaction__request_8h.html#ade991496c315b924f91218ec2d61af1b", null ],
     [ "ta_transaction_request_set_amount", "transaction__request_8h.html#a8665eec100e8b6119dd0062345999e28", null ],
     [ "ta_transaction_request_set_amount_discount", "transaction__request_8h.html#a1059b455bf0b52d1d00cc9004ac88de2", null ],
