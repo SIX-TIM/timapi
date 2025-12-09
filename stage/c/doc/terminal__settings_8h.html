@@ -194,12 +194,6 @@ Functions</h2></td></tr>
 <tr class="memitem:a27183834fcdd9039de960c059681cfae"><td class="memItemLeft" align="right" valign="top"><a class="el" href="result__code_8h.html#ae860ee870a289833a24a586ba0c24975">ta_e_result_code_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="terminal__settings_8h.html#a27183834fcdd9039de960c059681cfae">ta_terminal_settings_set_manufacturer_flags</a> (<a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a> settings, int manufacturer_flags)</td></tr>
 <tr class="memdesc:a27183834fcdd9039de960c059681cfae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set manufacturer flags.  <a href="#a27183834fcdd9039de960c059681cfae">More...</a><br /></td></tr>
 <tr class="separator:a27183834fcdd9039de960c059681cfae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6adeb21646809ed7fb258964efa7d1f8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="result__code_8h.html#ae860ee870a289833a24a586ba0c24975">ta_e_result_code_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="terminal__settings_8h.html#a6adeb21646809ed7fb258964efa7d1f8">ta_terminal_settings_get_silent_login</a> (<a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a> settings, int *get_silent_login)</td></tr>
-<tr class="memdesc:a6adeb21646809ed7fb258964efa7d1f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">TIM API shall automatically perform a login after a socket re-connection. Both in connect and listen mode. 0 = disabled (default), 1 = enabled.  <a href="#a6adeb21646809ed7fb258964efa7d1f8">More...</a><br /></td></tr>
-<tr class="separator:a6adeb21646809ed7fb258964efa7d1f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aed60b4a35a3d65cb539a01f08f611aee"><td class="memItemLeft" align="right" valign="top"><a class="el" href="result__code_8h.html#ae860ee870a289833a24a586ba0c24975">ta_e_result_code_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="terminal__settings_8h.html#aed60b4a35a3d65cb539a01f08f611aee">ta_terminal_settings_set_silent_login</a> (<a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a> settings, int silent_login)</td></tr>
-<tr class="memdesc:aed60b4a35a3d65cb539a01f08f611aee"><td class="mdescLeft">&#160;</td><td class="mdescRight">TIM API shall automatically perform a login after a socket re-connection. Both in connect and listen mode. 0 = disabled (default), 1 = enabled.  <a href="#aed60b4a35a3d65cb539a01f08f611aee">More...</a><br /></td></tr>
-<tr class="separator:aed60b4a35a3d65cb539a01f08f611aee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae6ffc902e5b63689df2d82e33678c218"><td class="memItemLeft" align="right" valign="top"><a class="el" href="result__code_8h.html#ae860ee870a289833a24a586ba0c24975">ta_e_result_code_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="terminal__settings_8h.html#ae6ffc902e5b63689df2d82e33678c218">ta_terminal_settings_is_fetch_brands</a> (<a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a> settings, <a class="el" href="boolean_8h.html#a5d3636b1f1f5de7550c138d0f81825bf">ta_e_boolean_t</a> *is_fetch_brands)</td></tr>
 <tr class="memdesc:ae6ffc902e5b63689df2d82e33678c218"><td class="mdescLeft">&#160;</td><td class="mdescRight">Automatically retrieves application information during logging in.  <a href="#ae6ffc902e5b63689df2d82e33678c218">More...</a><br /></td></tr>
 <tr class="separator:ae6ffc902e5b63689df2d82e33678c218"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -2004,52 +1998,6 @@ Functions</h2></td></tr>
     <tr><td class="paramname">ta_c_rc_ok</td><td>Object instance written to <em>terminal_id</em>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>settings</em> is <em>ta_object_invalid</em>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>settings</em> is not of type <a class="el" href="terminal__settings_8h.html">terminal_settings</a>. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a6adeb21646809ed7fb258964efa7d1f8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6adeb21646809ed7fb258964efa7d1f8">&#9670;&nbsp;</a></span>ta_terminal_settings_get_silent_login()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="result__code_8h.html#ae860ee870a289833a24a586ba0c24975">ta_e_result_code_t</a> ta_terminal_settings_get_silent_login </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a>&#160;</td>
-          <td class="paramname"><em>settings</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int *&#160;</td>
-          <td class="paramname"><em>get_silent_login</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>TIM API shall automatically perform a login after a socket re-connection. Both in connect and listen mode. 0 = disabled (default), 1 = enabled. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">settings</td><td>Object instance of type <a class="el" href="terminal__settings_8h.html">terminal_settings</a>. </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">get_silent_login</td><td>Pointer to variable to write value to.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">ta_c_rc_ok</td><td>Value written to <em>get_silent_login</em>. </td></tr>
-    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>settings</em> is <em>ta_object_invalid</em>. </td></tr>
-    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>settings</em> is not of type <a class="el" href="terminal__settings_8h.html">terminal_settings</a>. </td></tr>
-    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>get_silent_login</em> is <em>null-pointer</em>. </td></tr>
   </table>
   </dd>
 </dl>
@@ -4838,51 +4786,6 @@ Otherwise: <em>ta_c_b_true</em> </li>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>settings</em> is not of type <a class="el" href="terminal__settings_8h.html">terminal_settings</a>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>terminal_id</em> is <em>ta_object_invalid</em>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>terminal_id</em> is not <em>ta_object_invalid</em> and is not of type <a class="el" href="string_8h.html">string</a>. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="aed60b4a35a3d65cb539a01f08f611aee"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aed60b4a35a3d65cb539a01f08f611aee">&#9670;&nbsp;</a></span>ta_terminal_settings_set_silent_login()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="result__code_8h.html#ae860ee870a289833a24a586ba0c24975">ta_e_result_code_t</a> ta_terminal_settings_set_silent_login </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a>&#160;</td>
-          <td class="paramname"><em>settings</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>silent_login</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>TIM API shall automatically perform a login after a socket re-connection. Both in connect and listen mode. 0 = disabled (default), 1 = enabled. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">settings</td><td>Object instance of type <a class="el" href="terminal__settings_8h.html">terminal_settings</a>. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">silent_login</td><td>Value to set.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">ta_c_rc_ok</td><td>Value assigned to <em>settings</em>. </td></tr>
-    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>settings</em> is <em>ta_object_invalid</em>. </td></tr>
-    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>settings</em> is not of type <a class="el" href="terminal__settings_8h.html">terminal_settings</a>. </td></tr>
   </table>
   </dd>
 </dl>

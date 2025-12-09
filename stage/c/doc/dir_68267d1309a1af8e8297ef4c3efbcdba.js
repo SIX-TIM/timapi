@@ -2,7 +2,6 @@ var dir_68267d1309a1af8e8297ef4c3efbcdba =
 [
     [ "common", "dir_fdedb0aba14d44ce9d99bc100e026e6a.html", "dir_fdedb0aba14d44ce9d99bc100e026e6a" ],
     [ "constants", "dir_55ef98a57036556dcc9a226e6204f780.html", "dir_55ef98a57036556dcc9a226e6204f780" ],
-    [ "accessibility_option_list.h", "accessibility__option__list_8h.html", "accessibility__option__list_8h" ],
     [ "activate_response.h", "activate__response_8h.html", "activate__response_8h" ],
     [ "amount.h", "amount_8h.html", "amount_8h" ],
     [ "amount_dcc.h", "amount__dcc_8h.html", "amount__dcc_8h" ],

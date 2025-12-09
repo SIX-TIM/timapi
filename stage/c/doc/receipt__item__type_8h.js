@@ -87,8 +87,6 @@ var receipt__item__type_8h =
       [ "ta_c_rit_pfa_evt_seq_cnt", "receipt__item__type_8h.html#a3d3044dd871a9c7d630dbcf3d9b738bea030e036bfd290e4b1c502baf09ac80cb", null ],
       [ "ta_c_rit_transaction_type", "receipt__item__type_8h.html#a3d3044dd871a9c7d630dbcf3d9b738beaccd09f064b51382f0ba21b4c2b77789a", null ],
       [ "ta_c_rit_last4digits_of_pan", "receipt__item__type_8h.html#a3d3044dd871a9c7d630dbcf3d9b738beaf277e4003a7684edadb8d4d9aaa78e81", null ],
-      [ "ta_c_rit_order_id", "receipt__item__type_8h.html#a3d3044dd871a9c7d630dbcf3d9b738bea10c41ff35f9fdccba1a3c3176661372c", null ],
-      [ "ta_c_rit_language_cardholder", "receipt__item__type_8h.html#a3d3044dd871a9c7d630dbcf3d9b738bea45893d5fcf77eb2f5be53cc2de698913", null ],
-      [ "ta_c_rit_language_merchant", "receipt__item__type_8h.html#a3d3044dd871a9c7d630dbcf3d9b738bead2e3bbc48243100cb72d77bd7d9972b5", null ]
+      [ "ta_c_rit_order_id", "receipt__item__type_8h.html#a3d3044dd871a9c7d630dbcf3d9b738bea10c41ff35f9fdccba1a3c3176661372c", null ]
     ] ]
 ];
