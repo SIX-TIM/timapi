@@ -1,6 +1,6 @@
 var resource__parameter__type_8h =
 [
-    [ "ta_e_resource_parameter_type_t", "resource__parameter__type_8h.html#a6f8d563c9e0958e940dab312c3a13eff", null ],
+    [ "ta_e_resource_parameter_type_t", "resource__parameter__type_8h.html#a62376c80094c82610994fc3fb9634ad0", null ],
     [ "ta_e_resource_parameter_type", "resource__parameter__type_8h.html#a24c84814e0ce6a320ff3bd3826a297fb", [
       [ "ta_c_rpt_undefined", "resource__parameter__type_8h.html#a24c84814e0ce6a320ff3bd3826a297fba3fe4cf6f89fde28ced047494f229829a", null ],
       [ "ta_c_rpt_code_check_type", "resource__parameter__type_8h.html#a24c84814e0ce6a320ff3bd3826a297fba55b588e95ee792144c265d2109f05e49", null ],
@@ -17,6 +17,7 @@ var resource__parameter__type_8h =
       [ "ta_c_rpt_key_mode_f2", "resource__parameter__type_8h.html#a24c84814e0ce6a320ff3bd3826a297fba0fb2962e53991b9f0b9a0ab964e77317", null ],
       [ "ta_c_rpt_key_mode_f3", "resource__parameter__type_8h.html#a24c84814e0ce6a320ff3bd3826a297fba9b60ecc9dc494e7fed5ead022a439b5a", null ],
       [ "ta_c_rpt_pin_retry_counter", "resource__parameter__type_8h.html#a24c84814e0ce6a320ff3bd3826a297fba18a59fd58ad83e29e5ee89ec446ee7b0", null ],
-      [ "ta_c_rpt_aid", "resource__parameter__type_8h.html#a24c84814e0ce6a320ff3bd3826a297fba14acada9f526233ca9e693dc563d02c9", null ]
+      [ "ta_c_rpt_aid", "resource__parameter__type_8h.html#a24c84814e0ce6a320ff3bd3826a297fba14acada9f526233ca9e693dc563d02c9", null ],
+      [ "ta_c_rpt_button_mode", "resource__parameter__type_8h.html#a24c84814e0ce6a320ff3bd3826a297fbaa9faa6e274e31f573da8b7c15ff0221c", null ]
     ] ]
 ];

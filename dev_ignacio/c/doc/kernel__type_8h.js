@@ -1,6 +1,6 @@
 var kernel__type_8h =
 [
-    [ "ta_e_kernel_type_t", "kernel__type_8h.html#a084307ef3fbd62531c2ffb55a16f8081", null ],
+    [ "ta_e_kernel_type_t", "kernel__type_8h.html#a9832d6384a5083193c5d1500f4689d7d", null ],
     [ "ta_e_kernel_type", "kernel__type_8h.html#a09c41b2ef45de74238a9f3897ce4e78a", [
       [ "ta_c_kt_undefined", "kernel__type_8h.html#a09c41b2ef45de74238a9f3897ce4e78aace20318f5187210cb354a656073f472b", null ],
       [ "ta_c_kt_kernel_pure", "kernel__type_8h.html#a09c41b2ef45de74238a9f3897ce4e78aa79b00006939760cdf1d6e22b7845b7c7", null ],
@@ -13,6 +13,7 @@ var kernel__type_8h =
       [ "ta_c_kt_kernel5", "kernel__type_8h.html#a09c41b2ef45de74238a9f3897ce4e78aac49a14f1323663ab4dca440b31cd2110", null ],
       [ "ta_c_kt_kernel6", "kernel__type_8h.html#a09c41b2ef45de74238a9f3897ce4e78aae5fd4b7d1799e2a8f8027bb31fce525e", null ],
       [ "ta_c_kt_kernel7", "kernel__type_8h.html#a09c41b2ef45de74238a9f3897ce4e78aa7dc1ed1bfdb7e96ef297ffb94a4332a0", null ],
-      [ "ta_c_kt_kernel8", "kernel__type_8h.html#a09c41b2ef45de74238a9f3897ce4e78aa6707accfb63ed397339f1d1197e702ee", null ]
+      [ "ta_c_kt_kernel8", "kernel__type_8h.html#a09c41b2ef45de74238a9f3897ce4e78aa6707accfb63ed397339f1d1197e702ee", null ],
+      [ "ta_c_kt_kernel2a", "kernel__type_8h.html#a09c41b2ef45de74238a9f3897ce4e78aa89683e76abfd2312e267a82047abd139", null ]
     ] ]
 ];

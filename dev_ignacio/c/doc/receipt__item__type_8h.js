@@ -1,6 +1,6 @@
 var receipt__item__type_8h =
 [
-    [ "ta_e_receipt_item_type_t", "receipt__item__type_8h.html#a0e227c7b4f74a6932a18f9cda56223dc", null ],
+    [ "ta_e_receipt_item_type_t", "receipt__item__type_8h.html#a7ed5b6cf3c039f3e3896699e056ace32", null ],
     [ "ta_e_receipt_item_type", "receipt__item__type_8h.html#a3d3044dd871a9c7d630dbcf3d9b738be", [
       [ "ta_c_rit_undefined", "receipt__item__type_8h.html#a3d3044dd871a9c7d630dbcf3d9b738bea279c62d146c627e8db2f85103f41b24e", null ],
       [ "ta_c_rit_act_id", "receipt__item__type_8h.html#a3d3044dd871a9c7d630dbcf3d9b738bea648299136feb63d247ad521d24f3b976", null ],
@@ -89,6 +89,17 @@ var receipt__item__type_8h =
       [ "ta_c_rit_last4digits_of_pan", "receipt__item__type_8h.html#a3d3044dd871a9c7d630dbcf3d9b738beaf277e4003a7684edadb8d4d9aaa78e81", null ],
       [ "ta_c_rit_order_id", "receipt__item__type_8h.html#a3d3044dd871a9c7d630dbcf3d9b738bea10c41ff35f9fdccba1a3c3176661372c", null ],
       [ "ta_c_rit_language_cardholder", "receipt__item__type_8h.html#a3d3044dd871a9c7d630dbcf3d9b738bea45893d5fcf77eb2f5be53cc2de698913", null ],
-      [ "ta_c_rit_language_merchant", "receipt__item__type_8h.html#a3d3044dd871a9c7d630dbcf3d9b738bead2e3bbc48243100cb72d77bd7d9972b5", null ]
+      [ "ta_c_rit_language_merchant", "receipt__item__type_8h.html#a3d3044dd871a9c7d630dbcf3d9b738bead2e3bbc48243100cb72d77bd7d9972b5", null ],
+      [ "ta_c_rit_account_number", "receipt__item__type_8h.html#a3d3044dd871a9c7d630dbcf3d9b738bea7761771b9346de1aa2289132121f05da", null ],
+      [ "ta_c_rit_account_number_masked", "receipt__item__type_8h.html#a3d3044dd871a9c7d630dbcf3d9b738bea34bf29e5a1fd94c329742664cdfff0a2", null ],
+      [ "ta_c_rit_card_seq_no", "receipt__item__type_8h.html#a3d3044dd871a9c7d630dbcf3d9b738beaa3b860416072b7a8c425d884b06aca5a", null ],
+      [ "ta_c_rit_cdgm", "receipt__item__type_8h.html#a3d3044dd871a9c7d630dbcf3d9b738bea1db2742783bf4d02fc97842d90e601e4", null ],
+      [ "ta_c_rit_emv_data", "receipt__item__type_8h.html#a3d3044dd871a9c7d630dbcf3d9b738bea82a03837d8b946f7dbfca1d44ff09226", null ],
+      [ "ta_c_rit_ep2trm_id", "receipt__item__type_8h.html#a3d3044dd871a9c7d630dbcf3d9b738bea334e59e2de3decc7aaddea1bc4e91465", null ],
+      [ "ta_c_rit_iban", "receipt__item__type_8h.html#a3d3044dd871a9c7d630dbcf3d9b738bea370ff616e45a530509e3c26734cf0880", null ],
+      [ "ta_c_rit_online", "receipt__item__type_8h.html#a3d3044dd871a9c7d630dbcf3d9b738bea5f51fab9a617037525f0aadb06038714", null ],
+      [ "ta_c_rit_short_bank_code", "receipt__item__type_8h.html#a3d3044dd871a9c7d630dbcf3d9b738bea31f9498fb427a54d5be425713ef44770", null ],
+      [ "ta_c_rit_short_bank_code_masked", "receipt__item__type_8h.html#a3d3044dd871a9c7d630dbcf3d9b738beaaf79be8f746ff0f8819fcec7783fca7d", null ],
+      [ "ta_c_rit_trace_number", "receipt__item__type_8h.html#a3d3044dd871a9c7d630dbcf3d9b738beaf980e88c4d6d83926a93634370bd1974", null ]
     ] ]
 ];
