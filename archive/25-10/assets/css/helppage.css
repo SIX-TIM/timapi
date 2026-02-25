@@ -1,0 +1,594 @@
+/* -------------------------------------------------------------------------------------------------
+ * General
+ */
+
+ @font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Roboto Regular'), local('Roboto-Regular'), url(../fonts/Roboto-Regular.woff2) format('woff2'), url(https://fonts.gstatic.com/s/roboto/v15/CWB0XYA8bzo0kSThX0UTuA.woff2) format('woff2');
+}
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Roboto Bold'), local('Roboto-Bold'), url(../fonts/Roboto-Bold.woff2) format('woff2'), url(https://fonts.gstatic.com/s/roboto/v15/d-6IYplOFocCacKzxwXSOFtXRa8TVwTICgirnJhmVJw.woff2) format('woff2');
+}
+.guide {
+    --main-color: rgb(222, 58, 25);
+}
+
+.simple {
+   --main-color: rgb(94, 158, 94);
+}
+
+.appendix {
+    --main-color: #337ab7;
+ }
+ 
+.text-primary {
+    color: rgb(222, 58, 25); /* only for IE, since it doesn't support var() */ 
+    color: var(--main-color);
+}
+.text-mandatory {
+    color: #d46900;
+    font-weight: 600;
+}
+.text-recommended {
+    color: #6EC7D7;
+    font-weight: 600;
+}
+
+
+h1, h2, h3, h4, h5, p {
+    padding: 0;
+}
+h1, h2, h3, h4, h5, p, td, li, a {
+    font-family: "Roboto","Helvetica","Arial",sans-serif;
+}
+.h1, .h2, .h3, h1, h2, h3 {
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+blockquote {
+    background-color: #f5f5f5;
+    font-size: 1em;
+}
+section p, section li, section td {
+    line-height: 1.75em;
+    color: #4e4e4e;
+}
+section img {
+    max-width: 100%;
+}
+section li {
+    margin: 0 0 0.4em;
+}
+section li li {
+    margin: 0 0 0.2em;
+}
+h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
+    font-size: 0.6em;
+    font-weight: 400;
+    letter-spacing: -0.02em;
+    line-height: 1.35;
+    opacity: 0.54;
+}
+ h1 {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32px;
+}
+ h2 {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 26px;
+}
+ h3 {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
+}
+ h4,  h5 {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18px;
+    text-transform: uppercase;
+}
+ h4 {
+    color: #4e4e4e;
+}
+ h5 {
+    color: #939da3;
+}
+
+
+/* -------------------------------------------------------------------------------------------------
+ * Left navigation panel
+ */
+
+.nav > li > a {
+    padding: 5px;
+    color: black;
+}
+
+.container-fluid {
+    margin-top: 0px;
+}
+
+#navbar {
+    background-color: white;
+    padding-left: 15px;
+}
+
+#navScrollspy .affix {
+	width: 250px;
+    height: 100vh;
+    overflow-y: auto;
+	z-index: 100;
+	top: 0;
+}
+
+#navScrollspy .affix > ul {
+    margin-bottom: 75px;
+}
+
+#navScrollspy ul li ul {
+    display: none;
+    margin-left: 1em;
+    font-size: 0.85em;
+}
+
+#navScrollspy ul li.active > a {
+    color: rgb(222, 58, 25); /* only for IE, since it doesn't support var() */ 
+    color: var(--main-color);
+}
+
+#navScrollspy ul li.active ul {
+    display: table;
+}
+
+/* seperator between nav-bar and main content */
+#vSep {
+    position:fixed;
+    width: 15px;
+    height: 1440px;
+    left: 250px;
+    top: 0px;
+    background-color: rgb(225, 225, 225);
+}
+
+/* seperator inside nav-bar */
+.seperator {
+    margin-top: 60px;
+    height: 15px;
+    width: 125px;
+    margin-left: 110px;
+    background-color: rgb(225, 225, 225);
+}
+
+#docTitle
+{
+    font-family: Roboto, Arial,sans-serif;
+	margin-top: 20px;
+	margin-left:4px;
+	margin-bottom: 4px;
+	font-weight: bold;
+	font-size: 16px;
+}
+
+
+.linkDiv a {
+    color: rgb(222, 58, 25); /* only for IE, since it doesn't support var() */ 
+    color: var(--main-color);
+}
+
+.linkDiv {
+    margin-top: 20px;
+    margin-left: 5px;
+    color: rgb(222, 58, 25); /* only for IE, since it doesn't support var() */ 
+    color: var(--main-color);
+}
+
+
+/* -------------------------------------------------------------------------------------------------
+ * SDK / API info
+ */
+
+ #projectname
+{
+	font-family: Roboto,sans-serif;
+	margin-top: 15px;
+	margin-left:7px;
+	margin-bottom: -1px;
+	color: rgb(70, 70, 70);
+	font-weight: bold;
+	font-size: 24px;
+}
+
+#sdknum
+{
+    font-family: Roboto, sans-serif;
+    color: rgb(222, 58, 25); /* only for IE, since it doesn't support var() */ 
+	color: var(--main-color);
+	font-weight: 100;
+	font-size: 16px;
+	margin-left: 4px;
+}
+
+#projectbrief
+{
+	font-family: Roboto, Arial,sans-serif;
+	margin-left:7px;
+	margin-bottom: 20px;
+	color: rgb(104, 104, 104);
+	font-weight: bold;
+	font-size: 18px;
+}
+
+#timnum
+{
+    font-family: Roboto, sans-serif;
+    color: rgb(222, 58, 25); /* only for IE, since it doesn't support var() */ 
+	color: var(--main-color);
+	font-weight: 100;
+	font-size: 15px;
+	margin-left: 5px;
+}
+
+#projectnumber
+{
+	font-family: 50% Roboto, Arial,sans-serif;
+	margin: 0px;
+	padding: 0px;
+}
+
+
+/* -------------------------------------------------------------------------------------------------
+ * Language selection
+ */
+
+#langSel {
+    width: 117px;
+    height: 125px;
+    margin-left: 0px;
+    background-color: rgb(225, 225, 225);
+    text-align: left;
+    padding: 10px;
+    z-index: 15;
+}
+
+.langList {
+    list-style-type: none;
+    padding-left: 10px;
+    font-size: 110%;
+}
+
+.langList a {
+    color: rgb(222, 58, 25); /* only for IE, since it doesn't support var() */ 
+    color: var(--main-color);
+}
+
+
+/* -------------------------------------------------------------------------------------------------
+ * Guide selection
+ */
+
+ #guideDiv {
+    width: 118px;
+    height: 15px;
+    margin-top: -125px;
+    margin-left: 117px;
+    margin-bottom: 0px;
+    background-color: rgb(245, 245, 245);
+    padding: 0px;
+    position:relative;
+    display: none;
+    font-size: 80%;
+}
+
+#guideTitle:hover {
+    background-color: rgb(245, 245, 245);
+}
+
+#guideTitle {
+    width: 118px;
+    height: 35px;
+    padding: 10px;
+    text-align: left;
+    font-size: 105%;
+    font-weight: bold;
+    color: rgb(104, 104, 104);
+    cursor: pointer;
+    background-color: rgb(235, 235, 235);
+}
+
+#guideSel {
+    width: 118px;
+    height: auto;
+    padding: 7px 7px 0px 7px;
+}
+
+.showGuideSel {
+    animation: grow 0.5s ease-in 1 forwards;
+}
+
+.hideGuideSel {
+    animation: shrink 0.5s ease-out 1 forwards;
+}
+
+.btnGuide {
+    width: 104px;
+    border: none;
+    height: 22px;
+    margin-bottom: 7px;
+    text-align: left;
+    background-color: rgb(188, 221, 188);
+    background-color: rgb(220, 220, 220);
+}
+
+#closeGuideSel.close_icon {
+    transform: rotate(0deg);
+}
+
+#closeGuideSel.plus_icon {
+    transform: rotate(45deg);
+}
+
+#closeGuideSel {
+    margin-left: 80px;
+    margin-top: -15px;
+}
+
+.x_icon {
+    height: 16px;
+    width: 16px;
+    background-size: 75%;
+    background-repeat: no-repeat;
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAAsTAAALEwEAmpwYAAABWWlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iWE1QIENvcmUgNS40LjAiPgogICA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPgogICAgICA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIgogICAgICAgICAgICB4bWxuczp0aWZmPSJodHRwOi8vbnMuYWRvYmUuY29tL3RpZmYvMS4wLyI+CiAgICAgICAgIDx0aWZmOk9yaWVudGF0aW9uPjE8L3RpZmY6T3JpZW50YXRpb24+CiAgICAgIDwvcmRmOkRlc2NyaXB0aW9uPgogICA8L3JkZjpSREY+CjwveDp4bXBtZXRhPgpMwidZAAACJklEQVQ4EU2TS0tUYRjH55wxlQrJggyE0k8QraSt2EYaYxhGCYN2w1yFWediPkNzZVZRtHEW6ow7tV1Sq/AbCOIQgSTeSz1vv//reScP/Hlu/+c5z+WcSIQnmUxGJW88HrrQe0qlkt8zUHo5BPoUyOVyD8BH8EJ26LeFHCeTyUxls9lPxWLxvjgqYt9CYNj3/Q/GmBn8P5Hxer3+LZVK3RKx2WxeUHgC/wrmI9BBfwvnt32753nvw+RTESi2QsKrarX6HVvdTSBWwQgQJ0ZOGfnGFkBZwvGSIvdEQIrYpjM7DnYb+yGcE/Q7yAOwhM8uSmOYfD4/SXAZDGH/AQNgD+IVvsfo52AQHOGL090mumc3q2VUKpUvQRAkCJ4QULKKjIbJ0gcVAwkluyuogGm1WoE2zVI2sKfBL6AiFyT8DXX5pkleF1c52Mbd1mA4fZ+kS+wI0qMD9z1c4dqXv9vt2rGlS/E4V59OlU6nn3GBDr5RvZnkfkv6r+8xZqzRaPzQicm5tAUgmUKh8JRgWzO7ZOQhsQCfruMWuxuNRmPlcnmbUXzbHnd+DuEzxHGS7Kmwz7FjdIQwa9i6gL6B22AHzNdqtS0390KYfIjUnc8gzGqp2jh2MvQp+RiMgQVwvTjesgjhK8lDSHUwR/WOti1QRB3MAnVwF2wxxjuk/WlsFyxwjB9lHbyWP7yz3ZFmlY/YnDiM/ES283vuo3COm0HpPHZXUhzXyX8j3hgsDAePrwAAAABJRU5ErkJggg==');
+ }
+
+ 
+/* -------------------------------------------------------------------------------------------------
+ * Floating title
+ */
+
+#lblDiv {
+    margin-top: 13px;
+    margin-bottom: 13px;
+}
+
+#titleFloating
+{
+    font-family: Roboto, Arial,sans-serif;
+    font-weight: bold;
+    font-size: 150%;
+    color: #FFF;
+    
+    opacity: 0.7;
+    background-color: rgb(222, 58, 25); /* only for IE, since it doesn't support var() */ 
+    background-color: var(--main-color);
+
+    border-color: #FFF;
+    border-style: solid;
+    border-width: 0 0px 0px;
+    
+    position: fixed;
+    top: -100px;
+    left: 250px;
+    right: 0px;
+    z-index: 10;
+
+    padding: 110px 30px 15px 30px;
+    text-align: center;
+    vertical-align: middle;
+
+    box-shadow: 0px 0px 15px 15px rgba(219, 211, 199, 0.8);
+}
+
+#linkOtherGuide {
+    font-size: 75%;
+    text-decoration: underline;
+    color: white;
+    white-space: nowrap;
+    text-align: right;
+    float: right;
+    margin-top: -5px;
+    margin-bottom: -5px;
+}
+
+
+/* -------------------------------------------------------------------------------------------------
+ * Banners
+ */
+
+
+ #devBanner, #stageBanner, #archiveBanner
+ {
+     font-family: Roboto, Arial,sans-serif;
+
+     color: #fff;
+     font-weight: bold;
+     padding: 15px;
+     position: fixed;
+     z-index: 20;
+     text-align: center;
+     vertical-align: middle;
+     bottom: 80px;
+     right: -370px;
+     width: 1000px;
+     height: 65px;
+
+     opacity: 0.75;
+     -ms-transform: rotate(-45deg); /* IE 9 */
+     -webkit-transform: rotate(-45deg); /* Safari */
+     transform: rotate(-45deg);
+     display: none;
+ }
+
+ #devBanner
+ {
+    font-size: 170%;
+    background-color: #9b0bee;
+ }
+
+ #stageBanner
+ {
+     font-size: 170%;
+     background-color: #de3919;
+ }
+ 
+ #archiveBanner
+ {
+     font-size: 150%;
+     line-height: 100%;
+     background-color: #337ab7;
+ }
+ 
+ #currentLink
+ {
+     font-family: Roboto, Arial,sans-serif;
+     font-size: 85%;
+     color: #fff;
+ }
+ 
+
+/* -------------------------------------------------------------------------------------------------
+ * Main area
+ */
+
+main {
+    margin-left: 280px;
+    padding: 80px 10px 0px 0px;
+}
+
+/* main background, split white-brown */
+@media (min-width: 1312px) {
+    #content main {
+        background: linear-gradient(to right, #fff 0, #fff 50%, #B9B2A8 50%, #B9B2A8 100%);
+        min-height: 100vh;
+    }
+}
+
+
+/* -------------------------------------------------------------------------------------------------
+ * Content
+ */
+
+.syncMethod {
+    font-weight: bold;
+}
+
+.asyncMethod {
+    font-weight: 100;
+}
+
+.completedMethod {
+    font-style: italic;
+    font-weight: 100;
+}
+
+code {
+    color: rgb(222, 58, 25); /* only for IE, since it doesn't support var() */ 
+    color: var(--main-color);
+    background-color: rgb(245, 245, 245);
+}
+
+td {
+    word-break: break-word;
+}
+
+.table {
+    background-color: whitesmoke;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+svg {
+    background-color: whitesmoke;
+    border-radius: 6px;
+    display:block;
+    margin:auto;
+    border-style: solid;
+    border-width: 5px;
+    border-color: white;
+    border-radius: 15px;
+}
+
+img {
+    background-color: whitesmoke;
+    border-radius: 6px;
+}
+
+.anchor-link, .anchor-link:hover, .anchor-link:active {
+	top: -100px;
+	position: relative;
+    text-decoration: none;
+    color: rgba(255,255,255,0);
+    visibility: hidden;
+}
+.anchor-link span {
+    display: none;
+    color: #ccc;
+	position: relative;
+	top: 100px;
+	margin-left: 0.5em;
+}
+h1:hover .anchor-link span, h2:hover .anchor-link span {
+    display: inline-block;
+}
+
+figcaption {
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
+    padding: 10px;
+    font-style: italic;
+
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* -------------------------------------------------------------------------------------------------
+ * Animations
+ */
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 0.75s ease-in 1 forwards;
+}
+
+.fade-out {
+    opacity: 1;
+    animation: fadeOut 0.75s ease-out 1 forwards;
+}
+
+.vertical_header {
+    transform: rotate(-90deg);
+    transform-origin: center center 0;
+    font-weight: bold;
+}
