@@ -95,11 +95,11 @@ $(document).ready(function(){initNavTree('print__option_8h.html','');});
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:abba03644177c641a35199be5948d8af2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="result__code_8h.html#ae860ee870a289833a24a586ba0c24975">ta_e_result_code_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="print__option_8h.html#abba03644177c641a35199be5948d8af2">ta_print_option_create</a> (<a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a> *print_option, <a class="el" href="recipient_8h.html#a6fcefb70801410541ea0dafac2cb4b55">ta_e_recipient_t</a> recipient, <a class="el" href="print__format_8h.html#a454d38bfe7bcc6fd52187159701d0d02">ta_e_print_format_t</a> print_format, int print_width, int print_flags)</td></tr>
-<tr class="memdesc:abba03644177c641a35199be5948d8af2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create print option.  <a href="#abba03644177c641a35199be5948d8af2">More...</a><br /></td></tr>
-<tr class="separator:abba03644177c641a35199be5948d8af2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a31464ab60a62af590c16f902744be1a8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="result__code_8h.html#ae860ee870a289833a24a586ba0c24975">ta_e_result_code_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="print__option_8h.html#a31464ab60a62af590c16f902744be1a8">ta_print_option_create</a> (<a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a> *print_option, <a class="el" href="recipient_8h.html#a6fcefb70801410541ea0dafac2cb4b55">ta_e_recipient_t</a> recipient, <a class="el" href="print__format_8h.html#a454d38bfe7bcc6fd52187159701d0d02">ta_e_print_format_t</a> print_format, int print_width, int print_flags, <a class="el" href="boolean_8h.html#a5d3636b1f1f5de7550c138d0f81825bf">ta_e_boolean_t</a> receipt_suppression_flag)</td></tr>
+<tr class="memdesc:a31464ab60a62af590c16f902744be1a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create print option.  <a href="#a31464ab60a62af590c16f902744be1a8">More...</a><br /></td></tr>
+<tr class="separator:a31464ab60a62af590c16f902744be1a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af94f029ff8da641c4a351164e1c6e77e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="result__code_8h.html#ae860ee870a289833a24a586ba0c24975">ta_e_result_code_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="print__option_8h.html#af94f029ff8da641c4a351164e1c6e77e">ta_print_option_get_recipient</a> (<a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a> print_option, <a class="el" href="recipient_8h.html#a6fcefb70801410541ea0dafac2cb4b55">ta_e_recipient_t</a> *recipient)</td></tr>
-<tr class="memdesc:af94f029ff8da641c4a351164e1c6e77e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Target of the print option. Can be Merchant or Cardholder.  <a href="#af94f029ff8da641c4a351164e1c6e77e">More...</a><br /></td></tr>
+<tr class="memdesc:af94f029ff8da641c4a351164e1c6e77e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Target of the print option. Can be Merchant or Cardholder or Both.  <a href="#af94f029ff8da641c4a351164e1c6e77e">More...</a><br /></td></tr>
 <tr class="separator:af94f029ff8da641c4a351164e1c6e77e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad76cd850e28d98aac5b27ab449212905"><td class="memItemLeft" align="right" valign="top"><a class="el" href="result__code_8h.html#ae860ee870a289833a24a586ba0c24975">ta_e_result_code_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="print__option_8h.html#ad76cd850e28d98aac5b27ab449212905">ta_print_option_get_print_format</a> (<a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a> print_option, <a class="el" href="print__format_8h.html#a454d38bfe7bcc6fd52187159701d0d02">ta_e_print_format_t</a> *print_format)</td></tr>
 <tr class="memdesc:ad76cd850e28d98aac5b27ab449212905"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specifies the print format.  <a href="#ad76cd850e28d98aac5b27ab449212905">More...</a><br /></td></tr>
@@ -110,10 +110,13 @@ Functions</h2></td></tr>
 <tr class="memitem:a0f5239da0c49c7c7d5791f08bd60d8a8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="result__code_8h.html#ae860ee870a289833a24a586ba0c24975">ta_e_result_code_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="print__option_8h.html#a0f5239da0c49c7c7d5791f08bd60d8a8">ta_print_option_get_print_flags</a> (<a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a> print_option, int *print_flags)</td></tr>
 <tr class="memdesc:a0f5239da0c49c7c7d5791f08bd60d8a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Print flags as OR combined values from <em>ta_e_print_flag_t</em>.  <a href="#a0f5239da0c49c7c7d5791f08bd60d8a8">More...</a><br /></td></tr>
 <tr class="separator:a0f5239da0c49c7c7d5791f08bd60d8a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07ed13912bea3f39c763f90893b3f506"><td class="memItemLeft" align="right" valign="top"><a class="el" href="result__code_8h.html#ae860ee870a289833a24a586ba0c24975">ta_e_result_code_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="print__option_8h.html#a07ed13912bea3f39c763f90893b3f506">ta_print_option_get_receipt_suppression_flag</a> (<a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a> print_option, <a class="el" href="boolean_8h.html#a5d3636b1f1f5de7550c138d0f81825bf">ta_e_boolean_t</a> *receipt_suppression_flag)</td></tr>
+<tr class="memdesc:a07ed13912bea3f39c763f90893b3f506"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specifies the receipt suppression flag supported from the Ecr.  <a href="#a07ed13912bea3f39c763f90893b3f506">More...</a><br /></td></tr>
+<tr class="separator:a07ed13912bea3f39c763f90893b3f506"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="abba03644177c641a35199be5948d8af2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abba03644177c641a35199be5948d8af2">&#9670;&nbsp;</a></span>ta_print_option_create()</h2>
+<a id="a31464ab60a62af590c16f902744be1a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a31464ab60a62af590c16f902744be1a8">&#9670;&nbsp;</a></span>ta_print_option_create()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -146,7 +149,13 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>print_flags</em>&#160;</td>
+          <td class="paramname"><em>print_flags</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="boolean_8h.html#a5d3636b1f1f5de7550c138d0f81825bf">ta_e_boolean_t</a>&#160;</td>
+          <td class="paramname"><em>receipt_suppression_flag</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -163,7 +172,8 @@ Functions</h2></td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">recipient</td><td>Recipient. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">print_format</td><td>Print format. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">print_width</td><td>Print width in characters. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">print_flags</td><td>Print flags using OR combined values from <em>ta_e_print_flag_t</em>.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">print_flags</td><td>Print flags using OR combined values from <em>ta_e_print_flag_t</em>. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">receipt_suppression_flag</td><td>Receipt suppression flag supported from the Ecr.</td></tr>
   </table>
   </dd>
 </dl>
@@ -317,6 +327,52 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a07ed13912bea3f39c763f90893b3f506"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a07ed13912bea3f39c763f90893b3f506">&#9670;&nbsp;</a></span>ta_print_option_get_receipt_suppression_flag()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="result__code_8h.html#ae860ee870a289833a24a586ba0c24975">ta_e_result_code_t</a> ta_print_option_get_receipt_suppression_flag </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a>&#160;</td>
+          <td class="paramname"><em>print_option</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="boolean_8h.html#a5d3636b1f1f5de7550c138d0f81825bf">ta_e_boolean_t</a> *&#160;</td>
+          <td class="paramname"><em>receipt_suppression_flag</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Specifies the receipt suppression flag supported from the Ecr. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">print_option</td><td>Object instance of type <a class="el" href="print__option_8h.html">print_option</a>. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">receipt_suppression_flag</td><td>Pointer to variable to write value to.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">ta_c_rc_ok</td><td>Value written to <em>receipt_suppression_flag</em>. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>print_option</em> is <em>ta_object_invalid</em>. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>print_option</em> is not of type <a class="el" href="print__option_8h.html">print_option</a>. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>receipt_suppression_flag</em> is <em>null-pointer</em>. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="af94f029ff8da641c4a351164e1c6e77e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af94f029ff8da641c4a351164e1c6e77e">&#9670;&nbsp;</a></span>ta_print_option_get_recipient()</h2>
 
@@ -343,7 +399,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Target of the print option. Can be Merchant or Cardholder. </p>
+<p>Target of the print option. Can be Merchant or Cardholder or Both. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">print_option</td><td>Object instance of type <a class="el" href="print__option_8h.html">print_option</a>. </td></tr>

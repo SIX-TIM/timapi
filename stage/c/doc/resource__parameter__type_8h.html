@@ -122,7 +122,9 @@ Enumerations</h2></td></tr>
 &#160;&#160;<a class="el" href="resource__parameter__type_8h.html#a24c84814e0ce6a320ff3bd3826a297fba0fb2962e53991b9f0b9a0ab964e77317">ta_c_rpt_key_mode_f2</a> = 12, 
 <a class="el" href="resource__parameter__type_8h.html#a24c84814e0ce6a320ff3bd3826a297fba9b60ecc9dc494e7fed5ead022a439b5a">ta_c_rpt_key_mode_f3</a> = 13, 
 <a class="el" href="resource__parameter__type_8h.html#a24c84814e0ce6a320ff3bd3826a297fba18a59fd58ad83e29e5ee89ec446ee7b0">ta_c_rpt_pin_retry_counter</a> = 14, 
-<a class="el" href="resource__parameter__type_8h.html#a24c84814e0ce6a320ff3bd3826a297fba14acada9f526233ca9e693dc563d02c9">ta_c_rpt_aid</a> = 15
+<a class="el" href="resource__parameter__type_8h.html#a24c84814e0ce6a320ff3bd3826a297fba14acada9f526233ca9e693dc563d02c9">ta_c_rpt_aid</a> = 15, 
+<br />
+&#160;&#160;<a class="el" href="resource__parameter__type_8h.html#a24c84814e0ce6a320ff3bd3826a297fbaa9faa6e274e31f573da8b7c15ff0221c">ta_c_rpt_button_mode</a> = 16
 <br />
  }</td></tr>
 <tr class="separator:a24c84814e0ce6a320ff3bd3826a297fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -319,6 +321,21 @@ Bit 8: RFU </li>
 <p>Specification: petrol.</p>
 </td></tr>
 <tr><td class="fieldname"><a id="a24c84814e0ce6a320ff3bd3826a297fba14acada9f526233ca9e693dc563d02c9"></a>ta_c_rpt_aid&#160;</td><td class="fielddoc"><p>Application identifier of the card that is expected to be used with the corresponding dialog, e.g. for limiting that the terminal only is allowed to read one specific card with the given AID.</p>
+<p>Specification: petrol.</p>
+</td></tr>
+<tr><td class="fieldname"><a id="a24c84814e0ce6a320ff3bd3826a297fbaa9faa6e274e31f573da8b7c15ff0221c"></a>ta_c_rpt_button_mode&#160;</td><td class="fielddoc"><p>String that controls the dialog button configuration to be displayed on the screen <em>ButtonMode</em> . </p><ul>
+<li>
+OK_STOP: Two buttons (OK / STOP) to display together with the dialog. </li>
+<li>
+OK_ONLY: OK button to be displayed together with the dialog. </li>
+<li>
+STOP_ONLY: STOP button to be displayed together with the dialog. </li>
+<li>
+YES_NO: Two buttons (YES / NO) to display together with the dialog. </li>
+<li>
+NONE: This is the default value, no buttons will be displayed with the dialog. </li>
+</ul>
+<p>This value is to be encoded as a string with only the allowed values described above.</p>
 <p>Specification: petrol.</p>
 </td></tr>
 </table>
