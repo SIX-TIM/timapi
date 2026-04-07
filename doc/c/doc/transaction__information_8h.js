@@ -10,6 +10,7 @@ var transaction__information_8h =
     [ "ta_transaction_information_get_cardholder_name", "transaction__information_8h.html#ab6251947120a4b1fc85f1b1247b84f36", null ],
     [ "ta_transaction_information_get_client_identifier", "transaction__information_8h.html#ab812a9f3d787d5c84579313cad21ecfe", null ],
     [ "ta_transaction_information_get_cvm", "transaction__information_8h.html#aa95eca6e1067b07b1d3abdf4582bb505", null ],
+    [ "ta_transaction_information_get_fallback_indicator", "transaction__information_8h.html#a17d9bf7f6a217fdc6fe0606f064f2379", null ],
     [ "ta_transaction_information_get_merchant_action", "transaction__information_8h.html#ac16195f79e5e5e3c551079014e8ad9b7", null ],
     [ "ta_transaction_information_get_ngv_used_flag", "transaction__information_8h.html#a4c494ca8e0c4e19e05be8d09c8e077e6", null ],
     [ "ta_transaction_information_get_omnichannel_payment_id", "transaction__information_8h.html#a4d0e99f0970c19995e7781bbaae31a9f", null ],

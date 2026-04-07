@@ -137,6 +137,8 @@ var resource__id_8h =
       [ "ta_c_rid_banking_remove_card", "resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9ab5f0ab1515a469e3e62bfffe0a3317f8", null ],
       [ "ta_c_rid_banking_welcome", "resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9ad30bbbc02e1f2997d19c5f4fc4b915c8", null ],
       [ "ta_c_rid_mdb_activate_payment", "resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9a04e21c1971996f549cb5f297be0992cb", null ],
+      [ "ta_c_rid_dynamic_screen", "resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9a4f17d6fcdaa6a8264aefe51eeeb12f8a", null ],
+      [ "ta_c_rid_qr_code", "resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9a4bba42adbae99f8b47ef9257143820d1", null ],
       [ "ta_c_rid_common_please_wait", "resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9af4e8bd1be5cea5e2945240f5d74de4ef", null ],
       [ "ta_c_rid_common_remove_card", "resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9a03fc4a4af9b03a8fdf3085d646df48fe", null ],
       [ "ta_c_rid_common_regular", "resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9a8072ba0f056e46e66a573418b2d3c080", null ],

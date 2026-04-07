@@ -101,8 +101,60 @@ Functions</h2></td></tr>
 <tr class="memitem:ad5585933c6a8cffb7c05e773c7d68c95"><td class="memItemLeft" align="right" valign="top"><a class="el" href="result__code_8h.html#ae860ee870a289833a24a586ba0c24975">ta_e_result_code_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="print__data_8h.html#ad5585933c6a8cffb7c05e773c7d68c95">ta_print_data_get_receipt_items</a> (<a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a> print_data, <a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a> *items)</td></tr>
 <tr class="memdesc:ad5585933c6a8cffb7c05e773c7d68c95"><td class="mdescLeft">&#160;</td><td class="mdescRight">Receipt items for the ECR to create receipts for printing.  <a href="#ad5585933c6a8cffb7c05e773c7d68c95">More...</a><br /></td></tr>
 <tr class="separator:ad5585933c6a8cffb7c05e773c7d68c95"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0dee7822ed9fe33d736845e58c0b9bce"><td class="memItemLeft" align="right" valign="top"><a class="el" href="result__code_8h.html#ae860ee870a289833a24a586ba0c24975">ta_e_result_code_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="print__data_8h.html#a0dee7822ed9fe33d736845e58c0b9bce">ta_print_data_get_receipt_merchant_suppression</a> (<a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a> print_data, <a class="el" href="boolean_8h.html#a5d3636b1f1f5de7550c138d0f81825bf">ta_e_boolean_t</a> *receipt_merchant_suppression)</td></tr>
+<tr class="memdesc:a0dee7822ed9fe33d736845e58c0b9bce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flag to suppress the printing of Merchant Receipts.  <a href="#a0dee7822ed9fe33d736845e58c0b9bce">More...</a><br /></td></tr>
+<tr class="separator:a0dee7822ed9fe33d736845e58c0b9bce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acdb209880dd59a057181d9d1da79c972"><td class="memItemLeft" align="right" valign="top"><a class="el" href="result__code_8h.html#ae860ee870a289833a24a586ba0c24975">ta_e_result_code_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="print__data_8h.html#acdb209880dd59a057181d9d1da79c972">ta_print_data_get_receipt_cardholder_suppression</a> (<a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a> print_data, <a class="el" href="boolean_8h.html#a5d3636b1f1f5de7550c138d0f81825bf">ta_e_boolean_t</a> *receipt_cardholder_suppression)</td></tr>
+<tr class="memdesc:acdb209880dd59a057181d9d1da79c972"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flag to suppress the printing of Cardholder Receipts.  <a href="#acdb209880dd59a057181d9d1da79c972">More...</a><br /></td></tr>
+<tr class="separator:acdb209880dd59a057181d9d1da79c972"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="acdb209880dd59a057181d9d1da79c972"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acdb209880dd59a057181d9d1da79c972">&#9670;&nbsp;</a></span>ta_print_data_get_receipt_cardholder_suppression()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="result__code_8h.html#ae860ee870a289833a24a586ba0c24975">ta_e_result_code_t</a> ta_print_data_get_receipt_cardholder_suppression </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a>&#160;</td>
+          <td class="paramname"><em>print_data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="boolean_8h.html#a5d3636b1f1f5de7550c138d0f81825bf">ta_e_boolean_t</a> *&#160;</td>
+          <td class="paramname"><em>receipt_cardholder_suppression</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Flag to suppress the printing of Cardholder Receipts. </p>
+<p>true: ECR shall NOT print Cardholder Receipt false: ECR shall print Cardholder Receipt</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">print_data</td><td>Object instance of type <a class="el" href="print__data_8h.html">print_data</a>. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">receipt_cardholder_suppression</td><td>Pointer to variable to write value to.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">ta_c_rc_ok</td><td>Value written to <em>receipt_cardholder_suppression</em>. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>print_data</em> is <em>ta_object_invalid</em>. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>print_data</em> is not of type <a class="el" href="print__data_8h.html">print_data</a>. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="ad5585933c6a8cffb7c05e773c7d68c95"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad5585933c6a8cffb7c05e773c7d68c95">&#9670;&nbsp;</a></span>ta_print_data_get_receipt_items()</h2>
 
@@ -144,6 +196,52 @@ Functions</h2></td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>print_data</em> is <em>ta_object_invalid</em>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>print_data</em> is not of type <a class="el" href="print__data_8h.html">print_data</a>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>items</em> is <em>null-pointer</em>. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a0dee7822ed9fe33d736845e58c0b9bce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0dee7822ed9fe33d736845e58c0b9bce">&#9670;&nbsp;</a></span>ta_print_data_get_receipt_merchant_suppression()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="result__code_8h.html#ae860ee870a289833a24a586ba0c24975">ta_e_result_code_t</a> ta_print_data_get_receipt_merchant_suppression </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a>&#160;</td>
+          <td class="paramname"><em>print_data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="boolean_8h.html#a5d3636b1f1f5de7550c138d0f81825bf">ta_e_boolean_t</a> *&#160;</td>
+          <td class="paramname"><em>receipt_merchant_suppression</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Flag to suppress the printing of Merchant Receipts. </p>
+<p>true: ECR shall NOT print Merchant Receipt false: ECR shall print Merchant Receipt</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">print_data</td><td>Object instance of type <a class="el" href="print__data_8h.html">print_data</a>. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">receipt_merchant_suppression</td><td>Pointer to variable to write value to.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">ta_c_rc_ok</td><td>Value written to <em>receipt_merchant_suppression</em>. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>print_data</em> is <em>ta_object_invalid</em>. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>print_data</em> is not of type <a class="el" href="print__data_8h.html">print_data</a>. </td></tr>
   </table>
   </dd>
 </dl>

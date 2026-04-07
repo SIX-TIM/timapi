@@ -163,6 +163,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a158ea9af4261e318893580556338dc3a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="result__code_8h.html#ae860ee870a289833a24a586ba0c24975">ta_e_result_code_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="transaction__information_8h.html#a158ea9af4261e318893580556338dc3a">ta_transaction_information_get_own_risk_2_outcome</a> (<a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a> trx_info, <a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a> *own_risk_2_outcome)</td></tr>
 <tr class="memdesc:a158ea9af4261e318893580556338dc3a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the OwnRisk2 outcome, which indicates if the requested Purchase has been treated by the terminal as a Purchase or PurchaseForcedAcceptance.  <a href="#a158ea9af4261e318893580556338dc3a">More...</a><br /></td></tr>
 <tr class="separator:a158ea9af4261e318893580556338dc3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17d9bf7f6a217fdc6fe0606f064f2379"><td class="memItemLeft" align="right" valign="top"><a class="el" href="result__code_8h.html#ae860ee870a289833a24a586ba0c24975">ta_e_result_code_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="transaction__information_8h.html#a17d9bf7f6a217fdc6fe0606f064f2379">ta_transaction_information_get_fallback_indicator</a> (<a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a> trx_info, <a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a> *fallback_indicator)</td></tr>
+<tr class="memdesc:a17d9bf7f6a217fdc6fe0606f064f2379"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get Fallback Indicator.  <a href="#a17d9bf7f6a217fdc6fe0606f064f2379">More...</a><br /></td></tr>
+<tr class="separator:a17d9bf7f6a217fdc6fe0606f064f2379"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="a792464715f1ececa80ce28923c3fc0b2"></a>
@@ -763,6 +766,53 @@ Functions</h2></td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>trx_info</em> is <em>ta_object_invalid</em>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>trx_info</em> is not of type <a class="el" href="transaction__information_8h.html">transaction_information</a>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>cvm</em> is <em>null-pointer</em>. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a17d9bf7f6a217fdc6fe0606f064f2379"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a17d9bf7f6a217fdc6fe0606f064f2379">&#9670;&nbsp;</a></span>ta_transaction_information_get_fallback_indicator()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="result__code_8h.html#ae860ee870a289833a24a586ba0c24975">ta_e_result_code_t</a> ta_transaction_information_get_fallback_indicator </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a>&#160;</td>
+          <td class="paramname"><em>trx_info</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a> *&#160;</td>
+          <td class="paramname"><em>fallback_indicator</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get Fallback Indicator. </p>
+<p>Optional: Mandatory if available to terminal. Specifications: <em>retail</em>.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">trx_info</td><td>Object instance of type <a class="el" href="transaction__information_8h.html">transaction_information</a>. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">fallback_indicator</td><td>Pointer to variable to write object instance to. Object instance is of type <a class="el" href="string_8h.html">string</a> and is not retained. Object instance is <em>ta_object_invalid</em> if value is not set in <em>trx_info</em>.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">ta_c_rc_ok</td><td>Object instance written to <em>fallback_indicator</em>. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>trx_info</em> is <em>ta_object_invalid</em>. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>trx_info</em> is not of type <a class="el" href="transaction__information_8h.html">transaction_information</a>. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>fallback_indicator</em> is <em>null-pointer</em>. </td></tr>
   </table>
   </dd>
 </dl>
