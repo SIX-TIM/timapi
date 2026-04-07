@@ -1,0 +1,12752 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>TIM API JavaScript Documentation: Class: Terminal</title>
+
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <script src="sdk_version.js"></script><script src="../../assets/js/sdk_version.js"></script>
+    <script src="api_version.js"></script>
+    <script src="scripts/tim_inject.js"></script>
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+
+<body>
+
+<nav>
+    <div id="titlearea">
+        <div id="projectname">
+            TIM SDK <span id="sdknum"></span>
+        </div>
+        <div id="projectbrief">
+            TIM API JavaScript <span id="timnum"></span>
+        </div>
+    <a href="../guide.html" id="guidelink">Implementation Guide</a></td>
+    </div>
+    <div id="navtree">
+        <h3>Namespaces</h3><ul><li><a href="timapi.html">timapi</a></li><li><a href="timapi.constants.html">timapi.constants</a></li></ul><h3>Classes</h3><ul><li><a href="timapi.AccessibilityOption.html">timapi.AccessibilityOption</a></li><li><a href="timapi.AccessibilityOptionList.html">timapi.AccessibilityOptionList</a></li><li><a href="timapi.ActivateResponse.html">timapi.ActivateResponse</a></li><li><a href="timapi.Amount.html">timapi.Amount</a></li><li><a href="timapi.AmountDcc.html">timapi.AmountDcc</a></li><li><a href="timapi.AmountDiscount.html">timapi.AmountDiscount</a></li><li><a href="timapi.AmountFinal.html">timapi.AmountFinal</a></li><li><a href="timapi.Application.html">timapi.Application</a></li><li><a href="timapi.BalanceInquiryResponse.html">timapi.BalanceInquiryResponse</a></li><li><a href="timapi.BalanceResponse.html">timapi.BalanceResponse</a></li><li><a href="timapi.Basket.html">timapi.Basket</a></li><li><a href="timapi.BasketItem.html">timapi.BasketItem</a></li><li><a href="timapi.Brand.html">timapi.Brand</a></li><li><a href="timapi.CardData.html">timapi.CardData</a></li><li><a href="timapi.CardTrackData.html">timapi.CardTrackData</a></li><li><a href="timapi.ClientIdentificationResponse.html">timapi.ClientIdentificationResponse</a></li><li><a href="timapi.Color.html">timapi.Color</a></li><li><a href="timapi.CommandRequest.html">timapi.CommandRequest</a></li><li><a href="timapi.CommandResponse.html">timapi.CommandResponse</a></li><li><a href="timapi.ConfigData.html">timapi.ConfigData</a></li><li><a href="timapi.Counter.html">timapi.Counter</a></li><li><a href="timapi.Counters.html">timapi.Counters</a></li><li><a href="timapi.CurrencyItem.html">timapi.CurrencyItem</a></li><li><a href="timapi.CustomReceiptFormatter.html">timapi.CustomReceiptFormatter</a></li><li><a href="timapi.CustomReceiptFormatter.LineFormat.html">timapi.CustomReceiptFormatter.LineFormat</a></li><li><a href="timapi.CustomReceiptFormatter.TextElement.html">timapi.CustomReceiptFormatter.TextElement</a></li><li><a href="timapi.DeactivateResponse.html">timapi.DeactivateResponse</a></li><li><a href="timapi.DefaultReceiptFormatter.html">timapi.DefaultReceiptFormatter</a></li><li><a href="timapi.DefaultTerminalListener.html">timapi.DefaultTerminalListener</a></li><li><a href="timapi.DisplayProductInfo.html">timapi.DisplayProductInfo</a></li><li><a href="timapi.EcrInfo.html">timapi.EcrInfo</a></li><li><a href="timapi.Features.html">timapi.Features</a></li><li><a href="timapi.FeaturesHardware.html">timapi.FeaturesHardware</a></li><li><a href="timapi.FeaturesPayment.html">timapi.FeaturesPayment</a></li><li><a href="timapi.FeaturesPayment.AgeCheckSupport.html">timapi.FeaturesPayment.AgeCheckSupport</a></li><li><a href="timapi.FeaturesSixml.html">timapi.FeaturesSixml</a></li><li><a href="timapi.FeaturesSixml.Support.html">timapi.FeaturesSixml.Support</a></li><li><a href="timapi.Hardware.html">timapi.Hardware</a></li><li><a href="timapi.HardwareInformationResponse.html">timapi.HardwareInformationResponse</a></li><li><a href="timapi.InitTransactionResponse.html">timapi.InitTransactionResponse</a></li><li><a href="timapi.ItemQuantity.html">timapi.ItemQuantity</a></li><li><a href="timapi.LogRecord.html">timapi.LogRecord</a></li><li><a href="timapi.LogRecord.LogLevel.html">timapi.LogRecord.LogLevel</a></li><li><a href="timapi.LogRecordTrace.html">timapi.LogRecordTrace</a></li><li><a href="timapi.LoyaltyCoupon.html">timapi.LoyaltyCoupon</a></li><li><a href="timapi.LoyaltyDiscount.html">timapi.LoyaltyDiscount</a></li><li><a href="timapi.LoyaltyInformation.html">timapi.LoyaltyInformation</a></li><li><a href="timapi.LoyaltyItem.html">timapi.LoyaltyItem</a></li><li><a href="timapi.MerchantOption.html">timapi.MerchantOption</a></li><li><a href="timapi.MobileTopupData.html">timapi.MobileTopupData</a></li><li><a href="timapi.MobileTopupValue.html">timapi.MobileTopupValue</a></li><li><a href="timapi.NativeError.html">timapi.NativeError</a></li><li><a href="timapi.NetworkInformation.html">timapi.NetworkInformation</a></li><li><a href="timapi.PpInfo.html">timapi.PpInfo</a></li><li><a href="timapi.PrintData.html">timapi.PrintData</a></li><li><a href="timapi.PrintOption.html">timapi.PrintOption</a></li><li><a href="timapi.Receipt.html">timapi.Receipt</a></li><li><a href="timapi.ReceiptItem.html">timapi.ReceiptItem</a></li><li><a href="timapi.ReceiptItems.html">timapi.ReceiptItems</a></li><li><a href="timapi.ReceiptRequestResponse.html">timapi.ReceiptRequestResponse</a></li><li><a href="timapi.ReconciliationResponse.html">timapi.ReconciliationResponse</a></li><li><a href="timapi.ReconfigParameters.html">timapi.ReconfigParameters</a></li><li><a href="timapi.ScreenshotInformation.html">timapi.ScreenshotInformation</a></li><li><a href="timapi.ShowDialogRequest.html">timapi.ShowDialogRequest</a></li><li><a href="timapi.ShowDialogResponse.html">timapi.ShowDialogResponse</a></li><li><a href="timapi.ShowSignatureCaptureRequest.html">timapi.ShowSignatureCaptureRequest</a></li><li><a href="timapi.ShowSignatureCaptureResponse.html">timapi.ShowSignatureCaptureResponse</a></li><li><a href="timapi.SignatureInformation.html">timapi.SignatureInformation</a></li><li><a href="timapi.SubTransaction.html">timapi.SubTransaction</a></li><li><a href="timapi.SystemInformationResponse.html">timapi.SystemInformationResponse</a></li><li><a href="timapi.Terminal.html">timapi.Terminal</a></li><li><a href="timapi.TerminalSettings.html">timapi.TerminalSettings</a></li><li><a href="timapi.TerminalStatus.html">timapi.TerminalStatus</a></li><li><a href="timapi.ThirdPartyAppPayload.html">timapi.ThirdPartyAppPayload</a></li><li><a href="timapi.TimEvent.html">timapi.TimEvent</a></li><li><a href="timapi.TimException.html">timapi.TimException</a></li><li><a href="timapi.TimeDate.html">timapi.TimeDate</a></li><li><a href="timapi.Total.html">timapi.Total</a></li><li><a href="timapi.TransactionData.html">timapi.TransactionData</a></li><li><a href="timapi.TransactionInfoRequestResponse.html">timapi.TransactionInfoRequestResponse</a></li><li><a href="timapi.TransactionInformation.html">timapi.TransactionInformation</a></li><li><a href="timapi.TransactionRequest.html">timapi.TransactionRequest</a></li><li><a href="timapi.TransactionResponse.html">timapi.TransactionResponse</a></li><li><a href="timapi.TransactionResponse.Action.html">timapi.TransactionResponse.Action</a></li><li><a href="timapi.TrxDetail.html">timapi.TrxDetail</a></li><li><a href="timapi.VasCheckoutInformation.html">timapi.VasCheckoutInformation</a></li><li><a href="timapi.VasInformationList.html">timapi.VasInformationList</a></li><li><a href="timapi.VasResult.html">timapi.VasResult</a></li></ul><h3>Constants</h3><ul><li><a href="timapi.constants.AccessibilityOptionType.html">timapi.constants.AccessibilityOptionType</a></li><li><a href="timapi.constants.AccountType.html">timapi.constants.AccountType</a></li><li><a href="timapi.constants.AdditionalInfoItem.html">timapi.constants.AdditionalInfoItem</a></li><li><a href="timapi.constants.AdjustmentResult.html">timapi.constants.AdjustmentResult</a></li><li><a href="timapi.constants.AdminFunctions.html">timapi.constants.AdminFunctions</a></li><li><a href="timapi.constants.AgeCheckResult.html">timapi.constants.AgeCheckResult</a></li><li><a href="timapi.constants.AllowedAccounts.html">timapi.constants.AllowedAccounts</a></li><li><a href="timapi.constants.BrandBarBrand.html">timapi.constants.BrandBarBrand</a></li><li><a href="timapi.constants.BrandMode.html">timapi.constants.BrandMode</a></li><li><a href="timapi.constants.CardProductType.html">timapi.constants.CardProductType</a></li><li><a href="timapi.constants.CardReader.html">timapi.constants.CardReader</a></li><li><a href="timapi.constants.CardReaderStatus.html">timapi.constants.CardReaderStatus</a></li><li><a href="timapi.constants.ConnectionMode.html">timapi.constants.ConnectionMode</a></li><li><a href="timapi.constants.ConnectionStatus.html">timapi.constants.ConnectionStatus</a></li><li><a href="timapi.constants.CounterType.html">timapi.constants.CounterType</a></li><li><a href="timapi.constants.CouponRejectionReason.html">timapi.constants.CouponRejectionReason</a></li><li><a href="timapi.constants.Currency.html">timapi.constants.Currency</a></li><li><a href="timapi.constants.CurrencyType.html">timapi.constants.CurrencyType</a></li><li><a href="timapi.constants.CustomerDataType.html">timapi.constants.CustomerDataType</a></li><li><a href="timapi.constants.Cvm.html">timapi.constants.Cvm</a></li><li><a href="timapi.constants.DialogFunctions.html">timapi.constants.DialogFunctions</a></li><li><a href="timapi.constants.EcrInfoType.html">timapi.constants.EcrInfoType</a></li><li><a href="timapi.constants.FinancialTransactions.html">timapi.constants.FinancialTransactions</a></li><li><a href="timapi.constants.FunctionHint.html">timapi.constants.FunctionHint</a></li><li><a href="timapi.constants.Guides.html">timapi.constants.Guides</a></li><li><a href="timapi.constants.HardwareType.html">timapi.constants.HardwareType</a></li><li><a href="timapi.constants.ImageFileFormat.html">timapi.constants.ImageFileFormat</a></li><li><a href="timapi.constants.KernelType.html">timapi.constants.KernelType</a></li><li><a href="timapi.constants.LoyaltyFunctionType.html">timapi.constants.LoyaltyFunctionType</a></li><li><a href="timapi.constants.MaintenanceType.html">timapi.constants.MaintenanceType</a></li><li><a href="timapi.constants.ManagementStatus.html">timapi.constants.ManagementStatus</a></li><li><a href="timapi.constants.MerchantAction.html">timapi.constants.MerchantAction</a></li><li><a href="timapi.constants.MerchantOptionType.html">timapi.constants.MerchantOptionType</a></li><li><a href="timapi.constants.MobileTopupType.html">timapi.constants.MobileTopupType</a></li><li><a href="timapi.constants.NgvMode.html">timapi.constants.NgvMode</a></li><li><a href="timapi.constants.NonFinancialTransactions.html">timapi.constants.NonFinancialTransactions</a></li><li><a href="timapi.constants.Outcome.html">timapi.constants.Outcome</a></li><li><a href="timapi.constants.PaymentProtocol.html">timapi.constants.PaymentProtocol</a></li><li><a href="timapi.constants.PosEntryMode.html">timapi.constants.PosEntryMode</a></li><li><a href="timapi.constants.PrintFlag.html">timapi.constants.PrintFlag</a></li><li><a href="timapi.constants.PrintFormat.html">timapi.constants.PrintFormat</a></li><li><a href="timapi.constants.ProcessingDisposition.html">timapi.constants.ProcessingDisposition</a></li><li><a href="timapi.constants.ProtocolLevel.html">timapi.constants.ProtocolLevel</a></li><li><a href="timapi.constants.ProtocolType.html">timapi.constants.ProtocolType</a></li><li><a href="timapi.constants.Reason.html">timapi.constants.Reason</a></li><li><a href="timapi.constants.ReceiptItemType.html">timapi.constants.ReceiptItemType</a></li><li><a href="timapi.constants.ReceiptRequestType.html">timapi.constants.ReceiptRequestType</a></li><li><a href="timapi.constants.ReceiptType.html">timapi.constants.ReceiptType</a></li><li><a href="timapi.constants.Recipient.html">timapi.constants.Recipient</a></li><li><a href="timapi.constants.ReconfigMode.html">timapi.constants.ReconfigMode</a></li><li><a href="timapi.constants.RemoteFunctions.html">timapi.constants.RemoteFunctions</a></li><li><a href="timapi.constants.RequestType.html">timapi.constants.RequestType</a></li><li><a href="timapi.constants.ResourceId.html">timapi.constants.ResourceId</a></li><li><a href="timapi.constants.ResourceParameterType.html">timapi.constants.ResourceParameterType</a></li><li><a href="timapi.constants.ResponseType.html">timapi.constants.ResponseType</a></li><li><a href="timapi.constants.ResultCode.html">timapi.constants.ResultCode</a></li><li><a href="timapi.constants.SecurityStatus.html">timapi.constants.SecurityStatus</a></li><li><a href="timapi.constants.SettingType.html">timapi.constants.SettingType</a></li><li><a href="timapi.constants.SleepModeStatus.html">timapi.constants.SleepModeStatus</a></li><li><a href="timapi.constants.StatusFunctions.html">timapi.constants.StatusFunctions</a></li><li><a href="timapi.constants.Theme.html">timapi.constants.Theme</a></li><li><a href="timapi.constants.ThirdPartyAppId.html">timapi.constants.ThirdPartyAppId</a></li><li><a href="timapi.constants.ThirdPartyApps.html">timapi.constants.ThirdPartyApps</a></li><li><a href="timapi.constants.TokenPanType.html">timapi.constants.TokenPanType</a></li><li><a href="timapi.constants.TransactionReason.html">timapi.constants.TransactionReason</a></li><li><a href="timapi.constants.TransactionStatus.html">timapi.constants.TransactionStatus</a></li><li><a href="timapi.constants.TransactionType.html">timapi.constants.TransactionType</a></li><li><a href="timapi.constants.UpdateStatus.html">timapi.constants.UpdateStatus</a></li><li><a href="timapi.constants.VasInfoListType.html">timapi.constants.VasInfoListType</a></li><li><a href="timapi.constants.VasInfoType.html">timapi.constants.VasInfoType</a></li></ul>
+    </div>
+</nav>
+
+<div id="main">
+
+    <h1 class="page-title">Class: Terminal</h1>
+
+    
+
+
+
+
+<section>
+
+<header>
+    
+        <h2><span class="attribs"><span class="type-signature"></span></span>
+            <span class="ancestors"><a href="timapi.html">timapi</a>.</span>Terminal<span class="signature">(settings)</span><span class="type-signature"></span></h2>
+        
+            <div class="class-description">Terminal base implementation. Create instance of TerminalApi to connect to payment terminal.</div>
+        
+    
+</header>
+
+<article>
+    <div class="container-overview">
+    
+        
+        
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+    <h3 class="subsection-title">Overview</h3>
+
+    <!-- Overview of members -->
+    
+
+
+    <!-- Overview of methods -->
+    
+        <h4 class="subsection-title">Methods-Overview</h4>
+        <ul>
+            
+                <li><a href="timapi.Terminal.html#activateAsync">activateAsync</a><span class="signature">()</span><span class="type-signature"></span></li>
+            
+                <li><a href="timapi.Terminal.html#activateServiceMenuAsync">activateServiceMenuAsync</a><span class="signature">()</span><span class="type-signature"></span></li>
+            
+                <li><a href="timapi.Terminal.html#addEcrData">addEcrData</a><span class="signature">(ecrInfo)</span><span class="type-signature"></span></li>
+            
+                <li><a href="timapi.Terminal.html#addListener">addListener</a><span class="signature">()</span><span class="type-signature"></span></li>
+            
+                <li><a href="timapi.Terminal.html#ageCheckAsync">ageCheckAsync</a><span class="signature">(ageToCheck)</span><span class="type-signature"></span></li>
+            
+                <li><a href="timapi.Terminal.html#amtAdjustment">amtAdjustment</a><span class="signature">(amount)</span><span class="type-signature"></span></li>
+            
+                <li><a href="timapi.Terminal.html#amtAdjustmentVas">amtAdjustmentVas</a><span class="signature">(amount, amountDiscount, loyaltyCouponList, loyaltyInformationList)</span><span class="type-signature"></span></li>
+            
+                <li><a href="timapi.Terminal.html#applicationInformationAsync">applicationInformationAsync</a><span class="signature">()</span><span class="type-signature"></span></li>
+            
+                <li><a href="timapi.Terminal.html#balanceAsync">balanceAsync</a><span class="signature">()</span><span class="type-signature"></span></li>
+            
+                <li><a href="timapi.Terminal.html#balanceInquiryAsync">balanceInquiryAsync</a><span class="signature">()</span><span class="type-signature"></span></li>
+            
+                <li><a href="timapi.Terminal.html#canDcc">canDcc</a><span class="signature">()</span><span class="type-signature"> &rarr; {Boolean}</span></li>
+            
+                <li><a href="timapi.Terminal.html#canDeclinedReceipts">canDeclinedReceipts</a><span class="signature">()</span><span class="type-signature"> &rarr; {Boolean}</span></li>
+            
+                <li><a href="timapi.Terminal.html#canMultiAccountSelection">canMultiAccountSelection</a><span class="signature">()</span><span class="type-signature"> &rarr; {Boolean}</span></li>
+            
+                <li><a href="timapi.Terminal.html#cancel">cancel</a><span class="signature">()</span><span class="type-signature"></span></li>
+            
+                <li><a href="timapi.Terminal.html#cancelUnattended">cancelUnattended</a><span class="signature">(silent, retainCard)</span><span class="type-signature"></span></li>
+            
+                <li><a href="timapi.Terminal.html#changeLanguageForRequest">changeLanguageForRequest</a><span class="signature">(language)</span><span class="type-signature"></span></li>
+            
+                <li><a href="timapi.Terminal.html#changeSettingsAsync">changeSettingsAsync</a><span class="signature">(settings)</span><span class="type-signature"></span></li>
+            
+                <li><a href="timapi.Terminal.html#clientIdentificationAsync">clientIdentificationAsync</a><span class="signature">()</span><span class="type-signature"></span></li>
+            
+                <li><a href="timapi.Terminal.html#closeDialogModeAsync">closeDialogModeAsync</a><span class="signature">()</span><span class="type-signature"></span></li>
+            
+                <li><a href="timapi.Terminal.html#closeMaintenanceWindowAsync">closeMaintenanceWindowAsync</a><span class="signature">()</span><span class="type-signature"></span></li>
+            
+                <li><a href="timapi.Terminal.html#closeReaderAsync">closeReaderAsync</a><span class="signature">()</span><span class="type-signature"></span></li>
+            
+                <li><a href="timapi.Terminal.html#commitAmountAsync">commitAmountAsync</a><span class="signature">(amount)</span><span class="type-signature"></span></li>
+            
+                <li><a href="timapi.Terminal.html#commitAsync">commitAsync</a><span class="signature">()</span><span class="type-signature"></span></li>
+            
+                <li><a href="timapi.Terminal.html#connectAsync">connectAsync</a><span class="signature">()</span><span class="type-signature"></span></li>
+            
+                <li><a href="timapi.Terminal.html#counterRequestAsync">counterRequestAsync</a><span class="signature">(counterType)</span><span class="type-signature"></span></li>
+            
+                <li><a href="timapi.Terminal.html#dccRatesAsync">dccRatesAsync</a><span class="signature">()</span><span class="type-signature"></span></li>
+            
+                <li><a href="timapi.Terminal.html#deactivateAsync">deactivateAsync</a><span class="signature">()</span><span class="type-signature"></span></li>
+            
+                <li><a href="timapi.Terminal.html#deviceMaintenanceAsync">deviceMaintenanceAsync</a><span class="signature">(type)</span><span class="type-signature"></span></li>
+            
+                <li><a href="timapi.Terminal.html#disconnectAsync">disconnectAsync</a><span class="signature">()</span><span class="type-signature"></span></li>
+            
+                <li><a href="timapi.Terminal.html#dispose">dispose</a><span class="signature">()</span><span class="type-signature"></span></li>
+            
+                <li><a href="timapi.Terminal.html#ejectCardAsync">ejectCardAsync</a><span class="signature">()</span><span class="type-signature"></span></li>
+            
+                <li><a href="timapi.Terminal.html#finishCheckoutAsync">finishCheckoutAsync</a><span class="signature">()</span><span class="type-signature"></span></li>
+            
+                <li><a href="timapi.Terminal.html#getAccessibilityOptionList">getAccessibilityOptionList</a><span class="signature">()</span><span class="type-signature"> &rarr; {<a href="timapi.AccessibilityOptionList.html">timapi.AccessibilityOptionList</a>}</span></li>
+            
+                <li><a href="timapi.Terminal.html#getActSeqCounter">getActSeqCounter</a><span class="signature">()</span><span class="type-signature"> &rarr; {Number}</span></li>
+            
+                <li><a href="timapi.Terminal.html#getAllowedThirdPartyApps">getAllowedThirdPartyApps</a><span class="signature">()</span><span class="type-signature"> &rarr; {Set.&lt;<a href="timapi.constants.ThirdPartyApps.html">timapi.constants.ThirdPartyApps</a>>}</span></li>
+            
+                <li><a href="timapi.Terminal.html#getBrands">getBrands</a><span class="signature">()</span><span class="type-signature"> &rarr; {Array.&lt;<a href="timapi.Brand.html">timapi.Brand</a>>}</span></li>
+            
+                <li><a href="timapi.Terminal.html#getConfigData">getConfigData</a><span class="signature">()</span><span class="type-signature"> &rarr; {<a href="timapi.ConfigData.html">timapi.ConfigData</a>}</span></li>
+            
+                <li><a href="timapi.Terminal.html#getEcrData">getEcrData</a><span class="signature">()</span><span class="type-signature"> &rarr; {Array.&lt;<a href="timapi.EcrInfo.html">timapi.EcrInfo</a>>}</span></li>
+            
+                <li><a href="timapi.Terminal.html#getFeatures">getFeatures</a><span class="signature">()</span><span class="type-signature"> &rarr; {<a href="timapi.Features.html">timapi.Features</a>}</span></li>
+            
+                <li><a href="timapi.Terminal.html#getItemTextcode">getItemTextcode</a><span class="signature">(itemTextcode)</span><span class="type-signature"> &rarr; {<a href="timapi.constants.AdditionalInfoItem.html">timapi.constants.AdditionalInfoItem</a>}</span></li>
+            
+                <li><a href="timapi.Terminal.html#getItemTextcodeDescription">getItemTextcodeDescription</a><span class="signature">(item)</span><span class="type-signature"> &rarr; {String}</span></li>
+            
+                <li><a href="timapi.Terminal.html#getLicense">getLicense</a><span class="signature">()</span><span class="type-signature"> &rarr; {Uint8Array}</span></li>
+            
+                <li><a href="timapi.Terminal.html#getMerchantOptions">getMerchantOptions</a><span class="signature">()</span><span class="type-signature"> &rarr; {Array.&lt;<a href="timapi.MerchantOption.html">timapi.MerchantOption</a>>}</span></li>
+            
+                <li><a href="timapi.Terminal.html#getPosId">getPosId</a><span class="signature">()</span><span class="type-signature"> &rarr; {String}</span></li>
+            
+                <li><a href="timapi.Terminal.html#getPrintOptions">getPrintOptions</a><span class="signature">()</span><span class="type-signature"> &rarr; {Array.&lt;<a href="timapi.PrintOption.html">timapi.PrintOption</a>>}</span></li>
+            
+                <li><a href="timapi.Terminal.html#getSettings">getSettings</a><span class="signature">()</span><span class="type-signature"> &rarr; {<a href="timapi.TerminalSettings.html">timapi.TerminalSettings</a>}</span></li>
+            
+                <li><a href="timapi.Terminal.html#getTerminalId">getTerminalId</a><span class="signature">()</span><span class="type-signature"> &rarr; {String}</span></li>
+            
+                <li><a href="timapi.Terminal.html#getTerminalStatus">getTerminalStatus</a><span class="signature">()</span><span class="type-signature"></span></li>
+            
+                <li><a href="timapi.Terminal.html#getTransactionData">getTransactionData</a><span class="signature">()</span><span class="type-signature"> &rarr; {<a href="timapi.TransactionData.html">timapi.TransactionData</a>}</span></li>
+            
+                <li><a href="timapi.Terminal.html#getUserId">getUserId</a><span class="signature">()</span><span class="type-signature"> &rarr; {String}</span></li>
+            
+                <li><a href="timapi.Terminal.html#hardwareInformationAsync">hardwareInformationAsync</a><span class="signature">()</span><span class="type-signature"></span></li>
+            
+                <li><a href="timapi.Terminal.html#hasSwUpdate">hasSwUpdate</a><span class="signature">()</span><span class="type-signature"> &rarr; {Boolean}</span></li>
+            
+                <li><a href="timapi.Terminal.html#holdCommit">holdCommit</a><span class="signature">()</span><span class="type-signature"></span></li>
+            
+                <li><a href="timapi.Terminal.html#initTransactionAsync">initTransactionAsync</a><span class="signature">(displayAmount, amount, functionHint)</span><span class="type-signature"></span></li>
+            
+                <li><a href="timapi.Terminal.html#initTransactionWithAmountOtherAsync">initTransactionWithAmountOtherAsync</a><span class="signature">(displayAmount, amount, amountOther, functionHint)</span><span class="type-signature"></span></li>
+            
+                <li><a href="timapi.Terminal.html#initTransactionWithDialogAsync">initTransactionWithDialogAsync</a><span class="signature">(amount, functionHint, dialog)</span><span class="type-signature"></span></li>
+            
+                <li><a href="timapi.Terminal.html#initTransactionWithDialogWithAmountOtherAsync">initTransactionWithDialogWithAmountOtherAsync</a><span class="signature">(amount, amountOther, functionHint, dialog)</span><span class="type-signature"></span></li>
+            
+                <li><a href="timapi.Terminal.html#loginAsync">loginAsync</a><span class="signature">()</span><span class="type-signature"></span></li>
+            
+                <li><a href="timapi.Terminal.html#logoutAsync">logoutAsync</a><span class="signature">()</span><span class="type-signature"></span></li>
+            
+                <li><a href="timapi.Terminal.html#loyaltyDataAsync">loyaltyDataAsync</a><span class="signature">(functionType, dataType, data, retainCard)</span><span class="type-signature"></span></li>
+            
+                <li><a href="timapi.Terminal.html#mobileTopup2Async">mobileTopup2Async</a><span class="signature">(type, value)</span><span class="type-signature"></span></li>
+            
+                <li><a href="timapi.Terminal.html#mobileTopupAsync">mobileTopupAsync</a><span class="signature">(type, issuerName, amount)</span><span class="type-signature"></span></li>
+            
+                <li><a href="timapi.Terminal.html#mobileTopupIssuerInfoAsync">mobileTopupIssuerInfoAsync</a><span class="signature">()</span><span class="type-signature"></span></li>
+            
+                <li><a href="timapi.Terminal.html#openDialogModeAsync">openDialogModeAsync</a><span class="signature">(silent)</span><span class="type-signature"></span></li>
+            
+                <li><a href="timapi.Terminal.html#openMaintenanceWindowAsync">openMaintenanceWindowAsync</a><span class="signature">()</span><span class="type-signature"></span></li>
+            
+                <li><a href="timapi.Terminal.html#openReaderAsync">openReaderAsync</a><span class="signature">()</span><span class="type-signature"></span></li>
+            
+                <li><a href="timapi.Terminal.html#printOnTerminalAsync">printOnTerminalAsync</a><span class="signature">(ticketData)</span><span class="type-signature"></span></li>
+            
+                <li><a href="timapi.Terminal.html#provideLoyaltyBasketAsync">provideLoyaltyBasketAsync</a><span class="signature">(basket)</span><span class="type-signature"></span></li>
+            
+                <li><a href="timapi.Terminal.html#provideVasResultAsync">provideVasResultAsync</a><span class="signature">(basket)</span><span class="type-signature"></span></li>
+            
+                <li><a href="timapi.Terminal.html#rebootAsync">rebootAsync</a><span class="signature">()</span><span class="type-signature"></span></li>
+            
+                <li><a href="timapi.Terminal.html#receiptRequestAsync">receiptRequestAsync</a><span class="signature">(type)</span><span class="type-signature"></span></li>
+            
+                <li><a href="timapi.Terminal.html#reconciliationAsync">reconciliationAsync</a><span class="signature">()</span><span class="type-signature"></span></li>
+            
+                <li><a href="timapi.Terminal.html#reconfigAsync">reconfigAsync</a><span class="signature">()</span><span class="type-signature"></span></li>
+            
+                <li><a href="timapi.Terminal.html#reconfigWithParamsAsync">reconfigWithParamsAsync</a><span class="signature">(parameters)</span><span class="type-signature"></span></li>
+            
+                <li><a href="timapi.Terminal.html#removeListener">removeListener</a><span class="signature">()</span><span class="type-signature"></span></li>
+            
+                <li><a href="timapi.Terminal.html#rollbackAsync">rollbackAsync</a><span class="signature">()</span><span class="type-signature"></span></li>
+            
+                <li><a href="timapi.Terminal.html#screenshot">screenshot</a><span class="signature">()</span><span class="type-signature"></span></li>
+            
+                <li><a href="timapi.Terminal.html#sendCardCommandAsync">sendCardCommandAsync</a><span class="signature">(requests)</span><span class="type-signature"></span></li>
+            
+                <li><a href="timapi.Terminal.html#setAccessibilityOptionList">setAccessibilityOptionList</a><span class="signature">(accessibilityOptionList)</span><span class="type-signature"></span></li>
+            
+                <li><a href="timapi.Terminal.html#setAllowedThirdPartyApps">setAllowedThirdPartyApps</a><span class="signature">(allowedThirdPartyApps)</span><span class="type-signature"></span></li>
+            
+                <li><a href="timapi.Terminal.html#setCompactReceiptFormatter">setCompactReceiptFormatter</a><span class="signature">()</span><span class="type-signature"></span></li>
+            
+                <li><a href="timapi.Terminal.html#setCustomReceiptFormatter">setCustomReceiptFormatter</a><span class="signature">(customReceiptFormatter)</span><span class="type-signature"></span></li>
+            
+                <li><a href="timapi.Terminal.html#setEcrData">setEcrData</a><span class="signature">(ecrData)</span><span class="type-signature"></span></li>
+            
+                <li><a href="timapi.Terminal.html#setMerchantOptions">setMerchantOptions</a><span class="signature">(merchantOptions)</span><span class="type-signature"></span></li>
+            
+                <li><a href="timapi.Terminal.html#setNormalReceiptFormatter">setNormalReceiptFormatter</a><span class="signature">()</span><span class="type-signature"></span></li>
+            
+                <li><a href="timapi.Terminal.html#setPosId">setPosId</a><span class="signature">(posId)</span><span class="type-signature"></span></li>
+            
+                <li><a href="timapi.Terminal.html#setPrintOptions">setPrintOptions</a><span class="signature">(printOptions)</span><span class="type-signature"></span></li>
+            
+                <li><a href="timapi.Terminal.html#setReceiptFormatter">setReceiptFormatter</a><span class="signature">(formatter)</span><span class="type-signature"></span></li>
+            
+                <li><a href="timapi.Terminal.html#setSuperCompactReceiptFormatter">setSuperCompactReceiptFormatter</a><span class="signature">()</span><span class="type-signature"></span></li>
+            
+                <li><a href="timapi.Terminal.html#setTransactionData">setTransactionData</a><span class="signature">(ecrData)</span><span class="type-signature"></span></li>
+            
+                <li><a href="timapi.Terminal.html#setUltraCompactReceiptFormatter">setUltraCompactReceiptFormatter</a><span class="signature">()</span><span class="type-signature"></span></li>
+            
+                <li><a href="timapi.Terminal.html#setUserId">setUserId</a><span class="signature">(userId)</span><span class="type-signature"></span></li>
+            
+                <li><a href="timapi.Terminal.html#showDialogAsync">showDialogAsync</a><span class="signature">(request)</span><span class="type-signature"></span></li>
+            
+                <li><a href="timapi.Terminal.html#showSignatureCaptureAsync">showSignatureCaptureAsync</a><span class="signature">(request)</span><span class="type-signature"></span></li>
+            
+                <li><a href="timapi.Terminal.html#softwareUpdateAsync">softwareUpdateAsync</a><span class="signature">()</span><span class="type-signature"></span></li>
+            
+                <li><a href="timapi.Terminal.html#startCheckoutAsync">startCheckoutAsync</a><span class="signature">()</span><span class="type-signature"></span></li>
+            
+                <li><a href="timapi.Terminal.html#systemInformationAsync">systemInformationAsync</a><span class="signature">()</span><span class="type-signature"></span></li>
+            
+                <li><a href="timapi.Terminal.html#thirdPartyAppData">thirdPartyAppData</a><span class="signature">(data)</span><span class="type-signature"></span></li>
+            
+                <li><a href="timapi.Terminal.html#transactionAsync">transactionAsync</a><span class="signature">(type, amount)</span><span class="type-signature"></span></li>
+            
+                <li><a href="timapi.Terminal.html#transactionCashbackAsync">transactionCashbackAsync</a><span class="signature">(type, amount, amountCashback)</span><span class="type-signature"></span></li>
+            
+                <li><a href="timapi.Terminal.html#transactionInfoRequestAsync">transactionInfoRequestAsync</a><span class="signature">()</span><span class="type-signature"></span></li>
+            
+                <li><a href="timapi.Terminal.html#transactionTipAsync">transactionTipAsync</a><span class="signature">(type, amount, amountTip)</span><span class="type-signature"></span></li>
+            
+                <li><a href="timapi.Terminal.html#transactionWithRequestAsync">transactionWithRequestAsync</a><span class="signature">(type, request)</span><span class="type-signature"></span></li>
+            
+                <li><a href="timapi.Terminal.html#.convertSIXTransRefToLegacy">convertSIXTransRefToLegacy</a><span class="signature">(sixTransRef)</span><span class="type-signature"></span></li>
+            
+        </ul>
+        <dl class="details"></dl>
+    
+
+    
+    
+    
+
+    
+    <h2>Constructor</h2>
+    
+
+    
+    <h4 class="name" id="Terminal"><span class="type-signature"></span>new Terminal<span class="signature">(settings)</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Create terminal from <a href="timapi.TerminalSettings.html">timapi.TerminalSettings</a>
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>settings</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="timapi.TerminalSettings.html">timapi.TerminalSettings</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- List of members -->
+    
+
+
+    <!-- List of methods -->
+    
+        <h3 class="subsection-title">Methods</h3>
+
+        
+            <div class="method">
+                
+
+    
+
+    
+    <h4 class="name" id="activateAsync"><span class="type-signature"></span>activateAsync<span class="signature">()</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Opens a user shift. If the shift is already open, no error is returned.
+
+<p>Returns immediately and calls 
+<a href="timapi.DefaultTerminalListener.html#activateCompleted">activateCompleted</a> 
+on all notifiers once finished.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+        
+            <div class="method">
+                
+
+    
+
+    
+    <h4 class="name" id="activateServiceMenuAsync"><span class="type-signature"></span>activateServiceMenuAsync<span class="signature">()</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    <p>Activate service menu.</p>
+
+<p>Returns immediately and calls
+<a href="timapi.DefaultTerminalListener.html#activateServiceMenuCompleted">activateServiceMenuCompleted</a> 
+on all notifiers once finished.</p>
+
+<p><b>Note:</b> This method is only available if 
+<a href="timapi.constants.Guides.html#.unattended">guide unattended</a>
+is enabled.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+        
+            <div class="method">
+                
+
+    
+
+    
+    <h4 class="name" id="addEcrData"><span class="type-signature"></span>addEcrData<span class="signature">(ecrInfo)</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Add ECR data. Replaces ECR data of the same type, if already present.
+<p>To remove all elements use <a href="timapi.Terminal.html#setEcrData">setEcrData</a> instead.</p>
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>ecrInfo</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="timapi.EcrInfo.html">timapi.EcrInfo</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">ecr information to add</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+        
+            <div class="method">
+                
+
+    
+
+    
+    <h4 class="name" id="addListener"><span class="type-signature"></span>addListener<span class="signature">()</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Register listener.
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+<h5>Throws:</h5>
+<ul>
+        <li>
+
+    <div class="param-desc">
+    
+        IllegalArgumentException If listener is undefined.
+    
+    </div>
+
+</li>
+    
+        <li>
+
+    <div class="param-desc">
+    
+        IllegalArgumentException If listener is registered.
+    
+    </div>
+
+</li>
+    </ul>
+
+
+
+
+
+
+
+            </div>
+        
+            <div class="method">
+                
+
+    
+
+    
+    <h4 class="name" id="ageCheckAsync"><span class="type-signature"></span>ageCheckAsync<span class="signature">(ageToCheck)</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    This function is do age check verification.
+
+<p>Returns immediately and calls
+<a href="timapi.DefaultTerminalListener.html#ageCheckCompleted">ageCheckCompleted</a> 
+on all notifiers once finished.</p>
+
+<p><b>Note:</b> This method is only available if 
+<a href="timapi.constants.Guides.html#.valueAddedServices">guide valueAddedServices</a>
+is enabled.</p>
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>ageToCheck</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Age to check.</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+        
+            <div class="method">
+                
+
+    
+
+    
+    <h4 class="name" id="amtAdjustment"><span class="type-signature"></span>amtAdjustment<span class="signature">(amount)</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    <p>
+The <em>AmtAjustment</em>-function is used as a notification to dynamically adjust the
+transaction amount of an already running transaction. This is a "best effort" function and
+will be processed as long as the underlaying payment protocol supports it. The amount
+transmitted in the notification is the new total amount. The EFT does <strong>not</strong>
+calculate amounts, this is the ECRs responsibility.
+</p>
+
+<p>
+To be able to validate if this notification has been processed correctly the
+<a href="timapi.TerminalStatus.html">TerminalStatus</a>-notification returns the <a href="timapi.TerminalStatus.html#finalAmount">adjusted final amount</a>.
+</p>
+
+<p><b>Note:</b> This method is only available if
+<a href="timapi.constants.Guides.html#.unattended">guide unattended</a>
+is enabled.</p>
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>amount</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="timapi.Amount.html">timapi.Amount</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">New corrected amount</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+        
+            <div class="method">
+                
+
+    
+
+    
+    <h4 class="name" id="amtAdjustmentVas"><span class="type-signature"></span>amtAdjustmentVas<span class="signature">(amount, amountDiscount, loyaltyCouponList, loyaltyInformationList)</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Dynamically adjusts the transaction amount and also provide additional loyalty information 
+of an already running request. 
+
+This is a "best effort" function and will be processed as long as the underlying payment
+protocol supports it. The amount transmitted in the notification is the new total amount.
+The EFT does <em>not</em> calculate amounts, this is the ECRs responsibility.
+
+<p>
+To be able to validate if this notification has been processed correctly the
+<a href="timapi.TerminalStatus.html">TerminalStatus</a>-notification returns the <a href="timapi.TerminalStatus.html#finalAmount">adjusted final amount</a>.
+</p>
+
+<p><b>Note:</b> This method is only available if
+<a href="timapi.constants.Guides.html#.valueAddedServices">guide valueAddedServices</a>
+is enabled.</p>
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>amount</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="timapi.Amount.html">timapi.Amount</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">New corrected amount</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>amountDiscount</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="timapi.AmountDiscount.html">timapi.AmountDiscount</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">New discount amount</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>loyaltyCouponList</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Array.&lt;<a href="timapi.LoyaltyCoupon.html">timapi.LoyaltyCoupon</a>></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">List of loyalty coupons</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>loyaltyInformationList</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Array.&lt;<a href="timapi.LoyaltyInformation.html">timapi.LoyaltyInformation</a>></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">List of loyalty information</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+        
+            <div class="method">
+                
+
+    
+
+    
+    <h4 class="name" id="applicationInformationAsync"><span class="type-signature"></span>applicationInformationAsync<span class="signature">()</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    <p>Requests the list of brands available on the terminal.</p>
+
+<p>Returns immediately and calls
+<a href="timapi.DefaultTerminalListener.html#applicationInformationCompleted">applicationInformationCompleted</a> 
+on all notifiers once finished.</p>
+
+<p><b>Side-Effect:</b> Updates Brands member with all brands
+available on the terminal. Use <a href="timapi.Terminal.html#getBrands">getBrands</a> to
+retrieve them.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+        
+            <div class="method">
+                
+
+    
+
+    
+    <h4 class="name" id="balanceAsync"><span class="type-signature"></span>balanceAsync<span class="signature">()</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Forces the EFT Terminal to transmit all transactions to the host system as well
+to do the daily closing. 
+
+<p>Returns immediately and calls 
+<a href="timapi.DefaultTerminalListener.html#balanceCompleted">balanceCompleted</a> 
+on all notifiers once finished.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+        
+            <div class="method">
+                
+
+    
+
+    
+    <h4 class="name" id="balanceInquiryAsync"><span class="type-signature"></span>balanceInquiryAsync<span class="signature">()</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    <p>Get information about the current account balance of the inserted card.</p>
+
+<p>Returns immediately and calls
+<a href="timapi.DefaultTerminalListener.html#balanceInquiryCompleted">balanceInquiryCompleted</a> 
+on all notifiers once finished.</p>
+
+<p><b>Note:</b> This method is only available if
+guide advanced_retail is enabled.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+        
+            <div class="method">
+                
+
+    
+
+    
+    <h4 class="name" id="canDcc"><span class="type-signature"></span>canDcc<span class="signature">()</span><span class="type-signature"> &rarr; {Boolean}</span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Returns true if at least one payment protocol and the terminal configuration
+offer DCC i.e. if there is a chance to do a DCC transaction.
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    true if dcc is supported
+</div>
+
+
+
+<p> Type: 
+<span class="param-type">Boolean</span>
+
+</p>
+
+    
+
+
+
+
+
+            </div>
+        
+            <div class="method">
+                
+
+    
+
+    
+    <h4 class="name" id="canDeclinedReceipts"><span class="type-signature"></span>canDeclinedReceipts<span class="signature">()</span><span class="type-signature"> &rarr; {Boolean}</span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Support for "Declined Receipts" in at least one payment protocol.
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    true if declined receipts are supported
+</div>
+
+
+
+<p> Type: 
+<span class="param-type">Boolean</span>
+
+</p>
+
+    
+
+
+
+
+
+            </div>
+        
+            <div class="method">
+                
+
+    
+
+    
+    <h4 class="name" id="canMultiAccountSelection"><span class="type-signature"></span>canMultiAccountSelection<span class="signature">()</span><span class="type-signature"> &rarr; {Boolean}</span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Support for multiple account selection
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    true if multiple account selection is supported
+</div>
+
+
+
+<p> Type: 
+<span class="param-type">Boolean</span>
+
+</p>
+
+    
+
+
+
+
+
+            </div>
+        
+            <div class="method">
+                
+
+    
+
+    
+    <h4 class="name" id="cancel"><span class="type-signature"></span>cancel<span class="signature">()</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    <p>Aborts an open asynchronous Financial Transaction or Non-Financial Transaction
+request, except for a <a href="timapi.Terminal.html#commitAsync">commitAsync</a> or <a href="timapi.Terminal.html#rollbackAsync">rollbackAsync</a>
+request, which cannot be cancelled.</p>
+
+<p> Further information: A Cancel-request is a best effort request. The EFT
+Terminal can ignore the Cancel-request if the request in progress is in a state
+it can not be cancelled. A Cancel-request has no effect if there's no open
+request of a Financial Transaction or Non-financial Transaction. If the EFT
+Terminal cancels the request in progress an error response is send back for the
+cancelled request (see chapter Abort Purchase for an example). Cancel-requests
+can be send multiple times in an attempt to cancel a request in progress but
+should be spaced by a few seconds. Cancel-requests themselves are never
+acknowledged by the EFT Terminal.</p>
+
+<p>The Transaction request can only be cancelled before a Commit has been
+performed. Also the underlying payment protocol can restrict this functionality.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+        
+            <div class="method">
+                
+
+    
+
+    
+    <h4 class="name" id="cancelUnattended"><span class="type-signature"></span>cancelUnattended<span class="signature">(silent, retainCard)</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    <p>Aborts an open asynchronous Financial Transaction or Non-Financial Transaction
+request, except for a <a href="timapi.Terminal.html#commitAsync">commitAsync</a> or <a href="timapi.Terminal.html#rollbackAsync">rollbackAsync</a>
+request, which cannot be cancelled.</p>
+
+<p> Further information: A Cancel-request is a best effort request. The EFT
+Terminal can ignore the Cancel-request if the request in progress is in a state
+it can not be cancelled. A Cancel-request has no effect if there's no open
+request of a Financial Transaction or Non-financial Transaction. If the EFT
+Terminal cancels the request in progress an error response is send back for the
+cancelled request (see chapter Abort Purchase for an example). Cancel-requests
+can be send multiple times in an attempt to cancel a request in progress but
+should be spaced by a few seconds. Cancel-requests themselves are never
+acknowledged by the EFT Terminal.</p>
+
+<p>The Transaction request can only be cancelled before a Commit has been
+performed. Also the underlying payment protocol can restrict this functionality.</p>  
+
+<p><b>Note:</b> This method is only available if
+<a href="timapi.constants.Guides.html#.unattended">guide unattended</a> or
+<a href="timapi.constants.Guides.html#.petrol">guide petrol</a>
+is enabled.</p>
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>silent</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Boolean</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Will prevent the cancel from displaying any “abort”-messages to the cardholder</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>retainCard</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Boolean</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Will prevent the card from being ejected for later use by the Dialog Mode</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+        
+            <div class="method">
+                
+
+    
+
+    
+    <h4 class="name" id="changeLanguageForRequest"><span class="type-signature"></span>changeLanguageForRequest<span class="signature">(language)</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    The ChangeLanguage-notification changes the current cardholder language of the EFT.
+
+It is intended as a way of changing the cardholder language during transactions or dialog
+interactions, e.g. if a cardholder uses a language selection mechanism of a unattended device.
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>language</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Language to switch to. Language string is either two or five letter long.
+                         Two-Letter Format: The two letters are a ISO-639-1 language code. E.g. da, nl, ...
+                         Five-Letter Format: The five letters are a combination of a two letter language code,
+                         a dash, and a two letter uppercase country code as recommended
+                         by RFC 5646. E.g. de-CH, fr-BE.</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+        
+            <div class="method">
+                
+
+    
+
+    
+    <h4 class="name" id="changeSettingsAsync"><span class="type-signature"></span>changeSettingsAsync<span class="signature">(settings)</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Changes configuration parameters of the EFT Terminal.
+
+<p>Returns immediately and calls
+<a href="timapi.DefaultTerminalListener.html#changeSettingsCompleted">changeSettingsCompleted</a> 
+on all notifiers once finished.</p>
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>settings</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Map.&lt;<a href="timapi.constants.SettingType.html">timapi.constants.SettingType</a>, String></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Dictionary of values for settings types to change.</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+        
+            <div class="method">
+                
+
+    
+
+    
+    <h4 class="name" id="clientIdentificationAsync"><span class="type-signature"></span>clientIdentificationAsync<span class="signature">()</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Starts an EFT Client Identification.
+
+<p>Returns immediately and calls
+<a href="timapi.DefaultTerminalListener.html#clientIdentificationCompleted">clientIdentificationCompleted</a> 
+on all notifiers once finished.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+        
+            <div class="method">
+                
+
+    
+
+    
+    <h4 class="name" id="closeDialogModeAsync"><span class="type-signature"></span>closeDialogModeAsync<span class="signature">()</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    <p>Close dialog mode on the terminal.</p>
+
+<p>Returns immediately and calls
+<a href="timapi.DefaultTerminalListener.html#closeDialogModeCompleted">closeDialogModeCompleted</a> 
+on all notifiers once finished.</p>
+
+<p><b>Note:</b> This method is only available if 
+<a href="timapi.constants.Guides.html#.dialog">guide dialog</a>
+is enabled.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+        
+            <div class="method">
+                
+
+    
+
+    
+    <h4 class="name" id="closeMaintenanceWindowAsync"><span class="type-signature"></span>closeMaintenanceWindowAsync<span class="signature">()</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    <p>Closes the maintenance window to the terminal so it can perform collected maintenance
+requests on its own, without interaction with the ECR. The terminal shall respond
+immediately to the ECR request whether it is able to handle the request or not.</p>
+
+<p>If the terminal is able to handle the request, the ECR is free itself to perform
+maintenance as well or it can monitor the terminal by reading the
+<em>TerminalStatus</em> notifications.</p>
+
+<p>It is possible that the connection between ECR and EFT terminal is terminated due to
+one or multiple reboot processes.</p>
+
+<p>Returns immediately and calls
+<a href="timapi.DefaultTerminalListener.html#closeMaintenanceWindowCompleted">closeMaintenanceWindowCompleted</a> 
+on all notifiers once finished.</p>
+
+<p><b>Note:</b> This method is only available if 
+<a href="timapi.constants.Guides.html#.unattended">guide unattended</a>
+is enabled.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+        
+            <div class="method">
+                
+
+    
+
+    
+    <h4 class="name" id="closeReaderAsync"><span class="type-signature"></span>closeReaderAsync<span class="signature">()</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    <p>Close the shutter of the card reader.</p>
+
+<p>Returns immediately and calls
+<a href="timapi.DefaultTerminalListener.html#closeReaderCompleted">closeReaderCompleted</a> 
+on all notifiers once finished.</p>
+
+<p><b>Note:</b> This method is only available if 
+<a href="timapi.constants.Guides.html#.unattended">guide unattended</a>
+is enabled.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+        
+            <div class="method">
+                
+
+    
+
+    
+    <h4 class="name" id="commitAmountAsync"><span class="type-signature"></span>commitAmountAsync<span class="signature">(amount)</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Performs partial commit-operation after a successful Transaction call.
+
+<p>Returns immediately and calls 
+<a href="timapi.DefaultTerminalListener.html#commitCompleted">commitCompleted</a> 
+on all notifiers once finished.</p>
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>amount</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="timapi.Amount.html">timapi.Amount</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Amount to commit</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+        
+            <div class="method">
+                
+
+    
+
+    
+    <h4 class="name" id="commitAsync"><span class="type-signature"></span>commitAsync<span class="signature">()</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Performs Commit-operation after a successful Transaction call.
+
+<p>Returns immediately and calls 
+<a href="timapi.DefaultTerminalListener.html#commitCompleted">commitCompleted</a> 
+on all notifiers once finished.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+        
+            <div class="method">
+                
+
+    
+
+    
+    <h4 class="name" id="connectAsync"><span class="type-signature"></span>connectAsync<span class="signature">()</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Initiates a connection to the EFT Terminal. Calling <a href="timapi.Terminal.html#connectAsync"><code>connectAsync</code></a>
+is not needed normally, because all methods make first a connect, if not connected.
+
+<p>Returns immediately and calls 
+<a href="timapi.DefaultTerminalListener.html#connectCompleted">connectCompleted</a> 
+on all notifiers once finished.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+        
+            <div class="method">
+                
+
+    
+
+    
+    <h4 class="name" id="counterRequestAsync"><span class="type-signature"></span>counterRequestAsync<span class="signature">(counterType)</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Get counter information's from the EFT Terminal.
+
+<p>Returns immediately and calls
+<a href="timapi.DefaultTerminalListener.html#counterRequestCompleted">counterRequestCompleted</a> 
+on all notifiers once finished.</p>
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>counterType</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="timapi.constants.CounterType.html">timapi.constants.CounterType</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+        
+            <div class="method">
+                
+
+    
+
+    
+    <h4 class="name" id="dccRatesAsync"><span class="type-signature"></span>dccRatesAsync<span class="signature">()</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Requests DCC rates from the EFT Terminal. The DCC rates are returned as receipt.
+
+<p>Returns immediately and calls
+<a href="timapi.DefaultTerminalListener.html#dccRatesCompleted">dccRatesCompleted</a> 
+on all notifiers once finished.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+        
+            <div class="method">
+                
+
+    
+
+    
+    <h4 class="name" id="deactivateAsync"><span class="type-signature"></span>deactivateAsync<span class="signature">()</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Closes a user shift. If the shift is already closed, no error is returned.
+
+<p>Returns immediately and calls 
+<a href="timapi.DefaultTerminalListener.html#deactivateCompleted">deactivateCompleted</a> 
+on all notifiers once finished.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+        
+            <div class="method">
+                
+
+    
+
+    
+    <h4 class="name" id="deviceMaintenanceAsync"><span class="type-signature"></span>deviceMaintenanceAsync<span class="signature">(type)</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Perform device maintenance.
+
+<p>Returns immediately and calls
+<a href="timapi.DefaultTerminalListener.html#deviceMaintenanceCompleted">deviceMaintenanceCompleted</a> 
+on all notifiers once finished.</p>
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>type</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="timapi.constants.MaintenanceType.html">timapi.constants.MaintenanceType</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Type of maintenance to perform.</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+        
+            <div class="method">
+                
+
+    
+
+    
+    <h4 class="name" id="disconnectAsync"><span class="type-signature"></span>disconnectAsync<span class="signature">()</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Interrupts the connection to the EFT Terminal.
+
+<p>Returns immediately and calls 
+<a href="timapi.DefaultTerminalListener.html#disconnected">disconnected</a> 
+on all notifiers once disconnect happened.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+        
+            <div class="method">
+                
+
+    
+
+    
+    <h4 class="name" id="dispose"><span class="type-signature"></span>dispose<span class="signature">()</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Dispose of terminal.
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+        
+            <div class="method">
+                
+
+    
+
+    
+    <h4 class="name" id="ejectCardAsync"><span class="type-signature"></span>ejectCardAsync<span class="signature">()</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Eject a card from the card reader.
+
+<p>Returns immediately and calls
+<a href="timapi.DefaultTerminalListener.html#ejectCardCompleted">ejectCardCompleted</a> 
+on all notifiers once finished.</p>
+
+<p><b>Note:</b> This method is only available if 
+<a href="timapi.constants.Guides.html#.unattended">guide unattended</a>
+is enabled.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+        
+            <div class="method">
+                
+
+    
+
+    
+    <h4 class="name" id="finishCheckoutAsync"><span class="type-signature"></span>finishCheckoutAsync<span class="signature">()</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    This function is used to finish a previously started checkout process with
+StartCheckout and to retrieve consumer loyalty data from the terminal that
+has been collected during this checkout process.
+
+<p>Returns immediately and calls
+<a href="timapi.DefaultTerminalListener.html#finishCheckoutCompleted">finishCheckoutCompleted</a> 
+on all notifiers once finished.</p>
+
+<p><b>Note:</b> This method is only available if 
+<a href="timapi.constants.Guides.html#.valueAddedServices">guide valueAddedServices</a>
+is enabled.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+        
+            <div class="method">
+                
+
+    
+
+    
+    <h4 class="name" id="getAccessibilityOptionList"><span class="type-signature"></span>getAccessibilityOptionList<span class="signature">()</span><span class="type-signature"> &rarr; {<a href="timapi.AccessibilityOptionList.html">timapi.AccessibilityOptionList</a>}</span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Get Accessibility option list
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    Accessibility option list
+</div>
+
+
+
+<p> Type: 
+<span class="param-type"><a href="timapi.AccessibilityOptionList.html">timapi.AccessibilityOptionList</a></span>
+
+</p>
+
+    
+
+
+
+
+
+            </div>
+        
+            <div class="method">
+                
+
+    
+
+    
+    <h4 class="name" id="getActSeqCounter"><span class="type-signature"></span>getActSeqCounter<span class="signature">()</span><span class="type-signature"> &rarr; {Number}</span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Get activation sequence counter
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    activation sequence counter
+</div>
+
+
+
+<p> Type: 
+<span class="param-type">Number</span>
+
+</p>
+
+    
+
+
+
+
+
+            </div>
+        
+            <div class="method">
+                
+
+    
+
+    
+    <h4 class="name" id="getAllowedThirdPartyApps"><span class="type-signature"></span>getAllowedThirdPartyApps<span class="signature">()</span><span class="type-signature"> &rarr; {Set.&lt;<a href="timapi.constants.ThirdPartyApps.html">timapi.constants.ThirdPartyApps</a>>}</span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Get allowed third party apps.
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    allowedThirdPartyApps
+</div>
+
+
+
+<p> Type: 
+<span class="param-type">Set.&lt;<a href="timapi.constants.ThirdPartyApps.html">timapi.constants.ThirdPartyApps</a>></span>
+
+</p>
+
+    
+
+
+
+
+
+            </div>
+        
+            <div class="method">
+                
+
+    
+
+    
+    <h4 class="name" id="getBrands"><span class="type-signature"></span>getBrands<span class="signature">()</span><span class="type-signature"> &rarr; {Array.&lt;<a href="timapi.Brand.html">timapi.Brand</a>>}</span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Get brands 
+<p><b>Note:</b> This data is available after a login or application information request has been performed.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    brands or empty list if not retreived yet
+</div>
+
+
+
+<p> Type: 
+<span class="param-type">Array.&lt;<a href="timapi.Brand.html">timapi.Brand</a>></span>
+
+</p>
+
+    
+
+
+
+
+
+            </div>
+        
+            <div class="method">
+                
+
+    
+
+    
+    <h4 class="name" id="getConfigData"><span class="type-signature"></span>getConfigData<span class="signature">()</span><span class="type-signature"> &rarr; {<a href="timapi.ConfigData.html">timapi.ConfigData</a>}</span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Get configuration data 
+<p><b>Note:</b> This data is available after a system information request has been performed.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    configuration data or <em>undefined</em> if not retrieved yet
+</div>
+
+
+
+<p> Type: 
+<span class="param-type"><a href="timapi.ConfigData.html">timapi.ConfigData</a></span>
+
+</p>
+
+    
+
+
+
+
+
+            </div>
+        
+            <div class="method">
+                
+
+    
+
+    
+    <h4 class="name" id="getEcrData"><span class="type-signature"></span>getEcrData<span class="signature">()</span><span class="type-signature"> &rarr; {Array.&lt;<a href="timapi.EcrInfo.html">timapi.EcrInfo</a>>}</span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Get ecr Data
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    ecrData
+</div>
+
+
+
+<p> Type: 
+<span class="param-type">Array.&lt;<a href="timapi.EcrInfo.html">timapi.EcrInfo</a>></span>
+
+</p>
+
+    
+
+
+
+
+
+            </div>
+        
+            <div class="method">
+                
+
+    
+
+    
+    <h4 class="name" id="getFeatures"><span class="type-signature"></span>getFeatures<span class="signature">()</span><span class="type-signature"> &rarr; {<a href="timapi.Features.html">timapi.Features</a>}</span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Get features or <em>undefined</em> if not retrieved yet.
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    Retreived terminal-features, or undefined if not retreived yet
+</div>
+
+
+
+<p> Type: 
+<span class="param-type"><a href="timapi.Features.html">timapi.Features</a></span>
+
+</p>
+
+    
+
+
+
+
+
+            </div>
+        
+            <div class="method">
+                
+
+    
+
+    
+    <h4 class="name" id="getItemTextcode"><span class="type-signature"></span>getItemTextcode<span class="signature">(itemTextcode)</span><span class="type-signature"> &rarr; {<a href="timapi.constants.AdditionalInfoItem.html">timapi.constants.AdditionalInfoItem</a>}</span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Convert item text code to AdditionalInfoItem value.
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>itemTextcode</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Item text code to convert.</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    Matching AdditionalInfoItem enum or undefined
+</div>
+
+
+
+<p> Type: 
+<span class="param-type"><a href="timapi.constants.AdditionalInfoItem.html">timapi.constants.AdditionalInfoItem</a></span>
+
+</p>
+
+    
+
+
+
+
+
+            </div>
+        
+            <div class="method">
+                
+
+    
+
+    
+    <h4 class="name" id="getItemTextcodeDescription"><span class="type-signature"></span>getItemTextcodeDescription<span class="signature">(item)</span><span class="type-signature"> &rarr; {String}</span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Get text description of AdditionalInfoItem.
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>item</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="timapi.constants.AdditionalInfoItem.html">timapi.constants.AdditionalInfoItem</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Item to get description for.</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    Description of item.
+</div>
+
+
+
+<p> Type: 
+<span class="param-type">String</span>
+
+</p>
+
+    
+
+
+
+
+
+            </div>
+        
+            <div class="method">
+                
+
+    
+
+    
+    <h4 class="name" id="getLicense"><span class="type-signature"></span>getLicense<span class="signature">()</span><span class="type-signature"> &rarr; {Uint8Array}</span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Supported licensed features as 8 bytes hex encoded bitmap.
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        <dt class="important tag-deprecated">Deprecated:</dt><dd><ul class="dummy"><li>Functionality removed.</li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    License
+</div>
+
+
+
+<p> Type: 
+<span class="param-type">Uint8Array</span>
+
+</p>
+
+    
+
+
+
+
+
+            </div>
+        
+            <div class="method">
+                
+
+    
+
+    
+    <h4 class="name" id="getMerchantOptions"><span class="type-signature"></span>getMerchantOptions<span class="signature">()</span><span class="type-signature"> &rarr; {Array.&lt;<a href="timapi.MerchantOption.html">timapi.MerchantOption</a>>}</span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Get merchant options
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    Merchant options
+</div>
+
+
+
+<p> Type: 
+<span class="param-type">Array.&lt;<a href="timapi.MerchantOption.html">timapi.MerchantOption</a>></span>
+
+</p>
+
+    
+
+
+
+
+
+            </div>
+        
+            <div class="method">
+                
+
+    
+
+    
+    <h4 class="name" id="getPosId"><span class="type-signature"></span>getPosId<span class="signature">()</span><span class="type-signature"> &rarr; {String}</span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Get POS identifier
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    POS identifier
+</div>
+
+
+
+<p> Type: 
+<span class="param-type">String</span>
+
+</p>
+
+    
+
+
+
+
+
+            </div>
+        
+            <div class="method">
+                
+
+    
+
+    
+    <h4 class="name" id="getPrintOptions"><span class="type-signature"></span>getPrintOptions<span class="signature">()</span><span class="type-signature"> &rarr; {Array.&lt;<a href="timapi.PrintOption.html">timapi.PrintOption</a>>}</span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Get print options
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    Print options
+</div>
+
+
+
+<p> Type: 
+<span class="param-type">Array.&lt;<a href="timapi.PrintOption.html">timapi.PrintOption</a>></span>
+
+</p>
+
+    
+
+
+
+
+
+            </div>
+        
+            <div class="method">
+                
+
+    
+
+    
+    <h4 class="name" id="getSettings"><span class="type-signature"></span>getSettings<span class="signature">()</span><span class="type-signature"> &rarr; {<a href="timapi.TerminalSettings.html">timapi.TerminalSettings</a>}</span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Get immutable copy of terminal settings
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+
+
+<p> Type: 
+<span class="param-type"><a href="timapi.TerminalSettings.html">timapi.TerminalSettings</a></span>
+
+</p>
+
+    
+
+
+
+
+
+            </div>
+        
+            <div class="method">
+                
+
+    
+
+    
+    <h4 class="name" id="getTerminalId"><span class="type-signature"></span>getTerminalId<span class="signature">()</span><span class="type-signature"> &rarr; {String}</span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Get terminal identifier of connected terminal. Returns empty string if the
+terminal identifier is not known. The terminal identifier is available
+after logging in to the terminal
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    Terminal identifier
+</div>
+
+
+
+<p> Type: 
+<span class="param-type">String</span>
+
+</p>
+
+    
+
+
+
+
+
+            </div>
+        
+            <div class="method">
+                
+
+    
+
+    
+    <h4 class="name" id="getTerminalStatus"><span class="type-signature"></span>getTerminalStatus<span class="signature">()</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Get terminal status.
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+        
+            <div class="method">
+                
+
+    
+
+    
+    <h4 class="name" id="getTransactionData"><span class="type-signature"></span>getTransactionData<span class="signature">()</span><span class="type-signature"> &rarr; {<a href="timapi.TransactionData.html">timapi.TransactionData</a>}</span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Get transaction data
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    transaction data
+</div>
+
+
+
+<p> Type: 
+<span class="param-type"><a href="timapi.TransactionData.html">timapi.TransactionData</a></span>
+
+</p>
+
+    
+
+
+
+
+
+            </div>
+        
+            <div class="method">
+                
+
+    
+
+    
+    <h4 class="name" id="getUserId"><span class="type-signature"></span>getUserId<span class="signature">()</span><span class="type-signature"> &rarr; {String}</span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Get user identifier
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    User identifier
+</div>
+
+
+
+<p> Type: 
+<span class="param-type">String</span>
+
+</p>
+
+    
+
+
+
+
+
+            </div>
+        
+            <div class="method">
+                
+
+    
+
+    
+    <h4 class="name" id="hardwareInformationAsync"><span class="type-signature"></span>hardwareInformationAsync<span class="signature">()</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Get hardware information from the EFT Terminal.
+
+<p>Returns immediately and calls
+<a href="timapi.DefaultTerminalListener.html#hardwareInformationCompleted">hardwareInformationCompleted</a> 
+on all notifiers once finished.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+        
+            <div class="method">
+                
+
+    
+
+    
+    <h4 class="name" id="hasSwUpdate"><span class="type-signature"></span>hasSwUpdate<span class="signature">()</span><span class="type-signature"> &rarr; {Boolean}</span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Software update is available
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    true if software update is available
+</div>
+
+
+
+<p> Type: 
+<span class="param-type">Boolean</span>
+
+</p>
+
+    
+
+
+
+
+
+            </div>
+        
+            <div class="method">
+                
+
+    
+
+    
+    <h4 class="name" id="holdCommit"><span class="type-signature"></span>holdCommit<span class="signature">()</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    <p>Extends the <em>Commit</em> timeout if the terminal needs additional time before the
+<em>Commit</em> shall be performed. An example could be on a public transport vending
+machine: if the machine is printing multiple tickets and this printing action would
+extend the commit timeout, a <em>HoldCommit</em> notification shall be sent to extend
+the <em>Commit</em> timeout as well. If the printing action fails after some tickets a
+partial commit can be performed.</p>
+
+<p><b>Note:</b> This method is only available if <a href="timapi.constants.Guides.html#.unattended">unattended</a>
+is enabled.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+        
+            <div class="method">
+                
+
+    
+
+    
+    <h4 class="name" id="initTransactionAsync"><span class="type-signature"></span>initTransactionAsync<span class="signature">(displayAmount, amount, functionHint)</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Initialize a transaction knowing the amount or the card type.
+
+<p>Returns immediately and calls
+<a href="timapi.DefaultTerminalListener.html#initTransactionCompleted">initTransactionCompleted</a> 
+on all notifiers once finished.</p>
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>displayAmount</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Boolean</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>amount</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="timapi.Amount.html">timapi.Amount</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>functionHint</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="timapi.constants.FunctionHint.html">timapi.constants.FunctionHint</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+        
+            <div class="method">
+                
+
+    
+
+    
+    <h4 class="name" id="initTransactionWithAmountOtherAsync"><span class="type-signature"></span>initTransactionWithAmountOtherAsync<span class="signature">(displayAmount, amount, amountOther, functionHint)</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Initialize a transaction knowing the amount or the card type.
+
+<p>Returns immediately and calls
+<a href="timapi.DefaultTerminalListener.html#initTransactionCompleted">initTransactionCompleted</a> 
+on all notifiers once finished.</p>
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>displayAmount</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Boolean</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>amount</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="timapi.Amount.html">timapi.Amount</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>amountOther</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">timapi.AmountOther</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>functionHint</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="timapi.constants.FunctionHint.html">timapi.constants.FunctionHint</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+        
+            <div class="method">
+                
+
+    
+
+    
+    <h4 class="name" id="initTransactionWithDialogAsync"><span class="type-signature"></span>initTransactionWithDialogAsync<span class="signature">(amount, functionHint, dialog)</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Initialize a transaction knowing the amount or the card type.
+
+<p>Returns immediately and calls
+<a href="timapi.DefaultTerminalListener.html#initTransactionWithDialogCompleted">initTransactionWithDialogCompleted</a> 
+on all notifiers once finished.</p>
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>amount</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="timapi.Amount.html">timapi.Amount</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>functionHint</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="timapi.constants.FunctionHint.html">timapi.constants.FunctionHint</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>dialog</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="timapi.ShowDialogRequest.html">timapi.ShowDialogRequest</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+        
+            <div class="method">
+                
+
+    
+
+    
+    <h4 class="name" id="initTransactionWithDialogWithAmountOtherAsync"><span class="type-signature"></span>initTransactionWithDialogWithAmountOtherAsync<span class="signature">(amount, amountOther, functionHint, dialog)</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Initialize a transaction knowing the amount or the card type.
+
+<p>Returns immediately and calls
+<a href="timapi.DefaultTerminalListener.html#initTransactionWithDialogCompleted">initTransactionWithDialogCompleted</a> 
+on all notifiers once finished.</p>
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>amount</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="timapi.Amount.html">timapi.Amount</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>amountOther</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">timapi.AmountOther</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>functionHint</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="timapi.constants.FunctionHint.html">timapi.constants.FunctionHint</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>dialog</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="timapi.ShowDialogRequest.html">timapi.ShowDialogRequest</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+        
+            <div class="method">
+                
+
+    
+
+    
+    <h4 class="name" id="loginAsync"><span class="type-signature"></span>loginAsync<span class="signature">()</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    </p>Activate a communication session between the ECR and the terminal.</p>
+
+<p> Returns immediately and calls
+<a href="timapi.DefaultTerminalListener.html#loginCompleted">loginCompleted</a> 
+on all notifiers once finished. </p>
+
+<p><b>Note:</b> Before calling set the print options, POS identifier and
+manufacturer flags set in the terminal instance.</p>
+
+<p><b>Side-Effect:</b> After completing the request updates the features,
+brands and terminal identifier in the terminal instance. Fetching these
+information can be disabled if Auto-FetchBrands is disabled in
+<a href="timapi.TerminalSettings.html">timapi.TerminalSettings</a>.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+        
+            <div class="method">
+                
+
+    
+
+    
+    <h4 class="name" id="logoutAsync"><span class="type-signature"></span>logoutAsync<span class="signature">()</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Terminates an active communication session between the ECR and the terminal.
+
+<p> Returns immediately and calls
+<a href="timapi.DefaultTerminalListener.html#logoutCompleted">logoutCompleted</a> 
+on all notifiers once finished </p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+        
+            <div class="method">
+                
+
+    
+
+    
+    <h4 class="name" id="loyaltyDataAsync"><span class="type-signature"></span>loyaltyDataAsync<span class="signature">(functionType, dataType, data, retainCard)</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    This function is used to query and configure loyalty information.
+
+<p>Returns immediately and calls
+<a href="timapi.DefaultTerminalListener.html#loyaltyDataCompleted">loyaltyDataCompleted</a> 
+on all notifiers once finished.</p>
+
+<p><b>Note:</b> This method is only available if 
+<a href="timapi.constants.Guides.html#.valueAddedServices">guide valueAddedServices</a>
+is enabled.</p>
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>functionType</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="timapi.constants.LoyaltyFunctionType.html">timapi.constants.LoyaltyFunctionType</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Defines what kind of loyalty mode will be used.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>dataType</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Specifies type of loyalty data. Mandatory for functionType 
+                <a href="timapi.constants.LoyaltyFunctionType.html#.init">init</a>,
+                <a href="timapi.constants.LoyaltyFunctionType.html#.update">update</a>,
+                <a href="timapi.constants.LoyaltyFunctionType.html#.deinit">deinit</a>.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>data</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">uint8Array</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Loyalty data.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>retainCard</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Boolean</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">True to not eject card otherwise false.</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+        
+            <div class="method">
+                
+
+    
+
+    
+    <h4 class="name" id="mobileTopup2Async"><span class="type-signature"></span>mobileTopup2Async<span class="signature">(type, value)</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Mobile Topup transaction. Supported transaction type are PURCHASE and REVERSAL.
+To use REVERSAL terminal has to be configured to support credit transactions.
+
+<p>Returns immediately and calls
+<a href="timapi.DefaultTerminalListener.html#deviceMaintenanceCompleted">deviceMaintenanceCompleted</a> 
+on all notifiers once finished.</p>
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>type</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="timapi.constants.MobileTopupType.html">timapi.constants.MobileTopupType</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Type of transaction</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>value</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="timapi.MobileTopupValue.html">timapi.MobileTopupValue</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Mobile topup value</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+        
+            <div class="method">
+                
+
+    
+
+    
+    <h4 class="name" id="mobileTopupAsync"><span class="type-signature"></span>mobileTopupAsync<span class="signature">(type, issuerName, amount)</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Mobile Topup transaction. Supported transaction type are PURCHASE and REVERSAL.
+To use REVERSAL terminal has to be configured to support credit transactions.
+
+<p>Returns immediately and calls
+<a href="timapi.DefaultTerminalListener.html#deviceMaintenanceCompleted">deviceMaintenanceCompleted</a> 
+on all notifiers once finished.</p>
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>type</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="timapi.constants.MobileTopupType.html">timapi.constants.MobileTopupType</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Type of transaction</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>issuerName</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Issuer name</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>amount</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="timapi.Amount.html">timapi.Amount</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Amount</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+        
+            <div class="method">
+                
+
+    
+
+    
+    <h4 class="name" id="mobileTopupIssuerInfoAsync"><span class="type-signature"></span>mobileTopupIssuerInfoAsync<span class="signature">()</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Request Mobile Topup Issuer information.
+
+<p>Returns immediately and calls
+<a href="timapi.DefaultTerminalListener.html#mobileTopupIssuerInfoCompleted">mobileTopupIssuerInfoCompleted</a> 
+on all notifiers once finished.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+        
+            <div class="method">
+                
+
+    
+
+    
+    <h4 class="name" id="openDialogModeAsync"><span class="type-signature"></span>openDialogModeAsync<span class="signature">(silent)</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Open dialog mode on the terminal.
+
+<p>Returns immediately and calls
+<a href="timapi.DefaultTerminalListener.html#openDialogModeCompleted">openDialogModeCompleted</a> 
+on all notifiers once finished.</p>
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>silent</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Boolean</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">After opening the Dialog Mode the last screen content
+                 is retained until the the first ShowDialog is received</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+        
+            <div class="method">
+                
+
+    
+
+    
+    <h4 class="name" id="openMaintenanceWindowAsync"><span class="type-signature"></span>openMaintenanceWindowAsync<span class="signature">()</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    <p>Opens the maintenance window to the terminal so it can perform collected maintenance
+requests on its own, without interaction with the ECR. The terminal shall respond
+immediately to the ECR request whether it is able to handle the request or not.</p>
+
+<p>If the terminal is able to handle the request, the ECR is free itself to perform
+maintenance as well or it can monitor the terminal by reading the
+<em>TerminalStatus</em> notifications.</p>
+
+<p>It is possible that the connection between ECR and EFT terminal is terminated due to
+one or multiple reboot processes.</p>
+
+<p>Returns immediately and calls
+<a href="timapi.DefaultTerminalListener.html#openMaintenanceWindowCompleted">openMaintenanceWindowCompleted</a> 
+on all notifiers once finished.</p>
+
+<p><b>Note:</b> This method is only available if <a href="timapi.constants.Guides.html#.unattended">guide unattended</a>
+is enabled.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+        
+            <div class="method">
+                
+
+    
+
+    
+    <h4 class="name" id="openReaderAsync"><span class="type-signature"></span>openReaderAsync<span class="signature">()</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Open the shutter of the card reader.
+
+<p>Returns immediately and calls
+<a href="timapi.DefaultTerminalListener.html#openReaderCompleted">openReaderCompleted</a> 
+on all notifiers once finished.</p>
+
+<p><b>Note:</b> This method is only available if 
+<a href="timapi.constants.Guides.html#.unattended">guide unattended</a>
+is enabled.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+        
+            <div class="method">
+                
+
+    
+
+    
+    <h4 class="name" id="printOnTerminalAsync"><span class="type-signature"></span>printOnTerminalAsync<span class="signature">(ticketData)</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    <p>The <em>PrintOnTerminal</em>-function is used to send a freetext preformatted ticket
+from ECR to terminal. The ticket is then printed on the terminal printer. The ticket
+must be formatted according [B39].</p>
+
+<p><b>Note:</b> This method is only available if 
+<a href="timapi.constants.Guides.html#.dialog">guide dialog</a>
+is enabled.</p>
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>ticketData</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Content to print.</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+        
+            <div class="method">
+                
+
+    
+
+    
+    <h4 class="name" id="provideLoyaltyBasketAsync"><span class="type-signature"></span>provideLoyaltyBasketAsync<span class="signature">(basket)</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    This function is used to provide the terminal with a LoyaltyBasket if the
+corresponding loyalty scheme requires it.
+
+<p>Returns immediately and calls
+<a href="timapi.DefaultTerminalListener.html#provideLoyaltyBasketCompleted">provideLoyaltyBasketCompleted</a> 
+on all notifiers once finished.</p>
+
+<p><b>Note:</b> This method is only available if 
+<a href="timapi.constants.Guides.html#.valueAddedServices">guide valueAddedServices</a>
+is enabled.</p>
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>basket</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Array.&lt;<a href="timapi.LoyaltyItem.html">timapi.LoyaltyItem</a>></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Basket as list of loyalty-items</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+        
+            <div class="method">
+                
+
+    
+
+    
+    <h4 class="name" id="provideVasResultAsync"><span class="type-signature"></span>provideVasResultAsync<span class="signature">(basket)</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    This function is used to provide several VAS related results to the terminal, which
+will then send it to the corresponding VAS provider.
+
+<p>Returns immediately and calls
+<a href="timapi.DefaultTerminalListener.html#provideVasResultCompleted">provideVasResultCompleted</a> 
+on all notifiers once finished.</p>
+
+<p><b>Note:</b> This method is only available if 
+<a href="timapi.constants.Guides.html#.valueAddedServices">guide valueAddedServices</a>
+is enabled.</p>
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>basket</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="timapi.VasResult.html">timapi.VasResult</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Vas result to send.</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+        
+            <div class="method">
+                
+
+    
+
+    
+    <h4 class="name" id="rebootAsync"><span class="type-signature"></span>rebootAsync<span class="signature">()</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Force the EFT Terminal to reboot
+
+<p>Returns immediately and calls
+<a href="timapi.DefaultTerminalListener.html#rebootCompleted">rebootCompleted</a> 
+on all notifiers once finished.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+        
+            <div class="method">
+                
+
+    
+
+    
+    <h4 class="name" id="receiptRequestAsync"><span class="type-signature"></span>receiptRequestAsync<span class="signature">(type)</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Receive the latest receipt or a list of silent receipts.
+
+<p>Returns immediately and calls
+<a href="timapi.DefaultTerminalListener.html#receiptRequestCompleted">receiptRequestCompleted</a> 
+on all notifiers once finished.</p>
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>type</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="timapi.constants.ReceiptRequestType.html">timapi.constants.ReceiptRequestType</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Type of receipts to receive.</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+        
+            <div class="method">
+                
+
+    
+
+    
+    <h4 class="name" id="reconciliationAsync"><span class="type-signature"></span>reconciliationAsync<span class="signature">()</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Force the EFT Terminal to transmit all financial transactions to the host system.
+
+<p>Returns immediately and calls
+<a href="timapi.DefaultTerminalListener.html#reconciliationCompleted">reconciliationCompleted</a> 
+on all notifiers once finished.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+        
+            <div class="method">
+                
+
+    
+
+    
+    <h4 class="name" id="reconfigAsync"><span class="type-signature"></span>reconfigAsync<span class="signature">()</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Force the EFT Terminal to get the configuration from the service center.
+
+<p>Returns immediately and calls
+<a href="timapi.DefaultTerminalListener.html#reconfigCompleted">reconfigCompleted</a> 
+on all notifiers once finished.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+        
+            <div class="method">
+                
+
+    
+
+    
+    <h4 class="name" id="reconfigWithParamsAsync"><span class="type-signature"></span>reconfigWithParamsAsync<span class="signature">(parameters)</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Force the EFT Terminal to get the configuration from the service center.
+
+<p>Returns immediately and calls
+<a href="timapi.DefaultTerminalListener.html#reconfigCompleted">reconfigCompleted</a> 
+on all notifiers once finished.</p>
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>parameters</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="timapi.ReconfigParameters.html">timapi.ReconfigParameters</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Parameters for the reconfig.</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+        
+            <div class="method">
+                
+
+    
+
+    
+    <h4 class="name" id="removeListener"><span class="type-signature"></span>removeListener<span class="signature">()</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Unregister listener.
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+<h5>Throws:</h5>
+<ul>
+        <li>
+
+    <div class="param-desc">
+    
+        IllegalArgumentException If listener is undefined.
+    
+    </div>
+
+</li>
+    
+        <li>
+
+    <div class="param-desc">
+    
+        IllegalArgumentException If listener is not registered.
+    
+    </div>
+
+</li>
+    </ul>
+
+
+
+
+
+
+
+            </div>
+        
+            <div class="method">
+                
+
+    
+
+    
+    <h4 class="name" id="rollbackAsync"><span class="type-signature"></span>rollbackAsync<span class="signature">()</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Prevents a transaction from being committed to the transaction log and generates a technical reversal of the authorization.
+
+<p>For payment protocols supporting the function a declined receipt may be generated.</p>
+
+<p>Returns immediately and calls
+<a href="timapi.DefaultTerminalListener.html#rollbackCompleted">rollbackCompleted</a> 
+on all notifiers once finished.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+        
+            <div class="method">
+                
+
+    
+
+    
+    <h4 class="name" id="screenshot"><span class="type-signature"></span>screenshot<span class="signature">()</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Send notification to request EFT make a screenshot.
+
+This is a "best effort" function.
+
+This method is only available if guide remote is enabled.
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+        
+            <div class="method">
+                
+
+    
+
+    
+    <h4 class="name" id="sendCardCommandAsync"><span class="type-signature"></span>sendCardCommandAsync<span class="signature">(requests)</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    <p>This function is used for a direct communication with the inserted card using APDUs.
+It is possible to send a list of APDU command in the request
+(<em>sixml:CommandRequestList</em>) and to set responses that shall be accepted as
+"Positive" responses using <em>sixml:PositiveAnswerList</em>.</p>
+
+<p>Each <em>sixml:CommandRequest</em> is numbered with a unique order number
+(starting with 1). In the response, the terminal sends the response of the device for
+each <em>CommandRequest</em>, including the order number of the request.</p>
+
+<p>If the device answers with a negative response (i.e. SW1SW2 != 9000 or other as
+"positive" defined answers using <em>sixml:PositiveAnswerList</em>), the processing of
+the <em>sixml:CommandRequests</em> is aborted, and the remaining commands are not sent
+to the device.</p>
+
+<p>Furthermore it can be defined which dialogs shall be shown using the container
+sixml:CommandResources in the following use cases:</p>
+<ul>
+<li>Dialog shown as preparation before sending an APDU command: sixml:PreResource</li>
+<li>Dialog shown during APDU command execution: sixml:ExecutionResource</li>
+<li>Dialog shown after receiving a positive response: sixml:PositiveResource</li>
+<li>Dialog shown after receiving a negative response: sixml:NegativeResource</li>
+</ul>
+ 
+<p>Returns immediately and calls
+<a href="timapi.DefaultTerminalListener.html#sendCardCommandCompleted">sendCardCommandCompleted</a> 
+on all notifiers once finished.</p>
+
+<p><b>Note:</b> This method is only available if 
+<a href="timapi.constants.Guides.html#.dialog">guide dialog</a>
+is enabled.</p>
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>requests</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Array.&lt;<a href="timapi.CommandRequest.html">timapi.CommandRequest</a>></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+        
+            <div class="method">
+                
+
+    
+
+    
+    <h4 class="name" id="setAccessibilityOptionList"><span class="type-signature"></span>setAccessibilityOptionList<span class="signature">(accessibilityOptionList)</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Set Accessibility option list
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>accessibilityOptionList</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="timapi.AccessibilityOptionList.html">timapi.AccessibilityOptionList</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Accessibility option list</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+        
+            <div class="method">
+                
+
+    
+
+    
+    <h4 class="name" id="setAllowedThirdPartyApps"><span class="type-signature"></span>setAllowedThirdPartyApps<span class="signature">(allowedThirdPartyApps)</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Set allowed third party apps.
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>allowedThirdPartyApps</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Set.&lt;<a href="timapi.constants.ThirdPartyApps.html">timapi.constants.ThirdPartyApps</a>></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Set of ThirdPartyApps</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+        
+            <div class="method">
+                
+
+    
+
+    
+    <h4 class="name" id="setCompactReceiptFormatter"><span class="type-signature"></span>setCompactReceiptFormatter<span class="signature">()</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Set compact receipt formatter.
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+        
+            <div class="method">
+                
+
+    
+
+    
+    <h4 class="name" id="setCustomReceiptFormatter"><span class="type-signature"></span>setCustomReceiptFormatter<span class="signature">(customReceiptFormatter)</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Set receipt formatter using definition from timapi.CustomReceiptFormatter .
+
+Currently not supported.
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>customReceiptFormatter</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="timapi.CustomReceiptFormatter.html">timapi.CustomReceiptFormatter</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Custom receipt format definition.</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+        
+            <div class="method">
+                
+
+    
+
+    
+    <h4 class="name" id="setEcrData"><span class="type-signature"></span>setEcrData<span class="signature">(ecrData)</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Set ecr data
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>ecrData</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Array.&lt;<a href="timapi.EcrInfo.html">timapi.EcrInfo</a>></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Array of ecr data</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+        
+            <div class="method">
+                
+
+    
+
+    
+    <h4 class="name" id="setMerchantOptions"><span class="type-signature"></span>setMerchantOptions<span class="signature">(merchantOptions)</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Set merchant options
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>merchantOptions</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Array.&lt;<a href="timapi.MerchantOption.html">timapi.MerchantOption</a>></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Merchant options</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+        
+            <div class="method">
+                
+
+    
+
+    
+    <h4 class="name" id="setNormalReceiptFormatter"><span class="type-signature"></span>setNormalReceiptFormatter<span class="signature">()</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Set normal receipt formatter.
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+        
+            <div class="method">
+                
+
+    
+
+    
+    <h4 class="name" id="setPosId"><span class="type-signature"></span>setPosId<span class="signature">(posId)</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Set POS identifier
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>posId</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">POS identifier</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+        
+            <div class="method">
+                
+
+    
+
+    
+    <h4 class="name" id="setPrintOptions"><span class="type-signature"></span>setPrintOptions<span class="signature">(printOptions)</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Set print options
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>printOptions</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Array.&lt;<a href="timapi.PrintOption.html">timapi.PrintOption</a>></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Print options</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+        
+            <div class="method">
+                
+
+    
+
+    
+    <h4 class="name" id="setReceiptFormatter"><span class="type-signature"></span>setReceiptFormatter<span class="signature">(formatter)</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Set receipt formatter using subclass of timapi.DefaultReceiptFormatter .
+
+Currently not supported.
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>formatter</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="timapi.DefaultReceiptFormatter.html">timapi.DefaultReceiptFormatter</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Receipt format.</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+        
+            <div class="method">
+                
+
+    
+
+    
+    <h4 class="name" id="setSuperCompactReceiptFormatter"><span class="type-signature"></span>setSuperCompactReceiptFormatter<span class="signature">()</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Set super compact receipt formatter.
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+        
+            <div class="method">
+                
+
+    
+
+    
+    <h4 class="name" id="setTransactionData"><span class="type-signature"></span>setTransactionData<span class="signature">(ecrData)</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Set transaction data
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>ecrData</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="timapi.TransactionData.html">timapi.TransactionData</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Array of ecr data</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+        
+            <div class="method">
+                
+
+    
+
+    
+    <h4 class="name" id="setUltraCompactReceiptFormatter"><span class="type-signature"></span>setUltraCompactReceiptFormatter<span class="signature">()</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Set ultra compact receipt formatter.
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+        
+            <div class="method">
+                
+
+    
+
+    
+    <h4 class="name" id="setUserId"><span class="type-signature"></span>setUserId<span class="signature">(userId)</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Set user identifier
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>userId</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">User identifier</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+        
+            <div class="method">
+                
+
+    
+
+    
+    <h4 class="name" id="showDialogAsync"><span class="type-signature"></span>showDialogAsync<span class="signature">(request)</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    <p>Show dialog on the terminal.</p>
+
+<p>Returns immediately and calls
+<a href="timapi.DefaultTerminalListener.html#showDialogCompleted">showDialogCompleted</a> 
+on all notifiers once finished.</p>
+
+<p><b>Note:</b> This method is only available if 
+<a href="timapi.constants.Guides.html#.dialog">guide dialog</a>
+is enabled.</p>
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>request</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="timapi.ShowDialogRequest.html">timapi.ShowDialogRequest</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Show dialog request</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+        
+            <div class="method">
+                
+
+    
+
+    
+    <h4 class="name" id="showSignatureCaptureAsync"><span class="type-signature"></span>showSignatureCaptureAsync<span class="signature">(request)</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    <p>Show signature capture on the terminal.</p>
+
+<p>Can be called only if dialog mode is open.</p>
+
+<p>Returns immediately and calls
+<a href="timapi.DefaultTerminalListener.html#showSignatureCaptureCompleted">showSignatureCaptureCompleted</a> 
+on all notifiers once finished.</p>
+
+<p><b>Note:</b> This method is only available if 
+<a href="timapi.constants.Guides.html#.dialog">guide dialog</a>
+is enabled.</p>
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>request</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">ShowSignatureCaptureRequest</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Show signature capture request</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+        
+            <div class="method">
+                
+
+    
+
+    
+    <h4 class="name" id="softwareUpdateAsync"><span class="type-signature"></span>softwareUpdateAsync<span class="signature">()</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Force the EFT Terminal to start a Software Update.
+
+<p>Returns immediately and calls
+<a href="timapi.DefaultTerminalListener.html#softwareUpdateCompleted">softwareUpdateCompleted</a> 
+on all notifiers once finished.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+        
+            <div class="method">
+                
+
+    
+
+    
+    <h4 class="name" id="startCheckoutAsync"><span class="type-signature"></span>startCheckoutAsync<span class="signature">()</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    This function is used to start a Checkout process at the POS to collect card
+and/or cardholder loyalty information before a transaction is started.
+
+Therefore the Worldline QR code is displayed at the terminal. The timeout how long the QR
+code shall be displayed on the terminal before returning to its Idle screen can be
+defined in the Login request using the OptionType - QRCTimeout.
+
+<p>Returns immediately and calls
+<a href="timapi.DefaultTerminalListener.html#startCheckoutCompleted">startCheckoutCompleted</a> 
+on all notifiers once finished.</p>
+
+<p><b>Note:</b> This method is only available if 
+<a href="timapi.constants.Guides.html#.valueAddedServices">guide valueAddedServices</a>
+is enabled.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+        
+            <div class="method">
+                
+
+    
+
+    
+    <h4 class="name" id="systemInformationAsync"><span class="type-signature"></span>systemInformationAsync<span class="signature">()</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    <p>Request system information from the EFT Terminal.</p>
+
+<p><b>Note:</b> Set EcrData property before calling SystemInformation.</p>
+
+<p>Returns immediately and calls
+<a href="timapi.DefaultTerminalListener.html#systemInformationCompleted">systemInformationCompleted</a> 
+on all notifiers once finished.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+        
+            <div class="method">
+                
+
+    
+
+    
+    <h4 class="name" id="thirdPartyAppData"><span class="type-signature"></span>thirdPartyAppData<span class="signature">(data)</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Send thirdPartyAppData to request EFT make a screenshot.
+
+This is a "best effort" function.
+
+This method is only available if guide valueAddedServices is enabled.
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>data</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="timapi.ThirdPartyAppPayload.html">timapi.ThirdPartyAppPayload</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Payload.</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+        
+            <div class="method">
+                
+
+    
+
+    
+    <h4 class="name" id="transactionAsync"><span class="type-signature"></span>transactionAsync<span class="signature">(type, amount)</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Starts an EFT Terminal Transaction. 
+
+<p>Returns immediately and calls 
+<a href="timapi.DefaultTerminalListener.html#transactionCompleted">transactionCompleted</a> 
+on all notifiers once finished.</p>
+
+<p><b>Note:</b> The transaction parameters are taken from TransactionData
+terminal property since those do not change often if at all (default parameters).</p>
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>type</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="timapi.constants.TransactionType.html">timapi.constants.TransactionType</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Financial Transaction Function.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>amount</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="timapi.Amount.html">timapi.Amount</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Transaction amount.</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+        
+            <div class="method">
+                
+
+    
+
+    
+    <h4 class="name" id="transactionCashbackAsync"><span class="type-signature"></span>transactionCashbackAsync<span class="signature">(type, amount, amountCashback)</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    <p>Starts an EFT Terminal Transaction with Cashback amount.</p>
+
+<p>Returns immediately and calls
+<a href="timapi.DefaultTerminalListener.html#transactionCompleted">transactionCompleted</a> 
+on all notifiers once finished.</p>
+
+<p><b>Note:</b> The transaction parameters are taken from TransactionRequest
+terminal property since those do not change often if at all (default parameters).</p>
+
+<p><b>Note:</b> This method is only available if
+guide advanced_retail 
+is enabled.</p>
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>type</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="timapi.constants.TransactionType.html">timapi.constants.TransactionType</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Financial Transaction Function.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>amount</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="timapi.Amount.html">timapi.Amount</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Transaction amount.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>amountCashback</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="timapi.Amount.html">timapi.Amount</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Cashback amount.</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+        
+            <div class="method">
+                
+
+    
+
+    
+    <h4 class="name" id="transactionInfoRequestAsync"><span class="type-signature"></span>transactionInfoRequestAsync<span class="signature">()</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Receive the latest receipt or a list of silent receipts.
+
+<p>Returns immediately and calls
+<a href="timapi.DefaultTerminalListener.html#transactionInfoRequestCompleted">transactionInfoRequestCompleted</a> 
+on all notifiers once finished.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+        
+            <div class="method">
+                
+
+    
+
+    
+    <h4 class="name" id="transactionTipAsync"><span class="type-signature"></span>transactionTipAsync<span class="signature">(type, amount, amountTip)</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    <p>Starts an EFT Terminal Transaction with Tip amount.</p>
+
+<p>Returns immediately and calls
+<a href="timapi.DefaultTerminalListener.html#transactionCompleted">transactionCompleted</a> 
+on all notifiers once finished.</p>
+
+<p><b>Note:</b> The transaction parameters are taken from TransactionRequest
+terminal property since those do not change often if at all (default parameters).</p>
+
+<p><b>Note:</b> This method is only available if
+<a href="timapi.constants.Guides.html#.gastro">guide gastro</a> 
+is enabled.</p>
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>type</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="timapi.constants.TransactionType.html">timapi.constants.TransactionType</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Financial Transaction Function.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>amount</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="timapi.Amount.html">timapi.Amount</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Transaction amount.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>amountTip</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="timapi.Amount.html">timapi.Amount</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Proposed tip amount.</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+        
+            <div class="method">
+                
+
+    
+
+    
+    <h4 class="name" id="transactionWithRequestAsync"><span class="type-signature"></span>transactionWithRequestAsync<span class="signature">(type, request)</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Starts an EFT Terminal Transaction with a manually built request. 
+
+<p>Returns immediately and calls 
+<a href="timapi.DefaultTerminalListener.html#transactionCompleted">transactionCompleted</a> 
+on all notifiers once finished.</p>
+
+<p><b>Note:</b> Allows enhanced transaction configuration compared to 
+<a href="timapi.Terminal.html#transactionAsync">transactionAsync</a></p>
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>type</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="timapi.constants.TransactionType.html">timapi.constants.TransactionType</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Financial Transaction Function.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>request</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="timapi.TransactionRequest.html">timapi.TransactionRequest</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Transaction parameters as TransactionRequest object.</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+        
+            <div class="method">
+                
+
+    
+
+    
+    <h4 class="name" id=".convertSIXTransRefToLegacy"><span class="type-signature">(static) </span>convertSIXTransRefToLegacy<span class="signature">(sixTransRef)</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    This function tries to convert a SIXTransRef of type X:Y:4 into
+A SIXTransRef of type X:Y:1 . For all other SIXTransRef values
+the value will be returned unchanged.
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>sixTransRef</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Reference number to convert.</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+        
+    
+
+    
+
+    
+
+    
+</article>
+
+</section>
+
+
+
+
+</div>
+
+
+<br class="clear">
+</body>
+</html>

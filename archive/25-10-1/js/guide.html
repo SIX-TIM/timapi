@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+
+  <link rel="stylesheet" href="../assets/css/vendors.css">
+  <link rel="stylesheet" href="../assets/css/helppage.css">
+  <link rel="stylesheet" href="res/css/lang_specific.css">
+
+  <title>TIM API documentation</title>
+  <script src="../assets/js/vendors.js"></script>
+  <script src="../assets/js/helppage.js"></script>
+  <script src="../assets/js/guide.js"></script>
+  <script src="../assets/js/tim_inject.js"></script>
+  <script src="../assets/js/sdk_version.js"></script>
+  <script src="../assets/js/config.js"></script>
+  <script src="doc/api_version.js"></script>
+</head>
+<body data-spy="scroll" data-target="#navScrollspy" class="guide">
+  <div id="content" class="container-fluid">
+    <div>
+      <nav id="navScrollspy">
+        <div id="devBanner">DEVELOPMENT VERSION!</div>
+        <div id="stageBanner">STAGING VERSION!</div>
+        <div id="archiveBanner">ARCHIVED VERSION!<br><a id="currentLink" href="../../../doc/index.html">-&gt; link to current version</a></div>
+        <div data-spy="affix" class="affix" id="navbar">
+          <div id="projectname">TIM SDK</div>
+          <div id="projectbrief">TIM API</div>
+          <div id="vSep">&#160;</div>
+          <div id="langSel">
+            <ul class="langList">
+              <li>
+                <a href="../java/guide.html" class="lang_java">Java</a>
+              </li>
+              <li>
+                <a href="../cs/guide.html" class="lang_cs">.NET</a>
+              </li>
+              <li>
+                <a href="../swift/guide.html" class="lang_swift">Swift</a>
+              </li>
+              <li>
+                <a href="../js/guide.html" class="lang_js">JavaScript</a>
+              </li>
+              <li>
+                <a href="../c/guide.html" class="lang_c">C</a>
+              </li>
+            </ul>
+          </div>
+          <div id="guideDiv">
+            <div id="guideTitle">Guides<div id="closeGuideSel" class="x_icon"></div></div>
+            <div id="guideSel"></div>
+          </div>
+          <div id="docTitle">Detailed Implementation Guide</div>
+          <ul class="nav">
+          <li><a href="#intro">Introduction</a></li><li><a href="#setup">Setup Configuration</a><ul class="nav"><li><a href="#network">Network Configuration</a></li><li><a href="#guides">Guides Configuration</a></li></ul></li><li><a href="#operation">Operation Overview</a></li><li><a href="#automatisms">Automatisms</a></li><li><a href="#useCase">Use Cases</a><ul class="nav"><li><a href="#retailManualPanKeyEntry">Manual Pan Key Entry</a></li><li class="filterGuides guideAustria"><a href="#austrianUseCase">Guide Austrian Use Cases</a><ul class="nav"><li class="filterGuides guideAustria"><a href="#austrianUseCaseNGV">Austrian Use Case: NGV</a></li><li class="filterGuides guideAustria"><a href="#austrianUseCaseDelayedPayment">Austrian Use Case: Delayed Payment</a></li></ul></li></ul></li><li><a href="#methods">Terminal methods overview</a><ul class="nav"><li><a href="#mainFunc">Main / guide Retail terminal functions</a></li><li class="filterGuides guideBanking"><a href="#bankingFunc">Banking terminal functions</a></li><li><a href="#addMethods">Additional terminal listener-events</a></li></ul></li><li><a href="#flows">Flows</a><ul class="nav"><li class="filterGuides guideAustria"><a href="#austrianFlows">Guide Austrian Additional Flows</a><ul class="nav"><li><a href="#austrianFlowNGVWithoutDelay">Austrian Flow: NGV Purchase without delay</a></li><li><a href="#austrianFlowNGVWithDelay">Austrian Flow: NGV Purchase with delay</a></li><li><a href="#austrianFlowNGVFallback">Austrian Flow: NGV Purchase fallback with Non-NGV card</a></li><li><a href="#austrianFlowNGVMandatoryError">Austrian Flow: NGV Purchase mandatory with error</a></li></ul></li></ul></li><li><a href="#logging">Logging</a><ul class="nav"></ul></li><li><a href="#MigrationJStoWASM">Migration from old TIM API JS to TIM API JS with WebAssembly</a><ul class="nav"><li><a href="#MigrationJSInit">Ready Initialization</a></li><li><a href="#MigrationJSNames">Class Variable Names</a></li><li><a href="#MigrationJSListenerDeclaration">Listener Declaration</a></li><li><a href="#MigrationJSLogging">Logging</a></li></ul></li></ul>
+          <div class="seperator">&#160;</div>
+          <div id="docLinks">
+          <div class="linkDiv"><a href="simple.html">Simple Implementation Guide</a></div><div class="linkDiv"><a href="appendix.html">Appendix</a></div><div class="linkDiv"><a href="doc/index.html">API Documentation</a></div><div class="linkDiv"><a href="../../version/version-history.html">Version History</a></div></div>
+        </div>
+      </nav>
+
+      <div id="titleFloating">
+          <div><a href="simple.html" id="linkOtherGuide" class="hide_c hide_swift hide_cs">go to Simple Implementation Guide</a></div>
+          <div id="lblDiv">Detailed Implementation Guide</div>
+      </div>
+
+      <span class="print-page-break"></span>
+
+      <main>
+      <section><h1><a name="intro" id="intro">&#160;</a>Introduction</h1><div class="row"><div class="col-md-6"><p>The TIM API is the standard application interface for ECR integration using Worldline terminals.
+        </p>
+        <p>TIM API provides a comprehensive feature set to support the requirements of several different markets. This
+            guideline is intended to be used by ECR integrators that need to implement the TIM API functionality in
+            their
+            products.
+        </p>
+        <p>The following document contains an overview structure and describes the corresponding functions, notifiers and data elements that can be used with the TIM API.
+            Furthermore implementation examples are provided. Nevertheless always the corresponding description of a
+            function or data element is authoritative, not the examples.</p>
+        <p lang="Java JS">Before starting with the detailed implementation guide, make sure that you read the 
+        <a href="simple.html">Simple Implementation Guide</a> first.</p>
+        <hr>
+    </div></div></section>
+    <section><h1><a name="setup" id="setup">&#160;</a>Setup Configuration</h1><div class="row"><div class="col-md-6"><p lang="JS">Before starting using the TIM API, make sure that onTimApiReady() has been called as described in
+    the <a href="simple.html#usageLibrary">Simple Implementation Guide</a> in chapter "Library usage".</p>
+        <p>Once a
+            <code><a href="doc/timapi.Terminal.html">Terminal</a></code>-instance has been created with a
+            <code><a href="doc/timapi.TerminalSettings.html">TerminalSettings</a></code>-instance, the settings can not be changed anymore.
+            Changes to the
+            <code><a href="doc/timapi.TerminalSettings.html">TerminalSettings</a></code>-instance will be ignored.
+        </p>
+        <p>The network and guides configuration are explained in the following
+            chapters.
+            For further information refer to<code><a href="doc/timapi.TerminalSettings.html">TerminalSettings</a></code>.
+        </p>
+
+
+        </div></div><section><h2><a name="network" id="network">&#160;</a>Network Configuration</h2><div class="row"><div class="col-md-6"><p>Depending on the platform used, the TIM API module can communicate with the Terminal over different communication channels.</p>
+            <div lang="js">
+                <p>TIM API JavaScript communicates with the terminals using WebSockets.
+                Unlike in other TIM APIs, there's no broadcast mode, since the WebSocket protocol doesn't support this feature.
+                Default port is 80 (for some terminals, e.g. Verifone, it's 8080).</p>
+                <p>In order to start a connection to a terminal, it's IP address must be known and configured in the <code><a href="doc/timapi.TerminalSettings.html">TerminalSettings</a></code>.</p>
+            </div>
+        </div></div></section>
+        <div class="row"><div class="col-md-6"></div></div><section><h2><a name="guides" id="guides">&#160;</a>Guides Configuration</h2><div class="row"><div class="col-md-6">
+                    <p>There are various
+                        <code><a href="doc/timapi.constants.Guides.html">Guides</a></code>
+                        covering different use case scenarios. The guide <code><a href="doc/timapi.constants.Guides.html#.retail">Retail</a></code>is the basic guide and is activated as
+                        default. With <code><a href="doc/timapi.TerminalSettings.html#guides">guides</a></code>
+                        the guides can be configured. <span excl="cs">Important: the configuration needs to include all desired guides
+                        (including
+                        the retail guide).</span>
+                    </p>
+
+                </div><div class="col-md-6">
+                    <p>Code-example for creating a terminal including settings with activated guides retail and
+                        hospitality:
+                    </p>
+                    <pre><code class="language-{.js}">// Create settings with IP-address and port of terminal to connect to
+let settings = new timapi.TerminalSettings();
+settings.connectionIPString = "192.168.1.10";
+settings.connectionIPPort = 80;
+
+// Add wanted guides
+settings.guides.add(timapi.constants.Guides.hospitality);
+
+// Create terminal
+let terminal = new timapi.Terminal(settings);
+
+//...
+
+// Disconnect from terminal and clean up properly
+terminal.dispose();</code></pre>
+                </div></div>
+
+            <div class="row"><div class="col-md-6"><hr>
+        </div></div></section>
+        <div class="row"><div class="col-md-6"></div></div></section>
+    <section><h1><a name="operation" id="operation">&#160;</a>Operation Overview</h1><div class="row"><div class="col-md-6">
+
+                <p>Follow these basic steps for using the TIM API:</p>
+                <ol>
+                    <li>Create
+                        <code><a href="doc/timapi.TerminalSettings.html">TerminalSettings</a></code>
+                        and initialize connection parameters (see
+                        <a href="#setup">Setup Configuration</a>)
+                    </li>
+                    <li>Create
+                        <code><a href="doc/timapi.Terminal.html">Terminal</a></code>
+                        instance using the created
+                        <code><a href="doc/timapi.TerminalSettings.html">TerminalSettings</a></code>
+                    </li>
+                    <li>Set some properties where required:
+                        <ul>
+                            <li>Define a <code><a href="doc/timapi.Terminal.html#setPosId">POS ID</a></code>
+                            </li>
+                            <li>
+                                create <strong>mandatory</strong>
+                                list of <code><a href="doc/timapi.EcrInfo.html">EcrInfo</a></code> and add with <code><a href="doc/timapi.Terminal.html#addEcrData">addEcrData</a></code>
+                            </li>
+                            <li>
+                                create list of 
+                                <code><a href="doc/timapi.PrintOption.html">PrintOptions</a></code>
+                                and set
+                                <span excl="cs">with</span> <code><a href="doc/timapi.Terminal.html#setPrintOptions">setPrintOptions</a></code>
+                            </li>
+                            <li excl="cs"><code><a href="doc/timapi.Terminal.html#addListener">addListeners</a></code>
+                            </li> </ul>
+                    </li>
+                    <li>
+                        <code><a href="doc/timapi.Terminal.html#connectAsync">Connect</a></code>
+                        and
+                        <code><a href="doc/timapi.Terminal.html#loginAsync">Login</a></code>. This can be done automatically, when the first terminal operation is called or manually using
+                        the login
+                        method.
+                    </li>
+                    <li>Use terminal operation functions.</li>
+                </ol>
+            </div><div class="col-md-6">
+                <figure><img src="res/img/operations_overview.png"><figcaption>Operations overview</figcaption></figure>
+            </div></div>
+        <div class="row"><div class="col-md-6"><hr>
+
+    </div></div></section>
+    <section><h1><a name="automatisms" id="automatisms">&#160;</a>Automatisms</h1><div class="row"><div class="col-md-6"><p>The TIM API uses two different types of automatisms:</p>
+        <ul>
+            <li>
+                <p>
+                    <strong>Pre-Automatisms:</strong>
+                    This means that all actions that need to be done before a function can be called.
+                    E.g. a transaction can be called in disconnected state without having called connect, login and
+                    activate
+                    in advance. These are called automatically by the TIM API before the transaction is performed. The
+                    Pre-Automatisms
+                    are enabled by default.
+                </p>
+            </li>
+            <li>
+                <p>
+                    <strong>Post-Automatisms:</strong>
+                    These automatisms can be enabled or disabled using the members <code><a href="doc/timapi.TerminalSettings.html#autoCommit">autoCommit</a></code> and
+                    <code><a href="doc/timapi.TerminalSettings.html#fetchBrands">fetchBrands</a></code>. A Post-Automatism is triggered after an action has been performed. E.g. if a connect
+                    has
+                    been called and <code><a href="doc/timapi.TerminalSettings.html#fetchBrands">fetchBrands</a></code> is activated, an <code><a href="doc/timapi.Terminal.html#applicationInformationAsync">applicationInformation</a></code> request is called automatically
+                    after
+                    the connect. Or if  <code><a href="doc/timapi.TerminalSettings.html#autoCommit">autoCommit</a></code> is activated a <code><a href="doc/timapi.Terminal.html#commitAsync">commit</a></code> is performed automatically after a transaction
+                    has
+                    been made.  <code><a href="doc/timapi.TerminalSettings.html#autoCommit">AutoCommit</a></code> and <code><a href="doc/timapi.TerminalSettings.html#fetchBrands">fetchBrands</a></code> are enabled by default.
+                </p>
+            </li>
+        </ul>
+        <p>The following diagram show<span lang="js">s</span> the principle of the Pre-Automatisms and Post-Automatisms. Pre-Automatisms are
+            enabled by default and cannot be disabled. If an error occurs the started request from the ECR is returned
+            with an error.
+        </p>
+
+        <div lang="js">
+            <figure><img src="res/img/async_flow.png"><figcaption>Pre-Automatisms flow</figcaption></figure>
+        </div>
+        <hr>
+
+    </div></div></section>
+
+    <section><h1><a name="useCase" id="useCase">&#160;</a>Use Cases</h1><div class="row"><div class="col-md-6"><p>This chapter describes various guides and their use cases.</p>
+        <p>Hint: if no content visible, try to select a guide under "Guide Selection" on the left.</p>
+        </div></div><section><h2><a name="retailManualPanKeyEntry" id="retailManualPanKeyEntry">&#160;</a>Manual Pan Key Entry</h2><div class="row"><div class="col-md-6"><p>The TIM API offers the possibility to perform a Manual Pan Key Entry (MPKE) on ECR side, e.g. if no physical card is present. 
+        This can be done by setting the <code><a href="doc/timapi.TransactionData.html#cardRef">CardRef</a></code> field in the <code><a href="doc/timapi.Terminal.html#getTransactionData">TransactionData</a></code>container 
+        present in the terminal instance.</p>
+        <p>This <code><a href="doc/timapi.TransactionData.html#cardRef">CardRef</a></code> field must have the following format to reference a non-PCI PAN:</p>
+        <p>Example: "061234567801234567" : "06" is the prefix that defines the content type that follows (non-PCI PAN), "1234568701234567" is then the non-PCI PAN.</p>
+        <p><b>Important</b>: The MPKE on the ECR is only allowed for non-PCI brands, otherwise the manual entry must only be performed on the PIN Pad.</p>
+        </div></div></section>
+
+        <div class="row"><div class="col-md-6"></div></div><section class="filterGuides guideAustria"><h2><a name="austrianUseCase" id="austrianUseCase">&#160;</a>Guide Austrian Use Cases</h2><div class="row"><div class="col-md-6"><p>The Austria guide adds two new use cases:
+      <ul>
+        <li>Non guaranteed payment (NGV)</li>
+        <li>Delayed payment</li>
+      </ul>
+    </p>
+    <p>Both use cases do not add any new functions.
+      Only the standard <code class="asyncMethod"><a class="asyncMethod" href="doc/timapi.Terminal.html#transactionAsync">TransactionAsync</a></code>
+      and <code class="syncMethod"><a class="syncMethod" href="doc/timapi.Terminal.html#transactionAsync">Transaction</a></code> functions with
+      <code><a href="doc/timapi.constants.TransactionType.html#.purchase">TransactionType Purchase</a></code> are
+      used with additional parameters the can be set in <code class="transactionData"><a class="transactionData" href="doc/timapi.TransactionData.html">TransactionData</a></code>
+      before starting the purchase transaction.</p>
+      </div></div><section class="filterGuides guideAustria"><h3><a name="austrianUseCaseNGV" id="austrianUseCaseNGV">&#160;</a>Austrian Use Case: NGV</h3><div class="row"><div class="col-md-6"><p>An NGV payment is used in conjunction with a standard purchase transaction. The difference is that the purchase is handled
+          as an own risk transaction for the merchant.
+          Before starting a purchase transaction the <code class="transactionData"><a class="transactionData" href="doc/timapi.TransactionData.html#ngvMode">NGVMode</a></code> can be set
+          according to <code><a href="doc/timapi.constants.NgvMode.html">NGVMode</a></code> to define the NGV behaviour of a transaction.</p>
+          <p>With the <code><a href="doc/timapi.constants.NgvMode.html">NGVMode</a></code> it is possible to either forbid NGV usage for the next transaction,
+          to allow it with a fallback to a standard purchase transaction or to set NGV usage to mandatory.
+          <ul>
+            <li>If the NGV usage is explicitly forbidden the purchase transaction must be performed as a standard purchase.</li>
+            <li>If the NGV is wished but fallback is allowed it is possible that the current purchase will either be performed
+              as an NGV purchase or automatically as a standard purchase in case it is not possible to make an NGV purchase.</li>
+              <li>If NGV usage is set to mandatory the current purchase transaction must be performed as an NGV purchase.
+                If this is not possible the purchase transaction fails without fallback.</li>
+              </ul>
+            </p>
+            <p>To identify if the current transaction has been performed as an NGV purchase or not a new boolean flag <code><a href="doc/timapi.TransactionInformation.html#ngvUsedFlag">NGVUsedFlag</a></code>
+            has been introduced in the <code><a href="doc/timapi.TransactionResponse.html">TransactionResponse</a></code>. For statistics the NGV transactions can also be identified
+            in the <code><a href="doc/timapi.Counters.html">Counters</a></code> using the same <code><a href="doc/timapi.TransactionInformation.html#ngvUsedFlag">NGVUsedFlag</a></code>.</p>
+          </div></div></section>
+          <div class="row"><div class="col-md-6"></div></div><section class="filterGuides guideAustria"><h3><a name="austrianUseCaseDelayedPayment" id="austrianUseCaseDelayedPayment">&#160;</a>Austrian Use Case: Delayed Payment</h3><div class="row"><div class="col-md-6"><p>The delayed payment can only be used in conjunction with an NGV purchase.
+              For delayed payments, the clearing of a transaction is delayed by the clearing house for the defined number of days.
+              The delay is set using the <code class="transactionData"><a class="transactionData" href="doc/timapi.TransactionData.html#ngvClearingDelay">ClearingDelay</a></code> member in
+              <code class="transactionData"><a class="transactionData" href="doc/timapi.TransactionData.html">TransactionData</a></code>.</p>
+            </div></div></section>
+          <div class="row"><div class="col-md-6"></div></div></section>
+    <div class="row"><div class="col-md-6"></div></div></section> 
+
+    <section><h1><a name="methods" id="methods">&#160;</a>Terminal methods overview</h1><div class="row"><div class="col-md-6">
+                <p lang="js">
+                    All terminal methods are in async-mode. Method-calls return immediately after the operation has
+                    started or throws a <code><a href="doc/timapi.TimException.html">TimException</a></code> otherwise.
+                    A listener-event-method will be called after operation is finished successfully.
+                    All listener-event-methods
+                    contain a
+                    <code><a href="doc/timapi.TimEvent.html">TimEvent</a></code>. In case of failure a
+                    <code><a href="doc/timapi.constants.ResultCode.html">ResultCode</a></code>
+                    is included. User-implemented listener-handlers (that extend <code><a href="doc/timapi.DefaultTerminalListener.html">DefaultTerminalListener</a></code>) can be added to the
+                    <code><a href="doc/timapi.Terminal.html">Terminal</a></code>-instance with
+                    <code><a href="doc/timapi.Terminal.html#addListener">addListener</a></code>.
+                </p>
+            </div><div class="col-md-6">
+                <p>Code example for adding a terminal listener:</p>
+                <pre><code class="language-{.js}">/** Asynchronous listener handling terminal events. */
+
+/* Define your own TerminalListener by overwrite all required 
+ * methods from the DefaultTerminalListener class
+ * which you want to use.
+*/
+class MyTerminalListener extends timapi.DefaultTerminalListener {
+
+// Overwrite all wanted methods of the DefaultTerminalListener herein
+
+}
+
+/* Then create an instance of your "MyTerminalListener" and add it to
+ * your terminal instance.
+*/
+var myListener = new MyTerminalListener();
+
+terminal.addListener(myListener);
+
+
+</code></pre>
+            </div></div>
+        <div class="row"><div class="col-md-6"></div></div><section><h2><a name="mainFunc" id="mainFunc">&#160;</a>Main / guide Retail terminal functions</h2><div class="row"><div class="col-md-6"><table class="table">
+                <thead>
+                    <tr>
+                        <th>
+                            <strong class="syncMethod">Sync method</strong>
+                            <br class="syncMethod">
+                            <span class="asyncMethod">Async method</span>
+                            <br>
+                            <span class="completedMethod">Completed event</span>
+                        </th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <code class="syncMethod"><a class="syncMethod" href="doc/timapi.Terminal.html#activateAsync">activate</a></code>
+                            <br class="syncMethod">
+                            <code class="asyncMethod"><a class="asyncMethod" href="doc/timapi.Terminal.html#activateAsync">activateAsync</a></code>
+                            <br>
+                            <code class="completedMethod"><a class="completedMethod" href="doc/timapi.DefaultTerminalListener.html#activateCompleted">activateCompleted</a></code>
+                        </td>
+                        <td>Open a user shift.</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code class="syncMethod"><a class="syncMethod" href="doc/timapi.Terminal.html#applicationInformationAsync">applicationInformation</a></code>
+                            <br class="syncMethod">
+                            <code class="asyncMethod"><a class="asyncMethod" href="doc/timapi.Terminal.html#applicationInformationAsync">
+                                applicationInformationAsync
+                            </a></code>
+                            <br>
+                            <code class="completedMethod"><a class="completedMethod" href="doc/timapi.DefaultTerminalListener.html#applicationInformationCompleted">
+                                applicationInformationCompleted
+                            </a></code>
+                        </td>
+                        <td>Request the list of brands available on the terminal.</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code class="syncMethod"><a class="syncMethod" href="doc/timapi.Terminal.html#balanceAsync">balance</a></code>
+                            <br class="syncMethod">
+                            <code class="asyncMethod"><a class="asyncMethod" href="doc/timapi.Terminal.html#balanceAsync">balanceAsync</a></code>
+                            <br>
+                            <code class="completedMethod"><a class="completedMethod" href="doc/timapi.DefaultTerminalListener.html#balanceCompleted">balanceCompleted</a></code>
+                        </td>
+                        <td>Force the EFT Terminal to transmit all transactions to the
+                            <br>
+                            host system as well to do the daily closing.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code class="notifyMethod"><a class="notifyMethod" href="doc/timapi.Terminal.html#cancel">cancel</a></code>
+                        </td>
+                        <td>Aborts an open asynchronous Financial Transaction or Non-Financial Transaction request, except for a commit or rollback request, which cannot be cancelled.</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code class="syncMethod"><a class="syncMethod" href="doc/timapi.Terminal.html#changeSettingsAsync">changeSettings</a></code>
+                            <br class="syncMethod">
+                            <code class="asyncMethod"><a class="asyncMethod" href="doc/timapi.Terminal.html#changeSettingsAsync">changeSettingsAsync</a></code>
+                            <br>
+                            <code class="completedMethod"><a class="completedMethod" href="doc/timapi.DefaultTerminalListener.html#changeSettingsCompleted">changeSettingsCompleted
+                            </a></code>
+                        </td>
+                        <td>Change configuration parameters of the EFT Terminal.</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code class="syncMethod"><a class="syncMethod" href="doc/timapi.Terminal.html#commitAsync">commit</a></code>
+                            <br class="syncMethod">
+                            <code class="asyncMethod"><a class="asyncMethod" href="doc/timapi.Terminal.html#commitAsync">commitAsync</a></code>
+                            <br>
+                            <code class="completedMethod"><a class="completedMethod" href="doc/timapi.DefaultTerminalListener.html#commitCompleted">commitCompleted</a></code>
+                        </td>
+                        <td>Perform Commit-operation after a successful Transaction call.</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code class="syncMethod"><a class="syncMethod" href="doc/timapi.Terminal.html#connectAsync">connect</a></code>
+                            <br class="syncMethod">
+                            <code class="asyncMethod"><a class="asyncMethod" href="doc/timapi.Terminal.html#connectAsync">connectAsync</a></code>
+                            <br>
+                            <code class="completedMethod"><a class="completedMethod" href="doc/timapi.DefaultTerminalListener.html#connectCompleted">connectCompleted</a></code>
+                        </td>
+                        <td>Initiates a connection to the EFT Terminal.</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code class="syncMethod"><a class="syncMethod" href="doc/timapi.Terminal.html#counterRequestAsync">counterRequest</a></code>
+                            <br class="syncMethod">
+                            <code class="asyncMethod"><a class="asyncMethod" href="doc/timapi.Terminal.html#counterRequestAsync">counterRequestAsync</a></code>
+                            <br>
+                            <code class="completedMethod"><a class="completedMethod" href="doc/timapi.DefaultTerminalListener.html#counterRequestCompleted">counterRequestCompleted
+                            </a></code>
+                        </td>
+                        <td>Get counter information`s from the EFT Terminal.</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code class="syncMethod"><a class="syncMethod" href="doc/timapi.Terminal.html#dccRatesAsync">dccRates</a></code>
+                            <br class="syncMethod">
+                            <code class="asyncMethod"><a class="asyncMethod" href="doc/timapi.Terminal.html#dccRatesAsync">dccRatesAsync</a></code>
+                            <br>
+                            <code class="completedMethod"><a class="completedMethod" href="doc/timapi.DefaultTerminalListener.html#dccRatesCompleted">dccRatesCompleted</a></code>
+                        </td>
+                        <td>Request DCC rates from the EFT Terminal.</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code class="syncMethod"><a class="syncMethod" href="doc/timapi.Terminal.html#deactivateAsync">deactivate</a></code>
+                            <br class="syncMethod">
+                            <code class="asyncMethod"><a class="asyncMethod" href="doc/timapi.Terminal.html#deactivateAsync">deactivateAsync</a></code>
+                            <br>
+                            <code class="completedMethod"><a class="completedMethod" href="doc/timapi.DefaultTerminalListener.html#deactivateCompleted">deactivateCompleted</a></code>
+                        </td>
+                        <td>Close a user shift.</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code class="syncMethod"><a class="syncMethod" href="doc/timapi.Terminal.html#disconnectAsync">disconnect</a></code>
+                            <br class="syncMethod">
+                            <code class="asyncMethod"><a class="asyncMethod" href="doc/timapi.Terminal.html#disconnectAsync">disconnectAsync</a></code>
+                            <br>
+                            <code class="completedMethod"><a class="completedMethod" href="doc/com/six/timapi/TerminalListener.html#disconnected-com.six.timapi.Terminal-com.six.timapi.TimException-">disconnected</a></code>
+                        </td>
+                        <td>Interrupts the connection to the EFT Terminal.</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code class="syncMethod"><a class="syncMethod" href="doc/timapi.Terminal.html#hardwareInformationAsync">hardwareInformation</a></code>
+                            <br class="syncMethod">
+                            <code class="asyncMethod"><a class="asyncMethod" href="doc/timapi.Terminal.html#hardwareInformationAsync">hardwareInformationAsync
+                            </a></code>
+                            <br>
+                            <code class="completedMethod"><a class="completedMethod" href="doc/timapi.DefaultTerminalListener.html#hardwareInformationCompleted">
+                                hardwareInformationCompleted
+                            </a></code>
+                        </td>
+                        <td>Get hardware information from the EFT Terminal.</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code class="syncMethod"><a class="syncMethod" href="doc/timapi.Terminal.html#loginAsync">login</a></code>
+                            <br class="syncMethod">
+                            <code class="asyncMethod"><a class="asyncMethod" href="doc/timapi.Terminal.html#loginAsync">loginAsync</a></code>
+                            <br>
+                            <code class="completedMethod"><a class="completedMethod" href="doc/timapi.DefaultTerminalListener.html#loginCompleted">loginCompleted</a></code>
+                        </td>
+                        <td>Activate a communication session between the ECR and
+                            <br>
+                            the terminal.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code class="syncMethod"><a class="syncMethod" href="doc/timapi.Terminal.html#logoutAsync">logout</a></code>
+                            <br class="syncMethod">
+                            <code class="asyncMethod"><a class="asyncMethod" href="doc/timapi.Terminal.html#logoutAsync">logoutAsync</a></code>
+                            <br>
+                            <code class="completedMethod"><a class="completedMethod" href="doc/timapi.DefaultTerminalListener.html#logoutCompleted">logoutCompleted</a></code>
+                        </td>
+                        <td>Terminate an active communication session between the ECR<br>and the terminal.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code class="syncMethod"><a class="syncMethod" href="doc/timapi.Terminal.html#rebootAsync">reboot</a></code>
+                            <br class="syncMethod">
+                            <code class="asyncMethod"><a class="asyncMethod" href="doc/timapi.Terminal.html#rebootAsync">rebootAsync</a></code>
+                            <br>
+                            <code class="completedMethod"><a class="completedMethod" href="doc/timapi.DefaultTerminalListener.html#rebootCompleted">rebootCompleted</a></code>
+                        </td>
+                        <td>Force the EFT Terminal to reboot.</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code class="syncMethod"><a class="syncMethod" href="doc/timapi.Terminal.html#receiptRequestAsync">receiptRequest</a></code>
+                            <br class="syncMethod">
+                            <code class="asyncMethod"><a class="asyncMethod" href="doc/timapi.Terminal.html#receiptRequestAsync">receiptRequestAsync</a></code>
+                            <br>
+                            <code class="completedMethod"><a class="completedMethod" href="doc/timapi.DefaultTerminalListener.html#receiptRequestCompleted">receiptRequestCompleted
+                            </a></code>
+                        </td>
+                        <td>Receive the latest receipt or a list of silent receipts.</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code class="syncMethod"><a class="syncMethod" href="doc/timapi.Terminal.html#reconciliationAsync">reconciliation</a></code>
+                            <br class="syncMethod">
+                            <code class="asyncMethod"><a class="asyncMethod" href="doc/timapi.Terminal.html#reconciliationAsync">reconciliationAsync</a></code>
+                            <br>
+                            <code class="completedMethod"><a class="completedMethod" href="doc/timapi.DefaultTerminalListener.html#reconciliationCompleted">reconciliationCompleted
+                            </a></code>
+                        </td>
+                        <td>Force the EFT Terminal to transmit all financial transactions
+                            <br>
+                            to the host system.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code class="syncMethod"><a class="syncMethod" href="doc/timapi.Terminal.html#reconfigAsync">reconfig</a></code>
+                            <br class="syncMethod">
+                            <code class="asyncMethod"><a class="asyncMethod" href="doc/timapi.Terminal.html#reconfigAsync">reconfigAsync</a></code>
+                            <br>
+                            <code class="completedMethod"><a class="completedMethod" href="doc/timapi.DefaultTerminalListener.html#reconfigCompleted">reconfigCompleted</a></code>
+                        </td>
+                        <td>Force the EFT Terminal to get the configuration from the service center.</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code class="syncMethod"><a class="syncMethod" href="doc/timapi.Terminal.html#rollbackAsync">rollback</a></code>
+                            <br class="syncMethod">
+                            <code class="asyncMethod"><a class="asyncMethod" href="doc/timapi.Terminal.html#rollbackAsync">rollbackAsync</a></code>
+                            <br>
+                            <code class="completedMethod"><a class="completedMethod" href="doc/timapi.DefaultTerminalListener.html#rollbackCompleted">rollbackCompleted</a></code>
+                        </td>
+                        <td>Prevent a transaction from being committed to the transaction
+                            <br>
+                            log and generates a technical reversal of the authorization.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code class="syncMethod"><a class="syncMethod" href="doc/timapi.Terminal.html#softwareUpdateAsync">softwareUpdate</a></code>
+                            <br class="syncMethod">
+                            <code class="asyncMethod"><a class="asyncMethod" href="doc/timapi.Terminal.html#softwareUpdateAsync">softwareUpdateAsync</a></code>
+                            <br>
+                            <code class="completedMethod"><a class="completedMethod" href="doc/timapi.DefaultTerminalListener.html#softwareUpdateCompleted">softwareUpdateCompleted
+                            </a></code>
+                        </td>
+                        <td>Force the EFT Terminal to start a Software Update.</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code class="syncMethod"><a class="syncMethod" href="doc/timapi.Terminal.html#systemInformationAsync">systemInformation</a></code>
+                            <br class="syncMethod">
+                            <code class="asyncMethod"><a class="asyncMethod" href="doc/timapi.Terminal.html#systemInformationAsync">systemInformationAsync</a></code>
+                            <br>
+                            <code class="completedMethod"><a class="completedMethod" href="doc/timapi.DefaultTerminalListener.html#systemInformationCompleted">
+                                systemInformationCompleted
+                            </a></code>
+                        </td>
+                        <td>Request system information from the EFT Terminal.</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code class="syncMethod"><a class="syncMethod" href="doc/timapi.Terminal.html#transactionAsync">transaction</a></code>
+                            <br class="syncMethod">
+                            <code class="asyncMethod"><a class="asyncMethod" href="doc/timapi.Terminal.html#transactionAsync">transactionAsync</a></code>
+                            <br>
+                            <code class="completedMethod"><a class="completedMethod" href="doc/timapi.DefaultTerminalListener.html#transactionCompleted">transactionCompleted</a></code>
+                        </td>
+                        <td>Starts an EFT Terminal Transaction.</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div></div></section>  
+
+        <div class="row"><div class="col-md-6"></div></div><section><h2><a name="bankingFunc" id="bankingFunc">&#160;</a>Banking terminal functions</h2><div class="row"><div class="col-md-6"><table class="table">
+        <thead>
+            <tr>
+                <th>
+                    <strong class="syncMethod">Sync method</strong>
+                    <br>
+                    <span class="asyncMethod">Async method</span>
+                    <br>
+                    <span class="completedMethod">Completed event</span>
+                </th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <code class="syncMethod"><a class="syncMethod">balanceInquiry</a></code>
+                    <br class="syncMethod">
+                    <code class="asyncMethod"><a class="asyncMethod" href="doc/timapi.Terminal.html#balanceInquiryAsync">balanceInquiryAsync</a></code>
+                    <br>
+                    <code class="completedMethod"><a class="completedMethod" href="doc/timapi.DefaultTerminalListener.html#balanceInquiryCompleted">balanceInquiryCompleted</a></code>
+                </td>
+                <td>Perform a balance check of a card/account on the terminal.</td>
+            </tr>
+      </tbody>
+    </table>
+  </div></div></section>
+        <div class="row"><div class="col-md-6"></div></div><section><h2><a name="addMethods" id="addMethods">&#160;</a>Additional terminal listener-events</h2><div class="row"><div class="col-md-6"><table class="table">
+                <thead>
+                    <tr>
+                        <th>Listener-event</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr excl="cs">
+                        <td>
+                            <code class="completedMethod"><a class="completedMethod" href="doc/timapi.DefaultTerminalListener.html#requestCompleted">requestCompleted</a></code>
+                        </td>
+                        <td>Operation started by an asynchronous function has finished.
+                            <br>
+                            Applications can use both operation specific completion callback
+                            <br>
+                            in combination with this generic completion callback.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code class="completedMethod"><a class="completedMethod" href="doc/timapi.DefaultTerminalListener.html#terminalStatusChanged">terminalStatusChanged
+                            </a></code>
+                        </td>
+                        <td>The terminal status has changed. The new status can be
+                            <br>
+                            retrieved from the TerminalStatus property.
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div></div></section>
+
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+
+    <div class="row"><div class="col-md-6"></div></div></section>
+
+    <section><h1><a name="flows" id="flows">&#160;</a>Flows</h1><div class="row"><div class="col-md-6"><p>This chapter describes various flows for specific guides.</p>
+        <p>Hint: if no content visible, try to select a guide under "Guide Selection" on the left.</p>
+    	</div></div><section class="filterGuides guideAustria"><h2><a name="austrianFlows" id="austrianFlows">&#160;</a>Guide Austrian Additional Flows</h2><section><h3><a name="austrianFlowNGVWithoutDelay" id="austrianFlowNGVWithoutDelay">&#160;</a>Austrian Flow: NGV Purchase without delay</h3><div class="row"><div class="col-md-6"><p>The following flow describes an NGV purchase without any specific clearing delay set. The <code><a href="doc/timapi.constants.NgvMode.html">NGVMode</a></code> "AllowedWithFallback"
+              is used which indicates it the card used is not capable of NGV payments the terminal is allowed to make a fallback to a standard purchase. This flow shows a
+              successfully performed NGV payment which can be seen by checking the value <code><a href="doc/timapi.TransactionInformation.html#ngvUsedFlag">NGVUsedFlag</a></code>, which is set to "true".</p>
+              <figure><svg contentStyleType="text/css" height="580px" preserveAspectRatio="none" style="width:1244px;height:580px;" version="1.1" viewBox="0 0 1244 580" width="1244px" zoomAndPan="magnify"><defs></defs><g><rect fill="none" height="83.118" style="stroke:#000000;stroke-width:1.5;" width="302" x="886" y="242.01"></rect><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="25" x2="25" y1="39.0679" y2="542.0702"></line><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="554.5" x2="554.5" y1="39.0679" y2="542.0702"></line><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="933" x2="933" y1="39.0679" y2="542.0702"></line><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="1097" x2="1097" y1="39.0679" y2="542.0702"></line><rect fill="#E2E2F0" height="33.0679" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="40" x="5" y="5"></rect><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="26" x="12" y="26.9659">ECR</text><rect fill="#E2E2F0" height="33.0679" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="40" x="5" y="541.0702"></rect><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="26" x="12" y="563.0361">ECR</text><rect fill="#E2E2F0" height="33.0679" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="61" x="524.5" y="5"></rect><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="47" x="531.5" y="26.9659">TimApi</text><rect fill="#E2E2F0" height="33.0679" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="61" x="524.5" y="541.0702"></rect><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="47" x="531.5" y="563.0361">TimApi</text><rect fill="#E2E2F0" height="33.0679" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="74" x="896" y="5"></rect><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="60" x="903" y="26.9659">Terminal</text><rect fill="#E2E2F0" height="33.0679" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="74" x="896" y="541.0702"></rect><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="60" x="903" y="563.0361">Terminal</text><rect fill="#E2E2F0" height="33.0679" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="72" x="1061" y="5"></rect><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="58" x="1068" y="26.9659">Acquirer</text><rect fill="#E2E2F0" height="33.0679" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="72" x="1061" y="541.0702"></rect><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="58" x="1068" y="563.0361">Acquirer</text><polygon fill="#181818" points="543,68.7739,553,72.7739,543,76.7739,547,72.7739" style="stroke:#181818;stroke-width:1.0;"></polygon><line style="stroke:#181818;stroke-width:1.0;" x1="25" x2="549" y1="72.7739" y2="72.7739"></line><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="345" x="32" y="66.9649">Set NGVMode = "AllowedWithFallback" in TransactionData</text><polygon fill="#181818" points="543,100.4799,553,104.4799,543,108.4799,547,104.4799" style="stroke:#181818;stroke-width:1.0;"></polygon><line style="stroke:#181818;stroke-width:1.0;" x1="25" x2="549" y1="104.4799" y2="104.4799"></line><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="352" x="32" y="98.6709">Transaction request (TransactionType = Purchase, Amount)</text><polygon fill="#181818" points="921,132.186,931,136.186,921,140.186,925,136.186" style="stroke:#181818;stroke-width:1.0;"></polygon><line style="stroke:#181818;stroke-width:1.0;" x1="555" x2="927" y1="136.186" y2="136.186"></line><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="310" x="562" y="130.377">FinTransaction:Purchase (Amount, TransactionData)</text><path d="M817,149.186 L817,229.186 L1048,229.186 L1048,159.186 L1038,149.186 L817,149.186 " fill="#FEFFDD" style="stroke:#181818;stroke-width:0.5;"></path><path d="M1038,149.186 L1038,159.186 L1048,159.186 L1038,149.186 " fill="#FEFFDD" style="stroke:#181818;stroke-width:0.5;"></path><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="180" x="823" y="168.083">The terminal checks if the card</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="210" x="823" y="185.789">used is capable of an NGV payment</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="196" x="823" y="203.495">and performs it if check has been</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="63" x="823" y="221.201">successful.</text><path d="M886,242.01 L953,242.01 L953,251.716 L943,261.716 L886,261.716 L886,242.01 " fill="#EEEEEE" style="stroke:#000000;stroke-width:1.5;"></path><rect fill="none" height="83.118" style="stroke:#000000;stroke-width:1.5;" width="302" x="886" y="242.01"></rect><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="22" x="901" y="256.907">opt</text><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="215" x="968" y="255.7689">[Maybe no authorization can be made]</text><polygon fill="#181818" points="1085,281.4221,1095,285.4221,1085,289.4221,1089,285.4221" style="stroke:#181818;stroke-width:1.0;"></polygon><line style="stroke:#181818;stroke-width:1.0;" x1="933" x2="1091" y1="285.4221" y2="285.4221"></line><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="131" x="940" y="279.6131">Authorization request</text><polygon fill="#181818" points="944,313.1281,934,317.1281,944,321.1281,940,317.1281" style="stroke:#181818;stroke-width:1.0;"></polygon><line style="stroke:#181818;stroke-width:1.0;" x1="938" x2="1096" y1="317.1281" y2="317.1281"></line><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="140" x="950" y="311.3191">Authorization response</text><polygon fill="#181818" points="566,351.8341,556,355.8341,566,359.8341,562,355.8341" style="stroke:#181818;stroke-width:1.0;"></polygon><line style="stroke:#181818;stroke-width:1.0;" x1="560" x2="932" y1="355.8341" y2="355.8341"></line><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="354" x="572" y="350.0251">Transaction response (ResultCode = 0, NGVUsedFlag = true)</text><polygon fill="#181818" points="36,383.5401,26,387.5401,36,391.5401,32,387.5401" style="stroke:#181818;stroke-width:1.0;"></polygon><line style="stroke:#181818;stroke-width:1.0;" x1="30" x2="554" y1="387.5401" y2="387.5401"></line><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="506" x="42" y="381.7311">Transaction response (TransactionResponse[ResultCode, TransactionInformation, ...])</text><polygon fill="#181818" points="543,415.2461,553,419.2461,543,423.2461,547,419.2461" style="stroke:#181818;stroke-width:1.0;"></polygon><line style="stroke:#181818;stroke-width:1.0;" x1="25" x2="549" y1="419.2461" y2="419.2461"></line><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="494" x="32" y="413.4371">Get NGVUsedFlag from TransactionInformation to determine if NGV was successful</text><polygon fill="#181818" points="36,429.2461,26,433.2461,36,437.2461,32,433.2461" style="stroke:#181818;stroke-width:1.0;"></polygon><line style="stroke:#181818;stroke-width:1.0;" x1="30" x2="554" y1="433.2461" y2="433.2461"></line><path d="M938,446.2461 L938,526.2461 L1237,526.2461 L1237,456.2461 L1227,446.2461 L938,446.2461 " fill="#FEFFDD" style="stroke:#181818;stroke-width:0.5;"></path><path d="M1227,446.2461 L1227,456.2461 L1237,456.2461 L1227,446.2461 " fill="#FEFFDD" style="stroke:#181818;stroke-width:0.5;"></path><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="196" x="944" y="465.1431">As no ClearingDelay has been set</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="231" x="944" y="482.8492">in TransactionData for this transaction,</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="278" x="944" y="500.5552">the clearing house will do the clearing as usual,</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="196" x="944" y="518.2612">without a specially defined delay.</text></g></svg></figure>
+            </div></div></section>
+            <div class="row"><div class="col-md-6"></div></div><section><h3><a name="austrianFlowNGVWithDelay" id="austrianFlowNGVWithDelay">&#160;</a>Austrian Flow: NGV Purchase with delay</h3><div class="row"><div class="col-md-6"><p>In the flow below, additionally to the <code><a href="doc/timapi.constants.NgvMode.html">NGVMode</a></code> "AllowedWithFallback" also the
+              <code class="transactionData"><a class="transactionData" href="doc/timapi.TransactionData.html#ngvClearingDelay">ClearingDelay</a></code> is set to define a specific clearing delay in days.
+              This means that the NGV payment clearing will be delayed by the amount of days specified. This flow shows a successful NGV payment including
+              a clearing delay.</p>
+              <figure><svg contentStyleType="text/css" height="594px" preserveAspectRatio="none" style="width:1224px;height:594px;" version="1.1" viewBox="0 0 1224 594" width="1224px" zoomAndPan="magnify"><defs></defs><g><rect fill="none" height="83.118" style="stroke:#000000;stroke-width:1.5;" width="302" x="916" y="273.716"></rect><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="25" x2="25" y1="39.0679" y2="556.0702"></line><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="584.5" x2="584.5" y1="39.0679" y2="556.0702"></line><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="963" x2="963" y1="39.0679" y2="556.0702"></line><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="1127" x2="1127" y1="39.0679" y2="556.0702"></line><rect fill="#E2E2F0" height="33.0679" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="40" x="5" y="5"></rect><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="26" x="12" y="26.9659">ECR</text><rect fill="#E2E2F0" height="33.0679" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="40" x="5" y="555.0702"></rect><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="26" x="12" y="577.0361">ECR</text><rect fill="#E2E2F0" height="33.0679" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="61" x="554.5" y="5"></rect><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="47" x="561.5" y="26.9659">TimApi</text><rect fill="#E2E2F0" height="33.0679" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="61" x="554.5" y="555.0702"></rect><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="47" x="561.5" y="577.0361">TimApi</text><rect fill="#E2E2F0" height="33.0679" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="74" x="926" y="5"></rect><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="60" x="933" y="26.9659">Terminal</text><rect fill="#E2E2F0" height="33.0679" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="74" x="926" y="555.0702"></rect><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="60" x="933" y="577.0361">Terminal</text><rect fill="#E2E2F0" height="33.0679" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="72" x="1091" y="5"></rect><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="58" x="1098" y="26.9659">Acquirer</text><rect fill="#E2E2F0" height="33.0679" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="72" x="1091" y="555.0702"></rect><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="58" x="1098" y="577.0361">Acquirer</text><polygon fill="#181818" points="573,68.7739,583,72.7739,573,76.7739,577,72.7739" style="stroke:#181818;stroke-width:1.0;"></polygon><line style="stroke:#181818;stroke-width:1.0;" x1="25" x2="579" y1="72.7739" y2="72.7739"></line><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="345" x="32" y="66.9649">Set NGVMode = "AllowedWithFallback" in TransactionData</text><polygon fill="#181818" points="573,100.4799,583,104.4799,573,108.4799,577,104.4799" style="stroke:#181818;stroke-width:1.0;"></polygon><line style="stroke:#181818;stroke-width:1.0;" x1="25" x2="579" y1="104.4799" y2="104.4799"></line><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="219" x="32" y="98.6709">Set ClearingDelay in TransactionData</text><polygon fill="#181818" points="573,132.186,583,136.186,573,140.186,577,136.186" style="stroke:#181818;stroke-width:1.0;"></polygon><line style="stroke:#181818;stroke-width:1.0;" x1="25" x2="579" y1="136.186" y2="136.186"></line><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="352" x="32" y="130.377">Transaction request (TransactionType = Purchase, Amount)</text><polygon fill="#181818" points="951,163.892,961,167.892,951,171.892,955,167.892" style="stroke:#181818;stroke-width:1.0;"></polygon><line style="stroke:#181818;stroke-width:1.0;" x1="585" x2="957" y1="167.892" y2="167.892"></line><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="310" x="592" y="162.083">FinTransaction:Purchase (Amount, TransactionData)</text><path d="M847,180.892 L847,260.892 L1078,260.892 L1078,190.892 L1068,180.892 L847,180.892 " fill="#FEFFDD" style="stroke:#181818;stroke-width:0.5;"></path><path d="M1068,180.892 L1068,190.892 L1078,190.892 L1068,180.892 " fill="#FEFFDD" style="stroke:#181818;stroke-width:0.5;"></path><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="180" x="853" y="199.789">The terminal checks if the card</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="210" x="853" y="217.495">used is capable of an NGV payment</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="196" x="853" y="235.201">and performs it if check has been</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="63" x="853" y="252.907">successful.</text><path d="M916,273.716 L983,273.716 L983,283.4221 L973,293.4221 L916,293.4221 L916,273.716 " fill="#EEEEEE" style="stroke:#000000;stroke-width:1.5;"></path><rect fill="none" height="83.118" style="stroke:#000000;stroke-width:1.5;" width="302" x="916" y="273.716"></rect><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="22" x="931" y="288.6131">opt</text><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="215" x="998" y="287.475">[Maybe no authorization can be made]</text><polygon fill="#181818" points="1115,313.1281,1125,317.1281,1115,321.1281,1119,317.1281" style="stroke:#181818;stroke-width:1.0;"></polygon><line style="stroke:#181818;stroke-width:1.0;" x1="963" x2="1121" y1="317.1281" y2="317.1281"></line><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="131" x="970" y="311.3191">Authorization request</text><polygon fill="#181818" points="974,344.8341,964,348.8341,974,352.8341,970,348.8341" style="stroke:#181818;stroke-width:1.0;"></polygon><line style="stroke:#181818;stroke-width:1.0;" x1="968" x2="1126" y1="348.8341" y2="348.8341"></line><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="140" x="980" y="343.0251">Authorization response</text><polygon fill="#181818" points="596,383.5401,586,387.5401,596,391.5401,592,387.5401" style="stroke:#181818;stroke-width:1.0;"></polygon><line style="stroke:#181818;stroke-width:1.0;" x1="590" x2="962" y1="387.5401" y2="387.5401"></line><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="354" x="602" y="381.7311">Transaction response (ResultCode = 0, NGVUsedFlag = true)</text><polygon fill="#181818" points="36,415.2461,26,419.2461,36,423.2461,32,419.2461" style="stroke:#181818;stroke-width:1.0;"></polygon><line style="stroke:#181818;stroke-width:1.0;" x1="30" x2="584" y1="419.2461" y2="419.2461"></line><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="506" x="42" y="413.4371">Transaction response (TransactionResponse[ResultCode, TransactionInformation, ...])</text><polygon fill="#181818" points="573,446.9521,583,450.9521,573,454.9521,577,450.9521" style="stroke:#181818;stroke-width:1.0;"></polygon><line style="stroke:#181818;stroke-width:1.0;" x1="25" x2="579" y1="450.9521" y2="450.9521"></line><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="536" x="32" y="445.1431">Get NGVUsedFlag from TransactionInformation to determine if NGV was used successfully</text><polygon fill="#181818" points="36,460.9521,26,464.9521,36,468.9521,32,464.9521" style="stroke:#181818;stroke-width:1.0;"></polygon><line style="stroke:#181818;stroke-width:1.0;" x1="30" x2="584" y1="464.9521" y2="464.9521"></line><path d="M968,477.9521 L968,540.9521 L1165,540.9521 L1165,487.9521 L1155,477.9521 L968,477.9521 " fill="#FEFFDD" style="stroke:#181818;stroke-width:0.5;"></path><path d="M1155,477.9521 L1155,487.9521 L1165,487.9521 L1155,477.9521 " fill="#FEFFDD" style="stroke:#181818;stroke-width:0.5;"></path><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="176" x="974" y="496.8492">The clearing house will do the</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="156" x="974" y="514.5552">clearing of the transaction</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="137" x="974" y="532.2612">after the defined delay.</text></g></svg></figure>
+            </div></div></section>
+            <div class="row"><div class="col-md-6"></div></div><section><h3><a name="austrianFlowNGVFallback" id="austrianFlowNGVFallback">&#160;</a>Austrian Flow: NGV Purchase fallback with Non-NGV card</h3><div class="row"><div class="col-md-6"><p>The following flow describes an NGV payment with <code><a href="doc/timapi.constants.NgvMode.html">NGVMode</a></code> "AllowedWithFallback" which
+              results in a fallback to a standard purchase due to the fact that the card used is not capable of NGV payments.
+              The <code><a href="doc/timapi.TransactionInformation.html#ngvUsedFlag">NGVUsedFlag</a></code> is used to determine if the NGV payment was performed as such or if a fallback
+              was used. In this case the <code><a href="doc/timapi.TransactionInformation.html#ngvUsedFlag">NGVUsedFlag</a></code> value is set to "false" which indicates that the requested
+              NGV payment was not successful and the fallback to a standard purchase has been done.</p>
+              <figure><svg contentStyleType="text/css" height="781px" preserveAspectRatio="none" style="width:1174px;height:781px;" version="1.1" viewBox="0 0 1174 781" width="1174px" zoomAndPan="magnify"><defs></defs><g><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="25" x2="25" y1="39.0679" y2="743.1304"></line><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="584.5" x2="584.5" y1="39.0679" y2="743.1304"></line><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="965" x2="965" y1="39.0679" y2="743.1304"></line><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="1129" x2="1129" y1="39.0679" y2="743.1304"></line><rect fill="#E2E2F0" height="33.0679" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="40" x="5" y="5"></rect><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="26" x="12" y="26.9659">ECR</text><rect fill="#E2E2F0" height="33.0679" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="40" x="5" y="742.1304"></rect><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="26" x="12" y="764.0963">ECR</text><rect fill="#E2E2F0" height="33.0679" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="61" x="554.5" y="5"></rect><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="47" x="561.5" y="26.9659">TimApi</text><rect fill="#E2E2F0" height="33.0679" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="61" x="554.5" y="742.1304"></rect><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="47" x="561.5" y="764.0963">TimApi</text><rect fill="#E2E2F0" height="33.0679" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="74" x="928" y="5"></rect><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="60" x="935" y="26.9659">Terminal</text><rect fill="#E2E2F0" height="33.0679" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="74" x="928" y="742.1304"></rect><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="60" x="935" y="764.0963">Terminal</text><rect fill="#E2E2F0" height="33.0679" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="72" x="1093" y="5"></rect><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="58" x="1100" y="26.9659">Acquirer</text><rect fill="#E2E2F0" height="33.0679" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="72" x="1093" y="742.1304"></rect><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="58" x="1100" y="764.0963">Acquirer</text><polygon fill="#181818" points="573,68.7739,583,72.7739,573,76.7739,577,72.7739" style="stroke:#181818;stroke-width:1.0;"></polygon><line style="stroke:#181818;stroke-width:1.0;" x1="25" x2="579" y1="72.7739" y2="72.7739"></line><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="345" x="32" y="66.9649">Set NGVMode = "AllowedWithFallback" in TransactionData</text><polygon fill="#181818" points="573,100.4799,583,104.4799,573,108.4799,577,104.4799" style="stroke:#181818;stroke-width:1.0;"></polygon><line style="stroke:#181818;stroke-width:1.0;" x1="25" x2="579" y1="104.4799" y2="104.4799"></line><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="352" x="32" y="98.6709">Transaction request (TransactionType = Purchase, Amount)</text><polygon fill="#181818" points="953,132.186,963,136.186,953,140.186,957,136.186" style="stroke:#181818;stroke-width:1.0;"></polygon><line style="stroke:#181818;stroke-width:1.0;" x1="585" x2="959" y1="136.186" y2="136.186"></line><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="310" x="592" y="130.377">FinTransaction:Purchase (Amount, TransactionData)</text><path d="M849,149.186 L849,229.186 L1080,229.186 L1080,159.186 L1070,149.186 L849,149.186 " fill="#FEFFDD" style="stroke:#181818;stroke-width:0.5;"></path><path d="M1070,149.186 L1070,159.186 L1080,159.186 L1070,149.186 " fill="#FEFFDD" style="stroke:#181818;stroke-width:0.5;"></path><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="180" x="855" y="168.083">The terminal checks if the card</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="210" x="855" y="185.789">used is capable of an NGV payment</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="196" x="855" y="203.495">and performs it if check has been</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="63" x="855" y="221.201">successful.</text><path d="M805,240.01 L805,338.01 L1124,338.01 L1124,250.01 L1114,240.01 L805,240.01 " fill="#FEFFDD" style="stroke:#181818;stroke-width:0.5;"></path><path d="M1114,240.01 L1114,250.01 L1124,250.01 L1114,240.01 " fill="#FEFFDD" style="stroke:#181818;stroke-width:0.5;"></path><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="206" x="811" y="258.907">In this case the card used does not</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="281" x="811" y="276.6131">support NGV payments. Therefore the terminal</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="238" x="811" y="294.3191">makes a fallback to a standard purchase</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="298" x="811" y="312.0251">transaction, as NGVMode = "AllowedWithFallback"</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="98" x="811" y="329.7311">allows a fallback.</text><polygon fill="#181818" points="1117,363.2461,1127,367.2461,1117,371.2461,1121,367.2461" style="stroke:#181818;stroke-width:1.0;"></polygon><line style="stroke:#181818;stroke-width:1.0;" x1="965" x2="1123" y1="367.2461" y2="367.2461"></line><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="131" x="972" y="361.4371">Authorization request</text><polygon fill="#181818" points="976,394.9521,966,398.9521,976,402.9521,972,398.9521" style="stroke:#181818;stroke-width:1.0;"></polygon><line style="stroke:#181818;stroke-width:1.0;" x1="970" x2="1128" y1="398.9521" y2="398.9521"></line><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="140" x="982" y="393.1431">Authorization response</text><polygon fill="#181818" points="596,426.6582,586,430.6582,596,434.6582,592,430.6582" style="stroke:#181818;stroke-width:1.0;"></polygon><line style="stroke:#181818;stroke-width:1.0;" x1="590" x2="964" y1="430.6582" y2="430.6582"></line><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="356" x="602" y="424.8492">Transaction response (ResultCode = 0, NGVUsedFlag = false)</text><path d="M496,443.6582 L496,559.6582 L673,559.6582 L673,453.6582 L663,443.6582 L496,443.6582 " fill="#FEFFDD" style="stroke:#181818;stroke-width:0.5;"></path><path d="M663,443.6582 L663,453.6582 L673,453.6582 L663,443.6582 " fill="#FEFFDD" style="stroke:#181818;stroke-width:0.5;"></path><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="151" x="502" y="462.5552">As the NGVMode is set to</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="156" x="502" y="480.2612">"AllowedWithFallback" the</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="147" x="502" y="497.9672">Terminal made a fallback</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="148" x="502" y="515.6732">to a standard purchase if</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="127" x="502" y="533.3792">the card used did not</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="81" x="502" y="551.0853">support NGV.</text><polygon fill="#181818" points="36,584.6003,26,588.6003,36,592.6003,32,588.6003" style="stroke:#181818;stroke-width:1.0;"></polygon><line style="stroke:#181818;stroke-width:1.0;" x1="30" x2="584" y1="588.6003" y2="588.6003"></line><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="506" x="42" y="582.7913">Transaction response (TransactionResponse[ResultCode, TransactionInformation, ...])</text><polygon fill="#181818" points="573,616.3063,583,620.3063,573,624.3063,577,620.3063" style="stroke:#181818;stroke-width:1.0;"></polygon><line style="stroke:#181818;stroke-width:1.0;" x1="25" x2="579" y1="620.3063" y2="620.3063"></line><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="536" x="32" y="614.4973">Get NGVUsedFlag from TransactionInformation to determine if NGV was used successfully</text><polygon fill="#181818" points="36,630.3063,26,634.3063,36,638.3063,32,634.3063" style="stroke:#181818;stroke-width:1.0;"></polygon><line style="stroke:#181818;stroke-width:1.0;" x1="30" x2="584" y1="634.3063" y2="634.3063"></line><path d="M970,647.3063 L970,727.3063 L1167,727.3063 L1167,657.3063 L1157,647.3063 L970,647.3063 " fill="#FEFFDD" style="stroke:#181818;stroke-width:0.5;"></path><path d="M1157,647.3063 L1157,657.3063 L1167,657.3063 L1157,647.3063 " fill="#FEFFDD" style="stroke:#181818;stroke-width:0.5;"></path><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="176" x="976" y="666.2033">The clearing house will do the</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="156" x="976" y="683.9093">clearing of the transaction</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="164" x="976" y="701.6153">as usual, as no special delay</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="105" x="976" y="719.3214">has been defined.</text></g></svg></figure>
+            </div></div></section>
+            <div class="row"><div class="col-md-6"></div></div><section><h3><a name="austrianFlowNGVMandatoryError" id="austrianFlowNGVMandatoryError">&#160;</a>Austrian Flow: NGV Purchase mandatory with error</h3><div class="row"><div class="col-md-6"><p>The following flow describes a mandatory NGV purchase transaction which could not be performed by the terminal.
+              As the used <code><a href="doc/timapi.constants.NgvMode.html">NGVMode</a></code> is "Mandatory" but the card used is not capable of NGV payments, the
+              transaction results in an error which means a <code><a href="doc/timapi.constants.ResultCode.html">resultCode</a></code> != '0' and an error payload as transaction response.</p>
+              <figure><svg contentStyleType="text/css" height="587px" preserveAspectRatio="none" style="width:1046px;height:587px;" version="1.1" viewBox="0 0 1046 587" width="1046px" zoomAndPan="magnify"><defs></defs><g><rect fill="none" height="83.118" style="stroke:#000000;stroke-width:1.5;" width="302" x="738" y="242.01"></rect><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="25" x2="25" y1="39.0679" y2="549.4822"></line><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="400.5" x2="400.5" y1="39.0679" y2="549.4822"></line><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="785" x2="785" y1="39.0679" y2="549.4822"></line><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="949" x2="949" y1="39.0679" y2="549.4822"></line><rect fill="#E2E2F0" height="33.0679" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="40" x="5" y="5"></rect><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="26" x="12" y="26.9659">ECR</text><rect fill="#E2E2F0" height="33.0679" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="40" x="5" y="548.4822"></rect><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="26" x="12" y="570.4482">ECR</text><rect fill="#E2E2F0" height="33.0679" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="61" x="370.5" y="5"></rect><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="47" x="377.5" y="26.9659">TimApi</text><rect fill="#E2E2F0" height="33.0679" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="61" x="370.5" y="548.4822"></rect><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="47" x="377.5" y="570.4482">TimApi</text><rect fill="#E2E2F0" height="33.0679" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="74" x="748" y="5"></rect><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="60" x="755" y="26.9659">Terminal</text><rect fill="#E2E2F0" height="33.0679" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="74" x="748" y="548.4822"></rect><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="60" x="755" y="570.4482">Terminal</text><rect fill="#E2E2F0" height="33.0679" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="72" x="913" y="5"></rect><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="58" x="920" y="26.9659">Acquirer</text><rect fill="#E2E2F0" height="33.0679" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="72" x="913" y="548.4822"></rect><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="58" x="920" y="570.4482">Acquirer</text><polygon fill="#181818" points="389,68.7739,399,72.7739,389,76.7739,393,72.7739" style="stroke:#181818;stroke-width:1.0;"></polygon><line style="stroke:#181818;stroke-width:1.0;" x1="25" x2="395" y1="72.7739" y2="72.7739"></line><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="289" x="32" y="66.9649">Set NGVMode = "Mandatory" in TransactionData</text><polygon fill="#181818" points="389,100.4799,399,104.4799,389,108.4799,393,104.4799" style="stroke:#181818;stroke-width:1.0;"></polygon><line style="stroke:#181818;stroke-width:1.0;" x1="25" x2="395" y1="104.4799" y2="104.4799"></line><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="352" x="32" y="98.6709">Transaction request (TransactionType = Purchase, Amount)</text><polygon fill="#181818" points="773,132.186,783,136.186,773,140.186,777,136.186" style="stroke:#181818;stroke-width:1.0;"></polygon><line style="stroke:#181818;stroke-width:1.0;" x1="401" x2="779" y1="136.186" y2="136.186"></line><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="310" x="408" y="130.377">FinTransaction:Purchase (Amount, TransactionData)</text><path d="M651,149.186 L651,229.186 L918,229.186 L918,159.186 L908,149.186 L651,149.186 " fill="#FEFFDD" style="stroke:#181818;stroke-width:0.5;"></path><path d="M908,149.186 L908,159.186 L918,159.186 L908,149.186 " fill="#FEFFDD" style="stroke:#181818;stroke-width:0.5;"></path><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="192" x="657" y="168.083">As NGVMode = "Mandatory" the</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="246" x="657" y="185.789">Terminal must perform an NGV payment.</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="144" x="657" y="203.495">If this is not possible the</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="219" x="657" y="221.201">transaction is returned with an error.</text><path d="M738,242.01 L805,242.01 L805,251.716 L795,261.716 L738,261.716 L738,242.01 " fill="#EEEEEE" style="stroke:#000000;stroke-width:1.5;"></path><rect fill="none" height="83.118" style="stroke:#000000;stroke-width:1.5;" width="302" x="738" y="242.01"></rect><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="22" x="753" y="256.907">opt</text><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="215" x="820" y="255.7689">[Maybe no authorization can be made]</text><polygon fill="#181818" points="937,281.4221,947,285.4221,937,289.4221,941,285.4221" style="stroke:#181818;stroke-width:1.0;"></polygon><line style="stroke:#181818;stroke-width:1.0;" x1="785" x2="943" y1="285.4221" y2="285.4221"></line><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="131" x="792" y="279.6131">Authorization request</text><polygon fill="#181818" points="796,313.1281,786,317.1281,796,321.1281,792,317.1281" style="stroke:#181818;stroke-width:1.0;"></polygon><line style="stroke:#181818;stroke-width:1.0;" x1="790" x2="948" y1="317.1281" y2="317.1281"></line><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="140" x="802" y="311.3191">Authorization response</text><polygon fill="#181818" points="412,351.8341,402,355.8341,412,359.8341,408,355.8341" style="stroke:#181818;stroke-width:1.0;"></polygon><line style="stroke:#181818;stroke-width:1.0;" x1="406" x2="784" y1="355.8341" y2="355.8341"></line><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="360" x="418" y="350.0251">Transaction response (ResultCode != 0, NGVUsedFlag = false)</text><path d="M311,368.8341 L311,501.8341 L491,501.8341 L491,378.8341 L481,368.8341 L311,368.8341 " fill="#FEFFDD" style="stroke:#181818;stroke-width:0.5;"></path><path d="M481,368.8341 L481,378.8341 L491,378.8341 L481,368.8341 " fill="#FEFFDD" style="stroke:#181818;stroke-width:0.5;"></path><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="151" x="317" y="387.7311">As the NGVMode is set to</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="100" x="317" y="405.4371">"Mandatory" the</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="159" x="317" y="423.1431">Terminal is NOT allowed to</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="91" x="317" y="440.8492">make a fallback</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="148" x="317" y="458.5552">to a standard purchase if</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="127" x="317" y="476.2612">the card used did not</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="81" x="317" y="493.9672">support NGV.</text><polygon fill="#181818" points="36,527.4822,26,531.4822,36,535.4822,32,531.4822" style="stroke:#181818;stroke-width:1.0;"></polygon><line style="stroke:#181818;stroke-width:1.0;" x1="30" x2="400" y1="531.4822" y2="531.4822"></line><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="307" x="42" y="525.6732">Transaction response (TimException, Error Payload)</text></g></svg></figure>
+            </div></div></section>
+          <div class="row"><div class="col-md-6"></div></div></section>
+    <div class="row"><div class="col-md-6"></div></div></section> 
+
+    <section><h1><a name="logging" id="logging">&#160;</a>Logging</h1><div class="row"><div class="col-md-6"><p>
+        The TIM API is able to log an extensive set of events and actions within the TIM API. It's key that logs are created and stored properly. 
+        Logging enables support and makes bug-tracking much easier.
+        </p>
+        <p lang="JS">
+            By default the TIM API JavaScript logs to the webconsole of the corresponding browser used, or to the system shell in case of Node.js.
+            Due to security restrictions in the web context no log-files are created locally.
+            Nevertheless, the TIM API JavaScript offers the possibility that the integrator can overwrite this behaviour by using the onTimApiPublishLogRecord(logRecord) or the
+            onTimApiLog(message) method. If the TIM API JavaScript is used in web context it is recommended that the log message shall be sent to a log server or alike. 
+            If used with Node.js the message can be written into a file locally, as there are not such security restrictions in conjunction with Node.js.
+            <p>
+                The onTimApiPublishLogRecord(logRecord) function can be used if the user wants to filter certain log messages. The log entry is transmitted in a
+                <code><a href="doc/timapi.LogRecord.html">LogRecord</a></code>object that includes several information about the log entry. The user then can filter the entry e.g. regarding the
+                logLevel and may then use the <code><a href="doc/timapi.html#.log">Log</a></code> function to log the message accordingly, if wished so.
+            </p>
+            <pre><code>/*
+* Function to filter certain log records according
+* some information given in parameter "record", e.g. LogLevel.
+*/
+onTimApiPublishLogRecord = function (record) {
+  // Do some filtering if wished so.
+  if (!record.matchesLevel(timapi.LogRecord.LogLevel.info)) {
+    return;
+  }
+
+  // timapi.log() will call the onTimApiLog function 
+  timapi.log(String(record));
+}</code></pre>
+            <p>The onTimApiLog(message) method is used with a string message as log entry, not with an object. This method should be used to redirect the standard console
+            logging e.g. to a log server or to a local file in case of Node.js.</p>
+            <pre><code>/**
+ * Function will be called, when timapi has a log message
+ */
+onTimApiLog = function(message) {
+ /* Send message to log server or alike
+  * or write it into a log file if Node.js
+  */ is used.
+}</code></pre>
+            Attention: If this function is used, the default behaviour will not be performed by the TIM API and no console logging is done.
+        </p> 
+        </div></div></section>
+    <section><h1><a name="MigrationJStoWASM" id="MigrationJStoWASM">&#160;</a>Migration from old TIM API JS to TIM API JS with WebAssembly</h1><div class="row"><div class="col-md-6"><p>The following sections will provide information which changes have to be made to switch from the old TIM API JS solution
+        to the new TIM API JS with WebAssembly. Each section contains an example of the old TIM API JS and one of the new TIM API JS with
+        WebAssembly to directly show the differences.</p>
+            </div></div><section><h2><a name="MigrationJSInit" id="MigrationJSInit">&#160;</a>Ready Initialization</h2><div class="row"><div class="col-md-6"><p>Below is an example how the TIM API must be initialized to be available.</p>
+                </div></div><div class="row"><div class="col-md-6">
+                        <p>With the old TIM API JS it was essential to check if the TIM API was available before using it. This
+                        could be done with the following check:</p>
+                        <pre><code>if(timapi == undefined){
+  // TIM API not ready
+}else{
+  // Start using TIM API
+}</code></pre>
+                    </div><div class="col-md-6">
+                        <p>In the new TIM API JS with WebAssembly a callback function is called as soon as the TIM API
+                        is ready to be used by the application:</p>
+                        <pre><code>function onTimApiReady() {
+  // Start using TIM API
+}</code></pre>
+                    </div></div>
+            <div class="row"><div class="col-md-6"></div></div></section>
+            <div class="row"><div class="col-md-6"></div></div><section><h2><a name="MigrationJSNames" id="MigrationJSNames">&#160;</a>Class Variable Names</h2><div class="row"><div class="col-md-6"><p>The naming of class variable names changed slightly:</p>
+                </div></div><div class="row"><div class="col-md-6">
+                        <p>Old TIM API JS used variables names with a '$'-sign like this:</p>
+                        <pre><code>settings.$connectionIPString = "..."</code></pre>
+                    </div><div class="col-md-6">
+                        <p>New TIM API JS with WebAssembly uses variables names like this (if " or ' is not important. JS supports both):</p>
+                        <pre><code>settings.connectionIPString = '...'</code></pre>
+                    </div></div>
+            <div class="row"><div class="col-md-6"></div></div></section>
+        <div class="row"><div class="col-md-6"></div></div><section><h2><a name="MigrationJSListenerDeclaration" id="MigrationJSListenerDeclaration">&#160;</a>Listener Declaration</h2><div class="row"><div class="col-md-6">
+                    <p>The old TIM API JS used a non-OOP like way to create listeners. A DefaultTerminalListener was created and then the
+                    respective methods were "replaced":</p>
+                    <pre><code>var listener = new timapi.DefaultTerminalListener();
+listener.terminalStatusChanged = function (_terminal) {
+timapi.DefaultTerminalListener.prototype.terminalStatusChanged(_terminal);
+  // Do stuff
+}
+
+listener.connectCompleted = function (_event) {
+timapi.DefaultTerminalListener.prototype.connectCompleted(_event);
+  // Do stuff
+}
+
+listener.transactionCompleted = function(_event, _data) {
+timapi.DefaultTerminalListener.prototype.transactionCompleted(_event, _data);
+  // Do stuff
+}</code></pre>
+                </div><div class="col-md-6">
+                    <p>The new TIM API JS with WebAssembly uses proper subclassing like this:</p>
+                    <pre><code>class myTerminalListener extends timapi.DefaultTerminalListener {
+  terminalStatusChanged(terminal) {
+    super.terminalStatusChanged(terminal);
+    ...
+  }
+  requestCompleted(event, data) {
+    super.requestCompleted(event, data);
+    ...
+  }
+}</code></pre>
+                </div></div>
+        <div class="row"><div class="col-md-6"></div></div></section>
+        <div class="row"><div class="col-md-6"></div></div><section><h2><a name="MigrationJSLogging" id="MigrationJSLogging">&#160;</a>Logging</h2><div class="row"><div class="col-md-6">
+                    <p>In the old TIM API JS there was only the possibility to set the logging level but there was no chance to
+                    control the logging messages on user application level:</p>
+                    <pre><code>timapi.logging.Log.logLevel = timapi.logging.Level.FINE</code></pre>
+                </div><div class="col-md-6">
+                    <p>
+                    This is not existing anymore in WebAssembly. Instead the logger goes to the web console by default
+                    but can be intercepted by the user application like this:</p>
+                    <pre><code>onTimApiLog = function(message) {
+  ... // message is of type String
+}</code></pre>
+                    <p>Which allows to simply output a final predefined log message.</p>
+                    <p>To further filter the logMessages the "onTimApiPublishLogRecord" function can be used.</p>
+                </div></div>
+        <div class="row"><div class="col-md-6"></div></div></section>
+    <div class="row"><div class="col-md-6"></div></div></section>
+
+</main>
+    </div>
+  </div>
+</body>
+
+</html>
