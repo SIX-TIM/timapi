@@ -2296,6 +2296,18 @@ references:
   commentId: F:SIX.TimApi.Constants.AdditionalInfoItem.Reference
   fullName: SIX.TimApi.Constants.AdditionalInfoItem.Reference
   nameWithType: AdditionalInfoItem.Reference
+- uid: SIX.TimApi.Constants.AdditionalInfoItem.UnencryptedIdNo
+  name: UnencryptedIdNo
+  href: api/SIX.TimApi.Constants.AdditionalInfoItem.html#SIX_TimApi_Constants_AdditionalInfoItem_UnencryptedIdNo
+  commentId: F:SIX.TimApi.Constants.AdditionalInfoItem.UnencryptedIdNo
+  fullName: SIX.TimApi.Constants.AdditionalInfoItem.UnencryptedIdNo
+  nameWithType: AdditionalInfoItem.UnencryptedIdNo
+- uid: SIX.TimApi.Constants.AdditionalInfoItem.WorkOrderPoNo
+  name: WorkOrderPoNo
+  href: api/SIX.TimApi.Constants.AdditionalInfoItem.html#SIX_TimApi_Constants_AdditionalInfoItem_WorkOrderPoNo
+  commentId: F:SIX.TimApi.Constants.AdditionalInfoItem.WorkOrderPoNo
+  fullName: SIX.TimApi.Constants.AdditionalInfoItem.WorkOrderPoNo
+  nameWithType: AdditionalInfoItem.WorkOrderPoNo
 - uid: SIX.TimApi.Constants.AdjustmentResult
   name: AdjustmentResult
   href: api/SIX.TimApi.Constants.AdjustmentResult.html
@@ -8753,6 +8765,18 @@ references:
   commentId: F:SIX.TimApi.Constants.ResultCode.MocIncorrectReference
   fullName: SIX.TimApi.Constants.ResultCode.MocIncorrectReference
   nameWithType: ResultCode.MocIncorrectReference
+- uid: SIX.TimApi.Constants.ResultCode.MocIncorrectUserId
+  name: MocIncorrectUserId
+  href: api/SIX.TimApi.Constants.ResultCode.html#SIX_TimApi_Constants_ResultCode_MocIncorrectUserId
+  commentId: F:SIX.TimApi.Constants.ResultCode.MocIncorrectUserId
+  fullName: SIX.TimApi.Constants.ResultCode.MocIncorrectUserId
+  nameWithType: ResultCode.MocIncorrectUserId
+- uid: SIX.TimApi.Constants.ResultCode.MocIncorrectWorkOrderPoNo
+  name: MocIncorrectWorkOrderPoNo
+  href: api/SIX.TimApi.Constants.ResultCode.html#SIX_TimApi_Constants_ResultCode_MocIncorrectWorkOrderPoNo
+  commentId: F:SIX.TimApi.Constants.ResultCode.MocIncorrectWorkOrderPoNo
+  fullName: SIX.TimApi.Constants.ResultCode.MocIncorrectWorkOrderPoNo
+  nameWithType: ResultCode.MocIncorrectWorkOrderPoNo
 - uid: SIX.TimApi.Constants.ResultCode.MocProductsNotAllowed
   name: MocProductsNotAllowed
   href: api/SIX.TimApi.Constants.ResultCode.html#SIX_TimApi_Constants_ResultCode_MocProductsNotAllowed
@@ -17834,6 +17858,12 @@ references:
   commentId: F:SIX.TimApi.RequestTypes.EjectCard
   fullName: SIX.TimApi.RequestTypes.EjectCard
   nameWithType: RequestTypes.EjectCard
+- uid: SIX.TimApi.RequestTypes.FeatureRequest
+  name: FeatureRequest
+  href: api/SIX.TimApi.RequestTypes.html#SIX_TimApi_RequestTypes_FeatureRequest
+  commentId: F:SIX.TimApi.RequestTypes.FeatureRequest
+  fullName: SIX.TimApi.RequestTypes.FeatureRequest
+  nameWithType: RequestTypes.FeatureRequest
 - uid: SIX.TimApi.RequestTypes.FinishCheckout
   name: FinishCheckout
   href: api/SIX.TimApi.RequestTypes.html#SIX_TimApi_RequestTypes_FinishCheckout

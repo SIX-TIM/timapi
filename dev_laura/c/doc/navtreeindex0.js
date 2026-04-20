@@ -28,12 +28,14 @@ var NAVTREEINDEX0 =
 "additional__info__item_8h.html#aac5494ba6460fa4c7ac9d54689567f65a085eb1058a7d3ffab38e6b7cd4d87183":[1,1,0,1,3,1,10],
 "additional__info__item_8h.html#aac5494ba6460fa4c7ac9d54689567f65a25d34524011cbb8150de5ac9f0d93629":[1,1,0,1,3,1,0],
 "additional__info__item_8h.html#aac5494ba6460fa4c7ac9d54689567f65a2e0249cfea280609588d9e53b6c512d1":[1,1,0,1,3,1,8],
+"additional__info__item_8h.html#aac5494ba6460fa4c7ac9d54689567f65a415e02f07102ad37e138fda565408944":[1,1,0,1,3,1,11],
 "additional__info__item_8h.html#aac5494ba6460fa4c7ac9d54689567f65a52b01807bdb5ca369ef70be46b9de2e5":[1,1,0,1,3,1,7],
 "additional__info__item_8h.html#aac5494ba6460fa4c7ac9d54689567f65a69cb240f71d6668e1c126d24034199a4":[1,1,0,1,3,1,2],
 "additional__info__item_8h.html#aac5494ba6460fa4c7ac9d54689567f65a9511ffc13b62fbb2637f2d209bd5805f":[1,1,0,1,3,1,9],
 "additional__info__item_8h.html#aac5494ba6460fa4c7ac9d54689567f65aa2e977ae2524202d3b1104cb58a6ab18":[1,1,0,1,3,1,5],
 "additional__info__item_8h.html#aac5494ba6460fa4c7ac9d54689567f65aae772db6bb9c3863b13f65b7dea4b4f0":[1,1,0,1,3,1,1],
 "additional__info__item_8h.html#aac5494ba6460fa4c7ac9d54689567f65abb254b01e756c6997b689f0d1fcd0f4b":[1,1,0,1,3,1,6],
+"additional__info__item_8h.html#aac5494ba6460fa4c7ac9d54689567f65ad979b3d6bb3520e5e76a8eac2b7a706d":[1,1,0,1,3,1,12],
 "additional__info__item_8h.html#aac5494ba6460fa4c7ac9d54689567f65adc0ce21ba7505f7364d0850c562544a7":[1,1,0,1,3,1,3],
 "additional__info__item_8h.html#aac5494ba6460fa4c7ac9d54689567f65aebf8bf152001a42f430fef4110ef58ac":[1,1,0,1,3,1,4],
 "adjustment__result_8h.html":[1,1,0,1,4],
@@ -247,7 +249,5 @@ var NAVTREEINDEX0 =
 "brand__bar__brand_8h.html#a065fb75dccd6ee5e82f29d4cce775549a5f3180fb9cf2db7007fba20b19ad7bf0":[1,1,0,1,8,1,4],
 "brand__bar__brand_8h.html#a065fb75dccd6ee5e82f29d4cce775549a5f66a2e8ca27b25cd7033d7839ec303a":[1,1,0,1,8,1,71],
 "brand__bar__brand_8h.html#a065fb75dccd6ee5e82f29d4cce775549a6527aae37f0b67f4c16b90e356d34878":[1,1,0,1,8,1,55],
-"brand__bar__brand_8h.html#a065fb75dccd6ee5e82f29d4cce775549a66c2123bfe2ff70c51c3d7ef097fc1f2":[1,1,0,1,8,1,13],
-"brand__bar__brand_8h.html#a065fb75dccd6ee5e82f29d4cce775549a68460140080ac96e4d172d5d3fbc076d":[1,1,0,1,8,1,86],
-"brand__bar__brand_8h.html#a065fb75dccd6ee5e82f29d4cce775549a6994a898081ec61495ceb19079a40894":[1,1,0,1,8,1,54]
+"brand__bar__brand_8h.html#a065fb75dccd6ee5e82f29d4cce775549a66c2123bfe2ff70c51c3d7ef097fc1f2":[1,1,0,1,8,1,13]
 };

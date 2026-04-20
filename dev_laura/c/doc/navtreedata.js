@@ -42,17 +42,17 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "accessibility__option__list_8h.html",
-"brand__bar__brand_8h.html#a065fb75dccd6ee5e82f29d4cce775549a6c329f174f29f48cc015e38f1598df24",
-"currency_8h.html#ad375db379bcf5a792280a2735f80f7d9a45cd79ff38c8c804dc47a5ee60776ae0",
-"custom__receipt__formatter_8h.html#a883a5ff78a5d2ad805f9f6af32a8d2afa7e0ac76db3a9c6b8adf947919181bfd0",
-"enum__string__maps_2ecr__info__type_8h.html",
-"kernel__type_8h.html#a09c41b2ef45de74238a9f3897ce4e78aa7dc1ed1bfdb7e96ef297ffb94a4332a0",
-"ppinfo_8h.html#aeeaac69fa078c86f8622dde345de7152",
-"remote__functions_8h.html",
-"result__code_8h.html#aebaf00d1ceef4b827866ca9de0bd3320a02e174c4be1439584ba85c38f33fd9a8",
-"status__functions_8h.html#a034755ed4fda7ee344cbbf111b5c96cf",
-"terminal__listener_8h.html#ac1d9a943f8829ab2598febbab3580cd0",
-"transaction__data_8h.html#ad7c80effba43cc2f1e7633518adafa74"
+"brand__bar__brand_8h.html#a065fb75dccd6ee5e82f29d4cce775549a68460140080ac96e4d172d5d3fbc076d",
+"currency_8h.html#ad375db379bcf5a792280a2735f80f7d9a4456f9e006e813bafc9a86bb1c5c0818",
+"custom__receipt__formatter_8h.html#a883a5ff78a5d2ad805f9f6af32a8d2afa7c9097209f0004aea5d544e8cbcf7064",
+"enum__string__maps_2dialog__functions_8h.html",
+"kernel__type_8h.html#a09c41b2ef45de74238a9f3897ce4e78aa6707accfb63ed397339f1d1197e702ee",
+"ppinfo_8h.html#a9d0f3ec8812b9a317cf596397f127254",
+"reconfig__parameters_8h.html#aacbb12c65ad403bf59fbed76d6faada2",
+"result__code_8h.html#aebaf00d1ceef4b827866ca9de0bd3320",
+"sleep__mode__status_8h.html#a43ff9fd8cbd95240258289dcefe15aa2a6e3a0eb83ce5f497892898d2fbc556c6",
+"terminal__listener_8h.html#ab7a59e574c4b604844b86c7ec5ae9f3f",
+"transaction__data_8h.html#ac585ece34a7a6122946e83b6e23d60f0"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

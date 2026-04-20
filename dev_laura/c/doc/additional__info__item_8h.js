@@ -12,6 +12,8 @@ var additional__info__item_8h =
       [ "ta_c_aii_cost_center", "additional__info__item_8h.html#aac5494ba6460fa4c7ac9d54689567f65a52b01807bdb5ca369ef70be46b9de2e5", null ],
       [ "ta_c_aii_project_no", "additional__info__item_8h.html#aac5494ba6460fa4c7ac9d54689567f65a2e0249cfea280609588d9e53b6c512d1", null ],
       [ "ta_c_aii_license_plate", "additional__info__item_8h.html#aac5494ba6460fa4c7ac9d54689567f65a9511ffc13b62fbb2637f2d209bd5805f", null ],
-      [ "ta_c_aii_reference", "additional__info__item_8h.html#aac5494ba6460fa4c7ac9d54689567f65a085eb1058a7d3ffab38e6b7cd4d87183", null ]
+      [ "ta_c_aii_reference", "additional__info__item_8h.html#aac5494ba6460fa4c7ac9d54689567f65a085eb1058a7d3ffab38e6b7cd4d87183", null ],
+      [ "ta_c_aii_unencrypted_id_no", "additional__info__item_8h.html#aac5494ba6460fa4c7ac9d54689567f65a415e02f07102ad37e138fda565408944", null ],
+      [ "ta_c_aii_work_order_po_no", "additional__info__item_8h.html#aac5494ba6460fa4c7ac9d54689567f65ad979b3d6bb3520e5e76a8eac2b7a706d", null ]
     ] ]
 ];
