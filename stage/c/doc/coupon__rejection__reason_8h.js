@@ -1,6 +1,6 @@
 var coupon__rejection__reason_8h =
 [
-    [ "ta_e_coupon_rejection_reason_t", "coupon__rejection__reason_8h.html#add443cfd2010a57650cb2114b70f3eca", null ],
+    [ "ta_e_coupon_rejection_reason_t", "coupon__rejection__reason_8h.html#aa1e7bf57b3ed32ab1f54a3c3aa8888e1", null ],
     [ "ta_e_coupon_rejection_reason", "coupon__rejection__reason_8h.html#aad77657103ac40a91a06e03abb610d8a", [
       [ "ta_c_crr_undefined", "coupon__rejection__reason_8h.html#aad77657103ac40a91a06e03abb610d8aa01d44b9c33bac2e1dd83fe4385cf6d61", null ],
       [ "ta_c_crr_already_redeemed", "coupon__rejection__reason_8h.html#aad77657103ac40a91a06e03abb610d8aa008915e18def11dcfc17562f8cb09679", null ],

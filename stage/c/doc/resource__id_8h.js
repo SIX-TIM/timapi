@@ -1,6 +1,6 @@
 var resource__id_8h =
 [
-    [ "ta_e_resource_id_t", "resource__id_8h.html#a5a2c1c93f7f241f841768500f44be229", null ],
+    [ "ta_e_resource_id_t", "resource__id_8h.html#aad48cf0949c93fd59d9ec2c3da3b67b1", null ],
     [ "ta_e_resource_id", "resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9", [
       [ "ta_c_rid_undefined", "resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9aab889075626b12a27deb35d8170191c0", null ],
       [ "ta_c_rid_enter_mileage", "resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9aecebd9c1adea50022db25fb7bbc0c5d9", null ],
@@ -39,6 +39,7 @@ var resource__id_8h =
       [ "ta_c_rid_petrol_tankcode_incorrect", "resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9a90e03d24f75e333f0ce5570080a2f0a0", null ],
       [ "ta_c_rid_unencrypted_id_no", "resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9a488337b80bee55dd5e8bc0b622fb22f5", null ],
       [ "ta_c_rid_work_order_po_no", "resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9ab71925212e7fa01a9e5fa009fc82b216", null ],
+      [ "ta_c_rid_replacement_car", "resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9ac43870670f4a30b5fb762eb965eb5e45", null ],
       [ "ta_c_rid_petrol_card_inverted", "resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9aa07adc9d6378aa0b31e850df5f38bba8", null ],
       [ "ta_c_rid_petrol_card_out_of_order", "resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9aa7c926c3c6008b777051ee41742beb3c", null ],
       [ "ta_c_rid_petrol_card_not_authorised", "resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9a84431e34b7050c12b6106b4e6cf9642d", null ],

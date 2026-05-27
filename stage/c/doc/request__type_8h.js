@@ -1,6 +1,6 @@
 var request__type_8h =
 [
-    [ "ta_e_request_type_t", "request__type_8h.html#a1ff4ac6b4e54cd04d48d12e5b2c6a951", null ],
+    [ "ta_e_request_type_t", "request__type_8h.html#a8adae4e14e2d928652f8f495fedd40d3", null ],
     [ "ta_e_request_type", "request__type_8h.html#a38268da75c7795fd3a4f057bc6a7fcd2", [
       [ "ta_c_req_undefined", "request__type_8h.html#a38268da75c7795fd3a4f057bc6a7fcd2a046e4361e972bea75fee8ea2af281a74", null ],
       [ "ta_c_req_connect", "request__type_8h.html#a38268da75c7795fd3a4f057bc6a7fcd2a2601dff8c00c5e2c0e69970327688c0e", null ],
@@ -49,6 +49,7 @@ var request__type_8h =
       [ "ta_c_req_device_maintenance", "request__type_8h.html#a38268da75c7795fd3a4f057bc6a7fcd2aea2f339596878ddb0940004cb889d6d4", null ],
       [ "ta_c_req_client_identification", "request__type_8h.html#a38268da75c7795fd3a4f057bc6a7fcd2a09a49e60a0cfed9a478beb7f9241f356", null ],
       [ "ta_c_req_transaction_info_request", "request__type_8h.html#a38268da75c7795fd3a4f057bc6a7fcd2a8bb0292172f3ec80ea4d655c85fa7053", null ],
-      [ "ta_c_req_age_check", "request__type_8h.html#a38268da75c7795fd3a4f057bc6a7fcd2a3231d2bc521455761b38b793e0339dc1", null ]
+      [ "ta_c_req_age_check", "request__type_8h.html#a38268da75c7795fd3a4f057bc6a7fcd2a3231d2bc521455761b38b793e0339dc1", null ],
+      [ "ta_c_req_feature_request", "request__type_8h.html#a38268da75c7795fd3a4f057bc6a7fcd2aed4248c6c1976be5aa41300a68a719f1", null ]
     ] ]
 ];
