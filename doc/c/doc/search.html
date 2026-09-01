@@ -15208,10 +15208,18 @@ $(document).ready(function(){initNavTree('search.html','');});
   <doc>
     <field name="type">function</field>
     <field name="name">ta_print_option_create</field>
-    <field name="args">(ta_object_t *print_option, ta_e_recipient_t recipient, ta_e_print_format_t print_format, int print_width, int print_flags, ta_e_boolean_t receipt_suppression_flag)</field>
-    <field name="url">print__option_8h.html#a31464ab60a62af590c16f902744be1a8</field>
+    <field name="args">(ta_object_t *print_option, ta_e_recipient_t recipient, ta_e_print_format_t print_format, int print_width, int print_flags)</field>
+    <field name="url">print__option_8h.html#abba03644177c641a35199be5948d8af2</field>
     <field name="keywords">ta_print_option_create</field>
-    <field name="text">Create print option print_option Pointer to variable to write created object instance to Created object instance is retained recipient Recipient print_format Print format print_width Print width in characters print_flags Print flags using OR combined values from ta_e_print_flag_t receipt_suppression_flag Receipt suppression flag supported from the Ecr ta_c_rc_ok Object instance has been created and written to print_option ta_c_rc_invalid_argument print_option is null-pointer ta_c_rc_invalid_argument print_width is less than 1 ta_c_rc_out_of_memory Failed allocating memory</field>
+    <field name="text">Create print option print_option Pointer to variable to write created object instance to Created object instance is retained recipient Recipient print_format Print format print_width Print width in characters print_flags Print flags using OR combined values from ta_e_print_flag_t ta_c_rc_ok Object instance has been created and written to print_option ta_c_rc_invalid_argument print_option is null-pointer ta_c_rc_invalid_argument print_width is less than 1 ta_c_rc_out_of_memory Failed allocating memory</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">ta_print_option_create_with_receipt_suppression_flag</field>
+    <field name="args">(ta_object_t *print_option, ta_e_recipient_t recipient, ta_e_print_format_t print_format, int print_width, int print_flags, ta_e_boolean_t receipt_suppression_flag)</field>
+    <field name="url">print__option_8h.html#a02a4e88f4e45f838048f53a6ac236277</field>
+    <field name="keywords">ta_print_option_create_with_receipt_suppression_flag</field>
+    <field name="text">Create print option with receipt suppression flag print_option Pointer to variable to write created object instance to Created object instance is retained recipient Recipient print_format Print format print_width Print width in characters print_flags Print flags using OR combined values from ta_e_print_flag_t receipt_suppression_flag Receipt suppression flag supported from the Ecr ta_c_rc_ok Object instance has been created and written to print_option ta_c_rc_invalid_argument print_option is null-pointer ta_c_rc_invalid_argument print_width is less than 1 ta_c_rc_out_of_memory Failed allocating memory</field>
   </doc>
   <doc>
     <field name="type">function</field>
