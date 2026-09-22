@@ -1,6 +1,6 @@
 var receipt__type_8h =
 [
-    [ "ta_e_receipt_type_t", "receipt__type_8h.html#acef3040faca98790d14aa86c518c649b", null ],
+    [ "ta_e_receipt_type_t", "receipt__type_8h.html#a866e71e0131b01584cb0c7c46d3d4979", null ],
     [ "ta_e_receipt_type", "receipt__type_8h.html#a74be600736ad05d66a867681226384f1", [
       [ "ta_c_rt_undefined", "receipt__type_8h.html#a74be600736ad05d66a867681226384f1a0b549fdf410c8d10dde50bee654ba35f", null ],
       [ "ta_c_rt_activate_card", "receipt__type_8h.html#a74be600736ad05d66a867681226384f1ae5fbac8b1a78300b01c01221055ef058", null ],

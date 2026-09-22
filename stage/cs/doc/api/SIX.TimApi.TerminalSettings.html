@@ -12,7 +12,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class TerminalSettings
    ">
-    <meta name="generator" content="docfx 2.59.4.0">
+    <meta name="generator" content="docfx 2.51.0.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -1370,6 +1370,32 @@ reset in case client enters information in the terminal.</p>
   </table>
   
   
+  <a id="SIX_TimApi_TerminalSettings_ConnectionIPSecurePort_" data-uid="SIX.TimApi.TerminalSettings.ConnectionIPSecurePort*"></a>
+  <h4 id="SIX_TimApi_TerminalSettings_ConnectionIPSecurePort" data-uid="SIX.TimApi.TerminalSettings.ConnectionIPSecurePort">ConnectionIPSecurePort</h4>
+  <div class="markdown level1 summary"><p>TLS port of the EFT terminal, used for fixed-IP connections and after Broadcast discovery. (Available only on the standard build due to Framework 4.6.1 minimum requirement)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int ConnectionIPSecurePort { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="SIX_TimApi_TerminalSettings_ConnectionIPString_" data-uid="SIX.TimApi.TerminalSettings.ConnectionIPString*"></a>
   <h4 id="SIX_TimApi_TerminalSettings_ConnectionIPString" data-uid="SIX.TimApi.TerminalSettings.ConnectionIPString">ConnectionIPString</h4>
   <div class="markdown level1 summary"><p>IP address of the EFT terminal in case of ConnectionMode OnFixIP.</p>
@@ -1445,6 +1471,32 @@ reset in case client enters information in the terminal.</p>
         <td><span class="xref">System.Int32</span></td>
         <td><p>The connection listen ip port.</p>
 </td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SIX_TimApi_TerminalSettings_ConnectionListenIPSecurePort_" data-uid="SIX.TimApi.TerminalSettings.ConnectionListenIPSecurePort*"></a>
+  <h4 id="SIX_TimApi_TerminalSettings_ConnectionListenIPSecurePort" data-uid="SIX.TimApi.TerminalSettings.ConnectionListenIPSecurePort">ConnectionListenIPSecurePort</h4>
+  <div class="markdown level1 summary"><p>Secure listening port of the ECR. (Available only on the standard build due to Framework 4.6.1 minimum requirement)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int ConnectionListenIPSecurePort { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -2442,6 +2494,84 @@ Affects these functions:</p>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public String SaferpayTerminalId { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SIX_TimApi_TerminalSettings_SecureConnectionEnabled_" data-uid="SIX.TimApi.TerminalSettings.SecureConnectionEnabled*"></a>
+  <h4 id="SIX_TimApi_TerminalSettings_SecureConnectionEnabled" data-uid="SIX.TimApi.TerminalSettings.SecureConnectionEnabled">SecureConnectionEnabled</h4>
+  <div class="markdown level1 summary"><p>Enables TLS connections for fixed-IP and Broadcast modes. (Available only on the standard build due to Framework 4.6.1 minimum requirement)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool SecureConnectionEnabled { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SIX_TimApi_TerminalSettings_SecureConnectionFallbackEnabled_" data-uid="SIX.TimApi.TerminalSettings.SecureConnectionFallbackEnabled*"></a>
+  <h4 id="SIX_TimApi_TerminalSettings_SecureConnectionFallbackEnabled" data-uid="SIX.TimApi.TerminalSettings.SecureConnectionFallbackEnabled">SecureConnectionFallbackEnabled</h4>
+  <div class="markdown level1 summary"><p>Enables plain TCP fallback for connect and listen modes. (Available only on the standard build due to Framework 4.6.1 minimum requirement)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool SecureConnectionFallbackEnabled { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SIX_TimApi_TerminalSettings_SecureConnectionPassword_" data-uid="SIX.TimApi.TerminalSettings.SecureConnectionPassword*"></a>
+  <h4 id="SIX_TimApi_TerminalSettings_SecureConnectionPassword" data-uid="SIX.TimApi.TerminalSettings.SecureConnectionPassword">SecureConnectionPassword</h4>
+  <div class="markdown level1 summary"><p>Password used to derive the external TLS PSK. (Available only on the standard build due to Framework 4.6.1 minimum requirement)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public String SecureConnectionPassword { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">

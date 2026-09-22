@@ -6299,6 +6299,12 @@ references:
   commentId: F:SIX.TimApi.Constants.ReceiptItemType.AmountInstallmentTotal
   fullName: SIX.TimApi.Constants.ReceiptItemType.AmountInstallmentTotal
   nameWithType: ReceiptItemType.AmountInstallmentTotal
+- uid: SIX.TimApi.Constants.ReceiptItemType.AmountLoaded
+  name: AmountLoaded
+  href: api/SIX.TimApi.Constants.ReceiptItemType.html#SIX_TimApi_Constants_ReceiptItemType_AmountLoaded
+  commentId: F:SIX.TimApi.Constants.ReceiptItemType.AmountLoaded
+  fullName: SIX.TimApi.Constants.ReceiptItemType.AmountLoaded
+  nameWithType: ReceiptItemType.AmountLoaded
 - uid: SIX.TimApi.Constants.ReceiptItemType.AmountOfGoods
   name: AmountOfGoods
   href: api/SIX.TimApi.Constants.ReceiptItemType.html#SIX_TimApi_Constants_ReceiptItemType_AmountOfGoods
@@ -7877,6 +7883,12 @@ references:
   commentId: F:SIX.TimApi.Constants.ResourceId.PetrolWelcomeShopOpen
   fullName: SIX.TimApi.Constants.ResourceId.PetrolWelcomeShopOpen
   nameWithType: ResourceId.PetrolWelcomeShopOpen
+- uid: SIX.TimApi.Constants.ResourceId.Pictogram
+  name: Pictogram
+  href: api/SIX.TimApi.Constants.ResourceId.html#SIX_TimApi_Constants_ResourceId_Pictogram
+  commentId: F:SIX.TimApi.Constants.ResourceId.Pictogram
+  fullName: SIX.TimApi.Constants.ResourceId.Pictogram
+  nameWithType: ResourceId.Pictogram
 - uid: SIX.TimApi.Constants.ResourceId.PostConfirmCostsForUseCase
   name: PostConfirmCostsForUseCase
   href: api/SIX.TimApi.Constants.ResourceId.html#SIX_TimApi_Constants_ResourceId_PostConfirmCostsForUseCase
@@ -13328,6 +13340,19 @@ references:
   isSpec: "True"
   fullName: SIX.TimApi.ImmutableTerminalSettings.ConnectionIPPort
   nameWithType: ImmutableTerminalSettings.ConnectionIPPort
+- uid: SIX.TimApi.ImmutableTerminalSettings.ConnectionIPSecurePort
+  name: ConnectionIPSecurePort
+  href: api/SIX.TimApi.ImmutableTerminalSettings.html#SIX_TimApi_ImmutableTerminalSettings_ConnectionIPSecurePort
+  commentId: P:SIX.TimApi.ImmutableTerminalSettings.ConnectionIPSecurePort
+  fullName: SIX.TimApi.ImmutableTerminalSettings.ConnectionIPSecurePort
+  nameWithType: ImmutableTerminalSettings.ConnectionIPSecurePort
+- uid: SIX.TimApi.ImmutableTerminalSettings.ConnectionIPSecurePort*
+  name: ConnectionIPSecurePort
+  href: api/SIX.TimApi.ImmutableTerminalSettings.html#SIX_TimApi_ImmutableTerminalSettings_ConnectionIPSecurePort_
+  commentId: Overload:SIX.TimApi.ImmutableTerminalSettings.ConnectionIPSecurePort
+  isSpec: "True"
+  fullName: SIX.TimApi.ImmutableTerminalSettings.ConnectionIPSecurePort
+  nameWithType: ImmutableTerminalSettings.ConnectionIPSecurePort
 - uid: SIX.TimApi.ImmutableTerminalSettings.ConnectionIPString
   name: ConnectionIPString
   href: api/SIX.TimApi.ImmutableTerminalSettings.html#SIX_TimApi_ImmutableTerminalSettings_ConnectionIPString
@@ -13367,6 +13392,19 @@ references:
   isSpec: "True"
   fullName: SIX.TimApi.ImmutableTerminalSettings.ConnectionListenIPPort
   nameWithType: ImmutableTerminalSettings.ConnectionListenIPPort
+- uid: SIX.TimApi.ImmutableTerminalSettings.ConnectionListenIPSecurePort
+  name: ConnectionListenIPSecurePort
+  href: api/SIX.TimApi.ImmutableTerminalSettings.html#SIX_TimApi_ImmutableTerminalSettings_ConnectionListenIPSecurePort
+  commentId: P:SIX.TimApi.ImmutableTerminalSettings.ConnectionListenIPSecurePort
+  fullName: SIX.TimApi.ImmutableTerminalSettings.ConnectionListenIPSecurePort
+  nameWithType: ImmutableTerminalSettings.ConnectionListenIPSecurePort
+- uid: SIX.TimApi.ImmutableTerminalSettings.ConnectionListenIPSecurePort*
+  name: ConnectionListenIPSecurePort
+  href: api/SIX.TimApi.ImmutableTerminalSettings.html#SIX_TimApi_ImmutableTerminalSettings_ConnectionListenIPSecurePort_
+  commentId: Overload:SIX.TimApi.ImmutableTerminalSettings.ConnectionListenIPSecurePort
+  isSpec: "True"
+  fullName: SIX.TimApi.ImmutableTerminalSettings.ConnectionListenIPSecurePort
+  nameWithType: ImmutableTerminalSettings.ConnectionListenIPSecurePort
 - uid: SIX.TimApi.ImmutableTerminalSettings.ConnectionListenIPString
   name: ConnectionListenIPString
   href: api/SIX.TimApi.ImmutableTerminalSettings.html#SIX_TimApi_ImmutableTerminalSettings_ConnectionListenIPString
@@ -13848,6 +13886,45 @@ references:
   isSpec: "True"
   fullName: SIX.TimApi.ImmutableTerminalSettings.SaferpayTerminalId
   nameWithType: ImmutableTerminalSettings.SaferpayTerminalId
+- uid: SIX.TimApi.ImmutableTerminalSettings.SecureConnectionEnabled
+  name: SecureConnectionEnabled
+  href: api/SIX.TimApi.ImmutableTerminalSettings.html#SIX_TimApi_ImmutableTerminalSettings_SecureConnectionEnabled
+  commentId: P:SIX.TimApi.ImmutableTerminalSettings.SecureConnectionEnabled
+  fullName: SIX.TimApi.ImmutableTerminalSettings.SecureConnectionEnabled
+  nameWithType: ImmutableTerminalSettings.SecureConnectionEnabled
+- uid: SIX.TimApi.ImmutableTerminalSettings.SecureConnectionEnabled*
+  name: SecureConnectionEnabled
+  href: api/SIX.TimApi.ImmutableTerminalSettings.html#SIX_TimApi_ImmutableTerminalSettings_SecureConnectionEnabled_
+  commentId: Overload:SIX.TimApi.ImmutableTerminalSettings.SecureConnectionEnabled
+  isSpec: "True"
+  fullName: SIX.TimApi.ImmutableTerminalSettings.SecureConnectionEnabled
+  nameWithType: ImmutableTerminalSettings.SecureConnectionEnabled
+- uid: SIX.TimApi.ImmutableTerminalSettings.SecureConnectionFallbackEnabled
+  name: SecureConnectionFallbackEnabled
+  href: api/SIX.TimApi.ImmutableTerminalSettings.html#SIX_TimApi_ImmutableTerminalSettings_SecureConnectionFallbackEnabled
+  commentId: P:SIX.TimApi.ImmutableTerminalSettings.SecureConnectionFallbackEnabled
+  fullName: SIX.TimApi.ImmutableTerminalSettings.SecureConnectionFallbackEnabled
+  nameWithType: ImmutableTerminalSettings.SecureConnectionFallbackEnabled
+- uid: SIX.TimApi.ImmutableTerminalSettings.SecureConnectionFallbackEnabled*
+  name: SecureConnectionFallbackEnabled
+  href: api/SIX.TimApi.ImmutableTerminalSettings.html#SIX_TimApi_ImmutableTerminalSettings_SecureConnectionFallbackEnabled_
+  commentId: Overload:SIX.TimApi.ImmutableTerminalSettings.SecureConnectionFallbackEnabled
+  isSpec: "True"
+  fullName: SIX.TimApi.ImmutableTerminalSettings.SecureConnectionFallbackEnabled
+  nameWithType: ImmutableTerminalSettings.SecureConnectionFallbackEnabled
+- uid: SIX.TimApi.ImmutableTerminalSettings.SecureConnectionPassword
+  name: SecureConnectionPassword
+  href: api/SIX.TimApi.ImmutableTerminalSettings.html#SIX_TimApi_ImmutableTerminalSettings_SecureConnectionPassword
+  commentId: P:SIX.TimApi.ImmutableTerminalSettings.SecureConnectionPassword
+  fullName: SIX.TimApi.ImmutableTerminalSettings.SecureConnectionPassword
+  nameWithType: ImmutableTerminalSettings.SecureConnectionPassword
+- uid: SIX.TimApi.ImmutableTerminalSettings.SecureConnectionPassword*
+  name: SecureConnectionPassword
+  href: api/SIX.TimApi.ImmutableTerminalSettings.html#SIX_TimApi_ImmutableTerminalSettings_SecureConnectionPassword_
+  commentId: Overload:SIX.TimApi.ImmutableTerminalSettings.SecureConnectionPassword
+  isSpec: "True"
+  fullName: SIX.TimApi.ImmutableTerminalSettings.SecureConnectionPassword
+  nameWithType: ImmutableTerminalSettings.SecureConnectionPassword
 - uid: SIX.TimApi.ImmutableTerminalSettings.SerialBaudrate
   name: SerialBaudrate
   href: api/SIX.TimApi.ImmutableTerminalSettings.html#SIX_TimApi_ImmutableTerminalSettings_SerialBaudrate
@@ -15586,12 +15663,12 @@ references:
   commentId: T:SIX.TimApi.Receipts.CustomReceiptFormatter.Condition
   fullName: SIX.TimApi.Receipts.CustomReceiptFormatter.Condition
   nameWithType: CustomReceiptFormatter.Condition
-- uid: SIX.TimApi.Receipts.CustomReceiptFormatter.Condition.BAL_EXP_DATE_OR_RES_EXP_DATE_OR_AVAILABLE
-  name: BAL_EXP_DATE_OR_RES_EXP_DATE_OR_AVAILABLE
-  href: api/SIX.TimApi.Receipts.CustomReceiptFormatter.Condition.html#SIX_TimApi_Receipts_CustomReceiptFormatter_Condition_BAL_EXP_DATE_OR_RES_EXP_DATE_OR_AVAILABLE
-  commentId: F:SIX.TimApi.Receipts.CustomReceiptFormatter.Condition.BAL_EXP_DATE_OR_RES_EXP_DATE_OR_AVAILABLE
-  fullName: SIX.TimApi.Receipts.CustomReceiptFormatter.Condition.BAL_EXP_DATE_OR_RES_EXP_DATE_OR_AVAILABLE
-  nameWithType: CustomReceiptFormatter.Condition.BAL_EXP_DATE_OR_RES_EXP_DATE_OR_AVAILABLE
+- uid: SIX.TimApi.Receipts.CustomReceiptFormatter.Condition.BAL_EXP_DATE_OR_RES_EXP_DATE_OR_AVAILABLE_OR_LOADED
+  name: BAL_EXP_DATE_OR_RES_EXP_DATE_OR_AVAILABLE_OR_LOADED
+  href: api/SIX.TimApi.Receipts.CustomReceiptFormatter.Condition.html#SIX_TimApi_Receipts_CustomReceiptFormatter_Condition_BAL_EXP_DATE_OR_RES_EXP_DATE_OR_AVAILABLE_OR_LOADED
+  commentId: F:SIX.TimApi.Receipts.CustomReceiptFormatter.Condition.BAL_EXP_DATE_OR_RES_EXP_DATE_OR_AVAILABLE_OR_LOADED
+  fullName: SIX.TimApi.Receipts.CustomReceiptFormatter.Condition.BAL_EXP_DATE_OR_RES_EXP_DATE_OR_AVAILABLE_OR_LOADED
+  nameWithType: CustomReceiptFormatter.Condition.BAL_EXP_DATE_OR_RES_EXP_DATE_OR_AVAILABLE_OR_LOADED
 - uid: SIX.TimApi.Receipts.CustomReceiptFormatter.Condition.CDGM
   name: CDGM
   href: api/SIX.TimApi.Receipts.CustomReceiptFormatter.Condition.html#SIX_TimApi_Receipts_CustomReceiptFormatter_Condition_CDGM
@@ -16074,6 +16151,19 @@ references:
   isSpec: "True"
   fullName: SIX.TimApi.Receipts.CustomReceiptFormatter.LineFormat.getPadding
   nameWithType: CustomReceiptFormatter.LineFormat.getPadding
+- uid: SIX.TimApi.Receipts.CustomReceiptFormatter.normalizeReceiptLineBreaks(String)
+  name: normalizeReceiptLineBreaks(String)
+  href: api/SIX.TimApi.Receipts.CustomReceiptFormatter.html#SIX_TimApi_Receipts_CustomReceiptFormatter_normalizeReceiptLineBreaks_String_
+  commentId: M:SIX.TimApi.Receipts.CustomReceiptFormatter.normalizeReceiptLineBreaks(String)
+  fullName: SIX.TimApi.Receipts.CustomReceiptFormatter.normalizeReceiptLineBreaks(String)
+  nameWithType: CustomReceiptFormatter.normalizeReceiptLineBreaks(String)
+- uid: SIX.TimApi.Receipts.CustomReceiptFormatter.normalizeReceiptLineBreaks*
+  name: normalizeReceiptLineBreaks
+  href: api/SIX.TimApi.Receipts.CustomReceiptFormatter.html#SIX_TimApi_Receipts_CustomReceiptFormatter_normalizeReceiptLineBreaks_
+  commentId: Overload:SIX.TimApi.Receipts.CustomReceiptFormatter.normalizeReceiptLineBreaks
+  isSpec: "True"
+  fullName: SIX.TimApi.Receipts.CustomReceiptFormatter.normalizeReceiptLineBreaks
+  nameWithType: CustomReceiptFormatter.normalizeReceiptLineBreaks
 - uid: SIX.TimApi.Receipts.CustomReceiptFormatter.resolveField(List{SIX.TimApi.ReceiptItem},SIX.TimApi.Constants.ReceiptItemType,SIX.TimApi.Receipts.CustomReceiptFormatter.Counters)
   name: resolveField(List<ReceiptItem>, ReceiptItemType, CustomReceiptFormatter.Counters)
   href: api/SIX.TimApi.Receipts.CustomReceiptFormatter.html#SIX_TimApi_Receipts_CustomReceiptFormatter_resolveField_List_SIX_TimApi_ReceiptItem__SIX_TimApi_Constants_ReceiptItemType_SIX_TimApi_Receipts_CustomReceiptFormatter_Counters_
@@ -16456,6 +16546,12 @@ references:
   commentId: F:SIX.TimApi.Receipts.CustomReceiptFormatter.TextType.FIELD_AMOUNT_INSTALLMENT_TOTAL
   fullName: SIX.TimApi.Receipts.CustomReceiptFormatter.TextType.FIELD_AMOUNT_INSTALLMENT_TOTAL
   nameWithType: CustomReceiptFormatter.TextType.FIELD_AMOUNT_INSTALLMENT_TOTAL
+- uid: SIX.TimApi.Receipts.CustomReceiptFormatter.TextType.FIELD_AMOUNT_LOADED
+  name: FIELD_AMOUNT_LOADED
+  href: api/SIX.TimApi.Receipts.CustomReceiptFormatter.TextType.html#SIX_TimApi_Receipts_CustomReceiptFormatter_TextType_FIELD_AMOUNT_LOADED
+  commentId: F:SIX.TimApi.Receipts.CustomReceiptFormatter.TextType.FIELD_AMOUNT_LOADED
+  fullName: SIX.TimApi.Receipts.CustomReceiptFormatter.TextType.FIELD_AMOUNT_LOADED
+  nameWithType: CustomReceiptFormatter.TextType.FIELD_AMOUNT_LOADED
 - uid: SIX.TimApi.Receipts.CustomReceiptFormatter.TextType.FIELD_AMOUNT_OF_GOODS
   name: FIELD_AMOUNT_OF_GOODS
   href: api/SIX.TimApi.Receipts.CustomReceiptFormatter.TextType.html#SIX_TimApi_Receipts_CustomReceiptFormatter_TextType_FIELD_AMOUNT_OF_GOODS
@@ -17080,6 +17176,12 @@ references:
   commentId: F:SIX.TimApi.Receipts.CustomReceiptFormatter.TranslatedText.AMOUNT_INSTALLMENT_TOTAL
   fullName: SIX.TimApi.Receipts.CustomReceiptFormatter.TranslatedText.AMOUNT_INSTALLMENT_TOTAL
   nameWithType: CustomReceiptFormatter.TranslatedText.AMOUNT_INSTALLMENT_TOTAL
+- uid: SIX.TimApi.Receipts.CustomReceiptFormatter.TranslatedText.AMOUNT_LOADED
+  name: AMOUNT_LOADED
+  href: api/SIX.TimApi.Receipts.CustomReceiptFormatter.TranslatedText.html#SIX_TimApi_Receipts_CustomReceiptFormatter_TranslatedText_AMOUNT_LOADED
+  commentId: F:SIX.TimApi.Receipts.CustomReceiptFormatter.TranslatedText.AMOUNT_LOADED
+  fullName: SIX.TimApi.Receipts.CustomReceiptFormatter.TranslatedText.AMOUNT_LOADED
+  nameWithType: CustomReceiptFormatter.TranslatedText.AMOUNT_LOADED
 - uid: SIX.TimApi.Receipts.CustomReceiptFormatter.TranslatedText.AMOUNT_TIP
   name: AMOUNT_TIP
   href: api/SIX.TimApi.Receipts.CustomReceiptFormatter.TranslatedText.html#SIX_TimApi_Receipts_CustomReceiptFormatter_TranslatedText_AMOUNT_TIP
@@ -18307,6 +18409,19 @@ references:
   isSpec: "True"
   fullName: SIX.TimApi.ShowDialogRequest.DynamicPlaceholder
   nameWithType: ShowDialogRequest.DynamicPlaceholder
+- uid: SIX.TimApi.ShowDialogRequest.ImageData
+  name: ImageData
+  href: api/SIX.TimApi.ShowDialogRequest.html#SIX_TimApi_ShowDialogRequest_ImageData
+  commentId: P:SIX.TimApi.ShowDialogRequest.ImageData
+  fullName: SIX.TimApi.ShowDialogRequest.ImageData
+  nameWithType: ShowDialogRequest.ImageData
+- uid: SIX.TimApi.ShowDialogRequest.ImageData*
+  name: ImageData
+  href: api/SIX.TimApi.ShowDialogRequest.html#SIX_TimApi_ShowDialogRequest_ImageData_
+  commentId: Overload:SIX.TimApi.ShowDialogRequest.ImageData
+  isSpec: "True"
+  fullName: SIX.TimApi.ShowDialogRequest.ImageData
+  nameWithType: ShowDialogRequest.ImageData
 - uid: SIX.TimApi.ShowDialogRequest.Language
   name: Language
   href: api/SIX.TimApi.ShowDialogRequest.html#SIX_TimApi_ShowDialogRequest_Language
@@ -23778,6 +23893,19 @@ references:
   isSpec: "True"
   fullName: SIX.TimApi.TerminalSettings.ConnectionIPPort
   nameWithType: TerminalSettings.ConnectionIPPort
+- uid: SIX.TimApi.TerminalSettings.ConnectionIPSecurePort
+  name: ConnectionIPSecurePort
+  href: api/SIX.TimApi.TerminalSettings.html#SIX_TimApi_TerminalSettings_ConnectionIPSecurePort
+  commentId: P:SIX.TimApi.TerminalSettings.ConnectionIPSecurePort
+  fullName: SIX.TimApi.TerminalSettings.ConnectionIPSecurePort
+  nameWithType: TerminalSettings.ConnectionIPSecurePort
+- uid: SIX.TimApi.TerminalSettings.ConnectionIPSecurePort*
+  name: ConnectionIPSecurePort
+  href: api/SIX.TimApi.TerminalSettings.html#SIX_TimApi_TerminalSettings_ConnectionIPSecurePort_
+  commentId: Overload:SIX.TimApi.TerminalSettings.ConnectionIPSecurePort
+  isSpec: "True"
+  fullName: SIX.TimApi.TerminalSettings.ConnectionIPSecurePort
+  nameWithType: TerminalSettings.ConnectionIPSecurePort
 - uid: SIX.TimApi.TerminalSettings.ConnectionIPString
   name: ConnectionIPString
   href: api/SIX.TimApi.TerminalSettings.html#SIX_TimApi_TerminalSettings_ConnectionIPString
@@ -23817,6 +23945,19 @@ references:
   isSpec: "True"
   fullName: SIX.TimApi.TerminalSettings.ConnectionListenIPPort
   nameWithType: TerminalSettings.ConnectionListenIPPort
+- uid: SIX.TimApi.TerminalSettings.ConnectionListenIPSecurePort
+  name: ConnectionListenIPSecurePort
+  href: api/SIX.TimApi.TerminalSettings.html#SIX_TimApi_TerminalSettings_ConnectionListenIPSecurePort
+  commentId: P:SIX.TimApi.TerminalSettings.ConnectionListenIPSecurePort
+  fullName: SIX.TimApi.TerminalSettings.ConnectionListenIPSecurePort
+  nameWithType: TerminalSettings.ConnectionListenIPSecurePort
+- uid: SIX.TimApi.TerminalSettings.ConnectionListenIPSecurePort*
+  name: ConnectionListenIPSecurePort
+  href: api/SIX.TimApi.TerminalSettings.html#SIX_TimApi_TerminalSettings_ConnectionListenIPSecurePort_
+  commentId: Overload:SIX.TimApi.TerminalSettings.ConnectionListenIPSecurePort
+  isSpec: "True"
+  fullName: SIX.TimApi.TerminalSettings.ConnectionListenIPSecurePort
+  nameWithType: TerminalSettings.ConnectionListenIPSecurePort
 - uid: SIX.TimApi.TerminalSettings.ConnectionListenIPString
   name: ConnectionListenIPString
   href: api/SIX.TimApi.TerminalSettings.html#SIX_TimApi_TerminalSettings_ConnectionListenIPString
@@ -24317,6 +24458,45 @@ references:
   isSpec: "True"
   fullName: SIX.TimApi.TerminalSettings.SaferpayTerminalId
   nameWithType: TerminalSettings.SaferpayTerminalId
+- uid: SIX.TimApi.TerminalSettings.SecureConnectionEnabled
+  name: SecureConnectionEnabled
+  href: api/SIX.TimApi.TerminalSettings.html#SIX_TimApi_TerminalSettings_SecureConnectionEnabled
+  commentId: P:SIX.TimApi.TerminalSettings.SecureConnectionEnabled
+  fullName: SIX.TimApi.TerminalSettings.SecureConnectionEnabled
+  nameWithType: TerminalSettings.SecureConnectionEnabled
+- uid: SIX.TimApi.TerminalSettings.SecureConnectionEnabled*
+  name: SecureConnectionEnabled
+  href: api/SIX.TimApi.TerminalSettings.html#SIX_TimApi_TerminalSettings_SecureConnectionEnabled_
+  commentId: Overload:SIX.TimApi.TerminalSettings.SecureConnectionEnabled
+  isSpec: "True"
+  fullName: SIX.TimApi.TerminalSettings.SecureConnectionEnabled
+  nameWithType: TerminalSettings.SecureConnectionEnabled
+- uid: SIX.TimApi.TerminalSettings.SecureConnectionFallbackEnabled
+  name: SecureConnectionFallbackEnabled
+  href: api/SIX.TimApi.TerminalSettings.html#SIX_TimApi_TerminalSettings_SecureConnectionFallbackEnabled
+  commentId: P:SIX.TimApi.TerminalSettings.SecureConnectionFallbackEnabled
+  fullName: SIX.TimApi.TerminalSettings.SecureConnectionFallbackEnabled
+  nameWithType: TerminalSettings.SecureConnectionFallbackEnabled
+- uid: SIX.TimApi.TerminalSettings.SecureConnectionFallbackEnabled*
+  name: SecureConnectionFallbackEnabled
+  href: api/SIX.TimApi.TerminalSettings.html#SIX_TimApi_TerminalSettings_SecureConnectionFallbackEnabled_
+  commentId: Overload:SIX.TimApi.TerminalSettings.SecureConnectionFallbackEnabled
+  isSpec: "True"
+  fullName: SIX.TimApi.TerminalSettings.SecureConnectionFallbackEnabled
+  nameWithType: TerminalSettings.SecureConnectionFallbackEnabled
+- uid: SIX.TimApi.TerminalSettings.SecureConnectionPassword
+  name: SecureConnectionPassword
+  href: api/SIX.TimApi.TerminalSettings.html#SIX_TimApi_TerminalSettings_SecureConnectionPassword
+  commentId: P:SIX.TimApi.TerminalSettings.SecureConnectionPassword
+  fullName: SIX.TimApi.TerminalSettings.SecureConnectionPassword
+  nameWithType: TerminalSettings.SecureConnectionPassword
+- uid: SIX.TimApi.TerminalSettings.SecureConnectionPassword*
+  name: SecureConnectionPassword
+  href: api/SIX.TimApi.TerminalSettings.html#SIX_TimApi_TerminalSettings_SecureConnectionPassword_
+  commentId: Overload:SIX.TimApi.TerminalSettings.SecureConnectionPassword
+  isSpec: "True"
+  fullName: SIX.TimApi.TerminalSettings.SecureConnectionPassword
+  nameWithType: TerminalSettings.SecureConnectionPassword
 - uid: SIX.TimApi.TerminalSettings.SerialBaudrate
   name: SerialBaudrate
   href: api/SIX.TimApi.TerminalSettings.html#SIX_TimApi_TerminalSettings_SerialBaudrate
@@ -26220,6 +26400,15 @@ references:
   commentId: T:SIX.TimApi.TransactionResponse
   fullName: SIX.TimApi.TransactionResponse
   nameWithType: TransactionResponse
+- uid: SIX.TimApi.TransactionResponse.#ctor(SIX.TimApi.Constants.TransactionType,SIX.TimApi.Amount,SIX.TimApi.Amount,SIX.TimApi.Amount,SIX.TimApi.AmountDcc,SIX.TimApi.Amount,SIX.TimApi.Amount,SIX.TimApi.TransactionInformation,String,SIX.TimApi.CardData,SIX.TimApi.PrintData,SIX.TimApi.Amount,Dictionary{System.Int64,String},SIX.TimApi.Basket,SIX.TimApi.Amount,SIX.TimApi.Amount)
+  name: TransactionResponse(TransactionType, Amount, Amount, Amount, AmountDcc, Amount, Amount, TransactionInformation, String, CardData, PrintData, Amount, Dictionary<Int64, String>, Basket, Amount, Amount)
+  href: api/SIX.TimApi.TransactionResponse.html#SIX_TimApi_TransactionResponse__ctor_SIX_TimApi_Constants_TransactionType_SIX_TimApi_Amount_SIX_TimApi_Amount_SIX_TimApi_Amount_SIX_TimApi_AmountDcc_SIX_TimApi_Amount_SIX_TimApi_Amount_SIX_TimApi_TransactionInformation_String_SIX_TimApi_CardData_SIX_TimApi_PrintData_SIX_TimApi_Amount_Dictionary_System_Int64_String__SIX_TimApi_Basket_SIX_TimApi_Amount_SIX_TimApi_Amount_
+  commentId: M:SIX.TimApi.TransactionResponse.#ctor(SIX.TimApi.Constants.TransactionType,SIX.TimApi.Amount,SIX.TimApi.Amount,SIX.TimApi.Amount,SIX.TimApi.AmountDcc,SIX.TimApi.Amount,SIX.TimApi.Amount,SIX.TimApi.TransactionInformation,String,SIX.TimApi.CardData,SIX.TimApi.PrintData,SIX.TimApi.Amount,Dictionary{System.Int64,String},SIX.TimApi.Basket,SIX.TimApi.Amount,SIX.TimApi.Amount)
+  name.vb: TransactionResponse(TransactionType, Amount, Amount, Amount, AmountDcc, Amount, Amount, TransactionInformation, String, CardData, PrintData, Amount, Dictionary(Of Int64, String), Basket, Amount, Amount)
+  fullName: SIX.TimApi.TransactionResponse.TransactionResponse(SIX.TimApi.Constants.TransactionType, SIX.TimApi.Amount, SIX.TimApi.Amount, SIX.TimApi.Amount, SIX.TimApi.AmountDcc, SIX.TimApi.Amount, SIX.TimApi.Amount, SIX.TimApi.TransactionInformation, String, SIX.TimApi.CardData, SIX.TimApi.PrintData, SIX.TimApi.Amount, Dictionary<System.Int64, String>, SIX.TimApi.Basket, SIX.TimApi.Amount, SIX.TimApi.Amount)
+  fullName.vb: SIX.TimApi.TransactionResponse.TransactionResponse(SIX.TimApi.Constants.TransactionType, SIX.TimApi.Amount, SIX.TimApi.Amount, SIX.TimApi.Amount, SIX.TimApi.AmountDcc, SIX.TimApi.Amount, SIX.TimApi.Amount, SIX.TimApi.TransactionInformation, String, SIX.TimApi.CardData, SIX.TimApi.PrintData, SIX.TimApi.Amount, Dictionary(Of System.Int64, String), SIX.TimApi.Basket, SIX.TimApi.Amount, SIX.TimApi.Amount)
+  nameWithType: TransactionResponse.TransactionResponse(TransactionType, Amount, Amount, Amount, AmountDcc, Amount, Amount, TransactionInformation, String, CardData, PrintData, Amount, Dictionary<Int64, String>, Basket, Amount, Amount)
+  nameWithType.vb: TransactionResponse.TransactionResponse(TransactionType, Amount, Amount, Amount, AmountDcc, Amount, Amount, TransactionInformation, String, CardData, PrintData, Amount, Dictionary(Of Int64, String), Basket, Amount, Amount)
 - uid: SIX.TimApi.TransactionResponse.#ctor(SIX.TimApi.Constants.TransactionType,SIX.TimApi.Amount,SIX.TimApi.Amount,SIX.TimApi.Amount,SIX.TimApi.AmountDcc,SIX.TimApi.Amount,SIX.TimApi.TransactionInformation,String,SIX.TimApi.CardData,SIX.TimApi.PrintData,SIX.TimApi.Amount,Dictionary{System.Int64,String},SIX.TimApi.Basket,SIX.TimApi.Amount,SIX.TimApi.Amount)
   name: TransactionResponse(TransactionType, Amount, Amount, Amount, AmountDcc, Amount, TransactionInformation, String, CardData, PrintData, Amount, Dictionary<Int64, String>, Basket, Amount, Amount)
   href: api/SIX.TimApi.TransactionResponse.html#SIX_TimApi_TransactionResponse__ctor_SIX_TimApi_Constants_TransactionType_SIX_TimApi_Amount_SIX_TimApi_Amount_SIX_TimApi_Amount_SIX_TimApi_AmountDcc_SIX_TimApi_Amount_SIX_TimApi_TransactionInformation_String_SIX_TimApi_CardData_SIX_TimApi_PrintData_SIX_TimApi_Amount_Dictionary_System_Int64_String__SIX_TimApi_Basket_SIX_TimApi_Amount_SIX_TimApi_Amount_
@@ -26312,6 +26501,19 @@ references:
   isSpec: "True"
   fullName: SIX.TimApi.TransactionResponse.AmountDue
   nameWithType: TransactionResponse.AmountDue
+- uid: SIX.TimApi.TransactionResponse.AmountLoaded
+  name: AmountLoaded
+  href: api/SIX.TimApi.TransactionResponse.html#SIX_TimApi_TransactionResponse_AmountLoaded
+  commentId: P:SIX.TimApi.TransactionResponse.AmountLoaded
+  fullName: SIX.TimApi.TransactionResponse.AmountLoaded
+  nameWithType: TransactionResponse.AmountLoaded
+- uid: SIX.TimApi.TransactionResponse.AmountLoaded*
+  name: AmountLoaded
+  href: api/SIX.TimApi.TransactionResponse.html#SIX_TimApi_TransactionResponse_AmountLoaded_
+  commentId: Overload:SIX.TimApi.TransactionResponse.AmountLoaded
+  isSpec: "True"
+  fullName: SIX.TimApi.TransactionResponse.AmountLoaded
+  nameWithType: TransactionResponse.AmountLoaded
 - uid: SIX.TimApi.TransactionResponse.AmountLoyaltyCashback
   name: AmountLoyaltyCashback
   href: api/SIX.TimApi.TransactionResponse.html#SIX_TimApi_TransactionResponse_AmountLoyaltyCashback
