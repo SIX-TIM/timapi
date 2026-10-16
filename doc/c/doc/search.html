@@ -8479,6 +8479,13 @@ $(document).ready(function(){initNavTree('search.html','');});
     <field name="text">Flag to print Label If value is 1 Used for Girocard Specification retail</field>
   </doc>
   <doc>
+    <field name="type">enumvalue</field>
+    <field name="name">ta_c_rit_amount_loaded</field>
+    <field name="url">receipt__item__type_8h.html#a3d3044dd871a9c7d630dbcf3d9b738beab229a2677fde76b92cd9e57d6547e839</field>
+    <field name="keywords">ta_c_rit_amount_loaded</field>
+    <field name="text">Amount loaded to a Gift Card by a Load transaction Specification retail</field>
+  </doc>
+  <doc>
     <field name="type">file</field>
     <field name="name">receipt_request_type.h</field>
     <field name="url">enum__string__maps_2receipt__request__type_8h.html</field>
@@ -9953,6 +9960,13 @@ $(document).ready(function(){initNavTree('search.html','');});
     <field name="url">resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9a4bba42adbae99f8b47ef9257143820d1</field>
     <field name="keywords">ta_c_rid_qr_code</field>
     <field name="text">QrCode plus DynamicPlaceholder with ButtonMode option</field>
+  </doc>
+  <doc>
+    <field name="type">enumvalue</field>
+    <field name="name">ta_c_rid_pictogram</field>
+    <field name="url">resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9a38edf7fbb66ef5430d53ac83ecc76edb</field>
+    <field name="keywords">ta_c_rid_pictogram</field>
+    <field name="text">ImageData with optional DynamicPlaceholder and ButtonMode option</field>
   </doc>
   <doc>
     <field name="type">enumvalue</field>
@@ -13832,11 +13846,27 @@ $(document).ready(function(){initNavTree('search.html','');});
   </doc>
   <doc>
     <field name="type">function</field>
+    <field name="name">ta_normal_receipt_formatter_create_ex</field>
+    <field name="args">(ta_object_t *formatter, const char *empty_value)</field>
+    <field name="url">custom__receipt__formatter_8h.html#a1e3c54f67c18b965851d7f659b4fe9bb</field>
+    <field name="keywords">ta_normal_receipt_formatter_create_ex</field>
+    <field name="text">Create normal receipt format with custom empty-value replacement Formats transaction receipts using normal receipt format and replaces missing fields with empty_value formatter Pointer to variable to write created object instance to empty_value 0-terminated string used for undefined or empty values ta_c_rc_ok Object instance has been created and written to formatter ta_c_rc_invalid_argument formatter is null-pointer ta_c_rc_out_of_memory Failed allocating memory</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
     <field name="name">ta_compact_receipt_formatter_create</field>
     <field name="args">(ta_object_t *formatter)</field>
     <field name="url">custom__receipt__formatter_8h.html#a6311c7d24700b6ea029784f0274c1cf4</field>
     <field name="keywords">ta_compact_receipt_formatter_create</field>
     <field name="text">Create compact receipt format Formats transaction receipts using compact receipt format Caller retains a reference to the created instance While assigning to a terminal instance the terminal instance retains the reference The user can release the reference directly afterwards In this case the formatter is destroyed once no terminal instance requires the formatter anymore formatter Pointer to variable to write created object instance to Created object instance is retained Object is of type custom_receipt_formatter ta_c_rc_ok Object instance has been created and written to formatter ta_c_rc_invalid_argument formatter is null-pointer ta_c_rc_out_of_memory Failed allocating memory</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">ta_compact_receipt_formatter_create_ex</field>
+    <field name="args">(ta_object_t *formatter, const char *empty_value)</field>
+    <field name="url">custom__receipt__formatter_8h.html#ac7658a87ba9c8f5d4c66475c21ef1e3f</field>
+    <field name="keywords">ta_compact_receipt_formatter_create_ex</field>
+    <field name="text">Create compact receipt format with custom empty-value replacement Formats transaction receipts using compact receipt format and replaces missing fields with empty_value formatter Pointer to variable to write created object instance to empty_value 0-terminated string used for undefined or empty values ta_c_rc_ok Object instance has been created and written to formatter ta_c_rc_invalid_argument formatter is null-pointer ta_c_rc_out_of_memory Failed allocating memory</field>
   </doc>
   <doc>
     <field name="type">function</field>
@@ -13848,11 +13878,27 @@ $(document).ready(function(){initNavTree('search.html','');});
   </doc>
   <doc>
     <field name="type">function</field>
+    <field name="name">ta_super_compact_receipt_formatter_create_ex</field>
+    <field name="args">(ta_object_t *formatter, const char *empty_value)</field>
+    <field name="url">custom__receipt__formatter_8h.html#a99425ac5545e63fd8cdfc8fbe7d16a88</field>
+    <field name="keywords">ta_super_compact_receipt_formatter_create_ex</field>
+    <field name="text">Create super compact receipt format with custom empty-value replacement Formats transaction receipts using super compact receipt format and replaces missing fields with empty_value formatter Pointer to variable to write created object instance to empty_value 0-terminated string used for undefined or empty values ta_c_rc_ok Object instance has been created and written to formatter ta_c_rc_invalid_argument formatter is null-pointer ta_c_rc_out_of_memory Failed allocating memory</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
     <field name="name">ta_ultra_compact_receipt_formatter_create</field>
     <field name="args">(ta_object_t *formatter)</field>
     <field name="url">custom__receipt__formatter_8h.html#a7b7ada3bb25ea7f92bff99d675af788e</field>
     <field name="keywords">ta_ultra_compact_receipt_formatter_create</field>
     <field name="text">Create ultra compact receipt format Formats transaction receipts using ultra compact receipt format Caller retains a reference to the created instance While assigning to a terminal instance the terminal instance retains the reference The user can release the reference directly afterwards In this case the formatter is destroyed once no terminal instance requires the formatter anymore formatter Pointer to variable to write created object instance to Created object instance is retained Object is of type custom_receipt_formatter ta_c_rc_ok Object instance has been created and written to formatter ta_c_rc_invalid_argument formatter is null-pointer ta_c_rc_out_of_memory Failed allocating memory</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">ta_ultra_compact_receipt_formatter_create_ex</field>
+    <field name="args">(ta_object_t *formatter, const char *empty_value)</field>
+    <field name="url">custom__receipt__formatter_8h.html#ac66cc84df86e6c957fe6a92ff15633f7</field>
+    <field name="keywords">ta_ultra_compact_receipt_formatter_create_ex</field>
+    <field name="text">Create ultra compact receipt format with custom empty-value replacement Formats transaction receipts using ultra compact receipt format and replaces missing fields with empty_value formatter Pointer to variable to write created object instance to empty_value 0-terminated string used for undefined or empty values ta_c_rc_ok Object instance has been created and written to formatter ta_c_rc_invalid_argument formatter is null-pointer ta_c_rc_out_of_memory Failed allocating memory</field>
   </doc>
   <doc>
     <field name="type">file</field>
@@ -15625,7 +15671,7 @@ $(document).ready(function(){initNavTree('search.html','');});
     <field name="args">(ta_object_t request, ta_object_t dynamic_placeholder)</field>
     <field name="url">show__dialog__request_8h.html#a47bf924e53380d428658de247edd9272</field>
     <field name="keywords">ta_show_dialog_request_set_dynamic_placeholder</field>
-    <field name="text">Set dynamic_placeholder request Object instance of type show_dialog_request dynamic_placeholder Object instance to set ta_c_rc_ok Object instance assigned to dynamic_placeholder ta_c_rc_invalid_argument request is ta_object_invalid ta_c_rc_invalid_argument request is not of type show_dialog_request ta_c_rc_invalid_argument dynamic_placeholder is not ta_object_invalid and is not of type string and is greater than 4000 characters</field>
+    <field name="text">Set dynamic_placeholder request Object instance of type show_dialog_request dynamic_placeholder Object instance to set ta_c_rc_ok Object instance assigned to dynamic_placeholder ta_c_rc_invalid_argument request is ta_object_invalid ta_c_rc_invalid_argument request is not of type show_dialog_request ta_c_rc_invalid_argument dynamic_placeholder is not ta_object_invalid and is not of type string</field>
   </doc>
   <doc>
     <field name="type">function</field>
@@ -15641,7 +15687,23 @@ $(document).ready(function(){initNavTree('search.html','');});
     <field name="args">(ta_object_t request, ta_object_t qr_code)</field>
     <field name="url">show__dialog__request_8h.html#afd4d8fb3fd79ac6fe9947a7d8104889d</field>
     <field name="keywords">ta_show_dialog_request_set_qr_code</field>
-    <field name="text">Set qr_code request Object instance of type show_dialog_request qr_code Object instance to set ta_c_rc_ok Object instance assigned to qr_code ta_c_rc_invalid_argument request is ta_object_invalid ta_c_rc_invalid_argument request is not of type show_dialog_request ta_c_rc_invalid_argument qr_code is not ta_object_invalid and is not of type string or its length is not within the valid range 1-4000</field>
+    <field name="text">Set qr_code request Object instance of type show_dialog_request qr_code Object instance to set ta_c_rc_ok Object instance assigned to qr_code ta_c_rc_invalid_argument request is ta_object_invalid ta_c_rc_invalid_argument request is not of type show_dialog_request ta_c_rc_invalid_argument qr_code is not ta_object_invalid and is not of type string</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">ta_show_dialog_request_get_image_data</field>
+    <field name="args">(ta_object_t request, ta_object_t *image_data)</field>
+    <field name="url">show__dialog__request_8h.html#a751c0df155ac0f58ec26d673e7509996</field>
+    <field name="keywords">ta_show_dialog_request_get_image_data</field>
+    <field name="text">image_data request Object instance of type show_dialog_request image_data Pointer to variable to write object instance to ta_c_rc_ok Object instance written to image_data ta_c_rc_invalid_argument request is ta_object_invalid ta_c_rc_invalid_argument request is not of type show_dialog_request ta_c_rc_invalid_argument image_data is null-pointer</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">ta_show_dialog_request_set_image_data</field>
+    <field name="args">(ta_object_t request, ta_object_t image_data)</field>
+    <field name="url">show__dialog__request_8h.html#ab6fd546e90523982aaa8bb871be379ab</field>
+    <field name="keywords">ta_show_dialog_request_set_image_data</field>
+    <field name="text">Set image_data request Object instance of type show_dialog_request image_data Object instance to set ta_c_rc_ok Object instance assigned to image_data ta_c_rc_invalid_argument request is ta_object_invalid ta_c_rc_invalid_argument request is not of type show_dialog_request ta_c_rc_invalid_argument image_data is not ta_object_invalid and is not of type string</field>
   </doc>
   <doc>
     <field name="type">function</field>
@@ -18114,6 +18176,22 @@ $(document).ready(function(){initNavTree('search.html','');});
   </doc>
   <doc>
     <field name="type">function</field>
+    <field name="name">ta_terminal_settings_get_connection_ip_secure_port</field>
+    <field name="args">(ta_object_t settings, int *connection_ip_secure_port)</field>
+    <field name="url">terminal__settings_8h.html#abb803d4124ddb91777c196e7730936be</field>
+    <field name="keywords">ta_terminal_settings_get_connection_ip_secure_port</field>
+    <field name="text">Get the configured TLS port of the EFT terminal</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">ta_terminal_settings_set_connection_ip_secure_port</field>
+    <field name="args">(ta_object_t settings, int connection_ip_secure_port)</field>
+    <field name="url">terminal__settings_8h.html#ae8ac934b8daa9e83b8e43a623dda6740</field>
+    <field name="keywords">ta_terminal_settings_set_connection_ip_secure_port</field>
+    <field name="text">Set the TLS port of the EFT terminal Valid range is 1 65535</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
     <field name="name">ta_terminal_settings_get_connection_listen_ip_string</field>
     <field name="args">(ta_object_t settings, ta_object_t *ip_string)</field>
     <field name="url">terminal__settings_8h.html#ac3acc0ac5dcbc511e510dc94ab2ac2f5</field>
@@ -18143,6 +18221,70 @@ $(document).ready(function(){initNavTree('search.html','');});
     <field name="url">terminal__settings_8h.html#aea1ea3bd5dcb6f703be3719590163b0a</field>
     <field name="keywords">ta_terminal_settings_set_connection_listen_ip_port</field>
     <field name="text">Listening Port of the ECR if listening settings Value of type terminal_settings ip_port Value to set ta_c_rc_ok Value assigned to settings ta_c_rc_invalid_argument settings is ta_object_invalid ta_c_rc_invalid_argument settings is not of type terminal_settings</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">ta_terminal_settings_get_connection_listen_ip_secure_port</field>
+    <field name="args">(ta_object_t settings, int *connection_listen_ip_secure_port)</field>
+    <field name="url">terminal__settings_8h.html#ad8d91c6b076b4e8d13ad8bb23337806d</field>
+    <field name="keywords">ta_terminal_settings_get_connection_listen_ip_secure_port</field>
+    <field name="text">Get the configured TLS listen port of the ECR</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">ta_terminal_settings_set_connection_listen_ip_secure_port</field>
+    <field name="args">(ta_object_t settings, int connection_listen_ip_secure_port)</field>
+    <field name="url">terminal__settings_8h.html#af6e805445ea29bc14f1551b03a78d60e</field>
+    <field name="keywords">ta_terminal_settings_set_connection_listen_ip_secure_port</field>
+    <field name="text">Set the TLS listen port of the ECR Valid range is 1 65535</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">ta_terminal_settings_is_secure_connection_enabled</field>
+    <field name="args">(ta_object_t settings, ta_e_boolean_t *enabled)</field>
+    <field name="url">terminal__settings_8h.html#ae70bad4a79203da368c78d0211a4b971</field>
+    <field name="keywords">ta_terminal_settings_is_secure_connection_enabled</field>
+    <field name="text">Return whether TLS-PSK transport is enabled</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">ta_terminal_settings_set_secure_connection_enabled</field>
+    <field name="args">(ta_object_t settings, ta_e_boolean_t enabled)</field>
+    <field name="url">terminal__settings_8h.html#a58dea8c0f610b9b4dda4aa78da07db6e</field>
+    <field name="keywords">ta_terminal_settings_set_secure_connection_enabled</field>
+    <field name="text">Enable or disable TLS-PSK transport</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">ta_terminal_settings_is_secure_connection_fallback_enabled</field>
+    <field name="args">(ta_object_t settings, ta_e_boolean_t *enabled)</field>
+    <field name="url">terminal__settings_8h.html#a62cfb1d81e85c1c1f0a9c238d0d4f0b5</field>
+    <field name="keywords">ta_terminal_settings_is_secure_connection_fallback_enabled</field>
+    <field name="text">Return whether fallback to plain TCP is enabled</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">ta_terminal_settings_set_secure_connection_fallback_enabled</field>
+    <field name="args">(ta_object_t settings, ta_e_boolean_t enabled)</field>
+    <field name="url">terminal__settings_8h.html#aef20f9d910afa06acae90470888712c0</field>
+    <field name="keywords">ta_terminal_settings_set_secure_connection_fallback_enabled</field>
+    <field name="text">Enable or disable fallback to plain TCP</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">ta_terminal_settings_get_secure_connection_password</field>
+    <field name="args">(ta_object_t settings, ta_object_t *password)</field>
+    <field name="url">terminal__settings_8h.html#a05be31a2c118a6645a8f47cba6d46a47</field>
+    <field name="keywords">ta_terminal_settings_get_secure_connection_password</field>
+    <field name="text">Get the password used to derive the external TLS PSK</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">ta_terminal_settings_set_secure_connection_password</field>
+    <field name="args">(ta_object_t settings, ta_object_t password)</field>
+    <field name="url">terminal__settings_8h.html#a3ee3517c2df0324b3cf87c442883f009</field>
+    <field name="keywords">ta_terminal_settings_set_secure_connection_password</field>
+    <field name="text">Set the password used to derive the external TLS PSK</field>
   </doc>
   <doc>
     <field name="type">function</field>
@@ -20224,6 +20366,14 @@ $(document).ready(function(){initNavTree('search.html','');});
     <field name="url">transaction__response_8h.html#a69650eb05df37c15d94e7defa899cd3d</field>
     <field name="keywords">ta_transaction_response_get_amount_saldo</field>
     <field name="text">Saldo amount if present response Object instance of type transaction_response amount_saldo Pointer to variable to write object instance to Object instance is of type amount and is not retained Object instance is ta_object_invalid if value is not set in response ta_c_rc_ok Object instance written to amount_saldo ta_c_rc_invalid_argument response is ta_object_invalid ta_c_rc_invalid_argument response is not of type transaction_response ta_c_rc_invalid_argument amount_saldo is null-pointer</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">ta_transaction_response_get_amount_loaded</field>
+    <field name="args">(ta_object_t response, ta_object_t *amount_loaded)</field>
+    <field name="url">transaction__response_8h.html#af57e7b6d20ff3e3c613d10ebc2359df5</field>
+    <field name="keywords">ta_transaction_response_get_amount_loaded</field>
+    <field name="text">Amount loaded to the gift card if present response Object instance of type transaction_response amount_loaded Pointer to variable to write an amount instance to The object is not retained and is ta_object_invalid if not set ta_c_rc_ok Object instance written to amount_loaded ta_c_rc_invalid_argument Invalid response or null output pointer</field>
   </doc>
   <doc>
     <field name="type">function</field>

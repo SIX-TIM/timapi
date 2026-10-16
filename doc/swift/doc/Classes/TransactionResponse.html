@@ -685,9 +685,9 @@ Immutable class.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6TimApi19TransactionResponseC15transactionType6amount0G5Other0G3Due0G3Dcc0G5Saldo0E11Information13dccDisclaimer8cardData05printP00G3Tip14additionalInfo6basket0G15LoyaltyCashback0G9SurchargeAcA012CTransactionF0O_AA6AmountCSgA2wA0zJ0CSgAwA0cL0CSgSSSgAA04CardP0CSgAA05PrintP0CSgAWSDySiSSGSgAA6BasketCSgA2Wtcfc"></a>
-                    <a name="//apple_ref/swift/Method/init(transactionType:amount:amountOther:amountDue:amountDcc:amountSaldo:transactionInformation:dccDisclaimer:cardData:printData:amountTip:additionalInfo:basket:amountLoyaltyCashback:amountSurcharge:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6TimApi19TransactionResponseC15transactionType6amount0G5Other0G3Due0G3Dcc0G5Saldo0E11Information13dccDisclaimer8cardData05printP00G3Tip14additionalInfo6basket0G15LoyaltyCashback0G9SurchargeAcA012CTransactionF0O_AA6AmountCSgA2wA0zJ0CSgAwA0cL0CSgSSSgAA04CardP0CSgAA05PrintP0CSgAWSDySiSSGSgAA6BasketCSgA2Wtcfc">init(transactionType:<wbr>amount:<wbr>amountOther:<wbr>amountDue:<wbr>amountDcc:<wbr>amountSaldo:<wbr>transactionInformation:<wbr>dccDisclaimer:<wbr>cardData:<wbr>printData:<wbr>amountTip:<wbr>additionalInfo:<wbr>basket:<wbr>amountLoyaltyCashback:<wbr>amountSurcharge:<wbr>)</a>
+                    <a name="/s:6TimApi19TransactionResponseC15transactionType6amount0G5Other0G3Due0G3Dcc0G5Saldo0G6Loaded0E11Information13dccDisclaimer8cardData05printQ00G3Tip14additionalInfo6basket0G15LoyaltyCashback0G9SurchargeAcA012CTransactionF0O_AA6AmountCSgA2xA06AmountJ0CSgA2xA0cM0CSgSSSgAA04CardQ0CSgAA05PrintQ0CSgAXSDySiSSGSgAA6BasketCSgA2Xtcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(transactionType:amount:amountOther:amountDue:amountDcc:amountSaldo:amountLoaded:transactionInformation:dccDisclaimer:cardData:printData:amountTip:additionalInfo:basket:amountLoyaltyCashback:amountSurcharge:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TimApi19TransactionResponseC15transactionType6amount0G5Other0G3Due0G3Dcc0G5Saldo0G6Loaded0E11Information13dccDisclaimer8cardData05printQ00G3Tip14additionalInfo6basket0G15LoyaltyCashback0G9SurchargeAcA012CTransactionF0O_AA6AmountCSgA2xA06AmountJ0CSgA2xA0cM0CSgSSSgAA04CardQ0CSgAA05PrintQ0CSgAXSDySiSSGSgAA6BasketCSgA2Xtcfc">init(transactionType:<wbr>amount:<wbr>amountOther:<wbr>amountDue:<wbr>amountDcc:<wbr>amountSaldo:<wbr>amountLoaded:<wbr>transactionInformation:<wbr>dccDisclaimer:<wbr>cardData:<wbr>printData:<wbr>amountTip:<wbr>additionalInfo:<wbr>basket:<wbr>amountLoyaltyCashback:<wbr>amountSurcharge:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -708,6 +708,7 @@ Immutable class.</p>
             <span class="nv">amountDue</span><span class="p">:</span> <span class="kt"><a href="../Classes/Amount.html">Amount</a></span><span class="p">?,</span>
             <span class="nv">amountDcc</span><span class="p">:</span> <span class="kt"><a href="../Classes/AmountDcc.html">AmountDcc</a></span><span class="p">?,</span>
             <span class="nv">amountSaldo</span><span class="p">:</span> <span class="kt"><a href="../Classes/Amount.html">Amount</a></span><span class="p">?,</span>
+            <span class="nv">amountLoaded</span><span class="p">:</span> <span class="kt"><a href="../Classes/Amount.html">Amount</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
             <span class="nv">transactionInformation</span><span class="p">:</span> <span class="kt"><a href="../Classes/TransactionInformation.html">TransactionInformation</a></span><span class="p">?,</span>
             <span class="nv">dccDisclaimer</span><span class="p">:</span> <span class="kt">String</span><span class="p">?,</span>
             <span class="nv">cardData</span><span class="p">:</span> <span class="kt"><a href="../Classes/CardData.html">CardData</a></span><span class="p">?,</span>
@@ -1094,6 +1095,33 @@ and terminal country code are both set and are equal.</p>
                 <li class="item">
                   <div>
                     <code>
+                    <a name="/s:6TimApi19TransactionResponseC12amountLoadedAA6AmountCSgvp"></a>
+                    <a name="//apple_ref/swift/Property/amountLoaded" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TimApi19TransactionResponseC12amountLoadedAA6AmountCSgvp">amountLoaded</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Amount loaded to the gift card if present.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">amountLoaded</span><span class="p">:</span> <span class="kt"><a href="../Classes/Amount.html">Amount</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
                     <a name="/s:6TimApi19TransactionResponseC22transactionInformationAA0cF0CSgvp"></a>
                     <a name="//apple_ref/swift/Property/transactionInformation" class="dashAnchor"></a>
                     <a class="token" href="#/s:6TimApi19TransactionResponseC22transactionInformationAA0cF0CSgvp">transactionInformation</a>
@@ -1368,7 +1396,7 @@ and terminal country code are both set and are equal.</p>
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2026 <a class="link" href="" target="_blank" rel="external noopener"></a>. All rights reserved. (Last updated: 2026-05-27)</p>
+          <p>&copy; 2026 <a class="link" href="" target="_blank" rel="external noopener"></a>. All rights reserved. (Last updated: 2026-09-22)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.15.4</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
         </section>
       </article>

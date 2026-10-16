@@ -1,5 +1,11 @@
 var NAVTREEINDEX4 =
 {
+"enum__string__maps_2coupon__rejection__reason_8h.html#a6d1c565f92d2678158cfcfdfc292c70d":[1,1,0,1,0,13,0],
+"enum__string__maps_2currency__type_8h.html":[1,1,0,1,0,14],
+"enum__string__maps_2currency__type_8h.html#a3a8f43a6360b0f9d1bcc5da261a77a6d":[1,1,0,1,0,14,0],
+"enum__string__maps_2customer__data__type_8h.html":[1,1,0,1,0,15],
+"enum__string__maps_2customer__data__type_8h.html#a3c13238a75c9cd8cbe85270a70f26626":[1,1,0,1,0,15,0],
+"enum__string__maps_2cvm_8h.html":[1,1,0,1,0,16],
 "enum__string__maps_2cvm_8h.html#ab3ab4031d3bfc181be68aa61a78cc0b8":[1,1,0,1,0,16,0],
 "enum__string__maps_2dialog__functions_8h.html":[1,1,0,1,0,17],
 "enum__string__maps_2dialog__functions_8h.html#a01fa7ed42a3718998b40576249f4c567":[1,1,0,1,0,17,0],
@@ -243,11 +249,5 @@ var NAVTREEINDEX4 =
 "item__quantity_8h.html#a153effad8288433608852ee9a6095c5c":[1,1,0,33,2],
 "item__quantity_8h.html#a60a506e773d8b315acc8fc4f7125d13e":[1,1,0,33,5],
 "item__quantity_8h.html#a7c8d488b675744b5382721f4b3229712":[1,1,0,33,3],
-"item__quantity_8h.html#a7f176af779b025de64ba34bbd510672d":[1,1,0,33,6],
-"item__quantity_8h.html#acf70882a853cda8e3f0a3bc974ddde70":[1,1,0,33,1],
-"item__quantity_8h.html#ade48f0d6960f47c34fc6af21b2690bcc":[1,1,0,33,4],
-"item__quantity_8h.html#aec340ff0d3bcae6e6db2ff8a1aa3d3b5":[1,1,0,33,0],
-"kernel__type_8h.html":[1,1,0,1,29],
-"kernel__type_8h.html#a084307ef3fbd62531c2ffb55a16f8081":[1,1,0,1,29,0],
-"kernel__type_8h.html#a09c41b2ef45de74238a9f3897ce4e78a":[1,1,0,1,29,1]
+"item__quantity_8h.html#a7f176af779b025de64ba34bbd510672d":[1,1,0,33,6]
 };

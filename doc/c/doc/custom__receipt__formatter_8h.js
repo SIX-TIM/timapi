@@ -47,7 +47,7 @@ var custom__receipt__formatter_8h =
       [ "ta_crfc_field_transaction_type_and_no_tender_name", "custom__receipt__formatter_8h.html#a07c5b9d0b4ce2c471dd995fbae1716b0a8c79ba4b5f7f7a89184ac4011ef54449", null ],
       [ "ta_crfc_no_field_transaction_type_and_tender_name", "custom__receipt__formatter_8h.html#a07c5b9d0b4ce2c471dd995fbae1716b0a52a36422cc0ec5336120b30af89a15eb", null ],
       [ "ta_crfc_no_field_transaction_type_and_no_tender_name", "custom__receipt__formatter_8h.html#a07c5b9d0b4ce2c471dd995fbae1716b0a564b5fb27c2ad9c1b92c86906a0493bd", null ],
-      [ "ta_crfc_bal_exp_date_or_res_exp_date_or_available", "custom__receipt__formatter_8h.html#a07c5b9d0b4ce2c471dd995fbae1716b0afff87cfa9ff80c54b68dfab97466adba", null ],
+      [ "ta_crfc_bal_exp_date_or_res_exp_date_or_available_or_loaded", "custom__receipt__formatter_8h.html#a07c5b9d0b4ce2c471dd995fbae1716b0a591f12279b6b066ac3481e9316223c94", null ],
       [ "ta_crfc_offline", "custom__receipt__formatter_8h.html#a07c5b9d0b4ce2c471dd995fbae1716b0af6ece7e22edb1a65be933d4a8477f2af", null ],
       [ "ta_crfc_elv_legal_text", "custom__receipt__formatter_8h.html#a07c5b9d0b4ce2c471dd995fbae1716b0a55b2333bc574964f05b98791f6993e33", null ],
       [ "ta_crfc_max", "custom__receipt__formatter_8h.html#a07c5b9d0b4ce2c471dd995fbae1716b0a2646158fbf7a077927b70c8bfceb3d16", null ]
@@ -94,6 +94,7 @@ var custom__receipt__formatter_8h =
       [ "ta_c_crftt_field_card_expiry_date", "custom__receipt__formatter_8h.html#a883a5ff78a5d2ad805f9f6af32a8d2afa88a1f9946eacab686ed4451e45a6f245", null ],
       [ "ta_c_crftt_field_card_number_enc", "custom__receipt__formatter_8h.html#a883a5ff78a5d2ad805f9f6af32a8d2afad1abce274548f8aceb6932e8bfded8dd", null ],
       [ "ta_c_crftt_field_amount_saldo", "custom__receipt__formatter_8h.html#a883a5ff78a5d2ad805f9f6af32a8d2afa103b80ceee3b0f556a430583e79f4e82", null ],
+      [ "ta_c_crftt_field_amount_loaded", "custom__receipt__formatter_8h.html#a883a5ff78a5d2ad805f9f6af32a8d2afa3909d4cf27b439ca5608f3c81bb16c83", null ],
       [ "ta_c_crftt_field_ecr_seq_cnt", "custom__receipt__formatter_8h.html#a883a5ff78a5d2ad805f9f6af32a8d2afaeba51a75374963502f96ff6e90884576", null ],
       [ "ta_c_crftt_field_number_of_installments", "custom__receipt__formatter_8h.html#a883a5ff78a5d2ad805f9f6af32a8d2afa926ac29f036e36037597d1f19e5be94a", null ],
       [ "ta_c_crftt_field_installment_disclaimer", "custom__receipt__formatter_8h.html#a883a5ff78a5d2ad805f9f6af32a8d2afa8c66b1a90949cb037b523b82e5267bca", null ],
@@ -227,6 +228,7 @@ var custom__receipt__formatter_8h =
       [ "ta_crftt_merchant_signature", "custom__receipt__formatter_8h.html#aa2ad96ca8f3d24cc69d417eaa70dd2e3a1c81ed528e929a6b85da99fd27267766", null ],
       [ "ta_crftt_res_exp_date", "custom__receipt__formatter_8h.html#aa2ad96ca8f3d24cc69d417eaa70dd2e3a36cf0f90137fcfb6a9acd2e3666e4a2c", null ],
       [ "ta_crftt_amount_available", "custom__receipt__formatter_8h.html#aa2ad96ca8f3d24cc69d417eaa70dd2e3afb65b05fe4779385c3abdb6a05a7f839", null ],
+      [ "ta_crftt_amount_loaded", "custom__receipt__formatter_8h.html#aa2ad96ca8f3d24cc69d417eaa70dd2e3a78d5885b8a392e3a6925951407aab414", null ],
       [ "ta_crftt_markup_dcc_regulated", "custom__receipt__formatter_8h.html#aa2ad96ca8f3d24cc69d417eaa70dd2e3afef3a9bfa984c3e7a421e0417bc5dc17", null ],
       [ "ta_crftt_trx_ok", "custom__receipt__formatter_8h.html#aa2ad96ca8f3d24cc69d417eaa70dd2e3a23d44619ed37440539d8901b80f56cb7", null ],
       [ "ta_crftt_verified_by_device", "custom__receipt__formatter_8h.html#aa2ad96ca8f3d24cc69d417eaa70dd2e3ae14d63e4818430c163b37be64073382a", null ],
@@ -247,8 +249,12 @@ var custom__receipt__formatter_8h =
       [ "ta_crftt_offline", "custom__receipt__formatter_8h.html#aa2ad96ca8f3d24cc69d417eaa70dd2e3a5bdcb87053b727873cfa50b2529772e6", null ]
     ] ],
     [ "ta_compact_receipt_formatter_create", "custom__receipt__formatter_8h.html#a6311c7d24700b6ea029784f0274c1cf4", null ],
+    [ "ta_compact_receipt_formatter_create_ex", "custom__receipt__formatter_8h.html#ac7658a87ba9c8f5d4c66475c21ef1e3f", null ],
     [ "ta_custom_receipt_formatter_create", "custom__receipt__formatter_8h.html#abd4853cf2f499a6612d2974eb72df9bf", null ],
     [ "ta_normal_receipt_formatter_create", "custom__receipt__formatter_8h.html#ab98e89a9852b43a28e0ea0040c6dab01", null ],
+    [ "ta_normal_receipt_formatter_create_ex", "custom__receipt__formatter_8h.html#a1e3c54f67c18b965851d7f659b4fe9bb", null ],
     [ "ta_super_compact_receipt_formatter_create", "custom__receipt__formatter_8h.html#a418dcf30a4f63569e78ab710b2cda3da", null ],
-    [ "ta_ultra_compact_receipt_formatter_create", "custom__receipt__formatter_8h.html#a7b7ada3bb25ea7f92bff99d675af788e", null ]
+    [ "ta_super_compact_receipt_formatter_create_ex", "custom__receipt__formatter_8h.html#a99425ac5545e63fd8cdfc8fbe7d16a88", null ],
+    [ "ta_ultra_compact_receipt_formatter_create", "custom__receipt__formatter_8h.html#a7b7ada3bb25ea7f92bff99d675af788e", null ],
+    [ "ta_ultra_compact_receipt_formatter_create_ex", "custom__receipt__formatter_8h.html#ac66cc84df86e6c957fe6a92ff15633f7", null ]
 ];
