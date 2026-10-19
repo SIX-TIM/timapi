@@ -130,6 +130,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a69650eb05df37c15d94e7defa899cd3d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="result__code_8h.html#ab4ec13ca136d8c8377f07b334c5c431e">ta_e_result_code_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="transaction__response_8h.html#a69650eb05df37c15d94e7defa899cd3d">ta_transaction_response_get_amount_saldo</a> (<a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a> response, <a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a> *amount_saldo)</td></tr>
 <tr class="memdesc:a69650eb05df37c15d94e7defa899cd3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Saldo amount if present.  <a href="transaction__response_8h.html#a69650eb05df37c15d94e7defa899cd3d">More...</a><br /></td></tr>
 <tr class="separator:a69650eb05df37c15d94e7defa899cd3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af57e7b6d20ff3e3c613d10ebc2359df5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="result__code_8h.html#ab4ec13ca136d8c8377f07b334c5c431e">ta_e_result_code_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="transaction__response_8h.html#af57e7b6d20ff3e3c613d10ebc2359df5">ta_transaction_response_get_amount_loaded</a> (<a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a> response, <a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a> *amount_loaded)</td></tr>
+<tr class="memdesc:af57e7b6d20ff3e3c613d10ebc2359df5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Amount loaded to the gift card if present.  <a href="transaction__response_8h.html#af57e7b6d20ff3e3c613d10ebc2359df5">More...</a><br /></td></tr>
+<tr class="separator:af57e7b6d20ff3e3c613d10ebc2359df5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5de9740fdf82025a8f13cd99873f95f3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="result__code_8h.html#ab4ec13ca136d8c8377f07b334c5c431e">ta_e_result_code_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="transaction__response_8h.html#a5de9740fdf82025a8f13cd99873f95f3">ta_transaction_response_get_transaction_information</a> (<a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a> response, <a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a> *transaction_information)</td></tr>
 <tr class="memdesc:a5de9740fdf82025a8f13cd99873f95f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Information about completed transaction.  <a href="transaction__response_8h.html#a5de9740fdf82025a8f13cd99873f95f3">More...</a><br /></td></tr>
 <tr class="separator:a5de9740fdf82025a8f13cd99873f95f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -426,6 +429,50 @@ Functions</h2></td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>response</em> is <em>ta_object_invalid</em>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>response</em> is not of type <a class="el" href="transaction__response_8h.html">transaction_response</a>. </td></tr>
     <tr><td class="paramname">ta_c_rc_invalid_argument</td><td><em>amount_due</em> is <em>null-pointer</em>. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="af57e7b6d20ff3e3c613d10ebc2359df5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af57e7b6d20ff3e3c613d10ebc2359df5">&#9670;&nbsp;</a></span>ta_transaction_response_get_amount_loaded()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="result__code_8h.html#ab4ec13ca136d8c8377f07b334c5c431e">ta_e_result_code_t</a> ta_transaction_response_get_amount_loaded </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a>&#160;</td>
+          <td class="paramname"><em>response</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="object_8h.html#abe102de8fe907edeca995e0d4e79b106">ta_object_t</a> *&#160;</td>
+          <td class="paramname"><em>amount_loaded</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Amount loaded to the gift card if present. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">response</td><td>Object instance of type <a class="el" href="transaction__response_8h.html">transaction_response</a>. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">amount_loaded</td><td>Pointer to variable to write an <a class="el" href="amount_8h.html">amount</a> instance to. The object is not retained and is <em>ta_object_invalid</em> if not set.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">ta_c_rc_ok</td><td>Object instance written to <em>amount_loaded</em>. </td></tr>
+    <tr><td class="paramname">ta_c_rc_invalid_argument</td><td>Invalid response or null output pointer. </td></tr>
   </table>
   </dd>
 </dl>

@@ -20,6 +20,7 @@ var merchant__option__type_8h =
       [ "ta_c_mot_wsnumber", "merchant__option__type_8h.html#aea3eaf253bcce054769642d812d46362a7ac0a2c136e71c7878f3adff6a01b51a", null ],
       [ "ta_c_mot_voucher_id", "merchant__option__type_8h.html#aea3eaf253bcce054769642d812d46362ae9a11a11fec15417a0cc90d6ff72a24c", null ],
       [ "ta_c_mot_dsp_msg_suppress_flag", "merchant__option__type_8h.html#aea3eaf253bcce054769642d812d46362a83c09cb5a6996cd977747d824afdbfd2", null ],
-      [ "ta_c_mot_order_id", "merchant__option__type_8h.html#aea3eaf253bcce054769642d812d46362a00c6632102ca2d6df8e43ce57c6fafe4", null ]
+      [ "ta_c_mot_order_id", "merchant__option__type_8h.html#aea3eaf253bcce054769642d812d46362a00c6632102ca2d6df8e43ce57c6fafe4", null ],
+      [ "ta_c_mot_payer_note", "merchant__option__type_8h.html#aea3eaf253bcce054769642d812d46362aa7f355b3c7c31a19c974c152f63e6f2a", null ]
     ] ]
 ];

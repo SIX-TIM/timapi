@@ -4727,6 +4727,14 @@ $(document).ready(function(){initNavTree('search.html',''); initResizable(); });
   </doc>
   <doc>
     <field name="type">function</field>
+    <field name="name">ta_normal_receipt_formatter_create_ex</field>
+    <field name="args">(ta_object_t *formatter, const char *empty_value)</field>
+    <field name="url">custom__receipt__formatter_8h.html#a1e3c54f67c18b965851d7f659b4fe9bb</field>
+    <field name="keywords">ta_normal_receipt_formatter_create_ex</field>
+    <field name="text">Create normal receipt format with custom empty-value replacement Formats transaction receipts using normal receipt format and replaces missing fields with empty_value formatter Pointer to variable to write created object instance to empty_value 0 terminated string used for undefined or empty values ta_c_rc_ok Object instance has been created and written to formatter ta_c_rc_invalid_argument formatter is null-pointer ta_c_rc_out_of_memory Failed allocating memory</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
     <field name="name">ta_super_compact_receipt_formatter_create</field>
     <field name="args">(ta_object_t *formatter)</field>
     <field name="url">custom__receipt__formatter_8h.html#a418dcf30a4f63569e78ab710b2cda3da</field>
@@ -5114,6 +5122,14 @@ $(document).ready(function(){initNavTree('search.html',''); initResizable(); });
     <field name="text">Underline running across the entire line</field>
   </doc>
   <doc>
+    <field name="type">function</field>
+    <field name="name">ta_super_compact_receipt_formatter_create_ex</field>
+    <field name="args">(ta_object_t *formatter, const char *empty_value)</field>
+    <field name="url">custom__receipt__formatter_8h.html#a99425ac5545e63fd8cdfc8fbe7d16a88</field>
+    <field name="keywords">ta_super_compact_receipt_formatter_create_ex</field>
+    <field name="text">Create super compact receipt format with custom empty-value replacement Formats transaction receipts using super compact receipt format and replaces missing fields with empty_value formatter Pointer to variable to write created object instance to empty_value 0 terminated string used for undefined or empty values ta_c_rc_ok Object instance has been created and written to formatter ta_c_rc_invalid_argument formatter is null-pointer ta_c_rc_out_of_memory Failed allocating memory</field>
+  </doc>
+  <doc>
     <field name="type">typedef</field>
     <field name="name">ta_s_custom_receipt_formatter_configuration_t</field>
     <field name="url">custom__receipt__formatter_8h.html#a99d5fdb543a8459842b8fd640ceaf2b5</field>
@@ -5142,6 +5158,22 @@ $(document).ready(function(){initNavTree('search.html',''); initResizable(); });
     <field name="url">custom__receipt__formatter_8h.html#abd4853cf2f499a6612d2974eb72df9bf</field>
     <field name="keywords">ta_custom_receipt_formatter_create</field>
     <field name="text">Create custom receipt formatter Formats transaction receipts using string formating definition The definition is required to be valid memory location only during construction time The receipt formatted stores the information internally during construction time After the object has been constructed the memory locations can become invalid Caller retains a reference to the created instance While assigning to a terminal instance the terminal instance retains the reference The user can release the reference directly afterwards In this case the formatter is destroyed once no terminal instance requires the formatter anymore formatter Pointer to variable to write created object instance to Created object instance is retained configuration Pointer to struct containinig formatter configuration ta_c_rc_ok Object instance has been created and written to formatter ta_c_rc_invalid_argument formatter is null-pointer ta_c_rc_invalid_argument configuration is null-pointer ta_c_rc_out_of_memory Failed allocating memory</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">ta_ultra_compact_receipt_formatter_create_ex</field>
+    <field name="args">(ta_object_t *formatter, const char *empty_value)</field>
+    <field name="url">custom__receipt__formatter_8h.html#ac66cc84df86e6c957fe6a92ff15633f7</field>
+    <field name="keywords">ta_ultra_compact_receipt_formatter_create_ex</field>
+    <field name="text">Create ultra compact receipt format with custom empty-value replacement Formats transaction receipts using ultra compact receipt format and replaces missing fields with empty_value formatter Pointer to variable to write created object instance to empty_value 0 terminated string used for undefined or empty values ta_c_rc_ok Object instance has been created and written to formatter ta_c_rc_invalid_argument formatter is null-pointer ta_c_rc_out_of_memory Failed allocating memory</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">ta_compact_receipt_formatter_create_ex</field>
+    <field name="args">(ta_object_t *formatter, const char *empty_value)</field>
+    <field name="url">custom__receipt__formatter_8h.html#ac7658a87ba9c8f5d4c66475c21ef1e3f</field>
+    <field name="keywords">ta_compact_receipt_formatter_create_ex</field>
+    <field name="text">Create compact receipt format with custom empty-value replacement Formats transaction receipts using compact receipt format and replaces missing fields with empty_value formatter Pointer to variable to write created object instance to empty_value 0 terminated string used for undefined or empty values ta_c_rc_ok Object instance has been created and written to formatter ta_c_rc_invalid_argument formatter is null-pointer ta_c_rc_out_of_memory Failed allocating memory</field>
   </doc>
   <doc>
     <field name="type">typedef</field>
@@ -8746,6 +8778,13 @@ $(document).ready(function(){initNavTree('search.html',''); initResizable(); });
   </doc>
   <doc>
     <field name="type">enumvalue</field>
+    <field name="name">ta_c_mot_payer_note</field>
+    <field name="url">merchant__option__type_8h.html#aea3eaf253bcce054769642d812d46362aa7f355b3c7c31a19c974c152f63e6f2a</field>
+    <field name="keywords">ta_c_mot_payer_note</field>
+    <field name="text">Transaction-specific data transmitted from the ECR e.g card acceptor name/location ticket no etc Note Max 4 0 characters Specification retail</field>
+  </doc>
+  <doc>
+    <field name="type">enumvalue</field>
     <field name="name">ta_c_mot_additional_merchant_data</field>
     <field name="url">merchant__option__type_8h.html#aea3eaf253bcce054769642d812d46362ac3d40943756d4fd307026b06ac5936c9</field>
     <field name="keywords">ta_c_mot_additional_merchant_data</field>
@@ -9080,56 +9119,56 @@ $(document).ready(function(){initNavTree('search.html',''); initResizable(); });
     <field name="name">ta_e_non_financial_transactions</field>
     <field name="url">non__financial__transactions_8h.html#a9519a57c1ef87f4cdf5937084bf4de93</field>
     <field name="keywords">ta_e_non_financial_transactions</field>
-    <field name="text">Flag constants for FeatureType and OptionType sixml NonFinancialTransactions value Guides retail valueAddedServices</field>
+    <field name="text">Flag constants for FeatureType and OptionType sixml NonFinancialTransactions value Guides retail petrol unattended advancedRetail banking hospitality valueAddedServices</field>
   </doc>
   <doc>
     <field name="type">enumvalue</field>
     <field name="name">ta_c_nft_adjust_reservation</field>
     <field name="url">non__financial__transactions_8h.html#a9519a57c1ef87f4cdf5937084bf4de93a0ffd85c6a9ccf2f3c4c59ca2b42f0eec</field>
     <field name="keywords">ta_c_nft_adjust_reservation</field>
-    <field name="text">Adjust Reservation function supported Specification retail</field>
+    <field name="text">Adjust Reservation function supported Specification hospitality</field>
   </doc>
   <doc>
     <field name="type">enumvalue</field>
     <field name="name">ta_c_nft_loyalty_data</field>
     <field name="url">non__financial__transactions_8h.html#a9519a57c1ef87f4cdf5937084bf4de93a202e41e890fe479d10baa7f773f35028</field>
     <field name="keywords">ta_c_nft_loyalty_data</field>
-    <field name="text">Loyalty data query/init/deinit/update function Specification retail</field>
+    <field name="text">Loyalty data query/init/deinit/update function Specification valueAddedServices</field>
   </doc>
   <doc>
     <field name="type">enumvalue</field>
     <field name="name">ta_c_nft_start_checkout</field>
     <field name="url">non__financial__transactions_8h.html#a9519a57c1ef87f4cdf5937084bf4de93a4bc605f2d1165ef1023fa3ec3ad516e5</field>
     <field name="keywords">ta_c_nft_start_checkout</field>
-    <field name="text">Start checkout process at the POS Specification retail</field>
+    <field name="text">Start checkout process at the POS Specification valueAddedServices</field>
   </doc>
   <doc>
     <field name="type">enumvalue</field>
     <field name="name">ta_c_nft_client_identification</field>
     <field name="url">non__financial__transactions_8h.html#a9519a57c1ef87f4cdf5937084bf4de93a54b6cb7f463a9a1d5df61991a8175348</field>
     <field name="keywords">ta_c_nft_client_identification</field>
-    <field name="text">Client identification function supported Specification retail</field>
+    <field name="text">Client identification function supported Specification banking</field>
   </doc>
   <doc>
     <field name="type">enumvalue</field>
     <field name="name">ta_c_nft_account_verification</field>
     <field name="url">non__financial__transactions_8h.html#a9519a57c1ef87f4cdf5937084bf4de93a5984076300fd5fd187291cc0b2e96c06</field>
     <field name="keywords">ta_c_nft_account_verification</field>
-    <field name="text">AccountVerification function supported Specification retail</field>
+    <field name="text">AccountVerification function supported Specification advancedRetail</field>
   </doc>
   <doc>
     <field name="type">enumvalue</field>
     <field name="name">ta_c_nft_cancel_reservation</field>
     <field name="url">non__financial__transactions_8h.html#a9519a57c1ef87f4cdf5937084bf4de93a5e4305f1663a2e6b56cc5e30ae338271</field>
     <field name="keywords">ta_c_nft_cancel_reservation</field>
-    <field name="text">Cancel Reservation function supported Specification retail</field>
+    <field name="text">Cancel Reservation function supported Specification hospitality</field>
   </doc>
   <doc>
     <field name="type">enumvalue</field>
     <field name="name">ta_c_nft_provide_loyalty_basket</field>
     <field name="url">non__financial__transactions_8h.html#a9519a57c1ef87f4cdf5937084bf4de93a63c5e39869089ee5bfeed9e42a4de239</field>
     <field name="keywords">ta_c_nft_provide_loyalty_basket</field>
-    <field name="text">Provide LoyaltyBasket to the terminal Specification retail</field>
+    <field name="text">Provide LoyaltyBasket to the terminal Specification valueAddedServices</field>
   </doc>
   <doc>
     <field name="type">enumvalue</field>
@@ -9143,7 +9182,7 @@ $(document).ready(function(){initNavTree('search.html',''); initResizable(); });
     <field name="name">ta_c_nft_init_transaction</field>
     <field name="url">non__financial__transactions_8h.html#a9519a57c1ef87f4cdf5937084bf4de93a72df638ef776527b02f8af6da871ff54</field>
     <field name="keywords">ta_c_nft_init_transaction</field>
-    <field name="text">Init transaction function supported Specification retail</field>
+    <field name="text">Init transaction function supported Specification petrol</field>
   </doc>
   <doc>
     <field name="type">enumvalue</field>
@@ -9157,7 +9196,7 @@ $(document).ready(function(){initNavTree('search.html',''); initResizable(); });
     <field name="name">ta_c_nft_provide_vas_result</field>
     <field name="url">non__financial__transactions_8h.html#a9519a57c1ef87f4cdf5937084bf4de93a8f4a650938c37255efdae56bd2ec88e5</field>
     <field name="keywords">ta_c_nft_provide_vas_result</field>
-    <field name="text">Provide Vas Result to the terminal Specification retail</field>
+    <field name="text">Provide Vas Result to the terminal Specification valueAddedServices</field>
   </doc>
   <doc>
     <field name="type">enumvalue</field>
@@ -9171,14 +9210,14 @@ $(document).ready(function(){initNavTree('search.html',''); initResizable(); });
     <field name="name">ta_c_nft_reservation</field>
     <field name="url">non__financial__transactions_8h.html#a9519a57c1ef87f4cdf5937084bf4de93ad5fe0ccd206eb7b503883bfb9e9d5526</field>
     <field name="keywords">ta_c_nft_reservation</field>
-    <field name="text">Reservation function supported Specification retail</field>
+    <field name="text">Reservation function supported Specification hospitality</field>
   </doc>
   <doc>
     <field name="type">enumvalue</field>
     <field name="name">ta_c_nft_balance_inquiry</field>
     <field name="url">non__financial__transactions_8h.html#a9519a57c1ef87f4cdf5937084bf4de93adfa9700eba066de63de82043b0a1ee36</field>
     <field name="keywords">ta_c_nft_balance_inquiry</field>
-    <field name="text">Balance inquiry function supported Specification retail</field>
+    <field name="text">Balance inquiry function supported Specification advancedRetail</field>
   </doc>
   <doc>
     <field name="type">enumvalue</field>
@@ -9192,21 +9231,21 @@ $(document).ready(function(){initNavTree('search.html',''); initResizable(); });
     <field name="name">ta_c_nft_finish_checkout</field>
     <field name="url">non__financial__transactions_8h.html#a9519a57c1ef87f4cdf5937084bf4de93ae703e8e09bf6500c012f7d6661f1576c</field>
     <field name="keywords">ta_c_nft_finish_checkout</field>
-    <field name="text">Finish checkout process at the POS Specification retail</field>
+    <field name="text">Finish checkout process at the POS Specification valueAddedServices</field>
   </doc>
   <doc>
     <field name="type">enumvalue</field>
     <field name="name">ta_c_nft_hold_commit</field>
     <field name="url">non__financial__transactions_8h.html#a9519a57c1ef87f4cdf5937084bf4de93ae8d6fee64efe62ceac0064c0d8776ac2</field>
     <field name="keywords">ta_c_nft_hold_commit</field>
-    <field name="text">Hold commit notification function supported Specification retail</field>
+    <field name="text">Hold commit notification function supported Specification unattended</field>
   </doc>
   <doc>
     <field name="type">typedef</field>
     <field name="name">ta_e_non_financial_transactions_t</field>
     <field name="url">non__financial__transactions_8h.html#aeed3b90f135e394d23e56db2381d3dc6</field>
     <field name="keywords">ta_e_non_financial_transactions_t</field>
-    <field name="text">Flag constants for FeatureType and OptionType sixml NonFinancialTransactions value Guides retail valueAddedServices</field>
+    <field name="text">Flag constants for FeatureType and OptionType sixml NonFinancialTransactions value Guides retail petrol unattended advancedRetail banking hospitality valueAddedServices</field>
   </doc>
   <doc>
     <field name="type">file</field>
@@ -9611,11 +9650,27 @@ $(document).ready(function(){initNavTree('search.html',''); initResizable(); });
   </doc>
   <doc>
     <field name="type">function</field>
+    <field name="name">ta_print_data_get_receipt_merchant_suppression</field>
+    <field name="args">(ta_object_t print_data, ta_e_boolean_t *receipt_merchant_suppression)</field>
+    <field name="url">print__data_8h.html#a0dee7822ed9fe33d736845e58c0b9bce</field>
+    <field name="keywords">ta_print_data_get_receipt_merchant_suppression</field>
+    <field name="text">Flag to suppress the printing of Merchant Receipts true ECR shall NOT print Merchant Receipt false ECR shall print Merchant Receipt print_data Object instance of type print_data receipt_merchant_suppression Pointer to variable to write value to ta_c_rc_ok Value written to receipt_merchant_suppression ta_c_rc_invalid_argument print_data is ta_object_invalid ta_c_rc_invalid_argument print_data is not of type print_data</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
     <field name="name">ta_print_data_get_receipts</field>
     <field name="args">(ta_object_t print_data, ta_object_t *receipts)</field>
     <field name="url">print__data_8h.html#a81dbc4dc14e914598b7b7fa36308bd93</field>
     <field name="keywords">ta_print_data_get_receipts</field>
     <field name="text">Receipts to print by the ECR Present if print type is Normal print_data Object instance of type print_data receipts Pointer to variable to write object instance to Object instance is of type list and is not retained The list contains elements of type receipt ta_c_rc_ok Object instance written to receipts ta_c_rc_invalid_argument print_data is ta_object_invalid ta_c_rc_invalid_argument print_data is not of type print_data ta_c_rc_invalid_argument receipts is null-pointer</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">ta_print_data_get_receipt_cardholder_suppression</field>
+    <field name="args">(ta_object_t print_data, ta_e_boolean_t *receipt_cardholder_suppression)</field>
+    <field name="url">print__data_8h.html#acdb209880dd59a057181d9d1da79c972</field>
+    <field name="keywords">ta_print_data_get_receipt_cardholder_suppression</field>
+    <field name="text">Flag to suppress the printing of Cardholder Receipts true ECR shall NOT print Cardholder Receipt false ECR shall print Cardholder Receipt print_data Object instance of type print_data receipt_cardholder_suppression Pointer to variable to write value to ta_c_rc_ok Value written to receipt_cardholder_suppression ta_c_rc_invalid_argument print_data is ta_object_invalid ta_c_rc_invalid_argument print_data is not of type print_data</field>
   </doc>
   <doc>
     <field name="type">function</field>
@@ -9767,11 +9822,27 @@ $(document).ready(function(){initNavTree('search.html',''); initResizable(); });
   </doc>
   <doc>
     <field name="type">function</field>
+    <field name="name">ta_print_option_create_with_receipt_suppression_flag</field>
+    <field name="args">(ta_object_t *print_option, ta_e_recipient_t recipient, ta_e_print_format_t print_format, int print_width, int print_flags, ta_e_boolean_t receipt_suppression_flag)</field>
+    <field name="url">print__option_8h.html#a02a4e88f4e45f838048f53a6ac236277</field>
+    <field name="keywords">ta_print_option_create_with_receipt_suppression_flag</field>
+    <field name="text">Create print option with receipt suppression flag print_option Pointer to variable to write created object instance to Created object instance is retained recipient Recipient print_format Print format print_width Print width in characters print_flags Print flags using OR combined values from ta_e_print_flag_t receipt_suppression_flag Receipt suppression flag supported from the Ecr ta_c_rc_ok Object instance has been created and written to print_option ta_c_rc_invalid_argument print_option is null-pointer ta_c_rc_invalid_argument print_width is less than 1 ta_c_rc_out_of_memory Failed allocating memory</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
     <field name="name">ta_print_option_get_print_width</field>
     <field name="args">(ta_object_t print_option, int *print_width)</field>
     <field name="url">print__option_8h.html#a03fea862e9cb57f5221f75fdae9eda87</field>
     <field name="keywords">ta_print_option_get_print_width</field>
     <field name="text">Specifies the print width of the receipt default 4 0 print_option Object instance of type print_option print_width Pointer to variable to write value to ta_c_rc_ok Value written to print_width ta_c_rc_invalid_argument print_option is ta_object_invalid ta_c_rc_invalid_argument print_option is not of type print_option ta_c_rc_invalid_argument print_width is null-pointer</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">ta_print_option_get_receipt_suppression_flag</field>
+    <field name="args">(ta_object_t print_option, ta_e_boolean_t *receipt_suppression_flag)</field>
+    <field name="url">print__option_8h.html#a07ed13912bea3f39c763f90893b3f506</field>
+    <field name="keywords">ta_print_option_get_receipt_suppression_flag</field>
+    <field name="text">print_option Object instance of type print_option receipt_suppression_flag Pointer to variable to write value to ta_c_rc_ok Value written to receipt_suppression_flag ta_c_rc_invalid_argument print_option is ta_object_invalid ta_c_rc_invalid_argument print_option is not of type print_option ta_c_rc_invalid_argument receipt_suppression_flag is null-pointer</field>
   </doc>
   <doc>
     <field name="type">function</field>
@@ -10277,6 +10348,13 @@ $(document).ready(function(){initNavTree('search.html',''); initResizable(); });
   </doc>
   <doc>
     <field name="type">enumvalue</field>
+    <field name="name">ta_c_rit_iban_masked</field>
+    <field name="url">receipt__item__type_8h.html#a3d3044dd871a9c7d630dbcf3d9b738bea2ea4e4c9a4b773e55497f257353a9166</field>
+    <field name="keywords">ta_c_rit_iban_masked</field>
+    <field name="text">Masked International Bank Account Number Used for Girocard Specification retail</field>
+  </doc>
+  <doc>
+    <field name="type">enumvalue</field>
     <field name="name">ta_c_rit_trm_id</field>
     <field name="url">receipt__item__type_8h.html#a3d3044dd871a9c7d630dbcf3d9b738bea2ed9e3bfc2fd77fd1cef575ea70d8a38</field>
     <field name="keywords">ta_c_rit_trm_id</field>
@@ -10309,6 +10387,13 @@ $(document).ready(function(){initNavTree('search.html',''); initResizable(); });
     <field name="url">receipt__item__type_8h.html#a3d3044dd871a9c7d630dbcf3d9b738bea334e59e2de3decc7aaddea1bc4e91465</field>
     <field name="keywords">ta_c_rit_ep2trm_id</field>
     <field name="text">External Terminal Id Used for Girocard Specification retail</field>
+  </doc>
+  <doc>
+    <field name="type">enumvalue</field>
+    <field name="name">ta_c_rit_elv_legal_text</field>
+    <field name="url">receipt__item__type_8h.html#a3d3044dd871a9c7d630dbcf3d9b738bea33bb27fd6fb31953e3138afe1b3a9175</field>
+    <field name="keywords">ta_c_rit_elv_legal_text</field>
+    <field name="text">Girocard Legal/contract Used for Girocard Specification retail</field>
   </doc>
   <doc>
     <field name="type">enumvalue</field>
@@ -10372,6 +10457,13 @@ $(document).ready(function(){initNavTree('search.html',''); initResizable(); });
     <field name="url">receipt__item__type_8h.html#a3d3044dd871a9c7d630dbcf3d9b738bea45893d5fcf77eb2f5be53cc2de698913</field>
     <field name="keywords">ta_c_rit_language_cardholder</field>
     <field name="text">Language for Cardholder Transaction Type Specification retail</field>
+  </doc>
+  <doc>
+    <field name="type">enumvalue</field>
+    <field name="name">ta_c_rit_mandate_id</field>
+    <field name="url">receipt__item__type_8h.html#a3d3044dd871a9c7d630dbcf3d9b738bea47a2115b2601bfb2d924f39f3ccae633</field>
+    <field name="keywords">ta_c_rit_mandate_id</field>
+    <field name="text">Mandate ID Used for Girocard Specification retail</field>
   </doc>
   <doc>
     <field name="type">enumvalue</field>
@@ -10571,6 +10663,13 @@ $(document).ready(function(){initNavTree('search.html',''); initResizable(); });
   </doc>
   <doc>
     <field name="type">enumvalue</field>
+    <field name="name">ta_c_rit_elv_creditor_id</field>
+    <field name="url">receipt__item__type_8h.html#a3d3044dd871a9c7d630dbcf3d9b738bea9c7a7109243dff555e002b21b816c12d</field>
+    <field name="keywords">ta_c_rit_elv_creditor_id</field>
+    <field name="text">ELV Creditor ID Used for Girocard Specification retail</field>
+  </doc>
+  <doc>
+    <field name="type">enumvalue</field>
     <field name="name">ta_c_rit_markup_exponent_dcc</field>
     <field name="url">receipt__item__type_8h.html#a3d3044dd871a9c7d630dbcf3d9b738beaa0ee2d7f903495f5ef5003771f482f53</field>
     <field name="keywords">ta_c_rit_markup_exponent_dcc</field>
@@ -10631,6 +10730,13 @@ $(document).ready(function(){initNavTree('search.html',''); initResizable(); });
     <field name="url">receipt__item__type_8h.html#a3d3044dd871a9c7d630dbcf3d9b738beab105b840fa3ff5c27b6f16ce8bcd1203</field>
     <field name="keywords">ta_c_rit_markup_dcc_regulated</field>
     <field name="text">DCC markup vs regulated ECB reference exchange rate Specification retail</field>
+  </doc>
+  <doc>
+    <field name="type">enumvalue</field>
+    <field name="name">ta_c_rit_amount_loaded</field>
+    <field name="url">receipt__item__type_8h.html#a3d3044dd871a9c7d630dbcf3d9b738beab229a2677fde76b92cd9e57d6547e839</field>
+    <field name="keywords">ta_c_rit_amount_loaded</field>
+    <field name="text">Amount loaded to a Gift Card by a Load transaction Specification retail</field>
   </doc>
   <doc>
     <field name="type">enumvalue</field>
@@ -10722,6 +10828,13 @@ $(document).ready(function(){initNavTree('search.html',''); initResizable(); });
     <field name="url">receipt__item__type_8h.html#a3d3044dd871a9c7d630dbcf3d9b738bead68d733f1cb80262679c715f22078f31</field>
     <field name="keywords">ta_c_rit_auth_code</field>
     <field name="text">Authorization code Specification retail</field>
+  </doc>
+  <doc>
+    <field name="type">enumvalue</field>
+    <field name="name">ta_c_rit_offline</field>
+    <field name="url">receipt__item__type_8h.html#a3d3044dd871a9c7d630dbcf3d9b738bead82150786617d98bb11b4910d75cf301</field>
+    <field name="keywords">ta_c_rit_offline</field>
+    <field name="text">Flag to print Label If value is 1 Used for Girocard Specification retail</field>
   </doc>
   <doc>
     <field name="type">enumvalue</field>
@@ -11686,6 +11799,13 @@ $(document).ready(function(){initNavTree('search.html',''); initResizable(); });
   </doc>
   <doc>
     <field name="type">enumvalue</field>
+    <field name="name">ta_c_req_feature_request</field>
+    <field name="url">request__type_8h.html#a38268da75c7795fd3a4f057bc6a7fcd2aed4248c6c1976be5aa41300a68a719f1</field>
+    <field name="keywords">ta_c_req_feature_request</field>
+    <field name="text">Operation started by terminal_login_async</field>
+  </doc>
+  <doc>
+    <field name="type">enumvalue</field>
     <field name="name">ta_c_req_mobile_topup_issuer_info</field>
     <field name="url">request__type_8h.html#a38268da75c7795fd3a4f057bc6a7fcd2af04e4d8d23192c64afc2d2e201614b94</field>
     <field name="keywords">ta_c_req_mobile_topup_issuer_info</field>
@@ -11956,6 +12076,13 @@ $(document).ready(function(){initNavTree('search.html',''); initResizable(); });
     <field name="url">resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9a33c1b186155a0cb9ff34c00c9c8759f0</field>
     <field name="keywords">ta_c_rid_petrol_banknote_credit_amount</field>
     <field name="text">Credit 0 1 STOP for payback PlaceholderItems 0 Currency 1 Amount</field>
+  </doc>
+  <doc>
+    <field name="type">enumvalue</field>
+    <field name="name">ta_c_rid_pictogram</field>
+    <field name="url">resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9a38edf7fbb66ef5430d53ac83ecc76edb</field>
+    <field name="keywords">ta_c_rid_pictogram</field>
+    <field name="text">ImageData with optional DynamicPlaceholder and ButtonMode option</field>
   </doc>
   <doc>
     <field name="type">enumvalue</field>
@@ -12565,6 +12692,13 @@ $(document).ready(function(){initNavTree('search.html',''); initResizable(); });
     <field name="url">resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9ac2f12a1f63ab94ddf2f3516d91839c1e</field>
     <field name="keywords">ta_c_rid_petrol_pump_stopped_refueling</field>
     <field name="text">Refueling stopped</field>
+  </doc>
+  <doc>
+    <field name="type">enumvalue</field>
+    <field name="name">ta_c_rid_replacement_car</field>
+    <field name="url">resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9ac43870670f4a30b5fb762eb965eb5e45</field>
+    <field name="keywords">ta_c_rid_replacement_car</field>
+    <field name="text">Replacement car 0 No 1 Yes OK</field>
   </doc>
   <doc>
     <field name="type">enumvalue</field>
@@ -13849,6 +13983,13 @@ $(document).ready(function(){initNavTree('search.html',''); initResizable(); });
   </doc>
   <doc>
     <field name="type">enumvalue</field>
+    <field name="name">ta_c_rc_moc_incorrect_work_order_po_no</field>
+    <field name="url">result__code_8h.html#aebaf00d1ceef4b827866ca9de0bd3320ac04fb80a7aa2dea292e5a7ff01ca71f6</field>
+    <field name="keywords">ta_c_rc_moc_incorrect_work_order_po_no</field>
+    <field name="text">Work Order PO no entered not correct Transaction declined Error message Incorrect Work Order PO no Specification retail</field>
+  </doc>
+  <doc>
+    <field name="type">enumvalue</field>
     <field name="name">ta_c_rc_voucher_type_not_available</field>
     <field name="url">result__code_8h.html#aebaf00d1ceef4b827866ca9de0bd3320ac378020e201b4fadecfccfd7caa352fd</field>
     <field name="keywords">ta_c_rc_voucher_type_not_available</field>
@@ -14042,6 +14183,13 @@ $(document).ready(function(){initNavTree('search.html',''); initResizable(); });
     <field name="url">result__code_8h.html#aebaf00d1ceef4b827866ca9de0bd3320aebb7d8eb280d133422c7bb1ad51f98b4</field>
     <field name="keywords">ta_c_rc_trx_no_common_cvm</field>
     <field name="text">No common cardholder verification method found on card during Error message No common CVM found Specification retail</field>
+  </doc>
+  <doc>
+    <field name="type">enumvalue</field>
+    <field name="name">ta_c_rc_moc_incorrect_user_id</field>
+    <field name="url">result__code_8h.html#aebaf00d1ceef4b827866ca9de0bd3320aecaffd4a2215e9dd6440bffc92569eb3</field>
+    <field name="keywords">ta_c_rc_moc_incorrect_user_id</field>
+    <field name="text">Unencrypted ID no entered not correct Transaction declined Error message Incorrect User ID Specification retail</field>
   </doc>
   <doc>
     <field name="type">enumvalue</field>
@@ -14389,6 +14537,14 @@ $(document).ready(function(){initNavTree('search.html',''); initResizable(); });
   </doc>
   <doc>
     <field name="type">function</field>
+    <field name="name">ta_show_dialog_request_get_image_data</field>
+    <field name="args">(ta_object_t request, ta_object_t *image_data)</field>
+    <field name="url">show__dialog__request_8h.html#a751c0df155ac0f58ec26d673e7509996</field>
+    <field name="keywords">ta_show_dialog_request_get_image_data</field>
+    <field name="text">image_data request Object instance of type show_dialog_request image_data Pointer to variable to write object instance to ta_c_rc_ok Object instance written to image_data ta_c_rc_invalid_argument request is ta_object_invalid ta_c_rc_invalid_argument request is not of type show_dialog_request ta_c_rc_invalid_argument image_data is null-pointer</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
     <field name="name">ta_show_dialog_request_set_brand_mode</field>
     <field name="args">(ta_object_t request, ta_e_brand_mode_t brand_mode)</field>
     <field name="url">show__dialog__request_8h.html#a78efe1187a07d73aaeee9f707388fe42</field>
@@ -14426,6 +14582,14 @@ $(document).ready(function(){initNavTree('search.html',''); initResizable(); });
     <field name="url">show__dialog__request_8h.html#aa371caadf9ff526bd5087ccc94a77ce0</field>
     <field name="keywords">ta_show_dialog_request_resource_get_parameters</field>
     <field name="text">Map of resource parameters request Object instance of type show_dialog_request parameters Pointer to variable to write object instance to Object instance is of type map and is not retained The map contains keys of type integer and values of type string Keys use values matching ta_e_resource_parameter_type_t ta_c_rc_ok Object instance written to parameters ta_c_rc_invalid_argument request is ta_object_invalid ta_c_rc_invalid_argument request is not of type show_dialog_request ta_c_rc_invalid_argument parameters is null-pointer</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">ta_show_dialog_request_set_image_data</field>
+    <field name="args">(ta_object_t request, ta_object_t image_data)</field>
+    <field name="url">show__dialog__request_8h.html#ab6fd546e90523982aaa8bb871be379ab</field>
+    <field name="keywords">ta_show_dialog_request_set_image_data</field>
+    <field name="text">Set image_data request Object instance of type show_dialog_request image_data Object instance to set ta_c_rc_ok Object instance assigned to image_data ta_c_rc_invalid_argument request is ta_object_invalid ta_c_rc_invalid_argument request is not of type show_dialog_request ta_c_rc_invalid_argument image_data is not ta_object_invalid and is not of type string</field>
   </doc>
   <doc>
     <field name="type">function</field>
@@ -15188,7 +15352,7 @@ $(document).ready(function(){initNavTree('search.html',''); initResizable(); });
   <doc>
     <field name="type">variable</field>
     <field name="name">ta_s_custom_receipt_formatter_line_format::condition_mask</field>
-    <field name="url">structta__s__custom__receipt__formatter__line__format.html#af1b4307c1f38e148434390649d07dc8b</field>
+    <field name="url">structta__s__custom__receipt__formatter__line__format.html#ac4a3d8602ad1ab36a9093b549184e830</field>
     <field name="keywords">condition_mask ta_s_custom_receipt_formatter_line_format::condition_mask ta_s_custom_receipt_formatter_line_format</field>
     <field name="text">Condition mask Set bit to enable respective condition Line is shown if at least one enabled condition is fulfilled Condition flag are values ta_crfc_* from ta_e_custom_receipt_formatter_condition_t</field>
   </doc>
@@ -15646,6 +15810,13 @@ $(document).ready(function(){initNavTree('search.html',''); initResizable(); });
     <field name="url">structta__s__features__sixml.html#ab34c2b04cb5ff2b5ff7b32dc924fda94</field>
     <field name="keywords">auto_shutter_management ta_s_features_sixml::auto_shutter_management ta_s_features_sixml</field>
     <field name="text">AutoShutterManagement support</field>
+  </doc>
+  <doc>
+    <field name="type">variable</field>
+    <field name="name">ta_s_features_sixml::receipt_suppression_flag</field>
+    <field name="url">structta__s__features__sixml.html#ab46971665b2f2e7f1abc7a805496a248</field>
+    <field name="keywords">receipt_suppression_flag ta_s_features_sixml::receipt_suppression_flag ta_s_features_sixml</field>
+    <field name="text">Support for Receipt Suppression Flag</field>
   </doc>
   <doc>
     <field name="type">variable</field>
@@ -18263,6 +18434,14 @@ $(document).ready(function(){initNavTree('search.html',''); initResizable(); });
   </doc>
   <doc>
     <field name="type">function</field>
+    <field name="name">ta_terminal_settings_get_secure_connection_password</field>
+    <field name="args">(ta_object_t settings, ta_object_t *password)</field>
+    <field name="url">terminal__settings_8h.html#a05be31a2c118a6645a8f47cba6d46a47</field>
+    <field name="keywords">ta_terminal_settings_get_secure_connection_password</field>
+    <field name="text">Get the password used to derive the external TLS PSK</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
     <field name="name">ta_terminal_settings_set_auto_sys_info</field>
     <field name="args">(ta_object_t settings, ta_e_boolean_t auto_sys_info)</field>
     <field name="url">terminal__settings_8h.html#a119bfa535f1f278db94f444cc19cd31c</field>
@@ -18439,6 +18618,14 @@ $(document).ready(function(){initNavTree('search.html',''); initResizable(); });
   </doc>
   <doc>
     <field name="type">function</field>
+    <field name="name">ta_terminal_settings_set_secure_connection_password</field>
+    <field name="args">(ta_object_t settings, ta_object_t password)</field>
+    <field name="url">terminal__settings_8h.html#a3ee3517c2df0324b3cf87c442883f009</field>
+    <field name="keywords">ta_terminal_settings_set_secure_connection_password</field>
+    <field name="text">Set the password used to derive the external TLS PSK</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
     <field name="name">ta_terminal_settings_is_auto_commit</field>
     <field name="args">(ta_object_t settings, ta_e_boolean_t *is_auto_commit)</field>
     <field name="url">terminal__settings_8h.html#a410988117456af3b9627822de31519ed</field>
@@ -18503,6 +18690,14 @@ $(document).ready(function(){initNavTree('search.html',''); initResizable(); });
   </doc>
   <doc>
     <field name="type">function</field>
+    <field name="name">ta_terminal_settings_set_secure_connection_enabled</field>
+    <field name="args">(ta_object_t settings, ta_e_boolean_t enabled)</field>
+    <field name="url">terminal__settings_8h.html#a58dea8c0f610b9b4dda4aa78da07db6e</field>
+    <field name="keywords">ta_terminal_settings_set_secure_connection_enabled</field>
+    <field name="text">Enable or disable TLS-PSK transport</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
     <field name="name">ta_terminal_settings_set_persistent_state</field>
     <field name="args">(ta_object_t settings, ta_e_boolean_t persistent_state)</field>
     <field name="url">terminal__settings_8h.html#a5c185ec6a7e22d062039969cadb4bc4e</field>
@@ -18524,6 +18719,14 @@ $(document).ready(function(){initNavTree('search.html',''); initResizable(); });
     <field name="url">terminal__settings_8h.html#a5f5fc21f0881bed8a33475583afb1187</field>
     <field name="keywords">ta_terminal_settings_get_saferpay_terminal_id</field>
     <field name="text">Saferpay Terminal Id settings Object instance of type terminal_settings terminal_id Pointer to variable to write object instance to Object instance is of type string and is not retained Object instance is ta_object_invalid if value is not set in settings ta_c_rc_ok Object instance written to terminal_id ta_c_rc_invalid_argument settings is ta_object_invalid ta_c_rc_invalid_argument settings is not of type terminal_settings</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">ta_terminal_settings_is_secure_connection_fallback_enabled</field>
+    <field name="args">(ta_object_t settings, ta_e_boolean_t *enabled)</field>
+    <field name="url">terminal__settings_8h.html#a62cfb1d81e85c1c1f0a9c238d0d4f0b5</field>
+    <field name="keywords">ta_terminal_settings_is_secure_connection_fallback_enabled</field>
+    <field name="text">Return whether fallback to plain TCP is enabled</field>
   </doc>
   <doc>
     <field name="type">function</field>
@@ -18799,6 +19002,14 @@ $(document).ready(function(){initNavTree('search.html',''); initResizable(); });
   </doc>
   <doc>
     <field name="type">function</field>
+    <field name="name">ta_terminal_settings_get_connection_ip_secure_port</field>
+    <field name="args">(ta_object_t settings, int *connection_ip_secure_port)</field>
+    <field name="url">terminal__settings_8h.html#abb803d4124ddb91777c196e7730936be</field>
+    <field name="keywords">ta_terminal_settings_get_connection_ip_secure_port</field>
+    <field name="text">Get the configured TLS port of the EFT terminal</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
     <field name="name">ta_terminal_settings_set_card_removal_timeout</field>
     <field name="args">(ta_object_t settings, int card_removal_timeout)</field>
     <field name="url">terminal__settings_8h.html#abd208ce3e6f33bb1b32a2ce44fcfa53d</field>
@@ -18887,6 +19098,14 @@ $(document).ready(function(){initNavTree('search.html',''); initResizable(); });
   </doc>
   <doc>
     <field name="type">function</field>
+    <field name="name">ta_terminal_settings_get_connection_listen_ip_secure_port</field>
+    <field name="args">(ta_object_t settings, int *connection_listen_ip_secure_port)</field>
+    <field name="url">terminal__settings_8h.html#ad8d91c6b076b4e8d13ad8bb23337806d</field>
+    <field name="keywords">ta_terminal_settings_get_connection_listen_ip_secure_port</field>
+    <field name="text">Get the configured TLS listen port of the ECR</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
     <field name="name">ta_terminal_settings_set_omnichannel_host_timeout</field>
     <field name="args">(ta_object_t settings, int host_timeout)</field>
     <field name="url">terminal__settings_8h.html#ad94030632e59b56b5dcc23c7ed51c0a4</field>
@@ -18967,6 +19186,22 @@ $(document).ready(function(){initNavTree('search.html',''); initResizable(); });
   </doc>
   <doc>
     <field name="type">function</field>
+    <field name="name">ta_terminal_settings_is_secure_connection_enabled</field>
+    <field name="args">(ta_object_t settings, ta_e_boolean_t *enabled)</field>
+    <field name="url">terminal__settings_8h.html#ae70bad4a79203da368c78d0211a4b971</field>
+    <field name="keywords">ta_terminal_settings_is_secure_connection_enabled</field>
+    <field name="text">Return whether TLS-PSK transport is enabled</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">ta_terminal_settings_set_connection_ip_secure_port</field>
+    <field name="args">(ta_object_t settings, int connection_ip_secure_port)</field>
+    <field name="url">terminal__settings_8h.html#ae8ac934b8daa9e83b8e43a623dda6740</field>
+    <field name="keywords">ta_terminal_settings_set_connection_ip_secure_port</field>
+    <field name="text">Set the TLS port of the EFT terminal Valid range is 1 6 5 5 3 5</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
     <field name="name">ta_terminal_settings_set_connect_timeout</field>
     <field name="args">(ta_object_t settings, int seconds)</field>
     <field name="url">terminal__settings_8h.html#ae93a9d3f5483c3ba451b611a82e8c5d7</field>
@@ -19007,6 +19242,14 @@ $(document).ready(function(){initNavTree('search.html',''); initResizable(); });
   </doc>
   <doc>
     <field name="type">function</field>
+    <field name="name">ta_terminal_settings_set_secure_connection_fallback_enabled</field>
+    <field name="args">(ta_object_t settings, ta_e_boolean_t enabled)</field>
+    <field name="url">terminal__settings_8h.html#aef20f9d910afa06acae90470888712c0</field>
+    <field name="keywords">ta_terminal_settings_set_secure_connection_fallback_enabled</field>
+    <field name="text">Enable or disable fallback to plain TCP</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
     <field name="name">ta_terminal_settings_set_max_wait_for_idle_after_busy</field>
     <field name="args">(ta_object_t settings, int seconds)</field>
     <field name="url">terminal__settings_8h.html#af3b9fa378f63ca1bb47c5738d7076bc9</field>
@@ -19028,6 +19271,14 @@ $(document).ready(function(){initNavTree('search.html',''); initResizable(); });
     <field name="url">terminal__settings_8h.html#af5180c6141621d095e412463637e191c</field>
     <field name="keywords">ta_terminal_settings_get_connection_ip_port</field>
     <field name="text">Listening Port of the EFT terminal in case of ConnectionMode OnFixIP settings Object instance of type terminal_settings connection_ip_port Pointer to variable to write value to ta_c_rc_ok Object instance written to connection_ip_port ta_c_rc_invalid_argument settings is ta_object_invalid ta_c_rc_invalid_argument settings is not of type terminal_settings ta_c_rc_invalid_argument connection_ip_port is null-pointer</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">ta_terminal_settings_set_connection_listen_ip_secure_port</field>
+    <field name="args">(ta_object_t settings, int connection_listen_ip_secure_port)</field>
+    <field name="url">terminal__settings_8h.html#af6e805445ea29bc14f1551b03a78d60e</field>
+    <field name="keywords">ta_terminal_settings_set_connection_listen_ip_secure_port</field>
+    <field name="text">Set the TLS listen port of the ECR Valid range is 1 6 5 5 3 5</field>
   </doc>
   <doc>
     <field name="type">function</field>
@@ -20182,6 +20433,14 @@ $(document).ready(function(){initNavTree('search.html',''); initResizable(); });
   </doc>
   <doc>
     <field name="type">function</field>
+    <field name="name">ta_transaction_information_get_fallback_indicator</field>
+    <field name="args">(ta_object_t trx_info, ta_object_t *fallback_indicator)</field>
+    <field name="url">transaction__information_8h.html#a17d9bf7f6a217fdc6fe0606f064f2379</field>
+    <field name="keywords">ta_transaction_information_get_fallback_indicator</field>
+    <field name="text">Get Fallback Indicator Optional Mandatory if available to terminal Specifications retail trx_info Object instance of type transaction_information fallback_indicator Pointer to variable to write object instance to Object instance is of type string and is not retained Object instance is ta_object_invalid if value is not set in trx_info ta_c_rc_ok Object instance written to fallback_indicator ta_c_rc_invalid_argument trx_info is ta_object_invalid ta_c_rc_invalid_argument trx_info is not of type transaction_information ta_c_rc_invalid_argument fallback_indicator is null-pointer</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
     <field name="name">ta_transaction_information_get_age_check_result</field>
     <field name="args">(ta_object_t trx_info, ta_e_age_check_result_t *age_check_result)</field>
     <field name="url">transaction__information_8h.html#a3ed3f7ddc9723f3b4f7b3be86824550c</field>
@@ -20842,6 +21101,14 @@ $(document).ready(function(){initNavTree('search.html',''); initResizable(); });
     <field name="url">transaction__response_8h.html#ade7ccd13245844ce074d251ed8ef95a8</field>
     <field name="keywords">ta_transaction_response_get_amount_dcc</field>
     <field name="text">DCC amount authorized by the transaction if present response Object instance of type transaction_response amount_dcc Pointer to variable to write object instance to Object instance is of type amount_dcc and is not retained Object instance is ta_object_invalid if value is not set in response ta_c_rc_ok Object instance written to amount_dcc ta_c_rc_invalid_argument response is ta_object_invalid ta_c_rc_invalid_argument response is not of type transaction_response ta_c_rc_invalid_argument amount_dcc is null-pointer</field>
+  </doc>
+  <doc>
+    <field name="type">function</field>
+    <field name="name">ta_transaction_response_get_amount_loaded</field>
+    <field name="args">(ta_object_t response, ta_object_t *amount_loaded)</field>
+    <field name="url">transaction__response_8h.html#af57e7b6d20ff3e3c613d10ebc2359df5</field>
+    <field name="keywords">ta_transaction_response_get_amount_loaded</field>
+    <field name="text">Amount loaded to the gift card if present response Object instance of type transaction_response amount_loaded Pointer to variable to write an amount instance to The object is not retained and is ta_object_invalid if not set ta_c_rc_ok Object instance written to amount_loaded ta_c_rc_invalid_argument Invalid response or null output pointer</field>
   </doc>
   <doc>
     <field name="type">function</field>

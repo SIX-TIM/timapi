@@ -1001,6 +1001,48 @@ Immutable class.</p>
       </tr>
     </tbody>
   </table>
+  
+  
+  <a id="SIX_TimApi_PrintData__ctor_" data-uid="SIX.TimApi.PrintData.#ctor*"></a>
+  <h4 id="SIX_TimApi_PrintData__ctor_List_SIX_TimApi_Receipt__List_SIX_TimApi_ReceiptItems__System_Nullable_System_Boolean__System_Nullable_System_Boolean__" data-uid="SIX.TimApi.PrintData.#ctor(List{SIX.TimApi.Receipt},List{SIX.TimApi.ReceiptItems},System.Nullable{System.Boolean},System.Nullable{System.Boolean})">PrintData(List&lt;Receipt&gt;, List&lt;ReceiptItems&gt;, Nullable&lt;Boolean&gt;, Nullable&lt;Boolean&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PrintData(List&lt;Receipt&gt; receipts, List&lt;ReceiptItems&gt; receiptItems, bool? receiptMerchantSuppressionFlag, bool? receiptCardholderSuppressionFlag)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">List</span>&lt;<a class="xref" href="SIX.TimApi.Receipt.html">Receipt</a>&gt;</td>
+        <td><span class="parametername">receipts</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">List</span>&lt;<a class="xref" href="SIX.TimApi.ReceiptItems.html">ReceiptItems</a>&gt;</td>
+        <td><span class="parametername">receiptItems</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td><span class="parametername">receiptMerchantSuppressionFlag</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td><span class="parametername">receiptCardholderSuppressionFlag</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="fields">Fields
   </h3>
   
@@ -1107,6 +1149,32 @@ Immutable class.</p>
   </table>
   
   
+  <a id="SIX_TimApi_PrintData_ReceiptCardholderSuppressionFlag_" data-uid="SIX.TimApi.PrintData.ReceiptCardholderSuppressionFlag*"></a>
+  <h4 id="SIX_TimApi_PrintData_ReceiptCardholderSuppressionFlag" data-uid="SIX.TimApi.PrintData.ReceiptCardholderSuppressionFlag">ReceiptCardholderSuppressionFlag</h4>
+  <div class="markdown level1 summary"><p>Flag to suppress receipt on cardholder side.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool? ReceiptCardholderSuppressionFlag { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="SIX_TimApi_PrintData_ReceiptItems_" data-uid="SIX.TimApi.PrintData.ReceiptItems*"></a>
   <h4 id="SIX_TimApi_PrintData_ReceiptItems" data-uid="SIX.TimApi.PrintData.ReceiptItems">ReceiptItems</h4>
   <div class="markdown level1 summary"><p>Gets the receipt items.</p>
@@ -1129,6 +1197,32 @@ Immutable class.</p>
         <td><span class="xref">List</span>&lt;<a class="xref" href="SIX.TimApi.ReceiptItems.html">ReceiptItems</a>&gt;</td>
         <td><p>The receipt items.</p>
 </td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SIX_TimApi_PrintData_ReceiptMerchantSuppressionFlag_" data-uid="SIX.TimApi.PrintData.ReceiptMerchantSuppressionFlag*"></a>
+  <h4 id="SIX_TimApi_PrintData_ReceiptMerchantSuppressionFlag" data-uid="SIX.TimApi.PrintData.ReceiptMerchantSuppressionFlag">ReceiptMerchantSuppressionFlag</h4>
+  <div class="markdown level1 summary"><p>Flag to suppress receipt on merchant side.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool? ReceiptMerchantSuppressionFlag { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
