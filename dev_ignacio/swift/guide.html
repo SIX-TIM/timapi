@@ -1287,7 +1287,11 @@ class ExampleECR {
                 </div><div class="col-md-6">
                     <p lang="java swift">The logging level can be adjusted programatically as follows after a terminal object has been
                         created:
-                    <pre><code></code></pre>
+                    <pre><code class="language-{.swift}">let logger = Logger.getLogger(name: Terminal.loggerNameModule)
+logger.logLevel = .finest
+logger.handlers.append(LogHandlerConsole(logLevel: .finest))
+logger.handlers.append(LogHandlerFile(logLevel: .finest))
+</code></pre>
                     </p>
                 </div></div>
             <div class="row"><div class="col-md-6"></div></div></section>

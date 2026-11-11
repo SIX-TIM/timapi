@@ -40,6 +40,7 @@ var resource__id_8h =
       [ "ta_c_rid_unencrypted_id_no", "resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9a488337b80bee55dd5e8bc0b622fb22f5", null ],
       [ "ta_c_rid_work_order_po_no", "resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9ab71925212e7fa01a9e5fa009fc82b216", null ],
       [ "ta_c_rid_replacement_car", "resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9ac43870670f4a30b5fb762eb965eb5e45", null ],
+      [ "ta_c_rid_petrol_print_receipt_alt", "resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9ab9f28bda74a1c8e30b7def6b730e56cd", null ],
       [ "ta_c_rid_petrol_card_inverted", "resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9aa07adc9d6378aa0b31e850df5f38bba8", null ],
       [ "ta_c_rid_petrol_card_out_of_order", "resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9aa7c926c3c6008b777051ee41742beb3c", null ],
       [ "ta_c_rid_petrol_card_not_authorised", "resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9a84431e34b7050c12b6106b4e6cf9642d", null ],
@@ -160,6 +161,7 @@ var resource__id_8h =
       [ "ta_c_rid_payback_show_balance", "resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9ae37978504cceb9b6f5168c2754611437", null ],
       [ "ta_c_rid_payback_spend_points", "resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9aa2117d8076f9de7854208754630e8c63", null ],
       [ "ta_c_rid_present_specific_card", "resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9a925cdf731cdf530dcbe6cd8eb77ecf8e", null ],
-      [ "ta_c_rid_specific_card_read_ok", "resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9a679eaa5fb02c9a268a0b139156edd23e", null ]
+      [ "ta_c_rid_specific_card_read_ok", "resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9a679eaa5fb02c9a268a0b139156edd23e", null ],
+      [ "ta_c_rid_insurance_insert_card", "resource__id_8h.html#a334bce2189c86641d9e5b8aa2dbceec9a04d5a9ece4b502ce8620152fad9805c8", null ]
     ] ]
 ];
